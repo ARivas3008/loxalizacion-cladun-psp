@@ -21,14 +21,14 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [000002] DIÁLOGO | CLD-000003
 ORIGINAL:
 You smell something nice emanating from within,
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hueles algo agradable que emana de dentro,
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Hueles algo delicioso que viene de dentro,
 
 [000003] DIÁLOGO | CLD-000004
 ORIGINAL:
 despite the "Closed" sign.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-a pesar del cartel de "Cerrado".
+ESPAÑOL (posteditado_contextualmente_por_IA):
+a pesar del cartel de «Cerrado».
 
 [000004] DIÁLOGO | CLD-000006
 ORIGINAL:
@@ -39,8 +39,8 @@ Es la puerta por la que entramos.
 [000005] DIÁLOGO | CLD-000007
 ORIGINAL:
 Does this lead to another world?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Esto nos lleva a otro mundo?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Conduce esto a otro mundo?
 
 [000006] DIÁLOGO | CLD-000008
 ORIGINAL:
@@ -57,14 +57,14 @@ Está demasiado oscuro para ver dentro.
 [000008] DIÁLOGO | CLD-000011
 ORIGINAL:
 I better listen to Pudding for now.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Será mejor que escuche a Pudding por ahora.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Será mejor hacerle caso a Pudding por ahora.
 
 [000009] DIÁLOGO | CLD-000013
 ORIGINAL:
 Go here to return to your world and see the ending.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ve aquí para regresar a tu mundo y ver el final.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Ve allí para volver a tu mundo y ver el final.
 
 [000010] DIÁLOGO | CLD-000014
 ORIGINAL:
@@ -165,8 +165,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [000026] DIÁLOGO | CLD-000031
 ORIGINAL:
 Here, you can use this.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Aquí puedes usar esto.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Toma, puedes usar esto.
 
 [000027] DIÁLOGO | CLD-000033
 ORIGINAL:
@@ -287,8 +287,8 @@ Hiyoji
 [000046] DIÁLOGO | CLD-000052
 ORIGINAL:
 Well hello, ⑨!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bueno, hola, ⑨!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Hola, ⑨!
 
 [000047] DIÁLOGO | CLD-000053
 ORIGINAL:
@@ -323,8 +323,8 @@ Hiyoji
 [000052] DIÁLOGO | CLD-000059
 ORIGINAL:
 Whoa! ⑨!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Guau! ⑨!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Caray, ⑨!
 
 [000053] DIÁLOGO | CLD-000060
 ORIGINAL:
@@ -353,14 +353,14 @@ ESPAÑOL (posteditado_contextualmente_por_IA):
 [000057] DIÁLOGO | CLD-000064
 ORIGINAL:
 Would you like a massage?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Te gustaría un masaje?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Te apetece un masaje?
 
 [000058] DIÁLOGO | CLD-000065
 ORIGINAL:
 I hope we can be friends. Hee, hee.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Espero que podamos ser amigos. Je, je.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Espero que nos llevemos bien. Je, je.
 
 [000059] PERSONAJE | CLD-000066
 ORIGINAL:
@@ -389,8 +389,8 @@ Hiyoji
 [000063] DIÁLOGO | CLD-000070
 ORIGINAL:
 I got too excited and talked too much.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Me emocioné demasiado y hablé demasiado.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Me emocioné y terminé hablando de más.
 
 [000064] DIÁLOGO | CLD-000071
 ORIGINAL:
@@ -425,20 +425,20 @@ hasta que tu fama supere los 30.
 [000069] DIÁLOGO | CLD-000077
 ORIGINAL:
 It looks like a well, but there's some soot.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Parece un pozo, pero tiene algo de hollín.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Parece un pozo, pero tiene hollín.
 
 [000070] DIÁLOGO | CLD-000078
 ORIGINAL:
 Is this a chimney in the middle of a field?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Es esto una chimenea en medio de un campo?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Una chimenea en medio de un campo?
 
 [000071] DIÁLOGO | CLD-000080
 ORIGINAL:
 Is this just a dirty, dirty well?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Es esto simplemente un pozo muy, muy sucio?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿O será un pozo muy, muy sucio?
 
 [000072] DIÁLOGO | CLD-000081
 ORIGINAL:
@@ -509,26 +509,26 @@ No
 [000083] DIÁLOGO | CLD-000093
 ORIGINAL:
 Hey! What are you doing?!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Oye! ¿Qué estás haciendo?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Oye! ¿Qué haces?
 
 [000084] DIÁLOGO | CLD-000094
 ORIGINAL:
 I'll do it, so get out of my way!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Lo haré, así que apártense de mi camino!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Yo me encargo! ¡Fuera de mi camino!
 
 [000085] DIÁLOGO | CLD-000096
 ORIGINAL:
 Hey! What are you doing?!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Oye! ¿Qué estás haciendo?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Oye! ¿Qué haces?
 
 [000086] DIÁLOGO | CLD-000097
 ORIGINAL:
 I'll do it, so get out of my way!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Lo haré, así que apártense de mi camino!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Yo me encargo! ¡Fuera de mi camino!
 
 [000087] DIÁLOGO | CLD-000100
 ORIGINAL:
@@ -623,8 +623,8 @@ Pollita Hiyo
 [000102] DIÁLOGO | CLD-000117
 ORIGINAL:
 ⑨! You're here!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-⑨! ¡Estás aquí!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡⑨! ¡Estás aquí!
 
 [000103] DIÁLOGO | CLD-000118
 ORIGINAL:
@@ -647,8 +647,8 @@ Pollita Hiyo
 [000106] DIÁLOGO | CLD-000121
 ORIGINAL:
 Ahhh! It's ⑨!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Ahhh! ¡Es ⑨!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Ah! ¡Es ⑨!
 
 [000107] DIÁLOGO | CLD-000122
 ORIGINAL:
@@ -659,8 +659,8 @@ ESPAÑOL (posteditado_contextualmente_por_IA):
 [000108] DIÁLOGO | CLD-000123
 ORIGINAL:
 You look more awesome each time I see you!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Cada vez que te veo te ves más increíble!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Cada vez que te veo, me pareces más increíble!
 
 [000109] DIÁLOGO | CLD-000125
 ORIGINAL:
@@ -677,20 +677,20 @@ Flash Hiyo
 [000111] DIÁLOGO | CLD-000128
 ORIGINAL:
 I can take pictures at any time.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puedo tomar fotos en cualquier momento.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Puedo sacar fotos cuando quiera.
 
 [000112] DIÁLOGO | CLD-000129
 ORIGINAL:
 Just take any pic you want with ⑰!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Simplemente toma la foto que quieras con ⑰!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Saca la foto que quieras con ⑰!
 
 [000113] DIÁLOGO | CLD-000130
 ORIGINAL:
 Simply turn it ON in the options!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Simplemente actívalo en las opciones!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Solo tienes que activarlo en las opciones!
 
 [000114] DIÁLOGO | CLD-000131
 ORIGINAL:
@@ -724,8 +724,8 @@ SCRIPT: scr60ToDemo.dsf
 [000118] DIÁLOGO | CLD-000136
 ORIGINAL:
 You can now go to a new dungeon!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Ahora puedes ir a una nueva mazmorra!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Ya puedes entrar en una nueva mazmorra!
 
 
 ==================================================================
@@ -747,20 +747,20 @@ desbloquearás un nuevo mapa para desafiar.
 [000121] DIÁLOGO | CLD-000140
 ORIGINAL:
 Mastering the Ran-geon will provide
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Dominar el Ran-geon te proporcionará
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Dominar el Ran-geon te dará
 
 [000122] DIÁLOGO | CLD-000141
 ORIGINAL:
 some great rewards.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-algunas grandes recompensas.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+unas recompensas estupendas.
 
 [000123] DIÁLOGO | CLD-000142
 ORIGINAL:
 G comes in red and blue colors.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La letra G está disponible en colores rojo y azul.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Las G pueden ser rojas o azules.
 
 [000124] DIÁLOGO | CLD-000143
 ORIGINAL:
@@ -777,8 +777,8 @@ La máscara es realmente poderosa.
 [000126] DIÁLOGO | CLD-000145
 ORIGINAL:
 There is a hard limit with attacks using the staff.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Existe un límite estricto para los ataques que utilizan el bastón.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los ataques con bastón tienen un límite estricto.
 
 [000127] DIÁLOGO | CLD-000146
 ORIGINAL:
@@ -795,20 +795,20 @@ el tiempo de lanzamiento de hechizos.
 [000129] DIÁLOGO | CLD-000148
 ORIGINAL:
 Floor 77 of the Ran-geon is amazing, I hear.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Según he oído, el piso 77 del Ran-geon es increíble.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Dicen que la planta 77 del Ran-geon es increíble.
 
 [000130] DIÁLOGO | CLD-000149
 ORIGINAL:
 Monsters can go up to LV 999.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los monstruos pueden alcanzar hasta el nivel 999.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los monstruos pueden llegar hasta LV 999.
 
 [000131] DIÁLOGO | CLD-000150
 ORIGINAL:
 You can go up to LV 99.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puedes llegar hasta el nivel 99.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Tú puedes llegar hasta LV 99.
 
 [000132] DIÁLOGO | CLD-000151
 ORIGINAL:
@@ -891,8 +891,8 @@ Hay pasadizos secretos
 [000145] DIÁLOGO | CLD-000164
 ORIGINAL:
 in the dungeons somewhere.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-en las mazmorras, en algún lugar.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+escondidos por las mazmorras.
 
 [000146] DIÁLOGO | CLD-000165
 ORIGINAL:
@@ -903,26 +903,26 @@ Necesitas «Widen» para ampliar las opciones.
 [000147] DIÁLOGO | CLD-000166
 ORIGINAL:
 "Shields" are actually really powerful.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los "escudos" son realmente muy poderosos.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los escudos son muy poderosos.
 
 [000148] DIÁLOGO | CLD-000167
 ORIGINAL:
 When you level up, how much the stats go up
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cuando subes de nivel, cuánto aumentan las estadísticas
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Cuánto aumentan tus atributos al subir de nivel
 
 [000149] DIÁLOGO | CLD-000168
 ORIGINAL:
 depends heavily on your level.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Depende mucho de tu nivel.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+depende mucho de tu nivel.
 
 [000150] DIÁLOGO | CLD-000169
 ORIGINAL:
 The higher the level, the more they go up.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cuanto más alto sea el nivel, más subirán.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Cuanto mayor sea tu nivel, más aumentarán.
 
 [000151] DIÁLOGO | CLD-000170
 ORIGINAL:
@@ -3411,8 +3411,8 @@ Se guardará tu registro de la distancia que has recorrido.
 [000564] DIÁLOGO | CLD-000583
 ORIGINAL:
 Each time you go through the gate in the New-geon,
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cada vez que atravieses la puerta en la Nueva-geon,
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Cada vez que atravieses la puerta del New-geon,
 
 [000565] DIÁLOGO | CLD-000584
 ORIGINAL:
@@ -3453,8 +3453,8 @@ Asegúrese de evitar los pisos que tengan los mismos dígitos.
 [000571] DIÁLOGO | CLD-000590
 ORIGINAL:
 The Super Move is also available to you in the New-geon.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El Súper Movimiento también está disponible para ti en la Nueva-geon.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+También puedes usar el supermovimiento en el New-geon.
 
 [000572] DIÁLOGO | CLD-000591
 ORIGINAL:
@@ -4191,8 +4191,8 @@ Se guardará el registro de la parada que has alcanzado.
 [000694] DIÁLOGO | CLD-000713
 ORIGINAL:
 Each time you go through the gate in the New-geon,
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cada vez que atravieses la puerta en la Nueva-geon,
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Cada vez que atravieses la puerta del New-geon,
 
 [000695] DIÁLOGO | CLD-000714
 ORIGINAL:
@@ -4233,8 +4233,8 @@ Asegúrese de evitar los pisos que tengan los mismos dígitos.
 [000701] DIÁLOGO | CLD-000720
 ORIGINAL:
 The Super Move is also available to you in the New-geon.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El Súper Movimiento también está disponible para ti en la Nueva-geon.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+También puedes usar el supermovimiento en el New-geon.
 
 [000702] DIÁLOGO | CLD-000721
 ORIGINAL:
@@ -6033,8 +6033,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [000996] DIÁLOGO | CLD-001016
 ORIGINAL:
 Whoa!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Guau!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Vaya!
 
 [000997] PERSONAJE | CLD-001017
 ORIGINAL:
@@ -13046,8 +13046,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [002144] DIÁLOGO | CLD-002195
 ORIGINAL:
 Gah!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Guau!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Argh!
 
 [002145] DIÁLOGO | CLD-002196
 ORIGINAL:
@@ -13830,8 +13830,8 @@ Has vuelto.
 [002273] DIÁLOGO | CLD-002327
 ORIGINAL:
 Gaaah!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Guau!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Aaaah!
 
 [002274] DIÁLOGO | CLD-002328
 ORIGINAL:
@@ -15647,8 +15647,8 @@ si lo usaste como escudo.
 [002570] DIÁLOGO | CLD-002630
 ORIGINAL:
 Gah!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Guau!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Argh!
 
 [002571] DIÁLOGO | CLD-002631
 ORIGINAL:
@@ -16579,8 +16579,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [002722] DIÁLOGO | CLD-002786
 ORIGINAL:
 Gah!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Guau!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Argh!
 
 [002723] DIÁLOGO | CLD-002787
 ORIGINAL:
@@ -17050,8 +17050,8 @@ Y he oído que eres muy bueno con las espadas...
 [002798] DIÁLOGO | CLD-002866
 ORIGINAL:
 Whoa!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Guau!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Vaya!
 
 [002799] DIÁLOGO | CLD-002867
 ORIGINAL:
@@ -19852,8 +19852,8 @@ A todos y a mí mismo...
 [003255] DIÁLOGO | CLD-003333
 ORIGINAL:
 Gah!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Guau!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Argh!
 
 [003256] DIÁLOGO | CLD-003334
 ORIGINAL:
@@ -26835,8 +26835,8 @@ Voz misteriosa
 [004398] DIÁLOGO | CLD-004495
 ORIGINAL:
 Kahahaha!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Guau!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Kajajaja!
 
 [004399] DIÁLOGO | CLD-004496
 ORIGINAL:
@@ -28799,8 +28799,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [004722] DIÁLOGO | CLD-004820
 ORIGINAL:
 Gah!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Guau!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Argh!
 
 [004723] PERSONAJE | CLD-004821
 ORIGINAL:
@@ -32703,8 +32703,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [005363] INTERFAZ | CLD-005553
 ORIGINAL:
 Job   %s
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Trabajo %s
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Clase   %s
 
 [005364] INTERFAZ | CLD-005554
 ORIGINAL:
@@ -34022,8 +34022,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [005548] INTERFAZ | CLD-005738
 ORIGINAL:
 Select job.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Seleccione un trabajo.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Selecciona una clase.
 
 [005549] INTERFAZ | CLD-005739
 ORIGINAL:
@@ -35823,8 +35823,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [005801] INTERFAZ | CLD-005991
 ORIGINAL:
 No job that can use %s!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Ningún trabajo que pueda usar %s!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡No hay ninguna clase que pueda usar %s!
 
 [005802] INTERFAZ | CLD-005992
 ORIGINAL:
@@ -38064,8 +38064,8 @@ Talón delantero
 [006165] EFECTOS ARMADURAS | CLD-006396
 ORIGINAL:
 Ward
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pabellón
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Protección
 
 [006166] EFECTOS ARMADURAS | CLD-006397
 ORIGINAL:
@@ -38980,8 +38980,8 @@ Góndola
 [006316] NOMBRES JEFES | CLD-006547
 ORIGINAL:
 Wiiiich
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Guau
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Bruuuuja
 
 [006317] NOMBRES JEFES | CLD-006548
 ORIGINAL:
@@ -53626,8 +53626,8 @@ Talón izquierdo
 [008459] EFECTOS ESCUDOS | CLD-008720
 ORIGINAL:
 Ward
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pabellón
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Protección
 
 [008460] EFECTOS ESCUDOS | CLD-008721
 ORIGINAL:
@@ -57375,8 +57375,8 @@ Curación correcta
 [009001] EFECTOS ARMAS | CLD-009217
 ORIGINAL:
 Ward
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pabellón
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Protección
 
 [009002] EFECTOS ARMAS | CLD-009218
 ORIGINAL:

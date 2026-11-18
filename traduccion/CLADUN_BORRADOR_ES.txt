@@ -16,16 +16,16 @@ SCRIPT: scr01.dsf
 ¿Es esta la taberna?
 
 [000002] DIÁLOGO
-Hueles algo agradable que emana de dentro,
+Hueles algo delicioso que viene de dentro,
 
 [000003] DIÁLOGO
-a pesar del cartel de "Cerrado".
+a pesar del cartel de «Cerrado».
 
 [000004] DIÁLOGO
 Es la puerta por la que entramos.
 
 [000005] DIÁLOGO
-¿Esto nos lleva a otro mundo?
+¿Conduce esto a otro mundo?
 
 [000006] DIÁLOGO
 Mejor no tentar al destino.
@@ -34,10 +34,10 @@ Mejor no tentar al destino.
 Está demasiado oscuro para ver dentro.
 
 [000008] DIÁLOGO
-Será mejor que escuche a Pudding por ahora.
+Será mejor hacerle caso a Pudding por ahora.
 
 [000009] DIÁLOGO
-Ve aquí para regresar a tu mundo y ver el final.
+Ve allí para volver a tu mundo y ver el final.
 
 [000010] DIÁLOGO
 ¿Ya guardaste?
@@ -88,7 +88,7 @@ Hiyoji
 ¡Tu fama supera los 30!
 
 [000026] DIÁLOGO
-Aquí puedes usar esto.
+Toma, puedes usar esto.
 
 [000027] DIÁLOGO
 ¡Has conseguido el artefacto legendario «Widen»!
@@ -148,7 +148,7 @@ el «Diccionario» del «Menú».
 Hiyoji
 
 [000046] DIÁLOGO
-Bueno, hola, ⑨!
+¡Hola, ⑨!
 
 [000047] DIÁLOGO
 ¡Por favor, úsalo!
@@ -166,7 +166,7 @@ Hiyoji
 Hiyoji
 
 [000052] DIÁLOGO
-¡Guau! ⑨!
+¡Caray, ⑨!
 
 [000053] DIÁLOGO
 ¡Me aseguré de que puedas comprar en la tienda armas
@@ -181,10 +181,10 @@ Hiyoji
 ¡Ah, hola, ⑨!
 
 [000057] DIÁLOGO
-¿Te gustaría un masaje?
+¿Te apetece un masaje?
 
 [000058] DIÁLOGO
-Espero que podamos ser amigos. Je, je.
+Espero que nos llevemos bien. Je, je.
 
 [000059] PERSONAJE
 Hiyoji
@@ -199,7 +199,7 @@ pero vuelve cuando tu fama supere los 200.
 Hiyoji
 
 [000063] DIÁLOGO
-Me emocioné demasiado y hablé demasiado.
+Me emocioné y terminé hablando de más.
 
 [000064] DIÁLOGO
 Vuelve cuando tu fama supere los 50.
@@ -217,13 +217,13 @@ No conseguirás nada más
 hasta que tu fama supere los 30.
 
 [000069] DIÁLOGO
-Parece un pozo, pero tiene algo de hollín.
+Parece un pozo, pero tiene hollín.
 
 [000070] DIÁLOGO
-¿Es esto una chimenea en medio de un campo?
+¿Una chimenea en medio de un campo?
 
 [000071] DIÁLOGO
-¿Es esto simplemente un pozo muy, muy sucio?
+¿O será un pozo muy, muy sucio?
 
 [000072] DIÁLOGO
 No parece haber agua por ninguna parte.
@@ -259,16 +259,16 @@ Sí
 No
 
 [000083] DIÁLOGO
-¡Oye! ¿Qué estás haciendo?
+¡Oye! ¿Qué haces?
 
 [000084] DIÁLOGO
-¡Lo haré, así que apártense de mi camino!
+¡Yo me encargo! ¡Fuera de mi camino!
 
 [000085] DIÁLOGO
-¡Oye! ¿Qué estás haciendo?
+¡Oye! ¿Qué haces?
 
 [000086] DIÁLOGO
-¡Lo haré, así que apártense de mi camino!
+¡Yo me encargo! ¡Fuera de mi camino!
 
 [000087] DIÁLOGO
 Es la salida. ¿Regresar a Arcanus Cella?
@@ -316,7 +316,7 @@ Pollita Hiyo
 Pollita Hiyo
 
 [000102] DIÁLOGO
-⑨! ¡Estás aquí!
+¡⑨! ¡Estás aquí!
 
 [000103] DIÁLOGO
 ¡Ven a cambiar de clase!
@@ -328,13 +328,13 @@ Pollita Hiyo
 Pollita Hiyo
 
 [000106] DIÁLOGO
-¡Ahhh! ¡Es ⑨!
+¡Ah! ¡Es ⑨!
 
 [000107] DIÁLOGO
 ¡Ven aquí a cambiar de clase!
 
 [000108] DIÁLOGO
-¡Cada vez que te veo te ves más increíble!
+¡Cada vez que te veo, me pareces más increíble!
 
 [000109] DIÁLOGO
 Hay algo ahí.
@@ -343,13 +343,13 @@ Hay algo ahí.
 Flash Hiyo
 
 [000111] DIÁLOGO
-Puedo tomar fotos en cualquier momento.
+Puedo sacar fotos cuando quiera.
 
 [000112] DIÁLOGO
-¡Simplemente toma la foto que quieras con ⑰!
+¡Saca la foto que quieras con ⑰!
 
 [000113] DIÁLOGO
-¡Simplemente actívalo en las opciones!
+¡Solo tienes que activarlo en las opciones!
 
 [000114] DIÁLOGO
 ¡Aquí tienes un tutorial!
@@ -369,7 +369,7 @@ SCRIPT: scr60ToDemo.dsf
 ==================================================================
 
 [000118] DIÁLOGO
-¡Ahora puedes ir a una nueva mazmorra!
+¡Ya puedes entrar en una nueva mazmorra!
 
 
 ==================================================================
@@ -383,13 +383,13 @@ Si bates un récord en el New-geon,
 desbloquearás un nuevo mapa para desafiar.
 
 [000121] DIÁLOGO
-Dominar el Ran-geon te proporcionará
+Dominar el Ran-geon te dará
 
 [000122] DIÁLOGO
-algunas grandes recompensas.
+unas recompensas estupendas.
 
 [000123] DIÁLOGO
-La letra G está disponible en colores rojo y azul.
+Las G pueden ser rojas o azules.
 
 [000124] DIÁLOGO
 Asagi aparece en muchos juegos.
@@ -398,7 +398,7 @@ Asagi aparece en muchos juegos.
 La máscara es realmente poderosa.
 
 [000126] DIÁLOGO
-Existe un límite estricto para los ataques que utilizan el bastón.
+Los ataques con bastón tienen un límite estricto.
 
 [000127] DIÁLOGO
 La principal función de los bastones es reducir
@@ -407,13 +407,13 @@ La principal función de los bastones es reducir
 el tiempo de lanzamiento de hechizos.
 
 [000129] DIÁLOGO
-Según he oído, el piso 77 del Ran-geon es increíble.
+Dicen que la planta 77 del Ran-geon es increíble.
 
 [000130] DIÁLOGO
-Los monstruos pueden alcanzar hasta el nivel 999.
+Los monstruos pueden llegar hasta LV 999.
 
 [000131] DIÁLOGO
-Puedes llegar hasta el nivel 99.
+Tú puedes llegar hasta LV 99.
 
 [000132] DIÁLOGO
 En el Ran-geon hay muchos Hiyokki.
@@ -455,22 +455,22 @@ que haces con el bastón no cambian.
 Hay pasadizos secretos
 
 [000145] DIÁLOGO
-en las mazmorras, en algún lugar.
+escondidos por las mazmorras.
 
 [000146] DIÁLOGO
 Necesitas «Widen» para ampliar las opciones.
 
 [000147] DIÁLOGO
-Los "escudos" son realmente muy poderosos.
+Los escudos son muy poderosos.
 
 [000148] DIÁLOGO
-Cuando subes de nivel, cuánto aumentan las estadísticas
+Cuánto aumentan tus atributos al subir de nivel
 
 [000149] DIÁLOGO
-Depende mucho de tu nivel.
+depende mucho de tu nivel.
 
 [000150] DIÁLOGO
-Cuanto más alto sea el nivel, más subirán.
+Cuanto mayor sea tu nivel, más aumentarán.
 
 [000151] DIÁLOGO
 Cuando encuentres una cueva,
@@ -1717,7 +1717,7 @@ Intentarás ver hasta dónde puedes llegar.
 Se guardará tu registro de la distancia que has recorrido.
 
 [000564] DIÁLOGO
-Cada vez que atravieses la puerta en la Nueva-geon,
+Cada vez que atravieses la puerta del New-geon,
 
 [000565] DIÁLOGO
 Las cifras de saltos desde el suelo fluctuarán.
@@ -1738,7 +1738,7 @@ Las fluctuaciones del salto al suelo se ajustan a las reglas.
 Asegúrese de evitar los pisos que tengan los mismos dígitos.
 
 [000571] DIÁLOGO
-El Súper Movimiento también está disponible para ti en la Nueva-geon.
+También puedes usar el supermovimiento en el New-geon.
 
 [000572] DIÁLOGO
 Se configurará cada vez que pases por una puerta.
@@ -2107,7 +2107,7 @@ Pondrás a prueba tus habilidades para ver hasta dónde puedes llegar.
 Se guardará el registro de la parada que has alcanzado.
 
 [000694] DIÁLOGO
-Cada vez que atravieses la puerta en la Nueva-geon,
+Cada vez que atravieses la puerta del New-geon,
 
 [000695] DIÁLOGO
 Las cifras de saltos desde el suelo fluctuarán.
@@ -2128,7 +2128,7 @@ Las fluctuaciones del salto al suelo se ajustan a las reglas.
 Asegúrese de evitar los pisos que tengan los mismos dígitos.
 
 [000701] DIÁLOGO
-El Súper Movimiento también está disponible para ti en la Nueva-geon.
+También puedes usar el supermovimiento en el New-geon.
 
 [000702] DIÁLOGO
 Se configurará cada vez que pases por una puerta.
@@ -3043,7 +3043,7 @@ Gato negro
 ¡¿Maullido?!
 
 [000996] DIÁLOGO
-¡Guau!
+¡Vaya!
 
 [000997] PERSONAJE
 Gato negro
@@ -6612,7 +6612,7 @@ SCRIPT: demo1201_00.dsf
 ¡Gracias, vuelva pronto!
 
 [002144] DIÁLOGO
-¡Guau!
+¡Argh!
 
 [002145] DIÁLOGO
 Puaj...
@@ -7009,7 +7009,7 @@ Supongo que este lugar no tendría uno.
 Has vuelto.
 
 [002273] DIÁLOGO
-¡Guau!
+¡Aaaah!
 
 [002274] DIÁLOGO
 Un jonrón.
@@ -7935,7 +7935,7 @@ El suelo de allí. Estoy seguro de que no le importaría.
 si lo usaste como escudo.
 
 [002570] DIÁLOGO
-¡Guau!
+¡Argh!
 
 [002571] DIÁLOGO
 ¡Ahora SÉ que me estás tomando el pelo!
@@ -8411,7 +8411,7 @@ No tengo nada más que hacer que...
 ¿Funcionó?
 
 [002722] DIÁLOGO
-¡Guau!
+¡Argh!
 
 [002723] DIÁLOGO
 ¡Contraataque de escudo verdadero!
@@ -8654,7 +8654,7 @@ No he entrenado nada desde que llegué aquí.
 Y he oído que eres muy bueno con las espadas...
 
 [002798] DIÁLOGO
-¡Guau!
+¡Vaya!
 
 [002799] DIÁLOGO
 No me hice más fuerte como un medio para
@@ -10085,7 +10085,7 @@ Muchas peleas, la mayoría de ellas provocadas por mí.
 A todos y a mí mismo...
 
 [003255] DIÁLOGO
-¡Guau!
+¡Argh!
 
 [003256] DIÁLOGO
 ¡Mi cerebro se está sobrecalentando de tanto pensar!
@@ -13639,7 +13639,7 @@ Voz misteriosa
 Voz misteriosa
 
 [004398] DIÁLOGO
-¡Guau!
+¡Kajajaja!
 
 [004399] DIÁLOGO
 ¡No me engañarás!
@@ -14631,7 +14631,7 @@ Mis elegantes técnicas de escudo
 ...10 horas después...
 
 [004722] DIÁLOGO
-¡Guau!
+¡Argh!
 
 [004723] PERSONAJE
 Fanático del escudo
@@ -16599,7 +16599,7 @@ Correr
 ⑳⑥%3d
 
 [005363] INTERFAZ
-Trabajo %s
+Clase   %s
 
 [005364] INTERFAZ
 (Ranura %s)
@@ -17248,7 +17248,7 @@ ATK%3d　DEF%3d　Maná%3d
 %s
 
 [005548] INTERFAZ
-Seleccione un trabajo.
+Selecciona una clase.
 
 [005549] INTERFAZ
 ⑪ Confirmar
@@ -18116,7 +18116,7 @@ Mazmorra
 ¡Ataca a todos los enemigos en pantalla!
 
 [005801] INTERFAZ
-¡Ningún trabajo que pueda usar %s!
+¡No hay ninguna clase que pueda usar %s!
 
 [005802] INTERFAZ
 %s personas en Magic Circle usaron %s!
@@ -19243,7 +19243,7 @@ Conducto
 Talón delantero
 
 [006165] EFECTOS ARMADURAS
-Pabellón
+Protección
 
 [006166] EFECTOS ARMADURAS
 Resistencia+5
@@ -19706,7 +19706,7 @@ Gato
 Góndola
 
 [006316] NOMBRES JEFES
-Guau
+Bruuuuja
 
 [006317] NOMBRES JEFES
 Césped
@@ -26686,7 +26686,7 @@ Conducto
 Talón izquierdo
 
 [008459] EFECTOS ESCUDOS
-Pabellón
+Protección
 
 [008460] EFECTOS ESCUDOS
 Resistencia+
@@ -28337,7 +28337,7 @@ Conducto
 Curación correcta
 
 [009001] EFECTOS ARMAS
-Pabellón
+Protección
 
 [009002] EFECTOS ARMAS
 Resistencia+5
