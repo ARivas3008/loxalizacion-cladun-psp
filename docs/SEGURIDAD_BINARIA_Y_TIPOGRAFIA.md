@@ -1,3 +1,5 @@
+> **Actualización de seguridad:** el prototipo posterior con 19 glifos ya se generó y superó pruebas binarias; el códec anterior F040–F052 fue sustituido por F5A0–F5B2, para evitar reordenar la tabla. Véase [revisión actual](FUENTE_ES_PROTOTIPO.md). Lo que sigue documenta la fase anterior y conserva sus hallazgos históricos. PPSSPP sigue sin validar.
+
 # Cladun PSP — seguridad binaria, codificación y fuentes (18/11/2026)
 
 ## Resultado comprobado

@@ -1,0 +1,22 @@
+[
+  {
+    "escenario": "otro recurso PSPFS",
+    "resultado": "RECHAZADO",
+    "detalle": "SYS.DAT2"
+  },
+  {
+    "escenario": "cabecera e índice PSPFS",
+    "resultado": "RECHAZADO",
+    "detalle": "nombre de entrada PSPFS"
+  },
+  {
+    "escenario": "un byte de FONT.BIN original",
+    "resultado": "RECHAZADO",
+    "detalle": "registros originales de glifo"
+  },
+  {
+    "escenario": "relleno no autorizado de FONT.ARC",
+    "resultado": "RECHAZADO",
+    "detalle": "bytes no permitidos"
+  }
+]

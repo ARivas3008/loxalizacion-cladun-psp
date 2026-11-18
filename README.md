@@ -1,6 +1,6 @@
 # CLADUN: This Is an RPG! — Localización al español (PSP)
 
-> **Estado:** fuente íntegra de 9.237 textos, borrador español de 9.235 entradas (**196 posteditadas por IA; 9.039 todavía automáticas**). La reinserción completa y las fuentes españolas **no están listas**. Un ensayo de dos cambios superó las comprobaciones de aislamiento binario, sin prueba de PPSSPP.
+> **Estado:** fuente íntegra de 9.237 textos, borrador español de 9.235 entradas (**196 posteditadas por IA; 9.039 todavía automáticas**). La reinserción completa y las fuentes españolas **solo tienen un prototipo binario, sin pruebas visuales**. Un ensayo de dos cambios superó las comprobaciones de aislamiento binario, sin prueba de PPSSPP.
 
 Proyecto de localización de la **edición USA para PSP**. Su objetivo es recuperar, ordenar y revisar **solo contenido textual traducible**: diálogos, elecciones, nombres y descripciones de objetos, personajes, monstruos, habilidades, lugares, menús, avisos, créditos y rótulos presentes en imágenes. **No se publica un listado de instrucciones internas del motor.**
 
@@ -56,12 +56,21 @@ Se conservaron los 9.237 IDs y originales, y se generó un **borrador separado**
 
 - **Glosario canónico:** [`docs/GLOSARIO_CANONICO.md`](docs/GLOSARIO_CANONICO.md). Se corrigieron 130 entradas adicionales, incluyendo Pudding, Widen, personajes de apoyo, bastones y cambio de clase. El resto sigue sin revisión narrativa individual.
 - **Análisis técnico y riesgos:** [`docs/SEGURIDAD_BINARIA_Y_TIPOGRAFIA.md`](docs/SEGURIDAD_BINARIA_Y_TIPOGRAFIA.md).
-- **Codificación reversible de prueba:** [`tools/charset_es.py`](tools/charset_es.py), con 19 caracteres a códigos CP932 PUA F040–F052. **No funciona en el juego hasta parchear la tabla y las imágenes de los glifos.**
+- **Codificación reversible de prueba:** [`tools/charset_es.py`](tools/charset_es.py), con 19 caracteres a códigos CP932 PUA **F5A0–F5B2**, coherentes con la tabla de fuente ampliada. **El renderizado en PPSSPP todavía no está validado.**
 - **Ensayo de inyección aislada:** [`tools/reinsercion_segura_demo.py`](tools/reinsercion_segura_demo.py). No crea ISO distribuible, ni parchea todos los diálogos.
 - **Resultados comprobados:** [`reports/auditoria_binaria_es.json`](reports/auditoria_binaria_es.json). 349 offsets PSPFS intactos y 347 recursos no intervenidos idénticos.
 - **Estado lingüístico/QA:** [`reports/qa_traduccion_es.json`](reports/qa_traduccion_es.json). Todavía falta revisión humana y prueba de PPSSPP.
 
-**Prohibido usar el borrador directamente como parche:** faltan la rasterización de las fuentes, la verificación del cargador de compresión, la reconstrucción de longitudes/punteros y la prueba visual en juego. Los archivos binarios originales continúan intactos.
+**Prohibido usar el borrador directamente como parche:** falta validar el prototipo de fuente en PPSSPP y la verificación del cargador de compresión, la reconstrucción de longitudes/punteros y la prueba visual en juego. Los archivos binarios originales continúan intactos.
+
+## Prototipo de fuente española — 19 caracteres (validación binaria aprobada)
+
+Se corrigió la incompatibilidad entre el códec inicial `F040–F052` y la tabla real de `FONT.BIN`. La versión experimental utiliza **`F5A0–F5B2`**, sin insertar códigos en medio de los 2.721 registros originales.
+
+- [Patcher experimental de fuente](tools/font_es_patch.py) y [verificador independiente](tools/font_es_guard.py): solo para ISO propia, **nunca subir la ISO candidata ni los atlas originales**.
+- [Informe detallado](docs/FUENTE_ES_PROTOTIPO.md): 19 glifos añadidos, 2.721 glifos originales intactos, 348 recursos no relacionados idénticos y 32 bytes de margen.
+- [Informe JSON](reports/fuente_es_19_glifos.json) y [cuatro pruebas negativas](reports/fuente_es_pruebas_negativas.json): el verificador rechaza modificaciones de un solo bit en un recurso ajeno, el índice, entradas antiguas de fuente y relleno.
+- **No se ha probado el renderizado de los nuevos glifos en PPSSPP ni la reinserción del corpus completo.**
 
 ## Cómo trabajar
 
