@@ -1,6 +1,6 @@
 CLADUN: THIS IS AN RPG! (PSP USA)
-COTEJO BILINGÜE ORIGEN / ESPAÑOL
-Borrador con post-edición contextual parcial; no es una localización terminada.
+COTEJO BILINGÜE ORIGINAL / ESPAÑOL
+Los grupos conservan sus IDs, originales y referencias. Revisión contextual parcial.
 
 
 ##################################################################
@@ -927,20 +927,20 @@ Cuanto más alto sea el nivel, más subirán.
 [000151] DIÁLOGO | CLD-000170
 ORIGINAL:
 When you find caves,
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cuando encuentres cuevas,
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Cuando encuentres una cueva,
 
 [000152] DIÁLOGO | CLD-000171
 ORIGINAL:
 only move when it's safe to do so.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Muévase solo cuando sea seguro hacerlo.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+muévete solo cuando sea seguro.
 
 [000153] DIÁLOGO | CLD-000172
 ORIGINAL:
 There are Artifacts, equipment,
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hay artefactos, equipos,
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Hay artefactos, equipo
 
 [000154] DIÁLOGO | CLD-000173
 ORIGINAL:
@@ -951,8 +951,8 @@ y títulos que solo
 [000155] DIÁLOGO | CLD-000174
 ORIGINAL:
 Hiyokki will drop.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hiyokki caerá.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+dejan caer los Hiyokki.
 
 [000156] DIÁLOGO | CLD-000175
 ORIGINAL:
@@ -975,14 +975,14 @@ que escupen fuego o hielo.
 [000159] DIÁLOGO | CLD-000178
 ORIGINAL:
 You can use the shield to cancel out the few frames
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puedes usar el escudo para cancelar los pocos fotogramas
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Puedes usar el escudo para cancelar algunos fotogramas
 
 [000160] DIÁLOGO | CLD-000179
 ORIGINAL:
 of vulnerability you have after attacking.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-de vulnerabilidad que tienes después del ataque.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+de vulnerabilidad después de atacar.
 
 [000161] DIÁLOGO | CLD-000180
 ORIGINAL:
@@ -1011,14 +1011,14 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [000165] DIÁLOGO | CLD-000184
 ORIGINAL:
 There are some monsters who will never
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hay algunos monstruos que nunca...
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Hay monstruos que nunca
 
 [000166] DIÁLOGO | CLD-000185
 ORIGINAL:
 get the "BREAK!" mode.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Obtén el modo "¡BREAK!".
+ESPAÑOL (posteditado_contextualmente_por_IA):
+entran en modo «BREAK!».
 
 [000167] DIÁLOGO | CLD-000186
 ORIGINAL:
@@ -1035,26 +1035,26 @@ debido a propiedades elementales.
 [000169] DIÁLOGO | CLD-000188
 ORIGINAL:
 ①②③④⑤⑥ properties
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-①②③④⑤⑥ propiedades
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los atributos ①②③④⑤⑥
 
 [000170] DIÁLOGO | CLD-000189
 ORIGINAL:
 can be crucial.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-puede ser crucial.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+pueden ser decisivos.
 
 [000171] DIÁLOGO | CLD-000190
 ORIGINAL:
 Charge attacks with axes and special attacks
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ataques de carga con hachas y ataques especiales
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los ataques cargados con hacha y los especiales
 
 [000172] DIÁLOGO | CLD-000191
 ORIGINAL:
 can hit enemies behind walls.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puede alcanzar a los enemigos que se encuentran detrás de las paredes.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+pueden alcanzar a enemigos detrás de las paredes.
 
 [000173] DIÁLOGO | CLD-000192
 ORIGINAL:
@@ -1072,32 +1072,31 @@ La diferencia entre usar y no usar
 ORIGINAL:
 the "Widen" Artifact is like night and day.
 ESPAÑOL (posteditado_contextualmente_por_IA):
-El artefacto "Widen" es como la noche y el día.
-QA: glosario_Widen_por_revisar
+usar el artefacto «Widen» marca una enorme diferencia.
 
 [000176] DIÁLOGO | CLD-000195
 ORIGINAL:
 When you're lost, simply walk along the wall
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cuando te pierdas, simplemente camina a lo largo de la pared.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Si te pierdes, sigue la pared
 
 [000177] DIÁLOGO | CLD-000196
 ORIGINAL:
 and you'll eventually find the goal.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-y finalmente encontrarás la meta.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+hasta encontrar la salida.
 
 [000178] DIÁLOGO | CLD-000197
 ORIGINAL:
 Equip a staff to halve the
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Equipa un bastón para reducir a la mitad la
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Equipa un bastón para reducir a la mitad
 
 [000179] DIÁLOGO | CLD-000198
 ORIGINAL:
 SP Use of magic.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-SP Uso de la magia.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+el consumo de SP de la magia.
 
 [000180] DIÁLOGO | CLD-000199
 ORIGINAL:
@@ -1120,14 +1119,14 @@ depende de su tipo.
 [000183] DIÁLOGO | CLD-000202
 ORIGINAL:
 "E. Recover" can remove any enemy buffs
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-"E. Recuperar" puede eliminar cualquier mejora del enemigo.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+«E. Recover» puede eliminar las mejoras
 
 [000184] DIÁLOGO | CLD-000203
 ORIGINAL:
 they may have.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puede que sí.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+que tengan los enemigos.
 
 [000185] DIÁLOGO | CLD-000204
 ORIGINAL:
@@ -1162,14 +1161,14 @@ a través de la hierba e incluso del limo.
 [000190] DIÁLOGO | CLD-000209
 ORIGINAL:
 No monsters are completely immune
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ningún monstruo es completamente inmune.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Ningún monstruo es totalmente inmune
 
 [000191] DIÁLOGO | CLD-000210
 ORIGINAL:
 to the ⑥ property.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-a la propiedad ⑥.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+a los ataques del atributo ⑥.
 
 [000192] DIÁLOGO | CLD-000211
 ORIGINAL:
@@ -1198,20 +1197,20 @@ Puede que consigas algo bueno.
 [000196] DIÁLOGO | CLD-000215
 ORIGINAL:
 Using the magic "Recover"
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Usando la función mágica "Recuperar"
+ESPAÑOL (posteditado_contextualmente_por_IA):
+La magia «Recover»
 
 [000197] DIÁLOGO | CLD-000216
 ORIGINAL:
 will heal you of your burning state.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-te curará de tu estado de ardor.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+elimina las quemaduras.
 
 [000198] DIÁLOGO | CLD-000217
 ORIGINAL:
 Dragons are wide open for attacks
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los dragones son totalmente vulnerables a los ataques.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los dragones quedan expuestos a los ataques
 
 [000199] DIÁLOGO | CLD-000218
 ORIGINAL:
@@ -1242,31 +1241,30 @@ ORIGINAL:
 has the "Widen" Artifact.
 ESPAÑOL (posteditado_contextualmente_por_IA):
 posee el artefacto "Widen".
-QA: glosario_Widen_por_revisar
 
 [000204] DIÁLOGO | CLD-000223
 ORIGINAL:
 There is a man in the underground chamber
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hay un hombre en la cámara subterránea.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+En la cámara subterránea hay un hombre
 
 [000205] DIÁLOGO | CLD-000224
 ORIGINAL:
 who can gauge your strength.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-quién puede medir tu fuerza.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+que puede medir tu fuerza.
 
 [000206] DIÁLOGO | CLD-000225
 ORIGINAL:
 In Wireless Play, everyone can get
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-En Wireless Play, todos pueden obtener
+ESPAÑOL (posteditado_contextualmente_por_IA):
+En el modo inalámbrico, todos pueden obtener
 
 [000207] DIÁLOGO | CLD-000226
 ORIGINAL:
 a single item simultaneously.
 ESPAÑOL (posteditado_contextualmente_por_IA):
-un solo objeto simultáneamente.
+un objeto a la vez.
 
 [000208] DIÁLOGO | CLD-000227
 ORIGINAL:
@@ -1295,50 +1293,50 @@ Hay algo especial en la estantería de Despina.
 [000212] DIÁLOGO | CLD-000231
 ORIGINAL:
 I am the rumor signboard.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Soy el cartel de los rumores.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Soy el tablón de rumores.
 
 [000213] DIÁLOGO | CLD-000232
 ORIGINAL:
 Even if you die in battle, you level up just a bit.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Aunque mueras en batalla, subes un poco de nivel.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Aunque caigas en combate, ganas algo de EXP.
 
 [000214] DIÁLOGO | CLD-000233
 ORIGINAL:
 You don't completely lose out on everything.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No lo pierdes todo por completo.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+No lo pierdes todo.
 
 [000215] DIÁLOGO | CLD-000234
 ORIGINAL:
 I am the rumor signboard.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Soy el cartel de los rumores.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Soy el tablón de rumores.
 
 [000216] DIÁLOGO | CLD-000235
 ORIGINAL:
 Stuff on me constantly changes.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Las cosas que llevo puestas cambian constantemente.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Mis mensajes cambian constantemente.
 
 [000217] DIÁLOGO | CLD-000236
 ORIGINAL:
 I am a signboard.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Soy un letrero.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Soy un tablón de anuncios.
 
 [000218] DIÁLOGO | CLD-000237
 ORIGINAL:
 I spread rumors and gossip.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Difundo rumores y chismes.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Difundo rumores y cotilleos.
 
 [000219] DIÁLOGO | CLD-000238
 ORIGINAL:
 Glad you decided to read me.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Me alegra que hayas decidido leerme.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Gracias por leerme!
 
 
 ==================================================================
@@ -1366,8 +1364,8 @@ Equipo
 [000223] OPCIÓN | CLD-000242
 ORIGINAL:
 Arcanus Cella
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Celda Arcanus
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Arcanus Cella
 
 [000224] OPCIÓN | CLD-000243
 ORIGINAL:
@@ -1408,8 +1406,8 @@ Arma: Espada
 [000230] OPCIÓN | CLD-000249
 ORIGINAL:
 Weapon - Blunt
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Arma - Contundente
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Arma: contundente
 
 [000231] OPCIÓN | CLD-000250
 ORIGINAL:
@@ -1420,8 +1418,8 @@ Arma: bastón
 [000232] OPCIÓN | CLD-000251
 ORIGINAL:
 Shield
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Blindaje
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Escudo
 
 [000233] OPCIÓN | CLD-000252
 ORIGINAL:
@@ -1499,19 +1497,19 @@ Te permite usar ataques a distancia.
 ORIGINAL:
 Once the Staff Gauge on the bottom right
 ESPAÑOL (posteditado_contextualmente_por_IA):
-Una vez que el indicador del bastón esté en la parte inferior derecha
+Cuando se agote el indicador del bastón
 
 [000246] DIÁLOGO | CLD-000265
 ORIGINAL:
 is depleted, you must use melee attacks.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Si se agota, debes usar ataques cuerpo a cuerpo.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+de la esquina inferior derecha, tendrás que luchar cuerpo a cuerpo.
 
 [000247] DIÁLOGO | CLD-000266
 ORIGINAL:
 The Staff Gauge gradually recovers automatically.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El indicador de nivel se recupera gradualmente de forma automática.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+El indicador del bastón se recarga poco a poco.
 
 [000248] DIÁLOGO | CLD-000267
 ORIGINAL:
@@ -1552,8 +1550,8 @@ Sin embargo, su eficacia disminuye con el uso.
 [000254] DIÁLOGO | CLD-000273
 ORIGINAL:
 There are no stat differences between vendors.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No existen diferencias estadísticas entre los proveedores.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los vendedores no alteran las estadísticas.
 
 [000255] DIÁLOGO | CLD-000274
 ORIGINAL:
@@ -1564,8 +1562,8 @@ La armadura puede ser compartida con todos.
 [000256] DIÁLOGO | CLD-000275
 ORIGINAL:
 All equipment have titles.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Todos los equipos tienen título de propiedad.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Todo el equipo tiene títulos.
 
 [000257] DIÁLOGO | CLD-000276
 ORIGINAL:
@@ -1576,20 +1574,20 @@ Normal es el estado predeterminado.
 [000258] DIÁLOGO | CLD-000277
 ORIGINAL:
 All titles have the ability
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Todos los títulos tienen la capacidad
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los efectos de los títulos
 
 [000259] DIÁLOGO | CLD-000278
 ORIGINAL:
 to stack with one another.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-para apilarlos uno a otro.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+pueden acumularse entre sí.
 
 [000260] DIÁLOGO | CLD-000279
 ORIGINAL:
 All equipment has ⑧ weight attributes.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Todos los equipos tienen atributos de peso ⑧.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Todo el equipo tiene un atributo de peso ⑧.
 
 [000261] DIÁLOGO | CLD-000280
 ORIGINAL:
@@ -1606,8 +1604,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [000263] OPCIÓN | CLD-000282
 ORIGINAL:
 Shops
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-tiendas
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Tiendas
 
 [000264] OPCIÓN | CLD-000283
 ORIGINAL:
@@ -1630,32 +1628,32 @@ Volver
 [000267] DIÁLOGO | CLD-000286
 ORIGINAL:
 Shops have all kinds of equipment
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Las tiendas tienen todo tipo de equipos.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+En las tiendas encontrarás todo tipo de equipo
 
 [000268] DIÁLOGO | CLD-000287
 ORIGINAL:
 available for you to purchase.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Disponible para su compra.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+a la venta.
 
 [000269] DIÁLOGO | CLD-000288
 ORIGINAL:
 Powerful Artifacts are rarely dropped by
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los artefactos poderosos rara vez son soltados por
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los enemigos rara vez dejan caer artefactos poderosos,
 
 [000270] DIÁLOGO | CLD-000289
 ORIGINAL:
 enemies, so you should purchase those here.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-enemigos, así que deberías comprarlos aquí.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+así que conviene comprarlos aquí.
 
 [000271] DIÁLOGO | CLD-000290
 ORIGINAL:
 You can create new characters
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puedes crear nuevos personajes
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Puedes crear personajes nuevos
 
 [000272] DIÁLOGO | CLD-000291
 ORIGINAL:
@@ -1678,8 +1676,8 @@ Así que asegúrate de aprovechar esto.
 [000275] DIÁLOGO | CLD-000294
 ORIGINAL:
 End the game through the treehole in the southeast.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Termina el juego a través del hueco del árbol en el sureste.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Para terminar la partida, entra por el agujero del árbol del sureste.
 
 [000276] DIÁLOGO | CLD-000295
 ORIGINAL:
@@ -1708,8 +1706,8 @@ Tesoro
 [000280] OPCIÓN | CLD-000299
 ORIGINAL:
 Enemy Colors
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Colores enemigos
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Colores de enemigos
 
 [000281] OPCIÓN | CLD-000300
 ORIGINAL:
@@ -1726,20 +1724,20 @@ Volver
 [000283] DIÁLOGO | CLD-000302
 ORIGINAL:
 There are traps placed around the dungeon.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hay trampas colocadas alrededor de la mazmorra.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Hay trampas repartidas por las mazmorras.
 
 [000284] DIÁLOGO | CLD-000303
 ORIGINAL:
 Most traps will activate when stepped on,
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La mayoría de las trampas se activarán al pisarlas,
+ESPAÑOL (posteditado_contextualmente_por_IA):
+La mayoría se activan cuando las pisas
 
 [000285] DIÁLOGO | CLD-000304
 ORIGINAL:
 causing balls and such to be shot at you.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-provocando que te disparen bolas y cosas así.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+y disparan bolas u otros proyectiles.
 
 [000286] DIÁLOGO | CLD-000305
 ORIGINAL:
@@ -1762,8 +1760,8 @@ incluso generan enemigos.
 [000289] DIÁLOGO | CLD-000308
 ORIGINAL:
 Watch out for traps under grass or ice.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Cuidado con las trampas que pueden estar debajo de la hierba o el hielo!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Ojo con las trampas ocultas bajo la hierba o el hielo!
 
 [000290] DIÁLOGO | CLD-000309
 ORIGINAL:
@@ -1792,8 +1790,8 @@ Los negros... son especiales.
 [000294] DIÁLOGO | CLD-000313
 ORIGINAL:
 Each enemy has attributes based on colors.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cada enemigo tiene atributos basados ​​en colores.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Cada enemigo tiene atributos asociados a su color.
 
 [000295] DIÁLOGO | CLD-000314
 ORIGINAL:
@@ -1816,14 +1814,14 @@ Blanco: Alto HP, DEF
 [000298] DIÁLOGO | CLD-000317
 ORIGINAL:
 Red: ④ Element. Absorbs fire.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Rojo: ④ Elemento. Absorbe el fuego.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Rojo: elemento ④. Absorbe fuego.
 
 [000299] DIÁLOGO | CLD-000318
 ORIGINAL:
 Blue: ⑤ Element. Does not slip. Absorbs ice.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Azul: ⑤ Elemento. No resbala. Absorbe el hielo.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Azul: elemento ⑤. No resbala y absorbe hielo.
 
 [000300] DIÁLOGO | CLD-000319
 ORIGINAL:
@@ -1840,56 +1838,56 @@ Pulsa el botón ⑯ en la mazmorra para ver
 [000302] DIÁLOGO | CLD-000321
 ORIGINAL:
 your temporary EXP.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-tu EXP temporal.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+tu EXP provisional.
 
 [000303] DIÁLOGO | CLD-000322
 ORIGINAL:
 When you reach the Results Screen, that EXP
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cuando llegues a la pantalla de resultados, esa EXP
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Al llegar a la pantalla de resultados, esa EXP
 
 [000304] DIÁLOGO | CLD-000323
 ORIGINAL:
 will be distributed among your party.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-se distribuirá entre los miembros de tu grupo.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+se repartirá entre tu grupo.
 
 [000305] DIÁLOGO | CLD-000324
 ORIGINAL:
 A high level character won't get much EXP from
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Un personaje de alto nivel no obtendrá mucha EXP de
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Un personaje de nivel alto obtiene poca EXP
 
 [000306] DIÁLOGO | CLD-000325
 ORIGINAL:
 defeating low level enemies. But, in the case of the
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-derrotando enemigos de bajo nivel. Pero, en el caso de la
+ESPAÑOL (posteditado_contextualmente_por_IA):
+al derrotar a enemigos de nivel bajo. En cambio,
 
 [000307] DIÁLOGO | CLD-000326
 ORIGINAL:
 opposite happening, they will get lots of EXP.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Si ocurre lo contrario, obtendrán mucha EXP.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+si derrota a enemigos de nivel superior, gana mucha EXP.
 
 [000308] DIÁLOGO | CLD-000327
 ORIGINAL:
 If the main and sub do not have the same level,
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Si el principal y el secundario no tienen el mismo nivel,
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Si el personaje principal y los de apoyo tienen distintos niveles,
 
 [000309] DIÁLOGO | CLD-000328
 ORIGINAL:
 the EXP will be distributed accordingly.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La EXP se distribuirá en consecuencia.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+la EXP se reparte en consecuencia.
 
 [000310] DIÁLOGO | CLD-000329
 ORIGINAL:
 What do you want to know about Magic Circles?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Qué quieres saber sobre los Círculos Mágicos?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Qué quieres saber de los Círculos mágicos?
 
 [000311] OPCIÓN | CLD-000330
 ORIGINAL:
@@ -1906,8 +1904,8 @@ Personaje principal
 [000313] OPCIÓN | CLD-000332
 ORIGINAL:
 Sub Character
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Personaje secundario
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Personaje de apoyo
 
 [000314] OPCIÓN | CLD-000333
 ORIGINAL:
@@ -1918,21 +1916,20 @@ Artefacto
 [000315] OPCIÓN | CLD-000334
 ORIGINAL:
 Magic/Ability Space
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Espacio de magia/habilidad
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Casilla de magia/habilidad
 
 [000316] OPCIÓN | CLD-000335
 ORIGINAL:
 Widening
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 Ampliación
-QA: glosario_Widen_por_revisar
 
 [000317] OPCIÓN | CLD-000336
 ORIGINAL:
 Fixed Space
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Espacio fijo
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Casilla fija
 
 [000318] OPCIÓN | CLD-000337
 ORIGINAL:
@@ -1943,32 +1940,32 @@ Volver
 [000319] DIÁLOGO | CLD-000338
 ORIGINAL:
 This is a spell where the sub powers up the main
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Este es un hechizo donde el sub potencia al principal.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Con este hechizo, un personaje de apoyo
 
 [000320] DIÁLOGO | CLD-000339
 ORIGINAL:
 by cheering him/her on.
 ESPAÑOL (posteditado_contextualmente_por_IA):
-que refuerza al personaje principal.
+anima y fortalece al personaje principal.
 
 [000321] DIÁLOGO | CLD-000340
 ORIGINAL:
 Subs consume Mana to activate
 ESPAÑOL (posteditado_contextualmente_por_IA):
-Los personajes de apoyo consumen maná para activar
+Los personajes de apoyo gastan maná para activar
 
 [000322] DIÁLOGO | CLD-000341
 ORIGINAL:
 Artifacts, which will then,
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Artefactos, que luego,
+ESPAÑOL (posteditado_contextualmente_por_IA):
+artefactos, que a su vez
 
 [000323] DIÁLOGO | CLD-000342
 ORIGINAL:
 in turn, power up the main.
 ESPAÑOL (posteditado_contextualmente_por_IA):
-y aumentarán las capacidades del personaje principal.
+fortalecen al personaje principal.
 
 [000324] DIÁLOGO | CLD-000343
 ORIGINAL:
@@ -1986,19 +1983,19 @@ Cuando caen todos los personajes de apoyo,
 ORIGINAL:
 the main's HP will display.
 ESPAÑOL (posteditado_contextualmente_por_IA):
-se muestra la vida del personaje principal.
+se muestra el HP del personaje principal.
 
 [000327] DIÁLOGO | CLD-000346
 ORIGINAL:
 When the main gets knocked out, it's Game Over.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cuando el personaje principal queda fuera de combate, se acaba el juego.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Si cae el personaje principal, se termina la partida.
 
 [000328] DIÁLOGO | CLD-000347
 ORIGINAL:
 They are the shields who protect the main.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Son los escudos que protegen al núcleo.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Son los escudos que protegen al personaje principal.
 
 [000329] DIÁLOGO | CLD-000348
 ORIGINAL:
@@ -2010,31 +2007,31 @@ Recibir daño en la batalla
 ORIGINAL:
 will cause the subs to lose their HP.
 ESPAÑOL (posteditado_contextualmente_por_IA):
-hace que los personajes de apoyo pierdan PV.
+hace que los personajes de apoyo pierdan HP.
 
 [000331] DIÁLOGO | CLD-000350
 ORIGINAL:
 There is an outer layer and inner layer of
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hay una capa exterior y una capa interior de
+ESPAÑOL (posteditado_contextualmente_por_IA):
+El Círculo mágico tiene capas exteriores e interiores
 
 [000332] DIÁLOGO | CLD-000351
 ORIGINAL:
 Sub Character Space in the Magic Circle.
 ESPAÑOL (posteditado_contextualmente_por_IA):
-Casilla del personaje de apoyo en el Círculo mágico.
+para las casillas de personajes de apoyo.
 
 [000333] DIÁLOGO | CLD-000352
 ORIGINAL:
 The subs in the outer layer display first.
 ESPAÑOL (posteditado_contextualmente_por_IA):
-Se muestran primero los personajes de apoyo de la capa exterior.
+Primero se muestran los personajes de la capa exterior.
 
 [000334] DIÁLOGO | CLD-000353
 ORIGINAL:
 The way the main faces corresponds to their positions.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La forma en que los rostros principales se corresponden con sus posiciones.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+La orientación del protagonista depende de sus posiciones.
 
 [000335] DIÁLOGO | CLD-000354
 ORIGINAL:
@@ -2057,26 +2054,26 @@ Cuando un personaje de apoyo cae, el artefacto
 [000338] DIÁLOGO | CLD-000357
 ORIGINAL:
 he/she activated will
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-él/ella activó voluntad
+ESPAÑOL (posteditado_contextualmente_por_IA):
+que había activado
 
 [000339] DIÁLOGO | CLD-000358
 ORIGINAL:
 essentially become nullified.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-esencialmente quedan anulados.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+queda desactivado.
 
 [000340] DIÁLOGO | CLD-000359
 ORIGINAL:
 Artifacts can be placed
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los artefactos se pueden colocar
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Puedes colocar artefactos
 
 [000341] DIÁLOGO | CLD-000360
 ORIGINAL:
 in Artifact Spaces.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-en Espacios de Artefactos.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+en las casillas para artefactos.
 
 [000342] DIÁLOGO | CLD-000361
 ORIGINAL:
@@ -2093,143 +2090,140 @@ para activar distintos artefactos.
 [000344] DIÁLOGO | CLD-000363
 ORIGINAL:
 Artifacts cannot be activated if there is no path
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los artefactos no se pueden activar si no hay un camino.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los artefactos no pueden activarse sin un camino
 
 [000345] DIÁLOGO | CLD-000364
 ORIGINAL:
 connected to it.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-conectado a él.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+que los conecte.
 
 [000346] DIÁLOGO | CLD-000365
 ORIGINAL:
 Only the Artifact Anywhere Artifact is
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Solo el Artefacto en cualquier lugar Artefacto es
+ESPAÑOL (posteditado_contextualmente_por_IA):
+El artefacto «Artifact Anywhere»
 
 [000347] DIÁLOGO | CLD-000366
 ORIGINAL:
 exempt to this rule.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Exentos de esta regla.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+es la única excepción a esa regla.
 
 [000348] DIÁLOGO | CLD-000367
 ORIGINAL:
 Place Artifacts that boost Magic/Abilities here.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Coloca aquí los artefactos que potencian la magia o las habilidades.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Aquí puedes colocar artefactos que mejoren la magia o las habilidades.
 
 [000349] DIÁLOGO | CLD-000368
 ORIGINAL:
 Ability Boost, SP Consumption Reduction,
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mejora de habilidades, reducción del consumo de SP,
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Entre ellos hay mejoras de habilidad, reducción del consumo de SP
 
 [000350] DIÁLOGO | CLD-000369
 ORIGINAL:
 and Casting Time Reduction, are among those.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-y la reducción del tiempo de colada, se encuentran entre ellas.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+y reducción del tiempo de lanzamiento.
 
 [000351] DIÁLOGO | CLD-000370
 ORIGINAL:
 Placing Artifacts in the same slot will allow
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Colocar artefactos en la misma ranura permitirá
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Colocar varios artefactos en una misma casilla
 
 [000352] DIÁLOGO | CLD-000371
 ORIGINAL:
 effects to stack.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-efectos apilar.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+permite acumular sus efectos.
 
 [000353] DIÁLOGO | CLD-000372
 ORIGINAL:
 Spaces with 'Widen' can double
 ESPAÑOL (posteditado_contextualmente_por_IA):
-Los espacios con 'Widen' pueden duplicarse
-QA: glosario_Widen_por_revisar
+Las casillas con «Widen» pueden duplicar
 
 [000354] DIÁLOGO | CLD-000373
 ORIGINAL:
 the effect of any Artifacts in it.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-el efecto de cualquier artefacto que contenga.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+el efecto de los artefactos que contienen.
 
 [000355] DIÁLOGO | CLD-000374
 ORIGINAL:
 Placing multiple Widen Artifacts in the same space
 ESPAÑOL (posteditado_contextualmente_por_IA):
-Colocar varios artefactos de Widen en el mismo espacio.
-QA: glosario_Widen_por_revisar
+Si colocas varios «Widen» en una misma casilla,
 
 [000356] DIÁLOGO | CLD-000375
 ORIGINAL:
 will double, triple, or quadruple the effects.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-duplicará, triplicará o cuadruplicará los efectos.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+duplicarás, triplicarás o cuadruplicarás sus efectos.
 
 [000357] DIÁLOGO | CLD-000376
 ORIGINAL:
 However, it will also consume Mana proportionately.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sin embargo, también consumirá maná proporcionalmente.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Eso sí, el consumo de maná aumenta en proporción.
 
 [000358] DIÁLOGO | CLD-000377
 ORIGINAL:
 Placing a Widen on a Magic/Ability Space will
 ESPAÑOL (posteditado_contextualmente_por_IA):
-Colocar un Widen en un Espacio de Magia/Habilidad
-QA: glosario_Widen_por_revisar
+Si colocas un «Widen» en una casilla de magia/habilidad,
 
 [000359] DIÁLOGO | CLD-000378
 ORIGINAL:
 widen the range of the Magic/Ability.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-ampliar el alcance de la Magia/Habilidad.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+ampliarás el alcance de la magia o habilidad.
 
 [000360] DIÁLOGO | CLD-000379
 ORIGINAL:
 There are Fixed Spaces that have been set
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hay espacios fijos que se han establecido
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Algunas casillas fijas vienen
 
 [000361] DIÁLOGO | CLD-000380
 ORIGINAL:
 by default on the Magic Circle.
 ESPAÑOL (posteditado_contextualmente_por_IA):
-Por defecto en el Círculo mágico.
+predeterminadas en el Círculo mágico.
 
 [000362] DIÁLOGO | CLD-000381
 ORIGINAL:
 Defend: Take sub character's damage.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Defender: Recibe el daño del personaje secundario.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Defender: recibe el daño de un personaje de apoyo.
 
 [000363] DIÁLOGO | CLD-000382
 ORIGINAL:
 HP -X: HP -X% of sub characters.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-HP -X: HP -X% de los subcaracteres.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+HP -X: reduce el HP de los personajes de apoyo en X%.
 
 [000364] DIÁLOGO | CLD-000383
 ORIGINAL:
 Scatter X: Disperses X% of damage to subs.
 ESPAÑOL (posteditado_contextualmente_por_IA):
-Dispersión X: Dispersa un X% del daño a los personajes de apoyo.
+Dispersión X: reparte X% del daño entre los personajes de apoyo.
 
 [000365] DIÁLOGO | CLD-000384
 ORIGINAL:
 Double Death: Take out everyone else when dying.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Doble muerte: Elimina a todos los demás al morir.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Muerte doble: al morir, derriba a los demás.
 
 [000366] DIÁLOGO | CLD-000385
 ORIGINAL:
 Mana xX: Provides a multiplier for your current Mana.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mana xX: Proporciona un multiplicador para tu Maná actual.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Maná xX: multiplica tu maná actual.
 
 [000367] DIÁLOGO | CLD-000386
 ORIGINAL:
@@ -2294,8 +2288,8 @@ Saltar te permite superar las trampas.
 [000377] DIÁLOGO | CLD-000396
 ORIGINAL:
 Press the ⑯ button to open the Menu.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pulse el botón ⑯ para abrir el menú.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Pulsa el botón ⑯ para abrir el menú.
 
 [000378] DIÁLOGO | CLD-000397
 ORIGINAL:
@@ -2318,8 +2312,8 @@ El dinero y la EXP que hayas obtenido se reducirán a la mitad.
 [000381] DIÁLOGO | CLD-000400
 ORIGINAL:
 Weapons you found will be confiscated.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Las armas que encuentre serán confiscadas.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Las armas que encuentres serán confiscadas.
 
 [000382] DIÁLOGO | CLD-000401
 ORIGINAL:
@@ -2336,14 +2330,14 @@ tu magia o habilidad.
 [000384] DIÁLOGO | CLD-000403
 ORIGINAL:
 You will fill your gauge, granting you the ability
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Llenarás tu indicador, lo que te otorgará la capacidad.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Llena el indicador para poder
 
 [000385] DIÁLOGO | CLD-000404
 ORIGINAL:
 to use magic/ability if you have sufficient SP.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-usar magia/habilidad si tienes suficientes SP.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+usar magia o habilidades si tienes suficiente SP.
 
 [000386] DIÁLOGO | CLD-000405
 ORIGINAL:
@@ -2366,8 +2360,8 @@ Equipo
 [000389] OPCIÓN | CLD-000408
 ORIGINAL:
 Arcanus Cella
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Celda Arcanus
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Arcanus Cella
 
 [000390] OPCIÓN | CLD-000409
 ORIGINAL:
@@ -2390,8 +2384,8 @@ Controles
 [000393] OPCIÓN | CLD-000412
 ORIGINAL:
 New-geon
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Nueva geoda
+ESPAÑOL (posteditado_contextualmente_por_IA):
+New-geon
 
 [000394] OPCIÓN | CLD-000413
 ORIGINAL:
@@ -2414,8 +2408,8 @@ Arma: Espada
 [000397] OPCIÓN | CLD-000416
 ORIGINAL:
 Weapon - Blunt
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Arma - Contundente
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Arma: contundente
 
 [000398] OPCIÓN | CLD-000417
 ORIGINAL:
@@ -2426,8 +2420,8 @@ Arma: bastón
 [000399] OPCIÓN | CLD-000418
 ORIGINAL:
 Shield
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Blindaje
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Escudo
 
 [000400] OPCIÓN | CLD-000419
 ORIGINAL:
@@ -2505,13 +2499,13 @@ Te permite usar ataques a distancia.
 ORIGINAL:
 Once the Staff Gauge on the bottom right
 ESPAÑOL (posteditado_contextualmente_por_IA):
-Una vez que el indicador del bastón esté en la parte inferior derecha
+Cuando se agote el indicador del bastón
 
 [000413] DIÁLOGO | CLD-000432
 ORIGINAL:
 is depleted, you must use melee attacks.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Si se agota, debes usar ataques cuerpo a cuerpo.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+de la esquina inferior derecha, tendrás que luchar cuerpo a cuerpo.
 
 [000414] DIÁLOGO | CLD-000433
 ORIGINAL:
@@ -2528,8 +2522,8 @@ Los elementos se determinan en función del tipo de bastón.
 [000416] DIÁLOGO | CLD-000435
 ORIGINAL:
 The Staff Gauge gradually recovers automatically.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El indicador de nivel se recupera gradualmente de forma automática.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+El indicador del bastón se recarga poco a poco.
 
 [000417] DIÁLOGO | CLD-000436
 ORIGINAL:
@@ -2558,8 +2552,8 @@ Sin embargo, su eficacia disminuye con el uso.
 [000421] DIÁLOGO | CLD-000440
 ORIGINAL:
 There are no stat differences between vendors.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No existen diferencias estadísticas entre los proveedores.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Los vendedores no alteran las estadísticas.
 
 [000422] DIÁLOGO | CLD-000441
 ORIGINAL:
@@ -2570,8 +2564,8 @@ La armadura puede ser compartida con todos.
 [000423] DIÁLOGO | CLD-000442
 ORIGINAL:
 All equipment have titles.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Todos los equipos tienen título de propiedad.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Todo el equipo tiene títulos.
 
 [000424] DIÁLOGO | CLD-000443
 ORIGINAL:
@@ -2582,20 +2576,20 @@ Normal es el estado predeterminado.
 [000425] DIÁLOGO | CLD-000444
 ORIGINAL:
 All titles have the ability
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Todos los títulos tienen la capacidad
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los efectos de los títulos
 
 [000426] DIÁLOGO | CLD-000445
 ORIGINAL:
 to stack with one another.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-para apilarlos uno a otro.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+pueden acumularse entre sí.
 
 [000427] DIÁLOGO | CLD-000446
 ORIGINAL:
 All equipment has ⑧ weight attributes.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Todos los equipos tienen atributos de peso ⑧.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Todo el equipo tiene un atributo de peso ⑧.
 
 [000428] DIÁLOGO | CLD-000447
 ORIGINAL:
@@ -2636,32 +2630,32 @@ Volver
 [000434] DIÁLOGO | CLD-000453
 ORIGINAL:
 Shops have all kinds of equipment
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Las tiendas tienen todo tipo de equipos.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+En las tiendas encontrarás todo tipo de equipo
 
 [000435] DIÁLOGO | CLD-000454
 ORIGINAL:
 available for you to purchase.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Disponible para su compra.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+a la venta.
 
 [000436] DIÁLOGO | CLD-000455
 ORIGINAL:
 Powerful Artifacts are rarely dropped by
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los artefactos poderosos rara vez son soltados por
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Los enemigos rara vez dejan caer artefactos poderosos,
 
 [000437] DIÁLOGO | CLD-000456
 ORIGINAL:
 enemies, so you should purchase those here.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-enemigos, así que deberías comprarlos aquí.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+así que conviene comprarlos aquí.
 
 [000438] DIÁLOGO | CLD-000457
 ORIGINAL:
 You can create new characters
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puedes crear nuevos personajes
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Puedes crear personajes nuevos
 
 [000439] DIÁLOGO | CLD-000458
 ORIGINAL:
@@ -2684,8 +2678,8 @@ Así que asegúrate de aprovechar esto.
 [000442] DIÁLOGO | CLD-000461
 ORIGINAL:
 End the game through the treehole in the southeast.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Termina el juego a través del hueco del árbol en el sureste.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Para terminar la partida, entra por el agujero del árbol del sureste.
 
 [000443] DIÁLOGO | CLD-000462
 ORIGINAL:
@@ -2714,8 +2708,8 @@ Tesoro
 [000447] OPCIÓN | CLD-000466
 ORIGINAL:
 Enemy Colors
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Colores enemigos
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Colores de enemigos
 
 [000448] OPCIÓN | CLD-000467
 ORIGINAL:
@@ -2732,20 +2726,20 @@ Volver
 [000450] DIÁLOGO | CLD-000469
 ORIGINAL:
 There are traps placed around the dungeon.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hay trampas colocadas alrededor de la mazmorra.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Hay trampas repartidas por las mazmorras.
 
 [000451] DIÁLOGO | CLD-000470
 ORIGINAL:
 Most traps will activate when stepped on,
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La mayoría de las trampas se activarán al pisarlas,
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+La mayoría se activan cuando las pisas
 
 [000452] DIÁLOGO | CLD-000471
 ORIGINAL:
 causing balls and such to be shot at you.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-provocando que te disparen bolas y cosas así.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+y disparan bolas u otros proyectiles.
 
 [000453] DIÁLOGO | CLD-000472
 ORIGINAL:
@@ -2768,8 +2762,8 @@ incluso generan enemigos.
 [000456] DIÁLOGO | CLD-000475
 ORIGINAL:
 Watch out for traps under grass or ice.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Cuidado con las trampas que pueden estar debajo de la hierba o el hielo!
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+¡Ojo con las trampas ocultas bajo la hierba o el hielo!
 
 [000457] DIÁLOGO | CLD-000476
 ORIGINAL:
@@ -2798,8 +2792,8 @@ Los negros... son especiales.
 [000461] DIÁLOGO | CLD-000480
 ORIGINAL:
 Each enemy has attributes based on colors.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cada enemigo tiene atributos basados ​​en colores.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Cada enemigo tiene atributos asociados a su color.
 
 [000462] DIÁLOGO | CLD-000481
 ORIGINAL:
@@ -2822,14 +2816,14 @@ Blanco: Alto HP, DEF
 [000465] DIÁLOGO | CLD-000484
 ORIGINAL:
 Red: ④ Element. Absorbs fire.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Rojo: ④ Elemento. Absorbe el fuego.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Rojo: elemento ④. Absorbe fuego.
 
 [000466] DIÁLOGO | CLD-000485
 ORIGINAL:
 Blue: ⑤ Element. Does not slip. Absorbs ice.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Azul: ⑤ Elemento. No resbala. Absorbe el hielo.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Azul: elemento ⑤. No resbala y absorbe hielo.
 
 [000467] DIÁLOGO | CLD-000486
 ORIGINAL:
@@ -2846,56 +2840,56 @@ Pulsa el botón ⑯ en la mazmorra para ver
 [000469] DIÁLOGO | CLD-000488
 ORIGINAL:
 your temporary EXP.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-tu EXP temporal.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+tu EXP provisional.
 
 [000470] DIÁLOGO | CLD-000489
 ORIGINAL:
 When you reach the Results Screen, that EXP
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cuando llegues a la pantalla de resultados, esa EXP
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Al llegar a la pantalla de resultados, esa EXP
 
 [000471] DIÁLOGO | CLD-000490
 ORIGINAL:
 will be distributed among your party.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-se distribuirá entre los miembros de tu grupo.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+se repartirá entre tu grupo.
 
 [000472] DIÁLOGO | CLD-000491
 ORIGINAL:
 A high level character won't get much EXP from
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Un personaje de alto nivel no obtendrá mucha EXP de
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Un personaje de nivel alto obtiene poca EXP
 
 [000473] DIÁLOGO | CLD-000492
 ORIGINAL:
 defeating low level enemies. But, in the case of the
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-derrotando enemigos de bajo nivel. Pero, en el caso de la
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+al derrotar a enemigos de nivel bajo. En cambio,
 
 [000474] DIÁLOGO | CLD-000493
 ORIGINAL:
 opposite happening, they will get lots of EXP.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Si ocurre lo contrario, obtendrán mucha EXP.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+si derrota a enemigos de nivel superior, gana mucha EXP.
 
 [000475] DIÁLOGO | CLD-000494
 ORIGINAL:
 If the main and sub do not have the same level,
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Si el principal y el secundario no tienen el mismo nivel,
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Si el personaje principal y los de apoyo tienen distintos niveles,
 
 [000476] DIÁLOGO | CLD-000495
 ORIGINAL:
 the EXP will be distributed accordingly.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La EXP se distribuirá en consecuencia.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+la EXP se reparte en consecuencia.
 
 [000477] DIÁLOGO | CLD-000496
 ORIGINAL:
 What do you want to know about Magic Circles?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Qué quieres saber sobre los Círculos Mágicos?
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+¿Qué quieres saber de los Círculos mágicos?
 
 [000478] OPCIÓN | CLD-000497
 ORIGINAL:
@@ -2912,8 +2906,8 @@ Personaje principal
 [000480] OPCIÓN | CLD-000499
 ORIGINAL:
 Sub Character
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Personaje secundario
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Personaje de apoyo
 
 [000481] OPCIÓN | CLD-000500
 ORIGINAL:
@@ -2924,15 +2918,14 @@ Artefacto
 [000482] OPCIÓN | CLD-000501
 ORIGINAL:
 Magic/Ability Space
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Espacio de magia/habilidad
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Casilla de magia/habilidad
 
 [000483] OPCIÓN | CLD-000502
 ORIGINAL:
 Widening
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 Ampliación
-QA: glosario_Widen_por_revisar
 
 [000484] OPCIÓN | CLD-000503
 ORIGINAL:
@@ -2949,32 +2942,32 @@ Volver
 [000486] DIÁLOGO | CLD-000505
 ORIGINAL:
 This is a spell where the sub powers up the main
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Este es un hechizo donde el sub potencia al principal.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Con este hechizo, un personaje de apoyo
 
 [000487] DIÁLOGO | CLD-000506
 ORIGINAL:
 by cheering him/her on.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-animándole/a.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+anima y fortalece al personaje principal.
 
 [000488] DIÁLOGO | CLD-000507
 ORIGINAL:
 Subs consume Mana to activate
-ESPAÑOL (posteditado_contextualmente_por_IA):
-Los personajes de apoyo consumen maná para activar
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Los personajes de apoyo gastan maná para activar
 
 [000489] DIÁLOGO | CLD-000508
 ORIGINAL:
 Artifacts, which will then,
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Artefactos, que luego,
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+artefactos, que a su vez
 
 [000490] DIÁLOGO | CLD-000509
 ORIGINAL:
 in turn, power up the main.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-a su vez, encienda la principal.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+fortalecen al personaje principal.
 
 [000491] DIÁLOGO | CLD-000510
 ORIGINAL:
@@ -2985,26 +2978,26 @@ Este es tu personaje jugable.
 [000492] DIÁLOGO | CLD-000511
 ORIGINAL:
 When all subs get knocked out,
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cuando todos los suplentes quedan fuera de combate,
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Cuando caen todos los personajes de apoyo,
 
 [000493] DIÁLOGO | CLD-000512
 ORIGINAL:
 the main's HP will display.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La HP principal se mostrará.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+se muestra el HP del personaje principal.
 
 [000494] DIÁLOGO | CLD-000513
 ORIGINAL:
 When the main gets knocked out, it's Game Over.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cuando el personaje principal queda fuera de combate, se acaba el juego.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Si cae el personaje principal, se termina la partida.
 
 [000495] DIÁLOGO | CLD-000514
 ORIGINAL:
 They are the shields who protect the main.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Son los escudos que protegen al núcleo.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Son los escudos que protegen al personaje principal.
 
 [000496] DIÁLOGO | CLD-000515
 ORIGINAL:
@@ -3015,8 +3008,8 @@ Recibir daño en la batalla
 [000497] DIÁLOGO | CLD-000516
 ORIGINAL:
 will cause the subs to lose their HP.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-hará que los suplentes pierdan sus puntos de vida.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+hace que los personajes de apoyo pierdan HP.
 
 [000498] DIÁLOGO | CLD-000517
 ORIGINAL:
@@ -3027,8 +3020,8 @@ Hay una capa exterior y una capa interior de la
 [000499] DIÁLOGO | CLD-000518
 ORIGINAL:
 Sub Character Space in the Magic Circle.
-ESPAÑOL (posteditado_contextualmente_por_IA):
-Casilla del personaje de apoyo en el Círculo mágico.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+para las casillas de personajes de apoyo.
 
 [000500] DIÁLOGO | CLD-000519
 ORIGINAL:
@@ -3039,8 +3032,8 @@ Los subsuelos de la capa exterior se muestran primero.
 [000501] DIÁLOGO | CLD-000520
 ORIGINAL:
 The way the main faces corresponds to their positions.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La forma en que los rostros principales se corresponden con sus posiciones.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+La orientación del protagonista depende de sus posiciones.
 
 [000502] DIÁLOGO | CLD-000521
 ORIGINAL:
@@ -3063,26 +3056,26 @@ Cuando un personaje de apoyo cae, el artefacto
 [000505] DIÁLOGO | CLD-000524
 ORIGINAL:
 he/she activated will
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-él/ella activó voluntad
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+que había activado
 
 [000506] DIÁLOGO | CLD-000525
 ORIGINAL:
 essentially become nullified.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-esencialmente quedan anulados.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+queda desactivado.
 
 [000507] DIÁLOGO | CLD-000526
 ORIGINAL:
 Artifacts can be placed
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los artefactos se pueden colocar
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Puedes colocar artefactos
 
 [000508] DIÁLOGO | CLD-000527
 ORIGINAL:
 in Artifact Spaces.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-en Espacios de Artefactos.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+en las casillas para artefactos.
 
 [000509] DIÁLOGO | CLD-000528
 ORIGINAL:
@@ -3099,50 +3092,50 @@ para activar varios artefactos.
 [000511] DIÁLOGO | CLD-000530
 ORIGINAL:
 Artifacts cannot be activated if there is no path
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los artefactos no se pueden activar si no hay un camino.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Los artefactos no pueden activarse sin un camino
 
 [000512] DIÁLOGO | CLD-000531
 ORIGINAL:
 connected to it.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-conectado a él.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+que los conecte.
 
 [000513] DIÁLOGO | CLD-000532
 ORIGINAL:
 Only the Artifact Anywhere Artifact is
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Solo el Artefacto en cualquier lugar Artefacto es
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+El artefacto «Artifact Anywhere»
 
 [000514] DIÁLOGO | CLD-000533
 ORIGINAL:
 exempt to this rule.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Exentos de esta regla.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+es la única excepción a esa regla.
 
 [000515] DIÁLOGO | CLD-000534
 ORIGINAL:
 Place Artifacts that boost Magic/Abilities here.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Coloca aquí los artefactos que potencian la magia o las habilidades.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Aquí puedes colocar artefactos que mejoren la magia o las habilidades.
 
 [000516] DIÁLOGO | CLD-000535
 ORIGINAL:
 Ability Boost, SP Consumption Reduction,
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mejora de habilidades, reducción del consumo de SP,
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Entre ellos hay mejoras de habilidad, reducción del consumo de SP
 
 [000517] DIÁLOGO | CLD-000536
 ORIGINAL:
 and Casting Time Reduction, are among those.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-y la reducción del tiempo de colada, se encuentran entre ellas.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+y reducción del tiempo de lanzamiento.
 
 [000518] DIÁLOGO | CLD-000537
 ORIGINAL:
 Placing Artifacts in the same slot will allow
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Colocar artefactos en la misma ranura permitirá
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Colocar varios artefactos en una misma casilla
 
 [000519] DIÁLOGO | CLD-000538
 ORIGINAL:
@@ -3153,41 +3146,38 @@ sus efectos se acumulan.
 [000520] DIÁLOGO | CLD-000539
 ORIGINAL:
 Spaces with 'Widen' can double
-ESPAÑOL (posteditado_contextualmente_por_IA):
-Los espacios con 'Widen' pueden duplicarse
-QA: glosario_Widen_por_revisar
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Las casillas con «Widen» pueden duplicar
 
 [000521] DIÁLOGO | CLD-000540
 ORIGINAL:
 the effect of any Artifacts in it.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-el efecto de cualquier artefacto que contenga.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+el efecto de los artefactos que contienen.
 
 [000522] DIÁLOGO | CLD-000541
 ORIGINAL:
 Placing multiple Widen Artifacts in the same space
-ESPAÑOL (posteditado_contextualmente_por_IA):
-Colocar varios artefactos de Widen en el mismo espacio.
-QA: glosario_Widen_por_revisar
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Si colocas varios «Widen» en una misma casilla,
 
 [000523] DIÁLOGO | CLD-000542
 ORIGINAL:
 will double, triple, or quadruple the effects.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-duplicará, triplicará o cuadruplicará los efectos.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+duplicarás, triplicarás o cuadruplicarás sus efectos.
 
 [000524] DIÁLOGO | CLD-000543
 ORIGINAL:
 However, it will also consume Mana proportionately.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sin embargo, también consumirá maná proporcionalmente.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Eso sí, el consumo de maná aumenta en proporción.
 
 [000525] DIÁLOGO | CLD-000544
 ORIGINAL:
 Placing a Widen on a Magic/Ability Space will
-ESPAÑOL (posteditado_contextualmente_por_IA):
-Colocar un Widen en un Espacio de Magia/Habilidad
-QA: glosario_Widen_por_revisar
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Si colocas un «Widen» en una casilla de magia/habilidad,
 
 [000526] DIÁLOGO | CLD-000545
 ORIGINAL:
@@ -3199,14 +3189,14 @@ QA: glosario_Widen_por_revisar
 [000527] DIÁLOGO | CLD-000546
 ORIGINAL:
 There are Fixed Spaces that have been set
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hay espacios fijos que se han establecido
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Algunas casillas fijas vienen
 
 [000528] DIÁLOGO | CLD-000547
 ORIGINAL:
 by default on the Magic Circle.
-ESPAÑOL (posteditado_contextualmente_por_IA):
-Por defecto en el Círculo mágico.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+predeterminadas en el Círculo mágico.
 
 [000529] DIÁLOGO | CLD-000548
 ORIGINAL:
@@ -3217,26 +3207,26 @@ Defender: Recibe el daño del personaje secundario.
 [000530] DIÁLOGO | CLD-000549
 ORIGINAL:
 HP -X: HP -X% of sub characters.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-HP -X: HP -X% de los subcaracteres.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+HP -X: reduce el HP de los personajes de apoyo en X%.
 
 [000531] DIÁLOGO | CLD-000550
 ORIGINAL:
 Scatter X: Disperses X% of damage to subs.
-ESPAÑOL (posteditado_contextualmente_por_IA):
-Dispersión X: Dispersa un X% del daño a los personajes de apoyo.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Dispersión X: reparte X% del daño entre los personajes de apoyo.
 
 [000532] DIÁLOGO | CLD-000551
 ORIGINAL:
 Double Death: Take out everyone else when dying.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Doble muerte: Elimina a todos los demás al morir.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Muerte doble: al morir, derriba a los demás.
 
 [000533] DIÁLOGO | CLD-000552
 ORIGINAL:
 Mana xX: Provides a multiplier for your current Mana.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mana xX: Proporciona un multiplicador para tu Maná actual.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Maná xX: multiplica tu maná actual.
 
 [000534] DIÁLOGO | CLD-000553
 ORIGINAL:
@@ -3301,8 +3291,8 @@ Saltar te permite superar las trampas.
 [000544] DIÁLOGO | CLD-000563
 ORIGINAL:
 Press the ⑯ button to open the Menu.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pulse el botón ⑯ para abrir el menú.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Pulsa el botón ⑯ para abrir el menú.
 
 [000545] DIÁLOGO | CLD-000564
 ORIGINAL:
@@ -3325,8 +3315,8 @@ El dinero y la EXP que hayas obtenido se reducirán a la mitad.
 [000548] DIÁLOGO | CLD-000567
 ORIGINAL:
 Weapons you found will be confiscated.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Las armas que encuentre serán confiscadas.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Las armas que encuentres serán confiscadas.
 
 [000549] DIÁLOGO | CLD-000568
 ORIGINAL:
@@ -3343,14 +3333,14 @@ tu magia o habilidad.
 [000551] DIÁLOGO | CLD-000570
 ORIGINAL:
 You will fill your gauge, granting you the ability
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Llenarás tu indicador, lo que te otorgará la capacidad.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+Llena el indicador para poder
 
 [000552] DIÁLOGO | CLD-000571
 ORIGINAL:
 to use magic/ability if you have sufficient SP.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-usar magia/habilidad si tienes suficientes SP.
+ESPAÑOL (normalizado_por_contexto_duplicado_IA):
+usar magia o habilidades si tienes suficiente SP.
 
 [000553] DIÁLOGO | CLD-000572
 ORIGINAL:
@@ -8713,14 +8703,12 @@ ORIGINAL:
 That Artifact is called "Widen."
 ESPAÑOL (posteditado_contextualmente_por_IA):
 Ese artefacto se llama «Widen».
-QA: glosario_Widen_por_revisar
 
 [001435] DIÁLOGO | CLD-001468
 ORIGINAL:
 "Widen..."
 ESPAÑOL (posteditado_contextualmente_por_IA):
 «Widen...»
-QA: glosario_Widen_por_revisar
 
 [001436] DIÁLOGO | CLD-001469
 ORIGINAL:
@@ -32947,7 +32935,6 @@ ORIGINAL:
 Widening　　　　  　  %s
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 Ampliación　　　　 　 %s
-QA: glosario_Widen_por_revisar
 
 [005402] INTERFAZ | CLD-005592
 ORIGINAL:
@@ -37630,14 +37617,12 @@ ORIGINAL:
 Widen
 ESPAÑOL (posteditado_contextualmente_por_IA):
 Widen
-QA: glosario_Widen_por_revisar
 
 [006092] OBJETOS ARTEFACTOS | CLD-006337
 ORIGINAL:
 Range +, Widens next space.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 Alcance +, Amplía el siguiente espacio.
-QA: glosario_Widen_por_revisar
 
 [006093] OBJETOS ARTEFACTOS | CLD-006338
 ORIGINAL:
@@ -49250,7 +49235,7 @@ Su existencia es rara.
 Aristócratas del Hiyo.
 
 Suelen decir: «Nunca he comido nada que cueste menos de 10 000 G».
-QA: revisar_numeros, revisar_saltos_linea
+QA: revisar_numeros|revisar_saltos_linea
 
 [007892] MONSTRUOS | CLD-008114
 ORIGINAL:
@@ -52506,7 +52491,7 @@ ORIGINAL:
 仮面２
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 Máscara 2
-QA: estado_fuente_pendiente, revisar_numeros
+QA: estado_fuente_pendiente|revisar_numeros
 
 [008284] MONSTRUOS | CLD-F-MONSTER-0127-especie
 ORIGINAL:
@@ -52533,7 +52518,7 @@ ORIGINAL:
 仮面３
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 Máscara 3
-QA: estado_fuente_pendiente, revisar_numeros
+QA: estado_fuente_pendiente|revisar_numeros
 
 [008288] MONSTRUOS | CLD-F-MONSTER-0128-especie
 ORIGINAL:
@@ -52560,7 +52545,7 @@ ORIGINAL:
 仮面４
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 Máscara 4
-QA: estado_fuente_pendiente, revisar_numeros
+QA: estado_fuente_pendiente|revisar_numeros
 
 [008292] MONSTRUOS | CLD-F-MONSTER-0129-especie
 ORIGINAL:
@@ -52587,7 +52572,7 @@ ORIGINAL:
 仮面５
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 Máscara 5
-QA: estado_fuente_pendiente, revisar_numeros
+QA: estado_fuente_pendiente|revisar_numeros
 
 [008296] MONSTRUOS | CLD-F-MONSTER-0130-especie
 ORIGINAL:
@@ -52614,7 +52599,7 @@ ORIGINAL:
 仮面６
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 Enmascarados 6
-QA: estado_fuente_pendiente, revisar_numeros
+QA: estado_fuente_pendiente|revisar_numeros
 
 [008300] MONSTRUOS | CLD-F-MONSTER-0131-especie
 ORIGINAL:
@@ -52943,7 +52928,7 @@ ORIGINAL:
 Sumen穴1-2,1-3
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 Agujeros 1-2, 1-3 de Sumen
-QA: estado_fuente_pendiente, revisar_numeros
+QA: estado_fuente_pendiente|revisar_numeros
 
 [008348] MONSTRUOS | CLD-008549
 ORIGINAL:
@@ -52957,7 +52942,7 @@ ORIGINAL:
 ブロック(縦横3と42)
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 Bloques (3x42)
-QA: estado_fuente_pendiente, revisar_numeros
+QA: estado_fuente_pendiente|revisar_numeros
 
 [008350] MONSTRUOS | CLD-008551
 ORIGINAL:
@@ -54749,7 +54734,7 @@ ORIGINAL:
 OP木A上2
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 OP A2
-QA: estado_fuente_pendiente, revisar_numeros
+QA: estado_fuente_pendiente|revisar_numeros
 
 [008621] ATRIBUTOS TERRENO | CLD-008866
 ORIGINAL:
@@ -54791,7 +54776,7 @@ ORIGINAL:
 OP木B上2
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 OP B2
-QA: estado_fuente_pendiente, revisar_numeros
+QA: estado_fuente_pendiente|revisar_numeros
 
 [008627] ATRIBUTOS TERRENO | CLD-008872
 ORIGINAL:
@@ -54924,49 +54909,49 @@ ORIGINAL:
 OP石1
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 OP1
-QA: estado_fuente_pendiente, revisar_numeros
+QA: estado_fuente_pendiente|revisar_numeros
 
 [008646] ATRIBUTOS TERRENO | CLD-008891
 ORIGINAL:
 OP石2
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 OP2
-QA: estado_fuente_pendiente, revisar_numeros
+QA: estado_fuente_pendiente|revisar_numeros
 
 [008647] ATRIBUTOS TERRENO | CLD-008892
 ORIGINAL:
 OP石3
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 OP3
-QA: estado_fuente_pendiente, revisar_numeros
+QA: estado_fuente_pendiente|revisar_numeros
 
 [008648] ATRIBUTOS TERRENO | CLD-008893
 ORIGINAL:
 OP石4
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 OP4
-QA: estado_fuente_pendiente, revisar_numeros
+QA: estado_fuente_pendiente|revisar_numeros
 
 [008649] ATRIBUTOS TERRENO | CLD-008894
 ORIGINAL:
 OP石5
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 OP5
-QA: estado_fuente_pendiente, revisar_numeros
+QA: estado_fuente_pendiente|revisar_numeros
 
 [008650] ATRIBUTOS TERRENO | CLD-008895
 ORIGINAL:
 OP石6
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 OP6
-QA: estado_fuente_pendiente, revisar_numeros
+QA: estado_fuente_pendiente|revisar_numeros
 
 [008651] ATRIBUTOS TERRENO | CLD-008896
 ORIGINAL:
 OP石6
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 OP6
-QA: estado_fuente_pendiente, revisar_numeros
+QA: estado_fuente_pendiente|revisar_numeros
 
 [008652] ATRIBUTOS TERRENO | CLD-008897
 ORIGINAL:
@@ -55470,14 +55455,14 @@ ORIGINAL:
 オイル（アニメ�
 ESPAÑOL (reconstruccion_texto_fuente_pendiente):
 [PENDIENTE]
-QA: estado_fuente_pendiente, bytes_incompletos
+QA: estado_fuente_pendiente|bytes_incompletos
 
 [008724] ATRIBUTOS TERRENO | CLD-F-TIPATTR-0215-nombre_atributo
 ORIGINAL:
 水（アニメ有り�
 ESPAÑOL (reconstruccion_texto_fuente_pendiente):
 [PENDIENTE]
-QA: estado_fuente_pendiente, bytes_incompletos
+QA: estado_fuente_pendiente|bytes_incompletos
 
 [008725] ATRIBUTOS TERRENO | CLD-F-TIPATTR-0216-nombre_atributo
 ORIGINAL:
@@ -57755,8 +57740,8 @@ ESPAÑOL (posteditado_contextualmente_por_IA):
 [009061] OBJETOS ARMAS | CLD-009276
 ORIGINAL:
 Angel Staff
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Personal de ángeles
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Bastón angelical
 
 [009062] OBJETOS ARMAS | CLD-009277
 ORIGINAL:

@@ -1,19 +1,7 @@
 ﻿grupo_id,text_id,origen,estado_fuente,alertas,original,espanol
 000032,CLD-000038,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,revisar_numeros,"If you placed 2 or more ""Widens,"" the","Si colocas dos o más «Widen»,"
 000039,CLD-000045,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"""Widen"" that particular ability!",¡ampliarás el efecto de esa habilidad!
-000175,CLD-000194,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"the ""Widen"" Artifact is like night and day.","El artefacto ""Widen"" es como la noche y el día."
-000203,CLD-000222,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"has the ""Widen"" Artifact.","posee el artefacto ""Widen""."
-000316,CLD-000335,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Widening,Ampliación
-000353,CLD-000372,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Spaces with 'Widen' can double,Los espacios con 'Widen' pueden duplicarse
-000355,CLD-000374,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Placing multiple Widen Artifacts in the same space,Colocar varios artefactos de Widen en el mismo espacio.
-000358,CLD-000377,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Placing a Widen on a Magic/Ability Space will,Colocar un Widen en un Espacio de Magia/Habilidad
-000483,CLD-000502,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Widening,Ampliación
-000520,CLD-000539,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Spaces with 'Widen' can double,Los espacios con 'Widen' pueden duplicarse
-000522,CLD-000541,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Placing multiple Widen Artifacts in the same space,Colocar varios artefactos de Widen en el mismo espacio.
-000525,CLD-000544,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Placing a Widen on a Magic/Ability Space will,Colocar un Widen en un Espacio de Magia/Habilidad
 000526,CLD-000545,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Widen the range of the Magic/Ability.,Ampliar el alcance de la Magia/Habilidad.
-001434,CLD-001467,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"That Artifact is called ""Widen.""",Ese artefacto se llama «Widen».
-001435,CLD-001468,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"""Widen...""",«Widen...»
 004960,CLD-005103,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,revisar_numeros,But there isn't a 2nd floor in this house.,Pero esta casa no tiene segundo piso.
 005230,CLD-005420,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Select your BGM type.
 You can change this setting anytime.","Selecciona el tipo de música de fondo.
@@ -21,7 +9,6 @@ You can change this setting anytime.","Selecciona el tipo de música de fondo.
 Puedes cambiar esta configuración cuando quieras."
 005248,CLD-005438,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Returning to the title without saving
 will lose all unsaved progress. Continue?","Si regresas al juego sin guardar, perderás todo el progreso no guardado. ¿Continuar?"
-005401,CLD-005591,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Widening　　　　  　  %s,Ampliación　　　　 　 %s
 005452,CLD-005642,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"The LV shows how strong the character is.
 As you accumulate EXP, your stats will go up.","El nivel de habilidad (LV) indica la fuerza del personaje.
 
@@ -298,8 +285,6 @@ Para guardar tu progreso en el juego, necesitarás una tarjeta de memoria con %d
 To save new game progress, you will need storage media with %dKB of free space.","El medio de almacenamiento requiere %d KB de espacio libre adicional.
 
 Para guardar el progreso de tu nuevo juego, necesitarás un medio de almacenamiento con %d KB de espacio libre."
-006091,CLD-006336,DATABASE.DAT/ARTIFACT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Widen,Widen
-006092,CLD-006337,DATABASE.DAT/ARTIFACT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"Range +, Widens next space.","Alcance +, Amplía el siguiente espacio."
 006467,CLD-006701,DATABASE.DAT/CHAR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,地球姫,Princesa de la Tierra
 006468,CLD-006702,DATABASE.DAT/CHAR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,マナは高いがHPが低い。,Tiene mucha mana pero poca HP.
 006719,CLD-006953,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,プティング,Pudding

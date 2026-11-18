@@ -1,6 +1,6 @@
 CLADUN: THIS IS AN RPG! (PSP USA)
-BORRADOR AUTOMÁTICO ESPAÑOL — NO APTO PARA REINSERCIÓN
-9.237 unidades, conservando IDs y orden. Revisión narrativa integral pendiente.
+BORRADOR ESPAÑOL — REVISIÓN CONTEXTUAL PARCIAL
+9.237 posiciones ordenadas por recurso y script. No está listo para reinserción.
 
 
 ##################################################################
@@ -473,19 +473,19 @@ Depende mucho de tu nivel.
 Cuanto más alto sea el nivel, más subirán.
 
 [000151] DIÁLOGO
-Cuando encuentres cuevas,
+Cuando encuentres una cueva,
 
 [000152] DIÁLOGO
-Muévase solo cuando sea seguro hacerlo.
+muévete solo cuando sea seguro.
 
 [000153] DIÁLOGO
-Hay artefactos, equipos,
+Hay artefactos, equipo
 
 [000154] DIÁLOGO
 y títulos que solo
 
 [000155] DIÁLOGO
-Hiyokki caerá.
+dejan caer los Hiyokki.
 
 [000156] DIÁLOGO
 "Curar" puede ser una habilidad crucial.
@@ -497,10 +497,10 @@ A veces puedes romper los bloques
 que escupen fuego o hielo.
 
 [000159] DIÁLOGO
-Puedes usar el escudo para cancelar los pocos fotogramas
+Puedes usar el escudo para cancelar algunos fotogramas
 
 [000160] DIÁLOGO
-de vulnerabilidad que tienes después del ataque.
+de vulnerabilidad después de atacar.
 
 [000161] DIÁLOGO
 Solo ten cuidado al usarlo.
@@ -515,10 +515,10 @@ a ataques desde el frente.
 "Corte de hielo" será un ataque basado en hielo, incluso si estás ardiendo.
 
 [000165] DIÁLOGO
-Hay algunos monstruos que nunca...
+Hay monstruos que nunca
 
 [000166] DIÁLOGO
-Obtén el modo "¡BREAK!".
+entran en modo «BREAK!».
 
 [000167] DIÁLOGO
 Cualquier discrepancia en los daños puede ser
@@ -527,16 +527,16 @@ Cualquier discrepancia en los daños puede ser
 debido a propiedades elementales.
 
 [000169] DIÁLOGO
-①②③④⑤⑥ propiedades
+Los atributos ①②③④⑤⑥
 
 [000170] DIÁLOGO
-puede ser crucial.
+pueden ser decisivos.
 
 [000171] DIÁLOGO
-Ataques de carga con hachas y ataques especiales
+Los ataques cargados con hacha y los especiales
 
 [000172] DIÁLOGO
-Puede alcanzar a los enemigos que se encuentran detrás de las paredes.
+pueden alcanzar a enemigos detrás de las paredes.
 
 [000173] DIÁLOGO
 Todas las armaduras tienen algún tipo de debilidad.
@@ -545,19 +545,19 @@ Todas las armaduras tienen algún tipo de debilidad.
 La diferencia entre usar y no usar
 
 [000175] DIÁLOGO
-El artefacto "Widen" es como la noche y el día.
+usar el artefacto «Widen» marca una enorme diferencia.
 
 [000176] DIÁLOGO
-Cuando te pierdas, simplemente camina a lo largo de la pared.
+Si te pierdes, sigue la pared
 
 [000177] DIÁLOGO
-y finalmente encontrarás la meta.
+hasta encontrar la salida.
 
 [000178] DIÁLOGO
-Equipa un bastón para reducir a la mitad la
+Equipa un bastón para reducir a la mitad
 
 [000179] DIÁLOGO
-SP Uso de la magia.
+el consumo de SP de la magia.
 
 [000180] DIÁLOGO
 ¡Es cierto!
@@ -569,10 +569,10 @@ La durabilidad del escudo
 depende de su tipo.
 
 [000183] DIÁLOGO
-"E. Recuperar" puede eliminar cualquier mejora del enemigo.
+«E. Recover» puede eliminar las mejoras
 
 [000184] DIÁLOGO
-Puede que sí.
+que tengan los enemigos.
 
 [000185] DIÁLOGO
 Úsalo a tu favor en el juego inalámbrico.
@@ -590,10 +590,10 @@ Deslizarse puede permitirte moverte rápidamente
 a través de la hierba e incluso del limo.
 
 [000190] DIÁLOGO
-Ningún monstruo es completamente inmune.
+Ningún monstruo es totalmente inmune
 
 [000191] DIÁLOGO
-a la propiedad ⑥.
+a los ataques del atributo ⑥.
 
 [000192] DIÁLOGO
 Deslizándose sobre el suelo resbaladizo
@@ -608,13 +608,13 @@ Aumenta tu nivel de fama a 30 y habla con Hiyoji.
 Puede que consigas algo bueno.
 
 [000196] DIÁLOGO
-Usando la función mágica "Recuperar"
+La magia «Recover»
 
 [000197] DIÁLOGO
-te curará de tu estado de ardor.
+elimina las quemaduras.
 
 [000198] DIÁLOGO
-Los dragones son totalmente vulnerables a los ataques.
+Los dragones quedan expuestos a los ataques
 
 [000199] DIÁLOGO
 mientras escupen fuego.
@@ -632,16 +632,16 @@ Alguien en Arcanus Cella
 posee el artefacto "Widen".
 
 [000204] DIÁLOGO
-Hay un hombre en la cámara subterránea.
+En la cámara subterránea hay un hombre
 
 [000205] DIÁLOGO
-quién puede medir tu fuerza.
+que puede medir tu fuerza.
 
 [000206] DIÁLOGO
-En Wireless Play, todos pueden obtener
+En el modo inalámbrico, todos pueden obtener
 
 [000207] DIÁLOGO
-un solo objeto simultáneamente.
+un objeto a la vez.
 
 [000208] DIÁLOGO
 El artefacto "Maná Plus"
@@ -656,28 +656,28 @@ Hay algo oculto bajo tierra en Arcanus Cella.
 Hay algo especial en la estantería de Despina.
 
 [000212] DIÁLOGO
-Soy el cartel de los rumores.
+Soy el tablón de rumores.
 
 [000213] DIÁLOGO
-Aunque mueras en batalla, subes un poco de nivel.
+Aunque caigas en combate, ganas algo de EXP.
 
 [000214] DIÁLOGO
-No lo pierdes todo por completo.
+No lo pierdes todo.
 
 [000215] DIÁLOGO
-Soy el cartel de los rumores.
+Soy el tablón de rumores.
 
 [000216] DIÁLOGO
-Las cosas que llevo puestas cambian constantemente.
+Mis mensajes cambian constantemente.
 
 [000217] DIÁLOGO
-Soy un letrero.
+Soy un tablón de anuncios.
 
 [000218] DIÁLOGO
-Difundo rumores y chismes.
+Difundo rumores y cotilleos.
 
 [000219] DIÁLOGO
-Me alegra que hayas decidido leerme.
+¡Gracias por leerme!
 
 
 ==================================================================
@@ -694,7 +694,7 @@ Esta es la enciclopedia que todo lo sabe.
 Equipo
 
 [000223] OPCIÓN
-Celda Arcanus
+Arcanus Cella
 
 [000224] OPCIÓN
 Mazmorra
@@ -715,13 +715,13 @@ Nada
 Arma: Espada
 
 [000230] OPCIÓN
-Arma - Contundente
+Arma: contundente
 
 [000231] OPCIÓN
 Arma: bastón
 
 [000232] OPCIÓN
-Blindaje
+Escudo
 
 [000233] OPCIÓN
 Armadura
@@ -760,13 +760,13 @@ Puede romper bloques destructibles.
 Te permite usar ataques a distancia.
 
 [000245] DIÁLOGO
-Una vez que el indicador del bastón esté en la parte inferior derecha
+Cuando se agote el indicador del bastón
 
 [000246] DIÁLOGO
-Si se agota, debes usar ataques cuerpo a cuerpo.
+de la esquina inferior derecha, tendrás que luchar cuerpo a cuerpo.
 
 [000247] DIÁLOGO
-El indicador de nivel se recupera gradualmente de forma automática.
+El indicador del bastón se recarga poco a poco.
 
 [000248] DIÁLOGO
 Tiene el elemento ④, ⑤ o ⑥.
@@ -787,25 +787,25 @@ Será especialmente eficaz desde el frente.
 Sin embargo, su eficacia disminuye con el uso.
 
 [000254] DIÁLOGO
-No existen diferencias estadísticas entre los proveedores.
+Los vendedores no alteran las estadísticas.
 
 [000255] DIÁLOGO
 La armadura puede ser compartida con todos.
 
 [000256] DIÁLOGO
-Todos los equipos tienen título de propiedad.
+Todo el equipo tiene títulos.
 
 [000257] DIÁLOGO
 Normal es el estado predeterminado.
 
 [000258] DIÁLOGO
-Todos los títulos tienen la capacidad
+Los efectos de los títulos
 
 [000259] DIÁLOGO
-para apilarlos uno a otro.
+pueden acumularse entre sí.
 
 [000260] DIÁLOGO
-Todos los equipos tienen atributos de peso ⑧.
+Todo el equipo tiene un atributo de peso ⑧.
 
 [000261] DIÁLOGO
 Cuanto mayor sea el valor de ⑧, más lento será tu ataque.
@@ -814,7 +814,7 @@ Cuanto mayor sea el valor de ⑧, más lento será tu ataque.
 ¿Qué quieres saber sobre Arcanus Cella?
 
 [000263] OPCIÓN
-tiendas
+Tiendas
 
 [000264] OPCIÓN
 Taberna
@@ -826,19 +826,19 @@ Salida
 Volver
 
 [000267] DIÁLOGO
-Las tiendas tienen todo tipo de equipos.
+En las tiendas encontrarás todo tipo de equipo
 
 [000268] DIÁLOGO
-Disponible para su compra.
+a la venta.
 
 [000269] DIÁLOGO
-Los artefactos poderosos rara vez son soltados por
+Los enemigos rara vez dejan caer artefactos poderosos,
 
 [000270] DIÁLOGO
-enemigos, así que deberías comprarlos aquí.
+así que conviene comprarlos aquí.
 
 [000271] DIÁLOGO
-Puedes crear nuevos personajes
+Puedes crear personajes nuevos
 
 [000272] DIÁLOGO
 en la taberna.
@@ -850,7 +850,7 @@ También puedes editar libremente sus rostros,
 Así que asegúrate de aprovechar esto.
 
 [000275] DIÁLOGO
-Termina el juego a través del hueco del árbol en el sureste.
+Para terminar la partida, entra por el agujero del árbol del sureste.
 
 [000276] DIÁLOGO
 Asegúrate de guardar antes de irte.
@@ -865,7 +865,7 @@ Trampas
 Tesoro
 
 [000280] OPCIÓN
-Colores enemigos
+Colores de enemigos
 
 [000281] OPCIÓN
 EXP
@@ -874,13 +874,13 @@ EXP
 Volver
 
 [000283] DIÁLOGO
-Hay trampas colocadas alrededor de la mazmorra.
+Hay trampas repartidas por las mazmorras.
 
 [000284] DIÁLOGO
-La mayoría de las trampas se activarán al pisarlas,
+La mayoría se activan cuando las pisas
 
 [000285] DIÁLOGO
-provocando que te disparen bolas y cosas así.
+y disparan bolas u otros proyectiles.
 
 [000286] DIÁLOGO
 Si te golpean, tu estado puede cambiar.
@@ -892,7 +892,7 @@ Algunos provocan terremotos dañinos o
 incluso generan enemigos.
 
 [000289] DIÁLOGO
-¡Cuidado con las trampas que pueden estar debajo de la hierba o el hielo!
+¡Ojo con las trampas ocultas bajo la hierba o el hielo!
 
 [000290] DIÁLOGO
 Las trampas desaparecen tras activarse varias veces.
@@ -907,7 +907,7 @@ Los rojos aparecen solo una vez.
 Los negros... son especiales.
 
 [000294] DIÁLOGO
-Cada enemigo tiene atributos basados ​​en colores.
+Cada enemigo tiene atributos asociados a su color.
 
 [000295] DIÁLOGO
 Amarillo: Normal
@@ -919,10 +919,10 @@ Verde: Alto ATK
 Blanco: Alto HP, DEF
 
 [000298] DIÁLOGO
-Rojo: ④ Elemento. Absorbe el fuego.
+Rojo: elemento ④. Absorbe fuego.
 
 [000299] DIÁLOGO
-Azul: ⑤ Elemento. No resbala. Absorbe el hielo.
+Azul: elemento ⑤. No resbala y absorbe hielo.
 
 [000300] DIÁLOGO
 Negro: Muy, muy fuerte.
@@ -931,31 +931,31 @@ Negro: Muy, muy fuerte.
 Pulsa el botón ⑯ en la mazmorra para ver
 
 [000302] DIÁLOGO
-tu EXP temporal.
+tu EXP provisional.
 
 [000303] DIÁLOGO
-Cuando llegues a la pantalla de resultados, esa EXP
+Al llegar a la pantalla de resultados, esa EXP
 
 [000304] DIÁLOGO
-se distribuirá entre los miembros de tu grupo.
+se repartirá entre tu grupo.
 
 [000305] DIÁLOGO
-Un personaje de alto nivel no obtendrá mucha EXP de
+Un personaje de nivel alto obtiene poca EXP
 
 [000306] DIÁLOGO
-derrotando enemigos de bajo nivel. Pero, en el caso de la
+al derrotar a enemigos de nivel bajo. En cambio,
 
 [000307] DIÁLOGO
-Si ocurre lo contrario, obtendrán mucha EXP.
+si derrota a enemigos de nivel superior, gana mucha EXP.
 
 [000308] DIÁLOGO
-Si el principal y el secundario no tienen el mismo nivel,
+Si el personaje principal y los de apoyo tienen distintos niveles,
 
 [000309] DIÁLOGO
-La EXP se distribuirá en consecuencia.
+la EXP se reparte en consecuencia.
 
 [000310] DIÁLOGO
-¿Qué quieres saber sobre los Círculos Mágicos?
+¿Qué quieres saber de los Círculos mágicos?
 
 [000311] OPCIÓN
 Círculos mágicos
@@ -964,37 +964,37 @@ Círculos mágicos
 Personaje principal
 
 [000313] OPCIÓN
-Personaje secundario
+Personaje de apoyo
 
 [000314] OPCIÓN
 Artefacto
 
 [000315] OPCIÓN
-Espacio de magia/habilidad
+Casilla de magia/habilidad
 
 [000316] OPCIÓN
 Ampliación
 
 [000317] OPCIÓN
-Espacio fijo
+Casilla fija
 
 [000318] OPCIÓN
 Volver
 
 [000319] DIÁLOGO
-Este es un hechizo donde el sub potencia al principal.
+Con este hechizo, un personaje de apoyo
 
 [000320] DIÁLOGO
-que refuerza al personaje principal.
+anima y fortalece al personaje principal.
 
 [000321] DIÁLOGO
-Los personajes de apoyo consumen maná para activar
+Los personajes de apoyo gastan maná para activar
 
 [000322] DIÁLOGO
-Artefactos, que luego,
+artefactos, que a su vez
 
 [000323] DIÁLOGO
-y aumentarán las capacidades del personaje principal.
+fortalecen al personaje principal.
 
 [000324] DIÁLOGO
 Este es tu personaje jugable.
@@ -1003,31 +1003,31 @@ Este es tu personaje jugable.
 Cuando caen todos los personajes de apoyo,
 
 [000326] DIÁLOGO
-se muestra la vida del personaje principal.
+se muestra el HP del personaje principal.
 
 [000327] DIÁLOGO
-Cuando el personaje principal queda fuera de combate, se acaba el juego.
+Si cae el personaje principal, se termina la partida.
 
 [000328] DIÁLOGO
-Son los escudos que protegen al núcleo.
+Son los escudos que protegen al personaje principal.
 
 [000329] DIÁLOGO
 Recibir daño en la batalla
 
 [000330] DIÁLOGO
-hace que los personajes de apoyo pierdan PV.
+hace que los personajes de apoyo pierdan HP.
 
 [000331] DIÁLOGO
-Hay una capa exterior y una capa interior de
+El Círculo mágico tiene capas exteriores e interiores
 
 [000332] DIÁLOGO
-Casilla del personaje de apoyo en el Círculo mágico.
+para las casillas de personajes de apoyo.
 
 [000333] DIÁLOGO
-Se muestran primero los personajes de apoyo de la capa exterior.
+Primero se muestran los personajes de la capa exterior.
 
 [000334] DIÁLOGO
-La forma en que los rostros principales se corresponden con sus posiciones.
+La orientación del protagonista depende de sus posiciones.
 
 [000335] DIÁLOGO
 Los personajes de apoyo situados en el exterior del Círculo mágico
@@ -1039,16 +1039,16 @@ recibirán el daño primero.
 Cuando un personaje de apoyo cae, el artefacto
 
 [000338] DIÁLOGO
-él/ella activó voluntad
+que había activado
 
 [000339] DIÁLOGO
-esencialmente quedan anulados.
+queda desactivado.
 
 [000340] DIÁLOGO
-Los artefactos se pueden colocar
+Puedes colocar artefactos
 
 [000341] DIÁLOGO
-en Espacios de Artefactos.
+en las casillas para artefactos.
 
 [000342] DIÁLOGO
 Los personajes de apoyo consumen maná
@@ -1057,73 +1057,73 @@ Los personajes de apoyo consumen maná
 para activar distintos artefactos.
 
 [000344] DIÁLOGO
-Los artefactos no se pueden activar si no hay un camino.
+Los artefactos no pueden activarse sin un camino
 
 [000345] DIÁLOGO
-conectado a él.
+que los conecte.
 
 [000346] DIÁLOGO
-Solo el Artefacto en cualquier lugar Artefacto es
+El artefacto «Artifact Anywhere»
 
 [000347] DIÁLOGO
-Exentos de esta regla.
+es la única excepción a esa regla.
 
 [000348] DIÁLOGO
-Coloca aquí los artefactos que potencian la magia o las habilidades.
+Aquí puedes colocar artefactos que mejoren la magia o las habilidades.
 
 [000349] DIÁLOGO
-Mejora de habilidades, reducción del consumo de SP,
+Entre ellos hay mejoras de habilidad, reducción del consumo de SP
 
 [000350] DIÁLOGO
-y la reducción del tiempo de colada, se encuentran entre ellas.
+y reducción del tiempo de lanzamiento.
 
 [000351] DIÁLOGO
-Colocar artefactos en la misma ranura permitirá
+Colocar varios artefactos en una misma casilla
 
 [000352] DIÁLOGO
-efectos apilar.
+permite acumular sus efectos.
 
 [000353] DIÁLOGO
-Los espacios con 'Widen' pueden duplicarse
+Las casillas con «Widen» pueden duplicar
 
 [000354] DIÁLOGO
-el efecto de cualquier artefacto que contenga.
+el efecto de los artefactos que contienen.
 
 [000355] DIÁLOGO
-Colocar varios artefactos de Widen en el mismo espacio.
+Si colocas varios «Widen» en una misma casilla,
 
 [000356] DIÁLOGO
-duplicará, triplicará o cuadruplicará los efectos.
+duplicarás, triplicarás o cuadruplicarás sus efectos.
 
 [000357] DIÁLOGO
-Sin embargo, también consumirá maná proporcionalmente.
+Eso sí, el consumo de maná aumenta en proporción.
 
 [000358] DIÁLOGO
-Colocar un Widen en un Espacio de Magia/Habilidad
+Si colocas un «Widen» en una casilla de magia/habilidad,
 
 [000359] DIÁLOGO
-ampliar el alcance de la Magia/Habilidad.
+ampliarás el alcance de la magia o habilidad.
 
 [000360] DIÁLOGO
-Hay espacios fijos que se han establecido
+Algunas casillas fijas vienen
 
 [000361] DIÁLOGO
-Por defecto en el Círculo mágico.
+predeterminadas en el Círculo mágico.
 
 [000362] DIÁLOGO
-Defender: Recibe el daño del personaje secundario.
+Defender: recibe el daño de un personaje de apoyo.
 
 [000363] DIÁLOGO
-HP -X: HP -X% de los subcaracteres.
+HP -X: reduce el HP de los personajes de apoyo en X%.
 
 [000364] DIÁLOGO
-Dispersión X: Dispersa un X% del daño a los personajes de apoyo.
+Dispersión X: reparte X% del daño entre los personajes de apoyo.
 
 [000365] DIÁLOGO
-Doble muerte: Elimina a todos los demás al morir.
+Muerte doble: al morir, derriba a los demás.
 
 [000366] DIÁLOGO
-Mana xX: Proporciona un multiplicador para tu Maná actual.
+Maná xX: multiplica tu maná actual.
 
 [000367] DIÁLOGO
 ¿Qué quieres saber sobre los controles?
@@ -1156,7 +1156,7 @@ Pulsa el botón ㊨ para saltar.
 Saltar te permite superar las trampas.
 
 [000377] DIÁLOGO
-Pulse el botón ⑯ para abrir el menú.
+Pulsa el botón ⑯ para abrir el menú.
 
 [000378] DIÁLOGO
 Selecciona Rendirse para salir de la mazmorra.
@@ -1168,7 +1168,7 @@ y regresar a Arcanus Cella.
 El dinero y la EXP que hayas obtenido se reducirán a la mitad.
 
 [000381] DIÁLOGO
-Las armas que encuentre serán confiscadas.
+Las armas que encuentres serán confiscadas.
 
 [000382] DIÁLOGO
 Pulsa el botón ㈲ durante la batalla para seleccionar
@@ -1177,10 +1177,10 @@ Pulsa el botón ㈲ durante la batalla para seleccionar
 tu magia o habilidad.
 
 [000384] DIÁLOGO
-Llenarás tu indicador, lo que te otorgará la capacidad.
+Llena el indicador para poder
 
 [000385] DIÁLOGO
-usar magia/habilidad si tienes suficientes SP.
+usar magia o habilidades si tienes suficiente SP.
 
 [000386] DIÁLOGO
 Esta es la enciclopedia que todo lo sabe.
@@ -1192,7 +1192,7 @@ Esta es la enciclopedia que todo lo sabe.
 Equipo
 
 [000389] OPCIÓN
-Celda Arcanus
+Arcanus Cella
 
 [000390] OPCIÓN
 Mazmorra
@@ -1204,7 +1204,7 @@ Círculo mágico
 Controles
 
 [000393] OPCIÓN
-Nueva geoda
+New-geon
 
 [000394] OPCIÓN
 Nada
@@ -1216,13 +1216,13 @@ Nada
 Arma: Espada
 
 [000397] OPCIÓN
-Arma - Contundente
+Arma: contundente
 
 [000398] OPCIÓN
 Arma: bastón
 
 [000399] OPCIÓN
-Blindaje
+Escudo
 
 [000400] OPCIÓN
 Armadura
@@ -1261,10 +1261,10 @@ Puede romper bloques destructibles.
 Te permite usar ataques a distancia.
 
 [000412] DIÁLOGO
-Una vez que el indicador del bastón esté en la parte inferior derecha
+Cuando se agote el indicador del bastón
 
 [000413] DIÁLOGO
-Si se agota, debes usar ataques cuerpo a cuerpo.
+de la esquina inferior derecha, tendrás que luchar cuerpo a cuerpo.
 
 [000414] DIÁLOGO
 Tiene el elemento ④, ⑤ o ⑥.
@@ -1273,7 +1273,7 @@ Tiene el elemento ④, ⑤ o ⑥.
 Los elementos se determinan en función del tipo de bastón.
 
 [000416] DIÁLOGO
-El indicador de nivel se recupera gradualmente de forma automática.
+El indicador del bastón se recarga poco a poco.
 
 [000417] DIÁLOGO
 Mientras sostienes tu escudo, tu DEF
@@ -1288,25 +1288,25 @@ Será especialmente eficaz desde el frente.
 Sin embargo, su eficacia disminuye con el uso.
 
 [000421] DIÁLOGO
-No existen diferencias estadísticas entre los proveedores.
+Los vendedores no alteran las estadísticas.
 
 [000422] DIÁLOGO
 La armadura puede ser compartida con todos.
 
 [000423] DIÁLOGO
-Todos los equipos tienen título de propiedad.
+Todo el equipo tiene títulos.
 
 [000424] DIÁLOGO
 Normal es el estado predeterminado.
 
 [000425] DIÁLOGO
-Todos los títulos tienen la capacidad
+Los efectos de los títulos
 
 [000426] DIÁLOGO
-para apilarlos uno a otro.
+pueden acumularse entre sí.
 
 [000427] DIÁLOGO
-Todos los equipos tienen atributos de peso ⑧.
+Todo el equipo tiene un atributo de peso ⑧.
 
 [000428] DIÁLOGO
 Cuanto mayor sea el valor de ⑧, más lento será tu ataque.
@@ -1327,19 +1327,19 @@ Salida
 Volver
 
 [000434] DIÁLOGO
-Las tiendas tienen todo tipo de equipos.
+En las tiendas encontrarás todo tipo de equipo
 
 [000435] DIÁLOGO
-Disponible para su compra.
+a la venta.
 
 [000436] DIÁLOGO
-Los artefactos poderosos rara vez son soltados por
+Los enemigos rara vez dejan caer artefactos poderosos,
 
 [000437] DIÁLOGO
-enemigos, así que deberías comprarlos aquí.
+así que conviene comprarlos aquí.
 
 [000438] DIÁLOGO
-Puedes crear nuevos personajes
+Puedes crear personajes nuevos
 
 [000439] DIÁLOGO
 en la taberna.
@@ -1351,7 +1351,7 @@ También puedes editar libremente sus rostros,
 Así que asegúrate de aprovechar esto.
 
 [000442] DIÁLOGO
-Termina el juego a través del hueco del árbol en el sureste.
+Para terminar la partida, entra por el agujero del árbol del sureste.
 
 [000443] DIÁLOGO
 Asegúrate de guardar antes de irte.
@@ -1366,7 +1366,7 @@ Trampas
 Tesoro
 
 [000447] OPCIÓN
-Colores enemigos
+Colores de enemigos
 
 [000448] OPCIÓN
 EXP
@@ -1375,13 +1375,13 @@ EXP
 Volver
 
 [000450] DIÁLOGO
-Hay trampas colocadas alrededor de la mazmorra.
+Hay trampas repartidas por las mazmorras.
 
 [000451] DIÁLOGO
-La mayoría de las trampas se activarán al pisarlas,
+La mayoría se activan cuando las pisas
 
 [000452] DIÁLOGO
-provocando que te disparen bolas y cosas así.
+y disparan bolas u otros proyectiles.
 
 [000453] DIÁLOGO
 Si te golpean, tu estado puede cambiar.
@@ -1393,7 +1393,7 @@ Algunos provocan terremotos dañinos o
 incluso generan enemigos.
 
 [000456] DIÁLOGO
-¡Cuidado con las trampas que pueden estar debajo de la hierba o el hielo!
+¡Ojo con las trampas ocultas bajo la hierba o el hielo!
 
 [000457] DIÁLOGO
 Las trampas desaparecen tras activarse varias veces.
@@ -1408,7 +1408,7 @@ Los rojos aparecen solo una vez.
 Los negros... son especiales.
 
 [000461] DIÁLOGO
-Cada enemigo tiene atributos basados ​​en colores.
+Cada enemigo tiene atributos asociados a su color.
 
 [000462] DIÁLOGO
 Amarillo: Normal
@@ -1420,10 +1420,10 @@ Verde: Alto ATK
 Blanco: Alto HP, DEF
 
 [000465] DIÁLOGO
-Rojo: ④ Elemento. Absorbe el fuego.
+Rojo: elemento ④. Absorbe fuego.
 
 [000466] DIÁLOGO
-Azul: ⑤ Elemento. No resbala. Absorbe el hielo.
+Azul: elemento ⑤. No resbala y absorbe hielo.
 
 [000467] DIÁLOGO
 Negro: Muy, muy fuerte.
@@ -1432,31 +1432,31 @@ Negro: Muy, muy fuerte.
 Pulsa el botón ⑯ en la mazmorra para ver
 
 [000469] DIÁLOGO
-tu EXP temporal.
+tu EXP provisional.
 
 [000470] DIÁLOGO
-Cuando llegues a la pantalla de resultados, esa EXP
+Al llegar a la pantalla de resultados, esa EXP
 
 [000471] DIÁLOGO
-se distribuirá entre los miembros de tu grupo.
+se repartirá entre tu grupo.
 
 [000472] DIÁLOGO
-Un personaje de alto nivel no obtendrá mucha EXP de
+Un personaje de nivel alto obtiene poca EXP
 
 [000473] DIÁLOGO
-derrotando enemigos de bajo nivel. Pero, en el caso de la
+al derrotar a enemigos de nivel bajo. En cambio,
 
 [000474] DIÁLOGO
-Si ocurre lo contrario, obtendrán mucha EXP.
+si derrota a enemigos de nivel superior, gana mucha EXP.
 
 [000475] DIÁLOGO
-Si el principal y el secundario no tienen el mismo nivel,
+Si el personaje principal y los de apoyo tienen distintos niveles,
 
 [000476] DIÁLOGO
-La EXP se distribuirá en consecuencia.
+la EXP se reparte en consecuencia.
 
 [000477] DIÁLOGO
-¿Qué quieres saber sobre los Círculos Mágicos?
+¿Qué quieres saber de los Círculos mágicos?
 
 [000478] OPCIÓN
 Círculos mágicos
@@ -1465,13 +1465,13 @@ Círculos mágicos
 Personaje principal
 
 [000480] OPCIÓN
-Personaje secundario
+Personaje de apoyo
 
 [000481] OPCIÓN
 Artefacto
 
 [000482] OPCIÓN
-Espacio de magia/habilidad
+Casilla de magia/habilidad
 
 [000483] OPCIÓN
 Ampliación
@@ -1483,52 +1483,52 @@ Espacio fijo
 Volver
 
 [000486] DIÁLOGO
-Este es un hechizo donde el sub potencia al principal.
+Con este hechizo, un personaje de apoyo
 
 [000487] DIÁLOGO
-animándole/a.
+anima y fortalece al personaje principal.
 
 [000488] DIÁLOGO
-Los personajes de apoyo consumen maná para activar
+Los personajes de apoyo gastan maná para activar
 
 [000489] DIÁLOGO
-Artefactos, que luego,
+artefactos, que a su vez
 
 [000490] DIÁLOGO
-a su vez, encienda la principal.
+fortalecen al personaje principal.
 
 [000491] DIÁLOGO
 Este es tu personaje jugable.
 
 [000492] DIÁLOGO
-Cuando todos los suplentes quedan fuera de combate,
+Cuando caen todos los personajes de apoyo,
 
 [000493] DIÁLOGO
-La HP principal se mostrará.
+se muestra el HP del personaje principal.
 
 [000494] DIÁLOGO
-Cuando el personaje principal queda fuera de combate, se acaba el juego.
+Si cae el personaje principal, se termina la partida.
 
 [000495] DIÁLOGO
-Son los escudos que protegen al núcleo.
+Son los escudos que protegen al personaje principal.
 
 [000496] DIÁLOGO
 Recibir daño en la batalla
 
 [000497] DIÁLOGO
-hará que los suplentes pierdan sus puntos de vida.
+hace que los personajes de apoyo pierdan HP.
 
 [000498] DIÁLOGO
 Hay una capa exterior y una capa interior de la
 
 [000499] DIÁLOGO
-Casilla del personaje de apoyo en el Círculo mágico.
+para las casillas de personajes de apoyo.
 
 [000500] DIÁLOGO
 Los subsuelos de la capa exterior se muestran primero.
 
 [000501] DIÁLOGO
-La forma en que los rostros principales se corresponden con sus posiciones.
+La orientación del protagonista depende de sus posiciones.
 
 [000502] DIÁLOGO
 Los personajes de apoyo situados en el exterior del Círculo mágico
@@ -1540,16 +1540,16 @@ recibirán el daño primero.
 Cuando un personaje de apoyo cae, el artefacto
 
 [000505] DIÁLOGO
-él/ella activó voluntad
+que había activado
 
 [000506] DIÁLOGO
-esencialmente quedan anulados.
+queda desactivado.
 
 [000507] DIÁLOGO
-Los artefactos se pueden colocar
+Puedes colocar artefactos
 
 [000508] DIÁLOGO
-en Espacios de Artefactos.
+en las casillas para artefactos.
 
 [000509] DIÁLOGO
 Los personajes secundarios consumirán maná.
@@ -1558,73 +1558,73 @@ Los personajes secundarios consumirán maná.
 para activar varios artefactos.
 
 [000511] DIÁLOGO
-Los artefactos no se pueden activar si no hay un camino.
+Los artefactos no pueden activarse sin un camino
 
 [000512] DIÁLOGO
-conectado a él.
+que los conecte.
 
 [000513] DIÁLOGO
-Solo el Artefacto en cualquier lugar Artefacto es
+El artefacto «Artifact Anywhere»
 
 [000514] DIÁLOGO
-Exentos de esta regla.
+es la única excepción a esa regla.
 
 [000515] DIÁLOGO
-Coloca aquí los artefactos que potencian la magia o las habilidades.
+Aquí puedes colocar artefactos que mejoren la magia o las habilidades.
 
 [000516] DIÁLOGO
-Mejora de habilidades, reducción del consumo de SP,
+Entre ellos hay mejoras de habilidad, reducción del consumo de SP
 
 [000517] DIÁLOGO
-y la reducción del tiempo de colada, se encuentran entre ellas.
+y reducción del tiempo de lanzamiento.
 
 [000518] DIÁLOGO
-Colocar artefactos en la misma ranura permitirá
+Colocar varios artefactos en una misma casilla
 
 [000519] DIÁLOGO
 sus efectos se acumulan.
 
 [000520] DIÁLOGO
-Los espacios con 'Widen' pueden duplicarse
+Las casillas con «Widen» pueden duplicar
 
 [000521] DIÁLOGO
-el efecto de cualquier artefacto que contenga.
+el efecto de los artefactos que contienen.
 
 [000522] DIÁLOGO
-Colocar varios artefactos de Widen en el mismo espacio.
+Si colocas varios «Widen» en una misma casilla,
 
 [000523] DIÁLOGO
-duplicará, triplicará o cuadruplicará los efectos.
+duplicarás, triplicarás o cuadruplicarás sus efectos.
 
 [000524] DIÁLOGO
-Sin embargo, también consumirá maná proporcionalmente.
+Eso sí, el consumo de maná aumenta en proporción.
 
 [000525] DIÁLOGO
-Colocar un Widen en un Espacio de Magia/Habilidad
+Si colocas un «Widen» en una casilla de magia/habilidad,
 
 [000526] DIÁLOGO
 Ampliar el alcance de la Magia/Habilidad.
 
 [000527] DIÁLOGO
-Hay espacios fijos que se han establecido
+Algunas casillas fijas vienen
 
 [000528] DIÁLOGO
-Por defecto en el Círculo mágico.
+predeterminadas en el Círculo mágico.
 
 [000529] DIÁLOGO
 Defender: Recibe el daño del personaje secundario.
 
 [000530] DIÁLOGO
-HP -X: HP -X% de los subcaracteres.
+HP -X: reduce el HP de los personajes de apoyo en X%.
 
 [000531] DIÁLOGO
-Dispersión X: Dispersa un X% del daño a los personajes de apoyo.
+Dispersión X: reparte X% del daño entre los personajes de apoyo.
 
 [000532] DIÁLOGO
-Doble muerte: Elimina a todos los demás al morir.
+Muerte doble: al morir, derriba a los demás.
 
 [000533] DIÁLOGO
-Mana xX: Proporciona un multiplicador para tu Maná actual.
+Maná xX: multiplica tu maná actual.
 
 [000534] DIÁLOGO
 ¿Qué quieres saber sobre los controles?
@@ -1657,7 +1657,7 @@ Pulsa el botón ㊨ para saltar.
 Saltar te permite superar las trampas.
 
 [000544] DIÁLOGO
-Pulse el botón ⑯ para abrir el menú.
+Pulsa el botón ⑯ para abrir el menú.
 
 [000545] DIÁLOGO
 Selecciona Rendirse para salir de la mazmorra.
@@ -1669,7 +1669,7 @@ y regresar a Arcanus Cella.
 El dinero y la EXP que hayas obtenido se reducirán a la mitad.
 
 [000548] DIÁLOGO
-Las armas que encuentre serán confiscadas.
+Las armas que encuentres serán confiscadas.
 
 [000549] DIÁLOGO
 Pulsa el botón ㈲ durante la batalla para seleccionar
@@ -1678,10 +1678,10 @@ Pulsa el botón ㈲ durante la batalla para seleccionar
 tu magia o habilidad.
 
 [000551] DIÁLOGO
-Llenarás tu indicador, lo que te otorgará la capacidad.
+Llena el indicador para poder
 
 [000552] DIÁLOGO
-usar magia/habilidad si tienes suficientes SP.
+usar magia o habilidades si tienes suficiente SP.
 
 [000553] DIÁLOGO
 Este es un tutorial sobre New-geon.
@@ -28522,7 +28522,7 @@ Duela
 ④Bastón +35
 
 [009061] OBJETOS ARMAS
-Personal de ángeles
+Bastón angelical
 
 [009062] OBJETOS ARMAS
 ⑥Bastón +38

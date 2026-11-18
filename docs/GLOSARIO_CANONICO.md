@@ -1,6 +1,6 @@
 # Glosario canónico — Cladun: This Is an RPG! (USA, PSP)
 
-Versión 1.0, 18/11/2026. **Consistente para el borrador**, todavía no aprobado mediante revisión en PPSSPP. No sustituir nombres por intuición. Se utiliza español neutro latinoamericano, trato de tú salvo contexto de personaje; nombres propios en inglés preservados.
+Versión 1.1, 18/11/2026. **Consistente para el borrador**, todavía no aprobado mediante revisión en PPSSPP. No sustituir nombres por intuición. Se utiliza español neutro latinoamericano, trato de tú salvo contexto de personaje; nombres propios en inglés preservados.
 
 | Original | Español canónico | Tratamiento |
 |---|---|---|
@@ -61,3 +61,17 @@ Versión 1.0, 18/11/2026. **Consistente para el borrador**, todavía no aprobado
 7. No confundir **borrador normalizado** con traducción revisada íntegramente ni con texto jugable.
 
 Fuentes para terminología mecánica: [Magic Circle (Cladun Wiki)](https://cladun.fandom.com/wiki/Magic_Circle), [guía GameFAQs de Cladun](https://gamefaqs.gamespot.com/psp/980503-cladun-this-is-an-rpg/faqs/63499).
+
+## Precisiones de revisión contextual
+
+| Original | Español obligatorio | Justificación |
+|---|---|---|
+| Shield | escudo | Arma defensiva; no «blindaje» |
+| Artifact Anywhere | Artifact Anywhere | Nombre de artefacto provisional; no traducir como frase común |
+| Title (equipment) | título | Modificador del equipamiento; no «título de propiedad» |
+| SP | SP | Indicador de recurso, conservar abreviatura |
+| Staff Gauge | indicador del bastón | No «indicador de nivel» |
+| Time to cast | tiempo de lanzamiento | Hechizos, no «tiempo de colada» |
+| Hiyokki drop | los Hiyokki dejan caer | Sujetos de juego, no «Hiyokki caerá» |
+
+Las revisiones agrupadas y la preservación del texto original están documentadas en [la auditoría contextual](REVISION_CONTEXTUAL_2026-11-18.md).

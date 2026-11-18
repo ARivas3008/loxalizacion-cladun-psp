@@ -1,0 +1,197 @@
+﻿grupo_id,text_id,origen,original,espanol_anterior,espanol_revisado,decision
+000151,CLD-000170,SCRIPT.SDT/SCRIPT.DAT,"When you find caves,","Cuando encuentres cuevas,","Cuando encuentres una cueva,",revision_contextual
+000152,CLD-000171,SCRIPT.SDT/SCRIPT.DAT,only move when it's safe to do so.,Muévase solo cuando sea seguro hacerlo.,muévete solo cuando sea seguro.,revision_contextual
+000153,CLD-000172,SCRIPT.SDT/SCRIPT.DAT,"There are Artifacts, equipment,","Hay artefactos, equipos,","Hay artefactos, equipo",revision_contextual
+000155,CLD-000174,SCRIPT.SDT/SCRIPT.DAT,Hiyokki will drop.,Hiyokki caerá.,dejan caer los Hiyokki.,revision_contextual
+000159,CLD-000178,SCRIPT.SDT/SCRIPT.DAT,You can use the shield to cancel out the few frames,Puedes usar el escudo para cancelar los pocos fotogramas,Puedes usar el escudo para cancelar algunos fotogramas,revision_contextual
+000160,CLD-000179,SCRIPT.SDT/SCRIPT.DAT,of vulnerability you have after attacking.,de vulnerabilidad que tienes después del ataque.,de vulnerabilidad después de atacar.,revision_contextual
+000165,CLD-000184,SCRIPT.SDT/SCRIPT.DAT,There are some monsters who will never,Hay algunos monstruos que nunca...,Hay monstruos que nunca,revision_contextual
+000166,CLD-000185,SCRIPT.SDT/SCRIPT.DAT,"get the ""BREAK!"" mode.","Obtén el modo ""¡BREAK!"".",entran en modo «BREAK!».,revision_contextual
+000169,CLD-000188,SCRIPT.SDT/SCRIPT.DAT,①②③④⑤⑥ properties,①②③④⑤⑥ propiedades,Los atributos ①②③④⑤⑥,revision_contextual
+000170,CLD-000189,SCRIPT.SDT/SCRIPT.DAT,can be crucial.,puede ser crucial.,pueden ser decisivos.,revision_contextual
+000171,CLD-000190,SCRIPT.SDT/SCRIPT.DAT,Charge attacks with axes and special attacks,Ataques de carga con hachas y ataques especiales,Los ataques cargados con hacha y los especiales,revision_contextual
+000172,CLD-000191,SCRIPT.SDT/SCRIPT.DAT,can hit enemies behind walls.,Puede alcanzar a los enemigos que se encuentran detrás de las paredes.,pueden alcanzar a enemigos detrás de las paredes.,revision_contextual
+000175,CLD-000194,SCRIPT.SDT/SCRIPT.DAT,"the ""Widen"" Artifact is like night and day.","El artefacto ""Widen"" es como la noche y el día.",usar el artefacto «Widen» marca una enorme diferencia.,revision_contextual
+000176,CLD-000195,SCRIPT.SDT/SCRIPT.DAT,"When you're lost, simply walk along the wall","Cuando te pierdas, simplemente camina a lo largo de la pared.","Si te pierdes, sigue la pared",revision_contextual
+000177,CLD-000196,SCRIPT.SDT/SCRIPT.DAT,and you'll eventually find the goal.,y finalmente encontrarás la meta.,hasta encontrar la salida.,revision_contextual
+000178,CLD-000197,SCRIPT.SDT/SCRIPT.DAT,Equip a staff to halve the,Equipa un bastón para reducir a la mitad la,Equipa un bastón para reducir a la mitad,revision_contextual
+000179,CLD-000198,SCRIPT.SDT/SCRIPT.DAT,SP Use of magic.,SP Uso de la magia.,el consumo de SP de la magia.,revision_contextual
+000183,CLD-000202,SCRIPT.SDT/SCRIPT.DAT,"""E. Recover"" can remove any enemy buffs","""E. Recuperar"" puede eliminar cualquier mejora del enemigo.",«E. Recover» puede eliminar las mejoras,revision_contextual
+000184,CLD-000203,SCRIPT.SDT/SCRIPT.DAT,they may have.,Puede que sí.,que tengan los enemigos.,revision_contextual
+000190,CLD-000209,SCRIPT.SDT/SCRIPT.DAT,No monsters are completely immune,Ningún monstruo es completamente inmune.,Ningún monstruo es totalmente inmune,revision_contextual
+000191,CLD-000210,SCRIPT.SDT/SCRIPT.DAT,to the ⑥ property.,a la propiedad ⑥.,a los ataques del atributo ⑥.,revision_contextual
+000196,CLD-000215,SCRIPT.SDT/SCRIPT.DAT,"Using the magic ""Recover""","Usando la función mágica ""Recuperar""",La magia «Recover»,revision_contextual
+000197,CLD-000216,SCRIPT.SDT/SCRIPT.DAT,will heal you of your burning state.,te curará de tu estado de ardor.,elimina las quemaduras.,revision_contextual
+000198,CLD-000217,SCRIPT.SDT/SCRIPT.DAT,Dragons are wide open for attacks,Los dragones son totalmente vulnerables a los ataques.,Los dragones quedan expuestos a los ataques,revision_contextual
+000204,CLD-000223,SCRIPT.SDT/SCRIPT.DAT,There is a man in the underground chamber,Hay un hombre en la cámara subterránea.,En la cámara subterránea hay un hombre,revision_contextual
+000205,CLD-000224,SCRIPT.SDT/SCRIPT.DAT,who can gauge your strength.,quién puede medir tu fuerza.,que puede medir tu fuerza.,revision_contextual
+000206,CLD-000225,SCRIPT.SDT/SCRIPT.DAT,"In Wireless Play, everyone can get","En Wireless Play, todos pueden obtener","En el modo inalámbrico, todos pueden obtener",revision_contextual
+000207,CLD-000226,SCRIPT.SDT/SCRIPT.DAT,a single item simultaneously.,un solo objeto simultáneamente.,un objeto a la vez.,revision_contextual
+000212,CLD-000231,SCRIPT.SDT/SCRIPT.DAT,I am the rumor signboard.,Soy el cartel de los rumores.,Soy el tablón de rumores.,revision_contextual
+000213,CLD-000232,SCRIPT.SDT/SCRIPT.DAT,"Even if you die in battle, you level up just a bit.","Aunque mueras en batalla, subes un poco de nivel.","Aunque caigas en combate, ganas algo de EXP.",revision_contextual
+000214,CLD-000233,SCRIPT.SDT/SCRIPT.DAT,You don't completely lose out on everything.,No lo pierdes todo por completo.,No lo pierdes todo.,revision_contextual
+000215,CLD-000234,SCRIPT.SDT/SCRIPT.DAT,I am the rumor signboard.,Soy el cartel de los rumores.,Soy el tablón de rumores.,revision_contextual
+000216,CLD-000235,SCRIPT.SDT/SCRIPT.DAT,Stuff on me constantly changes.,Las cosas que llevo puestas cambian constantemente.,Mis mensajes cambian constantemente.,revision_contextual
+000217,CLD-000236,SCRIPT.SDT/SCRIPT.DAT,I am a signboard.,Soy un letrero.,Soy un tablón de anuncios.,revision_contextual
+000218,CLD-000237,SCRIPT.SDT/SCRIPT.DAT,I spread rumors and gossip.,Difundo rumores y chismes.,Difundo rumores y cotilleos.,revision_contextual
+000219,CLD-000238,SCRIPT.SDT/SCRIPT.DAT,Glad you decided to read me.,Me alegra que hayas decidido leerme.,¡Gracias por leerme!,revision_contextual
+000223,CLD-000242,SCRIPT.SDT/SCRIPT.DAT,Arcanus Cella,Celda Arcanus,Arcanus Cella,revision_contextual
+000230,CLD-000249,SCRIPT.SDT/SCRIPT.DAT,Weapon - Blunt,Arma - Contundente,Arma: contundente,revision_contextual
+000232,CLD-000251,SCRIPT.SDT/SCRIPT.DAT,Shield,Blindaje,Escudo,revision_contextual
+000245,CLD-000264,SCRIPT.SDT/SCRIPT.DAT,Once the Staff Gauge on the bottom right,Una vez que el indicador del bastón esté en la parte inferior derecha,Cuando se agote el indicador del bastón,revision_contextual
+000246,CLD-000265,SCRIPT.SDT/SCRIPT.DAT,"is depleted, you must use melee attacks.","Si se agota, debes usar ataques cuerpo a cuerpo.","de la esquina inferior derecha, tendrás que luchar cuerpo a cuerpo.",revision_contextual
+000247,CLD-000266,SCRIPT.SDT/SCRIPT.DAT,The Staff Gauge gradually recovers automatically.,El indicador de nivel se recupera gradualmente de forma automática.,El indicador del bastón se recarga poco a poco.,revision_contextual
+000254,CLD-000273,SCRIPT.SDT/SCRIPT.DAT,There are no stat differences between vendors.,No existen diferencias estadísticas entre los proveedores.,Los vendedores no alteran las estadísticas.,revision_contextual
+000256,CLD-000275,SCRIPT.SDT/SCRIPT.DAT,All equipment have titles.,Todos los equipos tienen título de propiedad.,Todo el equipo tiene títulos.,revision_contextual
+000258,CLD-000277,SCRIPT.SDT/SCRIPT.DAT,All titles have the ability,Todos los títulos tienen la capacidad,Los efectos de los títulos,revision_contextual
+000259,CLD-000278,SCRIPT.SDT/SCRIPT.DAT,to stack with one another.,para apilarlos uno a otro.,pueden acumularse entre sí.,revision_contextual
+000260,CLD-000279,SCRIPT.SDT/SCRIPT.DAT,All equipment has ⑧ weight attributes.,Todos los equipos tienen atributos de peso ⑧.,Todo el equipo tiene un atributo de peso ⑧.,revision_contextual
+000263,CLD-000282,SCRIPT.SDT/SCRIPT.DAT,Shops,tiendas,Tiendas,revision_contextual
+000267,CLD-000286,SCRIPT.SDT/SCRIPT.DAT,Shops have all kinds of equipment,Las tiendas tienen todo tipo de equipos.,En las tiendas encontrarás todo tipo de equipo,revision_contextual
+000268,CLD-000287,SCRIPT.SDT/SCRIPT.DAT,available for you to purchase.,Disponible para su compra.,a la venta.,revision_contextual
+000269,CLD-000288,SCRIPT.SDT/SCRIPT.DAT,Powerful Artifacts are rarely dropped by,Los artefactos poderosos rara vez son soltados por,"Los enemigos rara vez dejan caer artefactos poderosos,",revision_contextual
+000270,CLD-000289,SCRIPT.SDT/SCRIPT.DAT,"enemies, so you should purchase those here.","enemigos, así que deberías comprarlos aquí.",así que conviene comprarlos aquí.,revision_contextual
+000271,CLD-000290,SCRIPT.SDT/SCRIPT.DAT,You can create new characters,Puedes crear nuevos personajes,Puedes crear personajes nuevos,revision_contextual
+000275,CLD-000294,SCRIPT.SDT/SCRIPT.DAT,End the game through the treehole in the southeast.,Termina el juego a través del hueco del árbol en el sureste.,"Para terminar la partida, entra por el agujero del árbol del sureste.",revision_contextual
+000280,CLD-000299,SCRIPT.SDT/SCRIPT.DAT,Enemy Colors,Colores enemigos,Colores de enemigos,revision_contextual
+000283,CLD-000302,SCRIPT.SDT/SCRIPT.DAT,There are traps placed around the dungeon.,Hay trampas colocadas alrededor de la mazmorra.,Hay trampas repartidas por las mazmorras.,revision_contextual
+000284,CLD-000303,SCRIPT.SDT/SCRIPT.DAT,"Most traps will activate when stepped on,","La mayoría de las trampas se activarán al pisarlas,",La mayoría se activan cuando las pisas,revision_contextual
+000285,CLD-000304,SCRIPT.SDT/SCRIPT.DAT,causing balls and such to be shot at you.,provocando que te disparen bolas y cosas así.,y disparan bolas u otros proyectiles.,revision_contextual
+000289,CLD-000308,SCRIPT.SDT/SCRIPT.DAT,Watch out for traps under grass or ice.,¡Cuidado con las trampas que pueden estar debajo de la hierba o el hielo!,¡Ojo con las trampas ocultas bajo la hierba o el hielo!,revision_contextual
+000294,CLD-000313,SCRIPT.SDT/SCRIPT.DAT,Each enemy has attributes based on colors.,Cada enemigo tiene atributos basados ​​en colores.,Cada enemigo tiene atributos asociados a su color.,revision_contextual
+000298,CLD-000317,SCRIPT.SDT/SCRIPT.DAT,Red: ④ Element. Absorbs fire.,Rojo: ④ Elemento. Absorbe el fuego.,Rojo: elemento ④. Absorbe fuego.,revision_contextual
+000299,CLD-000318,SCRIPT.SDT/SCRIPT.DAT,Blue: ⑤ Element. Does not slip. Absorbs ice.,Azul: ⑤ Elemento. No resbala. Absorbe el hielo.,Azul: elemento ⑤. No resbala y absorbe hielo.,revision_contextual
+000302,CLD-000321,SCRIPT.SDT/SCRIPT.DAT,your temporary EXP.,tu EXP temporal.,tu EXP provisional.,revision_contextual
+000303,CLD-000322,SCRIPT.SDT/SCRIPT.DAT,"When you reach the Results Screen, that EXP","Cuando llegues a la pantalla de resultados, esa EXP","Al llegar a la pantalla de resultados, esa EXP",revision_contextual
+000304,CLD-000323,SCRIPT.SDT/SCRIPT.DAT,will be distributed among your party.,se distribuirá entre los miembros de tu grupo.,se repartirá entre tu grupo.,revision_contextual
+000305,CLD-000324,SCRIPT.SDT/SCRIPT.DAT,A high level character won't get much EXP from,Un personaje de alto nivel no obtendrá mucha EXP de,Un personaje de nivel alto obtiene poca EXP,revision_contextual
+000306,CLD-000325,SCRIPT.SDT/SCRIPT.DAT,"defeating low level enemies. But, in the case of the","derrotando enemigos de bajo nivel. Pero, en el caso de la","al derrotar a enemigos de nivel bajo. En cambio,",revision_contextual
+000307,CLD-000326,SCRIPT.SDT/SCRIPT.DAT,"opposite happening, they will get lots of EXP.","Si ocurre lo contrario, obtendrán mucha EXP.","si derrota a enemigos de nivel superior, gana mucha EXP.",revision_contextual
+000308,CLD-000327,SCRIPT.SDT/SCRIPT.DAT,"If the main and sub do not have the same level,","Si el principal y el secundario no tienen el mismo nivel,","Si el personaje principal y los de apoyo tienen distintos niveles,",revision_contextual
+000309,CLD-000328,SCRIPT.SDT/SCRIPT.DAT,the EXP will be distributed accordingly.,La EXP se distribuirá en consecuencia.,la EXP se reparte en consecuencia.,revision_contextual
+000310,CLD-000329,SCRIPT.SDT/SCRIPT.DAT,What do you want to know about Magic Circles?,¿Qué quieres saber sobre los Círculos Mágicos?,¿Qué quieres saber de los Círculos mágicos?,revision_contextual
+000313,CLD-000332,SCRIPT.SDT/SCRIPT.DAT,Sub Character,Personaje secundario,Personaje de apoyo,revision_contextual
+000315,CLD-000334,SCRIPT.SDT/SCRIPT.DAT,Magic/Ability Space,Espacio de magia/habilidad,Casilla de magia/habilidad,revision_contextual
+000317,CLD-000336,SCRIPT.SDT/SCRIPT.DAT,Fixed Space,Espacio fijo,Casilla fija,revision_contextual
+000319,CLD-000338,SCRIPT.SDT/SCRIPT.DAT,This is a spell where the sub powers up the main,Este es un hechizo donde el sub potencia al principal.,"Con este hechizo, un personaje de apoyo",revision_contextual
+000320,CLD-000339,SCRIPT.SDT/SCRIPT.DAT,by cheering him/her on.,que refuerza al personaje principal.,anima y fortalece al personaje principal.,revision_contextual
+000321,CLD-000340,SCRIPT.SDT/SCRIPT.DAT,Subs consume Mana to activate,Los personajes de apoyo consumen maná para activar,Los personajes de apoyo gastan maná para activar,revision_contextual
+000322,CLD-000341,SCRIPT.SDT/SCRIPT.DAT,"Artifacts, which will then,","Artefactos, que luego,","artefactos, que a su vez",revision_contextual
+000323,CLD-000342,SCRIPT.SDT/SCRIPT.DAT,"in turn, power up the main.",y aumentarán las capacidades del personaje principal.,fortalecen al personaje principal.,revision_contextual
+000326,CLD-000345,SCRIPT.SDT/SCRIPT.DAT,the main's HP will display.,se muestra la vida del personaje principal.,se muestra el HP del personaje principal.,revision_contextual
+000327,CLD-000346,SCRIPT.SDT/SCRIPT.DAT,"When the main gets knocked out, it's Game Over.","Cuando el personaje principal queda fuera de combate, se acaba el juego.","Si cae el personaje principal, se termina la partida.",revision_contextual
+000328,CLD-000347,SCRIPT.SDT/SCRIPT.DAT,They are the shields who protect the main.,Son los escudos que protegen al núcleo.,Son los escudos que protegen al personaje principal.,revision_contextual
+000330,CLD-000349,SCRIPT.SDT/SCRIPT.DAT,will cause the subs to lose their HP.,hace que los personajes de apoyo pierdan PV.,hace que los personajes de apoyo pierdan HP.,revision_contextual
+000331,CLD-000350,SCRIPT.SDT/SCRIPT.DAT,There is an outer layer and inner layer of,Hay una capa exterior y una capa interior de,El Círculo mágico tiene capas exteriores e interiores,revision_contextual
+000332,CLD-000351,SCRIPT.SDT/SCRIPT.DAT,Sub Character Space in the Magic Circle.,Casilla del personaje de apoyo en el Círculo mágico.,para las casillas de personajes de apoyo.,revision_contextual
+000333,CLD-000352,SCRIPT.SDT/SCRIPT.DAT,The subs in the outer layer display first.,Se muestran primero los personajes de apoyo de la capa exterior.,Primero se muestran los personajes de la capa exterior.,revision_contextual
+000334,CLD-000353,SCRIPT.SDT/SCRIPT.DAT,The way the main faces corresponds to their positions.,La forma en que los rostros principales se corresponden con sus posiciones.,La orientación del protagonista depende de sus posiciones.,revision_contextual
+000338,CLD-000357,SCRIPT.SDT/SCRIPT.DAT,he/she activated will,él/ella activó voluntad,que había activado,revision_contextual
+000339,CLD-000358,SCRIPT.SDT/SCRIPT.DAT,essentially become nullified.,esencialmente quedan anulados.,queda desactivado.,revision_contextual
+000340,CLD-000359,SCRIPT.SDT/SCRIPT.DAT,Artifacts can be placed,Los artefactos se pueden colocar,Puedes colocar artefactos,revision_contextual
+000341,CLD-000360,SCRIPT.SDT/SCRIPT.DAT,in Artifact Spaces.,en Espacios de Artefactos.,en las casillas para artefactos.,revision_contextual
+000344,CLD-000363,SCRIPT.SDT/SCRIPT.DAT,Artifacts cannot be activated if there is no path,Los artefactos no se pueden activar si no hay un camino.,Los artefactos no pueden activarse sin un camino,revision_contextual
+000345,CLD-000364,SCRIPT.SDT/SCRIPT.DAT,connected to it.,conectado a él.,que los conecte.,revision_contextual
+000346,CLD-000365,SCRIPT.SDT/SCRIPT.DAT,Only the Artifact Anywhere Artifact is,Solo el Artefacto en cualquier lugar Artefacto es,El artefacto «Artifact Anywhere»,revision_contextual
+000347,CLD-000366,SCRIPT.SDT/SCRIPT.DAT,exempt to this rule.,Exentos de esta regla.,es la única excepción a esa regla.,revision_contextual
+000348,CLD-000367,SCRIPT.SDT/SCRIPT.DAT,Place Artifacts that boost Magic/Abilities here.,Coloca aquí los artefactos que potencian la magia o las habilidades.,Aquí puedes colocar artefactos que mejoren la magia o las habilidades.,revision_contextual
+000349,CLD-000368,SCRIPT.SDT/SCRIPT.DAT,"Ability Boost, SP Consumption Reduction,","Mejora de habilidades, reducción del consumo de SP,","Entre ellos hay mejoras de habilidad, reducción del consumo de SP",revision_contextual
+000350,CLD-000369,SCRIPT.SDT/SCRIPT.DAT,"and Casting Time Reduction, are among those.","y la reducción del tiempo de colada, se encuentran entre ellas.",y reducción del tiempo de lanzamiento.,revision_contextual
+000351,CLD-000370,SCRIPT.SDT/SCRIPT.DAT,Placing Artifacts in the same slot will allow,Colocar artefactos en la misma ranura permitirá,Colocar varios artefactos en una misma casilla,revision_contextual
+000352,CLD-000371,SCRIPT.SDT/SCRIPT.DAT,effects to stack.,efectos apilar.,permite acumular sus efectos.,revision_contextual
+000353,CLD-000372,SCRIPT.SDT/SCRIPT.DAT,Spaces with 'Widen' can double,Los espacios con 'Widen' pueden duplicarse,Las casillas con «Widen» pueden duplicar,revision_contextual
+000354,CLD-000373,SCRIPT.SDT/SCRIPT.DAT,the effect of any Artifacts in it.,el efecto de cualquier artefacto que contenga.,el efecto de los artefactos que contienen.,revision_contextual
+000355,CLD-000374,SCRIPT.SDT/SCRIPT.DAT,Placing multiple Widen Artifacts in the same space,Colocar varios artefactos de Widen en el mismo espacio.,"Si colocas varios «Widen» en una misma casilla,",revision_contextual
+000356,CLD-000375,SCRIPT.SDT/SCRIPT.DAT,"will double, triple, or quadruple the effects.","duplicará, triplicará o cuadruplicará los efectos.","duplicarás, triplicarás o cuadruplicarás sus efectos.",revision_contextual
+000357,CLD-000376,SCRIPT.SDT/SCRIPT.DAT,"However, it will also consume Mana proportionately.","Sin embargo, también consumirá maná proporcionalmente.","Eso sí, el consumo de maná aumenta en proporción.",revision_contextual
+000358,CLD-000377,SCRIPT.SDT/SCRIPT.DAT,Placing a Widen on a Magic/Ability Space will,Colocar un Widen en un Espacio de Magia/Habilidad,"Si colocas un «Widen» en una casilla de magia/habilidad,",revision_contextual
+000359,CLD-000378,SCRIPT.SDT/SCRIPT.DAT,widen the range of the Magic/Ability.,ampliar el alcance de la Magia/Habilidad.,ampliarás el alcance de la magia o habilidad.,revision_contextual
+000360,CLD-000379,SCRIPT.SDT/SCRIPT.DAT,There are Fixed Spaces that have been set,Hay espacios fijos que se han establecido,Algunas casillas fijas vienen,revision_contextual
+000361,CLD-000380,SCRIPT.SDT/SCRIPT.DAT,by default on the Magic Circle.,Por defecto en el Círculo mágico.,predeterminadas en el Círculo mágico.,revision_contextual
+000362,CLD-000381,SCRIPT.SDT/SCRIPT.DAT,Defend: Take sub character's damage.,Defender: Recibe el daño del personaje secundario.,Defender: recibe el daño de un personaje de apoyo.,revision_contextual
+000363,CLD-000382,SCRIPT.SDT/SCRIPT.DAT,HP -X: HP -X% of sub characters.,HP -X: HP -X% de los subcaracteres.,HP -X: reduce el HP de los personajes de apoyo en X%.,revision_contextual
+000364,CLD-000383,SCRIPT.SDT/SCRIPT.DAT,Scatter X: Disperses X% of damage to subs.,Dispersión X: Dispersa un X% del daño a los personajes de apoyo.,Dispersión X: reparte X% del daño entre los personajes de apoyo.,revision_contextual
+000365,CLD-000384,SCRIPT.SDT/SCRIPT.DAT,Double Death: Take out everyone else when dying.,Doble muerte: Elimina a todos los demás al morir.,"Muerte doble: al morir, derriba a los demás.",revision_contextual
+000366,CLD-000385,SCRIPT.SDT/SCRIPT.DAT,Mana xX: Provides a multiplier for your current Mana.,Mana xX: Proporciona un multiplicador para tu Maná actual.,Maná xX: multiplica tu maná actual.,revision_contextual
+000377,CLD-000396,SCRIPT.SDT/SCRIPT.DAT,Press the ⑯ button to open the Menu.,Pulse el botón ⑯ para abrir el menú.,Pulsa el botón ⑯ para abrir el menú.,revision_contextual
+000381,CLD-000400,SCRIPT.SDT/SCRIPT.DAT,Weapons you found will be confiscated.,Las armas que encuentre serán confiscadas.,Las armas que encuentres serán confiscadas.,revision_contextual
+000384,CLD-000403,SCRIPT.SDT/SCRIPT.DAT,"You will fill your gauge, granting you the ability","Llenarás tu indicador, lo que te otorgará la capacidad.",Llena el indicador para poder,revision_contextual
+000385,CLD-000404,SCRIPT.SDT/SCRIPT.DAT,to use magic/ability if you have sufficient SP.,usar magia/habilidad si tienes suficientes SP.,usar magia o habilidades si tienes suficiente SP.,revision_contextual
+000389,CLD-000408,SCRIPT.SDT/SCRIPT.DAT,Arcanus Cella,Celda Arcanus,Arcanus Cella,revision_contextual
+000393,CLD-000412,SCRIPT.SDT/SCRIPT.DAT,New-geon,Nueva geoda,New-geon,revision_contextual
+000397,CLD-000416,SCRIPT.SDT/SCRIPT.DAT,Weapon - Blunt,Arma - Contundente,Arma: contundente,revision_contextual
+000399,CLD-000418,SCRIPT.SDT/SCRIPT.DAT,Shield,Blindaje,Escudo,revision_contextual
+000412,CLD-000431,SCRIPT.SDT/SCRIPT.DAT,Once the Staff Gauge on the bottom right,Una vez que el indicador del bastón esté en la parte inferior derecha,Cuando se agote el indicador del bastón,revision_contextual
+000413,CLD-000432,SCRIPT.SDT/SCRIPT.DAT,"is depleted, you must use melee attacks.","Si se agota, debes usar ataques cuerpo a cuerpo.","de la esquina inferior derecha, tendrás que luchar cuerpo a cuerpo.",revision_contextual
+000416,CLD-000435,SCRIPT.SDT/SCRIPT.DAT,The Staff Gauge gradually recovers automatically.,El indicador de nivel se recupera gradualmente de forma automática.,El indicador del bastón se recarga poco a poco.,revision_contextual
+000421,CLD-000440,SCRIPT.SDT/SCRIPT.DAT,There are no stat differences between vendors.,No existen diferencias estadísticas entre los proveedores.,Los vendedores no alteran las estadísticas.,duplicado_terminologico
+000423,CLD-000442,SCRIPT.SDT/SCRIPT.DAT,All equipment have titles.,Todos los equipos tienen título de propiedad.,Todo el equipo tiene títulos.,revision_contextual
+000425,CLD-000444,SCRIPT.SDT/SCRIPT.DAT,All titles have the ability,Todos los títulos tienen la capacidad,Los efectos de los títulos,revision_contextual
+000426,CLD-000445,SCRIPT.SDT/SCRIPT.DAT,to stack with one another.,para apilarlos uno a otro.,pueden acumularse entre sí.,revision_contextual
+000427,CLD-000446,SCRIPT.SDT/SCRIPT.DAT,All equipment has ⑧ weight attributes.,Todos los equipos tienen atributos de peso ⑧.,Todo el equipo tiene un atributo de peso ⑧.,revision_contextual
+000434,CLD-000453,SCRIPT.SDT/SCRIPT.DAT,Shops have all kinds of equipment,Las tiendas tienen todo tipo de equipos.,En las tiendas encontrarás todo tipo de equipo,duplicado_terminologico
+000435,CLD-000454,SCRIPT.SDT/SCRIPT.DAT,available for you to purchase.,Disponible para su compra.,a la venta.,duplicado_terminologico
+000436,CLD-000455,SCRIPT.SDT/SCRIPT.DAT,Powerful Artifacts are rarely dropped by,Los artefactos poderosos rara vez son soltados por,"Los enemigos rara vez dejan caer artefactos poderosos,",duplicado_terminologico
+000437,CLD-000456,SCRIPT.SDT/SCRIPT.DAT,"enemies, so you should purchase those here.","enemigos, así que deberías comprarlos aquí.",así que conviene comprarlos aquí.,duplicado_terminologico
+000438,CLD-000457,SCRIPT.SDT/SCRIPT.DAT,You can create new characters,Puedes crear nuevos personajes,Puedes crear personajes nuevos,duplicado_terminologico
+000442,CLD-000461,SCRIPT.SDT/SCRIPT.DAT,End the game through the treehole in the southeast.,Termina el juego a través del hueco del árbol en el sureste.,"Para terminar la partida, entra por el agujero del árbol del sureste.",duplicado_terminologico
+000447,CLD-000466,SCRIPT.SDT/SCRIPT.DAT,Enemy Colors,Colores enemigos,Colores de enemigos,duplicado_terminologico
+000450,CLD-000469,SCRIPT.SDT/SCRIPT.DAT,There are traps placed around the dungeon.,Hay trampas colocadas alrededor de la mazmorra.,Hay trampas repartidas por las mazmorras.,duplicado_terminologico
+000451,CLD-000470,SCRIPT.SDT/SCRIPT.DAT,"Most traps will activate when stepped on,","La mayoría de las trampas se activarán al pisarlas,",La mayoría se activan cuando las pisas,duplicado_terminologico
+000452,CLD-000471,SCRIPT.SDT/SCRIPT.DAT,causing balls and such to be shot at you.,provocando que te disparen bolas y cosas así.,y disparan bolas u otros proyectiles.,duplicado_terminologico
+000456,CLD-000475,SCRIPT.SDT/SCRIPT.DAT,Watch out for traps under grass or ice.,¡Cuidado con las trampas que pueden estar debajo de la hierba o el hielo!,¡Ojo con las trampas ocultas bajo la hierba o el hielo!,duplicado_terminologico
+000461,CLD-000480,SCRIPT.SDT/SCRIPT.DAT,Each enemy has attributes based on colors.,Cada enemigo tiene atributos basados ​​en colores.,Cada enemigo tiene atributos asociados a su color.,duplicado_terminologico
+000465,CLD-000484,SCRIPT.SDT/SCRIPT.DAT,Red: ④ Element. Absorbs fire.,Rojo: ④ Elemento. Absorbe el fuego.,Rojo: elemento ④. Absorbe fuego.,duplicado_terminologico
+000466,CLD-000485,SCRIPT.SDT/SCRIPT.DAT,Blue: ⑤ Element. Does not slip. Absorbs ice.,Azul: ⑤ Elemento. No resbala. Absorbe el hielo.,Azul: elemento ⑤. No resbala y absorbe hielo.,duplicado_terminologico
+000469,CLD-000488,SCRIPT.SDT/SCRIPT.DAT,your temporary EXP.,tu EXP temporal.,tu EXP provisional.,duplicado_terminologico
+000470,CLD-000489,SCRIPT.SDT/SCRIPT.DAT,"When you reach the Results Screen, that EXP","Cuando llegues a la pantalla de resultados, esa EXP","Al llegar a la pantalla de resultados, esa EXP",duplicado_terminologico
+000471,CLD-000490,SCRIPT.SDT/SCRIPT.DAT,will be distributed among your party.,se distribuirá entre los miembros de tu grupo.,se repartirá entre tu grupo.,duplicado_terminologico
+000472,CLD-000491,SCRIPT.SDT/SCRIPT.DAT,A high level character won't get much EXP from,Un personaje de alto nivel no obtendrá mucha EXP de,Un personaje de nivel alto obtiene poca EXP,duplicado_terminologico
+000473,CLD-000492,SCRIPT.SDT/SCRIPT.DAT,"defeating low level enemies. But, in the case of the","derrotando enemigos de bajo nivel. Pero, en el caso de la","al derrotar a enemigos de nivel bajo. En cambio,",duplicado_terminologico
+000474,CLD-000493,SCRIPT.SDT/SCRIPT.DAT,"opposite happening, they will get lots of EXP.","Si ocurre lo contrario, obtendrán mucha EXP.","si derrota a enemigos de nivel superior, gana mucha EXP.",duplicado_terminologico
+000475,CLD-000494,SCRIPT.SDT/SCRIPT.DAT,"If the main and sub do not have the same level,","Si el principal y el secundario no tienen el mismo nivel,","Si el personaje principal y los de apoyo tienen distintos niveles,",duplicado_terminologico
+000476,CLD-000495,SCRIPT.SDT/SCRIPT.DAT,the EXP will be distributed accordingly.,La EXP se distribuirá en consecuencia.,la EXP se reparte en consecuencia.,duplicado_terminologico
+000477,CLD-000496,SCRIPT.SDT/SCRIPT.DAT,What do you want to know about Magic Circles?,¿Qué quieres saber sobre los Círculos Mágicos?,¿Qué quieres saber de los Círculos mágicos?,duplicado_terminologico
+000480,CLD-000499,SCRIPT.SDT/SCRIPT.DAT,Sub Character,Personaje secundario,Personaje de apoyo,duplicado_terminologico
+000482,CLD-000501,SCRIPT.SDT/SCRIPT.DAT,Magic/Ability Space,Espacio de magia/habilidad,Casilla de magia/habilidad,duplicado_terminologico
+000486,CLD-000505,SCRIPT.SDT/SCRIPT.DAT,This is a spell where the sub powers up the main,Este es un hechizo donde el sub potencia al principal.,"Con este hechizo, un personaje de apoyo",duplicado_terminologico
+000487,CLD-000506,SCRIPT.SDT/SCRIPT.DAT,by cheering him/her on.,animándole/a.,anima y fortalece al personaje principal.,duplicado_terminologico
+000488,CLD-000507,SCRIPT.SDT/SCRIPT.DAT,Subs consume Mana to activate,Los personajes de apoyo consumen maná para activar,Los personajes de apoyo gastan maná para activar,duplicado_terminologico
+000489,CLD-000508,SCRIPT.SDT/SCRIPT.DAT,"Artifacts, which will then,","Artefactos, que luego,","artefactos, que a su vez",duplicado_terminologico
+000490,CLD-000509,SCRIPT.SDT/SCRIPT.DAT,"in turn, power up the main.","a su vez, encienda la principal.",fortalecen al personaje principal.,duplicado_terminologico
+000492,CLD-000511,SCRIPT.SDT/SCRIPT.DAT,"When all subs get knocked out,","Cuando todos los suplentes quedan fuera de combate,","Cuando caen todos los personajes de apoyo,",duplicado_terminologico
+000493,CLD-000512,SCRIPT.SDT/SCRIPT.DAT,the main's HP will display.,La HP principal se mostrará.,se muestra el HP del personaje principal.,duplicado_terminologico
+000494,CLD-000513,SCRIPT.SDT/SCRIPT.DAT,"When the main gets knocked out, it's Game Over.","Cuando el personaje principal queda fuera de combate, se acaba el juego.","Si cae el personaje principal, se termina la partida.",duplicado_terminologico
+000495,CLD-000514,SCRIPT.SDT/SCRIPT.DAT,They are the shields who protect the main.,Son los escudos que protegen al núcleo.,Son los escudos que protegen al personaje principal.,duplicado_terminologico
+000497,CLD-000516,SCRIPT.SDT/SCRIPT.DAT,will cause the subs to lose their HP.,hará que los suplentes pierdan sus puntos de vida.,hace que los personajes de apoyo pierdan HP.,duplicado_terminologico
+000499,CLD-000518,SCRIPT.SDT/SCRIPT.DAT,Sub Character Space in the Magic Circle.,Casilla del personaje de apoyo en el Círculo mágico.,para las casillas de personajes de apoyo.,duplicado_terminologico
+000501,CLD-000520,SCRIPT.SDT/SCRIPT.DAT,The way the main faces corresponds to their positions.,La forma en que los rostros principales se corresponden con sus posiciones.,La orientación del protagonista depende de sus posiciones.,duplicado_terminologico
+000505,CLD-000524,SCRIPT.SDT/SCRIPT.DAT,he/she activated will,él/ella activó voluntad,que había activado,duplicado_terminologico
+000506,CLD-000525,SCRIPT.SDT/SCRIPT.DAT,essentially become nullified.,esencialmente quedan anulados.,queda desactivado.,duplicado_terminologico
+000507,CLD-000526,SCRIPT.SDT/SCRIPT.DAT,Artifacts can be placed,Los artefactos se pueden colocar,Puedes colocar artefactos,duplicado_terminologico
+000508,CLD-000527,SCRIPT.SDT/SCRIPT.DAT,in Artifact Spaces.,en Espacios de Artefactos.,en las casillas para artefactos.,duplicado_terminologico
+000511,CLD-000530,SCRIPT.SDT/SCRIPT.DAT,Artifacts cannot be activated if there is no path,Los artefactos no se pueden activar si no hay un camino.,Los artefactos no pueden activarse sin un camino,duplicado_terminologico
+000512,CLD-000531,SCRIPT.SDT/SCRIPT.DAT,connected to it.,conectado a él.,que los conecte.,duplicado_terminologico
+000513,CLD-000532,SCRIPT.SDT/SCRIPT.DAT,Only the Artifact Anywhere Artifact is,Solo el Artefacto en cualquier lugar Artefacto es,El artefacto «Artifact Anywhere»,duplicado_terminologico
+000514,CLD-000533,SCRIPT.SDT/SCRIPT.DAT,exempt to this rule.,Exentos de esta regla.,es la única excepción a esa regla.,duplicado_terminologico
+000515,CLD-000534,SCRIPT.SDT/SCRIPT.DAT,Place Artifacts that boost Magic/Abilities here.,Coloca aquí los artefactos que potencian la magia o las habilidades.,Aquí puedes colocar artefactos que mejoren la magia o las habilidades.,duplicado_terminologico
+000516,CLD-000535,SCRIPT.SDT/SCRIPT.DAT,"Ability Boost, SP Consumption Reduction,","Mejora de habilidades, reducción del consumo de SP,","Entre ellos hay mejoras de habilidad, reducción del consumo de SP",duplicado_terminologico
+000517,CLD-000536,SCRIPT.SDT/SCRIPT.DAT,"and Casting Time Reduction, are among those.","y la reducción del tiempo de colada, se encuentran entre ellas.",y reducción del tiempo de lanzamiento.,duplicado_terminologico
+000518,CLD-000537,SCRIPT.SDT/SCRIPT.DAT,Placing Artifacts in the same slot will allow,Colocar artefactos en la misma ranura permitirá,Colocar varios artefactos en una misma casilla,duplicado_terminologico
+000520,CLD-000539,SCRIPT.SDT/SCRIPT.DAT,Spaces with 'Widen' can double,Los espacios con 'Widen' pueden duplicarse,Las casillas con «Widen» pueden duplicar,duplicado_terminologico
+000521,CLD-000540,SCRIPT.SDT/SCRIPT.DAT,the effect of any Artifacts in it.,el efecto de cualquier artefacto que contenga.,el efecto de los artefactos que contienen.,duplicado_terminologico
+000522,CLD-000541,SCRIPT.SDT/SCRIPT.DAT,Placing multiple Widen Artifacts in the same space,Colocar varios artefactos de Widen en el mismo espacio.,"Si colocas varios «Widen» en una misma casilla,",duplicado_terminologico
+000523,CLD-000542,SCRIPT.SDT/SCRIPT.DAT,"will double, triple, or quadruple the effects.","duplicará, triplicará o cuadruplicará los efectos.","duplicarás, triplicarás o cuadruplicarás sus efectos.",duplicado_terminologico
+000524,CLD-000543,SCRIPT.SDT/SCRIPT.DAT,"However, it will also consume Mana proportionately.","Sin embargo, también consumirá maná proporcionalmente.","Eso sí, el consumo de maná aumenta en proporción.",duplicado_terminologico
+000525,CLD-000544,SCRIPT.SDT/SCRIPT.DAT,Placing a Widen on a Magic/Ability Space will,Colocar un Widen en un Espacio de Magia/Habilidad,"Si colocas un «Widen» en una casilla de magia/habilidad,",duplicado_terminologico
+000527,CLD-000546,SCRIPT.SDT/SCRIPT.DAT,There are Fixed Spaces that have been set,Hay espacios fijos que se han establecido,Algunas casillas fijas vienen,duplicado_terminologico
+000528,CLD-000547,SCRIPT.SDT/SCRIPT.DAT,by default on the Magic Circle.,Por defecto en el Círculo mágico.,predeterminadas en el Círculo mágico.,duplicado_terminologico
+000530,CLD-000549,SCRIPT.SDT/SCRIPT.DAT,HP -X: HP -X% of sub characters.,HP -X: HP -X% de los subcaracteres.,HP -X: reduce el HP de los personajes de apoyo en X%.,duplicado_terminologico
+000531,CLD-000550,SCRIPT.SDT/SCRIPT.DAT,Scatter X: Disperses X% of damage to subs.,Dispersión X: Dispersa un X% del daño a los personajes de apoyo.,Dispersión X: reparte X% del daño entre los personajes de apoyo.,duplicado_terminologico
+000532,CLD-000551,SCRIPT.SDT/SCRIPT.DAT,Double Death: Take out everyone else when dying.,Doble muerte: Elimina a todos los demás al morir.,"Muerte doble: al morir, derriba a los demás.",duplicado_terminologico
+000533,CLD-000552,SCRIPT.SDT/SCRIPT.DAT,Mana xX: Provides a multiplier for your current Mana.,Mana xX: Proporciona un multiplicador para tu Maná actual.,Maná xX: multiplica tu maná actual.,duplicado_terminologico
+000544,CLD-000563,SCRIPT.SDT/SCRIPT.DAT,Press the ⑯ button to open the Menu.,Pulse el botón ⑯ para abrir el menú.,Pulsa el botón ⑯ para abrir el menú.,duplicado_terminologico
+000548,CLD-000567,SCRIPT.SDT/SCRIPT.DAT,Weapons you found will be confiscated.,Las armas que encuentre serán confiscadas.,Las armas que encuentres serán confiscadas.,duplicado_terminologico
+000551,CLD-000570,SCRIPT.SDT/SCRIPT.DAT,"You will fill your gauge, granting you the ability","Llenarás tu indicador, lo que te otorgará la capacidad.",Llena el indicador para poder,duplicado_terminologico
+000552,CLD-000571,SCRIPT.SDT/SCRIPT.DAT,to use magic/ability if you have sufficient SP.,usar magia/habilidad si tienes suficientes SP.,usar magia o habilidades si tienes suficiente SP.,duplicado_terminologico
+009061,CLD-009276,DATABASE.DAT/WEAPON.DAT,Angel Staff,Personal de ángeles,Bastón angelical,revision_contextual

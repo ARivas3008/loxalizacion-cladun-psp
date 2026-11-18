@@ -1,0 +1,31 @@
+{
+  "fecha": "2026-11-18",
+  "status": "PASS_TWO_STAGE_BINARY_ISOLATION_ONLY",
+  "source_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "font_candidate_sha256": "3a25486ce91c0f6497258f007a1af4087e7d1d7c5132cac9078f389dcf44f955",
+  "font_and_one_script_byte_candidate_sha256": "4d7b66509a58aaa8e5f0da8a1cfc654d397b6fa13680f28862ca6ec576099d0f",
+  "stage_a": {
+    "result": "PASS_BINARY_ISOLATION_FONT_ONLY",
+    "total_pspfs": 349,
+    "others_identical": 348,
+    "old_glyphs_intact": 2721,
+    "new_spanish_glyphs": 19,
+    "old_offsets_intact": true
+  },
+  "stage_b": {
+    "result": "PASS_TEXT_ISOLATION_ONLY",
+    "edited_parent": "SCRIPT.SDT",
+    "changed_decoded_bytes": 1,
+    "other_pspfs_identical": 348,
+    "font_archive_identical_after_text_edit": true,
+    "no_offsets_or_sizes_changed": true
+  },
+  "negative_test": {
+    "candidate_extra_font_change": "REJECTED",
+    "font_corruptions_deliberate": 4,
+    "rejected": 4
+  },
+  "runtime_ppsspp": false,
+  "full_corpus_inserted": false,
+  "commercial_game_files_in_repository": false
+}

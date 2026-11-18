@@ -21,3 +21,10 @@
 - Auditoría de FONT.BIN y 6 texturas de glifos; diseño de mapeo español PUA/CP932 de 19 caracteres (sin insertar ni renderizar fuentes).
 - Ensayo de 2 reemplazos en ISO temporal, offsets intactos, 347 recursos PSPFS protegidos idénticos y copia de prueba eliminada.
 - Sigue pendiente la traducción narrativa integral, la compatibilidad en PPSSPP y el inyector general.
+
+## 2026-11-18 — Revisión contextual y aislamiento binario de dos fases
+
+- Post-edición de 196 posiciones adicionales, incluyendo 66 repeticiones contextuales; 369 posiciones revisadas/normalizadas acumuladas.
+- Códec y atlas de prueba unificados con 19 glifos PUA F5A0–F5B2, sin reordenar los 2.721 registros anteriores.
+- Guardia independiente de FONT.ARC y guardia global de cambios textuales con rangos explícitos; ensayo privado en dos etapas aprobado y pruebas negativas rechazadas.
+- Sin prueba visual PPSSPP ni reinserción completa; no publicar ninguna ISO ni assets del juego.

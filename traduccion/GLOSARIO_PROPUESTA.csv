@@ -40,3 +40,8 @@ Save,guardar,canónico_borrador
 Load,cargar,canónico_borrador
 Yes,Sí,canónico_borrador
 No,No,canónico_borrador
+Shield,escudo,canónico_borrador
+Artifact Anywhere,Artifact Anywhere,nombre_propio_pendiente_visual
+Title,título,modificador_equipo
+SP,SP,código_interfaz
+Time to cast,tiempo de lanzamiento,canónico_borrador

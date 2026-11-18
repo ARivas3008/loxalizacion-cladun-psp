@@ -40,3 +40,10 @@ Los subconjuntos `confirmados_formato` y `revisar_visibilidad` son vistas deriva
 - No afirmar que CP932 privado F5A0–F5B2 sea representable visualmente sin haber instalado y probado sus glifos en FONT.ARC.
 - No distribuir ISO, fuentes ni texturas comerciales. El ensayo temporal no demuestra funcionamiento en PPSSPP.
 - Mantener `original`, `bytes_hex`, offsets e IDs sin modificaciones; el español vive en campos separados.
+
+## Bloqueo de seguridad adicional
+
+- La correspondencia PUA y los 19 glifos debe ser estrictamente `F5A0–F5B2`; no volver a introducir `F040–F052`, que desordenaría FONT.BIN si se insertara por código sin preservar índices.
+- Todo cambio en la fuente requiere pasar `tools/font_es_guard.py` contra la ISO original.
+- Cualquier cambio textual posterior se compara con su copia exacta de entrada mediante `tools/iso_guard_global.py`, con SHA-256 de origen, formatos invariantes y spans explícitos por miembro.
+- Los veredictos `PASS_*_ISOLATION_ONLY` **no** certifican funcionamiento de PPSSPP ni muestran todos los textos; no permitir publicaciones de parche final sin esas pruebas.
