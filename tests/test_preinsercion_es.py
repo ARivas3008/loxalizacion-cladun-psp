@@ -27,7 +27,7 @@ def pair(en="Hello?", es="¡Hola!", origin="SCRIPT.SDT/SCRIPT.DAT", capacity="")
 
 class TestPreinsercion(unittest.TestCase):
     def test_script_rechaza_ampliacion_aun_si_hay_espacio_en_iso(self):
-        a, b = pair("Yes", "Sí")
+        a, b = pair("Yes", "¿Sí?")
         self.assertEqual(check_row(a, b)["estado"], "BLOQUEADO_CAMBIO_LONGITUD_SCRIPT")
 
     def test_script_igual_bytes_solo_candidato_no_aprobado(self):
