@@ -341,12 +341,9 @@ def main():
         script_stats[family]={'blocks':len(blocks),'commands':len(com),'text_entries':len(txt),
                               'distinct_script_names':len({x['name'] for x in blocks})}
     csvout(out/'indices/script_blocks.csv',['source','table','block_index','script_id','script_file','offset_hex','end_hex','size'],scriptblocks)
-    csvout(out/'indices/script_commands.csv',['source','block_index','script_id','script_file','command_index','instruction_id','opcode_hex','offset_hex','arguments_length'],commands)
-    # Particiones de 5.000 comandos para revisar en GitHub sin archivos enormes.
-    for part_start in range(0,len(commands),5000):
-        csvout(out/f'indices/comandos/parte_{part_start//5000+1:02d}.csv',
-               ['source','block_index','script_id','script_file','command_index','instruction_id','opcode_hex','offset_hex','arguments_length'],
-               commands[part_start:part_start+5000])
+    # Solo exportamos elementos textuales y el índice de bloques necesario para
+    # conservar su orden. Las instrucciones internas se usan transitoriamente
+    # durante el análisis, pero no se exportan al proyecto de traducción.
     strings,capacity=strtbl_entries(nested['DATABASE.DAT/STRTBL.DAT'],'DATABASE.DAT/STRTBL.DAT')
     texts+=strings
     db={key.split('/',1)[1]:v for key,v in nested.items() if key.startswith('DATABASE.DAT/')}
@@ -397,6 +394,9 @@ def main():
                      'Los campos de texto de registros binarios son candidatos sin esquema completo.',
                      'No se distribuyen archivos binarios, música, fuentes ni imágenes del juego.']}
     (out/'reports/cobertura.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+    # Generar las hojas centradas en texto visible y candidatos de traducción.
+    from build_translation_corpus import run as build_translation_corpus
+    build_translation_corpus(out)
     print(json.dumps(report,ensure_ascii=False,indent=2))
 
 if __name__=='__main__':main()

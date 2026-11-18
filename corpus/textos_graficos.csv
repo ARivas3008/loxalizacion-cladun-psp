@@ -1,0 +1,13 @@
+text_id,tipo,texto_original,traduccion_es,estado_traduccion,validacion_fuente,fuente,archivo_script,id_script,indice_bloque,orden_en_bloque,offset_hex,longitud_original_bytes,notas
+CLD-GFX-0001,mensaje_grafico,NO DATA,,pendiente,confirmado_visual,SYS.DAT2/DOT_NODATA.PNG,,,,,,,"Requiere modificar el gráfico, no una cadena binaria"
+CLD-GFX-0002,mensaje_grafico,NO DATA,,pendiente,confirmado_visual,SYS.DAT2/NODATA.PNG,,,,,,,"Requiere modificar el gráfico, no una cadena binaria"
+CLD-GFX-0003,titulo_grafico,CLADUN,,pendiente,confirmado_visual,SYS.DAT2/DOT_PIC1.PNG,,,,,,,Nombre propio; revisar si debe mantenerse
+CLD-GFX-0004,titulo_grafico,This is an RPG!,,pendiente,confirmado_visual,SYS.DAT2/DOT_PIC1.PNG,,,,,,,"Lema gráfico; si se traduce, requiere editar la imagen"
+CLD-GFX-0005,titulo_grafico,CLADUN,,pendiente,confirmado_visual,SYS.DAT2/PIC1.PNG,,,,,,,Nombre propio; revisar si debe mantenerse
+CLD-GFX-0006,titulo_grafico,This is an RPG!,,pendiente,confirmado_visual,SYS.DAT2/PIC1.PNG,,,,,,,"Lema gráfico; si se traduce, requiere editar la imagen"
+CLD-GFX-0007,titulo_grafico,CLADUN,,pendiente,confirmado_visual,SYS.DAT2/DOT_SAVE.PNG,,,,,,,Nombre propio; revisar si debe mantenerse
+CLD-GFX-0008,titulo_grafico,This is an RPG!,,pendiente,confirmado_visual,SYS.DAT2/DOT_SAVE.PNG,,,,,,,"Lema gráfico; si se traduce, requiere editar la imagen"
+CLD-GFX-0009,titulo_grafico,CLADUN,,pendiente,confirmado_visual,SYS.DAT2/SAVE.PNG,,,,,,,Nombre propio; revisar si debe mantenerse
+CLD-GFX-0010,titulo_grafico,This is an RPG!,,pendiente,confirmado_visual,SYS.DAT2/SAVE.PNG,,,,,,,"Lema gráfico; si se traduce, requiere editar la imagen"
+CLD-GFX-0011,rotulo_grafico,dot,,pendiente,pendiente_validacion,SYS.DAT2/DOT_NODATA.PNG,,,,,,,Marca/etiqueta decorativa en la imagen: verificar función y traducción
+CLD-GFX-0012,rotulo_grafico,dot,,pendiente,pendiente_validacion,SYS.DAT2/DOT_SAVE.PNG,,,,,,,Marca/etiqueta decorativa en la imagen: verificar función y traducción

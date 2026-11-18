@@ -1,91 +1,73 @@
-# CLADUN — Localización española (PSP, USA)
+# Cladun: This Is an RPG! (PSP USA) — Extracción para traducción al español
 
-Proyecto de **extracción, indexación y futura localización** de los textos de *Cladun: This Is an RPG* para PSP (región USA). El propósito es conservar el orden lógico de los scripts, la ubicación exacta de cada cadena y los datos necesarios para revisar la traducción sin modificar la ISO original.
+Proyecto de localización centrado **exclusivamente en los textos visibles y localizables** de la versión de PSP suministrada: diálogos, respuestas, nombres, descripciones, pantallas, HUD, tutoriales, créditos y rótulos de imágenes.
 
-> **Estado actual:** extracción de texto en fase de auditoría. Se han identificado y descomprimido todas las entradas del contenedor `PSPFS_V1` de la imagen analizada, pero **no está certificado que se haya recuperado absolutamente todo el texto visible en el juego**: hay gráficos, formatos binarios de campos no documentados y texto eventualmente incrustado en código/recursos que requieren verificación visual.
+**No se incluyen listados de instrucciones/opcodes del juego.** El extractor las lee internamente cuando son necesarias para identificar las cadenas, pero entrega archivos con **texto original y columna para traducción**, manteniendo ID, origen y orden.
 
-## Auditoría de cobertura (17 de noviembre de 2026)
+## Archivos que debes usar
 
-**Importante: esta extracción aún no contiene el 100 % del texto del juego.** Se identificó texto gráfico omitido (por ejemplo, `NO DATA` en `SYS.DAT2/NODATA.PNG` y `SYS.DAT2/DOT_NODATA.PNG`), y 56 falsos positivos numéricos dentro de `DATABASE.DAT/LV.DAT`. De las 9.647 filas totales, 2.859 son candidatos pendientes de validación. El índice de scripts no contiene los argumentos binarios completos. Consulta los métodos, evidencias y acciones pendientes en [reports/AUDITORIA_COBERTURA_2026-11-17.md](reports/AUDITORIA_COBERTURA_2026-11-17.md).
+| Archivo | Contenido |
+| --- | --- |
+| [corpus/textos_para_traducir.csv](corpus/textos_para_traducir.csv) | **Índice maestro** de todos los textos identificados o candidatos por validar, en orden de extracción |
+| [corpus/confirmados.csv](corpus/confirmados.csv) | Textos no vacíos extraídos de estructuras conocidas, más rótulos gráficos comprobados |
+| [corpus/pendientes_validacion.csv](corpus/pendientes_validacion.csv) | Cadenas detectadas en bases de datos sin campos completamente documentados; **pueden contener falsos positivos** |
+| [corpus/textos_graficos.csv](corpus/textos_graficos.csv) | Rótulos encontrados visualmente en las seis imágenes PNG de `SYS.DAT2` inspeccionadas; la edición requerirá modificar imágenes |
+| [corpus/dialogos.csv](corpus/dialogos.csv) | Diálogos, nombres de interlocutor y opciones (fuente sin filtrar; incluye vacíos) |
+| [corpus/interfaz_hud.csv](corpus/interfaz_hud.csv) | Mensajes de interfaz y sistema, con marcadores de formato |
+| [corpus/objetos_lugares_personajes.csv](corpus/objetos_lugares_personajes.csv) | Nombres/descripciones de equipo, personajes, magia, enemigos y lugares; **revisión pendiente de estructura** |
+| [corpus/creditos.csv](corpus/creditos.csv) | Créditos en orden de origen, incluidos los espacios de formato |
 
-## Resultados de la versión analizada
+**Resumen de esta edición:** 9.647 registros brutos; 6.397 textos confirmados no vacíos; 2.803 candidatos textuales por validar; 10 referencias a textos de imágenes comprobados visualmente y 2 rótulos gráficos por validar. Se han apartado 391 registros vacíos y 56 falsos positivos numéricos de `LV.DAT`. **Total del índice maestro: 9.212 entradas**, incluidas las pendientes. Los números son **entradas de origen, no frases únicas**.
 
-- Imagen fuente: `CLASSIC_DUNGEON_TRIAL_AND_APPEND`, 305.496.064 bytes (ISO9660).
-- Contenedor principal: `PSP_GAME/USRDIR/DATA.DAT`, 349 de 349 archivos procesados.
-- 1.186 archivos internos en paquetes `DSARC FL` y `DSARCIDX`.
-- `SCRIPT.SDT`: `SCRIPT.DAT` y `AISCRIPT.DAT`, con 1.625 y 552 bloques respectivamente.
-- 73.240 instrucciones indexadas, y 5.397 instrucciones de texto del guion (incluidas 190 cadenas vacías).
-- `DATABASE.DAT/STRTBL.DAT`: 651 cadenas del sistema y 3 posiciones vacías en la tabla de punteros.
-- Total: 9.647 registros de texto, **incluidos candidatos no confirmados** y líneas vacías de créditos.
-- Los resultados exactos y las reservas están en [`reports/cobertura.json`](reports/cobertura.json).
+> **Cobertura:** estos resultados NO demuestran todavía el 100 % del texto del juego. Faltan auditar completamente rótulos gráficos de otros recursos, campos binarios, cadenas del ejecutable y comprobación práctica en PPSSPP. [Informe de cobertura](reports/AUDITORIA_COBERTURA_2026-11-17.md).
 
-## Estructura
+## Cómo traducir
+
+1. Abre `corpus/textos_para_traducir.csv` (UTF-8 con BOM). Cada fila tiene `text_id`, `texto_original`, `traduccion_es`, `tipo`, `fuente` y localización original.
+2. Escribe el español **únicamente en `traduccion_es`**. Nunca edites el `text_id`, el texto fuente ni el orden. Es válido conservar repeticiones: pueden usarse en contextos diferentes.
+3. Da prioridad a filas `validacion_fuente=confirmado_estructura` o `confirmado_visual`. Las `pendiente_validacion` deben investigarse antes de integrarlas.
+4. Conserva las variables, por ejemplo `%s`, `%d`, `%02d`, las secuencias de control y los saltos de línea. La columna `longitud_original_bytes` **no representa por sí sola el límite máximo** que acepta el motor.
+5. En los rótulos de `SYS.DAT2/*.PNG`, cambiar el CSV **no cambia la imagen del juego**: se necesita una edición gráfica y reinserción específica.
+
+## Organización
 
 ```text
-.
-├── README.md
-├── AGENTS.md
-├── .gitignore
-├── tools/
-│   └── extract_cladun.py
-├── tests/
-│   └── test_extract_cladun.py
-├── indices/
-│   ├── iso9660.csv           # orden de la ISO y offsets
-│   ├── pspfs.csv             # 349 archivos en su orden original
-│   ├── dsarc.csv             # tablas de archivos internos
-│   ├── script_blocks.csv     # identificadores, .dsf y rango de bytes
-│   ├── script_commands.csv   # 73.240 instrucciones; en el ZIP completo
-│   ├── comandos/             # índice dividido para consulta en GitHub
-│   │   ├── parte_01.csv      # comandos 1–5.000
-│   │   ├── ...
-│   │   └── parte_15.csv      # comandos 70.001–73.240
-│   └── database_records.csv  # estructura por registro, cuando es deducible
-├── corpus/
-│   ├── todo_el_texto.csv     # catálogo principal para localización
-│   ├── dialogos.csv
-│   ├── interfaz_hud.csv
-│   ├── objetos_lugares_personajes.csv
-│   └── creditos.csv
-├── reports/
-│   ├── cobertura.json
-│   └── textos_binarios_no_confirmados.csv
-└── docs/
-    ├── EXTRACCION.md
-    ├── FORMATOS.md
-    └── CONTROL_CALIDAD.md
+corpus/
+  textos_para_traducir.csv    <- índice principal y único para reparto de traducción
+  confirmados.csv             <- texto de fuentes reconocidas
+  pendientes_validacion.csv   <- candidatos, no publicar traducciones sin validar
+  textos_graficos.csv         <- palabras rasterizadas en PNG comprobados
+  dialogos.csv                <- subconjunto original de diálogos
+  interfaz_hud.csv            <- interfaz
+  objetos_lugares_personajes.csv
+  creditos.csv
+  todo_el_texto.csv           <- extracción bruta para auditoría, NO lista de traducción
+reports/
+  resumen_localizacion.json   <- recuentos del corpus de trabajo
+  registros_no_traducibles.csv <- filas vacías y falsos positivos apartados
+  AUDITORIA_COBERTURA_2026-11-17.md
+indices/                      <- solo índices de procedencia y bloque, NO instrucciones
+  iso9660.csv
+  pspfs.csv
+  dsarc.csv
+  script_blocks.csv
+  database_records.csv
+tools/
+  extract_cladun.py           <- localiza el texto desde la ISO suministrada
+  build_translation_corpus.py <- genera los CSV para traductores
+tests/
 ```
 
-**Nota sobre GitHub:** el índice de 73.240 comandos está publicado íntegro y ordenado en los 15 archivos de `indices/comandos/`, debido al tamaño del CSV unificado. El extractor genera asimismo `indices/script_commands.csv`, incluido en el paquete ZIP descargable del proyecto. No hay pérdida de filas ni de orden.
+## Reproducir sin publicar el contenido binario del juego
 
-## Cómo reproducir la extracción
-
-1. Extrae la ISO de tu archivo `.7z` con 7-Zip. **No subas la ISO ni los archivos binarios originales a un repositorio público.**
-2. Instala Python 3.10 o posterior (no se necesitan librerías externas).
-3. Desde la raíz del proyecto ejecuta:
+Utiliza una copia propia de la ISO USA suministrada y Python 3.10+:
 
 ```bash
-python tools/extract_cladun.py "C:/ruta/Cladun_This_Is_An_RPG_USA_PSN_PSP-PLAYASiA.iso" -o .
+python tools/extract_cladun.py ruta/al/juego.iso -o .
+python tools/build_translation_corpus.py --root .
 python -m unittest discover -s tests -v
 ```
 
-Los CSV son UTF-8 con BOM (compatibles con Excel en español), usan encabezados en inglés para mantener un esquema estable y ofrecen una columna `translation_es` en blanco. Cada `text_id` referencia la **versión y orden de extracción** y se acompaña de offsets, nombres de script, opcode, índice y bytes de origen. Conservar `text_id`, `source`, `script_id`, `offset_hex` y `raw_hex` al traducir.
+La ISO auditada tiene volumen `CLASSIC_DUNGEON_TRIAL_AND_APPEND`, ID PSP `NPUH10072` y SHA-256 `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f`.
 
-## Interpretación correcta de los datos
-
-- **Confirmado**: extracción conforme a una estructura conocida (`SCRIPT.DAT`, `STRTBL.DAT`, tabla de nombres de tamaño fijo o créditos).
-- **Candidato**: aparente texto encontrado mediante detección de cadenas en los registros binarios. Puede contener fragmentos o prefijos de bytes que no son parte del texto; **requiere revisión manual**.
-- `reports/textos_binarios_no_confirmados.csv` conserva pistas adicionales y puede incluir falsos positivos (metadatos de imágenes, nombres de archivos o basura binaria). **No traducir ni integrar automáticamente**.
-- No hay aún editor/reinserción, prueba en PPSSPP ni OCR de textos dibujados como píxeles.
-
-## Flujo de localización
-
-1. Auditar fuentes y candidatos en sus índices.
-2. Validar las etiquetas `category`/`confidence`, asociar interlocutores y las líneas que forman un mismo diálogo.
-3. Traducir **solo `translation_es`**, manteniendo variables, espacios críticos y códigos en los textos.
-4. Verificar encoding, anchura de cuadros, consistencia de términos, límites de bytes y estructura de cada registro.
-5. Implementar la reinserción con pruebas binarias y probar en PPSSPP antes de distribuir un parche que no incluya contenido del juego.
-
-## Proveniencia y atribuciones técnicas
-
-Se inspeccionaron directamente los archivos de la ISO facilitada para la auditoría. La implementación IMY sigue la descripción del formato y el comportamiento publicado en [ProgSys/pg_disatools](https://github.com/ProgSys/pg_disatools) (licencia MIT en su código), y se comprobó localmente contra los tamaños expandidos de los 349 archivos. Este repositorio contiene datos de trabajo derivados de la copia analizada; *Cladun* y todos sus materiales pertenecen a sus titulares de derechos. Este proyecto no está afiliado a Nippon Ichi Software ni a NIS America.
+**Avisos:** No se ha implementado todavía un inyector de texto ni comprobado la traducción en consola. No subas la ISO, audio, gráficos ni otros recursos originales comerciales al repositorio público. *Cladun* y sus materiales pertenecen a sus titulares de derechos.

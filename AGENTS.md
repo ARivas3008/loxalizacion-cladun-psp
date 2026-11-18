@@ -1,12 +1,14 @@
-# Reglas del proyecto para revisores y agentes
+# Reglas para el proyecto de localización española de Cladun PSP
 
-1. Leer `README.md`, `docs/FORMATOS.md`, `docs/CONTROL_CALIDAD.md` y `reports/cobertura.json` antes de modificar un corpus.
-2. **No reordenar, renumerar, eliminar, concatenar ni desduplicar** entradas del corpus. Las repeticiones son intencionales y el orden es un dato de origen.
-3. Usar `text_id` + `source` + `offset_hex` + `raw_hex` como identificadores de control de integridad; nunca inferir identidades de personajes o lugares sin contexto.
-4. No alterar `original`, `raw_hex`, `script_id`, `file_index`, `command_index`, `opcode_hex`, `instruction_id` ni los índices. Escribir exclusivamente en `translation_es` y `review_status` al localizar.
-5. Preservar literalmente formato y marcadores: `%s`, `%d`, `%02d`, `%3d`, secuencias de control, saltos, comillas y símbolos de variables. No traducir el contenido de los marcadores.
-6. Las entradas `confidence=candidato` requieren investigación binaria antes de declararlas confirmadas; pueden tener texto accidental generado por el escáner.
-7. No afirmar cobertura total del juego hasta auditar gráficos, ejecutable, llamadas de UI y validar en PPSSPP, con pruebas en juego.
-8. No versionar ISOs, roms, archivos `.DAT` completos originales, gráficos, audio, ejecutables cifrados, fuentes o descompresiones completas.
-9. Antes de un cambio estructural ejecutar `python -m unittest discover -s tests -v` y registrar la versión de la imagen de origen en los reportes.
-10. Para futuras traducciones, trabajar en ramas o PR independientes y registrar entradas afectadas, decisiones terminológicas y estado de QA.
+Este proyecto se dedica a **texto que ve el jugador**, no a documentar instrucciones del motor del juego.
+
+1. Empezar por `corpus/textos_para_traducir.csv`; **no utilizar** `corpus/todo_el_texto.csv` como lista de trabajo (es la extracción bruta).
+2. Conservar `text_id`, `texto_original`, `fuente`, `indice_bloque`, `orden_en_bloque`, `offset_hex` y el orden de las filas. No unir/desduplicar líneas aunque el texto coincida.
+3. Escribir la traducción solo en `traduccion_es`; guardar notas contextuales aparte. No convertir nombres, variables o bytes en frases inventadas.
+4. No traducir automáticamente `pendiente_validacion`: primero identificar el campo real en el juego. Los 56 falsos positivos de `LV.DAT` ya están apartados.
+5. Proteger marcadores de formato (`%s`, `%02d`, `%d`, etc.) y saltos de línea; comprobar espacio de cuadros y tamaño en bytes **antes de reinsertar**.
+6. El texto de archivos PNG es texto **gráfico**: traducirlo implica modificar la imagen, no un CSV binario.
+7. Mantener separados corpus para traductores, reporte de auditoría e índices internos. No reintroducir listados de opcodes o instrucciones en el repositorio de traducción salvo petición expresa.
+8. No afirmar extracción completa al 100 % sin verificar todas las fuentes gráficas, campos no documentados, ejecutable y juego en PPSSPP.
+9. No subir ISOs, juegos, audio, sprites, PNG originales, descompresiones completas ni firmware.
+10. Validar antes de publicar con `python -m unittest discover -s tests -v` y mantener trazabilidad de los cambios.
