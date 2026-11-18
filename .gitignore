@@ -1,4 +1,4 @@
-# Contenido del juego o volcados binarios que no se versionan
+# ISO y materiales propietarios no deben versionarse
 *.iso
 *.cso
 *.7z
@@ -6,10 +6,10 @@
 *.zip
 *.pbp
 *.prx
-*.sps
 *.mpb
 *.imy
-*.png
+*.sps
+*.dmd
 *.DAT
 *.DAT2
 *.dat
@@ -18,19 +18,20 @@
 *.sdt
 *.idt
 *.ldt
-*.dmd
+*.png
 *.pgf
 *.ttf
 *.otf
 
-# Temporales
-__pycache__/
-.pytest_cache/
-.venv/
-venv/
-cache/
+# Intermedios generados por extractor
+build/
 work/
+cache/
 dumps/
 extracts/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
 *.pyc
 .DS_Store

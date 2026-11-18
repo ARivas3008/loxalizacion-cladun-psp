@@ -1,0 +1,20 @@
+{
+  "version": "0.3.0-auditoria",
+  "edicion": "USA/PSP",
+  "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "total_bloques_texto": 9237,
+  "confirmados_formato": 8202,
+  "uso_en_juego_por_comprobar": 1035,
+  "bytes_incompletos": 2,
+  "graficos_texto": 6,
+  "nuevos_recuperados": 127,
+  "correcciones_fuente": 133,
+  "exclusiones_por_criterio": {
+    "excluido_vacio": 391,
+    "descartado_binario": 56,
+    "descartado_fuera_de_campos": 32,
+    "referencia_archivo_no_traducible": 64
+  },
+  "auditoria_registros": 809,
+  "advertencia": "No hay prueba de cobertura textual absoluta ni validación en PPSSPP. No se ha traducido ningún texto."
+}

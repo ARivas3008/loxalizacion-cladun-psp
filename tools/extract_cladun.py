@@ -394,9 +394,8 @@ def main():
                      'Los campos de texto de registros binarios son candidatos sin esquema completo.',
                      'No se distribuyen archivos binarios, música, fuentes ni imágenes del juego.']}
     (out/'reports/cobertura.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
-    # Generar las hojas centradas en texto visible y candidatos de traducción.
-    from build_translation_corpus import run as build_translation_corpus
-    build_translation_corpus(out)
+    # Este paso genera un inventario de extracción INTERMEDIO. El corpus final
+    # se construye con tools/revisar_corpus.py a partir del mismo ISO.
     print(json.dumps(report,ensure_ascii=False,indent=2))
 
 if __name__=='__main__':main()

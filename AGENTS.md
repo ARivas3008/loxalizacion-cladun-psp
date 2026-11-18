@@ -1,14 +1,16 @@
-# Reglas para el proyecto de localización española de Cladun PSP
+# Reglas para colaboradores y agentes de localización
 
-Este proyecto se dedica a **texto que ve el jugador**, no a documentar instrucciones del motor del juego.
+**Objetivo exclusivo:** recuperar, auditar, ordenar y traducir las cadenas de texto que pueda presentar *Cladun: This Is an RPG!* (USA, PSP). **No** inventariar como entregable operaciones/opcodes del motor.
 
-1. Empezar por `corpus/textos_para_traducir.csv`; **no utilizar** `corpus/todo_el_texto.csv` como lista de trabajo (es la extracción bruta).
-2. Conservar `text_id`, `texto_original`, `fuente`, `indice_bloque`, `orden_en_bloque`, `offset_hex` y el orden de las filas. No unir/desduplicar líneas aunque el texto coincida.
-3. Escribir la traducción solo en `traduccion_es`; guardar notas contextuales aparte. No convertir nombres, variables o bytes en frases inventadas.
-4. No traducir automáticamente `pendiente_validacion`: primero identificar el campo real en el juego. Los 56 falsos positivos de `LV.DAT` ya están apartados.
-5. Proteger marcadores de formato (`%s`, `%02d`, `%d`, etc.) y saltos de línea; comprobar espacio de cuadros y tamaño en bytes **antes de reinsertar**.
-6. El texto de archivos PNG es texto **gráfico**: traducirlo implica modificar la imagen, no un CSV binario.
-7. Mantener separados corpus para traductores, reporte de auditoría e índices internos. No reintroducir listados de opcodes o instrucciones en el repositorio de traducción salvo petición expresa.
-8. No afirmar extracción completa al 100 % sin verificar todas las fuentes gráficas, campos no documentados, ejecutable y juego en PPSSPP.
-9. No subir ISOs, juegos, audio, sprites, PNG originales, descompresiones completas ni firmware.
-10. Validar antes de publicar con `python -m unittest discover -s tests -v` y mantener trazabilidad de los cambios.
+1. La **fuente de verdad** es `corpus/CLADUN_TODO_TEXTO_ORIGINAL.csv`. El `.txt` es una exportación de lectura generada desde ese CSV.
+2. No insertar texto español hasta que exista una traducción aprobada. Los valores de `espanol` están deliberadamente vacíos.
+3. No cambiar ni reordenar `grupo_id`, `text_id`, `original`, offsets, archivos, índices o referencias. No unir cadenas repetidas aunque parezcan iguales.
+4. Diferenciar `pendiente_traduccion`, `requiere_comprobar_en_juego` y `requiere_reconstruccion`. **Campo identificado no significa texto visto en pantalla**.
+5. No traducir nombres de archivos internos (`rmap*.dat`), números binarios interpretados como texto, controles del motor, nombres comerciales protegidos o marcas gráficas decorativas. Las exclusiones tienen auditoría.
+6. En caso de bytes CP932 truncados, conservar el texto con marca `�` y el hexadecimal en `bytes_hex`: nunca reconstruir por conjetura.
+7. Toda modificación de la extracción requiere verificación con bytes originales, ubicación reproducible, nota de QA y actualización de `reports/resumen.json`.
+8. No publicar la ISO, archivos binarios, imágenes del juego ni recursos comerciales. Evitar divulgar el TXT completo en copias no autorizadas; revisar las implicaciones de derechos para cualquier publicación.
+9. La traducción futura se hará solo en `espanol`, respetando `%s`, `%d`, otras variables, glifos especiales y saltos de línea. Probar en PPSSPP antes de aprobar la reinserción.
+10. Ejecutar `python tools/validar_corpus.py` y `python -m unittest discover -s tests -v` antes de cambios a `main`.
+
+Consultar `docs/` para definiciones exactas y estado de cobertura. No declarar «100 % extraído» sin recorrido visual y comparación de recursos.

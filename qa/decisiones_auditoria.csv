@@ -1,0 +1,811 @@
+﻿text_id_anterior,origen,indice_registro,offset_anterior,original_anterior,decision,detalle,text_id_nuevo,offset_nuevo,original_nuevo
+CLD-000001,SCRIPT.SDT/SCRIPT.DAT,6,0x000002A2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000005,SCRIPT.SDT/SCRIPT.DAT,8,0x00000568,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000009,SCRIPT.SDT/SCRIPT.DAT,9,0x00000706,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000012,SCRIPT.SDT/SCRIPT.DAT,10,0x000007C3,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000018,SCRIPT.SDT/SCRIPT.DAT,11,0x000009AB,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000032,SCRIPT.SDT/SCRIPT.DAT,12,0x00000D1B,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000054,SCRIPT.SDT/SCRIPT.DAT,12,0x0000112A,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000076,SCRIPT.SDT/SCRIPT.DAT,13,0x0000156B,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000079,SCRIPT.SDT/SCRIPT.DAT,13,0x00001628,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000089,SCRIPT.SDT/SCRIPT.DAT,22,0x0000439E,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000095,SCRIPT.SDT/SCRIPT.DAT,23,0x000048DE,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000098,SCRIPT.SDT/SCRIPT.DAT,24,0x00004DAE,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000099,SCRIPT.SDT/SCRIPT.DAT,27,0x0000539A,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000103,SCRIPT.SDT/SCRIPT.DAT,35,0x00005B82,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000105,SCRIPT.SDT/SCRIPT.DAT,35,0x00005BC7,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000124,SCRIPT.SDT/SCRIPT.DAT,38,0x00006115,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000126,SCRIPT.SDT/SCRIPT.DAT,44,0x00006BCC,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000135,SCRIPT.SDT/SCRIPT.DAT,88,0x0000797A,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000137,SCRIPT.SDT/SCRIPT.DAT,93,0x0000A002,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-000866,SCRIPT.SDT/SCRIPT.DAT,760,0x00037565,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001088,SCRIPT.SDT/SCRIPT.DAT,770,0x0003C168,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001091,SCRIPT.SDT/SCRIPT.DAT,772,0x0003C34F,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001096,SCRIPT.SDT/SCRIPT.DAT,774,0x0003C4EC,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001184,SCRIPT.SDT/SCRIPT.DAT,788,0x0003DC12,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001191,SCRIPT.SDT/SCRIPT.DAT,789,0x0003DD82,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001195,SCRIPT.SDT/SCRIPT.DAT,790,0x0003DE52,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001220,SCRIPT.SDT/SCRIPT.DAT,793,0x0003E302,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001224,SCRIPT.SDT/SCRIPT.DAT,794,0x0003E3A2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001228,SCRIPT.SDT/SCRIPT.DAT,795,0x0003E442,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001241,SCRIPT.SDT/SCRIPT.DAT,796,0x0003E6C2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001260,SCRIPT.SDT/SCRIPT.DAT,797,0x0003EA42,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001365,SCRIPT.SDT/SCRIPT.DAT,801,0x000402B8,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001368,SCRIPT.SDT/SCRIPT.DAT,802,0x0004047C,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001537,SCRIPT.SDT/SCRIPT.DAT,829,0x000426CC,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001619,SCRIPT.SDT/SCRIPT.DAT,832,0x00043F02,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001713,SCRIPT.SDT/SCRIPT.DAT,839,0x00045AE3,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001717,SCRIPT.SDT/SCRIPT.DAT,839,0x00045BC6,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001721,SCRIPT.SDT/SCRIPT.DAT,840,0x00045D86,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001747,SCRIPT.SDT/SCRIPT.DAT,847,0x000464A2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001809,SCRIPT.SDT/SCRIPT.DAT,852,0x000472F8,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001812,SCRIPT.SDT/SCRIPT.DAT,852,0x00047371,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001815,SCRIPT.SDT/SCRIPT.DAT,852,0x00047432,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001818,SCRIPT.SDT/SCRIPT.DAT,853,0x000475CD,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001821,SCRIPT.SDT/SCRIPT.DAT,853,0x00047646,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001945,SCRIPT.SDT/SCRIPT.DAT,872,0x000496A4,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-001949,SCRIPT.SDT/SCRIPT.DAT,873,0x00049836,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002032,SCRIPT.SDT/SCRIPT.DAT,884,0x0004BAAE,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002034,SCRIPT.SDT/SCRIPT.DAT,885,0x0004BBC6,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002151,SCRIPT.SDT/SCRIPT.DAT,898,0x0004E104,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002155,SCRIPT.SDT/SCRIPT.DAT,898,0x0004E214,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002157,SCRIPT.SDT/SCRIPT.DAT,899,0x0004E3A6,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002236,SCRIPT.SDT/SCRIPT.DAT,912,0x0004FEF8,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002238,SCRIPT.SDT/SCRIPT.DAT,912,0x0004FF97,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002241,SCRIPT.SDT/SCRIPT.DAT,913,0x00050156,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002345,SCRIPT.SDT/SCRIPT.DAT,925,0x0005221B,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002348,SCRIPT.SDT/SCRIPT.DAT,926,0x00052366,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002452,SCRIPT.SDT/SCRIPT.DAT,939,0x000543A3,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002455,SCRIPT.SDT/SCRIPT.DAT,940,0x000544E6,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002570,SCRIPT.SDT/SCRIPT.DAT,960,0x00056B54,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002572,SCRIPT.SDT/SCRIPT.DAT,961,0x00056C66,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002642,SCRIPT.SDT/SCRIPT.DAT,974,0x000584C6,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002644,SCRIPT.SDT/SCRIPT.DAT,975,0x000585D6,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002741,SCRIPT.SDT/SCRIPT.DAT,988,0x0005A4AD,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002743,SCRIPT.SDT/SCRIPT.DAT,989,0x0005A5D5,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002821,SCRIPT.SDT/SCRIPT.DAT,1002,0x0005BFD2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002823,SCRIPT.SDT/SCRIPT.DAT,1003,0x0005C0E6,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002856,SCRIPT.SDT/SCRIPT.DAT,1015,0x0005CAB2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002858,SCRIPT.SDT/SCRIPT.DAT,1015,0x0005CAEA,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002916,SCRIPT.SDT/SCRIPT.DAT,1017,0x0005DED9,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-002918,SCRIPT.SDT/SCRIPT.DAT,1018,0x0005DFE6,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003014,SCRIPT.SDT/SCRIPT.DAT,1032,0x00060088,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003016,SCRIPT.SDT/SCRIPT.DAT,1033,0x000601A5,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003131,SCRIPT.SDT/SCRIPT.DAT,1048,0x00061E67,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003133,SCRIPT.SDT/SCRIPT.DAT,1049,0x00061F76,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003231,SCRIPT.SDT/SCRIPT.DAT,1067,0x00064148,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003233,SCRIPT.SDT/SCRIPT.DAT,1068,0x00064256,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003318,SCRIPT.SDT/SCRIPT.DAT,1081,0x00065B88,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003320,SCRIPT.SDT/SCRIPT.DAT,1082,0x00065C96,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003398,SCRIPT.SDT/SCRIPT.DAT,1095,0x000675F9,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003400,SCRIPT.SDT/SCRIPT.DAT,1096,0x00067706,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003505,SCRIPT.SDT/SCRIPT.DAT,1109,0x00069C07,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003507,SCRIPT.SDT/SCRIPT.DAT,1110,0x00069D16,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003613,SCRIPT.SDT/SCRIPT.DAT,1123,0x0006C164,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003615,SCRIPT.SDT/SCRIPT.DAT,1124,0x0006C276,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003751,SCRIPT.SDT/SCRIPT.DAT,1137,0x0006EA30,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003753,SCRIPT.SDT/SCRIPT.DAT,1138,0x0006EB57,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003913,SCRIPT.SDT/SCRIPT.DAT,1169,0x000731CA,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-003916,SCRIPT.SDT/SCRIPT.DAT,1170,0x0007332A,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-004008,SCRIPT.SDT/SCRIPT.DAT,1189,0x0007521B,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-004010,SCRIPT.SDT/SCRIPT.DAT,1190,0x00075326,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-004067,SCRIPT.SDT/SCRIPT.DAT,1203,0x00076677,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-004079,SCRIPT.SDT/SCRIPT.DAT,1203,0x00076907,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-004082,SCRIPT.SDT/SCRIPT.DAT,1204,0x00076A56,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-004128,SCRIPT.SDT/SCRIPT.DAT,1218,0x00077D59,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-004184,SCRIPT.SDT/SCRIPT.DAT,1218,0x00078E63,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-004186,SCRIPT.SDT/SCRIPT.DAT,1219,0x00078F76,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-004297,SCRIPT.SDT/SCRIPT.DAT,1258,0x0007BB05,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-004818,SCRIPT.SDT/SCRIPT.DAT,1429,0x0008DB5C,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-004950,SCRIPT.SDT/SCRIPT.DAT,1447,0x00090A51,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-004973,SCRIPT.SDT/SCRIPT.DAT,1455,0x00091BE2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-004976,SCRIPT.SDT/SCRIPT.DAT,1456,0x00091C62,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-004987,SCRIPT.SDT/SCRIPT.DAT,1456,0x00091E13,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-004988,SCRIPT.SDT/SCRIPT.DAT,1457,0x00091E32,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005001,SCRIPT.SDT/SCRIPT.DAT,1457,0x00091FF9,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005002,SCRIPT.SDT/SCRIPT.DAT,1458,0x00092022,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005007,SCRIPT.SDT/SCRIPT.DAT,1459,0x00092102,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005011,SCRIPT.SDT/SCRIPT.DAT,1460,0x000921A2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005029,SCRIPT.SDT/SCRIPT.DAT,1461,0x00092531,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005030,SCRIPT.SDT/SCRIPT.DAT,1462,0x00092552,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005033,SCRIPT.SDT/SCRIPT.DAT,1462,0x000925B5,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005034,SCRIPT.SDT/SCRIPT.DAT,1463,0x000925E2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005037,SCRIPT.SDT/SCRIPT.DAT,1463,0x0009263F,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005038,SCRIPT.SDT/SCRIPT.DAT,1464,0x00092662,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005041,SCRIPT.SDT/SCRIPT.DAT,1464,0x000926C8,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005042,SCRIPT.SDT/SCRIPT.DAT,1465,0x000926F2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005044,SCRIPT.SDT/SCRIPT.DAT,1465,0x00092727,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005045,SCRIPT.SDT/SCRIPT.DAT,1466,0x00092752,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005048,SCRIPT.SDT/SCRIPT.DAT,1466,0x000927A2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005049,SCRIPT.SDT/SCRIPT.DAT,1467,0x000927C2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005052,SCRIPT.SDT/SCRIPT.DAT,1467,0x00092836,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005053,SCRIPT.SDT/SCRIPT.DAT,1468,0x00092862,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005056,SCRIPT.SDT/SCRIPT.DAT,1468,0x000928C6,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005057,SCRIPT.SDT/SCRIPT.DAT,1469,0x000928F2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005060,SCRIPT.SDT/SCRIPT.DAT,1469,0x00092963,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005061,SCRIPT.SDT/SCRIPT.DAT,1470,0x00092982,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005064,SCRIPT.SDT/SCRIPT.DAT,1470,0x000929D1,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005065,SCRIPT.SDT/SCRIPT.DAT,1471,0x000929F2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005068,SCRIPT.SDT/SCRIPT.DAT,1471,0x00092A5C,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005069,SCRIPT.SDT/SCRIPT.DAT,1472,0x00092A82,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005072,SCRIPT.SDT/SCRIPT.DAT,1472,0x00092AF2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005073,SCRIPT.SDT/SCRIPT.DAT,1473,0x00092B12,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005076,SCRIPT.SDT/SCRIPT.DAT,1473,0x00092B82,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005077,SCRIPT.SDT/SCRIPT.DAT,1474,0x00092BA2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005080,SCRIPT.SDT/SCRIPT.DAT,1474,0x00092C15,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005081,SCRIPT.SDT/SCRIPT.DAT,1475,0x00092C42,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005084,SCRIPT.SDT/SCRIPT.DAT,1475,0x00092CB6,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005085,SCRIPT.SDT/SCRIPT.DAT,1476,0x00092CE2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005089,SCRIPT.SDT/SCRIPT.DAT,1476,0x00092D5D,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005090,SCRIPT.SDT/SCRIPT.DAT,1477,0x00092D82,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005095,SCRIPT.SDT/SCRIPT.DAT,1477,0x00092E13,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005096,SCRIPT.SDT/SCRIPT.DAT,1478,0x00092E32,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005100,SCRIPT.SDT/SCRIPT.DAT,1478,0x00092EBC,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005101,SCRIPT.SDT/SCRIPT.DAT,1479,0x00092EE2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005105,SCRIPT.SDT/SCRIPT.DAT,1479,0x00092F74,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005106,SCRIPT.SDT/SCRIPT.DAT,1480,0x00092F92,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005123,SCRIPT.SDT/SCRIPT.DAT,1480,0x0009329A,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005124,SCRIPT.SDT/SCRIPT.DAT,1481,0x000932C2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005132,SCRIPT.SDT/SCRIPT.DAT,1481,0x000933EE,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005133,SCRIPT.SDT/SCRIPT.DAT,1482,0x00093412,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005144,SCRIPT.SDT/SCRIPT.DAT,1482,0x00093636,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005145,SCRIPT.SDT/SCRIPT.DAT,1483,0x00093662,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005159,SCRIPT.SDT/SCRIPT.DAT,1483,0x000938FC,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005160,SCRIPT.SDT/SCRIPT.DAT,1484,0x00093922,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005175,SCRIPT.SDT/SCRIPT.DAT,1484,0x00093C00,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005176,SCRIPT.SDT/SCRIPT.DAT,1485,0x00093C22,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005191,SCRIPT.SDT/SCRIPT.DAT,1485,0x00093EF1,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005192,SCRIPT.SDT/SCRIPT.DAT,1486,0x00093F12,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005206,SCRIPT.SDT/SCRIPT.DAT,1486,0x00094195,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005220,SCRIPT.SDT/SCRIPT.DAT,1487,0x0009445E,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005221,SCRIPT.SDT/SCRIPT.DAT,1488,0x00094482,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005226,SCRIPT.SDT/SCRIPT.DAT,1488,0x0009451F,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005227,SCRIPT.SDT/SCRIPT.DAT,1489,0x00094542,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005230,SCRIPT.SDT/SCRIPT.DAT,1489,0x00094593,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005244,SCRIPT.SDT/SCRIPT.DAT,1490,0x000948DE,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005245,SCRIPT.SDT/SCRIPT.DAT,1491,0x0009492B,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005251,SCRIPT.SDT/SCRIPT.DAT,1491,0x000949EB,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005253,SCRIPT.SDT/SCRIPT.DAT,1491,0x00094A26,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005256,SCRIPT.SDT/SCRIPT.DAT,1491,0x00094A88,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005257,SCRIPT.SDT/SCRIPT.DAT,1492,0x00094AB2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005261,SCRIPT.SDT/SCRIPT.DAT,1492,0x00094B1B,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005262,SCRIPT.SDT/SCRIPT.DAT,1493,0x00094B42,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005265,SCRIPT.SDT/SCRIPT.DAT,1493,0x00094BC7,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005266,SCRIPT.SDT/SCRIPT.DAT,1494,0x00094BF2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005270,SCRIPT.SDT/SCRIPT.DAT,1494,0x00094C85,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005271,SCRIPT.SDT/SCRIPT.DAT,1495,0x00094CB2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005275,SCRIPT.SDT/SCRIPT.DAT,1495,0x00094D23,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005276,SCRIPT.SDT/SCRIPT.DAT,1496,0x00094D42,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005279,SCRIPT.SDT/SCRIPT.DAT,1496,0x00094D9E,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005280,SCRIPT.SDT/SCRIPT.DAT,1497,0x00094DC2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005283,SCRIPT.SDT/SCRIPT.DAT,1497,0x00094E35,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005284,SCRIPT.SDT/SCRIPT.DAT,1498,0x00094E62,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005288,SCRIPT.SDT/SCRIPT.DAT,1498,0x00094EE7,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005289,SCRIPT.SDT/SCRIPT.DAT,1499,0x00094F12,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005291,SCRIPT.SDT/SCRIPT.DAT,1499,0x00094F5A,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005292,SCRIPT.SDT/SCRIPT.DAT,1500,0x00094F82,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005295,SCRIPT.SDT/SCRIPT.DAT,1500,0x00094FD8,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005296,SCRIPT.SDT/SCRIPT.DAT,1501,0x00095002,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005298,SCRIPT.SDT/SCRIPT.DAT,1501,0x0009502F,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005300,SCRIPT.SDT/SCRIPT.DAT,1502,0x00095082,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-005302,SCRIPT.SDT/SCRIPT.DAT,1502,0x000950A0,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+,DATABASE.DAT/DEFAULTTALK.DAT,1,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-DEFAULTTALK-0001-dialogo_1,0x00000118,Me?
+CLD-006086,DATABASE.DAT/LV.DAT,0,0x00000010,ﾍﾌﾌ=c,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006087,DATABASE.DAT/LV.DAT,1,0x00000018,ﾍﾌﾌ=b,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006088,DATABASE.DAT/LV.DAT,2,0x00000020,ﾍﾌﾌ=a,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006089,DATABASE.DAT/LV.DAT,3,0x00000028,ﾍﾌﾌ=`,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006090,DATABASE.DAT/LV.DAT,4,0x00000030,ﾍﾌﾌ=_,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006091,DATABASE.DAT/LV.DAT,5,0x00000038,ﾍﾌﾌ=^,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006092,DATABASE.DAT/LV.DAT,6,0x00000040,ﾍﾌﾌ=],descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006093,DATABASE.DAT/LV.DAT,7,0x00000048,ﾍﾌﾌ=\,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006094,DATABASE.DAT/LV.DAT,8,0x00000050,ﾍﾌﾌ=[,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006095,DATABASE.DAT/LV.DAT,9,0x00000058,ﾍﾌﾌ=Z,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006096,DATABASE.DAT/LV.DAT,10,0x00000060,ﾍﾌﾌ=Y,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006097,DATABASE.DAT/LV.DAT,11,0x00000068,ﾍﾌﾌ=X,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006098,DATABASE.DAT/LV.DAT,12,0x00000070,ﾍﾌﾌ=W,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006099,DATABASE.DAT/LV.DAT,13,0x00000078,ﾍﾌﾌ=V,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006100,DATABASE.DAT/LV.DAT,14,0x00000080,ﾍﾌﾌ=U,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006101,DATABASE.DAT/LV.DAT,15,0x00000088,ﾍﾌﾌ=T,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006102,DATABASE.DAT/LV.DAT,16,0x00000090,ﾍﾌﾌ=S,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006103,DATABASE.DAT/LV.DAT,17,0x00000098,ﾍﾌﾌ=R,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006104,DATABASE.DAT/LV.DAT,18,0x000000A0,ﾍﾌﾌ=Q,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006105,DATABASE.DAT/LV.DAT,19,0x000000A8,ﾍﾌﾌ=P,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006106,DATABASE.DAT/LV.DAT,20,0x000000B0,ﾍﾌﾌ=O,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006107,DATABASE.DAT/LV.DAT,21,0x000000B8,ﾍﾌﾌ=N,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006108,DATABASE.DAT/LV.DAT,22,0x000000C0,ﾍﾌﾌ=M,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006109,DATABASE.DAT/LV.DAT,23,0x000000C8,ﾍﾌﾌ=L,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006110,DATABASE.DAT/LV.DAT,24,0x000000D0,ﾍﾌﾌ=K,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006111,DATABASE.DAT/LV.DAT,25,0x000000D8,ﾍﾌﾌ=J,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006112,DATABASE.DAT/LV.DAT,26,0x000000E0,ﾍﾌﾌ=I,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006113,DATABASE.DAT/LV.DAT,27,0x000000E8,ﾍﾌﾌ=H,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006114,DATABASE.DAT/LV.DAT,28,0x000000F0,ﾍﾌﾌ=G,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006115,DATABASE.DAT/LV.DAT,29,0x000000F8,ﾍﾌﾌ=F,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006116,DATABASE.DAT/LV.DAT,30,0x00000100,ﾍﾌﾌ=E,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006117,DATABASE.DAT/LV.DAT,31,0x00000108,ﾍﾌﾌ=D,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006118,DATABASE.DAT/LV.DAT,32,0x00000110,ﾍﾌﾌ=C,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006119,DATABASE.DAT/LV.DAT,33,0x00000118,ﾍﾌﾌ=B,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006120,DATABASE.DAT/LV.DAT,34,0x00000120,ﾍﾌﾌ=A,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006121,DATABASE.DAT/LV.DAT,35,0x00000128,ﾍﾌﾌ=@,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006122,DATABASE.DAT/LV.DAT,36,0x00000130,ﾍﾌﾌ=?,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006123,DATABASE.DAT/LV.DAT,37,0x00000138,ﾍﾌﾌ=>,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006124,DATABASE.DAT/LV.DAT,38,0x00000140,ﾍﾌﾌ==,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006125,DATABASE.DAT/LV.DAT,50,0x000001A0,ﾍﾌL>1,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006126,DATABASE.DAT/LV.DAT,51,0x000001A8,ﾍﾌL>0,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006127,DATABASE.DAT/LV.DAT,52,0x000001B0,ﾍﾌL>/,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006128,DATABASE.DAT/LV.DAT,53,0x000001B8,ﾍﾌL>.,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006129,DATABASE.DAT/LV.DAT,54,0x000001C0,ﾍﾌL>-,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006130,DATABASE.DAT/LV.DAT,55,0x000001C8,"ﾍﾌL>,",descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006131,DATABASE.DAT/LV.DAT,56,0x000001D0,ﾍﾌL>+,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006132,DATABASE.DAT/LV.DAT,57,0x000001D8,ﾍﾌL>*,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006133,DATABASE.DAT/LV.DAT,58,0x000001E0,ﾍﾌL>),descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006134,DATABASE.DAT/LV.DAT,59,0x000001E8,fff>(,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006135,DATABASE.DAT/LV.DAT,60,0x000001F0,fff>',descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006136,DATABASE.DAT/LV.DAT,61,0x000001F8,fff>&,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006137,DATABASE.DAT/LV.DAT,62,0x00000200,fff>%,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006138,DATABASE.DAT/LV.DAT,63,0x00000208,fff>$,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006139,DATABASE.DAT/LV.DAT,67,0x00000228,ﾍﾌﾌ>,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006140,DATABASE.DAT/LV.DAT,89,0x000002D8,ffF?,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+CLD-006141,DATABASE.DAT/LV.DAT,90,0x000002E0,ﾍﾌL?,descartado_binario,Datos numéricos confundidos con Shift-JIS,,,
+,DATABASE.DAT/ARTIFACT.DAT,105,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-ARTIFACT-0105-nombre,0x00005248,HP-20%
+,DATABASE.DAT/ARTIFACT.DAT,105,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-ARTIFACT-0105-descripcion,0x00005260,HP-20%
+,DATABASE.DAT/ARTIFACT.DAT,106,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-ARTIFACT-0106-nombre,0x00005310,HP-40%
+,DATABASE.DAT/ARTIFACT.DAT,106,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-ARTIFACT-0106-descripcion,0x00005328,HP-40%
+,DATABASE.DAT/ARTIFACT.DAT,107,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-ARTIFACT-0107-nombre,0x000053D8,HP-60%
+,DATABASE.DAT/ARTIFACT.DAT,107,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-ARTIFACT-0107-descripcion,0x000053F0,HP-60%
+,DATABASE.DAT/ARTIFACT.DAT,115,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-ARTIFACT-0115-nombre,0x00005A18,？？？？？
+,DATABASE.DAT/ARTIFACT.DAT,115,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-ARTIFACT-0115-descripcion,0x00005A30,？？？？？
+,DATABASE.DAT/ARTIFACT.DAT,116,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-ARTIFACT-0116-nombre,0x00005AE0,？？？？？
+,DATABASE.DAT/ARTIFACT.DAT,116,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-ARTIFACT-0116-descripcion,0x00005AF8,？？？？？
+CLD-006367,DATABASE.DAT/BODY-EFFECT.DAT,0,0x00000058,Complete Junk,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006367,0x00000058,Complete Junk 
+CLD-006369,DATABASE.DAT/BODY-EFFECT.DAT,1,0x000000E0,Not Useless,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006369,0x000000E0,Not Useless 
+CLD-006371,DATABASE.DAT/BODY-EFFECT.DAT,2,0x00000168,Normal,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006371,0x00000168,Normal 
+CLD-006373,DATABASE.DAT/BODY-EFFECT.DAT,3,0x000001F0,Useful,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006373,0x000001F0,Useful 
+CLD-006375,DATABASE.DAT/BODY-EFFECT.DAT,4,0x00000278,Expensive,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006375,0x00000278,Expensive 
+CLD-006377,DATABASE.DAT/BODY-EFFECT.DAT,5,0x00000300,DEF+,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006377,0x00000300,DEF+ 
+,DATABASE.DAT/BODY-EFFECT.DAT,6,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-BODY_EFFECT-0006-descripcion_efecto,0x00000388,④ up 
+,DATABASE.DAT/BODY-EFFECT.DAT,7,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-BODY_EFFECT-0007-descripcion_efecto,0x00000410,⑤ up 
+,DATABASE.DAT/BODY-EFFECT.DAT,8,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-BODY_EFFECT-0008-descripcion_efecto,0x00000498,⑥ up 
+CLD-006382,DATABASE.DAT/BODY-EFFECT.DAT,9,0x00000520,High Critical,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006382,0x00000520,High Critical 
+CLD-006384,DATABASE.DAT/BODY-EFFECT.DAT,10,0x000005A8,Extra EXP,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006384,0x000005A8,Extra EXP 
+,DATABASE.DAT/BODY-EFFECT.DAT,11,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-BODY_EFFECT-0011-descripcion_efecto,0x00000630,x1.2 G 
+CLD-006387,DATABASE.DAT/BODY-EFFECT.DAT,12,0x000006B8,"Light, DEF+",corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006387,0x000006B8,"Light, DEF+ "
+CLD-006389,DATABASE.DAT/BODY-EFFECT.DAT,13,0x00000740,"ATK+, DEF+",corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006389,0x00000740,"ATK+, DEF+ "
+CLD-006391,DATABASE.DAT/BODY-EFFECT.DAT,14,0x000007C8,Expensive,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006391,0x000007C8,Expensive 
+CLD-006393,DATABASE.DAT/BODY-EFFECT.DAT,15,0x00000850,Movement+,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006393,0x00000850,Movement+ 
+CLD-006395,DATABASE.DAT/BODY-EFFECT.DAT,16,0x000008D8,Front Heal,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006395,0x000008D8,Front Heal 
+CLD-006397,DATABASE.DAT/BODY-EFFECT.DAT,17,0x00000960,Resistance+5,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006397,0x00000960,Resistance+5 
+CLD-006399,DATABASE.DAT/BODY-EFFECT.DAT,18,0x000009E8,No EXP,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006399,0x000009E8,No EXP 
+CLD-006401,DATABASE.DAT/BODY-EFFECT.DAT,19,0x00000A70,Drop rate+,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006401,0x00000A70,Drop rate+ 
+CLD-006403,DATABASE.DAT/BODY-EFFECT.DAT,20,0x00000AF8,Acceleration,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006403,0x00000AF8,Acceleration 
+CLD-006405,DATABASE.DAT/BODY-EFFECT.DAT,21,0x00000B80,Greatest,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006405,0x00000B80,Greatest 
+CLD-006407,DATABASE.DAT/BODY-EFFECT.DAT,22,0x00000C08,Awesomest,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006407,0x00000C08,Awesomest 
+,DATABASE.DAT/BODY-EFFECT.DAT,23,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-BODY_EFFECT-0023-nombre_efecto,0x00000C80,D99
+CLD-006408,DATABASE.DAT/BODY-EFFECT.DAT,23,0x00000C90,99 Titles,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006408,0x00000C90,99 Titles 
+CLD-006428,DATABASE.DAT/BODY.DAT,9,0x00000577,Ultimate,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006428,0x00000577,Ultimate 
+CLD-006499,DATABASE.DAT/BODY.DAT,45,0x00001A16,"z
+xi(",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-006650,DATABASE.DAT/CHAR.DAT,2,0x0000082C,83A67>-.C5?B,descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-006669,DATABASE.DAT/CHAR.DAT,5,0x00001330,83A67>-.C5?B,descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-006694,DATABASE.DAT/CHAR.DAT,9,0x000021E0,83A67>-.C5?B,descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+,DATABASE.DAT/DAIHYOU.DAT,1,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-DAIHYOU-0001-nombre_personaje,0x00000168,グミ
+,DATABASE.DAT/DAIHYOU.DAT,6,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-DAIHYOU-0006-nombre_personaje,0x000004F6,ココ
+,DATABASE.DAT/DAIHYOU.DAT,10,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-DAIHYOU-0010-nombre_personaje,0x000007CE,ボブ
+CLD-007362,DATABASE.DAT/DUNGEON.DAT,0,0x0000002F,eHiyo's Cave,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007362,0x00000030,Hiyo's Cave
+CLD-007365,DATABASE.DAT/DUNGEON.DAT,1,0x0000012F,eHiyo's Cave,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007365,0x00000130,Hiyo's Cave
+CLD-007368,DATABASE.DAT/DUNGEON.DAT,2,0x0000022F,eHiyo's Cave,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007368,0x00000230,Hiyo's Cave
+CLD-007371,DATABASE.DAT/DUNGEON.DAT,3,0x0000032F,eCave of Beginnings,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007371,0x00000330,Cave of Beginnings
+CLD-007374,DATABASE.DAT/DUNGEON.DAT,4,0x0000042F,eCave of Beginnings,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007374,0x00000430,Cave of Beginnings
+CLD-007377,DATABASE.DAT/DUNGEON.DAT,5,0x0000052F,eCave of Beginnings,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007377,0x00000530,Cave of Beginnings
+CLD-007380,DATABASE.DAT/DUNGEON.DAT,6,0x0000062F,eCave of Beginnings,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007380,0x00000630,Cave of Beginnings
+CLD-007383,DATABASE.DAT/DUNGEON.DAT,7,0x0000072F,eDragon Forest,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007383,0x00000730,Dragon Forest
+CLD-007386,DATABASE.DAT/DUNGEON.DAT,8,0x0000082F,eDragon Forest,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007386,0x00000830,Dragon Forest
+CLD-007389,DATABASE.DAT/DUNGEON.DAT,9,0x0000092F,eDragon Forest,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007389,0x00000930,Dragon Forest
+CLD-007392,DATABASE.DAT/DUNGEON.DAT,10,0x00000A2F,oBurning Cave,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007392,0x00000A30,Burning Cave
+CLD-007395,DATABASE.DAT/DUNGEON.DAT,11,0x00000B2F,eBurning Cave,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007395,0x00000B30,Burning Cave
+CLD-007398,DATABASE.DAT/DUNGEON.DAT,12,0x00000C2F,oBurning Cave,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007398,0x00000C30,Burning Cave
+CLD-007401,DATABASE.DAT/DUNGEON.DAT,13,0x00000D2F,oAbsolute Zero,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007401,0x00000D30,Absolute Zero
+CLD-007404,DATABASE.DAT/DUNGEON.DAT,14,0x00000E2F,oAbsolute Zero,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007404,0x00000E30,Absolute Zero
+CLD-007407,DATABASE.DAT/DUNGEON.DAT,15,0x00000F2F,oAbsolute Zero,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007407,0x00000F30,Absolute Zero
+CLD-007410,DATABASE.DAT/DUNGEON.DAT,16,0x0000102F,oGolden Shrine,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007410,0x00001030,Golden Shrine
+CLD-007413,DATABASE.DAT/DUNGEON.DAT,17,0x0000112F,oGolden Shrine,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007413,0x00001130,Golden Shrine
+CLD-007416,DATABASE.DAT/DUNGEON.DAT,18,0x0000122D,oGolden Shrine,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007416,0x00001230,Golden Shrine
+CLD-007419,DATABASE.DAT/DUNGEON.DAT,19,0x0000132F,eGolden Shrine,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007419,0x00001330,Golden Shrine
+CLD-007422,DATABASE.DAT/DUNGEON.DAT,20,0x0000142F,oMystery Lab,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007422,0x00001430,Mystery Lab
+CLD-007425,DATABASE.DAT/DUNGEON.DAT,21,0x0000152F,oMystery Lab,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007425,0x00001530,Mystery Lab
+CLD-007428,DATABASE.DAT/DUNGEON.DAT,22,0x0000162F,oMystery Lab,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007428,0x00001630,Mystery Lab
+CLD-007431,DATABASE.DAT/DUNGEON.DAT,23,0x0000172F,oMonster House,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007431,0x00001730,Monster House
+CLD-007434,DATABASE.DAT/DUNGEON.DAT,24,0x0000182F,oMonster House,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007434,0x00001830,Monster House
+CLD-007437,DATABASE.DAT/DUNGEON.DAT,25,0x0000192F,eMonster House,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007437,0x00001930,Monster House
+CLD-007440,DATABASE.DAT/DUNGEON.DAT,26,0x00001A2F,eMonster House,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007440,0x00001A30,Monster House
+CLD-007443,DATABASE.DAT/DUNGEON.DAT,27,0x00001B2F,oScorching Desert,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007443,0x00001B30,Scorching Desert
+CLD-007446,DATABASE.DAT/DUNGEON.DAT,28,0x00001C2F,oScorching Desert,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007446,0x00001C30,Scorching Desert
+CLD-007449,DATABASE.DAT/DUNGEON.DAT,29,0x00001D2F,oNostalgic Castle,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007449,0x00001D30,Nostalgic Castle
+CLD-007452,DATABASE.DAT/DUNGEON.DAT,30,0x00001E2F,oNostalgic Castle,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007452,0x00001E30,Nostalgic Castle
+CLD-007455,DATABASE.DAT/DUNGEON.DAT,31,0x00001F2F,oNostalgic Castle,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007455,0x00001F30,Nostalgic Castle
+CLD-007458,DATABASE.DAT/DUNGEON.DAT,32,0x0000202F,eNostalgic Castle,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007458,0x00002030,Nostalgic Castle
+CLD-007461,DATABASE.DAT/DUNGEON.DAT,33,0x0000212F,oEnemy Cave,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007461,0x00002130,Enemy Cave
+CLD-007464,DATABASE.DAT/DUNGEON.DAT,34,0x0000222F,oEnemy Cave,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007464,0x00002230,Enemy Cave
+CLD-007467,DATABASE.DAT/DUNGEON.DAT,35,0x0000232F,oEnemy Cave,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007467,0x00002330,Enemy Cave
+CLD-007470,DATABASE.DAT/DUNGEON.DAT,36,0x0000242F,oEnemy Cave,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007470,0x00002430,Enemy Cave
+CLD-007473,DATABASE.DAT/DUNGEON.DAT,37,0x0000252F,oCourage Wanted,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007473,0x00002530,Courage Wanted
+CLD-007476,DATABASE.DAT/DUNGEON.DAT,38,0x0000262F,oCourage Wanted,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007476,0x00002630,Courage Wanted
+CLD-007479,DATABASE.DAT/DUNGEON.DAT,39,0x0000272F,oCourage Wanted,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007479,0x00002730,Courage Wanted
+CLD-007482,DATABASE.DAT/DUNGEON.DAT,40,0x0000282D,oCourage Wanted,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007482,0x00002830,Courage Wanted
+CLD-007485,DATABASE.DAT/DUNGEON.DAT,41,0x0000292F,oEnergy Square,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007485,0x00002930,Energy Square
+CLD-007488,DATABASE.DAT/DUNGEON.DAT,42,0x00002A2F,oEnergy Square,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007488,0x00002A30,Energy Square
+CLD-007491,DATABASE.DAT/DUNGEON.DAT,43,0x00002B2F,oEnergy Square,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007491,0x00002B30,Energy Square
+CLD-007494,DATABASE.DAT/DUNGEON.DAT,44,0x00002C2F,oEnergy Square,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007494,0x00002C30,Energy Square
+CLD-007497,DATABASE.DAT/DUNGEON.DAT,45,0x00002D2F,oPlace of Beginnings,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007497,0x00002D30,Place of Beginnings
+CLD-007500,DATABASE.DAT/DUNGEON.DAT,46,0x00002E2F,oPlace of Beginnings,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007500,0x00002E30,Place of Beginnings
+CLD-007503,DATABASE.DAT/DUNGEON.DAT,47,0x00002F2F,oPlace of Beginnings,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007503,0x00002F30,Place of Beginnings
+CLD-007506,DATABASE.DAT/DUNGEON.DAT,48,0x0000302F,eNew Enemy,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007506,0x00003030,New Enemy
+CLD-007509,DATABASE.DAT/DUNGEON.DAT,49,0x0000312F,oLast Boss,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007509,0x00003130,Last Boss
+CLD-007512,DATABASE.DAT/DUNGEON.DAT,50,0x0000322F,oLand of Oblivion,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007512,0x00003230,Land of Oblivion
+CLD-007515,DATABASE.DAT/DUNGEON.DAT,51,0x0000332F,oLand of Oblivion,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007515,0x00003330,Land of Oblivion
+CLD-007518,DATABASE.DAT/DUNGEON.DAT,52,0x0000342F,oLand of Oblivion,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007518,0x00003430,Land of Oblivion
+CLD-007521,DATABASE.DAT/DUNGEON.DAT,53,0x0000352F,oLand of Oblivion,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007521,0x00003530,Land of Oblivion
+CLD-007593,DATABASE.DAT/DUNGEON.DAT,77,0x00004D2F,oConnecting Forest LV5-10,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007593,0x00004D30,Connecting Forest LV5-10
+CLD-007596,DATABASE.DAT/DUNGEON.DAT,78,0x00004E2F,oConnecting Forest LV5-10,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007596,0x00004E30,Connecting Forest LV5-10
+CLD-007599,DATABASE.DAT/DUNGEON.DAT,79,0x00004F2F,oLegendary Castle LV15-20,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007599,0x00004F30,Legendary Castle LV15-20
+CLD-007602,DATABASE.DAT/DUNGEON.DAT,80,0x0000502F,oLegendary Castle LV15-20,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007602,0x00005030,Legendary Castle LV15-20
+CLD-007605,DATABASE.DAT/DUNGEON.DAT,81,0x0000512F,oMagma Ocean LV25-30,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007605,0x00005130,Magma Ocean LV25-30
+CLD-007608,DATABASE.DAT/DUNGEON.DAT,82,0x0000522F,oMagma Ocean LV25-30,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007608,0x00005230,Magma Ocean LV25-30
+CLD-007611,DATABASE.DAT/DUNGEON.DAT,83,0x0000532F,oGlacier Forest LV35-40,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007611,0x00005330,Glacier Forest LV35-40
+CLD-007614,DATABASE.DAT/DUNGEON.DAT,84,0x0000542F,eGlacier Forest LV35-40,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007614,0x00005430,Glacier Forest LV35-40
+CLD-007617,DATABASE.DAT/DUNGEON.DAT,85,0x0000552F,eDwelling of Evil LV50-60,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007617,0x00005530,Dwelling of Evil LV50-60
+CLD-007620,DATABASE.DAT/DUNGEON.DAT,86,0x0000562D,oDwelling of Evil LV50-60,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007620,0x00005630,Dwelling of Evil LV50-60
+CLD-007623,DATABASE.DAT/DUNGEON.DAT,87,0x0000572F,oAncient Ruins LV75-85,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007623,0x00005730,Ancient Ruins LV75-85
+CLD-007626,DATABASE.DAT/DUNGEON.DAT,88,0x0000582F,oAncient Ruins LV75-85,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007626,0x00005830,Ancient Ruins LV75-85
+,DATABASE.DAT/EFFECT.DAT,6,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-EFFECT-0006-descripcion_efecto,0x000002BC,HP+1
+,DATABASE.DAT/EFFECT.DAT,7,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-EFFECT-0007-descripcion_efecto,0x00000324,HP+2
+,DATABASE.DAT/EFFECT.DAT,8,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-EFFECT-0008-descripcion_efecto,0x0000038C,SP+1
+,DATABASE.DAT/EFFECT.DAT,9,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-EFFECT-0009-descripcion_efecto,0x000003F4,SP+2
+,DATABASE.DAT/EFFECT.DAT,24,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-EFFECT-0024-nombre_efecto,0x000009FE,足枷
+,DATABASE.DAT/EFFECT.DAT,25,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-EFFECT-0025-nombre_efecto,0x00000A66,手枷
+,DATABASE.DAT/EFFECT.DAT,28,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-EFFECT-0028-nombre_efecto,0x00000B9E,防壁
+CLD-007802,DATABASE.DAT/EFFECT.DAT,30,0x00000C6E,ライフフォースHp回復+2,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-007802,0x00000C6E,ライフフォース
+,DATABASE.DAT/EFFECT.DAT,30,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-EFFECT-0030-descripcion_efecto,0x00000C7C,Hp回復+2
+,DATABASE.DAT/EFFECT.DAT,31,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-EFFECT-0031-nombre_efecto,0x00000CD6,獅子
+,DATABASE.DAT/EFFECT.DAT,34,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-EFFECT-0034-nombre_efecto,0x00000E0E,闘千
+CLD-007895,DATABASE.DAT/MAGIC.DAT,43,0x000025C0,ffｦ?,descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+,DATABASE.DAT/MAHO-JIN.DAT,27,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MAHO_JIN-0027-nombre_circulo,0x0000037C,M&S
+CLD-008010,DATABASE.DAT/MAHO-JIN.DAT,,0x0000A936,ﾐ	ﾒ	ﾓ	1,descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+,DATABASE.DAT/MONSTER.DAT,121,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0121-nombre,0x0000FBEC,？？？
+,DATABASE.DAT/MONSTER.DAT,121,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0121-especie,0x0000FC0C,?????
+,DATABASE.DAT/MONSTER.DAT,122,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0122-nombre,0x0000FE00,？？？
+,DATABASE.DAT/MONSTER.DAT,122,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0122-especie,0x0000FE20,?????
+,DATABASE.DAT/MONSTER.DAT,123,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0123-nombre,0x00010014,？？？
+,DATABASE.DAT/MONSTER.DAT,123,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0123-especie,0x00010034,?????
+,DATABASE.DAT/MONSTER.DAT,124,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0124-nombre,0x00010228,？？？
+,DATABASE.DAT/MONSTER.DAT,124,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0124-especie,0x00010248,?????
+,DATABASE.DAT/MONSTER.DAT,125,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0125-nombre,0x0001043C,？？？
+,DATABASE.DAT/MONSTER.DAT,125,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0125-especie,0x0001045C,?????
+,DATABASE.DAT/MONSTER.DAT,126,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0126-nombre,0x00010650,仮面
+,DATABASE.DAT/MONSTER.DAT,127,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0127-nombre,0x00010864,仮面２
+,DATABASE.DAT/MONSTER.DAT,127,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0127-especie,0x00010884,?????
+,DATABASE.DAT/MONSTER.DAT,128,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0128-nombre,0x00010A78,仮面３
+,DATABASE.DAT/MONSTER.DAT,128,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0128-especie,0x00010A98,?????
+,DATABASE.DAT/MONSTER.DAT,129,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0129-nombre,0x00010C8C,仮面４
+,DATABASE.DAT/MONSTER.DAT,129,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0129-especie,0x00010CAC,?????
+,DATABASE.DAT/MONSTER.DAT,130,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0130-nombre,0x00010EA0,仮面５
+,DATABASE.DAT/MONSTER.DAT,130,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0130-especie,0x00010EC0,?????
+,DATABASE.DAT/MONSTER.DAT,131,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0131-nombre,0x000110B4,仮面６
+,DATABASE.DAT/MONSTER.DAT,131,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0131-especie,0x000110D4,?????
+,DATABASE.DAT/MONSTER.DAT,168,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0168-nombre,0x00015D98,仮面
+,DATABASE.DAT/MONSTER.DAT,168,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-MONSTER-0168-especie,0x00015DB8,?????
+CLD-008561,DATABASE.DAT/RMAPSET.DAT,0,0x00000034,rmap01.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008563,DATABASE.DAT/RMAPSET.DAT,1,0x0000017C,rmap04.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008565,DATABASE.DAT/RMAPSET.DAT,2,0x000002C4,rmap07.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008567,DATABASE.DAT/RMAPSET.DAT,3,0x0000040C,rmap10.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008569,DATABASE.DAT/RMAPSET.DAT,4,0x00000554,rmap11.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008571,DATABASE.DAT/RMAPSET.DAT,5,0x0000069C,rmap14.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008573,DATABASE.DAT/RMAPSET.DAT,6,0x000007E4,rmap19.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008575,DATABASE.DAT/RMAPSET.DAT,7,0x0000092C,rmap24.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008577,DATABASE.DAT/RMAPSET.DAT,8,0x00000A74,rmap27.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008579,DATABASE.DAT/RMAPSET.DAT,9,0x00000BBC,rmap30.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008581,DATABASE.DAT/RMAPSET.DAT,10,0x00000D04,rmap31.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008583,DATABASE.DAT/RMAPSET.DAT,11,0x00000E4C,rmap36.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008585,DATABASE.DAT/RMAPSET.DAT,12,0x00000F94,rmap39.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008587,DATABASE.DAT/RMAPSET.DAT,13,0x000010DC,rmap43.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008589,DATABASE.DAT/RMAPSET.DAT,14,0x00001224,rmap50.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008591,DATABASE.DAT/RMAPSET.DAT,15,0x0000136C,rmap51.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008593,DATABASE.DAT/RMAPSET.DAT,16,0x000014B4,rmap55.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008595,DATABASE.DAT/RMAPSET.DAT,17,0x000015FC,rmap61.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008597,DATABASE.DAT/RMAPSET.DAT,18,0x00001744,rmap66.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008599,DATABASE.DAT/RMAPSET.DAT,19,0x0000188C,rmap70.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008601,DATABASE.DAT/RMAPSET.DAT,20,0x000019D4,rmap71.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008603,DATABASE.DAT/RMAPSET.DAT,21,0x00001B1C,rmap73.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008605,DATABASE.DAT/RMAPSET.DAT,22,0x00001C64,rmap77.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008607,DATABASE.DAT/RMAPSET.DAT,23,0x00001DAC,rmap78.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008609,DATABASE.DAT/RMAPSET.DAT,24,0x00001EF4,rmap80.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008611,DATABASE.DAT/RMAPSET.DAT,25,0x0000203C,rmap87.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008613,DATABASE.DAT/RMAPSET.DAT,26,0x00002184,rmap90.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008615,DATABASE.DAT/RMAPSET.DAT,27,0x000022CC,rmap91.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008617,DATABASE.DAT/RMAPSET.DAT,28,0x00002414,rmap96.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008619,DATABASE.DAT/RMAPSET.DAT,29,0x0000255C,rmap98.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008621,DATABASE.DAT/RMAPSET.DAT,30,0x000026A4,rmap99.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008623,DATABASE.DAT/RMAPSET2.DAT,0,0x00000034,rmap2_01.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008625,DATABASE.DAT/RMAPSET2.DAT,1,0x0000017C,Rmap2_04.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008627,DATABASE.DAT/RMAPSET2.DAT,2,0x000002C4,Rmap2_07.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008629,DATABASE.DAT/RMAPSET2.DAT,3,0x0000040C,Rmap2_10.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008631,DATABASE.DAT/RMAPSET2.DAT,4,0x00000554,Rmap2_11.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008633,DATABASE.DAT/RMAPSET2.DAT,5,0x0000069C,Rmap2_14.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008635,DATABASE.DAT/RMAPSET2.DAT,6,0x000007E4,Rmap2_19.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008637,DATABASE.DAT/RMAPSET2.DAT,7,0x0000092C,Rmap2_24.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008639,DATABASE.DAT/RMAPSET2.DAT,8,0x00000A74,Rmap2_27.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008641,DATABASE.DAT/RMAPSET2.DAT,9,0x00000BBC,Rmap2_30.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008643,DATABASE.DAT/RMAPSET2.DAT,10,0x00000D04,Rmap2_31.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008645,DATABASE.DAT/RMAPSET2.DAT,11,0x00000E4C,Rmap2_36.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008647,DATABASE.DAT/RMAPSET2.DAT,12,0x00000F94,Rmap2_39.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008649,DATABASE.DAT/RMAPSET2.DAT,13,0x000010DC,Rmap2_43.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008651,DATABASE.DAT/RMAPSET2.DAT,14,0x00001224,Rmap2_50.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008653,DATABASE.DAT/RMAPSET2.DAT,15,0x0000136C,Rmap2_51.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008655,DATABASE.DAT/RMAPSET2.DAT,16,0x000014B4,Rmap2_55.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008657,DATABASE.DAT/RMAPSET2.DAT,17,0x000015FC,Rmap2_61.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008659,DATABASE.DAT/RMAPSET2.DAT,18,0x00001744,Rmap2_66.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008661,DATABASE.DAT/RMAPSET2.DAT,19,0x0000188C,Rmap2_70.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008663,DATABASE.DAT/RMAPSET2.DAT,20,0x000019D4,Rmap2_71.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008665,DATABASE.DAT/RMAPSET2.DAT,21,0x00001B1C,Rmap2_73.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008667,DATABASE.DAT/RMAPSET2.DAT,22,0x00001C64,Rmap2_77.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008669,DATABASE.DAT/RMAPSET2.DAT,23,0x00001DAC,Rmap2_78.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008671,DATABASE.DAT/RMAPSET2.DAT,24,0x00001EF4,Rmap2_80.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008673,DATABASE.DAT/RMAPSET2.DAT,25,0x0000203C,Rmap2_87.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008675,DATABASE.DAT/RMAPSET2.DAT,26,0x00002184,Rmap2_90.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008677,DATABASE.DAT/RMAPSET2.DAT,27,0x000022CC,Rmap2_91.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008679,DATABASE.DAT/RMAPSET2.DAT,28,0x00002414,Rmap2_96.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008681,DATABASE.DAT/RMAPSET2.DAT,29,0x0000255C,Rmap2_98.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008683,DATABASE.DAT/RMAPSET2.DAT,30,0x000026A4,Rmap2_99.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008685,DATABASE.DAT/RMAPSET2.DAT,31,0x000027EC,Rmap2_L1.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008687,DATABASE.DAT/RMAPSET2.DAT,32,0x00002934,Rmap2_L2.dat,referencia_archivo_no_traducible,Ruta/referencia interna de recurso,,,
+CLD-008689,DATABASE.DAT/SHIELD-EFFECT.DAT,0,0x00000058,Complete Junk,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008689,0x00000058,Complete Junk 
+CLD-008691,DATABASE.DAT/SHIELD-EFFECT.DAT,1,0x000000E0,Not Useless,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008691,0x000000E0,Not Useless 
+CLD-008693,DATABASE.DAT/SHIELD-EFFECT.DAT,2,0x00000168,Normal,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008693,0x00000168,Normal 
+CLD-008695,DATABASE.DAT/SHIELD-EFFECT.DAT,3,0x000001F0,Useful,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008695,0x000001F0,Useful 
+CLD-008697,DATABASE.DAT/SHIELD-EFFECT.DAT,4,0x00000278,Expensive,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008697,0x00000278,Expensive 
+CLD-008699,DATABASE.DAT/SHIELD-EFFECT.DAT,5,0x00000300,DEF+,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008699,0x00000300,DEF+ 
+CLD-008701,DATABASE.DAT/SHIELD-EFFECT.DAT,6,0x00000388,④Resistance+,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008701,0x00000388,④Resistance+ 
+CLD-008703,DATABASE.DAT/SHIELD-EFFECT.DAT,7,0x00000410,⑤Resistance+,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008703,0x00000410,⑤Resistance+ 
+CLD-008705,DATABASE.DAT/SHIELD-EFFECT.DAT,8,0x00000498,⑥Resistance+,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008705,0x00000498,⑥Resistance+ 
+CLD-008707,DATABASE.DAT/SHIELD-EFFECT.DAT,9,0x00000520,"Heavy, Strong",corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008707,0x00000520,"Heavy, Strong "
+,DATABASE.DAT/SHIELD-EFFECT.DAT,10,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-SHIELD_EFFECT-0010-descripcion_efecto,0x000005A8,LV+ 
+,DATABASE.DAT/SHIELD-EFFECT.DAT,11,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-SHIELD_EFFECT-0011-descripcion_efecto,0x00000630,x1.2 G 
+CLD-008711,DATABASE.DAT/SHIELD-EFFECT.DAT,12,0x000006B8,"Light, Strong",corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008711,0x000006B8,"Light, Strong "
+CLD-008713,DATABASE.DAT/SHIELD-EFFECT.DAT,13,0x00000740,Resistance+,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008713,0x00000740,Resistance+ 
+CLD-008715,DATABASE.DAT/SHIELD-EFFECT.DAT,14,0x000007C8,Expensive,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008715,0x000007C8,Expensive 
+CLD-008717,DATABASE.DAT/SHIELD-EFFECT.DAT,15,0x00000850,Movement+,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008717,0x00000850,Movement+ 
+CLD-008719,DATABASE.DAT/SHIELD-EFFECT.DAT,16,0x000008D8,Left Heal,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008719,0x000008D8,Left Heal 
+CLD-008721,DATABASE.DAT/SHIELD-EFFECT.DAT,17,0x00000960,Resistance+,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008721,0x00000960,Resistance+ 
+CLD-008723,DATABASE.DAT/SHIELD-EFFECT.DAT,18,0x000009E8,No EXP,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008723,0x000009E8,No EXP 
+CLD-008725,DATABASE.DAT/SHIELD-EFFECT.DAT,19,0x00000A70,Drop Rate+,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008725,0x00000A70,Drop Rate+ 
+CLD-008727,DATABASE.DAT/SHIELD-EFFECT.DAT,20,0x00000AF8,Acceleration,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008727,0x00000AF8,Acceleration 
+CLD-008729,DATABASE.DAT/SHIELD-EFFECT.DAT,21,0x00000B80,Defensive,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008729,0x00000B80,Defensive 
+CLD-008731,DATABASE.DAT/SHIELD-EFFECT.DAT,22,0x00000C08,Perfect,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008731,0x00000C08,Perfect 
+,DATABASE.DAT/SHIELD-EFFECT.DAT,23,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-SHIELD_EFFECT-0023-nombre_efecto,0x00000C80,D99
+CLD-008732,DATABASE.DAT/SHIELD-EFFECT.DAT,23,0x00000C90,99 Titles,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-008732,0x00000C90,99 Titles 
+,DATABASE.DAT/SIEN.DAT,1,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-SIEN-0001-nombre_personaje,0x00000168,グミ
+,DATABASE.DAT/SIEN.DAT,6,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-SIEN-0006-nombre_personaje,0x000004F6,ココ
+,DATABASE.DAT/SIEN.DAT,10,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-SIEN-0010-nombre_personaje,0x000007CE,ボブ
+,DATABASE.DAT/TIPATTR.DAT,31,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0031-nombre_atributo,0x000004AA,板壁0
+,DATABASE.DAT/TIPATTR.DAT,32,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0032-nombre_atributo,0x000004D0,板壁0
+,DATABASE.DAT/TIPATTR.DAT,33,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0033-nombre_atributo,0x000004F6,板壁0
+,DATABASE.DAT/TIPATTR.DAT,34,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0034-nombre_atributo,0x0000051C,板壁0
+,DATABASE.DAT/TIPATTR.DAT,35,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0035-nombre_atributo,0x00000542,緑壁0
+,DATABASE.DAT/TIPATTR.DAT,36,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0036-nombre_atributo,0x00000568,緑壁0
+,DATABASE.DAT/TIPATTR.DAT,37,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0037-nombre_atributo,0x0000058E,緑壁0
+,DATABASE.DAT/TIPATTR.DAT,38,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0038-nombre_atributo,0x000005B4,緑壁0
+,DATABASE.DAT/TIPATTR.DAT,51,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0051-nombre_atributo,0x000007A2,石壁0
+,DATABASE.DAT/TIPATTR.DAT,52,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0052-nombre_atributo,0x000007C8,石壁0
+,DATABASE.DAT/TIPATTR.DAT,53,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0053-nombre_atributo,0x000007EE,石壁0
+,DATABASE.DAT/TIPATTR.DAT,54,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0054-nombre_atributo,0x00000814,石壁0
+,DATABASE.DAT/TIPATTR.DAT,146,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0146-nombre_atributo,0x000015BC,噴水1
+,DATABASE.DAT/TIPATTR.DAT,147,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0147-nombre_atributo,0x000015E2,噴水2-32
+,DATABASE.DAT/TIPATTR.DAT,148,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0148-nombre_atributo,0x00001608,噴水3-64
+,DATABASE.DAT/TIPATTR.DAT,149,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0149-nombre_atributo,0x0000162E,噴水4-96
+,DATABASE.DAT/TIPATTR.DAT,150,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0150-nombre_atributo,0x00001654,蛇口+32
+,DATABASE.DAT/TIPATTR.DAT,151,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0151-nombre_atributo,0x0000167A,蛇口+32
+,DATABASE.DAT/TIPATTR.DAT,161,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0161-nombre_atributo,0x000017F6,骸骨
+,DATABASE.DAT/TIPATTR.DAT,182,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0182-nombre_atributo,0x00001B14,かべ1
+,DATABASE.DAT/TIPATTR.DAT,183,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0183-nombre_atributo,0x00001B3A,かべ2
+,DATABASE.DAT/TIPATTR.DAT,184,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0184-nombre_atributo,0x00001B60,かべ3
+,DATABASE.DAT/TIPATTR.DAT,185,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0185-nombre_atributo,0x00001B86,かべ4
+,DATABASE.DAT/TIPATTR.DAT,186,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0186-nombre_atributo,0x00001BAC,かべ5
+,DATABASE.DAT/TIPATTR.DAT,187,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0187-nombre_atributo,0x00001BD2,かべ6
+,DATABASE.DAT/TIPATTR.DAT,188,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0188-nombre_atributo,0x00001BF8,かべ7
+,DATABASE.DAT/TIPATTR.DAT,189,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0189-nombre_atributo,0x00001C1E,かべ8
+,DATABASE.DAT/TIPATTR.DAT,190,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0190-nombre_atributo,0x00001C44,かべ9
+,DATABASE.DAT/TIPATTR.DAT,205,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0205-nombre_atributo,0x00001E7E,触手
+,DATABASE.DAT/TIPATTR.DAT,214,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0214-nombre_atributo,0x00001FD4,オイル（アニメ�
+,DATABASE.DAT/TIPATTR.DAT,215,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0215-nombre_atributo,0x00001FFA,水（アニメ有り�
+,DATABASE.DAT/TIPATTR.DAT,216,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0216-nombre_atributo,0x00002020,炎上
+,DATABASE.DAT/TIPATTR.DAT,217,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0217-nombre_atributo,0x00002046,氷床
+,DATABASE.DAT/TIPATTR.DAT,218,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0218-nombre_atributo,0x0000206C,草　1
+,DATABASE.DAT/TIPATTR.DAT,219,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-TIPATTR-0219-nombre_atributo,0x00002092,穴
+CLD-008958,DATABASE.DAT/TIPATTR.DAT,226,0x000021AC,"Euﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008960,DATABASE.DAT/TIPATTR.DAT,227,0x000021D2,"Fuﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008962,DATABASE.DAT/TIPATTR.DAT,228,0x000021F8,"Guﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008964,DATABASE.DAT/TIPATTR.DAT,229,0x0000221E,"Huﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008966,DATABASE.DAT/TIPATTR.DAT,230,0x00002244,"Iuﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008968,DATABASE.DAT/TIPATTR.DAT,231,0x0000226A,"Juﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008970,DATABASE.DAT/TIPATTR.DAT,232,0x00002290,"Kuﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008972,DATABASE.DAT/TIPATTR.DAT,233,0x000022B6,"Luﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008974,DATABASE.DAT/TIPATTR.DAT,234,0x000022DC,"Muﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008976,DATABASE.DAT/TIPATTR.DAT,235,0x00002302,"Nuﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008978,DATABASE.DAT/TIPATTR.DAT,236,0x00002328,"Ouﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008980,DATABASE.DAT/TIPATTR.DAT,237,0x0000234E,"Puﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008982,DATABASE.DAT/TIPATTR.DAT,238,0x00002374,"Quﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008984,DATABASE.DAT/TIPATTR.DAT,239,0x0000239A,"Ruﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008986,DATABASE.DAT/TIPATTR.DAT,240,0x000023C0,"Suﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008988,DATABASE.DAT/TIPATTR.DAT,241,0x000023E6,"Tuﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008990,DATABASE.DAT/TIPATTR.DAT,242,0x0000240C,"Uuﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008992,DATABASE.DAT/TIPATTR.DAT,243,0x00002432,"Vuﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008994,DATABASE.DAT/TIPATTR.DAT,244,0x00002458,"Wuﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008996,DATABASE.DAT/TIPATTR.DAT,245,0x0000247E,"Xuﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-008998,DATABASE.DAT/TIPATTR.DAT,246,0x000024A4,"Yuﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-009000,DATABASE.DAT/TIPATTR.DAT,247,0x000024CA,"Zuﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-009008,DATABASE.DAT/TIPATTR.DAT,254,0x000025D4,"auﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-009010,DATABASE.DAT/TIPATTR.DAT,255,0x000025FA,"buﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-009012,DATABASE.DAT/TIPATTR.DAT,256,0x00002620,"cuﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-009014,DATABASE.DAT/TIPATTR.DAT,257,0x00002646,"duﾛ""",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+,DATABASE.DAT/UP_MONSTER.DAT,13,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0013-nombre_monstruo,0x000003D4,ザコ
+,DATABASE.DAT/UP_MONSTER.DAT,14,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0014-nombre_monstruo,0x0000041A,ザコ
+,DATABASE.DAT/UP_MONSTER.DAT,15,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0015-nombre_monstruo,0x00000460,ザコ
+,DATABASE.DAT/UP_MONSTER.DAT,16,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0016-nombre_monstruo,0x000004A6,ザコ
+,DATABASE.DAT/UP_MONSTER.DAT,17,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0017-nombre_monstruo,0x000004EC,ザコ
+,DATABASE.DAT/UP_MONSTER.DAT,18,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0018-nombre_monstruo,0x00000532,ザコ
+,DATABASE.DAT/UP_MONSTER.DAT,103,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0103-nombre_monstruo,0x00001C70,マッスルボンバー
+,DATABASE.DAT/UP_MONSTER.DAT,104,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0104-nombre_monstruo,0x00001CB6,マッスルボンバー
+,DATABASE.DAT/UP_MONSTER.DAT,105,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0105-nombre_monstruo,0x00001CFC,マッスルボンバー
+,DATABASE.DAT/UP_MONSTER.DAT,106,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0106-nombre_monstruo,0x00001D42,マッスルボンバー
+,DATABASE.DAT/UP_MONSTER.DAT,107,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0107-nombre_monstruo,0x00001D88,マッスルボンバー
+,DATABASE.DAT/UP_MONSTER.DAT,108,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0108-nombre_monstruo,0x00001DCE,マッスルボンバー
+,DATABASE.DAT/UP_MONSTER.DAT,121,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0121-nombre_monstruo,0x0000215C,透明
+,DATABASE.DAT/UP_MONSTER.DAT,122,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0122-nombre_monstruo,0x000021A2,？？？
+,DATABASE.DAT/UP_MONSTER.DAT,123,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0123-nombre_monstruo,0x000021E8,？？？
+,DATABASE.DAT/UP_MONSTER.DAT,124,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0124-nombre_monstruo,0x0000222E,？？？
+,DATABASE.DAT/UP_MONSTER.DAT,125,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0125-nombre_monstruo,0x00002274,？？？
+,DATABASE.DAT/UP_MONSTER.DAT,126,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0126-nombre_monstruo,0x000022BA,？？？
+,DATABASE.DAT/UP_MONSTER.DAT,127,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0127-nombre_monstruo,0x00002300,仮面
+,DATABASE.DAT/UP_MONSTER.DAT,128,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0128-nombre_monstruo,0x00002346,仮面
+,DATABASE.DAT/UP_MONSTER.DAT,129,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0129-nombre_monstruo,0x0000238C,仮面
+,DATABASE.DAT/UP_MONSTER.DAT,130,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0130-nombre_monstruo,0x000023D2,仮面
+,DATABASE.DAT/UP_MONSTER.DAT,131,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0131-nombre_monstruo,0x00002418,仮面
+,DATABASE.DAT/UP_MONSTER.DAT,132,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0132-nombre_monstruo,0x0000245E,仮面
+,DATABASE.DAT/UP_MONSTER.DAT,142,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0142-nombre_monstruo,0x0000271A,炎出るブロック低
+,DATABASE.DAT/UP_MONSTER.DAT,143,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0143-nombre_monstruo,0x00002760,炎出るブロック低
+,DATABASE.DAT/UP_MONSTER.DAT,144,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0144-nombre_monstruo,0x000027A6,炎出るブロック低
+,DATABASE.DAT/UP_MONSTER.DAT,145,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0145-nombre_monstruo,0x000027EC,炎出るブロック高
+,DATABASE.DAT/UP_MONSTER.DAT,146,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0146-nombre_monstruo,0x00002832,炎出るブロック高
+,DATABASE.DAT/UP_MONSTER.DAT,147,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0147-nombre_monstruo,0x00002878,炎出るブロック高
+,DATABASE.DAT/UP_MONSTER.DAT,156,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-UP_MONSTER-0156-nombre_monstruo,0x00002AEE,仮面
+CLD-009185,DATABASE.DAT/WEAPON-EFFECT.DAT,0,0x00000056,Complete Junk,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009185,0x00000056,Complete Junk 
+CLD-009187,DATABASE.DAT/WEAPON-EFFECT.DAT,1,0x000000DE,Not Useless,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009187,0x000000DE,Not Useless 
+CLD-009189,DATABASE.DAT/WEAPON-EFFECT.DAT,2,0x00000166,Normal,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009189,0x00000166,Normal 
+CLD-009191,DATABASE.DAT/WEAPON-EFFECT.DAT,3,0x000001EE,Useful,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009191,0x000001EE,Useful 
+CLD-009193,DATABASE.DAT/WEAPON-EFFECT.DAT,4,0x00000276,Expensive,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009193,0x00000276,Expensive 
+CLD-009195,DATABASE.DAT/WEAPON-EFFECT.DAT,5,0x000002FE,DEF+,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009195,0x000002FE,DEF+ 
+CLD-009197,DATABASE.DAT/WEAPON-EFFECT.DAT,6,0x00000386,Fire,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009197,0x00000386,Fire 
+CLD-009199,DATABASE.DAT/WEAPON-EFFECT.DAT,7,0x0000040E,Ice,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009199,0x0000040E,Ice 
+CLD-009201,DATABASE.DAT/WEAPON-EFFECT.DAT,8,0x00000496,Spirit,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009201,0x00000496,Spirit 
+CLD-009203,DATABASE.DAT/WEAPON-EFFECT.DAT,9,0x0000051E,Critical+,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009203,0x0000051E,Critical+ 
+CLD-009205,DATABASE.DAT/WEAPON-EFFECT.DAT,10,0x000005A6,Main+,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009205,0x000005A6,Main+ 
+,DATABASE.DAT/WEAPON-EFFECT.DAT,11,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-WEAPON_EFFECT-0011-descripcion_efecto,0x0000062E,x1.2 G 
+CLD-009208,DATABASE.DAT/WEAPON-EFFECT.DAT,12,0x000006B6,"ATK+, CRT+",corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009208,0x000006B6,"ATK+, CRT+ "
+CLD-009210,DATABASE.DAT/WEAPON-EFFECT.DAT,13,0x0000073E,ATK+,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009210,0x0000073E,ATK+ 
+CLD-009212,DATABASE.DAT/WEAPON-EFFECT.DAT,14,0x000007C6,Expensive,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009212,0x000007C6,Expensive 
+CLD-009214,DATABASE.DAT/WEAPON-EFFECT.DAT,15,0x0000084E,Movement+,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009214,0x0000084E,Movement+ 
+CLD-009216,DATABASE.DAT/WEAPON-EFFECT.DAT,16,0x000008D6,Right Heal,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009216,0x000008D6,Right Heal 
+CLD-009218,DATABASE.DAT/WEAPON-EFFECT.DAT,17,0x0000095E,Resistance+5,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009218,0x0000095E,Resistance+5 
+CLD-009220,DATABASE.DAT/WEAPON-EFFECT.DAT,18,0x000009E6,No EXP,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009220,0x000009E6,No EXP 
+CLD-009222,DATABASE.DAT/WEAPON-EFFECT.DAT,19,0x00000A6E,Drop rate+,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009222,0x00000A6E,Drop rate+ 
+CLD-009224,DATABASE.DAT/WEAPON-EFFECT.DAT,20,0x00000AF6,Acceleration,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009224,0x00000AF6,Acceleration 
+CLD-009226,DATABASE.DAT/WEAPON-EFFECT.DAT,21,0x00000B7E,Powerful,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009226,0x00000B7E,Powerful 
+CLD-009228,DATABASE.DAT/WEAPON-EFFECT.DAT,22,0x00000C06,Legendary,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009228,0x00000C06,Legendary 
+,DATABASE.DAT/WEAPON-EFFECT.DAT,23,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-WEAPON_EFFECT-0023-nombre_efecto,0x00000C7E,D99
+CLD-009229,DATABASE.DAT/WEAPON-EFFECT.DAT,23,0x00000C8E,99 Titles,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-009229,0x00000C8E,99 Titles 
+CLD-009282,STAFFROLL.TXT,0,0x00000000,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009283,STAFFROLL.TXT,1,0x00000002,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009284,STAFFROLL.TXT,2,0x00000004,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009286,STAFFROLL.TXT,4,0x00000019,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009288,STAFFROLL.TXT,6,0x00000027,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009289,STAFFROLL.TXT,7,0x00000029,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009290,STAFFROLL.TXT,8,0x0000002B,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009291,STAFFROLL.TXT,9,0x0000002D,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009292,STAFFROLL.TXT,10,0x0000002F,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009293,STAFFROLL.TXT,11,0x00000031,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009296,STAFFROLL.TXT,14,0x0000005D,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009297,STAFFROLL.TXT,15,0x0000005F,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009301,STAFFROLL.TXT,19,0x0000009A,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009302,STAFFROLL.TXT,20,0x0000009C,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009303,STAFFROLL.TXT,21,0x0000009E,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009304,STAFFROLL.TXT,22,0x000000A0,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009307,STAFFROLL.TXT,25,0x000000C0,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009308,STAFFROLL.TXT,26,0x000000C2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009309,STAFFROLL.TXT,27,0x000000C4,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009310,STAFFROLL.TXT,28,0x000000C6,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009313,STAFFROLL.TXT,31,0x000000E7,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009314,STAFFROLL.TXT,32,0x000000E9,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009315,STAFFROLL.TXT,33,0x000000EB,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009316,STAFFROLL.TXT,34,0x000000ED,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009319,STAFFROLL.TXT,37,0x0000010D,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009320,STAFFROLL.TXT,38,0x0000010F,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009321,STAFFROLL.TXT,39,0x00000111,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009322,STAFFROLL.TXT,40,0x00000113,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009325,STAFFROLL.TXT,43,0x00000134,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009326,STAFFROLL.TXT,44,0x00000136,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009327,STAFFROLL.TXT,45,0x00000138,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009328,STAFFROLL.TXT,46,0x0000013A,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009331,STAFFROLL.TXT,49,0x00000167,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009332,STAFFROLL.TXT,50,0x00000169,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009333,STAFFROLL.TXT,51,0x0000016B,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009334,STAFFROLL.TXT,52,0x0000016D,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009337,STAFFROLL.TXT,55,0x00000193,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009338,STAFFROLL.TXT,56,0x00000195,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009339,STAFFROLL.TXT,57,0x00000197,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009340,STAFFROLL.TXT,58,0x00000199,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009343,STAFFROLL.TXT,61,0x000001C4,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009344,STAFFROLL.TXT,62,0x000001C6,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009345,STAFFROLL.TXT,63,0x000001C8,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009346,STAFFROLL.TXT,64,0x000001CA,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009349,STAFFROLL.TXT,67,0x000001EE,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009350,STAFFROLL.TXT,68,0x000001F0,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009351,STAFFROLL.TXT,69,0x000001F2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009352,STAFFROLL.TXT,70,0x000001F4,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009355,STAFFROLL.TXT,73,0x00000217,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009356,STAFFROLL.TXT,74,0x00000219,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009357,STAFFROLL.TXT,75,0x0000021B,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009358,STAFFROLL.TXT,76,0x0000021D,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009362,STAFFROLL.TXT,80,0x0000024C,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009363,STAFFROLL.TXT,81,0x0000024E,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009364,STAFFROLL.TXT,82,0x00000250,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009365,STAFFROLL.TXT,83,0x00000252,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009369,STAFFROLL.TXT,87,0x0000028B,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009370,STAFFROLL.TXT,88,0x0000028D,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009371,STAFFROLL.TXT,89,0x0000028F,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009372,STAFFROLL.TXT,90,0x00000291,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009376,STAFFROLL.TXT,94,0x000002CD,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009377,STAFFROLL.TXT,95,0x000002CF,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009378,STAFFROLL.TXT,96,0x000002D1,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009379,STAFFROLL.TXT,97,0x000002D3,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009382,STAFFROLL.TXT,100,0x00000310,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009383,STAFFROLL.TXT,101,0x00000312,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009384,STAFFROLL.TXT,102,0x00000314,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009385,STAFFROLL.TXT,103,0x00000316,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009386,STAFFROLL.TXT,104,0x00000318,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009387,STAFFROLL.TXT,105,0x0000031A,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009388,STAFFROLL.TXT,106,0x0000031C,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009389,STAFFROLL.TXT,107,0x0000031E,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009391,STAFFROLL.TXT,109,0x00000339,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009392,STAFFROLL.TXT,110,0x0000033B,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009393,STAFFROLL.TXT,111,0x0000033D,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009394,STAFFROLL.TXT,112,0x0000033F,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009395,STAFFROLL.TXT,113,0x00000341,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009396,STAFFROLL.TXT,114,0x00000343,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009397,STAFFROLL.TXT,115,0x00000345,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009398,STAFFROLL.TXT,116,0x00000347,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009401,STAFFROLL.TXT,119,0x0000036C,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009402,STAFFROLL.TXT,120,0x0000036E,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009403,STAFFROLL.TXT,121,0x00000370,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009404,STAFFROLL.TXT,122,0x00000372,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009407,STAFFROLL.TXT,125,0x00000391,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009408,STAFFROLL.TXT,126,0x00000393,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009409,STAFFROLL.TXT,127,0x00000395,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009410,STAFFROLL.TXT,128,0x00000397,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009413,STAFFROLL.TXT,131,0x000003C9,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009414,STAFFROLL.TXT,132,0x000003CB,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009415,STAFFROLL.TXT,133,0x000003CD,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009416,STAFFROLL.TXT,134,0x000003CF,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009419,STAFFROLL.TXT,137,0x000003F2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009420,STAFFROLL.TXT,138,0x000003F4,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009421,STAFFROLL.TXT,139,0x000003F6,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009422,STAFFROLL.TXT,140,0x000003F8,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009425,STAFFROLL.TXT,143,0x00000420,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009426,STAFFROLL.TXT,144,0x00000422,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009427,STAFFROLL.TXT,145,0x00000424,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009428,STAFFROLL.TXT,146,0x00000426,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009431,STAFFROLL.TXT,149,0x00000455,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009432,STAFFROLL.TXT,150,0x00000457,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009433,STAFFROLL.TXT,151,0x00000459,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009434,STAFFROLL.TXT,152,0x0000045B,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009437,STAFFROLL.TXT,155,0x00000481,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009438,STAFFROLL.TXT,156,0x00000483,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009439,STAFFROLL.TXT,157,0x00000485,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009440,STAFFROLL.TXT,158,0x00000487,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009443,STAFFROLL.TXT,161,0x000004AD,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009444,STAFFROLL.TXT,162,0x000004AF,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009445,STAFFROLL.TXT,163,0x000004B1,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009446,STAFFROLL.TXT,164,0x000004B3,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009449,STAFFROLL.TXT,167,0x000004E7,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009450,STAFFROLL.TXT,168,0x000004E9,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009451,STAFFROLL.TXT,169,0x000004EB,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009452,STAFFROLL.TXT,170,0x000004ED,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009455,STAFFROLL.TXT,173,0x0000051D,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009456,STAFFROLL.TXT,174,0x0000051F,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009457,STAFFROLL.TXT,175,0x00000521,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009458,STAFFROLL.TXT,176,0x00000523,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009464,STAFFROLL.TXT,182,0x000005A8,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009469,STAFFROLL.TXT,187,0x00000601,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009473,STAFFROLL.TXT,191,0x0000068A,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009474,STAFFROLL.TXT,192,0x0000068C,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009475,STAFFROLL.TXT,193,0x0000068E,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009476,STAFFROLL.TXT,194,0x00000690,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009482,STAFFROLL.TXT,200,0x00000708,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009485,STAFFROLL.TXT,203,0x0000072A,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009489,STAFFROLL.TXT,207,0x000007B3,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009490,STAFFROLL.TXT,208,0x000007B5,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009491,STAFFROLL.TXT,209,0x000007B7,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009492,STAFFROLL.TXT,210,0x000007B9,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009497,STAFFROLL.TXT,215,0x000007F8,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009498,STAFFROLL.TXT,216,0x000007FA,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009499,STAFFROLL.TXT,217,0x000007FC,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009500,STAFFROLL.TXT,218,0x000007FE,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009507,STAFFROLL.TXT,225,0x000008C7,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009508,STAFFROLL.TXT,226,0x000008C9,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009512,STAFFROLL.TXT,230,0x0000090B,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009513,STAFFROLL.TXT,231,0x0000090D,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009514,STAFFROLL.TXT,232,0x0000090F,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009515,STAFFROLL.TXT,233,0x00000911,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009516,STAFFROLL.TXT,234,0x00000913,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009517,STAFFROLL.TXT,235,0x00000915,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009518,STAFFROLL.TXT,236,0x00000917,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009519,STAFFROLL.TXT,237,0x00000919,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009520,STAFFROLL.TXT,238,0x0000091B,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009521,STAFFROLL.TXT,239,0x0000091D,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009530,STAFFROLL.TXT,248,0x0000099B,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009532,STAFFROLL.TXT,250,0x000009AC,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009533,STAFFROLL.TXT,251,0x000009AE,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009534,STAFFROLL.TXT,252,0x000009B0,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009535,STAFFROLL.TXT,253,0x000009B2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009538,STAFFROLL.TXT,256,0x000009D6,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009552,STAFFROLL.TXT,270,0x00000A9E,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009565,STAFFROLL.TXT,283,0x00000B63,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009566,STAFFROLL.TXT,284,0x00000B65,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009567,STAFFROLL.TXT,285,0x00000B67,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009568,STAFFROLL.TXT,286,0x00000B69,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009579,STAFFROLL.TXT,297,0x00000C11,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009580,STAFFROLL.TXT,298,0x00000C13,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009581,STAFFROLL.TXT,299,0x00000C15,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009582,STAFFROLL.TXT,300,0x00000C17,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009591,STAFFROLL.TXT,309,0x00000C9C,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009592,STAFFROLL.TXT,310,0x00000C9E,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009594,STAFFROLL.TXT,312,0x00000CB2,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009596,STAFFROLL.TXT,314,0x00000CC1,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009597,STAFFROLL.TXT,315,0x00000CC3,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009604,STAFFROLL.TXT,322,0x00000D48,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009605,STAFFROLL.TXT,323,0x00000D4A,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009606,STAFFROLL.TXT,324,0x00000D4C,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009607,STAFFROLL.TXT,325,0x00000D4E,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009608,STAFFROLL.TXT,326,0x00000D50,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009609,STAFFROLL.TXT,327,0x00000D52,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009610,STAFFROLL.TXT,328,0x00000D54,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009613,STAFFROLL.TXT,331,0x00000D74,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009616,STAFFROLL.TXT,334,0x00000D9D,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009617,STAFFROLL.TXT,335,0x00000D9F,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009618,STAFFROLL.TXT,336,0x00000DA1,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009619,STAFFROLL.TXT,337,0x00000DA3,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009623,STAFFROLL.TXT,341,0x00000DDD,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009624,STAFFROLL.TXT,342,0x00000DDF,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009625,STAFFROLL.TXT,343,0x00000DE1,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009626,STAFFROLL.TXT,344,0x00000DE3,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009627,STAFFROLL.TXT,345,0x00000DE5,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009628,STAFFROLL.TXT,346,0x00000DE7,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009631,STAFFROLL.TXT,349,0x00000E07,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009632,STAFFROLL.TXT,350,0x00000E09,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009633,STAFFROLL.TXT,351,0x00000E0B,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009634,STAFFROLL.TXT,352,0x00000E0D,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009635,STAFFROLL.TXT,353,0x00000E0F,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009636,STAFFROLL.TXT,354,0x00000E11,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009637,STAFFROLL.TXT,355,0x00000E13,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009638,STAFFROLL.TXT,356,0x00000E15,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009639,STAFFROLL.TXT,357,0x00000E17,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009640,STAFFROLL.TXT,358,0x00000E19,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009641,STAFFROLL.TXT,359,0x00000E1B,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009642,STAFFROLL.TXT,360,0x00000E1D,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009643,STAFFROLL.TXT,361,0x00000E1F,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009644,STAFFROLL.TXT,362,0x00000E21,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-009645,STAFFROLL.TXT,363,0x00000E23,,excluido_vacio,Cadena vacía en fuente reconocida,,,
+CLD-GFX-0003,SYS.DAT2/DOT_PIC1.PNG,,,CLADUN,no_traducir,Nombre comercial protegido,,,
+CLD-GFX-0005,SYS.DAT2/PIC1.PNG,,,CLADUN,no_traducir,Nombre comercial protegido,,,
+CLD-GFX-0007,SYS.DAT2/DOT_SAVE.PNG,,,CLADUN,no_traducir,Nombre comercial protegido,,,
+CLD-GFX-0009,SYS.DAT2/SAVE.PNG,,,CLADUN,no_traducir,Nombre comercial protegido,,,
+CLD-GFX-0011,SYS.DAT2/DOT_NODATA.PNG,,,dot,descartado_decoracion,Marca gráfica decorativa,,,
+CLD-GFX-0012,SYS.DAT2/DOT_SAVE.PNG,,,dot,descartado_decoracion,Marca gráfica decorativa,,,
