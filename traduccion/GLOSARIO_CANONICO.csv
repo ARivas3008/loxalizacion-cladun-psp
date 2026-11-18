@@ -1,0 +1,64 @@
+﻿original,espanol,estado
+Magic Circle,Círculo mágico,canónico_borrador
+Artifact,artefacto,canónico_borrador
+Widen,Widen,nombre_propio
+Widening,ampliación,efecto
+Sub Character,personaje de apoyo,canónico_borrador
+Subs,personajes de apoyo,canónico_borrador
+Main Character,personaje principal,canónico_borrador
+Sub Character Space,casilla de personaje de apoyo,canónico_borrador
+Magic/Ability Space,casilla de magia/habilidad,canónico_borrador
+Staff,bastón,canónico_borrador
+Staff Gauge,indicador del bastón,canónico_borrador
+Job Change,cambio de clase,canónico_borrador
+Level,nivel,canónico_borrador
+LV,LV,codigo_interfaz
+Mana,maná,canónico_borrador
+HP,HP,codigo_interfaz
+ATK,ATK,codigo_interfaz
+DEF,DEF,codigo_interfaz
+G,G,moneda
+Item,objeto,canónico_borrador
+Dungeon,mazmorra,canónico_borrador
+Ran-geon,Ran-geon,nombre_propio
+New-geon,New-geon,nombre_propio
+Arcanus Cella,Arcanus Cella,nombre_propio
+Hiyoji,Hiyoji,nombre_propio
+Hiyokki,Hiyokki,nombre_propio
+Hiyo Chick,Pollita Hiyo,pendiente_visual
+Pudding,Pudding,nombre_propio
+プティング,Pudding,nombre_propio
+Asagi,Asagi,nombre_propio
+Souma,Souma,nombre_propio
+Prinny,Prinny,nombre_propio
+Prinny Stick,Prinny Stick,pendiente_visual
+EXP,EXP,codigo_interfaz
+Item drop rate,probabilidad de obtener objetos,canónico_borrador
+Rare title rate,probabilidad de título raro,canónico_borrador
+Floor,planta,canónico_borrador
+Save,guardar,canónico_borrador
+Load,cargar,canónico_borrador
+Yes,Sí,canónico_borrador
+No,No,canónico_borrador
+Shield,escudo,canónico_borrador
+Artifact Anywhere,Artifact Anywhere,nombre_propio_pendiente_visual
+Title,título,modificador_equipo
+SP,SP,código_interfaz
+Time to cast,tiempo de lanzamiento,canónico_borrador
+Hiyo,Hiyo,nombre_propio
+Hiro,Hiro,nombre_propio
+Class,clase,mecanica
+Job,clase,mecanica_no_empleo
+Weapon,arma,mecanica
+Ward,Protección,efecto_equipo_verificar_pantalla
+Super Move,supermovimiento,mecanica_verificar_hud
+Attack,ataque,mecanica
+Defense,defensa,mecanica
+Damage,daño,mecanica
+Ability,habilidad,mecanica
+Skill,habilidad,mecanica
+Game Over,Fin de la partida,mensaje_sistema_verificar_ancho
+Load Game,Cargar partida,menu
+Save Game,Guardar partida,menu
+Sub Characters,personajes de apoyo,mecanica
+Floor Consumption,consumo de plantas,terminologia_pendiente_contexto
