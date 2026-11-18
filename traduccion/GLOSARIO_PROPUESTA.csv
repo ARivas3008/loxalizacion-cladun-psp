@@ -1,0 +1,15 @@
+﻿termino_en,propuesta_es,estado,nota
+Artifact,artefacto,propuesto,Objeto de juego
+Mana,maná,propuesto,Recurso
+Arcanus Cella,Arcanus Cella,preservar,Nombre de lugar
+Hiyoji,Hiyoji,preservar,Personaje
+Hiyo Chick,Pollita Hiyo,provisional,Comprobar en pantalla
+Pudding,Pudding,preservar,Personaje
+Hiyokki,Hiyokki,preservar,Criatura
+New-geon,New-geon,preservar,Mazmorra
+Ran-geon,Ran-geon,preservar,Mazmorra
+Prinny Stick,Prinny Stick,provisional,Nombre de arma
+Widen,Widen,provisional,Artefacto especial; evitar traducciones inconsistentes
+Staff,bastón,propuesto,"Arma, no 'personal'"
+Job change,cambiar de clase,propuesto,No 'cambiar de trabajo'
+This is an RPG!,¡Esto es un RPG!,propuesto,"Rótulo gráfico, no texto de script"

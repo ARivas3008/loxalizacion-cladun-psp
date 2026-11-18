@@ -1,0 +1,23 @@
+{
+  "fecha": "2026-11-18",
+  "juego": "Cladun: This Is an RPG! USA/PSP",
+  "sha256_iso": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "sha256_original_txt": "83db60b80939d54548980e38a612ae9ae9605bf85f2feba7834d0e826425756f",
+  "total": 9237,
+  "borrador": 9235,
+  "sin_borrador": 2,
+  "posteditado_IA": 67,
+  "automatico_sin_revision_narrativa": 9168,
+  "pendientes_fuente": 1035,
+  "errores_marcadores_restantes": 0,
+  "alertas_numericas": 19,
+  "alertas_saltos_linea": 202,
+  "incidencias_qa": 1256,
+  "motor": "GOOGLETRANSLATE Google Sheets",
+  "revision": "GPT-6 contextual parcial",
+  "integridad_ids_texto_original": true,
+  "cadenas_protegidas_preservadas": true,
+  "revision_narrativa_exhaustiva": false,
+  "listo_para_reinsercion": false,
+  "codificacion_es_compatible_cp932": false
+}

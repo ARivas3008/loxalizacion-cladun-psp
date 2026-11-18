@@ -1,0 +1,2087 @@
+﻿grupo_id,text_id,origen,estado_fuente,alertas,original,espanol
+000032,CLD-000038,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,revisar_numeros,"If you placed 2 or more ""Widens,"" the","Si colocas dos o más «Widen»,"
+000039,CLD-000045,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"""Widen"" that particular ability!",¡ampliarás el efecto de esa habilidad!
+000175,CLD-000194,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"the ""Widen"" Artifact is like night and day.","El artefacto ""Ensanchar"" es como la noche y el día."
+000203,CLD-000222,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"has the ""Widen"" Artifact.","posee el artefacto ""Ensanchar""."
+000316,CLD-000335,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Widening,Ampliación
+000353,CLD-000372,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Spaces with 'Widen' can double,Los espacios con 'Ensanchar' pueden duplicarse
+000355,CLD-000374,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Placing multiple Widen Artifacts in the same space,Colocar varios artefactos de ensanchamiento en el mismo espacio.
+000358,CLD-000377,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Placing a Widen on a Magic/Ability Space will,Colocar un Ensanchar en un Espacio de Magia/Habilidad
+000483,CLD-000502,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Widening,Ampliación
+000520,CLD-000539,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Spaces with 'Widen' can double,Los espacios con 'Ensanchar' pueden duplicarse
+000522,CLD-000541,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Placing multiple Widen Artifacts in the same space,Colocar varios artefactos de ensanchamiento en el mismo espacio.
+000525,CLD-000544,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Placing a Widen on a Magic/Ability Space will,Colocar un Ensanchar en un Espacio de Magia/Habilidad
+000526,CLD-000545,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Widen the range of the Magic/Ability.,Ampliar el alcance de la Magia/Habilidad.
+001434,CLD-001467,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"That Artifact is called ""Widen.""","Ese artefacto se llama ""Ensanchar""."
+001435,CLD-001468,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"""Widen...""","""Ensanchar..."""
+004960,CLD-005103,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,revisar_numeros,But there isn't a 2nd floor in this house.,Pero esta casa no tiene segundo piso.
+005230,CLD-005420,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Select your BGM type.
+You can change this setting anytime.","Selecciona el tipo de música de fondo.
+
+Puedes cambiar esta configuración cuando quieras."
+005248,CLD-005438,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Returning to the title without saving
+will lose all unsaved progress. Continue?","Si regresas al juego sin guardar, perderás todo el progreso no guardado. ¿Continuar?"
+005401,CLD-005591,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Widening　　　　  　  %s,Ampliación　　　　 　 %s
+005452,CLD-005642,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"The LV shows how strong the character is.
+As you accumulate EXP, your stats will go up.","El nivel de habilidad (LV) indica la fuerza del personaje.
+
+A medida que acumules experiencia (EXP), tus estadísticas mejorarán."
+005454,CLD-005644,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"SP is needed to use magic or abilities.
+It will not recover during battle.","Se necesitan puntos de habilidad (PH) para usar magia o habilidades.
+
+No se recuperarán durante la batalla."
+005455,CLD-005645,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"ATK is your attack power.
+The higher your ATK, the more damage you deal.
+Orbs from staves are not dependent on ATK.","El ATK es tu poder de ataque.
+
+Cuanto mayor sea tu ATK, más daño infliges.
+
+Los orbes de los bastones no dependen del ATK."
+005456,CLD-005646,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"DEF is your defense.
+The higher your DEF, the less damage you take.","La DEF es tu defensa.
+
+Cuanto mayor sea tu DEF, menos daño recibirás."
+005457,CLD-005647,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Magic/Ability can be set on your Magic Circle for 
+battle use.Boost them on the ""Magic/Ability Space"" 
+of the Magic Circle.","Puedes configurar tus habilidades mágicas en tu Círculo Mágico para usarlas en combate. Poténcialas en el ""Espacio de Habilidades Mágicas"" del Círculo Mágico."
+005458,CLD-005648,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"CRT is the Critical Rate.
+The higher the CRT, the more often critical hits occur.
+Critical hits deal more damage than usual.","CRT significa Tasa de Crítico.
+
+Cuanto mayor sea el CRT, más frecuentes serán los golpes críticos.
+
+Los golpes críticos infligen más daño de lo normal."
+005459,CLD-005649,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"BRK is the break rate.The higher the BRK, the more 
+likely you are to break enemies.Breaking enemies 
+will render them motionless for a while.","BRK es la tasa de ruptura. Cuanto mayor sea el BRK, más probable será que rompas a los enemigos. Romper a los enemigos los dejará inmóviles durante un tiempo."
+005461,CLD-005651,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"The combined weight of you and your equipment.
+The higher the number, the slower your attacks.","El peso combinado tuyo y de tu equipo.
+
+Cuanto mayor sea el número, más lentos serán tus ataques."
+005462,CLD-005652,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Defensive power of your shield.
+This reduces damage when you have a shield up.","Poder defensivo de tu escudo.
+
+Esto reduce el daño cuando tienes el escudo levantado."
+005463,CLD-005653,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"① is your resistance to the ""Slash①"" property.
+100 is normal. The higher it is, the more resistant
+you are.The less it is, the more vulnerable you are.","① es tu resistencia a la propiedad ""Barra①"".
+
+100 es el valor normal. Cuanto mayor sea, mayor será tu resistencia.
+Cuanto menor sea, mayor será tu vulnerabilidad."
+005464,CLD-005654,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"③ is your resistance to the ""Blunt③"" property.
+100 is normal. The higher it is, the more resistant
+you are.The less it is, the more vulnerable you are.","③ representa tu resistencia a la propiedad ""Blunt③"".
+
+100 es el valor normal. Cuanto mayor sea, mayor será tu resistencia.
+Cuanto menor sea, mayor será tu vulnerabilidad."
+005465,CLD-005655,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"② is your resistance to the ""Pierce②"" property.
+100 is normal. The higher it is, the more resistant
+you are.The less it is, the more vulnerable you are.","② representa tu resistencia a la propiedad ""Perforar②"".
+
+100 es el valor normal. Cuanto mayor sea, mayor será tu resistencia.
+Cuanto menor sea, mayor será tu vulnerabilidad."
+005468,CLD-005658,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"⑥ is your resistance to the ""Spirit⑥"" element.
+100 is normal. The higher it is, the more resistant
+you are.The less it is, the more vulnerable you are.","⑥ representa tu resistencia al elemento ""Espíritu⑥"".
+
+100 es el valor normal. Cuanto mayor sea, mayor será tu resistencia.
+Cuanto menor sea, mayor será tu vulnerabilidad."
+005469,CLD-005659,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"⑳① is your resistance to the
+""Slash①"" property when holding a shield.","⑳① es tu resistencia a la propiedad ""Corte①"" cuando sostienes un escudo."
+005470,CLD-005660,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"⑳③ is your resistance to the
+""Blunt③""property when holding a shield.","⑳③ es tu resistencia a la propiedad ""Contundente③"" al sostener un escudo."
+005471,CLD-005661,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"⑳② is your resistance to the
+""Pierce②"" property when holding a shield.","⑳② es tu resistencia a la propiedad ""Perforar②"" cuando sostienes un escudo."
+005472,CLD-005662,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"⑳④ is your resistance to the
+""Fire④"" element when holding a shield.","⑳④ es tu resistencia al elemento ""Fuego④"" cuando sostienes un escudo."
+005473,CLD-005663,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"⑳⑤ is your resistance to the
+""Ice⑤"" element when holding a shield.","⑳⑤ es tu resistencia al elemento ""Hielo⑤"" cuando sostienes un escudo."
+005474,CLD-005664,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"⑳⑥ is your resistance to the
+""Spirit⑥"" element when holding a shield.","⑳⑥ es tu resistencia al elemento ""Espíritu⑥"" cuando sostienes un escudo."
+005475,CLD-005665,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Your walking speed.
+The higher this is, the faster you walk.","Tu velocidad al caminar.
+
+Cuanto mayor sea, más rápido caminarás."
+005476,CLD-005666,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Your running speed.
+The higher this is, the faster you run.","Tu velocidad al correr.
+
+Cuanto mayor sea, más rápido correrás."
+005477,CLD-005667,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"All equipment have titles.
+Different titles provide different effects and powers.","Todos los equipos tienen nombres.
+
+Los diferentes nombres proporcionan diferentes efectos y poderes."
+005478,CLD-005668,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Power(%) is your weapon strength.
+If this is low, you cannot deal damage, 
+no matter how high your ATK.","El poder (%) es la fuerza de tu arma.
+Si es bajo, no podrás infligir daño, sin importar lo alto que sea tu ATK."
+005479,CLD-005669,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Your job.The type of Magic Circle, magic, 
+and abilities differ based on your job.
+What stats upgrade upon a level up also change.","Tu trabajo. El tipo de Círculo Mágico, magia y habilidades varían según tu trabajo.
+Las estadísticas que mejoran al subir de nivel también cambian."
+005480,CLD-005670,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Points used to activate Artifacts.
+Utilize your subs' mana to boost the main.
+Plan wisely.","Puntos utilizados para activar Artefactos.
+
+Utiliza el maná de tus unidades secundarias para potenciar la principal.
+
+Planifica con inteligencia."
+005487,CLD-005677,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Increases the EXP earned for
+characters on sub spaces.
+The number of △ determines amount to be gained.","Aumenta la EXP obtenida por los personajes en subespacios.
+El número de △ determina la cantidad a ganar."
+005490,CLD-005680,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"This is where the Magic/Ability is set.
+Placing ""Magic/Ability Space"" Artifacts here
+will boost corresponding slots.","Aquí es donde se define la Magia/Habilidad.
+
+Colocar artefactos de ""Espacio de Magia/Habilidad"" aquí
+mejorará las ranuras correspondientes."
+005564,CLD-005754,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"%s created!
+Freely change the face, description, 
+and conversation patterns
+from the Edit Menu.","%s creado!
+
+Cambia libremente la cara, la descripción y
+los patrones de conversación
+desde el menú Editar."
+005593,CLD-005783,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Really delete %s?
+Deletions are permanent!","¿De verdad borraste %s?
+
+¡Las eliminaciones son permanentes!"
+005607,CLD-005797,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Changes made.
+Apply changes?","Cambios realizados.
+
+¿Aplicar cambios?"
+005623,CLD-005813,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Copy front side to back.
+Continue?","Copia el anverso al reverso.
+
+¿Continuar?"
+005624,CLD-005814,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Copy left side to the right.
+Continue?","Copia el lado izquierdo al derecho.
+
+¿Continuar?"
+005625,CLD-005815,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Copy right side to the left.
+Continue?","Copia el lado derecho hacia la izquierda.
+
+¿Continuar?"
+005626,CLD-005816,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Copy back side to front.
+Continue?","Copia el reverso al anverso.
+
+¿Continuar?"
+005627,CLD-005817,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Copy %s's face to all four sides.
+Continue?","Copia la cara de %s en los cuatro lados.
+
+¿Continuar?"
+005679,CLD-005869,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"
+Floors cleared record cut in half...",El récord de pisos despejados se redujo a la mitad...
+005753,CLD-005943,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Revert from LV %2d to 1 in order to job change.
+Continue?","Revertir de LV %2d a 1 para cambiar de trabajo.
+
+¿Continuar?"
+005764,CLD-005954,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Cannot read yet.
+Defeat enemies to unlock.","Aún no puede leer.
+
+Derrota a los enemigos para desbloquear."
+005766,CLD-005956,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Cannot read yet.
+Defeat over 10 enemies to unlock.","Aún no puede leer.
+
+Derrota a más de 10 enemigos para desbloquearlo."
+005784,CLD-005974,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"
+
+
+
+
+
+
+
+
+
+
+ SP replenished!","
+
+¡SP repuesto!"
+005785,CLD-005975,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"
+
+
+
+
+
+
+
+
+
+
+ HP replenished!","
+
+¡HP repuesto!"
+005786,CLD-005976,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"
+
+
+
+
+
+
+
+
+
+
+ Full recovery!","
+
+¡Recuperación total!"
+005789,CLD-005979,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Dark Zone bonus!
+Monster level reduced!","¡Bonificación de la Zona Oscura!
+
+¡Nivel de monstruo reducido!"
+005790,CLD-005980,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Dark Zone bonus!
+But monster level cannot be decreased any more!","¡Bonificación de la Zona Oscura!
+
+¡Pero el nivel de los monstruos ya no se puede reducir!"
+005793,CLD-005983,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"
+
+
+
+
+
+
+
+
+
+
+
+SP replenished!","
+
+¡SP repuesto!"
+005794,CLD-005984,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"
+
+
+
+
+
+
+
+
+
+
+
+HP replenished!","
+
+¡HP repuesto!"
+005795,CLD-005985,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"
+
+
+
+
+
+
+
+
+
+
+
+Full recovery!","
+
+¡Recuperación total!"
+005817,CLD-006007,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"
+ (F","(F)
+
+F"
+005842,CLD-006032,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"：%s
+%s F (LV. %s)",：%s %s F (LV. %s)
+005848,CLD-006038,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Storage media requires %d KB more free space.
+To save face graphic data you will need %dKB of free space. Delete save data?","El medio de almacenamiento requiere %d KB de espacio libre adicional.
+
+Para guardar los datos gráficos faciales, necesitará %d KB de espacio libre. ¿Desea eliminar los datos guardados?"
+005854,CLD-006044,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Storage media requires %d KB more free space.
+To save new game progress, you will need storage media with %dKB of free space. Delete save data?","El medio de almacenamiento requiere %d KB de espacio libre adicional.
+
+Para guardar el progreso del nuevo juego, necesitarás un medio de almacenamiento con %d KB de espacio libre. ¿Eliminar datos de guardado?"
+005857,CLD-006047,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"No memory stick inserted.
+To save your progress in the game, you will need a memory stick with %dKB of free space.","No hay ninguna tarjeta de memoria insertada.
+
+Para guardar tu progreso en el juego, necesitarás una tarjeta de memoria con %dKB de espacio libre."
+005858,CLD-006048,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Storage media requires %d KB more free space.
+To save new game progress, you will need storage media with %dKB of free space.","El medio de almacenamiento requiere %d KB de espacio libre adicional.
+
+Para guardar el progreso de tu nuevo juego, necesitarás un medio de almacenamiento con %d KB de espacio libre."
+006091,CLD-006336,DATABASE.DAT/ARTIFACT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Widen,Ensanchar
+006092,CLD-006337,DATABASE.DAT/ARTIFACT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"Range +, Widens next space.","Alcance +, Amplía el siguiente espacio."
+006467,CLD-006701,DATABASE.DAT/CHAR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,地球姫,Princesa de la Tierra
+006468,CLD-006702,DATABASE.DAT/CHAR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,マナは高いがHPが低い。,Tiene mucha mana pero poca HP.
+006719,CLD-006953,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,プティング,Pudín
+006720,CLD-F-DAIHYOU-0001-nombre_personaje,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,グミ,Pegajoso
+006721,CLD-006954,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,デスピナ,Despina
+006722,CLD-006955,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ソウマ,Souma
+006723,CLD-006956,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,シャーベット,sorbete
+006724,CLD-006957,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,タエモン,Taemon
+006725,CLD-F-DAIHYOU-0006-nombre_personaje,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ココ,Palma de coco
+006726,CLD-006958,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,バトルブロー,Golpe de batalla
+006727,CLD-006959,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,エージ,edad
+006728,CLD-006960,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ドドヒゲ,Dodohige
+006729,CLD-F-DAIHYOU-0010-nombre_personaje,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ボブ,Chelín
+006730,CLD-006961,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,サンデー,Domingo
+006731,CLD-006962,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,アサギ,Asagi
+006732,CLD-006963,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,地球姫,Princesa de la Tierra
+006733,CLD-006964,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが99,DEF es 99
+006734,CLD-006965,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク100,(Escasez de ATK) Advertencia de nivel 100
+006735,CLD-006966,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが98,DEF es 98
+006736,CLD-006967,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク99,(Escasez de ATK) Advertencia Rango 99
+006737,CLD-006968,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが97,DEF 97
+006738,CLD-006969,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク98,(Escasez de ATK) Advertencia Rango 98
+006739,CLD-006970,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが96,DEF 96
+006740,CLD-006971,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク97,(Escasez de ATK) Advertencia Rango 97
+006741,CLD-006972,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが95,DEF 95
+006742,CLD-006973,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク96,(Escasez de ATK) Advertencia Rango 96
+006743,CLD-006974,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが94,DEF 94
+006744,CLD-006975,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク95,(Escasez de ATK) Advertencia Rango 95
+006745,CLD-006976,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが93,DEF 93
+006746,CLD-006977,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク94,(Escasez de ATK) Advertencia Rango 94
+006747,CLD-006978,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが92,DEF 92
+006748,CLD-006979,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク93,(Escasez de ATK) Advertencia Rango 93
+006749,CLD-006980,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが91,DEF 91
+006750,CLD-006981,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク92,(Escasez de ATK) Advertencia Rango 92
+006751,CLD-006982,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが90,DEF es 90
+006752,CLD-006983,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク91,(Escasez de ATK) Advertencia Rango 91
+006753,CLD-006984,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが89,DEF es 89
+006754,CLD-006985,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク90,(Escasez de ATK) Advertencia Rango 90
+006755,CLD-006986,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが88,DEF es 88
+006756,CLD-006987,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク89,(Escasez de ATK) Advertencia Rango 89
+006757,CLD-006988,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが87,DEF 87
+006758,CLD-006989,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク88,(Escasez de ATK) Advertencia Rango 88
+006759,CLD-006990,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが86,DEF es 86
+006760,CLD-006991,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク87,(Escasez de ATK) Advertencia Rango 87
+006761,CLD-006992,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが85,DEF es 85
+006762,CLD-006993,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク86,(Escasez de ATK) Advertencia Rango 86
+006763,CLD-006994,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが84,DEF es 84
+006764,CLD-006995,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク85,(Escasez de ATK) Advertencia Rango 85
+006765,CLD-006996,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが83,DEF es 83
+006766,CLD-006997,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク84,(Escasez de ATK) Advertencia Rango 84
+006767,CLD-006998,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが82,DEF es 82
+006768,CLD-006999,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク83,(Escasez de ATK) Advertencia Rango 83
+006769,CLD-007000,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが81,DEF es 81
+006770,CLD-007001,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク82,(Escasez de ATK) Advertencia Rango 82
+006771,CLD-007002,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが80,DEF es 80
+006772,CLD-007003,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク81,(Escasez de ATK) Advertencia Rango 81
+006773,CLD-007004,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが79,DEF 79
+006774,CLD-007005,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク80,(Escasez de ATK) Advertencia Rango 80
+006775,CLD-007006,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが78,DEF 78
+006776,CLD-007007,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク79,(Escasez de ATK) Advertencia Rango 79
+006777,CLD-007008,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが77,DEF 77
+006778,CLD-007009,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク78,(Escasez de ATK) Advertencia Rango 78
+006779,CLD-007010,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが76,DEF 76
+006780,CLD-007011,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク77,(Escasez de ATK) Advertencia Rango 77
+006781,CLD-007012,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが75,DEF 75
+006782,CLD-007013,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク76,(Escasez de ATK) Advertencia Rango 76
+006783,CLD-007014,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが74,DEF 74
+006784,CLD-007015,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク75,(Escasez de ATK) Advertencia Rango 75
+006785,CLD-007016,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが73,DEF 73
+006786,CLD-007017,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク74,(Escasez de ATK) Advertencia Rango 74
+006787,CLD-007018,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが72,DEF 72
+006788,CLD-007019,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク73,(Escasez de ATK) Advertencia Rango 73
+006789,CLD-007020,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが71,DEF 71
+006790,CLD-007021,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク72,(Escasez de ATK) Advertencia Rango 72
+006791,CLD-007022,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが70,DEF es 70
+006792,CLD-007023,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク71,(Escasez de ATK) Advertencia Rango 71
+006793,CLD-007024,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが69,DEF 69
+006794,CLD-007025,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク70,(Escasez de ATK) Advertencia Rango 70
+006795,CLD-007026,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが68,DEF es 68
+006796,CLD-007027,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク69,(Escasez de ATK) Advertencia Rango 69
+006797,CLD-007028,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが67,DEF 67
+006798,CLD-007029,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク68,(Escasez de ATK) Advertencia Rango 68
+006799,CLD-007030,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが66,DEF es 66
+006800,CLD-007031,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク67,(Escasez de ATK) Advertencia Rango 67
+006801,CLD-007032,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが65,DEF es 65
+006802,CLD-007033,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク66,(Escasez de ATK) Advertencia Rango 66
+006803,CLD-007034,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが64,DEF es 64
+006804,CLD-007035,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク65,(Escasez de ATK) Advertencia Rango 65
+006805,CLD-007036,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが63,DEF es 63
+006806,CLD-007037,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク64,(Escasez de ATK) Advertencia Rango 64
+006807,CLD-007038,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが62,DEF es 62
+006808,CLD-007039,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク63,(Escasez de ATK) Advertencia Rango 63
+006809,CLD-007040,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが61,DEF es 61
+006810,CLD-007041,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク62,(Escasez de ATK) Advertencia Rango 62
+006811,CLD-007042,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが60,DEF es 60
+006812,CLD-007043,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク61,(Escasez de ATK) Advertencia Rango 61
+006813,CLD-007044,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが59,DEF 59
+006814,CLD-007045,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク60,(Escasez de ATK) Advertencia Rango 60
+006815,CLD-007046,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが58,DEF es 58
+006816,CLD-007047,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク59,(Escasez de ATK) Advertencia de nivel 59
+006817,CLD-007048,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが57,DEF 57
+006818,CLD-007049,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク58,(Escasez de ATK) Advertencia Rango 58
+006819,CLD-007050,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが56,DEF es 56
+006820,CLD-007051,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク57,(Escasez de ATK) Advertencia de nivel 57
+006821,CLD-007052,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが55,DEF es 55
+006822,CLD-007053,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク56,(Escasez de ATK) Advertencia Rango 56
+006823,CLD-007054,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが54,DEF es 54
+006824,CLD-007055,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク55,(Escasez de ATK) Advertencia de nivel 55
+006825,CLD-007056,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが53,DEF es 53
+006826,CLD-007057,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク54,(Escasez de ATK) Advertencia Rango 54
+006827,CLD-007058,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが52,DEF es 52
+006828,CLD-007059,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク53,(Escasez de ATK) Advertencia Rango 53
+006829,CLD-007060,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが51,DEF es 51
+006830,CLD-007061,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク52,(Escasez de ATK) Advertencia Rango 52
+006831,CLD-007062,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが50,DEF es 50
+006832,CLD-007063,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク51,(Escasez de ATK) Advertencia Rango 51
+006833,CLD-007064,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが49,DEF 49
+006834,CLD-007065,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク50,(Escasez de ATK) Advertencia de nivel 50
+006835,CLD-007066,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが48不足,A DEF le faltan 48 puntos.
+006836,CLD-007067,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク49,(Escasez de ATK) Advertencia Rango 49
+006837,CLD-007068,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが47不足,A DEF le faltan 47.
+006838,CLD-007069,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク48,(Escasez de ATK) Advertencia Rango 48
+006839,CLD-007070,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが46不足,A DEF le faltan 46.
+006840,CLD-007071,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク47,(Escasez de ATK) Advertencia Rango 47
+006841,CLD-007072,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが45不足,A DEF le faltan 45 puntos.
+006842,CLD-007073,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク46,(Escasez de ATK) Advertencia Rango 46
+006843,CLD-007074,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが44不足,A DEF le faltan 44 puntos.
+006844,CLD-007075,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク45,(Escasez de ATK) Advertencia Rango 45
+006845,CLD-007076,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが43不足,A DEF le faltan 43 puntos.
+006846,CLD-007077,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク44,(Escasez de ATK) Advertencia Rango 44
+006847,CLD-007078,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが42不足,A DEF le faltan 42 puntos.
+006848,CLD-007079,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク43,(Escasez de ATK) Advertencia Rango 43
+006849,CLD-007080,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが41不足,A DEF le faltan 41 puntos.
+006850,CLD-007081,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク42,(Escasez de ATK) Advertencia Rango 42
+006851,CLD-007082,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが40不足,A DEF le faltan 40 puntos.
+006852,CLD-007083,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク41,(Escasez de ATK) Advertencia Rango 41
+006853,CLD-007084,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが39不足,A DEF le faltan 39 puntos.
+006854,CLD-007085,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク40,(Escasez de ATK) Advertencia Rango 40
+006855,CLD-007086,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが38不足,A DEF le faltan 38 puntos.
+006856,CLD-007087,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク39,(Escasez de ATK) Advertencia Rango 39
+006857,CLD-007088,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが37不足,A DEF le faltan 37 puntos.
+006858,CLD-007089,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク38,(Escasez de ATK) Advertencia Rango 38
+006859,CLD-007090,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが36不足,A DEF le faltan 36 puntos.
+006860,CLD-007091,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク37,(Escasez de ATK) Advertencia Rango 37
+006861,CLD-007092,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが35不足,A DEF le faltan 35 puntos.
+006862,CLD-007093,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク36,(Escasez de ATK) Advertencia Rango 36
+006863,CLD-007094,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが34不足,A DEF le faltan 34 puntos.
+006864,CLD-007095,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク35,(Escasez de ATK) Advertencia Rango 35
+006865,CLD-007096,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが33不足,A DEF le faltan 33 puntos.
+006866,CLD-007097,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク34,(Escasez de ATK) Advertencia Rango 34
+006867,CLD-007098,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが32不足,A DEF le faltan 32 puntos.
+006868,CLD-007099,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク33,(Escasez de ATK) Advertencia Rango 33
+006869,CLD-007100,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが31不足,A DEF le faltan 31 puntos.
+006870,CLD-007101,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク32,(Escasez de ATK) Advertencia Rango 32
+006871,CLD-007102,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが30不足,A DEF le faltan 30 puntos.
+006872,CLD-007103,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク31,(Escasez de ATK) Advertencia Rango 31
+006873,CLD-007104,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが29不足,A DEF le faltan 29.
+006874,CLD-007105,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク30,(Escasez de ATK) Advertencia Rango 30
+006875,CLD-007106,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが28不足,A DEF le faltan 28 puntos.
+006876,CLD-007107,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク29,(Escasez de ATK) Advertencia Rango 29
+006877,CLD-007108,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが27不足,A DEF le faltan 27 puntos.
+006878,CLD-007109,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク28,(Escasez de ATK) Advertencia Rango 28
+006879,CLD-007110,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが26不足,A DEF le faltan 26 puntos.
+006880,CLD-007111,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク27,(Escasez de ATK) Advertencia Rango 27
+006881,CLD-007112,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが25不足,A DEF le faltan 25 puntos.
+006882,CLD-007113,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク26,(Escasez de ATK) Advertencia Rango 26
+006883,CLD-007114,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが24不足,A DEF le faltan 24 puntos.
+006884,CLD-007115,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク25,(Escasez de ATK) Advertencia Rango 25
+006885,CLD-007116,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが23不足,A DEF le faltan 23 puntos.
+006886,CLD-007117,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク24,(Escasez de ATK) Advertencia Rango 24
+006887,CLD-007118,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが22不足,A DEF le faltan 22 puntos.
+006888,CLD-007119,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク23,(Escasez de ATK) Advertencia Rango 23
+006889,CLD-007120,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが21不足,A DEF le faltan 21 puntos.
+006890,CLD-007121,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク22,(Escasez de ATK) Advertencia Rango 22
+006891,CLD-007122,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが20不足,A DEF le faltan 20 puntos.
+006892,CLD-007123,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク21,(Escasez de ATK) Advertencia Rango 21
+006893,CLD-007124,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが19不足,A DEF le faltan 19 puntos.
+006894,CLD-007125,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク20,(Escasez de ATK) Advertencia Rango 20
+006895,CLD-007126,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが18不足,A DEF le faltan 18 puntos.
+006896,CLD-007127,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク19,(Escasez de ATK) Advertencia Rango 19
+006897,CLD-007128,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが17不足,A DEF le faltan 17 puntos.
+006898,CLD-007129,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク18,(Escasez de ATK) Advertencia Rango 18
+006899,CLD-007130,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが16不足,A DEF le faltan 16 puntos.
+006900,CLD-007131,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク17,(Escasez de ATK) Advertencia Rango 17
+006901,CLD-007132,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが15不足,A DEF le faltan 15 puntos.
+006902,CLD-007133,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク16,(Escasez de ATK) Advertencia Rango 16
+006903,CLD-007134,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが14不足,A DEF le faltan 14 puntos.
+006904,CLD-007135,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク15,(Escasez de ATK) Advertencia Rango 15
+006905,CLD-007136,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが13不足,A DEF le faltan 13 puntos.
+006906,CLD-007137,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク14,(Escasez de ATK) Advertencia Rango 14
+006907,CLD-007138,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが12不足,A DEF le faltan 12 puntos.
+006908,CLD-007139,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク13,(Escasez de ATK) Advertencia Rango 13
+006909,CLD-007140,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが11不足,A DEF le faltan 11 puntos.
+006910,CLD-007141,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク12,(Escasez de ATK) Advertencia Rango 12
+006911,CLD-007142,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが10不足,A DEF le faltan 10 puntos.
+006912,CLD-007143,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ不足）警告ランク11,(Escasez de ATK) Advertencia Rango 11
+006913,CLD-007144,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが9不足,A DEF le faltan 9 puntos.
+006914,CLD-007145,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATKが9不足,A ATK le faltan 9 puntos.
+006915,CLD-007146,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが8不足,A DEF le faltan 8 puntos.
+006916,CLD-007147,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATKが8不足,A ATK le faltan 8 puntos.
+006917,CLD-007148,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが7不足,A DEF le faltan 7 puntos.
+006918,CLD-007149,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATKが7不足,A ATK le faltan 7 puntos.
+006919,CLD-007150,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが6不足,A DEF le faltan 6 puntos.
+006920,CLD-007151,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATKが6不足,A ATK le faltan 6 puntos.
+006921,CLD-007152,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが5不足,A DEF le faltan 5 puntos.
+006922,CLD-007153,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATKが5不足,A ATK le faltan 5 puntos.
+006923,CLD-007154,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが4不足,A DEF le faltan 4 puntos.
+006924,CLD-007155,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATKが4不足,A ATK le faltan 4 puntos.
+006925,CLD-007156,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが3不足,A DEF le faltan 3 puntos.
+006926,CLD-007157,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATKが3不足,A ATK le faltan 3 puntos.
+006927,CLD-007158,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが2不足,A DEF le faltan 2 puntos.
+006928,CLD-007159,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATKが2不足,A ATK le faltan 2 puntos.
+006929,CLD-007160,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFが1不足,A DEF le falta 1.
+006930,CLD-007161,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATKが1不足,A ATK le falta 1 punto.
+006931,CLD-007162,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFは問題なし,DEF está bien.
+006932,CLD-007163,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATKは問題なし,ATK está bien.
+006933,CLD-007164,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFは問題なし,DEF está bien.
+006934,CLD-007165,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATKは問題なし,ATK está bien.
+006935,CLD-007166,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFは問題なし,DEF está bien.
+006936,CLD-007167,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATKは問題なし,ATK está bien.
+006937,CLD-007168,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFは問題なし,DEF está bien.
+006938,CLD-007169,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATKは問題なし,ATK está bien.
+006939,CLD-007170,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFは問題なし,DEF está bien.
+006940,CLD-007171,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク5,"(Ventaja de ATK) Victoria fácil, rango 5"
+006941,CLD-007172,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFは問題なし,DEF está bien.
+006942,CLD-007173,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク6,"(Ventaja de ATK) Victoria fácil, rango 6"
+006943,CLD-007174,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFは問題なし,DEF está bien.
+006944,CLD-007175,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク7,"(Ventaja de ATK) Victoria fácil, rango 7"
+006945,CLD-007176,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFは問題なし,DEF está bien.
+006946,CLD-007177,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク8,"(Ventaja de ATK) Victoria fácil, rango 8"
+006947,CLD-007178,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFは問題なし,DEF está bien.
+006948,CLD-007179,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク9,"(Ventaja de ATK) Victoria fácil, rango 9"
+006949,CLD-007180,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク10,"(Ventaja DEF) Victoria fácil, rango 10"
+006950,CLD-007181,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク10,"(Ventaja de ATK) Victoria fácil, rango 10"
+006951,CLD-007182,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク11,"(Ventaja DEF) Victoria fácil, rango 11"
+006952,CLD-007183,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク11,"(Ventaja de ATK) Victoria fácil, rango 11"
+006953,CLD-007184,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク12,"(Ventaja DEF) Victoria fácil, puesto 12"
+006954,CLD-007185,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク12,"(Ventaja de ATK) Victoria fácil, rango 12"
+006955,CLD-007186,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク13,"(Ventaja DEF) Victoria fácil, puesto 13"
+006956,CLD-007187,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク13,"(Ventaja de ATK) Victoria fácil, rango 13"
+006957,CLD-007188,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク14,"(Ventaja DEF) Victoria fácil, puesto 14"
+006958,CLD-007189,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク14,"(Ventaja de ATK) Victoria fácil, rango 14"
+006959,CLD-007190,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク15,"(Ventaja DEF) Victoria fácil, puesto 15"
+006960,CLD-007191,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク15,"(Ventaja de ATK) Victoria fácil, rango 15"
+006961,CLD-007192,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク16,"(Ventaja DEF) Victoria fácil, puesto 16"
+006962,CLD-007193,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク16,"(Ventaja de ATK) Victoria fácil, puesto 16"
+006963,CLD-007194,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク17,"(Ventaja DEF) Victoria fácil, puesto 17"
+006964,CLD-007195,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク17,"(Ventaja de ATK) Victoria fácil, rango 17"
+006965,CLD-007196,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク18,"(Ventaja DEF) Victoria fácil, puesto 18"
+006966,CLD-007197,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク18,"(Ventaja de ATK) Victoria fácil, rango 18"
+006967,CLD-007198,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク19,"(Ventaja DEF) Victoria fácil, puesto 19"
+006968,CLD-007199,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク19,"(Ventaja de ATK) Victoria fácil, rango 19"
+006969,CLD-007200,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク20,"(Ventaja DEF) Victoria fácil, rango 20"
+006970,CLD-007201,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク20,"(Ventaja de ATK) Victoria fácil, rango 20"
+006971,CLD-007202,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク21,"(Ventaja DEF) Victoria fácil, puesto 21"
+006972,CLD-007203,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク21,"(Ventaja de ATK) Victoria fácil, rango 21"
+006973,CLD-007204,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク22,"(Ventaja DEF) Victoria fácil, puesto 22"
+006974,CLD-007205,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク22,"(Ventaja de ATK) Victoria fácil, rango 22"
+006975,CLD-007206,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク23,"(Ventaja DEF) Victoria fácil, puesto 23"
+006976,CLD-007207,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク23,"(Ventaja de ATK) Victoria fácil, puesto 23"
+006977,CLD-007208,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク24,"(Ventaja DEF) Victoria fácil, puesto 24"
+006978,CLD-007209,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク24,"(Ventaja de ATK) Victoria fácil, rango 24"
+006979,CLD-007210,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク25,"(Ventaja DEF) Victoria fácil, puesto 25"
+006980,CLD-007211,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク25,"(Ventaja de ATK) Victoria fácil, rango 25"
+006981,CLD-007212,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク26,"(Ventaja DEF) Victoria fácil, puesto 26"
+006982,CLD-007213,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク26,"(Ventaja de ATK) Victoria fácil, puesto 26"
+006983,CLD-007214,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク27,"(Ventaja DEF) Victoria fácil, puesto 27"
+006984,CLD-007215,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク27,"(Ventaja de ATK) Victoria fácil, puesto 27"
+006985,CLD-007216,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク28,"(Ventaja DEF) Victoria fácil, puesto 28"
+006986,CLD-007217,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク28,"(Ventaja de ATK) Victoria fácil, puesto 28"
+006987,CLD-007218,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク29,"(Ventaja DEF) Victoria fácil, puesto 29"
+006988,CLD-007219,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク29,"(Ventaja de ATK) Victoria fácil, puesto 29"
+006989,CLD-007220,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク30,"(Ventaja DEF) Victoria fácil, rango 30"
+006990,CLD-007221,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク30,"(Ventaja de ATK) Victoria fácil, rango 30"
+006991,CLD-007222,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク31,"(Ventaja DEF) Victoria fácil, puesto 31"
+006992,CLD-007223,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク31,"(Ventaja de ATK) Victoria fácil, rango 31"
+006993,CLD-007224,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク32,"(Ventaja DEF) Victoria fácil, puesto 32"
+006994,CLD-007225,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク32,"(Ventaja de ATK) Victoria fácil, rango 32"
+006995,CLD-007226,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク33,"(Ventaja DEF) Victoria fácil, puesto 33"
+006996,CLD-007227,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク33,"(Ventaja de ATK) Victoria fácil, rango 33"
+006997,CLD-007228,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク34,"(Ventaja DEF) Victoria fácil, puesto 34"
+006998,CLD-007229,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク34,"(Ventaja de ATK) Victoria fácil, rango 34"
+006999,CLD-007230,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク35,"(Ventaja DEF) Victoria fácil, rango 35"
+007000,CLD-007231,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク35,"(Ventaja de ATK) Victoria fácil, rango 35"
+007001,CLD-007232,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク36,"(Ventaja DEF) Victoria fácil, puesto 36"
+007002,CLD-007233,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク36,"(Ventaja de ATK) Victoria fácil, rango 36"
+007003,CLD-007234,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク37,"(Ventaja DEF) Victoria fácil, puesto 37"
+007004,CLD-007235,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク37,"(Ventaja de ATK) Victoria fácil, rango 37"
+007005,CLD-007236,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク38,"(Ventaja DEF) Victoria fácil, puesto 38"
+007006,CLD-007237,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク38,"(Ventaja de ATK) Victoria fácil, rango 38"
+007007,CLD-007238,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク39,"(Ventaja DEF) Victoria fácil, puesto 39"
+007008,CLD-007239,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク39,"(Ventaja de ATK) Victoria fácil, puesto 39"
+007009,CLD-007240,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク40,"(Ventaja DEF) Victoria fácil, rango 40"
+007010,CLD-007241,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク40,"(Ventaja de ATK) Victoria fácil, rango 40"
+007011,CLD-007242,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク41,"(Ventaja DEF) Victoria fácil, puesto 41"
+007012,CLD-007243,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク41,"(Ventaja de ATK) Victoria fácil, rango 41"
+007013,CLD-007244,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク42,"(Ventaja DEF) Victoria fácil, puesto 42"
+007014,CLD-007245,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク42,"(Ventaja de ATK) Victoria fácil, rango 42"
+007015,CLD-007246,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク43,"(Ventaja DEF) Victoria fácil, puesto 43"
+007016,CLD-007247,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク43,"(Ventaja de ATK) Victoria fácil, rango 43"
+007017,CLD-007248,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク44,"(Ventaja DEF) Victoria fácil, puesto 44"
+007018,CLD-007249,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク44,"(Ventaja de ATK) Victoria fácil, rango 44"
+007019,CLD-007250,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク45,"(Ventaja DEF) Victoria fácil, rango 45"
+007020,CLD-007251,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク45,"(Ventaja de ATK) Victoria fácil, rango 45"
+007021,CLD-007252,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク46,"(Ventaja DEF) Victoria fácil, puesto 46"
+007022,CLD-007253,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク46,"(Ventaja de ATK) Victoria fácil, rango 46"
+007023,CLD-007254,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク47,"(Ventaja DEF) Victoria fácil, puesto 47"
+007024,CLD-007255,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク47,"(Ventaja de ATK) Victoria fácil, rango 47"
+007025,CLD-007256,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク48,"(Ventaja DEF) Victoria fácil, puesto 48"
+007026,CLD-007257,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク48,"(Ventaja de ATK) Victoria fácil, rango 48"
+007027,CLD-007258,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク49,"(Ventaja DEF) Victoria fácil, puesto 49"
+007028,CLD-007259,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク49,"(Ventaja de ATK) Victoria fácil, puesto 49"
+007029,CLD-007260,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク50,"(Ventaja DEF) Victoria fácil, rango 50"
+007030,CLD-007261,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク50,"(Ventaja de ATK) Victoria fácil, rango 50"
+007031,CLD-007262,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク51,"(Ventaja DEF) Victoria fácil, puesto 51"
+007032,CLD-007263,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク51,"(Ventaja de ATK) Victoria fácil, rango 51"
+007033,CLD-007264,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク52,"(Ventaja DEF) Victoria fácil, puesto 52"
+007034,CLD-007265,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク52,"(Ventaja de ATK) Victoria fácil, rango 52"
+007035,CLD-007266,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク53,"(Ventaja DEF) Victoria fácil, puesto 53"
+007036,CLD-007267,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク53,"(Ventaja de ATK) Victoria fácil, rango 53"
+007037,CLD-007268,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク54,"(Ventaja DEF) Victoria fácil, puesto 54"
+007038,CLD-007269,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク54,"(Ventaja de ATK) Victoria fácil, rango 54"
+007039,CLD-007270,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク55,"(Ventaja DEF) Victoria fácil, rango 55"
+007040,CLD-007271,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク55,"(Ventaja de ATK) Victoria fácil, rango 55"
+007041,CLD-007272,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク56,"(Ventaja DEF) Victoria fácil, puesto 56"
+007042,CLD-007273,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク56,"(Ventaja de ATK) Victoria fácil, puesto 56"
+007043,CLD-007274,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク57,"(Ventaja DEF) Victoria fácil, puesto 57"
+007044,CLD-007275,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク57,"(Ventaja de ATK) Victoria fácil, rango 57"
+007045,CLD-007276,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク58,"(Ventaja DEF) Victoria fácil, puesto 58"
+007046,CLD-007277,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク58,"(Ventaja de ATK) Victoria fácil, puesto 58"
+007047,CLD-007278,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク59,"(Ventaja DEF) Victoria fácil, puesto 59"
+007048,CLD-007279,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク59,"(Ventaja de ATK) Victoria fácil, puesto 59"
+007049,CLD-007280,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク60,"(Ventaja DEF) Victoria fácil, rango 60"
+007050,CLD-007281,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク60,"(Ventaja de ATK) Victoria fácil, rango 60"
+007051,CLD-007282,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク61,"(Ventaja DEF) Victoria fácil, puesto 61"
+007052,CLD-007283,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク61,"(Ventaja de ATK) Victoria fácil, rango 61"
+007053,CLD-007284,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク62,"(Ventaja DEF) Victoria fácil, puesto 62"
+007054,CLD-007285,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク62,"(Ventaja de ATK) Victoria fácil, rango 62"
+007055,CLD-007286,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク63,"(Ventaja DEF) Victoria fácil, puesto 63"
+007056,CLD-007287,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク63,"(Ventaja de ATK) Victoria fácil, rango 63"
+007057,CLD-007288,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク64,"(Ventaja DEF) Victoria fácil, rango 64"
+007058,CLD-007289,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク64,"(Ventaja de ATK) Victoria fácil, rango 64"
+007059,CLD-007290,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク65,"(Ventaja DEF) Victoria fácil, rango 65"
+007060,CLD-007291,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク65,"(Ventaja de ATK) Victoria fácil, rango 65"
+007061,CLD-007292,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク66,"(Ventaja DEF) Victoria fácil, puesto 66"
+007062,CLD-007293,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク66,"(Ventaja de ATK) Victoria fácil, rango 66"
+007063,CLD-007294,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク67,"(Ventaja DEF) Victoria fácil, puesto 67"
+007064,CLD-007295,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク67,"(Ventaja de ATK) Victoria fácil, rango 67"
+007065,CLD-007296,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク68,"(Ventaja DEF) Victoria fácil, puesto 68"
+007066,CLD-007297,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク68,"(Ventaja de ATK) Victoria fácil, rango 68"
+007067,CLD-007298,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク69,"(Ventaja DEF) Victoria fácil, puesto 69"
+007068,CLD-007299,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク69,"(Ventaja de ATK) Victoria fácil, puesto 69"
+007069,CLD-007300,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク70,"(Ventaja DEF) Victoria fácil, rango 70"
+007070,CLD-007301,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク70,"(Ventaja de ATK) Victoria fácil, rango 70"
+007071,CLD-007302,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク71,"(Ventaja DEF) Victoria fácil, rango 71"
+007072,CLD-007303,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク71,"(Ventaja de ATK) Victoria fácil, rango 71"
+007073,CLD-007304,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク72,"(Ventaja DEF) Victoria fácil, rango 72"
+007074,CLD-007305,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク72,"(Ventaja de ATK) Victoria fácil, rango 72"
+007075,CLD-007306,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク73,"(Ventaja DEF) Victoria fácil, rango 73"
+007076,CLD-007307,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク73,"(Ventaja de ATK) Victoria fácil, rango 73"
+007077,CLD-007308,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク74,"(Ventaja DEF) Victoria fácil, rango 74"
+007078,CLD-007309,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク74,"(Ventaja de ATK) Victoria fácil, rango 74"
+007079,CLD-007310,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク75,"(Ventaja DEF) Victoria fácil, rango 75"
+007080,CLD-007311,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク75,"(Ventaja de ATK) Victoria fácil, rango 75"
+007081,CLD-007312,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク76,"(Ventaja DEF) Victoria fácil, rango 76"
+007082,CLD-007313,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク76,"(Ventaja de ATK) Victoria fácil, rango 76"
+007083,CLD-007314,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク77,"(Ventaja DEF) Victoria fácil, rango 77"
+007084,CLD-007315,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク77,"(Ventaja de ATK) Victoria fácil, rango 77"
+007085,CLD-007316,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク78,"(Ventaja DEF) Victoria fácil, rango 78"
+007086,CLD-007317,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク78,"(Ventaja de ATK) Victoria fácil, rango 78"
+007087,CLD-007318,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク79,"(Ventaja DEF) Victoria fácil, rango 79"
+007088,CLD-007319,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク79,"(Ventaja de ATK) Victoria fácil, rango 79"
+007089,CLD-007320,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク80,"(Ventaja DEF) Victoria fácil, rango 80"
+007090,CLD-007321,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク80,"(Ventaja de ATK) Victoria fácil, rango 80"
+007091,CLD-007322,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク81,"(Ventaja DEF) Victoria fácil, puesto 81"
+007092,CLD-007323,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク81,"(Ventaja de ATK) Victoria fácil, rango 81"
+007093,CLD-007324,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク82,"(Ventaja DEF) Victoria fácil, puesto 82"
+007094,CLD-007325,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク82,"(Ventaja de ATK) Victoria fácil, rango 82"
+007095,CLD-007326,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク83,"(Ventaja DEF) Victoria fácil, puesto 83"
+007096,CLD-007327,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク83,"(Ventaja de ATK) Victoria fácil, rango 83"
+007097,CLD-007328,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク84,"(Ventaja DEF) Victoria fácil, rango 84"
+007098,CLD-007329,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク84,"(Ventaja de ATK) Victoria fácil, rango 84"
+007099,CLD-007330,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク85,"(Ventaja DEF) Victoria fácil, rango 85"
+007100,CLD-007331,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク85,"(Ventaja de ATK) Victoria fácil, rango 85"
+007101,CLD-007332,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク86,"(Ventaja DEF) Victoria fácil, puesto 86"
+007102,CLD-007333,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク86,"(Ventaja de ATK) Victoria fácil, rango 86"
+007103,CLD-007334,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク87,"(Ventaja DEF) Victoria fácil, puesto 87"
+007104,CLD-007335,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク87,"(Ventaja de ATK) Victoria fácil, rango 87"
+007105,CLD-007336,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク88,"(Ventaja DEF) Victoria fácil, puesto 88"
+007106,CLD-007337,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク88,"(Ventaja de ATK) Victoria fácil, rango 88"
+007107,CLD-007338,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク89,"(Ventaja DEF) Victoria fácil, puesto 89"
+007108,CLD-007339,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク89,"(Ventaja de ATK) Victoria fácil, rango 89"
+007109,CLD-007340,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク90,"(Ventaja DEF) Victoria fácil, rango 90"
+007110,CLD-007341,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク90,"(Ventaja de ATK) Victoria fácil, rango 90"
+007111,CLD-007342,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク91,"(Ventaja DEF) Victoria fácil, puesto 91"
+007112,CLD-007343,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク91,"(Ventaja de ATK) Victoria fácil, rango 91"
+007113,CLD-007344,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク92,"(Ventaja DEF) Victoria fácil, puesto 92"
+007114,CLD-007345,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク92,"(Ventaja de ATK) Victoria fácil, rango 92"
+007115,CLD-007346,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク93,"(Ventaja DEF) Victoria fácil, puesto 93"
+007116,CLD-007347,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク93,"(Ventaja de ATK) Victoria fácil, rango 93"
+007117,CLD-007348,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク94,"(Ventaja DEF) Victoria fácil, rango 94"
+007118,CLD-007349,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク94,"(Ventaja de ATK) Victoria fácil, rango 94"
+007119,CLD-007350,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク95,"(Ventaja DEF) Victoria fácil, rango 95"
+007120,CLD-007351,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク95,"(Ventaja de ATK) Victoria fácil, rango 95"
+007121,CLD-007352,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク96,"(Ventaja DEF) Victoria fácil, puesto 96"
+007122,CLD-007353,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク96,"(Ventaja de ATK) Victoria fácil, rango 96"
+007123,CLD-007354,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク97,"(Ventaja DEF) Victoria fácil, puesto 97"
+007124,CLD-007355,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク97,"(Ventaja de ATK) Victoria fácil, rango 97"
+007125,CLD-007356,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク98,"(Ventaja DEF) Victoria fácil, puesto 98"
+007126,CLD-007357,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク98,"(Ventaja de ATK) Victoria fácil, rango 98"
+007127,CLD-007358,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク99,"(Ventaja DEF) Victoria fácil, rango 99"
+007128,CLD-007359,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク99,"(Ventaja de ATK) Victoria fácil, rango 99"
+007129,CLD-007360,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＤＥＦ有利）楽勝ランク100,"(Ventaja DEF) Victoria fácil, rango 100"
+007130,CLD-007361,DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,（ＡＴＫ有利）楽勝ランク100,"(Ventaja de ATK) Victoria fácil, rango 100"
+007518,CLD-007749,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,闘志不要,No se necesita espíritu de lucha
+007519,CLD-007750,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,闘志ボーナス1,Bonificación de espíritu de lucha 1
+007520,CLD-007751,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,守護不要,Proteger y no
+007521,CLD-007752,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,守護ボーナス1,Bonificación del Guardián 1
+007522,CLD-007753,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,英知不要,Yingzhi no quiere
+007523,CLD-007754,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,英知ボーナス1,Bonificación de sabiduría 1
+007524,CLD-007755,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,軽量化,Ligero
+007525,CLD-007756,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,攻撃速度+1,Velocidad de ataque +1
+007526,CLD-007757,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,超軽量化,Ultraligero
+007527,CLD-007758,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,攻撃速度+2,Velocidad de ataque +2
+007528,CLD-007759,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,羽の軽さ,La ligereza de las plumas
+007529,CLD-007760,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,攻撃速度+3,Velocidad de ataque +3
+007530,CLD-007761,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,Hpアップ,HP Up
+007531,CLD-F-EFFECT-0006-descripcion_efecto,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,HP+1,HP+1
+007532,CLD-007762,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,Hpアップ,HP Up
+007533,CLD-F-EFFECT-0007-descripcion_efecto,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,HP+2,HP+2
+007534,CLD-007763,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,Spアップ,Sp Up
+007535,CLD-F-EFFECT-0008-descripcion_efecto,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,SP+1,SP+1
+007536,CLD-007764,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,Spアップ,Sp Up
+007537,CLD-F-EFFECT-0009-descripcion_efecto,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,SP+2,SP+2
+007538,CLD-007765,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATKアップ,ATQ.
+007539,CLD-007766,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATK+1,ATK+1
+007540,CLD-007767,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATKアップ,ATQ.
+007541,CLD-007768,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATK+2,ATK+2
+007542,CLD-007769,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFアップ,Aumento de DEF
+007543,CLD-007770,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEF+1,DEF+1
+007544,CLD-007771,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEFアップ,Aumento de DEF
+007545,CLD-007772,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,DEF+2,DEF+2
+007546,CLD-007773,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,SPDアップ,Velocidad aumentada
+007547,CLD-007774,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,SPD+1,SPD+1
+007548,CLD-007775,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,SPDアップ,Velocidad aumentada
+007549,CLD-007776,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,SPD+2,SPD+2
+007550,CLD-007777,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,剣防ぎ,Defensa con espada
+007551,CLD-007778,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,斬撃耐性+2,Resistencia al corte +2
+007552,CLD-007779,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,槍防ぎ,Defensa con lanza
+007553,CLD-007780,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,突刺耐性+2,Resistencia al empuje +2
+007554,CLD-007781,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,斧防ぎ,defensa con hacha
+007555,CLD-007782,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,打撃耐性+2,Resistencia cuerpo a cuerpo +2
+007556,CLD-007783,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎防ぎ,Protección contra incendios
+007557,CLD-007784,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎熱耐性+2,Resistencia al calor +2
+007558,CLD-007785,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷防ぎ,Protección contra el hielo
+007559,CLD-007786,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,冷気耐性+2,Resistencia al frío +2
+007560,CLD-007787,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,心防ぎ,Protección del corazón
+007561,CLD-007788,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,精神耐性+2,Resistencia mental +2
+007562,CLD-007789,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,転ばし,tropezar
+007563,CLD-007790,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ブレイク発生+3,ocurrencia de ruptura +3
+007564,CLD-007791,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,破壊的,destructivo
+007565,CLD-007792,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,クリティカル発生+3,Probabilidad de golpe crítico +3
+007566,CLD-F-EFFECT-0024-nombre_efecto,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,足枷,Grilletes
+007567,CLD-007793,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,闘志ボーナス5　速度-10,"Bonificación de espíritu de lucha 5, Velocidad -10"
+007568,CLD-F-EFFECT-0025-nombre_efecto,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,手枷,Esposas
+007569,CLD-007794,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,守護ボーナス5　速度-10,"Bonificación de guardián 5, Velocidad -10"
+007570,CLD-007795,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,悪趣味,Mal sabor
+007571,CLD-007796,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,闘志守護英知ボーナス2　ALL耐性-10,Espíritu de lucha Guardián Sabiduría Bonificación 2: TODA Resistencia -10
+007572,CLD-007797,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,魔力の胎動,Los primeros atisbos de magia
+007573,CLD-007798,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,英知ボーナス10,Bonificación de Sabiduría 10
+007574,CLD-F-EFFECT-0028-nombre_efecto,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,防壁,Barrera
+007575,CLD-007799,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ALL耐性+5,TODA la resistencia +5
+007576,CLD-007800,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,捨て身,Desesperado
+007577,CLD-007801,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATK+10　速度+10　ALL耐性-50,"ATK +10, Velocidad +10, Todas las resistencias -50"
+007578,CLD-007802,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ライフフォース,Fuerza vital
+007579,CLD-F-EFFECT-0030-descripcion_efecto,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,Hp回復+2,Recuperación de HP +2
+007580,CLD-F-EFFECT-0031-nombre_efecto,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,獅子,león
+007581,CLD-007803,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,HP+10　速度+2,HP +10 Velocidad +2
+007582,CLD-007804,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,風斬り,Corte de viento
+007583,CLD-007805,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,速度+10　攻撃速度+3,"Velocidad +10, Velocidad de ataque +3"
+007584,CLD-007806,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,鬼封じ,Sellado demoníaco
+007585,CLD-007807,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATK+5　DEF+5,ATQ+5 DEF+5
+007586,CLD-F-EFFECT-0034-nombre_efecto,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,闘千,Tosen
+007587,CLD-007808,DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ATK+5　クリティカル＆ブレイク発生+10,"ATK +5, Golpe crítico y probabilidad de ruptura +10"
+007676,CLD-007898,DATABASE.DAT/MAGIC.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,マインド・ストーム,Tormentas mentales
+007677,CLD-007899,DATABASE.DAT/MAGIC.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,自分の周囲に炎の渦を出す攻撃魔法,Un tipo de magia ofensiva que crea un vórtice de llamas alrededor del usuario.
+007678,CLD-007900,DATABASE.DAT/MAGIC.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,マインド,Mente
+007679,CLD-007901,DATABASE.DAT/MAGIC.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎弾が直進して消える攻撃魔法,Un ataque mágico que dispara proyectiles que viajan en línea recta y luego desaparecen.
+007680,CLD-007902,DATABASE.DAT/MAGIC.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,マインドバーン,Quemazón mental
+007681,CLD-007903,DATABASE.DAT/MAGIC.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎弾が直進して爆発する攻撃魔法,Un ataque mágico que dispara proyectiles que viajan en línea recta y explotan.
+007682,CLD-007904,DATABASE.DAT/MAGIC.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,どくどく(DBG,Venenoso (DBG)
+007683,CLD-007905,DATABASE.DAT/MAGIC.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎の弾が直進して消える攻撃魔法,Un ataque mágico que lanza una bola de fuego en línea recta para luego desaparecer.
+007684,CLD-007906,DATABASE.DAT/MAGIC.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,どくどく(DBG,Venenoso (DBG)
+007685,CLD-007907,DATABASE.DAT/MAGIC.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎の弾が直進して消える攻撃魔法,Un ataque mágico que lanza una bola de fuego en línea recta para luego desaparecer.
+007791,CLD-008013,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Mainly feeds on Hiyo.
+Tries to strip one of
+your party members.Pervert!","Se alimenta principalmente de Hiyo.
+
+Intenta desnudar a uno de los miembros de tu grupo.
+¡Pervertido!"
+007799,CLD-008021,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Manipulates Hiyo.
+Obtained high defense as a result.
+Still a pervert.","Manipula a Hiyo.
+
+Como resultado, obtuvo una alta defensa.
+
+Sigue siendo un pervertido."
+007803,CLD-008025,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Cooks Hiyo.
+Became resistant to fire.
+Still a pervert.","Hiyo, el cocinero.
+
+Se volvió resistente al fuego.
+
+Sigue siendo un pervertido."
+007807,CLD-008029,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Tries to freeze-dry Hiyo.
+Became resistant to ice.
+Still a pervert.","Intenta liofilizar a Hiyo.
+
+Se volvió resistente al hielo.
+
+Sigue siendo un pervertido."
+007811,CLD-008033,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Chief of the thief clan.
+Resistant to everything.
+The biggest pervert of them all.","Jefe del clan de ladrones.
+
+Resistente a todo.
+
+El mayor pervertido de todos."
+007815,CLD-008037,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Lives a lazy life.
+Touching the threads it spits out
+makes you lazy, too.","Lleva una vida perezosa.
+
+Tocar los hilos que escupe
+también te vuelve perezoso."
+007819,CLD-008041,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Lazily did some weight training.
+Got high attack but low defense
+as a result.","Hice algo de entrenamiento con pesas sin mucha convicción.
+Como resultado, obtuve un ataque alto pero una defensa baja."
+007823,CLD-008045,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Lazily did some weight training.
+Got high defense but low attack
+as a result.","Hice algo de entrenamiento con pesas sin mucha convicción.
+Como resultado, tengo una defensa alta pero un ataque bajo."
+007827,CLD-008049,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Grew up lazily in the 
+fire mountain. Became resistant to fire.",Creció perezosamente en la montaña de fuego. Se volvió resistente al fuego.
+007839,CLD-008061,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Fodder that gets kicked around.
+Well, it is fodder.","Carne de cañón que se usa para todo.
+
+Bueno, es carne de cañón."
+007840,CLD-008062,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"A lifeform at the bottom of 
+the food chain in Arcanus Cella. 
+However, it has the power to createtraps.","Una forma de vida en la base de la cadena alimenticia de Arcanus Cella.
+Sin embargo, tiene el poder de crear trampas."
+007843,CLD-008065,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Fodder that gets kicked around.
+Well, it is fodder.
+Has good attacks.
+Still fodder.","Carne de cañón que se usa para patear.
+
+Bueno, es carne de cañón.
+
+Tiene buenos ataques.
+
+Sigue siendo carne de cañón."
+007844,CLD-008066,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"A lifeform at the bottom of 
+the food chain in Arcanus Cella. 
+However, it has the power to createtraps.","Una forma de vida en la base de la cadena alimenticia de Arcanus Cella.
+Sin embargo, tiene el poder de crear trampas."
+007847,CLD-008069,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Fodder that gets kicked around.
+Well, it is fodder.
+Has good defense.
+Still fodder.","Carne de cañón que se usa para patear.
+
+Bueno, es carne de cañón.
+
+Tiene buena defensa.
+
+Sigue siendo carne de cañón."
+007848,CLD-008070,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"A lifeform at the bottom of 
+the food chain in Arcanus Cella. 
+However, it has the power to createtraps.","Una forma de vida en la base de la cadena alimenticia de Arcanus Cella.
+Sin embargo, tiene el poder de crear trampas."
+007851,CLD-008073,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Fodder that gets kicked around.
+Well, it is fodder.
+Resistant to fire.
+Still fodder.","Carne de cañón que se patea por todas partes.
+
+Bueno, es carne de cañón.
+
+Resistente al fuego.
+
+Sigue siendo carne de cañón."
+007852,CLD-008074,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"A lifeform at the bottom of 
+the food chain in Arcanus Cella. 
+However, it has the power to createtraps.","Una forma de vida en la base de la cadena alimenticia de Arcanus Cella.
+Sin embargo, tiene el poder de crear trampas."
+007855,CLD-008077,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Fodder that gets kicked around.
+Well, it is fodder.
+Resistant to ice.
+Still fodder.","Carne de cañón que se maltrata.
+
+Bueno, es carne de cañón.
+
+Resistente al hielo.
+
+Sigue siendo carne de cañón."
+007856,CLD-008078,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"A lifeform at the bottom of 
+the food chain in Arcanus Cella. 
+However, it has the power to createtraps.","Una forma de vida en la base de la cadena alimenticia de Arcanus Cella.
+Sin embargo, tiene el poder de crear trampas."
+007859,CLD-008081,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"King of fodder.
+Strongest among all fodder.
+All in all, still fodder.","Rey de la carne de cañón.
+
+El más fuerte entre toda la carne de cañón.
+
+En definitiva, sigue siendo carne de cañón."
+007860,CLD-008082,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"A lifeform at the bottom of 
+the food chain in Arcanus Cella. 
+However, it has the power to createtraps.","Una forma de vida en la base de la cadena alimenticia de Arcanus Cella.
+Sin embargo, tiene el poder de crear trampas."
+007863,CLD-008085,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"What's inside its fire?
+Nobody knows.","¿Qué hay dentro de su fuego?
+
+Nadie lo sabe."
+007864,CLD-008086,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Touching it will cause it to blow apainful flame. Some rotate around 
+on the spot while attacking you.","Al tocarlo, lanzará una llama dolorosa. Algunos giran sobre sí mismos mientras te atacan."
+007867,CLD-008089,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Results 1
+There are actually both male
+and female genders.","Resultados 1
+En realidad existen tanto el género masculino como el femenino."
+007868,CLD-008090,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Touching it will cause it to blow apainful flame. Some rotate around 
+on the spot while attacking you.","Al tocarlo, lanzará una llama dolorosa. Algunos giran sobre sí mismos mientras te atacan."
+007872,CLD-008094,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Touching it will cause it to blow apainful flame. Some rotate around 
+on the spot while attacking you.","Al tocarlo, lanzará una llama dolorosa. Algunos giran sobre sí mismos mientras te atacan."
+007876,CLD-008098,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Touching it will cause it to blow 
+fire.Some rotate around on the spotwhile attacking you.","Si lo tocas, lanzará fuego. Algunos giran sobre sí mismos mientras te atacan."
+007880,CLD-008102,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Touching it will cause it to blow 
+ice. Some rotate around on the spotwhile attacking you.","Si lo tocas, lanzará hielo. Algunos giran sobre sí mismos mientras te atacan."
+007884,CLD-008106,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Touching it will cause it to blow apainful flame. 
+Some rotate around on the spot 
+while attacking you.","Al tocarlo, lanzará una llama dolorosa.
+Algunos giran sobre sí mismos mientras te atacan."
+007887,CLD-008109,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Their existence is rare.
+Aristocrats of the Hiyo.
+Tends to say, ""Don't you want
+money?""","Su existencia es rara.
+
+Aristócratas del Hiyo.
+
+Suelen decir: ""¿No quieres dinero?"""
+007888,CLD-008110,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"You're real lucky if you manage to beat this because of its 100％ droprate!
+But it runs away on sight and has avery high ATK.","¡Tienes muchísima suerte si logras vencerlo, ya que tiene una probabilidad de aparición del 100%!
+
+Pero huye al verte y tiene un ataque muy alto."
+007891,CLD-008113,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_numeros|revisar_saltos_linea,"Their existence is rare.
+Aristocrats of the Hiyo.
+Tends to say, ""I never ate anythingcheaper than 10,000 G.""","Su existencia es rara.
+
+Aristócratas del Hiyo.
+
+Suelen decir: «Nunca he comido nada que cueste menos de 10 000 G»."
+007895,CLD-008117,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Their existence is rare.
+Aristocrats of the Hiyo.
+Tends to say, ""Saving is for
+suckers.""","Su existencia es rara.
+
+Aristócratas del Hiyo.
+
+Suelen decir: «Ahorrar es para
+tontos»."
+007899,CLD-008121,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Their existence is rare.
+Aristocrats of the Hiyo.
+Tends to say, ""G is all I got.""","Su existencia es rara.
+
+Aristócratas del Hiyo.
+
+Suele decir: ""G es todo lo que tengo""."
+007903,CLD-008125,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Their existence is rare.
+Aristocrats of the Hiyo.
+Tends to say, ""Come with me, and
+you'll get something good to
+eat.""","Su existencia es rara.
+
+Aristócratas del Hiyo.
+Suele decir: «Ven conmigo y
+conseguirás algo rico para
+comer»."
+007907,CLD-008129,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Their existence is rare.
+Aristocrats of the Hiyo.
+Tends to say, ""G is heavier than
+life.""","Su existencia es rara.
+Aristócratas del Hiyo.
+Suele decir: ""G pesa más que la vida""."
+007908,CLD-008130,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"You're real lucky if you manage to beat this because of its 100％ rareitem drop rate!
+But it runs away on sight and has avery high ATK.","¡Tienes muchísima suerte si logras vencerlo, ya que tiene una probabilidad del 100% de soltar objetos raros!
+
+Pero huye al verte y tiene un ataque muy alto."
+007911,CLD-008133,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Chases you everywhere.
+Once the prey dies, it jabs the
+corpse with the spike on its
+tail.
+All specimens are male.","Te persigue a todas partes.
+Una vez que la presa muere, la clava en el cadáver con la espina de su cola.
+Todos los ejemplares son machos."
+007919,CLD-008141,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Chases you everywhere.
+Once the prey dies, it jabs the
+corpse with the spike on its
+tail.
+Very tough.","Te persigue a todas partes.
+Una vez que la presa muere, clava la
+espina de su cola en el cadáver.
+Muy resistente."
+007923,CLD-008145,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Chases you everywhere.
+Once the prey dies, it jabs the
+corpse with the spike on its
+tail.
+Loud and annoying.","Te persigue a todas partes.
+Una vez que la presa muere, la clava en el cadáver con la espina de su cola.
+Ruidoso y molesto."
+007927,CLD-008149,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Chases you everywhere.
+Once the prey dies, it jabs the
+corpse with the spike on its
+tail.
+Tsundere ice queen.","Te persigue a todas partes.
+
+Una vez que la presa muere, clava la
+espina de su cola en el cadáver.
+
+Reina de hielo tsundere."
+007931,CLD-008153,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss of the Killergeis.
+Has a huge spike.","Jefe de los Killergeis.
+
+Tiene una enorme púa."
+007955,CLD-008177,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Former human.
+Loves big clunky things. Summoned ameteor but died after getting
+hit by it.","Exhumano.
+Le encantan las cosas grandes y toscas. Invocó a Ameteor, pero murió tras ser golpeado por él."
+007959,CLD-008181,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"A phantom from hell.
+Immune to most attacks.
+Uses many powerful magic spells.","Un fantasma del infierno.
+
+Inmune a la mayoría de los ataques.
+
+Utiliza muchos hechizos mágicos poderosos."
+007960,CLD-008182,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type
+Casts powerful magic spells at you while highly resistant to your 
+attacks.","Tipo jefe
+Te lanza poderosos hechizos mágicos mientras es muy resistente a tus ataques."
+007963,CLD-008185,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Loves pulverizing anyone who comes to hell.
+Anyone eaten by it will wander hellfor all of eternity.","Le encanta pulverizar a cualquiera que vaya al infierno.
+
+Quien sea devorado por él vagará por el infierno por toda la eternidad."
+007964,CLD-008186,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type
+Casts powerful magic spells at you while highly resistant to your 
+attacks.","Tipo jefe
+Te lanza poderosos hechizos mágicos mientras es muy resistente a tus ataques."
+007967,CLD-008189,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Has lived in hell ever since hell
+existed. Its vitality is stronger
+than all.","Ha vivido en el infierno desde que el infierno existe.
+Su vitalidad es más fuerte que la de todos."
+007968,CLD-008190,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type
+Casts powerful magic spells at you while highly resistant to your 
+attacks.","Tipo jefe
+Te lanza poderosos hechizos mágicos mientras es muy resistente a tus ataques."
+007972,CLD-008194,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type
+Casts powerful magic spells at you while highly resistant to your 
+attacks.","Tipo jefe
+Te lanza poderosos hechizos mágicos mientras es muy resistente a tus ataques."
+007975,CLD-008197,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Single-handedly caused the Ice Age in a placed called ""Earth.""
+Uses powerful ice magic.","Provocó él solo la Edad de Hielo en un lugar llamado ""Tierra"".
+
+Utiliza poderosa magia de hielo."
+007976,CLD-008198,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type
+Casts powerful magic spells at you while highly resistant to your 
+attacks.","Tipo jefe
+Te lanza poderosos hechizos mágicos mientras es muy resistente a tus ataques."
+007979,CLD-008201,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"The ruler of hell.
+Known for his cruelness.
+Eats souls for breakfast.","El gobernante del infierno.
+
+Conocido por su crueldad.
+
+Desayuna almas."
+007980,CLD-008202,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type
+Casts powerful magic spells at you while highly resistant to your 
+attacks.","Tipo jefe
+Te lanza poderosos hechizos mágicos mientras es muy resistente a tus ataques."
+007987,CLD-008209,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Eldest son of the Mujun clan.
+Always bullies his little brother
+but kills anyone else who hurts
+him.","Hijo mayor del clan Mujun.
+Siempre acosa a su hermano pequeño,
+pero mata a cualquiera que le haga daño."
+007991,CLD-008213,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Mother of the Mujun clan.
+Supports everyone with the power oflove.","Madre del clan Mujun.
+
+Apoya a todos con el poder del amor."
+007999,CLD-008221,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Second daughter of the Mujun clan.
+Learned how not to act from her
+elder sister.","Segunda hija del clan Mujun.
+Aprendió de su hermana mayor cómo no comportarse."
+008003,CLD-008225,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"The mainstay of the Mujun clan.
+The strongest out of all the
+members.","El pilar del clan Mujun.
+El más fuerte de todos los miembros."
+008007,CLD-008229,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"A piece of rock with a soul.
+Of the golems,
+they are the low level grunts. But compared to other monsters, they
+have high HP and ATK.","Un trozo de roca con alma.
+
+De los gólems,
+son los más débiles. Pero comparados con otros monstruos,
+tienen mucha vida y ataque."
+008008,CLD-008230,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type.
+Has high abilities 
+and a wide attack range.","Tipo jefe.
+Posee grandes habilidades y un amplio rango de ataque."
+008011,CLD-008233,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"A piece of rock with a soul.
+They boast an ATK higher than most monsters.","Un trozo de roca con alma.
+
+Presumen de un ATK superior al de la mayoría de los monstruos."
+008012,CLD-008234,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type.
+Has high abilities 
+and a wide attack range.","Tipo jefe.
+Posee grandes habilidades y un amplio rango de ataque."
+008015,CLD-008237,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"A piece of rock with a soul.
+They boast HP higher than most
+monsters.","Un trozo de roca con alma.
+Tienen más puntos de vida que la mayoría de los monstruos."
+008016,CLD-008238,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type.
+Has high abilities 
+and a wide attack range.","Tipo jefe.
+Posee grandes habilidades y un amplio rango de ataque."
+008020,CLD-008242,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type.
+Has high abilities 
+and a wide attack range.","Tipo jefe.
+Posee grandes habilidades y un amplio rango de ataque."
+008023,CLD-008245,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"An iceberg with a soul.
+Completely immune to ice-based
+attacks.
+Those might even heal it.","Un iceberg con alma.
+
+Completamente inmune a los ataques de hielo.
+
+Incluso podrían curarlo."
+008024,CLD-008246,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type.
+Has high abilities 
+and a wide attack range.","Tipo jefe.
+Posee grandes habilidades y un amplio rango de ataque."
+008027,CLD-008249,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"The king of the golems.
+Has top-class abilities. Do not
+fight it unless you have
+leveled up.","El rey de los gólems.
+Posee habilidades de primera clase. No luches contra él a menos que hayas subido de nivel."
+008028,CLD-008250,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type.
+Has high abilities 
+and a wide attack range.","Tipo jefe.
+Posee grandes habilidades y un amplio rango de ataque."
+008031,CLD-008253,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Looks like a horse with wings.
+Called a ""demon"" in a certain
+country.","Parece un caballo con alas.
+En cierto país se le llama ""demonio""."
+008032,CLD-008254,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type
+Uses powerful magic spells. Summonsgoons when it is in danger. 
+Completely invulnerable when 
+summoning.","Tipo jefe
+Utiliza poderosos hechizos mágicos. Invoca secuaces cuando está en peligro.
+Completamente invulnerable al invocar."
+008036,CLD-008258,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type
+Uses powerful magic spells. Summonsgoons when it is in danger. 
+Completely invulnerable when 
+summoning.","Tipo jefe
+Utiliza poderosos hechizos mágicos. Invoca secuaces cuando está en peligro.
+Completamente invulnerable al invocar."
+008040,CLD-008262,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type
+Uses powerful magic spells. Summonsgoons when it is in danger. 
+Completely invulnerable when 
+summoning.","Tipo jefe
+Utiliza poderosos hechizos mágicos. Invoca secuaces cuando está en peligro.
+Completamente invulnerable al invocar."
+008043,CLD-008265,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"A demon adept with fire.
+Especially good at manipulating
+fire magic.","Un demonio experto en el fuego.
+Especialmente hábil en la manipulación de la magia del fuego."
+008044,CLD-008266,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type
+Uses powerful magic spells. Summonsgoons when it is in danger. 
+Completely invulnerable when 
+summoning.","Tipo jefe
+Utiliza poderosos hechizos mágicos. Invoca secuaces cuando está en peligro.
+Completamente invulnerable al invocar."
+008047,CLD-008269,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"A demon that trained at the ""North Pole.""
+Its ice magic can be very
+dangerous.","Un demonio que se entrenó en el Polo Norte.
+Su magia de hielo puede ser muy peligrosa."
+008048,CLD-008270,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type
+Uses powerful magic spells. Summonsgoons when it is in danger. 
+Completely invulnerable when 
+summoning.","Tipo jefe
+Utiliza poderosos hechizos mágicos. Invoca secuaces cuando está en peligro.
+Completamente invulnerable al invocar."
+008052,CLD-008274,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Boss-type
+Uses powerful magic spells. Summonsgoons when it is in danger. 
+Completely invulnerable when 
+summoning.","Tipo jefe
+Utiliza poderosos hechizos mágicos. Invoca secuaces cuando está en peligro.
+Completamente invulnerable al invocar."
+008055,CLD-008277,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Ended up looking like this after
+trying to peep at a bathhouse.",Terminé luciendo así después de intentar espiar en una casa de baños.
+008056,CLD-008278,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Has very high DEF. 
+Also, it deals mental damage when 
+it attacks.","Tiene una defensa muy alta.
+Además, inflige daño mental cuando ataca."
+008060,CLD-008282,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Has very high DEF. 
+Also, it deals mental damage when 
+it attacks.","Tiene una defensa muy alta.
+Además, inflige daño mental cuando ataca."
+008064,CLD-008286,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Has very high DEF. 
+Also, it deals mental damage when 
+it attacks.","Tiene una defensa muy alta.
+Además, inflige daño mental cuando ataca."
+008067,CLD-008289,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Ended up looking like this after
+reminiscing about its youth.",Acabó luciendo así después de rememorar su juventud.
+008068,CLD-008290,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Has very high DEF. 
+Also, it deals mental damage when 
+it attacks.","Tiene una defensa muy alta.
+Además, inflige daño mental cuando ataca."
+008072,CLD-008294,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Has very high DEF. 
+Also, it deals mental damage when 
+it attacks.","Tiene una defensa muy alta.
+Además, inflige daño mental cuando ataca."
+008075,CLD-008297,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Head of the Eye clan.
+Works hard for the family but no
+one loves him. Ended up looking
+like this after crying too much.","Jefe del clan Ojo.
+Trabaja duro para su familia, pero nadie lo quiere.
+Terminó así después de llorar demasiado."
+008076,CLD-008298,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Has very high DEF. 
+Also, it deals mental damage when 
+it attacks.","Tiene una defensa muy alta.
+Además, inflige daño mental cuando ataca."
+008080,CLD-008302,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Chases you around and uses ranged 
+attacks. Difficult to deal with 
+when multiple enemies are attackingyou simultaneously.",Te persigue y usa ataques a distancia. Es difícil de derrotar cuando varios enemigos te atacan simultáneamente.
+008083,CLD-008305,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Hasamin's little sister.
+Has an adorable hair bun.
+Tried to look a little different.
+Sort of took a wrong turn.","La hermana pequeña de Hasamin.
+
+Tiene un adorable moño.
+
+Intentó lucir diferente.
+
+Como que tomó un camino equivocado."
+008084,CLD-008306,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Chases you around and uses ranged 
+attacks. Difficult to deal with 
+when multiple enemies are attackingyou simultaneously.",Te persigue y usa ataques a distancia. Es difícil de derrotar cuando varios enemigos te atacan simultáneamente.
+008087,CLD-008309,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Hasamin's little sister.
+Has an adorable hair bun.
+Tried to look a little different.
+A bit of a prude.","La hermana pequeña de Hasamin.
+
+Tiene un adorable moño.
+
+Intentó verse un poco diferente.
+
+Un poco mojigata."
+008088,CLD-008310,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Chases you around and uses ranged 
+attacks. Difficult to deal with 
+when multiple enemies are attackingyou simultaneously.",Te persigue y usa ataques a distancia. Es difícil de derrotar cuando varios enemigos te atacan simultáneamente.
+008091,CLD-008313,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Hasamin's little sister.
+Has an adorable hair bun.
+Tried to look a little different.
+A bit too hotheaded.","La hermana pequeña de Hasamin.
+
+Tiene un adorable moño.
+
+Intentó lucir diferente.
+
+Es un poco impulsiva."
+008092,CLD-008314,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Chases you around and uses ranged 
+attacks. Difficult to deal with 
+when multiple enemies are attackingyou simultaneously.",Te persigue y usa ataques a distancia. Es difícil de derrotar cuando varios enemigos te atacan simultáneamente.
+008095,CLD-008317,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Hasamin's little sister.
+Has an adorable hair bun.
+Tried to look a little different.
+Known to be an ice queen.","La hermana pequeña de Hasamin.
+
+Tiene un adorable moño.
+
+Intentó lucir diferente.
+
+Es conocida por ser fría e indiferente."
+008096,CLD-008318,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Chases you around and uses ranged 
+attacks. Difficult to deal with 
+when multiple enemies are attackingyou simultaneously.",Te persigue y usa ataques a distancia. Es difícil de derrotar cuando varios enemigos te atacan simultáneamente.
+008099,CLD-008321,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Hasamin's little sister.
+Has an adorable hair bun.
+Tried to look a little different.
+Enraged at being so unpopular.","La hermana pequeña de Hasamin.
+
+Tiene un adorable moño.
+
+Intentó lucir diferente.
+
+Está furiosa por ser tan impopular."
+008100,CLD-008322,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Chases you around and uses ranged 
+attacks. Difficult to deal with 
+when multiple enemies are attackingyou simultaneously.",Te persigue y usa ataques a distancia. Es difícil de derrotar cuando varios enemigos te atacan simultáneamente.
+008103,CLD-008325,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Thinks of defeating the Hero
+""Tororo"" as its main duty. But
+it's too small, so it got rejected
+and is appearing in this
+game instead.","Considera que derrotar al héroe
+""Tororo"" es su principal misión.
+Pero
+es demasiado pequeño, así que fue rechazado
+y aparece en este
+juego en su lugar."
+008104,CLD-008326,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Has extremely high vitality 
+and ATK.
+However, it uses up its HP when it attacks.","Posee una vitalidad y un ataque extremadamente altos.
+Sin embargo, consume puntos de vida al atacar."
+008107,CLD-008329,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Raised its attack to defeat the
+Hero ""Tororo,"" but its defense is
+too weak, so it got rejected and is
+appearing in this game instead.","Aumentó su ataque para derrotar al
+Héroe ""Tororo"", pero su defensa es
+demasiado débil, por lo que fue rechazado y aparece en este juego en su lugar."
+008108,CLD-008330,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Has extremely high vitality 
+and ATK.
+However, it uses up its HP when it attacks.","Posee una vitalidad y un ataque extremadamente altos.
+Sin embargo, consume puntos de vida al atacar."
+008111,CLD-008333,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Raised its defense to defeat the
+Hero ""Tororo,"" but its attack is
+too weak, so it got rejected and is
+appearing in this game instead.","Mejoró su defensa para derrotar al
+Héroe ""Tororo"", pero su ataque es
+demasiado débil, por lo que fue rechazado y aparece en este juego en su lugar."
+008112,CLD-008334,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Has extremely high vitality 
+and ATK.
+However, it uses up its HP when it attacks.","Posee una vitalidad y un ataque extremadamente altos.
+Sin embargo, consume puntos de vida al atacar."
+008115,CLD-008337,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Became resistant to fire to defeat
+the Hero ""Tororo,"" but it's too
+small, so it got rejected and is
+appearing in this game instead.","Se volvió resistente al fuego para derrotar al héroe ""Tororo"", pero es demasiado pequeño, así que fue rechazado y aparece en este juego."
+008116,CLD-008338,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Has extremely high vitality 
+and ATK.
+However, it uses up its HP when it attacks.","Posee una vitalidad y un ataque extremadamente altos.
+Sin embargo, consume puntos de vida al atacar."
+008119,CLD-008341,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Became resistant to ice to defeat
+the Hero ""Tororo,"" but it's too
+small, so it got rejected and is
+appearing in this game instead.","Se volvió resistente al hielo para derrotar al héroe ""Tororo"", pero es demasiado pequeño, así que fue rechazado y aparece en este juego."
+008120,CLD-008342,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Has extremely high vitality 
+and ATK.
+However, it uses up its HP when it attacks.","Posee una vitalidad y un ataque extremadamente altos.
+Sin embargo, consume puntos de vida al atacar."
+008123,CLD-008345,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Became all around strong to defeat the Hero ""Tororo,"" but felt
+something was off,
+so it appeared in this
+game instead.","Se volvió muy fuerte para derrotar al héroe ""Tororo"", pero sintió que algo no andaba bien, así que apareció en este juego."
+008124,CLD-008346,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Has extremely high vitality 
+and ATK.
+However, it uses up its HP when it attacks.","Posee una vitalidad y un ataque extremadamente altos.
+Sin embargo, consume puntos de vida al atacar."
+008127,CLD-008349,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Older sister of the Bunno.
+Loved by Muscle Bomber, but hates
+weak men.","Hermana mayor de Bunno.
+Amada por Muscle Bomber, pero odia a los hombres débiles."
+008128,CLD-008350,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Snipes you from a distance when youleast expect it. 
+You will take large amounts of 
+damage if you let your guard down.","Te ataca desde lejos cuando menos te lo esperas.
+Recibirás mucho daño si bajas la guardia."
+008131,CLD-008353,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Older sister of the Bunno.
+Upped her attack on a whim.
+Loved by Defend Bomber, but hates
+men with low ATK.","Hermana mayor de Bunno.
+Aumentó su ataque por capricho.
+Adora a Defend Bomber, pero odia a los hombres con bajo ATK."
+008132,CLD-008354,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Snipes you from a distance when youleast expect it. 
+You will take large amounts of 
+damage if you let your guard down.","Te ataca desde lejos cuando menos te lo esperas.
+Recibirás mucho daño si bajas la guardia."
+008135,CLD-008357,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Older sister of the Bunno.
+Upped her defense on a whim.
+Loved by Muscular Bomber, but hatesmen with low DEF.","Hermana mayor de Bunno.
+
+Aumentó su defensa por capricho.
+
+Adorada por Muscular Bomber, pero odia a los hombres con baja defensa."
+008136,CLD-008358,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Snipes you from a distance when youleast expect it. 
+You will take large amounts of 
+damage if you let your guard down.","Te ataca desde lejos cuando menos te lo esperas.
+Recibirás mucho daño si bajas la guardia."
+008139,CLD-008361,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Older sister of the Bunno.
+Upped her fire resistance on a
+whim.
+Loved by Ice Bomber, but hates men weak to fire.","Hermana mayor de Bunno.
+Aumentó su resistencia al fuego por un capricho.
+Adora a Ice Bomber, pero odia a los hombres débiles al fuego."
+008140,CLD-008362,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Snipes you from a distance when youleast expect it. 
+You will take large amounts of 
+damage if you let your guard down.","Te ataca desde lejos cuando menos te lo esperas.
+Recibirás mucho daño si bajas la guardia."
+008143,CLD-008365,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Older sister of the Bunno.
+Upped her ice resistance on a whim.
+Loved by Fire Bomber, but hates menweak to ice.","Hermana mayor de Bunno.
+
+Aumentó su resistencia al hielo por capricho.
+
+Adorada por Fire Bomber, pero odia a los hombres débiles al hielo."
+008144,CLD-008366,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Snipes you from a distance when youleast expect it. 
+You will take large amounts of 
+damage if you let your guard down.","Te ataca desde lejos cuando menos te lo esperas.
+Recibirás mucho daño si bajas la guardia."
+008147,CLD-008369,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Older sister of the Bunno.
+Upped all abilities on a whim.
+Bomber Bomber has become strong, soshe doesn't mind dating him.","Hermana mayor de Bunno.
+
+Mejoró todas sus habilidades por capricho.
+
+Bomber Bomber se ha vuelto fuerte, así que no le importa salir con él."
+008148,CLD-008370,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Snipes you from a distance when youleast expect it. 
+You will take large amounts of 
+damage if you let your guard down.","Te ataca desde lejos cuando menos te lo esperas.
+Recibirás mucho daño si bajas la guardia."
+008167,CLD-008389,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Legend 5
+""Has the same hobbies as a dirty
+old man.""","Leyenda 5
+""Tiene los mismos pasatiempos que un viejo verde."""
+008171,CLD-008393,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Was originally a ""hero of justice,""but the Arcanus Cella defiled his 
+soul and he went the way of evil.","Originalmente era un ""héroe de la justicia"", pero el Arcanus Cella corrompió su alma y se desvió hacia el mal."
+008175,CLD-008397,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Lives a life without a speck of
+hesitation.
+Often runs headfirst into walls.
+Some say he's just an idiot.","Vive la vida sin la más mínima vacilación.
+
+A menudo se da de bruces contra las paredes.
+
+Algunos dicen que es un idiota."
+008183,CLD-008405,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"He feels no pain. That is why he
+will continue to run.",No siente dolor. Por eso seguirá corriendo.
+008187,CLD-008409,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"He will continue to run so 
+that he will never feel regret.",Seguirá corriendo para no arrepentirse jamás.
+008191,CLD-008413,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"""Retreat"" does not exist in his
+dictionary.
+Forward march!","«Retirada» no existe en su diccionario.
+¡Adelante!"
+008199,CLD-008421,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Throws an axe-like thing at you.
+Likes Scissy, but is hated because
+he doesn't have enough muscle.","Te lanza algo parecido a un hacha.
+
+Le cae bien Scissy, pero lo odian porque
+no tiene suficiente musculatura."
+008203,CLD-008425,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Throws an axe-like thing at you.
+Likes White Scissy, but is hated
+because he doesn't have enough
+defense.","Te lanza algo parecido a un hacha.
+
+Le gusta White Scissy, pero lo odian
+porque no tiene suficiente
+defensa."
+008211,CLD-008433,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Throws an axe-like thing at you.
+Likes Blue Scissy, but is hated
+because he's weak against ice.","Te lanza algo parecido a un hacha.
+Le gusta Blue Scissy, pero lo odia porque es débil al hielo."
+008215,CLD-008437,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Throws an axe-like thing at you.
+Likes Red Scissy, but is hated
+because he's weak against fire.","Te lanza algo parecido a un hacha.
+Le gusta Red Scissy, pero lo odian porque es débil al fuego."
+008219,CLD-008441,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Muscle Bomber after some extensive training. He's thinking about
+asking Luv Scissy out on a date.","Después de un entrenamiento intenso, Muscle Bomber está pensando en invitar a salir a Luv Scissy."
+008223,CLD-008445,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Thought of as an evolved form of a thing called a ""ninja."" Had
+extensive training in
+assassinations without being seen.","Se le consideraba una forma evolucionada de lo que se conoce como ""ninja"". Tenía un amplio entrenamiento en asesinatos sin ser visto."
+008231,CLD-008453,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Trained by hurting his body until
+near-death. Even a ""katana"" is
+unable to cut through him now.",Entrenado a base de sufrir lesiones hasta casi la muerte. Ni siquiera una katana puede atravesarlo ahora.
+008235,CLD-008457,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Bathes in magma on a daily basis.
+Fire attacks will just give him
+pleasure.","Se baña en magma a diario.
+Los ataques de fuego solo le producen placer."
+008239,CLD-008461,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Trained to be able to move freely 
+in the water.
+Fighting him on ice is suicide.","Entrenado para moverse con libertad en el agua.
+Luchar contra él sobre hielo es un suicidio."
+008247,CLD-008469,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Has powerful mandibles like a stag beetle that can crush enemies.
+Never uses it, though, preferring
+to toss lightning balls instead.","Posee unas mandíbulas poderosas, como las de un escarabajo ciervo, capaces de aplastar a sus enemigos.
+
+Sin embargo, nunca las usa, prefiriendo
+lanzar bolas de relámpagos."
+008248,CLD-008470,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Uses powerful spirit attacks.
+Extra dangerous when 
+it comes in groups.","Utiliza poderosos ataques espirituales.
+Es especialmente peligroso cuando ataca en grupo."
+008252,CLD-008474,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Uses powerful spirit attacks.
+Extra dangerous when 
+it comes in groups.","Utiliza poderosos ataques espirituales.
+Es especialmente peligroso cuando ataca en grupo."
+008255,CLD-008477,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"An evolved Stagger Beetle.
+Enlarged the mandibles to maximum
+size. Powerful enough to deflect
+bullets, but never used to attack.","Un escarabajo tambaleante evolucionado.
+Agrandó sus mandíbulas al máximo.
+Es lo suficientemente fuerte como para desviar balas, pero nunca lo usó para atacar."
+008256,CLD-008478,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Uses powerful spirit attacks.
+Extra dangerous when 
+it comes in groups.","Utiliza poderosos ataques espirituales.
+Es especialmente peligroso cuando ataca en grupo."
+008260,CLD-008482,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Uses powerful spirit attacks.
+Extra dangerous when 
+it comes in groups.","Utiliza poderosos ataques espirituales.
+Es especialmente peligroso cuando ataca en grupo."
+008263,CLD-008485,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"An evolved Stagger Beetle.
+The mandibles are cold enough
+to freeze the oceans.
+But it's never actually used.","Un escarabajo tambaleante evolucionado.
+
+Sus mandíbulas son lo suficientemente frías
+como para congelar los océanos.
+
+Pero nunca las usa."
+008264,CLD-008486,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Uses powerful spirit attacks.
+Extra dangerous when 
+it comes in groups.","Utiliza poderosos ataques espirituales.
+Es especialmente peligroso cuando ataca en grupo."
+008267,CLD-008489,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"An evolved Stagger Beetle.
+The mandibles are powerful enough
+to destroy the Earth.
+But it just won't use it in battle.","Un escarabajo tambaleante evolucionado.
+
+Sus mandíbulas son lo suficientemente poderosas
+como para destruir la Tierra.
+
+Pero simplemente no las usa en combate."
+008268,CLD-008490,DATABASE.DAT/MONSTER.DAT,pendiente_traduccion,revisar_saltos_linea,"Uses powerful spirit attacks.
+Extra dangerous when 
+it comes in groups.","Utiliza poderosos ataques espirituales.
+Es especialmente peligroso cuando ataca en grupo."
+008280,CLD-F-MONSTER-0126-nombre,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,仮面,mascarilla
+008281,CLD-008492,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラスボス,Jefe final
+008282,CLD-008493,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラスボス,Jefe final
+008283,CLD-F-MONSTER-0127-nombre,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente|revisar_numeros,仮面２,Máscara 2
+008285,CLD-008494,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラスボス,Jefe final
+008286,CLD-008495,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラスボス,Jefe final
+008287,CLD-F-MONSTER-0128-nombre,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente|revisar_numeros,仮面３,Máscara 3
+008289,CLD-008496,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラスボス,Jefe final
+008290,CLD-008497,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラスボス,Jefe final
+008291,CLD-F-MONSTER-0129-nombre,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente|revisar_numeros,仮面４,Máscara 4
+008293,CLD-008498,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラスボス,Jefe final
+008294,CLD-008499,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラスボス,Jefe final
+008295,CLD-F-MONSTER-0130-nombre,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente|revisar_numeros,仮面５,Máscara 5
+008297,CLD-008500,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラスボス,Jefe final
+008298,CLD-008501,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラスボス,Jefe final
+008299,CLD-F-MONSTER-0131-nombre,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente|revisar_numeros,仮面６,Enmascarados 6
+008301,CLD-008502,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラスボス,Jefe final
+008302,CLD-008503,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラスボス,Jefe final
+008303,CLD-008504,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラガー(練習用),Rugby (para practicar)
+008305,CLD-008506,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,彼の人生は横道にそれることが無い。ひたすら前へ前へ。ただのバカだと言われる事もある。,Su vida nunca se desvía del camino. Simplemente sigue adelante. A veces la gente lo llama tonto.
+008306,CLD-008507,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,彼の人生は横道にそれることが無い。ひたすら前へ前へ。ただのバカだと言われる事もある。,Su vida nunca se desvía del camino. Simplemente sigue adelante. A veces la gente lo llama tonto.
+008307,CLD-008508,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,セルフ(練習用),Uso personal (para practicar)
+008309,CLD-008510,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,みんなはラガーマンのために、ラガーマンはラガーマンのために。,"Todos a favor de los jugadores de rugby, y los jugadores de rugby a favor de los jugadores de rugby."
+008310,CLD-008511,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,みんなはラガーマンのために、ラガーマンはラガーマンのために。,"Todos a favor de los jugadores de rugby, y los jugadores de rugby a favor de los jugadores de rugby."
+008311,CLD-008512,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ペイン(練習用),Dolor (para practicar)
+008313,CLD-008514,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,いたみがわからないので、彼は走りつづけます。,"Él no siente el dolor, así que sigue corriendo."
+008314,CLD-008515,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,いたみがわからないので、彼は走りつづけます。,"Él no siente el dolor, así que sigue corriendo."
+008315,CLD-008516,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,プラス(練習用),Además (para practicar)
+008317,CLD-008518,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,コウカイしないために、彼は走りつづけます。,"Para evitar arrepentirse, sigue corriendo."
+008318,CLD-008519,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,コウカイしないために、彼は走りつづけます。,"Para evitar arrepentirse, sigue corriendo."
+008319,CLD-008520,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,コクオ(練習用),Kokuo (para practicar)
+008321,CLD-008522,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,彼にコウタイの文字は無い。ゼンシンあるのみ！,"No tiene ningún concepto de ""Koutai"" (un juego de palabras con ""Koutai"" y ""Koutai""). Sólo tiene ""Zenshin"" (un juego de palabras con ""Zenshin"" y ""Zenshin"")."
+008322,CLD-008523,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,彼にコウタイの文字は無い。ゼンシンあるのみ！,"No tiene ningún concepto de ""Koutai"" (un juego de palabras con ""Koutai"" y ""Koutai""). Sólo tiene ""Zenshin"" (un juego de palabras con ""Zenshin"" y ""Zenshin"")."
+008323,CLD-008524,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラオウ(練習用),Raoh (para practicar)
+008325,CLD-008526,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,わがショウガイにイッペンのくいなし！,¡No me arrepiento en absoluto de mi discapacidad!
+008326,CLD-008527,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,わがショウガイにイッペンのくいなし！,¡No me arrepiento en absoluto de mi discapacidad!
+008327,CLD-008528,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック,Bloque emisor de llama
+008328,CLD-008529,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック,Bloque emisor de llama
+008329,CLD-008530,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック低,Bloques de bajo nivel que emiten llamas
+008330,CLD-008531,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック低,Bloques de bajo nivel que emiten llamas
+008331,CLD-008532,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック低,Bloques de bajo nivel que emiten llamas
+008332,CLD-008533,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック高,Bloque de gran altura con llamas
+008333,CLD-008534,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック高,Bloque de gran altura con llamas
+008334,CLD-008535,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック高,Bloque de gran altura con llamas
+008335,CLD-008536,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック,Bloque emisor de llama
+008336,CLD-008537,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷出るブロック,Bloques que producen hielo
+008337,CLD-008538,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷出るブロック,Bloques que producen hielo
+008338,CLD-008539,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷出るブロック,Bloques que producen hielo
+008339,CLD-008540,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷出るブロック低,bloques de baja producción de hielo
+008340,CLD-008541,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷出るブロック低,bloques de baja producción de hielo
+008341,CLD-008542,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷出るブロック低,bloques de baja producción de hielo
+008342,CLD-008543,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷出るブロック高,Altura del bloque productor de hielo
+008343,CLD-008544,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷出るブロック高,Altura del bloque productor de hielo
+008344,CLD-008545,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷出るブロック高,Altura del bloque productor de hielo
+008345,CLD-008546,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷出るブロック,Bloques que producen hielo
+008346,CLD-008547,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,Sumen穴用アタリ,Guía de agujeros de Sumen
+008347,CLD-008548,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente|revisar_numeros,"Sumen穴1-2,1-3","Agujeros 1-2, 1-3 de Sumen"
+008348,CLD-008549,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,バリア床,Piso de barrera
+008349,CLD-008550,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente|revisar_numeros,ブロック(縦横3と42),Bloques (3x42)
+008350,CLD-008551,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,通行できない,Ningún pasaje
+008351,CLD-008552,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,通行できない,Ningún pasaje
+008352,CLD-008553,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,通行できない,Ningún pasaje
+008353,CLD-008554,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ブロック(1),Bloque (1)
+008354,CLD-008555,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,宝箱　復活する,Los cofres del tesoro reaparecen.
+008355,CLD-008556,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,宝箱　一度だけ,Cofre del tesoro (solo una vez)
+008356,CLD-008557,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,宝箱　フラグ効果,Efecto de bandera de cofre del tesoro
+008357,CLD-F-MONSTER-0168-nombre,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,仮面,mascarilla
+008359,CLD-008558,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラスボス,Jefe final
+008360,CLD-008559,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラスボス,Jefe final
+008495,CLD-008755,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,プティング,Pudín
+008496,CLD-F-SIEN-0001-nombre_personaje,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,グミ,Pegajoso
+008497,CLD-008756,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,デスピナ,Despina
+008498,CLD-008757,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ソウマ,Souma
+008499,CLD-008758,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,シャーベット,sorbete
+008500,CLD-008759,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,タエモン,Taemon
+008501,CLD-F-SIEN-0006-nombre_personaje,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ココ,Palma de coco
+008502,CLD-008760,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,バトルブロー,Golpe de batalla
+008503,CLD-008761,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,エージ,edad
+008504,CLD-008762,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ドドヒゲ,Dodohige
+008505,CLD-F-SIEN-0010-nombre_personaje,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ボブ,Chelín
+008506,CLD-008763,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,サンデー,Domingo
+008507,CLD-008764,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,アサギ,Asagi
+008508,CLD-008765,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,地球姫,Princesa de la Tierra
+008509,CLD-008766,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,(拠点用）通行可,(Para uso básico) Accesible
+008510,CLD-008767,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,(拠点用）通禁止,(Para uso básico) No se permite la entrada
+008511,CLD-008768,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,(拠点用）おそい,(Para uso básico) Lento
+008512,CLD-008769,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,硬い壁　0,pared dura 0
+008513,CLD-008770,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,硬い壁　0,pared dura 0
+008514,CLD-008771,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,硬い壁　0,pared dura 0
+008515,CLD-008772,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,硬い壁　0,pared dura 0
+008516,CLD-008773,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,硬い壁　1,pared dura 1
+008517,CLD-008774,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,硬い壁　1,pared dura 1
+008518,CLD-008775,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,硬い壁　1,pared dura 1
+008519,CLD-008776,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,硬い壁　1,pared dura 1
+008520,CLD-008777,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,硬い壁　2,pared dura 2
+008521,CLD-008778,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,硬い壁　2,pared dura 2
+008522,CLD-008779,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,硬い壁　2,pared dura 2
+008523,CLD-008780,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,硬い壁　2,pared dura 2
+008524,CLD-008781,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎硬い壁　0,Muro resistente al fuego 0
+008525,CLD-008782,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎硬い壁　0,Muro resistente al fuego 0
+008526,CLD-008783,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎硬い壁　0,Muro resistente al fuego 0
+008527,CLD-008784,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎硬い壁　0,Muro resistente al fuego 0
+008528,CLD-008785,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎硬い壁　1,Muro ignífugo 1
+008529,CLD-008786,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎硬い壁　1,Muro ignífugo 1
+008530,CLD-008787,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎硬い壁　1,Muro ignífugo 1
+008531,CLD-008788,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎硬い壁　1,Muro ignífugo 1
+008532,CLD-008789,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎硬い壁　2,Muro ignífugo 2
+008533,CLD-008790,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎硬い壁　2,Muro ignífugo 2
+008534,CLD-008791,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎硬い壁　2,Muro ignífugo 2
+008535,CLD-008792,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎硬い壁　2,Muro ignífugo 2
+008536,CLD-008793,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,草の壁0,Muro de hierba 0
+008537,CLD-008794,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,草の壁0,Muro de hierba 0
+008538,CLD-008795,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,草の壁0,Muro de hierba 0
+008539,CLD-008796,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,草の壁0,Muro de hierba 0
+008540,CLD-F-TIPATTR-0031-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,板壁0,pared de madera 0
+008541,CLD-F-TIPATTR-0032-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,板壁0,pared de madera 0
+008542,CLD-F-TIPATTR-0033-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,板壁0,pared de madera 0
+008543,CLD-F-TIPATTR-0034-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,板壁0,pared de madera 0
+008544,CLD-F-TIPATTR-0035-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,緑壁0,Muro verde 0
+008545,CLD-F-TIPATTR-0036-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,緑壁0,Muro verde 0
+008546,CLD-F-TIPATTR-0037-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,緑壁0,Muro verde 0
+008547,CLD-F-TIPATTR-0038-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,緑壁0,Muro verde 0
+008548,CLD-008797,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷かべ0,Muro de hielo 0
+008549,CLD-008798,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷かべ0,Muro de hielo 0
+008550,CLD-008799,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷かべ0,Muro de hielo 0
+008551,CLD-008800,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷かべ0,Muro de hielo 0
+008552,CLD-008801,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,恐怖壁0,Muro del Terror 0
+008553,CLD-008802,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,恐怖壁0,Muro del Terror 0
+008554,CLD-008803,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,恐怖壁0,Muro del Terror 0
+008555,CLD-008804,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,恐怖壁0,Muro del Terror 0
+008556,CLD-008805,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,サイバー壁0,Muro cibernético 0
+008557,CLD-008806,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,サイバー壁0,Muro cibernético 0
+008558,CLD-008807,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,サイバー壁0,Muro cibernético 0
+008559,CLD-008808,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,サイバー壁0,Muro cibernético 0
+008560,CLD-F-TIPATTR-0051-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,石壁0,Muro de piedra 0
+008561,CLD-F-TIPATTR-0052-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,石壁0,Muro de piedra 0
+008562,CLD-F-TIPATTR-0053-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,石壁0,Muro de piedra 0
+008563,CLD-F-TIPATTR-0054-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,石壁0,Muro de piedra 0
+008564,CLD-008809,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,黄金壁0,Muro Dorado 0
+008565,CLD-008810,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,黄金壁0,Muro Dorado 0
+008566,CLD-008811,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,黄金壁0,Muro Dorado 0
+008567,CLD-008812,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,黄金壁0,Muro Dorado 0
+008568,CLD-008813,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,迷宮カベ,Muro del laberinto
+008569,CLD-008814,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,迷宮カベ,Muro del laberinto
+008570,CLD-008815,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,迷宮カベ,Muro del laberinto
+008571,CLD-008816,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,迷宮カベ,Muro del laberinto
+008572,CLD-008817,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,砂漠カベ,Muro del desierto
+008573,CLD-008818,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,砂漠カベ,Muro del desierto
+008574,CLD-008819,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,砂漠カベ,Muro del desierto
+008575,CLD-008820,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,砂漠カベ,Muro del desierto
+008576,CLD-008821,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,荒野レンガ,Ladrillos de la naturaleza salvaje
+008577,CLD-008822,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,荒野レンガ,Ladrillos de la naturaleza salvaje
+008578,CLD-008823,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,荒野レンガ,Ladrillos de la naturaleza salvaje
+008579,CLD-008824,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,荒野レンガ,Ladrillos de la naturaleza salvaje
+008580,CLD-008825,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,城かべ,Muralla del castillo
+008581,CLD-008826,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,城かべ,Muralla del castillo
+008582,CLD-008827,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,城かべ,Muralla del castillo
+008583,CLD-008828,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,城かべ,Muralla del castillo
+008584,CLD-008829,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,城はしら,Pilar del castillo
+008585,CLD-008830,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,城はしら,Pilar del castillo
+008586,CLD-008831,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,城はしら,Pilar del castillo
+008587,CLD-008832,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,城はしら,Pilar del castillo
+008588,CLD-008833,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,研究所かべ,Pared del laboratorio
+008589,CLD-008834,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,研究所かべ,Pared del laboratorio
+008590,CLD-008835,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,研究所かべ,Pared del laboratorio
+008591,CLD-008836,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,研究所かべ,Pared del laboratorio
+008592,CLD-008837,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,不気味カベ,Pared espeluznante
+008593,CLD-008838,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,不気味カベ,Pared espeluznante
+008594,CLD-008839,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,不気味カベ,Pared espeluznante
+008595,CLD-008840,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,不気味カベ,Pared espeluznante
+008596,CLD-008841,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,普通の床　0,Piso normal 0
+008597,CLD-008842,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,普通の床　1,Piso normal 1
+008598,CLD-008843,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,普通の床　2,Piso 2 regular
+008599,CLD-008844,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,普通の床　3,Piso normal 3
+008600,CLD-008845,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎の床　0,Piso de llamas 0
+008601,CLD-008846,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎の床　1,Piso de fuego 1
+008602,CLD-008847,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎の床　2,Piso de fuego 2
+008603,CLD-008848,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎の床　3,Piso de fuego 3
+008604,CLD-008849,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,土地面　0,Superficie terrestre 0
+008605,CLD-008850,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,タイル地面　0,Suelo de baldosa 0
+008606,CLD-008851,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,つた地面　0,Terreno de vid 0
+008607,CLD-008852,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷地面　0,Suelo de hielo 0
+008608,CLD-008853,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,怪しい地面　0,Terreno sospechoso 0
+008609,CLD-008854,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,石畳地面　0,Suelo empedrado 0
+008610,CLD-008855,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,板 地面　0,Losa de piso 0
+008611,CLD-008856,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,豪華絨毯面,Superficie de alfombra lujosa
+008612,CLD-008857,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,迷宮地面,suelo del laberinto
+008613,CLD-008858,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,砂漠地面,terreno desértico
+008614,CLD-008859,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,荒野地面,Desierto
+008615,CLD-008860,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,城ゆか,Yuka Shiro
+008616,CLD-008861,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,城絨毯,Alfombra de castillo
+008617,CLD-008862,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,研究所床,Instituto de Investigación Bed
+008618,CLD-008863,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,不気味ゆか,Yuka espeluznante
+008619,CLD-008864,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP木A上,OP木A上
+008620,CLD-008865,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente|revisar_numeros,OP木A上2,OP A2
+008621,CLD-008866,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP木A中-A,OP木A中-A
+008622,CLD-008867,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP木A外-A,OP A extranjero-A
+008623,CLD-008868,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP木A中-B,OP A-B
+008624,CLD-008869,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP木A外-B,Madera OP A exterior-B
+008625,CLD-008870,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP木B上,OP木B上
+008626,CLD-008871,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente|revisar_numeros,OP木B上2,OP B2
+008627,CLD-008872,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP木B中-A,OP木B中-A
+008628,CLD-008873,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP木B外-A,OP B exterior-A
+008629,CLD-008874,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP木B中-B,OP木B中-B
+008630,CLD-008875,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP木B外-B,OP B exterior-B
+008631,CLD-008876,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP壁上A,Pared OP A
+008632,CLD-008877,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP壁上B,Pared OP B
+008633,CLD-008878,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP壁下A,Pared OP debajo de una
+008634,CLD-008879,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP壁下B,Pared OP debajo de B
+008635,CLD-008880,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP石畳左A,Pavimento de piedra OP Izquierda A
+008636,CLD-008881,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP石畳右A,Pavimento de piedra OP Derecha A
+008637,CLD-008882,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP石畳左B,Adoquín OP Izquierda B
+008638,CLD-008883,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP石畳右B,OP Ishita no B
+008639,CLD-008884,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OPくさ,El OP huele mal
+008640,CLD-008885,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OPくさ薄い,El olor del OP es débil
+008641,CLD-008886,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OPくさ薄薄,El OP huele a delgado
+008642,CLD-008887,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OPゆか,OP Yuka
+008643,CLD-008888,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OP木（緑一色）,Árbol OP (verde sólido)
+008644,CLD-008889,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,OPゆか+黒,OP Yuka + Kuro
+008645,CLD-008890,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente|revisar_numeros,OP石1,OP1
+008646,CLD-008891,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente|revisar_numeros,OP石2,OP2
+008647,CLD-008892,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente|revisar_numeros,OP石3,OP3
+008648,CLD-008893,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente|revisar_numeros,OP石4,OP4
+008649,CLD-008894,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente|revisar_numeros,OP石5,OP5
+008650,CLD-008895,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente|revisar_numeros,OP石6,OP6
+008651,CLD-008896,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente|revisar_numeros,OP石6,OP6
+008652,CLD-008897,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,光（通常）,Luz (normalmente)
+008653,CLD-008898,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,光(加算),Luz (adición)
+008654,CLD-008899,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,光(減算),Luz (resta)
+008655,CLD-F-TIPATTR-0146-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,噴水1,Rocíe agua 1
+008656,CLD-F-TIPATTR-0147-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,噴水2-32,Rocíe agua 2-32
+008657,CLD-F-TIPATTR-0148-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,噴水3-64,Rocíe agua 3-64
+008658,CLD-F-TIPATTR-0149-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,噴水4-96,Rocíe agua 4-96
+008659,CLD-F-TIPATTR-0150-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,蛇口+32,Grifo +32
+008660,CLD-F-TIPATTR-0151-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,蛇口+32,Grifo +32
+008661,CLD-008900,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ゴール,meta
+008662,CLD-008901,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,立て札,Letrero
+008663,CLD-008902,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ピヨ小 普通,Piyo pequeño (normal)
+008664,CLD-008903,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ピヨ小 知性,La inteligencia de Piyo
+008665,CLD-008904,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ピヨ小 ヤンキー,Piyo-ko Yankee
+008666,CLD-008905,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ピヨ小 やかまし,Piyo-ko es ruidoso
+008667,CLD-008906,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ピヨ大,Piyo Dai
+008668,CLD-008907,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ピヨじい,El abuelo Piyo
+008669,CLD-008908,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ピヨ仙人,Piyo Ermitaño
+008670,CLD-F-TIPATTR-0161-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,骸骨,esqueleto
+008671,CLD-008909,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン,Zona de distorsión
+008672,CLD-008910,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口,Salida de teletransporte
+008673,CLD-008911,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,壊れる壁　0,Rompiendo el muro 0
+008674,CLD-008912,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,壊れる壁　0,Rompiendo el muro 0
+008675,CLD-008913,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,壊れる壁　0,Rompiendo el muro 0
+008676,CLD-008914,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,壊れる壁　0,Rompiendo el muro 0
+008677,CLD-008915,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,壊れる炎壁　0,Rompiendo el muro de llamas 0
+008678,CLD-008916,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,壊れる炎壁　0,Rompiendo el muro de llamas 0
+008679,CLD-008917,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,壊れる炎壁　0,Rompiendo el muro de llamas 0
+008680,CLD-008918,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,壊れる炎壁　0,Rompiendo el muro de llamas 0
+008681,CLD-008919,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,左いす,Silla izquierda
+008682,CLD-008920,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,左テーブル,Mesa izquierda
+008683,CLD-008921,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,左いす2,Silla izquierda 2
+008684,CLD-008922,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,中いす,Silla mediana
+008685,CLD-008923,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,中テーブル,Mesa mediana
+008686,CLD-008924,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,中いす2,Silla mediana 2
+008687,CLD-008925,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,右いす,Silla para diestros
+008688,CLD-008926,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,右テーブル,Mesa derecha
+008689,CLD-008927,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,右いす2,Silla derecha 2
+008690,CLD-008928,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,トイレかべ,pared del inodoro
+008691,CLD-F-TIPATTR-0182-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,かべ1,Pared 1
+008692,CLD-F-TIPATTR-0183-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,かべ2,Pared 2
+008693,CLD-F-TIPATTR-0184-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,かべ3,Pared 3
+008694,CLD-F-TIPATTR-0185-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,かべ4,Muro 4
+008695,CLD-F-TIPATTR-0186-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,かべ5,Muro 5
+008696,CLD-F-TIPATTR-0187-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,かべ6,Muro 6
+008697,CLD-F-TIPATTR-0188-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,かべ7,Muro 7
+008698,CLD-F-TIPATTR-0189-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,かべ8,Muro 8
+008699,CLD-F-TIPATTR-0190-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,かべ9,Muro 9
+008700,CLD-008929,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,カウンタ皿1,Placa de mostrador 1
+008701,CLD-008930,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,カウンタ皿2,Placa de mostrador 2
+008702,CLD-008931,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,カウンタ1,Contador 1
+008703,CLD-008932,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,カウンタ2,Contador 2
+008704,CLD-008933,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,カウンタ3,Contador 3
+008705,CLD-008934,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,カウンタ4,Contador 4
+008706,CLD-008935,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ひだり光1,Luz izquierda 1
+008707,CLD-008936,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ひだり光2,Luz izquierda 2
+008708,CLD-008937,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,商店テーブル,Mesa de la tienda
+008709,CLD-008938,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,小さい木,árbol pequeño
+008710,CLD-008939,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,大木(左上,Árbol grande (arriba a la izquierda)
+008711,CLD-008940,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,転移の扉,Puerta de transferencia
+008712,CLD-008941,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,通信の扉,La puerta a las comunicaciones
+008713,CLD-008942,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,左の木の目,La veta de la madera a la izquierda
+008714,CLD-F-TIPATTR-0205-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,触手,tentáculos
+008715,CLD-008943,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,けむり,fumar
+008716,CLD-008944,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,けむり,fumar
+008717,CLD-008945,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ルート設定(下),Configuración de ruta (abajo)
+008718,CLD-008946,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ルート設定(左),Configuración de ruta (izquierda)
+008719,CLD-008947,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ルート設定(右),Configuración de ruta (derecha)
+008720,CLD-008948,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ルート設定(上),Configuración de ruta (arriba)
+008721,CLD-008949,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ルート設定(直線,Configuración de ruta (línea recta)
+008722,CLD-008950,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ルート設定(直線,Configuración de ruta (línea recta)
+008723,CLD-F-TIPATTR-0214-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_reconstruccion,estado_fuente_pendiente|bytes_incompletos,オイル（アニメ�,
+008724,CLD-F-TIPATTR-0215-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_reconstruccion,estado_fuente_pendiente|bytes_incompletos,水（アニメ有り�,
+008725,CLD-F-TIPATTR-0216-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎上,Controversia
+008726,CLD-F-TIPATTR-0217-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷床,capa de hielo
+008727,CLD-F-TIPATTR-0218-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,草　1,Hierba 1
+008728,CLD-F-TIPATTR-0219-nombre_atributo,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,穴,agujero
+008729,CLD-008951,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,普通階段(ランダ,Escaleras regulares (Randa
+008730,CLD-008952,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,博打階段(ランダ,Escalera de juego (Randa
+008731,CLD-008953,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,天使階段(ランダ,Escalera del Ángel (Randa
+008732,CLD-008954,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,悪魔階段(ランダ,Escalera del Diablo (Randa
+008733,CLD-008955,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,地獄階段(ランダ,Escalera del infierno (Randa
+008734,CLD-008956,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,地獄階段(ランダ,Escalera del infierno (Randa
+008735,CLD-008957,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン1,Zona de teletransporte 1
+008736,CLD-008959,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン2,Zona de teletransporte 2
+008737,CLD-008961,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン3,Zona de teletransporte 3
+008738,CLD-008963,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン4,Zona de teletransporte 4
+008739,CLD-008965,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン5,Zona de teletransporte 5
+008740,CLD-008967,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン6,Zona de teletransporte 6
+008741,CLD-008969,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン7,Zona de teletransporte 7
+008742,CLD-008971,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン8,Zona de teletransporte 8
+008743,CLD-008973,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン9,Zona de teletransporte 9
+008744,CLD-008975,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン10,Zona de distorsión 10
+008745,CLD-008977,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン11,Zona de distorsión 11
+008746,CLD-008979,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン12,Zona de distorsión 12
+008747,CLD-008981,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン13,Zona de teletransporte 13
+008748,CLD-008983,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン14,Zona de distorsión 14
+008749,CLD-008985,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン15,Zona de distorsión 15
+008750,CLD-008987,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン16,Zona de teletransporte 16
+008751,CLD-008989,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン17,Zona de distorsión 17
+008752,CLD-008991,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン18,Zona de distorsión 18
+008753,CLD-008993,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン19,Zona de distorsión 19
+008754,CLD-008995,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン20,Zona de teletransporte 20
+008755,CLD-008997,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン21,Zona de distorsión 21
+008756,CLD-008999,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン22,Zona de distorsión 22
+008757,CLD-009001,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン23,Zona de teletransporte 23
+008758,CLD-009002,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン24,Zona de distorsión 24
+008759,CLD-009003,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン25,Zona de teletransporte 25
+008760,CLD-009004,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン26,Zona de teletransporte 26
+008761,CLD-009005,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン27,Zona de teletransporte 27
+008762,CLD-009006,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン28,Zona de teletransporte 28
+008763,CLD-009007,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン29,Zona de teletransporte 29
+008764,CLD-009009,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン30,Zona de teletransporte 30
+008765,CLD-009011,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン31,Zona de teletransporte 31
+008766,CLD-009013,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープゾーン32,Zona de distorsión 32
+008767,CLD-009015,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口1,Salida de teletransporte 1
+008768,CLD-009016,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口2,Salida de teletransporte 2
+008769,CLD-009017,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口3,Salida de teletransporte 3
+008770,CLD-009018,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口4,Salida de teletransporte 4
+008771,CLD-009019,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口5,Salida de teletransporte 5
+008772,CLD-009020,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口6,Salida de teletransporte 6
+008773,CLD-009021,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口7,Salida de teletransporte 7
+008774,CLD-009022,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口8,Salida de teletransporte 8
+008775,CLD-009023,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口9,Salida de teletransporte 9
+008776,CLD-009024,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口10,Salida de teletransporte 10
+008777,CLD-009025,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口11,Salida de teletransporte 11
+008778,CLD-009026,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口12,Salida de teletransporte 12
+008779,CLD-009027,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口13,Salida de teletransporte 13
+008780,CLD-009028,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口14,Salida de teletransporte 14
+008781,CLD-009029,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口15,Salida de teletransporte 15
+008782,CLD-009030,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口16,Salida de teletransporte 16
+008783,CLD-009031,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口17,Salida de teletransporte 17
+008784,CLD-009032,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口18,Salida de teletransporte 18
+008785,CLD-009033,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口19,Salida de teletransporte 19
+008786,CLD-009034,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口20,Salida de teletransporte 20
+008787,CLD-009035,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口21,Salida de teletransporte 21
+008788,CLD-009036,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口22,Salida de teletransporte 22
+008789,CLD-009037,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口23,Salida de teletransporte 23
+008790,CLD-009038,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口24,Salida de teletransporte 24
+008791,CLD-009039,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口25,Salida de teletransporte 25
+008792,CLD-009040,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口26,Salida de teletransporte 26
+008793,CLD-009041,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口27,Salida de teletransporte 27
+008794,CLD-009042,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口28,Salida de teletransporte 28
+008795,CLD-009043,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口29,Salida de teletransporte 29
+008796,CLD-009044,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口30,Salida de teletransporte 30
+008797,CLD-009045,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口31,Salida de teletransporte 31
+008798,CLD-009046,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口32,Salida de teletransporte 32
+008799,CLD-009047,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ワープ出口32,Salida de teletransporte 32
+008800,CLD-009048,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,Pierce,Atravesar
+008801,CLD-009049,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,Fire,Fuego
+008802,CLD-009050,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,Ice,Hielo
+008803,CLD-009051,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,Gas,Gas
+008804,CLD-009052,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,Heal,Sanar
+008805,CLD-009053,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,Haste,Prisa
+008806,CLD-009054,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,Slow,Lento
+008807,CLD-009055,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,Mine,Mío
+008808,CLD-009056,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,Quake,Terremoto
+008809,CLD-009057,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,Monster Den,Guarida de monstruos
+008810,CLD-009058,DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,Monster Den,Guarida de monstruos
+008811,CLD-009059,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ドロボウネコ,Gato ladrón
+008812,CLD-009060,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ドロボウネコ,Gato ladrón
+008813,CLD-009061,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ドロボウネコ,Gato ladrón
+008814,CLD-009062,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ドロボウネコ,Gato ladrón
+008815,CLD-009063,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ドロボウネコ,Gato ladrón
+008816,CLD-009064,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ドロボウネコ,Gato ladrón
+008817,CLD-009065,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,タランチュラ,tarántula
+008818,CLD-009066,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,タランチュラ,tarántula
+008819,CLD-009067,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,タランチュラ,tarántula
+008820,CLD-009068,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,タランチュラ,tarántula
+008821,CLD-009069,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,タランチュラ,tarántula
+008822,CLD-009070,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,タランチュラ,tarántula
+008823,CLD-F-UP_MONSTER-0013-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ザコ,Minions
+008824,CLD-F-UP_MONSTER-0014-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ザコ,Minions
+008825,CLD-F-UP_MONSTER-0015-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ザコ,Minions
+008826,CLD-F-UP_MONSTER-0016-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ザコ,Minions
+008827,CLD-F-UP_MONSTER-0017-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ザコ,Minions
+008828,CLD-F-UP_MONSTER-0018-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ザコ,Minions
+008829,CLD-009071,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ヒダルマ,Hidaruma
+008830,CLD-009072,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ヒダルマ,Hidaruma
+008831,CLD-009073,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ヒダルマ,Hidaruma
+008832,CLD-009074,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ヒダルマ,Hidaruma
+008833,CLD-009075,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ヒダルマ,Hidaruma
+008834,CLD-009076,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ヒダルマ,Hidaruma
+008835,CLD-009077,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ヒヨッキー,Hiyokki
+008836,CLD-009078,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ヒヨッキー,Hiyokki
+008837,CLD-009079,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ヒヨッキー,Hiyokki
+008838,CLD-009080,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ヒヨッキー,Hiyokki
+008839,CLD-009081,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ヒヨッキー,Hiyokki
+008840,CLD-009082,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ヒヨッキー,Hiyokki
+008841,CLD-009083,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,キラーゲイ,Asesino gay
+008842,CLD-009084,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,キラーゲイ,Asesino gay
+008843,CLD-009085,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,キラーゲイ,Asesino gay
+008844,CLD-009086,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,キラーゲイ,Asesino gay
+008845,CLD-009087,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,キラーゲイ,Asesino gay
+008846,CLD-009088,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,キラーゲイ,Asesino gay
+008847,CLD-009089,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ゴースト,fantasma
+008848,CLD-009090,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ゴースト,fantasma
+008849,CLD-009091,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ゴースト,fantasma
+008850,CLD-009092,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ゴースト,fantasma
+008851,CLD-009093,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ゴースト,fantasma
+008852,CLD-009094,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ゴースト,fantasma
+008853,CLD-009095,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,リッチ,rico
+008854,CLD-009096,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,リッチ,rico
+008855,CLD-009097,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,リッチ,rico
+008856,CLD-009098,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,リッチ,rico
+008857,CLD-009099,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,リッチ,rico
+008858,CLD-009100,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,リッチ,rico
+008859,CLD-009101,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,リザードマン,Hombre lagarto
+008860,CLD-009102,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,リザードマン,Hombre lagarto
+008861,CLD-009103,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,リザードマン,Hombre lagarto
+008862,CLD-009104,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,リザードマン,Hombre lagarto
+008863,CLD-009105,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,リザードマン,Hombre lagarto
+008864,CLD-009106,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,リザードマン,Hombre lagarto
+008865,CLD-009107,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ゴーレム,Golem
+008866,CLD-009108,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ゴーレム,Golem
+008867,CLD-009109,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ゴーレム,Golem
+008868,CLD-009110,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ゴーレム,Golem
+008869,CLD-009111,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ゴーレム,Golem
+008870,CLD-009112,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ゴーレム,Golem
+008871,CLD-009113,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,デーモン,demonio
+008872,CLD-009114,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,デーモン,demonio
+008873,CLD-009115,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,デーモン,demonio
+008874,CLD-009116,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,デーモン,demonio
+008875,CLD-009117,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,デーモン,demonio
+008876,CLD-009118,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,デーモン,demonio
+008877,CLD-009119,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ビッグアイ,Ojo grande
+008878,CLD-009120,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ビッグアイ,Ojo grande
+008879,CLD-009121,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ビッグアイ,Ojo grande
+008880,CLD-009122,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ビッグアイ,Ojo grande
+008881,CLD-009123,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ビッグアイ,Ojo grande
+008882,CLD-009124,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ビッグアイ,Ojo grande
+008883,CLD-009125,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,シルフィード,Sílfide
+008884,CLD-009126,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,シルフィード,Sílfide
+008885,CLD-009127,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,シルフィード,Sílfide
+008886,CLD-009128,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,シルフィード,Sílfide
+008887,CLD-009129,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,シルフィード,Sílfide
+008888,CLD-009130,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,シルフィード,Sílfide
+008889,CLD-009131,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,チビドラゴン,Bebé dragón
+008890,CLD-009132,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,チビドラゴン,Bebé dragón
+008891,CLD-009133,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,チビドラゴン,Bebé dragón
+008892,CLD-009134,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,チビドラゴン,Bebé dragón
+008893,CLD-009135,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,チビドラゴン,Bebé dragón
+008894,CLD-009136,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,チビドラゴン,Bebé dragón
+008895,CLD-009137,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,サキュバス,súcubo
+008896,CLD-009138,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,サキュバス,súcubo
+008897,CLD-009139,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,サキュバス,súcubo
+008898,CLD-009140,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,サキュバス,súcubo
+008899,CLD-009141,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,サキュバス,súcubo
+008900,CLD-009142,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,サキュバス,súcubo
+008901,CLD-009143,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,デスナイト,Caballero de la Muerte
+008902,CLD-009144,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,デスナイト,Caballero de la Muerte
+008903,CLD-009145,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,デスナイト,Caballero de la Muerte
+008904,CLD-009146,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,デスナイト,Caballero de la Muerte
+008905,CLD-009147,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,デスナイト,Caballero de la Muerte
+008906,CLD-009148,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,デスナイト,Caballero de la Muerte
+008907,CLD-009149,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラガーマン,jugador de rugby
+008908,CLD-009150,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラガーマン,jugador de rugby
+008909,CLD-009151,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラガーマン,jugador de rugby
+008910,CLD-009152,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラガーマン,jugador de rugby
+008911,CLD-009153,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラガーマン,jugador de rugby
+008912,CLD-009154,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラガーマン,jugador de rugby
+008913,CLD-F-UP_MONSTER-0103-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,マッスルボンバー,Bombardero muscular
+008914,CLD-F-UP_MONSTER-0104-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,マッスルボンバー,Bombardero muscular
+008915,CLD-F-UP_MONSTER-0105-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,マッスルボンバー,Bombardero muscular
+008916,CLD-F-UP_MONSTER-0106-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,マッスルボンバー,Bombardero muscular
+008917,CLD-F-UP_MONSTER-0107-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,マッスルボンバー,Bombardero muscular
+008918,CLD-F-UP_MONSTER-0108-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,マッスルボンバー,Bombardero muscular
+008919,CLD-009155,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,シャドウ,Sombra
+008920,CLD-009156,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,シャドウ,Sombra
+008921,CLD-009157,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,シャドウ,Sombra
+008922,CLD-009158,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,シャドウ,Sombra
+008923,CLD-009159,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,シャドウ,Sombra
+008924,CLD-009160,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,シャドウ,Sombra
+008925,CLD-009161,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ソーサラー,Hechicero
+008926,CLD-009162,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ソーサラー,Hechicero
+008927,CLD-009163,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ソーサラー,Hechicero
+008928,CLD-009164,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ソーサラー,Hechicero
+008929,CLD-009165,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ソーサラー,Hechicero
+008930,CLD-009166,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ソーサラー,Hechicero
+008931,CLD-F-UP_MONSTER-0121-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,透明,transparente
+008932,CLD-F-UP_MONSTER-0122-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,？？？,¿¿¿¿
+008933,CLD-F-UP_MONSTER-0123-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,？？？,¿¿¿¿
+008934,CLD-F-UP_MONSTER-0124-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,？？？,¿¿¿¿
+008935,CLD-F-UP_MONSTER-0125-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,？？？,¿¿¿¿
+008936,CLD-F-UP_MONSTER-0126-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,？？？,¿¿¿¿
+008937,CLD-F-UP_MONSTER-0127-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,仮面,mascarilla
+008938,CLD-F-UP_MONSTER-0128-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,仮面,mascarilla
+008939,CLD-F-UP_MONSTER-0129-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,仮面,mascarilla
+008940,CLD-F-UP_MONSTER-0130-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,仮面,mascarilla
+008941,CLD-F-UP_MONSTER-0131-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,仮面,mascarilla
+008942,CLD-F-UP_MONSTER-0132-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,仮面,mascarilla
+008943,CLD-009167,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラガー(練習用),Rugby (para practicar)
+008944,CLD-009168,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,セルフ(練習用),Uso personal (para practicar)
+008945,CLD-009169,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ペイン(練習用),Dolor (para practicar)
+008946,CLD-009170,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,プラス(練習用),Además (para practicar)
+008947,CLD-009171,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,コクオ(練習用),Kokuo (para practicar)
+008948,CLD-009172,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラオウ(練習用),Raoh (para practicar)
+008949,CLD-009173,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック,Bloque emisor de llama
+008950,CLD-009174,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック,Bloque emisor de llama
+008951,CLD-009175,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック,Bloque emisor de llama
+008952,CLD-F-UP_MONSTER-0142-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック低,Bloques de bajo nivel que emiten llamas
+008953,CLD-F-UP_MONSTER-0143-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック低,Bloques de bajo nivel que emiten llamas
+008954,CLD-F-UP_MONSTER-0144-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック低,Bloques de bajo nivel que emiten llamas
+008955,CLD-F-UP_MONSTER-0145-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック高,Bloque de gran altura con llamas
+008956,CLD-F-UP_MONSTER-0146-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック高,Bloque de gran altura con llamas
+008957,CLD-F-UP_MONSTER-0147-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック高,Bloque de gran altura con llamas
+008958,CLD-009176,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,炎出るブロック,Bloque emisor de llama
+008959,CLD-009177,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷出るブロック,Bloques que producen hielo
+008960,CLD-009178,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷出るブロック,Bloques que producen hielo
+008961,CLD-009179,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,氷出るブロック,Bloques que producen hielo
+008962,CLD-009180,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,バリア床,Piso de barrera
+008963,CLD-009181,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,宝箱　だめ,Cofre del tesoro - No
+008964,CLD-009182,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,宝箱　いい,cofre del tesoro - bueno
+008965,CLD-009183,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,宝箱　レア,Cofre del tesoro (raro)
+008966,CLD-F-UP_MONSTER-0156-nombre_monstruo,DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,仮面,mascarilla

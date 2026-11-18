@@ -1,6 +1,6 @@
 # CLADUN: This Is an RPG! — Localización al español (PSP)
 
-> **Estado:** corpus original extraído y auditado estructuralmente; **sin traducir**. No se ha demostrado cobertura absoluta ni se ha implementado reinserción en el juego.
+> **Estado:** corpus original intacto y auditado; borrador de traducción automatizada al español (9.235 de 9.237 posiciones), **no validado narrativamente ni apto para reinserción**. Cobertura absoluta sin demostrar.
 
 Proyecto de localización de la **edición USA para PSP**. Su objetivo es recuperar, ordenar y revisar **solo contenido textual traducible**: diálogos, elecciones, nombres y descripciones de objetos, personajes, monstruos, habilidades, lugares, menús, avisos, créditos y rótulos presentes en imágenes. **No se publica un listado de instrucciones internas del motor.**
 
@@ -25,13 +25,31 @@ Proyecto de localización de la **edición USA para PSP**. Su objetivo es recupe
 | Nuevas unidades recuperadas en la revisión | 127 |
 | Asociaciones de texto/offset corregidas | 133 |
 | Referencias gráficos-textuales verificadas e incluidas | 6 |
-| Textos traducidos al español | **0** |
+| Traducciones finales validadas para reinserción | **0** |
+| Entradas con borrador español independiente | **9.235** |
 
 **Qué significan las cifras:** son *unidades en fuentes del juego*, no frases únicas y **no equivalen a una cobertura del 100 %**. Las cadenas repetidas se mantienen cuando ocupan posiciones distintas. Los campos marcados como pendientes se conservan en el corpus total porque podrían requerir localización, pero todavía **no están aprobados para inserción**.
 
 ### Orden e integridad
 
 Cada grupo corresponde a un elemento textual identificable de la extracción. Se conserva su **ID, archivo de origen, registro, script/orden y offset** cuando aplica. El orden es el orden del contenido **por recurso en la edición analizada**, no necesariamente el orden en que se vive la historia. Las cadenas en inglés y japonés aparecen en su idioma original. No se corrigen, resumen ni traducen en esta fase.
+
+
+## Traducción automática española y cotejo — 18/11/2026
+
+Se conservaron los 9.237 IDs y originales, y se generó un **borrador separado**, sin sobrescribir el corpus fuente. Incluye 9.235 entradas con texto español; dos campos con bytes CP932 incompletos siguen pendientes. Solo 67 entradas recibieron post-edición contextual por IA; el resto **no** tiene validación narrativa individual.
+
+| Material | Archivo |
+| --- | --- |
+| Guion original estilo FAQ (extracción anterior) | [`corpus/LECTURA_ORIGINAL_ESTILO_FAQ.txt`](corpus/LECTURA_ORIGINAL_ESTILO_FAQ.txt) |
+| Texto español continuo, borrador | [`traduccion/CLADUN_BORRADOR_ES.txt`](traduccion/CLADUN_BORRADOR_ES.txt) |
+| Lectura bilingüe y cotejo | [`traduccion/CLADUN_BORRADOR_BILINGUE_FAQ.txt`](traduccion/CLADUN_BORRADOR_BILINGUE_FAQ.txt) |
+| CSV bilingüe con metadatos originales | [`traduccion/CLADUN_BORRADOR_ES.csv`](traduccion/CLADUN_BORRADOR_ES.csv) |
+| Incidencias de QA | [`traduccion/INCIDENCIAS_QA.csv`](traduccion/INCIDENCIAS_QA.csv) |
+| Glosario provisional | [`traduccion/GLOSARIO_PROPUESTA.csv`](traduccion/GLOSARIO_PROPUESTA.csv) |
+| Informe técnico y lingüístico | [`docs/INFORME_TRADUCCION_2026-11-18.md`](docs/INFORME_TRADUCCION_2026-11-18.md) |
+
+**Aviso:** los signos españoles no se pueden representar directamente con CP932; falta adaptar codificación/fuentes, revisar texto y probar el juego en PPSSPP. Ninguna traducción está aprobada para insertar todavía.
 
 ## Cómo trabajar
 
