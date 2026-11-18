@@ -4,6 +4,10 @@ Proyecto de **extracción, indexación y futura localización** de los textos de
 
 > **Estado actual:** extracción de texto en fase de auditoría. Se han identificado y descomprimido todas las entradas del contenedor `PSPFS_V1` de la imagen analizada, pero **no está certificado que se haya recuperado absolutamente todo el texto visible en el juego**: hay gráficos, formatos binarios de campos no documentados y texto eventualmente incrustado en código/recursos que requieren verificación visual.
 
+## Auditoría de cobertura (17 de noviembre de 2026)
+
+**Importante: esta extracción aún no contiene el 100 % del texto del juego.** Se identificó texto gráfico omitido (por ejemplo, `NO DATA` en `SYS.DAT2/NODATA.PNG` y `SYS.DAT2/DOT_NODATA.PNG`), y 56 falsos positivos numéricos dentro de `DATABASE.DAT/LV.DAT`. De las 9.647 filas totales, 2.859 son candidatos pendientes de validación. El índice de scripts no contiene los argumentos binarios completos. Consulta los métodos, evidencias y acciones pendientes en [reports/AUDITORIA_COBERTURA_2026-11-17.md](reports/AUDITORIA_COBERTURA_2026-11-17.md).
+
 ## Resultados de la versión analizada
 
 - Imagen fuente: `CLASSIC_DUNGEON_TRIAL_AND_APPEND`, 305.496.064 bytes (ISO9660).
