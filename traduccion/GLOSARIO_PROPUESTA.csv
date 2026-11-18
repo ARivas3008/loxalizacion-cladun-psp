@@ -1,15 +1,42 @@
-﻿termino_en,propuesta_es,estado,nota
-Artifact,artefacto,propuesto,Objeto de juego
-Mana,maná,propuesto,Recurso
-Arcanus Cella,Arcanus Cella,preservar,Nombre de lugar
-Hiyoji,Hiyoji,preservar,Personaje
-Hiyo Chick,Pollita Hiyo,provisional,Comprobar en pantalla
-Pudding,Pudding,preservar,Personaje
-Hiyokki,Hiyokki,preservar,Criatura
-New-geon,New-geon,preservar,Mazmorra
-Ran-geon,Ran-geon,preservar,Mazmorra
-Prinny Stick,Prinny Stick,provisional,Nombre de arma
-Widen,Widen,provisional,Artefacto especial; evitar traducciones inconsistentes
-Staff,bastón,propuesto,"Arma, no 'personal'"
-Job change,cambiar de clase,propuesto,No 'cambiar de trabajo'
-This is an RPG!,¡Esto es un RPG!,propuesto,"Rótulo gráfico, no texto de script"
+﻿original,espanol,estado
+Magic Circle,Círculo mágico,canónico_borrador
+Artifact,artefacto,canónico_borrador
+Widen,Widen,nombre_propio
+Widening,ampliación,efecto
+Sub Character,personaje de apoyo,canónico_borrador
+Subs,personajes de apoyo,canónico_borrador
+Main Character,personaje principal,canónico_borrador
+Sub Character Space,casilla de personaje de apoyo,canónico_borrador
+Magic/Ability Space,casilla de magia/habilidad,canónico_borrador
+Staff,bastón,canónico_borrador
+Staff Gauge,indicador del bastón,canónico_borrador
+Job Change,cambio de clase,canónico_borrador
+Level,nivel,canónico_borrador
+LV,LV,codigo_interfaz
+Mana,maná,canónico_borrador
+HP,HP,codigo_interfaz
+ATK,ATK,codigo_interfaz
+DEF,DEF,codigo_interfaz
+G,G,moneda
+Item,objeto,canónico_borrador
+Dungeon,mazmorra,canónico_borrador
+Ran-geon,Ran-geon,nombre_propio
+New-geon,New-geon,nombre_propio
+Arcanus Cella,Arcanus Cella,nombre_propio
+Hiyoji,Hiyoji,nombre_propio
+Hiyokki,Hiyokki,nombre_propio
+Hiyo Chick,Pollita Hiyo,pendiente_visual
+Pudding,Pudding,nombre_propio
+プティング,Pudding,nombre_propio
+Asagi,Asagi,nombre_propio
+Souma,Souma,nombre_propio
+Prinny,Prinny,nombre_propio
+Prinny Stick,Prinny Stick,pendiente_visual
+EXP,EXP,codigo_interfaz
+Item drop rate,probabilidad de obtener objetos,canónico_borrador
+Rare title rate,probabilidad de título raro,canónico_borrador
+Floor,planta,canónico_borrador
+Save,guardar,canónico_borrador
+Load,cargar,canónico_borrador
+Yes,Sí,canónico_borrador
+No,No,canónico_borrador

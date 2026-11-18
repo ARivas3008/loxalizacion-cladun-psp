@@ -31,3 +31,12 @@ Los subconjuntos `confirmados_formato` y `revisar_visibilidad` son vistas deriva
 - Ejecutar `python -m unittest discover -s tests -v` y `python tools/verificar_integridad.py --raiz .`.
 - Toda corrección de extracción debe actualizar el corpus maestro, TXT, subconjuntos, registro de auditoría y resumen **en el mismo commit**.
 - En reportes distinguir siempre entre lo **verificado**, lo **probable** y lo **pendiente**.
+
+## Blindaje obligatorio en reinserción
+
+- **Nunca** desplazar bytes de otro recurso para hacer espacio a una traducción; rechazar operaciones que no quepan en los slots originales.
+- Conservar y verificar cada entrada PSPFS y todos los miembros DSARC no intervenidos; cualquier diferencia de SHA-256 detiene la compilación.
+- Los scripts, por ahora, solo admiten ensayos de cambio con igual longitud en bytes. No reconstruir punteros internos por suposición.
+- No afirmar que CP932 privado F040–F052 sea representable visualmente sin haber instalado y probado sus glifos en FONT.ARC.
+- No distribuir ISO, fuentes ni texturas comerciales. El ensayo temporal no demuestra funcionamiento en PPSSPP.
+- Mantener `original`, `bytes_hex`, offsets e IDs sin modificaciones; el español vive en campos separados.

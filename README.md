@@ -1,6 +1,6 @@
 # CLADUN: This Is an RPG! — Localización al español (PSP)
 
-> **Estado:** corpus original intacto y auditado; borrador de traducción automatizada al español (9.235 de 9.237 posiciones), **no validado narrativamente ni apto para reinserción**. Cobertura absoluta sin demostrar.
+> **Estado:** fuente íntegra de 9.237 textos, borrador español de 9.235 entradas (**196 posteditadas por IA; 9.039 todavía automáticas**). La reinserción completa y las fuentes españolas **no están listas**. Un ensayo de dos cambios superó las comprobaciones de aislamiento binario, sin prueba de PPSSPP.
 
 Proyecto de localización de la **edición USA para PSP**. Su objetivo es recuperar, ordenar y revisar **solo contenido textual traducible**: diálogos, elecciones, nombres y descripciones de objetos, personajes, monstruos, habilidades, lugares, menús, avisos, créditos y rótulos presentes en imágenes. **No se publica un listado de instrucciones internas del motor.**
 
@@ -50,6 +50,18 @@ Se conservaron los 9.237 IDs y originales, y se generó un **borrador separado**
 | Informe técnico y lingüístico | [`docs/INFORME_TRADUCCION_2026-11-18.md`](docs/INFORME_TRADUCCION_2026-11-18.md) |
 
 **Aviso:** los signos españoles no se pueden representar directamente con CP932; falta adaptar codificación/fuentes, revisar texto y probar el juego en PPSSPP. Ninguna traducción está aprobada para insertar todavía.
+
+
+## Fase de revisión, codificación y seguridad binaria — 18/11/2026
+
+- **Glosario canónico:** [`docs/GLOSARIO_CANONICO.md`](docs/GLOSARIO_CANONICO.md). Se corrigieron 130 entradas adicionales, incluyendo Pudding, Widen, personajes de apoyo, bastones y cambio de clase. El resto sigue sin revisión narrativa individual.
+- **Análisis técnico y riesgos:** [`docs/SEGURIDAD_BINARIA_Y_TIPOGRAFIA.md`](docs/SEGURIDAD_BINARIA_Y_TIPOGRAFIA.md).
+- **Codificación reversible de prueba:** [`tools/charset_es.py`](tools/charset_es.py), con 19 caracteres a códigos CP932 PUA F040–F052. **No funciona en el juego hasta parchear la tabla y las imágenes de los glifos.**
+- **Ensayo de inyección aislada:** [`tools/reinsercion_segura_demo.py`](tools/reinsercion_segura_demo.py). No crea ISO distribuible, ni parchea todos los diálogos.
+- **Resultados comprobados:** [`reports/auditoria_binaria_es.json`](reports/auditoria_binaria_es.json). 349 offsets PSPFS intactos y 347 recursos no intervenidos idénticos.
+- **Estado lingüístico/QA:** [`reports/qa_traduccion_es.json`](reports/qa_traduccion_es.json). Todavía falta revisión humana y prueba de PPSSPP.
+
+**Prohibido usar el borrador directamente como parche:** faltan la rasterización de las fuentes, la verificación del cargador de compresión, la reconstrucción de longitudes/punteros y la prueba visual en juego. Los archivos binarios originales continúan intactos.
 
 ## Cómo trabajar
 

@@ -358,10 +358,10 @@ Puedo tomar fotos en cualquier momento.
 New Hiyo
 
 [000116] DIÁLOGO
-¡Esta es la Nueva-geon!
+¡Este es el New-geon!
 
 [000117] DIÁLOGO
-¡Cuidado! ¡No es el Ran-geon!
+¡Ten cuidado! ¡No es el Ran-geon!
 
 
 ==================================================================
@@ -545,7 +545,7 @@ Todas las armaduras tienen algún tipo de debilidad.
 La diferencia entre usar y no usar
 
 [000175] DIÁLOGO
-El artefacto "Ensanchar" es como la noche y el día.
+El artefacto "Widen" es como la noche y el día.
 
 [000176] DIÁLOGO
 Cuando te pierdas, simplemente camina a lo largo de la pared.
@@ -629,7 +629,7 @@ Puede que consigas algo bueno.
 Alguien en Arcanus Cella
 
 [000203] DIÁLOGO
-posee el artefacto "Ensanchar".
+posee el artefacto "Widen".
 
 [000204] DIÁLOGO
 Hay un hombre en la cámara subterránea.
@@ -641,7 +641,7 @@ quién puede medir tu fuerza.
 En Wireless Play, todos pueden obtener
 
 [000207] DIÁLOGO
-un solo artículo simultáneamente.
+un solo objeto simultáneamente.
 
 [000208] DIÁLOGO
 El artefacto "Maná Plus"
@@ -760,7 +760,7 @@ Puede romper bloques destructibles.
 Te permite usar ataques a distancia.
 
 [000245] DIÁLOGO
-Una vez que el indicador de personal esté en la parte inferior derecha
+Una vez que el indicador del bastón esté en la parte inferior derecha
 
 [000246] DIÁLOGO
 Si se agota, debes usar ataques cuerpo a cuerpo.
@@ -772,7 +772,7 @@ El indicador de nivel se recupera gradualmente de forma automática.
 Tiene el elemento ④, ⑤ o ⑥.
 
 [000249] DIÁLOGO
-Los elementos se determinan en función del tipo de personal.
+Los elementos se determinan en función del tipo de bastón.
 
 [000250] DIÁLOGO
 Mientras sostienes tu escudo, tu DEF
@@ -985,25 +985,25 @@ Volver
 Este es un hechizo donde el sub potencia al principal.
 
 [000320] DIÁLOGO
-animándole/a.
+que refuerza al personaje principal.
 
 [000321] DIÁLOGO
-Los submarinos consumen maná para activarse.
+Los personajes de apoyo consumen maná para activar
 
 [000322] DIÁLOGO
 Artefactos, que luego,
 
 [000323] DIÁLOGO
-a su vez, encienda la principal.
+y aumentarán las capacidades del personaje principal.
 
 [000324] DIÁLOGO
 Este es tu personaje jugable.
 
 [000325] DIÁLOGO
-Cuando todos los suplentes quedan fuera de combate,
+Cuando caen todos los personajes de apoyo,
 
 [000326] DIÁLOGO
-La HP principal se mostrará.
+se muestra la vida del personaje principal.
 
 [000327] DIÁLOGO
 Cuando el personaje principal queda fuera de combate, se acaba el juego.
@@ -1015,28 +1015,28 @@ Son los escudos que protegen al núcleo.
 Recibir daño en la batalla
 
 [000330] DIÁLOGO
-hará que los suplentes pierdan sus puntos de vida.
+hace que los personajes de apoyo pierdan PV.
 
 [000331] DIÁLOGO
 Hay una capa exterior y una capa interior de
 
 [000332] DIÁLOGO
-Espacio de subcaracteres en el círculo mágico.
+Casilla del personaje de apoyo en el Círculo mágico.
 
 [000333] DIÁLOGO
-Los subtítulos de la capa exterior se muestran primero.
+Se muestran primero los personajes de apoyo de la capa exterior.
 
 [000334] DIÁLOGO
 La forma en que los rostros principales se corresponden con sus posiciones.
 
 [000335] DIÁLOGO
-Los submarinos en el lado exterior del Círculo Mágico
+Los personajes de apoyo situados en el exterior del Círculo mágico
 
 [000336] DIÁLOGO
-sufrirá daños primero.
+recibirán el daño primero.
 
 [000337] DIÁLOGO
-Cuando el submarino queda fuera de combate, el artefacto
+Cuando un personaje de apoyo cae, el artefacto
 
 [000338] DIÁLOGO
 él/ella activó voluntad
@@ -1051,10 +1051,10 @@ Los artefactos se pueden colocar
 en Espacios de Artefactos.
 
 [000342] DIÁLOGO
-Los personajes secundarios consumirán maná.
+Los personajes de apoyo consumen maná
 
 [000343] DIÁLOGO
-para activar varios artefactos.
+para activar distintos artefactos.
 
 [000344] DIÁLOGO
 Los artefactos no se pueden activar si no hay un camino.
@@ -1084,13 +1084,13 @@ Colocar artefactos en la misma ranura permitirá
 efectos apilar.
 
 [000353] DIÁLOGO
-Los espacios con 'Ensanchar' pueden duplicarse
+Los espacios con 'Widen' pueden duplicarse
 
 [000354] DIÁLOGO
 el efecto de cualquier artefacto que contenga.
 
 [000355] DIÁLOGO
-Colocar varios artefactos de ensanchamiento en el mismo espacio.
+Colocar varios artefactos de Widen en el mismo espacio.
 
 [000356] DIÁLOGO
 duplicará, triplicará o cuadruplicará los efectos.
@@ -1099,7 +1099,7 @@ duplicará, triplicará o cuadruplicará los efectos.
 Sin embargo, también consumirá maná proporcionalmente.
 
 [000358] DIÁLOGO
-Colocar un Ensanchar en un Espacio de Magia/Habilidad
+Colocar un Widen en un Espacio de Magia/Habilidad
 
 [000359] DIÁLOGO
 ampliar el alcance de la Magia/Habilidad.
@@ -1108,7 +1108,7 @@ ampliar el alcance de la Magia/Habilidad.
 Hay espacios fijos que se han establecido
 
 [000361] DIÁLOGO
-Por defecto en el Círculo Mágico.
+Por defecto en el Círculo mágico.
 
 [000362] DIÁLOGO
 Defender: Recibe el daño del personaje secundario.
@@ -1117,7 +1117,7 @@ Defender: Recibe el daño del personaje secundario.
 HP -X: HP -X% de los subcaracteres.
 
 [000364] DIÁLOGO
-Dispersión X: Dispersa un X% del daño a los submarinos.
+Dispersión X: Dispersa un X% del daño a los personajes de apoyo.
 
 [000365] DIÁLOGO
 Doble muerte: Elimina a todos los demás al morir.
@@ -1261,7 +1261,7 @@ Puede romper bloques destructibles.
 Te permite usar ataques a distancia.
 
 [000412] DIÁLOGO
-Una vez que el indicador de personal esté en la parte inferior derecha
+Una vez que el indicador del bastón esté en la parte inferior derecha
 
 [000413] DIÁLOGO
 Si se agota, debes usar ataques cuerpo a cuerpo.
@@ -1270,7 +1270,7 @@ Si se agota, debes usar ataques cuerpo a cuerpo.
 Tiene el elemento ④, ⑤ o ⑥.
 
 [000415] DIÁLOGO
-Los elementos se determinan en función del tipo de personal.
+Los elementos se determinan en función del tipo de bastón.
 
 [000416] DIÁLOGO
 El indicador de nivel se recupera gradualmente de forma automática.
@@ -1489,7 +1489,7 @@ Este es un hechizo donde el sub potencia al principal.
 animándole/a.
 
 [000488] DIÁLOGO
-Los submarinos consumen maná para activarse.
+Los personajes de apoyo consumen maná para activar
 
 [000489] DIÁLOGO
 Artefactos, que luego,
@@ -1522,7 +1522,7 @@ hará que los suplentes pierdan sus puntos de vida.
 Hay una capa exterior y una capa interior de la
 
 [000499] DIÁLOGO
-Espacio de subcaracteres en el círculo mágico.
+Casilla del personaje de apoyo en el Círculo mágico.
 
 [000500] DIÁLOGO
 Los subsuelos de la capa exterior se muestran primero.
@@ -1531,13 +1531,13 @@ Los subsuelos de la capa exterior se muestran primero.
 La forma en que los rostros principales se corresponden con sus posiciones.
 
 [000502] DIÁLOGO
-Los submarinos en el lado exterior del Círculo Mágico
+Los personajes de apoyo situados en el exterior del Círculo mágico
 
 [000503] DIÁLOGO
-comenzará a sufrir daños primero.
+recibirán el daño primero.
 
 [000504] DIÁLOGO
-Cuando el submarino queda fuera de combate, el artefacto
+Cuando un personaje de apoyo cae, el artefacto
 
 [000505] DIÁLOGO
 él/ella activó voluntad
@@ -1585,13 +1585,13 @@ Colocar artefactos en la misma ranura permitirá
 sus efectos se acumulan.
 
 [000520] DIÁLOGO
-Los espacios con 'Ensanchar' pueden duplicarse
+Los espacios con 'Widen' pueden duplicarse
 
 [000521] DIÁLOGO
 el efecto de cualquier artefacto que contenga.
 
 [000522] DIÁLOGO
-Colocar varios artefactos de ensanchamiento en el mismo espacio.
+Colocar varios artefactos de Widen en el mismo espacio.
 
 [000523] DIÁLOGO
 duplicará, triplicará o cuadruplicará los efectos.
@@ -1600,7 +1600,7 @@ duplicará, triplicará o cuadruplicará los efectos.
 Sin embargo, también consumirá maná proporcionalmente.
 
 [000525] DIÁLOGO
-Colocar un Ensanchar en un Espacio de Magia/Habilidad
+Colocar un Widen en un Espacio de Magia/Habilidad
 
 [000526] DIÁLOGO
 Ampliar el alcance de la Magia/Habilidad.
@@ -1609,7 +1609,7 @@ Ampliar el alcance de la Magia/Habilidad.
 Hay espacios fijos que se han establecido
 
 [000528] DIÁLOGO
-Por defecto en el Círculo Mágico.
+Por defecto en el Círculo mágico.
 
 [000529] DIÁLOGO
 Defender: Recibe el daño del personaje secundario.
@@ -1618,7 +1618,7 @@ Defender: Recibe el daño del personaje secundario.
 HP -X: HP -X% de los subcaracteres.
 
 [000531] DIÁLOGO
-Dispersión X: Dispersa un X% del daño a los submarinos.
+Dispersión X: Dispersa un X% del daño a los personajes de apoyo.
 
 [000532] DIÁLOGO
 Doble muerte: Elimina a todos los demás al morir.
@@ -1825,7 +1825,7 @@ Guardia de ángel (Consumo de piso 10 - Dobles)
 Se vuelve más fuerte en proporción al número de Guardianes.
 
 [000600] DIÁLOGO
-Cura a todos los personajes y revive a los submarinos caídos.
+Cura a todos los personajes y revive a los personajes de apoyo caídos.
 
 [000601] DIÁLOGO
 Hechicería demoníaca (Consumo de piso 20 o 10 - Fijo)
@@ -1987,7 +1987,7 @@ Puerta
 Nivel monstruoso
 
 [000654] OPCIÓN
-Tasa de caída de artículos
+Tasa de caída de objetos
 
 [000655] OPCIÓN
 Tasa de títulos raros
@@ -2215,7 +2215,7 @@ Guardia de ángel (Consumo de piso 10 - Dobles)
 Se vuelve más fuerte en proporción al número de Guardianes.
 
 [000730] DIÁLOGO
-Cura a todos los personajes y revive a los submarinos caídos.
+Cura a todos los personajes y revive a los personajes de apoyo caídos.
 
 [000731] DIÁLOGO
 Hechicería demoníaca (Consumo de piso 20 o 10 - Fijo)
@@ -2685,7 +2685,7 @@ Caímos bastante bajo, ¿verdad?
 ¡El sol brilla y mira todos los árboles!
 
 [000880] DIÁLOGO
-¡Pudín, mira!
+¡Pudding, mira!
 
 [000881] DIÁLOGO
 ¡Ahí hay una casa!
@@ -2841,7 +2841,7 @@ Hechicera, pero... correcto.
 ¿Puedo tener esto?
 
 [000932] DIÁLOGO
-¡Pudín! ¡Eso es de mala educación!
+¡Pudding! ¡Eso es de mala educación!
 
 [000933] DIÁLOGO
 Lo siento.
@@ -3976,7 +3976,7 @@ Quizás pueda ayudar.
 cumplir los deseos de Pudding.
 
 [001297] DIÁLOGO
-Además de eso, el Círculo Mágico es...
+Además de eso, el Círculo mágico es...
 
 [001298] DIÁLOGO
 ¡Gracias, Despina!
@@ -3994,10 +3994,10 @@ Sobre tesoros...
 Todo lo que se obtenga irá a parar a todos.
 
 [001303] DIÁLOGO
-participando en el Círculo Mágico.
+participando en el Círculo mágico.
 
 [001304] DIÁLOGO
-Una vez que salgas del Círculo Mágico, obtendrás
+Una vez que salgas del Círculo mágico, obtendrás
 
 [001305] DIÁLOGO
 Tu parte, pero solo cuando regreses sano y salvo.
@@ -4027,7 +4027,7 @@ Lo que es de Souma también es mío.
 En fin, ¿y tú, Despina?
 
 [001314] DIÁLOGO
-¿Te unirás al Círculo Mágico?
+¿Te unirás al Círculo mágico?
 
 [001315] DIÁLOGO
 Soy Despina, la hechicera con dones especiales.
@@ -4322,7 +4322,7 @@ Subir de nivel y los títulos de equipo no son nada
 Simplemente coloca y activa el "Artefacto" en tu
 
 [001409] DIÁLOGO
-¡Círculo Mágico para potenciar tus habilidades!
+¡Círculo mágico para potenciar tus habilidades!
 
 [001410] DIÁLOGO
 Además, todos los equipos tienen atributos de peso ⑧.
@@ -4397,10 +4397,10 @@ Señor Percule
 ¿Conoces el "Artefacto Legendario"?
 
 [001434] DIÁLOGO
-Ese artefacto se llama "Ensanchar".
+Ese artefacto se llama «Widen».
 
 [001435] DIÁLOGO
-"Ensanchar..."
+«Widen...»
 
 [001436] DIÁLOGO
 ¿Qué tipo de efecto tendrá...?
@@ -4597,10 +4597,10 @@ No voy a ser el sumiso de una chica loca.
 Tu actitud de sabelotodo me molesta.
 
 [001499] DIÁLOGO
-En fin, déjame mostrarte el Círculo Mágico.
+En fin, déjame mostrarte el Círculo mágico.
 
 [001500] DIÁLOGO
-¿Entendiste qué es el Círculo Mágico?
+¿Entendiste qué es el Círculo mágico?
 
 [001501] DIÁLOGO
 ¿De qué se trata simplemente a partir de esa explicación?
@@ -4642,7 +4642,7 @@ Parece que yo, la hechicera talentosa Despina,
 Tendremos que empezar por lo básico.
 
 [001514] DIÁLOGO
-Este es el Círculo Mágico.
+Este es el Círculo mágico.
 
 [001515] DIÁLOGO
 O habla conmigo o
@@ -4651,7 +4651,7 @@ O habla conmigo o
 Abrir la pantalla del menú.
 
 [001517] DIÁLOGO
-No podrás modificar el Círculo Mágico.
+No podrás modificar el Círculo mágico.
 
 [001518] DIÁLOGO
 una vez que estés en las mazmorras.
@@ -4681,7 +4681,7 @@ Tú controlas al "personaje principal" en la batalla,
 pero los "personajes secundarios" sufren daños.
 
 [001527] DIÁLOGO
-Es decir, los "submarinos" son escudos humanos.
+Es decir, los personajes de apoyo funcionan como escudos humanos.
 
 [001528] DIÁLOGO
 Adelante, coloca un "sub".
@@ -4750,7 +4750,7 @@ Puedes colocar un "Artefacto" que
 Aquí se puede aumentar el "SP".
 
 [001550] DIÁLOGO
-Este Círculo Mágico permite hasta 4.
+Este Círculo mágico permite hasta 4.
 
 [001551] DIÁLOGO
 Puedes colocar un "Artefacto" que
@@ -4919,7 +4919,7 @@ SCRIPT: demo1101_00.dsf
 Me pregunto si esto es un cadáver.
 
 [001603] DIÁLOGO
-¡Pudín, para! ¡No lo toques!
+¡Pudding, para! ¡No lo toques!
 
 [001604] DIÁLOGO
 ¿Oh?
@@ -5093,7 +5093,7 @@ Golpea monstruos para conseguir dinero y objetos.
 Ella solo quería conseguir más miembros.
 
 [001661] DIÁLOGO
-en su Círculo Mágico...
+en su Círculo mágico...
 
 [001662] DIÁLOGO
 ¿Círculo mágico?
@@ -5473,7 +5473,7 @@ SCRIPT: demo1102_01.dsf
 Me pregunto si el tipo barbudo de la taberna...
 
 [001781] DIÁLOGO
-se unirá a mi Círculo Mágico.
+se unirá a mi Círculo mágico.
 
 [001782] DIÁLOGO
 Me pone nervioso cuando
@@ -6681,7 +6681,7 @@ Bien...
 Pudding tiene esta... enfermedad terminal.
 
 [002167] DIÁLOGO
-Pudín...?!
+Pudding...?!
 
 [002168] DIÁLOGO
 Parecía la última persona que sería...
@@ -6934,7 +6934,7 @@ Incluso intenté ponerme orejas de gato. ¿Qué más puedo hacer?
 Ni idea...
 
 [002248] DIÁLOGO
-¿Por qué no te unes al Círculo Mágico?
+¿Por qué no te unes al Círculo mágico?
 
 [002249] DIÁLOGO
 Mantengan cierta distancia entre ustedes dos.
@@ -7033,7 +7033,7 @@ Por eso puedo hacer con él lo que quiera.
 ¿Puedes enseñarle a Sherbet?
 
 [002281] DIÁLOGO
-¿Sobre el Círculo Mágico?
+¿Sobre el Círculo mágico?
 
 [002282] DIÁLOGO
 Es un verdadero fastidio.
@@ -7048,7 +7048,7 @@ Ya deberías saber lo suficiente al respecto.
 ¿Qué tengo que hacer?
 
 [002286] DIÁLOGO
-¡Únete al Círculo Mágico!
+¡Únete al Círculo mágico!
 
 [002287] DIÁLOGO
 Necesitas darte algo de espacio con
@@ -7313,7 +7313,7 @@ Te ruego que me dejes en paz.
 ¡Intentando engatusarme!
 
 [002371] DIÁLOGO
-¡Puedes renacer en el Círculo Mágico!
+¡Puedes renacer en el Círculo mágico!
 
 [002372] DIÁLOGO
 ¿Círculo mágico?
@@ -7444,7 +7444,7 @@ Personalmente, prefiero eso...
 ¡Ahora sí que se pone interesante!
 
 [002413] DIÁLOGO
-El Círculo Mágico debería ser seguro.
+El Círculo mágico debería ser seguro.
 
 [002414] DIÁLOGO
 Esto me permite protegerla en secreto.
@@ -7465,7 +7465,7 @@ Crosstine
 Todos, excepto Despina, ahora pueden
 
 [002420] DIÁLOGO
-Forma parte del Círculo Mágico.
+Forma parte del Círculo mágico.
 
 [002421] DIÁLOGO
 Finalmente.
@@ -7504,7 +7504,7 @@ No tengo boca, así que no puedo decirlo de todos modos.
 ¡Hola, ⑨!
 
 [002433] DIÁLOGO
-Me uniré al Círculo Mágico.
+Me uniré al Círculo mágico.
 
 [002434] DIÁLOGO
 ¡En mis días libres!
@@ -7604,7 +7604,7 @@ SCRIPT: demo1204_00.dsf
 ==================================================================
 
 [002463] DIÁLOGO
-El Círculo Mágico es muy práctico.
+El Círculo mágico es muy práctico.
 
 [002464] DIÁLOGO
 Es muy fácil obtener ayuda de los demás.
@@ -7613,10 +7613,10 @@ Es muy fácil obtener ayuda de los demás.
 Es lo que más necesito ahora mismo.
 
 [002466] DIÁLOGO
-Je. El Círculo Mágico solo puede ser utilizado por
+Je. El Círculo mágico solo puede ser utilizado por
 
 [002467] DIÁLOGO
-genios como yo. Pero incluso el Círculo Mágico
+genios como yo. Pero incluso el Círculo mágico
 
 [002468] DIÁLOGO
 es simplemente una característica adicional del "Kit Sandbox".
@@ -7813,7 +7813,7 @@ ahora es más grande.
 Crosstine
 
 [002531] DIÁLOGO
-El Círculo Mágico siempre viene con
+El Círculo mágico siempre viene con
 
 [002532] DIÁLOGO
 Todos los kits de Sandbox.
@@ -7991,7 +7991,7 @@ pero ella simplemente tiene miedo.
 Tuve un sueño.
 
 [002587] DIÁLOGO
-Era un sueño de pudín, saludable.
+Era un sueño de Pudding, saludable.
 
 [002588] DIÁLOGO
 Despina rara vez baja a la tienda,
@@ -9969,7 +9969,7 @@ No había necesidad de eso.
 (Hay personas que me protegen y son
 
 [003218] DIÁLOGO
-Dispuestos a ayudar. Igual que el Círculo Mágico.
+Dispuestos a ayudar. Igual que el Círculo mágico.
 
 [003219] DIÁLOGO
 Incluso papá tiene...)
@@ -10038,7 +10038,7 @@ todo este tiempo...)
 Puede que no pueda hacerlo solo.
 
 [003241] DIÁLOGO
-Pero con el Círculo Mágico, tal vez...)
+Pero con el Círculo mágico, tal vez...)
 
 [003242] DIÁLOGO
 ¡Ahora puedes ir a una nueva mazmorra!
@@ -10815,7 +10815,7 @@ Pareces muy feliz, Coco.
 ¿Oh?
 
 [003490] PERSONAJE
-Souma y Pudín
+Souma y Pudding
 
 [003491] DIÁLOGO
 ¡¿Palma de coco?!
@@ -11248,7 +11248,7 @@ Pero me siento mucho mejor que cuando estaba
 ¿A quién le importo yo, de todos modos? Al menos
 
 [003631] DIÁLOGO
-El pudín es mejor, ¿verdad? Me alegro de que mi
+El Pudding es mejor, ¿verdad? Me alegro de que mi
 
 [003632] DIÁLOGO
 Esta vez, la mala suerte sí que le vino bien a alguien.
@@ -11486,7 +11486,7 @@ Tienes razón en eso. Hay algo.
 son diferentes entre sí.
 
 [003707] DIÁLOGO
-¡Todo gracias al Círculo Mágico!
+¡Todo gracias al Círculo mágico!
 
 [003708] DIÁLOGO
 ¡Deberías probarlo, Despina!
@@ -11504,7 +11504,7 @@ Pensé que solo me había traído para presumir.
 los peinados que hizo para la fiesta.
 
 [003713] DIÁLOGO
-El Círculo Mágico... Hmm...
+El Círculo mágico... Hmm...
 
 [003714] DIÁLOGO
 Hmph. Es ese vagabundo otra vez.
@@ -11642,7 +11642,7 @@ en contra de eso, Despina.
 Crosstine
 
 [003759] DIÁLOGO
-Pero el Círculo Mágico puede ser un método eficaz.
+Pero el Círculo mágico puede ser un método eficaz.
 
 [003760] DIÁLOGO
 contramedida contra ella. Ahora que tiene un cuerpo,
@@ -11759,7 +11759,7 @@ Je. Si Despina lucha a nuestro lado,
 ¡No hay nadie a quien no podamos vencer!
 
 [003798] DIÁLOGO
-¡Entremos todos en el Círculo Mágico!
+¡Entremos todos en el Círculo mágico!
 
 [003799] DIÁLOGO
 (Siempre he querido gustar
@@ -11834,7 +11834,7 @@ Pero esto puede ser aceptable de vez en cuando.
 ¡Yo, la genial hechicera Despina, guiaré el camino!
 
 [003823] DIÁLOGO
-¡Ahora es el momento de usar el Círculo Mágico!
+¡Ahora es el momento de usar el Círculo mágico!
 
 [003824] DIÁLOGO
 ¡Préstame tu fuerza!
@@ -11899,7 +11899,7 @@ Sin duda haré todo lo posible.
 ¡Estoy tan feliz!
 
 [003843] DIÁLOGO
-¡Despina finalmente se une al Círculo Mágico!
+¡Despina finalmente se une al Círculo mágico!
 
 [003844] DIÁLOGO
 ¡Esto es genial!
@@ -12081,7 +12081,7 @@ Asagi
 Simplemente se están ayudando mutuamente.
 
 [003902] DIÁLOGO
-¿En el Círculo Mágico, verdad?
+¿En el Círculo mágico, verdad?
 
 [003903] DIÁLOGO
 ¡Pero eso es algo bueno!
@@ -12155,7 +12155,7 @@ SCRIPT: demo1501_01.dsf
 Es bastante raro que alguien no quiera
 
 [003925] DIÁLOGO
-Utiliza el Círculo Mágico.
+Utiliza el Círculo mágico.
 
 [003926] DIÁLOGO
 Hace que todo sea mucho más fácil.
@@ -12292,7 +12292,7 @@ Asagi
 No es mentira.
 
 [003969] DIÁLOGO
-Si te unes al Círculo Mágico,
+Si te unes al Círculo mágico,
 
 [003970] DIÁLOGO
 Puedes convertirte en el "personaje principal".
@@ -12366,7 +12366,7 @@ SCRIPT: demo1502_01.dsf
 ==================================================================
 
 [003992] DIÁLOGO
-No me importa dejarla entrar en el Círculo Mágico,
+No me importa dejarla entrar en el Círculo mágico,
 
 [003993] DIÁLOGO
 pero más le vale aprender a comportarse.
@@ -12816,7 +12816,7 @@ Vi a Susie sentada en una zapatería.
 ¿Es este el poder del "personaje principal"?
 
 [004137] DIÁLOGO
-¡¿Del Círculo Mágico?!
+¡¿Del Círculo mágico?!
 
 [004138] DIÁLOGO
 ¡Es... IMPRESIONANTE! @#$%!
@@ -13400,7 +13400,7 @@ No te obligaré.
 ¡Mi cuerpo me está diciendo que quiere irse!
 
 [004320] DIÁLOGO
-¡Pudín!
+¡Pudding!
 
 [004321] DIÁLOGO
 ¡Espérame!
@@ -13409,7 +13409,7 @@ No te obligaré.
 ¿Eh? Creí que te quedabas allí atrás.
 
 [004323] DIÁLOGO
-en el Círculo Mágico.
+en el Círculo mágico.
 
 [004324] PERSONAJE
 ¿Souma?
@@ -13546,13 +13546,13 @@ Supongo que es cierto que se necesita mucho
 ¡Los cielos me han bendecido!
 
 [004367] DIÁLOGO
-¡E-Este es un artículo raro entre artículos raros!
+¡E-Este es un objeto raro entre objetos raros!
 
 [004368] DIÁLOGO
 ¡El "legendario estiércol de caballo"!
 
 [004369] DIÁLOGO
-¡Me llegó un artículo increíble!
+¡Me llegó un objeto increíble!
 
 [004370] DIÁLOGO
 ¡Je, je!
@@ -13683,7 +13683,7 @@ Has estado huyendo de mí todo este tiempo.
 ¿Cómo, entonces, te volviste tan fuerte?
 
 [004411] DIÁLOGO
-Porque tengo el Círculo Mágico.
+Porque tengo el Círculo mágico.
 
 [004412] DIÁLOGO
 Hmph.
@@ -13899,7 +13899,7 @@ Crosstine
 Tu abuelo se había encerrado en un mundo que
 
 [004483] DIÁLOGO
-También se creó el Círculo Mágico.
+También se creó el Círculo mágico.
 
 [004484] DIÁLOGO
 Tanto entonces como ahora han proporcionado una ayuda muy necesaria.
@@ -13917,7 +13917,7 @@ Tanto entonces como ahora han proporcionado una ayuda muy necesaria.
 ...
 
 [004489] DIÁLOGO
-No conocía el Círculo Mágico
+No conocía el Círculo mágico
 
 [004490] DIÁLOGO
 tuvo un efecto secundario tan extraño.
@@ -13956,7 +13956,7 @@ Crosstine
 ...No.
 
 [004502] DIÁLOGO
-El Círculo Mágico es más interesante de lo que pensaba.
+El Círculo mágico es más interesante de lo que pensaba.
 
 [004503] DIÁLOGO
 Por el momento, lo investigaré.
@@ -14025,7 +14025,7 @@ No tengo nada para que bebas. Lárgate de aquí.
 No te acerques a mí nunca más.
 
 [004525] PERSONAJE
-¿Pudín?
+¿Pudding?
 
 [004526] DIÁLOGO
 En otras palabras,
@@ -14093,7 +14093,7 @@ SCRIPT: end03_souma.dsf
 ¡Cuidado!
 
 [004546] DIÁLOGO
-¡¿Pudín?!
+¡¿Pudding?!
 
 [004547] DIÁLOGO
 Dios mío.
@@ -14105,7 +14105,7 @@ Eres tan indefenso
 ¿Sabes que sin mí?
 
 [004550] DIÁLOGO
-El pudín me protegió... pero...
+El Pudding me protegió... pero...
 
 [004551] DIÁLOGO
 Se supone que es al revés.
@@ -14141,7 +14141,7 @@ No hay ninguna razón por la que no pueda hacerlo.
 Tienes razón.
 
 [004562] DIÁLOGO
-...Pudín.
+...Pudding.
 
 [004563] DIÁLOGO
 ¿Qué?
@@ -15891,7 +15891,7 @@ Puedo predecir el futuro según tus estadísticas.
 ¡Tu ATK está en un estado terrible!
 
 [005132] DIÁLOGO
-¡Aumenta tu ATK en el Círculo Mágico ahora!
+¡Aumenta tu ATK en el Círculo mágico ahora!
 
 [005133] DIÁLOGO
 ¡Despertar!
@@ -15900,7 +15900,7 @@ Puedo predecir el futuro según tus estadísticas.
 ¡Tu ATK es demasiado bajo!
 
 [005135] DIÁLOGO
-¡Aumenta tu ATK en el Círculo Mágico ahora!
+¡Aumenta tu ATK en el Círculo mágico ahora!
 
 [005136] DIÁLOGO
 ¡Tu ATK es demasiado bajo!
@@ -15936,7 +15936,7 @@ Tu ATK es un poco bajo.
 ¿Qué tal si añadimos algunos artefactos de ATK?
 
 [005147] DIÁLOGO
-¿A tu Círculo Mágico?
+¿A tu Círculo mágico?
 
 [005148] DIÁLOGO
 Tu ATK es normal.
@@ -15966,7 +15966,7 @@ No está mal. No está nada mal.
 Tu ATK es alto.
 
 [005157] DIÁLOGO
-Se te da bastante bien usar el Círculo Mágico.
+Se te da bastante bien usar el Círculo mágico.
 
 [005158] DIÁLOGO
 ¡Tu ATK es realmente alto!
@@ -16017,7 +16017,7 @@ Se te da bastante bien usar el Círculo Mágico.
 ¡Tu DEF está en un estado terrible!
 
 [005174] DIÁLOGO
-¡Aumenta tu DEF en el Círculo Mágico ahora!
+¡Aumenta tu DEF en el Círculo mágico ahora!
 
 [005175] DIÁLOGO
 ¡Despertar!
@@ -16026,7 +16026,7 @@ Se te da bastante bien usar el Círculo Mágico.
 ¡Tu DEF es demasiado baja!
 
 [005177] DIÁLOGO
-¡Aumenta tu DEF en el Círculo Mágico ahora!
+¡Aumenta tu DEF en el Círculo mágico ahora!
 
 [005178] DIÁLOGO
 ¡Tu DEF es demasiado baja!
@@ -16062,7 +16062,7 @@ Tu DEF es un poco bajo.
 ¿Qué tal si añadimos algunos artefactos DEF?
 
 [005189] DIÁLOGO
-¿A tu Círculo Mágico?
+¿A tu Círculo mágico?
 
 [005190] DIÁLOGO
 Tu DEF es normal.
@@ -16092,7 +16092,7 @@ No está mal. No está nada mal.
 Tu DEF es alta.
 
 [005199] DIÁLOGO
-Se te da bastante bien usar el Círculo Mágico.
+Se te da bastante bien usar el Círculo mágico.
 
 [005200] DIÁLOGO
 ¡Tu DEF es realmente alta!
@@ -16142,7 +16142,7 @@ Tiempo de despeje %3d：%02d：%02d %s
 ¡He aprendido magia nueva!
 
 [005214] INTERFAZ
-¡Aprendí un nuevo Círculo Mágico!
+¡Aprendí un nuevo Círculo mágico!
 
 [005215] INTERFAZ
 Conteo de borrados: %6d
@@ -16212,7 +16212,7 @@ A los jugadores.
 Círculo mágico/Equipar
 
 [005235] INTERFAZ
-Comprar artículos
+Comprar objetos
 
 [005236] INTERFAZ
 Creación de personajes
@@ -16906,7 +16906,7 @@ La DEF es tu defensa.
 Cuanto mayor sea tu DEF, menos daño recibirás.
 
 [005457] INTERFAZ
-Puedes configurar tus habilidades mágicas en tu Círculo Mágico para usarlas en combate. Poténcialas en el "Espacio de Habilidades Mágicas" del Círculo Mágico.
+Puedes configurar tus habilidades mágicas en tu Círculo mágico para usarlas en combate. Poténcialas en el "Espacio de Habilidades Mágicas" del Círculo mágico.
 
 [005458] INTERFAZ
 CRT significa Tasa de Crítico.
@@ -17003,7 +17003,7 @@ El poder (%) es la fuerza de tu arma.
 Si es bajo, no podrás infligir daño, sin importar lo alto que sea tu ATK.
 
 [005479] INTERFAZ
-Tu trabajo. El tipo de Círculo Mágico, magia y habilidades varían según tu trabajo.
+Tu trabajo. El tipo de Círculo mágico, magia y habilidades varían según tu trabajo.
 Las estadísticas que mejoran al subir de nivel también cambian.
 
 [005480] INTERFAZ
@@ -17045,7 +17045,7 @@ Cuando los personajes en los subespacios suben de nivel,
 El número de △ determina la cantidad a obtener.
 
 [005489] INTERFAZ
-Se refiere a los espacios predeterminados en el Círculo Mágico.
+Se refiere a los espacios predeterminados en el Círculo mágico.
 Efectos como HP-△% aparecerán aquí.
 No se puede eliminar ni modificar.
 
@@ -17814,7 +17814,7 @@ Menos de 10 años
 Activa o desactiva la visualización de los decimales en los daños.
 
 [005715] INTERFAZ
-Efectos del Círculo Mágico
+Efectos del Círculo mágico
 
 [005716] INTERFAZ
 Activa o desactiva la visualización de efectos para Magic Circle.
@@ -17926,14 +17926,13 @@ Habitación versus
 Tutorial de conexión inalámbrica
 
 [005751] INTERFAZ
-Seleccione el personaje para cambiar de trabajo.
+Selecciona el personaje que cambiará de clase.
 
 [005752] INTERFAZ
 Seleccione el puesto al que desea cambiar.
 
 [005753] INTERFAZ
-Revertir de LV %2d a 1 para cambiar de trabajo.
-
+Volver del nivel %2d al 1 para cambiar de clase.
 ¿Continuar?
 
 [005754] INTERFAZ
@@ -18017,7 +18016,7 @@ Nivel monstruoso
 
 
 [005778] INTERFAZ
-Tasa de aparición de artículos
+Tasa de aparición de objetos
 
 
 [005779] INTERFAZ
@@ -19017,7 +19016,7 @@ Maná Plus 9
 Maná +9.
 
 [006091] OBJETOS ARTEFACTOS
-Ensanchar
+Widen
 
 [006092] OBJETOS ARTEFACTOS
 Alcance +, Amplía el siguiente espacio.
@@ -19050,19 +19049,19 @@ Magia x5
 Defender 25%
 
 [006102] OBJETOS ARTEFACTOS
-Los submarinos reciben el 25% del daño total.
+Los personajes de apoyo reciben el 25% del daño total.
 
 [006103] OBJETOS ARTEFACTOS
 Defender 50%
 
 [006104] OBJETOS ARTEFACTOS
-Los submarinos reciben el 50% del daño total.
+Los personajes de apoyo reciben el 50% del daño total.
 
 [006105] OBJETOS ARTEFACTOS
 Defiende al 100%
 
 [006106] OBJETOS ARTEFACTOS
-Los submarinos reciben el 100% del daño total.
+Los personajes de apoyo reciben el 100% del daño total.
 
 [006107] OBJETOS ARTEFACTOS
 HP-20%
@@ -19985,7 +19984,7 @@ DATABASE.DAT/CHAR.DAT
 ##################################################################
 
 [006407] PERSONAJES
-Pudín
+Pudding
 
 [006408] PERSONAJES
 Una chica con aires de chico.
@@ -20958,7 +20957,7 @@ DATABASE.DAT/DAIHYOU.DAT
 ##################################################################
 
 [006719] NOMBRES PERSONAJES
-Pudín
+Pudding
 
 [006720] NOMBRES PERSONAJES
 Pegajoso
@@ -26805,7 +26804,7 @@ DATABASE.DAT/SIEN.DAT
 ##################################################################
 
 [008495] NOMBRES PERSONAJES
-Pudín
+Pudding
 
 [008496] NOMBRES PERSONAJES
 Pegajoso
@@ -28484,49 +28483,49 @@ Hacha Sangrienta
 Varilla común
 
 [009048] OBJETOS ARMAS
-⑥Personal +10
+⑥Bastón +10
 
 [009049] OBJETOS ARMAS
 Cetro rúnico
 
 [009050] OBJETOS ARMAS
-⑥Personal +12
+⑥Bastón +12
 
 [009051] OBJETOS ARMAS
 Vara de ébano
 
 [009052] OBJETOS ARMAS
-⑥Personal +15
+⑥Bastón +15
 
 [009053] OBJETOS ARMAS
 Varita de mago
 
 [009054] OBJETOS ARMAS
-④Personal +20
+④Bastón +20
 
 [009055] OBJETOS ARMAS
 Cetro rúnico
 
 [009056] OBJETOS ARMAS
-⑤Personal +25
+⑤Bastón +25
 
 [009057] OBJETOS ARMAS
 Barra de refuerzo
 
 [009058] OBJETOS ARMAS
-⑤Personal +30
+⑤Bastón +30
 
 [009059] OBJETOS ARMAS
 Duela
 
 [009060] OBJETOS ARMAS
-④Personal +35
+④Bastón +35
 
 [009061] OBJETOS ARMAS
 Personal de ángeles
 
 [009062] OBJETOS ARMAS
-⑥Personal +38
+⑥Bastón +38
 
 [009063] OBJETOS ARMAS
 Palo

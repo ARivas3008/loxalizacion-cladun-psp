@@ -1,19 +1,19 @@
 ﻿grupo_id,text_id,origen,estado_fuente,alertas,original,espanol
 000032,CLD-000038,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,revisar_numeros,"If you placed 2 or more ""Widens,"" the","Si colocas dos o más «Widen»,"
 000039,CLD-000045,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"""Widen"" that particular ability!",¡ampliarás el efecto de esa habilidad!
-000175,CLD-000194,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"the ""Widen"" Artifact is like night and day.","El artefacto ""Ensanchar"" es como la noche y el día."
-000203,CLD-000222,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"has the ""Widen"" Artifact.","posee el artefacto ""Ensanchar""."
+000175,CLD-000194,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"the ""Widen"" Artifact is like night and day.","El artefacto ""Widen"" es como la noche y el día."
+000203,CLD-000222,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"has the ""Widen"" Artifact.","posee el artefacto ""Widen""."
 000316,CLD-000335,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Widening,Ampliación
-000353,CLD-000372,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Spaces with 'Widen' can double,Los espacios con 'Ensanchar' pueden duplicarse
-000355,CLD-000374,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Placing multiple Widen Artifacts in the same space,Colocar varios artefactos de ensanchamiento en el mismo espacio.
-000358,CLD-000377,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Placing a Widen on a Magic/Ability Space will,Colocar un Ensanchar en un Espacio de Magia/Habilidad
+000353,CLD-000372,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Spaces with 'Widen' can double,Los espacios con 'Widen' pueden duplicarse
+000355,CLD-000374,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Placing multiple Widen Artifacts in the same space,Colocar varios artefactos de Widen en el mismo espacio.
+000358,CLD-000377,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Placing a Widen on a Magic/Ability Space will,Colocar un Widen en un Espacio de Magia/Habilidad
 000483,CLD-000502,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Widening,Ampliación
-000520,CLD-000539,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Spaces with 'Widen' can double,Los espacios con 'Ensanchar' pueden duplicarse
-000522,CLD-000541,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Placing multiple Widen Artifacts in the same space,Colocar varios artefactos de ensanchamiento en el mismo espacio.
-000525,CLD-000544,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Placing a Widen on a Magic/Ability Space will,Colocar un Ensanchar en un Espacio de Magia/Habilidad
+000520,CLD-000539,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Spaces with 'Widen' can double,Los espacios con 'Widen' pueden duplicarse
+000522,CLD-000541,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Placing multiple Widen Artifacts in the same space,Colocar varios artefactos de Widen en el mismo espacio.
+000525,CLD-000544,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Placing a Widen on a Magic/Ability Space will,Colocar un Widen en un Espacio de Magia/Habilidad
 000526,CLD-000545,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Widen the range of the Magic/Ability.,Ampliar el alcance de la Magia/Habilidad.
-001434,CLD-001467,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"That Artifact is called ""Widen.""","Ese artefacto se llama ""Ensanchar""."
-001435,CLD-001468,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"""Widen...""","""Ensanchar..."""
+001434,CLD-001467,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"That Artifact is called ""Widen.""",Ese artefacto se llama «Widen».
+001435,CLD-001468,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"""Widen...""",«Widen...»
 004960,CLD-005103,SCRIPT.SDT/SCRIPT.DAT,pendiente_traduccion,revisar_numeros,But there isn't a 2nd floor in this house.,Pero esta casa no tiene segundo piso.
 005230,CLD-005420,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Select your BGM type.
 You can change this setting anytime.","Selecciona el tipo de música de fondo.
@@ -43,7 +43,7 @@ The higher your DEF, the less damage you take.","La DEF es tu defensa.
 Cuanto mayor sea tu DEF, menos daño recibirás."
 005457,CLD-005647,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Magic/Ability can be set on your Magic Circle for 
 battle use.Boost them on the ""Magic/Ability Space"" 
-of the Magic Circle.","Puedes configurar tus habilidades mágicas en tu Círculo Mágico para usarlas en combate. Poténcialas en el ""Espacio de Habilidades Mágicas"" del Círculo Mágico."
+of the Magic Circle.","Puedes configurar tus habilidades mágicas en tu Círculo mágico para usarlas en combate. Poténcialas en el ""Espacio de Habilidades Mágicas"" del Círculo mágico."
 005458,CLD-005648,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"CRT is the Critical Rate.
 The higher the CRT, the more often critical hits occur.
 Critical hits deal more damage than usual.","CRT significa Tasa de Crítico.
@@ -116,7 +116,7 @@ no matter how high your ATK.","El poder (%) es la fuerza de tu arma.
 Si es bajo, no podrás infligir daño, sin importar lo alto que sea tu ATK."
 005479,CLD-005669,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Your job.The type of Magic Circle, magic, 
 and abilities differ based on your job.
-What stats upgrade upon a level up also change.","Tu trabajo. El tipo de Círculo Mágico, magia y habilidades varían según tu trabajo.
+What stats upgrade upon a level up also change.","Tu trabajo. El tipo de Círculo mágico, magia y habilidades varían según tu trabajo.
 Las estadísticas que mejoran al subir de nivel también cambian."
 005480,CLD-005670,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Points used to activate Artifacts.
 Utilize your subs' mana to boost the main.
@@ -173,10 +173,6 @@ Continue?","Copia la cara de %s en los cuatro lados.
 ¿Continuar?"
 005679,CLD-005869,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"
 Floors cleared record cut in half...",El récord de pisos despejados se redujo a la mitad...
-005753,CLD-005943,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Revert from LV %2d to 1 in order to job change.
-Continue?","Revertir de LV %2d a 1 para cambiar de trabajo.
-
-¿Continuar?"
 005764,CLD-005954,DATABASE.DAT/STRTBL.DAT,pendiente_traduccion,revisar_saltos_linea,"Cannot read yet.
 Defeat enemies to unlock.","Aún no puede leer.
 
@@ -302,11 +298,11 @@ Para guardar tu progreso en el juego, necesitarás una tarjeta de memoria con %d
 To save new game progress, you will need storage media with %dKB of free space.","El medio de almacenamiento requiere %d KB de espacio libre adicional.
 
 Para guardar el progreso de tu nuevo juego, necesitarás un medio de almacenamiento con %d KB de espacio libre."
-006091,CLD-006336,DATABASE.DAT/ARTIFACT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Widen,Ensanchar
+006091,CLD-006336,DATABASE.DAT/ARTIFACT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,Widen,Widen
 006092,CLD-006337,DATABASE.DAT/ARTIFACT.DAT,pendiente_traduccion,glosario_Widen_por_revisar,"Range +, Widens next space.","Alcance +, Amplía el siguiente espacio."
 006467,CLD-006701,DATABASE.DAT/CHAR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,地球姫,Princesa de la Tierra
 006468,CLD-006702,DATABASE.DAT/CHAR.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,マナは高いがHPが低い。,Tiene mucha mana pero poca HP.
-006719,CLD-006953,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,プティング,Pudín
+006719,CLD-006953,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,プティング,Pudding
 006720,CLD-F-DAIHYOU-0001-nombre_personaje,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,グミ,Pegajoso
 006721,CLD-006954,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,デスピナ,Despina
 006722,CLD-006955,DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ソウマ,Souma
@@ -1613,7 +1609,7 @@ Es especialmente peligroso cuando ataca en grupo."
 008357,CLD-F-MONSTER-0168-nombre,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,仮面,mascarilla
 008359,CLD-008558,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラスボス,Jefe final
 008360,CLD-008559,DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ラスボス,Jefe final
-008495,CLD-008755,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,プティング,Pudín
+008495,CLD-008755,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,プティング,Pudding
 008496,CLD-F-SIEN-0001-nombre_personaje,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,グミ,Pegajoso
 008497,CLD-008756,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,デスピナ,Despina
 008498,CLD-008757,DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,estado_fuente_pendiente,ソウマ,Souma

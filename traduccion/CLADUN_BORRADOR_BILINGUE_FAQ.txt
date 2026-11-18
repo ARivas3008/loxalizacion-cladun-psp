@@ -707,14 +707,14 @@ New Hiyo
 [000116] DIÁLOGO | CLD-000133
 ORIGINAL:
 This is the New-geon!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Esta es la Nueva-geon!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Este es el New-geon!
 
 [000117] DIÁLOGO | CLD-000134
 ORIGINAL:
 Be careful! It's not the Ran-geon!
 ESPAÑOL (posteditado_contextualmente_por_IA):
-¡Cuidado! ¡No es el Ran-geon!
+¡Ten cuidado! ¡No es el Ran-geon!
 
 
 ==================================================================
@@ -1071,8 +1071,8 @@ La diferencia entre usar y no usar
 [000175] DIÁLOGO | CLD-000194
 ORIGINAL:
 the "Widen" Artifact is like night and day.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El artefacto "Ensanchar" es como la noche y el día.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+El artefacto "Widen" es como la noche y el día.
 QA: glosario_Widen_por_revisar
 
 [000176] DIÁLOGO | CLD-000195
@@ -1240,8 +1240,8 @@ Alguien en Arcanus Cella
 [000203] DIÁLOGO | CLD-000222
 ORIGINAL:
 has the "Widen" Artifact.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-posee el artefacto "Ensanchar".
+ESPAÑOL (posteditado_contextualmente_por_IA):
+posee el artefacto "Widen".
 QA: glosario_Widen_por_revisar
 
 [000204] DIÁLOGO | CLD-000223
@@ -1265,8 +1265,8 @@ En Wireless Play, todos pueden obtener
 [000207] DIÁLOGO | CLD-000226
 ORIGINAL:
 a single item simultaneously.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-un solo artículo simultáneamente.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+un solo objeto simultáneamente.
 
 [000208] DIÁLOGO | CLD-000227
 ORIGINAL:
@@ -1498,8 +1498,8 @@ Te permite usar ataques a distancia.
 [000245] DIÁLOGO | CLD-000264
 ORIGINAL:
 Once the Staff Gauge on the bottom right
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Una vez que el indicador de personal esté en la parte inferior derecha
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Una vez que el indicador del bastón esté en la parte inferior derecha
 
 [000246] DIÁLOGO | CLD-000265
 ORIGINAL:
@@ -1522,8 +1522,8 @@ Tiene el elemento ④, ⑤ o ⑥.
 [000249] DIÁLOGO | CLD-000268
 ORIGINAL:
 Elements are decided by the type of staff.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los elementos se determinan en función del tipo de personal.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los elementos se determinan en función del tipo de bastón.
 
 [000250] DIÁLOGO | CLD-000269
 ORIGINAL:
@@ -1949,14 +1949,14 @@ Este es un hechizo donde el sub potencia al principal.
 [000320] DIÁLOGO | CLD-000339
 ORIGINAL:
 by cheering him/her on.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-animándole/a.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+que refuerza al personaje principal.
 
 [000321] DIÁLOGO | CLD-000340
 ORIGINAL:
 Subs consume Mana to activate
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los submarinos consumen maná para activarse.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los personajes de apoyo consumen maná para activar
 
 [000322] DIÁLOGO | CLD-000341
 ORIGINAL:
@@ -1967,8 +1967,8 @@ Artefactos, que luego,
 [000323] DIÁLOGO | CLD-000342
 ORIGINAL:
 in turn, power up the main.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-a su vez, encienda la principal.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+y aumentarán las capacidades del personaje principal.
 
 [000324] DIÁLOGO | CLD-000343
 ORIGINAL:
@@ -1979,14 +1979,14 @@ Este es tu personaje jugable.
 [000325] DIÁLOGO | CLD-000344
 ORIGINAL:
 When all subs get knocked out,
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cuando todos los suplentes quedan fuera de combate,
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Cuando caen todos los personajes de apoyo,
 
 [000326] DIÁLOGO | CLD-000345
 ORIGINAL:
 the main's HP will display.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La HP principal se mostrará.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+se muestra la vida del personaje principal.
 
 [000327] DIÁLOGO | CLD-000346
 ORIGINAL:
@@ -2009,8 +2009,8 @@ Recibir daño en la batalla
 [000330] DIÁLOGO | CLD-000349
 ORIGINAL:
 will cause the subs to lose their HP.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-hará que los suplentes pierdan sus puntos de vida.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+hace que los personajes de apoyo pierdan PV.
 
 [000331] DIÁLOGO | CLD-000350
 ORIGINAL:
@@ -2021,14 +2021,14 @@ Hay una capa exterior y una capa interior de
 [000332] DIÁLOGO | CLD-000351
 ORIGINAL:
 Sub Character Space in the Magic Circle.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Espacio de subcaracteres en el círculo mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Casilla del personaje de apoyo en el Círculo mágico.
 
 [000333] DIÁLOGO | CLD-000352
 ORIGINAL:
 The subs in the outer layer display first.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los subtítulos de la capa exterior se muestran primero.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Se muestran primero los personajes de apoyo de la capa exterior.
 
 [000334] DIÁLOGO | CLD-000353
 ORIGINAL:
@@ -2039,20 +2039,20 @@ La forma en que los rostros principales se corresponden con sus posiciones.
 [000335] DIÁLOGO | CLD-000354
 ORIGINAL:
 The subs on the outer side of the Magic Circle
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los submarinos en el lado exterior del Círculo Mágico
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los personajes de apoyo situados en el exterior del Círculo mágico
 
 [000336] DIÁLOGO | CLD-000355
 ORIGINAL:
 will take damage first.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-sufrirá daños primero.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+recibirán el daño primero.
 
 [000337] DIÁLOGO | CLD-000356
 ORIGINAL:
 When the sub is knocked out, the Artifact
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cuando el submarino queda fuera de combate, el artefacto
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Cuando un personaje de apoyo cae, el artefacto
 
 [000338] DIÁLOGO | CLD-000357
 ORIGINAL:
@@ -2081,14 +2081,14 @@ en Espacios de Artefactos.
 [000342] DIÁLOGO | CLD-000361
 ORIGINAL:
 Sub Characters will consume Mana
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los personajes secundarios consumirán maná.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los personajes de apoyo consumen maná
 
 [000343] DIÁLOGO | CLD-000362
 ORIGINAL:
 to activate various Artifacts.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-para activar varios artefactos.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+para activar distintos artefactos.
 
 [000344] DIÁLOGO | CLD-000363
 ORIGINAL:
@@ -2147,8 +2147,8 @@ efectos apilar.
 [000353] DIÁLOGO | CLD-000372
 ORIGINAL:
 Spaces with 'Widen' can double
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los espacios con 'Ensanchar' pueden duplicarse
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los espacios con 'Widen' pueden duplicarse
 QA: glosario_Widen_por_revisar
 
 [000354] DIÁLOGO | CLD-000373
@@ -2160,8 +2160,8 @@ el efecto de cualquier artefacto que contenga.
 [000355] DIÁLOGO | CLD-000374
 ORIGINAL:
 Placing multiple Widen Artifacts in the same space
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Colocar varios artefactos de ensanchamiento en el mismo espacio.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Colocar varios artefactos de Widen en el mismo espacio.
 QA: glosario_Widen_por_revisar
 
 [000356] DIÁLOGO | CLD-000375
@@ -2179,8 +2179,8 @@ Sin embargo, también consumirá maná proporcionalmente.
 [000358] DIÁLOGO | CLD-000377
 ORIGINAL:
 Placing a Widen on a Magic/Ability Space will
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Colocar un Ensanchar en un Espacio de Magia/Habilidad
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Colocar un Widen en un Espacio de Magia/Habilidad
 QA: glosario_Widen_por_revisar
 
 [000359] DIÁLOGO | CLD-000378
@@ -2198,8 +2198,8 @@ Hay espacios fijos que se han establecido
 [000361] DIÁLOGO | CLD-000380
 ORIGINAL:
 by default on the Magic Circle.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Por defecto en el Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Por defecto en el Círculo mágico.
 
 [000362] DIÁLOGO | CLD-000381
 ORIGINAL:
@@ -2216,8 +2216,8 @@ HP -X: HP -X% de los subcaracteres.
 [000364] DIÁLOGO | CLD-000383
 ORIGINAL:
 Scatter X: Disperses X% of damage to subs.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Dispersión X: Dispersa un X% del daño a los submarinos.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Dispersión X: Dispersa un X% del daño a los personajes de apoyo.
 
 [000365] DIÁLOGO | CLD-000384
 ORIGINAL:
@@ -2504,8 +2504,8 @@ Te permite usar ataques a distancia.
 [000412] DIÁLOGO | CLD-000431
 ORIGINAL:
 Once the Staff Gauge on the bottom right
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Una vez que el indicador de personal esté en la parte inferior derecha
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Una vez que el indicador del bastón esté en la parte inferior derecha
 
 [000413] DIÁLOGO | CLD-000432
 ORIGINAL:
@@ -2522,8 +2522,8 @@ Tiene el elemento ④, ⑤ o ⑥.
 [000415] DIÁLOGO | CLD-000434
 ORIGINAL:
 Elements are decided by the type of staff.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los elementos se determinan en función del tipo de personal.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los elementos se determinan en función del tipo de bastón.
 
 [000416] DIÁLOGO | CLD-000435
 ORIGINAL:
@@ -2961,8 +2961,8 @@ animándole/a.
 [000488] DIÁLOGO | CLD-000507
 ORIGINAL:
 Subs consume Mana to activate
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los submarinos consumen maná para activarse.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los personajes de apoyo consumen maná para activar
 
 [000489] DIÁLOGO | CLD-000508
 ORIGINAL:
@@ -3027,8 +3027,8 @@ Hay una capa exterior y una capa interior de la
 [000499] DIÁLOGO | CLD-000518
 ORIGINAL:
 Sub Character Space in the Magic Circle.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Espacio de subcaracteres en el círculo mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Casilla del personaje de apoyo en el Círculo mágico.
 
 [000500] DIÁLOGO | CLD-000519
 ORIGINAL:
@@ -3045,20 +3045,20 @@ La forma en que los rostros principales se corresponden con sus posiciones.
 [000502] DIÁLOGO | CLD-000521
 ORIGINAL:
 The subs on the outer side of the Magic Circle
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los submarinos en el lado exterior del Círculo Mágico
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los personajes de apoyo situados en el exterior del Círculo mágico
 
 [000503] DIÁLOGO | CLD-000522
 ORIGINAL:
 will start taking damage first.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-comenzará a sufrir daños primero.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+recibirán el daño primero.
 
 [000504] DIÁLOGO | CLD-000523
 ORIGINAL:
 When the sub is knocked out, the Artifact
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cuando el submarino queda fuera de combate, el artefacto
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Cuando un personaje de apoyo cae, el artefacto
 
 [000505] DIÁLOGO | CLD-000524
 ORIGINAL:
@@ -3153,8 +3153,8 @@ sus efectos se acumulan.
 [000520] DIÁLOGO | CLD-000539
 ORIGINAL:
 Spaces with 'Widen' can double
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los espacios con 'Ensanchar' pueden duplicarse
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los espacios con 'Widen' pueden duplicarse
 QA: glosario_Widen_por_revisar
 
 [000521] DIÁLOGO | CLD-000540
@@ -3166,8 +3166,8 @@ el efecto de cualquier artefacto que contenga.
 [000522] DIÁLOGO | CLD-000541
 ORIGINAL:
 Placing multiple Widen Artifacts in the same space
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Colocar varios artefactos de ensanchamiento en el mismo espacio.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Colocar varios artefactos de Widen en el mismo espacio.
 QA: glosario_Widen_por_revisar
 
 [000523] DIÁLOGO | CLD-000542
@@ -3185,8 +3185,8 @@ Sin embargo, también consumirá maná proporcionalmente.
 [000525] DIÁLOGO | CLD-000544
 ORIGINAL:
 Placing a Widen on a Magic/Ability Space will
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Colocar un Ensanchar en un Espacio de Magia/Habilidad
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Colocar un Widen en un Espacio de Magia/Habilidad
 QA: glosario_Widen_por_revisar
 
 [000526] DIÁLOGO | CLD-000545
@@ -3205,8 +3205,8 @@ Hay espacios fijos que se han establecido
 [000528] DIÁLOGO | CLD-000547
 ORIGINAL:
 by default on the Magic Circle.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Por defecto en el Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Por defecto en el Círculo mágico.
 
 [000529] DIÁLOGO | CLD-000548
 ORIGINAL:
@@ -3223,8 +3223,8 @@ HP -X: HP -X% de los subcaracteres.
 [000531] DIÁLOGO | CLD-000550
 ORIGINAL:
 Scatter X: Disperses X% of damage to subs.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Dispersión X: Dispersa un X% del daño a los submarinos.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Dispersión X: Dispersa un X% del daño a los personajes de apoyo.
 
 [000532] DIÁLOGO | CLD-000551
 ORIGINAL:
@@ -3637,8 +3637,8 @@ Se vuelve más fuerte en proporción al número de Guardianes.
 [000600] DIÁLOGO | CLD-000619
 ORIGINAL:
 Heals all characters and revives downed subs.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cura a todos los personajes y revive a los submarinos caídos.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Cura a todos los personajes y revive a los personajes de apoyo caídos.
 
 [000601] DIÁLOGO | CLD-000620
 ORIGINAL:
@@ -3961,8 +3961,8 @@ Nivel monstruoso
 [000654] OPCIÓN | CLD-000673
 ORIGINAL:
 Item Drop Rate
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tasa de caída de artículos
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Tasa de caída de objetos
 
 [000655] OPCIÓN | CLD-000674
 ORIGINAL:
@@ -4417,8 +4417,8 @@ Se vuelve más fuerte en proporción al número de Guardianes.
 [000730] DIÁLOGO | CLD-000749
 ORIGINAL:
 Heals all characters and revives downed subs.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cura a todos los personajes y revive a los submarinos caídos.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Cura a todos los personajes y revive a los personajes de apoyo caídos.
 
 [000731] DIÁLOGO | CLD-000750
 ORIGINAL:
@@ -5337,8 +5337,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [000880] DIÁLOGO | CLD-000900
 ORIGINAL:
 Pudding, look!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Pudín, mira!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Pudding, mira!
 
 [000881] DIÁLOGO | CLD-000901
 ORIGINAL:
@@ -5649,8 +5649,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [000932] DIÁLOGO | CLD-000952
 ORIGINAL:
 Pudding! That's just rude!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Pudín! ¡Eso es de mala educación!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Pudding! ¡Eso es de mala educación!
 
 [000933] DIÁLOGO | CLD-000953
 ORIGINAL:
@@ -7879,8 +7879,8 @@ cumplir los deseos de Pudding.
 [001297] DIÁLOGO | CLD-001328
 ORIGINAL:
 On top of that, the Magic Circle is...
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Además de eso, el Círculo Mágico es...
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Además de eso, el Círculo mágico es...
 
 [001298] DIÁLOGO | CLD-001329
 ORIGINAL:
@@ -7915,14 +7915,14 @@ Todo lo que se obtenga irá a parar a todos.
 [001303] DIÁLOGO | CLD-001334
 ORIGINAL:
 participating in the Magic Circle.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-participando en el Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+participando en el Círculo mágico.
 
 [001304] DIÁLOGO | CLD-001335
 ORIGINAL:
 Once you leave the Magic Circle, you'll get
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Una vez que salgas del Círculo Mágico, obtendrás
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Una vez que salgas del Círculo mágico, obtendrás
 
 [001305] DIÁLOGO | CLD-001336
 ORIGINAL:
@@ -7981,8 +7981,8 @@ En fin, ¿y tú, Despina?
 [001314] DIÁLOGO | CLD-001345
 ORIGINAL:
 Are you joining in the Magic Circle?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Te unirás al Círculo Mágico?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Te unirás al Círculo mágico?
 
 [001315] DIÁLOGO | CLD-001346
 ORIGINAL:
@@ -8561,8 +8561,8 @@ Simplemente coloca y activa el "Artefacto" en tu
 [001409] DIÁLOGO | CLD-001442
 ORIGINAL:
 Magic Circle to power up your abilities!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Círculo Mágico para potenciar tus habilidades!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Círculo mágico para potenciar tus habilidades!
 
 [001410] DIÁLOGO | CLD-001443
 ORIGINAL:
@@ -8711,15 +8711,15 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [001434] DIÁLOGO | CLD-001467
 ORIGINAL:
 That Artifact is called "Widen."
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ese artefacto se llama "Ensanchar".
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Ese artefacto se llama «Widen».
 QA: glosario_Widen_por_revisar
 
 [001435] DIÁLOGO | CLD-001468
 ORIGINAL:
 "Widen..."
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-"Ensanchar..."
+ESPAÑOL (posteditado_contextualmente_por_IA):
+«Widen...»
 QA: glosario_Widen_por_revisar
 
 [001436] DIÁLOGO | CLD-001469
@@ -9108,14 +9108,14 @@ Tu actitud de sabelotodo me molesta.
 [001499] DIÁLOGO | CLD-001532
 ORIGINAL:
 Anyway, let me show you the Magic Circle.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-En fin, déjame mostrarte el Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+En fin, déjame mostrarte el Círculo mágico.
 
 [001500] DIÁLOGO | CLD-001533
 ORIGINAL:
 Did you understand what the Magic Circle
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Entendiste qué es el Círculo Mágico?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Entendiste qué es el Círculo mágico?
 
 [001501] DIÁLOGO | CLD-001534
 ORIGINAL:
@@ -9198,8 +9198,8 @@ Tendremos que empezar por lo básico.
 [001514] DIÁLOGO | CLD-001548
 ORIGINAL:
 This is the Magic Circle.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Este es el Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Este es el Círculo mágico.
 
 [001515] DIÁLOGO | CLD-001549
 ORIGINAL:
@@ -9216,8 +9216,8 @@ Abrir la pantalla del menú.
 [001517] DIÁLOGO | CLD-001551
 ORIGINAL:
 You won't be able to alter the Magic Circle
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No podrás modificar el Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+No podrás modificar el Círculo mágico.
 
 [001518] DIÁLOGO | CLD-001552
 ORIGINAL:
@@ -9276,8 +9276,8 @@ pero los "personajes secundarios" sufren daños.
 [001527] DIÁLOGO | CLD-001561
 ORIGINAL:
 Meaning, the "subs" are human shields.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Es decir, los "submarinos" son escudos humanos.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Es decir, los personajes de apoyo funcionan como escudos humanos.
 
 [001528] DIÁLOGO | CLD-001562
 ORIGINAL:
@@ -9414,8 +9414,8 @@ Aquí se puede aumentar el "SP".
 [001550] DIÁLOGO | CLD-001584
 ORIGINAL:
 This Magic Circle allows up to 4.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Este Círculo Mágico permite hasta 4.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Este Círculo mágico permite hasta 4.
 
 [001551] DIÁLOGO | CLD-001585
 ORIGINAL:
@@ -9742,8 +9742,8 @@ Me pregunto si esto es un cadáver.
 [001603] DIÁLOGO | CLD-001638
 ORIGINAL:
 Pudding, stop! Don't poke it!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Pudín, para! ¡No lo toques!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Pudding, para! ¡No lo toques!
 
 [001604] DIÁLOGO | CLD-001639
 ORIGINAL:
@@ -10090,8 +10090,8 @@ Ella solo quería conseguir más miembros.
 [001661] DIÁLOGO | CLD-001696
 ORIGINAL:
 on her Magic Circle...
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-en su Círculo Mágico...
+ESPAÑOL (posteditado_contextualmente_por_IA):
+en su Círculo mágico...
 
 [001662] DIÁLOGO | CLD-001697
 ORIGINAL:
@@ -10830,8 +10830,8 @@ Me pregunto si el tipo barbudo de la taberna...
 [001781] DIÁLOGO | CLD-001825
 ORIGINAL:
 will join my Magic Circle.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-se unirá a mi Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+se unirá a mi Círculo mágico.
 
 [001782] DIÁLOGO | CLD-001826
 ORIGINAL:
@@ -13196,8 +13196,8 @@ Pudding tiene esta... enfermedad terminal.
 [002167] DIÁLOGO | CLD-002218
 ORIGINAL:
 Pudding...?!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pudín...?!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Pudding...?!
 
 [002168] DIÁLOGO | CLD-002219
 ORIGINAL:
@@ -13692,8 +13692,8 @@ Ni idea...
 [002248] DIÁLOGO | CLD-002302
 ORIGINAL:
 Why don't you join the Magic Circle?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Por qué no te unes al Círculo Mágico?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Por qué no te unes al Círculo mágico?
 
 [002249] DIÁLOGO | CLD-002303
 ORIGINAL:
@@ -13890,8 +13890,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [002281] DIÁLOGO | CLD-002335
 ORIGINAL:
 about the Magic Circle?!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Sobre el Círculo Mágico?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Sobre el Círculo mágico?
 
 [002282] DIÁLOGO | CLD-002336
 ORIGINAL:
@@ -13920,8 +13920,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [002286] DIÁLOGO | CLD-002340
 ORIGINAL:
 Just join the Magic Circle!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Únete al Círculo Mágico!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Únete al Círculo mágico!
 
 [002287] DIÁLOGO | CLD-002341
 ORIGINAL:
@@ -14440,8 +14440,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [002371] DIÁLOGO | CLD-002427
 ORIGINAL:
 You can be reborn in the Magic Circle!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Puedes renacer en el Círculo Mágico!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Puedes renacer en el Círculo mágico!
 
 [002372] DIÁLOGO | CLD-002428
 ORIGINAL:
@@ -14697,8 +14697,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [002413] DIÁLOGO | CLD-002471
 ORIGINAL:
 The Magic Circle should be safe.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El Círculo Mágico debería ser seguro.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+El Círculo mágico debería ser seguro.
 
 [002414] DIÁLOGO | CLD-002472
 ORIGINAL:
@@ -14739,8 +14739,8 @@ Todos, excepto Despina, ahora pueden
 [002420] DIÁLOGO | CLD-002478
 ORIGINAL:
 be a part of the Magic Circle.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Forma parte del Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Forma parte del Círculo mágico.
 
 [002421] DIÁLOGO | CLD-002479
 ORIGINAL:
@@ -14817,8 +14817,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [002433] DIÁLOGO | CLD-002491
 ORIGINAL:
 I'll join the Magic Circle
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Me uniré al Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Me uniré al Círculo mágico.
 
 [002434] DIÁLOGO | CLD-002492
 ORIGINAL:
@@ -15007,8 +15007,8 @@ SCRIPT: demo1204_00.dsf
 [002463] DIÁLOGO | CLD-002521
 ORIGINAL:
 The Magic Circle is so convenient.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El Círculo Mágico es muy práctico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+El Círculo mágico es muy práctico.
 
 [002464] DIÁLOGO | CLD-002522
 ORIGINAL:
@@ -15025,14 +15025,14 @@ Es lo que más necesito ahora mismo.
 [002466] DIÁLOGO | CLD-002524
 ORIGINAL:
 Heh. The Magic Circle can only be used by
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Je. El Círculo Mágico solo puede ser utilizado por
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Je. El Círculo mágico solo puede ser utilizado por
 
 [002467] DIÁLOGO | CLD-002525
 ORIGINAL:
 geniuses like me. But even the Magic Circle
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-genios como yo. Pero incluso el Círculo Mágico
+ESPAÑOL (posteditado_contextualmente_por_IA):
+genios como yo. Pero incluso el Círculo mágico
 
 [002468] DIÁLOGO | CLD-002526
 ORIGINAL:
@@ -15420,8 +15420,8 @@ Crosstine
 [002531] DIÁLOGO | CLD-002591
 ORIGINAL:
 The Magic Circle always comes with
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El Círculo Mágico siempre viene con
+ESPAÑOL (posteditado_contextualmente_por_IA):
+El Círculo mágico siempre viene con
 
 [002532] DIÁLOGO | CLD-002592
 ORIGINAL:
@@ -15766,8 +15766,8 @@ Tuve un sueño.
 [002587] DIÁLOGO | CLD-002649
 ORIGINAL:
 It was a dream of Pudding, healthy.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Era un sueño de pudín, saludable.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Era un sueño de Pudding, saludable.
 
 [002588] DIÁLOGO | CLD-002650
 ORIGINAL:
@@ -19637,8 +19637,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [003218] DIÁLOGO | CLD-003294
 ORIGINAL:
 willing to help. Just like the Magic Circle.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Dispuestos a ayudar. Igual que el Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Dispuestos a ayudar. Igual que el Círculo mágico.
 
 [003219] DIÁLOGO | CLD-003295
 ORIGINAL:
@@ -19775,8 +19775,8 @@ Puede que no pueda hacerlo solo.
 [003241] DIÁLOGO | CLD-003317
 ORIGINAL:
 But with the Magic Circle, just maybe...)
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pero con el Círculo Mágico, tal vez...)
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Pero con el Círculo mágico, tal vez...)
 
 [003242] DIÁLOGO | CLD-003319
 ORIGINAL:
@@ -21299,8 +21299,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [003490] PERSONAJE | CLD-003572
 ORIGINAL:
 Souma & Pudding
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Souma y Pudín
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Souma y Pudding
 
 [003491] DIÁLOGO | CLD-003573
 ORIGINAL:
@@ -22155,8 +22155,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [003631] DIÁLOGO | CLD-003715
 ORIGINAL:
 Pudding is better, right? I'm just glad that my
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El pudín es mejor, ¿verdad? Me alegro de que mi
+ESPAÑOL (posteditado_contextualmente_por_IA):
+El Pudding es mejor, ¿verdad? Me alegro de que mi
 
 [003632] DIÁLOGO | CLD-003716
 ORIGINAL:
@@ -22621,8 +22621,8 @@ son diferentes entre sí.
 [003707] DIÁLOGO | CLD-003793
 ORIGINAL:
 It's all thanks to the Magic Circle!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Todo gracias al Círculo Mágico!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Todo gracias al Círculo mágico!
 
 [003708] DIÁLOGO | CLD-003794
 ORIGINAL:
@@ -22657,8 +22657,8 @@ los peinados que hizo para la fiesta.
 [003713] DIÁLOGO | CLD-003799
 ORIGINAL:
 The Magic Circle... Hmm...
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El Círculo Mágico... Hmm...
+ESPAÑOL (posteditado_contextualmente_por_IA):
+El Círculo mágico... Hmm...
 
 [003714] DIÁLOGO | CLD-003800
 ORIGINAL:
@@ -22933,8 +22933,8 @@ Crosstine
 [003759] DIÁLOGO | CLD-003845
 ORIGINAL:
 But the Magic Circle can be an effective
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pero el Círculo Mágico puede ser un método eficaz.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Pero el Círculo mágico puede ser un método eficaz.
 
 [003760] DIÁLOGO | CLD-003846
 ORIGINAL:
@@ -23167,8 +23167,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [003798] DIÁLOGO | CLD-003884
 ORIGINAL:
 Let's all get in the Magic Circle!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Entremos todos en el Círculo Mágico!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Entremos todos en el Círculo mágico!
 
 [003799] DIÁLOGO | CLD-003885
 ORIGINAL:
@@ -23317,8 +23317,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [003823] DIÁLOGO | CLD-003909
 ORIGINAL:
 Now is the time for me to use the Magic Circle!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Ahora es el momento de usar el Círculo Mágico!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Ahora es el momento de usar el Círculo mágico!
 
 [003824] DIÁLOGO | CLD-003910
 ORIGINAL:
@@ -23442,8 +23442,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [003843] DIÁLOGO | CLD-003931
 ORIGINAL:
 Despina's finally joining the Magic Circle!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Despina finalmente se une al Círculo Mágico!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Despina finalmente se une al Círculo mágico!
 
 [003844] DIÁLOGO | CLD-003932
 ORIGINAL:
@@ -23801,8 +23801,8 @@ Simplemente se están ayudando mutuamente.
 [003902] DIÁLOGO | CLD-003990
 ORIGINAL:
 in the Magic Circle, right?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿En el Círculo Mágico, verdad?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿En el Círculo mágico, verdad?
 
 [003903] DIÁLOGO | CLD-003991
 ORIGINAL:
@@ -23944,8 +23944,8 @@ Es bastante raro que alguien no quiera
 [003925] DIÁLOGO | CLD-004015
 ORIGINAL:
 use the Magic Circle.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Utiliza el Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Utiliza el Círculo mágico.
 
 [003926] DIÁLOGO | CLD-004016
 ORIGINAL:
@@ -24213,8 +24213,8 @@ No es mentira.
 [003969] DIÁLOGO | CLD-004059
 ORIGINAL:
 If you join the Magic Circle,
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Si te unes al Círculo Mágico,
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Si te unes al Círculo mágico,
 
 [003970] DIÁLOGO | CLD-004060
 ORIGINAL:
@@ -24356,8 +24356,8 @@ SCRIPT: demo1502_01.dsf
 [003992] DIÁLOGO | CLD-004085
 ORIGINAL:
 I don't mind letting her in on the Magic Circle,
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No me importa dejarla entrar en el Círculo Mágico,
+ESPAÑOL (posteditado_contextualmente_por_IA):
+No me importa dejarla entrar en el Círculo mágico,
 
 [003993] DIÁLOGO | CLD-004086
 ORIGINAL:
@@ -25241,8 +25241,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [004137] DIÁLOGO | CLD-004233
 ORIGINAL:
 of the Magic Circle?!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡¿Del Círculo Mágico?!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡¿Del Círculo mágico?!
 
 [004138] DIÁLOGO | CLD-004234
 ORIGINAL:
@@ -26374,8 +26374,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [004320] DIÁLOGO | CLD-004417
 ORIGINAL:
 Pudding!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Pudín!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Pudding!
 
 [004321] DIÁLOGO | CLD-004418
 ORIGINAL:
@@ -26392,8 +26392,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [004323] DIÁLOGO | CLD-004420
 ORIGINAL:
 at the Magic Circle.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-en el Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+en el Círculo mágico.
 
 [004324] PERSONAJE | CLD-004421
 ORIGINAL:
@@ -26661,8 +26661,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [004367] DIÁLOGO | CLD-004464
 ORIGINAL:
 Th-This is a rare item among rare items!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡E-Este es un artículo raro entre artículos raros!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡E-Este es un objeto raro entre objetos raros!
 
 [004368] DIÁLOGO | CLD-004465
 ORIGINAL:
@@ -26673,8 +26673,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [004369] DIÁLOGO | CLD-004466
 ORIGINAL:
 I got an awesome item!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Me llegó un artículo increíble!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Me llegó un objeto increíble!
 
 [004370] DIÁLOGO | CLD-004467
 ORIGINAL:
@@ -26930,8 +26930,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [004411] DIÁLOGO | CLD-004508
 ORIGINAL:
 Because I have the Magic Circle.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Porque tengo el Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Porque tengo el Círculo mágico.
 
 [004412] DIÁLOGO | CLD-004509
 ORIGINAL:
@@ -27362,8 +27362,8 @@ Tu abuelo se había encerrado en un mundo que
 [004483] DIÁLOGO | CLD-004580
 ORIGINAL:
 created, as well. Having the Magic Circle
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-También se creó el Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+También se creó el Círculo mágico.
 
 [004484] DIÁLOGO | CLD-004581
 ORIGINAL:
@@ -27398,8 +27398,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [004489] DIÁLOGO | CLD-004586
 ORIGINAL:
 I didn't know the Magic Circle
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No conocía el Círculo Mágico
+ESPAÑOL (posteditado_contextualmente_por_IA):
+No conocía el Círculo mágico
 
 [004490] DIÁLOGO | CLD-004587
 ORIGINAL:
@@ -27476,8 +27476,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [004502] DIÁLOGO | CLD-004599
 ORIGINAL:
 The Magic Circle is more interesting than I thought.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El Círculo Mágico es más interesante de lo que pensaba.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+El Círculo mágico es más interesante de lo que pensaba.
 
 [004503] DIÁLOGO | CLD-004600
 ORIGINAL:
@@ -27614,8 +27614,8 @@ No te acerques a mí nunca más.
 [004525] PERSONAJE | CLD-004622
 ORIGINAL:
 Pudding?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Pudín?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Pudding?
 
 [004526] DIÁLOGO | CLD-004623
 ORIGINAL:
@@ -27745,8 +27745,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [004546] DIÁLOGO | CLD-004643
 ORIGINAL:
 Pudding?!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡¿Pudín?!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡¿Pudding?!
 
 [004547] DIÁLOGO | CLD-004644
 ORIGINAL:
@@ -27769,8 +27769,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [004550] DIÁLOGO | CLD-004647
 ORIGINAL:
 Pudding protected me... but...
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El pudín me protegió... pero...
+ESPAÑOL (posteditado_contextualmente_por_IA):
+El Pudding me protegió... pero...
 
 [004551] DIÁLOGO | CLD-004648
 ORIGINAL:
@@ -27841,8 +27841,8 @@ Tienes razón.
 [004562] DIÁLOGO | CLD-004659
 ORIGINAL:
 ...Pudding.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-...Pudín.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+...Pudding.
 
 [004563] DIÁLOGO | CLD-004660
 ORIGINAL:
@@ -31302,8 +31302,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [005132] DIÁLOGO | CLD-005322
 ORIGINAL:
 Raise your ATK in the Magic Circle now!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Aumenta tu ATK en el Círculo Mágico ahora!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Aumenta tu ATK en el Círculo mágico ahora!
 
 [005133] DIÁLOGO | CLD-005323
 ORIGINAL:
@@ -31320,8 +31320,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [005135] DIÁLOGO | CLD-005325
 ORIGINAL:
 Raise your ATK in the Magic Circle now!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Aumenta tu ATK en el Círculo Mágico ahora!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Aumenta tu ATK en el Círculo mágico ahora!
 
 [005136] DIÁLOGO | CLD-005326
 ORIGINAL:
@@ -31392,8 +31392,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [005147] DIÁLOGO | CLD-005337
 ORIGINAL:
 to your Magic Circle?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿A tu Círculo Mágico?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿A tu Círculo mágico?
 
 [005148] DIÁLOGO | CLD-005338
 ORIGINAL:
@@ -31452,8 +31452,8 @@ Tu ATK es alto.
 [005157] DIÁLOGO | CLD-005347
 ORIGINAL:
 You are quite good at using the Magic Circle.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Se te da bastante bien usar el Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Se te da bastante bien usar el Círculo mágico.
 
 [005158] DIÁLOGO | CLD-005348
 ORIGINAL:
@@ -31554,8 +31554,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [005174] DIÁLOGO | CLD-005364
 ORIGINAL:
 Raise your DEF at the Magic Circle now!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Aumenta tu DEF en el Círculo Mágico ahora!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Aumenta tu DEF en el Círculo mágico ahora!
 
 [005175] DIÁLOGO | CLD-005365
 ORIGINAL:
@@ -31572,8 +31572,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [005177] DIÁLOGO | CLD-005367
 ORIGINAL:
 Raise your DEF at the Magic Circle now!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Aumenta tu DEF en el Círculo Mágico ahora!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Aumenta tu DEF en el Círculo mágico ahora!
 
 [005178] DIÁLOGO | CLD-005368
 ORIGINAL:
@@ -31644,8 +31644,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [005189] DIÁLOGO | CLD-005379
 ORIGINAL:
 to your Magic Circle?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿A tu Círculo Mágico?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿A tu Círculo mágico?
 
 [005190] DIÁLOGO | CLD-005380
 ORIGINAL:
@@ -31704,8 +31704,8 @@ Tu DEF es alta.
 [005199] DIÁLOGO | CLD-005389
 ORIGINAL:
 You are quite good at using the Magic Circle.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Se te da bastante bien usar el Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Se te da bastante bien usar el Círculo mágico.
 
 [005200] DIÁLOGO | CLD-005390
 ORIGINAL:
@@ -31799,8 +31799,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [005214] INTERFAZ | CLD-005404
 ORIGINAL:
 Learned new Magic Circle!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Aprendí un nuevo Círculo Mágico!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Aprendí un nuevo Círculo mágico!
 
 [005215] INTERFAZ | CLD-005405
 ORIGINAL:
@@ -31939,8 +31939,8 @@ Círculo mágico/Equipar
 [005235] INTERFAZ | CLD-005425
 ORIGINAL:
 Buy Items
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Comprar artículos
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Comprar objetos
 
 [005236] INTERFAZ | CLD-005426
 ORIGINAL:
@@ -33331,8 +33331,8 @@ ORIGINAL:
 Magic/Ability can be set on your Magic Circle for 
 battle use.Boost them on the "Magic/Ability Space" 
 of the Magic Circle.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puedes configurar tus habilidades mágicas en tu Círculo Mágico para usarlas en combate. Poténcialas en el "Espacio de Habilidades Mágicas" del Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Puedes configurar tus habilidades mágicas en tu Círculo mágico para usarlas en combate. Poténcialas en el "Espacio de Habilidades Mágicas" del Círculo mágico.
 QA: revisar_saltos_linea
 
 [005458] INTERFAZ | CLD-005648
@@ -33544,8 +33544,8 @@ ORIGINAL:
 Your job.The type of Magic Circle, magic, 
 and abilities differ based on your job.
 What stats upgrade upon a level up also change.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tu trabajo. El tipo de Círculo Mágico, magia y habilidades varían según tu trabajo.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Tu trabajo. El tipo de Círculo mágico, magia y habilidades varían según tu trabajo.
 Las estadísticas que mejoran al subir de nivel también cambian.
 QA: revisar_saltos_linea
 
@@ -33631,8 +33631,8 @@ ORIGINAL:
 Refers to default spaces in the Magic Circle.
 Effects like HP-△% will be here.
 Cannot be removed or changed.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Se refiere a los espacios predeterminados en el Círculo Mágico.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Se refiere a los espacios predeterminados en el Círculo mágico.
 Efectos como HP-△% aparecerán aquí.
 No se puede eliminar ni modificar.
 
@@ -35169,8 +35169,8 @@ Activa o desactiva la visualización de los decimales en los daños.
 [005715] INTERFAZ | CLD-005905
 ORIGINAL:
 Magic Circle effects
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Efectos del Círculo Mágico
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Efectos del Círculo mágico
 
 [005716] INTERFAZ | CLD-005906
 ORIGINAL:
@@ -35393,8 +35393,8 @@ Tutorial de conexión inalámbrica
 [005751] INTERFAZ | CLD-005941
 ORIGINAL:
 Select character to job change.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Seleccione el personaje para cambiar de trabajo.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Selecciona el personaje que cambiará de clase.
 
 [005752] INTERFAZ | CLD-005942
 ORIGINAL:
@@ -35406,11 +35406,9 @@ Seleccione el puesto al que desea cambiar.
 ORIGINAL:
 Revert from LV %2d to 1 in order to job change.
 Continue?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Revertir de LV %2d a 1 para cambiar de trabajo.
-
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Volver del nivel %2d al 1 para cambiar de clase.
 ¿Continuar?
-QA: revisar_saltos_linea
 
 [005754] INTERFAZ | CLD-005944
 ORIGINAL:
@@ -35576,8 +35574,8 @@ Nivel monstruoso
 ORIGINAL:
 Item drop rate
 
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tasa de aparición de artículos
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Tasa de aparición de objetos
 
 
 [005779] INTERFAZ | CLD-005969
@@ -37630,8 +37628,8 @@ Maná +9.
 [006091] OBJETOS ARTEFACTOS | CLD-006336
 ORIGINAL:
 Widen
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ensanchar
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Widen
 QA: glosario_Widen_por_revisar
 
 [006092] OBJETOS ARTEFACTOS | CLD-006337
@@ -37698,8 +37696,8 @@ Defender 25%
 [006102] OBJETOS ARTEFACTOS | CLD-006347
 ORIGINAL:
 Subs take 25% of the total damage.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los submarinos reciben el 25% del daño total.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los personajes de apoyo reciben el 25% del daño total.
 
 [006103] OBJETOS ARTEFACTOS | CLD-006348
 ORIGINAL:
@@ -37710,8 +37708,8 @@ Defender 50%
 [006104] OBJETOS ARTEFACTOS | CLD-006349
 ORIGINAL:
 Subs take 50% of the total damage.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los submarinos reciben el 50% del daño total.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los personajes de apoyo reciben el 50% del daño total.
 
 [006105] OBJETOS ARTEFACTOS | CLD-006350
 ORIGINAL:
@@ -37722,8 +37720,8 @@ Defiende al 100%
 [006106] OBJETOS ARTEFACTOS | CLD-006351
 ORIGINAL:
 Subs take 100% of the total damage.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los submarinos reciben el 100% del daño total.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los personajes de apoyo reciben el 100% del daño total.
 
 [006107] OBJETOS ARTEFACTOS | CLD-F-ARTIFACT-0105-nombre
 ORIGINAL:
@@ -39548,8 +39546,8 @@ DATABASE.DAT/CHAR.DAT
 [006407] PERSONAJES | CLD-006638
 ORIGINAL:
 Pudding
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pudín
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Pudding
 
 [006408] PERSONAJES | CLD-006639
 ORIGINAL:
@@ -41481,8 +41479,8 @@ DATABASE.DAT/DAIHYOU.DAT
 [006719] NOMBRES PERSONAJES | CLD-006953
 ORIGINAL:
 プティング
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pudín
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Pudding
 QA: estado_fuente_pendiente
 
 [006720] NOMBRES PERSONAJES | CLD-F-DAIHYOU-0001-nombre_personaje
@@ -53869,8 +53867,8 @@ DATABASE.DAT/SIEN.DAT
 [008495] NOMBRES PERSONAJES | CLD-008755
 ORIGINAL:
 プティング
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pudín
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Pudding
 QA: estado_fuente_pendiente
 
 [008496] NOMBRES PERSONAJES | CLD-F-SIEN-0001-nombre_personaje
@@ -57679,8 +57677,8 @@ Varilla común
 [009048] OBJETOS ARMAS | CLD-009263
 ORIGINAL:
 ⑥Staff +10
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-⑥Personal +10
+ESPAÑOL (posteditado_contextualmente_por_IA):
+⑥Bastón +10
 
 [009049] OBJETOS ARMAS | CLD-009264
 ORIGINAL:
@@ -57691,8 +57689,8 @@ Cetro rúnico
 [009050] OBJETOS ARMAS | CLD-009265
 ORIGINAL:
 ⑥Staff +12
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-⑥Personal +12
+ESPAÑOL (posteditado_contextualmente_por_IA):
+⑥Bastón +12
 
 [009051] OBJETOS ARMAS | CLD-009266
 ORIGINAL:
@@ -57703,8 +57701,8 @@ Vara de ébano
 [009052] OBJETOS ARMAS | CLD-009267
 ORIGINAL:
 ⑥Staff +15
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-⑥Personal +15
+ESPAÑOL (posteditado_contextualmente_por_IA):
+⑥Bastón +15
 
 [009053] OBJETOS ARMAS | CLD-009268
 ORIGINAL:
@@ -57715,8 +57713,8 @@ Varita de mago
 [009054] OBJETOS ARMAS | CLD-009269
 ORIGINAL:
 ④Staff +20
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-④Personal +20
+ESPAÑOL (posteditado_contextualmente_por_IA):
+④Bastón +20
 
 [009055] OBJETOS ARMAS | CLD-009270
 ORIGINAL:
@@ -57727,8 +57725,8 @@ Cetro rúnico
 [009056] OBJETOS ARMAS | CLD-009271
 ORIGINAL:
 ⑤Staff +25
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-⑤Personal +25
+ESPAÑOL (posteditado_contextualmente_por_IA):
+⑤Bastón +25
 
 [009057] OBJETOS ARMAS | CLD-009272
 ORIGINAL:
@@ -57739,8 +57737,8 @@ Barra de refuerzo
 [009058] OBJETOS ARMAS | CLD-009273
 ORIGINAL:
 ⑤Staff +30
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-⑤Personal +30
+ESPAÑOL (posteditado_contextualmente_por_IA):
+⑤Bastón +30
 
 [009059] OBJETOS ARMAS | CLD-009274
 ORIGINAL:
@@ -57751,8 +57749,8 @@ Duela
 [009060] OBJETOS ARMAS | CLD-009275
 ORIGINAL:
 ④Staff +35
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-④Personal +35
+ESPAÑOL (posteditado_contextualmente_por_IA):
+④Bastón +35
 
 [009061] OBJETOS ARMAS | CLD-009276
 ORIGINAL:
@@ -57763,8 +57761,8 @@ Personal de ángeles
 [009062] OBJETOS ARMAS | CLD-009277
 ORIGINAL:
 ⑥Staff +38
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-⑥Personal +38
+ESPAÑOL (posteditado_contextualmente_por_IA):
+⑥Bastón +38
 
 [009063] OBJETOS ARMAS | CLD-009278
 ORIGINAL:
