@@ -1,0 +1,36 @@
+# Contenido del juego o volcados binarios que no se versionan
+*.iso
+*.cso
+*.7z
+*.rar
+*.zip
+*.pbp
+*.prx
+*.sps
+*.mpb
+*.imy
+*.png
+*.DAT
+*.DAT2
+*.dat
+*.bin
+*.arc
+*.sdt
+*.idt
+*.ldt
+*.dmd
+*.pgf
+*.ttf
+*.otf
+
+# Temporales
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+cache/
+work/
+dumps/
+extracts/
+*.pyc
+.DS_Store
