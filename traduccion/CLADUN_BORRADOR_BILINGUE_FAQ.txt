@@ -3345,8 +3345,8 @@ usar magia o habilidades si tienes suficiente SP.
 [000553] DIÁLOGO | CLD-000572
 ORIGINAL:
 This is a tutorial on the New-geon.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Este es un tutorial sobre New-geon.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Este es un tutorial sobre el New-geon.
 
 [000554] DIÁLOGO | CLD-000573
 ORIGINAL:
@@ -3357,8 +3357,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [000555] OPCIÓN | CLD-000574
 ORIGINAL:
 New-geon
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Nueva geoda
+ESPAÑOL (posteditado_contextualmente_por_IA):
+New-geon
 
 [000556] OPCIÓN | CLD-000575
 ORIGINAL:
@@ -3393,8 +3393,8 @@ Volver
 [000561] DIÁLOGO | CLD-000580
 ORIGINAL:
 New-geons are Ran-geons with infinite depth.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Las nuevas mazmorras son mazmorras de rango con profundidad infinita.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los New-geon son Ran-geon de profundidad infinita.
 
 [000562] DIÁLOGO | CLD-000581
 ORIGINAL:
@@ -3705,8 +3705,8 @@ aumentará el daño infligido y disminuirá el daño recibido.
 [000613] DIÁLOGO | CLD-000632
 ORIGINAL:
 There are some monsters in New-geon that
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hay algunos monstruos en New-geon que
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Hay monstruos en el New-geon que
 
 [000614] DIÁLOGO | CLD-000633
 ORIGINAL:
@@ -4125,8 +4125,8 @@ Auméntalo usando Puertas de Ángel.
 [000683] DIÁLOGO | CLD-000702
 ORIGINAL:
 This is the tutorial for the New-geon.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Este es el tutorial para New-geon.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Este es el tutorial del New-geon.
 
 [000684] DIÁLOGO | CLD-000703
 ORIGINAL:
@@ -4137,8 +4137,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [000685] OPCIÓN | CLD-000704
 ORIGINAL:
 New-geon
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Nueva geoda
+ESPAÑOL (posteditado_contextualmente_por_IA):
+New-geon
 
 [000686] OPCIÓN | CLD-000705
 ORIGINAL:
@@ -4173,8 +4173,8 @@ Volver
 [000691] DIÁLOGO | CLD-000710
 ORIGINAL:
 New-geons are Ran-geons with infinite depth.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Las nuevas mazmorras son mazmorras de rango con profundidad infinita.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Los New-geon son Ran-geon de profundidad infinita.
 
 [000692] DIÁLOGO | CLD-000711
 ORIGINAL:
@@ -4485,8 +4485,8 @@ aumentará el daño infligido y disminuirá el daño recibido.
 [000743] DIÁLOGO | CLD-000762
 ORIGINAL:
 There are some monsters in New-geon that
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hay algunos monstruos en New-geon que
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Hay monstruos en el New-geon que
 
 [000744] DIÁLOGO | CLD-000763
 ORIGINAL:

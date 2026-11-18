@@ -1684,13 +1684,13 @@ Llena el indicador para poder
 usar magia o habilidades si tienes suficiente SP.
 
 [000553] DIÁLOGO
-Este es un tutorial sobre New-geon.
+Este es un tutorial sobre el New-geon.
 
 [000554] DIÁLOGO
 ¿Qué quieres saber?
 
 [000555] OPCIÓN
-Nueva geoda
+New-geon
 
 [000556] OPCIÓN
 Súper movimiento
@@ -1708,7 +1708,7 @@ Nivel monstruoso
 Volver
 
 [000561] DIÁLOGO
-Las nuevas mazmorras son mazmorras de rango con profundidad infinita.
+Los New-geon son Ran-geon de profundidad infinita.
 
 [000562] DIÁLOGO
 Intentarás ver hasta dónde puedes llegar.
@@ -1864,7 +1864,7 @@ Independientemente de las estadísticas base del personaje principal, la cantida
 aumentará el daño infligido y disminuirá el daño recibido.
 
 [000613] DIÁLOGO
-Hay algunos monstruos en New-geon que
+Hay monstruos en el New-geon que
 
 [000614] DIÁLOGO
 son más de LV 999.
@@ -2074,13 +2074,13 @@ Puede llegar hasta 999.
 Auméntalo usando Puertas de Ángel.
 
 [000683] DIÁLOGO
-Este es el tutorial para New-geon.
+Este es el tutorial del New-geon.
 
 [000684] DIÁLOGO
 ¿Qué quieres saber?
 
 [000685] OPCIÓN
-Nueva geoda
+New-geon
 
 [000686] OPCIÓN
 Súper movimiento
@@ -2098,7 +2098,7 @@ Nivel monstruoso
 Volver
 
 [000691] DIÁLOGO
-Las nuevas mazmorras son mazmorras de rango con profundidad infinita.
+Los New-geon son Ran-geon de profundidad infinita.
 
 [000692] DIÁLOGO
 Pondrás a prueba tus habilidades para ver hasta dónde puedes llegar.
@@ -2254,7 +2254,7 @@ Independientemente de las estadísticas base del personaje principal, la cantida
 aumentará el daño infligido y disminuirá el daño recibido.
 
 [000743] DIÁLOGO
-Hay algunos monstruos en New-geon que
+Hay monstruos en el New-geon que
 
 [000744] DIÁLOGO
 son más de LV 999.
