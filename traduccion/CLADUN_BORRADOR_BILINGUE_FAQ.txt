@@ -10281,8 +10281,8 @@ Si hay demasiados humanos,
 [001694] DIÁLOGO | CLD-001732
 ORIGINAL:
 the "Wireless Gate" will open.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La "Puerta Inalámbrica" ​​se abrirá.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+la «Puerta inalámbrica» se abrirá.
 
 [001695] DIÁLOGO | CLD-001733
 ORIGINAL:
@@ -10878,8 +10878,8 @@ Crosstine
 [001791] DIÁLOGO | CLD-001835
 ORIGINAL:
 The "Wireless Gate" on the hill east of
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La "Puerta inalámbrica" ​​en la colina al este de
+ESPAÑOL (posteditado_contextualmente_por_IA):
+La «Puerta inalámbrica» de la colina al este de
 
 [001792] DIÁLOGO | CLD-001836
 ORIGINAL:
@@ -10896,8 +10896,8 @@ Todo se debe a que hay más gente aquí.
 [001794] DIÁLOGO | CLD-001838
 ORIGINAL:
 The "Wireless Gate" on the hill east of
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La "Puerta inalámbrica" ​​en la colina al este de
+ESPAÑOL (posteditado_contextualmente_por_IA):
+La «Puerta inalámbrica» de la colina al este de
 
 [001795] DIÁLOGO | CLD-001839
 ORIGINAL:
@@ -33532,8 +33532,9 @@ Your job.The type of Magic Circle, magic,
 and abilities differ based on your job.
 What stats upgrade upon a level up also change.
 ESPAÑOL (posteditado_contextualmente_por_IA):
-Tu trabajo. El tipo de Círculo mágico, magia y habilidades varían según tu trabajo.
-Las estadísticas que mejoran al subir de nivel también cambian.
+Tu clase. El tipo de Círculo mágico, la magia
+y las habilidades dependen de tu clase.
+También cambia qué atributos mejoran al subir de nivel.
 QA: revisar_saltos_linea
 
 [005480] INTERFAZ | CLD-005670
@@ -38962,8 +38963,8 @@ Suplente
 [006313] NOMBRES JEFES | CLD-006544
 ORIGINAL:
 Boss No.1
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Jefe N°1
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Jefe 1
 
 [006314] NOMBRES JEFES | CLD-006545
 ORIGINAL:
@@ -39559,8 +39560,8 @@ Sube de nivel para aprender habilidades.
 [006411] PERSONAJES | CLD-006642
 ORIGINAL:
 Lots of ATK-based Magic Circles.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Muchos Círculos Mágicos basados ​​en ATK.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Muchos círculos mágicos basados en ATK.
 
 [006412] PERSONAJES | CLD-006643
 ORIGINAL:
@@ -39879,8 +39880,8 @@ Sube de nivel para aprender habilidades.
 [006459] PERSONAJES | CLD-006692
 ORIGINAL:
 Lots of ATK-based Magic Circles.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Muchos Círculos Mágicos basados ​​en ATK.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Muchos círculos mágicos basados en ATK.
 
 [006460] PERSONAJES | CLD-006693
 ORIGINAL:
@@ -49229,12 +49230,10 @@ ORIGINAL:
 Their existence is rare.
 Aristocrats of the Hiyo.
 Tends to say, "I never ate anythingcheaper than 10,000 G."
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Su existencia es rara.
-
-Aristócratas del Hiyo.
-
-Suelen decir: «Nunca he comido nada que cueste menos de 10 000 G».
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Son muy poco comunes.
+Son aristócratas entre los Hiyo.
+Suelen decir: «Nunca he comido nada que cueste menos de 10 000 G».
 QA: revisar_numeros|revisar_saltos_linea
 
 [007892] MONSTRUOS | CLD-008114

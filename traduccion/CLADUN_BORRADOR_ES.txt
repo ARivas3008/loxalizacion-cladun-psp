@@ -5197,7 +5197,7 @@ Recuerdo algo del manual.
 Si hay demasiados humanos,
 
 [001694] DIÁLOGO
-La "Puerta Inalámbrica" ​​se abrirá.
+la «Puerta inalámbrica» se abrirá.
 
 [001695] DIÁLOGO
 ¡Este parece un lugar maravilloso!
@@ -5503,7 +5503,7 @@ Soy el camarero aquí... tío.
 Crosstine
 
 [001791] DIÁLOGO
-La "Puerta inalámbrica" ​​en la colina al este de
+La «Puerta inalámbrica» de la colina al este de
 
 [001792] DIÁLOGO
 La casa de Despina ya está abierta.
@@ -5512,7 +5512,7 @@ La casa de Despina ya está abierta.
 Todo se debe a que hay más gente aquí.
 
 [001794] DIÁLOGO
-La "Puerta inalámbrica" ​​en la colina al este de
+La «Puerta inalámbrica» de la colina al este de
 
 [001795] DIÁLOGO
 La casa de Despina ya está abierta.
@@ -17003,8 +17003,9 @@ El poder (%) es la fuerza de tu arma.
 Si es bajo, no podrás infligir daño, sin importar lo alto que sea tu ATK.
 
 [005479] INTERFAZ
-Tu trabajo. El tipo de Círculo mágico, magia y habilidades varían según tu trabajo.
-Las estadísticas que mejoran al subir de nivel también cambian.
+Tu clase. El tipo de Círculo mágico, la magia
+y las habilidades dependen de tu clase.
+También cambia qué atributos mejoran al subir de nivel.
 
 [005480] INTERFAZ
 Puntos utilizados para activar Artefactos.
@@ -19697,7 +19698,7 @@ EL No.1
 Suplente
 
 [006313] NOMBRES JEFES
-Jefe N°1
+Jefe 1
 
 [006314] NOMBRES JEFES
 Gato
@@ -19998,7 +19999,7 @@ Secundarias: HP+, Mana-
 Sube de nivel para aprender habilidades.
 
 [006411] PERSONAJES
-Muchos Círculos Mágicos basados ​​en ATK.
+Muchos círculos mágicos basados en ATK.
 
 [006412] PERSONAJES
 Muchos puntos de vida, poco maná.
@@ -20158,7 +20159,7 @@ Secundarias: HP+, Mana-
 Sube de nivel para aprender habilidades.
 
 [006459] PERSONAJES
-Muchos Círculos Mágicos basados ​​en ATK.
+Muchos círculos mágicos basados en ATK.
 
 [006460] PERSONAJES
 Muchos puntos de vida, poco maná.
@@ -24598,11 +24599,9 @@ Hyokiller
 Eso
 
 [007891] MONSTRUOS
-Su existencia es rara.
-
-Aristócratas del Hiyo.
-
-Suelen decir: «Nunca he comido nada que cueste menos de 10 000 G».
+Son muy poco comunes.
+Son aristócratas entre los Hiyo.
+Suelen decir: «Nunca he comido nada que cueste menos de 10 000 G».
 
 [007892] MONSTRUOS
 Tienes muchísima suerte si logras vencerlo, ¡porque tiene un 100 % de probabilidad de soltar objetos ofensivos!
