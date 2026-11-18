@@ -1,19 +1,15 @@
-# Historial de cambios
+# Historial del proyecto
 
-## 0.3.0 — 2026-11-17 — Auditoría estructural y enfoque en texto traducible
+## 0.3.0 — Auditoría y orientación exclusivamente textual (2026-11-17)
 
-- El corpus público pasa a organizarse alrededor de `CLADUN_TODO_TEXTO_ORIGINAL.txt` y el CSV maestro, no de los opcodes/instrucciones del motor.
-- Auditoría de campos en 20 tablas con estructura fija, tablas directas de nombres y `MAHO-JIN.DAT`.
-- Recuperación de 127 cadenas omitidas; corrección de 133 fuentes/offsets.
-- Exclusión documentada de 56 artefactos numéricos, 32 falsas cadenas y 64 referencias a archivos internos.
-- Clasificación de 1.033 cadenas con uso visual por comprobar y 2 cadenas con bytes CP932 incompletos.
-- Exportación de un TXT con 9.237 grupos numerados, originales sin traducir e IDs de procedencia.
-- Actualización de documentación, normas, QA y pruebas reproducibles.
+- Revisadas estructuralmente las detecciones de texto; se recuperan 127 registros, se corrigen 133 asociaciones y se descartan coincidencias binarios y rutas técnicas.
+- 9.237 unidades textuales originales en CSV + TXT por grupos, con campos de traducción **sin rellenar**.
+- 8.202 textos de formato confirmado; 1.035 para comprobar visualidad o decodificación.
+- Añadidos 6 rótulos de imágenes verificadas y traza CSV de 809 decisiones.
+- Eliminada la exposición de índices de instrucciones del motor, archivos redundantes y documentación obsoleta de la rama principal.
+- Documentación de método, estados, límites, QA, pipeline reproducible y verificación continua.
 
-## 0.2.0 — 2026-11-17 — Primera extracción orientada a traducción
+## 0.2.x — Extracción inicial (conservada en rama de archivo)
 
-- Se retiraron de la presentación pública los índices de instrucciones del motor y se publicó el primer corpus de 9.212 candidatos, sujeto a revisión.
-
-## 0.1.0 — 2026-11-17 — Inventario inicial
-
-- Reconocimiento de contenedores de la edición USA PSP, scripts y tablas básicas. Los resultados iniciales no demostraban cobertura textual completa.
+- Inventarios ISO/PSPFS/DSARC, descompresión y corpus preliminar con heurísticas de texto.
+- Sus cifras de texto confirmado **han quedado sustituidas** por la nueva auditoría; no usar los listados brutos como fuente para traducir.

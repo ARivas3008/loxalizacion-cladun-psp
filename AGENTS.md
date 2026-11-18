@@ -1,16 +1,33 @@
-# Reglas para colaboradores y agentes de localización
+# AGENTS.md — reglas obligatorias para cualquier asistente o colaborador
 
-**Objetivo exclusivo:** recuperar, auditar, ordenar y traducir las cadenas de texto que pueda presentar *Cladun: This Is an RPG!* (USA, PSP). **No** inventariar como entregable operaciones/opcodes del motor.
+## Objetivo
 
-1. La **fuente de verdad** es `corpus/CLADUN_TODO_TEXTO_ORIGINAL.csv`. El `.txt` es una exportación de lectura generada desde ese CSV.
-2. No insertar texto español hasta que exista una traducción aprobada. Los valores de `espanol` están deliberadamente vacíos.
-3. No cambiar ni reordenar `grupo_id`, `text_id`, `original`, offsets, archivos, índices o referencias. No unir cadenas repetidas aunque parezcan iguales.
-4. Diferenciar `pendiente_traduccion`, `requiere_comprobar_en_juego` y `requiere_reconstruccion`. **Campo identificado no significa texto visto en pantalla**.
-5. No traducir nombres de archivos internos (`rmap*.dat`), números binarios interpretados como texto, controles del motor, nombres comerciales protegidos o marcas gráficas decorativas. Las exclusiones tienen auditoría.
-6. En caso de bytes CP932 truncados, conservar el texto con marca `�` y el hexadecimal en `bytes_hex`: nunca reconstruir por conjetura.
-7. Toda modificación de la extracción requiere verificación con bytes originales, ubicación reproducible, nota de QA y actualización de `reports/resumen.json`.
-8. No publicar la ISO, archivos binarios, imágenes del juego ni recursos comerciales. Evitar divulgar el TXT completo en copias no autorizadas; revisar las implicaciones de derechos para cualquier publicación.
-9. La traducción futura se hará solo en `espanol`, respetando `%s`, `%d`, otras variables, glifos especiales y saltos de línea. Probar en PPSSPP antes de aprobar la reinserción.
-10. Ejecutar `python tools/validar_corpus.py` y `python -m unittest discover -s tests -v` antes de cambios a `main`.
+Trabajar **solo en textos para localizar de Cladun: This Is an RPG! (USA/PSP)**. Nunca confundir comandos/opcodes, nombres de archivos, offsets, texturas y datos numéricos con unidades traducibles. Las herramientas de extracción pueden analizar instrucciones internamente, pero el corpus público se centra en **texto y procedencia mínima verificable**.
 
-Consultar `docs/` para definiciones exactas y estado de cobertura. No declarar «100 % extraído» sin recorrido visual y comparación de recursos.
+## Fuentes canónicas
+
+- `corpus/CLADUN_TODO_TEXTO_ORIGINAL.csv`: único registro maestro que contiene el texto original.
+- `corpus/CLADUN_TODO_TEXTO_ORIGINAL.txt`: visualización de los mismos grupos, generada y sin traducción.
+- `qa/decisiones_auditoria.csv`: decisiones justificadas sobre pendientes antiguos.
+- `reports/resumen.json` y `reports/qa_integridad.json`: recuentos comprobables.
+
+Los subconjuntos `confirmados_formato` y `revisar_visibilidad` son vistas derivadas; no editar en paralelo.
+
+## Nunca hacer
+
+1. No traducir, abreviar, reordenar, fusionar ni eliminar texto fuente sin un registro de auditoría justificado.
+2. No cambiar `grupo_id`, `text_id`, `origen`, `offset_hex`, `bytes_hex`, script o índice; no eliminar repeticiones.
+3. No calificar el 100 % de texto recuperado hasta auditar recursos gráficos, ejecutable, DLC y verificación en PPSSPP.
+4. No inventar caracteres corruptos, descripciones, nombres, espacios de interfaz ni traducciones.
+5. No subir ISO, PBP, recursos gráficos, fuentes, música, ejecutables o paquetes del juego a GitHub.
+6. No agregar listados de comandos del motor al corpus destinado a los traductores.
+
+## En modificaciones futuras
+
+- Distinguir **campo textual estructural**, **visibilidad en pantalla** y **facilidad de reinserción**: son pruebas diferentes.
+- Separar los 1.035 pendientes; no presentarlos como ya comprobados visualmente.
+- Conservar texto en inglés o japonés exactamente como sale de sus bytes.
+- Escapar cuidadosamente variables `%s`, `%d`, `%02d`, secuencias y saltos de línea.
+- Ejecutar `python -m unittest discover -s tests -v` y `python tools/verificar_integridad.py --raiz .`.
+- Toda corrección de extracción debe actualizar el corpus maestro, TXT, subconjuntos, registro de auditoría y resumen **en el mismo commit**.
+- En reportes distinguir siempre entre lo **verificado**, lo **probable** y lo **pendiente**.

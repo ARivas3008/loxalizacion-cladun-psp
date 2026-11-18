@@ -1,9 +1,24 @@
-# Colaborar en la localización
+# Contribuir a la localización
 
-El corpus está en fase de **catalogación y verificación**. Por ahora no se solicita que se traduzcan líneas; primero deben identificarse las cadenas y conservarse su posición exacta.
+## Alcance
 
-Las aportaciones de extracción deben incluir el recurso de origen, desplazamiento, bytes originales, justificación de que el campo es textual y comprobación de su uso en pantalla si se afirma que es visible.
+Este repositorio concentra **texto del juego y herramientas para verificarlo**. No contiene una traducción española final ni admite cargas de copias del juego o recursos comerciales.
 
-Las futuras propuestas de traducción deberán editar solo `espanol` del CSV maestro; no renumerar `grupo_id`, no modificar `text_id`, no eliminar cadenas repetidas, y conservar marcadores `%s`/`%d`/`%02d`, saltos, glifos y variables. Los cambios deben pasar las pruebas de QA. Los textos marcados `requiere_comprobar_en_juego` y `requiere_reconstruccion` exigen evidencia antes de aprobarse.
+## Cambios de texto
 
-No adjuntar copias de ISO, binarios de la PSP, gráficos, fuentes ni audio del juego en incidencias o solicitudes de cambio. El repositorio no distribuye un parche, y el contenido del videojuego mantiene sus derechos originales.
+- Trabaja sobre `corpus/CLADUN_TODO_TEXTO_ORIGINAL.csv` como registro maestro. Para nuevas traducciones, solo edita la columna `espanol` (el corpus actual está íntegramente sin traducir).
+- No alteres IDs, bytes originales, orden ni procedencia. No elimines duplicados.
+- No cambies valores técnicos como `%s`, `%d`, saltos de línea y símbolos reservados.
+- Cuando haya que corregir un campo fuente, documenta motivo, recurso, índice, offset y evidencia en el registro de auditoría. Regenera las vistas TXT/CSV en un commit conjunto.
+- No declares un pendiente visual «confirmado» sin captura o verificación en PPSSPP con versión identificada.
+
+## Comprobaciones antes de PR
+
+```bash
+python -m unittest discover -s tests -v
+python tools/verificar_integridad.py --raiz .
+```
+
+## Propuesta de pull request
+
+Describe el objetivo, archivo afectado, `text_id` o rango de grupos, evidencia de la corrección, consecuencias de variables/glifos y pruebas realizadas. Los textos originales deben poder reidentificarse en la misma ISO y no contener traducciones inventadas.

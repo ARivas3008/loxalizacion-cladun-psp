@@ -1,0 +1,11 @@
+﻿recurso,estado,entradas
+DATABASE.DAT/CHAR.DAT,requiere_comprobar_en_juego,2
+DATABASE.DAT/DAIHYOU.DAT,requiere_comprobar_en_juego,14
+DATABASE.DAT/DIFFICULTY.DAT,requiere_comprobar_en_juego,398
+DATABASE.DAT/EFFECT.DAT,requiere_comprobar_en_juego,70
+DATABASE.DAT/MAGIC.DAT,requiere_comprobar_en_juego,10
+DATABASE.DAT/MONSTER.DAT,requiere_comprobar_en_juego,69
+DATABASE.DAT/SIEN.DAT,requiere_comprobar_en_juego,14
+DATABASE.DAT/TIPATTR.DAT,requiere_comprobar_en_juego,300
+DATABASE.DAT/TIPATTR.DAT,requiere_reconstruccion,2
+DATABASE.DAT/UP_MONSTER.DAT,requiere_comprobar_en_juego,156

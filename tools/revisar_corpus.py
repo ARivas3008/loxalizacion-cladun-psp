@@ -75,7 +75,7 @@ def leer_csv(path:Path)->list[dict[str,str]]:
 def escribir_csv(path:Path,filas:list[dict],campos:list[str])->None:
     path.parent.mkdir(parents=True,exist_ok=True)
     with path.open('w',encoding='utf-8-sig',newline='') as f:
-        w=csv.DictWriter(f,fieldnames=campos,extrasaction='ignore');w.writeheader();w.writerows(filas)
+        w=csv.DictWriter(f,fieldnames=campos,extrasaction='ignore',lineterminator='\n');w.writeheader();w.writerows(filas)
 
 def bytes_base(iso:Path)->tuple[dict[str,bytes],str]:
     _,entries=iso9660_entries(iso)
@@ -157,28 +157,20 @@ def make_record(raw:dict[str,str], *, campo:str='', capacidad:int|str='',
                 idioma_origen=deteccion_idioma(raw['original'] if texto is None else texto),
                 comentario=comentario)
 
-def exportar_txt(path:Path,filas:list[dict])->None:
-    """El número de bloque identifica la fila maestra. El contenido ORIGINAL no se edita."""
+def exportar_txt(path: Path, filas: list[dict]) -> None:
+    """Vista única en texto plano. Conserva ID, tipo y orden, sin traducir."""
     path.parent.mkdir(parents=True,exist_ok=True)
-    with path.open('w',encoding='utf-8-sig',newline='\n') as f:
-        f.write('CLADUN: THIS IS AN RPG! (PSP USA) — CORPUS ORIGINAL SIN TRADUCIR\n')
-        f.write(f'TOTAL DE GRUPOS: {len(filas)} | UNA UNIDAD TEXTUAL POR GRUPO\n')
-        f.write('ORDEN: índice de extracción por recurso; no garantiza secuencia narrativa.\n')
-        f.write('ESTADO: sin traducir. Algunas filas requieren comprobar su uso en pantalla.\n\n')
-        for i,r in enumerate(filas):
-            previo=filas[i-1]['text_id'] if i>0 else '(inicio)'
-            siguiente=filas[i+1]['text_id'] if i+1<len(filas) else '(fin)'
-            f.write(f"========== GRUPO {i+1:06d} | UNIDADES 1 | ID {r['text_id']} ==========\n")
-            f.write(f"TIPO: {r['tipo']}\nRECURSO: {r['origen']}\n")
-            if r['script']:f.write(f"SCRIPT: {r['script']} | ID SCRIPT: {r['script_id']}\n")
-            f.write(f"REGISTRO: {r['indice_registro']} | ORDEN SCRIPT: {r['orden_script']}\n")
-            f.write(f"OFFSET: {r['offset_hex']}\nCAMPO: {r['campo']}\n")
-            f.write(f"VALIDACIÓN: {r['revision_fuente']}\n")
-            f.write('ORIGINAL:\n')
-            f.write(r['original'])
-            f.write('\nFIN ORIGINAL\nESPAÑOL EDICIÓN:\n')
-            f.write(f"ESTADO: {r['estado']}\n")
-            f.write(f"PREVIO: {previo}\nSIGUIENTE: {siguiente}\n\n")
+    with path.open('w', encoding='utf-8-sig', newline='\n') as f:
+        f.write('CLADUN: THIS IS AN RPG! (PSP USA)\n')
+        f.write('CORPUS COMPLETO DE TEXTO ORIGINAL — SIN TRADUCCIÓN AL ESPAÑOL\n')
+        f.write(f'TOTAL: {len(filas)} GRUPOS | UNA ENTRADA POR POSICIÓN DE ORIGEN\n')
+        f.write('NOTA: ORDEN DE EXTRACCIÓN; ALGUNOS TEXTOS REQUIEREN COMPROBAR SU USO EN PANTALLA.\n\n')
+        for i,row in enumerate(filas,1):
+            f.write(f"========== GRUPO {i:06d} | ID {row['text_id']} ==========\n")
+            f.write(f"TIPO: {row['tipo']}\nESTADO: {row['estado']}\nRECURSO: {row['origen']}\n")
+            if row['script']:
+                f.write(f"SCRIPT: {row['script']} | ORDEN: {row['orden_script']}\n")
+            f.write(f"ORIGINAL:\n{row['original']}\n========== FIN GRUPO {i:06d} ==========\n\n")
 
 def revisar(iso:Path,raw_path:Path,out:Path)->dict:
     db,iso_hash=bytes_base(iso)

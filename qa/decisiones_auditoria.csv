@@ -282,8 +282,7 @@ CLD-006407,DATABASE.DAT/BODY-EFFECT.DAT,22,0x00000C08,Awesomest,corregido_por_ca
 ,DATABASE.DAT/BODY-EFFECT.DAT,23,,,recuperado_omitido,Campo textual no detectado por filtro heurístico de letras/símbolos,CLD-F-BODY_EFFECT-0023-nombre_efecto,0x00000C80,D99
 CLD-006408,DATABASE.DAT/BODY-EFFECT.DAT,23,0x00000C90,99 Titles,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006408,0x00000C90,99 Titles 
 CLD-006428,DATABASE.DAT/BODY.DAT,9,0x00000577,Ultimate,corregido_por_campo,Reconstruido desde posición estructural verificada,CLD-006428,0x00000577,Ultimate 
-CLD-006499,DATABASE.DAT/BODY.DAT,45,0x00001A16,"z
-xi(",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
+CLD-006499,DATABASE.DAT/BODY.DAT,45,0x00001A16,"zxi(",descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
 CLD-006650,DATABASE.DAT/CHAR.DAT,2,0x0000082C,83A67>-.C5?B,descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
 CLD-006669,DATABASE.DAT/CHAR.DAT,5,0x00001330,83A67>-.C5?B,descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,
 CLD-006694,DATABASE.DAT/CHAR.DAT,9,0x000021E0,83A67>-.C5?B,descartado_fuera_de_campos,Detectado por heurística pero fuera de los campos textuales de la tabla,,,

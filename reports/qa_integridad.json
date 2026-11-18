@@ -1,0 +1,15 @@
+{
+  "resultado": "OK",
+  "bloques_originales": 9237,
+  "fuente_formato_confirmado": 8202,
+  "pendientes_uso_o_decodificacion": 1035,
+  "registros_auditoria": 809,
+  "distribucion_estados": {
+    "pendiente_traduccion": 8202,
+    "requiere_comprobar_en_juego": 1033,
+    "requiere_reconstruccion": 2
+  },
+  "sha256_csv": "f0a56ae0c773982e137fd0d2a99cbe52f27f836eebcf41800e5c8a6d6260e6f9",
+  "sha256_txt": "83db60b80939d54548980e38a612ae9ae9605bf85f2feba7834d0e826425756f",
+  "errores": []
+}

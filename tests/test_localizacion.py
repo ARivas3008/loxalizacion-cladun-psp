@@ -4,12 +4,13 @@ import sys,unittest
 BASE=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(BASE/'tools'))
 from revisar_corpus import CAMPOS, IMAGENES, original_de_campo, campos_archivo
-from validar_corpus import validate
+from verificar_integridad import verificar
 
 class TestCorpus(unittest.TestCase):
     def test_corpus_sin_traduccion_y_con_indice(self):
-        result=validate(BASE)
-        self.assertGreater(result['bloques'],9000)
+        result=verificar(BASE)
+        self.assertEqual(result['resultado'],'OK')
+        self.assertEqual(result['bloques_originales'],9237)
 
     def test_campo_japones_cp932(self):
         text,raw=original_de_campo('炎上'.encode('cp932')+b'\x00\x00')

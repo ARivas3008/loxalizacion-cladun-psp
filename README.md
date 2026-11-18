@@ -1,64 +1,59 @@
-# CLADUN: This Is an RPG! — Corpus para localización al español (PSP USA)
+# CLADUN: This Is an RPG! — Localización al español (PSP)
 
-Repositorio de **texto original sin traducir**, extraído y auditado de una copia identificada de *Cladun: This Is an RPG!* para PSP. La unidad de trabajo es **cada cadena traducible o potencialmente visible** (diálogos, opciones, menús, nombres, descripciones, mensajes, créditos y rótulos gráficos), no las instrucciones del motor.
+> **Estado:** corpus original extraído y auditado estructuralmente; **sin traducir**. No se ha demostrado cobertura absoluta ni se ha implementado reinserción en el juego.
 
-> **Estado: extracción revisada, cobertura no certificada.** Se revisaron estructuralmente los campos de las tablas conocidas, pero todavía faltan pruebas de pantalla en PPSSPP y algunos recursos gráficos/ejecutables. No se declara que esté recuperado el 100 % de los textos visibles.
+Proyecto de localización de la **edición USA para PSP**. Su objetivo es recuperar, ordenar y revisar **solo contenido textual traducible**: diálogos, elecciones, nombres y descripciones de objetos, personajes, monstruos, habilidades, lugares, menús, avisos, créditos y rótulos presentes en imágenes. **No se publica un listado de instrucciones internas del motor.**
 
-## Descargar y trabajar
+## Entrar al corpus
 
-| Archivo | Propósito |
+| Archivo | Para qué sirve |
 | --- | --- |
-| [`corpus/CLADUN_TODO_TEXTO_ORIGINAL.txt`](corpus/CLADUN_TODO_TEXTO_ORIGINAL.txt) | **Lectura principal:** todos los bloques numerados, identificados y **sin traducir** |
-| [`corpus/CLADUN_TODO_TEXTO_ORIGINAL.csv`](corpus/CLADUN_TODO_TEXTO_ORIGINAL.csv) | **Fuente maestra editable:** mismos bloques, offsets, estado y columna `espanol` vacía |
-| [`corpus/confirmados_formato.csv`](corpus/confirmados_formato.csv) | Subconjunto reconocido como cadena/campo por su estructura, **no validado visualmente en todos los casos** |
-| [`corpus/revisar_visibilidad.csv`](corpus/revisar_visibilidad.csv) | Cadenas reales cuyo uso en pantalla debe confirmarse y dos campos con bytes incompletos |
-| [`qa/decisiones_auditoria.csv`](qa/decisiones_auditoria.csv) | Trazabilidad de exclusiones, correcciones y recuperaciones respecto de la extracción anterior |
-| [`reports/resumen.json`](reports/resumen.json) | Recuentos verificables y huella digital de la ISO estudiada |
+| **[`corpus/CLADUN_TODO_TEXTO_ORIGINAL.txt`](corpus/CLADUN_TODO_TEXTO_ORIGINAL.txt)** | **Único TXT maestro: lectura total numerada, sin traducciones.** |
+| [`corpus/CLADUN_TODO_TEXTO_ORIGINAL.csv`](corpus/CLADUN_TODO_TEXTO_ORIGINAL.csv) | **Fuente maestra para edición**: IDs estables, texto original, español vacío, procedencia, orden, bytes. |
+| [`corpus/confirmados_formato.csv`](corpus/confirmados_formato.csv) | Registros recuperados de estructuras conocidas y seis rótulos gráficos verificados. **Formato confirmado ≠ aparición en pantalla comprobada.** |
+| [`corpus/revisar_visibilidad.csv`](corpus/revisar_visibilidad.csv) | Registros textuales estructurales cuyo uso visual o decodificación aún debe comprobarse. |
+| [`qa/decisiones_auditoria.csv`](qa/decisiones_auditoria.csv) | Trazabilidad de correcciones, descartes y cadenas recuperadas frente a la extracción anterior. |
 
-### Recuento — auditoría de 17 de noviembre de 2026
+### Estado cuantificado
 
-- **9.237 bloques** en el corpus maestro, una cadena por bloque.
-- **8.202** registros en estructuras/campos reconocidos, incluido el texto gráfico examinado visualmente.
-- **1.033** cadenas textuales cuyo uso en pantalla requiere comprobación.
-- **2** campos japoneses con bytes CP932 truncados que deben cotejarse antes de traducir.
-- **127** cadenas genuinas recuperadas que el filtro anterior había omitido.
-- **133** correcciones de texto/posición (incluidos nombres de mazmorras con un carácter prefijado erróneamente y espacios originales que se habían perdido).
-- **56** falsos positivos numéricos, **32** falsas detecciones fuera de campos y **64** nombres internos de archivo apartados del corpus.
+| Indicador | Resultado |
+| --- | ---: |
+| **Unidades textuales conservadas** | **9.237** |
+| Extraídas de estructuras y rótulos identificados | 8.202 |
+| Texto de campo real; uso en pantalla pendiente | 1.033 |
+| Texto con dos campos CP932 incompletos | 2 |
+| Nuevas unidades recuperadas en la revisión | 127 |
+| Asociaciones de texto/offset corregidas | 133 |
+| Referencias gráficos-textuales verificadas e incluidas | 6 |
+| Textos traducidos al español | **0** |
 
-Los recuentos representan **instancias de origen**, no frases distintas. Las repeticiones y los identificadores originales se conservan para la futura reinserción. El orden es el del **recurso/bloque/campo**, no necesariamente el cronológico de la historia.
+**Qué significan las cifras:** son *unidades en fuentes del juego*, no frases únicas y **no equivalen a una cobertura del 100 %**. Las cadenas repetidas se mantienen cuando ocupan posiciones distintas. Los campos marcados como pendientes se conservan en el corpus total porque podrían requerir localización, pero todavía **no están aprobados para inserción**.
 
-## Normas de trabajo
+### Orden e integridad
 
-1. **Nunca** cambies `grupo_id`, `text_id`, `original`, `origen`, offsets o el orden de registros.
-2. Escribe la futura traducción exclusivamente en `espanol`; el TXT se regenera desde el CSV maestro.
-3. Conserva las variables de formato, los códigos de control, los saltos de línea y las referencias contextuales. No inventes texto donde haya bytes dañados.
-4. En `requiere_comprobar_en_juego`, confirma si la cadena aparece en pantalla antes de darla por lista para localización.
-5. Un PNG con rótulos requiere edición gráfica: modificar el CSV/TXT no sustituye los píxeles de la imagen.
+Cada grupo corresponde a un elemento textual identificable de la extracción. Se conserva su **ID, archivo de origen, registro, script/orden y offset** cuando aplica. El orden es el orden del contenido **por recurso en la edición analizada**, no necesariamente el orden en que se vive la historia. Las cadenas en inglés y japonés aparecen en su idioma original. No se corrigen, resumen ni traducen en esta fase.
 
-## Reproducibilidad
+## Cómo trabajar
 
-Requiere Python 3.10+ y una copia propia de la **ISO del mismo juego y región**. No requiere paquetes de terceros.
+1. Consulta [`corpus/CLADUN_TODO_TEXTO_ORIGINAL.txt`](corpus/CLADUN_TODO_TEXTO_ORIGINAL.txt) para lectura global o el CSV maestro para asignar trabajo.
+2. Al traducir, **modifica solo `espanol`**, nunca el original, identificadores, formato ni desplazamientos. Mantén todas las variables, secuencias de control y repeticiones.
+3. Para registros de `revisar_visibilidad.csv`, comprueba antes si realmente se presentan al jugador, si son etiquetas de depuración o si necesitan reconstruir bytes.
+4. Ejecuta `python tools/verificar_integridad.py --raiz .` y las pruebas antes de entregar cambios.
+
+**Documentación:** [metodología](docs/METODOLOGIA.md) · [campos y formato TXT](docs/FORMATO_CORPUS.md) · [auditoría de pendientes](docs/AUDITORIA_PENDIENTES.md) · [controles de calidad](docs/CONTROL_CALIDAD.md) · [reproducibilidad](docs/REPRODUCIBILIDAD.md) · [limitaciones](docs/LIMITACIONES_Y_ROADMAP.md) · [contribuir](CONTRIBUTING.md).
+
+## Reproducibilidad técnica
+
+Python 3.10+ sin bibliotecas externas, sobre una copia propia de la edición PSP identificada en [reproducibilidad](docs/REPRODUCIBILIDAD.md):
 
 ```bash
-python tools/extract_cladun.py /ruta/Cladun_USA.iso -o build
-python tools/revisar_corpus.py --iso /ruta/Cladun_USA.iso --raw build/corpus/todo_el_texto.csv --salida .
-python tools/validar_corpus.py
+python tools/pipeline.py --iso /ruta/a/Cladun.iso --salida .
 python -m unittest discover -s tests -v
+python tools/verificar_integridad.py --raiz .
 ```
 
-La primera orden crea inventarios **temporales de extracción** en `build/` (ignorados por Git); **no publica instrucciones ni opcodes** como corpus. La segunda lee las posiciones reales de los campos, elimina falsos positivos, corrige fuentes y regenera el CSV/TXT maestro.
+El proceso identifica ISO9660 → `PSPFS_V1` → contenedores anidados, decodifica fuentes CP932 e indexa textos y metadatos. Los datos intermedios binarios **no se añaden a GitHub**. El TXT es para lectura; el CSV conserva el origen necesario para una eventual reinserción.
 
-Huella SHA-256 de la ISO examinada: `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f` (volumen `CLASSIC_DUNGEON_TRIAL_AND_APPEND`; identificador de título `NPUH10072`). Una edición o revisión distinta puede requerir un análisis nuevo.
+## Límites del proyecto
 
-## Documentación
-
-- [Alcance, estructura y criterios de clasificación](docs/01_ALCANCE_Y_CRITERIOS.md)
-- [Formato de CSV y texto plano](docs/02_FORMATO_Y_TRAZABILIDAD.md)
-- [Auditoría de los textos pendientes](docs/03_AUDITORIA_Y_HALLAZGOS.md)
-- [Pruebas de calidad y preparación para traducción](docs/04_CONTROL_DE_CALIDAD.md)
-- [Limitaciones y siguientes verificaciones](docs/05_LIMITACIONES.md)
-- [Historial de decisiones](CHANGELOG.md)
-
-## Derechos
-
-Este es un proyecto de investigación técnica de localización. Los textos, nombres, imágenes y demás recursos del videojuego pertenecen a sus titulares. **La licencia de este repositorio, cuando corresponda, se aplica únicamente al código original del proyecto, no a los materiales extraídos del juego.** No se distribuyen ISOs ni los binarios, gráficos, fuentes o audio comerciales. Para distribuir una traducción funcional, lo apropiado es crear un parche que requiera los archivos legítimos del juego.
+No se incluye una ISO ni archivos gráficos/binarios originales del videojuego. La traducción, la cobertura en pantallas y una versión jugable en PPSSPP están **pendientes**. Si se distribuye una modificación, deberá hacerse mediante un parche que no incluya los recursos comerciales del juego. *Cladun* y sus materiales pertenecen a sus titulares respectivos.

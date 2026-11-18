@@ -1,0 +1,20 @@
+name: Validación del corpus
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  integridad:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Probar integridad del corpus
+        run: python -m unittest discover -s tests -v
+      - name: Verificar fuente, índices y TXT
+        run: python tools/verificar_integridad.py --raiz .
