@@ -14,7 +14,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Probar integridad del corpus
+      - name: Probar integridad, fuente y prevención de desbordes
         run: python -m unittest discover -s tests -v
       - name: Verificar fuente, índices y TXT
         run: python tools/verificar_integridad.py --raiz .
+      - name: Verificar que los textos originales y marcadores no cambian
+        run: python tools/verificar_borrador_es.py
+      - name: Inventario estático de riesgos de reinserción (no es aprobación)
+        run: |
+          python tools/auditar_preinsercion_es.py --reporte reports/preinsercion_ci.json --filas reports/preinsercion_ci.csv
+      - name: Conservar informes de QA (sin activos comerciales)
+        uses: actions/upload-artifact@v4
+        with:
+          name: cladun-qa-preinsercion
+          path: |
+            reports/preinsercion_ci.json
+            reports/preinsercion_ci.csv
