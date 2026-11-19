@@ -15,8 +15,8 @@ SCRIPT: scr01.dsf
 [000001] DIÁLOGO | CLD-000002
 ORIGINAL:
 Is this the tavern?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Es esta la taberna?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Esta es la taberna?
 
 [000002] DIÁLOGO | CLD-000003
 ORIGINAL:
@@ -51,8 +51,8 @@ Mejor no tentar al destino.
 [000007] DIÁLOGO | CLD-000010
 ORIGINAL:
 It's too dark to see inside.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Está demasiado oscuro para ver dentro.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Está demasiado oscuro para ver qué hay dentro.
 
 [000008] DIÁLOGO | CLD-000011
 ORIGINAL:
@@ -75,8 +75,8 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [000011] DIÁLOGO | CLD-000015
 ORIGINAL:
 Anything in this world you have left undone?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Hay algo en este mundo que hayas dejado sin hacer?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Te queda algo por hacer en este mundo?
 
 [000012] OPCIÓN | CLD-000016
 ORIGINAL:
@@ -93,8 +93,8 @@ Tengo cosas que hacer.
 [000014] DIÁLOGO | CLD-000019
 ORIGINAL:
 What kind of store is this?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Qué tipo de tienda es esta?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Qué clase de tienda es esta?
 
 [000015] DIÁLOGO | CLD-000020
 ORIGINAL:
@@ -105,8 +105,8 @@ La puerta está cerrada con llave.
 [000016] DIÁLOGO | CLD-000021
 ORIGINAL:
 There doesn't seem to be anyone inside.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No parece haber nadie dentro.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Parece que no hay nadie dentro.
 
 [000017] PERSONAJE | CLD-000022
 ORIGINAL:
@@ -117,8 +117,8 @@ Hiyoji
 [000018] DIÁLOGO | CLD-000023
 ORIGINAL:
 Who're you?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Quién eres?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Y tú quién eres?
 
 [000019] DIÁLOGO | CLD-000024
 ORIGINAL:
@@ -293,8 +293,8 @@ ESPAÑOL (posteditado_contextualmente_por_IA):
 [000047] DIÁLOGO | CLD-000053
 ORIGINAL:
 Please use this!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Por favor, úsalo!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Úsalo, por favor!
 
 [000048] DIÁLOGO | CLD-000055
 ORIGINAL:
@@ -407,8 +407,8 @@ Hiyoji
 [000066] DIÁLOGO | CLD-000073
 ORIGINAL:
 Did you go to the underground chamber?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Fuiste a la cámara subterránea?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Ya fuiste a la cámara subterránea?
 
 [000067] DIÁLOGO | CLD-000074
 ORIGINAL:
@@ -443,8 +443,8 @@ ESPAÑOL (posteditado_contextualmente_por_IA):
 [000072] DIÁLOGO | CLD-000081
 ORIGINAL:
 Doesn't seem to be water anywhere.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No parece haber agua por ninguna parte.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+No se ve agua por ningún lado.
 
 [000073] PERSONAJE | CLD-000082
 ORIGINAL:
@@ -461,14 +461,14 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [000075] DIÁLOGO | CLD-000084
 ORIGINAL:
 You can start over with your current level?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Puedes volver a empezar desde tu nivel actual?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Puedes empezar de nuevo sin perder tu nivel?
 
 [000076] DIÁLOGO | CLD-000085
 ORIGINAL:
 What do you want to do?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Qué es lo que quieres hacer?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Qué quieres hacer?
 
 [000077] OPCIÓN | CLD-000086
 ORIGINAL:
@@ -551,8 +551,8 @@ No
 [000090] DIÁLOGO | CLD-000104
 ORIGINAL:
 Hm? There's something invisible here.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Eh? Hay algo invisible aquí.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Eh? Aquí hay algo invisible.
 
 [000091] PERSONAJE | CLD-000106
 ORIGINAL:
@@ -695,8 +695,8 @@ ESPAÑOL (posteditado_contextualmente_por_IA):
 [000114] DIÁLOGO | CLD-000131
 ORIGINAL:
 Here's a tutorial!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Aquí tienes un tutorial!
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¡Vamos con un tutorial!
 
 [000115] PERSONAJE | CLD-000132
 ORIGINAL:
@@ -771,8 +771,8 @@ Asagi aparece en muchos juegos.
 [000125] DIÁLOGO | CLD-000144
 ORIGINAL:
 The mask is really powerful.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La máscara es realmente poderosa.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+La máscara es muy poderosa.
 
 [000126] DIÁLOGO | CLD-000145
 ORIGINAL:
@@ -867,8 +867,8 @@ Los Hiyokki suelen dejar caer el artefacto «Widen».
 [000141] DIÁLOGO | CLD-000160
 ORIGINAL:
 But the actual drop rate is really low.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pero la probabilidad real de que aparezca es realmente baja.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Pero la probabilidad de que lo suelten es muy baja.
 
 [000142] DIÁLOGO | CLD-000161
 ORIGINAL:
@@ -957,8 +957,8 @@ dejan caer los Hiyokki.
 [000156] DIÁLOGO | CLD-000175
 ORIGINAL:
 "Heal" can be a crucial skill.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-"Curar" puede ser una habilidad crucial.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+«Curar» puede ser una habilidad crucial.
 
 [000157] DIÁLOGO | CLD-000176
 ORIGINAL:
@@ -987,8 +987,8 @@ de vulnerabilidad después de atacar.
 [000161] DIÁLOGO | CLD-000180
 ORIGINAL:
 Just be careful of when you use it.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Solo ten cuidado al usarlo.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Solo tienes que elegir bien cuándo usarlo.
 
 [000162] DIÁLOGO | CLD-000181
 ORIGINAL:
@@ -999,8 +999,8 @@ Hay algunos monstruos que son inmunes
 [000163] DIÁLOGO | CLD-000182
 ORIGINAL:
 to attacks from the front.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-a ataques desde el frente.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+a los ataques frontales.
 
 [000164] DIÁLOGO | CLD-000183
 ORIGINAL:
@@ -1023,14 +1023,14 @@ entran en modo «BREAK!».
 [000167] DIÁLOGO | CLD-000186
 ORIGINAL:
 Any discrepancy in damage may be
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cualquier discrepancia en los daños puede ser
+ESPAÑOL (posteditado_contextualmente_por_IA):
+La diferencia de daño puede deberse
 
 [000168] DIÁLOGO | CLD-000187
 ORIGINAL:
 due to elemental properties.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-debido a propiedades elementales.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+a las propiedades elementales.
 
 [000169] DIÁLOGO | CLD-000188
 ORIGINAL:
@@ -1059,8 +1059,8 @@ pueden alcanzar a enemigos detrás de las paredes.
 [000173] DIÁLOGO | CLD-000192
 ORIGINAL:
 All armor have some sort of weakness.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Todas las armaduras tienen algún tipo de debilidad.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Todas las armaduras tienen alguna debilidad.
 
 [000174] DIÁLOGO | CLD-000193
 ORIGINAL:
@@ -1149,14 +1149,14 @@ puede atravesar paredes.
 [000188] DIÁLOGO | CLD-000207
 ORIGINAL:
 Sliding can allow you to move quickly
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Deslizarse puede permitirte moverte rápidamente
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Deslizarte te permite avanzar rápido
 
 [000189] DIÁLOGO | CLD-000208
 ORIGINAL:
 through grass and even slime.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-a través de la hierba e incluso del limo.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+por la hierba e incluso por el limo.
 
 [000190] DIÁLOGO | CLD-000209
 ORIGINAL:
@@ -1281,8 +1281,8 @@ Surte efecto independientemente de dónde lo coloques.
 [000210] DIÁLOGO | CLD-000229
 ORIGINAL:
 There is something underground in Arcanus Cella.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hay algo oculto bajo tierra en Arcanus Cella.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Hay algo bajo tierra en Arcanus Cella.
 
 [000211] DIÁLOGO | CLD-000230
 ORIGINAL:
@@ -1448,14 +1448,14 @@ Volver
 [000237] DIÁLOGO | CLD-000256
 ORIGINAL:
 Pressing the button at the right time
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Presionar el botón en el momento adecuado
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Si pulsas el botón justo a tiempo,
 
 [000238] DIÁLOGO | CLD-000257
 ORIGINAL:
 allows you to perform a 3-hit combo.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Te permite realizar un combo de 3 golpes.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+puedes encadenar un combo de tres golpes.
 
 [000239] DIÁLOGO | CLD-000258
 ORIGINAL:
@@ -1466,14 +1466,14 @@ Tiene la propiedad de ①.
 [000240] DIÁLOGO | CLD-000259
 ORIGINAL:
 Hold the attack button for
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mantén pulsado el botón de ataque durante
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Mantén pulsado el botón de ataque para
 
 [000241] DIÁLOGO | CLD-000260
 ORIGINAL:
 a charge attack.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-un ataque de carga.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+realizar un ataque cargado.
 
 [000242] DIÁLOGO | CLD-000261
 ORIGINAL:
@@ -1532,14 +1532,14 @@ Mientras sostienes tu escudo, tu DEF
 [000251] DIÁLOGO | CLD-000270
 ORIGINAL:
 and element resistance can increase.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-y la resistencia del elemento puede aumentar.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+y tu resistencia elemental pueden aumentar.
 
 [000252] DIÁLOGO | CLD-000271
 ORIGINAL:
 It will be especially effective from the front.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Será especialmente eficaz desde el frente.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Es especialmente eficaz contra ataques frontales.
 
 [000253] DIÁLOGO | CLD-000272
 ORIGINAL:
@@ -1556,8 +1556,8 @@ Los vendedores no alteran las estadísticas.
 [000255] DIÁLOGO | CLD-000274
 ORIGINAL:
 Armor can be shared with everyone.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La armadura puede ser compartida con todos.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+Todos pueden usar la misma armadura.
 
 [000256] DIÁLOGO | CLD-000275
 ORIGINAL:
@@ -1568,8 +1568,8 @@ Todo el equipo tiene títulos.
 [000257] DIÁLOGO | CLD-000276
 ORIGINAL:
 Normal is the default state.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Normal es el estado predeterminado.
+ESPAÑOL (posteditado_contextualmente_por_IA):
+«Normal» es el estado inicial.
 
 [000258] DIÁLOGO | CLD-000277
 ORIGINAL:
@@ -1598,8 +1598,8 @@ Cuanto mayor sea el valor de ⑧, más lento será tu ataque.
 [000262] DIÁLOGO | CLD-000281
 ORIGINAL:
 What do you want to know about Arcanus Cella?
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Qué quieres saber sobre Arcanus Cella?
+ESPAÑOL (posteditado_contextualmente_por_IA):
+¿Qué quieres saber de Arcanus Cella?
 
 [000263] OPCIÓN | CLD-000282
 ORIGINAL:

@@ -1,6 +1,6 @@
 # CLADUN: This Is an RPG! — Localización al español (PSP)
 
-> **Estado:** fuente íntegra de 9.237 textos, borrador español de 9.235 entradas (**441 posteditadas o normalizadas por IA; 8.794 todavía automáticas**). La reinserción completa y las fuentes españolas **solo tienen un prototipo binario, sin pruebas visuales**. Un ensayo de dos cambios superó las comprobaciones de aislamiento binario, sin prueba de PPSSPP.
+> **Estado:** fuente íntegra de 9.237 textos, borrador español de 9.235 entradas (**474 posteditadas o normalizadas por IA; 8.761 todavía automáticas**). La reinserción completa y las fuentes españolas **solo tienen un prototipo binario, sin pruebas visuales**. Un ensayo de dos cambios superó las comprobaciones de aislamiento binario, sin prueba de PPSSPP.
 
 Proyecto de localización de la **edición USA para PSP**. Su objetivo es recuperar, ordenar y revisar **solo contenido textual traducible**: diálogos, elecciones, nombres y descripciones de objetos, personajes, monstruos, habilidades, lugares, menús, avisos, créditos y rótulos presentes en imágenes. **No se publica un listado de instrucciones internas del motor.**
 
@@ -37,7 +37,7 @@ Cada grupo corresponde a un elemento textual identificable de la extracción. Se
 
 ## Traducción automática española y cotejo — 18/11/2026
 
-Se conservaron los 9.237 IDs y originales, y se generó un **borrador separado**, sin sobrescribir el corpus fuente. Incluye 9.235 entradas con texto español; dos campos con bytes CP932 incompletos siguen pendientes. La primera fase tuvo 67 entradas posteditadas; el acumulado actual de revisiones y normalizaciones por IA es **441**. Otras **8.794** entradas siguen sin revisión narrativa individual.
+Se conservaron los 9.237 IDs y originales, y se generó un **borrador separado**, sin sobrescribir el corpus fuente. Incluye 9.235 entradas con texto español; dos campos con bytes CP932 incompletos siguen pendientes. La primera fase tuvo 67 entradas posteditadas; el acumulado actual de revisiones y normalizaciones por IA es **474**. Otras **8.761** entradas siguen sin revisión narrativa individual.
 
 | Material | Archivo |
 | --- | --- |
@@ -46,7 +46,7 @@ Se conservaron los 9.237 IDs y originales, y se generó un **borrador separado**
 | Lectura bilingüe y cotejo | [`traduccion/CLADUN_BORRADOR_BILINGUE_FAQ.txt`](traduccion/CLADUN_BORRADOR_BILINGUE_FAQ.txt) |
 | CSV bilingüe con metadatos originales | [`traduccion/CLADUN_BORRADOR_ES.csv`](traduccion/CLADUN_BORRADOR_ES.csv) |
 | Incidencias de QA | [`traduccion/INCIDENCIAS_QA.csv`](traduccion/INCIDENCIAS_QA.csv) |
-| **Glosario canónico CSV, 63 términos** | [`traduccion/GLOSARIO_CANONICO.csv`](traduccion/GLOSARIO_CANONICO.csv) |
+| **Glosario canónico CSV, 67 términos** | [`traduccion/GLOSARIO_CANONICO.csv`](traduccion/GLOSARIO_CANONICO.csv) |
 | Glosario anterior (archivo histórico) | [`traduccion/GLOSARIO_PROPUESTA.csv`](traduccion/GLOSARIO_PROPUESTA.csv) |
 | Informe técnico y lingüístico | [`docs/INFORME_TRADUCCION_2026-11-18.md`](docs/INFORME_TRADUCCION_2026-11-18.md) |
 
@@ -83,7 +83,7 @@ Se corrigió la incompatibilidad entre el códec inicial `F040–F052` y la tabl
 ## Fase actual: revisión narrativa, glosario unificado y preinserción estática — 18/11/2026
 
 - **72 ediciones adicionales** respecto del corte histórico de 369: [57 diálogos, interfaz y efectos](qa/revision_dialogos_glosario_fase3_2026-11-18.csv), [8 correcciones de caracteres invisibles, saltos y terminología](qa/revision_caracteres_y_dialogos_fase4_2026-11-18.csv) y [8 ajustes del nombre New-geon](qa/revision_new_geon_fase5_2026-11-18.csv). Son **73 modificaciones** de registros, pero una corresponde a un registro previamente revisado. Por eso el acumulado crece de 369 a **441**, no 442.
-- El [glosario de 63 entradas](traduccion/GLOSARIO_CANONICO.csv) es ahora la fuente terminológica CSV; el archivo `GLOSARIO_PROPUESTA.csv` se conserva únicamente como histórico.
+- El [glosario de 67 entradas](traduccion/GLOSARIO_CANONICO.csv) es ahora la fuente terminológica CSV; el archivo `GLOSARIO_PROPUESTA.csv` se conserva únicamente como histórico.
 - El [preflight de 9.237 unidades](tools/auditar_preinsercion_es.py) clasifica **4.576 cambios de longitud en scripts**, **280 desbordes de campo**, **816 sin capacidad modelada**, **6 rótulos de imagen**, **2 entradas sin traducción** y **3.557 candidatas únicamente a ensayos**. **Cero entradas están aprobadas para inserción definitiva.**
 - [Informe y protocolo](docs/INFORME_PREINSERCION_ESTATICA.md); [estadísticas reproducibles](reports/preinsercion_estatica_2026-11-18.json). La [validación CI](.github/workflows/validacion.yml) ejecuta pruebas, cotejo de originales y un reporte de riesgos por fila en sus artefactos.
 - La codificación experimental usa `F5A0–F5B2` y no toca por diseño otros archivos del juego. Los informes previos prueban aislamiento binario en cambios pequeños, **no** que el motor renderice el texto completo, que acepte 19 glifos o que el parche masivo sea seguro.
@@ -120,3 +120,10 @@ No se incluye una ISO ni archivos gráficos/binarios originales del videojuego. 
 - [Plan textual verificable](tools/plan_textual_seguro.py): un ID se vincula con sus bytes CP932 originales, reemplazo español codificado, longitud exacta, offset y huella SHA-256 de la ISO privada.
 - [Guarda de aislamiento](tools/iso_guard_global.py): exige `--manifest` vinculado al corpus, en lugar de aceptar permisos arbitrarios de bytes; comprueba también los bytes **dentro** de cada tramo autorizado. [Protocolo detallado](docs/MANIFIESTO_TEXTO_EXACTO.md).
 - El plan no escribe una ISO ni permite editar retratos, tiles o fuentes. **La inserción masiva y la prueba visual en PPSSPP siguen pendientes.**
+
+## Fase 6: naturalidad y glosario — 18/11/2026
+
+- [33 ajustes narrativos](qa/revision_naturalidad_fase6_2026-11-18.csv) en diálogos de NPC y tutoriales, incluidos fragmentos de una misma frase. CSV, TXT y bilingüe actualizados a la vez.
+- **Acumulado: 474 entradas revisadas/normalizadas por IA y 8.761 pendientes** de revisión individual (9.235 borradores). Revisión humana y visual pendientes.
+- Glosario canónico ampliado de 63 a **67 términos**; los nombres de habilidades son provisionales hasta probarlos en el juego.
+- [Informe reproducible de esta fase](reports/revision_naturalidad_fase6.json). El informe estático previo corresponde al corte anterior; CI realiza un nuevo preflight. **Cero traducciones aprobadas para inserción final.**

@@ -1,6 +1,6 @@
 # Glosario canónico — Cladun: This Is an RPG! (USA, PSP)
 
-Versión 1.2, 18/11/2026. **Consistente para el borrador**, todavía no aprobado mediante revisión en PPSSPP. No sustituir nombres por intuición. Se utiliza español neutro latinoamericano, trato de tú salvo contexto de personaje; nombres propios en inglés preservados.
+Versión 1.3, 18/11/2026. **Consistente para el borrador**, todavía no aprobado mediante revisión en PPSSPP. No sustituir nombres por intuición. Se utiliza español neutro latinoamericano, trato de tú salvo contexto de personaje; nombres propios en inglés preservados.
 
 | Original | Español canónico | Tratamiento |
 |---|---|---|
@@ -82,10 +82,21 @@ Las revisiones agrupadas y la preservación del texto original están documentad
 
 ## Fuente terminológica consolidada y límites
 
-**Fuente CSV canónica:** [`traduccion/GLOSARIO_CANONICO.csv`](../traduccion/GLOSARIO_CANONICO.csv), **63 términos únicos**. El anterior [`GLOSARIO_PROPUESTA.csv`](../traduccion/GLOSARIO_PROPUESTA.csv) se conserva como documento histórico; no editar ambos ni usarlo para sobreescribir el canónico. Los términos con estado de verificación visual pendiente son propuestas, no hechos validados del HUD.
+**Fuente CSV canónica:** [`traduccion/GLOSARIO_CANONICO.csv`](../traduccion/GLOSARIO_CANONICO.csv), **67 términos únicos**. El anterior [`GLOSARIO_PROPUESTA.csv`](../traduccion/GLOSARIO_PROPUESTA.csv) se conserva como documento histórico; no editar ambos ni usarlo para sobreescribir el canónico. Los términos con estado de verificación visual pendiente son propuestas, no hechos validados del HUD.
 
 **Regla sobre nombres:** `New-geon` y `Ran-geon` son nombres propios. Evitar «Nueva geoda», «Nueva-geon» o «mazmorras de rango» cuando sustituyan el nombre. `Pudding` es un personaje. `Widen` es un artefacto; `Widening` describe su efecto.
 
 **Variantes de contexto:** `Job` en selección y atributos del personaje equivale a **clase**. En frases de NPC («my job is...»), puede significar **trabajo**: la sustitución global sería incorrecta. `Ward` se ha normalizado provisionalmente a **Protección** en tres campos de efectos del equipo; comprobar su semántica exacta dentro del juego antes de aprobarlo.
 
-**Trazabilidad nueva:** [fase 3](../qa/revision_dialogos_glosario_fase3_2026-11-18.csv), [fase 4](../qa/revision_caracteres_y_dialogos_fase4_2026-11-18.csv) y [fase 5](../qa/revision_new_geon_fase5_2026-11-18.csv). El corte actual es **441 unidades posteditadas o normalizadas por IA**, mientras **8.794** siguen sin revisión narrativa individual. Ningún texto está validado para inserción definitiva.
+**Trazabilidad nueva:** [fase 3](../qa/revision_dialogos_glosario_fase3_2026-11-18.csv), [fase 4](../qa/revision_caracteres_y_dialogos_fase4_2026-11-18.csv) y [fase 5](../qa/revision_new_geon_fase5_2026-11-18.csv). El corte actual es **474 unidades posteditadas o normalizadas por IA**, mientras **8.761** siguen sin revisión narrativa individual. Ningún texto está validado para inserción definitiva.
+
+## Incorporaciones lingüísticas de la fase 6
+
+| Original | Español de trabajo | Estado |
+| --- | --- | --- |
+| Heal | Curar | Habilidad; validar nombre en pantalla |
+| Ice Slash | Corte de hielo | Habilidad; validar nombre en pantalla |
+| Charge attack | ataque cargado | Mecánica de combate |
+| 3-hit combo | combo de tres golpes | Mecánica de combate |
+
+Los 33 ajustes preservan IDs, variables y originales. Ninguna traducción se considera insertada ni comprobada en PPSSPP.

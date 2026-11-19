@@ -62,3 +62,7 @@ Load Game,Cargar partida,menu
 Save Game,Guardar partida,menu
 Sub Characters,personajes de apoyo,mecanica
 Floor Consumption,consumo de plantas,terminologia_pendiente_contexto
+Heal,Curar,habilidad_pendiente_prueba_visual
+Ice Slash,Corte de hielo,habilidad_pendiente_prueba_visual
+Charge attack,ataque cargado,mecanica_borrador
+3-hit combo,combo de tres golpes,mecanica_borrador

@@ -13,7 +13,7 @@ SCRIPT: scr01.dsf
 ==================================================================
 
 [000001] DIÁLOGO
-¿Es esta la taberna?
+¿Esta es la taberna?
 
 [000002] DIÁLOGO
 Hueles algo delicioso que viene de dentro,
@@ -31,7 +31,7 @@ Es la puerta por la que entramos.
 Mejor no tentar al destino.
 
 [000007] DIÁLOGO
-Está demasiado oscuro para ver dentro.
+Está demasiado oscuro para ver qué hay dentro.
 
 [000008] DIÁLOGO
 Será mejor hacerle caso a Pudding por ahora.
@@ -43,7 +43,7 @@ Ve allí para volver a tu mundo y ver el final.
 ¿Ya guardaste?
 
 [000011] DIÁLOGO
-¿Hay algo en este mundo que hayas dejado sin hacer?
+¿Te queda algo por hacer en este mundo?
 
 [000012] OPCIÓN
 Ve a ver el final.
@@ -52,19 +52,19 @@ Ve a ver el final.
 Tengo cosas que hacer.
 
 [000014] DIÁLOGO
-¿Qué tipo de tienda es esta?
+¿Qué clase de tienda es esta?
 
 [000015] DIÁLOGO
 La puerta está cerrada con llave.
 
 [000016] DIÁLOGO
-No parece haber nadie dentro.
+Parece que no hay nadie dentro.
 
 [000017] PERSONAJE
 Hiyoji
 
 [000018] DIÁLOGO
-¿Quién eres?
+¿Y tú quién eres?
 
 [000019] DIÁLOGO
 ¡Soy un aristócrata del mundo Hiro!
@@ -151,7 +151,7 @@ Hiyoji
 ¡Hola, ⑨!
 
 [000047] DIÁLOGO
-¡Por favor, úsalo!
+¡Úsalo, por favor!
 
 [000048] DIÁLOGO
 ¡Has conseguido el arma contundente legendaria «Prinny Stick»!
@@ -208,7 +208,7 @@ Vuelve cuando tu fama supere los 50.
 Hiyoji
 
 [000066] DIÁLOGO
-¿Fuiste a la cámara subterránea?
+¿Ya fuiste a la cámara subterránea?
 
 [000067] DIÁLOGO
 No conseguirás nada más
@@ -226,7 +226,7 @@ Parece un pozo, pero tiene hollín.
 ¿O será un pozo muy, muy sucio?
 
 [000072] DIÁLOGO
-No parece haber agua por ninguna parte.
+No se ve agua por ningún lado.
 
 [000073] PERSONAJE
 Cría Hiyo
@@ -235,10 +235,10 @@ Cría Hiyo
 ¡¿Qué?!
 
 [000075] DIÁLOGO
-¿Puedes volver a empezar desde tu nivel actual?
+¿Puedes empezar de nuevo sin perder tu nivel?
 
 [000076] DIÁLOGO
-¿Qué es lo que quieres hacer?
+¿Qué quieres hacer?
 
 [000077] OPCIÓN
 Quiero machacar al primer enemigo hasta hacerlo pedazos.
@@ -280,7 +280,7 @@ Sí
 No
 
 [000090] DIÁLOGO
-¿Eh? Hay algo invisible aquí.
+¿Eh? Aquí hay algo invisible.
 
 [000091] PERSONAJE
 Pollita Hiyo
@@ -352,7 +352,7 @@ Puedo sacar fotos cuando quiera.
 ¡Solo tienes que activarlo en las opciones!
 
 [000114] DIÁLOGO
-¡Aquí tienes un tutorial!
+¡Vamos con un tutorial!
 
 [000115] PERSONAJE
 New Hiyo
@@ -395,7 +395,7 @@ Las G pueden ser rojas o azules.
 Asagi aparece en muchos juegos.
 
 [000125] DIÁLOGO
-La máscara es realmente poderosa.
+La máscara es muy poderosa.
 
 [000126] DIÁLOGO
 Los ataques con bastón tienen un límite estricto.
@@ -443,7 +443,7 @@ Asegúrate de estar preparado para eso.
 Los Hiyokki suelen dejar caer el artefacto «Widen».
 
 [000141] DIÁLOGO
-Pero la probabilidad real de que aparezca es realmente baja.
+Pero la probabilidad de que lo suelten es muy baja.
 
 [000142] DIÁLOGO
 Incluso si tu cuerpo está ardiendo, los ataques que vienen
@@ -488,7 +488,7 @@ y títulos que solo
 dejan caer los Hiyokki.
 
 [000156] DIÁLOGO
-"Curar" puede ser una habilidad crucial.
+«Curar» puede ser una habilidad crucial.
 
 [000157] DIÁLOGO
 A veces puedes romper los bloques
@@ -503,13 +503,13 @@ Puedes usar el escudo para cancelar algunos fotogramas
 de vulnerabilidad después de atacar.
 
 [000161] DIÁLOGO
-Solo ten cuidado al usarlo.
+Solo tienes que elegir bien cuándo usarlo.
 
 [000162] DIÁLOGO
 Hay algunos monstruos que son inmunes
 
 [000163] DIÁLOGO
-a ataques desde el frente.
+a los ataques frontales.
 
 [000164] DIÁLOGO
 "Corte de hielo" será un ataque basado en hielo, incluso si estás ardiendo.
@@ -521,10 +521,10 @@ Hay monstruos que nunca
 entran en modo «BREAK!».
 
 [000167] DIÁLOGO
-Cualquier discrepancia en los daños puede ser
+La diferencia de daño puede deberse
 
 [000168] DIÁLOGO
-debido a propiedades elementales.
+a las propiedades elementales.
 
 [000169] DIÁLOGO
 Los atributos ①②③④⑤⑥
@@ -539,7 +539,7 @@ Los ataques cargados con hacha y los especiales
 pueden alcanzar a enemigos detrás de las paredes.
 
 [000173] DIÁLOGO
-Todas las armaduras tienen algún tipo de debilidad.
+Todas las armaduras tienen alguna debilidad.
 
 [000174] DIÁLOGO
 La diferencia entre usar y no usar
@@ -584,10 +584,10 @@ El ataque con el ojo gigante
 puede atravesar paredes.
 
 [000188] DIÁLOGO
-Deslizarse puede permitirte moverte rápidamente
+Deslizarte te permite avanzar rápido
 
 [000189] DIÁLOGO
-a través de la hierba e incluso del limo.
+por la hierba e incluso por el limo.
 
 [000190] DIÁLOGO
 Ningún monstruo es totalmente inmune
@@ -650,7 +650,7 @@ El artefacto "Maná Plus"
 Surte efecto independientemente de dónde lo coloques.
 
 [000210] DIÁLOGO
-Hay algo oculto bajo tierra en Arcanus Cella.
+Hay algo bajo tierra en Arcanus Cella.
 
 [000211] DIÁLOGO
 Hay algo especial en la estantería de Despina.
@@ -736,19 +736,19 @@ Peso
 Volver
 
 [000237] DIÁLOGO
-Presionar el botón en el momento adecuado
+Si pulsas el botón justo a tiempo,
 
 [000238] DIÁLOGO
-Te permite realizar un combo de 3 golpes.
+puedes encadenar un combo de tres golpes.
 
 [000239] DIÁLOGO
 Tiene la propiedad de ①.
 
 [000240] DIÁLOGO
-Mantén pulsado el botón de ataque durante
+Mantén pulsado el botón de ataque para
 
 [000241] DIÁLOGO
-un ataque de carga.
+realizar un ataque cargado.
 
 [000242] DIÁLOGO
 Tiene la propiedad de ③.
@@ -778,10 +778,10 @@ Los elementos se determinan en función del tipo de bastón.
 Mientras sostienes tu escudo, tu DEF
 
 [000251] DIÁLOGO
-y la resistencia del elemento puede aumentar.
+y tu resistencia elemental pueden aumentar.
 
 [000252] DIÁLOGO
-Será especialmente eficaz desde el frente.
+Es especialmente eficaz contra ataques frontales.
 
 [000253] DIÁLOGO
 Sin embargo, su eficacia disminuye con el uso.
@@ -790,13 +790,13 @@ Sin embargo, su eficacia disminuye con el uso.
 Los vendedores no alteran las estadísticas.
 
 [000255] DIÁLOGO
-La armadura puede ser compartida con todos.
+Todos pueden usar la misma armadura.
 
 [000256] DIÁLOGO
 Todo el equipo tiene títulos.
 
 [000257] DIÁLOGO
-Normal es el estado predeterminado.
+«Normal» es el estado inicial.
 
 [000258] DIÁLOGO
 Los efectos de los títulos
@@ -811,7 +811,7 @@ Todo el equipo tiene un atributo de peso ⑧.
 Cuanto mayor sea el valor de ⑧, más lento será tu ataque.
 
 [000262] DIÁLOGO
-¿Qué quieres saber sobre Arcanus Cella?
+¿Qué quieres saber de Arcanus Cella?
 
 [000263] OPCIÓN
 Tiendas
