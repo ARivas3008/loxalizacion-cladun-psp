@@ -25,12 +25,14 @@ from font_es_patch import SOURCE_SHA256, sha256_file, build as build_font
 from font_es_guard import verify as verify_font
 from imy_repack_safe import recompress
 from ajustes_campos_es import effective
+from graficos_texto_es import GRAPHICS, patch_png
 
 ROOT = Path(__file__).resolve().parents[1]
 TEXT_OPS = {0x66, 0x69, 0x6E}
 TARGET_SCRIPT = "SCRIPT.SDT/SCRIPT.DAT"
 TARGET_DB = "DATABASE.DAT"
 TARGET_CREDITS = "STAFFROLL.TXT"
+TARGET_SYS = "SYS.DAT2"
 
 
 def require(ok, why):
@@ -113,6 +115,11 @@ def plan_rows(rows):
         elif where.startswith("DATABASE.DAT/"):
             if state["estado"] != "CANDIDATO_A_ENSAYO_NO_VALIDADO":
                 blocked.append({"grupo_id": gid, "motivo": state["estado"]})
+                continue
+        elif where.startswith("SYS.DAT2/"):
+            image = where.split("/", 1)[1]
+            if image not in GRAPHICS or spanish != GRAPHICS[image][3]:
+                blocked.append({"grupo_id": gid, "motivo": "IMAGEN_NO_AUTORIZADA"})
                 continue
         elif where == TARGET_CREDITS:
             # Counts, offsets and source bytes will be checked against every original line.
@@ -333,6 +340,47 @@ def rebuild_database_arc(archive, per_child):
         result = target
     return bytes(result), seen
 
+def rebuild_sys_arc(archive, per_child):
+    """Append localized PNGs; only the six text images may be changed.
+
+    The six original PNG data regions remain in the DSARC copy; the new
+    members are appended and linked from their six table entries. This avoids
+    relocating any unrelated graphic or binary within SYS.DAT2.
+    """
+    children = {x["name"]: x for x in dsarc_entries(archive)}
+    require(set(children) == set(GRAPHICS) and set(per_child) == set(GRAPHICS),
+            "Expected all six and only the six audited graphical text members")
+    target = bytearray(archive)
+    accounted_for = set()
+    audits = []
+    for name in sorted(GRAPHICS):
+        records = per_child[name]
+        require(len(records) == 1, "Expected one translation per graphical text PNG")
+        src, old, encoded = records[0]
+        require(src["origen"] == "SYS.DAT2/" + name and
+                src["original"] in ("NO DATA", "This is an RPG!") and
+                src["tipo"] in ("mensaje_grafico", "titulo_grafico"),
+                "Graphic text source metadata unexpected")
+        member = children[name]
+        original = archive[member["offset"]:member["offset"] + member["size"]]
+        updated, audit = patch_png(name, original, GRAPHICS[name][3])
+        position = strict_next(len(target), 512)
+        target.extend(b"\\0" * (position - len(target)))
+        target.extend(updated)
+        meta = int(member["table_offset_hex"], 16)
+        struct.pack_into("<II", target, meta + 40, len(updated), position)
+        require(target[member["offset"]:member["offset"] + member["size"]] == original,
+                "Original PNG bytes moved or altered")
+        accounted_for.add(src["grupo_id"])
+        audits.append(audit)
+    after = {x["name"]: x for x in dsarc_entries(target)}
+    require(set(after) == set(children), "SYS.DAT2 member inventory changed")
+    for name in children:
+        record = after[name]
+        require(target[record["offset"]:record["offset"] + record["size"]][:8] == b"\\x89PNG\\r\\n\\x1a\\n",
+                "Rebuilt PNG resource not recognized")
+    return bytes(target), accounted_for, audits
+
 
 def rebuild_credits(raw, records):
     """Preserve CRLF/LF separators and rows from original STAFFROLL.TXT."""
@@ -407,8 +455,8 @@ def append_text_containers(source_iso, source_pack, entries, replacements, resul
     with result_iso.open("r+b") as target:
         target.seek(original_total)
         for name, (stored, expanded) in sorted(replacements.items()):
-            require(name in ("SCRIPT.SDT", "DATABASE.DAT", "STAFFROLL.TXT"),
-                    "Only textual PSPFS archive may be updated")
+            require(name in ("SCRIPT.SDT", "DATABASE.DAT", "STAFFROLL.TXT", "SYS.DAT2"),
+                    "Only text and six audited graphic-text members may be updated")
             original = by_name[name]
             offset = append_offset
             target.write(stored)
@@ -530,6 +578,17 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
             rewritten = rebuild_credits(raw, changes[TARGET_CREDITS])
             replacements[TARGET_CREDITS] = (rewritten, 0)
             applied.update(a["grupo_id"] for a, old, new in changes[TARGET_CREDITS])
+        graphic_changes = {
+            k.split("/", 1)[1]: records for k, records in changes.items()
+            if k.startswith("SYS.DAT2/")
+        }
+        graphic_audits = []
+        if graphic_changes:
+            stored, raw, method = parent_content(package, table[TARGET_SYS])
+            require(method == "sin_comprimir", "SYS.DAT2 has unexpected compression")
+            new_graphics, IDs, graphic_audits = rebuild_sys_arc(raw, graphic_changes)
+            replacements[TARGET_SYS] = (new_graphics, 0)
+            applied.update(IDs)
 
         require(len(applied) == all_changed, "Some admissible entries were not applied")
         require(not candidate.exists(), "Candidate path already exists: never overwrite")
@@ -540,6 +599,7 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
                        "recurso_textual_reubicado_append_only": metadata,
                        "recursos_no_textuales_mismo_offset_y_mismos_bytes": 349 - len(replacements),
                        "fuente_es_prototipo": add_spanish_font,
+                       "graficos_textuales_verificados": graphic_audits,
                        "todos_los_textos_insertados": len(blocked) == 0})
         report.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n",
                           encoding="utf-8")
