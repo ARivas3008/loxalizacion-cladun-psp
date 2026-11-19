@@ -46,10 +46,10 @@ class TestFixedFieldSpanish(unittest.TestCase):
             self.assertEqual(why, "original_truncado_verificado_por_bytes")
             self.assertEqual(len(bytes.fromhex(src["bytes_hex"])) + 1, int(src["capacidad_campo"]))
 
-    def test_all_remaining_blockers_are_graphical(self):
+    def test_all_text_and_graphical_entries_are_plannable(self):
         changes, blocked, identical = plan_rows(list(zip(self.src, self.draft)))
-        self.assertEqual(len(blocked), 6)
-        self.assertEqual({r["motivo"] for r in blocked}, {"FORMATO_AUN_NO_INTEGRADO"})
+        self.assertEqual(len(blocked), 0)
+        self.assertEqual(len([x for k, v in changes.items() if k.startswith("SYS.DAT2/") for x in v]), 6)
         self.assertEqual(sum(len(v) for v in changes.values()) + len(blocked) + identical, 9237)
 
 
