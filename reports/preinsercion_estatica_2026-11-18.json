@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-11-18",
+  "fuente": "GitHub Actions run 44425291807",
+  "edicion": "Cladun This Is an RPG USA PSP",
+  "sha256_iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "estado": "ANALISIS_ESTATICO_SIN_APROBACION_RUNTIME",
+  "total": 9237,
+  "traducciones_es": 9235,
+  "revision_IA_o_normalizacion": 441,
+  "pendiente_revision_narrativa": 8794,
+  "estados": {
+    "BLOQUEADO_CAMBIO_LONGITUD_SCRIPT": 4576,
+    "BLOQUEADO_DESBORDE_CAMPO": 280,
+    "BLOQUEADO_SIN_MODELO_DE_CAPACIDAD": 816,
+    "BLOQUEADO_IMAGEN_O_SIN_OFFSET": 6,
+    "BLOQUEADO_SIN_TRADUCCION": 2,
+    "CANDIDATO_A_ENSAYO_NO_VALIDADO": 3557
+  },
+  "aprobadas_insercion_final": 0,
+  "glifos_es_experimentales": 19,
+  "codigos_experimentales": "F5A0-F5B2",
+  "errores_codificacion_preflight": 0,
+  "ensayo_guardas_binarios_previos": "solo cambios aislados documentados",
+  "validacion_ppsspp": false,
+  "validacion_retratos_tiles_en_runtime": false,
+  "ci": {
+    "run_id": 44425291807,
+    "conclusion": "success",
+    "tests_ejecutados": 31,
+    "tests_omitidos_por_iso_privada": 1
+  }
+}

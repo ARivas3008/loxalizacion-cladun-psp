@@ -9,7 +9,10 @@ Trabajar **solo en textos para localizar de Cladun: This Is an RPG! (USA/PSP)**.
 - `corpus/CLADUN_TODO_TEXTO_ORIGINAL.csv`: único registro maestro que contiene el texto original.
 - `corpus/CLADUN_TODO_TEXTO_ORIGINAL.txt`: visualización de los mismos grupos, generada y sin traducción.
 - `qa/decisiones_auditoria.csv`: decisiones justificadas sobre pendientes antiguos.
-- `reports/resumen.json` y `reports/qa_integridad.json`: recuentos comprobables.
+- `reports/resumen.json` y `reports/qa_integridad.json`: recuentos de extracción comprobables.
+- `traduccion/CLADUN_BORRADOR_ES.csv`: traducción separada, nunca sobrescribir el original.
+- `traduccion/GLOSARIO_CANONICO.csv`: glosario CSV vigente; `GLOSARIO_PROPUESTA.csv` es histórico.
+- `reports/preinsercion_estatica_2026-11-18.json`: corte estático de riesgos, no aprobación de inserción.
 
 Los subconjuntos `confirmados_formato` y `revisar_visibilidad` son vistas derivadas; no editar en paralelo.
 
@@ -28,7 +31,9 @@ Los subconjuntos `confirmados_formato` y `revisar_visibilidad` son vistas deriva
 - Separar los 1.035 pendientes; no presentarlos como ya comprobados visualmente.
 - Conservar texto en inglés o japonés exactamente como sale de sus bytes.
 - Escapar cuidadosamente variables `%s`, `%d`, `%02d`, secuencias y saltos de línea.
-- Ejecutar `python -m unittest discover -s tests -v` y `python tools/verificar_integridad.py --raiz .`.
+- Ejecutar `python -m unittest discover -s tests -v`, `python tools/verificar_integridad.py --raiz .`, `python tools/verificar_borrador_es.py` y `python tools/auditar_preinsercion_es.py`.
+- Toda post-edición de `traduccion/CLADUN_BORRADOR_ES.csv` debe sincronizar el TXT español y el TXT bilingüe **en el mismo commit**, con registro CSV de antes/después.
+- Diferenciar revisión textual por IA de revisión narrativa humana o renderizado probado; ninguna de las dos últimas está acreditada.
 - Toda corrección de extracción debe actualizar el corpus maestro, TXT, subconjuntos, registro de auditoría y resumen **en el mismo commit**.
 - En reportes distinguir siempre entre lo **verificado**, lo **probable** y lo **pendiente**.
 
@@ -47,3 +52,9 @@ Los subconjuntos `confirmados_formato` y `revisar_visibilidad` son vistas deriva
 - Todo cambio en la fuente requiere pasar `tools/font_es_guard.py` contra la ISO original.
 - Cualquier cambio textual posterior se compara con su copia exacta de entrada mediante `tools/iso_guard_global.py`, con SHA-256 de origen, formatos invariantes y spans explícitos por miembro.
 - Los veredictos `PASS_*_ISOLATION_ONLY` **no** certifican funcionamiento de PPSSPP ni muestran todos los textos; no permitir publicaciones de parche final sin esas pruebas.
+
+## Umbral de inserción: fase 2026-11-18
+
+- **4.576** scripts tienen traducciones de diferente longitud de bytes; **280** campos exceden el espacio; **816** carecen de modelo de capacidad. Estas entradas están bloqueadas, nunca recortar o mover otros recursos sin análisis de referencias.
+- **3.557** entradas solo son candidatas a un ensayo estático. **0** entradas tienen aprobación de inserción final; evitar declarar «seguro», «completo» o «listo para parchear» basándose únicamente en el código.
+- Los 19 nuevos glifos existen como **prototipo** (mapeo F5A0–F5B2). El texto localizado nunca debe publicarse ni mostrarse como funcional en PSP/PPSSPP sin prueba de render y carga.

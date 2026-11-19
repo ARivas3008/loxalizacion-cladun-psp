@@ -28,3 +28,11 @@
 - Códec y atlas de prueba unificados con 19 glifos PUA F5A0–F5B2, sin reordenar los 2.721 registros anteriores.
 - Guardia independiente de FONT.ARC y guardia global de cambios textuales con rangos explícitos; ensayo privado en dos etapas aprobado y pruebas negativas rechazadas.
 - Sin prueba visual PPSSPP ni reinserción completa; no publicar ninguna ISO ni assets del juego.
+
+## 2026-11-18 — Fase 3-5: naturalidad, términos, preflight y CI
+
+- 73 ediciones lingüísticas trazadas sobre 72 entradas nuevas para la revisión IA, total acumulado **441 revisadas/normalizadas** y **8.794 pendientes**.
+- CSV, TXT español y TXT bilingüe actualizados juntos, con logs de fases 3, 4 y 5; conservados fuente, IDs, posiciones y marcadores.
+- Glosario canónico de 63 términos; se han corregido usos de New-geon/Ran-geon, Ward, Job en interfaz, exclamaciones y caracteres Unicode invisibles.
+- Auditoría estática y pruebas de capacidad/CP932/variables en CI. Corte: **3.557 candidatas a ensayo**, **5.680 bloqueadas**, **0 aprobadas para parche definitivo**.
+- Sin reinserción masiva ni prueba visual PPSSPP. Los guardas de aislamiento ya existentes se conservan como requisito antes de cualquier cambio binario.

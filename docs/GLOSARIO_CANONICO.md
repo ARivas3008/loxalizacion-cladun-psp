@@ -1,6 +1,6 @@
 # Glosario canónico — Cladun: This Is an RPG! (USA, PSP)
 
-Versión 1.1, 18/11/2026. **Consistente para el borrador**, todavía no aprobado mediante revisión en PPSSPP. No sustituir nombres por intuición. Se utiliza español neutro latinoamericano, trato de tú salvo contexto de personaje; nombres propios en inglés preservados.
+Versión 1.2, 18/11/2026. **Consistente para el borrador**, todavía no aprobado mediante revisión en PPSSPP. No sustituir nombres por intuición. Se utiliza español neutro latinoamericano, trato de tú salvo contexto de personaje; nombres propios en inglés preservados.
 
 | Original | Español canónico | Tratamiento |
 |---|---|---|
@@ -19,6 +19,10 @@ Versión 1.1, 18/11/2026. **Consistente para el borrador**, todavía no aprobado
 | Staff Gauge | indicador del bastón | Interfaz, confirmar ancho de HUD |
 | Job Change | cambio de clase | Mecánica, no cambiar de empleo |
 | Class | clase | Personaje |
+| Job (interfaz de clases) | clase | No «trabajo» al elegir clases; en diálogos cotidianos sí puede significar trabajo |
+| Ward (efecto de equipamiento) | Protección | No «Pabellón»; confirmar su efecto exacto en pantalla |
+| Super Move | supermovimiento | Nombre genérico de mecánica; comprobar ancho en HUD |
+| Wireless Gate | Puerta inalámbrica | Rótulo narrativo provisional; revisar pantalla |
 | Level / LV | nivel / LV | Conservar LV si aparece en marcador técnico |
 | HP | HP | Conservar sigla de interfaz hasta prueba visual |
 | Mana | maná | Recurso del círculo |
@@ -75,3 +79,13 @@ Fuentes para terminología mecánica: [Magic Circle (Cladun Wiki)](https://cladu
 | Hiyokki drop | los Hiyokki dejan caer | Sujetos de juego, no «Hiyokki caerá» |
 
 Las revisiones agrupadas y la preservación del texto original están documentadas en [la auditoría contextual](REVISION_CONTEXTUAL_2026-11-18.md).
+
+## Fuente terminológica consolidada y límites
+
+**Fuente CSV canónica:** [`traduccion/GLOSARIO_CANONICO.csv`](../traduccion/GLOSARIO_CANONICO.csv), **63 términos únicos**. El anterior [`GLOSARIO_PROPUESTA.csv`](../traduccion/GLOSARIO_PROPUESTA.csv) se conserva como documento histórico; no editar ambos ni usarlo para sobreescribir el canónico. Los términos con estado de verificación visual pendiente son propuestas, no hechos validados del HUD.
+
+**Regla sobre nombres:** `New-geon` y `Ran-geon` son nombres propios. Evitar «Nueva geoda», «Nueva-geon» o «mazmorras de rango» cuando sustituyan el nombre. `Pudding` es un personaje. `Widen` es un artefacto; `Widening` describe su efecto.
+
+**Variantes de contexto:** `Job` en selección y atributos del personaje equivale a **clase**. En frases de NPC («my job is...»), puede significar **trabajo**: la sustitución global sería incorrecta. `Ward` se ha normalizado provisionalmente a **Protección** en tres campos de efectos del equipo; comprobar su semántica exacta dentro del juego antes de aprobarlo.
+
+**Trazabilidad nueva:** [fase 3](../qa/revision_dialogos_glosario_fase3_2026-11-18.csv), [fase 4](../qa/revision_caracteres_y_dialogos_fase4_2026-11-18.csv) y [fase 5](../qa/revision_new_geon_fase5_2026-11-18.csv). El corte actual es **441 unidades posteditadas o normalizadas por IA**, mientras **8.794** siguen sin revisión narrativa individual. Ningún texto está validado para inserción definitiva.
