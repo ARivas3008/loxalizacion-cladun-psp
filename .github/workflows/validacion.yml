@@ -23,6 +23,8 @@ jobs:
       - name: Inventario estático de riesgos de reinserción (no es aprobación)
         run: |
           python tools/auditar_preinsercion_es.py --reporte reports/preinsercion_ci.json --filas reports/preinsercion_ci.csv
+      - name: Medir integrabilidad append-only sin crear ISO
+        run: python tools/reportar_integrabilidad_es.py --reporte reports/integrabilidad_ci.json
       - name: Conservar informes de QA (sin activos comerciales)
         uses: actions/upload-artifact@v4
         with:
@@ -30,3 +32,4 @@ jobs:
           path: |
             reports/preinsercion_ci.json
             reports/preinsercion_ci.csv
+            reports/integrabilidad_ci.json

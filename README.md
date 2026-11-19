@@ -127,3 +127,11 @@ No se incluye una ISO ni archivos gráficos/binarios originales del videojuego. 
 - **Acumulado: 474 entradas revisadas/normalizadas por IA y 8.761 pendientes** de revisión individual (9.235 borradores). Revisión humana y visual pendientes.
 - Glosario canónico ampliado de 63 a **67 términos**; los nombres de habilidades son provisionales hasta probarlos en el juego.
 - [Informe reproducible de esta fase](reports/revision_naturalidad_fase6.json). El informe estático previo corresponde al corte anterior; CI realiza un nuevo preflight. **Cero traducciones aprobadas para inserción final.**
+
+## Integración del parche sin modificar assets — fase experimental
+
+- [Integrador append-only](tools/integrar_parche_seguro.py), [recompresor IMY](tools/imy_repack_safe.py) y [protocolo detallado](docs/INTEGRACION_APPEND_ONLY.md). En lugar de ocupar espacio de retratos/tiles, incorpora nuevas versiones de los contenedores **solo textuales** al final de DATA.DAT, preservando bytes y offsets de los recursos no intervenidos.
+- [Diagnóstico automatizado](tools/reportar_integrabilidad_es.py): **8.203 sustituciones planificables**, **746 textos que ya coinciden en bytes**, **280 campos desbordados**, **6 rótulos gráficos** y **2 originales incompletos**. El conteo se regenera en GitHub Actions; no significa que los 8.203 se hayan insertado realmente.
+- [Ensayo estructural local de una única cadena artificial](reports/ensayo_estructura_append_only_2026-11-18.json): 1.625 bloques, 51.705 comandos, 46.308 instrucciones no textuales intactas, 348 recursos PSPFS ajenos idénticos. No hay verificación PPSSPP.
+- El modo **estricto** del integrador rechaza construir un parche final mientras queden las 288 entradas bloqueadas. El modo experimental parcial requiere una opción explícita y produce solo una ISO **privada** para pruebas, no distribuible.
+- No se publican ISO ni recursos comerciales. El **parche español completo todavía no está aprobado**: falta demostrar carga de la nueva ubicación PSPFS y render de la fuente y corregir los 288 bloqueos sin alterar assets.

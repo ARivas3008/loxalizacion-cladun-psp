@@ -1,0 +1,23 @@
+{
+  "fecha": "2026-11-18",
+  "estado": "PLANIFICACION_ESTATICA_NO_PARCHE_RUNTIME",
+  "origen": "GitHub Actions run 44436489425",
+  "total_unidades": 9237,
+  "sustituciones_con_ruta_de_integracion_experimental": 8203,
+  "sin_cambios_binarios_requeridos": 746,
+  "bloqueadas": 288,
+  "por_tipo_planificable": {
+    "scripts": 4913,
+    "interfaz_con_punteros": 548,
+    "creditos": 157,
+    "otros_campos_fijos_database": 2585
+  },
+  "bloqueos": {
+    "desbordes_campos_fijos": 280,
+    "texto_en_imagen": 6,
+    "fuente_cp932_incompleta": 2
+  },
+  "tiene_ISO_espanola_completa": false,
+  "prueba_PPSSPP": false,
+  "reglas": "No sobrescribir, desplazar ni modificar bytes de assets no textuales ni offsets antiguos; rechazar campos bloqueados"
+}
