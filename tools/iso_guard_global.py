@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse,hashlib,json
 from pathlib import Path
 from extract_cladun import iso9660_entries,read_iso_file,pspfs_entries,decompress,dsarc_entries
+from plan_textual_seguro import verify_manifest, assert_exact_member_replacements
 
 BASE_SHA256='b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f'
 
@@ -28,7 +29,7 @@ def spans_from_args(specs):
         path,off,size=spec.rsplit(':',2)
         a,n=int(off,0),int(size,0)
         require(path and a>=0 and n>0,f'Invalid range: {spec}')
-        require(path!='FONT.ARC' and not path.startswith('FONT.ARC/'), 'FONT.ARC requires font_es_guard.py')
+        require(path == 'SCRIPT.SDT/SCRIPT.DAT', 'Solo SCRIPT.SDT/SCRIPT.DAT admite tramos de texto en esta fase')
         result.setdefault(path,[]).append((a,a+n))
     for path,spans in result.items():
         spans.sort()
@@ -75,7 +76,7 @@ def decoded(source,expanded):
     data,label=decompress(source,expanded)
     return data
 
-def validate(source,candidate,allowed,expected_sha=BASE_SHA256):
+def validate(source,candidate,allowed,expected_sha=BASE_SHA256,expected_edits=None):
     source,candidate=Path(source),Path(candidate)
     require(source.resolve()!=candidate.resolve(),'Cannot compare same ISO')
     require(source.stat().st_size==candidate.stat().st_size,'ISO length changed')
@@ -118,6 +119,13 @@ def validate(source,candidate,allowed,expected_sha=BASE_SHA256):
                         if ranges:modified_decoded+=exact_except(raw_old[q:t],raw_new[q:t],ranges,key)
                         else:require(raw_old[q:t]==raw_new[q:t],f'Non-text DSARC member changed: {key}')
                         child_ranges.extend([(q+lo,q+hi) for lo,hi in ranges])
+                    if expected_edits is not None:
+                        for child in kids_old:
+                            key=name+'/'+child['name']
+                            edits=[e for e in expected_edits if e['path']==key]
+                            if edits:
+                                start=child['offset'];end=start+child['size']
+                                assert_exact_member_replacements(raw_old[start:end],raw_new[start:end],edits)
                     modified_parent=exact_except(raw_old,raw_new,child_ranges,name+' parent')
                     require(modified_parent>=1,'No declared byte difference')
                 else:
@@ -133,17 +141,20 @@ def validate(source,candidate,allowed,expected_sha=BASE_SHA256):
             'edited_parents':changed_parents,'authorized_decoded_bytes_changed':modified_decoded,
             'pspfs_metadata_and_offsets_unchanged':True,'all_other_resources_byte_identical':True,
             'iso_size_and_layout_unchanged':True,'ppsspp_gameplay_tested':False,
-            'spanish_translation_reinsertion_complete':False}
+            'spanish_translation_reinsertion_complete':False,
+            'manifest_verified_against_corpus':expected_edits is not None}
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--original',type=Path,required=True)
     p.add_argument('--candidate',type=Path,required=True)
-    p.add_argument('--sha256-original',default=BASE_SHA256)
-    p.add_argument('--permit',action='append',required=True)
+    p.add_argument('--manifest',type=Path,required=True,
+                   help='Plan revalidado contra la ISO y el corpus, no tramos manuales')
     p.add_argument('--report',type=Path)
     args=p.parse_args()
-    try:out=validate(args.original,args.candidate,spans_from_args(args.permit),args.sha256_original)
+    try:
+        allowed,edits,sha=verify_manifest(args.manifest,args.original)
+        out=validate(args.original,args.candidate,allowed,sha,edits)
     except Exception as e:out={'status':'REJECTED','reason':str(e)}
     data=json.dumps(out,ensure_ascii=False,indent=2)+'\n'
     print(data)

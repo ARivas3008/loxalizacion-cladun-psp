@@ -58,3 +58,10 @@ Los subconjuntos `confirmados_formato` y `revisar_visibilidad` son vistas deriva
 - **4.576** scripts tienen traducciones de diferente longitud de bytes; **280** campos exceden el espacio; **816** carecen de modelo de capacidad. Estas entradas están bloqueadas, nunca recortar o mover otros recursos sin análisis de referencias.
 - **3.557** entradas solo son candidatas a un ensayo estático. **0** entradas tienen aprobación de inserción final; evitar declarar «seguro», «completo» o «listo para parchear» basándose únicamente en el código.
 - Los 19 nuevos glifos existen como **prototipo** (mapeo F5A0–F5B2). El texto localizado nunca debe publicarse ni mostrarse como funcional en PSP/PPSSPP sin prueba de render y carga.
+
+## Contrato adicional: manifiesto enlazado a fuente
+
+- Para una prueba textual binaria, generar primero el JSON con `tools/plan_textual_seguro.py` contra la ISO exacta de partida y los CSV actuales; no usar permisos manuales de spans.
+- La guarda global exige `--manifest` y lo recalcula; cualquier byte distinto dentro o fuera de los tramos autorizados debe bloquear.
+- El plan está limitado a SCRIPT.SDT/SCRIPT.DAT, igual longitud y estados de candidato estático. No da permiso para editar archivos gráficos, map tiles, retratos, fuentes o aumentar scripts.
+- Mantener los avisos de PPSSPP: aislamiento binario no significa ejecución ni renderizado validados.

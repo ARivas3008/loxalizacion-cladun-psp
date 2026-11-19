@@ -1,0 +1,17 @@
+{
+  "fecha": "2026-11-18",
+  "fase": 6,
+  "filas_modificadas": 33,
+  "total_unidades": 9237,
+  "borradores_es": 9235,
+  "revision_IA_normalizacion_acumulada": 474,
+  "pendiente_revision_narrativa_individual": 8761,
+  "glosario_terminos": 67,
+  "delta_candidatos_estaticos_por_longitud": 2,
+  "delta_bloqueados_por_longitud": -2,
+  "originales_preservados": true,
+  "vistas_espanol_y_bilingue_sincronizadas": true,
+  "iso_modificada": false,
+  "aprobadas_insercion_final": 0,
+  "validacion_ppsspp": false
+}
