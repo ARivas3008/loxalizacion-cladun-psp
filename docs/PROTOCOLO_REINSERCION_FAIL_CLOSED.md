@@ -27,11 +27,10 @@ Una vez construida y **comprobada** la fuente (por separado), cualquier edición
 python tools/iso_guard_global.py \
   --original Cladun-Font-Private.iso \
   --candidate Cladun-Font-Y-Texto-Private.iso \
-  --sha256-original <SHA256_EXACTO_DE_CLADUN_FONT_PRIVATE> \
-  --permit SCRIPT.SDT/SCRIPT.DAT:687:19
+  --manifest plan_privado.json
 ```
 
-El parámetro `--permit` expresa `PADRE/HIJO:OFFSET_DECODIFICADO:LONGITUD_EN_BYTES`, no una posición física inventada dentro de la ISO. Para la prueba se usó una cadena que empieza en 687 y ocupa 19 bytes en `SCRIPT.SDT/SCRIPT.DAT`.
+La interfaz actual exige un manifiesto generado y recalculable con `tools/plan_textual_seguro.py`. Se comprobó previamente un cambio histórico de un byte en `SCRIPT.SDT/SCRIPT.DAT`, pero ahora **no se admiten permisos manuales de rangos**; se cotejan ID, offset, bytes de origen y bytes nuevos contra el corpus y la ISO. El plan debe generarse usando exactamente la ISO empleada como original de esta etapa. Véase [MANIFIESTO_TEXTO_EXACTO.md](MANIFIESTO_TEXTO_EXACTO.md).
 
 El proceso rechaza:
 
