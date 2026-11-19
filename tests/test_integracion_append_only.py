@@ -72,6 +72,39 @@ class TestsSafeAppend(unittest.TestCase):
         self.assertEqual(result, replacement)
         self.assertEqual(struct.unpack_from("<H", modified, 12 + 12)[0], 4)
 
+    def test_database_edits_only_text_field_not_adjacent_asset(self):
+        from integrar_parche_seguro import rebuild_database_arc
+        archive = bytearray(1536)
+        archive[:8] = b"DSARC FL"
+        struct.pack_into("<I", archive, 8, 2)
+        archive[16:16 + 8] = b"ITEM.DAT"
+        struct.pack_into("<II", archive, 16 + 40, 64, 512)
+        archive[64:64 + 12] = b"PORTRAIT.BIN"
+        struct.pack_into("<II", archive, 64 + 40, 64, 1024)
+        archive[512:515] = b"ABC"
+        archive[1024:1088] = bytes(range(64))
+        source = {"grupo_id": "000001", "offset_hex": "0x0", "capacidad_campo": "8"}
+        result, ids = rebuild_database_arc(bytes(archive), {"ITEM.DAT": [(source, b"ABC", b"BIEN")]})
+        self.assertEqual(ids, {"000001"})
+        self.assertEqual(result[512:520], b"BIEN\0\0\0\0")
+        self.assertEqual(result[1024:1088], archive[1024:1088])
+        self.assertEqual(result[:512], archive[:512])
+
+    def test_database_rejects_nonzero_neighbor_or_overflow(self):
+        from integrar_parche_seguro import rebuild_database_arc
+        archive = bytearray(1024)
+        archive[:8] = b"DSARC FL"
+        struct.pack_into("<I", archive, 8, 1)
+        archive[16:24] = b"ITEM.DAT"
+        struct.pack_into("<II", archive, 16 + 40, 64, 512)
+        archive[512:516] = b"ABC\0"
+        source = {"grupo_id": "000001", "offset_hex": "0x0", "capacidad_campo": "8"}
+        with self.assertRaises(ValueError):
+            rebuild_database_arc(bytes(archive), {"ITEM.DAT": [(source, b"ABC", b"TOO LONG TO FIT")]})
+        archive[517] = 0x99
+        with self.assertRaises(ValueError):
+            rebuild_database_arc(bytes(archive), {"ITEM.DAT": [(source, b"ABC", b"BIEN")]})
+
     def test_reject_odd_imy_expansion(self):
         header = synthetic_imy_header()
         raw = b"\x00\x01" * 16
