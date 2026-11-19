@@ -175,7 +175,7 @@ def text_command_rebuild(data, table, allowed):
                     new_param_len = len(new) + 3
                     result.extend(original_cmd[:3])
                     result.extend(struct.pack("<H", new_param_len))
-                    result.extend(struct.pack("<H", len(new) + 1))
+                    result.extend(struct.pack("<H", len(new)))
                     result.extend(new)
                     result.append(0)
                     used.add(slot)
