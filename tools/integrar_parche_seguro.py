@@ -102,7 +102,11 @@ def plan_rows(rows):
                                        "BLOQUEADO_CAMBIO_LONGITUD_SCRIPT"):
                 blocked.append({"grupo_id": gid, "motivo": state["estado"]})
                 continue
-        elif where.startswith("DATABASE.DAT/") and where != "DATABASE.DAT/STRTBL.DAT":
+        elif where == "DATABASE.DAT/STRTBL.DAT":
+            if state["estado"] != "BLOQUEADO_SIN_MODELO_DE_CAPACIDAD":
+                blocked.append({"grupo_id": gid, "motivo": state["estado"]})
+                continue
+        elif where.startswith("DATABASE.DAT/"):
             if state["estado"] != "CANDIDATO_A_ENSAYO_NO_VALIDADO":
                 blocked.append({"grupo_id": gid, "motivo": state["estado"]})
                 continue
@@ -230,12 +234,55 @@ def rebuild_script_arc(archive, replacements):
     return bytes(result)
 
 
+def rebuild_strtbl_member(original, rows):
+    """Rebuild 654 pointer slots and 651 NUL-terminated strings, preserving 3 zeros."""
+    first = u32(original)
+    require(first % 4 == 0 and first <= len(original), "STRTBL header invalid")
+    count = first // 4
+    offsets = struct.unpack_from("<" + "I" * count, original)
+    valid = [(index, value) for index, value in enumerate(offsets)
+             if first <= value < len(original)]
+    require(len(valid) == 651 and len({value for index, value in valid}) == 651,
+            "STRTBL count or alias model differs from verified source")
+    require([value for index, value in valid] == sorted(value for index, value in valid),
+            "STRTBL pointers not monotonic")
+    changed = {}
+    for source, old, new in rows:
+        index = int(source["indice_registro"])
+        require(index not in changed, f"Duplicated STRTBL ID at index {index}")
+        changed[index] = source, old, new
+
+    new_table = bytearray(original[:first])
+    body = bytearray()
+    used = set()
+    for pos, (index, offset) in enumerate(valid):
+        end = valid[pos + 1][1] if pos + 1 < len(valid) else len(original)
+        require(end > offset and original[end - 1] == 0 and b"\0" not in original[offset:end - 1],
+                f"Unexpected terminator in STRTBL index {index}")
+        original_value = original[offset:end - 1]
+        replacement = original_value
+        if index in changed:
+            source, old, new = changed[index]
+            require(int(source["offset_hex"], 16) == offset and old == original_value,
+                    f"String table source byte mismatch: {source['grupo_id']}")
+            replacement = new
+            used.add(source["grupo_id"])
+        struct.pack_into("<I", new_table, index * 4, first + len(body))
+        body.extend(replacement + b"\0")
+    require(used == {source["grupo_id"] for source, old, new in rows},
+            "STRTBL change unaccounted for")
+    return bytes(new_table + body), used
+
+
 def rebuild_database_arc(archive, per_child):
     result = bytearray(archive)
     children = {x["name"]: x for x in dsarc_entries(archive)}
     seen = set()
+    strtbl_changes = per_child.get("STRTBL.DAT", [])
     for child_name, records in per_child.items():
-        require(child_name in children and child_name != "STRTBL.DAT", "Unknown DB member")
+        if child_name == "STRTBL.DAT":
+            continue
+        require(child_name in children, "Unknown DB member")
         member = children[child_name]
         before = archive[member["offset"]:member["offset"] + member["size"]]
         updated = bytearray(before)
@@ -259,6 +306,27 @@ def rebuild_database_arc(archive, per_child):
         start, end = member["offset"], member["offset"] + member["size"]
         require(result[start:end] == archive[start:end],
                 f"DB nontext member changed: {child_name}")
+    if strtbl_changes:
+        member = children.get("STRTBL.DAT")
+        require(member is not None, "Missing STRTBL.DAT member")
+        old = archive[member["offset"]:member["offset"] + member["size"]]
+        changed_table, used = rebuild_strtbl_member(old, strtbl_changes)
+        append_at = strict_next(len(result), 512)
+        target = bytearray(align(append_at + len(changed_table), 256))
+        target[:len(result)] = result
+        target[append_at:append_at + len(changed_table)] = changed_table
+        meta = int(member["table_offset_hex"], 16)
+        struct.pack_into("<I", target, meta + 40, len(changed_table))
+        struct.pack_into("<I", target, meta + 44, append_at)
+        updated_members = {x["name"]: x for x in dsarc_entries(target)}
+        for name, original_member in children.items():
+            if name == "STRTBL.DAT":
+                continue
+            require(original_member["offset"] == updated_members[name]["offset"] and
+                    original_member["size"] == updated_members[name]["size"],
+                    f"Relocation of unrelated DATABASE.DAT member: {name}")
+        seen |= used
+        result = target
     return bytes(result), seen
 
 
