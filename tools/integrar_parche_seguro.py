@@ -353,7 +353,10 @@ def append_text_containers(source_iso, source_pack, entries, replacements, resul
             target.write(struct.pack("<III", expanded, len(stored), offset))
             target.seek(pos)
 
-        new_size = append_offset
+        # ISO9660 volume space is sector-addressed: the image must also end
+        # at an actual 2048-byte boundary, not merely PSPFS's 512-byte boundary.
+        new_size = align(append_offset, 2048)
+        require(new_size < 2**32, "DATA.DAT length exceeds ISO9660 32-bit field")
         target.seek(record_at + 10)
         target.write(struct.pack("<I", new_size))
         target.write(struct.pack(">I", new_size))
