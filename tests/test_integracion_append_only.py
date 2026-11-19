@@ -105,6 +105,37 @@ class TestsSafeAppend(unittest.TestCase):
         with self.assertRaises(ValueError):
             rebuild_database_arc(bytes(archive), {"ITEM.DAT": [(source, b"ABC", b"BIEN")]})
 
+    def test_strtbl_rebuilds_pointers_without_editing_other_members(self):
+        from integrar_parche_seguro import rebuild_database_arc
+        first = 654 * 4
+        table = bytearray(first)
+        for i in range(651):
+            struct.pack_into("<I", table, i * 4, first + 2 * i)
+        old_strings = bytes(table) + (b"X\0" * 651)
+        archive = bytearray(8192)
+        archive[:8] = b"DSARC FL"
+        struct.pack_into("<I", archive, 8, 2)
+        archive[16:16 + 10] = b"STRTBL.DAT"
+        struct.pack_into("<II", archive, 16 + 40, len(old_strings), 512)
+        archive[64:64 + 9] = b"OTHER.DAT"
+        struct.pack_into("<II", archive, 64 + 40, 64, 6144)
+        archive[512:512 + len(old_strings)] = old_strings
+        archive[6144:6208] = bytes(range(64))
+        record = {"grupo_id": "123456", "indice_registro": "5",
+                  "offset_hex": hex(first + 2 * 5)}
+        result, used = rebuild_database_arc(
+            bytes(archive), {"STRTBL.DAT": [(record, b"X", b"Hola")]})
+        self.assertEqual(used, {"123456"})
+        self.assertEqual(result[6144:6208], bytes(range(64)))
+        self.assertEqual(struct.unpack_from("<I", result, 64 + 44)[0], 6144)
+        target = struct.unpack_from("<I", result, 16 + 44)[0]
+        self.assertGreaterEqual(target, 8192)
+        self.assertEqual(struct.unpack_from("<I", result, 16 + 40)[0], len(old_strings) + 3)
+        member = result[target:target + len(old_strings) + 3]
+        self.assertEqual(member[struct.unpack_from("<I", member, 5 * 4)[0]:
+                                struct.unpack_from("<I", member, 5 * 4)[0] + 5], b"Hola\0")
+        self.assertEqual(struct.unpack_from("<I", member, 651 * 4)[0], 0)
+
     def test_reject_odd_imy_expansion(self):
         header = synthetic_imy_header()
         raw = b"\x00\x01" * 16
