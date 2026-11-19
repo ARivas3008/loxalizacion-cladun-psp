@@ -1,6 +1,6 @@
 # CLADUN: This Is an RPG! — Localización al español (PSP)
 
-> **Estado:** fuente íntegra de 9.237 textos, borrador español de 9.235 entradas (**474 posteditadas o normalizadas por IA; 8.761 todavía automáticas**). La reinserción completa y las fuentes españolas **solo tienen un prototipo binario, sin pruebas visuales**. Un ensayo de dos cambios superó las comprobaciones de aislamiento binario, sin prueba de PPSSPP.
+> **Estado:** fuente íntegra de 9.237 textos, borrador español de 9.235 entradas (**474 posteditadas o normalizadas por IA; 8.761 todavía automáticas**). La integración tiene **una ruta técnica estática para las 9.237 unidades**, con fuente y gráficos españoles experimentales; **todavía NO se ha validado su ejecución en PPSSPP ni se ha publicado un parche jugable**.
 
 Proyecto de localización de la **edición USA para PSP**. Su objetivo es recuperar, ordenar y revisar **solo contenido textual traducible**: diálogos, elecciones, nombres y descripciones de objetos, personajes, monstruos, habilidades, lugares, menús, avisos, créditos y rótulos presentes en imágenes. **No se publica un listado de instrucciones internas del motor.**
 
@@ -131,7 +131,11 @@ No se incluye una ISO ni archivos gráficos/binarios originales del videojuego. 
 ## Integración del parche sin modificar assets — fase experimental
 
 - [Integrador append-only](tools/integrar_parche_seguro.py), [recompresor IMY](tools/imy_repack_safe.py) y [protocolo detallado](docs/INTEGRACION_APPEND_ONLY.md). En lugar de ocupar espacio de retratos/tiles, incorpora nuevas versiones de los contenedores **solo textuales** al final de DATA.DAT, preservando bytes y offsets de los recursos no intervenidos.
-- [Diagnóstico automatizado](tools/reportar_integrabilidad_es.py): **8.203 sustituciones planificables**, **746 textos que ya coinciden en bytes**, **280 campos desbordados**, **6 rótulos gráficos** y **2 originales incompletos**. El conteo se regenera en GitHub Actions; no significa que los 8.203 se hayan insertado realmente.
+- [Diagnóstico automatizado](tools/reportar_integrabilidad_es.py): **8.491 sustituciones planificables**, **746 textos que ya coinciden en bytes** y **0 unidades bloqueadas** (280 adaptaciones compactas, 2 fuentes truncadas bajo control por bytes y 6 rótulos gráficos acotados). El conteo se regenera en GitHub Actions; no significa que los 8.203 se hayan insertado realmente.
 - [Ensayo estructural local de una única cadena artificial](reports/ensayo_estructura_append_only_2026-11-18.json): 1.625 bloques, 51.705 comandos, 46.308 instrucciones no textuales intactas, 348 recursos PSPFS ajenos idénticos. No hay verificación PPSSPP.
-- El modo **estricto** del integrador rechaza construir un parche final mientras queden las 288 entradas bloqueadas. El modo experimental parcial requiere una opción explícita y produce solo una ISO **privada** para pruebas, no distribuible.
-- No se publican ISO ni recursos comerciales. El **parche español completo todavía no está aprobado**: falta demostrar carga de la nueva ubicación PSPFS y render de la fuente y corregir los 288 bloqueos sin alterar assets.
+- El modo **estricto** ya reconoce las 9.237 unidades y prepara una **candidata privada**, pero sigue sin ser parche final aprobado. La publicación es atómica y la ISO original se comprueba de nuevo.
+- No se publican ISO ni recursos comerciales. El **parche español completo todavía no está aprobado**: falta demostrar carga de la nueva ubicación PSPFS, render de la fuente y funcionamiento de la candidata completa en PPSSPP.
+
+- [Informe de seis rótulos en una ISO privada real](reports/ensayo_graficos_iso_2026-11-18.json): 348 recursos PSPFS ajenos y 11 archivos ISO9660 idénticos en offsets y bytes; solo los píxeles de texto autorizados se modifican.
+- [Adaptaciones de campos fijos](tools/ajustes_campos_es.py) y [localizador gráfico](tools/graficos_texto_es.py). Los borradores completos no se reemplazan: las abreviaturas pertenecen exclusivamente al empaquetado.
+- **100 % significa cobertura estructural de inserción, no 100 % de diálogos verificados narrativamente ni 100 % de funcionamiento comprobado.**
