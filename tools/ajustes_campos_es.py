@@ -173,7 +173,7 @@ def effective(row: dict, translated: dict) -> tuple[str, str]:
         raw, replacement = INCOMPLETE_RAW[row["grupo_id"]]
         if (row["bytes_hex"].upper() != raw or
                 row["estado"] != "requiere_reconstruccion" or
-                int(row["capacidad_campo"]) != len(bytes.fromhex(raw)) or
+                int(row["capacidad_campo"]) != 16 or len(bytes.fromhex(raw)) != 15 or
                 value):
             raise ValueError("Inconsistent incomplete field at " + row["grupo_id"])
         value, why = replacement, "original_truncado_verificado_por_bytes"
