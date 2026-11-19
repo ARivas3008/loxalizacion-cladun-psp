@@ -150,6 +150,15 @@ INCOMPLETE_RAW = {
     "008724": ("908581698341836A8381974C82E881", "Agua animada"),
 }
 
+# A few original Japanese labels occur in both a 32-byte monster record and
+# a 16-byte upgrade-monster record; the second requires an even shorter form.
+TIGHTER = {
+    "炎出るブロック低": "Bloq. fuego b.",
+    "炎出るブロック高": "Bloq. fuego a.",
+    "氷出るブロック低": "Bloq. hielo b.",
+    "氷出るブロック高": "Bloq. hielo a.",
+}
+
 def compact_text(original: str) -> str | None:
     if original in EXACT:
         return EXACT[original]
@@ -181,6 +190,8 @@ def effective(row: dict, translated: dict) -> tuple[str, str]:
         compact = compact_text(row["original"])
         if compact is None:
             raise ValueError("No approved compact equivalent for " + row["grupo_id"])
+        if len(encode_spanish(compact)) + 1 > int(row["capacidad_campo"]):
+            compact = TIGHTER.get(row["original"], compact)
         value, why = compact, "etiqueta_compacta_para_campo_fijo"
     else:
         return value, "original_draft"
