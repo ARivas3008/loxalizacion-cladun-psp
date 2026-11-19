@@ -13,6 +13,7 @@ from collections import Counter, defaultdict
 import csv
 import hashlib
 import json
+import os
 from pathlib import Path
 import shutil
 import struct
@@ -495,6 +496,22 @@ def append_text_containers(source_iso, source_pack, entries, replacements, resul
                 "PSPFS file order changed")
         if old["name"] in replacements:
             changed_count += 1
+            stored_expected, expanded_expected = replacements[old["name"]]
+            info = actual_files[old["name"]]
+            require(new["offset"] == info["offset_nuevo"] and
+                    new["size_stored"] == len(stored_expected) and
+                    new["size_expanded"] == expanded_expected,
+                    "Textual PSPFS record does not identify the appended payload")
+            require(final_pack[new["offset"]:new["offset"] + new["size_stored"]] ==
+                    stored_expected,
+                    "Textual PSPFS stored bytes changed after insertion")
+            decoded, codec = decompress(stored_expected, expanded_expected)
+            if expanded_expected:
+                require(codec.startswith("IMY") and len(decoded) == expanded_expected,
+                        "Text archive lost original IMY encoding")
+            else:
+                require(codec == "sin_comprimir",
+                        "Unexpected text/PNG archive codec")
             continue
         require(old == new, f"Unrelated PSPFS index/position changed: {old['name']}")
         offset = old["offset"]
@@ -592,9 +609,22 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
 
         require(len(applied) == all_changed, "Some admissible entries were not applied")
         require(not candidate.exists(), "Candidate path already exists: never overwrite")
-        metadata = append_text_containers(base, package, entries, replacements, candidate)
+        candidate.parent.mkdir(parents=True, exist_ok=True)
+        fd, staged_path = tempfile.mkstemp(
+            prefix=".cladun_verificando_", suffix=".iso.tmp", dir=candidate.parent)
+        os.close(fd)
+        staged = Path(staged_path)
+        try:
+            metadata = append_text_containers(base, package, entries, replacements, staged)
+            candidate_hash = sha256_file(staged)
+            require(sha256_file(source_iso) == SOURCE_SHA256,
+                    "Original ISO changed while generating the patch")
+            # Atomic publish: hard link fails rather than overwriting an existing ISO.
+            os.link(staged, candidate)
+        finally:
+            staged.unlink(missing_ok=True)
         result.update({"estado": "EXPERIMENTAL_AISLAMIENTO_BINARIO_SOLAMENTE",
-                       "iso_resultante_sha256": sha256_file(candidate),
+                       "iso_resultante_sha256": candidate_hash,
                        "texto_aplicado": len(applied),
                        "recurso_textual_reubicado_append_only": metadata,
                        "recursos_no_textuales_mismo_offset_y_mismos_bytes": 349 - len(replacements),
