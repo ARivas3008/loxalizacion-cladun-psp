@@ -8,6 +8,10 @@ class GuardTextTests(unittest.TestCase):
     def test_reject_overlapping_ranges(self):
         with self.assertRaises(ValueError):
             spans_from_args(['SCRIPT.SDT/SCRIPT.DAT:10:4','SCRIPT.SDT/SCRIPT.DAT:13:5'])
+    def test_reject_tiles_portraits_and_unmodelled_tables(self):
+        for path in ('PORTRAIT.ARC/PIC.DAT:0:8','MAP.ARC/TILE.DAT:3:5','DATABASE.DAT/WEAPON.DAT:0:4'):
+            with self.assertRaises(ValueError):
+                spans_from_args([path])
     def test_reject_font_edits(self):
         with self.assertRaises(ValueError):
             spans_from_args(['FONT.ARC/FONT.BIN:0:4'])
