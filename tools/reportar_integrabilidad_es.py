@@ -26,8 +26,9 @@ def main():
         "candidatos_por_origen": counts,
         "bloqueos_por_motivo": dict(sorted(Counter(x["motivo"] for x in blocked).items())),
         "rutas_textuales_reconstruidas": ["SCRIPT.SDT/SCRIPT.DAT", "DATABASE.DAT/STRTBL.DAT",
-                                         "DATABASE.DAT/*_campos_fijos", "STAFFROLL.TXT"],
+                                         "DATABASE.DAT/*_campos_fijos", "STAFFROLL.TXT", "SYS.DAT2/6_png_textuales"],
         "recursos_no_textuales_permitidos": 0,
+        "cobertura_preparacion_100_pct": len(blocked) == 0 and sum(counts.values()) + identical == 9237,
         "aprobados_insercion_final": 0,
         "verificado_en_ppsspp": False
     }
