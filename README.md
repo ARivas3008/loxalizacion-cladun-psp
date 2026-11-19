@@ -114,3 +114,9 @@ El proceso identifica ISO9660 → `PSPFS_V1` → contenedores anidados, decodifi
 ## Límites del proyecto
 
 No se incluye una ISO ni archivos gráficos/binarios originales del videojuego. La traducción, la cobertura en pantallas y una versión jugable en PPSSPP están **pendientes**. Si se distribuye una modificación, deberá hacerse mediante un parche que no incluya los recursos comerciales del juego. *Cladun* y sus materiales pertenecen a sus titulares respectivos.
+
+## Blindaje adicional por manifiesto de origen — noviembre de 2026
+
+- [Plan textual verificable](tools/plan_textual_seguro.py): un ID se vincula con sus bytes CP932 originales, reemplazo español codificado, longitud exacta, offset y huella SHA-256 de la ISO privada.
+- [Guarda de aislamiento](tools/iso_guard_global.py): exige `--manifest` vinculado al corpus, en lugar de aceptar permisos arbitrarios de bytes; comprueba también los bytes **dentro** de cada tramo autorizado. [Protocolo detallado](docs/MANIFIESTO_TEXTO_EXACTO.md).
+- El plan no escribe una ISO ni permite editar retratos, tiles o fuentes. **La inserción masiva y la prueba visual en PPSSPP siguen pendientes.**
