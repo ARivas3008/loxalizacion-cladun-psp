@@ -65,3 +65,13 @@ Los subconjuntos `confirmados_formato` y `revisar_visibilidad` son vistas deriva
 - La guarda global exige `--manifest` y lo recalcula; cualquier byte distinto dentro o fuera de los tramos autorizados debe bloquear.
 - El plan está limitado a SCRIPT.SDT/SCRIPT.DAT, igual longitud y estados de candidato estático. No da permiso para editar archivos gráficos, map tiles, retratos, fuentes o aumentar scripts.
 - Mantener los avisos de PPSSPP: aislamiento binario no significa ejecución ni renderizado validados.
+
+## Integración estructural experimental — 2026-11-18
+
+- Congelar el texto del borrador salvo necesidad demostrada de compatibilidad; no alterar IDs ni fuente al implementar el empaquetado.
+- El modo estricto de tools/integrar_parche_seguro.py debe detenerse cuando queden campos no insertables; no llamar al modo parcial «parche final».
+- Se permite mover **únicamente las nuevas versiones de contenedores textuales a la zona añadida**, sin desplazar ni modificar bytes de recursos PSPFS ajenos, retratos, sprites, tiles ni sus offsets antiguos.
+- Mantener el índice DSARC de otros miembros, los 349 registros PSPFS, todos los otros archivos ISO9660 y el códec IMY. El tamaño de ISO puede aumentar en sectores si los assets previos conservan sus posiciones.
+- Rutas ahora modeladas: SCRIPT.DAT con longitudes y SCRIPT.TBL recalculados; campos DB de capacidad comprobada; STRTBL con punteros reconstruidos y reubicación interna aislada; STAFFROLL con EOL conservados.
+- Las 280 entradas que desbordan campos fijos, 6 textos en imágenes y 2 fuentes incompletas están bloqueadas, no truncar ni escribir dentro de recursos ajenos. Añadir soluciones específicas y pruebas antes de desbloquear.
+- La guarda estructural **no acredita** compatibilidad runtime con nuevos offsets PSPFS; no distribuir parche ni ISO experimental como versión jugable comprobada sin PPSSPP.
