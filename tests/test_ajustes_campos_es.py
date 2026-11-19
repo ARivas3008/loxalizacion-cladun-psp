@@ -44,7 +44,7 @@ class TestFixedFieldSpanish(unittest.TestCase):
             text, why = effective(src, dst)
             self.assertEqual(text, expected)
             self.assertEqual(why, "original_truncado_verificado_por_bytes")
-            self.assertEqual(len(bytes.fromhex(src["bytes_hex"])), int(src["capacidad_campo"]))
+            self.assertEqual(len(bytes.fromhex(src["bytes_hex"])) + 1, int(src["capacidad_campo"]))
 
     def test_all_remaining_blockers_are_graphical(self):
         changes, blocked, identical = plan_rows(list(zip(self.src, self.draft)))
