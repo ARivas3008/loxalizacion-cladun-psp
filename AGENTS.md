@@ -63,7 +63,7 @@ Los subconjuntos `confirmados_formato` y `revisar_visibilidad` son vistas deriva
 
 - Para una prueba textual binaria, generar primero el JSON con `tools/plan_textual_seguro.py` contra la ISO exacta de partida y los CSV actuales; no usar permisos manuales de spans.
 - La guarda global exige `--manifest` y lo recalcula; cualquier byte distinto dentro o fuera de los tramos autorizados debe bloquear.
-- El plan está limitado a SCRIPT.SDT/SCRIPT.DAT, igual longitud y estados de candidato estático. No da permiso para editar archivos gráficos, map tiles, retratos, fuentes o aumentar scripts.
+- El plan textual **antiguo** (`tools/plan_textual_seguro.py`) está limitado a SCRIPT.DAT de igual longitud. El integrador **nuevo** (`tools/integrar_parche_seguro.py`) puede aumentar scripts al reconstruir su índice y actualizar exclusivamente seis rótulos gráficos bajo guardas de píxeles. Nunca autorizar otros assets, retratos, tiles o mapas.
 - Mantener los avisos de PPSSPP: aislamiento binario no significa ejecución ni renderizado validados.
 
 ## Integración estructural experimental — 2026-11-18
@@ -73,5 +73,14 @@ Los subconjuntos `confirmados_formato` y `revisar_visibilidad` son vistas deriva
 - Se permite mover **únicamente las nuevas versiones de contenedores textuales a la zona añadida**, sin desplazar ni modificar bytes de recursos PSPFS ajenos, retratos, sprites, tiles ni sus offsets antiguos.
 - Mantener el índice DSARC de otros miembros, los 349 registros PSPFS, todos los otros archivos ISO9660 y el códec IMY. El tamaño de ISO puede aumentar en sectores si los assets previos conservan sus posiciones.
 - Rutas ahora modeladas: SCRIPT.DAT con longitudes y SCRIPT.TBL recalculados; campos DB de capacidad comprobada; STRTBL con punteros reconstruidos y reubicación interna aislada; STAFFROLL con EOL conservados.
-- Las 280 entradas que desbordan campos fijos, 6 textos en imágenes y 2 fuentes incompletas están bloqueadas, no truncar ni escribir dentro de recursos ajenos. Añadir soluciones específicas y pruebas antes de desbloquear.
+- Las antiguas 280 entradas de capacidad fija cuentan con etiquetas de inserción compactas validadas por bytes, sin alterar el borrador; los seis textos gráficos están delimitados por ROI y SHA del PNG, y dos fuentes truncadas tienen excepciones explícitas por ID y bytes originales. El plan estático tiene 0 bloqueos; **esto no certifica el juego ni la traducción en PPSSPP**.
 - La guarda estructural **no acredita** compatibilidad runtime con nuevos offsets PSPFS; no distribuir parche ni ISO experimental como versión jugable comprobada sin PPSSPP.
+
+
+## Cobertura estructural total — sin confundir con QA en PPSSPP
+
+- CI exige `tools/reportar_integrabilidad_es.py` con 9.237 entradas cubiertas, 8.491 sustituciones, 746 sin cambio y 0 bloqueadas. Este 100 % es **solo capacidad de inserción planeada**.
+- Adaptaciones de campos fijos en `tools/ajustes_campos_es.py`: textos extensos originales y traducciones intactos, nuevas etiquetas para bytes limitados, originales dañados validados contra 15 bytes exactos más NUL.
+- `tools/graficos_texto_es.py` se limita a las seis PNG de `SYS.DAT2` con SHA-256 exacto, rectángulo de texto fijo y comprobación RGB fuera del rectángulo.
+- La ISO candidata solo se publica cuando todas las verificaciones binarias pasan; se construye en un archivo temporal no visible y se vincula atómicamente sin sobrescribir salidas existentes.
+- Nunca afirmar que la ejecución, posiciones internas de salto, retratos, animaciones, cuadros de texto o glifos están validados hasta probar PPSSPP.
