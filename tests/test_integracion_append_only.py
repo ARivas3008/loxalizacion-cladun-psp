@@ -28,7 +28,7 @@ def synthetic_script():
     for index in range(1625):
         struct.pack_into("<I", table, 16 + index * 32 + 4, len(script))
         if index == 0:
-            payload = struct.pack("<H", 6) + b"Hello" + b"\0"
+            payload = struct.pack("<H", 5) + b"Hello" + b"\0"
             script.extend(b"\x66\x01\x00" + struct.pack("<H", len(payload)) + payload)
             script.extend(b"\0" * (16 - len(script) % 16))
         else:
