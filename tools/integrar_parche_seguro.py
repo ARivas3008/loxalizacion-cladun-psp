@@ -365,7 +365,7 @@ def rebuild_sys_arc(archive, per_child):
         original = archive[member["offset"]:member["offset"] + member["size"]]
         updated, audit = patch_png(name, original, GRAPHICS[name][3])
         position = strict_next(len(target), 512)
-        target.extend(b"\\0" * (position - len(target)))
+        target.extend(b"\0" * (position - len(target)))
         target.extend(updated)
         meta = int(member["table_offset_hex"], 16)
         struct.pack_into("<II", target, meta + 40, len(updated), position)
@@ -377,7 +377,7 @@ def rebuild_sys_arc(archive, per_child):
     require(set(after) == set(children), "SYS.DAT2 member inventory changed")
     for name in children:
         record = after[name]
-        require(target[record["offset"]:record["offset"] + record["size"]][:8] == b"\\x89PNG\\r\\n\\x1a\\n",
+        require(target[record["offset"]:record["offset"] + record["size"]][:8] == b"\x89PNG\r\n\x1a\n",
                 "Rebuilt PNG resource not recognized")
     return bytes(target), accounted_for, audits
 
