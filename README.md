@@ -75,12 +75,12 @@ Se corrigió la incompatibilidad entre el códec inicial `F040–F052` y la tabl
 
 ## Revisión contextual y blindaje de reinserción — fase adicional
 
-- [196 correcciones contextualizadas y repetidas de una fase anterior](docs/REVISION_CONTEXTUAL_2026-11-18.md), con [registro individual histórico](qa/revision_contextual_2026-11-18.csv). Ese corte fue de 369 entradas; **el acumulado actual es de 441 revisadas/normalizadas por IA y 8.794 pendientes**.
+- [196 correcciones contextualizadas y repetidas de una fase anterior](docs/REVISION_CONTEXTUAL_2026-11-18.md), con [registro individual histórico](qa/revision_contextual_2026-11-18.csv). Ese corte fue de 369 entradas; después las fases 3–5 llegaron a **441 revisadas/normalizadas por IA y 8.794 pendientes**. El avance vigente se presenta en la fase 6.
 - [Protocolo de reinserción fail-closed](docs/PROTOCOLO_REINSERCION_FAIL_CLOSED.md) y [verificador global para textos](tools/iso_guard_global.py): **no permite mover offsets, modificar otros recursos ni cambiar formatos de compresión**.
 - [Ensayo de dos etapas](reports/aislamiento_combinado_es.json): fuente experimental seguida de una edición de un byte de diálogo; ambos verificadores dieron PASS binario.
 - **No confundir aislamiento binario con juego funcional.** No se ha validado el renderizado de glifos ni la visualización de diálogos en PPSSPP.
 
-## Fase actual: revisión narrativa, glosario unificado y preinserción estática — 18/11/2026
+## Corte anterior (fases 3–5): revisión narrativa, glosario y preinserción — 18/11/2026
 
 - **72 ediciones adicionales** respecto del corte histórico de 369: [57 diálogos, interfaz y efectos](qa/revision_dialogos_glosario_fase3_2026-11-18.csv), [8 correcciones de caracteres invisibles, saltos y terminología](qa/revision_caracteres_y_dialogos_fase4_2026-11-18.csv) y [8 ajustes del nombre New-geon](qa/revision_new_geon_fase5_2026-11-18.csv). Son **73 modificaciones** de registros, pero una corresponde a un registro previamente revisado. Por eso el acumulado crece de 369 a **441**, no 442.
 - El [glosario de 67 entradas](traduccion/GLOSARIO_CANONICO.csv) es ahora la fuente terminológica CSV; el archivo `GLOSARIO_PROPUESTA.csv` se conserva únicamente como histórico.
