@@ -1,0 +1,91 @@
+{
+  "fecha": "2026-11-18",
+  "status": "PRUEBA_PRIVADA_GRAFICOS_INSERCION_APPEND_ONLY_PASS_NO_RUNTIME",
+  "source_iso_sha256": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "source_iso_bytes": 305496064,
+  "trial_iso_bytes": 306198528,
+  "pspfs_total": 349,
+  "other_pspfs_unchanged_bytes_and_offsets": 348,
+  "other_iso9660_files_unchanged_bytes_and_offsets": 11,
+  "original_sys_dat2_png_data_preserved_in_old_slot": true,
+  "text_graphic_pngs_updated": 6,
+  "pixel_exact_outside_each_text_roi": true,
+  "graphical_texts": [
+    {
+      "name": "DOT_NODATA.PNG",
+      "roi": [
+        20,
+        29,
+        126,
+        56
+      ],
+      "pixels_changed": 1419,
+      "old_offset": 512,
+      "new_offset": 351232
+    },
+    {
+      "name": "DOT_PIC1.PNG",
+      "roi": [
+        310,
+        248,
+        418,
+        265
+      ],
+      "pixels_changed": 1547,
+      "old_offset": 13824,
+      "new_offset": 365568
+    },
+    {
+      "name": "DOT_SAVE.PNG",
+      "roi": [
+        43,
+        36,
+        110,
+        51
+      ],
+      "pixels_changed": 578,
+      "old_offset": 148992,
+      "new_offset": 500224
+    },
+    {
+      "name": "NODATA.PNG",
+      "roi": [
+        20,
+        29,
+        126,
+        56
+      ],
+      "pixels_changed": 1428,
+      "old_offset": 171008,
+      "new_offset": 521728
+    },
+    {
+      "name": "PIC1.PNG",
+      "roi": [
+        310,
+        248,
+        418,
+        265
+      ],
+      "pixels_changed": 1181,
+      "old_offset": 190464,
+      "new_offset": 542720
+    },
+    {
+      "name": "SAVE.PNG",
+      "roi": [
+        60,
+        37,
+        111,
+        51
+      ],
+      "pixels_changed": 487,
+      "old_offset": 323584,
+      "new_offset": 675328
+    }
+  ],
+  "not_distributed_private_trial_iso": true,
+  "runtime_ppsspp_verified": false,
+  "full_9237_corpus_integrated": false,
+  "note": "Prueba REAL de inserción de las seis imágenes de texto contra ISO original, sin incluir scripts ni base de datos. PNGs reubicados, los recursos no textuales preservados."
+}
