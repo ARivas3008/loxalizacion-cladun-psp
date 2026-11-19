@@ -24,6 +24,7 @@ from extract_cladun import iso9660_entries, read_iso_file, pspfs_entries, dsarc_
 from font_es_patch import SOURCE_SHA256, sha256_file, build as build_font
 from font_es_guard import verify as verify_font
 from imy_repack_safe import recompress
+from ajustes_campos_es import effective
 
 ROOT = Path(__file__).resolve().parents[1]
 TEXT_OPS = {0x66, 0x69, 0x6E}
@@ -74,14 +75,17 @@ def plan_rows(rows):
     for src, dest in rows:
         gid = src["grupo_id"]
         original = src["original"]
-        spanish = dest.get("espanol", "")
+        spanish, adaptation = effective(src, dest)
+        source_is_incomplete = adaptation == "original_truncado_verificado_por_bytes"
         if not spanish:
             blocked.append({"grupo_id": gid, "motivo": "SIN_TRADUCCION"})
             continue
-        if src["estado"] == "requiere_reconstruccion" or "\ufffd" in original:
+        if not source_is_incomplete and (src["estado"] == "requiere_reconstruccion" or "\ufffd" in original):
             blocked.append({"grupo_id": gid, "motivo": "FUENTE_INCOMPLETA"})
             continue
-        state = check_row(src, dest)
+        state = ({"estado": "CANDIDATO_A_ENSAYO_NO_VALIDADO"}
+                 if source_is_incomplete
+                 else check_row(src, {**dest, "espanol": spanish}))
         where = src["origen"]
         if state["estado"] in ("BLOQUEADO_MARCADOR", "BLOQUEADO_CODIFICACION",
                                 "BLOQUEADO_BYTES_ORIGINALES", "BLOQUEADO_FUENTE_MODIFICADA"):
