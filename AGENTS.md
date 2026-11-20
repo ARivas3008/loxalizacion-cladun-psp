@@ -84,3 +84,9 @@ Los subconjuntos `confirmados_formato` y `revisar_visibilidad` son vistas deriva
 - `tools/graficos_texto_es.py` se limita a las seis PNG de `SYS.DAT2` con SHA-256 exacto, rectángulo de texto fijo y comprobación RGB fuera del rectángulo.
 - La ISO candidata solo se publica cuando todas las verificaciones binarias pasan; se construye en un archivo temporal no visible y se vincula atómicamente sin sobrescribir salidas existentes.
 - Nunca afirmar que la ejecución, posiciones internas de salto, retratos, animaciones, cuadros de texto o glifos están validados hasta probar PPSSPP.
+
+## Publicación diferencial controlada
+
+- Nunca subir una ISO comercial, DATA.DAT, fuentes de juego ni PNG originales/editados.
+- Un parche exportado se genera con `tools/generar_parche_bps.py`, a partir de una ISO candidata y un informe SHA-256 del integrador, bajo comprobación independiente de 349 recursos PSPFS y los archivos ISO9660.
+- BPS solo se publica localmente después de aplicar el propio parche a la ISO fuente y confirmar que el SHA-256 reconstruido coincide con la candidata. Hasta validar PPSSPP la opción `--experimental` es obligatoria y no se aprueba una distribución final.
