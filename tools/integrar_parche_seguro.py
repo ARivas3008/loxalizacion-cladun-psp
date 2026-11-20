@@ -396,6 +396,58 @@ def rebuild_sys_arc(archive, per_child):
     return bytes(target), accounted_for, audits
 
 
+
+def rebuild_sys_arc_compact(archive, per_child, capacity):
+    """Rebuild only the six approved PNGs inside the original PSPFS physical slot.
+
+    Unlike the former append-to-parent approach, this does not duplicate every
+    bitmap and nearly double SYS.DAT2 RAM allocation. Offsets remain 512 aligned
+    and neighboring PSPFS assets are never moved or overwritten.
+    """
+    children = dsarc_entries(archive)
+    require(archive[:8] == b"DSARC FL" and len(children) == 6 and
+            {x["name"] for x in children} == set(GRAPHICS) == set(per_child),
+            "Unexpected graphical text archive")
+    header_end = min(x["offset"] for x in children)
+    require(header_end % 512 == 0 and header_end >= 16 + 48 * len(children),
+            "Unexpected graphical text header")
+    require(capacity >= len(archive), "Original graphic PSPFS slot shrank")
+    result = bytearray(archive[:header_end])
+    cursor = header_end
+    used, audits = set(), []
+    for member in sorted(children, key=lambda x: x["offset"]):
+        name = member["name"]
+        rows = per_child[name]
+        require(len(rows) == 1, "Expected one translated graphic per PNG")
+        source, old, encoded = rows[0]
+        require(source["origen"] == "SYS.DAT2/" + name and
+                source["original"] in ("NO DATA", "This is an RPG!") and
+                source["tipo"] in ("mensaje_grafico", "titulo_grafico"),
+                "Unapproved graphical text metadata")
+        original_png = archive[member["offset"]:member["offset"] + member["size"]]
+        revised, audit = patch_png(name, original_png, GRAPHICS[name][3])
+        cursor = align(cursor, 512)
+        require(cursor + len(revised) <= capacity,
+                "Translated PNGs do not fit original SYS.DAT2 PSPFS slot")
+        if len(result) < cursor:
+            result.extend(b"\0" * (cursor - len(result)))
+        result.extend(revised)
+        table_at = int(member["table_offset_hex"], 16)
+        struct.pack_into("<II", result, table_at + 40, len(revised), cursor)
+        cursor += len(revised)
+        used.add(source["grupo_id"])
+        audits.append(audit)
+    total = align(cursor, 512)
+    require(total <= capacity, "SYS.DAT2 physical slot overflow")
+    result.extend(b"\0" * (total - len(result)))
+    after = dsarc_entries(result)
+    require([e["name"] for e in after] == [e["name"] for e in children],
+            "DSARC member inventory/order changed")
+    require(all(result[e["offset"]:e["offset"] + e["size"]].startswith(b"\x89PNG\r\n\x1a\n")
+                for e in after), "Invalid PNG signature after compact repack")
+    return bytes(result), used, audits
+
+
 def rebuild_credits(raw, records):
     """Preserve CRLF/LF separators and rows from original STAFFROLL.TXT."""
     lines = raw.splitlines(keepends=True)
@@ -455,7 +507,8 @@ def locate_iso_dir_record(path):
         return directory_offset, extent, size
 
 
-def append_text_containers(source_iso, source_pack, entries, replacements, result_iso):
+def append_text_containers(source_iso, source_pack, entries, replacements, result_iso,
+                           *, inplace_resources=frozenset()):
     """Only append modified PSPFS parents; no original asset offsets change."""
     record_at, extent, old_size = locate_iso_dir_record(source_iso)
     original_total = source_iso.stat().st_size
@@ -472,11 +525,27 @@ def append_text_containers(source_iso, source_pack, entries, replacements, resul
             require(name in ("SCRIPT.SDT", "DATABASE.DAT", "STAFFROLL.TXT", "SYS.DAT2"),
                     "Only text and six audited graphic-text members may be updated")
             original = by_name[name]
-            offset = append_offset
-            target.write(stored)
-            pad = -len(stored) % 512
-            target.write(b"\0" * pad)
-            append_offset += len(stored) + pad
+            if name in inplace_resources:
+                require(name == "SYS.DAT2" and expanded == 0,
+                        "Only the six verified graphical labels may be changed in place")
+                next_start = min(x["offset"] for x in entries
+                                 if x["offset"] > original["offset"])
+                require(len(stored) <= next_start - original["offset"],
+                        "SYS.DAT2 replacement would overwrite an adjacent resource")
+                require(not any(source_pack[original["offset"] + original["size_stored"]:
+                                            original["offset"] + len(stored)]),
+                        "SYS.DAT2 in-place extension is not zero-padding")
+                offset = original["offset"]
+                pos = target.tell()
+                target.seek(extent + offset)
+                target.write(stored)
+                target.seek(pos)
+            else:
+                offset = append_offset
+                target.write(stored)
+                pad = -len(stored) % 512
+                target.write(b"\0" * pad)
+                append_offset += len(stored) + pad
             table_at = extent + 16 + original["index"] * 32 + 20
             actual_files[name] = {"offset_original": original["offset"],
                                   "offset_nuevo": offset,
@@ -489,7 +558,7 @@ def append_text_containers(source_iso, source_pack, entries, replacements, resul
 
         # ISO9660 volume space is sector-addressed: the image must also end
         # at an actual 2048-byte boundary, not merely PSPFS's 512-byte boundary.
-        new_size = align(append_offset, 2048)
+        new_size = align(append_offset, 2048) if append_offset > original_total - extent else old_size
         require(new_size < 2**32, "DATA.DAT length exceeds ISO9660 32-bit field")
         target.seek(record_at + 10)
         target.write(struct.pack("<I", new_size))
@@ -626,7 +695,11 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
         if graphic_changes:
             stored, raw, method = parent_content(package, table[TARGET_SYS])
             require(method == "sin_comprimir", "SYS.DAT2 has unexpected compression")
-            new_graphics, IDs, graphic_audits = rebuild_sys_arc(raw, graphic_changes)
+            entry = table[TARGET_SYS]
+            next_start = min(x["offset"] for x in entries if x["offset"] > entry["offset"])
+            capacity = next_start - entry["offset"]
+            new_graphics, IDs, graphic_audits = rebuild_sys_arc_compact(
+                raw, graphic_changes, capacity)
             replacements[TARGET_SYS] = (new_graphics, 0)
             applied.update(IDs)
 
@@ -638,7 +711,9 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
         os.close(fd)
         staged = Path(staged_path)
         try:
-            metadata = append_text_containers(base, package, entries, replacements, staged)
+            metadata = append_text_containers(
+                base, package, entries, replacements, staged,
+                inplace_resources=frozenset({TARGET_SYS} & replacements.keys()))
             candidate_hash = sha256_file(staged)
             require(sha256_file(source_iso) == SOURCE_SHA256,
                     "Original ISO changed while generating the patch")

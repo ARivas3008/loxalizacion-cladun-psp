@@ -4,7 +4,7 @@ Aplicación nativa Go/Win32 sin Python, C, .NET ni instalación de runtimes. La 
 
 ## Importante: separación entre código público y prueba privada
 
-**La traducción integrada es todavía EXPERIMENTAL y NO está validada en PPSSPP.** Por ello:
+**La traducción integrada es todavía EXPERIMENTAL y solo dispone de una prueba parcial de arranque en PPSSPP (menú español e inicio de partida); no existe verificación de todos los mapas, combates y textos.** Por ello:
 
 - El repositorio público contiene la **interfaz, el motor BPS y los mecanismos de seguridad**, pero **no** incluye la ISO, el BPS español experimental ni los recursos del juego.
 - El ejecutable compilado **sin** el tag `cladun_embedded` es una **vista previa de la interfaz**. Detecta la falta de payload y **bloquea la aplicación**; no representa un parche completo.
@@ -48,8 +48,20 @@ GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -tags cladun_embedded -trimpath
 
 En Windows, la compilación privada puede usar `go build -tags cladun_embedded` desde el mismo directorio. **El usuario final no necesita Go.**
 
-## Alcance de validación
+## Diagnóstico de bloqueo `NOW LOADING` y versión v0.1.2
 
-Se comprobó sobre la ISO USA exacta la reinserción estática de 8.491 modificaciones y 746 entradas sin cambios, con 345 recursos PSPFS ajenos a los cuatro contenedores textuales/gráficos preservados. Un BPS experimental se aplicó y recuperó exactamente la candidata (`SHA-256 ed9a7a41eec842251f618d292c84cfd0a8c892f1fa31aae7d10d920f3edefb84`). El propio motor Go reconstituyó el mismo SHA-256 en una prueba local. Estos ensayos **no demuestran** arranque de juego, lectura correcta de glifos, estabilidad del cargador PSPFS ni ausencia de efectos visuales en PPSSPP. Los tests automatizados usan también archivos sintéticos.
+**No usar la versión v0.1.1.** La candidata anterior reempaquetaba las seis PNG de `SYS.DAT2` mediante anexado a un segundo bloque, creciendo de 350.720 a aproximadamente 701.932 bytes. La ejecución mostraba llamadas GPU a direcciones ilegales y no avanzaba con normalidad. Los controles de aislamiento estático por sí solos no detectaban la incompatibilidad runtime.
+
+En v0.1.2 el integrador reconstruye las seis PNG de texto **dentro del mismo slot físico de `SYS.DAT2`**, con alineación de 512 bytes, sin duplicar las imágenes. Los bytes no textuales fuera de los cuatro contenedores modificados se conservan. `SYS.DAT2` permanece en el offset PSPFS `3035136` y ocupa `351232` bytes, dentro de la capacidad original. El nuevo BPS experimental integrado es obligatorio para esta versión: el programa verifica su SHA-256 y el SHA-256 de la ISO resultante.
+
+**Hashes de la nueva candidata privada (no publicar la ISO):**
+
+- SHA-256 ISO original: `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f`
+- SHA-256 BPS integrado v0.1.2: `b913cb5509f22721ff533f88848facdc894a3047b66a2597aaa7f333741d69e0`
+- SHA-256 candidata v0.1.2: `27864a48787e54dff7e211214becf26ddbc688a84a1cf78fb444686a8e475f18`
+
+**Resultados de la prueba de ejecución:** se compararon la ISO original, la candidata defectuosa y las variantes aisladas de `SYS.DAT2`, fuente y script en PPSSPP 1.20.4 Linux (software rendering). La corrección compacta avanzó a menú con «Comenzar», «Continuar» y «Opciones»; tras seleccionar «Comenzar», presentó la configuración de música y el siguiente segmento de introducción. Durante la prueba combinada no se observaron mensajes `GPUCommon CALL to illegal address`. **No equivale a una validación completa** del juego ni de la traducción; faltan personaje, mapas, combate, partidas guardadas y pruebas prolongadas.
+
+[Informe detallado de diagnóstico y reproducción](../docs/DIAGNOSTICO_NOW_LOADING_2026-11-20.md).
 
 La herramienta no transmite datos por red, no incluye telemetría y no distribuye archivos comerciales de juego en el código público. El `.exe` privado no está firmado digitalmente. Windows puede mostrar SmartScreen.

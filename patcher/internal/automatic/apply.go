@@ -17,8 +17,8 @@ import (
 
 // This is a PRIVATE EXPERIMENTAL patch generated from the exact USA ISO.
 // The target is a binary candidate, NOT validated for gameplay in PPSSPP.
-const PatchSHA256 = "49a2cdf36cb5963a966a29a24da8c5316912c8cd61abebaf8b31b2e42f0c0205"
-const TargetSHA256 = "ed9a7a41eec842251f618d292c84cfd0a8c892f1fa31aae7d10d920f3edefb84"
+const PatchSHA256 = "b913cb5509f22721ff533f88848facdc894a3047b66a2597aaa7f333741d69e0"
+const TargetSHA256 = "27864a48787e54dff7e211214becf26ddbc688a84a1cf78fb444686a8e475f18"
 
 func PayloadValid(patch []byte) bool {
 	if len(patch) < 19 || string(patch[:4]) != "BPS1" {
