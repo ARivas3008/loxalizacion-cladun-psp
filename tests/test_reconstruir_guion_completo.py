@@ -53,12 +53,12 @@ class GuionCompletoTests(unittest.TestCase):
         self.assertIn('CLD-002566',grp['ids'])
         self.assertTrue(any('UNION_ENTRE_CAJAS' in v for v in grp['flags']))
 
-    def test_traduccion_mtl_partida_sigue_visible(self):
+    def test_traduccion_fragmentada_de_crosstine_ya_esta_corregida(self):
         grp=next(i for i in self.items if i['tipo']=='dialogo' and
                  'CLD-001023' in i['ids'])
-        self.assertIn('vengo. de linaje',grp['ES'])
+        self.assertIn('Soy Crosstine y provengo de un linaje noble.',grp['ES'])
         self.assertIn('I come from a noble bloodline',grp['EN'])
-        self.assertTrue(any('FRASE_CORTADA_POR_PUNTO' in x for x in grp['flags']))
+        self.assertFalse(any('FRASE_CORTADA_POR_PUNTO' in x for x in grp['flags']))
 
     def test_concatenacion_no_corrige_arbitrariamente(self):
         self.assertEqual(join_exact(['Una palabra.', 'siguiente frase']),

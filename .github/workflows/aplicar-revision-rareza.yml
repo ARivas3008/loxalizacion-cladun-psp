@@ -24,6 +24,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Instalar Pillow para pruebas de gráficos del repositorio
+        run: python -m pip install 'Pillow>=12,<14'
       - name: Verificar integridad del plan, alertas y caracteres
         run: |
           python -m unittest discover -s tests -p test_revision_rareza.py -v
