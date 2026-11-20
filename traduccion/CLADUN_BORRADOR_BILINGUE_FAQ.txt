@@ -4705,8 +4705,8 @@ Chica alegre
 [000778] DIÁLOGO | CLD-000797
 ORIGINAL:
 So this is "Arcanus Cella." The forbidden land!
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Así que esto es "Arcanus Cella". ¡La tierra prohibida!
+ESPAÑOL (revision_capturas_2026-11-20):
+Así que esto es Arcanus Cella, ¡la tierra prohibida!
 
 [000779] DIÁLOGO | CLD-000798
 ORIGINAL:
@@ -4789,26 +4789,26 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [000792] DIÁLOGO | CLD-000811
 ORIGINAL:
 Your mom and dad
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tu mamá y tu papá
+ESPAÑOL (revision_capturas_2026-11-20):
+Tus padres
 
 [000793] DIÁLOGO | CLD-000812
 ORIGINAL:
 asked me to look after you.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Me pediste que te cuidara.
+ESPAÑOL (revision_capturas_2026-11-20):
+me pidieron que te cuidara.
 
 [000794] DIÁLOGO | CLD-000813
 ORIGINAL:
 If not, I would never have skipped my lessons
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-De no ser así, jamás habría faltado a mis clases.
+ESPAÑOL (revision_capturas_2026-11-20):
+Si no, nunca habría faltado a clase
 
 [000795] DIÁLOGO | CLD-000814
 ORIGINAL:
 to come all the way here.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-venir hasta aquí.
+ESPAÑOL (revision_capturas_2026-11-20):
+para venir hasta aquí.
 
 [000796] DIÁLOGO | CLD-000815
 ORIGINAL:
@@ -4819,20 +4819,20 @@ Puddie, tú eres...
 [000797] DIÁLOGO | CLD-000816
 ORIGINAL:
 Stop it right there! Souma, just shut up.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Basta ya! Souma, cállate.
+ESPAÑOL (revision_capturas_2026-11-20):
+¡Basta, Souma! ¡Cállate!
 
 [000798] DIÁLOGO | CLD-000817
 ORIGINAL:
 Mom and Dad told me that I get to do whatever
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mamá y papá me dijeron que puedo hacer lo que quiera
+ESPAÑOL (revision_capturas_2026-11-20):
+Mamá y papá me dejaron hacer lo que quisiera
 
 [000799] DIÁLOGO | CLD-000818
 ORIGINAL:
 I want for the next six months.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Lo quiero para los próximos seis meses.
+ESPAÑOL (revision_capturas_2026-11-20):
+durante los próximos seis meses.
 
 [000800] DIÁLOGO | CLD-000819
 ORIGINAL:
@@ -34989,50 +34989,50 @@ Nivel %2d EXP :%6d Siguiente :%6s
 [005687] INTERFAZ | CLD-005877
 ORIGINAL:
 SFX Volume
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Volumen de efectos de sonido
+ESPAÑOL (revision_capturas_2026-11-20):
+Vol. efectos
 
 [005688] INTERFAZ | CLD-005878
 ORIGINAL:
 BGM Volume
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Volumen de música de fondo
+ESPAÑOL (revision_capturas_2026-11-20):
+Vol. música
 
 [005689] INTERFAZ | CLD-005879
 ORIGINAL:
 BGM Type
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tipo de música de fondo
+ESPAÑOL (revision_capturas_2026-11-20):
+Tipo música
 
 [005690] INTERFAZ | CLD-005880
 ORIGINAL:
 Key Config
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Configuración clave
+ESPAÑOL (revision_capturas_2026-11-20):
+Controles
 
 [005691] INTERFAZ | CLD-005881
 ORIGINAL:
 Changes volume of sound effects.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cambia el volumen de los efectos de sonido.
+ESPAÑOL (revision_capturas_2026-11-20):
+Ajusta el volumen de los efectos.
 
 [005692] INTERFAZ | CLD-005882
 ORIGINAL:
 Changes volume of BGM.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cambia el volumen de la música de fondo.
+ESPAÑOL (revision_capturas_2026-11-20):
+Ajusta el volumen de la música.
 
 [005693] INTERFAZ | CLD-005883
 ORIGINAL:
 Changes BGM type (Real/Retro)
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cambia el tipo de música de fondo (real/retro)
+ESPAÑOL (revision_capturas_2026-11-20):
+Elige música real o retro.
 
 [005694] INTERFAZ | CLD-005884
 ORIGINAL:
 Changes button configuration. (Switches screen)
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cambia la configuración de los botones. (Cambia de pantalla)
+ESPAÑOL (revision_capturas_2026-11-20):
+Configura los botones.
 
 [005695] INTERFAZ | CLD-005885
 ORIGINAL:
@@ -35121,8 +35121,8 @@ Fin de la configuración de teclas.
 [005709] INTERFAZ | CLD-005899
 ORIGINAL:
 Show decimal points for damage　　　　　　　
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mostrar decimales para el daño
+ESPAÑOL (revision_capturas_2026-11-20):
+Decimales de daño
 
 [005710] INTERFAZ | CLD-005900
 ORIGINAL:
@@ -35133,14 +35133,14 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [005711] INTERFAZ | CLD-005901
 ORIGINAL:
 　Under 1 ON
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Menos de 1 encendido
+ESPAÑOL (revision_capturas_2026-11-20):
+Menos de 1: SÍ
 
 [005712] INTERFAZ | CLD-005902
 ORIGINAL:
  Under 10 ON
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Menos de 10 años
+ESPAÑOL (revision_capturas_2026-11-20):
+Menos de 10: SÍ
 
 [005713] INTERFAZ | CLD-005903
 ORIGINAL:
@@ -35151,32 +35151,32 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 [005714] INTERFAZ | CLD-005904
 ORIGINAL:
 Toggles the display of decimal points in damage.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Activa o desactiva la visualización de los decimales en los daños.
+ESPAÑOL (revision_capturas_2026-11-20):
+Muestra decimales en el daño.
 
 [005715] INTERFAZ | CLD-005905
 ORIGINAL:
 Magic Circle effects
-ESPAÑOL (posteditado_contextualmente_por_IA):
-Efectos del Círculo mágico
+ESPAÑOL (revision_capturas_2026-11-20):
+Efectos círculo
 
 [005716] INTERFAZ | CLD-005906
 ORIGINAL:
 Toggles the display of effects for Magic Circle.
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Activa o desactiva la visualización de efectos para Magic Circle.
+ESPAÑOL (revision_capturas_2026-11-20):
+Muestra los efectos del círculo mágico.
 
 [005717] INTERFAZ | CLD-005907
 ORIGINAL:
 Screenshot
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Captura de pantalla
+ESPAÑOL (revision_capturas_2026-11-20):
+Capturas
 
 [005718] INTERFAZ | CLD-005908
 ORIGINAL:
 Toggles the button to take screenshots
-ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Activa o desactiva el botón para tomar capturas de pantalla.
+ESPAÑOL (revision_capturas_2026-11-20):
+Activa el botón para hacer capturas.
 
 [005719] INTERFAZ | CLD-005909
 ORIGINAL:
