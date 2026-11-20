@@ -1,0 +1,42 @@
+name: Verificación de integración y eventos (sin ISO)
+on:
+  push:
+    branches: [integracion-eventos-segura-20261120]
+  pull_request:
+    branches: [revision-manual-dialogos]
+permissions:
+  contents: read
+jobs:
+  verificar-eventos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Pillow para pruebas de gráficos
+        run: python -m pip install 'Pillow>=12,<14'
+      - name: Pruebas completas, incluida protección de eventos
+        run: python -m unittest discover -s tests -v
+      - name: Comprobar integridad del corpus y borrador
+        run: |
+          python tools/verificar_integridad.py --raiz .
+          python tools/verificar_borrador_es.py
+      - name: Planificar integrabilidad sin generar ISO
+        run: |
+          python tools/reportar_integrabilidad_es.py --reporte reports/integrabilidad_ci_eventos.json
+          python -c "import json; r=json.load(open('reports/integrabilidad_ci_eventos.json')); assert r['total']==9237 and r['pendientes']==0"
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+      - name: Pruebas de integridad del parcheador Go
+        run: cd patcher && go test ./...
+      - name: Compilación pública Windows (sin BPS)
+        run: |
+          cd patcher
+          GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -trimpath -ldflags='-H=windowsgui -s -w' -o /tmp/cladun-sin-payload.exe ./cmd/cladun-patcher
+      - name: No versionar ISO ni BPS propietario
+        run: |
+          if git ls-files | grep -Ei '\.(iso|cso|pbp|7z|bps|exe)$'; then
+            echo "ERROR: binario o BPS versionado"; exit 1
+          fi
