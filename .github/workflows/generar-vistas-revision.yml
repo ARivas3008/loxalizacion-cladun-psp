@@ -1,0 +1,55 @@
+name: Generar vistas de revisión Cladun
+on:
+  push:
+    branches: [revision-manual-dialogos]
+    paths:
+      - 'tools/generar_guion_hablantes.py'
+      - 'tools/construir_guia_pdf.py'
+      - 'tools/aplicar_correcciones_editor.py'
+      - 'tests/test_guion_hablantes.py'
+      - 'tests/test_importador_edicion.py'
+      - 'docs/GUIA_EDICION_MANUAL.md'
+      - 'traduccion/CLADUN_BORRADOR_ES.csv'
+      - 'corpus/CLADUN_TODO_TEXTO_ORIGINAL.csv'
+      - '.github/workflows/generar-vistas-revision.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar herramientas para construir el PDF
+        run: python -m pip install 'reportlab>=4,<5' 'mistune>=3,<4' 'Pillow>=12,<14'
+      - name: Pruebas de atribución e importador
+        run: python -m unittest discover -s tests -v
+      - name: Producir ambos TXT y tabla de atribuciones
+        run: python tools/generar_guion_hablantes.py
+      - name: Construir guía PDF a partir del Markdown
+        run: python tools/construir_guia_pdf.py --salida docs/GUIA_EDICION_MANUAL.pdf
+      - name: Verificar PDF y recuentos del guion
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('lectura/CLADUN_RESUMEN_HABLANTES.json').read_text())
+          assert data['total_csv']==9237 and data['total_texto_script']==5207
+          assert data['total_fuera_script']==4030
+          assert Path('docs/GUIA_EDICION_MANUAL.pdf').read_bytes().startswith(b'%PDF')
+          PY
+      - name: Guardar PDF y vistas generadas en esta rama
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/GUIA_EDICION_MANUAL.pdf lectura/CLADUN_GUION_CON_HABLANTES_ES.txt lectura/CLADUN_LECTURA_TOTAL_CON_HABLANTES_ES.txt lectura/CLADUN_AUDITORIA_HABLANTES.csv lectura/CLADUN_RESUMEN_HABLANTES.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'docs: publicar PDF y guion con hablantes regenerado'
+            git push origin HEAD:revision-manual-dialogos
+          fi

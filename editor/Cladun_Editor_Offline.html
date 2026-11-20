@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cladun | Editor de localización</title>
+<style>
+:root{color-scheme:dark;--bg:#0c1220;--card:#161f30;--edge:#33425b;--fg:#ecf1fa;--muted:#9daec7;--accent:#55c7b0;--red:#ffadad;--gold:#ffd887}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,Segoe UI,Arial,sans-serif}
+header{padding:23px max(calc((100vw - 1320px)/2),25px);border-bottom:1px solid var(--edge);display:flex;align-items:center;gap:20px;justify-content:space-between}
+h1{font-size:22px;margin:0}h2{font-size:18px}small,.muted{color:var(--muted)}main{max-width:1320px;margin:auto;padding:24px}
+button,.btn,select,input,textarea{font:inherit}button,.btn{background:var(--accent);color:#091620;border:0;border-radius:9px;padding:10px 15px;font-weight:700;cursor:pointer}
+button.secondary,.btn.secondary{background:#22324a;color:var(--fg);border:1px solid var(--edge)}button:disabled{opacity:.45;cursor:not-allowed}
+.panel{background:var(--card);border:1px solid var(--edge);border-radius:14px;padding:19px}.stack{display:grid;gap:14px}.toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:11px}
+input[type=file]{max-width:100%}input[type=text],select,textarea{background:#0d1728;color:var(--fg);border:1px solid #52647c;border-radius:9px;padding:10px;width:100%}
+input:focus,textarea:focus{outline:2px solid var(--accent)}.top{display:grid;grid-template-columns:1fr 1fr;gap:14px}.layout{display:grid;grid-template-columns: minmax(290px,.95fr) minmax(400px,1.4fr);gap:14px;margin-top:16px}
+.pane{min-height:490px}.scroll{max-height:610px;overflow:auto;margin-top:10px}.entry{display:block;text-align:left;background:#172339;border:1px solid var(--edge);padding:10px 12px;color:var(--fg);border-radius:8px;margin:6px 0;width:100%;font-weight:400}
+.entry.active{border-color:var(--accent);background:#1b3c45}.entry strong{color:var(--accent)}.entry small{display:block;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+textarea{min-height:140px;resize:vertical;line-height:1.5}label{font-weight:600;display:block;margin:10px 0 6px}
+.source{white-space:pre-wrap;line-height:1.5;background:#101c2c;padding:15px;border-radius:9px;min-height:60px;border:1px solid var(--edge)}
+.status{padding:11px 13px;border:1px solid var(--edge);border-radius:9px;white-space:pre-wrap;line-height:1.5}.warn{border-color:#967c46;color:var(--gold)}.danger{border-color:#995454;color:var(--red)}.success{border-color:#478e77;color:#b1f2de}
+.meta{font-size:13px;color:var(--muted);line-height:1.5;margin:6px 0 12px}a{color:var(--accent)}.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{background:#26344a;border-radius:8px;padding:6px 9px;font-size:12px}.row{display:flex;justify-content:space-between;align-items:center;gap:12px}
+footer{text-align:center;color:var(--muted);padding:24px;font-size:13px}
+@media(max-width:920px){.layout,.top{grid-template-columns:1fr}header{flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<header><div><h1>CLADUN <span style="color:var(--accent)">/ Editor de localización</span></h1><small>Trabajo local · Sin conexión · Sin tocar los originales</small></div><span class="chip">Vista de edición de textos</span></header>
+<main class="stack">
+<section class="panel stack"><div class="row"><h2 style="margin:0">1. Abrir corpus de traducción</h2><span id="loaded" class="muted">No cargado</span></div>
+<p class="muted" style="margin:0">Selecciona <code>traduccion/CLADUN_BORRADOR_ES.csv</code> del repositorio. Este editor solo permite modificar la columna <code>espanol</code>; nunca altera IDs, offsets, bytes de origen ni instrucciones.</p>
+<input id="file" type="file" accept=".csv,text/csv" aria-label="Cargar CSV bilingüe">
+<div class="toolbar"><button id="export" disabled>Exportar CSV corregido</button><button id="undo" class="secondary" disabled>Deshacer edición actual</button><span id="dirty" class="muted">0 cambios</span></div></section>
+<div class="layout">
+<section class="panel pane"><h2 style="margin:0 0 15px">2. Buscar textos</h2>
+<label for="search">Buscar por ID, hablante, inglés, español o archivo</label><input id="search" type="text" placeholder="Ej.: CLD-000806, Frantic Young Man, barro" disabled>
+<div class="top"><div><label for="filter">Categoría</label><select id="filter" disabled><option value="all">Todas</option><option value="dialogo">Diálogos</option><option value="personaje_interlocutor">Hablantes</option><option value="opcion">Opciones</option><option value="other">Otros</option></select></div><div><label for="onlyEdited">Revisión</label><select id="onlyEdited" disabled><option value="all">Todas</option><option value="edited">Solo modificadas</option><option value="flag">Con alerta básica</option></select></div></div>
+<div class="row" style="margin-top:14px"><small id="total">No hay datos</small><div class="toolbar"><button class="secondary" id="prev" disabled>Anterior</button><button class="secondary" id="next" disabled>Siguiente</button></div></div>
+<div id="results" class="scroll"></div></section>
+<section class="panel pane"><h2 style="margin:0">3. Corregir español</h2><div id="empty" class="muted" style="margin-top:15px">Carga un CSV y selecciona una entrada.</div>
+<div id="detail" hidden><div id="meta" class="meta"></div><div class="chips" id="chips"></div>
+<label>Texto original (inalterable)</label><div id="original" class="source"></div>
+<label for="spanish">Texto en español (editable)</label><textarea id="spanish" spellcheck="true"></textarea><div id="hint" class="muted" style="margin:9px 0;font-size:13px"></div>
+<div class="toolbar"><button id="save" disabled>Guardar cambio en memoria</button><button id="revert" class="secondary" disabled>Restablecer esta entrada</button></div>
+<label>Verificación local</label><div class="status" id="validation">Aún no se ha seleccionado ningún texto.</div>
+<p class="muted" style="font-size:13px">La verificación del navegador es orientativa. Antes de insertar cambios debes ejecutar los validadores Python del proyecto y probar las pantallas en PPSSPP. El formato de control del juego y las métricas reales de fuente no se validan en esta vista.</p></div></section>
+</div>
+<section class="panel"><h2 style="margin:0 0 10px">Precauciones esenciales</h2>
+<p class="muted" style="margin:0;line-height:1.7">No abras ni guardes la ISO desde este editor. El CSV exportado es una propuesta de edición: conserva el original y valida sus cambios antes de integrarlos. Si una palabra aparece cortada en pantalla, comprueba texto, caracteres privados <code>F5A0–F5B2</code>, ancho del nombre y cuadros de diálogo; no elimines tildes a ciegas. Las etiquetas de hablantes se muestran solo cuando aparece el marcador explícito del guion o una continuidad corta que debe verificarse en el juego.</p></section>
+</main><footer>Proyecto de localización no oficial · El navegador no transmite tu CSV ni usa servicios externos.</footer>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);
+let header=[], rows=[], initial=[], speaker=[], selected=-1, filtered=[], page=0, changes=new Set();
+const PAGE=50;
+// CSV compatible con RFC 4180: comillas duplicadas, saltos en celdas, CRLF y BOM.
+function parseCSV(input){
+ const txt=input.replace(/^\uFEFF/,''); let out=[],rec=[],field='',quotes=false;
+ for(let i=0;i<txt.length;i++){
+  const c=txt[i];
+  if(quotes){if(c==='"'){if(txt[i+1]==='"'){field+='"';i++}else quotes=false}else field+=c;continue}
+  if(c==='"'&&field===''){quotes=true;continue}
+  if(c===','){rec.push(field);field='';continue}
+  if(c==='\n'||c==='\r') {if(c==='\r'&&txt[i+1]==='\n')i++;rec.push(field);field='';out.push(rec);rec=[];continue}
+  field+=c;
+ }
+ if(quotes)throw new Error('CSV con comillas sin cerrar');
+ if(field!==''||rec.length){rec.push(field);out.push(rec)}
+ const head=out.shift();if(!head||!head.includes('text_id')||!head.includes('espanol')||!head.includes('original'))throw new Error('No es el CSV de localización esperado');
+ const index=Object.fromEntries(head.map((h,i)=>[h,i]));
+ return {head,objects:out.map((line,i)=>{if(line.length!==head.length)throw new Error('Número de columnas incorrecto en fila '+(i+2));return Object.fromEntries(head.map((h,j)=>[h,line[j]]))})};
+}
+function exportCSV(){
+ const encode=x=>{const s=String(x??'');return /[,"\r\n]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s};
+ const lines=[header.join(',')].concat(rows.map(r=>header.map(h=>encode(r[h])).join(',')));
+ const blob=new Blob(['\uFEFF'+lines.join('\r\n')+'\r\n'],{type:'text/csv;charset=utf-8'}),url=URL.createObjectURL(blob);
+ const a=document.createElement('a');a.href=url;a.download='CLADUN_BORRADOR_ES_CORREGIDO.csv';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),4000);
+}
+function speakerIndexes(){
+ const output=[];let lastKey='',sp='',order=-1,lastType='';
+ for(let i=0;i<rows.length;i++){
+  const r=rows[i],k=[r.origen,r.script,r.script_id,r.indice_registro].join('|');
+  if(k!==lastKey){lastKey=k;sp='';order=-1;lastType=''}
+  if(r.origen!=='SCRIPT.SDT/SCRIPT.DAT'){output.push({name:'',kind:'sin_datos'});continue}
+  const current=Number(r.orden_script||-1),diff=order<0?999:current-order;
+  if(r.tipo==='personaje_interlocutor'){
+   sp=r.espanol||r.original;output.push({name:sp,kind:'nombre_0x6E'});
+  }else if(r.tipo==='opcion'){output.push({name:'',kind:'opcion'});sp=''}
+  else if(r.tipo==='dialogo'&&sp&&((lastType==='personaje_interlocutor'&&diff>=1&&diff<=6)||(lastType==='dialogo'&&diff>=1&&diff<=2))){
+   output.push({name:sp,kind:'atribucion_probable'});
+  }else{sp='';output.push({name:'',kind:'no_verificado'});}
+  order=current;lastType=r.tipo;
+ }
+ return output;
+}
+function badFlags(r){
+ const txt=r.espanol||'',warn=[];
+ if(!txt.trim())warn.push('Traducción vacía');
+ if(/[\uFFFD]/.test(txt))warn.push('Carácter de reemplazo U+FFFD');
+ const pats=/%(?:\d+\$)?[-+#0 ]*\d*(?:\.\d+)?[a-zA-Z]/g;
+ const src=(r.original.match(pats)||[]).sort().join('|'),out=(txt.match(pats)||[]).sort().join('|');
+ if(src!==out)warn.push('Variables de formato posiblemente alteradas');
+ const glyphs='áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō';
+ for(const c of txt){if(c.codePointAt(0)>127&&!glyphs.includes(c)){
+   // Muchos signos CP932 son válidos; no marcarlos automáticamente como incorrectos.
+   if('“”‘’—–…'.includes(c))warn.push('Símbolo no autorizado por códec experimental: '+c);
+ }}
+ if(/ {2,}/.test(txt))warn.push('Espacios repetidos');
+ if(txt.length>45)warn.push('Texto largo: comprobar ancho y saltos en PPSSPP');
+ return [...new Set(warn)];
+}
+function loadDoc(txt){
+ const p=parseCSV(txt);header=p.head;rows=p.objects;
+ const ids=rows.map(x=>x.grupo_id);
+ if(new Set(ids).size!==ids.length)throw new Error('grupo_id repetido');
+ if(rows.length!==9237)throw new Error('Se esperaban 9.237 entradas, encontradas '+rows.length);
+ initial=rows.map(r=>r.espanol);changes.clear();selected=-1;page=0;
+ speaker=speakerIndexes();
+ for(const k of ['search','filter','onlyEdited','export'])$(k).disabled=false;
+ $('loaded').textContent=rows.length.toLocaleString('es-ES')+' textos cargados';updateDirty();recompute();
+}
+function updateDirty(){
+ $('dirty').textContent=`${changes.size} ${changes.size===1?'cambio':'cambios'} sin exportar`;
+ window.onbeforeunload=changes.size?e=>{e.preventDefault();e.returnValue='';}:null;
+}
+function recompute(){
+ const q=$('search').value.trim().toLowerCase(),kind=$('filter').value,status=$('onlyEdited').value;
+ filtered=[];
+ rows.forEach((r,i)=>{
+  if(kind!=='all' && (kind==='other' ? ['dialogo','opcion','personaje_interlocutor'].includes(r.tipo) : r.tipo!==kind))return;
+  if(status==='edited'&&!changes.has(i))return;
+  if(status==='flag'&&!badFlags(r).length)return;
+  const blob=[r.grupo_id,r.text_id,r.original,r.espanol,r.origen,r.script,r.tipo,speaker[i]?.name].join('\n').toLowerCase();
+  if(q&&!blob.includes(q))return;filtered.push(i)
+ });page=0;drawList();
+}
+function drawList(){
+ const start=page*PAGE,subset=filtered.slice(start,start+PAGE);
+ $('total').textContent=`${filtered.length.toLocaleString('es-ES')} coincidencias · Página ${page+1}/${Math.max(1,Math.ceil(filtered.length/PAGE))}`;
+ $('prev').disabled=page===0;$('next').disabled=(page+1)*PAGE>=filtered.length;
+ const root=$('results');root.replaceChildren();
+ for(const i of subset){const r=rows[i],b=document.createElement('button');b.className='entry'+(i===selected?' active':'');
+  const title=document.createElement('strong');title.textContent=(changes.has(i)?'● ':'')+(speaker[i]?.name||r.tipo)+' · '+r.text_id;
+  const s=document.createElement('small');s.textContent=(r.espanol||r.original).replace(/\s+/g,' ').slice(0,170);
+  b.append(title,s);b.addEventListener('click',()=>selectRow(i));root.appendChild(b);
+ }
+}
+function selectRow(i){selected=i;const r=rows[i];$('empty').hidden=true;$('detail').hidden=false;
+ $('meta').textContent=`${r.text_id} · grupo ${r.grupo_id} · tipo ${r.tipo} · ${r.origen} · ${r.script||'sin script'} · bloque ${r.script_id||'-'} · orden ${r.orden_script||'-'} · offset ${r.offset_hex}`;
+ $('chips').replaceChildren();
+ for(const s of [speaker[i]?.name?'Hablante: '+speaker[i].name:'Hablante no verificado',speaker[i]?.kind,r.revision_es||'sin revisión'] ){
+  if(!s)continue;const sp=document.createElement('span');sp.className='chip';sp.textContent=s;$('chips').appendChild(sp);
+ }
+ $('original').textContent=r.original||'';$('spanish').value=r.espanol||'';
+ $('save').disabled=false;$('revert').disabled=!changes.has(i);$('undo').disabled=false;validateCurrent();drawList();
+}
+function validateCurrent(){if(selected<0)return;
+ const r=rows[selected],temp={...r,espanol:$('spanish').value};const flags=badFlags(temp);
+ const info=flags.length?'Revisa lo siguiente:\n- '+flags.join('\n- '):'No se detectan alertas básicas. Esto NO comprueba el renderizado ni la integración binaria.';
+ $('validation').className='status '+(flags.length?'warn':'success');$('validation').textContent=info;
+ $('hint').textContent=`${[...$('spanish').value].length} caracteres visibles aprox. · texto fuente ${[...r.original].length} caracteres. Las anchuras en píxeles pueden diferir.`;
+}
+function saveCurrent(){if(selected<0)return;const t=$('spanish').value;rows[selected].espanol=t;
+ if(t===initial[selected])changes.delete(selected);else changes.add(selected);
+ updateDirty();speaker=speakerIndexes();$('revert').disabled=!changes.has(selected);validateCurrent();drawList();
+}
+$('file').addEventListener('change',async e=>{try{const file=e.target.files[0];if(!file)return;loadDoc(await file.text())}catch(err){alert('No se pudo cargar el CSV: '+err.message)}});
+$('search').addEventListener('input',recompute);$('filter').addEventListener('change',recompute);$('onlyEdited').addEventListener('change',recompute);
+$('prev').addEventListener('click',()=>{if(page>0){page--;drawList()}});$('next').addEventListener('click',()=>{page++;drawList()});
+$('spanish').addEventListener('input',validateCurrent);$('save').addEventListener('click',saveCurrent);
+$('spanish').addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='s'){e.preventDefault();saveCurrent()}});
+$('revert').addEventListener('click',()=>{if(selected<0)return;rows[selected].espanol=initial[selected];changes.delete(selected);selectRow(selected);updateDirty()});
+$('undo').addEventListener('click',()=>{if(selected>=0){$('spanish').value=rows[selected].espanol;validateCurrent()}});
+$('export').addEventListener('click',()=>{if(!rows.length)return;exportCSV()});
+</script>
+</body></html>

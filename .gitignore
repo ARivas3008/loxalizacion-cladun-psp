@@ -37,3 +37,4 @@ venv/
 .work/
 raw/
 intermediate/
+.local/
