@@ -1,0 +1,12 @@
+{
+  "fuente": "ARivas3008/la-pucelle-ragnarok-localizacion/glosario/terminos_investigados.csv",
+  "destino": "Cladun / traduccion/GLOSARIO_CANONICO.csv",
+  "total_terminos_pucelle": 36,
+  "total_terminos_cladun": 67,
+  "sin_resolver_pucelle": 1,
+  "coincidencias_exactas_original_o_ingles": 0,
+  "coincidencias": [],
+  "terminos_importados_automaticamente": 0,
+  "glosario_cladun_modificado": false,
+  "regla": "Material de consulta; las coincidencias requieren contexto y aprobación humana."
+}

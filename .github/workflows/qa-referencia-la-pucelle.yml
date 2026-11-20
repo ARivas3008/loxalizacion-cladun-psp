@@ -1,0 +1,31 @@
+name: Verificar referencia terminológica La Pucelle
+on:
+  push:
+    branches: [revision-manual-dialogos]
+    paths:
+      - 'referencias/la_pucelle/**'
+      - 'tools/auditar_referencia_la_pucelle.py'
+      - 'tests/test_referencia_la_pucelle.py'
+      - 'traduccion/GLOSARIO_CANONICO.csv'
+      - '.github/workflows/qa-referencia-la-pucelle.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa-referencia:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Probar y auditar sin tocar el corpus
+        run: |
+          python -m unittest discover -s tests -p 'test_referencia_la_pucelle.py' -v
+          python tools/auditar_referencia_la_pucelle.py
+      - name: Publicar informe para inspección
+        uses: actions/upload-artifact@v4
+        with:
+          name: cladun-auditoria-referencia-la-pucelle
+          path: reports/auditoria_referencia_la_pucelle.json
+          retention-days: 30

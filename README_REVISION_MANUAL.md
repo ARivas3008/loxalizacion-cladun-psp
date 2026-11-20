@@ -29,3 +29,7 @@
 **Caso de la captura:** la frase está correctamente escrita en el CSV y mal espaciada en pantalla. No sustituir caracteres españoles por letras sin tilde sin comprobar antes el avance de glifos y el ajuste de línea en PPSSPP. El editor ofrece alertas **orientativas**, no una simulación exacta de ancho gráfico.
 
 No subir binarios del juego, ni una ISO, ni retratos, tiles, atlas o sprites. Esta rama es de corrección de datos textuales; no constituye un parche completamente validado.
+
+## Referencia editorial cruzada: La Pucelle
+
+Se ha incorporado en esta rama una **copia de solo consulta** de [36 términos investigados en La Pucelle](referencias/la_pucelle/terminos_investigados.csv), junto con los [criterios transferibles de estilo](docs/ESTILO_COMPARTIDO_LA_PUCELLE.md) y un [auditor reproducible](tools/auditar_referencia_la_pucelle.py). La comparación de los 36 términos con los 67 del glosario de Cladun no encontró coincidencias exactas de términos fuente y no modificó ninguna traducción. El objetivo es mejorar la revisión narrativa sin mezclar el universo, las mecánicas o los nombres de los dos juegos.
