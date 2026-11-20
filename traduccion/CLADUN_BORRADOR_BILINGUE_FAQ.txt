@@ -2931,7 +2931,7 @@ Ampliación
 ORIGINAL:
 Fixed Space
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Espacio fijo
+Casilla fija
 
 [000485] OPCIÓN | CLD-000504
 ORIGINAL:
@@ -3081,7 +3081,7 @@ en las casillas para artefactos.
 ORIGINAL:
 Sub Characters will consume Mana
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los personajes secundarios consumirán maná
+Los personajes de apoyo consumirán maná
 
 [000510] DIÁLOGO | CLD-000529
 ORIGINAL:
@@ -3202,7 +3202,7 @@ predeterminadas en el Círculo mágico.
 ORIGINAL:
 Defend: Takes sub character's damage.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Defender: Recibe el daño del personaje secundario.
+Defender: Recibe el daño del personaje de apoyo.
 
 [000530] DIÁLOGO | CLD-000549
 ORIGINAL:
@@ -4623,7 +4623,7 @@ No necesitas derrotar a los enemigos en este
 ORIGINAL:
 easy map. Then again, it's not THAT easy.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mapa fácil. Aunque, pensándolo bien, no es TAN fácil.
+mapa fácil. Aunque, pensándolo bien, tampoco es TAN fácil.
 
 [000766] PERSONAJE | CLD-000785
 ORIGINAL:
@@ -4677,7 +4677,7 @@ Esqueleto moribundo
 ORIGINAL:
 The Cat Burglars you can find here
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los ladrones de gatos que encontrarás aquí
+Los ladrones felinos que encontrarás aquí
 
 [000775] DIÁLOGO | CLD-000794
 ORIGINAL:
@@ -4706,7 +4706,7 @@ Chica alegre
 ORIGINAL:
 So this is "Arcanus Cella." The forbidden land!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Así que esto es "Arcanus Cella". ¡La tierra prohibida!
+Así que esto es Arcanus Cella, ¡la tierra prohibida!
 
 [000779] DIÁLOGO | CLD-000798
 ORIGINAL:
@@ -4778,31 +4778,31 @@ Souma.
 ORIGINAL:
 You're such a worrywart.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Eres una persona muy preocupadiza.
+¡Siempre te preocupas por todo!
 
 [000791] DIÁLOGO | CLD-000810
 ORIGINAL:
 Can you blame me?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Puedes culparme?
+¿Y cómo no voy a hacerlo?
 
 [000792] DIÁLOGO | CLD-000811
 ORIGINAL:
 Your mom and dad
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tu mamá y tu papá
+Tus padres
 
 [000793] DIÁLOGO | CLD-000812
 ORIGINAL:
 asked me to look after you.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Me pediste que te cuidara.
+me pidieron que te cuidara.
 
 [000794] DIÁLOGO | CLD-000813
 ORIGINAL:
 If not, I would never have skipped my lessons
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-De no ser así, jamás habría faltado a mis clases
+Si no, nunca habría faltado a clase
 
 [000795] DIÁLOGO | CLD-000814
 ORIGINAL:
@@ -4820,25 +4820,25 @@ Puddie, tú eres...
 ORIGINAL:
 Stop it right there! Souma, just shut up.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Basta ya! Souma, cállate.
+¡Basta, Souma! ¡Cállate!
 
 [000798] DIÁLOGO | CLD-000817
 ORIGINAL:
 Mom and Dad told me that I get to do whatever
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mamá y papá me dijeron que puedo hacer lo que quiera
+Mamá y papá me dejaron hacer lo que quisiera
 
 [000799] DIÁLOGO | CLD-000818
 ORIGINAL:
 I want for the next six months.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Lo quiero para los próximos seis meses.
+durante los próximos seis meses.
 
 [000800] DIÁLOGO | CLD-000819
 ORIGINAL:
 Six months... Right.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Seis meses... Correcto.
+Seis meses... Sí.
 
 [000801] DIÁLOGO | CLD-000820
 ORIGINAL:
@@ -4880,7 +4880,7 @@ Un momento. ¿Dónde estamos?
 ORIGINAL:
 I saw a broken "Do Not Enter" sign back there.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Vi un cartel de "Prohibido el paso" roto allí atrás.
+Vi un cartel roto de «Prohibido el paso» allí atrás.
 
 [000808] DIÁLOGO | CLD-000827
 ORIGINAL:
@@ -4946,7 +4946,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Ugh...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puaj...
+Uf...
 
 [000819] DIÁLOGO | CLD-000838
 ORIGINAL:
@@ -4969,7 +4969,7 @@ SCRIPT: demo1001_01.dsf
 ORIGINAL:
 Ugh...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puaj...
+Uf...
 
 [000822] DIÁLOGO | CLD-000841
 ORIGINAL:
@@ -5011,7 +5011,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 At the very least, I'm not dead.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Al menos, no estoy muerto.
+Al menos, no estoy muerta.
 
 [000829] DIÁLOGO | CLD-000848
 ORIGINAL:
@@ -5041,7 +5041,7 @@ Veamos... ¿Cómo volvemos...?
 ORIGINAL:
 I doubt we can get up there.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Dudo que podamos llegar hasta allí.
+Dudo que podamos subir por ahí.
 
 [000834] DIÁLOGO | CLD-000853
 ORIGINAL:
@@ -5053,7 +5053,7 @@ Buscaré un camino por aquí
 ORIGINAL:
 while simultaneously looking for treasure.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-mientras buscaban simultáneamente un tesoro.
+mientras busco un tesoro.
 
 [000836] DIÁLOGO | CLD-000855
 ORIGINAL:
@@ -5071,13 +5071,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 You can follow my tracks once I know
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puedes seguir mis huellas una vez que lo sepa
+Puedes seguir mis huellas cuando compruebe
 
 [000839] DIÁLOGO | CLD-000858
 ORIGINAL:
 it's safe! You got that, Pudding?!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Es seguro! ¿Lo entiendes, Pudding?
+que no hay peligro. ¿Entendido, Pudding?
 
 [000840] DIÁLOGO | CLD-000859
 ORIGINAL:
@@ -5125,7 +5125,7 @@ Encontré esto. ¿Lo quieres? Métetelo por el culo.
 ORIGINAL:
 Souma got "Wooden Stick!"
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Souma recibió un "palo de madera"!
+¡Souma recibió un «Palo de madera»!
 
 [000848] DIÁLOGO | CLD-000868
 ORIGINAL:
@@ -5251,7 +5251,7 @@ El césped y los charcos pueden
 ORIGINAL:
 really slow me down.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Realmente me ralentiza.
+frenarme mucho.
 
 [000869] DIÁLOGO | CLD-000889
 ORIGINAL:
@@ -5310,7 +5310,7 @@ ni haber escalado una colina...
 ORIGINAL:
 It's so bright.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Es muy brillante.
+¡Qué luz hay aquí!
 
 [000878] DIÁLOGO | CLD-000898
 ORIGINAL:
@@ -5490,7 +5490,7 @@ No voy a dejar que esto me afecte. Ni un poquito.
 ORIGINAL:
 A-As long as the house is fine, it's all right.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-A-Mientras la casa esté bien, todo está bien.
+C-Con tal de que la casa esté bien, no pasa nada.
 
 [000908] DIÁLOGO | CLD-000928
 ORIGINAL:
@@ -5580,13 +5580,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I-I am... Despina.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tengo... Despina.
+Y-Yo soy... Despina.
 
 [000923] DIÁLOGO | CLD-000943
 ORIGINAL:
 You're a gloomy one, aren't you?!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Eres una persona muy pesimista, ¿verdad?!
+¡Vaya, qué sombría eres!
 
 [000924] DIÁLOGO | CLD-000944
 ORIGINAL:
@@ -5604,7 +5604,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 That's a familiar of mine.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ese es un conocido mío.
+Es mi familiar.
 
 [000927] DIÁLOGO | CLD-000947
 ORIGINAL:
@@ -5628,7 +5628,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Sorceress, but... correct.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hechicera, pero... correcto.
+Hechicera, pero sí.
 
 [000931] DIÁLOGO | CLD-000951
 ORIGINAL:
@@ -5981,7 +5981,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Go away.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Irse.
+Vete.
 
 [000989] DIÁLOGO | CLD-001009
 ORIGINAL:
@@ -6005,7 +6005,7 @@ Hola.
 ORIGINAL:
 I'm the familiar, "Tamako."
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Soy la conocida "Tamako".
+Soy Tamako, un familiar.
 
 [000993] DIÁLOGO | CLD-001013
 ORIGINAL:
@@ -6148,7 +6148,7 @@ Crosstine
 ORIGINAL:
 If possible, would you please stay for a while?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Si es posible, ¿podría quedarse un rato?
+Si es posible, ¿pueden quedarse un rato?
 
 [001016] DIÁLOGO | CLD-001036
 ORIGINAL:
@@ -6298,7 +6298,7 @@ Hablando de diversión,
 ORIGINAL:
 you can use the "Warp Gate" next to the fountain
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puedes usar el "Portal de Teletransporte" que está al lado de la fuente
+puedes usar la «Puerta de teletransporte» junto a la fuente
 
 [001041] DIÁLOGO | CLD-001061
 ORIGINAL:
@@ -6388,7 +6388,7 @@ También hay un hechizo en algún lugar que puede convertir
 ORIGINAL:
 anybody into the main character...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Hay alguien interesado en el personaje principal...?
+a cualquiera en personaje principal...
 
 [001056] DIÁLOGO | CLD-001076
 ORIGINAL:
@@ -6406,7 +6406,7 @@ Tengo que prepararme para
 ORIGINAL:
 welcome my friend.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bienvenido, amigo mío.
+recibir a mi amigo.
 
 [001059] PERSONAJE | CLD-001079
 ORIGINAL:
@@ -7482,7 +7482,7 @@ Cómo subes de nivel depende de si el personaje es
 ORIGINAL:
 a sub character or a main character.。
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-un personaje secundario o un personaje principal.
+un personaje de apoyo o un personaje principal.
 
 [001235] DIÁLOGO | CLD-001266
 ORIGINAL:
@@ -7506,7 +7506,7 @@ El personaje gana más puntos de vida y maná.
 ORIGINAL:
 "LV Up as a sub character."
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-"Sube de nivel como personaje secundario."
+"Sube de nivel como personaje de apoyo."
 
 [001239] DIÁLOGO | CLD-001270
 ORIGINAL:
@@ -7786,7 +7786,7 @@ aventura para reunir las fortalezas de
 ORIGINAL:
 "sub characters" to power up!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡"Personajes secundarios" para potenciar!
+¡"personajes de apoyo" para potenciar!
 
 [001284] DIÁLOGO | CLD-001315
 ORIGINAL:
@@ -7834,7 +7834,7 @@ Pero el daño en el personaje principal
 ORIGINAL:
 transfers to the sub character.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-se transfiere al personaje secundario.
+se transfiere al personaje de apoyo.
 
 [001292] DIÁLOGO | CLD-001323
 ORIGINAL:
@@ -8774,7 +8774,7 @@ Cuando subas de nivel,
 ORIGINAL:
 the "main character" and "sub character"
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-el "personaje principal" y el "personaje secundario"
+el "personaje principal" y el "personaje de apoyo"
 
 [001447] DIÁLOGO | CLD-001480
 ORIGINAL:
@@ -8828,13 +8828,13 @@ tendrás que construirlos como
 ORIGINAL:
 a "sub character" first.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-un "personaje secundario" primero.
+un "personaje de apoyo" primero.
 
 [001456] DIÁLOGO | CLD-001489
 ORIGINAL:
 To make a good sub character, it's better
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Para crear un buen personaje secundario, es mejor
+Para crear un buen personaje de apoyo, es mejor
 
 [001457] DIÁLOGO | CLD-001490
 ORIGINAL:
@@ -9229,7 +9229,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 all the powers of the "sub characters."
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-todos los poderes de los "personajes secundarios".
+todos los poderes de los "personajes de apoyo".
 
 [001522] DIÁLOGO | CLD-001556
 ORIGINAL:
@@ -9331,7 +9331,7 @@ Piensa detenidamente dónde colocar los subwoofers.
 ORIGINAL:
 The role of the "sub characters" is not just
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El papel de los "personajes secundarios" no es solo
+El papel de los "personajes de apoyo" no es solo
 
 [001539] DIÁLOGO | CLD-001573
 ORIGINAL:
@@ -9648,7 +9648,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 But "sub characters" have
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pero los "personajes secundarios" tienen
+Pero los "personajes de apoyo" tienen
 
 [001591] DIÁLOGO | CLD-001626
 ORIGINAL:
@@ -11608,7 +11608,7 @@ Me acabo de dar cuenta de esto ahora mismo, pero
 ORIGINAL:
 but if Pudding becomes a "sub character,"
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-pero si Pudding se convierte en un "personaje secundario",
+pero si Pudding se convierte en un "personaje de apoyo",
 
 [001911] DIÁLOGO | CLD-001957
 ORIGINAL:
@@ -16628,13 +16628,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Uhh, there are some weapons
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Eh, hay algunas armas
+Eh, hay unas armas
 
 [002731] DIÁLOGO | CLD-002795
 ORIGINAL:
 I stocked up on...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Me abastecí de...
+que tengo guardadas...
 
 [002732] DIÁLOGO | CLD-002796
 ORIGINAL:
@@ -16813,7 +16813,7 @@ Veo a un idiota.
 ORIGINAL:
 A complete blithering idiot.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Un completo idiota.
+Un idiota de remate.
 
 [002761] DIÁLOGO | CLD-002827
 ORIGINAL:
@@ -16831,7 +16831,7 @@ para poder proteger a Pudding.
 ORIGINAL:
 I wish someone would teach me new moves.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ojalá alguien me enseñara nuevos pasos de baile.
+Ojalá alguien me enseñara nuevas técnicas.
 
 [002764] DIÁLOGO | CLD-002830
 ORIGINAL:
@@ -24238,7 +24238,7 @@ Aunque yo pueda ser el "personaje principal",
 ORIGINAL:
 I'll be forced to be a "sub character," too!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Yo también me veré obligado a ser un "personaje secundario"!
+¡Yo también me veré obligado a ser un "personaje de apoyo"!
 
 [003976] DIÁLOGO | CLD-004066
 ORIGINAL:
@@ -24369,13 +24369,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I actually prefer being a "sub character."
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-En realidad, prefiero ser un "personaje secundario".
+En realidad, prefiero ser un "personaje de apoyo".
 
 [003997] DIÁLOGO | CLD-004090
 ORIGINAL:
 I love being the "sub character."
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Me encanta ser el "personaje secundario".
+Me encanta ser el "personaje de apoyo".
 
 [003998] DIÁLOGO | CLD-004091
 ORIGINAL:
@@ -25278,7 +25278,7 @@ Creo que puedo poner mi corazón en ser
 ORIGINAL:
 a "sub character" now!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Ahora es un "personaje secundario"!
+¡Ahora es un "personaje de apoyo"!
 
 [004146] DIÁLOGO | CLD-004242
 ORIGINAL:
@@ -29003,7 +29003,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Sherbet?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sherbet?
+¿Sherbet?
 
 [004756] DIÁLOGO | CLD-004854
 ORIGINAL:
@@ -31776,7 +31776,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Clear Time %3d：%02d：%02d  %s
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tiempo de despeje %3d：%02d：%02d %s
+Tiempo: %3d：%02d：%02d  %s
 
 [005213] INTERFAZ | CLD-005403
 ORIGINAL:
@@ -31788,7 +31788,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Learned new Magic Circle!
 ESPAÑOL (posteditado_contextualmente_por_IA):
-¡Aprendí un nuevo Círculo mágico!
+¡Nuevo círculo mágico aprendido!
 
 [005215] INTERFAZ | CLD-005405
 ORIGINAL:
@@ -31804,7 +31804,7 @@ Mejor tiempo: %4d: %02d: %02d
 ORIGINAL:
 Learned new ability!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡He aprendido una nueva habilidad!
+¡Nueva habilidad aprendida!
 
 [005217] INTERFAZ | CLD-005407
 ORIGINAL:
@@ -32716,7 +32716,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Sub Char
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Subcarácter
+Pj. de apoyo
 
 [005366] INTERFAZ | CLD-005556
 ORIGINAL:
@@ -32742,7 +32742,7 @@ ORIGINAL:
 ⑩Return
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
 
 [005370] INTERFAZ | CLD-005560
 ORIGINAL:
@@ -32772,13 +32772,13 @@ El principal actual es %s.
 ORIGINAL:
 Place as a sub character.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Colocar como personaje secundario.
+Colocar como personaje de apoyo.
 
 [005375] INTERFAZ | CLD-005565
 ORIGINAL:
 Cannot place character.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No se puede colocar el personaje.
+No se puede colocar al personaje.
 
 [005376] INTERFAZ | CLD-005566
 ORIGINAL:
@@ -32916,19 +32916,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 SP Use Reduction x%2d
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Reducción del uso de SP x%2d
+Reducción de consumo SP x%2d
 
 [005399] INTERFAZ | CLD-005589
 ORIGINAL:
 Casting Time Reductionx%2d
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Reducción del tiempo de fundición x%2d
+Reducción de lanzamiento x%2d
 
 [005400] INTERFAZ | CLD-005590
 ORIGINAL:
 Casting Time %3d
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tiempo de fundición %3d
+Tiempo de lanzamiento %3d
 
 [005401] INTERFAZ | CLD-005591
 ORIGINAL:
@@ -32988,13 +32988,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Placing as a sub character. %s
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Colocación como subcaracter. %s
+Colocar como personaje de apoyo: %s
 
 [005411] INTERFAZ | CLD-005601
 ORIGINAL:
 Placing as a sub character.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Colocarlo como personaje secundario.
+Colocar como personaje de apoyo.
 
 [005412] INTERFAZ | CLD-005602
 ORIGINAL:
@@ -33024,73 +33024,73 @@ Bonificación de EXP 3
 ORIGINAL:
 ATK Boost Bonus
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bonificación de aumento de ATK
+Bono ATK
 
 [005417] INTERFAZ | CLD-005607
 ORIGINAL:
 ATK Boost Bonus 2
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bonificación de aumento de ATK 2
+Bono ATK 2
 
 [005418] INTERFAZ | CLD-005608
 ORIGINAL:
 ATK Boost Bonus 3
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bonificación de aumento de ATK 3
+Bono ATK 3
 
 [005419] INTERFAZ | CLD-005609
 ORIGINAL:
 DEF Boost Bonus
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bonificación de aumento de DEF
+Bono DEF
 
 [005420] INTERFAZ | CLD-005610
 ORIGINAL:
 DEF Boost Bonus 2
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bonificación de mejora de DEF 2
+Bono DEF 2
 
 [005421] INTERFAZ | CLD-005611
 ORIGINAL:
 DEF Boost Bonus 3
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bonificación de mejora de DEF 3
+Bono DEF 3
 
 [005422] INTERFAZ | CLD-005612
 ORIGINAL:
 Mana Boost Bonus
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bonificación de aumento de maná
+Bono maná
 
 [005423] INTERFAZ | CLD-005613
 ORIGINAL:
 Mana Boost Bonus 2
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bonificación de aumento de maná 2
+Bono maná 2
 
 [005424] INTERFAZ | CLD-005614
 ORIGINAL:
 Mana Boost Bonus 3
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bonificación de aumento de maná 3
+Bono maná 3
 
 [005425] INTERFAZ | CLD-005615
 ORIGINAL:
 HP Boost Bonus
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bonificación de aumento de HP
+Bono HP
 
 [005426] INTERFAZ | CLD-005616
 ORIGINAL:
 HP Boost Bonus 2
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bonificación de aumento de HP 2
+Bono HP 2
 
 [005427] INTERFAZ | CLD-005617
 ORIGINAL:
 HP Boost Bonus 3
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bonificación de aumento de HP 3
+Bono HP 3
 
 [005428] INTERFAZ | CLD-005618
 ORIGINAL:
@@ -33252,7 +33252,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 　Mana 　　     　Job　　　      ⑧　　　　   ⑳
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-　Maná 　　 　Trabajo　　　 ⑧　　　　 ⑳
+　Maná 　　 　Clase　　　 ⑧　　　　 ⑳
 
 [005451] INTERFAZ | CLD-005641
 ORIGINAL:
@@ -33836,7 +33836,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Equipped. Really sell?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Equipado. ¿De verdad lo venden?
+Equipado. ¿Seguro que quieres venderlo?
 
 [005522] INTERFAZ | CLD-005712
 ORIGINAL:
@@ -33914,7 +33914,7 @@ GRAMO
 ORIGINAL:
 For regulars
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Para clientes habituales
+Para habituales
 
 [005535] INTERFAZ | CLD-005725
 ORIGINAL:
@@ -33982,7 +33982,7 @@ ORIGINAL:
 ⑩Return
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
 
 [005546] INTERFAZ | CLD-005736
 ORIGINAL:
@@ -34032,13 +34032,13 @@ ORIGINAL:
 ⑩Return
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
 
 [005550] INTERFAZ | CLD-005740
 ORIGINAL:
 Select character art and gender.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Selecciona el estilo artístico y el género del personaje.
+Selecciona el aspecto y el género del personaje.
 
 [005551] INTERFAZ | CLD-005741
 ORIGINAL:
@@ -34046,25 +34046,25 @@ ORIGINAL:
 ⑩Return
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
 
 [005552] INTERFAZ | CLD-005742
 ORIGINAL:
 Select character name.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Seleccione el nombre del personaje.
+Selecciona el nombre del personaje.
 
 [005553] INTERFAZ | CLD-005743
 ORIGINAL:
 Select conversation pattern.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Seleccione el patrón de conversación.
+Selecciona el patrón de conversación.
 
 [005554] INTERFAZ | CLD-005744
 ORIGINAL:
 Select boss name.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Seleccione el nombre del jefe.
+Selecciona el nombre del jefe.
 
 [005555] INTERFAZ | CLD-005745
 ORIGINAL:
@@ -34106,7 +34106,7 @@ Negro
 ORIGINAL:
 Select boss form and color.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Seleccione la forma y el color del jefe.
+Selecciona la forma y el color del jefe.
 
 [005562] INTERFAZ | CLD-005752
 ORIGINAL:
@@ -34162,7 +34162,7 @@ maná%3d
 ORIGINAL:
 Select character to edit.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Seleccione el personaje que desea editar.
+Selecciona el personaje que quieres editar.
 
 [005567] INTERFAZ | CLD-005757
 ORIGINAL:
@@ -34170,7 +34170,7 @@ ORIGINAL:
 ⑩Return
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
 
 [005568] INTERFAZ | CLD-005758
 ORIGINAL:
@@ -34242,7 +34242,7 @@ Selecciona el nombre de tu nuevo personaje.
 ORIGINAL:
 Select the name of the new boss.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Seleccione el nombre del nuevo jefe.
+Selecciona el nombre del nuevo jefe.
 
 [005580] INTERFAZ | CLD-005770
 ORIGINAL:
@@ -34260,13 +34260,13 @@ Introduce la primera línea.
 ORIGINAL:
 Input the second line.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Introduzca la segunda línea.
+Introduce la segunda línea.
 
 [005583] INTERFAZ | CLD-005773
 ORIGINAL:
 Input the third line.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Introduzca la tercera línea.
+Introduce la tercera línea.
 
 [005584] INTERFAZ | CLD-005774
 ORIGINAL:
@@ -34320,16 +34320,15 @@ No se utiliza
 ORIGINAL:
 Select character to delete.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Seleccione el personaje que desea eliminar.
+Selecciona el personaje que quieres eliminar.
 
 [005593] INTERFAZ | CLD-005783
 ORIGINAL:
 Really delete %s?
 Deletions are permanent!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿De verdad borraste %s?
-
-¡Las eliminaciones son permanentes!
+¿Eliminar a %s?
+¡No se puede deshacer!
 QA: revisar_saltos_linea
 
 [005594] INTERFAZ | CLD-005784
@@ -34424,7 +34423,7 @@ ORIGINAL:
 Play time %d:%02d:%02d
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 Datos de edición de %s.
-Tiempo de reproducción %d:%02d:%02d
+Tiempo jugado %d:%02d:%02d
 
 [005607] INTERFAZ | CLD-005797
 ORIGINAL:
@@ -34630,19 +34629,19 @@ Invierte la imagen actual para usarla como el otro lado.
 ORIGINAL:
 Bring up main character graphic and copy.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Muestra el gráfico del personaje principal y el texto.
+Muestra el gráfico del personaje principal y cópialo.
 
 [005635] INTERFAZ | CLD-005825
 ORIGINAL:
 Save graphic to edit data.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Guarda el gráfico para editar los datos.
+Guarda el gráfico en los datos de edición.
 
 [005636] INTERFAZ | CLD-005826
 ORIGINAL:
 Load graphic in edit data.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cargar gráfico en editar datos.
+Carga el gráfico desde los datos de edición.
 
 [005637] INTERFAZ | CLD-005827
 ORIGINAL:
@@ -34744,7 +34743,7 @@ Azul
 ORIGINAL:
 Select new color.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Seleccione un nuevo color.
+Selecciona un nuevo color.
 
 [005654] INTERFAZ | CLD-005844
 ORIGINAL:
@@ -34753,7 +34752,7 @@ ORIGINAL:
 ⑬Default color
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
 ⑬ Color predeterminado
 
 [005655] INTERFAZ | CLD-005845
@@ -34772,7 +34771,7 @@ Seleccionar mazmorra
 ORIGINAL:
 STAGE CLEAR!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡ESCENARIO DESPEJADO!
+¡FASE SUPERADA!
 
 [005658] INTERFAZ | CLD-005848
 ORIGINAL:
@@ -34990,49 +34989,49 @@ Nivel %2d EXP :%6d Siguiente :%6s
 ORIGINAL:
 SFX Volume
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Volumen de efectos de sonido
+Vol. efectos
 
 [005688] INTERFAZ | CLD-005878
 ORIGINAL:
 BGM Volume
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Volumen de música de fondo
+Vol. música
 
 [005689] INTERFAZ | CLD-005879
 ORIGINAL:
 BGM Type
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tipo de música de fondo
+Tipo música
 
 [005690] INTERFAZ | CLD-005880
 ORIGINAL:
 Key Config
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Configuración clave
+Controles
 
 [005691] INTERFAZ | CLD-005881
 ORIGINAL:
 Changes volume of sound effects.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cambia el volumen de los efectos de sonido.
+Ajusta el volumen de los efectos.
 
 [005692] INTERFAZ | CLD-005882
 ORIGINAL:
 Changes volume of BGM.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cambia el volumen de la música de fondo.
+Ajusta el volumen de la música.
 
 [005693] INTERFAZ | CLD-005883
 ORIGINAL:
 Changes BGM type (Real/Retro)
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cambia el tipo de música de fondo (real/retro)
+Elige música real o retro.
 
 [005694] INTERFAZ | CLD-005884
 ORIGINAL:
 Changes button configuration. (Switches screen)
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cambia la configuración de los botones. (Cambia de pantalla)
+Configura los botones.
 
 [005695] INTERFAZ | CLD-005885
 ORIGINAL:
@@ -35104,7 +35103,7 @@ Fin
 ORIGINAL:
 Press the button to configure.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pulse el botón para configurar.
+Pulsa el botón para configurar.
 
 [005707] INTERFAZ | CLD-005897
 ORIGINAL:
@@ -35116,13 +35115,13 @@ Vuelve a la configuración estándar.
 ORIGINAL:
 End key config.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Fin de la configuración de teclas.
+Salir de la configuración de botones.
 
 [005709] INTERFAZ | CLD-005899
 ORIGINAL:
 Show decimal points for damage　　　　　　　
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mostrar decimales para el daño
+Decimales de daño
 
 [005710] INTERFAZ | CLD-005900
 ORIGINAL:
@@ -35134,13 +35133,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 　Under 1 ON
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Menos de 1 encendido
+Menos de 1: SÍ
 
 [005712] INTERFAZ | CLD-005902
 ORIGINAL:
  Under 10 ON
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Menos de 10 años
+Menos de 10: SÍ
 
 [005713] INTERFAZ | CLD-005903
 ORIGINAL:
@@ -35152,31 +35151,31 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Toggles the display of decimal points in damage.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Activa o desactiva la visualización de los decimales en los daños.
+Muestra decimales en el daño.
 
 [005715] INTERFAZ | CLD-005905
 ORIGINAL:
 Magic Circle effects
 ESPAÑOL (posteditado_contextualmente_por_IA):
-Efectos del Círculo mágico
+Efectos círculo
 
 [005716] INTERFAZ | CLD-005906
 ORIGINAL:
 Toggles the display of effects for Magic Circle.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Activa o desactiva la visualización de efectos para Magic Circle.
+Muestra los efectos del círculo mágico.
 
 [005717] INTERFAZ | CLD-005907
 ORIGINAL:
 Screenshot
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Captura de pantalla
+Capturas
 
 [005718] INTERFAZ | CLD-005908
 ORIGINAL:
 Toggles the button to take screenshots
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Activa o desactiva el botón para tomar capturas de pantalla.
+Activa el botón para hacer capturas.
 
 [005719] INTERFAZ | CLD-005909
 ORIGINAL:
@@ -35212,7 +35211,7 @@ Crea una sala como anfitrión o espera a que haya otras salas disponibles.
 ORIGINAL:
 Wireless room list
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Lista de habitaciones con conexión inalámbrica
+Lista de salas inalámbricas
 
 [005725] INTERFAZ | CLD-005915
 ORIGINAL:
@@ -35388,7 +35387,7 @@ Selecciona el personaje que cambiará de clase.
 ORIGINAL:
 Select job to change to.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Seleccione el puesto al que desea cambiar.
+Selecciona la nueva clase.
 
 [005753] INTERFAZ | CLD-005943
 ORIGINAL:
@@ -35467,9 +35466,8 @@ ORIGINAL:
 Cannot read yet.
 Defeat enemies to unlock.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Aún no puede leer.
-
-Derrota a los enemigos para desbloquear.
+Aún no se puede leer.
+Derrota a enemigos para desbloquearlo.
 QA: revisar_saltos_linea
 
 [005765] INTERFAZ | CLD-005955
@@ -35563,7 +35561,7 @@ ORIGINAL:
 Item drop rate
 
 ESPAÑOL (posteditado_contextualmente_por_IA):
-Tasa de aparición de objetos
+Prob. de objetos
 
 
 [005779] INTERFAZ | CLD-005969
@@ -35613,14 +35611,14 @@ ORIGINAL:
 Item drop rate　　%3d
 
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tasa de aparición de objetos: %3d
+Prob. de objetos %3d
 
 
 [005783] INTERFAZ | CLD-005973
 ORIGINAL:
 Rare title rate　　%3d%s
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tasa de títulos raros　　%3d%s
+Prob. título raro %3d%s
 
 [005784] INTERFAZ | CLD-005974
 ORIGINAL:
@@ -35831,19 +35829,19 @@ ESPAÑOL (posteditado_contextualmente_por_IA):
 ORIGINAL:
 %s people in Magic Circle used %s!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-%s personas en Magic Circle usaron %s!
+¡%s personajes del círculo mágico usaron %s!
 
 [005803] INTERFAZ | CLD-005993
 ORIGINAL:
 Insufficient floor level...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Nivel de piso insuficiente...
+Nivel de planta insuficiente...
 
 [005804] INTERFAZ | CLD-005994
 ORIGINAL:
 Enemy level in next floor dropped to %s!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡El nivel de los enemigos en el siguiente piso ha bajado a %s!
+¡Nivel de enemigos de la próxima planta: %s!
 
 [005805] INTERFAZ | CLD-005995
 ORIGINAL:
@@ -35897,7 +35895,7 @@ Normal y Guerrero LV.
 ORIGINAL:
 Gamble Merchant LV.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Comerciante de apuestas LV.
+Mercader apostador NV.
 
 [005814] INTERFAZ | CLD-006004
 ORIGINAL:
@@ -36055,7 +36053,7 @@ Imposible Uno
 ORIGINAL:
 Pot Pie Lover!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Amante de los pasteles de carne!
+¡Amante del pastel de carne!
 
 [005839] INTERFAZ | CLD-006029
 ORIGINAL:
@@ -36459,7 +36457,7 @@ Pequeña Manzana
 ORIGINAL:
 Sub character HP +4 for free.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puntos de vida de personaje secundario +4 gratis.
+Puntos de vida de personaje de apoyo +4 gratis.
 
 [005899] OBJETOS ARTEFACTOS | CLD-006144
 ORIGINAL:
@@ -36471,7 +36469,7 @@ Mini manzana
 ORIGINAL:
 Sub character HP +10 for free.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puntos de vida de personaje secundario +10 gratis.
+Puntos de vida de personaje de apoyo +10 gratis.
 
 [005901] OBJETOS ARTEFACTOS | CLD-006146
 ORIGINAL:
@@ -36483,7 +36481,7 @@ Vida Apple
 ORIGINAL:
 Sub character HP +18 for free.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puntos de vida de personaje secundario +18 gratis.
+Puntos de vida de personaje de apoyo +18 gratis.
 
 [005903] OBJETOS ARTEFACTOS | CLD-006148
 ORIGINAL:
@@ -36495,7 +36493,7 @@ Bendice a Apple
 ORIGINAL:
 Sub character HP +28 for free.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Personaje secundario +28 HP gratis.
+personaje de apoyo +28 HP gratis.
 
 [005905] OBJETOS ARTEFACTOS | CLD-006150
 ORIGINAL:
@@ -36507,7 +36505,7 @@ Manzana de tierra
 ORIGINAL:
 Sub character HP +40 for free.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puntos de vida adicionales para personajes secundarios: +40 gratis.
+Puntos de vida adicionales para personajes de apoyo: +40 gratis.
 
 [005907] OBJETOS ARTEFACTOS | CLD-006152
 ORIGINAL:
@@ -36519,7 +36517,7 @@ Uva pequeña
 ORIGINAL:
 Sub character HP +15 for 3 Mana.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Personaje secundario +15 PV por 3 de maná.
+personaje de apoyo +15 PV por 3 de maná.
 
 [005909] OBJETOS ARTEFACTOS | CLD-006154
 ORIGINAL:
@@ -36531,7 +36529,7 @@ Uva pequeña
 ORIGINAL:
 Sub character HP +30 for 10 Mana.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Personaje secundario +30 PV por 10 de Maná.
+personaje de apoyo +30 PV por 10 de Maná.
 
 [005911] OBJETOS ARTEFACTOS | CLD-006156
 ORIGINAL:
@@ -36543,7 +36541,7 @@ Uva de la vida
 ORIGINAL:
 Sub character HP +50 for 20 Mana.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Personaje secundario +50 PV por 20 de Maná.
+personaje de apoyo +50 PV por 20 de Maná.
 
 [005913] OBJETOS ARTEFACTOS | CLD-006158
 ORIGINAL:
@@ -36555,7 +36553,7 @@ Bendita uva
 ORIGINAL:
 Sub character HP +70 for 30 Mana.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Personaje secundario +70 PV por 30 de Maná.
+personaje de apoyo +70 PV por 30 de Maná.
 
 [005915] OBJETOS ARTEFACTOS | CLD-006160
 ORIGINAL:
@@ -36567,7 +36565,7 @@ Uva de tierra
 ORIGINAL:
 Sub character HP +90 for 40 Mana.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Personaje secundario +90 PV por 40 de Maná.
+personaje de apoyo +90 PV por 40 de Maná.
 
 [005917] OBJETOS ARTEFACTOS | CLD-006162
 ORIGINAL:
@@ -37755,7 +37753,7 @@ Dispersión 25%
 ORIGINAL:
 Distributes 25% of damage taken onto sub characters.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Distribuye el 25% del daño recibido entre los personajes secundarios.
+Distribuye el 25% del daño recibido entre los personajes de apoyo.
 
 [006115] OBJETOS ARTEFACTOS | CLD-006354
 ORIGINAL:
@@ -37767,7 +37765,7 @@ Distribución 50%
 ORIGINAL:
 Distributes 50% of damage taken onto sub characters.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Distribuye el 50% del daño recibido entre los personajes secundarios.
+Distribuye el 50% del daño recibido entre los personajes de apoyo.
 
 [006117] OBJETOS ARTEFACTOS | CLD-006356
 ORIGINAL:
@@ -37779,7 +37777,7 @@ Dispersión 100%
 ORIGINAL:
 Distributes 100% of damage taken onto sub characters.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Distribuye el 100% del daño recibido entre los personajes secundarios.
+Distribuye el 100% del daño recibido entre los personajes de apoyo.
 
 [006119] OBJETOS ARTEFACTOS | CLD-006358
 ORIGINAL:
@@ -38281,7 +38279,7 @@ Cota de malla
 ORIGINAL:
 Cool
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Fresco
+Frío
 
 [006201] OBJETOS ARMADURAS | CLD-006431
 ORIGINAL:
@@ -46694,14 +46692,14 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 闘志ボーナス1
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bonificación de espíritu de lucha 1
+Bono de espíritu de lucha 1
 QA: estado_fuente_pendiente
 
 [007520] EFECTOS | CLD-007751
 ORIGINAL:
 守護不要
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Proteger y no
+No requiere protección
 QA: estado_fuente_pendiente
 
 [007521] EFECTOS | CLD-007752
@@ -46715,7 +46713,7 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 英知不要
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Yingzhi no quiere
+No requiere sabiduría
 QA: estado_fuente_pendiente
 
 [007523] EFECTOS | CLD-007754
@@ -46911,7 +46909,7 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 剣防ぎ
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Defensa con espada
+Protección contra espadas
 QA: estado_fuente_pendiente
 
 [007551] EFECTOS | CLD-007778
@@ -46932,7 +46930,7 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 突刺耐性+2
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Resistencia al empuje +2
+Resistencia a perforación +2
 QA: estado_fuente_pendiente
 
 [007554] EFECTOS | CLD-007781
@@ -46946,14 +46944,14 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 打撃耐性+2
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Resistencia cuerpo a cuerpo +2
+Resistencia a golpes +2
 QA: estado_fuente_pendiente
 
 [007556] EFECTOS | CLD-007783
 ORIGINAL:
 炎防ぎ
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Protección contra incendios
+Protección contra fuego
 QA: estado_fuente_pendiente
 
 [007557] EFECTOS | CLD-007784
@@ -46981,7 +46979,7 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 心防ぎ
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Protección del corazón
+Protección mental
 QA: estado_fuente_pendiente
 
 [007561] EFECTOS | CLD-007788
@@ -47002,7 +47000,7 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 ブレイク発生+3
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-ocurrencia de ruptura +3
+Probabilidad de ruptura +3
 QA: estado_fuente_pendiente
 
 [007564] EFECTOS | CLD-007791
@@ -47051,14 +47049,14 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 悪趣味
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mal sabor
+Mal gusto
 QA: estado_fuente_pendiente
 
 [007571] EFECTOS | CLD-007796
 ORIGINAL:
 闘志守護英知ボーナス2　ALL耐性-10
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Espíritu de lucha Guardián Sabiduría Bonificación 2: TODA Resistencia -10
+Bono 2 de espíritu, protección y sabiduría; resistencias -10
 QA: estado_fuente_pendiente
 
 [007572] EFECTOS | CLD-007797
@@ -47086,21 +47084,21 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 ALL耐性+5
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-TODA la resistencia +5
+Todas las resistencias +5
 QA: estado_fuente_pendiente
 
 [007576] EFECTOS | CLD-007800
 ORIGINAL:
 捨て身
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Desesperado
+A la desesperada
 QA: estado_fuente_pendiente
 
 [007577] EFECTOS | CLD-007801
 ORIGINAL:
 ATK+10　速度+10　ALL耐性-50
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-ATK +10, Velocidad +10, Todas las resistencias -50
+ATK +10, velocidad +10, resistencias -50
 QA: estado_fuente_pendiente
 
 [007578] EFECTOS | CLD-007802
@@ -47170,7 +47168,7 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 ATK+5　クリティカル＆ブレイク発生+10
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-ATK +5, Golpe crítico y probabilidad de ruptura +10
+ATK +5, prob. crítico y ruptura +10
 QA: estado_fuente_pendiente
 
 
@@ -47278,7 +47276,7 @@ Una bola de hielo sale disparada en línea recta.
 ORIGINAL:
 Cool
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Fresco
+Frío
 
 [007605] HABILIDADES MAGIA | CLD-007826
 ORIGINAL:
@@ -47290,7 +47288,7 @@ Una bola de hielo explota.
 ORIGINAL:
 I. Storm
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Yo. Tormenta
+Tormenta de hielo
 
 [007607] HABILIDADES MAGIA | CLD-007828
 ORIGINAL:
@@ -47326,7 +47324,7 @@ Lanza bolas de hielo explosivas teledirigidas.
 ORIGINAL:
 Time Cool
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tiempo fresco
+Tiempo de enfriamiento
 
 [007613] HABILIDADES MAGIA | CLD-007834
 ORIGINAL:
@@ -47428,7 +47426,7 @@ Recuperar
 ORIGINAL:
 Cure status effects on self.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Efectos del estado de curación en uno mismo.
+Cura tus estados alterados.
 
 [007630] HABILIDADES MAGIA | CLD-007851
 ORIGINAL:
@@ -47602,7 +47600,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 S) W Slash
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-S) Barra inclinada W
+S) Corte W
 
 [007659] HABILIDADES MAGIA | CLD-007880
 ORIGINAL:
@@ -47614,7 +47612,7 @@ Lanza un ataque basado en el elemento ⑥.
 ORIGINAL:
 A) Swing
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-A) Columpio
+A) Barrido
 
 [007661] HABILIDADES MAGIA | CLD-007882
 ORIGINAL:
@@ -47674,7 +47672,7 @@ Aumenta temporalmente tu DEF.
 ORIGINAL:
 A) S Slash
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-A) Barra inclinada
+A) Corte S
 
 [007671] HABILIDADES MAGIA | CLD-007892
 ORIGINAL:
@@ -47698,7 +47696,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 G Get
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-G Obtener
+Obtener G
 
 [007675] HABILIDADES MAGIA | CLD-007897
 ORIGINAL:
@@ -47911,7 +47909,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Dualcast
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Transmisión dual
+Doble conjuro
 
 [007708] CIRCULOS MAGICOS | CLD-007930
 ORIGINAL:
@@ -48001,7 +47999,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Dark Tie
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Corbata oscura
+Vínculo oscuro
 
 [007723] CIRCULOS MAGICOS | CLD-007944
 ORIGINAL:
@@ -48349,7 +48347,7 @@ Hacer/Morir
 ORIGINAL:
 Job
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Trabajo
+Clase
 
 [007781] CIRCULOS MAGICOS | CLD-008002
 ORIGINAL:
@@ -52402,7 +52400,7 @@ QA: revisar_saltos_linea
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [008270] MONSTRUOS | CLD-F-MONSTER-0121-nombre
 ORIGINAL:
@@ -52468,7 +52466,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 仮面
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-mascarilla
+Máscara
 QA: estado_fuente_pendiente
 
 [008281] MONSTRUOS | CLD-008492
@@ -52745,14 +52743,14 @@ RgMan
 ORIGINAL:
 彼にコウタイの文字は無い。ゼンシンあるのみ！
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No tiene ningún concepto de "Koutai" (un juego de palabras con "Koutai" y "Koutai"). Sólo tiene "Zenshin" (un juego de palabras con "Zenshin" y "Zenshin").
+No sabe lo que es retirarse: ¡solo avanzar!
 QA: estado_fuente_pendiente
 
 [008322] MONSTRUOS | CLD-008523
 ORIGINAL:
 彼にコウタイの文字は無い。ゼンシンあるのみ！
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No tiene ningún concepto de "Koutai" (un juego de palabras con "Koutai" y "Koutai"). Sólo tiene "Zenshin" (un juego de palabras con "Zenshin" y "Zenshin").
+No sabe lo que es retirarse: ¡solo avanzar!
 QA: estado_fuente_pendiente
 
 [008323] MONSTRUOS | CLD-008524
@@ -52772,147 +52770,147 @@ RgMan
 ORIGINAL:
 わがショウガイにイッペンのくいなし！
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡No me arrepiento en absoluto de mi discapacidad!
+¡No me arrepiento de nada en mi vida!
 QA: estado_fuente_pendiente
 
 [008326] MONSTRUOS | CLD-008527
 ORIGINAL:
 わがショウガイにイッペンのくいなし！
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡No me arrepiento en absoluto de mi discapacidad!
+¡No me arrepiento de nada en mi vida!
 QA: estado_fuente_pendiente
 
 [008327] MONSTRUOS | CLD-008528
 ORIGINAL:
 炎出るブロック
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bloque emisor de llama
+Bloque emisor de fuego
 QA: estado_fuente_pendiente
 
 [008328] MONSTRUOS | CLD-008529
 ORIGINAL:
 炎出るブロック
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bloque emisor de llama
+Bloque emisor de fuego
 QA: estado_fuente_pendiente
 
 [008329] MONSTRUOS | CLD-008530
 ORIGINAL:
 炎出るブロック低
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bloques de bajo nivel que emiten llamas
+Bloque emisor de fuego (bajo)
 QA: estado_fuente_pendiente
 
 [008330] MONSTRUOS | CLD-008531
 ORIGINAL:
 炎出るブロック低
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bloques de bajo nivel que emiten llamas
+Bloque emisor de fuego (bajo)
 QA: estado_fuente_pendiente
 
 [008331] MONSTRUOS | CLD-008532
 ORIGINAL:
 炎出るブロック低
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bloques de bajo nivel que emiten llamas
+Bloque emisor de fuego (bajo)
 QA: estado_fuente_pendiente
 
 [008332] MONSTRUOS | CLD-008533
 ORIGINAL:
 炎出るブロック高
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bloque de gran altura con llamas
+Bloque emisor de fuego (alto)
 QA: estado_fuente_pendiente
 
 [008333] MONSTRUOS | CLD-008534
 ORIGINAL:
 炎出るブロック高
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bloque de gran altura con llamas
+Bloque emisor de fuego (alto)
 QA: estado_fuente_pendiente
 
 [008334] MONSTRUOS | CLD-008535
 ORIGINAL:
 炎出るブロック高
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bloque de gran altura con llamas
+Bloque emisor de fuego (alto)
 QA: estado_fuente_pendiente
 
 [008335] MONSTRUOS | CLD-008536
 ORIGINAL:
 炎出るブロック
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bloque emisor de llama
+Bloque emisor de fuego
 QA: estado_fuente_pendiente
 
 [008336] MONSTRUOS | CLD-008537
 ORIGINAL:
 氷出るブロック
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bloques que producen hielo
+Bloque emisor de hielo
 QA: estado_fuente_pendiente
 
 [008337] MONSTRUOS | CLD-008538
 ORIGINAL:
 氷出るブロック
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bloques que producen hielo
+Bloque emisor de hielo
 QA: estado_fuente_pendiente
 
 [008338] MONSTRUOS | CLD-008539
 ORIGINAL:
 氷出るブロック
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bloques que producen hielo
+Bloque emisor de hielo
 QA: estado_fuente_pendiente
 
 [008339] MONSTRUOS | CLD-008540
 ORIGINAL:
 氷出るブロック低
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-bloques de baja producción de hielo
+Bloque emisor de hielo (bajo)
 QA: estado_fuente_pendiente
 
 [008340] MONSTRUOS | CLD-008541
 ORIGINAL:
 氷出るブロック低
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-bloques de baja producción de hielo
+Bloque emisor de hielo (bajo)
 QA: estado_fuente_pendiente
 
 [008341] MONSTRUOS | CLD-008542
 ORIGINAL:
 氷出るブロック低
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-bloques de baja producción de hielo
+Bloque emisor de hielo (bajo)
 QA: estado_fuente_pendiente
 
 [008342] MONSTRUOS | CLD-008543
 ORIGINAL:
 氷出るブロック高
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Altura del bloque productor de hielo
+Bloque emisor de hielo (alto)
 QA: estado_fuente_pendiente
 
 [008343] MONSTRUOS | CLD-008544
 ORIGINAL:
 氷出るブロック高
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Altura del bloque productor de hielo
+Bloque emisor de hielo (alto)
 QA: estado_fuente_pendiente
 
 [008344] MONSTRUOS | CLD-008545
 ORIGINAL:
 氷出るブロック高
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Altura del bloque productor de hielo
+Bloque emisor de hielo (alto)
 QA: estado_fuente_pendiente
 
 [008345] MONSTRUOS | CLD-008546
 ORIGINAL:
 氷出るブロック
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bloques que producen hielo
+Bloque emisor de hielo
 QA: estado_fuente_pendiente
 
 [008346] MONSTRUOS | CLD-008547
@@ -52996,7 +52994,7 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 仮面
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-mascarilla
+Máscara
 QA: estado_fuente_pendiente
 
 [008358] MONSTRUOS | CLD-F-MONSTER-0168-especie
@@ -53962,7 +53960,7 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 (拠点用）通禁止
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-(Para uso básico) No se permite la entrada
+(Para la base) Paso prohibido
 QA: estado_fuente_pendiente
 
 [008511] ATRIBUTOS TERRENO | CLD-008768
@@ -54424,28 +54422,28 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 荒野レンガ
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ladrillos de la naturaleza salvaje
+Ladrillos del páramo
 QA: estado_fuente_pendiente
 
 [008577] ATRIBUTOS TERRENO | CLD-008822
 ORIGINAL:
 荒野レンガ
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ladrillos de la naturaleza salvaje
+Ladrillos del páramo
 QA: estado_fuente_pendiente
 
 [008578] ATRIBUTOS TERRENO | CLD-008823
 ORIGINAL:
 荒野レンガ
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ladrillos de la naturaleza salvaje
+Ladrillos del páramo
 QA: estado_fuente_pendiente
 
 [008579] ATRIBUTOS TERRENO | CLD-008824
 ORIGINAL:
 荒野レンガ
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ladrillos de la naturaleza salvaje
+Ladrillos del páramo
 QA: estado_fuente_pendiente
 
 [008580] ATRIBUTOS TERRENO | CLD-008825
@@ -54711,7 +54709,7 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 研究所床
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Instituto de Investigación Bed
+Suelo del laboratorio
 QA: estado_fuente_pendiente
 
 [008618] ATRIBUTOS TERRENO | CLD-008863
@@ -55201,7 +55199,7 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 右いす
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Silla para diestros
+Silla derecha
 QA: estado_fuente_pendiente
 
 [008688] ATRIBUTOS TERRENO | CLD-008926
@@ -55369,7 +55367,7 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 転移の扉
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puerta de transferencia
+Puerta de teletransporte
 QA: estado_fuente_pendiente
 
 [008712] ATRIBUTOS TERRENO | CLD-008941
@@ -56956,42 +56954,42 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 仮面
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-mascarilla
+Máscara
 QA: estado_fuente_pendiente
 
 [008938] MONSTRUOS AUXILIARES | CLD-F-UP_MONSTER-0128-nombre_monstruo
 ORIGINAL:
 仮面
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-mascarilla
+Máscara
 QA: estado_fuente_pendiente
 
 [008939] MONSTRUOS AUXILIARES | CLD-F-UP_MONSTER-0129-nombre_monstruo
 ORIGINAL:
 仮面
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-mascarilla
+Máscara
 QA: estado_fuente_pendiente
 
 [008940] MONSTRUOS AUXILIARES | CLD-F-UP_MONSTER-0130-nombre_monstruo
 ORIGINAL:
 仮面
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-mascarilla
+Máscara
 QA: estado_fuente_pendiente
 
 [008941] MONSTRUOS AUXILIARES | CLD-F-UP_MONSTER-0131-nombre_monstruo
 ORIGINAL:
 仮面
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-mascarilla
+Máscara
 QA: estado_fuente_pendiente
 
 [008942] MONSTRUOS AUXILIARES | CLD-F-UP_MONSTER-0132-nombre_monstruo
 ORIGINAL:
 仮面
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-mascarilla
+Máscara
 QA: estado_fuente_pendiente
 
 [008943] MONSTRUOS AUXILIARES | CLD-009167
@@ -57159,7 +57157,7 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 仮面
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-mascarilla
+Máscara
 QA: estado_fuente_pendiente
 
 
@@ -57476,7 +57474,7 @@ Espada vieja
 ORIGINAL:
 Claymore
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Casa antigua
+Espadón
 
 [009018] OBJETOS ARMAS | CLD-009233
 ORIGINAL:
@@ -57500,7 +57498,7 @@ Espada de caballero
 ORIGINAL:
 Flamberge
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Flamengue
+Flamberge
 
 [009022] OBJETOS ARMAS | CLD-009237
 ORIGINAL:
@@ -57524,7 +57522,7 @@ Espada oriental
 ORIGINAL:
 Nemesis
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Justicia
+Némesis
 
 [009026] OBJETOS ARMAS | CLD-009241
 ORIGINAL:
@@ -57536,7 +57534,7 @@ Espada Divina
 ORIGINAL:
 Dragnade
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Estirado
+Dragnade
 
 [009028] OBJETOS ARMAS | CLD-009243
 ORIGINAL:
@@ -57590,19 +57588,19 @@ Martillo de guerra
 ORIGINAL:
 Iron Club
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Club de Hierro
+Maza de hierro
 
 [009037] OBJETOS ARMAS | CLD-009252
 ORIGINAL:
 Ogre Club
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Club de ogros
+Maza de ogro
 
 [009038] OBJETOS ARMAS | CLD-009253
 ORIGINAL:
 Danger Club
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Club del Peligro
+Maza peligrosa
 
 [009039] OBJETOS ARMAS | CLD-009254
 ORIGINAL:
@@ -57626,13 +57624,13 @@ Diablo
 ORIGINAL:
 Dark Club
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Club oscuro
+Maza oscura
 
 [009043] OBJETOS ARMAS | CLD-009258
 ORIGINAL:
 Kaiser
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Emperador
+Kaiser
 
 [009044] OBJETOS ARMAS | CLD-009259
 ORIGINAL:
@@ -57716,7 +57714,7 @@ ESPAÑOL (posteditado_contextualmente_por_IA):
 ORIGINAL:
 Strength Rod
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Barra de refuerzo
+Vara de fuerza
 
 [009058] OBJETOS ARMAS | CLD-009273
 ORIGINAL:

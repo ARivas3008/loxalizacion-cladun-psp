@@ -1,0 +1,265 @@
+﻿grupo_id,text_id,tipo,original,es_anterior,es_corregido,motivo
+000484,CLD-000503,opcion,Fixed Space,Espacio fijo,Casilla fija,Misma traducción de Fixed Space que su duplicado
+000509,CLD-000528,dialogo,Sub Characters will consume Mana,Los personajes secundarios consumirán maná,Los personajes de apoyo consumirán maná,Glosario: Sub Character = personaje de apoyo
+000529,CLD-000548,dialogo,Defend: Takes sub character's damage.,Defender: Recibe el daño del personaje secundario.,Defender: Recibe el daño del personaje de apoyo.,Glosario: Sub Character = personaje de apoyo
+000765,CLD-000784,dialogo,"easy map. Then again, it's not THAT easy.","Mapa fácil. Aunque, pensándolo bien, no es TAN fácil.","mapa fácil. Aunque, pensándolo bien, tampoco es TAN fácil.",Continuidad de oración y mayúscula
+000774,CLD-000793,dialogo,The Cat Burglars you can find here,Los ladrones de gatos que encontrarás aquí,Los ladrones felinos que encontrarás aquí,Cat burglars no significa ladrones que roban gatos; contexto del enemigo
+000778,CLD-000797,dialogo,"So this is ""Arcanus Cella."" The forbidden land!","Así que esto es ""Arcanus Cella"". ¡La tierra prohibida!","Así que esto es Arcanus Cella, ¡la tierra prohibida!",Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+000790,CLD-000809,dialogo,You're such a worrywart.,Eres una persona muy preocupadiza.,¡Siempre te preocupas por todo!,Registro natural de worrywart
+000791,CLD-000810,dialogo,Can you blame me?,¿Puedes culparme?,¿Y cómo no voy a hacerlo?,Respuesta natural a la preocupación
+000792,CLD-000811,dialogo,Your mom and dad,Tu mamá y tu papá,Tus padres,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+000793,CLD-000812,dialogo,asked me to look after you.,Me pediste que te cuidara.,me pidieron que te cuidara.,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+000794,CLD-000813,dialogo,"If not, I would never have skipped my lessons","De no ser así, jamás habría faltado a mis clases","Si no, nunca habría faltado a clase",Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+000797,CLD-000816,dialogo,"Stop it right there! Souma, just shut up.","¡Basta ya! Souma, cállate.","¡Basta, Souma! ¡Cállate!",Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+000798,CLD-000817,dialogo,Mom and Dad told me that I get to do whatever,Mamá y papá me dijeron que puedo hacer lo que quiera,Mamá y papá me dejaron hacer lo que quisiera,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+000799,CLD-000818,dialogo,I want for the next six months.,Lo quiero para los próximos seis meses.,durante los próximos seis meses.,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+000800,CLD-000819,dialogo,Six months... Right.,Seis meses... Correcto.,Seis meses... Sí.,"Right como reconocimiento, no correcto"
+000807,CLD-000826,dialogo,"I saw a broken ""Do Not Enter"" sign back there.","Vi un cartel de ""Prohibido el paso"" roto allí atrás.",Vi un cartel roto de «Prohibido el paso» allí atrás.,Sintaxis y señalización
+000818,CLD-000837,dialogo,Ugh...,Puaj...,Uf...,"Interjección de dolor, no repugnancia"
+000821,CLD-000840,dialogo,Ugh...,Puaj...,Uf...,Interjección de dolor
+000828,CLD-000847,dialogo,"At the very least, I'm not dead.","Al menos, no estoy muerto.","Al menos, no estoy muerta.",Concordancia femenina del personaje Pudding
+000833,CLD-000852,dialogo,I doubt we can get up there.,Dudo que podamos llegar hasta allí.,Dudo que podamos subir por ahí.,Sentido espacial de get up there
+000835,CLD-000854,dialogo,while simultaneously looking for treasure.,mientras buscaban simultáneamente un tesoro.,mientras busco un tesoro.,"Primera persona original, no tercera plural"
+000838,CLD-000857,dialogo,You can follow my tracks once I know,Puedes seguir mis huellas una vez que lo sepa,Puedes seguir mis huellas cuando compruebe,Continuidad de propuesta de Souma
+000839,CLD-000858,dialogo,"it's safe! You got that, Pudding?!","¡Es seguro! ¿Lo entiendes, Pudding?","que no hay peligro. ¿Entendido, Pudding?",Continuidad con subjuntivo
+000847,CLD-000867,dialogo,"Souma got ""Wooden Stick!""","¡Souma recibió un ""palo de madera""!",¡Souma recibió un «Palo de madera»!,Consistencia de nombre de objeto y puntuación
+000868,CLD-000888,dialogo,really slow me down.,Realmente me ralentiza.,frenarme mucho.,Concordancia con césped y charcos en oración anterior
+000877,CLD-000897,dialogo,It's so bright.,Es muy brillante.,¡Qué luz hay aquí!,Naturalidad de It's so bright
+000907,CLD-000927,dialogo,"A-As long as the house is fine, it's all right.","A-Mientras la casa esté bien, todo está bien.","C-Con tal de que la casa esté bien, no pasa nada.",Tartamudeo y construcción condicional
+000922,CLD-000942,dialogo,I-I am... Despina.,Tengo... Despina.,Y-Yo soy... Despina.,I am no equivale a tengo
+000923,CLD-000943,dialogo,"You're a gloomy one, aren't you?!","¡Eres una persona muy pesimista, ¿verdad?!","¡Vaya, qué sombría eres!",Evitar anidación incorrecta de signos
+000926,CLD-000946,dialogo,That's a familiar of mine.,Ese es un conocido mío.,Es mi familiar.,"Familiar mágico, no conocido"
+000930,CLD-000950,dialogo,"Sorceress, but... correct.","Hechicera, pero... correcto.","Hechicera, pero sí.",Corrección de género en réplica
+000988,CLD-001008,dialogo,Go away.,Irse.,Vete.,Imperativo de go away
+000992,CLD-001012,dialogo,"I'm the familiar, ""Tamako.""","Soy la conocida ""Tamako"".","Soy Tamako, un familiar.","Familiar mágico, no persona conocida"
+001015,CLD-001035,dialogo,"If possible, would you please stay for a while?","Si es posible, ¿podría quedarse un rato?","Si es posible, ¿pueden quedarse un rato?",El interlocutor se dirige al grupo
+001040,CLD-001060,dialogo,"you can use the ""Warp Gate"" next to the fountain","Puedes usar el ""Portal de Teletransporte"" que está al lado de la fuente",puedes usar la «Puerta de teletransporte» junto a la fuente,Consistencia Warp Gate y menor longitud
+001055,CLD-001075,dialogo,anybody into the main character...,¿Hay alguien interesado en el personaje principal...?,a cualquiera en personaje principal...,Restituir continuación literal del conjuro
+001058,CLD-001078,dialogo,welcome my friend.,"Bienvenido, amigo mío.",recibir a mi amigo.,Continuidad tras tengo que prepararme para
+001234,CLD-001265,dialogo,a sub character or a main character.。,un personaje secundario o un personaje principal.,un personaje de apoyo o un personaje principal.,Glosario: Sub Character = personaje de apoyo
+001238,CLD-001269,dialogo,"""LV Up as a sub character.""","""Sube de nivel como personaje secundario.""","""Sube de nivel como personaje de apoyo.""",Glosario: Sub Character = personaje de apoyo
+001283,CLD-001314,dialogo,"""sub characters"" to power up!","¡""Personajes secundarios"" para potenciar!","¡""personajes de apoyo"" para potenciar!",Glosario: Sub Character = personaje de apoyo
+001291,CLD-001322,dialogo,transfers to the sub character.,se transfiere al personaje secundario.,se transfiere al personaje de apoyo.,Glosario: Sub Character = personaje de apoyo
+001446,CLD-001479,dialogo,"the ""main character"" and ""sub character""","el ""personaje principal"" y el ""personaje secundario""","el ""personaje principal"" y el ""personaje de apoyo""",Glosario: Sub Character = personaje de apoyo
+001455,CLD-001488,dialogo,"a ""sub character"" first.","un ""personaje secundario"" primero.","un ""personaje de apoyo"" primero.",Glosario: Sub Character = personaje de apoyo
+001456,CLD-001489,dialogo,"To make a good sub character, it's better","Para crear un buen personaje secundario, es mejor","Para crear un buen personaje de apoyo, es mejor",Glosario: Sub Character = personaje de apoyo
+001521,CLD-001555,dialogo,"all the powers of the ""sub characters.""","todos los poderes de los ""personajes secundarios"".","todos los poderes de los ""personajes de apoyo"".",Glosario: Sub Character = personaje de apoyo
+001538,CLD-001572,dialogo,"The role of the ""sub characters"" is not just","El papel de los ""personajes secundarios"" no es solo","El papel de los ""personajes de apoyo"" no es solo",Glosario: Sub Character = personaje de apoyo
+001590,CLD-001625,dialogo,"But ""sub characters"" have","Pero los ""personajes secundarios"" tienen","Pero los ""personajes de apoyo"" tienen",Glosario: Sub Character = personaje de apoyo
+001910,CLD-001956,dialogo,"but if Pudding becomes a ""sub character,""","pero si Pudding se convierte en un ""personaje secundario"",","pero si Pudding se convierte en un ""personaje de apoyo"",",Glosario: Sub Character = personaje de apoyo
+002730,CLD-002794,dialogo,"Uhh, there are some weapons","Eh, hay algunas armas","Eh, hay unas armas",Construcción natural del inicio de la frase
+002731,CLD-002795,dialogo,I stocked up on...,Me abastecí de...,que tengo guardadas...,Continuidad en primera persona
+002760,CLD-002826,dialogo,A complete blithering idiot.,Un completo idiota.,Un idiota de remate.,Naturalidad de blithering idiot
+002763,CLD-002829,dialogo,I wish someone would teach me new moves.,Ojalá alguien me enseñara nuevos pasos de baile.,Ojalá alguien me enseñara nuevas técnicas.,"Moves son técnicas de combate, no baile"
+003975,CLD-004065,dialogo,"I'll be forced to be a ""sub character,"" too!","¡Yo también me veré obligado a ser un ""personaje secundario""!","¡Yo también me veré obligado a ser un ""personaje de apoyo""!",Glosario: Sub Character = personaje de apoyo
+003996,CLD-004089,dialogo,"I actually prefer being a ""sub character.""","En realidad, prefiero ser un ""personaje secundario"".","En realidad, prefiero ser un ""personaje de apoyo"".",Glosario: Sub Character = personaje de apoyo
+003997,CLD-004090,dialogo,"I love being the ""sub character.""","Me encanta ser el ""personaje secundario"".","Me encanta ser el ""personaje de apoyo"".",Glosario: Sub Character = personaje de apoyo
+004145,CLD-004241,dialogo,"a ""sub character"" now!","¡Ahora es un ""personaje secundario""!","¡Ahora es un ""personaje de apoyo""!",Glosario: Sub Character = personaje de apoyo
+004755,CLD-004853,dialogo,Sherbet?,Sherbet?,¿Sherbet?,Pregunta de nombre propio consistente con duplicado
+005212,CLD-005402,interfaz_sistema,Clear Time %3d：%02d：%02d  %s,Tiempo de despeje %3d：%02d：%02d %s,Tiempo: %3d：%02d：%02d  %s,Etiqueta compacta sin cambiar marcadores
+005214,CLD-005404,interfaz_sistema,Learned new Magic Circle!,¡Aprendí un nuevo Círculo mágico!,¡Nuevo círculo mágico aprendido!,Mensaje de obtención impersonal del juego
+005216,CLD-005406,interfaz_sistema,Learned new ability!,¡He aprendido una nueva habilidad!,¡Nueva habilidad aprendida!,Mensaje de obtención del juego
+005365,CLD-005555,interfaz_sistema,Sub Char,Subcarácter,Pj. de apoyo,"Terminología del glosario, etiqueta corta"
+005369,CLD-005559,interfaz_sistema,"⑪Confirm
+⑩Return","⑪ Confirmar
+⑩ Devolver","⑪ Confirmar
+⑩ Volver",Return es volver
+005374,CLD-005564,interfaz_sistema,Place as a sub character.,Colocar como personaje secundario.,Colocar como personaje de apoyo.,Término Sub Character
+005375,CLD-005565,interfaz_sistema,Cannot place character.,No se puede colocar el personaje.,No se puede colocar al personaje.,Naturalidad de error de interfaz
+005398,CLD-005588,interfaz_sistema,SP Use Reduction x%2d,Reducción del uso de SP x%2d,Reducción de consumo SP x%2d,Normalizar etiqueta numérica
+005399,CLD-005589,interfaz_sistema,Casting Time Reductionx%2d,Reducción del tiempo de fundición x%2d,Reducción de lanzamiento x%2d,Casting es lanzamiento de hechizos
+005400,CLD-005590,interfaz_sistema,Casting Time %3d,Tiempo de fundición %3d,Tiempo de lanzamiento %3d,Casting no es fundición
+005410,CLD-005600,interfaz_sistema,Placing as a sub character. %s,Colocación como subcaracter. %s,Colocar como personaje de apoyo: %s,Sub Character y marcador conservado
+005411,CLD-005601,interfaz_sistema,Placing as a sub character.,Colocarlo como personaje secundario.,Colocar como personaje de apoyo.,Terminología de glosario
+005416,CLD-005606,interfaz_sistema,ATK Boost Bonus,Bonificación de aumento de ATK,Bono ATK,Etiqueta corta para bonificación
+005417,CLD-005607,interfaz_sistema,ATK Boost Bonus 2,Bonificación de aumento de ATK 2,Bono ATK 2,Etiqueta corta para bonificación
+005418,CLD-005608,interfaz_sistema,ATK Boost Bonus 3,Bonificación de aumento de ATK 3,Bono ATK 3,Etiqueta corta para bonificación
+005419,CLD-005609,interfaz_sistema,DEF Boost Bonus,Bonificación de aumento de DEF,Bono DEF,Etiqueta corta para bonificación
+005420,CLD-005610,interfaz_sistema,DEF Boost Bonus 2,Bonificación de mejora de DEF 2,Bono DEF 2,Etiqueta corta para bonificación
+005421,CLD-005611,interfaz_sistema,DEF Boost Bonus 3,Bonificación de mejora de DEF 3,Bono DEF 3,Etiqueta corta para bonificación
+005422,CLD-005612,interfaz_sistema,Mana Boost Bonus,Bonificación de aumento de maná,Bono maná,Etiqueta corta para bonificación
+005423,CLD-005613,interfaz_sistema,Mana Boost Bonus 2,Bonificación de aumento de maná 2,Bono maná 2,Etiqueta corta para bonificación
+005424,CLD-005614,interfaz_sistema,Mana Boost Bonus 3,Bonificación de aumento de maná 3,Bono maná 3,Etiqueta corta para bonificación
+005425,CLD-005615,interfaz_sistema,HP Boost Bonus,Bonificación de aumento de HP,Bono HP,Etiqueta corta para bonificación
+005426,CLD-005616,interfaz_sistema,HP Boost Bonus 2,Bonificación de aumento de HP 2,Bono HP 2,Etiqueta corta para bonificación
+005427,CLD-005617,interfaz_sistema,HP Boost Bonus 3,Bonificación de aumento de HP 3,Bono HP 3,Etiqueta corta para bonificación
+005450,CLD-005640,interfaz_sistema,　Mana 　　     　Job　　　      ⑧　　　　   ⑳,　Maná 　　 　Trabajo　　　 ⑧　　　　 ⑳,　Maná 　　 　Clase　　　 ⑧　　　　 ⑳,Job de interfaz de clase
+005521,CLD-005711,interfaz_sistema,Equipped. Really sell?,Equipado. ¿De verdad lo venden?,Equipado. ¿Seguro que quieres venderlo?,"Quién vende es el jugador, no vendedor en plural"
+005534,CLD-005724,interfaz_sistema,For regulars,Para clientes habituales,Para habituales,Acortar rótulo
+005545,CLD-005735,interfaz_sistema,"⑪Confirm
+⑩Return","⑪ Confirmar
+⑩ Devolver","⑪ Confirmar
+⑩ Volver",Return es volver
+005549,CLD-005739,interfaz_sistema,"⑪Confirm
+⑩Return","⑪ Confirmar
+⑩ Devolver","⑪ Confirmar
+⑩ Volver",Return es volver
+005550,CLD-005740,interfaz_sistema,Select character art and gender.,Selecciona el estilo artístico y el género del personaje.,Selecciona el aspecto y el género del personaje.,Estilo no es estilo artístico en editor de personajes
+005551,CLD-005741,interfaz_sistema,"⑪Confirm
+⑩Return","⑪ Confirmar
+⑩ Devolver","⑪ Confirmar
+⑩ Volver",Return es volver
+005552,CLD-005742,interfaz_sistema,Select character name.,Seleccione el nombre del personaje.,Selecciona el nombre del personaje.,Tuteo uniforme
+005553,CLD-005743,interfaz_sistema,Select conversation pattern.,Seleccione el patrón de conversación.,Selecciona el patrón de conversación.,Tuteo uniforme
+005554,CLD-005744,interfaz_sistema,Select boss name.,Seleccione el nombre del jefe.,Selecciona el nombre del jefe.,Tuteo uniforme
+005561,CLD-005751,interfaz_sistema,Select boss form and color.,Seleccione la forma y el color del jefe.,Selecciona la forma y el color del jefe.,Tuteo uniforme
+005566,CLD-005756,interfaz_sistema,Select character to edit.,Seleccione el personaje que desea editar.,Selecciona el personaje que quieres editar.,Tuteo uniforme
+005567,CLD-005757,interfaz_sistema,"⑪Confirm
+⑩Return","⑪ Confirmar
+⑩ Devolver","⑪ Confirmar
+⑩ Volver",Return es volver
+005579,CLD-005769,interfaz_sistema,Select the name of the new boss.,Seleccione el nombre del nuevo jefe.,Selecciona el nombre del nuevo jefe.,Tuteo uniforme
+005582,CLD-005772,interfaz_sistema,Input the second line.,Introduzca la segunda línea.,Introduce la segunda línea.,Tuteo uniforme
+005583,CLD-005773,interfaz_sistema,Input the third line.,Introduzca la tercera línea.,Introduce la tercera línea.,Tuteo uniforme
+005592,CLD-005782,interfaz_sistema,Select character to delete.,Seleccione el personaje que desea eliminar.,Selecciona el personaje que quieres eliminar.,Tuteo uniforme
+005593,CLD-005783,interfaz_sistema,"Really delete %s?
+Deletions are permanent!","¿De verdad borraste %s?
+
+¡Las eliminaciones son permanentes!","¿Eliminar a %s?
+¡No se puede deshacer!",Corregir tiempo verbal y doble salto de línea sin perder %s
+005606,CLD-005796,interfaz_sistema,"%s's edit data.
+Play time %d:%02d:%02d","Datos de edición de %s.
+Tiempo de reproducción %d:%02d:%02d","Datos de edición de %s.
+Tiempo jugado %d:%02d:%02d",Play time no es tiempo de reproducción
+005634,CLD-005824,interfaz_sistema,Bring up main character graphic and copy.,Muestra el gráfico del personaje principal y el texto.,Muestra el gráfico del personaje principal y cópialo.,Copy no equivale a texto
+005635,CLD-005825,interfaz_sistema,Save graphic to edit data.,Guarda el gráfico para editar los datos.,Guarda el gráfico en los datos de edición.,Construcción para guardar gráfico
+005636,CLD-005826,interfaz_sistema,Load graphic in edit data.,Cargar gráfico en editar datos.,Carga el gráfico desde los datos de edición.,Construcción para cargar gráfico
+005653,CLD-005843,interfaz_sistema,Select new color.,Seleccione un nuevo color.,Selecciona un nuevo color.,Tuteo uniforme
+005654,CLD-005844,interfaz_sistema,"⑪Confirm
+⑩Return
+⑬Default color","⑪ Confirmar
+⑩ Devolver
+⑬ Color predeterminado","⑪ Confirmar
+⑩ Volver
+⑬ Color predeterminado",Return es volver
+005657,CLD-005847,interfaz_sistema,STAGE CLEAR!,¡ESCENARIO DESPEJADO!,¡FASE SUPERADA!,STAGE CLEAR es fase superada
+005687,CLD-005877,interfaz_sistema,SFX Volume,Volumen de efectos de sonido,Vol. efectos,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+005688,CLD-005878,interfaz_sistema,BGM Volume,Volumen de música de fondo,Vol. música,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+005689,CLD-005879,interfaz_sistema,BGM Type,Tipo de música de fondo,Tipo música,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+005690,CLD-005880,interfaz_sistema,Key Config,Configuración clave,Controles,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+005691,CLD-005881,interfaz_sistema,Changes volume of sound effects.,Cambia el volumen de los efectos de sonido.,Ajusta el volumen de los efectos.,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+005692,CLD-005882,interfaz_sistema,Changes volume of BGM.,Cambia el volumen de la música de fondo.,Ajusta el volumen de la música.,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+005693,CLD-005883,interfaz_sistema,Changes BGM type (Real/Retro),Cambia el tipo de música de fondo (real/retro),Elige música real o retro.,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+005694,CLD-005884,interfaz_sistema,Changes button configuration. (Switches screen),Cambia la configuración de los botones. (Cambia de pantalla),Configura los botones.,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+005706,CLD-005896,interfaz_sistema,Press the button to configure.,Pulse el botón para configurar.,Pulsa el botón para configurar.,Tuteo uniforme
+005708,CLD-005898,interfaz_sistema,End key config.,Fin de la configuración de teclas.,Salir de la configuración de botones.,Key config corresponde a configuración de botones
+005709,CLD-005899,interfaz_sistema,Show decimal points for damage　　　　　　　,Mostrar decimales para el daño,Decimales de daño,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+005711,CLD-005901,interfaz_sistema,　Under 1 ON,Menos de 1 encendido,Menos de 1: SÍ,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+005712,CLD-005902,interfaz_sistema, Under 10 ON,Menos de 10 años,Menos de 10: SÍ,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+005714,CLD-005904,interfaz_sistema,Toggles the display of decimal points in damage.,Activa o desactiva la visualización de los decimales en los daños.,Muestra decimales en el daño.,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+005715,CLD-005905,interfaz_sistema,Magic Circle effects,Efectos del Círculo mágico,Efectos círculo,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+005716,CLD-005906,interfaz_sistema,Toggles the display of effects for Magic Circle.,Activa o desactiva la visualización de efectos para Magic Circle.,Muestra los efectos del círculo mágico.,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+005717,CLD-005907,interfaz_sistema,Screenshot,Captura de pantalla,Capturas,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+005718,CLD-005908,interfaz_sistema,Toggles the button to take screenshots,Activa o desactiva el botón para tomar capturas de pantalla.,Activa el botón para hacer capturas.,Conciliación de QA de capturas: diálogo o etiqueta verificados contra el original inglés
+005724,CLD-005914,interfaz_sistema,Wireless room list,Lista de habitaciones con conexión inalámbrica,Lista de salas inalámbricas,"Room es sala de conexión, no habitación"
+005752,CLD-005942,interfaz_sistema,Select job to change to.,Seleccione el puesto al que desea cambiar.,Selecciona la nueva clase.,Job es clase en selección
+005764,CLD-005954,interfaz_sistema,"Cannot read yet.
+Defeat enemies to unlock.","Aún no puede leer.
+
+Derrota a los enemigos para desbloquear.","Aún no se puede leer.
+Derrota a enemigos para desbloquearlo.",Mensaje de enciclopedia e indicación impersonal
+005778,CLD-005968,interfaz_sistema,"Item drop rate
+","Tasa de aparición de objetos
+","Prob. de objetos
+",Etiqueta corta del HUD; conservar EOL
+005782,CLD-005972,interfaz_sistema,"Item drop rate　　%3d
+","Tasa de aparición de objetos: %3d
+","Prob. de objetos %3d
+",Etiqueta compacta con marcador
+005783,CLD-005973,interfaz_sistema,Rare title rate　　%3d%s,Tasa de títulos raros　　%3d%s,Prob. título raro %3d%s,Etiqueta compacta con marcadores
+005802,CLD-005992,interfaz_sistema,%s people in Magic Circle used %s!,%s personas en Magic Circle usaron %s!,¡%s personajes del círculo mágico usaron %s!,Magic Circle es círculo mágico
+005803,CLD-005993,interfaz_sistema,Insufficient floor level...,Nivel de piso insuficiente...,Nivel de planta insuficiente...,Floor de mazmorra es planta
+005804,CLD-005994,interfaz_sistema,Enemy level in next floor dropped to %s!,¡El nivel de los enemigos en el siguiente piso ha bajado a %s!,¡Nivel de enemigos de la próxima planta: %s!,Floor de mazmorra es planta
+005813,CLD-006003,interfaz_sistema,Gamble Merchant LV.,Comerciante de apuestas LV.,Mercader apostador NV.,Terminología contextual
+005838,CLD-006028,interfaz_sistema,Pot Pie Lover!,¡Amante de los pasteles de carne!,¡Amante del pastel de carne!,"Pot pie singular, etiqueta"
+005898,CLD-006143,objetos_artefactos,Sub character HP +4 for free.,Puntos de vida de personaje secundario +4 gratis.,Puntos de vida de personaje de apoyo +4 gratis.,Glosario: Sub Character = personaje de apoyo
+005900,CLD-006145,objetos_artefactos,Sub character HP +10 for free.,Puntos de vida de personaje secundario +10 gratis.,Puntos de vida de personaje de apoyo +10 gratis.,Glosario: Sub Character = personaje de apoyo
+005902,CLD-006147,objetos_artefactos,Sub character HP +18 for free.,Puntos de vida de personaje secundario +18 gratis.,Puntos de vida de personaje de apoyo +18 gratis.,Glosario: Sub Character = personaje de apoyo
+005904,CLD-006149,objetos_artefactos,Sub character HP +28 for free.,Personaje secundario +28 HP gratis.,personaje de apoyo +28 HP gratis.,Glosario: Sub Character = personaje de apoyo
+005906,CLD-006151,objetos_artefactos,Sub character HP +40 for free.,Puntos de vida adicionales para personajes secundarios: +40 gratis.,Puntos de vida adicionales para personajes de apoyo: +40 gratis.,Glosario: Sub Character = personaje de apoyo
+005908,CLD-006153,objetos_artefactos,Sub character HP +15 for 3 Mana.,Personaje secundario +15 PV por 3 de maná.,personaje de apoyo +15 PV por 3 de maná.,Glosario: Sub Character = personaje de apoyo
+005910,CLD-006155,objetos_artefactos,Sub character HP +30 for 10 Mana.,Personaje secundario +30 PV por 10 de Maná.,personaje de apoyo +30 PV por 10 de Maná.,Glosario: Sub Character = personaje de apoyo
+005912,CLD-006157,objetos_artefactos,Sub character HP +50 for 20 Mana.,Personaje secundario +50 PV por 20 de Maná.,personaje de apoyo +50 PV por 20 de Maná.,Glosario: Sub Character = personaje de apoyo
+005914,CLD-006159,objetos_artefactos,Sub character HP +70 for 30 Mana.,Personaje secundario +70 PV por 30 de Maná.,personaje de apoyo +70 PV por 30 de Maná.,Glosario: Sub Character = personaje de apoyo
+005916,CLD-006161,objetos_artefactos,Sub character HP +90 for 40 Mana.,Personaje secundario +90 PV por 40 de Maná.,personaje de apoyo +90 PV por 40 de Maná.,Glosario: Sub Character = personaje de apoyo
+006114,CLD-006353,objetos_artefactos,Distributes 25% of damage taken onto sub characters.,Distribuye el 25% del daño recibido entre los personajes secundarios.,Distribuye el 25% del daño recibido entre los personajes de apoyo.,Glosario: Sub Character = personaje de apoyo
+006116,CLD-006355,objetos_artefactos,Distributes 50% of damage taken onto sub characters.,Distribuye el 50% del daño recibido entre los personajes secundarios.,Distribuye el 50% del daño recibido entre los personajes de apoyo.,Glosario: Sub Character = personaje de apoyo
+006118,CLD-006357,objetos_artefactos,Distributes 100% of damage taken onto sub characters.,Distribuye el 100% del daño recibido entre los personajes secundarios.,Distribuye el 100% del daño recibido entre los personajes de apoyo.,Glosario: Sub Character = personaje de apoyo
+006200,CLD-006430,objetos_armaduras,Cool,Fresco,Frío,"Cool es un hechizo de hielo, no adjetivo fresco"
+007519,CLD-007750,efectos,闘志ボーナス1,Bonificación de espíritu de lucha 1,Bono de espíritu de lucha 1,Etiqueta de efecto
+007520,CLD-007751,efectos,守護不要,Proteger y no,No requiere protección,Traducción de 守護不要
+007522,CLD-007753,efectos,英知不要,Yingzhi no quiere,No requiere sabiduría,Traducción de 英知不要
+007550,CLD-007777,efectos,剣防ぎ,Defensa con espada,Protección contra espadas,Etiqueta de resistencia
+007553,CLD-007780,efectos,突刺耐性+2,Resistencia al empuje +2,Resistencia a perforación +2,Resistencia de daño punzante
+007555,CLD-007782,efectos,打撃耐性+2,Resistencia cuerpo a cuerpo +2,Resistencia a golpes +2,Resistencia contundente
+007556,CLD-007783,efectos,炎防ぎ,Protección contra incendios,Protección contra fuego,"炎 es fuego, no incendio urbano"
+007560,CLD-007787,efectos,心防ぎ,Protección del corazón,Protección mental,心 se refiere a protección del espíritu
+007563,CLD-007790,efectos,ブレイク発生+3,ocurrencia de ruptura +3,Probabilidad de ruptura +3,発生 indica probabilidad de evento
+007570,CLD-007795,efectos,悪趣味,Mal sabor,Mal gusto,悪趣味 significa mal gusto
+007571,CLD-007796,efectos,闘志守護英知ボーナス2　ALL耐性-10,Espíritu de lucha Guardián Sabiduría Bonificación 2: TODA Resistencia -10,"Bono 2 de espíritu, protección y sabiduría; resistencias -10",Rectificar descripción compuesta del efecto
+007575,CLD-007799,efectos,ALL耐性+5,TODA la resistencia +5,Todas las resistencias +5,Resistencias elementales
+007576,CLD-007800,efectos,捨て身,Desesperado,A la desesperada,捨て身 es exponerse sin reservas
+007577,CLD-007801,efectos,ATK+10　速度+10　ALL耐性-50,"ATK +10, Velocidad +10, Todas las resistencias -50","ATK +10, velocidad +10, resistencias -50",Texto de efecto compacto
+007587,CLD-007808,efectos,ATK+5　クリティカル＆ブレイク発生+10,"ATK +5, Golpe crítico y probabilidad de ruptura +10","ATK +5, prob. crítico y ruptura +10",Probabilidad en estadísticas
+007604,CLD-007825,habilidades_magia,Cool,Fresco,Frío,Cool como habilidad de hielo
+007606,CLD-007827,habilidades_magia,I. Storm,Yo. Tormenta,Tormenta de hielo,"I. Storm, nombre abreviado de Ice Storm"
+007612,CLD-007833,habilidades_magia,Time Cool,Tiempo fresco,Tiempo de enfriamiento,Cool no significa fresco en nombre de efecto
+007629,CLD-007850,habilidades_magia,Cure status effects on self.,Efectos del estado de curación en uno mismo.,Cura tus estados alterados.,Status effects no son estados de curación
+007658,CLD-007879,habilidades_magia,S) W Slash,S) Barra inclinada W,S) Corte W,"W Slash es técnica de corte, no barra inclinada"
+007660,CLD-007881,habilidades_magia,A) Swing,A) Columpio,A) Barrido,Swing de arma no es columpio
+007670,CLD-007891,habilidades_magia,A) S Slash,A) Barra inclinada,A) Corte S,Slash no es barra inclinada en ataque
+007674,CLD-007896,habilidades_magia,G Get,G Obtener,Obtener G,Orden natural de habilidad monetaria
+007707,CLD-007929,circulos_magicos,Dualcast,Transmisión dual,Doble conjuro,Dualcast es lanzamiento doble
+007722,CLD-007943,circulos_magicos,Dark Tie,Corbata oscura,Vínculo oscuro,"Tie es vínculo en nombre de círculo, no corbata"
+007780,CLD-008001,circulos_magicos,Job,Trabajo,Clase,"Job en nombre de Círculo mágico, nomenclatura mecánica"
+008269,CLD-008491,monstruos,Mask,Mascarilla,Máscara,"Máscara de personaje/elemento, no mascarilla sanitaria"
+008280,CLD-F-MONSTER-0126-nombre,monstruos,仮面,mascarilla,Máscara,"Máscara de personaje/elemento, no mascarilla sanitaria"
+008321,CLD-008522,monstruos,彼にコウタイの文字は無い。ゼンシンあるのみ！,"No tiene ningún concepto de ""Koutai"" (un juego de palabras con ""Koutai"" y ""Koutai""). Sólo tiene ""Zenshin"" (un juego de palabras con ""Zenshin"" y ""Zenshin"").",No sabe lo que es retirarse: ¡solo avanzar!,Juego de palabras 後退/前進 del original japonés
+008322,CLD-008523,monstruos,彼にコウタイの文字は無い。ゼンシンあるのみ！,"No tiene ningún concepto de ""Koutai"" (un juego de palabras con ""Koutai"" y ""Koutai""). Sólo tiene ""Zenshin"" (un juego de palabras con ""Zenshin"" y ""Zenshin"").",No sabe lo que es retirarse: ¡solo avanzar!,Juego de palabras 後退/前進 del original japonés
+008325,CLD-008526,monstruos,わがショウガイにイッペンのくいなし！,¡No me arrepiento en absoluto de mi discapacidad!,¡No me arrepiento de nada en mi vida!,"生涯 es vida, no discapacidad; referencia narrativa"
+008326,CLD-008527,monstruos,わがショウガイにイッペンのくいなし！,¡No me arrepiento en absoluto de mi discapacidad!,¡No me arrepiento de nada en mi vida!,"生涯 es vida, no discapacidad"
+008327,CLD-008528,monstruos,炎出るブロック,Bloque emisor de llama,Bloque emisor de fuego,Normalizar nombre de elemento japonés de terreno
+008328,CLD-008529,monstruos,炎出るブロック,Bloque emisor de llama,Bloque emisor de fuego,Normalizar nombre de elemento japonés de terreno
+008329,CLD-008530,monstruos,炎出るブロック低,Bloques de bajo nivel que emiten llamas,Bloque emisor de fuego (bajo),Normalizar nombre de elemento japonés de terreno
+008330,CLD-008531,monstruos,炎出るブロック低,Bloques de bajo nivel que emiten llamas,Bloque emisor de fuego (bajo),Normalizar nombre de elemento japonés de terreno
+008331,CLD-008532,monstruos,炎出るブロック低,Bloques de bajo nivel que emiten llamas,Bloque emisor de fuego (bajo),Normalizar nombre de elemento japonés de terreno
+008332,CLD-008533,monstruos,炎出るブロック高,Bloque de gran altura con llamas,Bloque emisor de fuego (alto),Normalizar nombre de elemento japonés de terreno
+008333,CLD-008534,monstruos,炎出るブロック高,Bloque de gran altura con llamas,Bloque emisor de fuego (alto),Normalizar nombre de elemento japonés de terreno
+008334,CLD-008535,monstruos,炎出るブロック高,Bloque de gran altura con llamas,Bloque emisor de fuego (alto),Normalizar nombre de elemento japonés de terreno
+008335,CLD-008536,monstruos,炎出るブロック,Bloque emisor de llama,Bloque emisor de fuego,Normalizar nombre de elemento japonés de terreno
+008336,CLD-008537,monstruos,氷出るブロック,Bloques que producen hielo,Bloque emisor de hielo,Normalizar nombre de elemento japonés de terreno
+008337,CLD-008538,monstruos,氷出るブロック,Bloques que producen hielo,Bloque emisor de hielo,Normalizar nombre de elemento japonés de terreno
+008338,CLD-008539,monstruos,氷出るブロック,Bloques que producen hielo,Bloque emisor de hielo,Normalizar nombre de elemento japonés de terreno
+008339,CLD-008540,monstruos,氷出るブロック低,bloques de baja producción de hielo,Bloque emisor de hielo (bajo),Normalizar nombre de elemento japonés de terreno
+008340,CLD-008541,monstruos,氷出るブロック低,bloques de baja producción de hielo,Bloque emisor de hielo (bajo),Normalizar nombre de elemento japonés de terreno
+008341,CLD-008542,monstruos,氷出るブロック低,bloques de baja producción de hielo,Bloque emisor de hielo (bajo),Normalizar nombre de elemento japonés de terreno
+008342,CLD-008543,monstruos,氷出るブロック高,Altura del bloque productor de hielo,Bloque emisor de hielo (alto),Normalizar nombre de elemento japonés de terreno
+008343,CLD-008544,monstruos,氷出るブロック高,Altura del bloque productor de hielo,Bloque emisor de hielo (alto),Normalizar nombre de elemento japonés de terreno
+008344,CLD-008545,monstruos,氷出るブロック高,Altura del bloque productor de hielo,Bloque emisor de hielo (alto),Normalizar nombre de elemento japonés de terreno
+008345,CLD-008546,monstruos,氷出るブロック,Bloques que producen hielo,Bloque emisor de hielo,Normalizar nombre de elemento japonés de terreno
+008357,CLD-F-MONSTER-0168-nombre,monstruos,仮面,mascarilla,Máscara,"Máscara de personaje/elemento, no mascarilla sanitaria"
+008510,CLD-008767,atributos_terreno,(拠点用）通禁止,(Para uso básico) No se permite la entrada,(Para la base) Paso prohibido,"拠点 es base, no básico"
+008576,CLD-008821,atributos_terreno,荒野レンガ,Ladrillos de la naturaleza salvaje,Ladrillos del páramo,Normalizar nombre de elemento japonés de terreno
+008577,CLD-008822,atributos_terreno,荒野レンガ,Ladrillos de la naturaleza salvaje,Ladrillos del páramo,Normalizar nombre de elemento japonés de terreno
+008578,CLD-008823,atributos_terreno,荒野レンガ,Ladrillos de la naturaleza salvaje,Ladrillos del páramo,Normalizar nombre de elemento japonés de terreno
+008579,CLD-008824,atributos_terreno,荒野レンガ,Ladrillos de la naturaleza salvaje,Ladrillos del páramo,Normalizar nombre de elemento japonés de terreno
+008617,CLD-008862,atributos_terreno,研究所床,Instituto de Investigación Bed,Suelo del laboratorio,"研究所床, no Bed"
+008687,CLD-008925,atributos_terreno,右いす,Silla para diestros,Silla derecha,"右いす es silla de la derecha, no para diestros"
+008711,CLD-008940,atributos_terreno,転移の扉,Puerta de transferencia,Puerta de teletransporte,"転移の扉, correspondencia textual de traslado"
+008937,CLD-F-UP_MONSTER-0127-nombre_monstruo,monstruos_auxiliares,仮面,mascarilla,Máscara,"Máscara de personaje/elemento, no mascarilla sanitaria"
+008938,CLD-F-UP_MONSTER-0128-nombre_monstruo,monstruos_auxiliares,仮面,mascarilla,Máscara,"Máscara de personaje/elemento, no mascarilla sanitaria"
+008939,CLD-F-UP_MONSTER-0129-nombre_monstruo,monstruos_auxiliares,仮面,mascarilla,Máscara,"Máscara de personaje/elemento, no mascarilla sanitaria"
+008940,CLD-F-UP_MONSTER-0130-nombre_monstruo,monstruos_auxiliares,仮面,mascarilla,Máscara,"Máscara de personaje/elemento, no mascarilla sanitaria"
+008941,CLD-F-UP_MONSTER-0131-nombre_monstruo,monstruos_auxiliares,仮面,mascarilla,Máscara,"Máscara de personaje/elemento, no mascarilla sanitaria"
+008942,CLD-F-UP_MONSTER-0132-nombre_monstruo,monstruos_auxiliares,仮面,mascarilla,Máscara,"Máscara de personaje/elemento, no mascarilla sanitaria"
+008966,CLD-F-UP_MONSTER-0156-nombre_monstruo,monstruos_auxiliares,仮面,mascarilla,Máscara,"Máscara de personaje/elemento, no mascarilla sanitaria"
+009017,CLD-009232,objetos_armas,Claymore,Casa antigua,Espadón,Claymore es un arma
+009021,CLD-009236,objetos_armas,Flamberge,Flamengue,Flamberge,Nombre específico de espada; traducción anterior incorrecta
+009025,CLD-009240,objetos_armas,Nemesis,Justicia,Némesis,Nombre propio de arma no significa justicia
+009027,CLD-009242,objetos_armas,Dragnade,Estirado,Dragnade,Nombre de arma inventado; no significa estirado
+009036,CLD-009251,objetos_armas,Iron Club,Club de Hierro,Maza de hierro,Club como arma contundente
+009037,CLD-009252,objetos_armas,Ogre Club,Club de ogros,Maza de ogro,Club como arma contundente
+009038,CLD-009253,objetos_armas,Danger Club,Club del Peligro,Maza peligrosa,Club como arma contundente
+009042,CLD-009257,objetos_armas,Dark Club,Club oscuro,Maza oscura,Club como arma contundente
+009043,CLD-009258,objetos_armas,Kaiser,Emperador,Kaiser,Nombre propio de arma
+009057,CLD-009272,objetos_armas,Strength Rod,Barra de refuerzo,Vara de fuerza,"Strength es fuerza, no refuerzo"

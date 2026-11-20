@@ -570,7 +570,7 @@ HABLANTE NO VERIFICADO: ¿Qué quieres saber de los Círculos mágicos?
   OPCIÓN: Artefacto
   OPCIÓN: Casilla de magia/habilidad
   OPCIÓN: Ampliación
-  OPCIÓN: Espacio fijo
+  OPCIÓN: Casilla fija
   OPCIÓN: Volver
 
 HABLANTE NO VERIFICADO: Con este hechizo, un personaje de apoyo anima y fortalece al personaje principal.
@@ -591,7 +591,7 @@ HABLANTE NO VERIFICADO: Cuando un personaje de apoyo cae, el artefacto que habí
 
 HABLANTE NO VERIFICADO: Puedes colocar artefactos en las casillas para artefactos.
 
-HABLANTE NO VERIFICADO: Los personajes secundarios consumirán maná para activar varios artefactos.
+HABLANTE NO VERIFICADO: Los personajes de apoyo consumirán maná para activar varios artefactos.
 
 HABLANTE NO VERIFICADO: Los artefactos no pueden activarse sin un camino que los conecte.
 
@@ -609,7 +609,7 @@ HABLANTE NO VERIFICADO: Si colocas un «Widen» en una casilla de magia/habilida
 
 HABLANTE NO VERIFICADO: Algunas casillas fijas vienen predeterminadas en el Círculo mágico.
 
-HABLANTE NO VERIFICADO: Defender: Recibe el daño del personaje secundario. HP -X: reduce el HP de los personajes de apoyo en X%. Dispersión X: reparte X% del daño entre los personajes de apoyo.
+HABLANTE NO VERIFICADO: Defender: Recibe el daño del personaje de apoyo. HP -X: reduce el HP de los personajes de apoyo en X%. Dispersión X: reparte X% del daño entre los personajes de apoyo.
 
 HABLANTE NO VERIFICADO: Muerte doble: al morir, derriba a los demás. Maná xX: multiplica tu maná actual.
 
@@ -840,7 +840,7 @@ ESCENA | trialMapTalk.dsf | script_id=703 | bloque=753
 ======================================================================================
 [NOMBRE EN PANTALLA] Esqueleto moribundo
 
-Esqueleto moribundo: No necesitas derrotar a los enemigos en este Mapa fácil. Aunque, pensándolo bien, no es TAN fácil.
+Esqueleto moribundo: No necesitas derrotar a los enemigos en este mapa fácil. Aunque, pensándolo bien, tampoco es TAN fácil.
 
 ======================================================================================
 ESCENA | trialMapTalk.dsf | script_id=704 | bloque=754
@@ -861,14 +861,14 @@ ESCENA | trialMapTalk.dsf | script_id=706 | bloque=756
 ======================================================================================
 [NOMBRE EN PANTALLA] Esqueleto moribundo
 
-Esqueleto moribundo: Los ladrones de gatos que encontrarás aquí compraron demasiado y se quedaron sin G. ¿Son realmente ladrones? Nadie lo sabe.
+Esqueleto moribundo: Los ladrones felinos que encontrarás aquí compraron demasiado y se quedaron sin G. ¿Son realmente ladrones? Nadie lo sabe.
 
 ======================================================================================
 ESCENA | demo1001_00.dsf | script_id=100100 | bloque=758
 ======================================================================================
 [NOMBRE EN PANTALLA] Chica alegre
 
-Chica alegre: Así que esto es "Arcanus Cella". ¡La tierra prohibida! El tesoro que he buscado toda mi vida ¡Debe estar aquí!
+Chica alegre: Así que esto es Arcanus Cella, ¡la tierra prohibida! El tesoro que he buscado toda mi vida ¡Debe estar aquí!
 [NOMBRE EN PANTALLA] Joven
 
 Joven: ¡Ey! ¡Espérame, Pudding!
@@ -876,21 +876,21 @@ Joven: ¡Ey! ¡Espérame, Pudding!
 
 Joven frenético: ¡No te vayas así sin más! ¿Estás cansado? ¿Te duele algo? ¡Mírate! ¡Estás cubierto de barro!
 
-HABLANTE NO VERIFICADO: Te dije que no me siguieras, Souma. Eres una persona muy preocupadiza.
+HABLANTE NO VERIFICADO: Te dije que no me siguieras, Souma. ¡Siempre te preocupas por todo!
 
-HABLANTE NO VERIFICADO: ¿Puedes culparme? Tu mamá y tu papá Me pediste que te cuidara.
+HABLANTE NO VERIFICADO: ¿Y cómo no voy a hacerlo? Tus padres me pidieron que te cuidara.
 
-HABLANTE NO VERIFICADO: De no ser así, jamás habría faltado a mis clases para venir hasta aquí. Puddie, tú eres...
+HABLANTE NO VERIFICADO: Si no, nunca habría faltado a clase para venir hasta aquí. Puddie, tú eres...
 
-HABLANTE NO VERIFICADO: ¡Basta ya! Souma, cállate. Mamá y papá me dijeron que puedo hacer lo que quiera Lo quiero para los próximos seis meses.
+HABLANTE NO VERIFICADO: ¡Basta, Souma! ¡Cállate! Mamá y papá me dejaron hacer lo que quisiera durante los próximos seis meses.
 
-HABLANTE NO VERIFICADO: Seis meses... Correcto.
+HABLANTE NO VERIFICADO: Seis meses... Sí.
 
 HABLANTE NO VERIFICADO: Y además... Deja de llamarme Puddie. Ya somos adultos. En el lenguaje de los videojuegos, ¡eso significa 15!
 
 HABLANTE NO VERIFICADO: ¡Oh! ¡Esta puerta no está cerrada con llave!
 
-HABLANTE NO VERIFICADO: Un momento. ¿Dónde estamos? Vi un cartel de "Prohibido el paso" roto allí atrás. Realmente no creo que debamos entrar ahí.
+HABLANTE NO VERIFICADO: Un momento. ¿Dónde estamos? Vi un cartel roto de «Prohibido el paso» allí atrás. Realmente no creo que debamos entrar ahí.
 
 HABLANTE NO VERIFICADO: Hay un rumor de que "Arcanus Cella" Está por aquí cerca. Es demasiado peligroso.
 
@@ -904,13 +904,13 @@ HABLANTE NO VERIFICADO: ¡Ahhhh!
 
 HABLANTE NO VERIFICADO: ¡Se cayó!
 
-HABLANTE NO VERIFICADO: Puaj... ¡No tengo tiempo para pensar! ¡Puddie! ¡Voy para allá ahora mismo!
+HABLANTE NO VERIFICADO: Uf... ¡No tengo tiempo para pensar! ¡Puddie! ¡Voy para allá ahora mismo!
 
 ======================================================================================
 ESCENA | demo1001_01.dsf | script_id=100101 | bloque=760
 ======================================================================================
 
-HABLANTE NO VERIFICADO: Puaj...
+HABLANTE NO VERIFICADO: Uf...
 
 HABLANTE NO VERIFICADO: ¡Levántate, Souma!
 
@@ -920,15 +920,15 @@ HABLANTE NO VERIFICADO: ...¿Eh? Pensé que habíamos caído en un agujero.
 
 HABLANTE NO VERIFICADO: Pudding, ¿estás bien? ¿Te duele alguna parte? ¿La cara, el pecho, los ovarios?
 
-HABLANTE NO VERIFICADO: Al menos, no estoy muerto. Pero eso solo si este lugar no es el paraíso.
+HABLANTE NO VERIFICADO: Al menos, no estoy muerta. Pero eso solo si este lugar no es el paraíso.
 
 HABLANTE NO VERIFICADO: Uf. Parece que estamos bien. Realmente tienes que tener más cuidado. Veamos... ¿Cómo volvemos...?
 
-HABLANTE NO VERIFICADO: Dudo que podamos llegar hasta allí. Buscaré un camino por aquí mientras buscaban simultáneamente un tesoro.
+HABLANTE NO VERIFICADO: Dudo que podamos subir por ahí. Buscaré un camino por aquí mientras busco un tesoro.
 
 HABLANTE NO VERIFICADO: ¡No, no, no! ¡Esas prioridades me preocupan!
 
-HABLANTE NO VERIFICADO: ¡Yo iré! Puedes seguir mis huellas una vez que lo sepa ¡Es seguro! ¿Lo entiendes, Pudding?
+HABLANTE NO VERIFICADO: ¡Yo iré! Puedes seguir mis huellas cuando compruebe que no hay peligro. ¿Entendido, Pudding?
 
 HABLANTE NO VERIFICADO: Eso no es divertido.
 
@@ -938,7 +938,7 @@ HABLANTE NO VERIFICADO: Aunque yo sea un "Guerrero", Estoy completamente indefen
 
 HABLANTE NO VERIFICADO: Encontré esto. ¿Lo quieres? Métetelo por el culo.
 
-HABLANTE NO VERIFICADO: ¡Souma recibió un "palo de madera"!
+HABLANTE NO VERIFICADO: ¡Souma recibió un «Palo de madera»!
 
 HABLANTE NO VERIFICADO: ...Supongo que es mejor que nada.
 
@@ -958,7 +958,7 @@ HABLANTE NO VERIFICADO: De acuerdo. Esta vez te dejaré divertirte tú solo. Cam
 ESCENA | demo1001_01.dsf | script_id=100110 | bloque=762
 ======================================================================================
 
-HABLANTE NO VERIFICADO: Hay muchísima hierba aquí. El césped y los charcos pueden Realmente me ralentiza.
+HABLANTE NO VERIFICADO: Hay muchísima hierba aquí. El césped y los charcos pueden frenarme mucho.
 
 HABLANTE NO VERIFICADO: Tengo que saber qué estoy pisando para maximizar mi velocidad de movimiento.
 
@@ -974,7 +974,7 @@ ESCENA | demo1002_00.dsf | script_id=100200 | bloque=764
 
 HABLANTE NO VERIFICADO: ¿Eh? ¿Estamos... al aire libre? Pero no recuerdo haber subido escaleras ni haber escalado una colina...
 
-HABLANTE NO VERIFICADO: Es muy brillante. Caímos bastante bajo, ¿verdad? ¡El sol brilla y mira todos los árboles!
+HABLANTE NO VERIFICADO: ¡Qué luz hay aquí! Caímos bastante bajo, ¿verdad? ¡El sol brilla y mira todos los árboles!
 
 HABLANTE NO VERIFICADO: ¡Pudding, mira! ¡Ahí hay una casa!
 
@@ -1001,7 +1001,7 @@ HABLANTE NO VERIFICADO: ¡No hay nadie en casa!
 
 HABLANTE NO VERIFICADO: Yo... yo lo dejaré pasar esta vez. Yo, la talentosa hechicera Despina, No voy a dejar que esto me afecte. Ni un poquito.
 
-HABLANTE NO VERIFICADO: A-Mientras la casa esté bien, todo está bien. Esos tontos con suerte se salvaron de mí por los pelos.
+HABLANTE NO VERIFICADO: C-Con tal de que la casa esté bien, no pasa nada. Esos tontos con suerte se salvaron de mí por los pelos.
 
 HABLANTE NO VERIFICADO: Hmph. Finalmente se rindieron. Una decisión acertada.
 
@@ -1017,17 +1017,17 @@ HABLANTE NO VERIFICADO: Oh, hola. Debes vivir aquí. Soy Pudding y este es Souma
 
 HABLANTE NO VERIFICADO: ...
 
-HABLANTE NO VERIFICADO: Tengo... Despina.
+HABLANTE NO VERIFICADO: Y-Yo soy... Despina.
 
-HABLANTE NO VERIFICADO: ¡Eres una persona muy pesimista, ¿verdad?!
+HABLANTE NO VERIFICADO: ¡Vaya, qué sombría eres!
 
 HABLANTE NO VERIFICADO: ¡Oye! ¿Qué es esto? ¿Acabo de encontrar un tesoro?
 
-HABLANTE NO VERIFICADO: Ese es un conocido mío.
+HABLANTE NO VERIFICADO: Es mi familiar.
 
 HABLANTE NO VERIFICADO: ¿Familiares? Pensé que eran monstruos a los que los hechiceros dan órdenes. ¿Eso significa que eres un hechicero?
 
-HABLANTE NO VERIFICADO: Hechicera, pero... correcto.
+HABLANTE NO VERIFICADO: Hechicera, pero sí.
 
 HABLANTE NO VERIFICADO: ¿Puedo tener esto?
 
@@ -1093,14 +1093,14 @@ HABLANTE NO VERIFICADO: No necesitas buscar la salida. Podemos pensar en volver 
 ESCENA | demo1002_01.dsf | script_id=100202 | bloque=767
 ======================================================================================
 
-HABLANTE NO VERIFICADO: ... Irse. Deja de hablarme.
+HABLANTE NO VERIFICADO: ... Vete. Deja de hablarme.
 
 ======================================================================================
 ESCENA | demo1002_01.dsf | script_id=100203 | bloque=768
 ======================================================================================
 [NOMBRE EN PANTALLA] Tamako
 
-Tamako: Hola. Soy la conocida "Tamako". Espero que te hagas amiga de Despina.
+Tamako: Hola. Soy Tamako, un familiar. Espero que te hagas amiga de Despina.
 
 ======================================================================================
 ESCENA | demo1003_00.dsf | script_id=100300 | bloque=770
@@ -1127,7 +1127,7 @@ Crosstine: ¿Tú también estás de regreso? También estaba despidiendo a un am
 HABLANTE NO VERIFICADO: Así que esta es realmente la salida. Qué mundo tan extraño. Quiero ir a casa y ducharme.
 [NOMBRE EN PANTALLA] Crosstine
 
-Crosstine: Si es posible, ¿podría quedarse un rato? Hay alguien con quien quiero que todos ustedes se hagan amigos.
+Crosstine: Si es posible, ¿pueden quedarse un rato? Hay alguien con quien quiero que todos ustedes se hagan amigos.
 
 HABLANTE NO VERIFICADO: ¿Y esa persona es... humana?
 [NOMBRE EN PANTALLA] Crosstine
@@ -1151,7 +1151,7 @@ HABLANTE NO VERIFICADO: ¡Sabía que podía esperar esto de Arcanus Cella! ¡Es 
 HABLANTE NO VERIFICADO: Quiero irme a casa ahora mismo.
 [NOMBRE EN PANTALLA] Crosstine
 
-Crosstine: Hablando de diversión, Puedes usar el "Portal de Teletransporte" que está al lado de la fuente para ir a muchos mundos diferentes.
+Crosstine: Hablando de diversión, puedes usar la «Puerta de teletransporte» junto a la fuente para ir a muchos mundos diferentes.
 
 HABLANTE NO VERIFICADO: ¿Encontraré allí el tesoro de mis sueños?
 [NOMBRE EN PANTALLA] Crosstine
@@ -1166,9 +1166,9 @@ Crosstine: Puedes esperar mucho, mucho más.
 HABLANTE NO VERIFICADO: ¿Podrías dejar de intentar provocarla, por favor? O sea, en serio.
 [NOMBRE EN PANTALLA] Crosstine
 
-Crosstine: También hay un hechizo en algún lugar que puede convertir ¿Hay alguien interesado en el personaje principal...?
+Crosstine: También hay un hechizo en algún lugar que puede convertir a cualquiera en personaje principal...
 
-HABLANTE NO VERIFICADO: Oh, mira la hora. Tengo que prepararme para Bienvenido, amigo mío.
+HABLANTE NO VERIFICADO: Oh, mira la hora. Tengo que prepararme para recibir a mi amigo.
 [NOMBRE EN PANTALLA] Crosstine
 
 Crosstine: Oh, si vas a la "Puerta de Teletransporte", Toma esto. No olvides equiparlo.
@@ -1408,11 +1408,11 @@ ESCENA | demo1005_00.dsf | script_id=300513 | bloque=797
 
 HABLANTE NO VERIFICADO: "LV Up" Derrota a los enemigos para obtener EXP para todos los miembros activos. La experiencia acumulada se aplicará en la pantalla de resultados.
 
-HABLANTE NO VERIFICADO: Cómo subes de nivel depende de si el personaje es un personaje secundario o un personaje principal.
+HABLANTE NO VERIFICADO: Cómo subes de nivel depende de si el personaje es un personaje de apoyo o un personaje principal.
 
 HABLANTE NO VERIFICADO: "Sube de nivel como personaje principal." Obtendrás estadísticas que te convertirán en un mejor suplente. El personaje gana más puntos de vida y maná.
 
-HABLANTE NO VERIFICADO: "Sube de nivel como personaje secundario." Obtendrás estadísticas que te convertirán en un mejor jugador principal. El personaje gana más ATK y DEF.
+HABLANTE NO VERIFICADO: "Sube de nivel como personaje de apoyo." Obtendrás estadísticas que te convertirán en un mejor jugador principal. El personaje gana más ATK y DEF.
 
 HABLANTE NO VERIFICADO: En otras palabras, lo mejor es alternar los papeles para que cada personaje aproveche mejor su función.
 
@@ -1467,7 +1467,7 @@ HABLANTE NO VERIFICADO: ¿Círculo mágico?
 
 HABLANTE NO VERIFICADO: Ahora dame las gracias, ¡Tontos indignados!
 
-HABLANTE NO VERIFICADO: Este hechizo permite al "personaje principal" de la aventura para reunir las fortalezas de ¡"Personajes secundarios" para potenciar!
+HABLANTE NO VERIFICADO: Este hechizo permite al "personaje principal" de la aventura para reunir las fortalezas de ¡"personajes de apoyo" para potenciar!
 
 HABLANTE NO VERIFICADO: Todo lo que los "subpersonajes" necesitan hacer es ¡Pónganse aquí y animen al "personaje principal"!
 
@@ -1475,7 +1475,7 @@ HABLANTE NO VERIFICADO: Uno... ¿En qué se diferencia esto de lo habitual?
 
 HABLANTE NO VERIFICADO: Eres un imbécil de lo más inaceptable.
 
-HABLANTE NO VERIFICADO: Solo sale el personaje principal. Pero el daño en el personaje principal se transfiere al personaje secundario.
+HABLANTE NO VERIFICADO: Solo sale el personaje principal. Pero el daño en el personaje principal se transfiere al personaje de apoyo.
 
 HABLANTE NO VERIFICADO: ¡Ese es un hechizo perfecto para mí! ¡En serio!
 
@@ -1683,15 +1683,15 @@ ESCENA | demo1006_02.dsf | script_id=300622 | bloque=820
 
 Tsunpiyo: ¡Yo no te pedí que me ayudaras! ¡No te voy a dar las gracias en absoluto! Así que no te voy a contar nada bueno.
 
-HABLANTE NO VERIFICADO: Cuando subas de nivel, el "personaje principal" y el "personaje secundario" Subir de nivel de una manera completamente diferente.
+HABLANTE NO VERIFICADO: Cuando subas de nivel, el "personaje principal" y el "personaje de apoyo" Subir de nivel de una manera completamente diferente.
 
 HABLANTE NO VERIFICADO: Un "guerrero" que siempre sea el principal obtendrá HP y maná adicionales.
 
 HABLANTE NO VERIFICADO: El que se quedó más como "sub" Obtendrá ATK y DEF adicionales cuando se convierten en personajes principales.
 
-HABLANTE NO VERIFICADO: Para crear un buen personaje principal, tendrás que construirlos como un "personaje secundario" primero.
+HABLANTE NO VERIFICADO: Para crear un buen personaje principal, tendrás que construirlos como un "personaje de apoyo" primero.
 
-HABLANTE NO VERIFICADO: Para crear un buen personaje secundario, es mejor para subirlos de nivel como "personaje principal" para que puede obtener más HP y Maná.
+HABLANTE NO VERIFICADO: Para crear un buen personaje de apoyo, es mejor para subirlos de nivel como "personaje principal" para que puede obtener más HP y Maná.
 
 HABLANTE NO VERIFICADO: ¡N-no creas que te lo digo porque quiera!
 
@@ -1790,7 +1790,7 @@ HABLANTE NO VERIFICADO: Este es el Círculo mágico. O habla conmigo o Abrir la 
 
 HABLANTE NO VERIFICADO: No podrás modificar el Círculo mágico una vez que entres en las mazmorras.
 
-HABLANTE NO VERIFICADO: Los Círculos Mágicos se utilizan para potenciar el "personaje principal" mediante la acumulación todos los poderes de los "personajes secundarios".
+HABLANTE NO VERIFICADO: Los Círculos Mágicos se utilizan para potenciar el "personaje principal" mediante la acumulación todos los poderes de los "personajes de apoyo".
 
 HABLANTE NO VERIFICADO: El que está en el medio es el "personaje principal".
 
@@ -1806,7 +1806,7 @@ HABLANTE NO VERIFICADO: El espacio inferior no tiene ningún efecto. Ponlo aquí
 
 HABLANTE NO VERIFICADO: Hay momentos en que los espacios tienen efectos debilitantes como este. Piensa detenidamente dónde colocar los subwoofers.
 
-HABLANTE NO VERIFICADO: El papel de los "personajes secundarios" no es solo para proteger al "personaje principal".
+HABLANTE NO VERIFICADO: El papel de los "personajes de apoyo" no es solo para proteger al "personaje principal".
 
 HABLANTE NO VERIFICADO: Los "Subs" pueden consumir "Maná" para encender estas cosas llamadas "Artefactos."
 
@@ -1864,7 +1864,7 @@ HABLANTE NO VERIFICADO: Mmm... No parece que haya nada raro en la máscara. Qué
 ESCENA | demo1007_01.dsf | script_id=100704 | bloque=835
 ======================================================================================
 
-HABLANTE NO VERIFICADO: ¿Debería seguirla? Pero los "personajes secundarios" tienen quedarse aquí... Hm...
+HABLANTE NO VERIFICADO: ¿Debería seguirla? Pero los "personajes de apoyo" tienen quedarse aquí... Hm...
 
 ======================================================================================
 ESCENA | demo1007_01.dsf | script_id=100705 | bloque=836
@@ -2296,7 +2296,7 @@ HABLANTE NO VERIFICADO: El sonido definitivo de espada y escudo es como Pueden s
 ESCENA | demo1103_01.dsf | script_id=110302 | bloque=875
 ======================================================================================
 
-HABLANTE NO VERIFICADO: Me acabo de dar cuenta de esto ahora mismo, pero pero si Pudding se convierte en un "personaje secundario", ¿No se lastimará?
+HABLANTE NO VERIFICADO: Me acabo de dar cuenta de esto ahora mismo, pero pero si Pudding se convierte en un "personaje de apoyo", ¿No se lastimará?
 
 ======================================================================================
 ESCENA | demo1103_01.dsf | script_id=110304 | bloque=876
@@ -3510,7 +3510,7 @@ HABLANTE NO VERIFICADO: ¡Que alguien me deje morir!
 
 HABLANTE NO VERIFICADO: ¡Oh, no! ¡Tengo que detenerlo!
 
-HABLANTE NO VERIFICADO: Eh, hay algunas armas Me abastecí de...
+HABLANTE NO VERIFICADO: Eh, hay unas armas que tengo guardadas...
 
 HABLANTE NO VERIFICADO: ¡Quiero decir, no te mueras!
 
@@ -3547,13 +3547,13 @@ HABLANTE NO VERIFICADO: ¡Ahora puedes ir a una nueva mazmorra!
 ESCENA | demo1207_01.dsf | script_id=120701 | bloque=1004
 ======================================================================================
 
-HABLANTE NO VERIFICADO: Veo a un idiota. Un completo idiota.
+HABLANTE NO VERIFICADO: Veo a un idiota. Un idiota de remate.
 
 ======================================================================================
 ESCENA | demo1207_01.dsf | script_id=120702 | bloque=1005
 ======================================================================================
 
-HABLANTE NO VERIFICADO: Tengo que volverme más fuerte para poder proteger a Pudding. Ojalá alguien me enseñara nuevos pasos de baile.
+HABLANTE NO VERIFICADO: Tengo que volverme más fuerte para poder proteger a Pudding. Ojalá alguien me enseñara nuevas técnicas.
 
 ======================================================================================
 ESCENA | demo1207_01.dsf | script_id=120703 | bloque=1006
@@ -5352,7 +5352,7 @@ HABLANTE NO VERIFICADO: No es mentira. Si te unes al Círculo mágico, Puedes co
 HABLANTE NO VERIFICADO: Pudding, solo estás tratando de ¿Volver a conseguir más gente, eh?
 [NOMBRE EN PANTALLA] Asagi
 
-Asagi: Aunque yo pueda ser el "personaje principal", ¡Yo también me veré obligado a ser un "personaje secundario"!
+Asagi: Aunque yo pueda ser el "personaje principal", ¡Yo también me veré obligado a ser un "personaje de apoyo"!
 
 HABLANTE NO VERIFICADO: ¡Eso no es lo que es un verdadero personaje principal!
 
@@ -5384,13 +5384,13 @@ HABLANTE NO VERIFICADO: No me importa dejarla entrar en el Círculo mágico, per
 ESCENA | demo1502_01.dsf | script_id=150202 | bloque=1206
 ======================================================================================
 
-HABLANTE NO VERIFICADO: ¿Debería siquiera ser yo el "personaje principal"? En realidad, prefiero ser un "personaje secundario".
+HABLANTE NO VERIFICADO: ¿Debería siquiera ser yo el "personaje principal"? En realidad, prefiero ser un "personaje de apoyo".
 
 ======================================================================================
 ESCENA | demo1502_01.dsf | script_id=150203 | bloque=1207
 ======================================================================================
 
-HABLANTE NO VERIFICADO: Me encanta ser el "personaje secundario". Está en mi naturaleza apoyar a los demás.
+HABLANTE NO VERIFICADO: Me encanta ser el "personaje de apoyo". Está en mi naturaleza apoyar a los demás.
 
 ======================================================================================
 ESCENA | demo1502_01.dsf | script_id=150204 | bloque=1208
@@ -5620,7 +5620,7 @@ HABLANTE NO VERIFICADO: ...
 
 HABLANTE NO VERIFICADO: Logré superarlo gracias a todos. Ahora me toca a mí ayudar.
 
-HABLANTE NO VERIFICADO: Creo que puedo poner mi corazón en ser ¡Ahora es un "personaje secundario"! ¡Espérenme, chicos!
+HABLANTE NO VERIFICADO: Creo que puedo poner mi corazón en ser ¡Ahora es un "personaje de apoyo"! ¡Espérenme, chicos!
 
 HABLANTE NO VERIFICADO: ¡Hola, Asagi! ¡Lo hiciste genial! ¡Ahora sí que eres un verdadero protagonista! ¡Eres increíble y solo superado por mí!
 [NOMBRE EN PANTALLA] Asagi
@@ -6452,7 +6452,7 @@ HABLANTE NO VERIFICADO: ¡Princesa Dot!
 
 Princesa Dot: Puede que aún no tenga experiencia, pero debo rendir cuentas a quienes me apoyan. Por lo tanto, no puedo eludir mis obligaciones.
 
-HABLANTE NO VERIFICADO: Regresaré al reino. ¿Vendrás conmigo, Sherbet?
+HABLANTE NO VERIFICADO: Regresaré al reino. ¿Vendrás conmigo, ¿Sherbet?
 
 HABLANTE NO VERIFICADO: Esto no es una orden. Te lo pido como un favor.
 

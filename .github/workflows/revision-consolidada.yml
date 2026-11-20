@@ -1,0 +1,53 @@
+name: Aplicar y validar consolidacion linguistica Cladun ES
+on:
+  push:
+    branches: [revision-linguistica-consolidada-20261120]
+    paths:
+      - 'qa/plan_revision_consolidada_2026-11-20.csv'
+      - 'tools/aplicar_revision_consolidada.py'
+      - 'tools/ajustes_campos_es.py'
+      - 'tests/test_revision_consolidada.py'
+      - 'tests/test_ajustes_campos_es.py'
+      - '.github/workflows/revision-consolidada.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: revision-linguistica-consolidada-cladun
+  cancel-in-progress: false
+jobs:
+  consolidar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Dependencias de las pruebas graficas existentes
+        run: python -m pip install 'Pillow>=12,<14'
+      - name: Aplicar revisiones por ID con preimagen y guardar nuevas lecturas
+        run: python tools/aplicar_revision_consolidada.py --aplicar
+      - name: Verificar que no se hayan revertido correcciones anteriores
+        run: python -m unittest discover -s tests -p 'test_revision_consolidada.py' -v
+      - name: Ejecutar todas las pruebas de integridad y localizacion
+        run: |
+          python -m unittest discover -s tests -v
+          python tools/verificar_integridad.py --raiz .
+          python tools/verificar_borrador_es.py
+          python tools/cerrar_qa_linguistico.py
+          python tools/aplicar_revision_consolidada.py
+      - name: Publicar CSV TXT guiones e informe de QA sincronizados
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add traduccion/CLADUN_BORRADOR_ES.csv traduccion/CLADUN_BORRADOR_ES.txt traduccion/CLADUN_BORRADOR_BILINGUE_FAQ.txt
+          git add qa/correcciones_manuales.csv qa/INFORME_REVISION_CONSOLIDADA_2026-11-20.json
+          git add lectura/CLADUN_GUION_CON_HABLANTES_ES.txt lectura/CLADUN_LECTURA_TOTAL_CON_HABLANTES_ES.txt lectura/CLADUN_AUDITORIA_HABLANTES.csv lectura/CLADUN_RESUMEN_HABLANTES.json
+          git add lectura/CLADUN_GUION_RECONSTRUIDO_LECTURA_ES.txt lectura/CLADUN_GUION_RECONSTRUIDO_COTEJO_ES_EN.txt lectura/CLADUN_TODO_TEXTO_RECONSTRUIDO_ES_EN.txt lectura/CLADUN_MAPA_DE_DIALOGOS_RECONSTRUIDOS.csv lectura/CLADUN_ALERTAS_RECONSTRUCCION.csv lectura/CLADUN_RESUMEN_RECONSTRUCCION.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'fix(es): aplicar revision contextual consolidada sin alterar originales'
+            git push origin HEAD:revision-linguistica-consolidada-20261120
+          fi
