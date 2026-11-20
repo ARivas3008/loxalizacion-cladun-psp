@@ -1154,7 +1154,7 @@ IDS: CLD-000496 | órdenes 715-715
   OPCIÓN: Artefacto   [CLD-000500]
   OPCIÓN: Casilla de magia/habilidad   [CLD-000501]
   OPCIÓN: Ampliación   [CLD-000502]
-  OPCIÓN: Espacio fijo   [CLD-000503]
+  OPCIÓN: Casilla fija   [CLD-000503]
   OPCIÓN: Volver   [CLD-000504]
 
 HABLANTE NO VERIFICADO | CUADRO G00287 [sin_marcador_de_hablante_para_esta_caja]
@@ -1204,7 +1204,7 @@ EN: Artifacts can be placed in Artifact Spaces.
 IDS: CLD-000526, CLD-000527 | órdenes 776-777
 
 HABLANTE NO VERIFICADO | CUADRO G00296 [sin_marcador_de_hablante_para_esta_caja]
-ES: Los personajes secundarios consumirán maná para activar varios artefactos.
+ES: Los personajes de apoyo consumirán maná para activar varios artefactos.
 EN: Sub Characters will consume Mana to activate various Artifacts.
 IDS: CLD-000528, CLD-000529 | órdenes 779-780
 
@@ -1250,7 +1250,7 @@ EN: There are Fixed Spaces that have been set by default on the Magic Circle.
 IDS: CLD-000546, CLD-000547 | órdenes 817-818
 
 HABLANTE NO VERIFICADO | CUADRO G00305 [sin_marcador_de_hablante_para_esta_caja]
-ES: Defender: Recibe el daño del personaje secundario. HP -X: reduce el HP de los personajes de apoyo en X%. Dispersión X: reparte X% del daño entre los personajes de apoyo.
+ES: Defender: Recibe el daño del personaje de apoyo. HP -X: reduce el HP de los personajes de apoyo en X%. Dispersión X: reparte X% del daño entre los personajes de apoyo.
 EN: Defend: Takes sub character's damage. HP -X: HP -X% of sub characters. Scatter X: Disperses X% of damage to subs.
 IDS: CLD-000548, CLD-000549, CLD-000550 | órdenes 820-822
 
@@ -1736,7 +1736,7 @@ ESCENA | trialMapTalk.dsf | script_id=703 | bloque=753
 [NOMBRE EN PANTALLA] Esqueleto moribundo   (CLD-000782)
 
 Esqueleto moribundo | CUADRO G00423 [marcador_0x6E_inmediato]
-ES: No necesitas derrotar a los enemigos en este Mapa fácil. Aunque, pensándolo bien, no es TAN fácil.
+ES: No necesitas derrotar a los enemigos en este mapa fácil. Aunque, pensándolo bien, tampoco es TAN fácil.
 EN: You don't need to defeat the enemies on this easy map. Then again, it's not THAT easy.
 IDS: CLD-000783, CLD-000784 | órdenes 4-5
 
@@ -1766,7 +1766,7 @@ ESCENA | trialMapTalk.dsf | script_id=706 | bloque=756
 [NOMBRE EN PANTALLA] Esqueleto moribundo   (CLD-000792)
 
 Esqueleto moribundo | CUADRO G00429 [marcador_0x6E_inmediato]
-ES: Los ladrones de gatos que encontrarás aquí compraron demasiado y se quedaron sin G. ¿Son realmente ladrones? Nadie lo sabe.
+ES: Los ladrones felinos que encontrarás aquí compraron demasiado y se quedaron sin G. ¿Son realmente ladrones? Nadie lo sabe.
 EN: The Cat Burglars you can find here bought too much and are out of G. Are they really burglars? No one knows.
 IDS: CLD-000793, CLD-000794, CLD-000795 | órdenes 4-6
 
@@ -1776,7 +1776,7 @@ ESCENA | demo1001_00.dsf | script_id=100100 | bloque=758
 [NOMBRE EN PANTALLA] Chica alegre   (CLD-000796)
 
 Chica alegre | CUADRO G00431 [marcador_0x6E_inmediato]
-ES: Así que esto es "Arcanus Cella". ¡La tierra prohibida! El tesoro que he buscado toda mi vida ¡Debe estar aquí!
+ES: Así que esto es Arcanus Cella, ¡la tierra prohibida! El tesoro que he buscado toda mi vida ¡Debe estar aquí!
 EN: So this is "Arcanus Cella." The forbidden land! The treasure I've sought my whole life must be here!
 IDS: CLD-000797, CLD-000798, CLD-000799 | órdenes 154-156
 [NOMBRE EN PANTALLA] Joven   (CLD-000800)
@@ -1793,27 +1793,27 @@ EN: Don't just run off like that! Are you tired? Are you hurt? Look at you! You'
 IDS: CLD-000804, CLD-000805, CLD-000806 | órdenes 193-195
 
 HABLANTE NO VERIFICADO | CUADRO G00436 [sin_marcador_de_hablante_para_esta_caja]
-ES: Te dije que no me siguieras, Souma. Eres una persona muy preocupadiza.
+ES: Te dije que no me siguieras, Souma. ¡Siempre te preocupas por todo!
 EN: I told you not to follow me, Souma. You're such a worrywart.
 IDS: CLD-000807, CLD-000808, CLD-000809 | órdenes 206-208
 
 HABLANTE NO VERIFICADO | CUADRO G00437 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¿Puedes culparme? Tu mamá y tu papá Me pediste que te cuidara.
+ES: ¿Y cómo no voy a hacerlo? Tus padres me pidieron que te cuidara.
 EN: Can you blame me? Your mom and dad asked me to look after you.
 IDS: CLD-000810, CLD-000811, CLD-000812 | órdenes 214-216
 
 HABLANTE NO VERIFICADO | CUADRO G00438 [sin_marcador_de_hablante_para_esta_caja]
-ES: De no ser así, jamás habría faltado a mis clases para venir hasta aquí. Puddie, tú eres...
+ES: Si no, nunca habría faltado a clase para venir hasta aquí. Puddie, tú eres...
 EN: If not, I would never have skipped my lessons to come all the way here. Puddie, you're...
 IDS: CLD-000813, CLD-000814, CLD-000815 | órdenes 218-220
 
 HABLANTE NO VERIFICADO | CUADRO G00439 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Basta ya! Souma, cállate. Mamá y papá me dijeron que puedo hacer lo que quiera Lo quiero para los próximos seis meses.
+ES: ¡Basta, Souma! ¡Cállate! Mamá y papá me dejaron hacer lo que quisiera durante los próximos seis meses.
 EN: Stop it right there! Souma, just shut up. Mom and Dad told me that I get to do whatever I want for the next six months.
 IDS: CLD-000816, CLD-000817, CLD-000818 | órdenes 229-231
 
 HABLANTE NO VERIFICADO | CUADRO G00440 [sin_marcador_de_hablante_para_esta_caja]
-ES: Seis meses... Correcto.
+ES: Seis meses... Sí.
 EN: Six months... Right.
 IDS: CLD-000819 | órdenes 244-244
 
@@ -1828,7 +1828,7 @@ EN: Oh! This door isn't locked!
 IDS: CLD-000823, CLD-000824 | órdenes 276-277
 
 HABLANTE NO VERIFICADO | CUADRO G00443 [sin_marcador_de_hablante_para_esta_caja]
-ES: Un momento. ¿Dónde estamos? Vi un cartel de "Prohibido el paso" roto allí atrás. Realmente no creo que debamos entrar ahí.
+ES: Un momento. ¿Dónde estamos? Vi un cartel roto de «Prohibido el paso» allí atrás. Realmente no creo que debamos entrar ahí.
 EN: Wait a minute. Where are we? I saw a broken "Do Not Enter" sign back there. I really don't think we should go in there.
 IDS: CLD-000825, CLD-000826, CLD-000827 | órdenes 294-296
 
@@ -1863,7 +1863,7 @@ EN: She fell!
 IDS: CLD-000836 | órdenes 369-369
 
 HABLANTE NO VERIFICADO | CUADRO G00450 [sin_marcador_de_hablante_para_esta_caja]
-ES: Puaj... ¡No tengo tiempo para pensar! ¡Puddie! ¡Voy para allá ahora mismo!
+ES: Uf... ¡No tengo tiempo para pensar! ¡Puddie! ¡Voy para allá ahora mismo!
 EN: Ugh... I don't have any time to think! Puddie! I'm coming right now!
 IDS: CLD-000837, CLD-000838, CLD-000839 | órdenes 374-376
 
@@ -1872,7 +1872,7 @@ ESCENA | demo1001_01.dsf | script_id=100101 | bloque=760
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G00451 [sin_marcador_de_hablante_para_esta_caja]
-ES: Puaj...
+ES: Uf...
 EN: Ugh...
 IDS: CLD-000840 | órdenes 40-40
 
@@ -1897,7 +1897,7 @@ EN: Pudding, are you okay? Are you hurt anywhere? Face, chest, ovaries?
 IDS: CLD-000845, CLD-000846 | órdenes 132-133
 
 HABLANTE NO VERIFICADO | CUADRO G00456 [sin_marcador_de_hablante_para_esta_caja]
-ES: Al menos, no estoy muerto. Pero eso solo si este lugar no es el paraíso.
+ES: Al menos, no estoy muerta. Pero eso solo si este lugar no es el paraíso.
 EN: At the very least, I'm not dead. But that's only if this place isn't heaven.
 IDS: CLD-000847, CLD-000848 | órdenes 139-140
 
@@ -1907,7 +1907,7 @@ EN: Phew. Seems like we're okay. You really have to be more careful. Let's see..
 IDS: CLD-000849, CLD-000850, CLD-000851 | órdenes 146-148
 
 HABLANTE NO VERIFICADO | CUADRO G00458 [sin_marcador_de_hablante_para_esta_caja]
-ES: Dudo que podamos llegar hasta allí. Buscaré un camino por aquí mientras buscaban simultáneamente un tesoro.
+ES: Dudo que podamos subir por ahí. Buscaré un camino por aquí mientras busco un tesoro.
 EN: I doubt we can get up there. I'll look for a path around here while simultaneously looking for treasure.
 IDS: CLD-000852, CLD-000853, CLD-000854 | órdenes 165-167
 
@@ -1917,7 +1917,7 @@ EN: No, no, no! Those priorities worry me!
 IDS: CLD-000855 | órdenes 186-186
 
 HABLANTE NO VERIFICADO | CUADRO G00460 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Yo iré! Puedes seguir mis huellas una vez que lo sepa ¡Es seguro! ¿Lo entiendes, Pudding?
+ES: ¡Yo iré! Puedes seguir mis huellas cuando compruebe que no hay peligro. ¿Entendido, Pudding?
 EN: I'll go! You can follow my tracks once I know it's safe! You got that, Pudding?!
 IDS: CLD-000856, CLD-000857, CLD-000858 | órdenes 222-224
 
@@ -1942,7 +1942,7 @@ EN: I found this. Want it? Stick it up your butt.
 IDS: CLD-000865 | órdenes 253-253
 
 HABLANTE NO VERIFICADO | CUADRO G00465 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Souma recibió un "palo de madera"!
+ES: ¡Souma recibió un «Palo de madera»!
 EN: Souma got "Wooden Stick!"
 IDS: CLD-000867 | órdenes 258-258
 
@@ -1986,7 +1986,7 @@ ESCENA | demo1001_01.dsf | script_id=100110 | bloque=762
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G00473 [sin_marcador_de_hablante_para_esta_caja]
-ES: Hay muchísima hierba aquí. El césped y los charcos pueden Realmente me ralentiza.
+ES: Hay muchísima hierba aquí. El césped y los charcos pueden frenarme mucho.
 EN: There's so much grass here. Grass and puddles can really slow me down.
 IDS: CLD-000886, CLD-000887, CLD-000888 | órdenes 12-14
 
@@ -2014,7 +2014,7 @@ EN: Huh? Are we... outdoors? But I don't remember climbing stairs or going up a 
 IDS: CLD-000894, CLD-000895, CLD-000896 | órdenes 58-60
 
 HABLANTE NO VERIFICADO | CUADRO G00477 [sin_marcador_de_hablante_para_esta_caja]
-ES: Es muy brillante. Caímos bastante bajo, ¿verdad? ¡El sol brilla y mira todos los árboles!
+ES: ¡Qué luz hay aquí! Caímos bastante bajo, ¿verdad? ¡El sol brilla y mira todos los árboles!
 EN: It's so bright. We fell pretty far down, didn't we? The sun's bright and look at all the trees!
 IDS: CLD-000897, CLD-000898, CLD-000899 | órdenes 75-77
 
@@ -2077,7 +2077,7 @@ EN: I-I'll let it slide this time around. I, talented sorceress Despina, will no
 IDS: CLD-000924, CLD-000925, CLD-000926 | órdenes 313-315
 
 HABLANTE NO VERIFICADO | CUADRO G00492 [sin_marcador_de_hablante_para_esta_caja]
-ES: A-Mientras la casa esté bien, todo está bien. Esos tontos con suerte se salvaron de mí por los pelos.
+ES: C-Con tal de que la casa esté bien, no pasa nada. Esos tontos con suerte se salvaron de mí por los pelos.
 EN: A-As long as the house is fine, it's all right. Those lucky fools certainly escaped from me by a hair's breadth.
 IDS: CLD-000927, CLD-000928, CLD-000929 | órdenes 336-338
 
@@ -2117,12 +2117,12 @@ EN: ...
 IDS: CLD-000941 | órdenes 467-467
 
 HABLANTE NO VERIFICADO | CUADRO G00500 [sin_marcador_de_hablante_para_esta_caja]
-ES: Tengo... Despina.
+ES: Y-Yo soy... Despina.
 EN: I-I am... Despina.
 IDS: CLD-000942 | órdenes 473-473
 
 HABLANTE NO VERIFICADO | CUADRO G00501 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Eres una persona muy pesimista, ¿verdad?!
+ES: ¡Vaya, qué sombría eres!
 EN: You're a gloomy one, aren't you?!
 IDS: CLD-000943 | órdenes 479-479
 
@@ -2132,7 +2132,7 @@ EN: Hey! What is this?! Did I just find some treasure?!
 IDS: CLD-000944, CLD-000945 | órdenes 492-493
 
 HABLANTE NO VERIFICADO | CUADRO G00503 [sin_marcador_de_hablante_para_esta_caja]
-ES: Ese es un conocido mío.
+ES: Es mi familiar.
 EN: That's a familiar of mine.
 IDS: CLD-000946 | órdenes 499-499
 
@@ -2142,7 +2142,7 @@ EN: Familiars? I thought those were monsters that sorcerers boss around. Does th
 IDS: CLD-000947, CLD-000948, CLD-000949 | órdenes 506-508
 
 HABLANTE NO VERIFICADO | CUADRO G00505 [sin_marcador_de_hablante_para_esta_caja]
-ES: Hechicera, pero... correcto.
+ES: Hechicera, pero sí.
 EN: Sorceress, but... correct.
 IDS: CLD-000950 | órdenes 515-515
 
@@ -2292,7 +2292,7 @@ ESCENA | demo1002_01.dsf | script_id=100202 | bloque=767
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G00535 [sin_marcador_de_hablante_para_esta_caja]
-ES: ... Irse. Deja de hablarme.
+ES: ... Vete. Deja de hablarme.
 EN: ... Go away. Stop talking to me.
 IDS: CLD-001007, CLD-001008, CLD-001009 | órdenes 5-7
 
@@ -2302,7 +2302,7 @@ ESCENA | demo1002_01.dsf | script_id=100203 | bloque=768
 [NOMBRE EN PANTALLA] Tamako   (CLD-001010)
 
 Tamako | CUADRO G00537 [marcador_0x6E_inmediato]
-ES: Hola. Soy la conocida "Tamako". Espero que te hagas amiga de Despina.
+ES: Hola. Soy Tamako, un familiar. Espero que te hagas amiga de Despina.
 EN: Hello. I'm the familiar, "Tamako." I hope you will be friends with Despina.
 IDS: CLD-001011, CLD-001012, CLD-001013 | órdenes 6-8
 
@@ -2356,7 +2356,7 @@ IDS: CLD-001031, CLD-001032, CLD-001033 | órdenes 124-126
 [NOMBRE EN PANTALLA] Crosstine   (CLD-001034)
 
 Crosstine | CUADRO G00551 [marcador_0x6E_inmediato]
-ES: Si es posible, ¿podría quedarse un rato? Hay alguien con quien quiero que todos ustedes se hagan amigos.
+ES: Si es posible, ¿pueden quedarse un rato? Hay alguien con quien quiero que todos ustedes se hagan amigos.
 EN: If possible, would you please stay for a while? There's this person I want you all to become friends with.
 IDS: CLD-001035, CLD-001036, CLD-001037 | órdenes 131-133
 
@@ -2410,7 +2410,7 @@ IDS: CLD-001057 | órdenes 337-337
 [NOMBRE EN PANTALLA] Crosstine   (CLD-001058)
 
 Crosstine | CUADRO G00565 [marcador_0x6E_inmediato]
-ES: Hablando de diversión, Puedes usar el "Portal de Teletransporte" que está al lado de la fuente para ir a muchos mundos diferentes.
+ES: Hablando de diversión, puedes usar la «Puerta de teletransporte» junto a la fuente para ir a muchos mundos diferentes.
 EN: Speaking of fun, you can use the "Warp Gate" next to the fountain to go to many different worlds.
 IDS: CLD-001059, CLD-001060, CLD-001061 | órdenes 342-344
 
@@ -2443,12 +2443,12 @@ IDS: CLD-001071, CLD-001072 | órdenes 387-388
 [NOMBRE EN PANTALLA] Crosstine   (CLD-001073)
 
 Crosstine | CUADRO G00574 [marcador_0x6E_inmediato]
-ES: También hay un hechizo en algún lugar que puede convertir ¿Hay alguien interesado en el personaje principal...?
+ES: También hay un hechizo en algún lugar que puede convertir a cualquiera en personaje principal...
 EN: There's also a spell somewhere that can turn anybody into the main character...
 IDS: CLD-001074, CLD-001075 | órdenes 393-394
 
 HABLANTE NO VERIFICADO | CUADRO G00575 [sin_marcador_de_hablante_para_esta_caja]
-ES: Oh, mira la hora. Tengo que prepararme para Bienvenido, amigo mío.
+ES: Oh, mira la hora. Tengo que prepararme para recibir a mi amigo.
 EN: Oh, look at the time. I have to get ready to welcome my friend.
 IDS: CLD-001076, CLD-001077, CLD-001078 | órdenes 396-398
 [NOMBRE EN PANTALLA] Crosstine   (CLD-001079)
@@ -2898,7 +2898,7 @@ EN: "LV Up" Defeat enemies to get EXP for all active members. Accumulated EXP wi
 IDS: CLD-001261, CLD-001262, CLD-001263 | órdenes 4-6
 
 HABLANTE NO VERIFICADO | CUADRO G00653 [sin_marcador_de_hablante_para_esta_caja]
-ES: Cómo subes de nivel depende de si el personaje es un personaje secundario o un personaje principal.
+ES: Cómo subes de nivel depende de si el personaje es un personaje de apoyo o un personaje principal.
 EN: How you LV Up depends on if the character is a sub character or a main character.。
 IDS: CLD-001264, CLD-001265 | órdenes 8-9
 
@@ -2908,7 +2908,7 @@ EN: "LV Up as the main character." You will gain stats that make you a better su
 IDS: CLD-001266, CLD-001267, CLD-001268 | órdenes 11-13
 
 HABLANTE NO VERIFICADO | CUADRO G00655 [sin_marcador_de_hablante_para_esta_caja]
-ES: "Sube de nivel como personaje secundario." Obtendrás estadísticas que te convertirán en un mejor jugador principal. El personaje gana más ATK y DEF.
+ES: "Sube de nivel como personaje de apoyo." Obtendrás estadísticas que te convertirán en un mejor jugador principal. El personaje gana más ATK y DEF.
 EN: "LV Up as a sub character." You will gain stats that make you a better main. The character gains more ATK and DEF.
 IDS: CLD-001269, CLD-001270, CLD-001271 | órdenes 15-17
 
@@ -3020,7 +3020,7 @@ EN: Now thank me, you indignant fools!
 IDS: CLD-001310, CLD-001311 | órdenes 132-133
 
 HABLANTE NO VERIFICADO | CUADRO G00675 [sin_marcador_de_hablante_para_esta_caja]
-ES: Este hechizo permite al "personaje principal" de la aventura para reunir las fortalezas de ¡"Personajes secundarios" para potenciar!
+ES: Este hechizo permite al "personaje principal" de la aventura para reunir las fortalezas de ¡"personajes de apoyo" para potenciar!
 EN: This spell allows the "main character" of the adventure to gather the strengths of "sub characters" to power up!
 IDS: CLD-001312, CLD-001313, CLD-001314 | órdenes 135-137
 
@@ -3040,7 +3040,7 @@ EN: You are a most unacceptable dolt.
 IDS: CLD-001319 | órdenes 153-153
 
 HABLANTE NO VERIFICADO | CUADRO G00679 [sin_marcador_de_hablante_para_esta_caja]
-ES: Solo sale el personaje principal. Pero el daño en el personaje principal se transfiere al personaje secundario.
+ES: Solo sale el personaje principal. Pero el daño en el personaje principal se transfiere al personaje de apoyo.
 EN: Only the main character goes out. But the damage on the main character transfers to the sub character.
 IDS: CLD-001320, CLD-001321, CLD-001322 | órdenes 155-157
 
@@ -3425,7 +3425,7 @@ EN: I didn't ask you to help me! I'm not going to thank you at all! So I won't t
 IDS: CLD-001475, CLD-001476, CLD-001477 | órdenes 4-6
 
 HABLANTE NO VERIFICADO | CUADRO G00752 [sin_marcador_de_hablante_para_esta_caja]
-ES: Cuando subas de nivel, el "personaje principal" y el "personaje secundario" Subir de nivel de una manera completamente diferente.
+ES: Cuando subas de nivel, el "personaje principal" y el "personaje de apoyo" Subir de nivel de una manera completamente diferente.
 EN: When you level up, the "main character" and "sub character" level up completely differently.
 IDS: CLD-001478, CLD-001479, CLD-001480 | órdenes 8-10
 
@@ -3440,12 +3440,12 @@ EN: The one that stayed more as a  "sub" will get extra ATK and DEF when they be
 IDS: CLD-001483, CLD-001484, CLD-001485 | órdenes 15-17
 
 HABLANTE NO VERIFICADO | CUADRO G00755 [sin_marcador_de_hablante_para_esta_caja]
-ES: Para crear un buen personaje principal, tendrás que construirlos como un "personaje secundario" primero.
+ES: Para crear un buen personaje principal, tendrás que construirlos como un "personaje de apoyo" primero.
 EN: To create a good main character, you'll have to build them up as a "sub character" first.
 IDS: CLD-001486, CLD-001487, CLD-001488 | órdenes 19-21
 
 HABLANTE NO VERIFICADO | CUADRO G00756 [sin_marcador_de_hablante_para_esta_caja]
-ES: Para crear un buen personaje secundario, es mejor para subirlos de nivel como "personaje principal" para que puede obtener más HP y Maná.
+ES: Para crear un buen personaje de apoyo, es mejor para subirlos de nivel como "personaje principal" para que puede obtener más HP y Maná.
 EN: To make a good sub character, it's better to level them up as a "main character" so they can get more HP and Mana.
 IDS: CLD-001489, CLD-001490, CLD-001491 | órdenes 23-25
 
@@ -3619,7 +3619,7 @@ EN: You won't be able to alter the Magic Circle once you're in the dungeons.
 IDS: CLD-001551, CLD-001552 | órdenes 17-18
 
 HABLANTE NO VERIFICADO | CUADRO G00790 [sin_marcador_de_hablante_para_esta_caja]
-ES: Los Círculos Mágicos se utilizan para potenciar el "personaje principal" mediante la acumulación todos los poderes de los "personajes secundarios".
+ES: Los Círculos Mágicos se utilizan para potenciar el "personaje principal" mediante la acumulación todos los poderes de los "personajes de apoyo".
 EN: Magic Circles are used to power up the "main character" by accumulating all the powers of the "sub characters."
 IDS: CLD-001553, CLD-001554, CLD-001555 | órdenes 20-22
 
@@ -3659,7 +3659,7 @@ EN: There are times when spaces have debilitating effects like this. Think caref
 IDS: CLD-001569, CLD-001570, CLD-001571 | órdenes 93-95
 
 HABLANTE NO VERIFICADO | CUADRO G00798 [sin_marcador_de_hablante_para_esta_caja]
-ES: El papel de los "personajes secundarios" no es solo para proteger al "personaje principal".
+ES: El papel de los "personajes de apoyo" no es solo para proteger al "personaje principal".
 EN: The role of the "sub characters" is not just to protect the "main character."
 IDS: CLD-001572, CLD-001573 | órdenes 97-98
 
@@ -3786,7 +3786,7 @@ ESCENA | demo1007_01.dsf | script_id=100704 | bloque=835
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G00821 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¿Debería seguirla? Pero los "personajes secundarios" tienen quedarse aquí... Hm...
+ES: ¿Debería seguirla? Pero los "personajes de apoyo" tienen quedarse aquí... Hm...
 EN: Should I follow her? But "sub characters" have to stay here... Hm...
 IDS: CLD-001624, CLD-001625, CLD-001626 | órdenes 5-7
 
@@ -4588,7 +4588,7 @@ ESCENA | demo1103_01.dsf | script_id=110302 | bloque=875
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G00982 [sin_marcador_de_hablante_para_esta_caja]
-ES: Me acabo de dar cuenta de esto ahora mismo, pero pero si Pudding se convierte en un "personaje secundario", ¿No se lastimará?
+ES: Me acabo de dar cuenta de esto ahora mismo, pero pero si Pudding se convierte en un "personaje de apoyo", ¿No se lastimará?
 EN: I just realized this right now, but but if Pudding becomes a "sub character," won't she get hurt?
 IDS: CLD-001955, CLD-001956, CLD-001957 | órdenes 5-7
 
@@ -6836,7 +6836,7 @@ EN: Oh, no! I have to stop him!
 IDS: CLD-002792, CLD-002793 | órdenes 153-154
 
 HABLANTE NO VERIFICADO | CUADRO G01381 [sin_marcador_de_hablante_para_esta_caja]
-ES: Eh, hay algunas armas Me abastecí de...
+ES: Eh, hay unas armas que tengo guardadas...
 EN: Uhh, there are some weapons I stocked up on...
 IDS: CLD-002794, CLD-002795 | órdenes 156-157
 
@@ -6915,7 +6915,7 @@ ESCENA | demo1207_01.dsf | script_id=120701 | bloque=1004
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G01396 [sin_marcador_de_hablante_para_esta_caja]
-ES: Veo a un idiota. Un completo idiota.
+ES: Veo a un idiota. Un idiota de remate.
 EN: I see an idiot. A complete blithering idiot.
 IDS: CLD-002825, CLD-002826 | órdenes 5-6
 
@@ -6924,7 +6924,7 @@ ESCENA | demo1207_01.dsf | script_id=120702 | bloque=1005
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G01397 [sin_marcador_de_hablante_para_esta_caja]
-ES: Tengo que volverme más fuerte para poder proteger a Pudding. Ojalá alguien me enseñara nuevos pasos de baile.
+ES: Tengo que volverme más fuerte para poder proteger a Pudding. Ojalá alguien me enseñara nuevas técnicas.
 EN: I have to become stronger so I can protect Pudding. I wish someone would teach me new moves.
 IDS: CLD-002827, CLD-002828, CLD-002829 | órdenes 5-7
 
@@ -10311,7 +10311,7 @@ IDS: CLD-004061, CLD-004062 | órdenes 118-119
 [NOMBRE EN PANTALLA] Asagi   (CLD-004063)
 
 Asagi | CUADRO G02041 [marcador_0x6E_inmediato]
-ES: Aunque yo pueda ser el "personaje principal", ¡Yo también me veré obligado a ser un "personaje secundario"!
+ES: Aunque yo pueda ser el "personaje principal", ¡Yo también me veré obligado a ser un "personaje de apoyo"!
 EN: Even if I can be the "main character," I'll be forced to be a "sub character," too!
 IDS: CLD-004064, CLD-004065 | órdenes 128-129
 
@@ -10370,7 +10370,7 @@ ESCENA | demo1502_01.dsf | script_id=150202 | bloque=1206
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G02052 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¿Debería siquiera ser yo el "personaje principal"? En realidad, prefiero ser un "personaje secundario".
+ES: ¿Debería siquiera ser yo el "personaje principal"? En realidad, prefiero ser un "personaje de apoyo".
 EN: Should I even be the "main character?" I actually prefer being a "sub character."
 IDS: CLD-004088, CLD-004089 | órdenes 5-6
 
@@ -10379,7 +10379,7 @@ ESCENA | demo1502_01.dsf | script_id=150203 | bloque=1207
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G02053 [sin_marcador_de_hablante_para_esta_caja]
-ES: Me encanta ser el "personaje secundario". Está en mi naturaleza apoyar a los demás.
+ES: Me encanta ser el "personaje de apoyo". Está en mi naturaleza apoyar a los demás.
 EN: I love being the "sub character." It's in my nature to support others.
 IDS: CLD-004090, CLD-004091 | órdenes 9-10
 
@@ -10780,7 +10780,7 @@ EN: I managed to beat it thanks to everyone. Now it's my turn to help.
 IDS: CLD-004238, CLD-004239 | órdenes 82-83
 
 HABLANTE NO VERIFICADO | CUADRO G02130 [sin_marcador_de_hablante_para_esta_caja]
-ES: Creo que puedo poner mi corazón en ser ¡Ahora es un "personaje secundario"! ¡Espérenme, chicos!
+ES: Creo que puedo poner mi corazón en ser ¡Ahora es un "personaje de apoyo"! ¡Espérenme, chicos!
 EN: I think I can put my heart into being a "sub character" now! Wait for me, guys!
 IDS: CLD-004240, CLD-004241, CLD-004242 | órdenes 85-87
 
@@ -12465,7 +12465,7 @@ EN: I may still be inexperienced, but I must answer to those who support me. As 
 IDS: CLD-004848, CLD-004849, CLD-004850 | órdenes 145-147
 
 HABLANTE NO VERIFICADO | CUADRO G02474 [sin_marcador_de_hablante_para_esta_caja]
-ES: Regresaré al reino. ¿Vendrás conmigo, Sherbet?
+ES: Regresaré al reino. ¿Vendrás conmigo, ¿Sherbet?
 EN: I will return to the kingdom. Will you come with me, Sherbet?
 IDS: CLD-004851, CLD-004852, CLD-004853 | órdenes 149-151
 
@@ -13995,7 +13995,7 @@ EN:  obtained!
 
 REGISTRO: 4
 [CLD-005402] interfaz_sistema | mensaje_interfaz
-ES: Tiempo de despeje %3d：%02d：%02d %s
+ES: Tiempo: %3d：%02d：%02d  %s
 EN: Clear Time %3d：%02d：%02d  %s
 
 REGISTRO: 5
@@ -14005,7 +14005,7 @@ EN: Learned new magic!
 
 REGISTRO: 6
 [CLD-005404] interfaz_sistema | mensaje_interfaz
-ES: ¡Aprendí un nuevo Círculo mágico!
+ES: ¡Nuevo círculo mágico aprendido!
 EN: Learned new Magic Circle!
 
 REGISTRO: 7
@@ -14019,7 +14019,7 @@ EN: Clear Count　　　　　　%6d　
 
 REGISTRO: 8
 [CLD-005406] interfaz_sistema | mensaje_interfaz
-ES: ¡He aprendido una nueva habilidad!
+ES: ¡Nueva habilidad aprendida!
 EN: Learned new ability!
 
 REGISTRO: 9
@@ -14780,7 +14780,7 @@ EN: (Slot %s)
 
 REGISTRO: 157
 [CLD-005555] interfaz_sistema | mensaje_interfaz
-ES: Subcarácter
+ES: Pj. de apoyo
 EN: Sub Char
 
 REGISTRO: 158
@@ -14801,7 +14801,7 @@ EN: Set which magic/ability?
 REGISTRO: 161
 [CLD-005559] interfaz_sistema | mensaje_interfaz
 ES: ⑪ Confirmar
-  ⑩ Devolver
+  ⑩ Volver
 EN: ⑪Confirm
   ⑩Return
 
@@ -14827,12 +14827,12 @@ EN: Current main is %s.
 
 REGISTRO: 166
 [CLD-005564] interfaz_sistema | mensaje_interfaz
-ES: Colocar como personaje secundario.
+ES: Colocar como personaje de apoyo.
 EN: Place as a sub character.
 
 REGISTRO: 167
 [CLD-005565] interfaz_sistema | mensaje_interfaz
-ES: No se puede colocar el personaje.
+ES: No se puede colocar al personaje.
 EN: Cannot place character.
 
 REGISTRO: 168
@@ -14947,17 +14947,17 @@ EN: ＬＶ %2d
 
 REGISTRO: 190
 [CLD-005588] interfaz_sistema | mensaje_interfaz
-ES: Reducción del uso de SP x%2d
+ES: Reducción de consumo SP x%2d
 EN: SP Use Reduction x%2d
 
 REGISTRO: 191
 [CLD-005589] interfaz_sistema | mensaje_interfaz
-ES: Reducción del tiempo de fundición x%2d
+ES: Reducción de lanzamiento x%2d
 EN: Casting Time Reductionx%2d
 
 REGISTRO: 192
 [CLD-005590] interfaz_sistema | mensaje_interfaz
-ES: Tiempo de fundición %3d
+ES: Tiempo de lanzamiento %3d
 EN: Casting Time %3d
 
 REGISTRO: 193
@@ -15007,12 +15007,12 @@ EN: %s is the sub.
 
 REGISTRO: 202
 [CLD-005600] interfaz_sistema | mensaje_interfaz
-ES: Colocación como subcaracter. %s
+ES: Colocar como personaje de apoyo: %s
 EN: Placing as a sub character. %s
 
 REGISTRO: 203
 [CLD-005601] interfaz_sistema | mensaje_interfaz
-ES: Colocarlo como personaje secundario.
+ES: Colocar como personaje de apoyo.
 EN: Placing as a sub character.
 
 REGISTRO: 204
@@ -15037,62 +15037,62 @@ EN: EXP Bonus 3
 
 REGISTRO: 208
 [CLD-005606] interfaz_sistema | mensaje_interfaz
-ES: Bonificación de aumento de ATK
+ES: Bono ATK
 EN: ATK Boost Bonus
 
 REGISTRO: 209
 [CLD-005607] interfaz_sistema | mensaje_interfaz
-ES: Bonificación de aumento de ATK 2
+ES: Bono ATK 2
 EN: ATK Boost Bonus 2
 
 REGISTRO: 210
 [CLD-005608] interfaz_sistema | mensaje_interfaz
-ES: Bonificación de aumento de ATK 3
+ES: Bono ATK 3
 EN: ATK Boost Bonus 3
 
 REGISTRO: 211
 [CLD-005609] interfaz_sistema | mensaje_interfaz
-ES: Bonificación de aumento de DEF
+ES: Bono DEF
 EN: DEF Boost Bonus
 
 REGISTRO: 212
 [CLD-005610] interfaz_sistema | mensaje_interfaz
-ES: Bonificación de mejora de DEF 2
+ES: Bono DEF 2
 EN: DEF Boost Bonus 2
 
 REGISTRO: 213
 [CLD-005611] interfaz_sistema | mensaje_interfaz
-ES: Bonificación de mejora de DEF 3
+ES: Bono DEF 3
 EN: DEF Boost Bonus 3
 
 REGISTRO: 214
 [CLD-005612] interfaz_sistema | mensaje_interfaz
-ES: Bonificación de aumento de maná
+ES: Bono maná
 EN: Mana Boost Bonus
 
 REGISTRO: 215
 [CLD-005613] interfaz_sistema | mensaje_interfaz
-ES: Bonificación de aumento de maná 2
+ES: Bono maná 2
 EN: Mana Boost Bonus 2
 
 REGISTRO: 216
 [CLD-005614] interfaz_sistema | mensaje_interfaz
-ES: Bonificación de aumento de maná 3
+ES: Bono maná 3
 EN: Mana Boost Bonus 3
 
 REGISTRO: 217
 [CLD-005615] interfaz_sistema | mensaje_interfaz
-ES: Bonificación de aumento de HP
+ES: Bono HP
 EN: HP Boost Bonus
 
 REGISTRO: 218
 [CLD-005616] interfaz_sistema | mensaje_interfaz
-ES: Bonificación de aumento de HP 2
+ES: Bono HP 2
 EN: HP Boost Bonus 2
 
 REGISTRO: 219
 [CLD-005617] interfaz_sistema | mensaje_interfaz
-ES: Bonificación de aumento de HP 3
+ES: Bono HP 3
 EN: HP Boost Bonus 3
 
 REGISTRO: 220
@@ -15231,7 +15231,7 @@ EN: 　Title 　　    　Power　　      ⑥　　　　   ⑳⑥
 
 REGISTRO: 242
 [CLD-005640] interfaz_sistema | mensaje_interfaz
-ES: 　Maná 　　 　Trabajo　　　 ⑧　　　　 ⑳
+ES: 　Maná 　　 　Clase　　　 ⑧　　　　 ⑳
 EN: 　Mana 　　     　Job　　　      ⑧　　　　   ⑳
 
 REGISTRO: 243
@@ -15717,7 +15717,7 @@ EN: Sell?
 
 REGISTRO: 313
 [CLD-005711] interfaz_sistema | mensaje_interfaz
-ES: Equipado. ¿De verdad lo venden?
+ES: Equipado. ¿Seguro que quieres venderlo?
 EN: Equipped. Really sell?
 
 REGISTRO: 314
@@ -15782,7 +15782,7 @@ EN: G
 
 REGISTRO: 326
 [CLD-005724] interfaz_sistema | mensaje_interfaz
-ES: Para clientes habituales
+ES: Para habituales
 EN: For regulars
 
 REGISTRO: 327
@@ -15838,7 +15838,7 @@ EN: What would you like to do?
 REGISTRO: 337
 [CLD-005735] interfaz_sistema | mensaje_interfaz
 ES: ⑪ Confirmar
-  ⑩ Devolver
+  ⑩ Volver
 EN: ⑪Confirm
   ⑩Return
 
@@ -15884,35 +15884,35 @@ EN: Select job.
 REGISTRO: 341
 [CLD-005739] interfaz_sistema | mensaje_interfaz
 ES: ⑪ Confirmar
-  ⑩ Devolver
+  ⑩ Volver
 EN: ⑪Confirm
   ⑩Return
 
 REGISTRO: 342
 [CLD-005740] interfaz_sistema | mensaje_interfaz
-ES: Selecciona el estilo artístico y el género del personaje.
+ES: Selecciona el aspecto y el género del personaje.
 EN: Select character art and gender.
 
 REGISTRO: 343
 [CLD-005741] interfaz_sistema | mensaje_interfaz
 ES: ⑪ Confirmar
-  ⑩ Devolver
+  ⑩ Volver
 EN: ⑪Confirm
   ⑩Return
 
 REGISTRO: 344
 [CLD-005742] interfaz_sistema | mensaje_interfaz
-ES: Seleccione el nombre del personaje.
+ES: Selecciona el nombre del personaje.
 EN: Select character name.
 
 REGISTRO: 345
 [CLD-005743] interfaz_sistema | mensaje_interfaz
-ES: Seleccione el patrón de conversación.
+ES: Selecciona el patrón de conversación.
 EN: Select conversation pattern.
 
 REGISTRO: 346
 [CLD-005744] interfaz_sistema | mensaje_interfaz
-ES: Seleccione el nombre del jefe.
+ES: Selecciona el nombre del jefe.
 EN: Select boss name.
 
 REGISTRO: 347
@@ -15947,7 +15947,7 @@ EN: Black
 
 REGISTRO: 353
 [CLD-005751] interfaz_sistema | mensaje_interfaz
-ES: Seleccione la forma y el color del jefe.
+ES: Selecciona la forma y el color del jefe.
 EN: Select boss form and color.
 
 REGISTRO: 354
@@ -15997,13 +15997,13 @@ EN: %-12s LV%3d
 
 REGISTRO: 358
 [CLD-005756] interfaz_sistema | mensaje_interfaz
-ES: Seleccione el personaje que desea editar.
+ES: Selecciona el personaje que quieres editar.
 EN: Select character to edit.
 
 REGISTRO: 359
 [CLD-005757] interfaz_sistema | mensaje_interfaz
 ES: ⑪ Confirmar
-  ⑩ Devolver
+  ⑩ Volver
 EN: ⑪Confirm
   ⑩Return
 
@@ -16064,7 +16064,7 @@ EN: Select the name of your new character.
 
 REGISTRO: 371
 [CLD-005769] interfaz_sistema | mensaje_interfaz
-ES: Seleccione el nombre del nuevo jefe.
+ES: Selecciona el nombre del nuevo jefe.
 EN: Select the name of the new boss.
 
 REGISTRO: 372
@@ -16079,12 +16079,12 @@ EN: Input the first line.
 
 REGISTRO: 374
 [CLD-005772] interfaz_sistema | mensaje_interfaz
-ES: Introduzca la segunda línea.
+ES: Introduce la segunda línea.
 EN: Input the second line.
 
 REGISTRO: 375
 [CLD-005773] interfaz_sistema | mensaje_interfaz
-ES: Introduzca la tercera línea.
+ES: Introduce la tercera línea.
 EN: Input the third line.
 
 REGISTRO: 376
@@ -16129,14 +16129,13 @@ EN: Not used
 
 REGISTRO: 384
 [CLD-005782] interfaz_sistema | mensaje_interfaz
-ES: Seleccione el personaje que desea eliminar.
+ES: Selecciona el personaje que quieres eliminar.
 EN: Select character to delete.
 
 REGISTRO: 385
 [CLD-005783] interfaz_sistema | mensaje_interfaz
-ES: ¿De verdad borraste %s?
-  
-  ¡Las eliminaciones son permanentes!
+ES: ¿Eliminar a %s?
+  ¡No se puede deshacer!
 EN: Really delete %s?
   Deletions are permanent!
 
@@ -16217,7 +16216,7 @@ EN: Edit Data
 REGISTRO: 398
 [CLD-005796] interfaz_sistema | mensaje_interfaz
 ES: Datos de edición de %s.
-  Tiempo de reproducción %d:%02d:%02d
+  Tiempo jugado %d:%02d:%02d
 EN: %s's edit data.
   Play time %d:%02d:%02d
 
@@ -16390,17 +16389,17 @@ EN: Invert current picture to use as the other side.
 
 REGISTRO: 426
 [CLD-005824] interfaz_sistema | mensaje_interfaz
-ES: Muestra el gráfico del personaje principal y el texto.
+ES: Muestra el gráfico del personaje principal y cópialo.
 EN: Bring up main character graphic and copy.
 
 REGISTRO: 427
 [CLD-005825] interfaz_sistema | mensaje_interfaz
-ES: Guarda el gráfico para editar los datos.
+ES: Guarda el gráfico en los datos de edición.
 EN: Save graphic to edit data.
 
 REGISTRO: 428
 [CLD-005826] interfaz_sistema | mensaje_interfaz
-ES: Cargar gráfico en editar datos.
+ES: Carga el gráfico desde los datos de edición.
 EN: Load graphic in edit data.
 
 REGISTRO: 429
@@ -16485,13 +16484,13 @@ EN: Blue
 
 REGISTRO: 445
 [CLD-005843] interfaz_sistema | mensaje_interfaz
-ES: Seleccione un nuevo color.
+ES: Selecciona un nuevo color.
 EN: Select new color.
 
 REGISTRO: 446
 [CLD-005844] interfaz_sistema | mensaje_interfaz
 ES: ⑪ Confirmar
-  ⑩ Devolver
+  ⑩ Volver
   ⑬ Color predeterminado
 EN: ⑪Confirm
   ⑩Return
@@ -16509,7 +16508,7 @@ EN: Select dungeon
 
 REGISTRO: 449
 [CLD-005847] interfaz_sistema | mensaje_interfaz
-ES: ¡ESCENARIO DESPEJADO!
+ES: ¡FASE SUPERADA!
 EN: STAGE CLEAR!
 
 REGISTRO: 450
@@ -16696,42 +16695,42 @@ EN:  Lv.%2d  EXP :%6d Next :%6s
 
 REGISTRO: 479
 [CLD-005877] interfaz_sistema | mensaje_interfaz
-ES: Volumen de efectos de sonido
+ES: Vol. efectos
 EN: SFX Volume
 
 REGISTRO: 480
 [CLD-005878] interfaz_sistema | mensaje_interfaz
-ES: Volumen de música de fondo
+ES: Vol. música
 EN: BGM Volume
 
 REGISTRO: 481
 [CLD-005879] interfaz_sistema | mensaje_interfaz
-ES: Tipo de música de fondo
+ES: Tipo música
 EN: BGM Type
 
 REGISTRO: 482
 [CLD-005880] interfaz_sistema | mensaje_interfaz
-ES: Configuración clave
+ES: Controles
 EN: Key Config
 
 REGISTRO: 483
 [CLD-005881] interfaz_sistema | mensaje_interfaz
-ES: Cambia el volumen de los efectos de sonido.
+ES: Ajusta el volumen de los efectos.
 EN: Changes volume of sound effects.
 
 REGISTRO: 484
 [CLD-005882] interfaz_sistema | mensaje_interfaz
-ES: Cambia el volumen de la música de fondo.
+ES: Ajusta el volumen de la música.
 EN: Changes volume of BGM.
 
 REGISTRO: 485
 [CLD-005883] interfaz_sistema | mensaje_interfaz
-ES: Cambia el tipo de música de fondo (real/retro)
+ES: Elige música real o retro.
 EN: Changes BGM type (Real/Retro)
 
 REGISTRO: 486
 [CLD-005884] interfaz_sistema | mensaje_interfaz
-ES: Cambia la configuración de los botones. (Cambia de pantalla)
+ES: Configura los botones.
 EN: Changes button configuration. (Switches screen)
 
 REGISTRO: 487
@@ -16791,7 +16790,7 @@ EN: End
 
 REGISTRO: 498
 [CLD-005896] interfaz_sistema | mensaje_interfaz
-ES: Pulse el botón para configurar.
+ES: Pulsa el botón para configurar.
 EN: Press the button to configure.
 
 REGISTRO: 499
@@ -16801,12 +16800,12 @@ EN: Returns to standard settings.
 
 REGISTRO: 500
 [CLD-005898] interfaz_sistema | mensaje_interfaz
-ES: Fin de la configuración de teclas.
+ES: Salir de la configuración de botones.
 EN: End key config.
 
 REGISTRO: 501
 [CLD-005899] interfaz_sistema | mensaje_interfaz
-ES: Mostrar decimales para el daño
+ES: Decimales de daño
 EN: Show decimal points for damage　　　　　　　
 
 REGISTRO: 502
@@ -16816,12 +16815,12 @@ EN:           ON
 
 REGISTRO: 503
 [CLD-005901] interfaz_sistema | mensaje_interfaz
-ES: Menos de 1 encendido
+ES: Menos de 1: SÍ
 EN: 　Under 1 ON
 
 REGISTRO: 504
 [CLD-005902] interfaz_sistema | mensaje_interfaz
-ES: Menos de 10 años
+ES: Menos de 10: SÍ
 EN:  Under 10 ON
 
 REGISTRO: 505
@@ -16831,27 +16830,27 @@ EN:          OFF
 
 REGISTRO: 506
 [CLD-005904] interfaz_sistema | mensaje_interfaz
-ES: Activa o desactiva la visualización de los decimales en los daños.
+ES: Muestra decimales en el daño.
 EN: Toggles the display of decimal points in damage.
 
 REGISTRO: 507
 [CLD-005905] interfaz_sistema | mensaje_interfaz
-ES: Efectos del Círculo mágico
+ES: Efectos círculo
 EN: Magic Circle effects
 
 REGISTRO: 508
 [CLD-005906] interfaz_sistema | mensaje_interfaz
-ES: Activa o desactiva la visualización de efectos para Magic Circle.
+ES: Muestra los efectos del círculo mágico.
 EN: Toggles the display of effects for Magic Circle.
 
 REGISTRO: 509
 [CLD-005907] interfaz_sistema | mensaje_interfaz
-ES: Captura de pantalla
+ES: Capturas
 EN: Screenshot
 
 REGISTRO: 510
 [CLD-005908] interfaz_sistema | mensaje_interfaz
-ES: Activa o desactiva el botón para tomar capturas de pantalla.
+ES: Activa el botón para hacer capturas.
 EN: Toggles the button to take screenshots
 
 REGISTRO: 511
@@ -16881,7 +16880,7 @@ EN: Create a room as the host, or wait for other rooms.
 
 REGISTRO: 516
 [CLD-005914] interfaz_sistema | mensaje_interfaz
-ES: Lista de habitaciones con conexión inalámbrica
+ES: Lista de salas inalámbricas
 EN: Wireless room list
 
 REGISTRO: 517
@@ -17029,7 +17028,7 @@ EN: Select character to job change.
 
 REGISTRO: 544
 [CLD-005942] interfaz_sistema | mensaje_interfaz
-ES: Seleccione el puesto al que desea cambiar.
+ES: Selecciona la nueva clase.
 EN: Select job to change to.
 
 REGISTRO: 545
@@ -17095,9 +17094,8 @@ EN: ???
 
 REGISTRO: 556
 [CLD-005954] interfaz_sistema | mensaje_interfaz
-ES: Aún no puede leer.
-  
-  Derrota a los enemigos para desbloquear.
+ES: Aún no se puede leer.
+  Derrota a enemigos para desbloquearlo.
 EN: Cannot read yet.
   Defeat enemies to unlock.
 
@@ -17175,7 +17173,7 @@ EN: Monster level
 
 REGISTRO: 570
 [CLD-005968] interfaz_sistema | mensaje_interfaz
-ES: Tasa de aparición de objetos
+ES: Prob. de objetos
   
 EN: Item drop rate
   
@@ -17221,14 +17219,14 @@ EN:
 
 REGISTRO: 574
 [CLD-005972] interfaz_sistema | mensaje_interfaz
-ES: Tasa de aparición de objetos: %3d
+ES: Prob. de objetos %3d
   
 EN: Item drop rate　　%3d
   
 
 REGISTRO: 575
 [CLD-005973] interfaz_sistema | mensaje_interfaz
-ES: Tasa de títulos raros　　%3d%s
+ES: Prob. título raro %3d%s
 EN: Rare title rate　　%3d%s
 
 REGISTRO: 576
@@ -17412,17 +17410,17 @@ EN: No job that can use %s!
 
 REGISTRO: 594
 [CLD-005992] interfaz_sistema | mensaje_interfaz
-ES: %s personas en Magic Circle usaron %s!
+ES: ¡%s personajes del círculo mágico usaron %s!
 EN: %s people in Magic Circle used %s!
 
 REGISTRO: 595
 [CLD-005993] interfaz_sistema | mensaje_interfaz
-ES: Nivel de piso insuficiente...
+ES: Nivel de planta insuficiente...
 EN: Insufficient floor level...
 
 REGISTRO: 596
 [CLD-005994] interfaz_sistema | mensaje_interfaz
-ES: ¡El nivel de los enemigos en el siguiente piso ha bajado a %s!
+ES: ¡Nivel de enemigos de la próxima planta: %s!
 EN: Enemy level in next floor dropped to %s!
 
 REGISTRO: 597
@@ -17467,7 +17465,7 @@ EN: Normal & Warrior LV.
 
 REGISTRO: 605
 [CLD-006003] interfaz_sistema | mensaje_interfaz
-ES: Comerciante de apuestas LV.
+ES: Mercader apostador NV.
 EN: Gamble Merchant LV.
 
 REGISTRO: 606
@@ -17599,7 +17597,7 @@ EN: Impossible One
 
 REGISTRO: 630
 [CLD-006028] interfaz_sistema | mensaje_interfaz
-ES: ¡Amante de los pasteles de carne!
+ES: ¡Amante del pastel de carne!
 EN: Pot Pie Lover!
 
 REGISTRO: 631
@@ -17890,7 +17888,7 @@ REGISTRO: 0
 ES: Pequeña Manzana
 EN: Petit Apple
 [CLD-006143] objetos_artefactos | descripcion
-ES: Puntos de vida de personaje secundario +4 gratis.
+ES: Puntos de vida de personaje de apoyo +4 gratis.
 EN: Sub character HP +4 for free.
 
 REGISTRO: 1
@@ -17898,7 +17896,7 @@ REGISTRO: 1
 ES: Mini manzana
 EN: Mini Apple
 [CLD-006145] objetos_artefactos | descripcion
-ES: Puntos de vida de personaje secundario +10 gratis.
+ES: Puntos de vida de personaje de apoyo +10 gratis.
 EN: Sub character HP +10 for free.
 
 REGISTRO: 2
@@ -17906,7 +17904,7 @@ REGISTRO: 2
 ES: Vida Apple
 EN: Life Apple
 [CLD-006147] objetos_artefactos | descripcion
-ES: Puntos de vida de personaje secundario +18 gratis.
+ES: Puntos de vida de personaje de apoyo +18 gratis.
 EN: Sub character HP +18 for free.
 
 REGISTRO: 3
@@ -17914,7 +17912,7 @@ REGISTRO: 3
 ES: Bendice a Apple
 EN: Bless Apple
 [CLD-006149] objetos_artefactos | descripcion
-ES: Personaje secundario +28 HP gratis.
+ES: personaje de apoyo +28 HP gratis.
 EN: Sub character HP +28 for free.
 
 REGISTRO: 4
@@ -17922,7 +17920,7 @@ REGISTRO: 4
 ES: Manzana de tierra
 EN: Earth Apple
 [CLD-006151] objetos_artefactos | descripcion
-ES: Puntos de vida adicionales para personajes secundarios: +40 gratis.
+ES: Puntos de vida adicionales para personajes de apoyo: +40 gratis.
 EN: Sub character HP +40 for free.
 
 REGISTRO: 5
@@ -17930,7 +17928,7 @@ REGISTRO: 5
 ES: Uva pequeña
 EN: Petit Grape
 [CLD-006153] objetos_artefactos | descripcion
-ES: Personaje secundario +15 PV por 3 de maná.
+ES: personaje de apoyo +15 PV por 3 de maná.
 EN: Sub character HP +15 for 3 Mana.
 
 REGISTRO: 6
@@ -17938,7 +17936,7 @@ REGISTRO: 6
 ES: Uva pequeña
 EN: Mini Grape
 [CLD-006155] objetos_artefactos | descripcion
-ES: Personaje secundario +30 PV por 10 de Maná.
+ES: personaje de apoyo +30 PV por 10 de Maná.
 EN: Sub character HP +30 for 10 Mana.
 
 REGISTRO: 7
@@ -17946,7 +17944,7 @@ REGISTRO: 7
 ES: Uva de la vida
 EN: Life Grape
 [CLD-006157] objetos_artefactos | descripcion
-ES: Personaje secundario +50 PV por 20 de Maná.
+ES: personaje de apoyo +50 PV por 20 de Maná.
 EN: Sub character HP +50 for 20 Mana.
 
 REGISTRO: 8
@@ -17954,7 +17952,7 @@ REGISTRO: 8
 ES: Bendita uva
 EN: Bless Grape
 [CLD-006159] objetos_artefactos | descripcion
-ES: Personaje secundario +70 PV por 30 de Maná.
+ES: personaje de apoyo +70 PV por 30 de Maná.
 EN: Sub character HP +70 for 30 Mana.
 
 REGISTRO: 9
@@ -17962,7 +17960,7 @@ REGISTRO: 9
 ES: Uva de tierra
 EN: Earth Grape
 [CLD-006161] objetos_artefactos | descripcion
-ES: Personaje secundario +90 PV por 40 de Maná.
+ES: personaje de apoyo +90 PV por 40 de Maná.
 EN: Sub character HP +90 for 40 Mana.
 
 REGISTRO: 10
@@ -18754,7 +18752,7 @@ REGISTRO: 108
 ES: Dispersión 25%
 EN: Scatter 25％
 [CLD-006353] objetos_artefactos | descripcion
-ES: Distribuye el 25% del daño recibido entre los personajes secundarios.
+ES: Distribuye el 25% del daño recibido entre los personajes de apoyo.
 EN: Distributes 25% of damage taken onto sub characters.
 
 REGISTRO: 109
@@ -18762,7 +18760,7 @@ REGISTRO: 109
 ES: Distribución 50%
 EN: Scatter 50％
 [CLD-006355] objetos_artefactos | descripcion
-ES: Distribuye el 50% del daño recibido entre los personajes secundarios.
+ES: Distribuye el 50% del daño recibido entre los personajes de apoyo.
 EN: Distributes 50% of damage taken onto sub characters.
 
 REGISTRO: 110
@@ -18770,7 +18768,7 @@ REGISTRO: 110
 ES: Dispersión 100%
 EN: Scatter 100％
 [CLD-006357] objetos_artefactos | descripcion
-ES: Distribuye el 100% del daño recibido entre los personajes secundarios.
+ES: Distribuye el 100% del daño recibido entre los personajes de apoyo.
 EN: Distributes 100% of damage taken onto sub characters.
 
 REGISTRO: 111
@@ -19106,7 +19104,7 @@ REGISTRO: 10
 ES: Cota de malla
 EN: Chain Mail
 [CLD-006430] objetos_armaduras | descripcion
-ES: Fresco
+ES: Frío
 EN: Cool
 
 REGISTRO: 11
@@ -24673,12 +24671,12 @@ REGISTRO: 0
 ES: No se necesita espíritu de lucha
 EN: 闘志不要
 [CLD-007750] efectos | descripcion_efecto
-ES: Bonificación de espíritu de lucha 1
+ES: Bono de espíritu de lucha 1
 EN: 闘志ボーナス1
 
 REGISTRO: 1
 [CLD-007751] efectos | nombre_efecto
-ES: Proteger y no
+ES: No requiere protección
 EN: 守護不要
 [CLD-007752] efectos | descripcion_efecto
 ES: Bonificación del Guardián 1
@@ -24686,7 +24684,7 @@ EN: 守護ボーナス1
 
 REGISTRO: 2
 [CLD-007753] efectos | nombre_efecto
-ES: Yingzhi no quiere
+ES: No requiere sabiduría
 EN: 英知不要
 [CLD-007754] efectos | descripcion_efecto
 ES: Bonificación de sabiduría 1
@@ -24798,7 +24796,7 @@ EN: SPD+2
 
 REGISTRO: 16
 [CLD-007777] efectos | nombre_efecto
-ES: Defensa con espada
+ES: Protección contra espadas
 EN: 剣防ぎ
 [CLD-007778] efectos | descripcion_efecto
 ES: Resistencia al corte +2
@@ -24809,7 +24807,7 @@ REGISTRO: 17
 ES: Defensa con lanza
 EN: 槍防ぎ
 [CLD-007780] efectos | descripcion_efecto
-ES: Resistencia al empuje +2
+ES: Resistencia a perforación +2
 EN: 突刺耐性+2
 
 REGISTRO: 18
@@ -24817,12 +24815,12 @@ REGISTRO: 18
 ES: defensa con hacha
 EN: 斧防ぎ
 [CLD-007782] efectos | descripcion_efecto
-ES: Resistencia cuerpo a cuerpo +2
+ES: Resistencia a golpes +2
 EN: 打撃耐性+2
 
 REGISTRO: 19
 [CLD-007783] efectos | nombre_efecto
-ES: Protección contra incendios
+ES: Protección contra fuego
 EN: 炎防ぎ
 [CLD-007784] efectos | descripcion_efecto
 ES: Resistencia al calor +2
@@ -24838,7 +24836,7 @@ EN: 冷気耐性+2
 
 REGISTRO: 21
 [CLD-007787] efectos | nombre_efecto
-ES: Protección del corazón
+ES: Protección mental
 EN: 心防ぎ
 [CLD-007788] efectos | descripcion_efecto
 ES: Resistencia mental +2
@@ -24849,7 +24847,7 @@ REGISTRO: 22
 ES: tropezar
 EN: 転ばし
 [CLD-007790] efectos | descripcion_efecto
-ES: ocurrencia de ruptura +3
+ES: Probabilidad de ruptura +3
 EN: ブレイク発生+3
 
 REGISTRO: 23
@@ -24878,10 +24876,10 @@ EN: 守護ボーナス5　速度-10
 
 REGISTRO: 26
 [CLD-007795] efectos | nombre_efecto
-ES: Mal sabor
+ES: Mal gusto
 EN: 悪趣味
 [CLD-007796] efectos | descripcion_efecto
-ES: Espíritu de lucha Guardián Sabiduría Bonificación 2: TODA Resistencia -10
+ES: Bono 2 de espíritu, protección y sabiduría; resistencias -10
 EN: 闘志守護英知ボーナス2　ALL耐性-10
 
 REGISTRO: 27
@@ -24897,15 +24895,15 @@ REGISTRO: 28
 ES: Barrera
 EN: 防壁
 [CLD-007799] efectos | descripcion_efecto
-ES: TODA la resistencia +5
+ES: Todas las resistencias +5
 EN: ALL耐性+5
 
 REGISTRO: 29
 [CLD-007800] efectos | nombre_efecto
-ES: Desesperado
+ES: A la desesperada
 EN: 捨て身
 [CLD-007801] efectos | descripcion_efecto
-ES: ATK +10, Velocidad +10, Todas las resistencias -50
+ES: ATK +10, velocidad +10, resistencias -50
 EN: ATK+10　速度+10　ALL耐性-50
 
 REGISTRO: 30
@@ -24945,7 +24943,7 @@ REGISTRO: 34
 ES: Tosen
 EN: 闘千
 [CLD-007808] efectos | descripcion_efecto
-ES: ATK +5, Golpe crítico y probabilidad de ruptura +10
+ES: ATK +5, prob. crítico y ruptura +10
 EN: ATK+5　クリティカル＆ブレイク発生+10
 
 ======================================================================
@@ -25018,7 +25016,7 @@ EN: An ice ball launches straight.
 
 REGISTRO: 8
 [CLD-007825] habilidades_magia | nombre
-ES: Fresco
+ES: Frío
 EN: Cool
 [CLD-007826] habilidades_magia | descripcion
 ES: Una bola de hielo explota.
@@ -25026,7 +25024,7 @@ EN: An ice ball explodes.
 
 REGISTRO: 9
 [CLD-007827] habilidades_magia | nombre
-ES: Yo. Tormenta
+ES: Tormenta de hielo
 EN: I. Storm
 [CLD-007828] habilidades_magia | descripcion
 ES: Crea un vórtice de hielo.
@@ -25050,7 +25048,7 @@ EN: Launch explosive homing ice balls.
 
 REGISTRO: 12
 [CLD-007833] habilidades_magia | nombre
-ES: Tiempo fresco
+ES: Tiempo de enfriamiento
 EN: Time Cool
 [CLD-007834] habilidades_magia | descripcion
 ES: Crea una explosión retardada.
@@ -25117,7 +25115,7 @@ REGISTRO: 20
 ES: Recuperar
 EN: Recover
 [CLD-007850] habilidades_magia | descripcion
-ES: Efectos del estado de curación en uno mismo.
+ES: Cura tus estados alterados.
 EN: Cure status effects on self.
 
 REGISTRO: 21
@@ -25234,7 +25232,7 @@ EN: ⑤ attack.
 
 REGISTRO: 35
 [CLD-007879] habilidades_magia | nombre
-ES: S) Barra inclinada W
+ES: S) Corte W
 EN: S) W Slash
 [CLD-007880] habilidades_magia | descripcion
 ES: Lanza un ataque basado en el elemento ⑥.
@@ -25242,7 +25240,7 @@ EN: Shoots out a ⑥ element-based attack.
 
 REGISTRO: 36
 [CLD-007881] habilidades_magia | nombre
-ES: A) Columpio
+ES: A) Barrido
 EN: A) Swing
 [CLD-007882] habilidades_magia | descripcion
 ES: ③ Ataque girando sobre sí mismo.
@@ -25282,7 +25280,7 @@ EN: Temporarily raises your DEF.
 
 REGISTRO: 41
 [CLD-007891] habilidades_magia | nombre
-ES: A) Barra inclinada
+ES: A) Corte S
 EN: A) S Slash
 [CLD-007892] habilidades_magia | descripcion
 ES: ⑥ Ataque con elemento Espíritu.
@@ -25298,7 +25296,7 @@ EN: ③ attack by throwing multiple blunt weapons.
 
 REGISTRO: 43
 [CLD-007896] habilidades_magia | nombre
-ES: G Obtener
+ES: Obtener G
 EN: G Get
 [CLD-007897] habilidades_magia | descripcion
 ES: Aumenta temporalmente la tasa de caída de G.
@@ -25455,7 +25453,7 @@ EN: Last S.
 
 REGISTRO: 21
 [CLD-007929] circulos_magicos | nombre_circulo
-ES: Transmisión dual
+ES: Doble conjuro
 EN: Dualcast
 
 REGISTRO: 22
@@ -25530,7 +25528,7 @@ EN: 3 Wishes
 
 REGISTRO: 36
 [CLD-007943] circulos_magicos | nombre_circulo
-ES: Corbata oscura
+ES: Vínculo oscuro
 EN: Dark Tie
 
 REGISTRO: 37
@@ -25820,7 +25818,7 @@ EN: Do/Die
 
 REGISTRO: 94
 [CLD-008001] circulos_magicos | nombre_circulo
-ES: Trabajo
+ES: Clase
 EN: Job
 
 REGISTRO: 95
@@ -28516,7 +28514,7 @@ EN: Uses powerful spirit attacks.
 
 REGISTRO: 120
 [CLD-008491] monstruos | nombre
-ES: Mascarilla
+ES: Máscara
 EN: Mask
 
 REGISTRO: 121
@@ -28561,7 +28559,7 @@ EN: ?????
 
 REGISTRO: 126
 [CLD-F-MONSTER-0126-nombre] monstruos | nombre
-ES: mascarilla
+ES: Máscara
 EN: 仮面
 [CLD-008492] monstruos | descripcion
 ES: Jefe final
@@ -28704,10 +28702,10 @@ EN: コクオ(練習用)
 ES: RgMan
 EN: RgMan
 [CLD-008522] monstruos | descripcion
-ES: No tiene ningún concepto de "Koutai" (un juego de palabras con "Koutai" y "Koutai"). Sólo tiene "Zenshin" (un juego de palabras con "Zenshin" y "Zenshin").
+ES: No sabe lo que es retirarse: ¡solo avanzar!
 EN: 彼にコウタイの文字は無い。ゼンシンあるのみ！
 [CLD-008523] monstruos | comportamiento
-ES: No tiene ningún concepto de "Koutai" (un juego de palabras con "Koutai" y "Koutai"). Sólo tiene "Zenshin" (un juego de palabras con "Zenshin" y "Zenshin").
+ES: No sabe lo que es retirarse: ¡solo avanzar!
 EN: 彼にコウタイの文字は無い。ゼンシンあるのみ！
 
 REGISTRO: 137
@@ -28718,105 +28716,105 @@ EN: ラオウ(練習用)
 ES: RgMan
 EN: RgMan
 [CLD-008526] monstruos | descripcion
-ES: ¡No me arrepiento en absoluto de mi discapacidad!
+ES: ¡No me arrepiento de nada en mi vida!
 EN: わがショウガイにイッペンのくいなし！
 [CLD-008527] monstruos | comportamiento
-ES: ¡No me arrepiento en absoluto de mi discapacidad!
+ES: ¡No me arrepiento de nada en mi vida!
 EN: わがショウガイにイッペンのくいなし！
 
 REGISTRO: 138
 [CLD-008528] monstruos | nombre
-ES: Bloque emisor de llama
+ES: Bloque emisor de fuego
 EN: 炎出るブロック
 
 REGISTRO: 139
 [CLD-008529] monstruos | nombre
-ES: Bloque emisor de llama
+ES: Bloque emisor de fuego
 EN: 炎出るブロック
 
 REGISTRO: 140
 [CLD-008530] monstruos | nombre
-ES: Bloques de bajo nivel que emiten llamas
+ES: Bloque emisor de fuego (bajo)
 EN: 炎出るブロック低
 
 REGISTRO: 141
 [CLD-008531] monstruos | nombre
-ES: Bloques de bajo nivel que emiten llamas
+ES: Bloque emisor de fuego (bajo)
 EN: 炎出るブロック低
 
 REGISTRO: 142
 [CLD-008532] monstruos | nombre
-ES: Bloques de bajo nivel que emiten llamas
+ES: Bloque emisor de fuego (bajo)
 EN: 炎出るブロック低
 
 REGISTRO: 143
 [CLD-008533] monstruos | nombre
-ES: Bloque de gran altura con llamas
+ES: Bloque emisor de fuego (alto)
 EN: 炎出るブロック高
 
 REGISTRO: 144
 [CLD-008534] monstruos | nombre
-ES: Bloque de gran altura con llamas
+ES: Bloque emisor de fuego (alto)
 EN: 炎出るブロック高
 
 REGISTRO: 145
 [CLD-008535] monstruos | nombre
-ES: Bloque de gran altura con llamas
+ES: Bloque emisor de fuego (alto)
 EN: 炎出るブロック高
 
 REGISTRO: 146
 [CLD-008536] monstruos | nombre
-ES: Bloque emisor de llama
+ES: Bloque emisor de fuego
 EN: 炎出るブロック
 
 REGISTRO: 147
 [CLD-008537] monstruos | nombre
-ES: Bloques que producen hielo
+ES: Bloque emisor de hielo
 EN: 氷出るブロック
 
 REGISTRO: 148
 [CLD-008538] monstruos | nombre
-ES: Bloques que producen hielo
+ES: Bloque emisor de hielo
 EN: 氷出るブロック
 
 REGISTRO: 149
 [CLD-008539] monstruos | nombre
-ES: Bloques que producen hielo
+ES: Bloque emisor de hielo
 EN: 氷出るブロック
 
 REGISTRO: 150
 [CLD-008540] monstruos | nombre
-ES: bloques de baja producción de hielo
+ES: Bloque emisor de hielo (bajo)
 EN: 氷出るブロック低
 
 REGISTRO: 151
 [CLD-008541] monstruos | nombre
-ES: bloques de baja producción de hielo
+ES: Bloque emisor de hielo (bajo)
 EN: 氷出るブロック低
 
 REGISTRO: 152
 [CLD-008542] monstruos | nombre
-ES: bloques de baja producción de hielo
+ES: Bloque emisor de hielo (bajo)
 EN: 氷出るブロック低
 
 REGISTRO: 153
 [CLD-008543] monstruos | nombre
-ES: Altura del bloque productor de hielo
+ES: Bloque emisor de hielo (alto)
 EN: 氷出るブロック高
 
 REGISTRO: 154
 [CLD-008544] monstruos | nombre
-ES: Altura del bloque productor de hielo
+ES: Bloque emisor de hielo (alto)
 EN: 氷出るブロック高
 
 REGISTRO: 155
 [CLD-008545] monstruos | nombre
-ES: Altura del bloque productor de hielo
+ES: Bloque emisor de hielo (alto)
 EN: 氷出るブロック高
 
 REGISTRO: 156
 [CLD-008546] monstruos | nombre
-ES: Bloques que producen hielo
+ES: Bloque emisor de hielo
 EN: 氷出るブロック
 
 REGISTRO: 157
@@ -28876,7 +28874,7 @@ EN: 宝箱　フラグ効果
 
 REGISTRO: 168
 [CLD-F-MONSTER-0168-nombre] monstruos | nombre
-ES: mascarilla
+ES: Máscara
 EN: 仮面
 [CLD-F-MONSTER-0168-especie] monstruos | especie
 ES: ????
@@ -29589,7 +29587,7 @@ EN: (拠点用）通行可
 
 REGISTRO: 1
 [CLD-008767] atributos_terreno | nombre_atributo
-ES: (Para uso básico) No se permite la entrada
+ES: (Para la base) Paso prohibido
 EN: (拠点用）通禁止
 
 REGISTRO: 2
@@ -29919,22 +29917,22 @@ EN: 砂漠カベ
 
 REGISTRO: 67
 [CLD-008821] atributos_terreno | nombre_atributo
-ES: Ladrillos de la naturaleza salvaje
+ES: Ladrillos del páramo
 EN: 荒野レンガ
 
 REGISTRO: 68
 [CLD-008822] atributos_terreno | nombre_atributo
-ES: Ladrillos de la naturaleza salvaje
+ES: Ladrillos del páramo
 EN: 荒野レンガ
 
 REGISTRO: 69
 [CLD-008823] atributos_terreno | nombre_atributo
-ES: Ladrillos de la naturaleza salvaje
+ES: Ladrillos del páramo
 EN: 荒野レンガ
 
 REGISTRO: 70
 [CLD-008824] atributos_terreno | nombre_atributo
-ES: Ladrillos de la naturaleza salvaje
+ES: Ladrillos del páramo
 EN: 荒野レンガ
 
 REGISTRO: 71
@@ -30124,7 +30122,7 @@ EN: 城絨毯
 
 REGISTRO: 108
 [CLD-008862] atributos_terreno | nombre_atributo
-ES: Instituto de Investigación Bed
+ES: Suelo del laboratorio
 EN: 研究所床
 
 REGISTRO: 109
@@ -30474,7 +30472,7 @@ EN: 中いす2
 
 REGISTRO: 178
 [CLD-008925] atributos_terreno | nombre_atributo
-ES: Silla para diestros
+ES: Silla derecha
 EN: 右いす
 
 REGISTRO: 179
@@ -30594,7 +30592,7 @@ EN: 大木(左上
 
 REGISTRO: 202
 [CLD-008940] atributos_terreno | nombre_atributo
-ES: Puerta de transferencia
+ES: Puerta de teletransporte
 EN: 転移の扉
 
 REGISTRO: 203
@@ -31728,32 +31726,32 @@ EN: ？？？
 
 REGISTRO: 127
 [CLD-F-UP_MONSTER-0127-nombre_monstruo] monstruos_auxiliares | nombre_monstruo
-ES: mascarilla
+ES: Máscara
 EN: 仮面
 
 REGISTRO: 128
 [CLD-F-UP_MONSTER-0128-nombre_monstruo] monstruos_auxiliares | nombre_monstruo
-ES: mascarilla
+ES: Máscara
 EN: 仮面
 
 REGISTRO: 129
 [CLD-F-UP_MONSTER-0129-nombre_monstruo] monstruos_auxiliares | nombre_monstruo
-ES: mascarilla
+ES: Máscara
 EN: 仮面
 
 REGISTRO: 130
 [CLD-F-UP_MONSTER-0130-nombre_monstruo] monstruos_auxiliares | nombre_monstruo
-ES: mascarilla
+ES: Máscara
 EN: 仮面
 
 REGISTRO: 131
 [CLD-F-UP_MONSTER-0131-nombre_monstruo] monstruos_auxiliares | nombre_monstruo
-ES: mascarilla
+ES: Máscara
 EN: 仮面
 
 REGISTRO: 132
 [CLD-F-UP_MONSTER-0132-nombre_monstruo] monstruos_auxiliares | nombre_monstruo
-ES: mascarilla
+ES: Máscara
 EN: 仮面
 
 REGISTRO: 133
@@ -31873,7 +31871,7 @@ EN: 宝箱　レア
 
 REGISTRO: 156
 [CLD-F-UP_MONSTER-0156-nombre_monstruo] monstruos_auxiliares | nombre_monstruo
-ES: mascarilla
+ES: Máscara
 EN: 仮面
 
 ======================================================================
@@ -32086,7 +32084,7 @@ EN: Old Sword
 
 REGISTRO: 1
 [CLD-009232] objetos_armas | nombre
-ES: Casa antigua
+ES: Espadón
 EN: Claymore
 [CLD-009233] objetos_armas | descripcion
 ES: Espada de moda
@@ -32102,7 +32100,7 @@ EN: Knight Sword
 
 REGISTRO: 3
 [CLD-009236] objetos_armas | nombre
-ES: Flamengue
+ES: Flamberge
 EN: Flamberge
 [CLD-009237] objetos_armas | descripcion
 ES: Espada Ondulante
@@ -32118,7 +32116,7 @@ EN: Orient Sword
 
 REGISTRO: 5
 [CLD-009240] objetos_armas | nombre
-ES: Justicia
+ES: Némesis
 EN: Nemesis
 [CLD-009241] objetos_armas | descripcion
 ES: Espada Divina
@@ -32126,7 +32124,7 @@ EN: Deity Sword
 
 REGISTRO: 6
 [CLD-009242] objetos_armas | nombre
-ES: Estirado
+ES: Dragnade
 EN: Dragnade
 [CLD-009243] objetos_armas | descripcion
 ES: Espada Maligna
@@ -32161,15 +32159,15 @@ REGISTRO: 10
 ES: Martillo de guerra
 EN: War Hammer
 [CLD-009251] objetos_armas | descripcion
-ES: Club de Hierro
+ES: Maza de hierro
 EN: Iron Club
 
 REGISTRO: 11
 [CLD-009252] objetos_armas | nombre
-ES: Club de ogros
+ES: Maza de ogro
 EN: Ogre Club
 [CLD-009253] objetos_armas | descripcion
-ES: Club del Peligro
+ES: Maza peligrosa
 EN: Danger Club
 
 REGISTRO: 12
@@ -32185,12 +32183,12 @@ REGISTRO: 13
 ES: Diablo
 EN: Diablo
 [CLD-009257] objetos_armas | descripcion
-ES: Club oscuro
+ES: Maza oscura
 EN: Dark Club
 
 REGISTRO: 14
 [CLD-009258] objetos_armas | nombre
-ES: Emperador
+ES: Kaiser
 EN: Kaiser
 [CLD-009259] objetos_armas | descripcion
 ES: Hacha de héroe
@@ -32246,7 +32244,7 @@ EN: ⑤Staff +25
 
 REGISTRO: 21
 [CLD-009272] objetos_armas | nombre
-ES: Barra de refuerzo
+ES: Vara de fuerza
 EN: Strength Rod
 [CLD-009273] objetos_armas | descripcion
 ES: ⑤Bastón +30

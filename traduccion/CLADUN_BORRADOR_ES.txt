@@ -1477,7 +1477,7 @@ Casilla de magia/habilidad
 Ampliación
 
 [000484] OPCIÓN
-Espacio fijo
+Casilla fija
 
 [000485] OPCIÓN
 Volver
@@ -1552,7 +1552,7 @@ Puedes colocar artefactos
 en las casillas para artefactos.
 
 [000509] DIÁLOGO
-Los personajes secundarios consumirán maná
+Los personajes de apoyo consumirán maná
 
 [000510] DIÁLOGO
 para activar varios artefactos.
@@ -1612,7 +1612,7 @@ Algunas casillas fijas vienen
 predeterminadas en el Círculo mágico.
 
 [000529] DIÁLOGO
-Defender: Recibe el daño del personaje secundario.
+Defender: Recibe el daño del personaje de apoyo.
 
 [000530] DIÁLOGO
 HP -X: reduce el HP de los personajes de apoyo en X%.
@@ -2325,7 +2325,7 @@ Esqueleto moribundo
 No necesitas derrotar a los enemigos en este
 
 [000765] DIÁLOGO
-Mapa fácil. Aunque, pensándolo bien, no es TAN fácil.
+mapa fácil. Aunque, pensándolo bien, tampoco es TAN fácil.
 
 [000766] PERSONAJE
 Esqueleto moribundo
@@ -2352,7 +2352,7 @@ Esqueleto moribundo
 Esqueleto moribundo
 
 [000774] DIÁLOGO
-Los ladrones de gatos que encontrarás aquí
+Los ladrones felinos que encontrarás aquí
 
 [000775] DIÁLOGO
 compraron demasiado y se quedaron sin G.
@@ -2369,7 +2369,7 @@ SCRIPT: demo1001_00.dsf
 Chica alegre
 
 [000778] DIÁLOGO
-Así que esto es "Arcanus Cella". ¡La tierra prohibida!
+Así que esto es Arcanus Cella, ¡la tierra prohibida!
 
 [000779] DIÁLOGO
 El tesoro que he buscado toda mi vida
@@ -2405,19 +2405,19 @@ Te dije que no me siguieras,
 Souma.
 
 [000790] DIÁLOGO
-Eres una persona muy preocupadiza.
+¡Siempre te preocupas por todo!
 
 [000791] DIÁLOGO
-¿Puedes culparme?
+¿Y cómo no voy a hacerlo?
 
 [000792] DIÁLOGO
-Tu mamá y tu papá
+Tus padres
 
 [000793] DIÁLOGO
-Me pediste que te cuidara.
+me pidieron que te cuidara.
 
 [000794] DIÁLOGO
-De no ser así, jamás habría faltado a mis clases
+Si no, nunca habría faltado a clase
 
 [000795] DIÁLOGO
 para venir hasta aquí.
@@ -2426,16 +2426,16 @@ para venir hasta aquí.
 Puddie, tú eres...
 
 [000797] DIÁLOGO
-¡Basta ya! Souma, cállate.
+¡Basta, Souma! ¡Cállate!
 
 [000798] DIÁLOGO
-Mamá y papá me dijeron que puedo hacer lo que quiera
+Mamá y papá me dejaron hacer lo que quisiera
 
 [000799] DIÁLOGO
-Lo quiero para los próximos seis meses.
+durante los próximos seis meses.
 
 [000800] DIÁLOGO
-Seis meses... Correcto.
+Seis meses... Sí.
 
 [000801] DIÁLOGO
 Y además...
@@ -2456,7 +2456,7 @@ En el lenguaje de los videojuegos, ¡eso significa 15!
 Un momento. ¿Dónde estamos?
 
 [000807] DIÁLOGO
-Vi un cartel de "Prohibido el paso" roto allí atrás.
+Vi un cartel roto de «Prohibido el paso» allí atrás.
 
 [000808] DIÁLOGO
 Realmente no creo que debamos entrar ahí.
@@ -2489,7 +2489,7 @@ Es demasiado peligroso.
 ¡Se cayó!
 
 [000818] DIÁLOGO
-Puaj...
+Uf...
 
 [000819] DIÁLOGO
 ¡No tengo tiempo para pensar!
@@ -2503,7 +2503,7 @@ SCRIPT: demo1001_01.dsf
 ==================================================================
 
 [000821] DIÁLOGO
-Puaj...
+Uf...
 
 [000822] DIÁLOGO
 ¡Levántate, Souma!
@@ -2524,7 +2524,7 @@ Pudding, ¿estás bien?
 ¿Te duele alguna parte? ¿La cara, el pecho, los ovarios?
 
 [000828] DIÁLOGO
-Al menos, no estoy muerto.
+Al menos, no estoy muerta.
 
 [000829] DIÁLOGO
 Pero eso solo si este lugar no es el paraíso.
@@ -2539,13 +2539,13 @@ Realmente tienes que tener más cuidado.
 Veamos... ¿Cómo volvemos...?
 
 [000833] DIÁLOGO
-Dudo que podamos llegar hasta allí.
+Dudo que podamos subir por ahí.
 
 [000834] DIÁLOGO
 Buscaré un camino por aquí
 
 [000835] DIÁLOGO
-mientras buscaban simultáneamente un tesoro.
+mientras busco un tesoro.
 
 [000836] DIÁLOGO
 ¡No, no, no! ¡Esas prioridades me preocupan!
@@ -2554,10 +2554,10 @@ mientras buscaban simultáneamente un tesoro.
 ¡Yo iré!
 
 [000838] DIÁLOGO
-Puedes seguir mis huellas una vez que lo sepa
+Puedes seguir mis huellas cuando compruebe
 
 [000839] DIÁLOGO
-¡Es seguro! ¿Lo entiendes, Pudding?
+que no hay peligro. ¿Entendido, Pudding?
 
 [000840] DIÁLOGO
 Eso no es divertido.
@@ -2581,7 +2581,7 @@ Estoy completamente indefenso aquí.
 Encontré esto. ¿Lo quieres? Métetelo por el culo.
 
 [000847] DIÁLOGO
-¡Souma recibió un "palo de madera"!
+¡Souma recibió un «Palo de madera»!
 
 [000848] DIÁLOGO
 ...Supongo que es mejor que nada.
@@ -2644,7 +2644,7 @@ Hay muchísima hierba aquí.
 El césped y los charcos pueden
 
 [000868] DIÁLOGO
-Realmente me ralentiza.
+frenarme mucho.
 
 [000869] DIÁLOGO
 Tengo que saber qué estoy pisando
@@ -2676,7 +2676,7 @@ Pero no recuerdo haber subido escaleras
 ni haber escalado una colina...
 
 [000877] DIÁLOGO
-Es muy brillante.
+¡Qué luz hay aquí!
 
 [000878] DIÁLOGO
 Caímos bastante bajo, ¿verdad?
@@ -2766,7 +2766,7 @@ Yo, la talentosa hechicera Despina,
 No voy a dejar que esto me afecte. Ni un poquito.
 
 [000907] DIÁLOGO
-A-Mientras la casa esté bien, todo está bien.
+C-Con tal de que la casa esté bien, no pasa nada.
 
 [000908] DIÁLOGO
 Esos tontos con suerte se salvaron
@@ -2811,10 +2811,10 @@ Soy Pudding y este es Souma.
 ...
 
 [000922] DIÁLOGO
-Tengo... Despina.
+Y-Yo soy... Despina.
 
 [000923] DIÁLOGO
-¡Eres una persona muy pesimista, ¿verdad?!
+¡Vaya, qué sombría eres!
 
 [000924] DIÁLOGO
 ¡Oye! ¿Qué es esto?
@@ -2823,7 +2823,7 @@ Tengo... Despina.
 ¿Acabo de encontrar un tesoro?
 
 [000926] DIÁLOGO
-Ese es un conocido mío.
+Es mi familiar.
 
 [000927] DIÁLOGO
 ¿Familiares? Pensé que eran
@@ -2835,7 +2835,7 @@ monstruos a los que los hechiceros dan órdenes.
 ¿Eso significa que eres un hechicero?
 
 [000930] DIÁLOGO
-Hechicera, pero... correcto.
+Hechicera, pero sí.
 
 [000931] DIÁLOGO
 ¿Puedo tener esto?
@@ -3014,7 +3014,7 @@ Encuentro mi tesoro.
 ...
 
 [000988] DIÁLOGO
-Irse.
+Vete.
 
 [000989] DIÁLOGO
 Deja de hablarme.
@@ -3026,7 +3026,7 @@ Tamako
 Hola.
 
 [000992] DIÁLOGO
-Soy la conocida "Tamako".
+Soy Tamako, un familiar.
 
 [000993] DIÁLOGO
 Espero que te hagas amiga de Despina.
@@ -3100,7 +3100,7 @@ Quiero ir a casa y ducharme.
 Crosstine
 
 [001015] DIÁLOGO
-Si es posible, ¿podría quedarse un rato?
+Si es posible, ¿pueden quedarse un rato?
 
 [001016] DIÁLOGO
 Hay alguien con quien quiero
@@ -3175,7 +3175,7 @@ Crosstine
 Hablando de diversión,
 
 [001040] DIÁLOGO
-Puedes usar el "Portal de Teletransporte" que está al lado de la fuente
+puedes usar la «Puerta de teletransporte» junto a la fuente
 
 [001041] DIÁLOGO
 para ir a muchos mundos diferentes.
@@ -3220,7 +3220,7 @@ Crosstine
 También hay un hechizo en algún lugar que puede convertir
 
 [001055] DIÁLOGO
-¿Hay alguien interesado en el personaje principal...?
+a cualquiera en personaje principal...
 
 [001056] DIÁLOGO
 Oh, mira la hora.
@@ -3229,7 +3229,7 @@ Oh, mira la hora.
 Tengo que prepararme para
 
 [001058] DIÁLOGO
-Bienvenido, amigo mío.
+recibir a mi amigo.
 
 [001059] PERSONAJE
 Crosstine
@@ -3777,7 +3777,7 @@ La experiencia acumulada se aplicará en la pantalla de resultados.
 Cómo subes de nivel depende de si el personaje es
 
 [001234] DIÁLOGO
-un personaje secundario o un personaje principal.
+un personaje de apoyo o un personaje principal.
 
 [001235] DIÁLOGO
 "Sube de nivel como personaje principal."
@@ -3789,7 +3789,7 @@ Obtendrás estadísticas que te convertirán en un mejor suplente.
 El personaje gana más puntos de vida y maná.
 
 [001238] DIÁLOGO
-"Sube de nivel como personaje secundario."
+"Sube de nivel como personaje de apoyo."
 
 [001239] DIÁLOGO
 Obtendrás estadísticas que te convertirán en un mejor jugador principal.
@@ -3934,7 +3934,7 @@ Este hechizo permite al "personaje principal" de la
 aventura para reunir las fortalezas de
 
 [001283] DIÁLOGO
-¡"Personajes secundarios" para potenciar!
+¡"personajes de apoyo" para potenciar!
 
 [001284] DIÁLOGO
 Todo lo que los "subpersonajes" necesitan hacer es
@@ -3958,7 +3958,7 @@ Solo sale el personaje principal.
 Pero el daño en el personaje principal
 
 [001291] DIÁLOGO
-se transfiere al personaje secundario.
+se transfiere al personaje de apoyo.
 
 [001292] DIÁLOGO
 ¡Ese es un hechizo perfecto para mí!
@@ -4433,7 +4433,7 @@ Así que no te voy a contar nada bueno.
 Cuando subas de nivel,
 
 [001446] DIÁLOGO
-el "personaje principal" y el "personaje secundario"
+el "personaje principal" y el "personaje de apoyo"
 
 [001447] DIÁLOGO
 Subir de nivel de una manera completamente diferente.
@@ -4460,10 +4460,10 @@ Para crear un buen personaje principal,
 tendrás que construirlos como
 
 [001455] DIÁLOGO
-un "personaje secundario" primero.
+un "personaje de apoyo" primero.
 
 [001456] DIÁLOGO
-Para crear un buen personaje secundario, es mejor
+Para crear un buen personaje de apoyo, es mejor
 
 [001457] DIÁLOGO
 para subirlos de nivel como "personaje principal" para que
@@ -4663,7 +4663,7 @@ Los Círculos Mágicos se utilizan para potenciar el
 "personaje principal" mediante la acumulación
 
 [001521] DIÁLOGO
-todos los poderes de los "personajes secundarios".
+todos los poderes de los "personajes de apoyo".
 
 [001522] DIÁLOGO
 El que está en el medio es el "personaje principal".
@@ -4714,7 +4714,7 @@ efectos debilitantes como este.
 Piensa detenidamente dónde colocar los subwoofers.
 
 [001538] DIÁLOGO
-El papel de los "personajes secundarios" no es solo
+El papel de los "personajes de apoyo" no es solo
 
 [001539] DIÁLOGO
 para proteger al "personaje principal".
@@ -4875,7 +4875,7 @@ Demasiado.
 ¿Debería seguirla?
 
 [001590] DIÁLOGO
-Pero los "personajes secundarios" tienen
+Pero los "personajes de apoyo" tienen
 
 [001591] DIÁLOGO
 quedarse aquí... Hm...
@@ -5875,7 +5875,7 @@ Pueden ser tesoros realmente valiosos.
 Me acabo de dar cuenta de esto ahora mismo, pero
 
 [001910] DIÁLOGO
-pero si Pudding se convierte en un "personaje secundario",
+pero si Pudding se convierte en un "personaje de apoyo",
 
 [001911] DIÁLOGO
 ¿No se lastimará?
@@ -8435,10 +8435,10 @@ Noooo!
 ¡Tengo que detenerlo!
 
 [002730] DIÁLOGO
-Eh, hay algunas armas
+Eh, hay unas armas
 
 [002731] DIÁLOGO
-Me abastecí de...
+que tengo guardadas...
 
 [002732] DIÁLOGO
 ¡Quiero decir, no te mueras!
@@ -8530,7 +8530,7 @@ SCRIPT: demo1207_01.dsf
 Veo a un idiota.
 
 [002760] DIÁLOGO
-Un completo idiota.
+Un idiota de remate.
 
 [002761] DIÁLOGO
 Tengo que volverme más fuerte
@@ -8539,7 +8539,7 @@ Tengo que volverme más fuerte
 para poder proteger a Pudding.
 
 [002763] DIÁLOGO
-Ojalá alguien me enseñara nuevos pasos de baile.
+Ojalá alguien me enseñara nuevas técnicas.
 
 [002764] DIÁLOGO
 Ups.
@@ -12310,7 +12310,7 @@ Asagi
 Aunque yo pueda ser el "personaje principal",
 
 [003975] DIÁLOGO
-¡Yo también me veré obligado a ser un "personaje secundario"!
+¡Yo también me veré obligado a ser un "personaje de apoyo"!
 
 [003976] DIÁLOGO
 ¡Eso no es lo que es un verdadero personaje principal!
@@ -12378,10 +12378,10 @@ pero más le vale aprender a comportarse.
 ¿Debería siquiera ser yo el "personaje principal"?
 
 [003996] DIÁLOGO
-En realidad, prefiero ser un "personaje secundario".
+En realidad, prefiero ser un "personaje de apoyo".
 
 [003997] DIÁLOGO
-Me encanta ser el "personaje secundario".
+Me encanta ser el "personaje de apoyo".
 
 [003998] DIÁLOGO
 Está en mi naturaleza apoyar a los demás.
@@ -12840,7 +12840,7 @@ Ahora me toca a mí ayudar.
 Creo que puedo poner mi corazón en ser
 
 [004145] DIÁLOGO
-¡Ahora es un "personaje secundario"!
+¡Ahora es un "personaje de apoyo"!
 
 [004146] DIÁLOGO
 ¡Espérenme, chicos!
@@ -14735,7 +14735,7 @@ Regresaré al reino.
 ¿Vendrás conmigo,
 
 [004755] DIÁLOGO
-Sherbet?
+¿Sherbet?
 
 [004756] DIÁLOGO
 Esto no es una orden.
@@ -16136,13 +16136,13 @@ DATABASE.DAT/STRTBL.DAT
  ¡obtenido!
 
 [005212] INTERFAZ
-Tiempo de despeje %3d：%02d：%02d %s
+Tiempo: %3d：%02d：%02d  %s
 
 [005213] INTERFAZ
 ¡He aprendido magia nueva!
 
 [005214] INTERFAZ
-¡Aprendí un nuevo Círculo mágico!
+¡Nuevo círculo mágico aprendido!
 
 [005215] INTERFAZ
 Conteo de borrados: %6d
@@ -16150,7 +16150,7 @@ Mejor tiempo: %4d: %02d: %02d
 (%s)
 
 [005216] INTERFAZ
-¡He aprendido una nueva habilidad!
+¡Nueva habilidad aprendida!
 
 [005217] INTERFAZ
 Tiempo objetivo
@@ -16605,7 +16605,7 @@ Clase   %s
 (Ranura %s)
 
 [005365] INTERFAZ
-Subcarácter
+Pj. de apoyo
 
 [005366] INTERFAZ
 Personaje principal
@@ -16618,7 +16618,7 @@ Personaje principal
 
 [005369] INTERFAZ
 ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
 
 [005370] INTERFAZ
  Eliminar
@@ -16633,10 +16633,10 @@ AYUDA
 El principal actual es %s.
 
 [005374] INTERFAZ
-Colocar como personaje secundario.
+Colocar como personaje de apoyo.
 
 [005375] INTERFAZ
-No se puede colocar el personaje.
+No se puede colocar al personaje.
 
 [005376] INTERFAZ
 Artefactos de HP.
@@ -16705,13 +16705,13 @@ Mejora de habilidad x%2d
 ＬＶ %2d
 
 [005398] INTERFAZ
-Reducción del uso de SP x%2d
+Reducción de consumo SP x%2d
 
 [005399] INTERFAZ
-Reducción del tiempo de fundición x%2d
+Reducción de lanzamiento x%2d
 
 [005400] INTERFAZ
-Tiempo de fundición %3d
+Tiempo de lanzamiento %3d
 
 [005401] INTERFAZ
 Ampliación　　　　 　 %s
@@ -16741,10 +16741,10 @@ Poder de habilidad
 %s es el sub.
 
 [005410] INTERFAZ
-Colocación como subcaracter. %s
+Colocar como personaje de apoyo: %s
 
 [005411] INTERFAZ
-Colocarlo como personaje secundario.
+Colocar como personaje de apoyo.
 
 [005412] INTERFAZ
 Espacio regular
@@ -16759,40 +16759,40 @@ Bonificación de EXP 2
 Bonificación de EXP 3
 
 [005416] INTERFAZ
-Bonificación de aumento de ATK
+Bono ATK
 
 [005417] INTERFAZ
-Bonificación de aumento de ATK 2
+Bono ATK 2
 
 [005418] INTERFAZ
-Bonificación de aumento de ATK 3
+Bono ATK 3
 
 [005419] INTERFAZ
-Bonificación de aumento de DEF
+Bono DEF
 
 [005420] INTERFAZ
-Bonificación de mejora de DEF 2
+Bono DEF 2
 
 [005421] INTERFAZ
-Bonificación de mejora de DEF 3
+Bono DEF 3
 
 [005422] INTERFAZ
-Bonificación de aumento de maná
+Bono maná
 
 [005423] INTERFAZ
-Bonificación de aumento de maná 2
+Bono maná 2
 
 [005424] INTERFAZ
-Bonificación de aumento de maná 3
+Bono maná 3
 
 [005425] INTERFAZ
-Bonificación de aumento de HP
+Bono HP
 
 [005426] INTERFAZ
-Bonificación de aumento de HP 2
+Bono HP 2
 
 [005427] INTERFAZ
-Bonificación de aumento de HP 3
+Bono HP 3
 
 [005428] INTERFAZ
 Estadísticas actuales (Nivel %2s)
@@ -16873,7 +16873,7 @@ SP BRK ② ⑳②
 　Título 　　 Poder 　　 ⑥　　　　 ⑳⑥
 
 [005450] INTERFAZ
-　Maná 　　 　Trabajo　　　 ⑧　　　　 ⑳
+　Maná 　　 　Clase　　　 ⑧　　　　 ⑳
 
 [005451] INTERFAZ
 Crecimiento de EXP△　　○○Crecimiento△　 Espacio fijo　Ranura
@@ -17155,7 +17155,7 @@ Normal
 ¿Vender?
 
 [005521] INTERFAZ
-Equipado. ¿De verdad lo venden?
+Equipado. ¿Seguro que quieres venderlo?
 
 [005522] INTERFAZ
 Hace falta dinero.
@@ -17194,7 +17194,7 @@ Equipado. No se puede vender.
 GRAMO
 
 [005534] INTERFAZ
-Para clientes habituales
+Para habituales
 
 [005535] INTERFAZ
 Necesitas %2d Fama para entrar.
@@ -17228,7 +17228,7 @@ Borrar
 
 [005545] INTERFAZ
 ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
 
 [005546] INTERFAZ
 %s
@@ -17253,23 +17253,23 @@ Selecciona una clase.
 
 [005549] INTERFAZ
 ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
 
 [005550] INTERFAZ
-Selecciona el estilo artístico y el género del personaje.
+Selecciona el aspecto y el género del personaje.
 
 [005551] INTERFAZ
 ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
 
 [005552] INTERFAZ
-Seleccione el nombre del personaje.
+Selecciona el nombre del personaje.
 
 [005553] INTERFAZ
-Seleccione el patrón de conversación.
+Selecciona el patrón de conversación.
 
 [005554] INTERFAZ
-Seleccione el nombre del jefe.
+Selecciona el nombre del jefe.
 
 [005555] INTERFAZ
 Amarillo
@@ -17290,7 +17290,7 @@ Azul
 Negro
 
 [005561] INTERFAZ
-Seleccione la forma y el color del jefe.
+Selecciona la forma y el color del jefe.
 
 [005562] INTERFAZ
 ⑪Confirmar
@@ -17318,11 +17318,11 @@ maná%3d
 %s
 
 [005566] INTERFAZ
-Seleccione el personaje que desea editar.
+Selecciona el personaje que quieres editar.
 
 [005567] INTERFAZ
 ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
 
 [005568] INTERFAZ
 VIII Cambiar el nombre del personaje
@@ -17358,7 +17358,7 @@ Cambiar la cara
 Selecciona el nombre de tu nuevo personaje.
 
 [005579] INTERFAZ
-Seleccione el nombre del nuevo jefe.
+Selecciona el nombre del nuevo jefe.
 
 [005580] INTERFAZ
 Introduce una nueva descripción.
@@ -17367,10 +17367,10 @@ Introduce una nueva descripción.
 Introduce la primera línea.
 
 [005582] INTERFAZ
-Introduzca la segunda línea.
+Introduce la segunda línea.
 
 [005583] INTERFAZ
-Introduzca la tercera línea.
+Introduce la tercera línea.
 
 [005584] INTERFAZ
 No se utiliza
@@ -17397,12 +17397,11 @@ No se utiliza
 No se utiliza
 
 [005592] INTERFAZ
-Seleccione el personaje que desea eliminar.
+Selecciona el personaje que quieres eliminar.
 
 [005593] INTERFAZ
-¿De verdad borraste %s?
-
-¡Las eliminaciones son permanentes!
+¿Eliminar a %s?
+¡No se puede deshacer!
 
 [005594] INTERFAZ
 Estos son colores para los ojos.
@@ -17449,7 +17448,7 @@ Editar datos
 
 [005606] INTERFAZ
 Datos de edición de %s.
-Tiempo de reproducción %d:%02d:%02d
+Tiempo jugado %d:%02d:%02d
 
 [005607] INTERFAZ
 Cambios realizados.
@@ -17552,13 +17551,13 @@ Cambio de gráficos faciales para todos los lados.
 Invierte la imagen actual para usarla como el otro lado.
 
 [005634] INTERFAZ
-Muestra el gráfico del personaje principal y el texto.
+Muestra el gráfico del personaje principal y cópialo.
 
 [005635] INTERFAZ
-Guarda el gráfico para editar los datos.
+Guarda el gráfico en los datos de edición.
 
 [005636] INTERFAZ
-Cargar gráfico en editar datos.
+Carga el gráfico desde los datos de edición.
 
 [005637] INTERFAZ
 Cerrar editor.
@@ -17609,11 +17608,11 @@ Marrón
 Azul
 
 [005653] INTERFAZ
-Seleccione un nuevo color.
+Selecciona un nuevo color.
 
 [005654] INTERFAZ
 ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
 ⑬ Color predeterminado
 
 [005655] INTERFAZ
@@ -17623,7 +17622,7 @@ Color del personaje
 Seleccionar mazmorra
 
 [005657] INTERFAZ
-¡ESCENARIO DESPEJADO!
+¡FASE SUPERADA!
 
 [005658] INTERFAZ
 Has caído...
@@ -17731,28 +17730,28 @@ No se utiliza
 Nivel %2d EXP :%6d Siguiente :%6s
 
 [005687] INTERFAZ
-Volumen de efectos de sonido
+Vol. efectos
 
 [005688] INTERFAZ
-Volumen de música de fondo
+Vol. música
 
 [005689] INTERFAZ
-Tipo de música de fondo
+Tipo música
 
 [005690] INTERFAZ
-Configuración clave
+Controles
 
 [005691] INTERFAZ
-Cambia el volumen de los efectos de sonido.
+Ajusta el volumen de los efectos.
 
 [005692] INTERFAZ
-Cambia el volumen de la música de fondo.
+Ajusta el volumen de la música.
 
 [005693] INTERFAZ
-Cambia el tipo de música de fondo (real/retro)
+Elige música real o retro.
 
 [005694] INTERFAZ
-Cambia la configuración de los botones. (Cambia de pantalla)
+Configura los botones.
 
 [005695] INTERFAZ
 Retro
@@ -17788,43 +17787,43 @@ Por defecto
 Fin
 
 [005706] INTERFAZ
-Pulse el botón para configurar.
+Pulsa el botón para configurar.
 
 [005707] INTERFAZ
 Vuelve a la configuración estándar.
 
 [005708] INTERFAZ
-Fin de la configuración de teclas.
+Salir de la configuración de botones.
 
 [005709] INTERFAZ
-Mostrar decimales para el daño
+Decimales de daño
 
 [005710] INTERFAZ
           EN
 
 [005711] INTERFAZ
-Menos de 1 encendido
+Menos de 1: SÍ
 
 [005712] INTERFAZ
-Menos de 10 años
+Menos de 10: SÍ
 
 [005713] INTERFAZ
          APAGADO
 
 [005714] INTERFAZ
-Activa o desactiva la visualización de los decimales en los daños.
+Muestra decimales en el daño.
 
 [005715] INTERFAZ
-Efectos del Círculo mágico
+Efectos círculo
 
 [005716] INTERFAZ
-Activa o desactiva la visualización de efectos para Magic Circle.
+Muestra los efectos del círculo mágico.
 
 [005717] INTERFAZ
-Captura de pantalla
+Capturas
 
 [005718] INTERFAZ
-Activa o desactiva el botón para tomar capturas de pantalla.
+Activa el botón para hacer capturas.
 
 [005719] INTERFAZ
 Comenzar
@@ -17842,7 +17841,7 @@ Ingrese el nombre.
 Crea una sala como anfitrión o espera a que haya otras salas disponibles.
 
 [005724] INTERFAZ
-Lista de habitaciones con conexión inalámbrica
+Lista de salas inalámbricas
 
 [005725] INTERFAZ
 Crear una sala cooperativa
@@ -17930,7 +17929,7 @@ Tutorial de conexión inalámbrica
 Selecciona el personaje que cambiará de clase.
 
 [005752] INTERFAZ
-Seleccione el puesto al que desea cambiar.
+Selecciona la nueva clase.
 
 [005753] INTERFAZ
 Volver del nivel %2d al 1 para cambiar de clase.
@@ -17969,9 +17968,8 @@ Libro de monstruos
 ???
 
 [005764] INTERFAZ
-Aún no puede leer.
-
-Derrota a los enemigos para desbloquear.
+Aún no se puede leer.
+Derrota a enemigos para desbloquearlo.
 
 [005765] INTERFAZ
 ⑪Acción
@@ -18017,7 +18015,7 @@ Nivel monstruoso
 
 
 [005778] INTERFAZ
-Tasa de aparición de objetos
+Prob. de objetos
 
 
 [005779] INTERFAZ
@@ -18042,11 +18040,11 @@ Prob. de título raro　　　%3d
 Salto de planta　　　　　%3d%s
 
 [005782] INTERFAZ
-Tasa de aparición de objetos: %3d
+Prob. de objetos %3d
 
 
 [005783] INTERFAZ
-Tasa de títulos raros　　%3d%s
+Prob. título raro %3d%s
 
 [005784] INTERFAZ
 
@@ -18120,13 +18118,13 @@ Mazmorra
 ¡No hay ninguna clase que pueda usar %s!
 
 [005802] INTERFAZ
-%s personas en Magic Circle usaron %s!
+¡%s personajes del círculo mágico usaron %s!
 
 [005803] INTERFAZ
-Nivel de piso insuficiente...
+Nivel de planta insuficiente...
 
 [005804] INTERFAZ
-¡El nivel de los enemigos en el siguiente piso ha bajado a %s!
+¡Nivel de enemigos de la próxima planta: %s!
 
 [005805] INTERFAZ
 El nivel de los enemigos ya no se puede reducir...
@@ -18153,7 +18151,7 @@ Ningún ataque especial
 Normal y Guerrero LV.
 
 [005813] INTERFAZ
-Comerciante de apuestas LV.
+Mercader apostador NV.
 
 [005814] INTERFAZ
 Guardia de ángeles LV.
@@ -18232,7 +18230,7 @@ Campeón habitual
 Imposible Uno
 
 [005838] INTERFAZ
-¡Amante de los pasteles de carne!
+¡Amante del pastel de carne!
 
 [005839] INTERFAZ
 Maestro de la nueva geon
@@ -18438,61 +18436,61 @@ DATABASE.DAT/ARTIFACT.DAT
 Pequeña Manzana
 
 [005898] OBJETOS ARTEFACTOS
-Puntos de vida de personaje secundario +4 gratis.
+Puntos de vida de personaje de apoyo +4 gratis.
 
 [005899] OBJETOS ARTEFACTOS
 Mini manzana
 
 [005900] OBJETOS ARTEFACTOS
-Puntos de vida de personaje secundario +10 gratis.
+Puntos de vida de personaje de apoyo +10 gratis.
 
 [005901] OBJETOS ARTEFACTOS
 Vida Apple
 
 [005902] OBJETOS ARTEFACTOS
-Puntos de vida de personaje secundario +18 gratis.
+Puntos de vida de personaje de apoyo +18 gratis.
 
 [005903] OBJETOS ARTEFACTOS
 Bendice a Apple
 
 [005904] OBJETOS ARTEFACTOS
-Personaje secundario +28 HP gratis.
+personaje de apoyo +28 HP gratis.
 
 [005905] OBJETOS ARTEFACTOS
 Manzana de tierra
 
 [005906] OBJETOS ARTEFACTOS
-Puntos de vida adicionales para personajes secundarios: +40 gratis.
+Puntos de vida adicionales para personajes de apoyo: +40 gratis.
 
 [005907] OBJETOS ARTEFACTOS
 Uva pequeña
 
 [005908] OBJETOS ARTEFACTOS
-Personaje secundario +15 PV por 3 de maná.
+personaje de apoyo +15 PV por 3 de maná.
 
 [005909] OBJETOS ARTEFACTOS
 Uva pequeña
 
 [005910] OBJETOS ARTEFACTOS
-Personaje secundario +30 PV por 10 de Maná.
+personaje de apoyo +30 PV por 10 de Maná.
 
 [005911] OBJETOS ARTEFACTOS
 Uva de la vida
 
 [005912] OBJETOS ARTEFACTOS
-Personaje secundario +50 PV por 20 de Maná.
+personaje de apoyo +50 PV por 20 de Maná.
 
 [005913] OBJETOS ARTEFACTOS
 Bendita uva
 
 [005914] OBJETOS ARTEFACTOS
-Personaje secundario +70 PV por 30 de Maná.
+personaje de apoyo +70 PV por 30 de Maná.
 
 [005915] OBJETOS ARTEFACTOS
 Uva de tierra
 
 [005916] OBJETOS ARTEFACTOS
-Personaje secundario +90 PV por 40 de Maná.
+personaje de apoyo +90 PV por 40 de Maná.
 
 [005917] OBJETOS ARTEFACTOS
 Generador 1
@@ -19086,19 +19084,19 @@ HP-60%
 Dispersión 25%
 
 [006114] OBJETOS ARTEFACTOS
-Distribuye el 25% del daño recibido entre los personajes secundarios.
+Distribuye el 25% del daño recibido entre los personajes de apoyo.
 
 [006115] OBJETOS ARTEFACTOS
 Distribución 50%
 
 [006116] OBJETOS ARTEFACTOS
-Distribuye el 50% del daño recibido entre los personajes secundarios.
+Distribuye el 50% del daño recibido entre los personajes de apoyo.
 
 [006117] OBJETOS ARTEFACTOS
 Dispersión 100%
 
 [006118] OBJETOS ARTEFACTOS
-Distribuye el 100% del daño recibido entre los personajes secundarios.
+Distribuye el 100% del daño recibido entre los personajes de apoyo.
 
 [006119] OBJETOS ARTEFACTOS
 Mártir
@@ -19354,7 +19352,7 @@ Indumentaria de combate
 Cota de malla
 
 [006200] OBJETOS ARMADURAS
-Fresco
+Frío
 
 [006201] OBJETOS ARMADURAS
 Traje
@@ -23373,16 +23371,16 @@ DATABASE.DAT/EFFECT.DAT
 No se necesita espíritu de lucha
 
 [007519] EFECTOS
-Bonificación de espíritu de lucha 1
+Bono de espíritu de lucha 1
 
 [007520] EFECTOS
-Proteger y no
+No requiere protección
 
 [007521] EFECTOS
 Bonificación del Guardián 1
 
 [007522] EFECTOS
-Yingzhi no quiere
+No requiere sabiduría
 
 [007523] EFECTOS
 Bonificación de sabiduría 1
@@ -23466,7 +23464,7 @@ Velocidad aumentada
 SPD+2
 
 [007550] EFECTOS
-Defensa con espada
+Protección contra espadas
 
 [007551] EFECTOS
 Resistencia al corte +2
@@ -23475,16 +23473,16 @@ Resistencia al corte +2
 Defensa con lanza
 
 [007553] EFECTOS
-Resistencia al empuje +2
+Resistencia a perforación +2
 
 [007554] EFECTOS
 defensa con hacha
 
 [007555] EFECTOS
-Resistencia cuerpo a cuerpo +2
+Resistencia a golpes +2
 
 [007556] EFECTOS
-Protección contra incendios
+Protección contra fuego
 
 [007557] EFECTOS
 Resistencia al calor +2
@@ -23496,7 +23494,7 @@ Protección contra el hielo
 Resistencia al frío +2
 
 [007560] EFECTOS
-Protección del corazón
+Protección mental
 
 [007561] EFECTOS
 Resistencia mental +2
@@ -23505,7 +23503,7 @@ Resistencia mental +2
 tropezar
 
 [007563] EFECTOS
-ocurrencia de ruptura +3
+Probabilidad de ruptura +3
 
 [007564] EFECTOS
 destructivo
@@ -23526,10 +23524,10 @@ Esposas
 Bonificación de guardián 5, Velocidad -10
 
 [007570] EFECTOS
-Mal sabor
+Mal gusto
 
 [007571] EFECTOS
-Espíritu de lucha Guardián Sabiduría Bonificación 2: TODA Resistencia -10
+Bono 2 de espíritu, protección y sabiduría; resistencias -10
 
 [007572] EFECTOS
 Los primeros atisbos de magia
@@ -23541,13 +23539,13 @@ Bonificación de Sabiduría 10
 Barrera
 
 [007575] EFECTOS
-TODA la resistencia +5
+Todas las resistencias +5
 
 [007576] EFECTOS
-Desesperado
+A la desesperada
 
 [007577] EFECTOS
-ATK +10, Velocidad +10, Todas las resistencias -50
+ATK +10, velocidad +10, resistencias -50
 
 [007578] EFECTOS
 Fuerza vital
@@ -23577,7 +23575,7 @@ ATQ+5 DEF+5
 Tosen
 
 [007587] EFECTOS
-ATK +5, Golpe crítico y probabilidad de ruptura +10
+ATK +5, prob. crítico y ruptura +10
 
 
 ##################################################################
@@ -23633,13 +23631,13 @@ Hielo
 Una bola de hielo sale disparada en línea recta.
 
 [007604] HABILIDADES MAGIA
-Fresco
+Frío
 
 [007605] HABILIDADES MAGIA
 Una bola de hielo explota.
 
 [007606] HABILIDADES MAGIA
-Yo. Tormenta
+Tormenta de hielo
 
 [007607] HABILIDADES MAGIA
 Crea un vórtice de hielo.
@@ -23657,7 +23655,7 @@ G. Cool
 Lanza bolas de hielo explosivas teledirigidas.
 
 [007612] HABILIDADES MAGIA
-Tiempo fresco
+Tiempo de enfriamiento
 
 [007613] HABILIDADES MAGIA
 Crea una explosión retardada.
@@ -23708,7 +23706,7 @@ Recupera los puntos de vida de una zona gravemente dañada.
 Recuperar
 
 [007629] HABILIDADES MAGIA
-Efectos del estado de curación en uno mismo.
+Cura tus estados alterados.
 
 [007630] HABILIDADES MAGIA
 E. Recuperar
@@ -23795,13 +23793,13 @@ S) Yo corto
 ⑤ ataque.
 
 [007658] HABILIDADES MAGIA
-S) Barra inclinada W
+S) Corte W
 
 [007659] HABILIDADES MAGIA
 Lanza un ataque basado en el elemento ⑥.
 
 [007660] HABILIDADES MAGIA
-A) Columpio
+A) Barrido
 
 [007661] HABILIDADES MAGIA
 ③ Ataque girando sobre sí mismo.
@@ -23831,7 +23829,7 @@ A) Tanque
 Aumenta temporalmente tu DEF.
 
 [007670] HABILIDADES MAGIA
-A) Barra inclinada
+A) Corte S
 
 [007671] HABILIDADES MAGIA
 ⑥ Ataque con elemento Espíritu.
@@ -23843,7 +23841,7 @@ A) Axeboom
 ③ Ataque lanzando múltiples armas contundentes.
 
 [007674] HABILIDADES MAGIA
-G Obtener
+Obtener G
 
 [007675] HABILIDADES MAGIA
 Aumenta temporalmente la tasa de caída de G.
@@ -23947,7 +23945,7 @@ Emperador
 Último S.
 
 [007707] CIRCULOS MAGICOS
-Transmisión dual
+Doble conjuro
 
 [007708] CIRCULOS MAGICOS
 Doble S.
@@ -23992,7 +23990,7 @@ Clon
 3 deseos
 
 [007722] CIRCULOS MAGICOS
-Corbata oscura
+Vínculo oscuro
 
 [007723] CIRCULOS MAGICOS
 Paralelo
@@ -24166,7 +24164,7 @@ Extra
 Hacer/Morir
 
 [007780] CIRCULOS MAGICOS
-Trabajo
+Clase
 
 [007781] CIRCULOS MAGICOS
 Chorro
@@ -26100,7 +26098,7 @@ Utiliza poderosos ataques espirituales.
 Es especialmente peligroso cuando ataca en grupo.
 
 [008269] MONSTRUOS
-Mascarilla
+Máscara
 
 [008270] MONSTRUOS
 ¿¿¿¿
@@ -26133,7 +26131,7 @@ Mascarilla
 ????
 
 [008280] MONSTRUOS
-mascarilla
+Máscara
 
 [008281] MONSTRUOS
 Jefe final
@@ -26256,10 +26254,10 @@ Kokuo (para practicar)
 RgMan
 
 [008321] MONSTRUOS
-No tiene ningún concepto de "Koutai" (un juego de palabras con "Koutai" y "Koutai"). Sólo tiene "Zenshin" (un juego de palabras con "Zenshin" y "Zenshin").
+No sabe lo que es retirarse: ¡solo avanzar!
 
 [008322] MONSTRUOS
-No tiene ningún concepto de "Koutai" (un juego de palabras con "Koutai" y "Koutai"). Sólo tiene "Zenshin" (un juego de palabras con "Zenshin" y "Zenshin").
+No sabe lo que es retirarse: ¡solo avanzar!
 
 [008323] MONSTRUOS
 Raoh (para practicar)
@@ -26268,67 +26266,67 @@ Raoh (para practicar)
 RgMan
 
 [008325] MONSTRUOS
-¡No me arrepiento en absoluto de mi discapacidad!
+¡No me arrepiento de nada en mi vida!
 
 [008326] MONSTRUOS
-¡No me arrepiento en absoluto de mi discapacidad!
+¡No me arrepiento de nada en mi vida!
 
 [008327] MONSTRUOS
-Bloque emisor de llama
+Bloque emisor de fuego
 
 [008328] MONSTRUOS
-Bloque emisor de llama
+Bloque emisor de fuego
 
 [008329] MONSTRUOS
-Bloques de bajo nivel que emiten llamas
+Bloque emisor de fuego (bajo)
 
 [008330] MONSTRUOS
-Bloques de bajo nivel que emiten llamas
+Bloque emisor de fuego (bajo)
 
 [008331] MONSTRUOS
-Bloques de bajo nivel que emiten llamas
+Bloque emisor de fuego (bajo)
 
 [008332] MONSTRUOS
-Bloque de gran altura con llamas
+Bloque emisor de fuego (alto)
 
 [008333] MONSTRUOS
-Bloque de gran altura con llamas
+Bloque emisor de fuego (alto)
 
 [008334] MONSTRUOS
-Bloque de gran altura con llamas
+Bloque emisor de fuego (alto)
 
 [008335] MONSTRUOS
-Bloque emisor de llama
+Bloque emisor de fuego
 
 [008336] MONSTRUOS
-Bloques que producen hielo
+Bloque emisor de hielo
 
 [008337] MONSTRUOS
-Bloques que producen hielo
+Bloque emisor de hielo
 
 [008338] MONSTRUOS
-Bloques que producen hielo
+Bloque emisor de hielo
 
 [008339] MONSTRUOS
-bloques de baja producción de hielo
+Bloque emisor de hielo (bajo)
 
 [008340] MONSTRUOS
-bloques de baja producción de hielo
+Bloque emisor de hielo (bajo)
 
 [008341] MONSTRUOS
-bloques de baja producción de hielo
+Bloque emisor de hielo (bajo)
 
 [008342] MONSTRUOS
-Altura del bloque productor de hielo
+Bloque emisor de hielo (alto)
 
 [008343] MONSTRUOS
-Altura del bloque productor de hielo
+Bloque emisor de hielo (alto)
 
 [008344] MONSTRUOS
-Altura del bloque productor de hielo
+Bloque emisor de hielo (alto)
 
 [008345] MONSTRUOS
-Bloques que producen hielo
+Bloque emisor de hielo
 
 [008346] MONSTRUOS
 Guía de agujeros de Sumen
@@ -26364,7 +26362,7 @@ Cofre del tesoro (solo una vez)
 Efecto de bandera de cofre del tesoro
 
 [008357] MONSTRUOS
-mascarilla
+Máscara
 
 [008358] MONSTRUOS
 ????
@@ -26853,7 +26851,7 @@ DATABASE.DAT/TIPATTR.DAT
 (Para uso básico) Accesible
 
 [008510] ATRIBUTOS TERRENO
-(Para uso básico) No se permite la entrada
+(Para la base) Paso prohibido
 
 [008511] ATRIBUTOS TERRENO
 (Para uso básico) Lento
@@ -27051,16 +27049,16 @@ Muro del desierto
 Muro del desierto
 
 [008576] ATRIBUTOS TERRENO
-Ladrillos de la naturaleza salvaje
+Ladrillos del páramo
 
 [008577] ATRIBUTOS TERRENO
-Ladrillos de la naturaleza salvaje
+Ladrillos del páramo
 
 [008578] ATRIBUTOS TERRENO
-Ladrillos de la naturaleza salvaje
+Ladrillos del páramo
 
 [008579] ATRIBUTOS TERRENO
-Ladrillos de la naturaleza salvaje
+Ladrillos del páramo
 
 [008580] ATRIBUTOS TERRENO
 Muralla del castillo
@@ -27174,7 +27172,7 @@ Yuka Shiro
 Alfombra de castillo
 
 [008617] ATRIBUTOS TERRENO
-Instituto de Investigación Bed
+Suelo del laboratorio
 
 [008618] ATRIBUTOS TERRENO
 Yuka espeluznante
@@ -27384,7 +27382,7 @@ Mesa mediana
 Silla mediana 2
 
 [008687] ATRIBUTOS TERRENO
-Silla para diestros
+Silla derecha
 
 [008688] ATRIBUTOS TERRENO
 Mesa derecha
@@ -27456,7 +27454,7 @@ Mesa de la tienda
 Árbol grande (arriba a la izquierda)
 
 [008711] ATRIBUTOS TERRENO
-Puerta de transferencia
+Puerta de teletransporte
 
 [008712] ATRIBUTOS TERRENO
 La puerta a las comunicaciones
@@ -28139,22 +28137,22 @@ transparente
 ¿¿¿¿
 
 [008937] MONSTRUOS AUXILIARES
-mascarilla
+Máscara
 
 [008938] MONSTRUOS AUXILIARES
-mascarilla
+Máscara
 
 [008939] MONSTRUOS AUXILIARES
-mascarilla
+Máscara
 
 [008940] MONSTRUOS AUXILIARES
-mascarilla
+Máscara
 
 [008941] MONSTRUOS AUXILIARES
-mascarilla
+Máscara
 
 [008942] MONSTRUOS AUXILIARES
-mascarilla
+Máscara
 
 [008943] MONSTRUOS AUXILIARES
 Rugby (para practicar)
@@ -28226,7 +28224,7 @@ cofre del tesoro - bueno
 Cofre del tesoro (raro)
 
 [008966] MONSTRUOS AUXILIARES
-mascarilla
+Máscara
 
 
 ##################################################################
@@ -28389,7 +28387,7 @@ Espada
 Espada vieja
 
 [009017] OBJETOS ARMAS
-Casa antigua
+Espadón
 
 [009018] OBJETOS ARMAS
 Espada de moda
@@ -28401,7 +28399,7 @@ Espada de caballero
 Espada de caballero
 
 [009021] OBJETOS ARMAS
-Flamengue
+Flamberge
 
 [009022] OBJETOS ARMAS
 Espada Ondulante
@@ -28413,13 +28411,13 @@ Peonía carmesí
 Espada oriental
 
 [009025] OBJETOS ARMAS
-Justicia
+Némesis
 
 [009026] OBJETOS ARMAS
 Espada Divina
 
 [009027] OBJETOS ARMAS
-Estirado
+Dragnade
 
 [009028] OBJETOS ARMAS
 Espada Maligna
@@ -28446,13 +28444,13 @@ Hacha Oscura
 Martillo de guerra
 
 [009036] OBJETOS ARMAS
-Club de Hierro
+Maza de hierro
 
 [009037] OBJETOS ARMAS
-Club de ogros
+Maza de ogro
 
 [009038] OBJETOS ARMAS
-Club del Peligro
+Maza peligrosa
 
 [009039] OBJETOS ARMAS
 Hacha rúnica
@@ -28464,10 +28462,10 @@ Hacha rúnica
 Diablo
 
 [009042] OBJETOS ARMAS
-Club oscuro
+Maza oscura
 
 [009043] OBJETOS ARMAS
-Emperador
+Kaiser
 
 [009044] OBJETOS ARMAS
 Hacha de héroe
@@ -28509,7 +28507,7 @@ Cetro rúnico
 ⑤Bastón +25
 
 [009057] OBJETOS ARMAS
-Barra de refuerzo
+Vara de fuerza
 
 [009058] OBJETOS ARMAS
 ⑤Bastón +30

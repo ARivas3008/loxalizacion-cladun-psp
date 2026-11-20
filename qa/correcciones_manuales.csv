@@ -913,3 +913,255 @@
 2026-11-20T20:48:56+00:00,008505,CLD-F-SIEN-0010-nombre_personaje,,,Chelín,Bob,cierre_linguistico_narrativo,pendiente de revisión visual en PPSSPP
 2026-11-20T20:48:56+00:00,008506,CLD-008763,,,Domingo,Sunday,cierre_linguistico_narrativo,pendiente de revisión visual en PPSSPP
 2026-11-20T20:48:56+00:00,008725,CLD-F-TIPATTR-0216-nombre_atributo,,,Controversia,En llamas,cierre_linguistico_narrativo,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000484,CLD-000503,battle_info.dsf,723,Espacio fijo,Casilla fija,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000509,CLD-000528,battle_info.dsf,779,Los personajes secundarios consumirán maná,Los personajes de apoyo consumirán maná,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000529,CLD-000548,battle_info.dsf,820,Defender: Recibe el daño del personaje secundario.,Defender: Recibe el daño del personaje de apoyo.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000765,CLD-000784,trialMapTalk.dsf,5,"Mapa fácil. Aunque, pensándolo bien, no es TAN fácil.","mapa fácil. Aunque, pensándolo bien, tampoco es TAN fácil.",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000774,CLD-000793,trialMapTalk.dsf,4,Los ladrones de gatos que encontrarás aquí,Los ladrones felinos que encontrarás aquí,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000778,CLD-000797,demo1001_00.dsf,154,"Así que esto es ""Arcanus Cella"". ¡La tierra prohibida!","Así que esto es Arcanus Cella, ¡la tierra prohibida!",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000790,CLD-000809,demo1001_00.dsf,208,Eres una persona muy preocupadiza.,¡Siempre te preocupas por todo!,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000791,CLD-000810,demo1001_00.dsf,214,¿Puedes culparme?,¿Y cómo no voy a hacerlo?,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000792,CLD-000811,demo1001_00.dsf,215,Tu mamá y tu papá,Tus padres,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000793,CLD-000812,demo1001_00.dsf,216,Me pediste que te cuidara.,me pidieron que te cuidara.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000794,CLD-000813,demo1001_00.dsf,218,"De no ser así, jamás habría faltado a mis clases","Si no, nunca habría faltado a clase",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000797,CLD-000816,demo1001_00.dsf,229,"¡Basta ya! Souma, cállate.","¡Basta, Souma! ¡Cállate!",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000798,CLD-000817,demo1001_00.dsf,230,Mamá y papá me dijeron que puedo hacer lo que quiera,Mamá y papá me dejaron hacer lo que quisiera,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000799,CLD-000818,demo1001_00.dsf,231,Lo quiero para los próximos seis meses.,durante los próximos seis meses.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000800,CLD-000819,demo1001_00.dsf,244,Seis meses... Correcto.,Seis meses... Sí.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000807,CLD-000826,demo1001_00.dsf,295,"Vi un cartel de ""Prohibido el paso"" roto allí atrás.",Vi un cartel roto de «Prohibido el paso» allí atrás.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000818,CLD-000837,demo1001_00.dsf,374,Puaj...,Uf...,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000821,CLD-000840,demo1001_01.dsf,40,Puaj...,Uf...,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000828,CLD-000847,demo1001_01.dsf,139,"Al menos, no estoy muerto.","Al menos, no estoy muerta.",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000833,CLD-000852,demo1001_01.dsf,165,Dudo que podamos llegar hasta allí.,Dudo que podamos subir por ahí.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000835,CLD-000854,demo1001_01.dsf,167,mientras buscaban simultáneamente un tesoro.,mientras busco un tesoro.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000838,CLD-000857,demo1001_01.dsf,223,Puedes seguir mis huellas una vez que lo sepa,Puedes seguir mis huellas cuando compruebe,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000839,CLD-000858,demo1001_01.dsf,224,"¡Es seguro! ¿Lo entiendes, Pudding?","que no hay peligro. ¿Entendido, Pudding?",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000847,CLD-000867,demo1001_01.dsf,258,"¡Souma recibió un ""palo de madera""!",¡Souma recibió un «Palo de madera»!,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000868,CLD-000888,demo1001_01.dsf,14,Realmente me ralentiza.,frenarme mucho.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000877,CLD-000897,demo1002_00.dsf,75,Es muy brillante.,¡Qué luz hay aquí!,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000907,CLD-000927,demo1002_00.dsf,336,"A-Mientras la casa esté bien, todo está bien.","C-Con tal de que la casa esté bien, no pasa nada.",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000922,CLD-000942,demo1002_00.dsf,473,Tengo... Despina.,Y-Yo soy... Despina.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000923,CLD-000943,demo1002_00.dsf,479,"¡Eres una persona muy pesimista, ¿verdad?!","¡Vaya, qué sombría eres!",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000926,CLD-000946,demo1002_00.dsf,499,Ese es un conocido mío.,Es mi familiar.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000930,CLD-000950,demo1002_00.dsf,515,"Hechicera, pero... correcto.","Hechicera, pero sí.",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000988,CLD-001008,demo1002_01.dsf,6,Irse.,Vete.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,000992,CLD-001012,demo1002_01.dsf,7,"Soy la conocida ""Tamako"".","Soy Tamako, un familiar.",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,001015,CLD-001035,demo1003_00.dsf,131,"Si es posible, ¿podría quedarse un rato?","Si es posible, ¿pueden quedarse un rato?",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,001040,CLD-001060,demo1003_00.dsf,343,"Puedes usar el ""Portal de Teletransporte"" que está al lado de la fuente",puedes usar la «Puerta de teletransporte» junto a la fuente,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,001055,CLD-001075,demo1003_00.dsf,394,¿Hay alguien interesado en el personaje principal...?,a cualquiera en personaje principal...,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,001058,CLD-001078,demo1003_00.dsf,398,"Bienvenido, amigo mío.",recibir a mi amigo.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,001234,CLD-001265,demo1005_00.dsf,9,un personaje secundario o un personaje principal.,un personaje de apoyo o un personaje principal.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,001238,CLD-001269,demo1005_00.dsf,15,"""Sube de nivel como personaje secundario.""","""Sube de nivel como personaje de apoyo.""",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,001283,CLD-001314,demo1006_00.dsf,137,"¡""Personajes secundarios"" para potenciar!","¡""personajes de apoyo"" para potenciar!",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,001291,CLD-001322,demo1006_00.dsf,157,se transfiere al personaje secundario.,se transfiere al personaje de apoyo.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,001446,CLD-001479,demo1006_02.dsf,9,"el ""personaje principal"" y el ""personaje secundario""","el ""personaje principal"" y el ""personaje de apoyo""",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,001455,CLD-001488,demo1006_02.dsf,21,"un ""personaje secundario"" primero.","un ""personaje de apoyo"" primero.",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,001456,CLD-001489,demo1006_02.dsf,23,"Para crear un buen personaje secundario, es mejor","Para crear un buen personaje de apoyo, es mejor",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,001521,CLD-001555,demo1007_00.dsf,22,"todos los poderes de los ""personajes secundarios"".","todos los poderes de los ""personajes de apoyo"".",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,001538,CLD-001572,demo1007_00.dsf,97,"El papel de los ""personajes secundarios"" no es solo","El papel de los ""personajes de apoyo"" no es solo",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,001590,CLD-001625,demo1007_01.dsf,6,"Pero los ""personajes secundarios"" tienen","Pero los ""personajes de apoyo"" tienen",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,001910,CLD-001956,demo1103_01.dsf,6,"pero si Pudding se convierte en un ""personaje secundario"",","pero si Pudding se convierte en un ""personaje de apoyo"",",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,002730,CLD-002794,demo1207_00.dsf,156,"Eh, hay algunas armas","Eh, hay unas armas",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,002731,CLD-002795,demo1207_00.dsf,157,Me abastecí de...,que tengo guardadas...,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,002760,CLD-002826,demo1207_01.dsf,6,Un completo idiota.,Un idiota de remate.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,002763,CLD-002829,demo1207_01.dsf,7,Ojalá alguien me enseñara nuevos pasos de baile.,Ojalá alguien me enseñara nuevas técnicas.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,003975,CLD-004065,demo1502_00.dsf,129,"¡Yo también me veré obligado a ser un ""personaje secundario""!","¡Yo también me veré obligado a ser un ""personaje de apoyo""!",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,003996,CLD-004089,demo1502_01.dsf,6,"En realidad, prefiero ser un ""personaje secundario"".","En realidad, prefiero ser un ""personaje de apoyo"".",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,003997,CLD-004090,demo1502_01.dsf,9,"Me encanta ser el ""personaje secundario"".","Me encanta ser el ""personaje de apoyo"".",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,004145,CLD-004241,demo1504_00.dsf,86,"¡Ahora es un ""personaje secundario""!","¡Ahora es un ""personaje de apoyo""!",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,004755,CLD-004853,end09_dodohige.dsf,151,Sherbet?,¿Sherbet?,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005212,CLD-005402,,,Tiempo de despeje %3d：%02d：%02d %s,Tiempo: %3d：%02d：%02d  %s,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005214,CLD-005404,,,¡Aprendí un nuevo Círculo mágico!,¡Nuevo círculo mágico aprendido!,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005216,CLD-005406,,,¡He aprendido una nueva habilidad!,¡Nueva habilidad aprendida!,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005365,CLD-005555,,,Subcarácter,Pj. de apoyo,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005369,CLD-005559,,,"⑪ Confirmar
+⑩ Devolver","⑪ Confirmar
+⑩ Volver",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005374,CLD-005564,,,Colocar como personaje secundario.,Colocar como personaje de apoyo.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005375,CLD-005565,,,No se puede colocar el personaje.,No se puede colocar al personaje.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005398,CLD-005588,,,Reducción del uso de SP x%2d,Reducción de consumo SP x%2d,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005399,CLD-005589,,,Reducción del tiempo de fundición x%2d,Reducción de lanzamiento x%2d,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005400,CLD-005590,,,Tiempo de fundición %3d,Tiempo de lanzamiento %3d,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005410,CLD-005600,,,Colocación como subcaracter. %s,Colocar como personaje de apoyo: %s,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005411,CLD-005601,,,Colocarlo como personaje secundario.,Colocar como personaje de apoyo.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005416,CLD-005606,,,Bonificación de aumento de ATK,Bono ATK,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005417,CLD-005607,,,Bonificación de aumento de ATK 2,Bono ATK 2,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005418,CLD-005608,,,Bonificación de aumento de ATK 3,Bono ATK 3,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005419,CLD-005609,,,Bonificación de aumento de DEF,Bono DEF,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005420,CLD-005610,,,Bonificación de mejora de DEF 2,Bono DEF 2,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005421,CLD-005611,,,Bonificación de mejora de DEF 3,Bono DEF 3,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005422,CLD-005612,,,Bonificación de aumento de maná,Bono maná,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005423,CLD-005613,,,Bonificación de aumento de maná 2,Bono maná 2,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005424,CLD-005614,,,Bonificación de aumento de maná 3,Bono maná 3,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005425,CLD-005615,,,Bonificación de aumento de HP,Bono HP,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005426,CLD-005616,,,Bonificación de aumento de HP 2,Bono HP 2,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005427,CLD-005617,,,Bonificación de aumento de HP 3,Bono HP 3,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005450,CLD-005640,,,　Maná 　　 　Trabajo　　　 ⑧　　　　 ⑳,　Maná 　　 　Clase　　　 ⑧　　　　 ⑳,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005521,CLD-005711,,,Equipado. ¿De verdad lo venden?,Equipado. ¿Seguro que quieres venderlo?,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005534,CLD-005724,,,Para clientes habituales,Para habituales,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005545,CLD-005735,,,"⑪ Confirmar
+⑩ Devolver","⑪ Confirmar
+⑩ Volver",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005549,CLD-005739,,,"⑪ Confirmar
+⑩ Devolver","⑪ Confirmar
+⑩ Volver",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005550,CLD-005740,,,Selecciona el estilo artístico y el género del personaje.,Selecciona el aspecto y el género del personaje.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005551,CLD-005741,,,"⑪ Confirmar
+⑩ Devolver","⑪ Confirmar
+⑩ Volver",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005552,CLD-005742,,,Seleccione el nombre del personaje.,Selecciona el nombre del personaje.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005553,CLD-005743,,,Seleccione el patrón de conversación.,Selecciona el patrón de conversación.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005554,CLD-005744,,,Seleccione el nombre del jefe.,Selecciona el nombre del jefe.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005561,CLD-005751,,,Seleccione la forma y el color del jefe.,Selecciona la forma y el color del jefe.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005566,CLD-005756,,,Seleccione el personaje que desea editar.,Selecciona el personaje que quieres editar.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005567,CLD-005757,,,"⑪ Confirmar
+⑩ Devolver","⑪ Confirmar
+⑩ Volver",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005579,CLD-005769,,,Seleccione el nombre del nuevo jefe.,Selecciona el nombre del nuevo jefe.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005582,CLD-005772,,,Introduzca la segunda línea.,Introduce la segunda línea.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005583,CLD-005773,,,Introduzca la tercera línea.,Introduce la tercera línea.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005592,CLD-005782,,,Seleccione el personaje que desea eliminar.,Selecciona el personaje que quieres eliminar.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005593,CLD-005783,,,"¿De verdad borraste %s?
+
+¡Las eliminaciones son permanentes!","¿Eliminar a %s?
+¡No se puede deshacer!",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005606,CLD-005796,,,"Datos de edición de %s.
+Tiempo de reproducción %d:%02d:%02d","Datos de edición de %s.
+Tiempo jugado %d:%02d:%02d",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005634,CLD-005824,,,Muestra el gráfico del personaje principal y el texto.,Muestra el gráfico del personaje principal y cópialo.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005635,CLD-005825,,,Guarda el gráfico para editar los datos.,Guarda el gráfico en los datos de edición.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005636,CLD-005826,,,Cargar gráfico en editar datos.,Carga el gráfico desde los datos de edición.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005653,CLD-005843,,,Seleccione un nuevo color.,Selecciona un nuevo color.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005654,CLD-005844,,,"⑪ Confirmar
+⑩ Devolver
+⑬ Color predeterminado","⑪ Confirmar
+⑩ Volver
+⑬ Color predeterminado",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005657,CLD-005847,,,¡ESCENARIO DESPEJADO!,¡FASE SUPERADA!,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005687,CLD-005877,,,Volumen de efectos de sonido,Vol. efectos,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005688,CLD-005878,,,Volumen de música de fondo,Vol. música,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005689,CLD-005879,,,Tipo de música de fondo,Tipo música,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005690,CLD-005880,,,Configuración clave,Controles,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005691,CLD-005881,,,Cambia el volumen de los efectos de sonido.,Ajusta el volumen de los efectos.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005692,CLD-005882,,,Cambia el volumen de la música de fondo.,Ajusta el volumen de la música.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005693,CLD-005883,,,Cambia el tipo de música de fondo (real/retro),Elige música real o retro.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005694,CLD-005884,,,Cambia la configuración de los botones. (Cambia de pantalla),Configura los botones.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005706,CLD-005896,,,Pulse el botón para configurar.,Pulsa el botón para configurar.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005708,CLD-005898,,,Fin de la configuración de teclas.,Salir de la configuración de botones.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005709,CLD-005899,,,Mostrar decimales para el daño,Decimales de daño,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005711,CLD-005901,,,Menos de 1 encendido,Menos de 1: SÍ,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005712,CLD-005902,,,Menos de 10 años,Menos de 10: SÍ,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005714,CLD-005904,,,Activa o desactiva la visualización de los decimales en los daños.,Muestra decimales en el daño.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005715,CLD-005905,,,Efectos del Círculo mágico,Efectos círculo,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005716,CLD-005906,,,Activa o desactiva la visualización de efectos para Magic Circle.,Muestra los efectos del círculo mágico.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005717,CLD-005907,,,Captura de pantalla,Capturas,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005718,CLD-005908,,,Activa o desactiva el botón para tomar capturas de pantalla.,Activa el botón para hacer capturas.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005724,CLD-005914,,,Lista de habitaciones con conexión inalámbrica,Lista de salas inalámbricas,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005752,CLD-005942,,,Seleccione el puesto al que desea cambiar.,Selecciona la nueva clase.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005764,CLD-005954,,,"Aún no puede leer.
+
+Derrota a los enemigos para desbloquear.","Aún no se puede leer.
+Derrota a enemigos para desbloquearlo.",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005778,CLD-005968,,,"Tasa de aparición de objetos
+","Prob. de objetos
+",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005782,CLD-005972,,,"Tasa de aparición de objetos: %3d
+","Prob. de objetos %3d
+",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005783,CLD-005973,,,Tasa de títulos raros　　%3d%s,Prob. título raro %3d%s,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005802,CLD-005992,,,%s personas en Magic Circle usaron %s!,¡%s personajes del círculo mágico usaron %s!,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005803,CLD-005993,,,Nivel de piso insuficiente...,Nivel de planta insuficiente...,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005804,CLD-005994,,,¡El nivel de los enemigos en el siguiente piso ha bajado a %s!,¡Nivel de enemigos de la próxima planta: %s!,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005813,CLD-006003,,,Comerciante de apuestas LV.,Mercader apostador NV.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005838,CLD-006028,,,¡Amante de los pasteles de carne!,¡Amante del pastel de carne!,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005898,CLD-006143,,,Puntos de vida de personaje secundario +4 gratis.,Puntos de vida de personaje de apoyo +4 gratis.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005900,CLD-006145,,,Puntos de vida de personaje secundario +10 gratis.,Puntos de vida de personaje de apoyo +10 gratis.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005902,CLD-006147,,,Puntos de vida de personaje secundario +18 gratis.,Puntos de vida de personaje de apoyo +18 gratis.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005904,CLD-006149,,,Personaje secundario +28 HP gratis.,personaje de apoyo +28 HP gratis.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005906,CLD-006151,,,Puntos de vida adicionales para personajes secundarios: +40 gratis.,Puntos de vida adicionales para personajes de apoyo: +40 gratis.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005908,CLD-006153,,,Personaje secundario +15 PV por 3 de maná.,personaje de apoyo +15 PV por 3 de maná.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005910,CLD-006155,,,Personaje secundario +30 PV por 10 de Maná.,personaje de apoyo +30 PV por 10 de Maná.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005912,CLD-006157,,,Personaje secundario +50 PV por 20 de Maná.,personaje de apoyo +50 PV por 20 de Maná.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005914,CLD-006159,,,Personaje secundario +70 PV por 30 de Maná.,personaje de apoyo +70 PV por 30 de Maná.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,005916,CLD-006161,,,Personaje secundario +90 PV por 40 de Maná.,personaje de apoyo +90 PV por 40 de Maná.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,006114,CLD-006353,,,Distribuye el 25% del daño recibido entre los personajes secundarios.,Distribuye el 25% del daño recibido entre los personajes de apoyo.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,006116,CLD-006355,,,Distribuye el 50% del daño recibido entre los personajes secundarios.,Distribuye el 50% del daño recibido entre los personajes de apoyo.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,006118,CLD-006357,,,Distribuye el 100% del daño recibido entre los personajes secundarios.,Distribuye el 100% del daño recibido entre los personajes de apoyo.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,006200,CLD-006430,,,Fresco,Frío,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007519,CLD-007750,,,Bonificación de espíritu de lucha 1,Bono de espíritu de lucha 1,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007520,CLD-007751,,,Proteger y no,No requiere protección,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007522,CLD-007753,,,Yingzhi no quiere,No requiere sabiduría,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007550,CLD-007777,,,Defensa con espada,Protección contra espadas,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007553,CLD-007780,,,Resistencia al empuje +2,Resistencia a perforación +2,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007555,CLD-007782,,,Resistencia cuerpo a cuerpo +2,Resistencia a golpes +2,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007556,CLD-007783,,,Protección contra incendios,Protección contra fuego,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007560,CLD-007787,,,Protección del corazón,Protección mental,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007563,CLD-007790,,,ocurrencia de ruptura +3,Probabilidad de ruptura +3,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007570,CLD-007795,,,Mal sabor,Mal gusto,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007571,CLD-007796,,,Espíritu de lucha Guardián Sabiduría Bonificación 2: TODA Resistencia -10,"Bono 2 de espíritu, protección y sabiduría; resistencias -10",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007575,CLD-007799,,,TODA la resistencia +5,Todas las resistencias +5,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007576,CLD-007800,,,Desesperado,A la desesperada,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007577,CLD-007801,,,"ATK +10, Velocidad +10, Todas las resistencias -50","ATK +10, velocidad +10, resistencias -50",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007587,CLD-007808,,,"ATK +5, Golpe crítico y probabilidad de ruptura +10","ATK +5, prob. crítico y ruptura +10",revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007604,CLD-007825,,,Fresco,Frío,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007606,CLD-007827,,,Yo. Tormenta,Tormenta de hielo,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007612,CLD-007833,,,Tiempo fresco,Tiempo de enfriamiento,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007629,CLD-007850,,,Efectos del estado de curación en uno mismo.,Cura tus estados alterados.,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007658,CLD-007879,,,S) Barra inclinada W,S) Corte W,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007660,CLD-007881,,,A) Columpio,A) Barrido,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007670,CLD-007891,,,A) Barra inclinada,A) Corte S,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007674,CLD-007896,,,G Obtener,Obtener G,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007707,CLD-007929,,,Transmisión dual,Doble conjuro,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007722,CLD-007943,,,Corbata oscura,Vínculo oscuro,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,007780,CLD-008001,,,Trabajo,Clase,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008269,CLD-008491,,,Mascarilla,Máscara,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008280,CLD-F-MONSTER-0126-nombre,,,mascarilla,Máscara,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008321,CLD-008522,,,"No tiene ningún concepto de ""Koutai"" (un juego de palabras con ""Koutai"" y ""Koutai""). Sólo tiene ""Zenshin"" (un juego de palabras con ""Zenshin"" y ""Zenshin"").",No sabe lo que es retirarse: ¡solo avanzar!,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008322,CLD-008523,,,"No tiene ningún concepto de ""Koutai"" (un juego de palabras con ""Koutai"" y ""Koutai""). Sólo tiene ""Zenshin"" (un juego de palabras con ""Zenshin"" y ""Zenshin"").",No sabe lo que es retirarse: ¡solo avanzar!,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008325,CLD-008526,,,¡No me arrepiento en absoluto de mi discapacidad!,¡No me arrepiento de nada en mi vida!,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008326,CLD-008527,,,¡No me arrepiento en absoluto de mi discapacidad!,¡No me arrepiento de nada en mi vida!,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008327,CLD-008528,,,Bloque emisor de llama,Bloque emisor de fuego,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008328,CLD-008529,,,Bloque emisor de llama,Bloque emisor de fuego,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008329,CLD-008530,,,Bloques de bajo nivel que emiten llamas,Bloque emisor de fuego (bajo),revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008330,CLD-008531,,,Bloques de bajo nivel que emiten llamas,Bloque emisor de fuego (bajo),revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008331,CLD-008532,,,Bloques de bajo nivel que emiten llamas,Bloque emisor de fuego (bajo),revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008332,CLD-008533,,,Bloque de gran altura con llamas,Bloque emisor de fuego (alto),revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008333,CLD-008534,,,Bloque de gran altura con llamas,Bloque emisor de fuego (alto),revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008334,CLD-008535,,,Bloque de gran altura con llamas,Bloque emisor de fuego (alto),revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008335,CLD-008536,,,Bloque emisor de llama,Bloque emisor de fuego,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008336,CLD-008537,,,Bloques que producen hielo,Bloque emisor de hielo,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008337,CLD-008538,,,Bloques que producen hielo,Bloque emisor de hielo,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008338,CLD-008539,,,Bloques que producen hielo,Bloque emisor de hielo,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008339,CLD-008540,,,bloques de baja producción de hielo,Bloque emisor de hielo (bajo),revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008340,CLD-008541,,,bloques de baja producción de hielo,Bloque emisor de hielo (bajo),revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008341,CLD-008542,,,bloques de baja producción de hielo,Bloque emisor de hielo (bajo),revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008342,CLD-008543,,,Altura del bloque productor de hielo,Bloque emisor de hielo (alto),revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008343,CLD-008544,,,Altura del bloque productor de hielo,Bloque emisor de hielo (alto),revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008344,CLD-008545,,,Altura del bloque productor de hielo,Bloque emisor de hielo (alto),revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008345,CLD-008546,,,Bloques que producen hielo,Bloque emisor de hielo,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008357,CLD-F-MONSTER-0168-nombre,,,mascarilla,Máscara,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008510,CLD-008767,,,(Para uso básico) No se permite la entrada,(Para la base) Paso prohibido,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008576,CLD-008821,,,Ladrillos de la naturaleza salvaje,Ladrillos del páramo,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008577,CLD-008822,,,Ladrillos de la naturaleza salvaje,Ladrillos del páramo,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008578,CLD-008823,,,Ladrillos de la naturaleza salvaje,Ladrillos del páramo,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008579,CLD-008824,,,Ladrillos de la naturaleza salvaje,Ladrillos del páramo,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008617,CLD-008862,,,Instituto de Investigación Bed,Suelo del laboratorio,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008687,CLD-008925,,,Silla para diestros,Silla derecha,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008711,CLD-008940,,,Puerta de transferencia,Puerta de teletransporte,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008937,CLD-F-UP_MONSTER-0127-nombre_monstruo,,,mascarilla,Máscara,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008938,CLD-F-UP_MONSTER-0128-nombre_monstruo,,,mascarilla,Máscara,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008939,CLD-F-UP_MONSTER-0129-nombre_monstruo,,,mascarilla,Máscara,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008940,CLD-F-UP_MONSTER-0130-nombre_monstruo,,,mascarilla,Máscara,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008941,CLD-F-UP_MONSTER-0131-nombre_monstruo,,,mascarilla,Máscara,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008942,CLD-F-UP_MONSTER-0132-nombre_monstruo,,,mascarilla,Máscara,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,008966,CLD-F-UP_MONSTER-0156-nombre_monstruo,,,mascarilla,Máscara,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,009017,CLD-009232,,,Casa antigua,Espadón,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,009021,CLD-009236,,,Flamengue,Flamberge,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,009025,CLD-009240,,,Justicia,Némesis,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,009027,CLD-009242,,,Estirado,Dragnade,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,009036,CLD-009251,,,Club de Hierro,Maza de hierro,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,009037,CLD-009252,,,Club de ogros,Maza de ogro,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,009038,CLD-009253,,,Club del Peligro,Maza peligrosa,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,009042,CLD-009257,,,Club oscuro,Maza oscura,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,009043,CLD-009258,,,Emperador,Kaiser,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP
+2026-11-20T22:35:21+00:00,009057,CLD-009272,,,Barra de refuerzo,Vara de fuerza,revision_consolidada_2026-11-20,pendiente de revisión visual en PPSSPP

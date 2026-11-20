@@ -2451,7 +2451,7 @@ ESCENA: battle_info.dsf | script_id: 500100 | bloque: 432
   ATRIBUCION: opcion_del_jugador
 
 [OPCION DEL JUGADOR]  [ID CLD-000503 | grupo 000484 | orden 723]
-  ES: Espacio fijo
+  ES: Casilla fija
   EN: Fixed Space
   ATRIBUCION: opcion_del_jugador
 
@@ -2576,7 +2576,7 @@ ESCENA: battle_info.dsf | script_id: 500100 | bloque: 432
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000528 | grupo 000509 | orden 779]
-  ES: Los personajes secundarios consumirán maná
+  ES: Los personajes de apoyo consumirán maná
   EN: Sub Characters will consume Mana
   ATRIBUCION: sin_hablante_verificable
 
@@ -2676,7 +2676,7 @@ ESCENA: battle_info.dsf | script_id: 500100 | bloque: 432
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000548 | grupo 000529 | orden 820]
-  ES: Defender: Recibe el daño del personaje secundario.
+  ES: Defender: Recibe el daño del personaje de apoyo.
   EN: Defend: Takes sub character's damage.
   ATRIBUCION: sin_hablante_verificable
 
@@ -3872,7 +3872,7 @@ ESCENA: trialMapTalk.dsf | script_id: 703 | bloque: 753
   ATRIBUCION: primer_mensaje_tras_nombre
 
 [Esqueleto moribundo]  [ID CLD-000784 | grupo 000765 | orden 5]
-  ES: Mapa fácil. Aunque, pensándolo bien, no es TAN fácil.
+  ES: mapa fácil. Aunque, pensándolo bien, tampoco es TAN fácil.
   EN: easy map. Then again, it's not THAT easy.
   ATRIBUCION: continuidad_corta_probable
 
@@ -3920,7 +3920,7 @@ ESCENA: trialMapTalk.dsf | script_id: 706 | bloque: 756
 [NOMBRE DE PANTALLA 0x6E] Esqueleto moribundo  
   id=CLD-000792 | original: Dying Skeleton
 [Esqueleto moribundo]  [ID CLD-000793 | grupo 000774 | orden 4]
-  ES: Los ladrones de gatos que encontrarás aquí
+  ES: Los ladrones felinos que encontrarás aquí
   EN: The Cat Burglars you can find here
   ATRIBUCION: primer_mensaje_tras_nombre
 
@@ -3941,7 +3941,7 @@ ESCENA: demo1001_00.dsf | script_id: 100100 | bloque: 758
 [NOMBRE DE PANTALLA 0x6E] Chica alegre  
   id=CLD-000796 | original: Cheery Girl
 [Chica alegre]  [ID CLD-000797 | grupo 000778 | orden 154]
-  ES: Así que esto es "Arcanus Cella". ¡La tierra prohibida!
+  ES: Así que esto es Arcanus Cella, ¡la tierra prohibida!
   EN: So this is "Arcanus Cella." The forbidden land!
   ATRIBUCION: primer_mensaje_tras_nombre
 
@@ -3995,27 +3995,27 @@ ESCENA: demo1001_00.dsf | script_id: 100100 | bloque: 758
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000809 | grupo 000790 | orden 208]
-  ES: Eres una persona muy preocupadiza.
+  ES: ¡Siempre te preocupas por todo!
   EN: You're such a worrywart.
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000810 | grupo 000791 | orden 214]
-  ES: ¿Puedes culparme?
+  ES: ¿Y cómo no voy a hacerlo?
   EN: Can you blame me?
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000811 | grupo 000792 | orden 215]
-  ES: Tu mamá y tu papá
+  ES: Tus padres
   EN: Your mom and dad
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000812 | grupo 000793 | orden 216]
-  ES: Me pediste que te cuidara.
+  ES: me pidieron que te cuidara.
   EN: asked me to look after you.
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000813 | grupo 000794 | orden 218]
-  ES: De no ser así, jamás habría faltado a mis clases
+  ES: Si no, nunca habría faltado a clase
   EN: If not, I would never have skipped my lessons
   ATRIBUCION: sin_hablante_verificable
 
@@ -4030,22 +4030,22 @@ ESCENA: demo1001_00.dsf | script_id: 100100 | bloque: 758
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000816 | grupo 000797 | orden 229]
-  ES: ¡Basta ya! Souma, cállate.
+  ES: ¡Basta, Souma! ¡Cállate!
   EN: Stop it right there! Souma, just shut up.
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000817 | grupo 000798 | orden 230]
-  ES: Mamá y papá me dijeron que puedo hacer lo que quiera
+  ES: Mamá y papá me dejaron hacer lo que quisiera
   EN: Mom and Dad told me that I get to do whatever
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000818 | grupo 000799 | orden 231]
-  ES: Lo quiero para los próximos seis meses.
+  ES: durante los próximos seis meses.
   EN: I want for the next six months.
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000819 | grupo 000800 | orden 244]
-  ES: Seis meses... Correcto.
+  ES: Seis meses... Sí.
   EN: Six months... Right.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4080,7 +4080,7 @@ ESCENA: demo1001_00.dsf | script_id: 100100 | bloque: 758
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000826 | grupo 000807 | orden 295]
-  ES: Vi un cartel de "Prohibido el paso" roto allí atrás.
+  ES: Vi un cartel roto de «Prohibido el paso» allí atrás.
   EN: I saw a broken "Do Not Enter" sign back there.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4135,7 +4135,7 @@ ESCENA: demo1001_00.dsf | script_id: 100100 | bloque: 758
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000837 | grupo 000818 | orden 374]
-  ES: Puaj...
+  ES: Uf...
   EN: Ugh...
   ATRIBUCION: sin_hablante_verificable
 
@@ -4154,7 +4154,7 @@ ESCENA: demo1001_00.dsf | script_id: 100100 | bloque: 758
 ESCENA: demo1001_01.dsf | script_id: 100101 | bloque: 760
 =====================================================================================
 [HABLANTE NO VERIFICADO]  [ID CLD-000840 | grupo 000821 | orden 40]
-  ES: Puaj...
+  ES: Uf...
   EN: Ugh...
   ATRIBUCION: sin_hablante_verificable
 
@@ -4189,7 +4189,7 @@ ESCENA: demo1001_01.dsf | script_id: 100101 | bloque: 760
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000847 | grupo 000828 | orden 139]
-  ES: Al menos, no estoy muerto.
+  ES: Al menos, no estoy muerta.
   EN: At the very least, I'm not dead.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4214,7 +4214,7 @@ ESCENA: demo1001_01.dsf | script_id: 100101 | bloque: 760
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000852 | grupo 000833 | orden 165]
-  ES: Dudo que podamos llegar hasta allí.
+  ES: Dudo que podamos subir por ahí.
   EN: I doubt we can get up there.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4224,7 +4224,7 @@ ESCENA: demo1001_01.dsf | script_id: 100101 | bloque: 760
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000854 | grupo 000835 | orden 167]
-  ES: mientras buscaban simultáneamente un tesoro.
+  ES: mientras busco un tesoro.
   EN: while simultaneously looking for treasure.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4239,12 +4239,12 @@ ESCENA: demo1001_01.dsf | script_id: 100101 | bloque: 760
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000857 | grupo 000838 | orden 223]
-  ES: Puedes seguir mis huellas una vez que lo sepa
+  ES: Puedes seguir mis huellas cuando compruebe
   EN: You can follow my tracks once I know
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000858 | grupo 000839 | orden 224]
-  ES: ¡Es seguro! ¿Lo entiendes, Pudding?
+  ES: que no hay peligro. ¿Entendido, Pudding?
   EN: it's safe! You got that, Pudding?!
   ATRIBUCION: sin_hablante_verificable
 
@@ -4284,7 +4284,7 @@ ESCENA: demo1001_01.dsf | script_id: 100101 | bloque: 760
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000867 | grupo 000847 | orden 258]
-  ES: ¡Souma recibió un "palo de madera"!
+  ES: ¡Souma recibió un «Palo de madera»!
   EN: Souma got "Wooden Stick!"
   ATRIBUCION: sin_hablante_verificable
 
@@ -4393,7 +4393,7 @@ ESCENA: demo1001_01.dsf | script_id: 100110 | bloque: 762
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000888 | grupo 000868 | orden 14]
-  ES: Realmente me ralentiza.
+  ES: frenarme mucho.
   EN: really slow me down.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4446,7 +4446,7 @@ ESCENA: demo1002_00.dsf | script_id: 100200 | bloque: 764
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000897 | grupo 000877 | orden 75]
-  ES: Es muy brillante.
+  ES: ¡Qué luz hay aquí!
   EN: It's so bright.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4587,7 +4587,7 @@ ESCENA: demo1002_00.dsf | script_id: 100200 | bloque: 764
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000927 | grupo 000907 | orden 336]
-  ES: A-Mientras la casa esté bien, todo está bien.
+  ES: C-Con tal de que la casa esté bien, no pasa nada.
   EN: A-As long as the house is fine, it's all right.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4662,12 +4662,12 @@ ESCENA: demo1002_00.dsf | script_id: 100200 | bloque: 764
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000942 | grupo 000922 | orden 473]
-  ES: Tengo... Despina.
+  ES: Y-Yo soy... Despina.
   EN: I-I am... Despina.
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000943 | grupo 000923 | orden 479]
-  ES: ¡Eres una persona muy pesimista, ¿verdad?!
+  ES: ¡Vaya, qué sombría eres!
   EN: You're a gloomy one, aren't you?!
   ATRIBUCION: sin_hablante_verificable
 
@@ -4682,7 +4682,7 @@ ESCENA: demo1002_00.dsf | script_id: 100200 | bloque: 764
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000946 | grupo 000926 | orden 499]
-  ES: Ese es un conocido mío.
+  ES: Es mi familiar.
   EN: That's a familiar of mine.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4702,7 +4702,7 @@ ESCENA: demo1002_00.dsf | script_id: 100200 | bloque: 764
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000950 | grupo 000930 | orden 515]
-  ES: Hechicera, pero... correcto.
+  ES: Hechicera, pero sí.
   EN: Sorceress, but... correct.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4994,7 +4994,7 @@ ESCENA: demo1002_01.dsf | script_id: 100202 | bloque: 767
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001008 | grupo 000988 | orden 6]
-  ES: Irse.
+  ES: Vete.
   EN: Go away.
   ATRIBUCION: sin_hablante_verificable
 
@@ -5015,7 +5015,7 @@ ESCENA: demo1002_01.dsf | script_id: 100203 | bloque: 768
   ATRIBUCION: primer_mensaje_tras_nombre
 
 [Tamako]  [ID CLD-001012 | grupo 000992 | orden 7]
-  ES: Soy la conocida "Tamako".
+  ES: Soy Tamako, un familiar.
   EN: I'm the familiar, "Tamako."
   ATRIBUCION: continuidad_corta_probable
 
@@ -5119,7 +5119,7 @@ ESCENA: demo1003_00.dsf | script_id: 100300 | bloque: 770
 [NOMBRE DE PANTALLA 0x6E] Crosstine  
   id=CLD-001034 | original: Crosstine
 [Crosstine]  [ID CLD-001035 | grupo 001015 | orden 131]
-  ES: Si es posible, ¿podría quedarse un rato?
+  ES: Si es posible, ¿pueden quedarse un rato?
   EN: If possible, would you please stay for a while?
   ATRIBUCION: primer_mensaje_tras_nombre
 
@@ -5232,7 +5232,7 @@ ESCENA: demo1003_00.dsf | script_id: 100300 | bloque: 770
   ATRIBUCION: primer_mensaje_tras_nombre
 
 [Crosstine]  [ID CLD-001060 | grupo 001040 | orden 343]
-  ES: Puedes usar el "Portal de Teletransporte" que está al lado de la fuente
+  ES: puedes usar la «Puerta de teletransporte» junto a la fuente
   EN: you can use the "Warp Gate" next to the fountain
   ATRIBUCION: continuidad_corta_probable
 
@@ -5298,7 +5298,7 @@ ESCENA: demo1003_00.dsf | script_id: 100300 | bloque: 770
   ATRIBUCION: primer_mensaje_tras_nombre
 
 [Crosstine]  [ID CLD-001075 | grupo 001055 | orden 394]
-  ES: ¿Hay alguien interesado en el personaje principal...?
+  ES: a cualquiera en personaje principal...
   EN: anybody into the main character...
   ATRIBUCION: continuidad_corta_probable
 
@@ -5313,7 +5313,7 @@ ESCENA: demo1003_00.dsf | script_id: 100300 | bloque: 770
   ATRIBUCION: continuidad_corta_probable
 
 [Crosstine]  [ID CLD-001078 | grupo 001058 | orden 398]
-  ES: Bienvenido, amigo mío.
+  ES: recibir a mi amigo.
   EN: welcome my friend.
   ATRIBUCION: continuidad_corta_probable
 
@@ -6261,7 +6261,7 @@ ESCENA: demo1005_00.dsf | script_id: 300513 | bloque: 797
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001265 | grupo 001234 | orden 9]
-  ES: un personaje secundario o un personaje principal.
+  ES: un personaje de apoyo o un personaje principal.
   EN: a sub character or a main character.。
   ATRIBUCION: sin_hablante_verificable
 
@@ -6281,7 +6281,7 @@ ESCENA: demo1005_00.dsf | script_id: 300513 | bloque: 797
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001269 | grupo 001238 | orden 15]
-  ES: "Sube de nivel como personaje secundario."
+  ES: "Sube de nivel como personaje de apoyo."
   EN: "LV Up as a sub character."
   ATRIBUCION: sin_hablante_verificable
 
@@ -6519,7 +6519,7 @@ ESCENA: demo1006_00.dsf | script_id: 100600 | bloque: 801
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001314 | grupo 001283 | orden 137]
-  ES: ¡"Personajes secundarios" para potenciar!
+  ES: ¡"personajes de apoyo" para potenciar!
   EN: "sub characters" to power up!
   ATRIBUCION: sin_hablante_verificable
 
@@ -6559,7 +6559,7 @@ ESCENA: demo1006_00.dsf | script_id: 100600 | bloque: 801
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001322 | grupo 001291 | orden 157]
-  ES: se transfiere al personaje secundario.
+  ES: se transfiere al personaje de apoyo.
   EN: transfers to the sub character.
   ATRIBUCION: sin_hablante_verificable
 
@@ -7368,7 +7368,7 @@ ESCENA: demo1006_02.dsf | script_id: 300622 | bloque: 820
   ATRIBUCION: continuidad_corta_probable
 
 [Tsunpiyo]  [ID CLD-001479 | grupo 001446 | orden 9]
-  ES: el "personaje principal" y el "personaje secundario"
+  ES: el "personaje principal" y el "personaje de apoyo"
   EN: the "main character" and "sub character"
   ATRIBUCION: continuidad_corta_probable
 
@@ -7413,12 +7413,12 @@ ESCENA: demo1006_02.dsf | script_id: 300622 | bloque: 820
   ATRIBUCION: continuidad_corta_probable
 
 [Tsunpiyo]  [ID CLD-001488 | grupo 001455 | orden 21]
-  ES: un "personaje secundario" primero.
+  ES: un "personaje de apoyo" primero.
   EN: a "sub character" first.
   ATRIBUCION: continuidad_corta_probable
 
 [Tsunpiyo]  [ID CLD-001489 | grupo 001456 | orden 23]
-  ES: Para crear un buen personaje secundario, es mejor
+  ES: Para crear un buen personaje de apoyo, es mejor
   EN: To make a good sub character, it's better
   ATRIBUCION: continuidad_corta_probable
 
@@ -7762,7 +7762,7 @@ ESCENA: demo1007_00.dsf | script_id: 100702 | bloque: 831
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001555 | grupo 001521 | orden 22]
-  ES: todos los poderes de los "personajes secundarios".
+  ES: todos los poderes de los "personajes de apoyo".
   EN: all the powers of the "sub characters."
   ATRIBUCION: sin_hablante_verificable
 
@@ -7847,7 +7847,7 @@ ESCENA: demo1007_00.dsf | script_id: 100702 | bloque: 831
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001572 | grupo 001538 | orden 97]
-  ES: El papel de los "personajes secundarios" no es solo
+  ES: El papel de los "personajes de apoyo" no es solo
   EN: The role of the "sub characters" is not just
   ATRIBUCION: sin_hablante_verificable
 
@@ -8119,7 +8119,7 @@ ESCENA: demo1007_01.dsf | script_id: 100704 | bloque: 835
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001625 | grupo 001590 | orden 6]
-  ES: Pero los "personajes secundarios" tienen
+  ES: Pero los "personajes de apoyo" tienen
   EN: But "sub characters" have
   ATRIBUCION: sin_hablante_verificable
 
@@ -9753,7 +9753,7 @@ ESCENA: demo1103_01.dsf | script_id: 110302 | bloque: 875
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001956 | grupo 001910 | orden 6]
-  ES: pero si Pudding se convierte en un "personaje secundario",
+  ES: pero si Pudding se convierte en un "personaje de apoyo",
   EN: but if Pudding becomes a "sub character,"
   ATRIBUCION: sin_hablante_verificable
 
@@ -14157,12 +14157,12 @@ ESCENA: demo1207_00.dsf | script_id: 120700 | bloque: 1002
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-002794 | grupo 002730 | orden 156]
-  ES: Eh, hay algunas armas
+  ES: Eh, hay unas armas
   EN: Uhh, there are some weapons
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-002795 | grupo 002731 | orden 157]
-  ES: Me abastecí de...
+  ES: que tengo guardadas...
   EN: I stocked up on...
   ATRIBUCION: sin_hablante_verificable
 
@@ -14312,7 +14312,7 @@ ESCENA: demo1207_01.dsf | script_id: 120701 | bloque: 1004
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-002826 | grupo 002760 | orden 6]
-  ES: Un completo idiota.
+  ES: Un idiota de remate.
   EN: A complete blithering idiot.
   ATRIBUCION: sin_hablante_verificable
 
@@ -14331,7 +14331,7 @@ ESCENA: demo1207_01.dsf | script_id: 120702 | bloque: 1005
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-002829 | grupo 002763 | orden 7]
-  ES: Ojalá alguien me enseñara nuevos pasos de baile.
+  ES: Ojalá alguien me enseñara nuevas técnicas.
   EN: I wish someone would teach me new moves.
   ATRIBUCION: sin_hablante_verificable
 
@@ -20668,7 +20668,7 @@ ESCENA: demo1502_00.dsf | script_id: 150200 | bloque: 1203
   ATRIBUCION: primer_mensaje_tras_nombre
 
 [Asagi]  [ID CLD-004065 | grupo 003975 | orden 129]
-  ES: ¡Yo también me veré obligado a ser un "personaje secundario"!
+  ES: ¡Yo también me veré obligado a ser un "personaje de apoyo"!
   EN: I'll be forced to be a "sub character," too!
   ATRIBUCION: continuidad_corta_probable
 
@@ -20779,7 +20779,7 @@ ESCENA: demo1502_01.dsf | script_id: 150202 | bloque: 1206
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-004089 | grupo 003996 | orden 6]
-  ES: En realidad, prefiero ser un "personaje secundario".
+  ES: En realidad, prefiero ser un "personaje de apoyo".
   EN: I actually prefer being a "sub character."
   ATRIBUCION: sin_hablante_verificable
 
@@ -20788,7 +20788,7 @@ ESCENA: demo1502_01.dsf | script_id: 150202 | bloque: 1206
 ESCENA: demo1502_01.dsf | script_id: 150203 | bloque: 1207
 =====================================================================================
 [HABLANTE NO VERIFICADO]  [ID CLD-004090 | grupo 003997 | orden 9]
-  ES: Me encanta ser el "personaje secundario".
+  ES: Me encanta ser el "personaje de apoyo".
   EN: I love being the "sub character."
   ATRIBUCION: sin_hablante_verificable
 
@@ -21564,7 +21564,7 @@ ESCENA: demo1504_00.dsf | script_id: 150400 | bloque: 1233
   ATRIBUCION: continuidad_corta_probable
 
 [Asagi]  [ID CLD-004241 | grupo 004145 | orden 86]
-  ES: ¡Ahora es un "personaje secundario"!
+  ES: ¡Ahora es un "personaje de apoyo"!
   EN: a "sub character" now!
   ATRIBUCION: continuidad_corta_probable
 
@@ -24638,7 +24638,7 @@ ESCENA: end09_dodohige.dsf | script_id: 141001 | bloque: 1435
   ATRIBUCION: continuidad_corta_probable
 
 [Princesa Dot]  [ID CLD-004853 | grupo 004755 | orden 151]
-  ES: Sherbet?
+  ES: ¿Sherbet?
   EN: Sherbet?
   ATRIBUCION: continuidad_corta_probable
 

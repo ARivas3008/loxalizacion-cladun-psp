@@ -2451,7 +2451,7 @@ ESCENA: battle_info.dsf | script_id: 500100 | bloque: 432
   ATRIBUCION: opcion_del_jugador
 
 [OPCION DEL JUGADOR]  [ID CLD-000503 | grupo 000484 | orden 723]
-  ES: Espacio fijo
+  ES: Casilla fija
   EN: Fixed Space
   ATRIBUCION: opcion_del_jugador
 
@@ -2576,7 +2576,7 @@ ESCENA: battle_info.dsf | script_id: 500100 | bloque: 432
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000528 | grupo 000509 | orden 779]
-  ES: Los personajes secundarios consumirán maná
+  ES: Los personajes de apoyo consumirán maná
   EN: Sub Characters will consume Mana
   ATRIBUCION: sin_hablante_verificable
 
@@ -2676,7 +2676,7 @@ ESCENA: battle_info.dsf | script_id: 500100 | bloque: 432
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000548 | grupo 000529 | orden 820]
-  ES: Defender: Recibe el daño del personaje secundario.
+  ES: Defender: Recibe el daño del personaje de apoyo.
   EN: Defend: Takes sub character's damage.
   ATRIBUCION: sin_hablante_verificable
 
@@ -3872,7 +3872,7 @@ ESCENA: trialMapTalk.dsf | script_id: 703 | bloque: 753
   ATRIBUCION: primer_mensaje_tras_nombre
 
 [Esqueleto moribundo]  [ID CLD-000784 | grupo 000765 | orden 5]
-  ES: Mapa fácil. Aunque, pensándolo bien, no es TAN fácil.
+  ES: mapa fácil. Aunque, pensándolo bien, tampoco es TAN fácil.
   EN: easy map. Then again, it's not THAT easy.
   ATRIBUCION: continuidad_corta_probable
 
@@ -3920,7 +3920,7 @@ ESCENA: trialMapTalk.dsf | script_id: 706 | bloque: 756
 [NOMBRE DE PANTALLA 0x6E] Esqueleto moribundo  
   id=CLD-000792 | original: Dying Skeleton
 [Esqueleto moribundo]  [ID CLD-000793 | grupo 000774 | orden 4]
-  ES: Los ladrones de gatos que encontrarás aquí
+  ES: Los ladrones felinos que encontrarás aquí
   EN: The Cat Burglars you can find here
   ATRIBUCION: primer_mensaje_tras_nombre
 
@@ -3941,7 +3941,7 @@ ESCENA: demo1001_00.dsf | script_id: 100100 | bloque: 758
 [NOMBRE DE PANTALLA 0x6E] Chica alegre  
   id=CLD-000796 | original: Cheery Girl
 [Chica alegre]  [ID CLD-000797 | grupo 000778 | orden 154]
-  ES: Así que esto es "Arcanus Cella". ¡La tierra prohibida!
+  ES: Así que esto es Arcanus Cella, ¡la tierra prohibida!
   EN: So this is "Arcanus Cella." The forbidden land!
   ATRIBUCION: primer_mensaje_tras_nombre
 
@@ -3995,27 +3995,27 @@ ESCENA: demo1001_00.dsf | script_id: 100100 | bloque: 758
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000809 | grupo 000790 | orden 208]
-  ES: Eres una persona muy preocupadiza.
+  ES: ¡Siempre te preocupas por todo!
   EN: You're such a worrywart.
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000810 | grupo 000791 | orden 214]
-  ES: ¿Puedes culparme?
+  ES: ¿Y cómo no voy a hacerlo?
   EN: Can you blame me?
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000811 | grupo 000792 | orden 215]
-  ES: Tu mamá y tu papá
+  ES: Tus padres
   EN: Your mom and dad
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000812 | grupo 000793 | orden 216]
-  ES: Me pediste que te cuidara.
+  ES: me pidieron que te cuidara.
   EN: asked me to look after you.
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000813 | grupo 000794 | orden 218]
-  ES: De no ser así, jamás habría faltado a mis clases
+  ES: Si no, nunca habría faltado a clase
   EN: If not, I would never have skipped my lessons
   ATRIBUCION: sin_hablante_verificable
 
@@ -4030,22 +4030,22 @@ ESCENA: demo1001_00.dsf | script_id: 100100 | bloque: 758
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000816 | grupo 000797 | orden 229]
-  ES: ¡Basta ya! Souma, cállate.
+  ES: ¡Basta, Souma! ¡Cállate!
   EN: Stop it right there! Souma, just shut up.
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000817 | grupo 000798 | orden 230]
-  ES: Mamá y papá me dijeron que puedo hacer lo que quiera
+  ES: Mamá y papá me dejaron hacer lo que quisiera
   EN: Mom and Dad told me that I get to do whatever
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000818 | grupo 000799 | orden 231]
-  ES: Lo quiero para los próximos seis meses.
+  ES: durante los próximos seis meses.
   EN: I want for the next six months.
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000819 | grupo 000800 | orden 244]
-  ES: Seis meses... Correcto.
+  ES: Seis meses... Sí.
   EN: Six months... Right.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4080,7 +4080,7 @@ ESCENA: demo1001_00.dsf | script_id: 100100 | bloque: 758
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000826 | grupo 000807 | orden 295]
-  ES: Vi un cartel de "Prohibido el paso" roto allí atrás.
+  ES: Vi un cartel roto de «Prohibido el paso» allí atrás.
   EN: I saw a broken "Do Not Enter" sign back there.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4135,7 +4135,7 @@ ESCENA: demo1001_00.dsf | script_id: 100100 | bloque: 758
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000837 | grupo 000818 | orden 374]
-  ES: Puaj...
+  ES: Uf...
   EN: Ugh...
   ATRIBUCION: sin_hablante_verificable
 
@@ -4154,7 +4154,7 @@ ESCENA: demo1001_00.dsf | script_id: 100100 | bloque: 758
 ESCENA: demo1001_01.dsf | script_id: 100101 | bloque: 760
 =====================================================================================
 [HABLANTE NO VERIFICADO]  [ID CLD-000840 | grupo 000821 | orden 40]
-  ES: Puaj...
+  ES: Uf...
   EN: Ugh...
   ATRIBUCION: sin_hablante_verificable
 
@@ -4189,7 +4189,7 @@ ESCENA: demo1001_01.dsf | script_id: 100101 | bloque: 760
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000847 | grupo 000828 | orden 139]
-  ES: Al menos, no estoy muerto.
+  ES: Al menos, no estoy muerta.
   EN: At the very least, I'm not dead.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4214,7 +4214,7 @@ ESCENA: demo1001_01.dsf | script_id: 100101 | bloque: 760
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000852 | grupo 000833 | orden 165]
-  ES: Dudo que podamos llegar hasta allí.
+  ES: Dudo que podamos subir por ahí.
   EN: I doubt we can get up there.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4224,7 +4224,7 @@ ESCENA: demo1001_01.dsf | script_id: 100101 | bloque: 760
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000854 | grupo 000835 | orden 167]
-  ES: mientras buscaban simultáneamente un tesoro.
+  ES: mientras busco un tesoro.
   EN: while simultaneously looking for treasure.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4239,12 +4239,12 @@ ESCENA: demo1001_01.dsf | script_id: 100101 | bloque: 760
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000857 | grupo 000838 | orden 223]
-  ES: Puedes seguir mis huellas una vez que lo sepa
+  ES: Puedes seguir mis huellas cuando compruebe
   EN: You can follow my tracks once I know
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000858 | grupo 000839 | orden 224]
-  ES: ¡Es seguro! ¿Lo entiendes, Pudding?
+  ES: que no hay peligro. ¿Entendido, Pudding?
   EN: it's safe! You got that, Pudding?!
   ATRIBUCION: sin_hablante_verificable
 
@@ -4284,7 +4284,7 @@ ESCENA: demo1001_01.dsf | script_id: 100101 | bloque: 760
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000867 | grupo 000847 | orden 258]
-  ES: ¡Souma recibió un "palo de madera"!
+  ES: ¡Souma recibió un «Palo de madera»!
   EN: Souma got "Wooden Stick!"
   ATRIBUCION: sin_hablante_verificable
 
@@ -4393,7 +4393,7 @@ ESCENA: demo1001_01.dsf | script_id: 100110 | bloque: 762
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000888 | grupo 000868 | orden 14]
-  ES: Realmente me ralentiza.
+  ES: frenarme mucho.
   EN: really slow me down.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4446,7 +4446,7 @@ ESCENA: demo1002_00.dsf | script_id: 100200 | bloque: 764
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000897 | grupo 000877 | orden 75]
-  ES: Es muy brillante.
+  ES: ¡Qué luz hay aquí!
   EN: It's so bright.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4587,7 +4587,7 @@ ESCENA: demo1002_00.dsf | script_id: 100200 | bloque: 764
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000927 | grupo 000907 | orden 336]
-  ES: A-Mientras la casa esté bien, todo está bien.
+  ES: C-Con tal de que la casa esté bien, no pasa nada.
   EN: A-As long as the house is fine, it's all right.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4662,12 +4662,12 @@ ESCENA: demo1002_00.dsf | script_id: 100200 | bloque: 764
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000942 | grupo 000922 | orden 473]
-  ES: Tengo... Despina.
+  ES: Y-Yo soy... Despina.
   EN: I-I am... Despina.
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000943 | grupo 000923 | orden 479]
-  ES: ¡Eres una persona muy pesimista, ¿verdad?!
+  ES: ¡Vaya, qué sombría eres!
   EN: You're a gloomy one, aren't you?!
   ATRIBUCION: sin_hablante_verificable
 
@@ -4682,7 +4682,7 @@ ESCENA: demo1002_00.dsf | script_id: 100200 | bloque: 764
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000946 | grupo 000926 | orden 499]
-  ES: Ese es un conocido mío.
+  ES: Es mi familiar.
   EN: That's a familiar of mine.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4702,7 +4702,7 @@ ESCENA: demo1002_00.dsf | script_id: 100200 | bloque: 764
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000950 | grupo 000930 | orden 515]
-  ES: Hechicera, pero... correcto.
+  ES: Hechicera, pero sí.
   EN: Sorceress, but... correct.
   ATRIBUCION: sin_hablante_verificable
 
@@ -4994,7 +4994,7 @@ ESCENA: demo1002_01.dsf | script_id: 100202 | bloque: 767
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001008 | grupo 000988 | orden 6]
-  ES: Irse.
+  ES: Vete.
   EN: Go away.
   ATRIBUCION: sin_hablante_verificable
 
@@ -5015,7 +5015,7 @@ ESCENA: demo1002_01.dsf | script_id: 100203 | bloque: 768
   ATRIBUCION: primer_mensaje_tras_nombre
 
 [Tamako]  [ID CLD-001012 | grupo 000992 | orden 7]
-  ES: Soy la conocida "Tamako".
+  ES: Soy Tamako, un familiar.
   EN: I'm the familiar, "Tamako."
   ATRIBUCION: continuidad_corta_probable
 
@@ -5119,7 +5119,7 @@ ESCENA: demo1003_00.dsf | script_id: 100300 | bloque: 770
 [NOMBRE DE PANTALLA 0x6E] Crosstine  
   id=CLD-001034 | original: Crosstine
 [Crosstine]  [ID CLD-001035 | grupo 001015 | orden 131]
-  ES: Si es posible, ¿podría quedarse un rato?
+  ES: Si es posible, ¿pueden quedarse un rato?
   EN: If possible, would you please stay for a while?
   ATRIBUCION: primer_mensaje_tras_nombre
 
@@ -5232,7 +5232,7 @@ ESCENA: demo1003_00.dsf | script_id: 100300 | bloque: 770
   ATRIBUCION: primer_mensaje_tras_nombre
 
 [Crosstine]  [ID CLD-001060 | grupo 001040 | orden 343]
-  ES: Puedes usar el "Portal de Teletransporte" que está al lado de la fuente
+  ES: puedes usar la «Puerta de teletransporte» junto a la fuente
   EN: you can use the "Warp Gate" next to the fountain
   ATRIBUCION: continuidad_corta_probable
 
@@ -5298,7 +5298,7 @@ ESCENA: demo1003_00.dsf | script_id: 100300 | bloque: 770
   ATRIBUCION: primer_mensaje_tras_nombre
 
 [Crosstine]  [ID CLD-001075 | grupo 001055 | orden 394]
-  ES: ¿Hay alguien interesado en el personaje principal...?
+  ES: a cualquiera en personaje principal...
   EN: anybody into the main character...
   ATRIBUCION: continuidad_corta_probable
 
@@ -5313,7 +5313,7 @@ ESCENA: demo1003_00.dsf | script_id: 100300 | bloque: 770
   ATRIBUCION: continuidad_corta_probable
 
 [Crosstine]  [ID CLD-001078 | grupo 001058 | orden 398]
-  ES: Bienvenido, amigo mío.
+  ES: recibir a mi amigo.
   EN: welcome my friend.
   ATRIBUCION: continuidad_corta_probable
 
@@ -6261,7 +6261,7 @@ ESCENA: demo1005_00.dsf | script_id: 300513 | bloque: 797
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001265 | grupo 001234 | orden 9]
-  ES: un personaje secundario o un personaje principal.
+  ES: un personaje de apoyo o un personaje principal.
   EN: a sub character or a main character.。
   ATRIBUCION: sin_hablante_verificable
 
@@ -6281,7 +6281,7 @@ ESCENA: demo1005_00.dsf | script_id: 300513 | bloque: 797
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001269 | grupo 001238 | orden 15]
-  ES: "Sube de nivel como personaje secundario."
+  ES: "Sube de nivel como personaje de apoyo."
   EN: "LV Up as a sub character."
   ATRIBUCION: sin_hablante_verificable
 
@@ -6519,7 +6519,7 @@ ESCENA: demo1006_00.dsf | script_id: 100600 | bloque: 801
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001314 | grupo 001283 | orden 137]
-  ES: ¡"Personajes secundarios" para potenciar!
+  ES: ¡"personajes de apoyo" para potenciar!
   EN: "sub characters" to power up!
   ATRIBUCION: sin_hablante_verificable
 
@@ -6559,7 +6559,7 @@ ESCENA: demo1006_00.dsf | script_id: 100600 | bloque: 801
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001322 | grupo 001291 | orden 157]
-  ES: se transfiere al personaje secundario.
+  ES: se transfiere al personaje de apoyo.
   EN: transfers to the sub character.
   ATRIBUCION: sin_hablante_verificable
 
@@ -7368,7 +7368,7 @@ ESCENA: demo1006_02.dsf | script_id: 300622 | bloque: 820
   ATRIBUCION: continuidad_corta_probable
 
 [Tsunpiyo]  [ID CLD-001479 | grupo 001446 | orden 9]
-  ES: el "personaje principal" y el "personaje secundario"
+  ES: el "personaje principal" y el "personaje de apoyo"
   EN: the "main character" and "sub character"
   ATRIBUCION: continuidad_corta_probable
 
@@ -7413,12 +7413,12 @@ ESCENA: demo1006_02.dsf | script_id: 300622 | bloque: 820
   ATRIBUCION: continuidad_corta_probable
 
 [Tsunpiyo]  [ID CLD-001488 | grupo 001455 | orden 21]
-  ES: un "personaje secundario" primero.
+  ES: un "personaje de apoyo" primero.
   EN: a "sub character" first.
   ATRIBUCION: continuidad_corta_probable
 
 [Tsunpiyo]  [ID CLD-001489 | grupo 001456 | orden 23]
-  ES: Para crear un buen personaje secundario, es mejor
+  ES: Para crear un buen personaje de apoyo, es mejor
   EN: To make a good sub character, it's better
   ATRIBUCION: continuidad_corta_probable
 
@@ -7762,7 +7762,7 @@ ESCENA: demo1007_00.dsf | script_id: 100702 | bloque: 831
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001555 | grupo 001521 | orden 22]
-  ES: todos los poderes de los "personajes secundarios".
+  ES: todos los poderes de los "personajes de apoyo".
   EN: all the powers of the "sub characters."
   ATRIBUCION: sin_hablante_verificable
 
@@ -7847,7 +7847,7 @@ ESCENA: demo1007_00.dsf | script_id: 100702 | bloque: 831
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001572 | grupo 001538 | orden 97]
-  ES: El papel de los "personajes secundarios" no es solo
+  ES: El papel de los "personajes de apoyo" no es solo
   EN: The role of the "sub characters" is not just
   ATRIBUCION: sin_hablante_verificable
 
@@ -8119,7 +8119,7 @@ ESCENA: demo1007_01.dsf | script_id: 100704 | bloque: 835
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001625 | grupo 001590 | orden 6]
-  ES: Pero los "personajes secundarios" tienen
+  ES: Pero los "personajes de apoyo" tienen
   EN: But "sub characters" have
   ATRIBUCION: sin_hablante_verificable
 
@@ -9753,7 +9753,7 @@ ESCENA: demo1103_01.dsf | script_id: 110302 | bloque: 875
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001956 | grupo 001910 | orden 6]
-  ES: pero si Pudding se convierte en un "personaje secundario",
+  ES: pero si Pudding se convierte en un "personaje de apoyo",
   EN: but if Pudding becomes a "sub character,"
   ATRIBUCION: sin_hablante_verificable
 
@@ -14157,12 +14157,12 @@ ESCENA: demo1207_00.dsf | script_id: 120700 | bloque: 1002
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-002794 | grupo 002730 | orden 156]
-  ES: Eh, hay algunas armas
+  ES: Eh, hay unas armas
   EN: Uhh, there are some weapons
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-002795 | grupo 002731 | orden 157]
-  ES: Me abastecí de...
+  ES: que tengo guardadas...
   EN: I stocked up on...
   ATRIBUCION: sin_hablante_verificable
 
@@ -14312,7 +14312,7 @@ ESCENA: demo1207_01.dsf | script_id: 120701 | bloque: 1004
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-002826 | grupo 002760 | orden 6]
-  ES: Un completo idiota.
+  ES: Un idiota de remate.
   EN: A complete blithering idiot.
   ATRIBUCION: sin_hablante_verificable
 
@@ -14331,7 +14331,7 @@ ESCENA: demo1207_01.dsf | script_id: 120702 | bloque: 1005
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-002829 | grupo 002763 | orden 7]
-  ES: Ojalá alguien me enseñara nuevos pasos de baile.
+  ES: Ojalá alguien me enseñara nuevas técnicas.
   EN: I wish someone would teach me new moves.
   ATRIBUCION: sin_hablante_verificable
 
@@ -20668,7 +20668,7 @@ ESCENA: demo1502_00.dsf | script_id: 150200 | bloque: 1203
   ATRIBUCION: primer_mensaje_tras_nombre
 
 [Asagi]  [ID CLD-004065 | grupo 003975 | orden 129]
-  ES: ¡Yo también me veré obligado a ser un "personaje secundario"!
+  ES: ¡Yo también me veré obligado a ser un "personaje de apoyo"!
   EN: I'll be forced to be a "sub character," too!
   ATRIBUCION: continuidad_corta_probable
 
@@ -20779,7 +20779,7 @@ ESCENA: demo1502_01.dsf | script_id: 150202 | bloque: 1206
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-004089 | grupo 003996 | orden 6]
-  ES: En realidad, prefiero ser un "personaje secundario".
+  ES: En realidad, prefiero ser un "personaje de apoyo".
   EN: I actually prefer being a "sub character."
   ATRIBUCION: sin_hablante_verificable
 
@@ -20788,7 +20788,7 @@ ESCENA: demo1502_01.dsf | script_id: 150202 | bloque: 1206
 ESCENA: demo1502_01.dsf | script_id: 150203 | bloque: 1207
 =====================================================================================
 [HABLANTE NO VERIFICADO]  [ID CLD-004090 | grupo 003997 | orden 9]
-  ES: Me encanta ser el "personaje secundario".
+  ES: Me encanta ser el "personaje de apoyo".
   EN: I love being the "sub character."
   ATRIBUCION: sin_hablante_verificable
 
@@ -21564,7 +21564,7 @@ ESCENA: demo1504_00.dsf | script_id: 150400 | bloque: 1233
   ATRIBUCION: continuidad_corta_probable
 
 [Asagi]  [ID CLD-004241 | grupo 004145 | orden 86]
-  ES: ¡Ahora es un "personaje secundario"!
+  ES: ¡Ahora es un "personaje de apoyo"!
   EN: a "sub character" now!
   ATRIBUCION: continuidad_corta_probable
 
@@ -24638,7 +24638,7 @@ ESCENA: end09_dodohige.dsf | script_id: 141001 | bloque: 1435
   ATRIBUCION: continuidad_corta_probable
 
 [Princesa Dot]  [ID CLD-004853 | grupo 004755 | orden 151]
-  ES: Sherbet?
+  ES: ¿Sherbet?
   EN: Sherbet?
   ATRIBUCION: continuidad_corta_probable
 
@@ -27206,7 +27206,7 @@ APENDICE: OTROS ELEMENTOS DE TEXTO (4030)
   EN:  obtained!
 
 [CLD-005402] grupo=005212 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Tiempo de despeje %3d：%02d：%02d %s
+  ES: Tiempo: %3d：%02d：%02d  %s
   EN: Clear Time %3d：%02d：%02d  %s
 
 [CLD-005403] grupo=005213 recurso=DATABASE.DAT/STRTBL.DAT
@@ -27214,7 +27214,7 @@ APENDICE: OTROS ELEMENTOS DE TEXTO (4030)
   EN: Learned new magic!
 
 [CLD-005404] grupo=005214 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: ¡Aprendí un nuevo Círculo mágico!
+  ES: ¡Nuevo círculo mágico aprendido!
   EN: Learned new Magic Circle!
 
 [CLD-005405] grupo=005215 recurso=DATABASE.DAT/STRTBL.DAT
@@ -27226,7 +27226,7 @@ Best Time　%4d：%02d：%02d　
 （%s）
 
 [CLD-005406] grupo=005216 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: ¡He aprendido una nueva habilidad!
+  ES: ¡Nueva habilidad aprendida!
   EN: Learned new ability!
 
 [CLD-005407] grupo=005217 recurso=DATABASE.DAT/STRTBL.DAT
@@ -27838,7 +27838,7 @@ will lose all unsaved progress. Continue?
   EN: (Slot %s)
 
 [CLD-005555] grupo=005365 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Subcarácter
+  ES: Pj. de apoyo
   EN: Sub Char
 
 [CLD-005556] grupo=005366 recurso=DATABASE.DAT/STRTBL.DAT
@@ -27855,7 +27855,7 @@ will lose all unsaved progress. Continue?
 
 [CLD-005559] grupo=005369 recurso=DATABASE.DAT/STRTBL.DAT
   ES: ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
   EN: ⑪Confirm
 ⑩Return
 
@@ -27876,11 +27876,11 @@ will lose all unsaved progress. Continue?
   EN: Current main is %s.
 
 [CLD-005564] grupo=005374 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Colocar como personaje secundario.
+  ES: Colocar como personaje de apoyo.
   EN: Place as a sub character.
 
 [CLD-005565] grupo=005375 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: No se puede colocar el personaje.
+  ES: No se puede colocar al personaje.
   EN: Cannot place character.
 
 [CLD-005566] grupo=005376 recurso=DATABASE.DAT/STRTBL.DAT
@@ -27972,15 +27972,15 @@ will lose all unsaved progress. Continue?
   EN: ＬＶ %2d
 
 [CLD-005588] grupo=005398 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Reducción del uso de SP x%2d
+  ES: Reducción de consumo SP x%2d
   EN: SP Use Reduction x%2d
 
 [CLD-005589] grupo=005399 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Reducción del tiempo de fundición x%2d
+  ES: Reducción de lanzamiento x%2d
   EN: Casting Time Reductionx%2d
 
 [CLD-005590] grupo=005400 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Tiempo de fundición %3d
+  ES: Tiempo de lanzamiento %3d
   EN: Casting Time %3d
 
 [CLD-005591] grupo=005401 recurso=DATABASE.DAT/STRTBL.DAT
@@ -28020,11 +28020,11 @@ will lose all unsaved progress. Continue?
   EN: %s is the sub.
 
 [CLD-005600] grupo=005410 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Colocación como subcaracter. %s
+  ES: Colocar como personaje de apoyo: %s
   EN: Placing as a sub character. %s
 
 [CLD-005601] grupo=005411 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Colocarlo como personaje secundario.
+  ES: Colocar como personaje de apoyo.
   EN: Placing as a sub character.
 
 [CLD-005602] grupo=005412 recurso=DATABASE.DAT/STRTBL.DAT
@@ -28044,51 +28044,51 @@ will lose all unsaved progress. Continue?
   EN: EXP Bonus 3
 
 [CLD-005606] grupo=005416 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Bonificación de aumento de ATK
+  ES: Bono ATK
   EN: ATK Boost Bonus
 
 [CLD-005607] grupo=005417 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Bonificación de aumento de ATK 2
+  ES: Bono ATK 2
   EN: ATK Boost Bonus 2
 
 [CLD-005608] grupo=005418 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Bonificación de aumento de ATK 3
+  ES: Bono ATK 3
   EN: ATK Boost Bonus 3
 
 [CLD-005609] grupo=005419 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Bonificación de aumento de DEF
+  ES: Bono DEF
   EN: DEF Boost Bonus
 
 [CLD-005610] grupo=005420 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Bonificación de mejora de DEF 2
+  ES: Bono DEF 2
   EN: DEF Boost Bonus 2
 
 [CLD-005611] grupo=005421 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Bonificación de mejora de DEF 3
+  ES: Bono DEF 3
   EN: DEF Boost Bonus 3
 
 [CLD-005612] grupo=005422 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Bonificación de aumento de maná
+  ES: Bono maná
   EN: Mana Boost Bonus
 
 [CLD-005613] grupo=005423 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Bonificación de aumento de maná 2
+  ES: Bono maná 2
   EN: Mana Boost Bonus 2
 
 [CLD-005614] grupo=005424 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Bonificación de aumento de maná 3
+  ES: Bono maná 3
   EN: Mana Boost Bonus 3
 
 [CLD-005615] grupo=005425 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Bonificación de aumento de HP
+  ES: Bono HP
   EN: HP Boost Bonus
 
 [CLD-005616] grupo=005426 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Bonificación de aumento de HP 2
+  ES: Bono HP 2
   EN: HP Boost Bonus 2
 
 [CLD-005617] grupo=005427 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Bonificación de aumento de HP 3
+  ES: Bono HP 3
   EN: HP Boost Bonus 3
 
 [CLD-005618] grupo=005428 recurso=DATABASE.DAT/STRTBL.DAT
@@ -28204,7 +28204,7 @@ Power　　　         %
   EN: 　Title 　　    　Power　　      ⑥　　　　   ⑳⑥
 
 [CLD-005640] grupo=005450 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: 　Maná 　　 　Trabajo　　　 ⑧　　　　 ⑳
+  ES: 　Maná 　　 　Clase　　　 ⑧　　　　 ⑳
   EN: 　Mana 　　     　Job　　　      ⑧　　　　   ⑳
 
 [CLD-005641] grupo=005451 recurso=DATABASE.DAT/STRTBL.DAT
@@ -28619,7 +28619,7 @@ Power　　　       %
   EN: Sell?
 
 [CLD-005711] grupo=005521 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Equipado. ¿De verdad lo venden?
+  ES: Equipado. ¿Seguro que quieres venderlo?
   EN: Equipped. Really sell?
 
 [CLD-005712] grupo=005522 recurso=DATABASE.DAT/STRTBL.DAT
@@ -28671,7 +28671,7 @@ Power　　　       %
   EN: G
 
 [CLD-005724] grupo=005534 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Para clientes habituales
+  ES: Para habituales
   EN: For regulars
 
 [CLD-005725] grupo=005535 recurso=DATABASE.DAT/STRTBL.DAT
@@ -28716,7 +28716,7 @@ Power　　　       %
 
 [CLD-005735] grupo=005545 recurso=DATABASE.DAT/STRTBL.DAT
   ES: ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
   EN: ⑪Confirm
 ⑩Return
 
@@ -28758,30 +28758,30 @@ ATK%3d　DEF%3d　Mana%3d
 
 [CLD-005739] grupo=005549 recurso=DATABASE.DAT/STRTBL.DAT
   ES: ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
   EN: ⑪Confirm
 ⑩Return
 
 [CLD-005740] grupo=005550 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Selecciona el estilo artístico y el género del personaje.
+  ES: Selecciona el aspecto y el género del personaje.
   EN: Select character art and gender.
 
 [CLD-005741] grupo=005551 recurso=DATABASE.DAT/STRTBL.DAT
   ES: ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
   EN: ⑪Confirm
 ⑩Return
 
 [CLD-005742] grupo=005552 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Seleccione el nombre del personaje.
+  ES: Selecciona el nombre del personaje.
   EN: Select character name.
 
 [CLD-005743] grupo=005553 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Seleccione el patrón de conversación.
+  ES: Selecciona el patrón de conversación.
   EN: Select conversation pattern.
 
 [CLD-005744] grupo=005554 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Seleccione el nombre del jefe.
+  ES: Selecciona el nombre del jefe.
   EN: Select boss name.
 
 [CLD-005745] grupo=005555 recurso=DATABASE.DAT/STRTBL.DAT
@@ -28809,7 +28809,7 @@ ATK%3d　DEF%3d　Mana%3d
   EN: Black
 
 [CLD-005751] grupo=005561 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Seleccione la forma y el color del jefe.
+  ES: Selecciona la forma y el color del jefe.
   EN: Select boss form and color.
 
 [CLD-005752] grupo=005562 recurso=DATABASE.DAT/STRTBL.DAT
@@ -28854,12 +28854,12 @@ Mana%3d
 %s
 
 [CLD-005756] grupo=005566 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Seleccione el personaje que desea editar.
+  ES: Selecciona el personaje que quieres editar.
   EN: Select character to edit.
 
 [CLD-005757] grupo=005567 recurso=DATABASE.DAT/STRTBL.DAT
   ES: ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
   EN: ⑪Confirm
 ⑩Return
 
@@ -28908,7 +28908,7 @@ Mana%3d
   EN: Select the name of your new character.
 
 [CLD-005769] grupo=005579 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Seleccione el nombre del nuevo jefe.
+  ES: Selecciona el nombre del nuevo jefe.
   EN: Select the name of the new boss.
 
 [CLD-005770] grupo=005580 recurso=DATABASE.DAT/STRTBL.DAT
@@ -28920,11 +28920,11 @@ Mana%3d
   EN: Input the first line.
 
 [CLD-005772] grupo=005582 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Introduzca la segunda línea.
+  ES: Introduce la segunda línea.
   EN: Input the second line.
 
 [CLD-005773] grupo=005583 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Introduzca la tercera línea.
+  ES: Introduce la tercera línea.
   EN: Input the third line.
 
 [CLD-005774] grupo=005584 recurso=DATABASE.DAT/STRTBL.DAT
@@ -28960,13 +28960,12 @@ Mana%3d
   EN: Not used
 
 [CLD-005782] grupo=005592 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Seleccione el personaje que desea eliminar.
+  ES: Selecciona el personaje que quieres eliminar.
   EN: Select character to delete.
 
 [CLD-005783] grupo=005593 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: ¿De verdad borraste %s?
-
-¡Las eliminaciones son permanentes!
+  ES: ¿Eliminar a %s?
+¡No se puede deshacer!
   EN: Really delete %s?
 Deletions are permanent!
 
@@ -29034,7 +29033,7 @@ Deletions are permanent!
 
 [CLD-005796] grupo=005606 recurso=DATABASE.DAT/STRTBL.DAT
   ES: Datos de edición de %s.
-Tiempo de reproducción %d:%02d:%02d
+Tiempo jugado %d:%02d:%02d
   EN: %s's edit data.
 Play time %d:%02d:%02d
 
@@ -29179,15 +29178,15 @@ Continue?
   EN: Invert current picture to use as the other side.
 
 [CLD-005824] grupo=005634 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Muestra el gráfico del personaje principal y el texto.
+  ES: Muestra el gráfico del personaje principal y cópialo.
   EN: Bring up main character graphic and copy.
 
 [CLD-005825] grupo=005635 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Guarda el gráfico para editar los datos.
+  ES: Guarda el gráfico en los datos de edición.
   EN: Save graphic to edit data.
 
 [CLD-005826] grupo=005636 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Cargar gráfico en editar datos.
+  ES: Carga el gráfico desde los datos de edición.
   EN: Load graphic in edit data.
 
 [CLD-005827] grupo=005637 recurso=DATABASE.DAT/STRTBL.DAT
@@ -29255,12 +29254,12 @@ Continue?
   EN: Blue
 
 [CLD-005843] grupo=005653 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Seleccione un nuevo color.
+  ES: Selecciona un nuevo color.
   EN: Select new color.
 
 [CLD-005844] grupo=005654 recurso=DATABASE.DAT/STRTBL.DAT
   ES: ⑪ Confirmar
-⑩ Devolver
+⑩ Volver
 ⑬ Color predeterminado
   EN: ⑪Confirm
 ⑩Return
@@ -29275,7 +29274,7 @@ Continue?
   EN: Select dungeon
 
 [CLD-005847] grupo=005657 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: ¡ESCENARIO DESPEJADO!
+  ES: ¡FASE SUPERADA!
   EN: STAGE CLEAR!
 
 [CLD-005848] grupo=005658 recurso=DATABASE.DAT/STRTBL.DAT
@@ -29432,35 +29431,35 @@ Floors cleared record cut in half...
   EN:  Lv.%2d  EXP :%6d Next :%6s
 
 [CLD-005877] grupo=005687 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Volumen de efectos de sonido
+  ES: Vol. efectos
   EN: SFX Volume
 
 [CLD-005878] grupo=005688 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Volumen de música de fondo
+  ES: Vol. música
   EN: BGM Volume
 
 [CLD-005879] grupo=005689 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Tipo de música de fondo
+  ES: Tipo música
   EN: BGM Type
 
 [CLD-005880] grupo=005690 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Configuración clave
+  ES: Controles
   EN: Key Config
 
 [CLD-005881] grupo=005691 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Cambia el volumen de los efectos de sonido.
+  ES: Ajusta el volumen de los efectos.
   EN: Changes volume of sound effects.
 
 [CLD-005882] grupo=005692 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Cambia el volumen de la música de fondo.
+  ES: Ajusta el volumen de la música.
   EN: Changes volume of BGM.
 
 [CLD-005883] grupo=005693 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Cambia el tipo de música de fondo (real/retro)
+  ES: Elige música real o retro.
   EN: Changes BGM type (Real/Retro)
 
 [CLD-005884] grupo=005694 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Cambia la configuración de los botones. (Cambia de pantalla)
+  ES: Configura los botones.
   EN: Changes button configuration. (Switches screen)
 
 [CLD-005885] grupo=005695 recurso=DATABASE.DAT/STRTBL.DAT
@@ -29508,7 +29507,7 @@ Floors cleared record cut in half...
   EN: End
 
 [CLD-005896] grupo=005706 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Pulse el botón para configurar.
+  ES: Pulsa el botón para configurar.
   EN: Press the button to configure.
 
 [CLD-005897] grupo=005707 recurso=DATABASE.DAT/STRTBL.DAT
@@ -29516,11 +29515,11 @@ Floors cleared record cut in half...
   EN: Returns to standard settings.
 
 [CLD-005898] grupo=005708 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Fin de la configuración de teclas.
+  ES: Salir de la configuración de botones.
   EN: End key config.
 
 [CLD-005899] grupo=005709 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Mostrar decimales para el daño
+  ES: Decimales de daño
   EN: Show decimal points for damage　　　　　　　
 
 [CLD-005900] grupo=005710 recurso=DATABASE.DAT/STRTBL.DAT
@@ -29528,11 +29527,11 @@ Floors cleared record cut in half...
   EN:           ON
 
 [CLD-005901] grupo=005711 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Menos de 1 encendido
+  ES: Menos de 1: SÍ
   EN: 　Under 1 ON
 
 [CLD-005902] grupo=005712 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Menos de 10 años
+  ES: Menos de 10: SÍ
   EN:  Under 10 ON
 
 [CLD-005903] grupo=005713 recurso=DATABASE.DAT/STRTBL.DAT
@@ -29540,23 +29539,23 @@ Floors cleared record cut in half...
   EN:          OFF
 
 [CLD-005904] grupo=005714 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Activa o desactiva la visualización de los decimales en los daños.
+  ES: Muestra decimales en el daño.
   EN: Toggles the display of decimal points in damage.
 
 [CLD-005905] grupo=005715 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Efectos del Círculo mágico
+  ES: Efectos círculo
   EN: Magic Circle effects
 
 [CLD-005906] grupo=005716 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Activa o desactiva la visualización de efectos para Magic Circle.
+  ES: Muestra los efectos del círculo mágico.
   EN: Toggles the display of effects for Magic Circle.
 
 [CLD-005907] grupo=005717 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Captura de pantalla
+  ES: Capturas
   EN: Screenshot
 
 [CLD-005908] grupo=005718 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Activa o desactiva el botón para tomar capturas de pantalla.
+  ES: Activa el botón para hacer capturas.
   EN: Toggles the button to take screenshots
 
 [CLD-005909] grupo=005719 recurso=DATABASE.DAT/STRTBL.DAT
@@ -29580,7 +29579,7 @@ Floors cleared record cut in half...
   EN: Create a room as the host, or wait for other rooms.
 
 [CLD-005914] grupo=005724 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Lista de habitaciones con conexión inalámbrica
+  ES: Lista de salas inalámbricas
   EN: Wireless room list
 
 [CLD-005915] grupo=005725 recurso=DATABASE.DAT/STRTBL.DAT
@@ -29700,7 +29699,7 @@ Floors cleared record cut in half...
   EN: Select character to job change.
 
 [CLD-005942] grupo=005752 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Seleccione el puesto al que desea cambiar.
+  ES: Selecciona la nueva clase.
   EN: Select job to change to.
 
 [CLD-005943] grupo=005753 recurso=DATABASE.DAT/STRTBL.DAT
@@ -29754,9 +29753,8 @@ EXP  %5d　G %5d
   EN: ???
 
 [CLD-005954] grupo=005764 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Aún no puede leer.
-
-Derrota a los enemigos para desbloquear.
+  ES: Aún no se puede leer.
+Derrota a enemigos para desbloquearlo.
   EN: Cannot read yet.
 Defeat enemies to unlock.
 
@@ -29820,7 +29818,7 @@ Defeat over 10 enemies to unlock.
 
 
 [CLD-005968] grupo=005778 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Tasa de aparición de objetos
+  ES: Prob. de objetos
 
   EN: Item drop rate
 
@@ -29862,13 +29860,13 @@ Rare title rate　　 　 　%3d
 Floor jump　　　　　　 　%3d%s
 
 [CLD-005972] grupo=005782 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Tasa de aparición de objetos: %3d
+  ES: Prob. de objetos %3d
 
   EN: Item drop rate　　%3d
 
 
 [CLD-005973] grupo=005783 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Tasa de títulos raros　　%3d%s
+  ES: Prob. título raro %3d%s
   EN: Rare title rate　　%3d%s
 
 [CLD-005974] grupo=005784 recurso=DATABASE.DAT/STRTBL.DAT
@@ -30033,15 +30031,15 @@ Full recovery!
   EN: No job that can use %s!
 
 [CLD-005992] grupo=005802 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: %s personas en Magic Circle usaron %s!
+  ES: ¡%s personajes del círculo mágico usaron %s!
   EN: %s people in Magic Circle used %s!
 
 [CLD-005993] grupo=005803 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Nivel de piso insuficiente...
+  ES: Nivel de planta insuficiente...
   EN: Insufficient floor level...
 
 [CLD-005994] grupo=005804 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: ¡El nivel de los enemigos en el siguiente piso ha bajado a %s!
+  ES: ¡Nivel de enemigos de la próxima planta: %s!
   EN: Enemy level in next floor dropped to %s!
 
 [CLD-005995] grupo=005805 recurso=DATABASE.DAT/STRTBL.DAT
@@ -30077,7 +30075,7 @@ Full recovery!
   EN: Normal & Warrior LV.
 
 [CLD-006003] grupo=005813 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: Comerciante de apuestas LV.
+  ES: Mercader apostador NV.
   EN: Gamble Merchant LV.
 
 [CLD-006004] grupo=005814 recurso=DATABASE.DAT/STRTBL.DAT
@@ -30184,7 +30182,7 @@ EXP  %5d　G %5d
   EN: Impossible One
 
 [CLD-006028] grupo=005838 recurso=DATABASE.DAT/STRTBL.DAT
-  ES: ¡Amante de los pasteles de carne!
+  ES: ¡Amante del pastel de carne!
   EN: Pot Pie Lover!
 
 [CLD-006029] grupo=005839 recurso=DATABASE.DAT/STRTBL.DAT
@@ -30459,7 +30457,7 @@ To save new game progress, you will need storage media with %dKB of free space.
   EN: Petit Apple
 
 [CLD-006143] grupo=005898 recurso=DATABASE.DAT/ARTIFACT.DAT
-  ES: Puntos de vida de personaje secundario +4 gratis.
+  ES: Puntos de vida de personaje de apoyo +4 gratis.
   EN: Sub character HP +4 for free.
 
 [CLD-006144] grupo=005899 recurso=DATABASE.DAT/ARTIFACT.DAT
@@ -30467,7 +30465,7 @@ To save new game progress, you will need storage media with %dKB of free space.
   EN: Mini Apple
 
 [CLD-006145] grupo=005900 recurso=DATABASE.DAT/ARTIFACT.DAT
-  ES: Puntos de vida de personaje secundario +10 gratis.
+  ES: Puntos de vida de personaje de apoyo +10 gratis.
   EN: Sub character HP +10 for free.
 
 [CLD-006146] grupo=005901 recurso=DATABASE.DAT/ARTIFACT.DAT
@@ -30475,7 +30473,7 @@ To save new game progress, you will need storage media with %dKB of free space.
   EN: Life Apple
 
 [CLD-006147] grupo=005902 recurso=DATABASE.DAT/ARTIFACT.DAT
-  ES: Puntos de vida de personaje secundario +18 gratis.
+  ES: Puntos de vida de personaje de apoyo +18 gratis.
   EN: Sub character HP +18 for free.
 
 [CLD-006148] grupo=005903 recurso=DATABASE.DAT/ARTIFACT.DAT
@@ -30483,7 +30481,7 @@ To save new game progress, you will need storage media with %dKB of free space.
   EN: Bless Apple
 
 [CLD-006149] grupo=005904 recurso=DATABASE.DAT/ARTIFACT.DAT
-  ES: Personaje secundario +28 HP gratis.
+  ES: personaje de apoyo +28 HP gratis.
   EN: Sub character HP +28 for free.
 
 [CLD-006150] grupo=005905 recurso=DATABASE.DAT/ARTIFACT.DAT
@@ -30491,7 +30489,7 @@ To save new game progress, you will need storage media with %dKB of free space.
   EN: Earth Apple
 
 [CLD-006151] grupo=005906 recurso=DATABASE.DAT/ARTIFACT.DAT
-  ES: Puntos de vida adicionales para personajes secundarios: +40 gratis.
+  ES: Puntos de vida adicionales para personajes de apoyo: +40 gratis.
   EN: Sub character HP +40 for free.
 
 [CLD-006152] grupo=005907 recurso=DATABASE.DAT/ARTIFACT.DAT
@@ -30499,7 +30497,7 @@ To save new game progress, you will need storage media with %dKB of free space.
   EN: Petit Grape
 
 [CLD-006153] grupo=005908 recurso=DATABASE.DAT/ARTIFACT.DAT
-  ES: Personaje secundario +15 PV por 3 de maná.
+  ES: personaje de apoyo +15 PV por 3 de maná.
   EN: Sub character HP +15 for 3 Mana.
 
 [CLD-006154] grupo=005909 recurso=DATABASE.DAT/ARTIFACT.DAT
@@ -30507,7 +30505,7 @@ To save new game progress, you will need storage media with %dKB of free space.
   EN: Mini Grape
 
 [CLD-006155] grupo=005910 recurso=DATABASE.DAT/ARTIFACT.DAT
-  ES: Personaje secundario +30 PV por 10 de Maná.
+  ES: personaje de apoyo +30 PV por 10 de Maná.
   EN: Sub character HP +30 for 10 Mana.
 
 [CLD-006156] grupo=005911 recurso=DATABASE.DAT/ARTIFACT.DAT
@@ -30515,7 +30513,7 @@ To save new game progress, you will need storage media with %dKB of free space.
   EN: Life Grape
 
 [CLD-006157] grupo=005912 recurso=DATABASE.DAT/ARTIFACT.DAT
-  ES: Personaje secundario +50 PV por 20 de Maná.
+  ES: personaje de apoyo +50 PV por 20 de Maná.
   EN: Sub character HP +50 for 20 Mana.
 
 [CLD-006158] grupo=005913 recurso=DATABASE.DAT/ARTIFACT.DAT
@@ -30523,7 +30521,7 @@ To save new game progress, you will need storage media with %dKB of free space.
   EN: Bless Grape
 
 [CLD-006159] grupo=005914 recurso=DATABASE.DAT/ARTIFACT.DAT
-  ES: Personaje secundario +70 PV por 30 de Maná.
+  ES: personaje de apoyo +70 PV por 30 de Maná.
   EN: Sub character HP +70 for 30 Mana.
 
 [CLD-006160] grupo=005915 recurso=DATABASE.DAT/ARTIFACT.DAT
@@ -30531,7 +30529,7 @@ To save new game progress, you will need storage media with %dKB of free space.
   EN: Earth Grape
 
 [CLD-006161] grupo=005916 recurso=DATABASE.DAT/ARTIFACT.DAT
-  ES: Personaje secundario +90 PV por 40 de Maná.
+  ES: personaje de apoyo +90 PV por 40 de Maná.
   EN: Sub character HP +90 for 40 Mana.
 
 [CLD-006162] grupo=005917 recurso=DATABASE.DAT/ARTIFACT.DAT
@@ -31323,7 +31321,7 @@ To save new game progress, you will need storage media with %dKB of free space.
   EN: Scatter 25％
 
 [CLD-006353] grupo=006114 recurso=DATABASE.DAT/ARTIFACT.DAT
-  ES: Distribuye el 25% del daño recibido entre los personajes secundarios.
+  ES: Distribuye el 25% del daño recibido entre los personajes de apoyo.
   EN: Distributes 25% of damage taken onto sub characters.
 
 [CLD-006354] grupo=006115 recurso=DATABASE.DAT/ARTIFACT.DAT
@@ -31331,7 +31329,7 @@ To save new game progress, you will need storage media with %dKB of free space.
   EN: Scatter 50％
 
 [CLD-006355] grupo=006116 recurso=DATABASE.DAT/ARTIFACT.DAT
-  ES: Distribuye el 50% del daño recibido entre los personajes secundarios.
+  ES: Distribuye el 50% del daño recibido entre los personajes de apoyo.
   EN: Distributes 50% of damage taken onto sub characters.
 
 [CLD-006356] grupo=006117 recurso=DATABASE.DAT/ARTIFACT.DAT
@@ -31339,7 +31337,7 @@ To save new game progress, you will need storage media with %dKB of free space.
   EN: Scatter 100％
 
 [CLD-006357] grupo=006118 recurso=DATABASE.DAT/ARTIFACT.DAT
-  ES: Distribuye el 100% del daño recibido entre los personajes secundarios.
+  ES: Distribuye el 100% del daño recibido entre los personajes de apoyo.
   EN: Distributes 100% of damage taken onto sub characters.
 
 [CLD-006358] grupo=006119 recurso=DATABASE.DAT/ARTIFACT.DAT
@@ -31673,7 +31671,7 @@ To save new game progress, you will need storage media with %dKB of free space.
   EN: Chain Mail
 
 [CLD-006430] grupo=006200 recurso=DATABASE.DAT/BODY.DAT
-  ES: Fresco
+  ES: Frío
   EN: Cool
 
 [CLD-006431] grupo=006201 recurso=DATABASE.DAT/BODY.DAT
@@ -37011,11 +37009,11 @@ LV Up to learn attack magic.
   EN: 闘志不要
 
 [CLD-007750] grupo=007519 recurso=DATABASE.DAT/EFFECT.DAT
-  ES: Bonificación de espíritu de lucha 1
+  ES: Bono de espíritu de lucha 1
   EN: 闘志ボーナス1
 
 [CLD-007751] grupo=007520 recurso=DATABASE.DAT/EFFECT.DAT
-  ES: Proteger y no
+  ES: No requiere protección
   EN: 守護不要
 
 [CLD-007752] grupo=007521 recurso=DATABASE.DAT/EFFECT.DAT
@@ -37023,7 +37021,7 @@ LV Up to learn attack magic.
   EN: 守護ボーナス1
 
 [CLD-007753] grupo=007522 recurso=DATABASE.DAT/EFFECT.DAT
-  ES: Yingzhi no quiere
+  ES: No requiere sabiduría
   EN: 英知不要
 
 [CLD-007754] grupo=007523 recurso=DATABASE.DAT/EFFECT.DAT
@@ -37135,7 +37133,7 @@ LV Up to learn attack magic.
   EN: SPD+2
 
 [CLD-007777] grupo=007550 recurso=DATABASE.DAT/EFFECT.DAT
-  ES: Defensa con espada
+  ES: Protección contra espadas
   EN: 剣防ぎ
 
 [CLD-007778] grupo=007551 recurso=DATABASE.DAT/EFFECT.DAT
@@ -37147,7 +37145,7 @@ LV Up to learn attack magic.
   EN: 槍防ぎ
 
 [CLD-007780] grupo=007553 recurso=DATABASE.DAT/EFFECT.DAT
-  ES: Resistencia al empuje +2
+  ES: Resistencia a perforación +2
   EN: 突刺耐性+2
 
 [CLD-007781] grupo=007554 recurso=DATABASE.DAT/EFFECT.DAT
@@ -37155,11 +37153,11 @@ LV Up to learn attack magic.
   EN: 斧防ぎ
 
 [CLD-007782] grupo=007555 recurso=DATABASE.DAT/EFFECT.DAT
-  ES: Resistencia cuerpo a cuerpo +2
+  ES: Resistencia a golpes +2
   EN: 打撃耐性+2
 
 [CLD-007783] grupo=007556 recurso=DATABASE.DAT/EFFECT.DAT
-  ES: Protección contra incendios
+  ES: Protección contra fuego
   EN: 炎防ぎ
 
 [CLD-007784] grupo=007557 recurso=DATABASE.DAT/EFFECT.DAT
@@ -37175,7 +37173,7 @@ LV Up to learn attack magic.
   EN: 冷気耐性+2
 
 [CLD-007787] grupo=007560 recurso=DATABASE.DAT/EFFECT.DAT
-  ES: Protección del corazón
+  ES: Protección mental
   EN: 心防ぎ
 
 [CLD-007788] grupo=007561 recurso=DATABASE.DAT/EFFECT.DAT
@@ -37187,7 +37185,7 @@ LV Up to learn attack magic.
   EN: 転ばし
 
 [CLD-007790] grupo=007563 recurso=DATABASE.DAT/EFFECT.DAT
-  ES: ocurrencia de ruptura +3
+  ES: Probabilidad de ruptura +3
   EN: ブレイク発生+3
 
 [CLD-007791] grupo=007564 recurso=DATABASE.DAT/EFFECT.DAT
@@ -37215,11 +37213,11 @@ LV Up to learn attack magic.
   EN: 守護ボーナス5　速度-10
 
 [CLD-007795] grupo=007570 recurso=DATABASE.DAT/EFFECT.DAT
-  ES: Mal sabor
+  ES: Mal gusto
   EN: 悪趣味
 
 [CLD-007796] grupo=007571 recurso=DATABASE.DAT/EFFECT.DAT
-  ES: Espíritu de lucha Guardián Sabiduría Bonificación 2: TODA Resistencia -10
+  ES: Bono 2 de espíritu, protección y sabiduría; resistencias -10
   EN: 闘志守護英知ボーナス2　ALL耐性-10
 
 [CLD-007797] grupo=007572 recurso=DATABASE.DAT/EFFECT.DAT
@@ -37235,15 +37233,15 @@ LV Up to learn attack magic.
   EN: 防壁
 
 [CLD-007799] grupo=007575 recurso=DATABASE.DAT/EFFECT.DAT
-  ES: TODA la resistencia +5
+  ES: Todas las resistencias +5
   EN: ALL耐性+5
 
 [CLD-007800] grupo=007576 recurso=DATABASE.DAT/EFFECT.DAT
-  ES: Desesperado
+  ES: A la desesperada
   EN: 捨て身
 
 [CLD-007801] grupo=007577 recurso=DATABASE.DAT/EFFECT.DAT
-  ES: ATK +10, Velocidad +10, Todas las resistencias -50
+  ES: ATK +10, velocidad +10, resistencias -50
   EN: ATK+10　速度+10　ALL耐性-50
 
 [CLD-007802] grupo=007578 recurso=DATABASE.DAT/EFFECT.DAT
@@ -37283,7 +37281,7 @@ LV Up to learn attack magic.
   EN: 闘千
 
 [CLD-007808] grupo=007587 recurso=DATABASE.DAT/EFFECT.DAT
-  ES: ATK +5, Golpe crítico y probabilidad de ruptura +10
+  ES: ATK +5, prob. crítico y ruptura +10
   EN: ATK+5　クリティカル＆ブレイク発生+10
 
 
@@ -37354,7 +37352,7 @@ LV Up to learn attack magic.
   EN: An ice ball launches straight.
 
 [CLD-007825] grupo=007604 recurso=DATABASE.DAT/MAGIC.DAT
-  ES: Fresco
+  ES: Frío
   EN: Cool
 
 [CLD-007826] grupo=007605 recurso=DATABASE.DAT/MAGIC.DAT
@@ -37362,7 +37360,7 @@ LV Up to learn attack magic.
   EN: An ice ball explodes.
 
 [CLD-007827] grupo=007606 recurso=DATABASE.DAT/MAGIC.DAT
-  ES: Yo. Tormenta
+  ES: Tormenta de hielo
   EN: I. Storm
 
 [CLD-007828] grupo=007607 recurso=DATABASE.DAT/MAGIC.DAT
@@ -37386,7 +37384,7 @@ LV Up to learn attack magic.
   EN: Launch explosive homing ice balls.
 
 [CLD-007833] grupo=007612 recurso=DATABASE.DAT/MAGIC.DAT
-  ES: Tiempo fresco
+  ES: Tiempo de enfriamiento
   EN: Time Cool
 
 [CLD-007834] grupo=007613 recurso=DATABASE.DAT/MAGIC.DAT
@@ -37454,7 +37452,7 @@ LV Up to learn attack magic.
   EN: Recover
 
 [CLD-007850] grupo=007629 recurso=DATABASE.DAT/MAGIC.DAT
-  ES: Efectos del estado de curación en uno mismo.
+  ES: Cura tus estados alterados.
   EN: Cure status effects on self.
 
 [CLD-007851] grupo=007630 recurso=DATABASE.DAT/MAGIC.DAT
@@ -37570,7 +37568,7 @@ LV Up to learn attack magic.
   EN: ⑤ attack.
 
 [CLD-007879] grupo=007658 recurso=DATABASE.DAT/MAGIC.DAT
-  ES: S) Barra inclinada W
+  ES: S) Corte W
   EN: S) W Slash
 
 [CLD-007880] grupo=007659 recurso=DATABASE.DAT/MAGIC.DAT
@@ -37578,7 +37576,7 @@ LV Up to learn attack magic.
   EN: Shoots out a ⑥ element-based attack.
 
 [CLD-007881] grupo=007660 recurso=DATABASE.DAT/MAGIC.DAT
-  ES: A) Columpio
+  ES: A) Barrido
   EN: A) Swing
 
 [CLD-007882] grupo=007661 recurso=DATABASE.DAT/MAGIC.DAT
@@ -37618,7 +37616,7 @@ LV Up to learn attack magic.
   EN: Temporarily raises your DEF.
 
 [CLD-007891] grupo=007670 recurso=DATABASE.DAT/MAGIC.DAT
-  ES: A) Barra inclinada
+  ES: A) Corte S
   EN: A) S Slash
 
 [CLD-007892] grupo=007671 recurso=DATABASE.DAT/MAGIC.DAT
@@ -37634,7 +37632,7 @@ LV Up to learn attack magic.
   EN: ③ attack by throwing multiple blunt weapons.
 
 [CLD-007896] grupo=007674 recurso=DATABASE.DAT/MAGIC.DAT
-  ES: G Obtener
+  ES: Obtener G
   EN: G Get
 
 [CLD-007897] grupo=007675 recurso=DATABASE.DAT/MAGIC.DAT
@@ -37769,7 +37767,7 @@ LV Up to learn attack magic.
   EN: Last S.
 
 [CLD-007929] grupo=007707 recurso=DATABASE.DAT/MAHO-JIN.DAT
-  ES: Transmisión dual
+  ES: Doble conjuro
   EN: Dualcast
 
 [CLD-007930] grupo=007708 recurso=DATABASE.DAT/MAHO-JIN.DAT
@@ -37829,7 +37827,7 @@ LV Up to learn attack magic.
   EN: 3 Wishes
 
 [CLD-007943] grupo=007722 recurso=DATABASE.DAT/MAHO-JIN.DAT
-  ES: Corbata oscura
+  ES: Vínculo oscuro
   EN: Dark Tie
 
 [CLD-007944] grupo=007723 recurso=DATABASE.DAT/MAHO-JIN.DAT
@@ -38061,7 +38059,7 @@ LV Up to learn attack magic.
   EN: Do/Die
 
 [CLD-008001] grupo=007780 recurso=DATABASE.DAT/MAHO-JIN.DAT
-  ES: Trabajo
+  ES: Clase
   EN: Job
 
 [CLD-008002] grupo=007781 recurso=DATABASE.DAT/MAHO-JIN.DAT
@@ -40987,7 +40985,7 @@ Extra dangerous when
 it comes in groups.
 
 [CLD-008491] grupo=008269 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: Mascarilla
+  ES: Máscara
   EN: Mask
 
 [CLD-F-MONSTER-0121-nombre] grupo=008270 recurso=DATABASE.DAT/MONSTER.DAT
@@ -41031,7 +41029,7 @@ it comes in groups.
   EN: ?????
 
 [CLD-F-MONSTER-0126-nombre] grupo=008280 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: mascarilla
+  ES: Máscara
   EN: 仮面
 
 [CLD-008492] grupo=008281 recurso=DATABASE.DAT/MONSTER.DAT
@@ -41195,11 +41193,11 @@ it comes in groups.
   EN: RgMan
 
 [CLD-008522] grupo=008321 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: No tiene ningún concepto de "Koutai" (un juego de palabras con "Koutai" y "Koutai"). Sólo tiene "Zenshin" (un juego de palabras con "Zenshin" y "Zenshin").
+  ES: No sabe lo que es retirarse: ¡solo avanzar!
   EN: 彼にコウタイの文字は無い。ゼンシンあるのみ！
 
 [CLD-008523] grupo=008322 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: No tiene ningún concepto de "Koutai" (un juego de palabras con "Koutai" y "Koutai"). Sólo tiene "Zenshin" (un juego de palabras con "Zenshin" y "Zenshin").
+  ES: No sabe lo que es retirarse: ¡solo avanzar!
   EN: 彼にコウタイの文字は無い。ゼンシンあるのみ！
 
 [CLD-008524] grupo=008323 recurso=DATABASE.DAT/MONSTER.DAT
@@ -41211,87 +41209,87 @@ it comes in groups.
   EN: RgMan
 
 [CLD-008526] grupo=008325 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: ¡No me arrepiento en absoluto de mi discapacidad!
+  ES: ¡No me arrepiento de nada en mi vida!
   EN: わがショウガイにイッペンのくいなし！
 
 [CLD-008527] grupo=008326 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: ¡No me arrepiento en absoluto de mi discapacidad!
+  ES: ¡No me arrepiento de nada en mi vida!
   EN: わがショウガイにイッペンのくいなし！
 
 [CLD-008528] grupo=008327 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: Bloque emisor de llama
+  ES: Bloque emisor de fuego
   EN: 炎出るブロック
 
 [CLD-008529] grupo=008328 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: Bloque emisor de llama
+  ES: Bloque emisor de fuego
   EN: 炎出るブロック
 
 [CLD-008530] grupo=008329 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: Bloques de bajo nivel que emiten llamas
+  ES: Bloque emisor de fuego (bajo)
   EN: 炎出るブロック低
 
 [CLD-008531] grupo=008330 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: Bloques de bajo nivel que emiten llamas
+  ES: Bloque emisor de fuego (bajo)
   EN: 炎出るブロック低
 
 [CLD-008532] grupo=008331 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: Bloques de bajo nivel que emiten llamas
+  ES: Bloque emisor de fuego (bajo)
   EN: 炎出るブロック低
 
 [CLD-008533] grupo=008332 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: Bloque de gran altura con llamas
+  ES: Bloque emisor de fuego (alto)
   EN: 炎出るブロック高
 
 [CLD-008534] grupo=008333 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: Bloque de gran altura con llamas
+  ES: Bloque emisor de fuego (alto)
   EN: 炎出るブロック高
 
 [CLD-008535] grupo=008334 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: Bloque de gran altura con llamas
+  ES: Bloque emisor de fuego (alto)
   EN: 炎出るブロック高
 
 [CLD-008536] grupo=008335 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: Bloque emisor de llama
+  ES: Bloque emisor de fuego
   EN: 炎出るブロック
 
 [CLD-008537] grupo=008336 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: Bloques que producen hielo
+  ES: Bloque emisor de hielo
   EN: 氷出るブロック
 
 [CLD-008538] grupo=008337 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: Bloques que producen hielo
+  ES: Bloque emisor de hielo
   EN: 氷出るブロック
 
 [CLD-008539] grupo=008338 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: Bloques que producen hielo
+  ES: Bloque emisor de hielo
   EN: 氷出るブロック
 
 [CLD-008540] grupo=008339 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: bloques de baja producción de hielo
+  ES: Bloque emisor de hielo (bajo)
   EN: 氷出るブロック低
 
 [CLD-008541] grupo=008340 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: bloques de baja producción de hielo
+  ES: Bloque emisor de hielo (bajo)
   EN: 氷出るブロック低
 
 [CLD-008542] grupo=008341 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: bloques de baja producción de hielo
+  ES: Bloque emisor de hielo (bajo)
   EN: 氷出るブロック低
 
 [CLD-008543] grupo=008342 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: Altura del bloque productor de hielo
+  ES: Bloque emisor de hielo (alto)
   EN: 氷出るブロック高
 
 [CLD-008544] grupo=008343 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: Altura del bloque productor de hielo
+  ES: Bloque emisor de hielo (alto)
   EN: 氷出るブロック高
 
 [CLD-008545] grupo=008344 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: Altura del bloque productor de hielo
+  ES: Bloque emisor de hielo (alto)
   EN: 氷出るブロック高
 
 [CLD-008546] grupo=008345 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: Bloques que producen hielo
+  ES: Bloque emisor de hielo
   EN: 氷出るブロック
 
 [CLD-008547] grupo=008346 recurso=DATABASE.DAT/MONSTER.DAT
@@ -41339,7 +41337,7 @@ it comes in groups.
   EN: 宝箱　フラグ効果
 
 [CLD-F-MONSTER-0168-nombre] grupo=008357 recurso=DATABASE.DAT/MONSTER.DAT
-  ES: mascarilla
+  ES: Máscara
   EN: 仮面
 
 [CLD-F-MONSTER-0168-especie] grupo=008358 recurso=DATABASE.DAT/MONSTER.DAT
@@ -41966,7 +41964,7 @@ it comes in groups.
   EN: (拠点用）通行可
 
 [CLD-008767] grupo=008510 recurso=DATABASE.DAT/TIPATTR.DAT
-  ES: (Para uso básico) No se permite la entrada
+  ES: (Para la base) Paso prohibido
   EN: (拠点用）通禁止
 
 [CLD-008768] grupo=008511 recurso=DATABASE.DAT/TIPATTR.DAT
@@ -42230,19 +42228,19 @@ it comes in groups.
   EN: 砂漠カベ
 
 [CLD-008821] grupo=008576 recurso=DATABASE.DAT/TIPATTR.DAT
-  ES: Ladrillos de la naturaleza salvaje
+  ES: Ladrillos del páramo
   EN: 荒野レンガ
 
 [CLD-008822] grupo=008577 recurso=DATABASE.DAT/TIPATTR.DAT
-  ES: Ladrillos de la naturaleza salvaje
+  ES: Ladrillos del páramo
   EN: 荒野レンガ
 
 [CLD-008823] grupo=008578 recurso=DATABASE.DAT/TIPATTR.DAT
-  ES: Ladrillos de la naturaleza salvaje
+  ES: Ladrillos del páramo
   EN: 荒野レンガ
 
 [CLD-008824] grupo=008579 recurso=DATABASE.DAT/TIPATTR.DAT
-  ES: Ladrillos de la naturaleza salvaje
+  ES: Ladrillos del páramo
   EN: 荒野レンガ
 
 [CLD-008825] grupo=008580 recurso=DATABASE.DAT/TIPATTR.DAT
@@ -42394,7 +42392,7 @@ it comes in groups.
   EN: 城絨毯
 
 [CLD-008862] grupo=008617 recurso=DATABASE.DAT/TIPATTR.DAT
-  ES: Instituto de Investigación Bed
+  ES: Suelo del laboratorio
   EN: 研究所床
 
 [CLD-008863] grupo=008618 recurso=DATABASE.DAT/TIPATTR.DAT
@@ -42674,7 +42672,7 @@ it comes in groups.
   EN: 中いす2
 
 [CLD-008925] grupo=008687 recurso=DATABASE.DAT/TIPATTR.DAT
-  ES: Silla para diestros
+  ES: Silla derecha
   EN: 右いす
 
 [CLD-008926] grupo=008688 recurso=DATABASE.DAT/TIPATTR.DAT
@@ -42770,7 +42768,7 @@ it comes in groups.
   EN: 大木(左上
 
 [CLD-008940] grupo=008711 recurso=DATABASE.DAT/TIPATTR.DAT
-  ES: Puerta de transferencia
+  ES: Puerta de teletransporte
   EN: 転移の扉
 
 [CLD-008941] grupo=008712 recurso=DATABASE.DAT/TIPATTR.DAT
@@ -43677,27 +43675,27 @@ it comes in groups.
   EN: ？？？
 
 [CLD-F-UP_MONSTER-0127-nombre_monstruo] grupo=008937 recurso=DATABASE.DAT/UP_MONSTER.DAT
-  ES: mascarilla
+  ES: Máscara
   EN: 仮面
 
 [CLD-F-UP_MONSTER-0128-nombre_monstruo] grupo=008938 recurso=DATABASE.DAT/UP_MONSTER.DAT
-  ES: mascarilla
+  ES: Máscara
   EN: 仮面
 
 [CLD-F-UP_MONSTER-0129-nombre_monstruo] grupo=008939 recurso=DATABASE.DAT/UP_MONSTER.DAT
-  ES: mascarilla
+  ES: Máscara
   EN: 仮面
 
 [CLD-F-UP_MONSTER-0130-nombre_monstruo] grupo=008940 recurso=DATABASE.DAT/UP_MONSTER.DAT
-  ES: mascarilla
+  ES: Máscara
   EN: 仮面
 
 [CLD-F-UP_MONSTER-0131-nombre_monstruo] grupo=008941 recurso=DATABASE.DAT/UP_MONSTER.DAT
-  ES: mascarilla
+  ES: Máscara
   EN: 仮面
 
 [CLD-F-UP_MONSTER-0132-nombre_monstruo] grupo=008942 recurso=DATABASE.DAT/UP_MONSTER.DAT
-  ES: mascarilla
+  ES: Máscara
   EN: 仮面
 
 [CLD-009167] grupo=008943 recurso=DATABASE.DAT/UP_MONSTER.DAT
@@ -43793,7 +43791,7 @@ it comes in groups.
   EN: 宝箱　レア
 
 [CLD-F-UP_MONSTER-0156-nombre_monstruo] grupo=008966 recurso=DATABASE.DAT/UP_MONSTER.DAT
-  ES: mascarilla
+  ES: Máscara
   EN: 仮面
 
 
@@ -44003,7 +44001,7 @@ it comes in groups.
   EN: Old Sword
 
 [CLD-009232] grupo=009017 recurso=DATABASE.DAT/WEAPON.DAT
-  ES: Casa antigua
+  ES: Espadón
   EN: Claymore
 
 [CLD-009233] grupo=009018 recurso=DATABASE.DAT/WEAPON.DAT
@@ -44019,7 +44017,7 @@ it comes in groups.
   EN: Knight Sword
 
 [CLD-009236] grupo=009021 recurso=DATABASE.DAT/WEAPON.DAT
-  ES: Flamengue
+  ES: Flamberge
   EN: Flamberge
 
 [CLD-009237] grupo=009022 recurso=DATABASE.DAT/WEAPON.DAT
@@ -44035,7 +44033,7 @@ it comes in groups.
   EN: Orient Sword
 
 [CLD-009240] grupo=009025 recurso=DATABASE.DAT/WEAPON.DAT
-  ES: Justicia
+  ES: Némesis
   EN: Nemesis
 
 [CLD-009241] grupo=009026 recurso=DATABASE.DAT/WEAPON.DAT
@@ -44043,7 +44041,7 @@ it comes in groups.
   EN: Deity Sword
 
 [CLD-009242] grupo=009027 recurso=DATABASE.DAT/WEAPON.DAT
-  ES: Estirado
+  ES: Dragnade
   EN: Dragnade
 
 [CLD-009243] grupo=009028 recurso=DATABASE.DAT/WEAPON.DAT
@@ -44079,15 +44077,15 @@ it comes in groups.
   EN: War Hammer
 
 [CLD-009251] grupo=009036 recurso=DATABASE.DAT/WEAPON.DAT
-  ES: Club de Hierro
+  ES: Maza de hierro
   EN: Iron Club
 
 [CLD-009252] grupo=009037 recurso=DATABASE.DAT/WEAPON.DAT
-  ES: Club de ogros
+  ES: Maza de ogro
   EN: Ogre Club
 
 [CLD-009253] grupo=009038 recurso=DATABASE.DAT/WEAPON.DAT
-  ES: Club del Peligro
+  ES: Maza peligrosa
   EN: Danger Club
 
 [CLD-009254] grupo=009039 recurso=DATABASE.DAT/WEAPON.DAT
@@ -44103,11 +44101,11 @@ it comes in groups.
   EN: Diablo
 
 [CLD-009257] grupo=009042 recurso=DATABASE.DAT/WEAPON.DAT
-  ES: Club oscuro
+  ES: Maza oscura
   EN: Dark Club
 
 [CLD-009258] grupo=009043 recurso=DATABASE.DAT/WEAPON.DAT
-  ES: Emperador
+  ES: Kaiser
   EN: Kaiser
 
 [CLD-009259] grupo=009044 recurso=DATABASE.DAT/WEAPON.DAT
@@ -44163,7 +44161,7 @@ it comes in groups.
   EN: ⑤Staff +25
 
 [CLD-009272] grupo=009057 recurso=DATABASE.DAT/WEAPON.DAT
-  ES: Barra de refuerzo
+  ES: Vara de fuerza
   EN: Strength Rod
 
 [CLD-009273] grupo=009058 recurso=DATABASE.DAT/WEAPON.DAT

@@ -1154,7 +1154,7 @@ IDS: CLD-000496 | órdenes 715-715
   OPCIÓN: Artefacto   [CLD-000500]
   OPCIÓN: Casilla de magia/habilidad   [CLD-000501]
   OPCIÓN: Ampliación   [CLD-000502]
-  OPCIÓN: Espacio fijo   [CLD-000503]
+  OPCIÓN: Casilla fija   [CLD-000503]
   OPCIÓN: Volver   [CLD-000504]
 
 HABLANTE NO VERIFICADO | CUADRO G00287 [sin_marcador_de_hablante_para_esta_caja]
@@ -1204,7 +1204,7 @@ EN: Artifacts can be placed in Artifact Spaces.
 IDS: CLD-000526, CLD-000527 | órdenes 776-777
 
 HABLANTE NO VERIFICADO | CUADRO G00296 [sin_marcador_de_hablante_para_esta_caja]
-ES: Los personajes secundarios consumirán maná para activar varios artefactos.
+ES: Los personajes de apoyo consumirán maná para activar varios artefactos.
 EN: Sub Characters will consume Mana to activate various Artifacts.
 IDS: CLD-000528, CLD-000529 | órdenes 779-780
 
@@ -1250,7 +1250,7 @@ EN: There are Fixed Spaces that have been set by default on the Magic Circle.
 IDS: CLD-000546, CLD-000547 | órdenes 817-818
 
 HABLANTE NO VERIFICADO | CUADRO G00305 [sin_marcador_de_hablante_para_esta_caja]
-ES: Defender: Recibe el daño del personaje secundario. HP -X: reduce el HP de los personajes de apoyo en X%. Dispersión X: reparte X% del daño entre los personajes de apoyo.
+ES: Defender: Recibe el daño del personaje de apoyo. HP -X: reduce el HP de los personajes de apoyo en X%. Dispersión X: reparte X% del daño entre los personajes de apoyo.
 EN: Defend: Takes sub character's damage. HP -X: HP -X% of sub characters. Scatter X: Disperses X% of damage to subs.
 IDS: CLD-000548, CLD-000549, CLD-000550 | órdenes 820-822
 
@@ -1736,7 +1736,7 @@ ESCENA | trialMapTalk.dsf | script_id=703 | bloque=753
 [NOMBRE EN PANTALLA] Esqueleto moribundo   (CLD-000782)
 
 Esqueleto moribundo | CUADRO G00423 [marcador_0x6E_inmediato]
-ES: No necesitas derrotar a los enemigos en este Mapa fácil. Aunque, pensándolo bien, no es TAN fácil.
+ES: No necesitas derrotar a los enemigos en este mapa fácil. Aunque, pensándolo bien, tampoco es TAN fácil.
 EN: You don't need to defeat the enemies on this easy map. Then again, it's not THAT easy.
 IDS: CLD-000783, CLD-000784 | órdenes 4-5
 
@@ -1766,7 +1766,7 @@ ESCENA | trialMapTalk.dsf | script_id=706 | bloque=756
 [NOMBRE EN PANTALLA] Esqueleto moribundo   (CLD-000792)
 
 Esqueleto moribundo | CUADRO G00429 [marcador_0x6E_inmediato]
-ES: Los ladrones de gatos que encontrarás aquí compraron demasiado y se quedaron sin G. ¿Son realmente ladrones? Nadie lo sabe.
+ES: Los ladrones felinos que encontrarás aquí compraron demasiado y se quedaron sin G. ¿Son realmente ladrones? Nadie lo sabe.
 EN: The Cat Burglars you can find here bought too much and are out of G. Are they really burglars? No one knows.
 IDS: CLD-000793, CLD-000794, CLD-000795 | órdenes 4-6
 
@@ -1776,7 +1776,7 @@ ESCENA | demo1001_00.dsf | script_id=100100 | bloque=758
 [NOMBRE EN PANTALLA] Chica alegre   (CLD-000796)
 
 Chica alegre | CUADRO G00431 [marcador_0x6E_inmediato]
-ES: Así que esto es "Arcanus Cella". ¡La tierra prohibida! El tesoro que he buscado toda mi vida ¡Debe estar aquí!
+ES: Así que esto es Arcanus Cella, ¡la tierra prohibida! El tesoro que he buscado toda mi vida ¡Debe estar aquí!
 EN: So this is "Arcanus Cella." The forbidden land! The treasure I've sought my whole life must be here!
 IDS: CLD-000797, CLD-000798, CLD-000799 | órdenes 154-156
 [NOMBRE EN PANTALLA] Joven   (CLD-000800)
@@ -1793,27 +1793,27 @@ EN: Don't just run off like that! Are you tired? Are you hurt? Look at you! You'
 IDS: CLD-000804, CLD-000805, CLD-000806 | órdenes 193-195
 
 HABLANTE NO VERIFICADO | CUADRO G00436 [sin_marcador_de_hablante_para_esta_caja]
-ES: Te dije que no me siguieras, Souma. Eres una persona muy preocupadiza.
+ES: Te dije que no me siguieras, Souma. ¡Siempre te preocupas por todo!
 EN: I told you not to follow me, Souma. You're such a worrywart.
 IDS: CLD-000807, CLD-000808, CLD-000809 | órdenes 206-208
 
 HABLANTE NO VERIFICADO | CUADRO G00437 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¿Puedes culparme? Tu mamá y tu papá Me pediste que te cuidara.
+ES: ¿Y cómo no voy a hacerlo? Tus padres me pidieron que te cuidara.
 EN: Can you blame me? Your mom and dad asked me to look after you.
 IDS: CLD-000810, CLD-000811, CLD-000812 | órdenes 214-216
 
 HABLANTE NO VERIFICADO | CUADRO G00438 [sin_marcador_de_hablante_para_esta_caja]
-ES: De no ser así, jamás habría faltado a mis clases para venir hasta aquí. Puddie, tú eres...
+ES: Si no, nunca habría faltado a clase para venir hasta aquí. Puddie, tú eres...
 EN: If not, I would never have skipped my lessons to come all the way here. Puddie, you're...
 IDS: CLD-000813, CLD-000814, CLD-000815 | órdenes 218-220
 
 HABLANTE NO VERIFICADO | CUADRO G00439 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Basta ya! Souma, cállate. Mamá y papá me dijeron que puedo hacer lo que quiera Lo quiero para los próximos seis meses.
+ES: ¡Basta, Souma! ¡Cállate! Mamá y papá me dejaron hacer lo que quisiera durante los próximos seis meses.
 EN: Stop it right there! Souma, just shut up. Mom and Dad told me that I get to do whatever I want for the next six months.
 IDS: CLD-000816, CLD-000817, CLD-000818 | órdenes 229-231
 
 HABLANTE NO VERIFICADO | CUADRO G00440 [sin_marcador_de_hablante_para_esta_caja]
-ES: Seis meses... Correcto.
+ES: Seis meses... Sí.
 EN: Six months... Right.
 IDS: CLD-000819 | órdenes 244-244
 
@@ -1828,7 +1828,7 @@ EN: Oh! This door isn't locked!
 IDS: CLD-000823, CLD-000824 | órdenes 276-277
 
 HABLANTE NO VERIFICADO | CUADRO G00443 [sin_marcador_de_hablante_para_esta_caja]
-ES: Un momento. ¿Dónde estamos? Vi un cartel de "Prohibido el paso" roto allí atrás. Realmente no creo que debamos entrar ahí.
+ES: Un momento. ¿Dónde estamos? Vi un cartel roto de «Prohibido el paso» allí atrás. Realmente no creo que debamos entrar ahí.
 EN: Wait a minute. Where are we? I saw a broken "Do Not Enter" sign back there. I really don't think we should go in there.
 IDS: CLD-000825, CLD-000826, CLD-000827 | órdenes 294-296
 
@@ -1863,7 +1863,7 @@ EN: She fell!
 IDS: CLD-000836 | órdenes 369-369
 
 HABLANTE NO VERIFICADO | CUADRO G00450 [sin_marcador_de_hablante_para_esta_caja]
-ES: Puaj... ¡No tengo tiempo para pensar! ¡Puddie! ¡Voy para allá ahora mismo!
+ES: Uf... ¡No tengo tiempo para pensar! ¡Puddie! ¡Voy para allá ahora mismo!
 EN: Ugh... I don't have any time to think! Puddie! I'm coming right now!
 IDS: CLD-000837, CLD-000838, CLD-000839 | órdenes 374-376
 
@@ -1872,7 +1872,7 @@ ESCENA | demo1001_01.dsf | script_id=100101 | bloque=760
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G00451 [sin_marcador_de_hablante_para_esta_caja]
-ES: Puaj...
+ES: Uf...
 EN: Ugh...
 IDS: CLD-000840 | órdenes 40-40
 
@@ -1897,7 +1897,7 @@ EN: Pudding, are you okay? Are you hurt anywhere? Face, chest, ovaries?
 IDS: CLD-000845, CLD-000846 | órdenes 132-133
 
 HABLANTE NO VERIFICADO | CUADRO G00456 [sin_marcador_de_hablante_para_esta_caja]
-ES: Al menos, no estoy muerto. Pero eso solo si este lugar no es el paraíso.
+ES: Al menos, no estoy muerta. Pero eso solo si este lugar no es el paraíso.
 EN: At the very least, I'm not dead. But that's only if this place isn't heaven.
 IDS: CLD-000847, CLD-000848 | órdenes 139-140
 
@@ -1907,7 +1907,7 @@ EN: Phew. Seems like we're okay. You really have to be more careful. Let's see..
 IDS: CLD-000849, CLD-000850, CLD-000851 | órdenes 146-148
 
 HABLANTE NO VERIFICADO | CUADRO G00458 [sin_marcador_de_hablante_para_esta_caja]
-ES: Dudo que podamos llegar hasta allí. Buscaré un camino por aquí mientras buscaban simultáneamente un tesoro.
+ES: Dudo que podamos subir por ahí. Buscaré un camino por aquí mientras busco un tesoro.
 EN: I doubt we can get up there. I'll look for a path around here while simultaneously looking for treasure.
 IDS: CLD-000852, CLD-000853, CLD-000854 | órdenes 165-167
 
@@ -1917,7 +1917,7 @@ EN: No, no, no! Those priorities worry me!
 IDS: CLD-000855 | órdenes 186-186
 
 HABLANTE NO VERIFICADO | CUADRO G00460 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Yo iré! Puedes seguir mis huellas una vez que lo sepa ¡Es seguro! ¿Lo entiendes, Pudding?
+ES: ¡Yo iré! Puedes seguir mis huellas cuando compruebe que no hay peligro. ¿Entendido, Pudding?
 EN: I'll go! You can follow my tracks once I know it's safe! You got that, Pudding?!
 IDS: CLD-000856, CLD-000857, CLD-000858 | órdenes 222-224
 
@@ -1942,7 +1942,7 @@ EN: I found this. Want it? Stick it up your butt.
 IDS: CLD-000865 | órdenes 253-253
 
 HABLANTE NO VERIFICADO | CUADRO G00465 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Souma recibió un "palo de madera"!
+ES: ¡Souma recibió un «Palo de madera»!
 EN: Souma got "Wooden Stick!"
 IDS: CLD-000867 | órdenes 258-258
 
@@ -1986,7 +1986,7 @@ ESCENA | demo1001_01.dsf | script_id=100110 | bloque=762
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G00473 [sin_marcador_de_hablante_para_esta_caja]
-ES: Hay muchísima hierba aquí. El césped y los charcos pueden Realmente me ralentiza.
+ES: Hay muchísima hierba aquí. El césped y los charcos pueden frenarme mucho.
 EN: There's so much grass here. Grass and puddles can really slow me down.
 IDS: CLD-000886, CLD-000887, CLD-000888 | órdenes 12-14
 
@@ -2014,7 +2014,7 @@ EN: Huh? Are we... outdoors? But I don't remember climbing stairs or going up a 
 IDS: CLD-000894, CLD-000895, CLD-000896 | órdenes 58-60
 
 HABLANTE NO VERIFICADO | CUADRO G00477 [sin_marcador_de_hablante_para_esta_caja]
-ES: Es muy brillante. Caímos bastante bajo, ¿verdad? ¡El sol brilla y mira todos los árboles!
+ES: ¡Qué luz hay aquí! Caímos bastante bajo, ¿verdad? ¡El sol brilla y mira todos los árboles!
 EN: It's so bright. We fell pretty far down, didn't we? The sun's bright and look at all the trees!
 IDS: CLD-000897, CLD-000898, CLD-000899 | órdenes 75-77
 
@@ -2077,7 +2077,7 @@ EN: I-I'll let it slide this time around. I, talented sorceress Despina, will no
 IDS: CLD-000924, CLD-000925, CLD-000926 | órdenes 313-315
 
 HABLANTE NO VERIFICADO | CUADRO G00492 [sin_marcador_de_hablante_para_esta_caja]
-ES: A-Mientras la casa esté bien, todo está bien. Esos tontos con suerte se salvaron de mí por los pelos.
+ES: C-Con tal de que la casa esté bien, no pasa nada. Esos tontos con suerte se salvaron de mí por los pelos.
 EN: A-As long as the house is fine, it's all right. Those lucky fools certainly escaped from me by a hair's breadth.
 IDS: CLD-000927, CLD-000928, CLD-000929 | órdenes 336-338
 
@@ -2117,12 +2117,12 @@ EN: ...
 IDS: CLD-000941 | órdenes 467-467
 
 HABLANTE NO VERIFICADO | CUADRO G00500 [sin_marcador_de_hablante_para_esta_caja]
-ES: Tengo... Despina.
+ES: Y-Yo soy... Despina.
 EN: I-I am... Despina.
 IDS: CLD-000942 | órdenes 473-473
 
 HABLANTE NO VERIFICADO | CUADRO G00501 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Eres una persona muy pesimista, ¿verdad?!
+ES: ¡Vaya, qué sombría eres!
 EN: You're a gloomy one, aren't you?!
 IDS: CLD-000943 | órdenes 479-479
 
@@ -2132,7 +2132,7 @@ EN: Hey! What is this?! Did I just find some treasure?!
 IDS: CLD-000944, CLD-000945 | órdenes 492-493
 
 HABLANTE NO VERIFICADO | CUADRO G00503 [sin_marcador_de_hablante_para_esta_caja]
-ES: Ese es un conocido mío.
+ES: Es mi familiar.
 EN: That's a familiar of mine.
 IDS: CLD-000946 | órdenes 499-499
 
@@ -2142,7 +2142,7 @@ EN: Familiars? I thought those were monsters that sorcerers boss around. Does th
 IDS: CLD-000947, CLD-000948, CLD-000949 | órdenes 506-508
 
 HABLANTE NO VERIFICADO | CUADRO G00505 [sin_marcador_de_hablante_para_esta_caja]
-ES: Hechicera, pero... correcto.
+ES: Hechicera, pero sí.
 EN: Sorceress, but... correct.
 IDS: CLD-000950 | órdenes 515-515
 
@@ -2292,7 +2292,7 @@ ESCENA | demo1002_01.dsf | script_id=100202 | bloque=767
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G00535 [sin_marcador_de_hablante_para_esta_caja]
-ES: ... Irse. Deja de hablarme.
+ES: ... Vete. Deja de hablarme.
 EN: ... Go away. Stop talking to me.
 IDS: CLD-001007, CLD-001008, CLD-001009 | órdenes 5-7
 
@@ -2302,7 +2302,7 @@ ESCENA | demo1002_01.dsf | script_id=100203 | bloque=768
 [NOMBRE EN PANTALLA] Tamako   (CLD-001010)
 
 Tamako | CUADRO G00537 [marcador_0x6E_inmediato]
-ES: Hola. Soy la conocida "Tamako". Espero que te hagas amiga de Despina.
+ES: Hola. Soy Tamako, un familiar. Espero que te hagas amiga de Despina.
 EN: Hello. I'm the familiar, "Tamako." I hope you will be friends with Despina.
 IDS: CLD-001011, CLD-001012, CLD-001013 | órdenes 6-8
 
@@ -2356,7 +2356,7 @@ IDS: CLD-001031, CLD-001032, CLD-001033 | órdenes 124-126
 [NOMBRE EN PANTALLA] Crosstine   (CLD-001034)
 
 Crosstine | CUADRO G00551 [marcador_0x6E_inmediato]
-ES: Si es posible, ¿podría quedarse un rato? Hay alguien con quien quiero que todos ustedes se hagan amigos.
+ES: Si es posible, ¿pueden quedarse un rato? Hay alguien con quien quiero que todos ustedes se hagan amigos.
 EN: If possible, would you please stay for a while? There's this person I want you all to become friends with.
 IDS: CLD-001035, CLD-001036, CLD-001037 | órdenes 131-133
 
@@ -2410,7 +2410,7 @@ IDS: CLD-001057 | órdenes 337-337
 [NOMBRE EN PANTALLA] Crosstine   (CLD-001058)
 
 Crosstine | CUADRO G00565 [marcador_0x6E_inmediato]
-ES: Hablando de diversión, Puedes usar el "Portal de Teletransporte" que está al lado de la fuente para ir a muchos mundos diferentes.
+ES: Hablando de diversión, puedes usar la «Puerta de teletransporte» junto a la fuente para ir a muchos mundos diferentes.
 EN: Speaking of fun, you can use the "Warp Gate" next to the fountain to go to many different worlds.
 IDS: CLD-001059, CLD-001060, CLD-001061 | órdenes 342-344
 
@@ -2443,12 +2443,12 @@ IDS: CLD-001071, CLD-001072 | órdenes 387-388
 [NOMBRE EN PANTALLA] Crosstine   (CLD-001073)
 
 Crosstine | CUADRO G00574 [marcador_0x6E_inmediato]
-ES: También hay un hechizo en algún lugar que puede convertir ¿Hay alguien interesado en el personaje principal...?
+ES: También hay un hechizo en algún lugar que puede convertir a cualquiera en personaje principal...
 EN: There's also a spell somewhere that can turn anybody into the main character...
 IDS: CLD-001074, CLD-001075 | órdenes 393-394
 
 HABLANTE NO VERIFICADO | CUADRO G00575 [sin_marcador_de_hablante_para_esta_caja]
-ES: Oh, mira la hora. Tengo que prepararme para Bienvenido, amigo mío.
+ES: Oh, mira la hora. Tengo que prepararme para recibir a mi amigo.
 EN: Oh, look at the time. I have to get ready to welcome my friend.
 IDS: CLD-001076, CLD-001077, CLD-001078 | órdenes 396-398
 [NOMBRE EN PANTALLA] Crosstine   (CLD-001079)
@@ -2898,7 +2898,7 @@ EN: "LV Up" Defeat enemies to get EXP for all active members. Accumulated EXP wi
 IDS: CLD-001261, CLD-001262, CLD-001263 | órdenes 4-6
 
 HABLANTE NO VERIFICADO | CUADRO G00653 [sin_marcador_de_hablante_para_esta_caja]
-ES: Cómo subes de nivel depende de si el personaje es un personaje secundario o un personaje principal.
+ES: Cómo subes de nivel depende de si el personaje es un personaje de apoyo o un personaje principal.
 EN: How you LV Up depends on if the character is a sub character or a main character.。
 IDS: CLD-001264, CLD-001265 | órdenes 8-9
 
@@ -2908,7 +2908,7 @@ EN: "LV Up as the main character." You will gain stats that make you a better su
 IDS: CLD-001266, CLD-001267, CLD-001268 | órdenes 11-13
 
 HABLANTE NO VERIFICADO | CUADRO G00655 [sin_marcador_de_hablante_para_esta_caja]
-ES: "Sube de nivel como personaje secundario." Obtendrás estadísticas que te convertirán en un mejor jugador principal. El personaje gana más ATK y DEF.
+ES: "Sube de nivel como personaje de apoyo." Obtendrás estadísticas que te convertirán en un mejor jugador principal. El personaje gana más ATK y DEF.
 EN: "LV Up as a sub character." You will gain stats that make you a better main. The character gains more ATK and DEF.
 IDS: CLD-001269, CLD-001270, CLD-001271 | órdenes 15-17
 
@@ -3020,7 +3020,7 @@ EN: Now thank me, you indignant fools!
 IDS: CLD-001310, CLD-001311 | órdenes 132-133
 
 HABLANTE NO VERIFICADO | CUADRO G00675 [sin_marcador_de_hablante_para_esta_caja]
-ES: Este hechizo permite al "personaje principal" de la aventura para reunir las fortalezas de ¡"Personajes secundarios" para potenciar!
+ES: Este hechizo permite al "personaje principal" de la aventura para reunir las fortalezas de ¡"personajes de apoyo" para potenciar!
 EN: This spell allows the "main character" of the adventure to gather the strengths of "sub characters" to power up!
 IDS: CLD-001312, CLD-001313, CLD-001314 | órdenes 135-137
 
@@ -3040,7 +3040,7 @@ EN: You are a most unacceptable dolt.
 IDS: CLD-001319 | órdenes 153-153
 
 HABLANTE NO VERIFICADO | CUADRO G00679 [sin_marcador_de_hablante_para_esta_caja]
-ES: Solo sale el personaje principal. Pero el daño en el personaje principal se transfiere al personaje secundario.
+ES: Solo sale el personaje principal. Pero el daño en el personaje principal se transfiere al personaje de apoyo.
 EN: Only the main character goes out. But the damage on the main character transfers to the sub character.
 IDS: CLD-001320, CLD-001321, CLD-001322 | órdenes 155-157
 
@@ -3425,7 +3425,7 @@ EN: I didn't ask you to help me! I'm not going to thank you at all! So I won't t
 IDS: CLD-001475, CLD-001476, CLD-001477 | órdenes 4-6
 
 HABLANTE NO VERIFICADO | CUADRO G00752 [sin_marcador_de_hablante_para_esta_caja]
-ES: Cuando subas de nivel, el "personaje principal" y el "personaje secundario" Subir de nivel de una manera completamente diferente.
+ES: Cuando subas de nivel, el "personaje principal" y el "personaje de apoyo" Subir de nivel de una manera completamente diferente.
 EN: When you level up, the "main character" and "sub character" level up completely differently.
 IDS: CLD-001478, CLD-001479, CLD-001480 | órdenes 8-10
 
@@ -3440,12 +3440,12 @@ EN: The one that stayed more as a  "sub" will get extra ATK and DEF when they be
 IDS: CLD-001483, CLD-001484, CLD-001485 | órdenes 15-17
 
 HABLANTE NO VERIFICADO | CUADRO G00755 [sin_marcador_de_hablante_para_esta_caja]
-ES: Para crear un buen personaje principal, tendrás que construirlos como un "personaje secundario" primero.
+ES: Para crear un buen personaje principal, tendrás que construirlos como un "personaje de apoyo" primero.
 EN: To create a good main character, you'll have to build them up as a "sub character" first.
 IDS: CLD-001486, CLD-001487, CLD-001488 | órdenes 19-21
 
 HABLANTE NO VERIFICADO | CUADRO G00756 [sin_marcador_de_hablante_para_esta_caja]
-ES: Para crear un buen personaje secundario, es mejor para subirlos de nivel como "personaje principal" para que puede obtener más HP y Maná.
+ES: Para crear un buen personaje de apoyo, es mejor para subirlos de nivel como "personaje principal" para que puede obtener más HP y Maná.
 EN: To make a good sub character, it's better to level them up as a "main character" so they can get more HP and Mana.
 IDS: CLD-001489, CLD-001490, CLD-001491 | órdenes 23-25
 
@@ -3619,7 +3619,7 @@ EN: You won't be able to alter the Magic Circle once you're in the dungeons.
 IDS: CLD-001551, CLD-001552 | órdenes 17-18
 
 HABLANTE NO VERIFICADO | CUADRO G00790 [sin_marcador_de_hablante_para_esta_caja]
-ES: Los Círculos Mágicos se utilizan para potenciar el "personaje principal" mediante la acumulación todos los poderes de los "personajes secundarios".
+ES: Los Círculos Mágicos se utilizan para potenciar el "personaje principal" mediante la acumulación todos los poderes de los "personajes de apoyo".
 EN: Magic Circles are used to power up the "main character" by accumulating all the powers of the "sub characters."
 IDS: CLD-001553, CLD-001554, CLD-001555 | órdenes 20-22
 
@@ -3659,7 +3659,7 @@ EN: There are times when spaces have debilitating effects like this. Think caref
 IDS: CLD-001569, CLD-001570, CLD-001571 | órdenes 93-95
 
 HABLANTE NO VERIFICADO | CUADRO G00798 [sin_marcador_de_hablante_para_esta_caja]
-ES: El papel de los "personajes secundarios" no es solo para proteger al "personaje principal".
+ES: El papel de los "personajes de apoyo" no es solo para proteger al "personaje principal".
 EN: The role of the "sub characters" is not just to protect the "main character."
 IDS: CLD-001572, CLD-001573 | órdenes 97-98
 
@@ -3786,7 +3786,7 @@ ESCENA | demo1007_01.dsf | script_id=100704 | bloque=835
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G00821 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¿Debería seguirla? Pero los "personajes secundarios" tienen quedarse aquí... Hm...
+ES: ¿Debería seguirla? Pero los "personajes de apoyo" tienen quedarse aquí... Hm...
 EN: Should I follow her? But "sub characters" have to stay here... Hm...
 IDS: CLD-001624, CLD-001625, CLD-001626 | órdenes 5-7
 
@@ -4588,7 +4588,7 @@ ESCENA | demo1103_01.dsf | script_id=110302 | bloque=875
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G00982 [sin_marcador_de_hablante_para_esta_caja]
-ES: Me acabo de dar cuenta de esto ahora mismo, pero pero si Pudding se convierte en un "personaje secundario", ¿No se lastimará?
+ES: Me acabo de dar cuenta de esto ahora mismo, pero pero si Pudding se convierte en un "personaje de apoyo", ¿No se lastimará?
 EN: I just realized this right now, but but if Pudding becomes a "sub character," won't she get hurt?
 IDS: CLD-001955, CLD-001956, CLD-001957 | órdenes 5-7
 
@@ -6836,7 +6836,7 @@ EN: Oh, no! I have to stop him!
 IDS: CLD-002792, CLD-002793 | órdenes 153-154
 
 HABLANTE NO VERIFICADO | CUADRO G01381 [sin_marcador_de_hablante_para_esta_caja]
-ES: Eh, hay algunas armas Me abastecí de...
+ES: Eh, hay unas armas que tengo guardadas...
 EN: Uhh, there are some weapons I stocked up on...
 IDS: CLD-002794, CLD-002795 | órdenes 156-157
 
@@ -6915,7 +6915,7 @@ ESCENA | demo1207_01.dsf | script_id=120701 | bloque=1004
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G01396 [sin_marcador_de_hablante_para_esta_caja]
-ES: Veo a un idiota. Un completo idiota.
+ES: Veo a un idiota. Un idiota de remate.
 EN: I see an idiot. A complete blithering idiot.
 IDS: CLD-002825, CLD-002826 | órdenes 5-6
 
@@ -6924,7 +6924,7 @@ ESCENA | demo1207_01.dsf | script_id=120702 | bloque=1005
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G01397 [sin_marcador_de_hablante_para_esta_caja]
-ES: Tengo que volverme más fuerte para poder proteger a Pudding. Ojalá alguien me enseñara nuevos pasos de baile.
+ES: Tengo que volverme más fuerte para poder proteger a Pudding. Ojalá alguien me enseñara nuevas técnicas.
 EN: I have to become stronger so I can protect Pudding. I wish someone would teach me new moves.
 IDS: CLD-002827, CLD-002828, CLD-002829 | órdenes 5-7
 
@@ -10311,7 +10311,7 @@ IDS: CLD-004061, CLD-004062 | órdenes 118-119
 [NOMBRE EN PANTALLA] Asagi   (CLD-004063)
 
 Asagi | CUADRO G02041 [marcador_0x6E_inmediato]
-ES: Aunque yo pueda ser el "personaje principal", ¡Yo también me veré obligado a ser un "personaje secundario"!
+ES: Aunque yo pueda ser el "personaje principal", ¡Yo también me veré obligado a ser un "personaje de apoyo"!
 EN: Even if I can be the "main character," I'll be forced to be a "sub character," too!
 IDS: CLD-004064, CLD-004065 | órdenes 128-129
 
@@ -10370,7 +10370,7 @@ ESCENA | demo1502_01.dsf | script_id=150202 | bloque=1206
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G02052 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¿Debería siquiera ser yo el "personaje principal"? En realidad, prefiero ser un "personaje secundario".
+ES: ¿Debería siquiera ser yo el "personaje principal"? En realidad, prefiero ser un "personaje de apoyo".
 EN: Should I even be the "main character?" I actually prefer being a "sub character."
 IDS: CLD-004088, CLD-004089 | órdenes 5-6
 
@@ -10379,7 +10379,7 @@ ESCENA | demo1502_01.dsf | script_id=150203 | bloque=1207
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G02053 [sin_marcador_de_hablante_para_esta_caja]
-ES: Me encanta ser el "personaje secundario". Está en mi naturaleza apoyar a los demás.
+ES: Me encanta ser el "personaje de apoyo". Está en mi naturaleza apoyar a los demás.
 EN: I love being the "sub character." It's in my nature to support others.
 IDS: CLD-004090, CLD-004091 | órdenes 9-10
 
@@ -10780,7 +10780,7 @@ EN: I managed to beat it thanks to everyone. Now it's my turn to help.
 IDS: CLD-004238, CLD-004239 | órdenes 82-83
 
 HABLANTE NO VERIFICADO | CUADRO G02130 [sin_marcador_de_hablante_para_esta_caja]
-ES: Creo que puedo poner mi corazón en ser ¡Ahora es un "personaje secundario"! ¡Espérenme, chicos!
+ES: Creo que puedo poner mi corazón en ser ¡Ahora es un "personaje de apoyo"! ¡Espérenme, chicos!
 EN: I think I can put my heart into being a "sub character" now! Wait for me, guys!
 IDS: CLD-004240, CLD-004241, CLD-004242 | órdenes 85-87
 
@@ -12465,7 +12465,7 @@ EN: I may still be inexperienced, but I must answer to those who support me. As 
 IDS: CLD-004848, CLD-004849, CLD-004850 | órdenes 145-147
 
 HABLANTE NO VERIFICADO | CUADRO G02474 [sin_marcador_de_hablante_para_esta_caja]
-ES: Regresaré al reino. ¿Vendrás conmigo, Sherbet?
+ES: Regresaré al reino. ¿Vendrás conmigo, ¿Sherbet?
 EN: I will return to the kingdom. Will you come with me, Sherbet?
 IDS: CLD-004851, CLD-004852, CLD-004853 | órdenes 149-151
 
