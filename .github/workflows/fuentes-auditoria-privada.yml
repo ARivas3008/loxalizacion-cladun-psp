@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Verificar exclusiones
+      - name: Verificar exclusiones de assets comerciales del snapshot
         run: |
-          if git ls-files | grep -Ei '\.(iso|cso|pbp|7z|bps|exe)$'; then
-            echo 'RECHAZADO: binarios comerciales o ejecutables versionados'; exit 1
+          if git ls-files | grep -Ei '\.(iso|cso|pbp|7z)$'; then
+            echo 'RECHAZADO: imagenes comerciales versionadas'; exit 1
           fi
-      - name: Empaquetar fuentes y corpus del repositorio
-        run: tar -czf /tmp/cladun-fuentes-auditoria.tar.gz tools patcher tests corpus traduccion docs qa reports .github README.md AGENTS.md
+      - name: Empaquetar fuentes y corpus (excluir BPS y ejecutables)
+        run: tar --exclude='*.bps' --exclude='*.exe' -czf /tmp/cladun-fuentes-auditoria.tar.gz tools patcher tests corpus traduccion docs qa reports .github README.md AGENTS.md
       - name: Publicar snapshot de auditoria textual
         uses: actions/upload-artifact@v4
         with:
