@@ -1,1 +1,42 @@
-The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id.
+name: Validar interfaz de parcheador ISO única
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'patcher/**'
+      - '.github/workflows/parcheador-windows.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  windows-exe:
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: patcher
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: patcher/go.mod
+          cache-dependency-path: patcher/go.mod
+      - name: Pruebas del motor BPS y el modo ISO única
+        shell: pwsh
+        run: go test -v ./...
+      - name: Compilar vista previa sin carga experimental
+        shell: pwsh
+        run: go build -trimpath -ldflags='-H=windowsgui -s -w' -o Cladun-Interfaz-SIN-PARCHE.exe ./cmd/cladun-patcher
+      - name: SHA-256 de la vista previa
+        shell: pwsh
+        run: Get-FileHash Cladun-Interfaz-SIN-PARCHE.exe -Algorithm SHA256 | Format-List
+      - name: Adjuntar únicamente una vista previa claramente etiquetada
+        uses: actions/upload-artifact@v4
+        with:
+          name: Cladun-Interfaz-SIN-PARCHE-NO-FUNCIONAL
+          path: patcher/Cladun-Interfaz-SIN-PARCHE.exe
+          if-no-files-found: error
+          retention-days: 30
+# IMPORTANTE: NO publicar versión final ni BPS experimental antes de PPSSPP.
