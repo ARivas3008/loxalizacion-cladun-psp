@@ -46,7 +46,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           $tag = 'parcheador-v0.1.0'
-          $asset = 'patcher/Cladun-Parcheador-Windows-x64.exe'
+          $asset = 'Cladun-Parcheador-Windows-x64.exe'
           gh release view $tag 2>$null
           if ($LASTEXITCODE -ne 0) {
             gh release create $tag $asset --title 'Cladun - Parcheador Windows v0.1.0' --notes 'Aplicador BPS independiente para ISO USA. Versión preliminar sin parche español final; no certifica compatibilidad en PPSSPP.' --prerelease --target $env:GITHUB_SHA
