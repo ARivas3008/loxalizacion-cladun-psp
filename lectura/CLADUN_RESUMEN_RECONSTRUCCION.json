@@ -1,0 +1,34 @@
+{
+  "estado": "RECONSTRUCCION_DE_LECTURA_NO_REINSERCION",
+  "total_registros_originales": 9237,
+  "fragmentos_script": 5207,
+  "registros_otros_recursos": 4030,
+  "escenas": 586,
+  "cuadros_dialogo_reconstruidos": 2216,
+  "nombres_de_hablante": 400,
+  "opciones": 113,
+  "cuadros_dialogo_de_multiples_fragmentos": 1649,
+  "fragmentos_reunidos_en_cuadros_largos": 4127,
+  "atribuciones_por_fiabilidad": {
+    "sin_marcador_de_hablante_para_esta_caja": 1816,
+    "marcador_0x6E_inmediato": 319,
+    "marcador_0x6E_cercano_por_verificar": 81
+  },
+  "alertas_heuristicas": {
+    "PAUSA_DEL_ORIGINAL_MODIFICADA": 15,
+    "PUNTUACION_ES_ANTES_DE_TERMINAR_ORIGINAL": 266,
+    "FRASE_CORTADA_POR_PUNTO": 123,
+    "UNION_ENTRE_CAJAS_POR_ORACION_INCOMPLETA_REVISAR": 1,
+    "NOMBRE_PROPIO_TRADUCIDO_REVISAR": 217,
+    "SIN_TRADUCCION": 2
+  },
+  "csv_fuente_sha256": "f0a56ae0c773982e137fd0d2a99cbe52f27f836eebcf41800e5c8a6d6260e6f9",
+  "csv_borrador_sha256": "fe39e4cd10d35be39c24cb29e6d30153296c081d31cf66edbaa5aa94eac32b2d",
+  "integridad": {
+    "ids_conservados": 9237,
+    "csv_original_sin_modificar": true,
+    "traduccion_sin_reescribir": true,
+    "prueba_visual_ppsspp": false
+  },
+  "advertencia": "Los cuadros se agrupan por comandos de texto consecutivos, no por identidad narrativa. Los saltos de control se conservan como separación; el lector debe revisar cambios de hablante y las alertas."
+}
