@@ -1,0 +1,21 @@
+name: Exportar rama de revisión (temporal)
+on:
+  push:
+    branches: [revision-manual-dialogos]
+    paths:
+      - '.github/workflows/exportar-rama-revision-temporal.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Empaquetar texto y herramientas versionadas
+        run: git archive --format=zip --output=/tmp/cladun-revision.zip HEAD
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cladun-revision-fuentes-completas
+          path: /tmp/cladun-revision.zip
+          retention-days: 2
