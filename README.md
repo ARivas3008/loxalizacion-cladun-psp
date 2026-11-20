@@ -139,3 +139,5 @@ No se incluye una ISO ni archivos gráficos/binarios originales del videojuego. 
 - [Informe de seis rótulos en una ISO privada real](reports/ensayo_graficos_iso_2026-11-18.json): 348 recursos PSPFS ajenos y 11 archivos ISO9660 idénticos en offsets y bytes; solo los píxeles de texto autorizados se modifican.
 - [Adaptaciones de campos fijos](tools/ajustes_campos_es.py) y [localizador gráfico](tools/graficos_texto_es.py). Los borradores completos no se reemplazan: las abreviaturas pertenecen exclusivamente al empaquetado.
 - **100 % significa cobertura estructural de inserción, no 100 % de diálogos verificados narrativamente ni 100 % de funcionamiento comprobado.**
+
+- [Prueba de códec sobre la ISO original (19/11/2026)](reports/roundtrip_imy_multibloque_iso_real_2026-11-19.json): reempaquetado de 8 bloques IMY de SCRIPT.SDT y 5 de DATABASE.DAT, recuperando todos los bytes originales en la decodificación posterior. Se corrigió la cabecera para conservar el tamaño real por bloque (`131072` bytes), no el tamaño total del recurso. **No implica PPSSPP verificado.**
