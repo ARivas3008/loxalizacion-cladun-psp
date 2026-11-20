@@ -1,5 +1,7 @@
 # CLADUN: This Is an RPG! — Localización al español (PSP)
 
+> **20/11/2026 — parcheador ISO única en prueba privada:** la interfaz de Windows ya no solicita un archivo `.bps`, solo una ISO original USA. Se ha reconstruido una **ISO candidata experimental** con las 9.237 entradas modeladas y un BPS diferencial con comprobación completa del SHA-256 final. **No hay validación de arranque ni juego en PPSSPP**, por lo que la traducción no está aprobada para distribución final. El código público de la interfaz está en [`patcher/`](patcher/README.md); el `.exe` experimental integrado y el BPS de prueba se mantienen fuera del repositorio. El antiguo `.exe` v0.1.0, que requería BPS externo, está obsoleto.
+
 > **Estado:** fuente íntegra de 9.237 textos, borrador español de 9.235 entradas (**474 posteditadas o normalizadas por IA; 8.761 todavía automáticas**). La integración tiene **una ruta técnica estática para las 9.237 unidades**, con fuente y gráficos españoles experimentales; **todavía NO se ha validado su ejecución en PPSSPP ni se ha publicado un parche jugable**.
 
 Proyecto de localización de la **edición USA para PSP**. Su objetivo es recuperar, ordenar y revisar **solo contenido textual traducible**: diálogos, elecciones, nombres y descripciones de objetos, personajes, monstruos, habilidades, lugares, menús, avisos, créditos y rótulos presentes en imágenes. **No se publica un listado de instrucciones internas del motor.**

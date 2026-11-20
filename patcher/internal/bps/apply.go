@@ -17,7 +17,7 @@ import (
 )
 
 // The only ISO revision tested by the localization repository.
-const SourceSHA256 = "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f"
+const SourceSHA256 = "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f"
 const MaxTargetSize uint64 = 8 << 30 // guard against corrupt or hostile headers
 const copyBuffer = 64 << 10
 

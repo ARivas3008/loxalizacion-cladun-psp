@@ -1,2 +1,4 @@
 *.exe
 *.partial
+# Private experimental ISO/BPS payload; never push to GitHub.
+traduccion_es_experimental.bps

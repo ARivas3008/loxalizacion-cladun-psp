@@ -23,7 +23,7 @@ import struct
 import tempfile
 
 from font_es_patch import SOURCE_SHA256
-from integrar_parche_seguro import read_resources, iso9660_entries, read_iso_file
+from integrar_parche_seguro import read_resources, iso9660_entries, read_iso_file, locate_iso_dir_record
 
 MAGIC = b"BPS1"
 SOURCE_READ = 0
@@ -221,9 +221,18 @@ def assert_unrelated_assets_exact(source: Path, target: Path) -> None:
         require(a["path"] == b["path"] and a["offset"] == b["offset"],
                 "ISO file position or path changed")
         if a["path"] != "PSP_GAME/USRDIR/DATA.DAT":
-            require(a["size"] == b["size"] and
-                    read_iso_file(source, a) == read_iso_file(target, b),
-                    "ISO non-DATA file changed: " + a["path"])
+            require(a["size"] == b["size"], "ISO asset size changed: " + a["path"])
+            before = read_iso_file(source, a)
+            after = read_iso_file(target, b)
+            if a["path"] == "PSP_GAME/USRDIR":
+                record_at, _, _ = locate_iso_dir_record(source)
+                relative = record_at - a["offset"]
+                require(0 <= relative and relative + 18 <= len(before) and
+                        before[:relative + 10] == after[:relative + 10] and
+                        before[relative + 18:] == after[relative + 18:],
+                        "USRDIR modified outside DATA.DAT size fields")
+            else:
+                require(before == after, "ISO non-DATA file changed: " + a["path"])
 
 
 def main():

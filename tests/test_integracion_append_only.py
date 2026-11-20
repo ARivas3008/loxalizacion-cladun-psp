@@ -102,8 +102,27 @@ class TestsSafeAppend(unittest.TestCase):
         with self.assertRaises(ValueError):
             rebuild_database_arc(bytes(archive), {"ITEM.DAT": [(source, b"ABC", b"TOO LONG TO FIT")]})
         archive[517] = 0x99
+        # The modeled capacity includes one nontext metadata byte. The writer
+        # must trim its permitted span before that byte, not destroy the byte.
+        result, ids = rebuild_database_arc(bytes(archive), {"ITEM.DAT": [(source, b"ABC", b"BIEN")]})
+        self.assertEqual(ids, {"000001"})
+        self.assertEqual(result[512:518], b"BIEN\x00\x99")
         with self.assertRaises(ValueError):
-            rebuild_database_arc(bytes(archive), {"ITEM.DAT": [(source, b"ABC", b"BIEN")]})
+            rebuild_database_arc(bytes(archive), {"ITEM.DAT": [(source, b"ABC", b"LARGO")]})
+
+    def test_database_exact_full_width_field_has_no_nul(self):
+        from integrar_parche_seguro import rebuild_database_arc
+        archive = bytearray(1024)
+        archive[:8] = b"DSARC FL"
+        struct.pack_into("<I", archive, 8, 1)
+        archive[16:24] = b"ITEM.DAT"
+        struct.pack_into("<II", archive, 16 + 40, 64, 512)
+        archive[512:516] = b"ABCD"
+        archive[516] = 0x55  # unrelated record byte
+        source = {"grupo_id": "000002", "offset_hex": "0x0", "capacidad_campo": "4"}
+        result, ids = rebuild_database_arc(bytes(archive), {"ITEM.DAT": [(source, b"ABCD", b"OK")]})
+        self.assertEqual(ids, {"000002"})
+        self.assertEqual(result[512:517], b"OK  \x55")
 
     def test_strtbl_rebuilds_pointers_without_editing_other_members(self):
         from integrar_parche_seguro import rebuild_database_arc

@@ -135,3 +135,12 @@ func TestSourceHashMustMatch(t *testing.T) {
 		t.Fatalf("unexpected: %v", err)
 	}
 }
+
+// Pin the full 64-character SHA-256; a previous build accidentally omitted
+// two hexadecimal characters and rejected every genuine USA ISO.
+func TestSourceHashIsFullSHA256(t *testing.T) {
+	const audited = "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f"
+	if SourceSHA256 != audited || len(SourceSHA256) != 64 {
+		t.Fatalf("incorrect USA image SHA-256: %q", SourceSHA256)
+	}
+}

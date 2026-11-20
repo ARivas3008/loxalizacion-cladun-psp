@@ -1,4 +1,4 @@
-name: Compilar parcheador Windows
+name: Validar interfaz de parcheador ISO única
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   windows-exe:
@@ -23,33 +23,20 @@ jobs:
         with:
           go-version-file: patcher/go.mod
           cache-dependency-path: patcher/go.mod
-      - name: Pruebas del motor BPS
+      - name: Pruebas del motor BPS y el modo ISO única
         shell: pwsh
         run: go test -v ./...
-      - name: Compilar ejecutable autónomo
+      - name: Compilar vista previa sin carga experimental
         shell: pwsh
-        run: go build -trimpath -ldflags='-H=windowsgui -s -w' -o Cladun-Parcheador-Windows-x64.exe ./cmd/cladun-patcher
-      - name: Resumen de SHA-256
+        run: go build -trimpath -ldflags='-H=windowsgui -s -w' -o Cladun-Interfaz-SIN-PARCHE.exe ./cmd/cladun-patcher
+      - name: SHA-256 de la vista previa
         shell: pwsh
-        run: Get-FileHash Cladun-Parcheador-Windows-x64.exe -Algorithm SHA256 | Format-List
-      - name: Publicar EXE como artefacto descargable
+        run: Get-FileHash Cladun-Interfaz-SIN-PARCHE.exe -Algorithm SHA256 | Format-List
+      - name: Adjuntar únicamente una vista previa claramente etiquetada
         uses: actions/upload-artifact@v4
         with:
-          name: Cladun-Parcheador-Windows-x64
-          path: patcher/Cladun-Parcheador-Windows-x64.exe
+          name: Cladun-Interfaz-SIN-PARCHE-NO-FUNCIONAL
+          path: patcher/Cladun-Interfaz-SIN-PARCHE.exe
           if-no-files-found: error
-          retention-days: 90
-      - name: Publicar versión preliminar en GitHub Releases
-        if: github.ref == 'refs/heads/main'
-        shell: pwsh
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          $tag = 'parcheador-v0.1.0'
-          $asset = 'Cladun-Parcheador-Windows-x64.exe'
-          gh release view $tag 2>$null
-          if ($LASTEXITCODE -ne 0) {
-            gh release create $tag $asset --title 'Cladun - Parcheador Windows v0.1.0' --notes 'Aplicador BPS independiente para ISO USA. Versión preliminar sin parche español final; no certifica compatibilidad en PPSSPP.' --prerelease --target $env:GITHUB_SHA
-          } else {
-            gh release upload $tag $asset --clobber
-          }
+          retention-days: 30
+# IMPORTANTE: NO publicar versión final ni BPS experimental antes de PPSSPP.

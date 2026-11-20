@@ -304,12 +304,25 @@ def rebuild_database_arc(archive, per_child):
             cap = int(src["capacidad_campo"])
             require(offset >= prior_end and offset + cap <= len(before),
                     f"Overlapping or out-of-range DB record: {src['grupo_id']}")
-            require(cap >= len(new) + 1, f"DB overflow: {src['grupo_id']}")
             require(before[offset:offset + len(old)] == old, f"DB byte mismatch: {src['grupo_id']}")
-            require(not any(before[offset + len(old):offset + cap]),
-                    f"DB field is not NUL-padded: {src['grupo_id']}")
-            updated[offset:offset + cap] = new + b"\0" * (cap - len(new))
-            prior_end = offset + cap
+            # The corpus's capacity is only an upper bound. Some original fields
+            # terminate immediately before non-text record metadata; never zero
+            # those metadata bytes even when a modelled field size includes them.
+            if cap == len(old):
+                # A few fixed-width names occupy the entire field, with no NUL.
+                # Only alter that exact span; never write into the next record.
+                require(len(new) <= cap, f"DB fixed-width overflow: {src['grupo_id']}")
+                updated[offset:offset + cap] = new + b" " * (cap - len(new))
+                prior_end = offset + cap
+            else:
+                trailer = before[offset + len(old):offset + cap]
+                first_nonzero = next((i for i, value in enumerate(trailer) if value), len(trailer))
+                verified_cap = len(old) + first_nonzero
+                require(verified_cap >= len(new) + 1,
+                        f"DB field overflows verified NUL padding: {src['grupo_id']}")
+                require(first_nonzero > 0, f"DB field missing terminator: {src['grupo_id']}")
+                updated[offset:offset + verified_cap] = new + b"\0" * (verified_cap - len(new))
+                prior_end = offset + verified_cap
             seen.add(src["grupo_id"])
         result[member["offset"]:member["offset"] + member["size"]] = updated
     for child_name, member in children.items():
@@ -529,9 +542,19 @@ def append_text_containers(source_iso, source_pack, entries, replacements, resul
         if a["path"] == "PSP_GAME/USRDIR/DATA.DAT":
             continue
         require(a["size"] == b["size"], f"ISO asset length changed: {a['path']}")
-        # Unchanged exact bytes: source and target still share same original file offsets.
-        require(read_iso_file(source_iso, a) == read_iso_file(result_iso, b),
-                f"Unrelated ISO file content changed: {a['path']}")
+        before = read_iso_file(source_iso, a)
+        after = read_iso_file(result_iso, b)
+        if a["path"] == "PSP_GAME/USRDIR":
+            # The only permitted directory modification is the DATA.DAT
+            # child record's two 32-bit size fields (LE+BE).
+            relative = record_at - a["offset"]
+            require(0 <= relative and relative + 18 <= len(before) and
+                    before[:relative + 10] == after[:relative + 10] and
+                    before[relative + 18:] == after[relative + 18:],
+                    "USRDIR modified outside DATA.DAT size fields")
+        else:
+            require(before == after,
+                    f"Unrelated ISO file content changed: {a['path']}")
     return actual_files
 
 

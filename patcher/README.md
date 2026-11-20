@@ -1,37 +1,49 @@
-# Cladun · Parcheador BPS para Windows
+# Cladun · Parcheador de ISO única (Windows x64)
 
-Aplicación nativa para Windows 10/11 x64, sin instalador ni Python, .NET, C/Visual C++ Redistributable u otras dependencias de usuario. Compilada con Go y la API Win32 del sistema; no incluye ISO, datos ni gráficos comerciales.
+Aplicación nativa Go/Win32 sin Python, C, .NET ni instalación de runtimes. La interfaz **solo pide la ISO original**. Detecta automáticamente la versión USA auditada mediante el SHA-256 completo y crea `Cladun-ES-EXPERIMENTAL.iso` en la misma carpeta. La imagen original jamás se sobrescribe.
 
-## Uso
+## Importante: separación entre código público y prueba privada
 
-1. Descarga `Cladun-Parcheador-Windows-x64.exe` desde los artefactos de GitHub Actions del repositorio o compílalo desde el código fuente.
-2. Abre el ejecutable. En **ISO original** selecciona tu copia legal de *Cladun: This Is an RPG!* USA PSP, SHA-256 `b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f`.
-3. En **Parche** selecciona un archivo `.bps` generado por el proyecto. **Todavía no se ha publicado un BPS español final validado en PPSSPP.**
-4. Selecciona una ruta nueva para la ISO traducida y pulsa **Aplicar parche**.
-5. Si la operación se completa, revisa el SHA-256 mostrado. Comprueba de forma independiente el funcionamiento de la ISO en PPSSPP.
+**La traducción integrada es todavía EXPERIMENTAL y NO está validada en PPSSPP.** Por ello:
 
-El parcheador **nunca modifica la ISO fuente** y **nunca sobrescribe la ruta de salida**. Rechaza imágenes de otro SHA-256, archivos BPS corruptos y resultados cuyo CRC32 no coincida con el objetivo declarado en BPS. Es compatible con las cuatro instrucciones estándar BPS1 (SourceRead, TargetRead, SourceCopy, TargetCopy), y no carga la ISO completa en memoria.
+- El repositorio público contiene la **interfaz, el motor BPS y los mecanismos de seguridad**, pero **no** incluye la ISO, el BPS español experimental ni los recursos del juego.
+- El ejecutable compilado **sin** el tag `cladun_embedded` es una **vista previa de la interfaz**. Detecta la falta de payload y **bloquea la aplicación**; no representa un parche completo.
+- El ejecutable **privado de pruebas** se compila incorporando un BPS ya generado y verificado por el integrador de este proyecto. Entonces sí aplica la traducción sin solicitar ningún archivo adicional. No debe publicarse como parche jugable hasta validar PPSSPP.
+- La antigua versión `parcheador-v0.1.0` pedía un `.bps` por separado y además tenía una constante SHA-256 incompleta. **Está obsoleta y no debe utilizarse**.
 
-> **Alcance de la seguridad:** los CRC32 comprueban la integridad del diferencial; por sí solos **no prueban que un BPS arbitrario conserve retratos, sprites, tiles u otros assets**. La comprobación estructural de los recursos ajenos se ejecuta en el pipeline de generación y auditoría del parche, descrito en `docs/PARCHE_BPS_EXPERIMENTAL.md`. Utiliza únicamente parches validados y publicados por el proyecto. **No se afirma que la traducción, el arranque ni los glifos estén verificados en PPSSPP.**
+## Interfaz de usuario
 
-## Desarrollo y compilación
+1. Abrir el `.exe` experimental entregado para pruebas.
+2. Pulsar **Examinar** y elegir la ISO original de *Cladun: This Is an RPG!* USA PSP.
+3. Pulsar **Crear ISO de prueba**.
+4. El programa valida el SHA-256 de origen, el SHA-256 de su BPS integrado, los CRC32 del parche y del resultado, y el **SHA-256 exacto de la ISO candidata auditada**. Solo después de las comprobaciones publica la salida; nunca sobrescribe la ISO original ni otra salida.
+5. Abrir `Cladun-ES-EXPERIMENTAL.iso` en PPSSPP para efectuar las pruebas funcionales que faltan.
 
-Desde el directorio `patcher` de este repositorio:
+**ISO fuente aceptada:** `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f` (64 hex).
 
-```bash
+## Compilación pública, sin traducción no aprobada
+
+```sh
+cd patcher
 go test ./...
-GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -trimpath -ldflags="-H=windowsgui -s -w" -o Cladun-Parcheador-Windows-x64.exe ./cmd/cladun-patcher
+GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -trimpath -ldflags="-H=windowsgui -s -w" -o Cladun-Interfaz-Sin-Parche.exe ./cmd/cladun-patcher
 ```
 
-Se puede compilar en Windows directamente con Go, o hacer compilación cruzada desde Linux. **El usuario final no necesita Go.** La compilación automática de GitHub Actions crea el `.exe` descargable como artefacto de cada ejecución correcta del workflow `parcheador-windows.yml`.
+La compilación sin payload deshabilita el botón para evitar generar falsas ISOs traducidas.
 
-## Limitaciones actuales
+## Compilación PRIVADA para probar un BPS experimental auditado
 
-- Arquitectura de salida: **Windows x64**; no está probado en Windows x86/ARM ni mediante Wine.
-- Las pruebas automatizadas del motor BPS se realizan con imágenes sintéticas. La compilación Windows se verifica como PE32+; la interfaz gráfica necesita una prueba manual en Windows real.
-- El BPS español integral no está aún publicado: la integración del repositorio es experimental y sigue pendiente una ISO candidata verificada en PPSSPP.
-- Los ejecutables no están firmados digitalmente; Windows puede mostrar una advertencia SmartScreen para aplicaciones nuevas no firmadas.
+El desarrollador debe crear **localmente**, a partir de una ISO propia, el parche experimental de acuerdo con `docs/PARCHE_BPS_EXPERIMENTAL.md` y las verificaciones correspondientes. **No añadir el BPS, ISO ni sus recursos al repositorio.** La opción `cladun_embedded` exige explícitamente que el archivo `patcher/cmd/cladun-patcher/traduccion_es_experimental.bps` exista en el árbol privado; ese archivo queda ignorado por Git. El componente `internal/automatic/apply.go` rechaza cualquier BPS cuyo SHA-256 difiera del previsto y cualquier resultado cuyo SHA-256 no coincida con la ISO candidata validada estáticamente.
 
-## Licencia y privacidad
+```sh
+cd patcher
+GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -tags cladun_embedded -trimpath -ldflags="-H=windowsgui -s -w" -o Cladun-Parcheador-ISO-Unica-EXPERIMENTAL.exe ./cmd/cladun-patcher
+```
 
-El parcheador procesa únicamente archivos locales; no envía telemetría, no consulta la red y no redistribuye contenido protegido del juego. El proyecto no incluye imágenes comerciales de PSP.
+En Windows, la compilación privada puede usar `go build -tags cladun_embedded` desde el mismo directorio. **El usuario final no necesita Go.**
+
+## Alcance de validación
+
+Se comprobó sobre la ISO USA exacta la reinserción estática de 8.491 modificaciones y 746 entradas sin cambios, con 345 recursos PSPFS ajenos a los cuatro contenedores textuales/gráficos preservados. Un BPS experimental se aplicó y recuperó exactamente la candidata (`SHA-256 ed9a7a41eec842251f618d292c84cfd0a8c892f1fa31aae7d10d920f3edefb84`). El propio motor Go reconstituyó el mismo SHA-256 en una prueba local. Estos ensayos **no demuestran** arranque de juego, lectura correcta de glifos, estabilidad del cargador PSPFS ni ausencia de efectos visuales en PPSSPP. Los tests automatizados usan también archivos sintéticos.
+
+La herramienta no transmite datos por red, no incluye telemetría y no distribuye archivos comerciales de juego en el código público. El `.exe` privado no está firmado digitalmente. Windows puede mostrar SmartScreen.

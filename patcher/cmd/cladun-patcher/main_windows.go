@@ -5,13 +5,13 @@ package main
 
 import (
 	"fmt"
-	"path/filepath"
 	"runtime"
 	"strings"
 	"sync"
 	"syscall"
 	"unsafe"
 
+	"github.com/ARivas3008/loxalizacion-cladun-psp/patcher/internal/automatic"
 	"github.com/ARivas3008/loxalizacion-cladun-psp/patcher/internal/bps"
 )
 
@@ -77,8 +77,6 @@ const (
 	ofnFileMustExist   = 0x00001000
 	ofnNoChangeDir     = 0x00000008
 	idISO              = 101
-	idPatch            = 102
-	idOutput           = 103
 	idApply            = 104
 	timerID            = 1
 )
@@ -146,8 +144,8 @@ type openFileName struct {
 
 type application struct {
 	hwnd                                                    uintptr
-	iso, patch, output                                      uintptr
-	apply, isoBrowse, patchBrowse, outputBrowse             uintptr
+	iso                                                     uintptr
+	apply, isoBrowse                                        uintptr
 	status                                                  uintptr
 	headTitle, headBrand, headCaption                       uintptr
 	editFont, headFont, titleFont, labelFont, smallFont     uintptr
@@ -158,6 +156,7 @@ type application struct {
 	progress                                                int
 	busy                                                    bool
 	result                                                  bps.Info
+	resultOutput                                            string
 	failure                                                 error
 	finished                                                bool
 }
@@ -224,73 +223,47 @@ func createUI(hwnd uintptr) {
 	app.borderBrush = call(procCreateBrush, rgb(224, 232, 243))
 	app.editFont = createFont(-16, false)
 	app.labelFont = createFont(-16, true)
-	app.headFont = createFont(-29, true)
+	app.headFont = createFont(-30, true)
 	app.titleFont = createFont(-16, true)
 	app.smallFont = createFont(-14, false)
 
-	app.headBrand = label("C L A D U N   /   LOCALIZACIÓN ES", 34, 21, 500, 24, app.smallFont, 0xd7e5ff)
-	app.headTitle = label("Parcheador para Windows", 34, 49, 680, 43, app.headFont, 0xffffff)
-	app.headCaption = label("Aplica un parche BPS a tu copia original de Cladun (USA / PSP).", 35, 106, 685, 28, app.editFont, 0xc7d7f1)
+	app.headBrand = label("C L A D U N   /   LOCALIZACIÓN ES", 34, 21, 670, 24, app.smallFont, 0xd7e5ff)
+	app.headTitle = label("Traducir mi ISO", 34, 49, 685, 43, app.headFont, 0xffffff)
+	app.headCaption = label("Solo necesitas tu ISO original: no hay que buscar ningún .BPS.", 35, 106, 685, 28, app.editFont, 0xc7d7f1)
 
-	label("01   ISO ORIGINAL (USA)", 52, 169, 390, 24, app.labelFont, 0x152a46)
-	app.iso = edit(52, 198)
-	app.isoBrowse = button("Examinar", 589, 198, 116, 30, idISO, app.smallFont)
+	label("01   SELECCIONA LA ISO ORIGINAL (USA)", 52, 180, 610, 24, app.labelFont, 0x152a46)
+	app.iso = edit(52, 215)
+	app.isoBrowse = button("Examinar", 589, 215, 116, 30, idISO, app.smallFont)
+	label("Se verificará la versión exacta de Cladun para PSP (USA).", 52, 255, 632, 20, app.smallFont, 0x677d95)
 
-	label("02   PARCHE DE TRADUCCIÓN (.BPS)", 52, 263, 450, 24, app.labelFont, 0x152a46)
-	app.patch = edit(52, 292)
-	app.patchBrowse = button("Examinar", 589, 292, 116, 30, idPatch, app.smallFont)
+	label("02   TRADUCCIÓN INTEGRADA", 52, 309, 575, 24, app.labelFont, 0x152a46)
+	if automatic.PayloadValid(integratedPatch) {
+		label("Parche ES de prueba incorporado · sin descargas adicionales", 52, 340, 640, 23, app.editFont, 0x235d43)
+	} else {
+		label("Esta compilación NO incluye el parche español experimental.", 52, 340, 645, 23, app.editFont, 0x9f5125)
+	}
+	label("Salida automática: Cladun-ES-EXPERIMENTAL.iso junto a la ISO original.", 52, 371, 662, 23, app.smallFont, 0x677d95)
 
-	label("03   GUARDAR ISO TRADUCIDA", 52, 357, 430, 24, app.labelFont, 0x152a46)
-	app.output = edit(52, 386)
-	app.outputBrowse = button("Elegir ruta", 589, 386, 116, 30, idOutput, app.smallFont)
-
-	label("VERIFICACIÓN: SHA-256 de la ISO · CRC del BPS · CRC del resultado", 42, 449, 670, 21, app.smallFont, 0x395572)
-	label("La ISO original no se modifica. Un BPS correcto no garantiza compatibilidad en PPSSPP.", 42, 476, 677, 25, app.smallFont, 0x677d95)
-	app.status = label("Selecciona los archivos para comenzar.", 42, 540, 515, 27, app.editFont, 0x395572)
-	app.apply = button("Aplicar parche", 561, 517, 150, 43, idApply, app.labelFont)
+	label("Versión experimental. No está validada en PPSSPP ni se garantiza que arranque.", 42, 435, 685, 23, app.smallFont, 0x395572)
+	label("No se altera ni sobrescribe la ISO original. El resultado se verifica por SHA-256.", 42, 461, 680, 23, app.smallFont, 0x677d95)
+	app.status = label("Selecciona tu ISO para comenzar.", 42, 544, 510, 27, app.editFont, 0x395572)
+	app.apply = button("Crear ISO de prueba", 533, 509, 179, 43, idApply, app.labelFont)
 	call(procEnableWindow, app.apply, 0)
 	call(procSetTimer, hwnd, timerID, 125, 0)
 }
 
-func chooseFile(save bool, kind string) string {
+func chooseFile() string {
 	buf := make([]uint16, 32768)
-	if save {
-		current := getText(app.output)
-		if current == "" {
-			current = "Cladun-ES.iso"
-		}
-		copy(buf, syscall.StringToUTF16(current))
-	}
-	var filter string
-	var title string
-	switch kind {
-	case "iso":
-		filter = "Imagen PSP (*.iso)\x00*.iso\x00Todos los archivos (*.*)\x00*.*\x00\x00"
-		title = "Seleccionar ISO original USA"
-	case "bps":
-		filter = "Parche BPS (*.bps)\x00*.bps\x00Todos los archivos (*.*)\x00*.*\x00\x00"
-		title = "Seleccionar parche de traducción BPS"
-	default:
-		filter = "Imagen ISO (*.iso)\x00*.iso\x00Todos los archivos (*.*)\x00*.*\x00\x00"
-		title = "Guardar nueva ISO traducida"
-	}
+	filter := "Imagen PSP (*.iso)\x00*.iso\x00Todos los archivos (*.*)\x00*.*\x00\x00"
+	f := syscall.StringToUTF16(filter)
 	options := openFileName{
-		Owner: app.hwnd, Filter: &syscall.StringToUTF16(filter)[0],
-		File: &buf[0], MaxFile: uint32(len(buf)),
-		Title: u16(title), Flags: ofnExplorer | ofnNoChangeDir | ofnPathMustExist,
+		Owner: app.hwnd, Filter: &f[0], File: &buf[0], MaxFile: uint32(len(buf)),
+		Title:  u16("Seleccionar ISO original de Cladun (USA)"),
+		Flags:  ofnExplorer | ofnNoChangeDir | ofnPathMustExist | ofnFileMustExist,
 		DefExt: u16("iso"),
 	}
-	if !save {
-		options.Flags |= ofnFileMustExist
-	}
 	options.StructSize = uint32(unsafe.Sizeof(options))
-	var result uintptr
-	if save {
-		result = call(procGetSaveFile, uintptr(unsafe.Pointer(&options)))
-	} else {
-		result = call(procGetOpenFile, uintptr(unsafe.Pointer(&options)))
-	}
-	if result == 0 {
+	if call(procGetOpenFile, uintptr(unsafe.Pointer(&options))) == 0 {
 		return ""
 	}
 	return syscall.UTF16ToString(buf)
@@ -300,13 +273,13 @@ func updateButtonState() {
 	app.mu.Lock()
 	busy := app.busy
 	app.mu.Unlock()
-	ready := strings.TrimSpace(getText(app.iso)) != "" && strings.TrimSpace(getText(app.patch)) != "" && strings.TrimSpace(getText(app.output)) != ""
+	ready := strings.TrimSpace(getText(app.iso)) != "" && automatic.PayloadValid(integratedPatch)
 	value := uintptr(0)
 	if ready && !busy {
 		value = 1
 	}
 	call(procEnableWindow, app.apply, value)
-	for _, w := range []uintptr{app.isoBrowse, app.patchBrowse, app.outputBrowse, app.iso, app.patch, app.output} {
+	for _, w := range []uintptr{app.isoBrowse, app.iso} {
 		v := uintptr(1)
 		if busy {
 			v = 0
@@ -326,11 +299,12 @@ func beginPatch() {
 	app.phase = "Preparando verificación..."
 	app.progress = 0
 	app.mu.Unlock()
-	iso, patch, output := getText(app.iso), getText(app.patch), getText(app.output)
+	iso := getText(app.iso)
+	output := automatic.DefaultOutput(iso)
 	updateButtonState()
 	setText(app.status, "Preparando verificación...")
 	go func() {
-		info, err := bps.Apply(iso, patch, output, func(phase string, done, total uint64) {
+		info, err := automatic.Apply(iso, output, integratedPatch, func(phase string, done, total uint64) {
 			pct := 0
 			if total > 0 {
 				pct = int(done * 100 / total)
@@ -341,10 +315,12 @@ func beginPatch() {
 		})
 		app.mu.Lock()
 		app.result, app.failure, app.finished, app.busy = info, err, true, false
+		app.resultOutput = output
 		app.mu.Unlock()
 		call(procPostMessage, app.hwnd, wmAppDone, 0, 0)
 	}()
 }
+
 func drawFill(hdc uintptr, r rect, brush uintptr) {
 	call(procFillRect, hdc, uintptr(unsafe.Pointer(&r)), brush)
 }
@@ -353,21 +329,22 @@ func paint(hwnd uintptr) {
 	hdc := call(procBeginPaint, hwnd, uintptr(unsafe.Pointer(&ps)))
 	drawFill(hdc, rect{0, 0, 756, 604}, app.bgBrush)
 	drawFill(hdc, rect{0, 0, 756, 145}, app.headerBrush)
-	for _, y := range []int32{158, 252, 346} {
-		drawFill(hdc, rect{32, y, 720, y + 83}, app.borderBrush)
-		drawFill(hdc, rect{33, y + 1, 719, y + 82}, app.whiteBrush)
+	for _, p := range []rect{{32, 164, 720, 281}, {32, 292, 720, 405}} {
+		drawFill(hdc, p, app.borderBrush)
+		drawFill(hdc, rect{p.L + 1, p.T + 1, p.R - 1, p.B - 1}, app.whiteBrush)
 	}
-	drawFill(hdc, rect{32, 437, 720, 501}, app.whiteBrush)
-	drawFill(hdc, rect{32, 510, 720, 576}, app.whiteBrush)
-	drawFill(hdc, rect{42, 525, 537, 533}, app.borderBrush)
+	drawFill(hdc, rect{32, 424, 720, 493}, app.whiteBrush)
+	drawFill(hdc, rect{32, 503, 720, 578}, app.whiteBrush)
+	drawFill(hdc, rect{42, 524, 523, 532}, app.borderBrush)
 	app.mu.Lock()
 	pct := app.progress
 	app.mu.Unlock()
 	if pct > 0 {
-		drawFill(hdc, rect{42, 525, 42 + int32(495*pct/100), 533}, app.barBrush)
+		drawFill(hdc, rect{42, 524, 42 + int32(481*pct/100), 532}, app.barBrush)
 	}
 	call(procEndPaint, hwnd, uintptr(unsafe.Pointer(&ps)))
 }
+
 func wndProc(hwnd uintptr, message uint32, wparam, lparam uintptr) uintptr {
 	switch message {
 	case wmCreate:
@@ -377,19 +354,8 @@ func wndProc(hwnd uintptr, message uint32, wparam, lparam uintptr) uintptr {
 		id := uint16(wparam & 0xffff)
 		switch id {
 		case idISO:
-			if path := chooseFile(false, "iso"); path != "" {
+			if path := chooseFile(); path != "" {
 				setText(app.iso, path)
-				if strings.TrimSpace(getText(app.output)) == "" {
-					setText(app.output, filepath.Join(filepath.Dir(path), "Cladun-ES.iso"))
-				}
-			}
-		case idPatch:
-			if path := chooseFile(false, "bps"); path != "" {
-				setText(app.patch, path)
-			}
-		case idOutput:
-			if path := chooseFile(true, "output"); path != "" {
-				setText(app.output, path)
 			}
 		case idApply:
 			beginPatch()
@@ -408,7 +374,7 @@ func wndProc(hwnd uintptr, message uint32, wparam, lparam uintptr) uintptr {
 		return 0
 	case wmAppDone:
 		app.mu.Lock()
-		err, info, done := app.failure, app.result, app.finished
+		err, info, done, output := app.failure, app.result, app.finished, app.resultOutput
 		app.finished = false
 		app.mu.Unlock()
 		updateButtonState()
@@ -417,8 +383,8 @@ func wndProc(hwnd uintptr, message uint32, wparam, lparam uintptr) uintptr {
 				setText(app.status, "Verificación detenida: no se generó una ISO válida.")
 				showError("No se pudo aplicar el parche", err.Error())
 			} else {
-				setText(app.status, "Completado: CRC32 y SHA-256 del resultado comprobados.")
-				showInfo("Parche aplicado", "La nueva ISO se guardó en:\n\n"+getText(app.output)+"\n\nSHA-256:\n"+info.TargetSHA256+"\n\nComprueba su funcionamiento en PPSSPP.")
+				setText(app.status, "Completado: SHA-256 final verificado. Prueba en PPSSPP.")
+				showInfo("Parche aplicado", "La ISO experimental se guardó en:\n\n"+output+"\n\nSHA-256:\n"+info.TargetSHA256+"\n\nISO de prueba: compatibilidad en PPSSPP todavía no validada.")
 			}
 		}
 		return 0
@@ -466,7 +432,7 @@ func main() {
 		showError("Error de inicio", "No se pudo registrar la ventana de Windows.")
 		return
 	}
-	hwnd := call(procCreateWindow, 0, uintptr(unsafe.Pointer(className)), uintptr(unsafe.Pointer(u16("Cladun · Parcheador español"))), wsOverlappedWindow|wsVisible|wsClipChildren,
+	hwnd := call(procCreateWindow, 0, uintptr(unsafe.Pointer(className)), uintptr(unsafe.Pointer(u16("Cladun · ISO al español (experimental)"))), wsOverlappedWindow|wsVisible|wsClipChildren,
 		140, 80, 772, 643, 0, 0, instance, 0)
 	if hwnd == 0 {
 		return

@@ -159,6 +159,18 @@ TIGHTER = {
     "氷出るブロック高": "Bloq. hielo a.",
 }
 
+
+# Corrected capacities discovered while writing against the real USA ISO:
+# the corpus models 164/36-byte regions but non-text record bytes begin earlier.
+# This explicit per-ID adaptation is for binary insertion only; never rewrite
+# the literary draft and never extend into non-text record metadata.
+VERIFIED_TIGHT_SLOTS = {
+    "007892": ("DATABASE.DAT/MONSTER.DAT", "You're real lucky if you manage to beat this because of its 100％ \noffensive item drop rate!\nBut it runs away on sight and has avery high ATK.", 164,
+               "¡Suelta objetos ofensivos seguro si lo vences! Pero huye cuando te ve y tiene un ataque muy alto."),
+    "008402": ("DATABASE.DAT/RMAPSET2.DAT", "Mid-Tier Monster Area", 36,
+               "Área de monstruos intermedios"),
+}
+
 def compact_text(original: str) -> str | None:
     if original in EXACT:
         return EXACT[original]
@@ -186,6 +198,12 @@ def effective(row: dict, translated: dict) -> tuple[str, str]:
                 value):
             raise ValueError("Inconsistent incomplete field at " + row["grupo_id"])
         value, why = replacement, "original_truncado_verificado_por_bytes"
+    elif row["grupo_id"] in VERIFIED_TIGHT_SLOTS:
+        origin, original, modeled_cap, replacement = VERIFIED_TIGHT_SLOTS[row["grupo_id"]]
+        if (row["origen"] != origin or row["original"] != original or
+                int(row["capacidad_campo"]) != modeled_cap or not value):
+            raise ValueError("Incorrect verified tight slot: " + row["grupo_id"])
+        value, why = replacement, "adaptacion_por_limite_real_verificado"
     elif value and len(encode_spanish(value)) + 1 > int(row["capacidad_campo"]):
         compact = compact_text(row["original"])
         if compact is None:
