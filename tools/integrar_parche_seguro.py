@@ -627,13 +627,42 @@ def append_text_containers(source_iso, source_pack, entries, replacements, resul
     return actual_files
 
 
+def filtrar_recurso_diagnostico(changes, blocked, nombre):
+    """A/B privado: omite UN contenedor sin presentar el resultado como parche completo.
+
+    No cambia las traducciones ni intenta reparar opcodes desconocidos.
+    """
+    require(nombre in ("SCRIPT.SDT", "DATABASE.DAT", "STAFFROLL.TXT", "SYS.DAT2"),
+            "Recurso diagnostico no autorizado")
+    result = 0
+    for origin in list(changes):
+        parent = origin.split("/", 1)[0] if "/" in origin else origin
+        # Para scripts, el nombre físico es SCRIPT.SDT aunque la clave
+        # interna sea SCRIPT.SDT/SCRIPT.DAT.
+        if parent != nombre:
+            continue
+        for source, _old, _new in changes[origin]:
+            blocked.append({"grupo_id": source["grupo_id"],
+                            "motivo": "OMITIDO_DIAGNOSTICO_" + nombre})
+            result += 1
+        del changes[origin]
+    require(result > 0, "El recurso seleccionado no tenia cambios para aislar")
+    return result
+
+
 def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
-          experimental_partial=False, add_spanish_font=True):
+          experimental_partial=False, add_spanish_font=True,
+          excluir_recurso=None):
     source_iso, candidate, report = map(Path, (source_iso, candidate, report))
     require(source_iso.resolve() != candidate.resolve(), "Cannot overwrite source ISO")
     require(sha256_file(source_iso) == SOURCE_SHA256, "Wrong Cladun USA source ISO")
     rows = source_rows(source_csv, draft_csv)
     changes, blocked, unchanged = plan_rows(rows)
+    omitidos = 0
+    if excluir_recurso is not None:
+        require(experimental_partial,
+                "--excluir-recurso requiere --experimental-parcial")
+        omitidos = filtrar_recurso_diagnostico(changes, blocked, excluir_recurso)
     all_changed = sum(len(x) for x in changes.values())
     counted = Counter(x["motivo"] for x in blocked)
     result = {"estado": "BLOQUEADO_SIN_CANDIDATO", "original_sha256": SOURCE_SHA256,
@@ -642,6 +671,8 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
               "bloqueos": dict(counted),
               "bloqueos_por_grupo": blocked,
               "modo_completo": not experimental_partial,
+              "componente_omitido_diagnostico": excluir_recurso,
+              "entradas_omitidas_diagnostico": omitidos,
               "ppsspp_validado": False, "aprobado_para_distribucion": False}
     report.parent.mkdir(parents=True, exist_ok=True)
     report.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -745,12 +776,16 @@ def main():
     p.add_argument("--experimental-parcial", action="store_true",
                    help="Allow candidate with unhandled text (never claim full translation)")
     p.add_argument("--sin-fuente", action="store_true", help="Developer-only, no Spanish glyphs")
+    p.add_argument("--excluir-recurso",
+                   choices=("SCRIPT.SDT", "DATABASE.DAT", "STAFFROLL.TXT", "SYS.DAT2"),
+                   help="Prueba A/B privada: omite un contenedor del parche. Requiere --experimental-parcial")
     args = p.parse_args()
     try:
         summary = build(args.iso, args.candidate, args.report,
                         source_csv=args.original, draft_csv=args.borrador,
                         experimental_partial=args.experimental_parcial,
-                        add_spanish_font=not args.sin_fuente)
+                        add_spanish_font=not args.sin_fuente,
+                        excluir_recurso=args.excluir_recurso)
         print(json.dumps({k: v for k, v in summary.items() if k != "bloqueos_por_grupo"},
                          indent=2, ensure_ascii=False))
     except Exception as exc:
