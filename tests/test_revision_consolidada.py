@@ -29,12 +29,18 @@ class RevisionConsolidadaTests(unittest.TestCase):
         self.assertIn(len(self.done), (0, len(self.plan)))
 
     def test_keep_manual_reviewed_names(self):
-        for group in ("006688", "006663", "006682", "006657"):
-            self.assertTrue(self.text(group).strip())
-        self.assertEqual(self.text("006688"), "Sunday")
-        self.assertEqual(self.text("006663"), "Coco")
-        self.assertEqual(self.text("006682"), "Bob")
-        self.assertEqual(self.text("006657"), "Sherbet")
+        # Los CLD-NNNNNN son text_id, NO el grupo de seis cifras.
+        # Buscar por clave canónica evita falsos fallos al probar el glosario.
+        by_text_id = {r["text_id"]: r for r in self.rows}
+        for tid, expected in (
+            ("CLD-006688", "Sunday"),
+            ("CLD-006663", "Coco"),
+            ("CLD-006682", "Bob"),
+            ("CLD-006657", "Sherbet"),
+        ):
+            self.assertIn(tid, by_text_id)
+            group_id = by_text_id[tid]["grupo_id"]
+            self.assertEqual(self.text(group_id), expected)
 
     def test_clear_dialogue_mistranslations(self):
         self.assertEqual(self.text("000793"), "me pidieron que te cuidara.")
