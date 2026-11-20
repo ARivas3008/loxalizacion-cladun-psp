@@ -1039,7 +1039,7 @@ HABLANTE NO VERIFICADO: ...
 
 HABLANTE NO VERIFICADO: Este lugar realmente no parece estar bajo tierra. No creía que Arcanus Cella tuviera trampas, Así que me descuidé un poco.
 
-HABLANTE NO VERIFICADO: ¡Esperar! ¿Ese lugar es Arcanus Cella?
+HABLANTE NO VERIFICADO: ¡Espera! ¿Ese lugar es Arcanus Cella?
 
 HABLANTE NO VERIFICADO: Sí. Leí todas las leyendas al respecto ¡en la biblioteca de papá!
 
@@ -1601,16 +1601,16 @@ HABLANTE NO VERIFICADO: El juego no se pausa cuando el Diccionario está fuera. 
 ======================================================================================
 ESCENA | demo1006_02.dsf | script_id=300614 | bloque=812
 ======================================================================================
-[NOMBRE EN PANTALLA] A pie
+[NOMBRE EN PANTALLA] Piyyo
 
-A pie: En el suelo se pueden encontrar agua, hierba, fuego y hielo. Caminar sobre ellas te hará ir más lento, resbalar o proporcionar otros efectos adversos.
+Piyyo: En el suelo se pueden encontrar agua, hierba, fuego y hielo. Caminar sobre ellas te hará ir más lento, resbalar o proporcionar otros efectos adversos.
 
 ======================================================================================
 ESCENA | demo1006_02.dsf | script_id=300615 | bloque=813
 ======================================================================================
-[NOMBRE EN PANTALLA] Abril
+[NOMBRE EN PANTALLA] Prillin
 
-Abril: Las clases de hechiceros aprenden "magia" a medida que suben de nivel. Las clases guerreras aprenden "habilidades" al subir de nivel.
+Prillin: Las clases de hechiceros aprenden "magia" a medida que suben de nivel. Las clases guerreras aprenden "habilidades" al subir de nivel.
 
 HABLANTE NO VERIFICADO: Debes recordar que "Magia" y "Habilidades" Deben estar equipados antes de poder utilizarlos.
 
@@ -1626,9 +1626,9 @@ Pegeta: ¿Sabías que el "equipo" puede tener nombres? Los equipos con buenos t�
 ======================================================================================
 ESCENA | demo1006_02.dsf | script_id=300617 | bloque=815
 ======================================================================================
-[NOMBRE EN PANTALLA] Barato
+[NOMBRE EN PANTALLA] Poku
 
-Barato: ¡Los "artefactos" son geniales! Subir de nivel y los títulos de equipo no son nada ¡en comparación!
+Poku: ¡Los "artefactos" son geniales! Subir de nivel y los títulos de equipo no son nada ¡en comparación!
 
 HABLANTE NO VERIFICADO: Simplemente coloca y activa el "Artefacto" en tu ¡Círculo mágico para potenciar tus habilidades!
 
@@ -1650,9 +1650,9 @@ HABLANTE NO VERIFICADO: En ese sentido, su equipo permanecerá con El personaje 
 ======================================================================================
 ESCENA | demo1006_02.dsf | script_id=300619 | bloque=817
 ======================================================================================
-[NOMBRE EN PANTALLA] Pozos
+[NOMBRE EN PANTALLA] Piten
 
-Pozos: ¡Dependes demasiado del equipo! ¿Conoces los efectos de estado?
+Piten: ¡Dependes demasiado del equipo! ¿Conoces los efectos de estado?
 
 HABLANTE NO VERIFICADO: Veneno, sueño y ceguera se encuentran entre los más comunes efectos de estado.
 
@@ -1693,14 +1693,14 @@ HABLANTE NO VERIFICADO: Para crear un buen personaje principal, tendrás que con
 
 HABLANTE NO VERIFICADO: Para crear un buen personaje secundario, es mejor para subirlos de nivel como "personaje principal" para que puede obtener más HP y Maná.
 
-HABLANTE NO VERIFICADO: N-no te lo digo porque quiera. ¡Que quede claro!
+HABLANTE NO VERIFICADO: ¡N-no creas que te lo digo porque quiera!
 
 ======================================================================================
 ESCENA | demo1006_02.dsf | script_id=300623 | bloque=821
 ======================================================================================
-[NOMBRE EN PANTALLA] Ajustar
+[NOMBRE EN PANTALLA] Pigurui
 
-Ajustar: ¡No confío en ti! Planté minas terrestres así ¡Nadie puede entrar en nuestro pueblo!
+Pigurui: ¡No confío en ti! Planté minas terrestres así ¡Nadie puede entrar en nuestro pueblo!
 
 HABLANTE NO VERIFICADO: Será una muerte instantánea para seres como nosotros porque no podemos saltar las trampas. ¡Jejejeje!
 
@@ -1720,9 +1720,9 @@ HABLANTE NO VERIFICADO: ¡En otras palabras, puedes alcanzar 100 ATK solo con ar
 ======================================================================================
 ESCENA | demo1006_02.dsf | script_id=300625 | bloque=823
 ======================================================================================
-[NOMBRE EN PANTALLA] hiyorton
+[NOMBRE EN PANTALLA] Hiyorton
 
-hiyorton: ¡Por fin compré mi propia casa! ¿Qué opinas? ¡Viviendo el sueño de Hiyoan!
+Hiyorton: ¡Por fin compré mi propia casa! ¿Qué opinas? ¡Viviendo el sueño de Hiyoan!
 
 ======================================================================================
 ESCENA | demo1006_02.dsf | script_id=300626 | bloque=824
@@ -1743,16 +1743,16 @@ Hiyogakki: Es raro ver un "Hiyokki". ¡Pero encontrarás muchos tesoros!
 ======================================================================================
 ESCENA | demo1006_02.dsf | script_id=300628 | bloque=826
 ======================================================================================
-[NOMBRE EN PANTALLA] hola
+[NOMBRE EN PANTALLA] Hiyonee
 
-hola: Tengo un perro guardián en mi terraza.
+Hiyonee: Tengo un perro guardián en mi terraza.
 
 ======================================================================================
 ESCENA | demo1006_02.dsf | script_id=300629 | bloque=827
 ======================================================================================
-[NOMBRE EN PANTALLA] YouTubeyobaba
+[NOMBRE EN PANTALLA] Hiyobaba
 
-YouTubeyobaba: Algunos de nosotros a veces podemos evolucionar hacia un tipo de batalla.
+Hiyobaba: Algunos de nosotros a veces podemos evolucionar hacia un tipo de batalla.
 
 HABLANTE NO VERIFICADO: ¡El legendario "Hiyokki!"
 
@@ -2063,7 +2063,7 @@ Hombre barbudo: Gracias, Crosstine. ¡Señor, ten piedad de mí!
 
 Crosstine: ¡Alto ahí mismo! Realmente necesitas dejar de hablar Así, "Dotache".
 
-HABLANTE NO VERIFICADO: ¡Jadear! Cómo, cómo. ¡Tienes toda la razón!
+HABLANTE NO VERIFICADO: ¡Ah! Cómo, cómo. ¡Tienes toda la razón!
 
 HABLANTE NO VERIFICADO: ¿Dónde estará la casa más adecuada para mi nueva vida?
 [NOMBRE EN PANTALLA] Crosstine
@@ -2231,7 +2231,7 @@ ESCENA | demo1103_00.dsf | script_id=110300 | bloque=872
 Hermosa espadachina: ¿Tendrá "Arcanus Cella" La "Espada Definitiva" ¿Qué he buscado toda mi vida...?
 [NOMBRE EN PANTALLA] Voz masculina
 
-Voz masculina: ¡Jejejeje! ¡Sabía que vendrías, domingo!
+Voz masculina: ¡Jejejeje! ¡Sabía que vendrías, Sunday!
 
 HABLANTE NO VERIFICADO: Otra vez tú, Battleblo...
 
@@ -2278,13 +2278,13 @@ HABLANTE NO VERIFICADO: Cuando me metí en un callejón, Vi un gato negro con el
 
 HABLANTE NO VERIFICADO: ¿Podría ser...?
 
-HABLANTE NO VERIFICADO: Ahora tienes acceso al domingo. Ahora tienes acceso a Battleblo. ¡Ahora puedes ir a una nueva mazmorra!
+HABLANTE NO VERIFICADO: Sunday ya está disponible. Ahora tienes acceso a Battleblo. ¡Ahora puedes ir a una nueva mazmorra!
 
 ======================================================================================
 ESCENA | demo1103_00.dsf | script_id=110390 | bloque=873
 ======================================================================================
 
-HABLANTE NO VERIFICADO: Ahora tienes acceso al domingo. Ahora tienes acceso a Battleblo. ¡Ahora puedes ir a una nueva mazmorra!
+HABLANTE NO VERIFICADO: Sunday ya está disponible. Ahora tienes acceso a Battleblo. ¡Ahora puedes ir a una nueva mazmorra!
 
 ======================================================================================
 ESCENA | demo1103_01.dsf | script_id=110301 | bloque=874
@@ -2366,7 +2366,7 @@ HABLANTE NO VERIFICADO: ¡Suena maravilloso! ¡No puedo esperar!
 
 HABLANTE NO VERIFICADO: ¿Quién está ahí?
 
-HABLANTE NO VERIFICADO: ¡Jejejeje! ¡Puedo decirlo! ¡Las mujeres pueden ser tan peligrosas! ¿Verdad? ¡Ese domingo me da muchísimos problemas!
+HABLANTE NO VERIFICADO: ¡Jejejeje! ¡Puedo decirlo! ¡Las mujeres pueden ser tan peligrosas! ¿Verdad? ¡Sunday no hace más que darme problemas!
 
 HABLANTE NO VERIFICADO: Por fin alguien me entiende. Dicen que las personas con problemas con las mujeres son ¡Siempre buena gente! ¡Ahora sé que es verdad!
 
@@ -2392,7 +2392,7 @@ HABLANTE NO VERIFICADO: ¡Que alguien me detenga!
 
 ¿Acosador?: ¡Ey!
 
-HABLANTE NO VERIFICADO: Palma de coco...?
+HABLANTE NO VERIFICADO: ¿Coco...?
 
 HABLANTE NO VERIFICADO: ¿Oh? ¿Eh? ¿Qué pasó?
 [NOMBRE EN PANTALLA] Crosstine
@@ -2505,7 +2505,7 @@ Voz de canto: ¡Sí! ¡Mi amiga Despina! ¿Cómo estás?
 
 HABLANTE NO VERIFICADO: Tu cara y tu pelo son tan extravagantes como siempre, Bob.
 
-HABLANTE NO VERIFICADO: ¡Despertar! ¡Ay, caramba! ¡Ahora me estoy sonrojando!
+HABLANTE NO VERIFICADO: ¡Oh! ¡Ay, caramba! ¡Ahora me estoy sonrojando!
 
 HABLANTE NO VERIFICADO: ¡Pero seguiré esforzándome cada vez más! Soy un niño de corazón y no estaré satisfecho hasta ser el mejor. ¡Mírame... qué estilo!
 
@@ -2531,7 +2531,7 @@ HABLANTE NO VERIFICADO: Increíble.
 
 HABLANTE NO VERIFICADO: Yyyyy... ¡Casi es mi cumpleaños! Pasé por esa tienda ¡y encontré esta máscara fabulosa!
 
-HABLANTE NO VERIFICADO: ¿Mascarilla?
+HABLANTE NO VERIFICADO: ¿Máscara?
 
 HABLANTE NO VERIFICADO: (¿Es esa máscara?) Creí que lo había tirado a la basura.
 
@@ -2652,7 +2652,7 @@ HABLANTE NO VERIFICADO: ¡Argh!
 
 HABLANTE NO VERIFICADO: Puaj...
 
-HABLANTE NO VERIFICADO: Argh... ¡Jadear!
+HABLANTE NO VERIFICADO: Argh... ¡Ah!
 
 HABLANTE NO VERIFICADO: ¡La máscara! ¿Dónde está la máscara?
 
@@ -3374,7 +3374,7 @@ HABLANTE NO VERIFICADO: Ya no necesito esto. Hmph...
 
 Tamako: Despina, estabas teniendo una pesadilla. ¿Estabas soñando con eso otra vez?
 
-HABLANTE NO VERIFICADO: Es por esa mascarilla. En serio, necesito tirar esa cosa a la basura.
+HABLANTE NO VERIFICADO: Es por esa máscara. En serio, necesito tirar esa cosa a la basura.
 
 HABLANTE NO VERIFICADO: ¿Está Despina aquí?
 
@@ -3423,7 +3423,7 @@ HABLANTE NO VERIFICADO: ¡Ahora puedes ir a una nueva mazmorra!
 ESCENA | demo1206_01.dsf | script_id=120601 | bloque=990
 ======================================================================================
 
-HABLANTE NO VERIFICADO: ¿De verdad tengo que tirar la mascarilla? Eso no es divertido. Creo que algo podría pasar si lo mantenemos.
+HABLANTE NO VERIFICADO: ¿De verdad tengo que tirar la máscara? Eso no es divertido. Creo que algo podría pasar si lo mantenemos.
 
 ======================================================================================
 ESCENA | demo1206_01.dsf | script_id=120602 | bloque=991
@@ -3529,9 +3529,9 @@ HABLANTE NO VERIFICADO: Un momento... ¿Qué estaba intentando hacer?
 HABLANTE NO VERIFICADO: ¡Oh, bueno! ¡Hasta luego, desgraciado! ¡Y aléjate de mí, maldita sea!
 
 HABLANTE NO VERIFICADO: Uf... ¿De verdad mi mala suerte se contagia a los demás?
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: Por supuesto que no. No te preocupes por eso.
+Máscara: Por supuesto que no. No te preocupes por eso.
 
 HABLANTE NO VERIFICADO: ¡La máscara! ¡Acabo de recordar que Despina me pidió que la tirara muy lejos!
 
@@ -3626,7 +3626,7 @@ HABLANTE NO VERIFICADO: ↓ Atajo. Superficie resbaladiza.
 ESCENA | demo1208_00.dsf | script_id=120800 | bloque=1017
 ======================================================================================
 
-HABLANTE NO VERIFICADO: ¡Domingo!
+HABLANTE NO VERIFICADO: ¡Sunday!
 
 HABLANTE NO VERIFICADO: ¿Me puedes enseñar algunos pasos? Quiero volverme más fuerte para poder proteger mejor a Pudding.
 
@@ -3668,7 +3668,7 @@ HABLANTE NO VERIFICADO: Si tengo que llevar siempre una espada, no podré salir 
 
 HABLANTE NO VERIFICADO: No creo que puedas hacer eso si llevas la espada definitiva. Supongo que eres como cualquier otra chica.
 
-HABLANTE NO VERIFICADO: ¿Qué tal si usamos una máscara en lugar de una espada? Me puse la mascarilla hace un rato y estuve dando vueltas por ahí. Fue muy divertido porque nadie me reconoció.
+HABLANTE NO VERIFICADO: ¿Qué tal si usamos una máscara en lugar de una espada? Me puse la máscara hace un rato y estuve dando vueltas por ahí. Fue muy divertido porque nadie me reconoció.
 
 HABLANTE NO VERIFICADO: Barman... ¿Hay algo a lo que le tengas miedo?
 
@@ -3676,9 +3676,9 @@ HABLANTE NO VERIFICADO: Por supuesto.
 [NOMBRE EN PANTALLA] Voz misteriosa
 
 Voz misteriosa: No tengas miedo.
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: Solo tienes miedo porque tienes tal un pequeño círculo de amigos.
+Máscara: Solo tienes miedo porque tienes tal un pequeño círculo de amigos.
 
 HABLANTE NO VERIFICADO: ¿La máscara habló?
 
@@ -3700,7 +3700,7 @@ HABLANTE NO VERIFICADO: ¡Cállense, idiotas! No puedo encontrar el tesoro ¡Est
 ESCENA | demo1208_01.dsf | script_id=120802 | bloque=1020
 ======================================================================================
 
-HABLANTE NO VERIFICADO: Estoy seguro de que Pudding no quiere estar Mimado tanto como el domingo no quieren que los miren fijamente.
+HABLANTE NO VERIFICADO: Estoy seguro de que a Pudding no le gusta que lo mimen, igual que a Sunday no le gusta que se queden mirándola.
 
 ======================================================================================
 ESCENA | demo1208_01.dsf | script_id=120803 | bloque=1021
@@ -3812,16 +3812,16 @@ HABLANTE NO VERIFICADO: ¡Oye! ¡Mira hacia arriba!
 HABLANTE NO VERIFICADO: ¿Arriba?
 
 HABLANTE NO VERIFICADO: ¡La máscara!
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: Estar enfermo puede ser muy triste. ¡Pero mejorará!
+Máscara: Estar enfermo puede ser muy triste. ¡Pero mejorará!
 
 HABLANTE NO VERIFICADO: ¿No tiró Despina esa máscara como... un montón de veces?
 
 HABLANTE NO VERIFICADO: ¿Por qué sigues volviendo?
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: Porque amo a los humanos. ¡Por eso vuelvo!
+Máscara: Porque amo a los humanos. ¡Por eso vuelvo!
 
 HABLANTE NO VERIFICADO: No parece que tenga malas intenciones. ¿Por qué quiere Despina tirarlo? Parece algo pequeño y divertido.
 
@@ -3953,15 +3953,15 @@ HABLANTE NO VERIFICADO: Bueno, tienes razón... era calvo... Pero, ¿qué haces 
 [NOMBRE EN PANTALLA] Crosstine
 
 Crosstine: No tienes por qué ser tan malo. Solo vine a ver... eso.
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Hagamos más amigos!
-[NOMBRE EN PANTALLA] Mascarilla
+Máscara: ¡Hagamos más amigos!
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Todos somos amigos! ¡Hagamos 100 amigos!
-[NOMBRE EN PANTALLA] Mascarilla
+Máscara: ¡Todos somos amigos! ¡Hagamos 100 amigos!
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Je, je! ¡Muchos amigos! ¡Diversión! ¡Diversión!
+Máscara: ¡Je, je! ¡Muchos amigos! ¡Diversión! ¡Diversión!
 [NOMBRE EN PANTALLA] Crosstine
 
 Crosstine: Parece que ganó algo de poder después siendo intercambiados tantas veces.
@@ -3977,24 +3977,24 @@ HABLANTE NO VERIFICADO: Absolutamente nada.
 Crosstine: ¿No vas a destruirlo? Será malo si acumula más energía que la que tiene actualmente.
 
 HABLANTE NO VERIFICADO: Ya no me importa. Ha cambiado por completo. Si quiere causar estragos, que lo haga. Soy compasivo.
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Amigo! ¡Amigo! ¡Amigo!
+Máscara: ¡Amigo! ¡Amigo! ¡Amigo!
 [NOMBRE EN PANTALLA] Crosstine
 
 Crosstine: (Vaya... Será mejor que le dé más poder a esa cosa.) más poder entonces.)
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¿Qué vas a? No eres humano. ¿Un amigo?
+Máscara: ¿Qué vas a? No eres humano. ¿Un amigo?
 [NOMBRE EN PANTALLA] Crosstine
 
 Crosstine: Si quieres tener más amigos, dar una fiesta. Vendrán muchos humanos.
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¿Humanos? ¿Muchos? ¿Fiesta? ¿Círculo de amigos?
-[NOMBRE EN PANTALLA] Mascarilla
+Máscara: ¿Humanos? ¿Muchos? ¿Fiesta? ¿Círculo de amigos?
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Je, je, je, je, je, je, je! ¡Todos! ¡Felices! ¡Amplía tu círculo de amigos!
+Máscara: ¡Je, je, je, je, je, je, je! ¡Todos! ¡Felices! ¡Amplía tu círculo de amigos!
 [NOMBRE EN PANTALLA] Crosstine
 
 Crosstine: ¡Je, je! Ahora volverá a manos de los humanos un poco más.
@@ -4035,7 +4035,7 @@ HABLANTE NO VERIFICADO: Puedo sentir la mirada de alguien otra vez... Pero no va
 ESCENA | demo1210_01.dsf | script_id=121005 | bloque=1054
 ======================================================================================
 
-HABLANTE NO VERIFICADO: El domingo siempre ha sido mi rival, Arreglaré las cosas con ella en ¡Arcanus Cella de una vez por todas!
+HABLANTE NO VERIFICADO: Sunday siempre ha sido mi rival, Arreglaré las cosas con ella en ¡Arcanus Cella de una vez por todas!
 
 ======================================================================================
 ESCENA | demo1210_01.dsf | script_id=121006 | bloque=1055
@@ -4088,25 +4088,25 @@ Esqueleto moribundo: ¡Finalmente llegué al tesoro y fui atacado! Los ataques r
 ======================================================================================
 ESCENA | demo1301_00.dsf | script_id=130100 | bloque=1067
 ======================================================================================
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Je, je, je...! ¿Cuándo es la fiesta?
+Máscara: ¡Je, je, je...! ¿Cuándo es la fiesta?
 
 HABLANTE NO VERIFICADO: ¿Eh?
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Haré felices a todos!
-[NOMBRE EN PANTALLA] Mascarilla
+Máscara: ¡Haré felices a todos!
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: Te pondré en mi ¡círculo de los amigos!
+Máscara: Te pondré en mi ¡círculo de los amigos!
 
 HABLANTE NO VERIFICADO: ¡Ahhh!
 
-HABLANTE NO VERIFICADO: ¿Sorbete?
+HABLANTE NO VERIFICADO: ¿Sherbet?
 
 HABLANTE NO VERIFICADO: ¿Estás bien? Debo irme ahora.
 
-HABLANTE NO VERIFICADO: ¡Esperar!
+HABLANTE NO VERIFICADO: ¡Espera!
 
 HABLANTE NO VERIFICADO: Conozco esta sensación de algún sitio... ¿Eres ese acosador?
 
@@ -4156,7 +4156,7 @@ Crosstine: ¡Princesa! Pronto haremos una fiesta. ¿Podrías ayudarnos con la co
 HABLANTE NO VERIFICADO: ¿Una fiesta? Eso suena maravilloso. Si hay algo que pueda hacer, Con mucho gusto ayudaré.
 [NOMBRE EN PANTALLA] Crosstine
 
-Crosstine: Genial. Sorbete. Tú también vienes, ¿verdad?
+Crosstine: Genial. Sherbet, tú también vienes, ¿verdad?
 
 HABLANTE NO VERIFICADO: ¡Ahora puedes ir a una nueva mazmorra!
 
@@ -4245,7 +4245,7 @@ HABLANTE NO VERIFICADO: ¡Maldita sea! ¿Qué pasa con esa máscara tan molesta?
 
 HABLANTE NO VERIFICADO: ¡Ella es mi rival! ¿Verdad, camarero?
 
-HABLANTE NO VERIFICADO: S-Sí. El domingo sin duda es tu rival.
+HABLANTE NO VERIFICADO: S-Sí. Sunday sin duda es tu rival.
 
 HABLANTE NO VERIFICADO: Jeje... ¡Me conoces muy bien, camarero! ¡Disculpa que te moleste cuando estás tan ocupado!
 
@@ -4267,7 +4267,7 @@ HABLANTE NO VERIFICADO: (Hay personas que me protegen y son Dispuestos a ayudar.
 
 HABLANTE NO VERIFICADO: ¡Oye, camarero! ¿Vas a hacer que ese loco de la armadura te ayude? ¿Seguro que vas a estar bien?
 
-HABLANTE NO VERIFICADO: Sí. El sorbete es realmente útil.
+HABLANTE NO VERIFICADO: Sí. Sherbet es de mucha ayuda.
 
 HABLANTE NO VERIFICADO: Hola, Battleblo... ¿Por qué estás tan obsesionado con los escudos? ¿Qué es exactamente lo que quieres hacer con ellos?
 
@@ -4370,7 +4370,7 @@ HABLANTE NO VERIFICADO: Je. ¿Cómo pude ser tan estúpido? ¡Ni siquiera me dab
 
 HABLANTE NO VERIFICADO: ¡Por eso la seguía a todas partes! ¡Ahora entiendo por qué me obsesionan tanto los escudos!
 
-HABLANTE NO VERIFICADO: ¡Domingo!
+HABLANTE NO VERIFICADO: ¡Sunday!
 
 HABLANTE NO VERIFICADO: Otra vez tú. ¿Dejaste tus obligaciones para preparar la fiesta? ¿Solo para volver a presumir de tu escudo?
 
@@ -4387,13 +4387,13 @@ HABLANTE NO VERIFICADO: Dejando eso de lado, ¿qué opinas de esta espada?
 HABLANTE NO VERIFICADO: Puaj...
 
 HABLANTE NO VERIFICADO: (¡¿No lo entiendes?! ¿No basta con defenderme? ¿Tengo que pasar al ataque para que le entre en la cabeza?!)
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Je, je, je! ¡Rechazado! ¡Ahora necesitas un círculo de amigos!
+Máscara: ¡Je, je, je! ¡Rechazado! ¡Ahora necesitas un círculo de amigos!
 
 HABLANTE NO VERIFICADO: ¡Cállate! ¡Cállate! ¡Cállate! ¡No solo quiero ser amigos!
 
-HABLANTE NO VERIFICADO: ¡Eres un asco, domingo!
+HABLANTE NO VERIFICADO: ¡Eres un asco, Sunday!
 
 HABLANTE NO VERIFICADO: Qué hombre tan extraño.
 
@@ -4490,7 +4490,7 @@ ESCENA | demo1304_00.dsf | script_id=130400 | bloque=1109
 
 HABLANTE NO VERIFICADO: (Hay una persona más tonta que él. Si no me molesta su mirada, Entonces aún hay esperanza...)
 
-HABLANTE NO VERIFICADO: ¡Hola! ¡Domingo! ¿Emocionado por la fiesta?
+HABLANTE NO VERIFICADO: ¡Eh, Sunday! ¿Emocionado por la fiesta?
 
 HABLANTE NO VERIFICADO: No sirve de nada. Ni siquiera con Bob... ¿Por qué me va bien Battleblo?!
 
@@ -4540,7 +4540,7 @@ Todos: ¡Jajajajajajajajajajajajajajajajajaja!
 HABLANTE NO VERIFICADO: *Suspiro* Se acabó para mí...
 [NOMBRE EN PANTALLA] Crosstine
 
-Crosstine: Domingo. No estás sosteniendo tu espada.
+Crosstine: Sunday. No estás sosteniendo tu espada.
 
 HABLANTE NO VERIFICADO: Ahora que lo mencionas... Me pregunto por qué. Mucha gente me está mirando ahora mismo.
 
@@ -4551,13 +4551,13 @@ HABLANTE NO VERIFICADO: Al fin y al cabo... Esto no se siente nada mal.
 
 Crosstine: ¡Parece que acabas de crear un mundo nuevo para disfrutarlo a tu gusto!
 
-HABLANTE NO VERIFICADO: ¡Oh, sí! ¡Domingo! ¡Bienvenido a mi mundo!
-[NOMBRE EN PANTALLA] Mascarilla
+HABLANTE NO VERIFICADO: ¡Oh, sí! ¡Sunday! ¡Bienvenido a mi mundo!
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Ey! ¡No me dejes fuera de la conversación! ¡No puedes quedarte con toda la diversión para ti solo!
-[NOMBRE EN PANTALLA] Mascarilla
+Máscara: ¡Ey! ¡No me dejes fuera de la conversación! ¡No puedes quedarte con toda la diversión para ti solo!
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Quiero unirme a ese círculo de amigos!
+Máscara: ¡Quiero unirme a ese círculo de amigos!
 
 HABLANTE NO VERIFICADO: ¡Ahora puedes ir a una nueva mazmorra!
 
@@ -4672,14 +4672,14 @@ HABLANTE NO VERIFICADO: Oh, hola Pudding y Souma. ¡¿Cómo estás?!
 
 HABLANTE NO VERIFICADO: Pareces muy feliz, Coco. ¿Te estás preparando para la fiesta?
 
-HABLANTE NO VERIFICADO: ¡Sí! ¡Estas cosas pueden ser muy divertidas! ¡Desde que vi a Sunday así, no puedo esperar a que empiece la fiesta!
+HABLANTE NO VERIFICADO: ¡Sí! ¡Estas cosas pueden ser muy divertidas! Desde que vi a Sunday así, ¡no veo la hora de que empiece la fiesta!
 
 HABLANTE NO VERIFICADO: ¡Los cielos me deben haber bendecido! ¡Je, je, je, je!
 
 HABLANTE NO VERIFICADO: ¿Oh?
 [NOMBRE EN PANTALLA] Souma y Pudding
 
-Souma y Pudding: ¡¿Palma de coco?!
+Souma y Pudding: ¡¿Coco?!
 
 HABLANTE NO VERIFICADO: ¿Qué te pasa? Tienes la cara toda roja.
 
@@ -4696,12 +4696,12 @@ HABLANTE NO VERIFICADO: Pero te curas si infectas a otra persona, ¿verdad?
 HABLANTE NO VERIFICADO: Coco se rió y parece estar en pésimo estado. Mientras que tú, por otro lado, estás perfectamente bien.
 
 HABLANTE NO VERIFICADO: ¿De verdad significa que se contagió de mí? ¿Era esto a lo que me estaba hablando el sueño?
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Je, je, je! ¡Me alegro de que te hayas curado! ¿No te alegras de haber venido?
-[NOMBRE EN PANTALLA] Mascarilla
+Máscara: ¡Je, je, je! ¡Me alegro de que te hayas curado! ¿No te alegras de haber venido?
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Ahora vamos a formar un círculo de amigos! ¡Solo para nosotros!
+Máscara: ¡Ahora vamos a formar un círculo de amigos! ¡Solo para nosotros!
 
 HABLANTE NO VERIFICADO: ¡Cierra la boca!
 
@@ -4804,7 +4804,7 @@ Tamako: Es realmente difícil traer a alguien De vuelta a la vida.
 ESCENA | demo1305_01.dsf | script_id=130512 | bloque=1135
 ======================================================================================
 
-HABLANTE NO VERIFICADO: Por ahora, parece que este problema No es causado por esa mascarilla.
+HABLANTE NO VERIFICADO: Por ahora, parece que este problema No es causado por esa máscara.
 
 ======================================================================================
 ESCENA | demo1306_00.dsf | script_id=130600 | bloque=1137
@@ -4879,21 +4879,21 @@ HABLANTE NO VERIFICADO: ¡Jajaja! ¡Esa es una gran canción! Pero me siento muc
 HABLANTE NO VERIFICADO: ¿A quién le importo yo, de todos modos? Al menos El Pudding es mejor, ¿verdad? Me alegro de que mi Esta vez, la mala suerte sí que le vino bien a alguien.
 
 HABLANTE NO VERIFICADO: ¡Los cielos me han bendecido!
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Cielos, mi trasero!
-[NOMBRE EN PANTALLA] Mascarilla
+Máscara: ¡Cielos, mi trasero!
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Me dejaron al margen otra vez y se divirtieron sin mí!
+Máscara: ¡Me dejaron al margen otra vez y se divirtieron sin mí!
 
 HABLANTE NO VERIFICADO: ¿Te divertiste? Nunca tuve ninguna intención de ser sus amigos.
 
 HABLANTE NO VERIFICADO: Estoy cansado. Me voy a casa.
 
 HABLANTE NO VERIFICADO: ¡H-Hola! ¡Despina!
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: Jejeje. Siempre la he observado. Sé que siempre está sola. Sé que puedo crear un círculo de amigos con ella.
+Máscara: Jejeje. Siempre la he observado. Sé que siempre está sola. Sé que puedo crear un círculo de amigos con ella.
 
 HABLANTE NO VERIFICADO: Hola, Crosstine. ¿No te has vuelto un poco transparente hace un momento?
 [NOMBRE EN PANTALLA] Crosstine
@@ -4911,9 +4911,9 @@ HABLANTE NO VERIFICADO: Si eres un familiar, debería haber un hechicero. El fam
 Crosstine: Je, je... Solo espere un poco más para obtener las respuestas.
 
 HABLANTE NO VERIFICADO: ¡Gah! ¡Odio esto! ¡Odio esto! ¡Odio esto!
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡No me rendiré!
+Máscara: ¡No me rendiré!
 
 HABLANTE NO VERIFICADO: ¡Ahora puedes ir a una nueva mazmorra!
 
@@ -5009,26 +5009,26 @@ HABLANTE NO VERIFICADO: ¿Qué le pasa? Creía que solo me había sacado para pr
 HABLANTE NO VERIFICADO: El Círculo mágico... Hmm...
 
 HABLANTE NO VERIFICADO: Hmph. Es ese vagabundo otra vez.
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Te encontré!
-[NOMBRE EN PANTALLA] Mascarilla
+Máscara: ¡Te encontré!
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Je, je, je!
-[NOMBRE EN PANTALLA] Mascarilla
+Máscara: ¡Je, je, je!
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Seamos amigos!
-[NOMBRE EN PANTALLA] Mascarilla
+Máscara: ¡Seamos amigos!
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Y haz un círculo de amigos!
+Máscara: ¡Y haz un círculo de amigos!
 
 HABLANTE NO VERIFICADO: ¿Qué es eso?
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Vamos!
-[NOMBRE EN PANTALLA] Mascarilla
+Máscara: ¡Vamos!
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Vamos! ¡Vamos! ¡Ustedes se odiaban, ¿verdad?! ¿Por qué la estás protegiendo?
+Máscara: ¡Vamos! ¡Vamos! ¡Ustedes se odiaban, ¿verdad?! ¿Por qué la estás protegiendo?
 
 HABLANTE NO VERIFICADO: ¡Odio este lugar! Haz lo que quieras ¡Y crea tu propio círculo de amigos!
 
@@ -5327,7 +5327,7 @@ Tamako: Creo que Asagi estaba en un lugar llamado el Inframundo antes de venir a
 ESCENA | demo1501_01.dsf | script_id=150112 | bloque=1201
 ======================================================================================
 
-HABLANTE NO VERIFICADO: ¿Abajo? No la he visto por aquí.
+HABLANTE NO VERIFICADO: ¿Asagi? No la he visto por aquí.
 
 ======================================================================================
 ESCENA | demo1502_00.dsf | script_id=150200 | bloque=1203
@@ -5419,9 +5419,9 @@ HABLANTE NO VERIFICADO: ¿Qué? ¿Por qué? Acabo de ver dos Asagis Allí antes.
 ======================================================================================
 ESCENA | demo1502_01.dsf | script_id=150208 | bloque=1212
 ======================================================================================
-[NOMBRE EN PANTALLA] "Más bajo"
+[NOMBRE EN PANTALLA] Asagi
 
-"Más bajo": Tengo que competir con todos los que están aquí. ¡Solo hay espacio para un personaje principal!
+Asagi: Tengo que competir con todos los que están aquí. ¡Solo hay espacio para un personaje principal!
 
 ======================================================================================
 ESCENA | demo1502_01.dsf | script_id=150209 | bloque=1213
@@ -5504,12 +5504,12 @@ HABLANTE NO VERIFICADO: ¡Ese es un impostor! ¡Dale una paliza hasta dejarlo he
 HABLANTE NO VERIFICADO: Bien. Invitados no deseados, todos acabarán hechos polvo en mi «fiesta de bienvenida».
 [NOMBRE EN PANTALLA] Asagi
 
-Asagi: ¡Esperar! ¡Algo parece extraño!
+Asagi: ¡Espera! ¡Algo parece extraño!
 
 HABLANTE NO VERIFICADO: Lo sabía. Finalmente reveló su verdadera identidad. Llamémoslo... Rey Asagi.
 [NOMBRE EN PANTALLA] Asagi
 
-Asagi: ¡Va a entrar en la mazmorra! ¡Esperar!
+Asagi: ¡Va a entrar en la mazmorra! ¡Espera!
 
 HABLANTE NO VERIFICADO: ¡Ahora puedes ir a una nueva mazmorra!
 
@@ -5922,9 +5922,9 @@ HABLANTE NO VERIFICADO: ¿Qué?
 ¿Souma?: Solo vine tras de ti porque tu mamá y tu papá se enfadaría conmigo. ¿Quién demonios querría estar contigo?
 
 HABLANTE NO VERIFICADO: ¡Mi Souma jamás diría algo así! ¡Tú eres la máscara!
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Je, je, je! ¡Me descubriste! ¡Ya no te quiero!
+Máscara: ¡Je, je, je! ¡Me descubriste! ¡Ya no te quiero!
 
 ======================================================================================
 ESCENA | end00_puding.dsf | script_id=145101 | bloque=1391
@@ -5973,14 +5973,14 @@ ESCENA | end01_koko.dsf | script_id=140251 | bloque=1395
 ======================================================================================
 
 HABLANTE NO VERIFICADO: Oh, es la máscara. ¡Los cielos me han bendecido!
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: La desgracia es pecado. La desgracia tiene sabor a miel.
+Máscara: La desgracia es pecado. La desgracia tiene sabor a miel.
 
 HABLANTE NO VERIFICADO: ¿Ah, entonces está delicioso?
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: Los cielos no te bendecirán. ¡Porque vas a morir aquí! ¡Je, je, je, je!
+Máscara: Los cielos no te bendecirán. ¡Porque vas a morir aquí! ¡Je, je, je, je!
 
 ======================================================================================
 ESCENA | end01_koko.dsf | script_id=145201 | bloque=1397
@@ -6012,9 +6012,9 @@ HABLANTE NO VERIFICADO: Oh, cielos. Soy muy mala suerte por haber sido sellada p
 ======================================================================================
 ESCENA | end02_despina.dsf | script_id=140301 | bloque=1399
 ======================================================================================
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: Huiste y me abandonaste. Sin embargo, ¿cómo eres tan fuerte?
+Máscara: Huiste y me abandonaste. Sin embargo, ¿cómo eres tan fuerte?
 
 HABLANTE NO VERIFICADO: Has estado huyendo de mí todo este tiempo. ¿Cómo, entonces, te volviste tan fuerte?
 
@@ -6025,9 +6025,9 @@ HABLANTE NO VERIFICADO: Hmph. Soy la hechicera genio, Despina.
 HABLANTE NO VERIFICADO: En tus palabras, es el círculo de amigos.
 
 HABLANTE NO VERIFICADO: Simplemente estamos hechos de forma diferente.
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: Ya veo... El círculo de amigos... Ojalá tuviera eso...
+Máscara: Ya veo... El círculo de amigos... Ojalá tuviera eso...
 
 HABLANTE NO VERIFICADO: Ya veo... Simplemente somos diferentes... Oler...
 
@@ -6142,18 +6142,18 @@ ESCENA | end02_despina.dsf | script_id=140351 | bloque=1401
 [NOMBRE EN PANTALLA] ¿Souma?
 
 ¿Souma?: Siempre te crees muy superior y poderoso.
-[NOMBRE EN PANTALLA] ¿Palma de coco?
+[NOMBRE EN PANTALLA] ¿Coco?
 
-¿Palma de coco?: Estoy harto de hacer negocios aquí.
+¿Coco?: Estoy harto de hacer negocios aquí.
 [NOMBRE EN PANTALLA] ¿Dotache?
 
 ¿Dotache?: No tengo nada para que bebas. Lárgate de aquí.
-[NOMBRE EN PANTALLA] ¿Chelín?
+[NOMBRE EN PANTALLA] ¿Bob?
 
-¿Chelín?: ¡Estás tan LOCO!
-[NOMBRE EN PANTALLA] ¿Domingo?
+¿Bob?: ¡Estás tan LOCO!
+[NOMBRE EN PANTALLA] ¿Sunday?
 
-¿Domingo?: No te acerques a mí nunca más.
+¿Sunday?: No te acerques a mí nunca más.
 [NOMBRE EN PANTALLA] ¿Pudding?
 
 ¿Pudding?: En otras palabras, Todos te odian.
@@ -6163,9 +6163,9 @@ HABLANTE NO VERIFICADO: Ja ja. ¿Crees que puedes sorprenderme con esto?
 HABLANTE NO VERIFICADO: Tus palabras engañosas ¡Jamás me engañarás! ¡Muéstrate!
 
 HABLANTE NO VERIFICADO: Y... ¡El!
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: Je, je, je. ¡En ese caso, te haré sufrir muchísimo! ¡No eres mi amigo!
+Máscara: Je, je, je. ¡En ese caso, te haré sufrir muchísimo! ¡No eres mi amigo!
 
 ======================================================================================
 ESCENA | end02_despina.dsf | script_id=145301 | bloque=1403
@@ -6226,19 +6226,19 @@ ESCENA | end03_souma.dsf | script_id=140451 | bloque=1407
 ======================================================================================
 
 HABLANTE NO VERIFICADO: Oye, ahí está la máscara.
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: No deberías haber venido aquí.
+Máscara: No deberías haber venido aquí.
 
 HABLANTE NO VERIFICADO: ¿Qué?
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: Debería haberla encerrado. Y entonces ella sería mía.
+Máscara: Debería haberla encerrado. Y entonces ella sería mía.
 
 HABLANTE NO VERIFICADO: Ella no me pertenece. ¡Lo único que me importa es su felicidad!
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Je, je, je! ¡No te mientas a ti mismo!
+Máscara: ¡Je, je, je! ¡No te mientas a ti mismo!
 
 ======================================================================================
 ESCENA | end03_souma.dsf | script_id=145401 | bloque=1409
@@ -6286,7 +6286,7 @@ HABLANTE NO VERIFICADO: ¿Oh?
 
 HABLANTE NO VERIFICADO: Cuando llegue ese momento, te protegeré, no por orden de nadie, sino por voluntad propia. ¿Me concederías ese honor?
 
-HABLANTE NO VERIFICADO: Sorbete.
+HABLANTE NO VERIFICADO: Sherbet.
 
 HABLANTE NO VERIFICADO: ¿Lo harías? Por favor, regresa pronto.
 
@@ -6299,7 +6299,7 @@ ESCENA | end04_syabet.dsf | script_id=140551 | bloque=1413
 HABLANTE NO VERIFICADO: ¿Princesa? ¿Has recuperado tu forma original?!
 [NOMBRE EN PANTALLA] ¿Princesa?
 
-¿Princesa?: Sorbete. Eres completamente inútil. Regresa al reino de inmediato.
+¿Princesa?: Sherbet. Eres completamente inútil. Regresa al reino de inmediato.
 
 HABLANTE NO VERIFICADO: No puedo hacer eso.
 [NOMBRE EN PANTALLA] ¿Princesa?
@@ -6335,7 +6335,7 @@ HABLANTE NO VERIFICADO: ¡Ahora puedo declararle mi amor!
 
 HABLANTE NO VERIFICADO: Así que lo encontraste primero. No está mal, Battleblo.
 
-HABLANTE NO VERIFICADO: ¡Domingo! ¡Te voy a dar una paliza brutal!
+HABLANTE NO VERIFICADO: ¡Sunday! ¡Te voy a dar una paliza brutal!
 
 HABLANTE NO VERIFICADO: ¡Dale!
 
@@ -6387,9 +6387,9 @@ HABLANTE NO VERIFICADO: ¡Tengo el escudo definitivo!
 La voz de la máscara: Eres un idiota.
 
 HABLANTE NO VERIFICADO: ¡Me engañaste!
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: Permitiéndote aferrarte al escudo definitivo ¡Sería un completo desperdicio!
+Máscara: Permitiéndote aferrarte al escudo definitivo ¡Sería un completo desperdicio!
 
 ======================================================================================
 ESCENA | end07_bbrow.dsf | script_id=145801 | bloque=1429
@@ -6435,7 +6435,7 @@ HABLANTE NO VERIFICADO: ¡La maldición se ha roto!
 HABLANTE NO VERIFICADO: Princesa Dot... ¡Eres hermosa...!
 [NOMBRE EN PANTALLA] Princesa Dot
 
-Princesa Dot: Sorbete.
+Princesa Dot: Sherbet.
 
 HABLANTE NO VERIFICADO: Sí.
 [NOMBRE EN PANTALLA] Princesa Dot
@@ -6464,21 +6464,21 @@ Princesa Dot: ¡Gracias!
 ======================================================================================
 ESCENA | end09_dodohige.dsf | script_id=141051 | bloque=1437
 ======================================================================================
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: Lo sé. En realidad eres una princesa. ¿Por qué viniste a pelear?
+Máscara: Lo sé. En realidad eres una princesa. ¿Por qué viniste a pelear?
 
 HABLANTE NO VERIFICADO: He venido a Disipa esta maldición que pesa sobre mí.
 
 HABLANTE NO VERIFICADO: Derrotar a un ser de engaño levantará la forma de engaño que se me impuso.
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: Jejeje. Déjame decirte algo. Eres solo un Princesa inútil que no puede hacer nada por sí misma. No hay manera de que puedas liderar un reino entero.
+Máscara: Jejeje. Déjame decirte algo. Eres solo un Princesa inútil que no puede hacer nada por sí misma. No hay manera de que puedas liderar un reino entero.
 
 HABLANTE NO VERIFICADO: ¿Oh? No puedes saberlo hasta que lo intente.
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Jejejeje! ¡Vas a morir antes de tener la oportunidad!
+Máscara: ¡Jejejeje! ¡Vas a morir antes de tener la oportunidad!
 
 ======================================================================================
 ESCENA | end09_dodohige.dsf | script_id=146001 | bloque=1439
@@ -6519,14 +6519,14 @@ HABLANTE NO VERIFICADO: ¡Será mejor que me dé prisa! ¡Me voy a casa de Despi
 ======================================================================================
 ESCENA | end10_bobu.dsf | script_id=141151 | bloque=1443
 ======================================================================================
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Je, je, je, je! Yo peludo. Calvo.
+Máscara: ¡Je, je, je, je! Yo peludo. Calvo.
 
 HABLANTE NO VERIFICADO: ¡Loco! ¡Soy muy peludo! ¿Sabes?
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: ¡Entonces te dejaré calvo y te convertiré en un ermitaño!
+Máscara: ¡Entonces te dejaré calvo y te convertiré en un ermitaño!
 
 HABLANTE NO VERIFICADO: ¡A ver si puedes intentarlo!
 
@@ -6577,19 +6577,19 @@ HABLANTE NO VERIFICADO: Gracias, Bob. Todo esto es gracias a ti.
 
 HABLANTE NO VERIFICADO: ¿Nunca más podré pelear contigo? Eso es un poco triste...
 
-HABLANTE NO VERIFICADO: Pero te animaré el domingo... Porque soy tu primer fan...
+HABLANTE NO VERIFICADO: Pero te animaré Sunday... Porque soy tu primer fan...
 
 ======================================================================================
 ESCENA | end11_sunday.dsf | script_id=141251 | bloque=1449
 ======================================================================================
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: Tengo la espada definitiva.
+Máscara: Tengo la espada definitiva.
 
 HABLANTE NO VERIFICADO: ¡¿Qué?!
-[NOMBRE EN PANTALLA] Mascarilla
+[NOMBRE EN PANTALLA] Máscara
 
-Mascarilla: Es decir, no puedes ganar contra mi mirada. Perderás.
+Máscara: Es decir, no puedes ganar contra mi mirada. Perderás.
 
 HABLANTE NO VERIFICADO: No.
 
@@ -6630,12 +6630,12 @@ ESCENA | townMessage.dsf | script_id=171 | bloque=1456
 HABLANTE NO VERIFICADO: Hay algo que se parece a una calabaza. ¿Darse prisa?
   OPCIÓN: No, no deberías.
   OPCIÓN: ¡Mátalo! ¡Mátalo con fuego!
-[NOMBRE EN PANTALLA] Bragas
+[NOMBRE EN PANTALLA] Pumpky
 
-Bragas: ¡Genial, ⑨! Normalmente, la gente me pisaría, ¡pero tú no! ¡Eso es lo que te hace genial!
-[NOMBRE EN PANTALLA] Bragas
+Pumpky: ¡Genial, ⑨! Normalmente, la gente me pisaría, ¡pero tú no! ¡Eso es lo que te hace genial!
+[NOMBRE EN PANTALLA] Pumpky
 
-Bragas: ¡Ey!
+Pumpky: ¡Ey!
 
 ======================================================================================
 ESCENA | townMessage.dsf | script_id=172 | bloque=1457
@@ -6647,15 +6647,15 @@ HABLANTE NO VERIFICADO: Hay algunas calabazas que parecen una pareja. ¿Los pisa
 [NOMBRE EN PANTALLA] Pumply
 
 Pumply: ¡Envejezcamos juntos!
-[NOMBRE EN PANTALLA] Mangos
+[NOMBRE EN PANTALLA] Pumi
 
-Mangos: ¡Contigo no!
+Pumi: ¡Contigo no!
 [NOMBRE EN PANTALLA] Pumply
 
 Pumply: ¡Estemos juntos, incluso en la otra vida!
-[NOMBRE EN PANTALLA] Mangos
+[NOMBRE EN PANTALLA] Pumi
 
-Mangos: ¡Contigo no!
+Pumi: ¡Contigo no!
 
 ======================================================================================
 ESCENA | townMessage.dsf | script_id=173 | bloque=1458
@@ -7087,9 +7087,9 @@ Es una mazmorra aleatoria.: Parece que tienes cierto talento. En el futuro puedo
 ======================================================================================
 ESCENA | atkDefComment.dsf | script_id=2000 | bloque=1581
 ======================================================================================
-[NOMBRE EN PANTALLA] Ese ermitaño
+[NOMBRE EN PANTALLA] Ermitaño Hiyo
 
-Ese ermitaño: Soy el ermitaño de Hiyo. Puedo predecir el futuro según tus estadísticas. ¡Harrrgh!
+Ermitaño Hiyo: Soy el ermitaño de Hiyo. Puedo predecir el futuro según tus estadísticas. ¡Harrrgh!
 
 ======================================================================================
 ESCENA | atkDefComment.dsf | script_id=2001 | bloque=1582
@@ -7113,7 +7113,7 @@ HABLANTE NO VERIFICADO: ¡Aeeeeeeee! ¡Tu ATK está en un estado terrible! ¡Aum
 ESCENA | atkDefComment.dsf | script_id=2004 | bloque=1585
 ======================================================================================
 
-HABLANTE NO VERIFICADO: ¡Despertar! ¡Tu ATK es demasiado bajo! ¡Aumenta tu ATK en el Círculo mágico ahora!
+HABLANTE NO VERIFICADO: ¡Oh! ¡Tu ATK es demasiado bajo! ¡Aumenta tu ATK en el Círculo mágico ahora!
 
 ======================================================================================
 ESCENA | atkDefComment.dsf | script_id=2005 | bloque=1586
@@ -7215,7 +7215,7 @@ HABLANTE NO VERIFICADO: ¡Aeeeeeeee! ¡Tu DEF está en un estado terrible! ¡Aum
 ESCENA | atkDefComment.dsf | script_id=2104 | bloque=1602
 ======================================================================================
 
-HABLANTE NO VERIFICADO: ¡Despertar! ¡Tu DEF es demasiado baja! ¡Aumenta tu DEF en el Círculo mágico ahora!
+HABLANTE NO VERIFICADO: ¡Oh! ¡Tu DEF es demasiado baja! ¡Aumenta tu DEF en el Círculo mágico ahora!
 
 ======================================================================================
 ESCENA | atkDefComment.dsf | script_id=2105 | bloque=1603

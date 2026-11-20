@@ -1,0 +1,47 @@
+{
+  "estado": "CIERRE_DE_QA_ESTATICO_DE_TEXTOS_NO_VALIDACION_JUGABLE",
+  "corpus_registros": 9237,
+  "entradas_con_espanol_en_borrador": 9235,
+  "entradas_sin_espanol_pero_con_etiqueta_de_insercion": 2,
+  "total_originales_japoneses_truncados": 2,
+  "etiquetas_resueltas_sin_inventar_fuente": {
+    "CLD-F-TIPATTR-0214-nombre_atributo": {
+      "etiqueta_de_insercion": "Aceite animado",
+      "control": "original_truncado_verificado_por_bytes",
+      "fuente_estado": "byte_cp932_truncado_no_recuperable"
+    },
+    "CLD-F-TIPATTR-0215-nombre_atributo": {
+      "etiqueta_de_insercion": "Agua animada",
+      "control": "original_truncado_verificado_por_bytes",
+      "fuente_estado": "byte_cp932_truncado_no_recuperable"
+    }
+  },
+  "revisiones_selectivas_previamente_publicadas": 687,
+  "nuevas_correcciones_textuales": 227,
+  "entradas_no_modificadas_en_esta_pasada": 9010,
+  "escenas_analizadas_por_reconstruccion_estatica": 586,
+  "cuadros_de_dialogo_analizados_por_reconstruccion_estatica": 2216,
+  "alertas_historicas_con_dictamen": 110,
+  "alertas_historicas_sin_dictamen": 0,
+  "dictamenes": {
+    "falso_positivo_resegmentacion": 23,
+    "corregido_texto_unido": 1,
+    "falso_positivo_elipsis": 1,
+    "segmentacion_original_conservada": 1,
+    "corregido_nombre_propio": 82,
+    "excepcion_fuente_truncada_con_etiqueta_de_insercion": 2
+  },
+  "alertas_heursticas_que_permanecen_por_diseno": {
+    "PAUSA_DEL_ORIGINAL_MODIFICADA": 11,
+    "PUNTUACION_ES_ANTES_DE_TERMINAR_ORIGINAL": 12,
+    "FRASE_CORTADA_POR_PUNTO": 1,
+    "UNION_ENTRE_CAJAS_POR_ORACION_INCOMPLETA_REVISAR": 1,
+    "SIN_TRADUCCION": 2
+  },
+  "hash_corpus_fuente_sha256": "f0a56ae0c773982e137fd0d2a99cbe52f27f836eebcf41800e5c8a6d6260e6f9",
+  "hash_csv_es_sha256": "405a8e0e7f0b9b921cdea44a77e4b76e154a390a42bc487587b731cbec1151c7",
+  "inspeccion_narrativa_humana_integral": "NO_DEMOSTRADA; solo auditoria estatica total y correccion focalizada",
+  "ppsspp_acentos_espaciado": "PENDIENTE",
+  "parcheador_con_estos_cambios": "PENDIENTE",
+  "aviso": "Las dos cadenas japonesas siguen truncadas en los bytes originales. Las etiquetas del integrador no recuperan esos caracteres. No declarar certificacion linguistica humana del 100 por ciento."
+}

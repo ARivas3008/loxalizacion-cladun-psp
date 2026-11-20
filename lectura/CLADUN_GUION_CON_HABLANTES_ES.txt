@@ -4747,7 +4747,7 @@ ESCENA: demo1002_00.dsf | script_id: 100200 | bloque: 764
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-000959 | grupo 000939 | orden 573]
-  ES: ¡Esperar!
+  ES: ¡Espera!
   EN: Hold on!
   ATRIBUCION: sin_hablante_verificable
 
@@ -7072,19 +7072,19 @@ ESCENA: demo1006_02.dsf | script_id: 300613 | bloque: 811
 =====================================================================================
 ESCENA: demo1006_02.dsf | script_id: 300614 | bloque: 812
 =====================================================================================
-[NOMBRE DE PANTALLA 0x6E] A pie  
+[NOMBRE DE PANTALLA 0x6E] Piyyo  
   id=CLD-001421 | original: Piyyo
-[A pie]  [ID CLD-001422 | grupo 001389 | orden 4]
+[Piyyo]  [ID CLD-001422 | grupo 001389 | orden 4]
   ES: En el suelo se pueden encontrar agua, hierba, fuego y hielo.
   EN: Water, grass, fire, and ice can be found on the ground.
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[A pie]  [ID CLD-001423 | grupo 001390 | orden 5]
+[Piyyo]  [ID CLD-001423 | grupo 001390 | orden 5]
   ES: Caminar sobre ellas te hará ir más lento, resbalar o
   EN: Walking on them will make you slower, slip, or
   ATRIBUCION: continuidad_corta_probable
 
-[A pie]  [ID CLD-001424 | grupo 001391 | orden 6]
+[Piyyo]  [ID CLD-001424 | grupo 001391 | orden 6]
   ES: proporcionar otros efectos adversos.
   EN: provide other adverse effects.
   ATRIBUCION: continuidad_corta_probable
@@ -7093,39 +7093,39 @@ ESCENA: demo1006_02.dsf | script_id: 300614 | bloque: 812
 =====================================================================================
 ESCENA: demo1006_02.dsf | script_id: 300615 | bloque: 813
 =====================================================================================
-[NOMBRE DE PANTALLA 0x6E] Abril  
+[NOMBRE DE PANTALLA 0x6E] Prillin  
   id=CLD-001425 | original: Prillin
-[Abril]  [ID CLD-001426 | grupo 001393 | orden 4]
+[Prillin]  [ID CLD-001426 | grupo 001393 | orden 4]
   ES: Las clases de hechiceros aprenden "magia"
   EN: Sorcerer classes learn "magic"
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Abril]  [ID CLD-001427 | grupo 001394 | orden 5]
+[Prillin]  [ID CLD-001427 | grupo 001394 | orden 5]
   ES: a medida que suben de nivel.
   EN: as they level up.
   ATRIBUCION: continuidad_corta_probable
 
-[Abril]  [ID CLD-001428 | grupo 001395 | orden 6]
+[Prillin]  [ID CLD-001428 | grupo 001395 | orden 6]
   ES: Las clases guerreras aprenden "habilidades" al subir de nivel.
   EN: Warrior classes learn "abilities" when they level up.
   ATRIBUCION: continuidad_corta_probable
 
-[Abril]  [ID CLD-001429 | grupo 001396 | orden 8]
+[Prillin]  [ID CLD-001429 | grupo 001396 | orden 8]
   ES: Debes recordar que "Magia" y "Habilidades"
   EN: You have to remember that "Magic" and "Abilities"
   ATRIBUCION: continuidad_corta_probable
 
-[Abril]  [ID CLD-001430 | grupo 001397 | orden 9]
+[Prillin]  [ID CLD-001430 | grupo 001397 | orden 9]
   ES: Deben estar equipados antes de poder utilizarlos.
   EN: must be equipped before you can use them.
   ATRIBUCION: continuidad_corta_probable
 
-[Abril]  [ID CLD-001431 | grupo 001398 | orden 11]
+[Prillin]  [ID CLD-001431 | grupo 001398 | orden 11]
   ES: Equípalos en la pantalla "Círculo mágico/Equipar".
   EN: Equip them on the "Magic Circle/Equip" screen.
   ATRIBUCION: continuidad_corta_probable
 
-[Abril]  [ID CLD-001432 | grupo 001399 | orden 12]
+[Prillin]  [ID CLD-001432 | grupo 001399 | orden 12]
   ES: Solo puedes equipar hasta 3, así que elige con cuidado.
   EN: You can only equip up to 3, so choose wisely.
   ATRIBUCION: continuidad_corta_probable
@@ -7155,49 +7155,49 @@ ESCENA: demo1006_02.dsf | script_id: 300616 | bloque: 814
 =====================================================================================
 ESCENA: demo1006_02.dsf | script_id: 300617 | bloque: 815
 =====================================================================================
-[NOMBRE DE PANTALLA 0x6E] Barato  
+[NOMBRE DE PANTALLA 0x6E] Poku  
   id=CLD-001437 | original: Poku
-[Barato]  [ID CLD-001438 | grupo 001405 | orden 4]
+[Poku]  [ID CLD-001438 | grupo 001405 | orden 4]
   ES: ¡Los "artefactos" son geniales!
   EN: "Artifacts" are awesome!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Barato]  [ID CLD-001439 | grupo 001406 | orden 5]
+[Poku]  [ID CLD-001439 | grupo 001406 | orden 5]
   ES: Subir de nivel y los títulos de equipo no son nada
   EN: Leveling up and equipment titles are nothing
   ATRIBUCION: continuidad_corta_probable
 
-[Barato]  [ID CLD-001440 | grupo 001407 | orden 6]
+[Poku]  [ID CLD-001440 | grupo 001407 | orden 6]
   ES: ¡en comparación!
   EN: in comparison!
   ATRIBUCION: continuidad_corta_probable
 
-[Barato]  [ID CLD-001441 | grupo 001408 | orden 8]
+[Poku]  [ID CLD-001441 | grupo 001408 | orden 8]
   ES: Simplemente coloca y activa el "Artefacto" en tu
   EN: Just place and activate the "Artifact" on your
   ATRIBUCION: continuidad_corta_probable
 
-[Barato]  [ID CLD-001442 | grupo 001409 | orden 9]
+[Poku]  [ID CLD-001442 | grupo 001409 | orden 9]
   ES: ¡Círculo mágico para potenciar tus habilidades!
   EN: Magic Circle to power up your abilities!
   ATRIBUCION: continuidad_corta_probable
 
-[Barato]  [ID CLD-001443 | grupo 001410 | orden 11]
+[Poku]  [ID CLD-001443 | grupo 001410 | orden 11]
   ES: Además, todos los equipos tienen atributos de peso ⑧.
   EN: Also, all equipment have ⑧ weight attributes.
   ATRIBUCION: continuidad_corta_probable
 
-[Barato]  [ID CLD-001444 | grupo 001411 | orden 12]
+[Poku]  [ID CLD-001444 | grupo 001411 | orden 12]
   ES: Cuanto mayor sea el ⑧, más tiempo tardará
   EN: The bigger the ⑧, the longer it takes for
   ATRIBUCION: continuidad_corta_probable
 
-[Barato]  [ID CLD-001445 | grupo 001412 | orden 13]
+[Poku]  [ID CLD-001445 | grupo 001412 | orden 13]
   ES: tú para atacar.
   EN: you to attack.
   ATRIBUCION: continuidad_corta_probable
 
-[Barato]  [ID CLD-001446 | grupo 001413 | orden 15]
+[Poku]  [ID CLD-001446 | grupo 001413 | orden 15]
   ES: ¡Los artefactos que ignoran los efectos de ⑧ son geniales!
   EN: Artifacts that ignore the effects of ⑧ are great!
   ATRIBUCION: continuidad_corta_probable
@@ -7252,44 +7252,44 @@ ESCENA: demo1006_02.dsf | script_id: 300618 | bloque: 816
 =====================================================================================
 ESCENA: demo1006_02.dsf | script_id: 300619 | bloque: 817
 =====================================================================================
-[NOMBRE DE PANTALLA 0x6E] Pozos  
+[NOMBRE DE PANTALLA 0x6E] Piten  
   id=CLD-001456 | original: Piten
-[Pozos]  [ID CLD-001457 | grupo 001424 | orden 4]
+[Piten]  [ID CLD-001457 | grupo 001424 | orden 4]
   ES: ¡Dependes demasiado del equipo!
   EN: You're depending too much on equipment!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Pozos]  [ID CLD-001458 | grupo 001425 | orden 5]
+[Piten]  [ID CLD-001458 | grupo 001425 | orden 5]
   ES: ¿Conoces los efectos de estado?
   EN: Do you know about status effects?
   ATRIBUCION: continuidad_corta_probable
 
-[Pozos]  [ID CLD-001459 | grupo 001426 | orden 7]
+[Piten]  [ID CLD-001459 | grupo 001426 | orden 7]
   ES: Veneno, sueño y ceguera
   EN: Poison, sleep, and blindness
   ATRIBUCION: continuidad_corta_probable
 
-[Pozos]  [ID CLD-001460 | grupo 001427 | orden 8]
+[Piten]  [ID CLD-001460 | grupo 001427 | orden 8]
   ES: se encuentran entre los más comunes
   EN: are among the most common
   ATRIBUCION: continuidad_corta_probable
 
-[Pozos]  [ID CLD-001461 | grupo 001428 | orden 9]
+[Piten]  [ID CLD-001461 | grupo 001428 | orden 9]
   ES: efectos de estado.
   EN: status effects.
   ATRIBUCION: continuidad_corta_probable
 
-[Pozos]  [ID CLD-001462 | grupo 001429 | orden 11]
+[Piten]  [ID CLD-001462 | grupo 001429 | orden 11]
   ES: Si quedas "desnudo", perderás
   EN: If you become "Naked," you'll be stripped
   ATRIBUCION: continuidad_corta_probable
 
-[Pozos]  [ID CLD-001463 | grupo 001430 | orden 12]
+[Piten]  [ID CLD-001463 | grupo 001430 | orden 12]
   ES: tu equipo.
   EN: of your equpment.
   ATRIBUCION: continuidad_corta_probable
 
-[Pozos]  [ID CLD-001464 | grupo 001431 | orden 14]
+[Piten]  [ID CLD-001464 | grupo 001431 | orden 14]
   ES: ¡Cuidado con los ataques de ladrones de guante blanco!
   EN: Watch out for attacks from Cat Burglars.
   ATRIBUCION: continuidad_corta_probable
@@ -7433,12 +7433,12 @@ ESCENA: demo1006_02.dsf | script_id: 300622 | bloque: 820
   ATRIBUCION: continuidad_corta_probable
 
 [Tsunpiyo]  [ID CLD-001492 | grupo 001459 | orden 27]
-  ES: N-no te lo digo porque quiera.
+  ES: ¡N-no creas que te lo digo
   EN: I-It's not like I'm telling you
   ATRIBUCION: continuidad_corta_probable
 
 [Tsunpiyo]  [ID CLD-001493 | grupo 001460 | orden 28]
-  ES: ¡Que quede claro!
+  ES: porque quiera!
   EN: because I want to!
   ATRIBUCION: continuidad_corta_probable
 
@@ -7446,34 +7446,34 @@ ESCENA: demo1006_02.dsf | script_id: 300622 | bloque: 820
 =====================================================================================
 ESCENA: demo1006_02.dsf | script_id: 300623 | bloque: 821
 =====================================================================================
-[NOMBRE DE PANTALLA 0x6E] Ajustar  
+[NOMBRE DE PANTALLA 0x6E] Pigurui  
   id=CLD-001494 | original: Pigurui
-[Ajustar]  [ID CLD-001495 | grupo 001462 | orden 4]
+[Pigurui]  [ID CLD-001495 | grupo 001462 | orden 4]
   ES: ¡No confío en ti!
   EN: I'm not trusting you!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Ajustar]  [ID CLD-001496 | grupo 001463 | orden 5]
+[Pigurui]  [ID CLD-001496 | grupo 001463 | orden 5]
   ES: Planté minas terrestres así
   EN: I planted land mines so
   ATRIBUCION: continuidad_corta_probable
 
-[Ajustar]  [ID CLD-001497 | grupo 001464 | orden 6]
+[Pigurui]  [ID CLD-001497 | grupo 001464 | orden 6]
   ES: ¡Nadie puede entrar en nuestro pueblo!
   EN: no one can go into our village!
   ATRIBUCION: continuidad_corta_probable
 
-[Ajustar]  [ID CLD-001498 | grupo 001465 | orden 8]
+[Pigurui]  [ID CLD-001498 | grupo 001465 | orden 8]
   ES: Será una muerte instantánea para seres como nosotros
   EN: It'll be instant death for ones like us
   ATRIBUCION: continuidad_corta_probable
 
-[Ajustar]  [ID CLD-001499 | grupo 001466 | orden 9]
+[Pigurui]  [ID CLD-001499 | grupo 001466 | orden 9]
   ES: porque no podemos saltar las trampas.
   EN: because we can't jump over traps!
   ATRIBUCION: continuidad_corta_probable
 
-[Ajustar]  [ID CLD-001500 | grupo 001467 | orden 10]
+[Pigurui]  [ID CLD-001500 | grupo 001467 | orden 10]
   ES: ¡Jejejeje!
   EN: Heeheehee!
   ATRIBUCION: continuidad_corta_probable
@@ -7528,19 +7528,19 @@ ESCENA: demo1006_02.dsf | script_id: 300624 | bloque: 822
 =====================================================================================
 ESCENA: demo1006_02.dsf | script_id: 300625 | bloque: 823
 =====================================================================================
-[NOMBRE DE PANTALLA 0x6E] hiyorton  
+[NOMBRE DE PANTALLA 0x6E] Hiyorton  
   id=CLD-001510 | original: Hiyorton
-[hiyorton]  [ID CLD-001511 | grupo 001478 | orden 4]
+[Hiyorton]  [ID CLD-001511 | grupo 001478 | orden 4]
   ES: ¡Por fin compré mi propia casa!
   EN: I finally bought my own home!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[hiyorton]  [ID CLD-001512 | grupo 001479 | orden 5]
+[Hiyorton]  [ID CLD-001512 | grupo 001479 | orden 5]
   ES: ¿Qué opinas?
   EN: What do you think of it?!
   ATRIBUCION: continuidad_corta_probable
 
-[hiyorton]  [ID CLD-001513 | grupo 001480 | orden 6]
+[Hiyorton]  [ID CLD-001513 | grupo 001480 | orden 6]
   ES: ¡Viviendo el sueño de Hiyoan!
   EN: Livin' the Hiyoan dream!
   ATRIBUCION: continuidad_corta_probable
@@ -7591,9 +7591,9 @@ ESCENA: demo1006_02.dsf | script_id: 300627 | bloque: 825
 =====================================================================================
 ESCENA: demo1006_02.dsf | script_id: 300628 | bloque: 826
 =====================================================================================
-[NOMBRE DE PANTALLA 0x6E] hola  
+[NOMBRE DE PANTALLA 0x6E] Hiyonee  
   id=CLD-001522 | original: Hiyonee
-[hola]  [ID CLD-001523 | grupo 001490 | orden 4]
+[Hiyonee]  [ID CLD-001523 | grupo 001490 | orden 4]
   ES: Tengo un perro guardián en mi terraza.
   EN: I keep a guard dog on my terrace.
   ATRIBUCION: primer_mensaje_tras_nombre
@@ -7602,19 +7602,19 @@ ESCENA: demo1006_02.dsf | script_id: 300628 | bloque: 826
 =====================================================================================
 ESCENA: demo1006_02.dsf | script_id: 300629 | bloque: 827
 =====================================================================================
-[NOMBRE DE PANTALLA 0x6E] YouTubeyobaba  
+[NOMBRE DE PANTALLA 0x6E] Hiyobaba  
   id=CLD-001524 | original: Hiyobaba
-[YouTubeyobaba]  [ID CLD-001525 | grupo 001492 | orden 4]
+[Hiyobaba]  [ID CLD-001525 | grupo 001492 | orden 4]
   ES: Algunos de nosotros a veces podemos evolucionar hacia un
   EN: Some of us can sometimes evolve into a
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[YouTubeyobaba]  [ID CLD-001526 | grupo 001493 | orden 5]
+[Hiyobaba]  [ID CLD-001526 | grupo 001493 | orden 5]
   ES: tipo de batalla.
   EN: battle type.
   ATRIBUCION: continuidad_corta_probable
 
-[YouTubeyobaba]  [ID CLD-001527 | grupo 001494 | orden 7]
+[Hiyobaba]  [ID CLD-001527 | grupo 001494 | orden 7]
   ES: ¡El legendario "Hiyokki!"
   EN: The legendary "Hiyokki!"
   ATRIBUCION: continuidad_corta_probable
@@ -8899,7 +8899,7 @@ ESCENA: demo1102_00.dsf | script_id: 110200 | bloque: 852
   ATRIBUCION: continuidad_corta_probable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001782 | grupo 001743 | orden 79]
-  ES: ¡Jadear!
+  ES: ¡Ah!
   EN: Gasp!
   ATRIBUCION: sin_hablante_verificable
 
@@ -9465,7 +9465,7 @@ ESCENA: demo1103_00.dsf | script_id: 110300 | bloque: 872
   ATRIBUCION: primer_mensaje_tras_nombre_probable
 
 [Voz masculina]  [ID CLD-001897 | grupo 001853 | orden 50]
-  ES: ¡Sabía que vendrías, domingo!
+  ES: ¡Sabía que vendrías, Sunday!
   EN: I knew you'd come, Sunday!
   ATRIBUCION: continuidad_corta_probable
 
@@ -9696,7 +9696,7 @@ ESCENA: demo1103_00.dsf | script_id: 110300 | bloque: 872
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-001946 | grupo 001901 | orden 276]
-  ES: Ahora tienes acceso al domingo.
+  ES: Sunday ya está disponible.
   EN: You now have access to Sunday.
   ATRIBUCION: sin_hablante_verificable
 
@@ -9715,7 +9715,7 @@ ESCENA: demo1103_00.dsf | script_id: 110300 | bloque: 872
 ESCENA: demo1103_00.dsf | script_id: 110390 | bloque: 873
 =====================================================================================
 [HABLANTE NO VERIFICADO]  [ID CLD-001950 | grupo 001904 | orden 14]
-  ES: Ahora tienes acceso al domingo.
+  ES: Sunday ya está disponible.
   EN: You now have access to Sunday.
   ATRIBUCION: sin_hablante_verificable
 
@@ -9998,7 +9998,7 @@ ESCENA: demo1104_00.dsf | script_id: 110400 | bloque: 884
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-002001 | grupo 001955 | orden 210]
-  ES: ¡Ese domingo me da muchísimos problemas!
+  ES: ¡Sunday no hace más que darme problemas!
   EN: That Sunday gives me trouble to no end!
   ATRIBUCION: sin_hablante_verificable
 
@@ -10087,7 +10087,7 @@ ESCENA: demo1104_00.dsf | script_id: 110400 | bloque: 884
   ATRIBUCION: primer_mensaje_tras_nombre_probable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-002020 | grupo 001974 | orden 454]
-  ES: Palma de coco...?
+  ES: ¿Coco...?
   EN: Coco...?
   ATRIBUCION: sin_hablante_verificable
 
@@ -10452,7 +10452,7 @@ ESCENA: demo1105_00.dsf | script_id: 110500 | bloque: 898
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-002090 | grupo 002042 | orden 179]
-  ES: ¡Despertar!
+  ES: ¡Oh!
   EN: Oho!
   ATRIBUCION: sin_hablante_verificable
 
@@ -10617,7 +10617,7 @@ ESCENA: demo1105_00.dsf | script_id: 110500 | bloque: 898
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-002123 | grupo 002075 | orden 346]
-  ES: ¿Mascarilla?
+  ES: ¿Máscara?
   EN: Mask?
   ATRIBUCION: sin_hablante_verificable
 
@@ -11008,7 +11008,7 @@ ESCENA: demo1201_00.dsf | script_id: 120100 | bloque: 912
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-002198 | grupo 002147 | orden 116]
-  ES: ¡Jadear!
+  ES: ¡Ah!
   EN: Gasp!
   ATRIBUCION: sin_hablante_verificable
 
@@ -13692,7 +13692,7 @@ ESCENA: demo1206_00.dsf | script_id: 120600 | bloque: 988
   ATRIBUCION: continuidad_corta_probable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-002707 | grupo 002645 | orden 202]
-  ES: Es por esa mascarilla.
+  ES: Es por esa máscara.
   EN: It's because of that mask.
   ATRIBUCION: sin_hablante_verificable
 
@@ -13877,7 +13877,7 @@ ESCENA: demo1206_00.dsf | script_id: 120690 | bloque: 989
 ESCENA: demo1206_01.dsf | script_id: 120601 | bloque: 990
 =====================================================================================
 [HABLANTE NO VERIFICADO]  [ID CLD-002745 | grupo 002681 | orden 5]
-  ES: ¿De verdad tengo que tirar la mascarilla?
+  ES: ¿De verdad tengo que tirar la máscara?
   EN: Do I really have to throw the mask away?
   ATRIBUCION: sin_hablante_verificable
 
@@ -14261,14 +14261,14 @@ ESCENA: demo1207_00.dsf | script_id: 120700 | bloque: 1002
   EN: really rub off on others?
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-002815 | original: Mask
-[Mascarilla]  [ID CLD-002816 | grupo 002752 | orden 256]
+[Máscara]  [ID CLD-002816 | grupo 002752 | orden 256]
   ES: Por supuesto que no.
   EN: Of course not.
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-002817 | grupo 002753 | orden 257]
+[Máscara]  [ID CLD-002817 | grupo 002753 | orden 257]
   ES: No te preocupes por eso.
   EN: Don't worry about it.
   ATRIBUCION: continuidad_corta_probable
@@ -14511,7 +14511,7 @@ ESCENA: demo1207_02.dsf | script_id: 320751 | bloque: 1015
 ESCENA: demo1208_00.dsf | script_id: 120800 | bloque: 1017
 =====================================================================================
 [HABLANTE NO VERIFICADO]  [ID CLD-002860 | grupo 002792 | orden 38]
-  ES: ¡Domingo!
+  ES: ¡Sunday!
   EN: Sunday!
   ATRIBUCION: sin_hablante_verificable
 
@@ -14741,7 +14741,7 @@ ESCENA: demo1208_00.dsf | script_id: 120800 | bloque: 1017
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-002906 | grupo 002838 | orden 234]
-  ES: Me puse la mascarilla hace un rato y estuve dando vueltas por ahí.
+  ES: Me puse la máscara hace un rato y estuve dando vueltas por ahí.
   EN: I wore the mask earlier and wandered around.
   ATRIBUCION: sin_hablante_verificable
 
@@ -14767,14 +14767,14 @@ ESCENA: demo1208_00.dsf | script_id: 120800 | bloque: 1017
   EN: Don't be scared.
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-002912 | original: Mask
-[Mascarilla]  [ID CLD-002913 | grupo 002845 | orden 287]
+[Máscara]  [ID CLD-002913 | grupo 002845 | orden 287]
   ES: Solo tienes miedo porque tienes tal
   EN: You're only scared because you have such
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-002914 | grupo 002846 | orden 288]
+[Máscara]  [ID CLD-002914 | grupo 002846 | orden 288]
   ES: un pequeño círculo de amigos.
   EN: a small circle of friends.
   ATRIBUCION: continuidad_corta_probable
@@ -14822,17 +14822,17 @@ ESCENA: demo1208_01.dsf | script_id: 120801 | bloque: 1019
 ESCENA: demo1208_01.dsf | script_id: 120802 | bloque: 1020
 =====================================================================================
 [HABLANTE NO VERIFICADO]  [ID CLD-002923 | grupo 002853 | orden 5]
-  ES: Estoy seguro de que Pudding no quiere estar
+  ES: Estoy seguro de que a Pudding no le gusta que lo mimen,
   EN: I'm sure Pudding doesn't want to be
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-002924 | grupo 002854 | orden 6]
-  ES: Mimado tanto como el domingo no
+  ES: igual que a Sunday no le gusta
   EN: babied as much as Sunday doesn't
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-002925 | grupo 002855 | orden 7]
-  ES: quieren que los miren fijamente.
+  ES: que se queden mirándola.
   EN: want to be stared at.
   ATRIBUCION: sin_hablante_verificable
 
@@ -15184,14 +15184,14 @@ ESCENA: demo1209_00.dsf | script_id: 120900 | bloque: 1032
   EN: The mask!
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-002991 | original: Mask
-[Mascarilla]  [ID CLD-002992 | grupo 002922 | orden 295]
+[Máscara]  [ID CLD-002992 | grupo 002922 | orden 295]
   ES: Estar enfermo puede ser muy triste.
   EN: Being ill can be so sad.
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-002993 | grupo 002923 | orden 296]
+[Máscara]  [ID CLD-002993 | grupo 002923 | orden 296]
   ES: ¡Pero mejorará!
   EN: But it'll get better!
   ATRIBUCION: continuidad_corta_probable
@@ -15211,14 +15211,14 @@ ESCENA: demo1209_00.dsf | script_id: 120900 | bloque: 1032
   EN: Why do you keep coming back?!
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-002997 | original: Mask
-[Mascarilla]  [ID CLD-002998 | grupo 002928 | orden 317]
+[Máscara]  [ID CLD-002998 | grupo 002928 | orden 317]
   ES: Porque amo a los humanos.
   EN: Because I love humans.
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-002999 | grupo 002929 | orden 318]
+[Máscara]  [ID CLD-002999 | grupo 002929 | orden 318]
   ES: ¡Por eso vuelvo!
   EN: That's why I come back!
   ATRIBUCION: continuidad_corta_probable
@@ -15656,33 +15656,33 @@ ESCENA: demo1210_00.dsf | script_id: 121000 | bloque: 1048
   EN: I only came to see... that.
   ATRIBUCION: continuidad_corta_probable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003082 | original: Mask
-[Mascarilla]  [ID CLD-003083 | grupo 003011 | orden 116]
+[Máscara]  [ID CLD-003083 | grupo 003011 | orden 116]
   ES: ¡Hagamos más amigos!
   EN: Let's make more friends!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003084 | original: Mask
-[Mascarilla]  [ID CLD-003085 | grupo 003013 | orden 124]
+[Máscara]  [ID CLD-003085 | grupo 003013 | orden 124]
   ES: ¡Todos somos amigos!
   EN: Everyone's a friend!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-003086 | grupo 003014 | orden 125]
+[Máscara]  [ID CLD-003086 | grupo 003014 | orden 125]
   ES: ¡Hagamos 100 amigos!
   EN: Let's make 100 friends!
   ATRIBUCION: continuidad_corta_probable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003087 | original: Mask
-[Mascarilla]  [ID CLD-003088 | grupo 003016 | orden 133]
+[Máscara]  [ID CLD-003088 | grupo 003016 | orden 133]
   ES: ¡Je, je! ¡Muchos amigos!
   EN: Hee, hee! Lots of friends!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-003089 | grupo 003017 | orden 134]
+[Máscara]  [ID CLD-003089 | grupo 003017 | orden 134]
   ES: ¡Diversión! ¡Diversión!
   EN: Fun! Fun!
   ATRIBUCION: continuidad_corta_probable
@@ -15758,9 +15758,9 @@ ESCENA: demo1210_00.dsf | script_id: 121000 | bloque: 1048
   EN: I'm compassionate.
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003106 | original: Mask
-[Mascarilla]  [ID CLD-003107 | grupo 003035 | orden 205]
+[Máscara]  [ID CLD-003107 | grupo 003035 | orden 205]
   ES: ¡Amigo! ¡Amigo! ¡Amigo!
   EN: Friend! Friend! Friend!
   ATRIBUCION: primer_mensaje_tras_nombre
@@ -15782,19 +15782,19 @@ ESCENA: demo1210_00.dsf | script_id: 121000 | bloque: 1048
   EN: more power then.)
   ATRIBUCION: continuidad_corta_probable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003112 | original: Mask
-[Mascarilla]  [ID CLD-003113 | grupo 003041 | orden 222]
+[Máscara]  [ID CLD-003113 | grupo 003041 | orden 222]
   ES: ¿Qué vas a?
   EN: What are you?
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-003114 | grupo 003042 | orden 223]
+[Máscara]  [ID CLD-003114 | grupo 003042 | orden 223]
   ES: No eres humano.
   EN: You're not human.
   ATRIBUCION: continuidad_corta_probable
 
-[Mascarilla]  [ID CLD-003115 | grupo 003043 | orden 224]
+[Máscara]  [ID CLD-003115 | grupo 003043 | orden 224]
   ES: ¿Un amigo?
   EN: A friend?
   ATRIBUCION: continuidad_corta_probable
@@ -15816,31 +15816,31 @@ ESCENA: demo1210_00.dsf | script_id: 121000 | bloque: 1048
   EN: You'll get lots of humans to come.
   ATRIBUCION: continuidad_corta_probable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003120 | original: Mask
-[Mascarilla]  [ID CLD-003121 | grupo 003049 | orden 238]
+[Máscara]  [ID CLD-003121 | grupo 003049 | orden 238]
   ES: ¿Humanos? ¿Muchos?
   EN: Humans? Lots?
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-003122 | grupo 003050 | orden 239]
+[Máscara]  [ID CLD-003122 | grupo 003050 | orden 239]
   ES: ¿Fiesta? ¿Círculo de amigos?
   EN: Party?! Circle of friends?!
   ATRIBUCION: continuidad_corta_probable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003123 | original: Mask
-[Mascarilla]  [ID CLD-003124 | grupo 003052 | orden 245]
+[Máscara]  [ID CLD-003124 | grupo 003052 | orden 245]
   ES: ¡Je, je, je, je, je, je, je!
   EN: Hee, hee, hee, hee, hee, hee, hee!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-003125 | grupo 003053 | orden 246]
+[Máscara]  [ID CLD-003125 | grupo 003053 | orden 246]
   ES: ¡Todos! ¡Felices!
   EN: Everyone! Happy!
   ATRIBUCION: continuidad_corta_probable
 
-[Mascarilla]  [ID CLD-003126 | grupo 003054 | orden 247]
+[Máscara]  [ID CLD-003126 | grupo 003054 | orden 247]
   ES: ¡Amplía tu círculo de amigos!
   EN: Expand the circle of friends!
   ATRIBUCION: continuidad_corta_probable
@@ -15942,7 +15942,7 @@ ESCENA: demo1210_01.dsf | script_id: 121004 | bloque: 1053
 ESCENA: demo1210_01.dsf | script_id: 121005 | bloque: 1054
 =====================================================================================
 [HABLANTE NO VERIFICADO]  [ID CLD-003144 | grupo 003070 | orden 5]
-  ES: El domingo siempre ha sido mi rival,
+  ES: Sunday siempre ha sido mi rival,
   EN: Sunday has always been my rival,
   ATRIBUCION: sin_hablante_verificable
 
@@ -16081,14 +16081,14 @@ ESCENA: demo1210_02.dsf | script_id: 321051 | bloque: 1061
 =====================================================================================
 ESCENA: demo1301_00.dsf | script_id: 130100 | bloque: 1067
 =====================================================================================
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003168 | original: Mask
-[Mascarilla]  [ID CLD-003169 | grupo 003095 | orden 43]
+[Máscara]  [ID CLD-003169 | grupo 003095 | orden 43]
   ES: ¡Je, je, je...!
   EN: Heh, heh, heh...!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-003170 | grupo 003096 | orden 44]
+[Máscara]  [ID CLD-003170 | grupo 003096 | orden 44]
   ES: ¿Cuándo es la fiesta?
   EN: When's the party?
   ATRIBUCION: continuidad_corta_probable
@@ -16098,21 +16098,21 @@ ESCENA: demo1301_00.dsf | script_id: 130100 | bloque: 1067
   EN: Hm?
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003172 | original: Mask
-[Mascarilla]  [ID CLD-003173 | grupo 003099 | orden 59]
+[Máscara]  [ID CLD-003173 | grupo 003099 | orden 59]
   ES: ¡Haré felices a todos!
   EN: I'll make everyone happy!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003174 | original: Mask
-[Mascarilla]  [ID CLD-003175 | grupo 003101 | orden 72]
+[Máscara]  [ID CLD-003175 | grupo 003101 | orden 72]
   ES: Te pondré en mi
   EN: I'll put you into my
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-003176 | grupo 003102 | orden 73]
+[Máscara]  [ID CLD-003176 | grupo 003102 | orden 73]
   ES: ¡círculo de los amigos!
   EN: circle of friends!
   ATRIBUCION: continuidad_corta_probable
@@ -16123,7 +16123,7 @@ ESCENA: demo1301_00.dsf | script_id: 130100 | bloque: 1067
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-003178 | grupo 003104 | orden 107]
-  ES: ¿Sorbete?
+  ES: ¿Sherbet?
   EN: Sherbet?
   ATRIBUCION: sin_hablante_verificable
 
@@ -16138,7 +16138,7 @@ ESCENA: demo1301_00.dsf | script_id: 130100 | bloque: 1067
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-003181 | grupo 003107 | orden 126]
-  ES: ¡Esperar!
+  ES: ¡Espera!
   EN: Wait!
   ATRIBUCION: sin_hablante_verificable
 
@@ -16377,7 +16377,7 @@ ESCENA: demo1301_00.dsf | script_id: 130100 | bloque: 1067
   ATRIBUCION: primer_mensaje_tras_nombre
 
 [Crosstine]  [ID CLD-003230 | grupo 003156 | orden 345]
-  ES: Sorbete. Tú también vienes, ¿verdad?
+  ES: Sherbet, tú también vienes, ¿verdad?
   EN: Sherbet. You're coming, too, right?
   ATRIBUCION: continuidad_corta_probable
 
@@ -16635,7 +16635,7 @@ ESCENA: demo1302_00.dsf | script_id: 130200 | bloque: 1081
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-003275 | grupo 003199 | orden 47]
-  ES: El domingo sin duda es tu rival.
+  ES: Sunday sin duda es tu rival.
   EN: Sunday sure is your rival.
   ATRIBUCION: sin_hablante_verificable
 
@@ -16760,7 +16760,7 @@ ESCENA: demo1302_00.dsf | script_id: 130200 | bloque: 1081
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-003300 | grupo 003224 | orden 159]
-  ES: El sorbete es realmente útil.
+  ES: Sherbet es de mucha ayuda.
   EN: Sherbet is really helpful.
   ATRIBUCION: sin_hablante_verificable
 
@@ -17098,7 +17098,7 @@ ESCENA: demo1303_00.dsf | script_id: 130300 | bloque: 1095
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-003361 | grupo 003283 | orden 47]
-  ES: ¡Domingo!
+  ES: ¡Sunday!
   EN: Sunday!
   ATRIBUCION: sin_hablante_verificable
 
@@ -17202,19 +17202,19 @@ ESCENA: demo1303_00.dsf | script_id: 130300 | bloque: 1095
   EN: to get it through her head?!))
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003382 | original: Mask
-[Mascarilla]  [ID CLD-003383 | grupo 003305 | orden 156]
+[Máscara]  [ID CLD-003383 | grupo 003305 | orden 156]
   ES: ¡Je, je, je!
   EN: Hee, hee, hee!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-003384 | grupo 003306 | orden 157]
+[Máscara]  [ID CLD-003384 | grupo 003306 | orden 157]
   ES: ¡Rechazado!
   EN: Rejected!
   ATRIBUCION: continuidad_corta_probable
 
-[Mascarilla]  [ID CLD-003385 | grupo 003307 | orden 158]
+[Máscara]  [ID CLD-003385 | grupo 003307 | orden 158]
   ES: ¡Ahora necesitas un círculo de amigos!
   EN: Now you need a circle of friends!
   ATRIBUCION: continuidad_corta_probable
@@ -17230,7 +17230,7 @@ ESCENA: demo1303_00.dsf | script_id: 130300 | bloque: 1095
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-003388 | grupo 003310 | orden 172]
-  ES: ¡Eres un asco, domingo!
+  ES: ¡Eres un asco, Sunday!
   EN: You suck, Sunday!
   ATRIBUCION: sin_hablante_verificable
 
@@ -17493,7 +17493,7 @@ ESCENA: demo1304_00.dsf | script_id: 130400 | bloque: 1109
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-003434 | grupo 003354 | orden 75]
-  ES: ¡Hola! ¡Domingo!
+  ES: ¡Eh, Sunday!
   EN: Hey! Sunday!
   ATRIBUCION: sin_hablante_verificable
 
@@ -17736,7 +17736,7 @@ ESCENA: demo1304_00.dsf | script_id: 130400 | bloque: 1109
 [NOMBRE DE PANTALLA 0x6E] Crosstine  
   id=CLD-003484 | original: Crosstine
 [Crosstine]  [ID CLD-003485 | grupo 003405 | orden 427]
-  ES: Domingo.
+  ES: Sunday.
   EN: Sunday.
   ATRIBUCION: primer_mensaje_tras_nombre
 
@@ -17793,7 +17793,7 @@ ESCENA: demo1304_00.dsf | script_id: 130400 | bloque: 1109
   ATRIBUCION: continuidad_corta_probable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-003497 | grupo 003417 | orden 468]
-  ES: ¡Oh, sí! ¡Domingo!
+  ES: ¡Oh, sí! ¡Sunday!
   EN: Oh, yes! Sunday!
   ATRIBUCION: sin_hablante_verificable
 
@@ -17802,26 +17802,26 @@ ESCENA: demo1304_00.dsf | script_id: 130400 | bloque: 1109
   EN: Welcome to my world!
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003499 | original: Mask
-[Mascarilla]  [ID CLD-003500 | grupo 003420 | orden 485]
+[Máscara]  [ID CLD-003500 | grupo 003420 | orden 485]
   ES: ¡Ey!
   EN: Hey!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-003501 | grupo 003421 | orden 486]
+[Máscara]  [ID CLD-003501 | grupo 003421 | orden 486]
   ES: ¡No me dejes fuera de la conversación!
   EN: Don't leave me out of the loop!
   ATRIBUCION: continuidad_corta_probable
 
-[Mascarilla]  [ID CLD-003502 | grupo 003422 | orden 487]
+[Máscara]  [ID CLD-003502 | grupo 003422 | orden 487]
   ES: ¡No puedes quedarte con toda la diversión para ti solo!
   EN: You can't keep all the fun to yourself!
   ATRIBUCION: continuidad_corta_probable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003503 | original: Mask
-[Mascarilla]  [ID CLD-003504 | grupo 003424 | orden 505]
+[Máscara]  [ID CLD-003504 | grupo 003424 | orden 505]
   ES: ¡Quiero unirme a ese círculo de amigos!
   EN: I want to join in that circle of friends!
   ATRIBUCION: primer_mensaje_tras_nombre
@@ -18170,12 +18170,12 @@ ESCENA: demo1305_00.dsf | script_id: 130500 | bloque: 1123
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-003567 | grupo 003485 | orden 185]
-  ES: ¡Desde que vi a Sunday así,
+  ES: Desde que vi a Sunday así,
   EN: I can't wait for the party to start
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-003568 | grupo 003486 | orden 186]
-  ES: no puedo esperar a que empiece la fiesta!
+  ES: ¡no veo la hora de que empiece la fiesta!
   EN: ever since I saw Sunday like that!
   ATRIBUCION: sin_hablante_verificable
 
@@ -18197,7 +18197,7 @@ ESCENA: demo1305_00.dsf | script_id: 130500 | bloque: 1123
 [NOMBRE DE PANTALLA 0x6E] Souma y Pudding  
   id=CLD-003572 | original: Souma & Pudding
 [Souma y Pudding]  [ID CLD-003573 | grupo 003491 | orden 224]
-  ES: ¡¿Palma de coco?!
+  ES: ¡¿Coco?!
   EN: Coco?!
   ATRIBUCION: primer_mensaje_tras_nombre
 
@@ -18261,31 +18261,31 @@ ESCENA: demo1305_00.dsf | script_id: 130500 | bloque: 1123
   EN: Is this what the dream was telling me about?
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003586 | original: Mask
-[Mascarilla]  [ID CLD-003587 | grupo 003505 | orden 301]
+[Máscara]  [ID CLD-003587 | grupo 003505 | orden 301]
   ES: ¡Je, je, je!
   EN: Heh, heh, heh!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-003588 | grupo 003506 | orden 302]
+[Máscara]  [ID CLD-003588 | grupo 003506 | orden 302]
   ES: ¡Me alegro de que te hayas curado!
   EN: Glad you got cured!
   ATRIBUCION: continuidad_corta_probable
 
-[Mascarilla]  [ID CLD-003589 | grupo 003507 | orden 303]
+[Máscara]  [ID CLD-003589 | grupo 003507 | orden 303]
   ES: ¿No te alegras de haber venido?
   EN: Aren't you glad you came here?!
   ATRIBUCION: continuidad_corta_probable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003590 | original: Mask
-[Mascarilla]  [ID CLD-003591 | grupo 003509 | orden 322]
+[Máscara]  [ID CLD-003591 | grupo 003509 | orden 322]
   ES: ¡Ahora vamos a formar un círculo de amigos!
   EN: Now let's make a circle of friends!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-003592 | grupo 003510 | orden 323]
+[Máscara]  [ID CLD-003592 | grupo 003510 | orden 323]
   ES: ¡Solo para nosotros!
   EN: Just for us!
   ATRIBUCION: continuidad_corta_probable
@@ -18579,7 +18579,7 @@ ESCENA: demo1305_01.dsf | script_id: 130512 | bloque: 1135
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-003646 | grupo 003562 | orden 10]
-  ES: No es causado por esa mascarilla.
+  ES: No es causado por esa máscara.
   EN: isn't caused by that mask.
   ATRIBUCION: sin_hablante_verificable
 
@@ -18930,21 +18930,21 @@ ESCENA: demo1306_00.dsf | script_id: 130600 | bloque: 1137
   EN: The heavens have blessed me!
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003718 | original: Mask
-[Mascarilla]  [ID CLD-003719 | grupo 003635 | orden 392]
+[Máscara]  [ID CLD-003719 | grupo 003635 | orden 392]
   ES: ¡Cielos, mi trasero!
   EN: Heavens, my butt!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003720 | original: Mask
-[Mascarilla]  [ID CLD-003721 | grupo 003637 | orden 406]
+[Máscara]  [ID CLD-003721 | grupo 003637 | orden 406]
   ES: ¡Me dejaron al margen otra vez
   EN: You guys left me out of the loop again
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-003722 | grupo 003638 | orden 407]
+[Máscara]  [ID CLD-003722 | grupo 003638 | orden 407]
   ES: y se divirtieron sin mí!
   EN: and had so much fun!
   ATRIBUCION: continuidad_corta_probable
@@ -18979,19 +18979,19 @@ ESCENA: demo1306_00.dsf | script_id: 130600 | bloque: 1137
   EN: H-Hey! Despina!
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003729 | original: Mask
-[Mascarilla]  [ID CLD-003730 | grupo 003646 | orden 437]
+[Máscara]  [ID CLD-003730 | grupo 003646 | orden 437]
   ES: Jejeje.
   EN: Hehehe.
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-003731 | grupo 003647 | orden 438]
+[Máscara]  [ID CLD-003731 | grupo 003647 | orden 438]
   ES: Siempre la he observado. Sé que siempre está sola.
   EN: I've always watched her. I know she's always alone.
   ATRIBUCION: continuidad_corta_probable
 
-[Mascarilla]  [ID CLD-003732 | grupo 003648 | orden 439]
+[Máscara]  [ID CLD-003732 | grupo 003648 | orden 439]
   ES: Sé que puedo crear un círculo de amigos con ella.
   EN: I know I can create a circle of friends with her.
   ATRIBUCION: continuidad_corta_probable
@@ -19067,9 +19067,9 @@ ESCENA: demo1306_00.dsf | script_id: 130600 | bloque: 1137
   EN: Gah! I hate this! I hate this! I hate this!
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003749 | original: Mask
-[Mascarilla]  [ID CLD-003750 | grupo 003666 | orden 516]
+[Máscara]  [ID CLD-003750 | grupo 003666 | orden 516]
   ES: ¡No me rendiré!
   EN: I won't give up!
   ATRIBUCION: primer_mensaje_tras_nombre
@@ -19357,30 +19357,30 @@ ESCENA: demo1307_00.dsf | script_id: 130700 | bloque: 1169
   EN: Hmph. It's that stray again.
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003801 | original: Mask
-[Mascarilla]  [ID CLD-003802 | grupo 003716 | orden 166]
+[Máscara]  [ID CLD-003802 | grupo 003716 | orden 166]
   ES: ¡Te encontré!
   EN: I found you!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003803 | original: Mask
-[Mascarilla]  [ID CLD-003804 | grupo 003718 | orden 181]
+[Máscara]  [ID CLD-003804 | grupo 003718 | orden 181]
   ES: ¡Je, je, je!
   EN: Hee, hee, hee!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003805 | original: Mask
-[Mascarilla]  [ID CLD-003806 | grupo 003720 | orden 197]
+[Máscara]  [ID CLD-003806 | grupo 003720 | orden 197]
   ES: ¡Seamos amigos!
   EN: Let's be friends!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003807 | original: Mask
-[Mascarilla]  [ID CLD-003808 | grupo 003722 | orden 213]
+[Máscara]  [ID CLD-003808 | grupo 003722 | orden 213]
   ES: ¡Y haz un círculo de amigos!
   EN: And make a circle of friends!
   ATRIBUCION: primer_mensaje_tras_nombre
@@ -19390,26 +19390,26 @@ ESCENA: demo1307_00.dsf | script_id: 130700 | bloque: 1169
   EN: What is that thing?!
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003810 | original: Mask
-[Mascarilla]  [ID CLD-003811 | grupo 003725 | orden 276]
+[Máscara]  [ID CLD-003811 | grupo 003725 | orden 276]
   ES: ¡Vamos!
   EN: Let's go!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-003812 | original: Mask
-[Mascarilla]  [ID CLD-003813 | grupo 003727 | orden 435]
+[Máscara]  [ID CLD-003813 | grupo 003727 | orden 435]
   ES: ¡Vamos! ¡Vamos!
   EN: Come on! Come on!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-003814 | grupo 003728 | orden 436]
+[Máscara]  [ID CLD-003814 | grupo 003728 | orden 436]
   ES: ¡Ustedes se odiaban, ¿verdad?!
   EN: You guys hated each other, didn't you?!
   ATRIBUCION: continuidad_corta_probable
 
-[Mascarilla]  [ID CLD-003815 | grupo 003729 | orden 437]
+[Máscara]  [ID CLD-003815 | grupo 003729 | orden 437]
   ES: ¿Por qué la estás protegiendo?
   EN: Why are you protecting her?!
   ATRIBUCION: continuidad_corta_probable
@@ -20548,7 +20548,7 @@ ESCENA: demo1501_01.dsf | script_id: 150111 | bloque: 1200
 ESCENA: demo1501_01.dsf | script_id: 150112 | bloque: 1201
 =====================================================================================
 [HABLANTE NO VERIFICADO]  [ID CLD-004040 | grupo 003950 | orden 9]
-  ES: ¿Abajo?
+  ES: ¿Asagi?
   EN: Asagi?
   ATRIBUCION: sin_hablante_verificable
 
@@ -20872,14 +20872,14 @@ ESCENA: demo1502_01.dsf | script_id: 150207 | bloque: 1211
 =====================================================================================
 ESCENA: demo1502_01.dsf | script_id: 150208 | bloque: 1212
 =====================================================================================
-[NOMBRE DE PANTALLA 0x6E] "Más bajo"  
+[NOMBRE DE PANTALLA 0x6E] Asagi  
   id=CLD-004103 | original: Asagi”
-["Más bajo"]  [ID CLD-004104 | grupo 004011 | orden 6]
+[Asagi]  [ID CLD-004104 | grupo 004011 | orden 6]
   ES: Tengo que competir con todos los que están aquí.
   EN: I have to compete with everyone here.
   ATRIBUCION: primer_mensaje_tras_nombre_probable
 
-["Más bajo"]  [ID CLD-004105 | grupo 004012 | orden 7]
+[Asagi]  [ID CLD-004105 | grupo 004012 | orden 7]
   ES: ¡Solo hay espacio para un personaje principal!
   EN: There's only room for one main character!
   ATRIBUCION: continuidad_corta_probable
@@ -21217,7 +21217,7 @@ ESCENA: demo1503_00.dsf | script_id: 150300 | bloque: 1218
 [NOMBRE DE PANTALLA 0x6E] Asagi  
   id=CLD-004175 | original: Asagi
 [Asagi]  [ID CLD-004176 | grupo 004082 | orden 381]
-  ES: ¡Esperar!
+  ES: ¡Espera!
   EN: Wait!
   ATRIBUCION: primer_mensaje_tras_nombre
 
@@ -21249,7 +21249,7 @@ ESCENA: demo1503_00.dsf | script_id: 150300 | bloque: 1218
   ATRIBUCION: primer_mensaje_tras_nombre
 
 [Asagi]  [ID CLD-004183 | grupo 004089 | orden 458]
-  ES: ¡Esperar!
+  ES: ¡Espera!
   EN: Wait!
   ATRIBUCION: continuidad_corta_probable
 
@@ -22588,14 +22588,14 @@ ESCENA: end00_puding.dsf | script_id: 140151 | bloque: 1389
   EN: You're the mask!
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-004430 | original: Mask
-[Mascarilla]  [ID CLD-004431 | grupo 004334 | orden 86]
+[Máscara]  [ID CLD-004431 | grupo 004334 | orden 86]
   ES: ¡Je, je, je! ¡Me descubriste!
   EN: Heh, heh, heh! You found me out!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-004432 | grupo 004335 | orden 87]
+[Máscara]  [ID CLD-004432 | grupo 004335 | orden 87]
   ES: ¡Ya no te quiero!
   EN: I don't want you anymore!
   ATRIBUCION: continuidad_corta_probable
@@ -22802,14 +22802,14 @@ ESCENA: end01_koko.dsf | script_id: 140251 | bloque: 1395
   EN: The heavens have blessed me!
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-004471 | original: Mask
-[Mascarilla]  [ID CLD-004472 | grupo 004375 | orden 38]
+[Máscara]  [ID CLD-004472 | grupo 004375 | orden 38]
   ES: La desgracia es pecado.
   EN: Misfortune is sin.
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-004473 | grupo 004376 | orden 39]
+[Máscara]  [ID CLD-004473 | grupo 004376 | orden 39]
   ES: La desgracia tiene sabor a miel.
   EN: Misfortune is the taste of honey.
   ATRIBUCION: continuidad_corta_probable
@@ -22819,19 +22819,19 @@ ESCENA: end01_koko.dsf | script_id: 140251 | bloque: 1395
   EN: Oh, so it's delicious?
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-004475 | original: Mask
-[Mascarilla]  [ID CLD-004476 | grupo 004379 | orden 64]
+[Máscara]  [ID CLD-004476 | grupo 004379 | orden 64]
   ES: Los cielos no te bendecirán.
   EN: The heavens will not bless you.
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-004477 | grupo 004380 | orden 65]
+[Máscara]  [ID CLD-004477 | grupo 004380 | orden 65]
   ES: ¡Porque vas a morir aquí!
   EN: Because you're going to die here!
   ATRIBUCION: continuidad_corta_probable
 
-[Mascarilla]  [ID CLD-004478 | grupo 004381 | orden 66]
+[Máscara]  [ID CLD-004478 | grupo 004381 | orden 66]
   ES: ¡Je, je, je, je!
   EN: Hee, hee, hee, hee!
   ATRIBUCION: continuidad_corta_probable
@@ -22955,14 +22955,14 @@ ESCENA: end01_koko.dsf | script_id: 145201 | bloque: 1397
 =====================================================================================
 ESCENA: end02_despina.dsf | script_id: 140301 | bloque: 1399
 =====================================================================================
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-004503 | original: Mask
-[Mascarilla]  [ID CLD-004504 | grupo 004407 | orden 35]
+[Máscara]  [ID CLD-004504 | grupo 004407 | orden 35]
   ES: Huiste y me abandonaste.
   EN: You ran and have forsaken me.
   ATRIBUCION: primer_mensaje_tras_nombre_probable
 
-[Mascarilla]  [ID CLD-004505 | grupo 004408 | orden 36]
+[Máscara]  [ID CLD-004505 | grupo 004408 | orden 36]
   ES: Sin embargo, ¿cómo eres tan fuerte?
   EN: Yet, how are you so strong?
   ATRIBUCION: continuidad_corta_probable
@@ -23002,24 +23002,24 @@ ESCENA: end02_despina.dsf | script_id: 140301 | bloque: 1399
   EN: We're just made differently.
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-004513 | original: Mask
-[Mascarilla]  [ID CLD-004514 | grupo 004417 | orden 94]
+[Máscara]  [ID CLD-004514 | grupo 004417 | orden 94]
   ES: Ya veo... El círculo de amigos...
   EN: I see... The circle of friends...
   ATRIBUCION: primer_mensaje_tras_nombre_probable
 
-[Mascarilla]  [ID CLD-004515 | grupo 004418 | orden 95]
+[Máscara]  [ID CLD-004515 | grupo 004418 | orden 95]
   ES: Ojalá tuviera eso...
   EN: I wish I had that...
   ATRIBUCION: continuidad_corta_probable
 
-[Mascarilla]  [ID CLD-004516 | grupo 004419 | orden 97]
+[Máscara]  [ID CLD-004516 | grupo 004419 | orden 97]
   ES: Ya veo... Simplemente somos diferentes...
   EN: I see... We're just different...
   ATRIBUCION: continuidad_corta_probable
 
-[Mascarilla]  [ID CLD-004517 | grupo 004420 | orden 98]
+[Máscara]  [ID CLD-004517 | grupo 004420 | orden 98]
   ES: Oler...
   EN: Sniff...
   ATRIBUCION: continuidad_corta_probable
@@ -23472,9 +23472,9 @@ ESCENA: end02_despina.dsf | script_id: 140351 | bloque: 1401
   EN: You always think you're so high and mighty.
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[NOMBRE DE PANTALLA 0x6E] ¿Palma de coco?  
+[NOMBRE DE PANTALLA 0x6E] ¿Coco?  
   id=CLD-004614 | original: Coco?
-[¿Palma de coco?]  [ID CLD-004615 | grupo 004518 | orden 86]
+[¿Coco?]  [ID CLD-004615 | grupo 004518 | orden 86]
   ES: Estoy harto de hacer negocios aquí.
   EN: I'm sick of doing business here.
   ATRIBUCION: primer_mensaje_tras_nombre
@@ -23486,16 +23486,16 @@ ESCENA: end02_despina.dsf | script_id: 140351 | bloque: 1401
   EN: I got nothing for you to drink. Get out of here.
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[NOMBRE DE PANTALLA 0x6E] ¿Chelín?  
+[NOMBRE DE PANTALLA 0x6E] ¿Bob?  
   id=CLD-004618 | original: Bob?
-[¿Chelín?]  [ID CLD-004619 | grupo 004522 | orden 110]
+[¿Bob?]  [ID CLD-004619 | grupo 004522 | orden 110]
   ES: ¡Estás tan LOCO!
   EN: You so CRAZY!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[NOMBRE DE PANTALLA 0x6E] ¿Domingo?  
+[NOMBRE DE PANTALLA 0x6E] ¿Sunday?  
   id=CLD-004620 | original: Sunday?
-[¿Domingo?]  [ID CLD-004621 | grupo 004524 | orden 122]
+[¿Sunday?]  [ID CLD-004621 | grupo 004524 | orden 122]
   ES: No te acerques a mí nunca más.
   EN: Don't you ever come near me again.
   ATRIBUCION: primer_mensaje_tras_nombre
@@ -23547,19 +23547,19 @@ ESCENA: end02_despina.dsf | script_id: 140351 | bloque: 1401
   EN: Die!
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-004632 | original: Mask
-[Mascarilla]  [ID CLD-004633 | grupo 004536 | orden 189]
+[Máscara]  [ID CLD-004633 | grupo 004536 | orden 189]
   ES: Je, je, je.
   EN: Hee, hee, hee.
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-004634 | grupo 004537 | orden 190]
+[Máscara]  [ID CLD-004634 | grupo 004537 | orden 190]
   ES: ¡En ese caso, te haré sufrir muchísimo!
   EN: In that case, I'll put you in a world of hurt!
   ATRIBUCION: continuidad_corta_probable
 
-[Mascarilla]  [ID CLD-004635 | grupo 004538 | orden 191]
+[Máscara]  [ID CLD-004635 | grupo 004538 | orden 191]
   ES: ¡No eres mi amigo!
   EN: You're not my friend!
   ATRIBUCION: continuidad_corta_probable
@@ -23761,9 +23761,9 @@ ESCENA: end03_souma.dsf | script_id: 140451 | bloque: 1407
   EN: Hey, there's the mask.
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-004673 | original: Mask
-[Mascarilla]  [ID CLD-004674 | grupo 004577 | orden 41]
+[Máscara]  [ID CLD-004674 | grupo 004577 | orden 41]
   ES: No deberías haber venido aquí.
   EN: You shouldn't have come here.
   ATRIBUCION: primer_mensaje_tras_nombre
@@ -23773,14 +23773,14 @@ ESCENA: end03_souma.dsf | script_id: 140451 | bloque: 1407
   EN: Wh-What?
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-004676 | original: Mask
-[Mascarilla]  [ID CLD-004677 | grupo 004580 | orden 68]
+[Máscara]  [ID CLD-004677 | grupo 004580 | orden 68]
   ES: Debería haberla encerrado.
   EN: I should have locked her up.
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-004678 | grupo 004581 | orden 69]
+[Máscara]  [ID CLD-004678 | grupo 004581 | orden 69]
   ES: Y entonces ella sería mía.
   EN: And then she would be mine.
   ATRIBUCION: continuidad_corta_probable
@@ -23795,14 +23795,14 @@ ESCENA: end03_souma.dsf | script_id: 140451 | bloque: 1407
   EN: All I care about is her happiness!
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-004681 | original: Mask
-[Mascarilla]  [ID CLD-004682 | grupo 004585 | orden 97]
+[Máscara]  [ID CLD-004682 | grupo 004585 | orden 97]
   ES: ¡Je, je, je!
   EN: Hee, hee, hee!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-004683 | grupo 004586 | orden 98]
+[Máscara]  [ID CLD-004683 | grupo 004586 | orden 98]
   ES: ¡No te mientas a ti mismo!
   EN: Don't lie to yourself!
   ATRIBUCION: continuidad_corta_probable
@@ -24016,7 +24016,7 @@ ESCENA: end04_syabet.dsf | script_id: 140501 | bloque: 1411
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-004724 | grupo 004627 | orden 167]
-  ES: Sorbete.
+  ES: Sherbet.
   EN: Sherbet.
   ATRIBUCION: sin_hablante_verificable
 
@@ -24057,7 +24057,7 @@ ESCENA: end04_syabet.dsf | script_id: 140551 | bloque: 1413
 [NOMBRE DE PANTALLA 0x6E] ¿Princesa?  
   id=CLD-004731 | original: Princess?
 [¿Princesa?]  [ID CLD-004732 | grupo 004635 | orden 46]
-  ES: Sorbete. Eres completamente inútil.
+  ES: Sherbet. Eres completamente inútil.
   EN: Sherbet. You are utterly useless.
   ATRIBUCION: primer_mensaje_tras_nombre
 
@@ -24194,7 +24194,7 @@ ESCENA: end07_bbrow.dsf | script_id: 140801 | bloque: 1425
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-004759 | grupo 004662 | orden 92]
-  ES: ¡Domingo!
+  ES: ¡Sunday!
   EN: Sunday!
   ATRIBUCION: sin_hablante_verificable
 
@@ -24394,14 +24394,14 @@ ESCENA: end07_bbrow.dsf | script_id: 140851 | bloque: 1427
   EN: You tricked me!
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-004799 | original: Mask
-[Mascarilla]  [ID CLD-004800 | grupo 004703 | orden 122]
+[Máscara]  [ID CLD-004800 | grupo 004703 | orden 122]
   ES: Permitiéndote aferrarte al escudo definitivo
   EN: Letting you hold onto the ultimate shield
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-004801 | grupo 004704 | orden 123]
+[Máscara]  [ID CLD-004801 | grupo 004704 | orden 123]
   ES: ¡Sería un completo desperdicio!
   EN: would be a complete waste!
   ATRIBUCION: continuidad_corta_probable
@@ -24557,7 +24557,7 @@ ESCENA: end09_dodohige.dsf | script_id: 141001 | bloque: 1435
 [NOMBRE DE PANTALLA 0x6E] Princesa Dot  
   id=CLD-004834 | original: Princess Dot
 [Princesa Dot]  [ID CLD-004835 | grupo 004737 | orden 88]
-  ES: Sorbete.
+  ES: Sherbet.
   EN: Sherbet.
   ATRIBUCION: primer_mensaje_tras_nombre
 
@@ -24668,19 +24668,19 @@ ESCENA: end09_dodohige.dsf | script_id: 141001 | bloque: 1435
 =====================================================================================
 ESCENA: end09_dodohige.dsf | script_id: 141051 | bloque: 1437
 =====================================================================================
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-004859 | original: Mask
-[Mascarilla]  [ID CLD-004860 | grupo 004762 | orden 30]
+[Máscara]  [ID CLD-004860 | grupo 004762 | orden 30]
   ES: Lo sé.
   EN: I know.
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-004861 | grupo 004763 | orden 31]
+[Máscara]  [ID CLD-004861 | grupo 004763 | orden 31]
   ES: En realidad eres una princesa.
   EN: You're actually a princess.
   ATRIBUCION: continuidad_corta_probable
 
-[Mascarilla]  [ID CLD-004862 | grupo 004764 | orden 32]
+[Máscara]  [ID CLD-004862 | grupo 004764 | orden 32]
   ES: ¿Por qué viniste a pelear?
   EN: Why did you come fight?
   ATRIBUCION: continuidad_corta_probable
@@ -24705,19 +24705,19 @@ ESCENA: end09_dodohige.dsf | script_id: 141051 | bloque: 1437
   EN: the form of deceit placed upon me.
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-004867 | original: Mask
-[Mascarilla]  [ID CLD-004868 | grupo 004770 | orden 61]
+[Máscara]  [ID CLD-004868 | grupo 004770 | orden 61]
   ES: Jejeje. Déjame decirte algo. Eres solo un
   EN: Hehehe. Let me tell you something. You're just a
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-004869 | grupo 004771 | orden 62]
+[Máscara]  [ID CLD-004869 | grupo 004771 | orden 62]
   ES: Princesa inútil que no puede hacer nada por sí misma.
   EN: useless princess who can't do anything on her own.
   ATRIBUCION: continuidad_corta_probable
 
-[Mascarilla]  [ID CLD-004870 | grupo 004772 | orden 63]
+[Máscara]  [ID CLD-004870 | grupo 004772 | orden 63]
   ES: No hay manera de que puedas liderar un reino entero.
   EN: There's no way you can lead an entire kingdom.
   ATRIBUCION: continuidad_corta_probable
@@ -24732,14 +24732,14 @@ ESCENA: end09_dodohige.dsf | script_id: 141051 | bloque: 1437
   EN: You can't know that until I try.
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-004873 | original: Mask
-[Mascarilla]  [ID CLD-004874 | grupo 004776 | orden 89]
+[Máscara]  [ID CLD-004874 | grupo 004776 | orden 89]
   ES: ¡Jejejeje!
   EN: Hehehehe!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-004875 | grupo 004777 | orden 90]
+[Máscara]  [ID CLD-004875 | grupo 004777 | orden 90]
   ES: ¡Vas a morir antes de tener la oportunidad!
   EN: You're gonna die before you get the chance!
   ATRIBUCION: continuidad_corta_probable
@@ -24876,19 +24876,19 @@ ESCENA: end10_bobu.dsf | script_id: 141101 | bloque: 1441
 =====================================================================================
 ESCENA: end10_bobu.dsf | script_id: 141151 | bloque: 1443
 =====================================================================================
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-004900 | original: Mask
-[Mascarilla]  [ID CLD-004901 | grupo 004803 | orden 31]
+[Máscara]  [ID CLD-004901 | grupo 004803 | orden 31]
   ES: ¡Je, je, je, je!
   EN: Hee, hee, hee, hee!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-004902 | grupo 004804 | orden 32]
+[Máscara]  [ID CLD-004902 | grupo 004804 | orden 32]
   ES: Yo peludo.
   EN: Me hairy.
   ATRIBUCION: continuidad_corta_probable
 
-[Mascarilla]  [ID CLD-004903 | grupo 004805 | orden 33]
+[Máscara]  [ID CLD-004903 | grupo 004805 | orden 33]
   ES: Calvo.
   EN: You baldy.
   ATRIBUCION: continuidad_corta_probable
@@ -24903,14 +24903,14 @@ ESCENA: end10_bobu.dsf | script_id: 141151 | bloque: 1443
   EN: I'm very hairy! Y'know?!
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-004906 | original: Mask
-[Mascarilla]  [ID CLD-004907 | grupo 004809 | orden 59]
+[Máscara]  [ID CLD-004907 | grupo 004809 | orden 59]
   ES: ¡Entonces te dejaré calvo
   EN: Then I'll make you bald
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-004908 | grupo 004810 | orden 60]
+[Máscara]  [ID CLD-004908 | grupo 004810 | orden 60]
   ES: y te convertiré en un ermitaño!
   EN: and turn you into a shut-in!
   ATRIBUCION: continuidad_corta_probable
@@ -25116,7 +25116,7 @@ ESCENA: end11_sunday.dsf | script_id: 141201 | bloque: 1447
   ATRIBUCION: sin_hablante_verificable
 
 [HABLANTE NO VERIFICADO]  [ID CLD-004948 | grupo 004850 | orden 184]
-  ES: Pero te animaré el domingo...
+  ES: Pero te animaré Sunday...
   EN: But I'll cheer you on, Sunday...
   ATRIBUCION: sin_hablante_verificable
 
@@ -25129,9 +25129,9 @@ ESCENA: end11_sunday.dsf | script_id: 141201 | bloque: 1447
 =====================================================================================
 ESCENA: end11_sunday.dsf | script_id: 141251 | bloque: 1449
 =====================================================================================
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-004951 | original: Mask
-[Mascarilla]  [ID CLD-004952 | grupo 004853 | orden 30]
+[Máscara]  [ID CLD-004952 | grupo 004853 | orden 30]
   ES: Tengo la espada definitiva.
   EN: I have the ultimate sword.
   ATRIBUCION: primer_mensaje_tras_nombre
@@ -25141,14 +25141,14 @@ ESCENA: end11_sunday.dsf | script_id: 141251 | bloque: 1449
   EN: What?!
   ATRIBUCION: sin_hablante_verificable
 
-[NOMBRE DE PANTALLA 0x6E] Mascarilla  
+[NOMBRE DE PANTALLA 0x6E] Máscara  
   id=CLD-004954 | original: Mask
-[Mascarilla]  [ID CLD-004955 | grupo 004856 | orden 65]
+[Máscara]  [ID CLD-004955 | grupo 004856 | orden 65]
   ES: Es decir, no puedes ganar contra
   EN: That is, you cannot win against
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Mascarilla]  [ID CLD-004956 | grupo 004857 | orden 66]
+[Máscara]  [ID CLD-004956 | grupo 004857 | orden 66]
   ES: mi mirada. Perderás.
   EN: my gaze. You WILL lose.
   ATRIBUCION: continuidad_corta_probable
@@ -25275,26 +25275,26 @@ ESCENA: townMessage.dsf | script_id: 171 | bloque: 1456
   EN: Kill it! Kill it with fire!
   ATRIBUCION: opcion_del_jugador
 
-[NOMBRE DE PANTALLA 0x6E] Bragas  
+[NOMBRE DE PANTALLA 0x6E] Pumpky  
   id=CLD-004981 | original: Pumpky
-[Bragas]  [ID CLD-004982 | grupo 004881 | orden 17]
+[Pumpky]  [ID CLD-004982 | grupo 004881 | orden 17]
   ES: ¡Genial, ⑨!
   EN: Awesome, ⑨!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Bragas]  [ID CLD-004983 | grupo 004882 | orden 18]
+[Pumpky]  [ID CLD-004983 | grupo 004882 | orden 18]
   ES: Normalmente, la gente me pisaría, ¡pero tú no!
   EN: Normally, people would step on me, but you didn't!
   ATRIBUCION: continuidad_corta_probable
 
-[Bragas]  [ID CLD-004984 | grupo 004883 | orden 19]
+[Pumpky]  [ID CLD-004984 | grupo 004883 | orden 19]
   ES: ¡Eso es lo que te hace genial!
   EN: That's what makes you awesome!
   ATRIBUCION: continuidad_corta_probable
 
-[NOMBRE DE PANTALLA 0x6E] Bragas  
+[NOMBRE DE PANTALLA 0x6E] Pumpky  
   id=CLD-004985 | original: Pumpky
-[Bragas]  [ID CLD-004986 | grupo 004885 | orden 25]
+[Pumpky]  [ID CLD-004986 | grupo 004885 | orden 25]
   ES: ¡Ey!
   EN: Yeehaw!
   ATRIBUCION: primer_mensaje_tras_nombre
@@ -25330,9 +25330,9 @@ ESCENA: townMessage.dsf | script_id: 172 | bloque: 1457
   EN: Let's grow old together!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[NOMBRE DE PANTALLA 0x6E] Mangos  
+[NOMBRE DE PANTALLA 0x6E] Pumi  
   id=CLD-004995 | original: Pumi
-[Mangos]  [ID CLD-004996 | grupo 004893 | orden 21]
+[Pumi]  [ID CLD-004996 | grupo 004893 | orden 21]
   ES: ¡Contigo no!
   EN: Not with you!
   ATRIBUCION: primer_mensaje_tras_nombre
@@ -25344,9 +25344,9 @@ ESCENA: townMessage.dsf | script_id: 172 | bloque: 1457
   EN: Let's be together, even in the next life!
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[NOMBRE DE PANTALLA 0x6E] Mangos  
+[NOMBRE DE PANTALLA 0x6E] Pumi  
   id=CLD-004999 | original: Pumi
-[Mangos]  [ID CLD-005000 | grupo 004897 | orden 31]
+[Pumi]  [ID CLD-005000 | grupo 004897 | orden 31]
   ES: ¡Contigo no!
   EN: Not with you!
   ATRIBUCION: primer_mensaje_tras_nombre
@@ -26610,19 +26610,19 @@ ESCENA: rmap.dsf | script_id: 1001 | bloque: 1572
 =====================================================================================
 ESCENA: atkDefComment.dsf | script_id: 2000 | bloque: 1581
 =====================================================================================
-[NOMBRE DE PANTALLA 0x6E] Ese ermitaño  
+[NOMBRE DE PANTALLA 0x6E] Ermitaño Hiyo  
   id=CLD-005310 | original: Hiyo Hermit
-[Ese ermitaño]  [ID CLD-005311 | grupo 005121 | orden 4]
+[Ermitaño Hiyo]  [ID CLD-005311 | grupo 005121 | orden 4]
   ES: Soy el ermitaño de Hiyo.
   EN: I am the Hiyo Hermit.
   ATRIBUCION: primer_mensaje_tras_nombre
 
-[Ese ermitaño]  [ID CLD-005312 | grupo 005122 | orden 5]
+[Ermitaño Hiyo]  [ID CLD-005312 | grupo 005122 | orden 5]
   ES: Puedo predecir el futuro según tus estadísticas.
   EN: I can tell the fortune of your stats.
   ATRIBUCION: continuidad_corta_probable
 
-[Ese ermitaño]  [ID CLD-005313 | grupo 005123 | orden 6]
+[Ermitaño Hiyo]  [ID CLD-005313 | grupo 005123 | orden 6]
   ES: ¡Harrrgh!
   EN: Harrrrgh!
   ATRIBUCION: continuidad_corta_probable
@@ -26689,7 +26689,7 @@ ESCENA: atkDefComment.dsf | script_id: 2003 | bloque: 1584
 ESCENA: atkDefComment.dsf | script_id: 2004 | bloque: 1585
 =====================================================================================
 [HABLANTE NO VERIFICADO]  [ID CLD-005323 | grupo 005133 | orden 0]
-  ES: ¡Despertar!
+  ES: ¡Oh!
   EN: Oho!
   ATRIBUCION: sin_hablante_verificable
 
@@ -26967,7 +26967,7 @@ ESCENA: atkDefComment.dsf | script_id: 2103 | bloque: 1601
 ESCENA: atkDefComment.dsf | script_id: 2104 | bloque: 1602
 =====================================================================================
 [HABLANTE NO VERIFICADO]  [ID CLD-005365 | grupo 005175 | orden 0]
-  ES: ¡Despertar!
+  ES: ¡Oh!
   EN: Oho!
   ATRIBUCION: sin_hablante_verificable
 

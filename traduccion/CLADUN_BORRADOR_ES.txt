@@ -2862,7 +2862,7 @@ No creía que Arcanus Cella tuviera trampas,
 Así que me descuidé un poco.
 
 [000939] DIÁLOGO
-¡Esperar!
+¡Espera!
 
 [000940] DIÁLOGO
 ¿Ese lugar es Arcanus Cella?
@@ -4259,7 +4259,7 @@ Asegúrate de leerlo en un lugar seguro.
 Pulsa la tecla ⑬ en Arcanus Cella para leer el diccionario.
 
 [001388] PERSONAJE
-A pie
+Piyyo
 
 [001389] DIÁLOGO
 En el suelo se pueden encontrar agua, hierba, fuego y hielo.
@@ -4271,7 +4271,7 @@ Caminar sobre ellas te hará ir más lento, resbalar o
 proporcionar otros efectos adversos.
 
 [001392] PERSONAJE
-Abril
+Prillin
 
 [001393] DIÁLOGO
 Las clases de hechiceros aprenden "magia"
@@ -4307,7 +4307,7 @@ Los equipos con buenos títulos tienen buenas especificaciones.
 El equipo que sueltan los enemigos fuertes tiene buenos títulos.
 
 [001404] PERSONAJE
-Barato
+Poku
 
 [001405] DIÁLOGO
 ¡Los "artefactos" son geniales!
@@ -4364,7 +4364,7 @@ El personaje principal de principio a fin.
 ¡El equipo es lo más importante que existe!
 
 [001423] PERSONAJE
-Pozos
+Piten
 
 [001424] DIÁLOGO
 ¡Dependes demasiado del equipo!
@@ -4472,13 +4472,13 @@ para subirlos de nivel como "personaje principal" para que
 puede obtener más HP y Maná.
 
 [001459] DIÁLOGO
-N-no te lo digo porque quiera.
+¡N-no creas que te lo digo
 
 [001460] DIÁLOGO
-¡Que quede claro!
+porque quiera!
 
 [001461] PERSONAJE
-Ajustar
+Pigurui
 
 [001462] DIÁLOGO
 ¡No confío en ti!
@@ -4526,7 +4526,7 @@ aquel aventurero era un "Palo de madera".
 solo con artefactos!
 
 [001477] PERSONAJE
-hiyorton
+Hiyorton
 
 [001478] DIÁLOGO
 ¡Por fin compré mi propia casa!
@@ -4562,13 +4562,13 @@ Es raro ver un "Hiyokki".
 ¡Pero encontrarás muchos tesoros!
 
 [001489] PERSONAJE
-hola
+Hiyonee
 
 [001490] DIÁLOGO
 Tengo un perro guardián en mi terraza.
 
 [001491] PERSONAJE
-YouTubeyobaba
+Hiyobaba
 
 [001492] DIÁLOGO
 Algunos de nosotros a veces podemos evolucionar hacia un
@@ -5354,7 +5354,7 @@ Realmente necesitas dejar de hablar
 Así, "Dotache".
 
 [001743] DIÁLOGO
-¡Jadear!
+¡Ah!
 
 [001744] DIÁLOGO
 Cómo, cómo. ¡Tienes toda la razón!
@@ -5699,7 +5699,7 @@ Voz masculina
 ¡Jejejeje!
 
 [001853] DIÁLOGO
-¡Sabía que vendrías, domingo!
+¡Sabía que vendrías, Sunday!
 
 [001854] DIÁLOGO
 Otra vez tú, Battleblo...
@@ -5843,7 +5843,7 @@ Vi un gato negro con el mapa de
 ¿Podría ser...?
 
 [001901] DIÁLOGO
-Ahora tienes acceso al domingo.
+Sunday ya está disponible.
 
 [001902] DIÁLOGO
 Ahora tienes acceso a Battleblo.
@@ -5852,7 +5852,7 @@ Ahora tienes acceso a Battleblo.
 ¡Ahora puedes ir a una nueva mazmorra!
 
 [001904] DIÁLOGO
-Ahora tienes acceso al domingo.
+Sunday ya está disponible.
 
 [001905] DIÁLOGO
 Ahora tienes acceso a Battleblo.
@@ -6015,7 +6015,7 @@ a eso de ser tabernero!
 ¡Las mujeres pueden ser tan peligrosas! ¿Verdad?
 
 [001955] DIÁLOGO
-¡Ese domingo me da muchísimos problemas!
+¡Sunday no hace más que darme problemas!
 
 [001956] DIÁLOGO
 Por fin alguien me entiende.
@@ -6072,7 +6072,7 @@ Jaja... ¿Los "escudos" son tan fuertes, eh?
 ¡Ey!
 
 [001974] DIÁLOGO
-Palma de coco...?
+¿Coco...?
 
 [001975] DIÁLOGO
 ¿Oh? ¿Eh?
@@ -6291,7 +6291,7 @@ Tu cara y tu pelo son tan extravagantes
 como siempre, Bob.
 
 [002042] DIÁLOGO
-¡Despertar!
+¡Oh!
 
 [002043] DIÁLOGO
 ¡Ay, caramba!
@@ -6390,7 +6390,7 @@ Pasé por esa tienda
 ¡y encontré esta máscara fabulosa!
 
 [002075] DIÁLOGO
-¿Mascarilla?
+¿Máscara?
 
 [002076] DIÁLOGO
 (¿Es esa máscara?)
@@ -6621,7 +6621,7 @@ Puaj...
 Argh...
 
 [002147] DIÁLOGO
-¡Jadear!
+¡Ah!
 
 [002148] DIÁLOGO
 ¡La máscara! ¿Dónde está la máscara?
@@ -8170,7 +8170,7 @@ Despina, estabas teniendo una pesadilla.
 ¿Estabas soñando con eso otra vez?
 
 [002645] DIÁLOGO
-Es por esa mascarilla.
+Es por esa máscara.
 
 [002646] DIÁLOGO
 En serio, necesito tirar esa cosa a la basura.
@@ -8283,7 +8283,7 @@ SCRIPT: demo1206_01.dsf
 ==================================================================
 
 [002681] DIÁLOGO
-¿De verdad tengo que tirar la mascarilla?
+¿De verdad tengo que tirar la máscara?
 
 [002682] DIÁLOGO
 Eso no es divertido.
@@ -8498,7 +8498,7 @@ Uf... ¿De verdad mi mala suerte
 se contagia a los demás?
 
 [002751] PERSONAJE
-Mascarilla
+Máscara
 
 [002752] DIÁLOGO
 Por supuesto que no.
@@ -8636,7 +8636,7 @@ SCRIPT: demo1208_00.dsf
 ==================================================================
 
 [002792] DIÁLOGO
-¡Domingo!
+¡Sunday!
 
 [002793] DIÁLOGO
 ¿Me puedes enseñar algunos pasos?
@@ -8774,7 +8774,7 @@ Supongo que eres como cualquier otra chica.
 ¿Qué tal si usamos una máscara en lugar de una espada?
 
 [002838] DIÁLOGO
-Me puse la mascarilla hace un rato y estuve dando vueltas por ahí.
+Me puse la máscara hace un rato y estuve dando vueltas por ahí.
 
 [002839] DIÁLOGO
 Fue muy divertido porque nadie me reconoció.
@@ -8792,7 +8792,7 @@ Voz misteriosa
 No tengas miedo.
 
 [002844] PERSONAJE
-Mascarilla
+Máscara
 
 [002845] DIÁLOGO
 Solo tienes miedo porque tienes tal
@@ -8824,13 +8824,13 @@ No puedo encontrar el tesoro
 ¡Estoy buscando en cualquier lugar!
 
 [002853] DIÁLOGO
-Estoy seguro de que Pudding no quiere estar
+Estoy seguro de que a Pudding no le gusta que lo mimen,
 
 [002854] DIÁLOGO
-Mimado tanto como el domingo no
+igual que a Sunday no le gusta
 
 [002855] DIÁLOGO
-quieren que los miren fijamente.
+que se queden mirándola.
 
 [002856] DIÁLOGO
 Quizá esa máscara no sea realmente
@@ -9038,7 +9038,7 @@ De ninguna manera...
 ¡La máscara!
 
 [002921] PERSONAJE
-Mascarilla
+Máscara
 
 [002922] DIÁLOGO
 Estar enfermo puede ser muy triste.
@@ -9056,7 +9056,7 @@ como... un montón de veces?
 ¿Por qué sigues volviendo?
 
 [002927] PERSONAJE
-Mascarilla
+Máscara
 
 [002928] DIÁLOGO
 Porque amo a los humanos.
@@ -9320,13 +9320,13 @@ No tienes por qué ser tan malo.
 Solo vine a ver... eso.
 
 [003010] PERSONAJE
-Mascarilla
+Máscara
 
 [003011] DIÁLOGO
 ¡Hagamos más amigos!
 
 [003012] PERSONAJE
-Mascarilla
+Máscara
 
 [003013] DIÁLOGO
 ¡Todos somos amigos!
@@ -9335,7 +9335,7 @@ Mascarilla
 ¡Hagamos 100 amigos!
 
 [003015] PERSONAJE
-Mascarilla
+Máscara
 
 [003016] DIÁLOGO
 ¡Je, je! ¡Muchos amigos!
@@ -9392,7 +9392,7 @@ Si quiere causar estragos, que lo haga.
 Soy compasivo.
 
 [003034] PERSONAJE
-Mascarilla
+Máscara
 
 [003035] DIÁLOGO
 ¡Amigo! ¡Amigo! ¡Amigo!
@@ -9410,7 +9410,7 @@ más poder a esa cosa.)
 más poder entonces.)
 
 [003040] PERSONAJE
-Mascarilla
+Máscara
 
 [003041] DIÁLOGO
 ¿Qué vas a?
@@ -9434,7 +9434,7 @@ dar una fiesta.
 Vendrán muchos humanos.
 
 [003048] PERSONAJE
-Mascarilla
+Máscara
 
 [003049] DIÁLOGO
 ¿Humanos? ¿Muchos?
@@ -9443,7 +9443,7 @@ Mascarilla
 ¿Fiesta? ¿Círculo de amigos?
 
 [003051] PERSONAJE
-Mascarilla
+Máscara
 
 [003052] DIÁLOGO
 ¡Je, je, je, je, je, je, je!
@@ -9505,7 +9505,7 @@ Pero no va dirigido a mí.
 Esta vez no...
 
 [003070] DIÁLOGO
-El domingo siempre ha sido mi rival,
+Sunday siempre ha sido mi rival,
 
 [003071] DIÁLOGO
 Arreglaré las cosas con ella en
@@ -9587,7 +9587,7 @@ SCRIPT: demo1301_00.dsf
 ==================================================================
 
 [003094] PERSONAJE
-Mascarilla
+Máscara
 
 [003095] DIÁLOGO
 ¡Je, je, je...!
@@ -9599,13 +9599,13 @@ Mascarilla
 ¿Eh?
 
 [003098] PERSONAJE
-Mascarilla
+Máscara
 
 [003099] DIÁLOGO
 ¡Haré felices a todos!
 
 [003100] PERSONAJE
-Mascarilla
+Máscara
 
 [003101] DIÁLOGO
 Te pondré en mi
@@ -9617,7 +9617,7 @@ Te pondré en mi
 ¡Ahhh!
 
 [003104] DIÁLOGO
-¿Sorbete?
+¿Sherbet?
 
 [003105] DIÁLOGO
 ¿Estás bien?
@@ -9626,7 +9626,7 @@ Te pondré en mi
 Debo irme ahora.
 
 [003107] DIÁLOGO
-¡Esperar!
+¡Espera!
 
 [003108] DIÁLOGO
 Conozco esta sensación de algún sitio...
@@ -9773,7 +9773,7 @@ Crosstine
 Genial.
 
 [003156] DIÁLOGO
-Sorbete. Tú también vienes, ¿verdad?
+Sherbet, tú también vienes, ¿verdad?
 
 [003157] DIÁLOGO
 ¡Ahora puedes ir a una nueva mazmorra!
@@ -9912,7 +9912,7 @@ SCRIPT: demo1302_00.dsf
 S-Sí.
 
 [003199] DIÁLOGO
-El domingo sin duda es tu rival.
+Sunday sin duda es tu rival.
 
 [003200] DIÁLOGO
 Jeje...
@@ -9987,7 +9987,7 @@ Incluso papá tiene...)
 Sí.
 
 [003224] DIÁLOGO
-El sorbete es realmente útil.
+Sherbet es de mucha ayuda.
 
 [003225] DIÁLOGO
 Hola, Battleblo...
@@ -10174,7 +10174,7 @@ Je. ¿Cómo pude ser tan estúpido?
 me obsesionan tanto los escudos!
 
 [003283] DIÁLOGO
-¡Domingo!
+¡Sunday!
 
 [003284] DIÁLOGO
 Otra vez tú. ¿Dejaste tus obligaciones
@@ -10237,7 +10237,7 @@ Puaj...
 para que le entre en la cabeza?!)
 
 [003304] PERSONAJE
-Mascarilla
+Máscara
 
 [003305] DIÁLOGO
 ¡Je, je, je!
@@ -10255,7 +10255,7 @@ Mascarilla
 ¡No solo quiero ser amigos!
 
 [003310] DIÁLOGO
-¡Eres un asco, domingo!
+¡Eres un asco, Sunday!
 
 [003311] DIÁLOGO
 Qué hombre tan extraño.
@@ -10397,7 +10397,7 @@ Si no me molesta su mirada,
 Entonces aún hay esperanza...)
 
 [003354] DIÁLOGO
-¡Hola! ¡Domingo!
+¡Eh, Sunday!
 
 [003355] DIÁLOGO
 ¿Emocionado por la fiesta?
@@ -10550,7 +10550,7 @@ Se acabó para mí...
 Crosstine
 
 [003405] DIÁLOGO
-Domingo.
+Sunday.
 
 [003406] DIÁLOGO
 No estás sosteniendo tu espada.
@@ -10586,13 +10586,13 @@ Crosstine
 para disfrutarlo a tu gusto!
 
 [003417] DIÁLOGO
-¡Oh, sí! ¡Domingo!
+¡Oh, sí! ¡Sunday!
 
 [003418] DIÁLOGO
 ¡Bienvenido a mi mundo!
 
 [003419] PERSONAJE
-Mascarilla
+Máscara
 
 [003420] DIÁLOGO
 ¡Ey!
@@ -10604,7 +10604,7 @@ Mascarilla
 ¡No puedes quedarte con toda la diversión para ti solo!
 
 [003423] PERSONAJE
-Mascarilla
+Máscara
 
 [003424] DIÁLOGO
 ¡Quiero unirme a ese círculo de amigos!
@@ -10800,10 +10800,10 @@ Pareces muy feliz, Coco.
 ¡Sí! ¡Estas cosas pueden ser muy divertidas!
 
 [003485] DIÁLOGO
-¡Desde que vi a Sunday así,
+Desde que vi a Sunday así,
 
 [003486] DIÁLOGO
-no puedo esperar a que empiece la fiesta!
+¡no veo la hora de que empiece la fiesta!
 
 [003487] DIÁLOGO
 ¡Los cielos me deben haber bendecido!
@@ -10818,7 +10818,7 @@ no puedo esperar a que empiece la fiesta!
 Souma y Pudding
 
 [003491] DIÁLOGO
-¡¿Palma de coco?!
+¡¿Coco?!
 
 [003492] DIÁLOGO
 ¿Qué te pasa? Tienes la cara toda roja.
@@ -10857,7 +10857,7 @@ Mientras que tú, por otro lado, estás perfectamente bien.
 ¿Era esto a lo que me estaba hablando el sueño?
 
 [003504] PERSONAJE
-Mascarilla
+Máscara
 
 [003505] DIÁLOGO
 ¡Je, je, je!
@@ -10869,7 +10869,7 @@ Mascarilla
 ¿No te alegras de haber venido?
 
 [003508] PERSONAJE
-Mascarilla
+Máscara
 
 [003509] DIÁLOGO
 ¡Ahora vamos a formar un círculo de amigos!
@@ -11036,7 +11036,7 @@ De vuelta a la vida.
 Por ahora, parece que este problema
 
 [003562] DIÁLOGO
-No es causado por esa mascarilla.
+No es causado por esa máscara.
 
 
 ==================================================================
@@ -11257,13 +11257,13 @@ Esta vez, la mala suerte sí que le vino bien a alguien.
 ¡Los cielos me han bendecido!
 
 [003634] PERSONAJE
-Mascarilla
+Máscara
 
 [003635] DIÁLOGO
 ¡Cielos, mi trasero!
 
 [003636] PERSONAJE
-Mascarilla
+Máscara
 
 [003637] DIÁLOGO
 ¡Me dejaron al margen otra vez
@@ -11290,7 +11290,7 @@ Me voy a casa.
 ¡H-Hola! ¡Despina!
 
 [003645] PERSONAJE
-Mascarilla
+Máscara
 
 [003646] DIÁLOGO
 Jejeje.
@@ -11350,7 +11350,7 @@ Solo espere un poco más para obtener las respuestas.
 ¡Gah! ¡Odio esto! ¡Odio esto! ¡Odio esto!
 
 [003665] PERSONAJE
-Mascarilla
+Máscara
 
 [003666] DIÁLOGO
 ¡No me rendiré!
@@ -11510,25 +11510,25 @@ El Círculo mágico... Hmm...
 Hmph. Es ese vagabundo otra vez.
 
 [003715] PERSONAJE
-Mascarilla
+Máscara
 
 [003716] DIÁLOGO
 ¡Te encontré!
 
 [003717] PERSONAJE
-Mascarilla
+Máscara
 
 [003718] DIÁLOGO
 ¡Je, je, je!
 
 [003719] PERSONAJE
-Mascarilla
+Máscara
 
 [003720] DIÁLOGO
 ¡Seamos amigos!
 
 [003721] PERSONAJE
-Mascarilla
+Máscara
 
 [003722] DIÁLOGO
 ¡Y haz un círculo de amigos!
@@ -11537,13 +11537,13 @@ Mascarilla
 ¿Qué es eso?
 
 [003724] PERSONAJE
-Mascarilla
+Máscara
 
 [003725] DIÁLOGO
 ¡Vamos!
 
 [003726] PERSONAJE
-Mascarilla
+Máscara
 
 [003727] DIÁLOGO
 ¡Vamos! ¡Vamos!
@@ -12230,7 +12230,7 @@ Creo que Asagi estaba en un lugar llamado
 el Inframundo antes de venir aquí.
 
 [003950] DIÁLOGO
-¿Abajo?
+¿Asagi?
 
 [003951] DIÁLOGO
 No la he visto por aquí.
@@ -12420,7 +12420,7 @@ Acabo de ver dos Asagis
 Allí antes.
 
 [004010] PERSONAJE
-"Más bajo"
+Asagi
 
 [004011] DIÁLOGO
 Tengo que competir con todos los que están aquí.
@@ -12641,7 +12641,7 @@ en mi «fiesta de bienvenida».
 Asagi
 
 [004082] DIÁLOGO
-¡Esperar!
+¡Espera!
 
 [004083] DIÁLOGO
 ¡Algo parece extraño!
@@ -12662,7 +12662,7 @@ Asagi
 ¡Va a entrar en la mazmorra!
 
 [004089] DIÁLOGO
-¡Esperar!
+¡Espera!
 
 [004090] DIÁLOGO
 ¡Ahora puedes ir a una nueva mazmorra!
@@ -13439,7 +13439,7 @@ se enfadaría conmigo.
 ¡Tú eres la máscara!
 
 [004333] PERSONAJE
-Mascarilla
+Máscara
 
 [004334] DIÁLOGO
 ¡Je, je, je! ¡Me descubriste!
@@ -13567,7 +13567,7 @@ Oh, es la máscara.
 ¡Los cielos me han bendecido!
 
 [004374] PERSONAJE
-Mascarilla
+Máscara
 
 [004375] DIÁLOGO
 La desgracia es pecado.
@@ -13579,7 +13579,7 @@ La desgracia tiene sabor a miel.
 ¿Ah, entonces está delicioso?
 
 [004378] PERSONAJE
-Mascarilla
+Máscara
 
 [004379] DIÁLOGO
 Los cielos no te bendecirán.
@@ -13668,7 +13668,7 @@ SCRIPT: end02_despina.dsf
 ==================================================================
 
 [004406] PERSONAJE
-Mascarilla
+Máscara
 
 [004407] DIÁLOGO
 Huiste y me abandonaste.
@@ -13698,7 +13698,7 @@ En tus palabras, es el círculo de amigos.
 Simplemente estamos hechos de forma diferente.
 
 [004416] PERSONAJE
-Mascarilla
+Máscara
 
 [004417] DIÁLOGO
 Ya veo... El círculo de amigos...
@@ -14001,7 +14001,7 @@ ha sido un éxito!
 Siempre te crees muy superior y poderoso.
 
 [004517] PERSONAJE
-¿Palma de coco?
+¿Coco?
 
 [004518] DIÁLOGO
 Estoy harto de hacer negocios aquí.
@@ -14013,13 +14013,13 @@ Estoy harto de hacer negocios aquí.
 No tengo nada para que bebas. Lárgate de aquí.
 
 [004521] PERSONAJE
-¿Chelín?
+¿Bob?
 
 [004522] DIÁLOGO
 ¡Estás tan LOCO!
 
 [004523] PERSONAJE
-¿Domingo?
+¿Sunday?
 
 [004524] DIÁLOGO
 No te acerques a mí nunca más.
@@ -14055,7 +14055,7 @@ Y...
 ¡El!
 
 [004535] PERSONAJE
-Mascarilla
+Máscara
 
 [004536] DIÁLOGO
 Je, je, je.
@@ -14183,7 +14183,7 @@ Lo siento...
 Oye, ahí está la máscara.
 
 [004576] PERSONAJE
-Mascarilla
+Máscara
 
 [004577] DIÁLOGO
 No deberías haber venido aquí.
@@ -14192,7 +14192,7 @@ No deberías haber venido aquí.
 ¿Qué?
 
 [004579] PERSONAJE
-Mascarilla
+Máscara
 
 [004580] DIÁLOGO
 Debería haberla encerrado.
@@ -14207,7 +14207,7 @@ Ella no me pertenece.
 ¡Lo único que me importa es su felicidad!
 
 [004584] PERSONAJE
-Mascarilla
+Máscara
 
 [004585] DIÁLOGO
 ¡Je, je, je!
@@ -14341,7 +14341,7 @@ no por orden de nadie, sino por voluntad propia.
 ¿Me concederías ese honor?
 
 [004627] DIÁLOGO
-Sorbete.
+Sherbet.
 
 [004628] DIÁLOGO
 ¿Lo harías?
@@ -14365,7 +14365,7 @@ tu forma original?!
 ¿Princesa?
 
 [004635] DIÁLOGO
-Sorbete. Eres completamente inútil.
+Sherbet. Eres completamente inútil.
 
 [004636] DIÁLOGO
 Regresa al reino de inmediato.
@@ -14451,7 +14451,7 @@ Así que lo encontraste primero.
 No está mal, Battleblo.
 
 [004662] DIÁLOGO
-¡Domingo!
+¡Sunday!
 
 [004663] DIÁLOGO
 ¡Te voy a dar una paliza brutal!
@@ -14571,7 +14571,7 @@ Eres un idiota.
 ¡Me engañaste!
 
 [004702] PERSONAJE
-Mascarilla
+Máscara
 
 [004703] DIÁLOGO
 Permitiéndote aferrarte al escudo definitivo
@@ -14681,7 +14681,7 @@ Princesa Dot... ¡Eres hermosa...!
 Princesa Dot
 
 [004737] DIÁLOGO
-Sorbete.
+Sherbet.
 
 [004738] DIÁLOGO
 Sí.
@@ -14753,7 +14753,7 @@ Princesa Dot
 ¡Gracias!
 
 [004761] PERSONAJE
-Mascarilla
+Máscara
 
 [004762] DIÁLOGO
 Lo sé.
@@ -14777,7 +14777,7 @@ Derrotar a un ser de engaño levantará
 la forma de engaño que se me impuso.
 
 [004769] PERSONAJE
-Mascarilla
+Máscara
 
 [004770] DIÁLOGO
 Jejeje. Déjame decirte algo. Eres solo un
@@ -14795,7 +14795,7 @@ No hay manera de que puedas liderar un reino entero.
 No puedes saberlo hasta que lo intente.
 
 [004775] PERSONAJE
-Mascarilla
+Máscara
 
 [004776] DIÁLOGO
 ¡Jejejeje!
@@ -14881,7 +14881,7 @@ Espera, un momento.
 ¡Bob viene, nena!
 
 [004802] PERSONAJE
-Mascarilla
+Máscara
 
 [004803] DIÁLOGO
 ¡Je, je, je, je!
@@ -14899,7 +14899,7 @@ Calvo.
 ¡Soy muy peludo! ¿Sabes?
 
 [004808] PERSONAJE
-Mascarilla
+Máscara
 
 [004809] DIÁLOGO
 ¡Entonces te dejaré calvo
@@ -15030,13 +15030,13 @@ Todo esto es gracias a ti.
 Eso es un poco triste...
 
 [004850] DIÁLOGO
-Pero te animaré el domingo...
+Pero te animaré Sunday...
 
 [004851] DIÁLOGO
 Porque soy tu primer fan...
 
 [004852] PERSONAJE
-Mascarilla
+Máscara
 
 [004853] DIÁLOGO
 Tengo la espada definitiva.
@@ -15045,7 +15045,7 @@ Tengo la espada definitiva.
 ¡¿Qué?!
 
 [004855] PERSONAJE
-Mascarilla
+Máscara
 
 [004856] DIÁLOGO
 Es decir, no puedes ganar contra
@@ -15125,7 +15125,7 @@ No, no deberías.
 ¡Mátalo! ¡Mátalo con fuego!
 
 [004880] PERSONAJE
-Bragas
+Pumpky
 
 [004881] DIÁLOGO
 ¡Genial, ⑨!
@@ -15137,7 +15137,7 @@ Normalmente, la gente me pisaría, ¡pero tú no!
 ¡Eso es lo que te hace genial!
 
 [004884] PERSONAJE
-Bragas
+Pumpky
 
 [004885] DIÁLOGO
 ¡Ey!
@@ -15161,7 +15161,7 @@ Pumply
 ¡Envejezcamos juntos!
 
 [004892] PERSONAJE
-Mangos
+Pumi
 
 [004893] DIÁLOGO
 ¡Contigo no!
@@ -15173,7 +15173,7 @@ Pumply
 ¡Estemos juntos, incluso en la otra vida!
 
 [004896] PERSONAJE
-Mangos
+Pumi
 
 [004897] DIÁLOGO
 ¡Contigo no!
@@ -15855,7 +15855,7 @@ SCRIPT: atkDefComment.dsf
 ==================================================================
 
 [005120] PERSONAJE
-Ese ermitaño
+Ermitaño Hiyo
 
 [005121] DIÁLOGO
 Soy el ermitaño de Hiyo.
@@ -15894,7 +15894,7 @@ Puedo predecir el futuro según tus estadísticas.
 ¡Aumenta tu ATK en el Círculo mágico ahora!
 
 [005133] DIÁLOGO
-¡Despertar!
+¡Oh!
 
 [005134] DIÁLOGO
 ¡Tu ATK es demasiado bajo!
@@ -16020,7 +16020,7 @@ Se te da bastante bien usar el Círculo mágico.
 ¡Aumenta tu DEF en el Círculo mágico ahora!
 
 [005175] DIÁLOGO
-¡Despertar!
+¡Oh!
 
 [005176] DIÁLOGO
 ¡Tu DEF es demasiado baja!
@@ -19599,22 +19599,22 @@ DATABASE.DAT/BOSSNAME.DAT
 Tara
 
 [006280] NOMBRES JEFES
-Salmón
+Salmon
 
 [006281] NOMBRES JEFES
 Massa
 
 [006282] NOMBRES JEFES
-Pargo
+Snapper
 
 [006283] NOMBRES JEFES
-Pez espada
+Swordfish
 
 [006284] NOMBRES JEFES
-Heraldo
+Harbinger
 
 [006285] NOMBRES JEFES
-Pino
+Pine
 
 [006286] NOMBRES JEFES
 Jimbei
@@ -19653,16 +19653,16 @@ Bundie
 Dogo
 
 [006298] NOMBRES JEFES
-Dragón de la Perdición
+Doom Dragon
 
 [006299] NOMBRES JEFES
-Caballero Oscuro
+Dark Knight
 
 [006300] NOMBRES JEFES
-Fantasma
+Phantom
 
 [006301] NOMBRES JEFES
-Matanza
+Bloodbath
 
 [006302] NOMBRES JEFES
 Denbo
@@ -19695,19 +19695,19 @@ Edis
 EL No.1
 
 [006312] NOMBRES JEFES
-Suplente
+Benchwarmer
 
 [006313] NOMBRES JEFES
-Jefe 1
+Boss No.1
 
 [006314] NOMBRES JEFES
-Gato
+Cat
 
 [006315] NOMBRES JEFES
-Góndola
+Gondola
 
 [006316] NOMBRES JEFES
-Bruuuuja
+Wiiiich
 
 [006317] NOMBRES JEFES
 Odan
@@ -19731,16 +19731,16 @@ Condesta
 Maginabo
 
 [006324] NOMBRES JEFES
-Siete
+Seven
 
 [006325] NOMBRES JEFES
-Ocho
+Eight
 
 [006326] NOMBRES JEFES
 Xantos
 
 [006327] NOMBRES JEFES
-Titán
+Titan
 
 [006328] NOMBRES JEFES
 Selci
@@ -19752,13 +19752,13 @@ Lalado
 Neim
 
 [006331] NOMBRES JEFES
-Hombre de dinero
+Moneyman
 
 [006332] NOMBRES JEFES
-Fantasma
+Wraith
 
 [006333] NOMBRES JEFES
-Fantasma
+Ghosty
 
 [006334] NOMBRES JEFES
 Manta
@@ -19770,13 +19770,13 @@ Dragobeth
 Kitty
 
 [006337] NOMBRES JEFES
-Zombi rojo
+Red Zombie
 
 [006338] NOMBRES JEFES
 Galci
 
 [006339] NOMBRES JEFES
-Papino
+Pappino
 
 [006340] NOMBRES JEFES
 Onigiri
@@ -19794,7 +19794,7 @@ Zanne
 Simma
 
 [006345] NOMBRES JEFES
-dios de la guerra
+Wargod
 
 [006346] NOMBRES JEFES
 Asura
@@ -19803,10 +19803,10 @@ Asura
 Suzaki
 
 [006348] NOMBRES JEFES
-Avispón
+Hornet
 
 [006349] NOMBRES JEFES
-Aldaba
+Knocker
 
 [006350] NOMBRES JEFES
 Oneshot
@@ -19830,22 +19830,22 @@ Gea
 Zazan
 
 [006357] NOMBRES JEFES
-Surfista de agujeros
+Bhole Surfer
 
 [006358] NOMBRES JEFES
-Reina de Hielo Yoko
+IceQueenYoko
 
 [006359] NOMBRES JEFES
-Rey Ma
+King Ma
 
 [006360] NOMBRES JEFES
-kunoichi
+Kunoichi
 
 [006361] NOMBRES JEFES
 Guhaha
 
 [006362] NOMBRES JEFES
-Miau
+Meowzer
 
 [006363] NOMBRES JEFES
 Kudo
@@ -19872,19 +19872,19 @@ Nichol
 Tanturn
 
 [006371] NOMBRES JEFES
-Fauces
+Jaws
 
 [006372] NOMBRES JEFES
 Nov
 
 [006373] NOMBRES JEFES
-Hombre
+Mandom
 
 [006374] NOMBRES JEFES
 Ozur
 
 [006375] NOMBRES JEFES
-Eneldo
+Dill
 
 [006376] NOMBRES JEFES
 Halmas
@@ -19911,7 +19911,7 @@ Gren
 Menmen
 
 [006384] NOMBRES JEFES
-Hombre de barro
+Mudman
 
 [006385] NOMBRES JEFES
 Suna
@@ -19935,13 +19935,13 @@ Pei
 Eyeroot
 
 [006392] NOMBRES JEFES
-Vidrioso
+Glassy
 
 [006393] NOMBRES JEFES
 Yuli
 
 [006394] NOMBRES JEFES
-Russell
+Russel
 
 [006395] NOMBRES JEFES
 Linga
@@ -19953,13 +19953,13 @@ Badur
 Kinton
 
 [006398] NOMBRES JEFES
-Gourmet
+Gourme
 
 [006399] NOMBRES JEFES
 Jii
 
 [006400] NOMBRES JEFES
-Zanquilargo
+Leggy
 
 [006401] NOMBRES JEFES
 Vevero
@@ -19968,7 +19968,7 @@ Vevero
 Xantor
 
 [006403] NOMBRES JEFES
-Corazón Negro
+Blackheart
 
 [006404] NOMBRES JEFES
 Bajo
@@ -20002,7 +20002,7 @@ Sube de nivel para aprender habilidades.
 Muchos círculos mágicos basados en ATK.
 
 [006412] PERSONAJES
-Muchos puntos de vida, poco maná.
+Mucha vida, poco maná.
 
 [006413] PERSONAJES
 Despina
@@ -20019,7 +20019,7 @@ Secundario: Maná+, HP/DEF-
 Sube de nivel para aprender magia de ataque.
 
 [006417] PERSONAJES
-Concéntrese en los lanzadores abridores, pero deje menos espacio para los suplentes.
+Prioriza los SP, pero tiene menos casillas para personajes de apoyo.
 
 [006418] PERSONAJES
 Maná alto, puntos de vida bajos.
@@ -20028,7 +20028,7 @@ Maná alto, puntos de vida bajos.
 Souma
 
 [006420] PERSONAJES
-Un niño azotado por Pudding. Constantemente preocupado.
+Un chico dominado por Pudding, siempre preocupado.
 
 [006421] PERSONAJES
 Guerrero
@@ -20045,7 +20045,7 @@ Círculos mágicos promedio.
 Habilidades promedio.
 
 [006425] PERSONAJES
-Sorbete
+Sherbet
 
 [006426] PERSONAJES
 Un acosador al que le encanta que le den órdenes.
@@ -20059,13 +20059,13 @@ Secundario: Maná+, HP-
 Sube de nivel para aprender magia de curación/apoyo.
 
 [006429] PERSONAJES
-Mucho espacio para suscripciones con bonificaciones por subir de nivel.
+Muchas casillas para personajes de apoyo, con bonificaciones al subir de nivel.
 
 [006430] PERSONAJES
 Puntos de vida bajos, maná bajo.
 
 [006431] PERSONAJES
-Palma de coco
+Coco
 
 [006432] PERSONAJES
 Un comerciante con la peor suerte del mundo.
@@ -20119,16 +20119,16 @@ Secundario: Maná+, HP-
 Sube de nivel para aprender magia de curación/apoyo.
 
 [006447] PERSONAJES
-Mucho espacio para suscripciones con bonificaciones por subir de nivel.
+Muchas casillas para personajes de apoyo, con bonificaciones al subir de nivel.
 
 [006448] PERSONAJES
 Puntos de vida bajos, maná bajo.
 
 [006449] PERSONAJES
-Chelín
+Bob
 
 [006450] PERSONAJES
-Un hombre constantemente excitado con un peinado afro.
+Un hombre siempre entusiasmado y con peinado afro.
 
 [006451] PERSONAJES
 Mago
@@ -20139,13 +20139,13 @@ Secundario: Maná+, HP/DEF-
 Sube de nivel para aprender magia de ataque.
 
 [006453] PERSONAJES
-Concéntrese en los lanzadores abridores, pero deje menos espacio para los suplentes.
+Prioriza los SP, pero tiene menos casillas para personajes de apoyo.
 
 [006454] PERSONAJES
 Maná alto, puntos de vida bajos.
 
 [006455] PERSONAJES
-Domingo
+Sunday
 
 [006456] PERSONAJES
 Una espadachina en busca de la espada definitiva.
@@ -20188,7 +20188,7 @@ Habilidades promedio.
 Princesa de la Tierra
 
 [006468] PERSONAJES
-Tiene mucha mana pero poca HP.
+Tiene mucho maná, pero pocos HP.
 
 [006469] PERSONAJES
 Mago
@@ -20199,7 +20199,7 @@ Secundario: Maná+, HP/DEF-
 Sube de nivel para aprender magia de ataque.
 
 [006471] PERSONAJES
-Concéntrese en los lanzadores abridores, pero deje menos espacio para los suplentes.
+Prioriza los SP, pero tiene menos casillas para personajes de apoyo.
 
 [006472] PERSONAJES
 Maná alto, puntos de vida bajos.
@@ -20225,10 +20225,10 @@ Yuta
 Masa
 
 [006478] NOMBRES PERSONAJES
-Nueve
+Nine
 
 [006479] NOMBRES PERSONAJES
-Rico
+Rich
 
 [006480] NOMBRES PERSONAJES
 Buug
@@ -20240,7 +20240,7 @@ Yuma
 Dogma
 
 [006483] NOMBRES PERSONAJES
-Calesa
+Buggy
 
 [006484] NOMBRES PERSONAJES
 Bosch
@@ -20267,7 +20267,7 @@ Zabian
 Gudd
 
 [006492] NOMBRES PERSONAJES
-Rosario
+Beads
 
 [006493] NOMBRES PERSONAJES
 Tseng
@@ -20282,7 +20282,7 @@ Vando
 Akir
 
 [006497] NOMBRES PERSONAJES
-Aburrido
+Dull
 
 [006498] NOMBRES PERSONAJES
 Shin
@@ -20297,16 +20297,16 @@ Thomas
 Nick
 
 [006502] NOMBRES PERSONAJES
-Alfarero
+Potter
 
 [006503] NOMBRES PERSONAJES
 Doko
 
 [006504] NOMBRES PERSONAJES
-vasco
+Basque
 
 [006505] NOMBRES PERSONAJES
-Fuego antiaéreo
+Flak
 
 [006506] NOMBRES PERSONAJES
 Manaj
@@ -20318,7 +20318,7 @@ Spek
 Dan
 
 [006509] NOMBRES PERSONAJES
-Melaza
+Melado
 
 [006510] NOMBRES PERSONAJES
 Kyon
@@ -20327,7 +20327,7 @@ Kyon
 Kai
 
 [006512] NOMBRES PERSONAJES
-Mezclador
+Muddler
 
 [006513] NOMBRES PERSONAJES
 Toya
@@ -20366,16 +20366,16 @@ Ogasa
 Jin
 
 [006525] NOMBRES PERSONAJES
-Emperador
+Kaiser
 
 [006526] NOMBRES PERSONAJES
-Niño
+Bambino
 
 [006527] NOMBRES PERSONAJES
 Redd
 
 [006528] NOMBRES PERSONAJES
-Azul
+Blu
 
 [006529] NOMBRES PERSONAJES
 Smith
@@ -20387,10 +20387,10 @@ Zader
 Goro
 
 [006532] NOMBRES PERSONAJES
-Diez
+Ten
 
 [006533] NOMBRES PERSONAJES
-Legumbres
+Pulse
 
 [006534] NOMBRES PERSONAJES
 Beara
@@ -20399,7 +20399,7 @@ Beara
 Galo
 
 [006536] NOMBRES PERSONAJES
-Jano
+Janus
 
 [006537] NOMBRES PERSONAJES
 Jadd
@@ -20429,7 +20429,7 @@ Quinn
 Koro
 
 [006546] NOMBRES PERSONAJES
-Afortunado
+Lucky
 
 [006547] NOMBRES PERSONAJES
 Heinrich
@@ -20453,10 +20453,10 @@ Korul
 Deckie
 
 [006554] NOMBRES PERSONAJES
-Pedernal
+Flint
 
 [006555] NOMBRES PERSONAJES
-Tauro
+Taurus
 
 [006556] NOMBRES PERSONAJES
 Mingos
@@ -20465,7 +20465,7 @@ Mingos
 Ikkii
 
 [006558] NOMBRES PERSONAJES
-Dogos
+Dogi
 
 [006559] NOMBRES PERSONAJES
 Coby
@@ -20474,7 +20474,7 @@ Coby
 Bogo
 
 [006561] NOMBRES PERSONAJES
-Gerard
+Gerrard
 
 [006562] NOMBRES PERSONAJES
 Robin
@@ -20516,13 +20516,13 @@ Defal
 Pich
 
 [006575] NOMBRES PERSONAJES
-Hermanos
+Bros
 
 [006576] NOMBRES PERSONAJES
 Din
 
 [006577] NOMBRES PERSONAJES
-Barra oblicua
+Slash
 
 [006578] NOMBRES PERSONAJES
 Kenji
@@ -20531,7 +20531,7 @@ Kenji
 Daigo
 
 [006580] NOMBRES PERSONAJES
-Brecha
+Gap
 
 [006581] NOMBRES PERSONAJES
 Zoma
@@ -20578,13 +20578,13 @@ Asuka
 Miu
 
 [006594] NOMBRES PERSONAJES
-Baya
+Berry
 
 [006595] NOMBRES PERSONAJES
 Pel
 
 [006596] NOMBRES PERSONAJES
-Mariquita
+Ladybug
 
 [006597] NOMBRES PERSONAJES
 Luna
@@ -20593,7 +20593,7 @@ Luna
 Kotori
 
 [006599] NOMBRES PERSONAJES
-maya
+Maya
 
 [006600] NOMBRES PERSONAJES
 Nako
@@ -20605,7 +20605,7 @@ Meg
 Saya
 
 [006603] NOMBRES PERSONAJES
-Pacífico
+Pacific
 
 [006604] NOMBRES PERSONAJES
 Meili
@@ -20623,10 +20623,10 @@ DJ
 Liza
 
 [006609] NOMBRES PERSONAJES
-Roxana
+Roxanne
 
 [006610] NOMBRES PERSONAJES
-Lirio
+Lily
 
 [006611] NOMBRES PERSONAJES
 Momo
@@ -20638,7 +20638,7 @@ Kat
 Katel
 
 [006614] NOMBRES PERSONAJES
-Kéfir
+Kefir
 
 [006615] NOMBRES PERSONAJES
 Kari
@@ -20647,7 +20647,7 @@ Kari
 Abelia
 
 [006617] NOMBRES PERSONAJES
-Mareado
+Giddy
 
 [006618] NOMBRES PERSONAJES
 Nico
@@ -20671,7 +20671,7 @@ Bella
 Cotte
 
 [006625] NOMBRES PERSONAJES
-Beldad
+Belle
 
 [006626] NOMBRES PERSONAJES
 Anne
@@ -20686,7 +20686,7 @@ Lira
 Plana
 
 [006630] NOMBRES PERSONAJES
-pez laúd
+Lutefisk
 
 [006631] NOMBRES PERSONAJES
 Hamann
@@ -20719,7 +20719,7 @@ Natalie
 Tohka
 
 [006641] NOMBRES PERSONAJES
-Dedo meñique
+Pinkie
 
 [006642] NOMBRES PERSONAJES
 Magik
@@ -20737,13 +20737,13 @@ Sandria
 Alyssa
 
 [006647] NOMBRES PERSONAJES
-Marín
+Marin
 
 [006648] NOMBRES PERSONAJES
-Marilyn
+Marylin
 
 [006649] NOMBRES PERSONAJES
-Sutra
+Sutro
 
 [006650] NOMBRES PERSONAJES
 Min-Min
@@ -20767,7 +20767,7 @@ Marm
 Marie
 
 [006657] NOMBRES PERSONAJES
-Genial
+Kool
 
 [006658] NOMBRES PERSONAJES
 Toto
@@ -20800,7 +20800,7 @@ Dorothy
 Kotsu
 
 [006668] NOMBRES PERSONAJES
-Río
+Rio
 
 [006669] NOMBRES PERSONAJES
 Freya
@@ -20809,7 +20809,7 @@ Freya
 Lilly
 
 [006671] NOMBRES PERSONAJES
-Flautista
+Piper
 
 [006672] NOMBRES PERSONAJES
 Kilma
@@ -20836,7 +20836,7 @@ Tsubasa
 Mako
 
 [006680] NOMBRES PERSONAJES
-Arenoso
+Sandie
 
 [006681] NOMBRES PERSONAJES
 Marris
@@ -20869,7 +20869,7 @@ Romis
 Steph
 
 [006691] NOMBRES PERSONAJES
-Repicar
+Chime
 
 [006692] NOMBRES PERSONAJES
 Tonnie
@@ -20881,13 +20881,13 @@ Silvia
 Machter
 
 [006695] NOMBRES PERSONAJES
-Palas
+Pallas
 
 [006696] NOMBRES PERSONAJES
 Saki
 
 [006697] NOMBRES PERSONAJES
-Campana
+Cloche
 
 [006698] NOMBRES PERSONAJES
 Kagura
@@ -20908,7 +20908,7 @@ Sakura
 Milt
 
 [006704] NOMBRES PERSONAJES
-Cacerola
+Pan
 
 [006705] NOMBRES PERSONAJES
 Pillos
@@ -20926,13 +20926,13 @@ Cassis
 Komo
 
 [006710] NOMBRES PERSONAJES
-Margarita
+Daisy
 
 [006711] NOMBRES PERSONAJES
 Shurelia
 
 [006712] NOMBRES PERSONAJES
-Melón
+Melon
 
 [006713] NOMBRES PERSONAJES
 Nanoha
@@ -20950,7 +20950,7 @@ Allie
 Sunnie
 
 [006718] NOMBRES PERSONAJES
-Violeta
+Violet
 
 
 ##################################################################
@@ -20961,7 +20961,7 @@ DATABASE.DAT/DAIHYOU.DAT
 Pudding
 
 [006720] NOMBRES PERSONAJES
-Pegajoso
+Gumi
 
 [006721] NOMBRES PERSONAJES
 Despina
@@ -20970,28 +20970,28 @@ Despina
 Souma
 
 [006723] NOMBRES PERSONAJES
-sorbete
+Sherbet
 
 [006724] NOMBRES PERSONAJES
 Taemon
 
 [006725] NOMBRES PERSONAJES
-Palma de coco
+Coco
 
 [006726] NOMBRES PERSONAJES
-Golpe de batalla
+Battleblo
 
 [006727] NOMBRES PERSONAJES
-edad
+Eiji
 
 [006728] NOMBRES PERSONAJES
 Dodohige
 
 [006729] NOMBRES PERSONAJES
-Chelín
+Bob
 
 [006730] NOMBRES PERSONAJES
-Domingo
+Sunday
 
 [006731] NOMBRES PERSONAJES
 Asagi
@@ -23074,7 +23074,7 @@ Hipercoliseo LV20
 Es hora de una batalla campal.
 
 [007421] LUGARES MAZMORRAS
-¡Correr!
+¡Corre!
 
 [007422] LUGARES MAZMORRAS
 Coliseo Legend LV25
@@ -23164,7 +23164,7 @@ Hipercoliseo LV45
 Es hora de una batalla campal.
 
 [007451] LUGARES MAZMORRAS
-¡Correr!
+¡Corre!
 
 [007452] LUGARES MAZMORRAS
 Coliseo Legend LV50
@@ -23254,7 +23254,7 @@ Hipercoliseo LV90
 Es hora de una batalla campal.
 
 [007481] LUGARES MAZMORRAS
-¡Correr!
+¡Corre!
 
 [007482] LUGARES MAZMORRAS
 Coliseo Legend LV99
@@ -23344,7 +23344,7 @@ Hipercoliseo LV400
 Es hora de una batalla campal.
 
 [007511] LUGARES MAZMORRAS
-¡Correr!
+¡Corre!
 
 [007512] LUGARES MAZMORRAS
 Coliseo Legend LV500
@@ -26806,7 +26806,7 @@ DATABASE.DAT/SIEN.DAT
 Pudding
 
 [008496] NOMBRES PERSONAJES
-Pegajoso
+Gumi
 
 [008497] NOMBRES PERSONAJES
 Despina
@@ -26815,28 +26815,28 @@ Despina
 Souma
 
 [008499] NOMBRES PERSONAJES
-sorbete
+Sherbet
 
 [008500] NOMBRES PERSONAJES
 Taemon
 
 [008501] NOMBRES PERSONAJES
-Palma de coco
+Coco
 
 [008502] NOMBRES PERSONAJES
-Golpe de batalla
+Battleblo
 
 [008503] NOMBRES PERSONAJES
-edad
+Eiji
 
 [008504] NOMBRES PERSONAJES
 Dodohige
 
 [008505] NOMBRES PERSONAJES
-Chelín
+Bob
 
 [008506] NOMBRES PERSONAJES
-Domingo
+Sunday
 
 [008507] NOMBRES PERSONAJES
 Asagi
@@ -27498,7 +27498,7 @@ Configuración de ruta (línea recta)
 [PENDIENTE DE RECONSTRUCCIÓN / REVISIÓN]
 
 [008725] ATRIBUTOS TERRENO
-Controversia
+En llamas
 
 [008726] ATRIBUTOS TERRENO
 capa de hielo

@@ -937,7 +937,7 @@
 000936,CLD-000956,dialogo,demo1002_00.dsf,100200,764,551,,,,sin_hablante_verificable,11,This place really doesn't look like it's underground.,Este lugar realmente no parece estar bajo tierra.
 000937,CLD-000957,dialogo,demo1002_00.dsf,100200,764,552,,,,sin_hablante_verificable,1,"I didn't think Arcanus Cella had pitfalls,","No creía que Arcanus Cella tuviera trampas,"
 000938,CLD-000958,dialogo,demo1002_00.dsf,100200,764,553,,,,sin_hablante_verificable,1,so I got kinda careless.,Así que me descuidé un poco.
-000939,CLD-000959,dialogo,demo1002_00.dsf,100200,764,573,,,,sin_hablante_verificable,20,Hold on!,¡Esperar!
+000939,CLD-000959,dialogo,demo1002_00.dsf,100200,764,573,,,,sin_hablante_verificable,20,Hold on!,¡Espera!
 000940,CLD-000960,dialogo,demo1002_00.dsf,100200,764,574,,,,sin_hablante_verificable,1,That place is Arcanus Cella?,¿Ese lugar es Arcanus Cella?
 000941,CLD-000961,dialogo,demo1002_00.dsf,100200,764,580,,,,sin_hablante_verificable,6,Yes.,Sí.
 000942,CLD-000962,dialogo,demo1002_00.dsf,100200,764,581,,,,sin_hablante_verificable,1,I read all the legends about it,Leí todas las leyendas al respecto
@@ -1386,32 +1386,32 @@
 001385,CLD-001418,dialogo,demo1006_02.dsf,300613,811,8,Pico,Pico,CLD-001414,continuidad_corta_probable,2,The game doesn't pause when the Dictionary is out.,El juego no se pausa cuando el Diccionario está fuera.
 001386,CLD-001419,dialogo,demo1006_02.dsf,300613,811,9,Pico,Pico,CLD-001414,continuidad_corta_probable,1,Make sure you read it in a safe place.,Asegúrate de leerlo en un lugar seguro.
 001387,CLD-001420,dialogo,demo1006_02.dsf,300613,811,10,Pico,Pico,CLD-001414,continuidad_corta_probable,1,Press the ⑬ at Arcanus Cella to read the Dictionary.,Pulsa la tecla ⑬ en Arcanus Cella para leer el diccionario.
-001388,CLD-001421,personaje_interlocutor,demo1006_02.dsf,300614,812,2,A pie,Piyyo,CLD-001421,opcode_0x6E_nombre_explicito,,Piyyo,A pie
-001389,CLD-001422,dialogo,demo1006_02.dsf,300614,812,4,A pie,Piyyo,CLD-001421,primer_mensaje_tras_nombre,2,"Water, grass, fire, and ice can be found on the ground.","En el suelo se pueden encontrar agua, hierba, fuego y hielo."
-001390,CLD-001423,dialogo,demo1006_02.dsf,300614,812,5,A pie,Piyyo,CLD-001421,continuidad_corta_probable,1,"Walking on them will make you slower, slip, or","Caminar sobre ellas te hará ir más lento, resbalar o"
-001391,CLD-001424,dialogo,demo1006_02.dsf,300614,812,6,A pie,Piyyo,CLD-001421,continuidad_corta_probable,1,provide other adverse effects.,proporcionar otros efectos adversos.
-001392,CLD-001425,personaje_interlocutor,demo1006_02.dsf,300615,813,2,Abril,Prillin,CLD-001425,opcode_0x6E_nombre_explicito,,Prillin,Abril
-001393,CLD-001426,dialogo,demo1006_02.dsf,300615,813,4,Abril,Prillin,CLD-001425,primer_mensaje_tras_nombre,2,"Sorcerer classes learn ""magic""","Las clases de hechiceros aprenden ""magia"""
-001394,CLD-001427,dialogo,demo1006_02.dsf,300615,813,5,Abril,Prillin,CLD-001425,continuidad_corta_probable,1,as they level up.,a medida que suben de nivel.
-001395,CLD-001428,dialogo,demo1006_02.dsf,300615,813,6,Abril,Prillin,CLD-001425,continuidad_corta_probable,1,"Warrior classes learn ""abilities"" when they level up.","Las clases guerreras aprenden ""habilidades"" al subir de nivel."
-001396,CLD-001429,dialogo,demo1006_02.dsf,300615,813,8,Abril,Prillin,CLD-001425,continuidad_corta_probable,2,"You have to remember that ""Magic"" and ""Abilities""","Debes recordar que ""Magia"" y ""Habilidades"""
-001397,CLD-001430,dialogo,demo1006_02.dsf,300615,813,9,Abril,Prillin,CLD-001425,continuidad_corta_probable,1,must be equipped before you can use them.,Deben estar equipados antes de poder utilizarlos.
-001398,CLD-001431,dialogo,demo1006_02.dsf,300615,813,11,Abril,Prillin,CLD-001425,continuidad_corta_probable,2,"Equip them on the ""Magic Circle/Equip"" screen.","Equípalos en la pantalla ""Círculo mágico/Equipar""."
-001399,CLD-001432,dialogo,demo1006_02.dsf,300615,813,12,Abril,Prillin,CLD-001425,continuidad_corta_probable,1,"You can only equip up to 3, so choose wisely.","Solo puedes equipar hasta 3, así que elige con cuidado."
+001388,CLD-001421,personaje_interlocutor,demo1006_02.dsf,300614,812,2,Piyyo,Piyyo,CLD-001421,opcode_0x6E_nombre_explicito,,Piyyo,Piyyo
+001389,CLD-001422,dialogo,demo1006_02.dsf,300614,812,4,Piyyo,Piyyo,CLD-001421,primer_mensaje_tras_nombre,2,"Water, grass, fire, and ice can be found on the ground.","En el suelo se pueden encontrar agua, hierba, fuego y hielo."
+001390,CLD-001423,dialogo,demo1006_02.dsf,300614,812,5,Piyyo,Piyyo,CLD-001421,continuidad_corta_probable,1,"Walking on them will make you slower, slip, or","Caminar sobre ellas te hará ir más lento, resbalar o"
+001391,CLD-001424,dialogo,demo1006_02.dsf,300614,812,6,Piyyo,Piyyo,CLD-001421,continuidad_corta_probable,1,provide other adverse effects.,proporcionar otros efectos adversos.
+001392,CLD-001425,personaje_interlocutor,demo1006_02.dsf,300615,813,2,Prillin,Prillin,CLD-001425,opcode_0x6E_nombre_explicito,,Prillin,Prillin
+001393,CLD-001426,dialogo,demo1006_02.dsf,300615,813,4,Prillin,Prillin,CLD-001425,primer_mensaje_tras_nombre,2,"Sorcerer classes learn ""magic""","Las clases de hechiceros aprenden ""magia"""
+001394,CLD-001427,dialogo,demo1006_02.dsf,300615,813,5,Prillin,Prillin,CLD-001425,continuidad_corta_probable,1,as they level up.,a medida que suben de nivel.
+001395,CLD-001428,dialogo,demo1006_02.dsf,300615,813,6,Prillin,Prillin,CLD-001425,continuidad_corta_probable,1,"Warrior classes learn ""abilities"" when they level up.","Las clases guerreras aprenden ""habilidades"" al subir de nivel."
+001396,CLD-001429,dialogo,demo1006_02.dsf,300615,813,8,Prillin,Prillin,CLD-001425,continuidad_corta_probable,2,"You have to remember that ""Magic"" and ""Abilities""","Debes recordar que ""Magia"" y ""Habilidades"""
+001397,CLD-001430,dialogo,demo1006_02.dsf,300615,813,9,Prillin,Prillin,CLD-001425,continuidad_corta_probable,1,must be equipped before you can use them.,Deben estar equipados antes de poder utilizarlos.
+001398,CLD-001431,dialogo,demo1006_02.dsf,300615,813,11,Prillin,Prillin,CLD-001425,continuidad_corta_probable,2,"Equip them on the ""Magic Circle/Equip"" screen.","Equípalos en la pantalla ""Círculo mágico/Equipar""."
+001399,CLD-001432,dialogo,demo1006_02.dsf,300615,813,12,Prillin,Prillin,CLD-001425,continuidad_corta_probable,1,"You can only equip up to 3, so choose wisely.","Solo puedes equipar hasta 3, así que elige con cuidado."
 001400,CLD-001433,personaje_interlocutor,demo1006_02.dsf,300616,814,2,Pegeta,Pegeta,CLD-001433,opcode_0x6E_nombre_explicito,,Pegeta,Pegeta
 001401,CLD-001434,dialogo,demo1006_02.dsf,300616,814,4,Pegeta,Pegeta,CLD-001433,primer_mensaje_tras_nombre,2,"Did you know that ""equipment"" can have titles?","¿Sabías que el ""equipo"" puede tener nombres?"
 001402,CLD-001435,dialogo,demo1006_02.dsf,300616,814,5,Pegeta,Pegeta,CLD-001433,continuidad_corta_probable,1,Equipment with good titles have good specs.,Los equipos con buenos títulos tienen buenas especificaciones.
 001403,CLD-001436,dialogo,demo1006_02.dsf,300616,814,6,Pegeta,Pegeta,CLD-001433,continuidad_corta_probable,1,Equipment dropped by strong foes have good titles.,El equipo que sueltan los enemigos fuertes tiene buenos títulos.
-001404,CLD-001437,personaje_interlocutor,demo1006_02.dsf,300617,815,2,Barato,Poku,CLD-001437,opcode_0x6E_nombre_explicito,,Poku,Barato
-001405,CLD-001438,dialogo,demo1006_02.dsf,300617,815,4,Barato,Poku,CLD-001437,primer_mensaje_tras_nombre,2,"""Artifacts"" are awesome!","¡Los ""artefactos"" son geniales!"
-001406,CLD-001439,dialogo,demo1006_02.dsf,300617,815,5,Barato,Poku,CLD-001437,continuidad_corta_probable,1,Leveling up and equipment titles are nothing,Subir de nivel y los títulos de equipo no son nada
-001407,CLD-001440,dialogo,demo1006_02.dsf,300617,815,6,Barato,Poku,CLD-001437,continuidad_corta_probable,1,in comparison!,¡en comparación!
-001408,CLD-001441,dialogo,demo1006_02.dsf,300617,815,8,Barato,Poku,CLD-001437,continuidad_corta_probable,2,"Just place and activate the ""Artifact"" on your","Simplemente coloca y activa el ""Artefacto"" en tu"
-001409,CLD-001442,dialogo,demo1006_02.dsf,300617,815,9,Barato,Poku,CLD-001437,continuidad_corta_probable,1,Magic Circle to power up your abilities!,¡Círculo mágico para potenciar tus habilidades!
-001410,CLD-001443,dialogo,demo1006_02.dsf,300617,815,11,Barato,Poku,CLD-001437,continuidad_corta_probable,2,"Also, all equipment have ⑧ weight attributes.","Además, todos los equipos tienen atributos de peso ⑧."
-001411,CLD-001444,dialogo,demo1006_02.dsf,300617,815,12,Barato,Poku,CLD-001437,continuidad_corta_probable,1,"The bigger the ⑧, the longer it takes for","Cuanto mayor sea el ⑧, más tiempo tardará"
-001412,CLD-001445,dialogo,demo1006_02.dsf,300617,815,13,Barato,Poku,CLD-001437,continuidad_corta_probable,1,you to attack.,tú para atacar.
-001413,CLD-001446,dialogo,demo1006_02.dsf,300617,815,15,Barato,Poku,CLD-001437,continuidad_corta_probable,2,Artifacts that ignore the effects of ⑧ are great!,¡Los artefactos que ignoran los efectos de ⑧ son geniales!
+001404,CLD-001437,personaje_interlocutor,demo1006_02.dsf,300617,815,2,Poku,Poku,CLD-001437,opcode_0x6E_nombre_explicito,,Poku,Poku
+001405,CLD-001438,dialogo,demo1006_02.dsf,300617,815,4,Poku,Poku,CLD-001437,primer_mensaje_tras_nombre,2,"""Artifacts"" are awesome!","¡Los ""artefactos"" son geniales!"
+001406,CLD-001439,dialogo,demo1006_02.dsf,300617,815,5,Poku,Poku,CLD-001437,continuidad_corta_probable,1,Leveling up and equipment titles are nothing,Subir de nivel y los títulos de equipo no son nada
+001407,CLD-001440,dialogo,demo1006_02.dsf,300617,815,6,Poku,Poku,CLD-001437,continuidad_corta_probable,1,in comparison!,¡en comparación!
+001408,CLD-001441,dialogo,demo1006_02.dsf,300617,815,8,Poku,Poku,CLD-001437,continuidad_corta_probable,2,"Just place and activate the ""Artifact"" on your","Simplemente coloca y activa el ""Artefacto"" en tu"
+001409,CLD-001442,dialogo,demo1006_02.dsf,300617,815,9,Poku,Poku,CLD-001437,continuidad_corta_probable,1,Magic Circle to power up your abilities!,¡Círculo mágico para potenciar tus habilidades!
+001410,CLD-001443,dialogo,demo1006_02.dsf,300617,815,11,Poku,Poku,CLD-001437,continuidad_corta_probable,2,"Also, all equipment have ⑧ weight attributes.","Además, todos los equipos tienen atributos de peso ⑧."
+001411,CLD-001444,dialogo,demo1006_02.dsf,300617,815,12,Poku,Poku,CLD-001437,continuidad_corta_probable,1,"The bigger the ⑧, the longer it takes for","Cuanto mayor sea el ⑧, más tiempo tardará"
+001412,CLD-001445,dialogo,demo1006_02.dsf,300617,815,13,Poku,Poku,CLD-001437,continuidad_corta_probable,1,you to attack.,tú para atacar.
+001413,CLD-001446,dialogo,demo1006_02.dsf,300617,815,15,Poku,Poku,CLD-001437,continuidad_corta_probable,2,Artifacts that ignore the effects of ⑧ are great!,¡Los artefactos que ignoran los efectos de ⑧ son geniales!
 001414,CLD-001447,personaje_interlocutor,demo1006_02.dsf,300618,816,2,Pohan,Pohan,CLD-001447,opcode_0x6E_nombre_explicito,,Pohan,Pohan
 001415,CLD-001448,dialogo,demo1006_02.dsf,300618,816,4,Pohan,Pohan,CLD-001447,primer_mensaje_tras_nombre,2,"That one is giving ""Artifacts"" too much credit.","Eso es darle demasiado crédito a ""Artifacts""."
 001416,CLD-001449,dialogo,demo1006_02.dsf,300618,816,5,Pohan,Pohan,CLD-001447,continuidad_corta_probable,1,Artifacts also have vulnerabilities.,Los artefactos también tienen vulnerabilidades.
@@ -1421,15 +1421,15 @@
 001420,CLD-001453,dialogo,demo1006_02.dsf,300618,816,11,Pohan,Pohan,CLD-001447,continuidad_corta_probable,2,"In that sense, your equipment will stay with","En ese sentido, su equipo permanecerá con"
 001421,CLD-001454,dialogo,demo1006_02.dsf,300618,816,12,Pohan,Pohan,CLD-001447,continuidad_corta_probable,1,the main character from beginning to end.,El personaje principal de principio a fin.
 001422,CLD-001455,dialogo,demo1006_02.dsf,300618,816,13,Pohan,Pohan,CLD-001447,continuidad_corta_probable,1,Equipment is the most important thing there is!,¡El equipo es lo más importante que existe!
-001423,CLD-001456,personaje_interlocutor,demo1006_02.dsf,300619,817,2,Pozos,Piten,CLD-001456,opcode_0x6E_nombre_explicito,,Piten,Pozos
-001424,CLD-001457,dialogo,demo1006_02.dsf,300619,817,4,Pozos,Piten,CLD-001456,primer_mensaje_tras_nombre,2,You're depending too much on equipment!,¡Dependes demasiado del equipo!
-001425,CLD-001458,dialogo,demo1006_02.dsf,300619,817,5,Pozos,Piten,CLD-001456,continuidad_corta_probable,1,Do you know about status effects?,¿Conoces los efectos de estado?
-001426,CLD-001459,dialogo,demo1006_02.dsf,300619,817,7,Pozos,Piten,CLD-001456,continuidad_corta_probable,2,"Poison, sleep, and blindness","Veneno, sueño y ceguera"
-001427,CLD-001460,dialogo,demo1006_02.dsf,300619,817,8,Pozos,Piten,CLD-001456,continuidad_corta_probable,1,are among the most common,se encuentran entre los más comunes
-001428,CLD-001461,dialogo,demo1006_02.dsf,300619,817,9,Pozos,Piten,CLD-001456,continuidad_corta_probable,1,status effects.,efectos de estado.
-001429,CLD-001462,dialogo,demo1006_02.dsf,300619,817,11,Pozos,Piten,CLD-001456,continuidad_corta_probable,2,"If you become ""Naked,"" you'll be stripped","Si quedas ""desnudo"", perderás"
-001430,CLD-001463,dialogo,demo1006_02.dsf,300619,817,12,Pozos,Piten,CLD-001456,continuidad_corta_probable,1,of your equpment.,tu equipo.
-001431,CLD-001464,dialogo,demo1006_02.dsf,300619,817,14,Pozos,Piten,CLD-001456,continuidad_corta_probable,2,Watch out for attacks from Cat Burglars.,¡Cuidado con los ataques de ladrones de guante blanco!
+001423,CLD-001456,personaje_interlocutor,demo1006_02.dsf,300619,817,2,Piten,Piten,CLD-001456,opcode_0x6E_nombre_explicito,,Piten,Piten
+001424,CLD-001457,dialogo,demo1006_02.dsf,300619,817,4,Piten,Piten,CLD-001456,primer_mensaje_tras_nombre,2,You're depending too much on equipment!,¡Dependes demasiado del equipo!
+001425,CLD-001458,dialogo,demo1006_02.dsf,300619,817,5,Piten,Piten,CLD-001456,continuidad_corta_probable,1,Do you know about status effects?,¿Conoces los efectos de estado?
+001426,CLD-001459,dialogo,demo1006_02.dsf,300619,817,7,Piten,Piten,CLD-001456,continuidad_corta_probable,2,"Poison, sleep, and blindness","Veneno, sueño y ceguera"
+001427,CLD-001460,dialogo,demo1006_02.dsf,300619,817,8,Piten,Piten,CLD-001456,continuidad_corta_probable,1,are among the most common,se encuentran entre los más comunes
+001428,CLD-001461,dialogo,demo1006_02.dsf,300619,817,9,Piten,Piten,CLD-001456,continuidad_corta_probable,1,status effects.,efectos de estado.
+001429,CLD-001462,dialogo,demo1006_02.dsf,300619,817,11,Piten,Piten,CLD-001456,continuidad_corta_probable,2,"If you become ""Naked,"" you'll be stripped","Si quedas ""desnudo"", perderás"
+001430,CLD-001463,dialogo,demo1006_02.dsf,300619,817,12,Piten,Piten,CLD-001456,continuidad_corta_probable,1,of your equpment.,tu equipo.
+001431,CLD-001464,dialogo,demo1006_02.dsf,300619,817,14,Piten,Piten,CLD-001456,continuidad_corta_probable,2,Watch out for attacks from Cat Burglars.,¡Cuidado con los ataques de ladrones de guante blanco!
 001432,CLD-001465,personaje_interlocutor,demo1006_02.dsf,300620,818,2,Señor Percule,Mister Percule,CLD-001465,opcode_0x6E_nombre_explicito,,Mister Percule,Señor Percule
 001433,CLD-001466,dialogo,demo1006_02.dsf,300620,818,4,Señor Percule,Mister Percule,CLD-001465,primer_mensaje_tras_nombre,2,"Do you know the ""Legendary Artifact?""","¿Conoces el ""Artefacto Legendario""?"
 001434,CLD-001467,dialogo,demo1006_02.dsf,300620,818,5,Señor Percule,Mister Percule,CLD-001465,continuidad_corta_probable,1,"That Artifact is called ""Widen.""",Ese artefacto se llama «Widen».
@@ -1457,15 +1457,15 @@
 001456,CLD-001489,dialogo,demo1006_02.dsf,300622,820,23,Tsunpiyo,Tsunpiyo,CLD-001474,continuidad_corta_probable,2,"To make a good sub character, it's better","Para crear un buen personaje secundario, es mejor"
 001457,CLD-001490,dialogo,demo1006_02.dsf,300622,820,24,Tsunpiyo,Tsunpiyo,CLD-001474,continuidad_corta_probable,1,"to level them up as a ""main character"" so they","para subirlos de nivel como ""personaje principal"" para que"
 001458,CLD-001491,dialogo,demo1006_02.dsf,300622,820,25,Tsunpiyo,Tsunpiyo,CLD-001474,continuidad_corta_probable,1,can get more HP and Mana.,puede obtener más HP y Maná.
-001459,CLD-001492,dialogo,demo1006_02.dsf,300622,820,27,Tsunpiyo,Tsunpiyo,CLD-001474,continuidad_corta_probable,2,I-It's not like I'm telling you,N-no te lo digo porque quiera.
-001460,CLD-001493,dialogo,demo1006_02.dsf,300622,820,28,Tsunpiyo,Tsunpiyo,CLD-001474,continuidad_corta_probable,1,because I want to!,¡Que quede claro!
-001461,CLD-001494,personaje_interlocutor,demo1006_02.dsf,300623,821,2,Ajustar,Pigurui,CLD-001494,opcode_0x6E_nombre_explicito,,Pigurui,Ajustar
-001462,CLD-001495,dialogo,demo1006_02.dsf,300623,821,4,Ajustar,Pigurui,CLD-001494,primer_mensaje_tras_nombre,2,I'm not trusting you!,¡No confío en ti!
-001463,CLD-001496,dialogo,demo1006_02.dsf,300623,821,5,Ajustar,Pigurui,CLD-001494,continuidad_corta_probable,1,I planted land mines so,Planté minas terrestres así
-001464,CLD-001497,dialogo,demo1006_02.dsf,300623,821,6,Ajustar,Pigurui,CLD-001494,continuidad_corta_probable,1,no one can go into our village!,¡Nadie puede entrar en nuestro pueblo!
-001465,CLD-001498,dialogo,demo1006_02.dsf,300623,821,8,Ajustar,Pigurui,CLD-001494,continuidad_corta_probable,2,It'll be instant death for ones like us,Será una muerte instantánea para seres como nosotros
-001466,CLD-001499,dialogo,demo1006_02.dsf,300623,821,9,Ajustar,Pigurui,CLD-001494,continuidad_corta_probable,1,because we can't jump over traps!,porque no podemos saltar las trampas.
-001467,CLD-001500,dialogo,demo1006_02.dsf,300623,821,10,Ajustar,Pigurui,CLD-001494,continuidad_corta_probable,1,Heeheehee!,¡Jejejeje!
+001459,CLD-001492,dialogo,demo1006_02.dsf,300622,820,27,Tsunpiyo,Tsunpiyo,CLD-001474,continuidad_corta_probable,2,I-It's not like I'm telling you,¡N-no creas que te lo digo
+001460,CLD-001493,dialogo,demo1006_02.dsf,300622,820,28,Tsunpiyo,Tsunpiyo,CLD-001474,continuidad_corta_probable,1,because I want to!,porque quiera!
+001461,CLD-001494,personaje_interlocutor,demo1006_02.dsf,300623,821,2,Pigurui,Pigurui,CLD-001494,opcode_0x6E_nombre_explicito,,Pigurui,Pigurui
+001462,CLD-001495,dialogo,demo1006_02.dsf,300623,821,4,Pigurui,Pigurui,CLD-001494,primer_mensaje_tras_nombre,2,I'm not trusting you!,¡No confío en ti!
+001463,CLD-001496,dialogo,demo1006_02.dsf,300623,821,5,Pigurui,Pigurui,CLD-001494,continuidad_corta_probable,1,I planted land mines so,Planté minas terrestres así
+001464,CLD-001497,dialogo,demo1006_02.dsf,300623,821,6,Pigurui,Pigurui,CLD-001494,continuidad_corta_probable,1,no one can go into our village!,¡Nadie puede entrar en nuestro pueblo!
+001465,CLD-001498,dialogo,demo1006_02.dsf,300623,821,8,Pigurui,Pigurui,CLD-001494,continuidad_corta_probable,2,It'll be instant death for ones like us,Será una muerte instantánea para seres como nosotros
+001466,CLD-001499,dialogo,demo1006_02.dsf,300623,821,9,Pigurui,Pigurui,CLD-001494,continuidad_corta_probable,1,because we can't jump over traps!,porque no podemos saltar las trampas.
+001467,CLD-001500,dialogo,demo1006_02.dsf,300623,821,10,Pigurui,Pigurui,CLD-001494,continuidad_corta_probable,1,Heeheehee!,¡Jejejeje!
 001468,CLD-001501,personaje_interlocutor,demo1006_02.dsf,300624,822,2,Hiyojiji,Hiyojiji,CLD-001501,opcode_0x6E_nombre_explicito,,Hiyojiji,Hiyojiji
 001469,CLD-001502,dialogo,demo1006_02.dsf,300624,822,4,Hiyojiji,Hiyojiji,CLD-001501,primer_mensaje_tras_nombre,2,Artifacts are crucial.,Los artefactos son cruciales.
 001470,CLD-001503,dialogo,demo1006_02.dsf,300624,822,6,Hiyojiji,Hiyojiji,CLD-001501,continuidad_corta_probable,2,"When I was the legendary Hiyokki,","Cuando yo era el legendario Hiyokki,"
@@ -1475,10 +1475,10 @@
 001474,CLD-001507,dialogo,demo1006_02.dsf,300624,822,11,Hiyojiji,Hiyojiji,CLD-001501,continuidad_corta_probable,1,"only equipment was the ""Wooden Stick.""","aquel aventurero era un ""Palo de madera""."
 001475,CLD-001508,dialogo,demo1006_02.dsf,300624,822,13,Hiyojiji,Hiyojiji,CLD-001501,continuidad_corta_probable,2,"In other words, you can raise your ATK to 100","¡En otras palabras, puedes alcanzar 100 ATK"
 001476,CLD-001509,dialogo,demo1006_02.dsf,300624,822,14,Hiyojiji,Hiyojiji,CLD-001501,continuidad_corta_probable,1,with just Artifacts!,solo con artefactos!
-001477,CLD-001510,personaje_interlocutor,demo1006_02.dsf,300625,823,2,hiyorton,Hiyorton,CLD-001510,opcode_0x6E_nombre_explicito,,Hiyorton,hiyorton
-001478,CLD-001511,dialogo,demo1006_02.dsf,300625,823,4,hiyorton,Hiyorton,CLD-001510,primer_mensaje_tras_nombre,2,I finally bought my own home!,¡Por fin compré mi propia casa!
-001479,CLD-001512,dialogo,demo1006_02.dsf,300625,823,5,hiyorton,Hiyorton,CLD-001510,continuidad_corta_probable,1,What do you think of it?!,¿Qué opinas?
-001480,CLD-001513,dialogo,demo1006_02.dsf,300625,823,6,hiyorton,Hiyorton,CLD-001510,continuidad_corta_probable,1,Livin' the Hiyoan dream!,¡Viviendo el sueño de Hiyoan!
+001477,CLD-001510,personaje_interlocutor,demo1006_02.dsf,300625,823,2,Hiyorton,Hiyorton,CLD-001510,opcode_0x6E_nombre_explicito,,Hiyorton,Hiyorton
+001478,CLD-001511,dialogo,demo1006_02.dsf,300625,823,4,Hiyorton,Hiyorton,CLD-001510,primer_mensaje_tras_nombre,2,I finally bought my own home!,¡Por fin compré mi propia casa!
+001479,CLD-001512,dialogo,demo1006_02.dsf,300625,823,5,Hiyorton,Hiyorton,CLD-001510,continuidad_corta_probable,1,What do you think of it?!,¿Qué opinas?
+001480,CLD-001513,dialogo,demo1006_02.dsf,300625,823,6,Hiyorton,Hiyorton,CLD-001510,continuidad_corta_probable,1,Livin' the Hiyoan dream!,¡Viviendo el sueño de Hiyoan!
 001481,CLD-001514,personaje_interlocutor,demo1006_02.dsf,300626,824,2,Hiyokan,Hiyokan,CLD-001514,opcode_0x6E_nombre_explicito,,Hiyokan,Hiyokan
 001482,CLD-001515,dialogo,demo1006_02.dsf,300626,824,4,Hiyokan,Hiyokan,CLD-001514,primer_mensaje_tras_nombre,2,Where did Hiyonii go...?,¿Adónde fue Hiyonii...?
 001483,CLD-001516,dialogo,demo1006_02.dsf,300626,824,6,Hiyokan,Hiyokan,CLD-001514,continuidad_corta_probable,2,"Hiyonii has lots of EXP and G, so maybe some","Hiyonii tiene mucha EXP y G, así que tal vez algunos"
@@ -1487,12 +1487,12 @@
 001486,CLD-001519,personaje_interlocutor,demo1006_02.dsf,300627,825,2,Hiyogakki,Hiyogakki,CLD-001519,opcode_0x6E_nombre_explicito,,Hiyogakki,Hiyogakki
 001487,CLD-001520,dialogo,demo1006_02.dsf,300627,825,4,Hiyogakki,Hiyogakki,CLD-001519,primer_mensaje_tras_nombre,2,"You rarely get to see a ""Hiyokki.""","Es raro ver un ""Hiyokki""."
 001488,CLD-001521,dialogo,demo1006_02.dsf,300627,825,5,Hiyogakki,Hiyogakki,CLD-001519,continuidad_corta_probable,1,But you'll get lots of treasures!,¡Pero encontrarás muchos tesoros!
-001489,CLD-001522,personaje_interlocutor,demo1006_02.dsf,300628,826,2,hola,Hiyonee,CLD-001522,opcode_0x6E_nombre_explicito,,Hiyonee,hola
-001490,CLD-001523,dialogo,demo1006_02.dsf,300628,826,4,hola,Hiyonee,CLD-001522,primer_mensaje_tras_nombre,2,I keep a guard dog on my terrace.,Tengo un perro guardián en mi terraza.
-001491,CLD-001524,personaje_interlocutor,demo1006_02.dsf,300629,827,2,YouTubeyobaba,Hiyobaba,CLD-001524,opcode_0x6E_nombre_explicito,,Hiyobaba,YouTubeyobaba
-001492,CLD-001525,dialogo,demo1006_02.dsf,300629,827,4,YouTubeyobaba,Hiyobaba,CLD-001524,primer_mensaje_tras_nombre,2,Some of us can sometimes evolve into a,Algunos de nosotros a veces podemos evolucionar hacia un
-001493,CLD-001526,dialogo,demo1006_02.dsf,300629,827,5,YouTubeyobaba,Hiyobaba,CLD-001524,continuidad_corta_probable,1,battle type.,tipo de batalla.
-001494,CLD-001527,dialogo,demo1006_02.dsf,300629,827,7,YouTubeyobaba,Hiyobaba,CLD-001524,continuidad_corta_probable,2,"The legendary ""Hiyokki!""","¡El legendario ""Hiyokki!"""
+001489,CLD-001522,personaje_interlocutor,demo1006_02.dsf,300628,826,2,Hiyonee,Hiyonee,CLD-001522,opcode_0x6E_nombre_explicito,,Hiyonee,Hiyonee
+001490,CLD-001523,dialogo,demo1006_02.dsf,300628,826,4,Hiyonee,Hiyonee,CLD-001522,primer_mensaje_tras_nombre,2,I keep a guard dog on my terrace.,Tengo un perro guardián en mi terraza.
+001491,CLD-001524,personaje_interlocutor,demo1006_02.dsf,300629,827,2,Hiyobaba,Hiyobaba,CLD-001524,opcode_0x6E_nombre_explicito,,Hiyobaba,Hiyobaba
+001492,CLD-001525,dialogo,demo1006_02.dsf,300629,827,4,Hiyobaba,Hiyobaba,CLD-001524,primer_mensaje_tras_nombre,2,Some of us can sometimes evolve into a,Algunos de nosotros a veces podemos evolucionar hacia un
+001493,CLD-001526,dialogo,demo1006_02.dsf,300629,827,5,Hiyobaba,Hiyobaba,CLD-001524,continuidad_corta_probable,1,battle type.,tipo de batalla.
+001494,CLD-001527,dialogo,demo1006_02.dsf,300629,827,7,Hiyobaba,Hiyobaba,CLD-001524,continuidad_corta_probable,2,"The legendary ""Hiyokki!""","¡El legendario ""Hiyokki!"""
 001495,CLD-001528,dialogo,demo1007_00.dsf,100700,829,38,,,,sin_hablante_verificable,,Despina?,¿Despina?
 001496,CLD-001529,dialogo,demo1007_00.dsf,100700,829,39,,,,sin_hablante_verificable,1,Do you want to join us after all?,¿Al final quieres unirte a nosotros?
 001497,CLD-001530,dialogo,demo1007_00.dsf,100700,829,46,,,,sin_hablante_verificable,7,I'm not going to be a sub for a crazy girl.,No voy a ser el sumiso de una chica loca.
@@ -1741,7 +1741,7 @@
 001740,CLD-001779,dialogo,demo1102_00.dsf,110200,852,70,Crosstine,Crosstine,CLD-001778,primer_mensaje_tras_nombre,2,Stop it right there!,¡Alto ahí mismo!
 001741,CLD-001780,dialogo,demo1102_00.dsf,110200,852,71,Crosstine,Crosstine,CLD-001778,continuidad_corta_probable,1,You really need to stop talking,Realmente necesitas dejar de hablar
 001742,CLD-001781,dialogo,demo1102_00.dsf,110200,852,72,Crosstine,Crosstine,CLD-001778,continuidad_corta_probable,1,"like that, ""Dotache.""","Así, ""Dotache""."
-001743,CLD-001782,dialogo,demo1102_00.dsf,110200,852,79,,,,sin_hablante_verificable,7,Gasp!,¡Jadear!
+001743,CLD-001782,dialogo,demo1102_00.dsf,110200,852,79,,,,sin_hablante_verificable,7,Gasp!,¡Ah!
 001744,CLD-001783,dialogo,demo1102_00.dsf,110200,852,80,,,,sin_hablante_verificable,1,"Hur, hur. Right you are!","Cómo, cómo. ¡Tienes toda la razón!"
 001745,CLD-001784,dialogo,demo1102_00.dsf,110200,852,82,,,,sin_hablante_verificable,2,Now where is the house most,¿Dónde estará la casa más adecuada
 001746,CLD-001785,dialogo,demo1102_00.dsf,110200,852,83,,,,sin_hablante_verificable,1,fitting for my new life?!,para mi nueva vida?
@@ -1851,7 +1851,7 @@
 001850,CLD-001894,dialogo,demo1103_00.dsf,110300,872,41,Hermosa espadachina,Handsome Swordswoman,CLD-001891,continuidad_corta_probable,1,I have sought all my life...？,¿Qué he buscado toda mi vida...?
 001851,CLD-001895,personaje_interlocutor,demo1103_00.dsf,110300,872,45,Voz masculina,Male Voice,CLD-001895,opcode_0x6E_nombre_explicito,,Male Voice,Voz masculina
 001852,CLD-001896,dialogo,demo1103_00.dsf,110300,872,49,Voz masculina,Male Voice,CLD-001895,primer_mensaje_tras_nombre_probable,4,Heehahaa!,¡Jejejeje!
-001853,CLD-001897,dialogo,demo1103_00.dsf,110300,872,50,Voz masculina,Male Voice,CLD-001895,continuidad_corta_probable,1,"I knew you'd come, Sunday!","¡Sabía que vendrías, domingo!"
+001853,CLD-001897,dialogo,demo1103_00.dsf,110300,872,50,Voz masculina,Male Voice,CLD-001895,continuidad_corta_probable,1,"I knew you'd come, Sunday!","¡Sabía que vendrías, Sunday!"
 001854,CLD-001898,dialogo,demo1103_00.dsf,110300,872,66,,,,sin_hablante_verificable,16,"You again, Battleblo...","Otra vez tú, Battleblo..."
 001855,CLD-001899,dialogo,demo1103_00.dsf,110300,872,72,,,,sin_hablante_verificable,6,"Nice to see you, too!",¡Qué gusto verte también!
 001856,CLD-001900,dialogo,demo1103_00.dsf,110300,872,73,,,,sin_hablante_verificable,1,"The ""Ultimate Shield"" will","El ""Escudo Definitivo"""
@@ -1899,10 +1899,10 @@
 001898,CLD-001942,dialogo,demo1103_00.dsf,110300,872,257,,,,sin_hablante_verificable,1,I saw a black cat with the map of,Vi un gato negro con el mapa de
 001899,CLD-001943,dialogo,demo1103_00.dsf,110300,872,258,,,,sin_hablante_verificable,1,"Will ""Arcanus Cella"" have","¿Tendrá ""Arcanus Cella"""
 001900,CLD-001944,dialogo,demo1103_00.dsf,110300,872,260,,,,sin_hablante_verificable,2,Could it be...?,¿Podría ser...?
-001901,CLD-001946,dialogo,demo1103_00.dsf,110300,872,276,,,,sin_hablante_verificable,16,You now have access to Sunday.,Ahora tienes acceso al domingo.
+001901,CLD-001946,dialogo,demo1103_00.dsf,110300,872,276,,,,sin_hablante_verificable,16,You now have access to Sunday.,Sunday ya está disponible.
 001902,CLD-001947,dialogo,demo1103_00.dsf,110300,872,277,,,,sin_hablante_verificable,1,You now have access to Battleblo.,Ahora tienes acceso a Battleblo.
 001903,CLD-001948,dialogo,demo1103_00.dsf,110300,872,278,,,,sin_hablante_verificable,1,You can now go to a new dungeon!,¡Ahora puedes ir a una nueva mazmorra!
-001904,CLD-001950,dialogo,demo1103_00.dsf,110390,873,14,,,,sin_hablante_verificable,,You now have access to Sunday.,Ahora tienes acceso al domingo.
+001904,CLD-001950,dialogo,demo1103_00.dsf,110390,873,14,,,,sin_hablante_verificable,,You now have access to Sunday.,Sunday ya está disponible.
 001905,CLD-001951,dialogo,demo1103_00.dsf,110390,873,15,,,,sin_hablante_verificable,1,You now have access to Battleblo.,Ahora tienes acceso a Battleblo.
 001906,CLD-001952,dialogo,demo1103_00.dsf,110390,873,16,,,,sin_hablante_verificable,1,You can now go to a new dungeon!,¡Ahora puedes ir a una nueva mazmorra!
 001907,CLD-001953,dialogo,demo1103_01.dsf,110301,874,5,,,,sin_hablante_verificable,,The ultimate sword and shield sound like,El sonido definitivo de espada y escudo es como
@@ -1953,7 +1953,7 @@
 001952,CLD-001998,dialogo,demo1104_00.dsf,110400,884,160,,,,sin_hablante_verificable,32,Who's there?,¿Quién está ahí?
 001953,CLD-001999,dialogo,demo1104_00.dsf,110400,884,208,,,,sin_hablante_verificable,48,Heehahaha! I can tell!,¡Jejejeje! ¡Puedo decirlo!
 001954,CLD-002000,dialogo,demo1104_00.dsf,110400,884,209,,,,sin_hablante_verificable,1,Women can be so dangerous! Am I right?,¡Las mujeres pueden ser tan peligrosas! ¿Verdad?
-001955,CLD-002001,dialogo,demo1104_00.dsf,110400,884,210,,,,sin_hablante_verificable,1,That Sunday gives me trouble to no end!,¡Ese domingo me da muchísimos problemas!
+001955,CLD-002001,dialogo,demo1104_00.dsf,110400,884,210,,,,sin_hablante_verificable,1,That Sunday gives me trouble to no end!,¡Sunday no hace más que darme problemas!
 001956,CLD-002002,dialogo,demo1104_00.dsf,110400,884,218,,,,sin_hablante_verificable,8,Someone finally understands me.,Por fin alguien me entiende.
 001957,CLD-002003,dialogo,demo1104_00.dsf,110400,884,219,,,,sin_hablante_verificable,1,They say the people with women troubles are,Dicen que las personas con problemas con las mujeres son
 001958,CLD-002004,dialogo,demo1104_00.dsf,110400,884,220,,,,sin_hablante_verificable,1,always good people! Now I know it's true!,¡Siempre buena gente! ¡Ahora sé que es verdad!
@@ -1972,7 +1972,7 @@
 001971,CLD-002017,dialogo,demo1104_00.dsf,110400,884,386,,,,sin_hablante_verificable,40,Somebody stop me!,¡Que alguien me detenga!
 001972,CLD-002018,personaje_interlocutor,demo1104_00.dsf,110400,884,395,¿Acosador?,Stalker?,CLD-002018,opcode_0x6E_nombre_explicito,,Stalker?,¿Acosador?
 001973,CLD-002019,dialogo,demo1104_00.dsf,110400,884,399,¿Acosador?,Stalker?,CLD-002018,primer_mensaje_tras_nombre_probable,4,Hey!,¡Ey!
-001974,CLD-002020,dialogo,demo1104_00.dsf,110400,884,454,,,,sin_hablante_verificable,55,Coco...?,Palma de coco...?
+001974,CLD-002020,dialogo,demo1104_00.dsf,110400,884,454,,,,sin_hablante_verificable,55,Coco...?,¿Coco...?
 001975,CLD-002021,dialogo,demo1104_00.dsf,110400,884,480,,,,sin_hablante_verificable,26,Oh? Huh?,¿Oh? ¿Eh?
 001976,CLD-002022,dialogo,demo1104_00.dsf,110400,884,481,,,,sin_hablante_verificable,1,What happened?,¿Qué pasó?
 001977,CLD-002023,personaje_interlocutor,demo1104_00.dsf,110400,884,486,Crosstine,Crosstine,CLD-002023,opcode_0x6E_nombre_explicito,,Crosstine,Crosstine
@@ -2040,7 +2040,7 @@
 002039,CLD-002087,dialogo,demo1105_00.dsf,110500,898,163,Voz de canto,Singing Voice,CLD-002085,continuidad_corta_probable,1,How are ya?!,¿Cómo estás?
 002040,CLD-002088,dialogo,demo1105_00.dsf,110500,898,171,,,,sin_hablante_verificable,8,Your face and hair are as eccentric,Tu cara y tu pelo son tan extravagantes
 002041,CLD-002089,dialogo,demo1105_00.dsf,110500,898,172,,,,sin_hablante_verificable,1,"as ever, Bob.","como siempre, Bob."
-002042,CLD-002090,dialogo,demo1105_00.dsf,110500,898,179,,,,sin_hablante_verificable,7,Oho!,¡Despertar!
+002042,CLD-002090,dialogo,demo1105_00.dsf,110500,898,179,,,,sin_hablante_verificable,7,Oho!,¡Oh!
 002043,CLD-002091,dialogo,demo1105_00.dsf,110500,898,180,,,,sin_hablante_verificable,1,"Aw, shucks!","¡Ay, caramba!"
 002044,CLD-002092,dialogo,demo1105_00.dsf,110500,898,181,,,,sin_hablante_verificable,1,Now I'm blushing!,¡Ahora me estoy sonrojando!
 002045,CLD-002093,dialogo,demo1105_00.dsf,110500,898,183,,,,sin_hablante_verificable,2,But I'm gonna keep trying and trying harder!,¡Pero seguiré esforzándome cada vez más!
@@ -2073,7 +2073,7 @@
 002072,CLD-002120,dialogo,demo1105_00.dsf,110500,898,328,,,,sin_hablante_verificable,20,Aaaaand. It's almost my birthday!,Yyyyy... ¡Casi es mi cumpleaños!
 002073,CLD-002121,dialogo,demo1105_00.dsf,110500,898,329,,,,sin_hablante_verificable,1,I took a look at that shop,Pasé por esa tienda
 002074,CLD-002122,dialogo,demo1105_00.dsf,110500,898,330,,,,sin_hablante_verificable,1,and found this faaaaaabulous mask!,¡y encontré esta máscara fabulosa!
-002075,CLD-002123,dialogo,demo1105_00.dsf,110500,898,346,,,,sin_hablante_verificable,16,Mask?,¿Mascarilla?
+002075,CLD-002123,dialogo,demo1105_00.dsf,110500,898,346,,,,sin_hablante_verificable,16,Mask?,¿Máscara?
 002076,CLD-002124,dialogo,demo1105_00.dsf,110500,898,348,,,,sin_hablante_verificable,2,(Is it that mask?,(¿Es esa máscara?)
 002077,CLD-002125,dialogo,demo1105_00.dsf,110500,898,349,,,,sin_hablante_verificable,1,I thought I took it out to the trash.),Creí que lo había tirado a la basura.
 002078,CLD-002126,dialogo,demo1105_00.dsf,110500,898,364,,,,sin_hablante_verificable,15,Despina! Going out of the house?!,¡Despina! ¿Saliendo de casa?
@@ -2145,7 +2145,7 @@
 002144,CLD-002195,dialogo,demo1201_00.dsf,120100,912,101,,,,sin_hablante_verificable,45,Gah!,¡Argh!
 002145,CLD-002196,dialogo,demo1201_00.dsf,120100,912,105,,,,sin_hablante_verificable,4,Ugh...,Puaj...
 002146,CLD-002197,dialogo,demo1201_00.dsf,120100,912,115,,,,sin_hablante_verificable,10,Argh...,Argh...
-002147,CLD-002198,dialogo,demo1201_00.dsf,120100,912,116,,,,sin_hablante_verificable,1,Gasp!,¡Jadear!
+002147,CLD-002198,dialogo,demo1201_00.dsf,120100,912,116,,,,sin_hablante_verificable,1,Gasp!,¡Ah!
 002148,CLD-002199,dialogo,demo1201_00.dsf,120100,912,137,,,,sin_hablante_verificable,21,The mask! Where's the mask?!,¡La máscara! ¿Dónde está la máscara?
 002149,CLD-002200,dialogo,demo1201_00.dsf,120100,912,157,,,,sin_hablante_verificable,20,Hm.,Hm.
 002150,CLD-002201,dialogo,demo1201_00.dsf,120100,912,158,,,,sin_hablante_verificable,1,It must have flown off somewhere.,Debe haber salido volando a algún sitio.
@@ -2643,7 +2643,7 @@
 002642,CLD-002704,personaje_interlocutor,demo1206_00.dsf,120600,988,185,Tamako,Tamako,CLD-002704,opcode_0x6E_nombre_explicito,,Tamako,Tamako
 002643,CLD-002705,dialogo,demo1206_00.dsf,120600,988,189,Tamako,Tamako,CLD-002704,primer_mensaje_tras_nombre_probable,4,"Despina, you were having a nightmare.","Despina, estabas teniendo una pesadilla."
 002644,CLD-002706,dialogo,demo1206_00.dsf,120600,988,190,Tamako,Tamako,CLD-002704,continuidad_corta_probable,1,Were you dreaming about that again?,¿Estabas soñando con eso otra vez?
-002645,CLD-002707,dialogo,demo1206_00.dsf,120600,988,202,,,,sin_hablante_verificable,12,It's because of that mask.,Es por esa mascarilla.
+002645,CLD-002707,dialogo,demo1206_00.dsf,120600,988,202,,,,sin_hablante_verificable,12,It's because of that mask.,Es por esa máscara.
 002646,CLD-002708,dialogo,demo1206_00.dsf,120600,988,203,,,,sin_hablante_verificable,1,I seriously need to trash that thing.,"En serio, necesito tirar esa cosa a la basura."
 002647,CLD-002709,dialogo,demo1206_00.dsf,120600,988,212,,,,sin_hablante_verificable,9,Is Despina here?,¿Está Despina aquí?
 002648,CLD-002710,dialogo,demo1206_00.dsf,120600,988,218,,,,sin_hablante_verificable,6,It's that boy with the terrible luck.,Es ese chico con tan mala suerte.
@@ -2679,7 +2679,7 @@
 002678,CLD-002740,dialogo,demo1206_00.dsf,120600,988,369,,,,sin_hablante_verificable,8,Hmph...,Hmph...
 002679,CLD-002742,dialogo,demo1206_00.dsf,120600,988,386,,,,sin_hablante_verificable,17,You can now go to a new dungeon!,¡Ahora puedes ir a una nueva mazmorra!
 002680,CLD-002744,dialogo,demo1206_00.dsf,120690,989,15,,,,sin_hablante_verificable,,You can now go to a new dungeon!,¡Ahora puedes ir a una nueva mazmorra!
-002681,CLD-002745,dialogo,demo1206_01.dsf,120601,990,5,,,,sin_hablante_verificable,,Do I really have to throw the mask away?,¿De verdad tengo que tirar la mascarilla?
+002681,CLD-002745,dialogo,demo1206_01.dsf,120601,990,5,,,,sin_hablante_verificable,,Do I really have to throw the mask away?,¿De verdad tengo que tirar la máscara?
 002682,CLD-002746,dialogo,demo1206_01.dsf,120601,990,6,,,,sin_hablante_verificable,1,That's no fun.,Eso no es divertido.
 002683,CLD-002747,dialogo,demo1206_01.dsf,120601,990,7,,,,sin_hablante_verificable,1,I think something might happen if we keep it.,Creo que algo podría pasar si lo mantenemos.
 002684,CLD-002748,dialogo,demo1206_01.dsf,120602,991,5,,,,sin_hablante_verificable,,"Oh please, I hope nothing happens.","¡Por favor, espero que no pase nada!"
@@ -2749,9 +2749,9 @@
 002748,CLD-002812,dialogo,demo1207_00.dsf,120700,1002,228,,,,sin_hablante_verificable,1,And stay the frick away from me!,"¡Y aléjate de mí, maldita sea!"
 002749,CLD-002813,dialogo,demo1207_00.dsf,120700,1002,243,,,,sin_hablante_verificable,15,Ugh. Does my misfortune,Uf... ¿De verdad mi mala suerte
 002750,CLD-002814,dialogo,demo1207_00.dsf,120700,1002,244,,,,sin_hablante_verificable,1,really rub off on others?,se contagia a los demás?
-002751,CLD-002815,personaje_interlocutor,demo1207_00.dsf,120700,1002,254,Mascarilla,Mask,CLD-002815,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-002752,CLD-002816,dialogo,demo1207_00.dsf,120700,1002,256,Mascarilla,Mask,CLD-002815,primer_mensaje_tras_nombre,2,Of course not.,Por supuesto que no.
-002753,CLD-002817,dialogo,demo1207_00.dsf,120700,1002,257,Mascarilla,Mask,CLD-002815,continuidad_corta_probable,1,Don't worry about it.,No te preocupes por eso.
+002751,CLD-002815,personaje_interlocutor,demo1207_00.dsf,120700,1002,254,Máscara,Mask,CLD-002815,opcode_0x6E_nombre_explicito,,Mask,Máscara
+002752,CLD-002816,dialogo,demo1207_00.dsf,120700,1002,256,Máscara,Mask,CLD-002815,primer_mensaje_tras_nombre,2,Of course not.,Por supuesto que no.
+002753,CLD-002817,dialogo,demo1207_00.dsf,120700,1002,257,Máscara,Mask,CLD-002815,continuidad_corta_probable,1,Don't worry about it.,No te preocupes por eso.
 002754,CLD-002818,dialogo,demo1207_00.dsf,120700,1002,271,,,,sin_hablante_verificable,14,The mask!,¡La máscara!
 002755,CLD-002819,dialogo,demo1207_00.dsf,120700,1002,272,,,,sin_hablante_verificable,1,I just remembered Despina,¡Acabo de recordar que Despina
 002756,CLD-002820,dialogo,demo1207_00.dsf,120700,1002,273,,,,sin_hablante_verificable,1,asked me to throw it far away!,me pidió que la tirara muy lejos!
@@ -2790,7 +2790,7 @@
 002789,CLD-002855,dialogo,demo1207_01.dsf,120712,1014,10,,,,sin_hablante_verificable,1,Should I just give it to Despina?,¿Debería simplemente dárselo a Despina?
 002790,CLD-002857,dialogo,demo1207_02.dsf,320751,1015,4,,,,sin_hablante_verificable,,↑ Long route. No slippery surface.,↑ Ruta larga. Sin superficie resbaladiza.
 002791,CLD-002859,dialogo,demo1207_02.dsf,320751,1015,6,,,,sin_hablante_verificable,2,↓ Shortcut. Slippery surface.,↓ Atajo. Superficie resbaladiza.
-002792,CLD-002860,dialogo,demo1208_00.dsf,120800,1017,38,,,,sin_hablante_verificable,,Sunday!,¡Domingo!
+002792,CLD-002860,dialogo,demo1208_00.dsf,120800,1017,38,,,,sin_hablante_verificable,,Sunday!,¡Sunday!
 002793,CLD-002861,dialogo,demo1208_00.dsf,120800,1017,48,,,,sin_hablante_verificable,10,Can you teach me some moves?,¿Me puedes enseñar algunos pasos?
 002794,CLD-002862,dialogo,demo1208_00.dsf,120800,1017,49,,,,sin_hablante_verificable,1,I want to become stronger,Quiero volverme más fuerte
 002795,CLD-002863,dialogo,demo1208_00.dsf,120800,1017,50,,,,sin_hablante_verificable,1,so I can protect Pudding better.,para poder proteger mejor a Pudding.
@@ -2836,24 +2836,24 @@
 002835,CLD-002903,dialogo,demo1208_00.dsf,120800,1017,225,,,,sin_hablante_verificable,1,if you're carrying the ultimate sword.,si llevas la espada definitiva.
 002836,CLD-002904,dialogo,demo1208_00.dsf,120800,1017,226,,,,sin_hablante_verificable,1,I guess you're like any other girl after all.,Supongo que eres como cualquier otra chica.
 002837,CLD-002905,dialogo,demo1208_00.dsf,120800,1017,233,,,,sin_hablante_verificable,7,How about wearing a mask instead of a sword?,¿Qué tal si usamos una máscara en lugar de una espada?
-002838,CLD-002906,dialogo,demo1208_00.dsf,120800,1017,234,,,,sin_hablante_verificable,1,I wore the mask earlier and wandered around.,Me puse la mascarilla hace un rato y estuve dando vueltas por ahí.
+002838,CLD-002906,dialogo,demo1208_00.dsf,120800,1017,234,,,,sin_hablante_verificable,1,I wore the mask earlier and wandered around.,Me puse la máscara hace un rato y estuve dando vueltas por ahí.
 002839,CLD-002907,dialogo,demo1208_00.dsf,120800,1017,235,,,,sin_hablante_verificable,1,It was so fun because no one recognized me.,Fue muy divertido porque nadie me reconoció.
 002840,CLD-002908,dialogo,demo1208_00.dsf,120800,1017,242,,,,sin_hablante_verificable,7,Barkeep... Is there anything you're afraid of?,Barman... ¿Hay algo a lo que le tengas miedo?
 002841,CLD-002909,dialogo,demo1208_00.dsf,120800,1017,249,,,,sin_hablante_verificable,7,Of course.,Por supuesto.
 002842,CLD-002910,personaje_interlocutor,demo1208_00.dsf,120800,1017,258,Voz misteriosa,Mysterious Voice,CLD-002910,opcode_0x6E_nombre_explicito,,Mysterious Voice,Voz misteriosa
 002843,CLD-002911,dialogo,demo1208_00.dsf,120800,1017,260,Voz misteriosa,Mysterious Voice,CLD-002910,primer_mensaje_tras_nombre,2,Don't be scared.,No tengas miedo.
-002844,CLD-002912,personaje_interlocutor,demo1208_00.dsf,120800,1017,285,Mascarilla,Mask,CLD-002912,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-002845,CLD-002913,dialogo,demo1208_00.dsf,120800,1017,287,Mascarilla,Mask,CLD-002912,primer_mensaje_tras_nombre,2,You're only scared because you have such,Solo tienes miedo porque tienes tal
-002846,CLD-002914,dialogo,demo1208_00.dsf,120800,1017,288,Mascarilla,Mask,CLD-002912,continuidad_corta_probable,1,a small circle of friends.,un pequeño círculo de amigos.
+002844,CLD-002912,personaje_interlocutor,demo1208_00.dsf,120800,1017,285,Máscara,Mask,CLD-002912,opcode_0x6E_nombre_explicito,,Mask,Máscara
+002845,CLD-002913,dialogo,demo1208_00.dsf,120800,1017,287,Máscara,Mask,CLD-002912,primer_mensaje_tras_nombre,2,You're only scared because you have such,Solo tienes miedo porque tienes tal
+002846,CLD-002914,dialogo,demo1208_00.dsf,120800,1017,288,Máscara,Mask,CLD-002912,continuidad_corta_probable,1,a small circle of friends.,un pequeño círculo de amigos.
 002847,CLD-002915,dialogo,demo1208_00.dsf,120800,1017,295,,,,sin_hablante_verificable,7,The mask talked?!,¿La máscara habló?
 002848,CLD-002917,dialogo,demo1208_00.dsf,120800,1017,316,,,,sin_hablante_verificable,21,You can now go to a new dungeon!,¡Ahora puedes ir a una nueva mazmorra!
 002849,CLD-002919,dialogo,demo1208_00.dsf,120890,1018,14,,,,sin_hablante_verificable,,You can now go to a new dungeon!,¡Ahora puedes ir a una nueva mazmorra!
 002850,CLD-002920,dialogo,demo1208_01.dsf,120801,1019,5,,,,sin_hablante_verificable,,"Shut up, you idiots!","¡Cállense, idiotas!"
 002851,CLD-002921,dialogo,demo1208_01.dsf,120801,1019,6,,,,sin_hablante_verificable,1,I can't find the treasure,No puedo encontrar el tesoro
 002852,CLD-002922,dialogo,demo1208_01.dsf,120801,1019,7,,,,sin_hablante_verificable,1,I'm looking for anywhere!,¡Estoy buscando en cualquier lugar!
-002853,CLD-002923,dialogo,demo1208_01.dsf,120802,1020,5,,,,sin_hablante_verificable,,I'm sure Pudding doesn't want to be,Estoy seguro de que Pudding no quiere estar
-002854,CLD-002924,dialogo,demo1208_01.dsf,120802,1020,6,,,,sin_hablante_verificable,1,babied as much as Sunday doesn't,Mimado tanto como el domingo no
-002855,CLD-002925,dialogo,demo1208_01.dsf,120802,1020,7,,,,sin_hablante_verificable,1,want to be stared at.,quieren que los miren fijamente.
+002853,CLD-002923,dialogo,demo1208_01.dsf,120802,1020,5,,,,sin_hablante_verificable,,I'm sure Pudding doesn't want to be,"Estoy seguro de que a Pudding no le gusta que lo mimen,"
+002854,CLD-002924,dialogo,demo1208_01.dsf,120802,1020,6,,,,sin_hablante_verificable,1,babied as much as Sunday doesn't,igual que a Sunday no le gusta
+002855,CLD-002925,dialogo,demo1208_01.dsf,120802,1020,7,,,,sin_hablante_verificable,1,want to be stared at.,que se queden mirándola.
 002856,CLD-002926,dialogo,demo1208_01.dsf,120803,1021,9,,,,sin_hablante_verificable,,Maybe that mask really isn't,Quizá esa máscara no sea realmente
 002857,CLD-002927,dialogo,demo1208_01.dsf,120803,1021,10,,,,sin_hablante_verificable,1,the mask of happiness after all.,la máscara de la felicidad.
 002858,CLD-002928,dialogo,demo1208_01.dsf,120803,1021,11,,,,sin_hablante_verificable,1,But it brought me so much happiness...,Pero me hizo muy feliz...
@@ -2919,15 +2919,15 @@
 002918,CLD-002988,dialogo,demo1209_00.dsf,120900,1032,256,,,,sin_hablante_verificable,15,Hey! Look up!,¡Oye! ¡Mira hacia arriba!
 002919,CLD-002989,dialogo,demo1209_00.dsf,120900,1032,263,,,,sin_hablante_verificable,7,Up?,¿Arriba?
 002920,CLD-002990,dialogo,demo1209_00.dsf,120900,1032,289,,,,sin_hablante_verificable,26,The mask!,¡La máscara!
-002921,CLD-002991,personaje_interlocutor,demo1209_00.dsf,120900,1032,293,Mascarilla,Mask,CLD-002991,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-002922,CLD-002992,dialogo,demo1209_00.dsf,120900,1032,295,Mascarilla,Mask,CLD-002991,primer_mensaje_tras_nombre,2,Being ill can be so sad.,Estar enfermo puede ser muy triste.
-002923,CLD-002993,dialogo,demo1209_00.dsf,120900,1032,296,Mascarilla,Mask,CLD-002991,continuidad_corta_probable,1,But it'll get better!,¡Pero mejorará!
+002921,CLD-002991,personaje_interlocutor,demo1209_00.dsf,120900,1032,293,Máscara,Mask,CLD-002991,opcode_0x6E_nombre_explicito,,Mask,Máscara
+002922,CLD-002992,dialogo,demo1209_00.dsf,120900,1032,295,Máscara,Mask,CLD-002991,primer_mensaje_tras_nombre,2,Being ill can be so sad.,Estar enfermo puede ser muy triste.
+002923,CLD-002993,dialogo,demo1209_00.dsf,120900,1032,296,Máscara,Mask,CLD-002991,continuidad_corta_probable,1,But it'll get better!,¡Pero mejorará!
 002924,CLD-002994,dialogo,demo1209_00.dsf,120900,1032,303,,,,sin_hablante_verificable,7,Didn't Despina throw it away,¿No tiró Despina esa máscara
 002925,CLD-002995,dialogo,demo1209_00.dsf,120900,1032,304,,,,sin_hablante_verificable,1,like... a lot of times?,como... un montón de veces?
 002926,CLD-002996,dialogo,demo1209_00.dsf,120900,1032,311,,,,sin_hablante_verificable,7,Why do you keep coming back?!,¿Por qué sigues volviendo?
-002927,CLD-002997,personaje_interlocutor,demo1209_00.dsf,120900,1032,315,Mascarilla,Mask,CLD-002997,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-002928,CLD-002998,dialogo,demo1209_00.dsf,120900,1032,317,Mascarilla,Mask,CLD-002997,primer_mensaje_tras_nombre,2,Because I love humans.,Porque amo a los humanos.
-002929,CLD-002999,dialogo,demo1209_00.dsf,120900,1032,318,Mascarilla,Mask,CLD-002997,continuidad_corta_probable,1,That's why I come back!,¡Por eso vuelvo!
+002927,CLD-002997,personaje_interlocutor,demo1209_00.dsf,120900,1032,315,Máscara,Mask,CLD-002997,opcode_0x6E_nombre_explicito,,Mask,Máscara
+002928,CLD-002998,dialogo,demo1209_00.dsf,120900,1032,317,Máscara,Mask,CLD-002997,primer_mensaje_tras_nombre,2,Because I love humans.,Porque amo a los humanos.
+002929,CLD-002999,dialogo,demo1209_00.dsf,120900,1032,318,Máscara,Mask,CLD-002997,continuidad_corta_probable,1,That's why I come back!,¡Por eso vuelvo!
 002930,CLD-003000,dialogo,demo1209_00.dsf,120900,1032,325,,,,sin_hablante_verificable,7,Doesn't seem like it means any harm.,No parece que tenga malas intenciones.
 002931,CLD-003001,dialogo,demo1209_00.dsf,120900,1032,326,,,,sin_hablante_verificable,1,Why does Despina want to throw it away?,¿Por qué quiere Despina tirarlo?
 002932,CLD-003002,dialogo,demo1209_00.dsf,120900,1032,327,,,,sin_hablante_verificable,1,It seems like a fun little thing.,Parece algo pequeño y divertido.
@@ -3008,14 +3008,14 @@
 003007,CLD-003079,personaje_interlocutor,demo1210_00.dsf,121000,1048,102,Crosstine,Crosstine,CLD-003079,opcode_0x6E_nombre_explicito,,Crosstine,Crosstine
 003008,CLD-003080,dialogo,demo1210_00.dsf,121000,1048,104,Crosstine,Crosstine,CLD-003079,primer_mensaje_tras_nombre,2,You don't have to be so mean.,No tienes por qué ser tan malo.
 003009,CLD-003081,dialogo,demo1210_00.dsf,121000,1048,105,Crosstine,Crosstine,CLD-003079,continuidad_corta_probable,1,I only came to see... that.,Solo vine a ver... eso.
-003010,CLD-003082,personaje_interlocutor,demo1210_00.dsf,121000,1048,114,Mascarilla,Mask,CLD-003082,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003011,CLD-003083,dialogo,demo1210_00.dsf,121000,1048,116,Mascarilla,Mask,CLD-003082,primer_mensaje_tras_nombre,2,Let's make more friends!,¡Hagamos más amigos!
-003012,CLD-003084,personaje_interlocutor,demo1210_00.dsf,121000,1048,122,Mascarilla,Mask,CLD-003084,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003013,CLD-003085,dialogo,demo1210_00.dsf,121000,1048,124,Mascarilla,Mask,CLD-003084,primer_mensaje_tras_nombre,2,Everyone's a friend!,¡Todos somos amigos!
-003014,CLD-003086,dialogo,demo1210_00.dsf,121000,1048,125,Mascarilla,Mask,CLD-003084,continuidad_corta_probable,1,Let's make 100 friends!,¡Hagamos 100 amigos!
-003015,CLD-003087,personaje_interlocutor,demo1210_00.dsf,121000,1048,131,Mascarilla,Mask,CLD-003087,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003016,CLD-003088,dialogo,demo1210_00.dsf,121000,1048,133,Mascarilla,Mask,CLD-003087,primer_mensaje_tras_nombre,2,"Hee, hee! Lots of friends!","¡Je, je! ¡Muchos amigos!"
-003017,CLD-003089,dialogo,demo1210_00.dsf,121000,1048,134,Mascarilla,Mask,CLD-003087,continuidad_corta_probable,1,Fun! Fun!,¡Diversión! ¡Diversión!
+003010,CLD-003082,personaje_interlocutor,demo1210_00.dsf,121000,1048,114,Máscara,Mask,CLD-003082,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003011,CLD-003083,dialogo,demo1210_00.dsf,121000,1048,116,Máscara,Mask,CLD-003082,primer_mensaje_tras_nombre,2,Let's make more friends!,¡Hagamos más amigos!
+003012,CLD-003084,personaje_interlocutor,demo1210_00.dsf,121000,1048,122,Máscara,Mask,CLD-003084,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003013,CLD-003085,dialogo,demo1210_00.dsf,121000,1048,124,Máscara,Mask,CLD-003084,primer_mensaje_tras_nombre,2,Everyone's a friend!,¡Todos somos amigos!
+003014,CLD-003086,dialogo,demo1210_00.dsf,121000,1048,125,Máscara,Mask,CLD-003084,continuidad_corta_probable,1,Let's make 100 friends!,¡Hagamos 100 amigos!
+003015,CLD-003087,personaje_interlocutor,demo1210_00.dsf,121000,1048,131,Máscara,Mask,CLD-003087,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003016,CLD-003088,dialogo,demo1210_00.dsf,121000,1048,133,Máscara,Mask,CLD-003087,primer_mensaje_tras_nombre,2,"Hee, hee! Lots of friends!","¡Je, je! ¡Muchos amigos!"
+003017,CLD-003089,dialogo,demo1210_00.dsf,121000,1048,134,Máscara,Mask,CLD-003087,continuidad_corta_probable,1,Fun! Fun!,¡Diversión! ¡Diversión!
 003018,CLD-003090,personaje_interlocutor,demo1210_00.dsf,121000,1048,144,Crosstine,Crosstine,CLD-003090,opcode_0x6E_nombre_explicito,,Crosstine,Crosstine
 003019,CLD-003091,dialogo,demo1210_00.dsf,121000,1048,146,Crosstine,Crosstine,CLD-003090,primer_mensaje_tras_nombre,2,Looks like it gained some power after,Parece que ganó algo de poder después
 003020,CLD-003092,dialogo,demo1210_00.dsf,121000,1048,147,Crosstine,Crosstine,CLD-003090,continuidad_corta_probable,1,being exchanged so many times.,siendo intercambiados tantas veces.
@@ -3032,27 +3032,27 @@
 003031,CLD-003103,dialogo,demo1210_00.dsf,121000,1048,186,,,,sin_hablante_verificable,7,I don't care anymore. It's completely changed.,Ya no me importa. Ha cambiado por completo.
 003032,CLD-003104,dialogo,demo1210_00.dsf,121000,1048,187,,,,sin_hablante_verificable,1,"If it wants to wreak havoc, let it.","Si quiere causar estragos, que lo haga."
 003033,CLD-003105,dialogo,demo1210_00.dsf,121000,1048,188,,,,sin_hablante_verificable,1,I'm compassionate.,Soy compasivo.
-003034,CLD-003106,personaje_interlocutor,demo1210_00.dsf,121000,1048,203,Mascarilla,Mask,CLD-003106,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003035,CLD-003107,dialogo,demo1210_00.dsf,121000,1048,205,Mascarilla,Mask,CLD-003106,primer_mensaje_tras_nombre,2,Friend! Friend! Friend!,¡Amigo! ¡Amigo! ¡Amigo!
+003034,CLD-003106,personaje_interlocutor,demo1210_00.dsf,121000,1048,203,Máscara,Mask,CLD-003106,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003035,CLD-003107,dialogo,demo1210_00.dsf,121000,1048,205,Máscara,Mask,CLD-003106,primer_mensaje_tras_nombre,2,Friend! Friend! Friend!,¡Amigo! ¡Amigo! ¡Amigo!
 003036,CLD-003108,personaje_interlocutor,demo1210_00.dsf,121000,1048,209,Crosstine,Crosstine,CLD-003108,opcode_0x6E_nombre_explicito,,Crosstine,Crosstine
 003037,CLD-003109,dialogo,demo1210_00.dsf,121000,1048,211,Crosstine,Crosstine,CLD-003108,primer_mensaje_tras_nombre,2,"(Oh, my.",(Vaya... Será mejor que le dé
 003038,CLD-003110,dialogo,demo1210_00.dsf,121000,1048,212,Crosstine,Crosstine,CLD-003108,continuidad_corta_probable,1,It seems that I better give this thing,más poder a esa cosa.)
 003039,CLD-003111,dialogo,demo1210_00.dsf,121000,1048,213,Crosstine,Crosstine,CLD-003108,continuidad_corta_probable,1,more power then.),más poder entonces.)
-003040,CLD-003112,personaje_interlocutor,demo1210_00.dsf,121000,1048,220,Mascarilla,Mask,CLD-003112,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003041,CLD-003113,dialogo,demo1210_00.dsf,121000,1048,222,Mascarilla,Mask,CLD-003112,primer_mensaje_tras_nombre,2,What are you?,¿Qué vas a?
-003042,CLD-003114,dialogo,demo1210_00.dsf,121000,1048,223,Mascarilla,Mask,CLD-003112,continuidad_corta_probable,1,You're not human.,No eres humano.
-003043,CLD-003115,dialogo,demo1210_00.dsf,121000,1048,224,Mascarilla,Mask,CLD-003112,continuidad_corta_probable,1,A friend?,¿Un amigo?
+003040,CLD-003112,personaje_interlocutor,demo1210_00.dsf,121000,1048,220,Máscara,Mask,CLD-003112,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003041,CLD-003113,dialogo,demo1210_00.dsf,121000,1048,222,Máscara,Mask,CLD-003112,primer_mensaje_tras_nombre,2,What are you?,¿Qué vas a?
+003042,CLD-003114,dialogo,demo1210_00.dsf,121000,1048,223,Máscara,Mask,CLD-003112,continuidad_corta_probable,1,You're not human.,No eres humano.
+003043,CLD-003115,dialogo,demo1210_00.dsf,121000,1048,224,Máscara,Mask,CLD-003112,continuidad_corta_probable,1,A friend?,¿Un amigo?
 003044,CLD-003116,personaje_interlocutor,demo1210_00.dsf,121000,1048,228,Crosstine,Crosstine,CLD-003116,opcode_0x6E_nombre_explicito,,Crosstine,Crosstine
 003045,CLD-003117,dialogo,demo1210_00.dsf,121000,1048,230,Crosstine,Crosstine,CLD-003116,primer_mensaje_tras_nombre,2,"If you want to get more friends,","Si quieres tener más amigos,"
 003046,CLD-003118,dialogo,demo1210_00.dsf,121000,1048,231,Crosstine,Crosstine,CLD-003116,continuidad_corta_probable,1,throw a party.,dar una fiesta.
 003047,CLD-003119,dialogo,demo1210_00.dsf,121000,1048,232,Crosstine,Crosstine,CLD-003116,continuidad_corta_probable,1,You'll get lots of humans to come.,Vendrán muchos humanos.
-003048,CLD-003120,personaje_interlocutor,demo1210_00.dsf,121000,1048,236,Mascarilla,Mask,CLD-003120,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003049,CLD-003121,dialogo,demo1210_00.dsf,121000,1048,238,Mascarilla,Mask,CLD-003120,primer_mensaje_tras_nombre,2,Humans? Lots?,¿Humanos? ¿Muchos?
-003050,CLD-003122,dialogo,demo1210_00.dsf,121000,1048,239,Mascarilla,Mask,CLD-003120,continuidad_corta_probable,1,Party?! Circle of friends?!,¿Fiesta? ¿Círculo de amigos?
-003051,CLD-003123,personaje_interlocutor,demo1210_00.dsf,121000,1048,243,Mascarilla,Mask,CLD-003123,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003052,CLD-003124,dialogo,demo1210_00.dsf,121000,1048,245,Mascarilla,Mask,CLD-003123,primer_mensaje_tras_nombre,2,"Hee, hee, hee, hee, hee, hee, hee!","¡Je, je, je, je, je, je, je!"
-003053,CLD-003125,dialogo,demo1210_00.dsf,121000,1048,246,Mascarilla,Mask,CLD-003123,continuidad_corta_probable,1,Everyone! Happy!,¡Todos! ¡Felices!
-003054,CLD-003126,dialogo,demo1210_00.dsf,121000,1048,247,Mascarilla,Mask,CLD-003123,continuidad_corta_probable,1,Expand the circle of friends!,¡Amplía tu círculo de amigos!
+003048,CLD-003120,personaje_interlocutor,demo1210_00.dsf,121000,1048,236,Máscara,Mask,CLD-003120,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003049,CLD-003121,dialogo,demo1210_00.dsf,121000,1048,238,Máscara,Mask,CLD-003120,primer_mensaje_tras_nombre,2,Humans? Lots?,¿Humanos? ¿Muchos?
+003050,CLD-003122,dialogo,demo1210_00.dsf,121000,1048,239,Máscara,Mask,CLD-003120,continuidad_corta_probable,1,Party?! Circle of friends?!,¿Fiesta? ¿Círculo de amigos?
+003051,CLD-003123,personaje_interlocutor,demo1210_00.dsf,121000,1048,243,Máscara,Mask,CLD-003123,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003052,CLD-003124,dialogo,demo1210_00.dsf,121000,1048,245,Máscara,Mask,CLD-003123,primer_mensaje_tras_nombre,2,"Hee, hee, hee, hee, hee, hee, hee!","¡Je, je, je, je, je, je, je!"
+003053,CLD-003125,dialogo,demo1210_00.dsf,121000,1048,246,Máscara,Mask,CLD-003123,continuidad_corta_probable,1,Everyone! Happy!,¡Todos! ¡Felices!
+003054,CLD-003126,dialogo,demo1210_00.dsf,121000,1048,247,Máscara,Mask,CLD-003123,continuidad_corta_probable,1,Expand the circle of friends!,¡Amplía tu círculo de amigos!
 003055,CLD-003127,personaje_interlocutor,demo1210_00.dsf,121000,1048,251,Crosstine,Crosstine,CLD-003127,opcode_0x6E_nombre_explicito,,Crosstine,Crosstine
 003056,CLD-003128,dialogo,demo1210_00.dsf,121000,1048,253,Crosstine,Crosstine,CLD-003127,primer_mensaje_tras_nombre,2,"Hee, hee!","¡Je, je!"
 003057,CLD-003129,dialogo,demo1210_00.dsf,121000,1048,254,Crosstine,Crosstine,CLD-003127,continuidad_corta_probable,1,Now it'll go back to the humans,Ahora volverá a manos de los humanos
@@ -3068,7 +3068,7 @@
 003067,CLD-003141,dialogo,demo1210_01.dsf,121004,1053,5,,,,sin_hablante_verificable,,I can feel someone's gaze again...,Puedo sentir la mirada de alguien otra vez...
 003068,CLD-003142,dialogo,demo1210_01.dsf,121004,1053,6,,,,sin_hablante_verificable,1,But it's not directed at me.,Pero no va dirigido a mí.
 003069,CLD-003143,dialogo,demo1210_01.dsf,121004,1053,7,,,,sin_hablante_verificable,1,Not this time...,Esta vez no...
-003070,CLD-003144,dialogo,demo1210_01.dsf,121005,1054,5,,,,sin_hablante_verificable,,"Sunday has always been my rival,","El domingo siempre ha sido mi rival,"
+003070,CLD-003144,dialogo,demo1210_01.dsf,121005,1054,5,,,,sin_hablante_verificable,,"Sunday has always been my rival,","Sunday siempre ha sido mi rival,"
 003071,CLD-003145,dialogo,demo1210_01.dsf,121005,1054,6,,,,sin_hablante_verificable,1,I'll settle things with her in,Arreglaré las cosas con ella en
 003072,CLD-003146,dialogo,demo1210_01.dsf,121005,1054,7,,,,sin_hablante_verificable,1,Arcanus Cella once and for all!,¡Arcanus Cella de una vez por todas!
 003073,CLD-003147,dialogo,demo1210_01.dsf,121006,1055,5,,,,sin_hablante_verificable,,Something tells me that bad things will happen.,Algo me dice que van a pasar cosas malas.
@@ -3092,20 +3092,20 @@
 003091,CLD-003165,dialogo,demo1210_02.dsf,321051,1061,4,Esqueleto moribundo,Dying Skeleton,CLD-003164,primer_mensaje_tras_nombre,2,I finally got to the treasure and was attacked!,¡Finalmente llegué al tesoro y fui atacado!
 003092,CLD-003166,dialogo,demo1210_02.dsf,321051,1061,5,Esqueleto moribundo,Dying Skeleton,CLD-003164,continuidad_corta_probable,1,Regular attacks are ineffective and its magic,Los ataques regulares son ineficaces y su magia
 003093,CLD-003167,dialogo,demo1210_02.dsf,321051,1061,6,Esqueleto moribundo,Dying Skeleton,CLD-003164,continuidad_corta_probable,1,"is strong! Learn when to quit, unlike me.","¡Es fuerte! Aprende a cuándo parar, a diferencia de mí."
-003094,CLD-003168,personaje_interlocutor,demo1301_00.dsf,130100,1067,41,Mascarilla,Mask,CLD-003168,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003095,CLD-003169,dialogo,demo1301_00.dsf,130100,1067,43,Mascarilla,Mask,CLD-003168,primer_mensaje_tras_nombre,2,"Heh, heh, heh...!","¡Je, je, je...!"
-003096,CLD-003170,dialogo,demo1301_00.dsf,130100,1067,44,Mascarilla,Mask,CLD-003168,continuidad_corta_probable,1,When's the party?,¿Cuándo es la fiesta?
+003094,CLD-003168,personaje_interlocutor,demo1301_00.dsf,130100,1067,41,Máscara,Mask,CLD-003168,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003095,CLD-003169,dialogo,demo1301_00.dsf,130100,1067,43,Máscara,Mask,CLD-003168,primer_mensaje_tras_nombre,2,"Heh, heh, heh...!","¡Je, je, je...!"
+003096,CLD-003170,dialogo,demo1301_00.dsf,130100,1067,44,Máscara,Mask,CLD-003168,continuidad_corta_probable,1,When's the party?,¿Cuándo es la fiesta?
 003097,CLD-003171,dialogo,demo1301_00.dsf,130100,1067,53,,,,sin_hablante_verificable,9,Hm?,¿Eh?
-003098,CLD-003172,personaje_interlocutor,demo1301_00.dsf,130100,1067,57,Mascarilla,Mask,CLD-003172,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003099,CLD-003173,dialogo,demo1301_00.dsf,130100,1067,59,Mascarilla,Mask,CLD-003172,primer_mensaje_tras_nombre,2,I'll make everyone happy!,¡Haré felices a todos!
-003100,CLD-003174,personaje_interlocutor,demo1301_00.dsf,130100,1067,70,Mascarilla,Mask,CLD-003174,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003101,CLD-003175,dialogo,demo1301_00.dsf,130100,1067,72,Mascarilla,Mask,CLD-003174,primer_mensaje_tras_nombre,2,I'll put you into my,Te pondré en mi
-003102,CLD-003176,dialogo,demo1301_00.dsf,130100,1067,73,Mascarilla,Mask,CLD-003174,continuidad_corta_probable,1,circle of friends!,¡círculo de los amigos!
+003098,CLD-003172,personaje_interlocutor,demo1301_00.dsf,130100,1067,57,Máscara,Mask,CLD-003172,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003099,CLD-003173,dialogo,demo1301_00.dsf,130100,1067,59,Máscara,Mask,CLD-003172,primer_mensaje_tras_nombre,2,I'll make everyone happy!,¡Haré felices a todos!
+003100,CLD-003174,personaje_interlocutor,demo1301_00.dsf,130100,1067,70,Máscara,Mask,CLD-003174,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003101,CLD-003175,dialogo,demo1301_00.dsf,130100,1067,72,Máscara,Mask,CLD-003174,primer_mensaje_tras_nombre,2,I'll put you into my,Te pondré en mi
+003102,CLD-003176,dialogo,demo1301_00.dsf,130100,1067,73,Máscara,Mask,CLD-003174,continuidad_corta_probable,1,circle of friends!,¡círculo de los amigos!
 003103,CLD-003177,dialogo,demo1301_00.dsf,130100,1067,83,,,,sin_hablante_verificable,10,Ahhh!,¡Ahhh!
-003104,CLD-003178,dialogo,demo1301_00.dsf,130100,1067,107,,,,sin_hablante_verificable,24,Sherbet?,¿Sorbete?
+003104,CLD-003178,dialogo,demo1301_00.dsf,130100,1067,107,,,,sin_hablante_verificable,24,Sherbet?,¿Sherbet?
 003105,CLD-003179,dialogo,demo1301_00.dsf,130100,1067,114,,,,sin_hablante_verificable,7,Are you all right?,¿Estás bien?
 003106,CLD-003180,dialogo,demo1301_00.dsf,130100,1067,115,,,,sin_hablante_verificable,1,I...must leave now.,Debo irme ahora.
-003107,CLD-003181,dialogo,demo1301_00.dsf,130100,1067,126,,,,sin_hablante_verificable,11,Wait!,¡Esperar!
+003107,CLD-003181,dialogo,demo1301_00.dsf,130100,1067,126,,,,sin_hablante_verificable,11,Wait!,¡Espera!
 003108,CLD-003182,dialogo,demo1301_00.dsf,130100,1067,135,,,,sin_hablante_verificable,9,I know this feeling from somewhere...,Conozco esta sensación de algún sitio...
 003109,CLD-003183,dialogo,demo1301_00.dsf,130100,1067,136,,,,sin_hablante_verificable,1,Are you that stalker?,¿Eres ese acosador?
 003110,CLD-003184,dialogo,demo1301_00.dsf,130100,1067,143,,,,sin_hablante_verificable,7,I'm terribly sorry.,Lo siento muchísimo.
@@ -3154,7 +3154,7 @@
 003153,CLD-003227,dialogo,demo1301_00.dsf,130100,1067,338,,,,sin_hablante_verificable,1,I will be glad to help.,Con mucho gusto ayudaré.
 003154,CLD-003228,personaje_interlocutor,demo1301_00.dsf,130100,1067,342,Crosstine,Crosstine,CLD-003228,opcode_0x6E_nombre_explicito,,Crosstine,Crosstine
 003155,CLD-003229,dialogo,demo1301_00.dsf,130100,1067,344,Crosstine,Crosstine,CLD-003228,primer_mensaje_tras_nombre,2,That's great.,Genial.
-003156,CLD-003230,dialogo,demo1301_00.dsf,130100,1067,345,Crosstine,Crosstine,CLD-003228,continuidad_corta_probable,1,"Sherbet. You're coming, too, right?","Sorbete. Tú también vienes, ¿verdad?"
+003156,CLD-003230,dialogo,demo1301_00.dsf,130100,1067,345,Crosstine,Crosstine,CLD-003228,continuidad_corta_probable,1,"Sherbet. You're coming, too, right?","Sherbet, tú también vienes, ¿verdad?"
 003157,CLD-003232,dialogo,demo1301_00.dsf,130100,1067,364,,,,sin_hablante_verificable,19,You can now go to a new dungeon!,¡Ahora puedes ir a una nueva mazmorra!
 003158,CLD-003234,dialogo,demo1301_00.dsf,130190,1068,14,,,,sin_hablante_verificable,,You can now go to a new dungeon!,¡Ahora puedes ir a una nueva mazmorra!
 003159,CLD-003235,dialogo,demo1301_01.dsf,130101,1069,5,,,,sin_hablante_verificable,,A party? That's sudden.,¿Una fiesta? Eso es repentino.
@@ -3197,7 +3197,7 @@
 003196,CLD-003272,dialogo,demo1302_00.dsf,130200,1081,38,,,,sin_hablante_verificable,2,She's a rival of mine!,¡Ella es mi rival!
 003197,CLD-003273,dialogo,demo1302_00.dsf,130200,1081,39,,,,sin_hablante_verificable,1,"Right, barkeep?!","¿Verdad, camarero?"
 003198,CLD-003274,dialogo,demo1302_00.dsf,130200,1081,46,,,,sin_hablante_verificable,7,Y-Yeah.,S-Sí.
-003199,CLD-003275,dialogo,demo1302_00.dsf,130200,1081,47,,,,sin_hablante_verificable,1,Sunday sure is your rival.,El domingo sin duda es tu rival.
+003199,CLD-003275,dialogo,demo1302_00.dsf,130200,1081,47,,,,sin_hablante_verificable,1,Sunday sure is your rival.,Sunday sin duda es tu rival.
 003200,CLD-003276,dialogo,demo1302_00.dsf,130200,1081,54,,,,sin_hablante_verificable,7,Heh...,Jeje...
 003201,CLD-003277,dialogo,demo1302_00.dsf,130200,1081,55,,,,sin_hablante_verificable,1,"You know me so well, barkeep!","¡Me conoces muy bien, camarero!"
 003202,CLD-003278,dialogo,demo1302_00.dsf,130200,1081,56,,,,sin_hablante_verificable,1,Sorry to bother you when you're so busy!,¡Disculpa que te moleste cuando estás tan ocupado!
@@ -3222,7 +3222,7 @@
 003221,CLD-003297,dialogo,demo1302_00.dsf,130200,1081,149,,,,sin_hablante_verificable,1,Are you making that armor freak help out?,¿Vas a hacer que ese loco de la armadura te ayude?
 003222,CLD-003298,dialogo,demo1302_00.dsf,130200,1081,150,,,,sin_hablante_verificable,1,You sure you'll be okay?,¿Seguro que vas a estar bien?
 003223,CLD-003299,dialogo,demo1302_00.dsf,130200,1081,158,,,,sin_hablante_verificable,8,Yeah.,Sí.
-003224,CLD-003300,dialogo,demo1302_00.dsf,130200,1081,159,,,,sin_hablante_verificable,1,Sherbet is really helpful.,El sorbete es realmente útil.
+003224,CLD-003300,dialogo,demo1302_00.dsf,130200,1081,159,,,,sin_hablante_verificable,1,Sherbet is really helpful.,Sherbet es de mucha ayuda.
 003225,CLD-003301,dialogo,demo1302_00.dsf,130200,1081,161,,,,sin_hablante_verificable,2,"Hey, Battleblo...","Hola, Battleblo..."
 003226,CLD-003302,dialogo,demo1302_00.dsf,130200,1081,162,,,,sin_hablante_verificable,1,Why are you so fixated on shields?,¿Por qué estás tan obsesionado con los escudos?
 003227,CLD-003303,dialogo,demo1302_00.dsf,130200,1081,163,,,,sin_hablante_verificable,1,What exactly do you want to do with them?,¿Qué es exactamente lo que quieres hacer con ellos?
@@ -3281,7 +3281,7 @@
 003280,CLD-003358,dialogo,demo1303_00.dsf,130300,1095,37,,,,sin_hablante_verificable,2,That's why I kept chasing after her!,¡Por eso la seguía a todas partes!
 003281,CLD-003359,dialogo,demo1303_00.dsf,130300,1095,38,,,,sin_hablante_verificable,1,Now I know why I'm so fixated,¡Ahora entiendo por qué
 003282,CLD-003360,dialogo,demo1303_00.dsf,130300,1095,39,,,,sin_hablante_verificable,1,on shields!,me obsesionan tanto los escudos!
-003283,CLD-003361,dialogo,demo1303_00.dsf,130300,1095,47,,,,sin_hablante_verificable,8,Sunday!,¡Domingo!
+003283,CLD-003361,dialogo,demo1303_00.dsf,130300,1095,47,,,,sin_hablante_verificable,8,Sunday!,¡Sunday!
 003284,CLD-003362,dialogo,demo1303_00.dsf,130300,1095,55,,,,sin_hablante_verificable,8,You again. Did you skip out on your duties,Otra vez tú. ¿Dejaste tus obligaciones
 003285,CLD-003363,dialogo,demo1303_00.dsf,130300,1095,56,,,,sin_hablante_verificable,1,to prepare for the party?,para preparar la fiesta?
 003286,CLD-003364,dialogo,demo1303_00.dsf,130300,1095,57,,,,sin_hablante_verificable,1,All just to show off your shield again?,¿Solo para volver a presumir de tu escudo?
@@ -3302,13 +3302,13 @@
 003301,CLD-003379,dialogo,demo1303_00.dsf,130300,1095,139,,,,sin_hablante_verificable,2,(Can't you tell?!,(¡¿No lo entiendes?! ¿No basta con defenderme?
 003302,CLD-003380,dialogo,demo1303_00.dsf,130300,1095,140,,,,sin_hablante_verificable,1,Is defense not enough?! Do I have to do offense,¿Tengo que pasar al ataque
 003303,CLD-003381,dialogo,demo1303_00.dsf,130300,1095,141,,,,sin_hablante_verificable,1,to get it through her head?!)),para que le entre en la cabeza?!)
-003304,CLD-003382,personaje_interlocutor,demo1303_00.dsf,130300,1095,154,Mascarilla,Mask,CLD-003382,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003305,CLD-003383,dialogo,demo1303_00.dsf,130300,1095,156,Mascarilla,Mask,CLD-003382,primer_mensaje_tras_nombre,2,"Hee, hee, hee!","¡Je, je, je!"
-003306,CLD-003384,dialogo,demo1303_00.dsf,130300,1095,157,Mascarilla,Mask,CLD-003382,continuidad_corta_probable,1,Rejected!,¡Rechazado!
-003307,CLD-003385,dialogo,demo1303_00.dsf,130300,1095,158,Mascarilla,Mask,CLD-003382,continuidad_corta_probable,1,Now you need a circle of friends!,¡Ahora necesitas un círculo de amigos!
+003304,CLD-003382,personaje_interlocutor,demo1303_00.dsf,130300,1095,154,Máscara,Mask,CLD-003382,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003305,CLD-003383,dialogo,demo1303_00.dsf,130300,1095,156,Máscara,Mask,CLD-003382,primer_mensaje_tras_nombre,2,"Hee, hee, hee!","¡Je, je, je!"
+003306,CLD-003384,dialogo,demo1303_00.dsf,130300,1095,157,Máscara,Mask,CLD-003382,continuidad_corta_probable,1,Rejected!,¡Rechazado!
+003307,CLD-003385,dialogo,demo1303_00.dsf,130300,1095,158,Máscara,Mask,CLD-003382,continuidad_corta_probable,1,Now you need a circle of friends!,¡Ahora necesitas un círculo de amigos!
 003308,CLD-003386,dialogo,demo1303_00.dsf,130300,1095,169,,,,sin_hablante_verificable,11,Shut up! Shut up! Shut up!,¡Cállate! ¡Cállate! ¡Cállate!
 003309,CLD-003387,dialogo,demo1303_00.dsf,130300,1095,170,,,,sin_hablante_verificable,1,I don't just want to be friends!,¡No solo quiero ser amigos!
-003310,CLD-003388,dialogo,demo1303_00.dsf,130300,1095,172,,,,sin_hablante_verificable,2,"You suck, Sunday!","¡Eres un asco, domingo!"
+003310,CLD-003388,dialogo,demo1303_00.dsf,130300,1095,172,,,,sin_hablante_verificable,2,"You suck, Sunday!","¡Eres un asco, Sunday!"
 003311,CLD-003389,dialogo,demo1303_00.dsf,130300,1095,199,,,,sin_hablante_verificable,27,What a strange man.,Qué hombre tan extraño.
 003312,CLD-003390,dialogo,demo1303_00.dsf,130300,1095,215,,,,sin_hablante_verificable,16,"Wait, gazes...?","Espera, ¿miradas...?"
 003313,CLD-003391,dialogo,demo1303_00.dsf,130300,1095,225,,,,sin_hablante_verificable,10,I never realized that I never minded his gaze.,Nunca me había dado cuenta de que su mirada no me molestaba.
@@ -3352,7 +3352,7 @@
 003351,CLD-003431,dialogo,demo1304_00.dsf,130400,1109,58,,,,sin_hablante_verificable,,(There's one person more of a fool than him.,(Hay una persona más tonta que él.
 003352,CLD-003432,dialogo,demo1304_00.dsf,130400,1109,59,,,,sin_hablante_verificable,1,"If I'm fine with his gaze,","Si no me molesta su mirada,"
 003353,CLD-003433,dialogo,demo1304_00.dsf,130400,1109,60,,,,sin_hablante_verificable,1,then there's still hope...),Entonces aún hay esperanza...)
-003354,CLD-003434,dialogo,demo1304_00.dsf,130400,1109,75,,,,sin_hablante_verificable,15,Hey! Sunday!,¡Hola! ¡Domingo!
+003354,CLD-003434,dialogo,demo1304_00.dsf,130400,1109,75,,,,sin_hablante_verificable,15,Hey! Sunday!,"¡Eh, Sunday!"
 003355,CLD-003435,dialogo,demo1304_00.dsf,130400,1109,76,,,,sin_hablante_verificable,1,Getting excited about the party?!,¿Emocionado por la fiesta?
 003356,CLD-003436,dialogo,demo1304_00.dsf,130400,1109,88,,,,sin_hablante_verificable,12,It's no good. Not even with Bob...,No sirve de nada. Ni siquiera con Bob...
 003357,CLD-003437,dialogo,demo1304_00.dsf,130400,1109,89,,,,sin_hablante_verificable,1,Why am I all right with Battleblo?!,¿Por qué me va bien Battleblo?!
@@ -3403,7 +3403,7 @@
 003402,CLD-003482,dialogo,demo1304_00.dsf,130400,1109,418,,,,sin_hablante_verificable,10,*Sigh*,*Suspiro*
 003403,CLD-003483,dialogo,demo1304_00.dsf,130400,1109,419,,,,sin_hablante_verificable,1,It's over for me...,Se acabó para mí...
 003404,CLD-003484,personaje_interlocutor,demo1304_00.dsf,130400,1109,425,Crosstine,Crosstine,CLD-003484,opcode_0x6E_nombre_explicito,,Crosstine,Crosstine
-003405,CLD-003485,dialogo,demo1304_00.dsf,130400,1109,427,Crosstine,Crosstine,CLD-003484,primer_mensaje_tras_nombre,2,Sunday.,Domingo.
+003405,CLD-003485,dialogo,demo1304_00.dsf,130400,1109,427,Crosstine,Crosstine,CLD-003484,primer_mensaje_tras_nombre,2,Sunday.,Sunday.
 003406,CLD-003486,dialogo,demo1304_00.dsf,130400,1109,428,Crosstine,Crosstine,CLD-003484,continuidad_corta_probable,1,You're not holding up your sword.,No estás sosteniendo tu espada.
 003407,CLD-003487,dialogo,demo1304_00.dsf,130400,1109,445,,,,sin_hablante_verificable,17,N-Now that you mention it...,Ahora que lo mencionas...
 003408,CLD-003488,dialogo,demo1304_00.dsf,130400,1109,446,,,,sin_hablante_verificable,1,I wonder why.,Me pregunto por qué.
@@ -3415,14 +3415,14 @@
 003414,CLD-003494,personaje_interlocutor,demo1304_00.dsf,130400,1109,458,Crosstine,Crosstine,CLD-003494,opcode_0x6E_nombre_explicito,,Crosstine,Crosstine
 003415,CLD-003495,dialogo,demo1304_00.dsf,130400,1109,460,Crosstine,Crosstine,CLD-003494,primer_mensaje_tras_nombre,2,It seems that you just created a whole new world,¡Parece que acabas de crear un mundo nuevo
 003416,CLD-003496,dialogo,demo1304_00.dsf,130400,1109,461,Crosstine,Crosstine,CLD-003494,continuidad_corta_probable,1,for yourself to enjoy!,para disfrutarlo a tu gusto!
-003417,CLD-003497,dialogo,demo1304_00.dsf,130400,1109,468,,,,sin_hablante_verificable,7,"Oh, yes! Sunday!","¡Oh, sí! ¡Domingo!"
+003417,CLD-003497,dialogo,demo1304_00.dsf,130400,1109,468,,,,sin_hablante_verificable,7,"Oh, yes! Sunday!","¡Oh, sí! ¡Sunday!"
 003418,CLD-003498,dialogo,demo1304_00.dsf,130400,1109,469,,,,sin_hablante_verificable,1,Welcome to my world!,¡Bienvenido a mi mundo!
-003419,CLD-003499,personaje_interlocutor,demo1304_00.dsf,130400,1109,483,Mascarilla,Mask,CLD-003499,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003420,CLD-003500,dialogo,demo1304_00.dsf,130400,1109,485,Mascarilla,Mask,CLD-003499,primer_mensaje_tras_nombre,2,Hey!,¡Ey!
-003421,CLD-003501,dialogo,demo1304_00.dsf,130400,1109,486,Mascarilla,Mask,CLD-003499,continuidad_corta_probable,1,Don't leave me out of the loop!,¡No me dejes fuera de la conversación!
-003422,CLD-003502,dialogo,demo1304_00.dsf,130400,1109,487,Mascarilla,Mask,CLD-003499,continuidad_corta_probable,1,You can't keep all the fun to yourself!,¡No puedes quedarte con toda la diversión para ti solo!
-003423,CLD-003503,personaje_interlocutor,demo1304_00.dsf,130400,1109,503,Mascarilla,Mask,CLD-003503,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003424,CLD-003504,dialogo,demo1304_00.dsf,130400,1109,505,Mascarilla,Mask,CLD-003503,primer_mensaje_tras_nombre,2,I want to join in that circle of friends!,¡Quiero unirme a ese círculo de amigos!
+003419,CLD-003499,personaje_interlocutor,demo1304_00.dsf,130400,1109,483,Máscara,Mask,CLD-003499,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003420,CLD-003500,dialogo,demo1304_00.dsf,130400,1109,485,Máscara,Mask,CLD-003499,primer_mensaje_tras_nombre,2,Hey!,¡Ey!
+003421,CLD-003501,dialogo,demo1304_00.dsf,130400,1109,486,Máscara,Mask,CLD-003499,continuidad_corta_probable,1,Don't leave me out of the loop!,¡No me dejes fuera de la conversación!
+003422,CLD-003502,dialogo,demo1304_00.dsf,130400,1109,487,Máscara,Mask,CLD-003499,continuidad_corta_probable,1,You can't keep all the fun to yourself!,¡No puedes quedarte con toda la diversión para ti solo!
+003423,CLD-003503,personaje_interlocutor,demo1304_00.dsf,130400,1109,503,Máscara,Mask,CLD-003503,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003424,CLD-003504,dialogo,demo1304_00.dsf,130400,1109,505,Máscara,Mask,CLD-003503,primer_mensaje_tras_nombre,2,I want to join in that circle of friends!,¡Quiero unirme a ese círculo de amigos!
 003425,CLD-003506,dialogo,demo1304_00.dsf,130400,1109,542,,,,sin_hablante_verificable,37,You can now go to a new dungeon!,¡Ahora puedes ir a una nueva mazmorra!
 003426,CLD-003508,dialogo,demo1304_00.dsf,130490,1110,14,,,,sin_hablante_verificable,,You can now go to a new dungeon!,¡Ahora puedes ir a una nueva mazmorra!
 003427,CLD-003509,dialogo,demo1304_01.dsf,130401,1111,5,,,,sin_hablante_verificable,,That was so funny.,Eso fue muy gracioso.
@@ -3483,13 +3483,13 @@
 003482,CLD-003564,dialogo,demo1305_00.dsf,130500,1123,176,,,,sin_hablante_verificable,9,"You seem to look real happy, Coco.","Pareces muy feliz, Coco."
 003483,CLD-003565,dialogo,demo1305_00.dsf,130500,1123,177,,,,sin_hablante_verificable,1,Are you preparing for the party?,¿Te estás preparando para la fiesta?
 003484,CLD-003566,dialogo,demo1305_00.dsf,130500,1123,184,,,,sin_hablante_verificable,7,Yes! These things can be so fun!,¡Sí! ¡Estas cosas pueden ser muy divertidas!
-003485,CLD-003567,dialogo,demo1305_00.dsf,130500,1123,185,,,,sin_hablante_verificable,1,I can't wait for the party to start,"¡Desde que vi a Sunday así,"
-003486,CLD-003568,dialogo,demo1305_00.dsf,130500,1123,186,,,,sin_hablante_verificable,1,ever since I saw Sunday like that!,no puedo esperar a que empiece la fiesta!
+003485,CLD-003567,dialogo,demo1305_00.dsf,130500,1123,185,,,,sin_hablante_verificable,1,I can't wait for the party to start,"Desde que vi a Sunday así,"
+003486,CLD-003568,dialogo,demo1305_00.dsf,130500,1123,186,,,,sin_hablante_verificable,1,ever since I saw Sunday like that!,¡no veo la hora de que empiece la fiesta!
 003487,CLD-003569,dialogo,demo1305_00.dsf,130500,1123,188,,,,sin_hablante_verificable,2,The heavens must have blessed me!,¡Los cielos me deben haber bendecido!
 003488,CLD-003570,dialogo,demo1305_00.dsf,130500,1123,189,,,,sin_hablante_verificable,1,"Hee, hee, hee, hee!","¡Je, je, je, je!"
 003489,CLD-003571,dialogo,demo1305_00.dsf,130500,1123,204,,,,sin_hablante_verificable,15,Oh?,¿Oh?
 003490,CLD-003572,personaje_interlocutor,demo1305_00.dsf,130500,1123,222,Souma y Pudding,Souma & Pudding,CLD-003572,opcode_0x6E_nombre_explicito,,Souma & Pudding,Souma y Pudding
-003491,CLD-003573,dialogo,demo1305_00.dsf,130500,1123,224,Souma y Pudding,Souma & Pudding,CLD-003572,primer_mensaje_tras_nombre,2,Coco?!,¡¿Palma de coco?!
+003491,CLD-003573,dialogo,demo1305_00.dsf,130500,1123,224,Souma y Pudding,Souma & Pudding,CLD-003572,primer_mensaje_tras_nombre,2,Coco?!,¡¿Coco?!
 003492,CLD-003574,dialogo,demo1305_00.dsf,130500,1123,233,,,,sin_hablante_verificable,9,What's wrong? Your face is all red.,¿Qué te pasa? Tienes la cara toda roja.
 003493,CLD-003575,dialogo,demo1305_00.dsf,130500,1123,238,,,,sin_hablante_verificable,5,I'm fine.,Estoy bien.
 003494,CLD-003576,dialogo,demo1305_00.dsf,130500,1123,250,,,,sin_hablante_verificable,12,Don't tell me... Were you laughing a lot?,No me digas... ¿Te reíste mucho?
@@ -3502,13 +3502,13 @@
 003501,CLD-003583,dialogo,demo1305_00.dsf,130500,1123,279,,,,sin_hablante_verificable,1,"While you, on the other hand, are completely fine.","Mientras que tú, por otro lado, estás perfectamente bien."
 003502,CLD-003584,dialogo,demo1305_00.dsf,130500,1123,286,,,,sin_hablante_verificable,7,Does it really mean that he caught it from me?,¿De verdad significa que se contagió de mí?
 003503,CLD-003585,dialogo,demo1305_00.dsf,130500,1123,287,,,,sin_hablante_verificable,1,Is this what the dream was telling me about?,¿Era esto a lo que me estaba hablando el sueño?
-003504,CLD-003586,personaje_interlocutor,demo1305_00.dsf,130500,1123,299,Mascarilla,Mask,CLD-003586,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003505,CLD-003587,dialogo,demo1305_00.dsf,130500,1123,301,Mascarilla,Mask,CLD-003586,primer_mensaje_tras_nombre,2,"Heh, heh, heh!","¡Je, je, je!"
-003506,CLD-003588,dialogo,demo1305_00.dsf,130500,1123,302,Mascarilla,Mask,CLD-003586,continuidad_corta_probable,1,Glad you got cured!,¡Me alegro de que te hayas curado!
-003507,CLD-003589,dialogo,demo1305_00.dsf,130500,1123,303,Mascarilla,Mask,CLD-003586,continuidad_corta_probable,1,Aren't you glad you came here?!,¿No te alegras de haber venido?
-003508,CLD-003590,personaje_interlocutor,demo1305_00.dsf,130500,1123,320,Mascarilla,Mask,CLD-003590,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003509,CLD-003591,dialogo,demo1305_00.dsf,130500,1123,322,Mascarilla,Mask,CLD-003590,primer_mensaje_tras_nombre,2,Now let's make a circle of friends!,¡Ahora vamos a formar un círculo de amigos!
-003510,CLD-003592,dialogo,demo1305_00.dsf,130500,1123,323,Mascarilla,Mask,CLD-003590,continuidad_corta_probable,1,Just for us!,¡Solo para nosotros!
+003504,CLD-003586,personaje_interlocutor,demo1305_00.dsf,130500,1123,299,Máscara,Mask,CLD-003586,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003505,CLD-003587,dialogo,demo1305_00.dsf,130500,1123,301,Máscara,Mask,CLD-003586,primer_mensaje_tras_nombre,2,"Heh, heh, heh!","¡Je, je, je!"
+003506,CLD-003588,dialogo,demo1305_00.dsf,130500,1123,302,Máscara,Mask,CLD-003586,continuidad_corta_probable,1,Glad you got cured!,¡Me alegro de que te hayas curado!
+003507,CLD-003589,dialogo,demo1305_00.dsf,130500,1123,303,Máscara,Mask,CLD-003586,continuidad_corta_probable,1,Aren't you glad you came here?!,¿No te alegras de haber venido?
+003508,CLD-003590,personaje_interlocutor,demo1305_00.dsf,130500,1123,320,Máscara,Mask,CLD-003590,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003509,CLD-003591,dialogo,demo1305_00.dsf,130500,1123,322,Máscara,Mask,CLD-003590,primer_mensaje_tras_nombre,2,Now let's make a circle of friends!,¡Ahora vamos a formar un círculo de amigos!
+003510,CLD-003592,dialogo,demo1305_00.dsf,130500,1123,323,Máscara,Mask,CLD-003590,continuidad_corta_probable,1,Just for us!,¡Solo para nosotros!
 003511,CLD-003593,dialogo,demo1305_00.dsf,130500,1123,330,,,,sin_hablante_verificable,7,Shut your trap!,¡Cierra la boca!
 003512,CLD-003594,dialogo,demo1305_00.dsf,130500,1123,370,,,,sin_hablante_verificable,40,"Even if I get cured,","Aunque me cure,"
 003513,CLD-003595,dialogo,demo1305_00.dsf,130500,1123,371,,,,sin_hablante_verificable,1,I won't be able to sleep at night if Coco dies!,¡No podré dormir por las noches si Coco muere!
@@ -3560,7 +3560,7 @@
 003559,CLD-003643,dialogo,demo1305_01.dsf,130511,1134,29,Tamako,Tamako,CLD-003642,primer_mensaje_tras_nombre_probable,4,It's really hard to bring someone,Es realmente difícil traer a alguien
 003560,CLD-003644,dialogo,demo1305_01.dsf,130511,1134,30,Tamako,Tamako,CLD-003642,continuidad_corta_probable,1,back to life.,De vuelta a la vida.
 003561,CLD-003645,dialogo,demo1305_01.dsf,130512,1135,9,,,,sin_hablante_verificable,,"For now, it seems like this problem","Por ahora, parece que este problema"
-003562,CLD-003646,dialogo,demo1305_01.dsf,130512,1135,10,,,,sin_hablante_verificable,1,isn't caused by that mask.,No es causado por esa mascarilla.
+003562,CLD-003646,dialogo,demo1305_01.dsf,130512,1135,10,,,,sin_hablante_verificable,1,isn't caused by that mask.,No es causado por esa máscara.
 003563,CLD-003647,dialogo,demo1306_00.dsf,130600,1137,42,,,,sin_hablante_verificable,,Hahaha! That's a great song!,¡Jajaja! ¡Esa es una gran canción!
 003564,CLD-003648,dialogo,demo1306_00.dsf,130600,1137,43,,,,sin_hablante_verificable,1,"You have so much talent, Bob!","¡Tienes muchísimo talento, Bob!"
 003565,CLD-003649,dialogo,demo1306_00.dsf,130600,1137,44,,,,sin_hablante_verificable,1,Heeheehee...,Jejeje...
@@ -3632,21 +3632,21 @@
 003631,CLD-003715,dialogo,demo1306_00.dsf,130600,1137,366,,,,sin_hablante_verificable,1,"Pudding is better, right? I'm just glad that my","El Pudding es mejor, ¿verdad? Me alegro de que mi"
 003632,CLD-003716,dialogo,demo1306_00.dsf,130600,1137,367,,,,sin_hablante_verificable,1,misfortune actually helped someone out this time.,"Esta vez, la mala suerte sí que le vino bien a alguien."
 003633,CLD-003717,dialogo,demo1306_00.dsf,130600,1137,374,,,,sin_hablante_verificable,7,The heavens have blessed me!,¡Los cielos me han bendecido!
-003634,CLD-003718,personaje_interlocutor,demo1306_00.dsf,130600,1137,390,Mascarilla,Mask,CLD-003718,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003635,CLD-003719,dialogo,demo1306_00.dsf,130600,1137,392,Mascarilla,Mask,CLD-003718,primer_mensaje_tras_nombre,2,"Heavens, my butt!","¡Cielos, mi trasero!"
-003636,CLD-003720,personaje_interlocutor,demo1306_00.dsf,130600,1137,404,Mascarilla,Mask,CLD-003720,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003637,CLD-003721,dialogo,demo1306_00.dsf,130600,1137,406,Mascarilla,Mask,CLD-003720,primer_mensaje_tras_nombre,2,You guys left me out of the loop again,¡Me dejaron al margen otra vez
-003638,CLD-003722,dialogo,demo1306_00.dsf,130600,1137,407,Mascarilla,Mask,CLD-003720,continuidad_corta_probable,1,and had so much fun!,y se divirtieron sin mí!
+003634,CLD-003718,personaje_interlocutor,demo1306_00.dsf,130600,1137,390,Máscara,Mask,CLD-003718,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003635,CLD-003719,dialogo,demo1306_00.dsf,130600,1137,392,Máscara,Mask,CLD-003718,primer_mensaje_tras_nombre,2,"Heavens, my butt!","¡Cielos, mi trasero!"
+003636,CLD-003720,personaje_interlocutor,demo1306_00.dsf,130600,1137,404,Máscara,Mask,CLD-003720,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003637,CLD-003721,dialogo,demo1306_00.dsf,130600,1137,406,Máscara,Mask,CLD-003720,primer_mensaje_tras_nombre,2,You guys left me out of the loop again,¡Me dejaron al margen otra vez
+003638,CLD-003722,dialogo,demo1306_00.dsf,130600,1137,407,Máscara,Mask,CLD-003720,continuidad_corta_probable,1,and had so much fun!,y se divirtieron sin mí!
 003639,CLD-003723,dialogo,demo1306_00.dsf,130600,1137,414,,,,sin_hablante_verificable,7,Had fun?,¿Te divertiste?
 003640,CLD-003724,dialogo,demo1306_00.dsf,130600,1137,415,,,,sin_hablante_verificable,1,I never had any intention,Nunca tuve ninguna intención
 003641,CLD-003725,dialogo,demo1306_00.dsf,130600,1137,416,,,,sin_hablante_verificable,1,of being their friends.,de ser sus amigos.
 003642,CLD-003726,dialogo,demo1306_00.dsf,130600,1137,418,,,,sin_hablante_verificable,2,I'm tired.,Estoy cansado.
 003643,CLD-003727,dialogo,demo1306_00.dsf,130600,1137,419,,,,sin_hablante_verificable,1,I'm going home.,Me voy a casa.
 003644,CLD-003728,dialogo,demo1306_00.dsf,130600,1137,431,,,,sin_hablante_verificable,12,H-Hey! Despina!,¡H-Hola! ¡Despina!
-003645,CLD-003729,personaje_interlocutor,demo1306_00.dsf,130600,1137,435,Mascarilla,Mask,CLD-003729,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003646,CLD-003730,dialogo,demo1306_00.dsf,130600,1137,437,Mascarilla,Mask,CLD-003729,primer_mensaje_tras_nombre,2,Hehehe.,Jejeje.
-003647,CLD-003731,dialogo,demo1306_00.dsf,130600,1137,438,Mascarilla,Mask,CLD-003729,continuidad_corta_probable,1,I've always watched her. I know she's always alone.,Siempre la he observado. Sé que siempre está sola.
-003648,CLD-003732,dialogo,demo1306_00.dsf,130600,1137,439,Mascarilla,Mask,CLD-003729,continuidad_corta_probable,1,I know I can create a circle of friends with her.,Sé que puedo crear un círculo de amigos con ella.
+003645,CLD-003729,personaje_interlocutor,demo1306_00.dsf,130600,1137,435,Máscara,Mask,CLD-003729,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003646,CLD-003730,dialogo,demo1306_00.dsf,130600,1137,437,Máscara,Mask,CLD-003729,primer_mensaje_tras_nombre,2,Hehehe.,Jejeje.
+003647,CLD-003731,dialogo,demo1306_00.dsf,130600,1137,438,Máscara,Mask,CLD-003729,continuidad_corta_probable,1,I've always watched her. I know she's always alone.,Siempre la he observado. Sé que siempre está sola.
+003648,CLD-003732,dialogo,demo1306_00.dsf,130600,1137,439,Máscara,Mask,CLD-003729,continuidad_corta_probable,1,I know I can create a circle of friends with her.,Sé que puedo crear un círculo de amigos con ella.
 003649,CLD-003733,dialogo,demo1306_00.dsf,130600,1137,455,,,,sin_hablante_verificable,16,"Hey, Crosstine.","Hola, Crosstine."
 003650,CLD-003734,dialogo,demo1306_00.dsf,130600,1137,456,,,,sin_hablante_verificable,1,Didn't you become slightly transparent just now?,¿No te has vuelto un poco transparente hace un momento?
 003651,CLD-003735,personaje_interlocutor,demo1306_00.dsf,130600,1137,461,Crosstine,Crosstine,CLD-003735,opcode_0x6E_nombre_explicito,,Crosstine,Crosstine
@@ -3663,8 +3663,8 @@
 003662,CLD-003746,dialogo,demo1306_00.dsf,130600,1137,493,Crosstine,Crosstine,CLD-003745,primer_mensaje_tras_nombre,2,"Hee, hee...","Je, je..."
 003663,CLD-003747,dialogo,demo1306_00.dsf,130600,1137,494,Crosstine,Crosstine,CLD-003745,continuidad_corta_probable,1,Just wait a little longer for the answers.,Solo espere un poco más para obtener las respuestas.
 003664,CLD-003748,dialogo,demo1306_00.dsf,130600,1137,503,,,,sin_hablante_verificable,9,Gah! I hate this! I hate this! I hate this!,¡Gah! ¡Odio esto! ¡Odio esto! ¡Odio esto!
-003665,CLD-003749,personaje_interlocutor,demo1306_00.dsf,130600,1137,514,Mascarilla,Mask,CLD-003749,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003666,CLD-003750,dialogo,demo1306_00.dsf,130600,1137,516,Mascarilla,Mask,CLD-003749,primer_mensaje_tras_nombre,2,I won't give up!,¡No me rendiré!
+003665,CLD-003749,personaje_interlocutor,demo1306_00.dsf,130600,1137,514,Máscara,Mask,CLD-003749,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003666,CLD-003750,dialogo,demo1306_00.dsf,130600,1137,516,Máscara,Mask,CLD-003749,primer_mensaje_tras_nombre,2,I won't give up!,¡No me rendiré!
 003667,CLD-003752,dialogo,demo1306_00.dsf,130600,1137,535,,,,sin_hablante_verificable,19,You can now go to a new dungeon!,¡Ahora puedes ir a una nueva mazmorra!
 003668,CLD-003754,dialogo,demo1306_00.dsf,130690,1138,15,,,,sin_hablante_verificable,,You can now go to a new dungeon!,¡Ahora puedes ir a una nueva mazmorra!
 003669,CLD-003755,dialogo,demo1306_01.dsf,130601,1139,5,,,,sin_hablante_verificable,,That really freaked me out.,Eso me asustó muchísimo.
@@ -3713,21 +3713,21 @@
 003712,CLD-003798,dialogo,demo1307_00.dsf,130700,1169,102,,,,sin_hablante_verificable,1,the hairstyles he made for the party.,que hizo para la fiesta.
 003713,CLD-003799,dialogo,demo1307_00.dsf,130700,1169,116,,,,sin_hablante_verificable,14,The Magic Circle... Hmm...,El Círculo mágico... Hmm...
 003714,CLD-003800,dialogo,demo1307_00.dsf,130700,1169,130,,,,sin_hablante_verificable,14,Hmph. It's that stray again.,Hmph. Es ese vagabundo otra vez.
-003715,CLD-003801,personaje_interlocutor,demo1307_00.dsf,130700,1169,164,Mascarilla,Mask,CLD-003801,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003716,CLD-003802,dialogo,demo1307_00.dsf,130700,1169,166,Mascarilla,Mask,CLD-003801,primer_mensaje_tras_nombre,2,I found you!,¡Te encontré!
-003717,CLD-003803,personaje_interlocutor,demo1307_00.dsf,130700,1169,179,Mascarilla,Mask,CLD-003803,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003718,CLD-003804,dialogo,demo1307_00.dsf,130700,1169,181,Mascarilla,Mask,CLD-003803,primer_mensaje_tras_nombre,2,"Hee, hee, hee!","¡Je, je, je!"
-003719,CLD-003805,personaje_interlocutor,demo1307_00.dsf,130700,1169,195,Mascarilla,Mask,CLD-003805,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003720,CLD-003806,dialogo,demo1307_00.dsf,130700,1169,197,Mascarilla,Mask,CLD-003805,primer_mensaje_tras_nombre,2,Let's be friends!,¡Seamos amigos!
-003721,CLD-003807,personaje_interlocutor,demo1307_00.dsf,130700,1169,211,Mascarilla,Mask,CLD-003807,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003722,CLD-003808,dialogo,demo1307_00.dsf,130700,1169,213,Mascarilla,Mask,CLD-003807,primer_mensaje_tras_nombre,2,And make a circle of friends!,¡Y haz un círculo de amigos!
+003715,CLD-003801,personaje_interlocutor,demo1307_00.dsf,130700,1169,164,Máscara,Mask,CLD-003801,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003716,CLD-003802,dialogo,demo1307_00.dsf,130700,1169,166,Máscara,Mask,CLD-003801,primer_mensaje_tras_nombre,2,I found you!,¡Te encontré!
+003717,CLD-003803,personaje_interlocutor,demo1307_00.dsf,130700,1169,179,Máscara,Mask,CLD-003803,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003718,CLD-003804,dialogo,demo1307_00.dsf,130700,1169,181,Máscara,Mask,CLD-003803,primer_mensaje_tras_nombre,2,"Hee, hee, hee!","¡Je, je, je!"
+003719,CLD-003805,personaje_interlocutor,demo1307_00.dsf,130700,1169,195,Máscara,Mask,CLD-003805,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003720,CLD-003806,dialogo,demo1307_00.dsf,130700,1169,197,Máscara,Mask,CLD-003805,primer_mensaje_tras_nombre,2,Let's be friends!,¡Seamos amigos!
+003721,CLD-003807,personaje_interlocutor,demo1307_00.dsf,130700,1169,211,Máscara,Mask,CLD-003807,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003722,CLD-003808,dialogo,demo1307_00.dsf,130700,1169,213,Máscara,Mask,CLD-003807,primer_mensaje_tras_nombre,2,And make a circle of friends!,¡Y haz un círculo de amigos!
 003723,CLD-003809,dialogo,demo1307_00.dsf,130700,1169,268,,,,sin_hablante_verificable,55,What is that thing?!,¿Qué es eso?
-003724,CLD-003810,personaje_interlocutor,demo1307_00.dsf,130700,1169,274,Mascarilla,Mask,CLD-003810,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003725,CLD-003811,dialogo,demo1307_00.dsf,130700,1169,276,Mascarilla,Mask,CLD-003810,primer_mensaje_tras_nombre,2,Let's go!,¡Vamos!
-003726,CLD-003812,personaje_interlocutor,demo1307_00.dsf,130700,1169,433,Mascarilla,Mask,CLD-003812,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-003727,CLD-003813,dialogo,demo1307_00.dsf,130700,1169,435,Mascarilla,Mask,CLD-003812,primer_mensaje_tras_nombre,2,Come on! Come on!,¡Vamos! ¡Vamos!
-003728,CLD-003814,dialogo,demo1307_00.dsf,130700,1169,436,Mascarilla,Mask,CLD-003812,continuidad_corta_probable,1,"You guys hated each other, didn't you?!","¡Ustedes se odiaban, ¿verdad?!"
-003729,CLD-003815,dialogo,demo1307_00.dsf,130700,1169,437,Mascarilla,Mask,CLD-003812,continuidad_corta_probable,1,Why are you protecting her?!,¿Por qué la estás protegiendo?
+003724,CLD-003810,personaje_interlocutor,demo1307_00.dsf,130700,1169,274,Máscara,Mask,CLD-003810,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003725,CLD-003811,dialogo,demo1307_00.dsf,130700,1169,276,Máscara,Mask,CLD-003810,primer_mensaje_tras_nombre,2,Let's go!,¡Vamos!
+003726,CLD-003812,personaje_interlocutor,demo1307_00.dsf,130700,1169,433,Máscara,Mask,CLD-003812,opcode_0x6E_nombre_explicito,,Mask,Máscara
+003727,CLD-003813,dialogo,demo1307_00.dsf,130700,1169,435,Máscara,Mask,CLD-003812,primer_mensaje_tras_nombre,2,Come on! Come on!,¡Vamos! ¡Vamos!
+003728,CLD-003814,dialogo,demo1307_00.dsf,130700,1169,436,Máscara,Mask,CLD-003812,continuidad_corta_probable,1,"You guys hated each other, didn't you?!","¡Ustedes se odiaban, ¿verdad?!"
+003729,CLD-003815,dialogo,demo1307_00.dsf,130700,1169,437,Máscara,Mask,CLD-003812,continuidad_corta_probable,1,Why are you protecting her?!,¿Por qué la estás protegiendo?
 003730,CLD-003816,dialogo,demo1307_00.dsf,130700,1169,451,,,,sin_hablante_verificable,14,I hate this place!,¡Odio este lugar!
 003731,CLD-003817,dialogo,demo1307_00.dsf,130700,1169,452,,,,sin_hablante_verificable,1,Just do whatever you want,Haz lo que quieras
 003732,CLD-003818,dialogo,demo1307_00.dsf,130700,1169,453,,,,sin_hablante_verificable,1,and make your own circle of friends!,¡Y crea tu propio círculo de amigos!
@@ -3948,7 +3948,7 @@
 003947,CLD-004037,personaje_interlocutor,demo1501_01.dsf,150111,1200,25,Tamako,Tamako,CLD-004037,opcode_0x6E_nombre_explicito,,Tamako,Tamako
 003948,CLD-004038,dialogo,demo1501_01.dsf,150111,1200,29,Tamako,Tamako,CLD-004037,primer_mensaje_tras_nombre_probable,4,I think Asagi was in a placed called,Creo que Asagi estaba en un lugar llamado
 003949,CLD-004039,dialogo,demo1501_01.dsf,150111,1200,30,Tamako,Tamako,CLD-004037,continuidad_corta_probable,1,the Netherworld before coming here.,el Inframundo antes de venir aquí.
-003950,CLD-004040,dialogo,demo1501_01.dsf,150112,1201,9,,,,sin_hablante_verificable,,Asagi?,¿Abajo?
+003950,CLD-004040,dialogo,demo1501_01.dsf,150112,1201,9,,,,sin_hablante_verificable,,Asagi?,¿Asagi?
 003951,CLD-004041,dialogo,demo1501_01.dsf,150112,1201,10,,,,sin_hablante_verificable,1,I haven't seen her around here.,No la he visto por aquí.
 003952,CLD-004042,dialogo,demo1502_00.dsf,150200,1203,27,,,,sin_hablante_verificable,,"You so crazy, Asagi!","¡Estás loca, Asagi!"
 003953,CLD-004043,dialogo,demo1502_00.dsf,150200,1203,28,,,,sin_hablante_verificable,1,How could you just go,¿Cómo pudiste irte
@@ -4008,9 +4008,9 @@
 004007,CLD-004100,dialogo,demo1502_01.dsf,150207,1211,9,,,,sin_hablante_verificable,,What? Why?!,¿Qué? ¿Por qué?
 004008,CLD-004101,dialogo,demo1502_01.dsf,150207,1211,10,,,,sin_hablante_verificable,1,I just saw two Asagis,Acabo de ver dos Asagis
 004009,CLD-004102,dialogo,demo1502_01.dsf,150207,1211,11,,,,sin_hablante_verificable,1,over there earlier.,Allí antes.
-004010,CLD-004103,personaje_interlocutor,demo1502_01.dsf,150208,1212,2,"""Más bajo""",Asagi”,CLD-004103,opcode_0x6E_nombre_explicito,,Asagi”,"""Más bajo"""
-004011,CLD-004104,dialogo,demo1502_01.dsf,150208,1212,6,"""Más bajo""",Asagi”,CLD-004103,primer_mensaje_tras_nombre_probable,4,I have to compete with everyone here.,Tengo que competir con todos los que están aquí.
-004012,CLD-004105,dialogo,demo1502_01.dsf,150208,1212,7,"""Más bajo""",Asagi”,CLD-004103,continuidad_corta_probable,1,There's only room for one main character!,¡Solo hay espacio para un personaje principal!
+004010,CLD-004103,personaje_interlocutor,demo1502_01.dsf,150208,1212,2,Asagi,Asagi”,CLD-004103,opcode_0x6E_nombre_explicito,,Asagi”,Asagi
+004011,CLD-004104,dialogo,demo1502_01.dsf,150208,1212,6,Asagi,Asagi”,CLD-004103,primer_mensaje_tras_nombre_probable,4,I have to compete with everyone here.,Tengo que competir con todos los que están aquí.
+004012,CLD-004105,dialogo,demo1502_01.dsf,150208,1212,7,Asagi,Asagi”,CLD-004103,continuidad_corta_probable,1,There's only room for one main character!,¡Solo hay espacio para un personaje principal!
 004013,CLD-004106,personaje_interlocutor,demo1502_01.dsf,150209,1213,2,Crosstine,Crosstine,CLD-004106,opcode_0x6E_nombre_explicito,,Crosstine,Crosstine
 004014,CLD-004107,dialogo,demo1502_01.dsf,150209,1213,4,Crosstine,Crosstine,CLD-004106,primer_mensaje_tras_nombre,2,"I brought her here,","La traje aquí,"
 004015,CLD-004108,dialogo,demo1502_01.dsf,150209,1213,5,Crosstine,Crosstine,CLD-004106,continuidad_corta_probable,1,but I never thought she'd be this much trouble.,Pero nunca pensé que me daría tantos problemas.
@@ -4080,14 +4080,14 @@
 004079,CLD-004173,dialogo,demo1503_00.dsf,150300,1218,353,,,,sin_hablante_verificable,1,shall now be ground into dust,todos acabarán hechos polvo
 004080,CLD-004174,dialogo,demo1503_00.dsf,150300,1218,354,,,,sin_hablante_verificable,1,"during my ""welcoming party.""",en mi «fiesta de bienvenida».
 004081,CLD-004175,personaje_interlocutor,demo1503_00.dsf,150300,1218,379,Asagi,Asagi,CLD-004175,opcode_0x6E_nombre_explicito,,Asagi,Asagi
-004082,CLD-004176,dialogo,demo1503_00.dsf,150300,1218,381,Asagi,Asagi,CLD-004175,primer_mensaje_tras_nombre,2,Wait!,¡Esperar!
+004082,CLD-004176,dialogo,demo1503_00.dsf,150300,1218,381,Asagi,Asagi,CLD-004175,primer_mensaje_tras_nombre,2,Wait!,¡Espera!
 004083,CLD-004177,dialogo,demo1503_00.dsf,150300,1218,382,Asagi,Asagi,CLD-004175,continuidad_corta_probable,1,Something seems strange!,¡Algo parece extraño!
 004084,CLD-004178,dialogo,demo1503_00.dsf,150300,1218,439,,,,sin_hablante_verificable,57,I knew it.,Lo sabía.
 004085,CLD-004179,dialogo,demo1503_00.dsf,150300,1218,440,,,,sin_hablante_verificable,1,It finally revealed its true identity.,Finalmente reveló su verdadera identidad.
 004086,CLD-004180,dialogo,demo1503_00.dsf,150300,1218,441,,,,sin_hablante_verificable,1,Let's call it... Asagi King.,Llamémoslo... Rey Asagi.
 004087,CLD-004181,personaje_interlocutor,demo1503_00.dsf,150300,1218,455,Asagi,Asagi,CLD-004181,opcode_0x6E_nombre_explicito,,Asagi,Asagi
 004088,CLD-004182,dialogo,demo1503_00.dsf,150300,1218,457,Asagi,Asagi,CLD-004181,primer_mensaje_tras_nombre,2,It's going into the dungeon!,¡Va a entrar en la mazmorra!
-004089,CLD-004183,dialogo,demo1503_00.dsf,150300,1218,458,Asagi,Asagi,CLD-004181,continuidad_corta_probable,1,Wait!,¡Esperar!
+004089,CLD-004183,dialogo,demo1503_00.dsf,150300,1218,458,Asagi,Asagi,CLD-004181,continuidad_corta_probable,1,Wait!,¡Espera!
 004090,CLD-004185,dialogo,demo1503_00.dsf,150300,1218,477,,,,sin_hablante_verificable,19,You can now go to a new dungeon!,¡Ahora puedes ir a una nueva mazmorra!
 004091,CLD-004187,dialogo,demo1503_00.dsf,150390,1219,14,,,,sin_hablante_verificable,,You can now go to a new dungeon!,¡Ahora puedes ir a una nueva mazmorra!
 004092,CLD-004188,dialogo,demo1503_01.dsf,150301,1220,5,,,,sin_hablante_verificable,,It's like a horror movie!,¡Es como una película de terror!
@@ -4331,9 +4331,9 @@
 004330,CLD-004427,dialogo,end00_puding.dsf,140151,1389,62,¿Souma?,Souma?,CLD-004424,continuidad_corta_probable,1,Who the hell would want to be with you?,¿Quién demonios querría estar contigo?
 004331,CLD-004428,dialogo,end00_puding.dsf,140151,1389,76,,,,sin_hablante_verificable,14,My Souma would never say something like that!,¡Mi Souma jamás diría algo así!
 004332,CLD-004429,dialogo,end00_puding.dsf,140151,1389,77,,,,sin_hablante_verificable,1,You're the mask!,¡Tú eres la máscara!
-004333,CLD-004430,personaje_interlocutor,end00_puding.dsf,140151,1389,84,Mascarilla,Mask,CLD-004430,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-004334,CLD-004431,dialogo,end00_puding.dsf,140151,1389,86,Mascarilla,Mask,CLD-004430,primer_mensaje_tras_nombre,2,"Heh, heh, heh! You found me out!","¡Je, je, je! ¡Me descubriste!"
-004335,CLD-004432,dialogo,end00_puding.dsf,140151,1389,87,Mascarilla,Mask,CLD-004430,continuidad_corta_probable,1,I don't want you anymore!,¡Ya no te quiero!
+004333,CLD-004430,personaje_interlocutor,end00_puding.dsf,140151,1389,84,Máscara,Mask,CLD-004430,opcode_0x6E_nombre_explicito,,Mask,Máscara
+004334,CLD-004431,dialogo,end00_puding.dsf,140151,1389,86,Máscara,Mask,CLD-004430,primer_mensaje_tras_nombre,2,"Heh, heh, heh! You found me out!","¡Je, je, je! ¡Me descubriste!"
+004335,CLD-004432,dialogo,end00_puding.dsf,140151,1389,87,Máscara,Mask,CLD-004430,continuidad_corta_probable,1,I don't want you anymore!,¡Ya no te quiero!
 004336,CLD-004433,dialogo,end00_puding.dsf,145101,1391,27,,,,sin_hablante_verificable,,Let's see. This is supposed to be the way home.,Veamos. Se supone que este es el camino a casa.
 004337,CLD-004434,dialogo,end00_puding.dsf,145101,1391,37,,,,sin_hablante_verificable,10,Hm. This mountain and river should be near my home.,Mmm. Esta montaña y este río deberían estar cerca de mi casa.
 004338,CLD-004435,dialogo,end00_puding.dsf,145101,1391,38,,,,sin_hablante_verificable,1,It has to be around here somewhere.,Tiene que estar por aquí cerca.
@@ -4372,14 +4372,14 @@
 004371,CLD-004468,dialogo,end01_koko.dsf,140201,1393,142,,,,sin_hablante_verificable,1,The heavens have blessed me!,¡Los cielos me han bendecido!
 004372,CLD-004469,dialogo,end01_koko.dsf,140251,1395,31,,,,sin_hablante_verificable,,"Oh, it's the mask.","Oh, es la máscara."
 004373,CLD-004470,dialogo,end01_koko.dsf,140251,1395,32,,,,sin_hablante_verificable,1,The heavens have blessed me!,¡Los cielos me han bendecido!
-004374,CLD-004471,personaje_interlocutor,end01_koko.dsf,140251,1395,36,Mascarilla,Mask,CLD-004471,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-004375,CLD-004472,dialogo,end01_koko.dsf,140251,1395,38,Mascarilla,Mask,CLD-004471,primer_mensaje_tras_nombre,2,Misfortune is sin.,La desgracia es pecado.
-004376,CLD-004473,dialogo,end01_koko.dsf,140251,1395,39,Mascarilla,Mask,CLD-004471,continuidad_corta_probable,1,Misfortune is the taste of honey.,La desgracia tiene sabor a miel.
+004374,CLD-004471,personaje_interlocutor,end01_koko.dsf,140251,1395,36,Máscara,Mask,CLD-004471,opcode_0x6E_nombre_explicito,,Mask,Máscara
+004375,CLD-004472,dialogo,end01_koko.dsf,140251,1395,38,Máscara,Mask,CLD-004471,primer_mensaje_tras_nombre,2,Misfortune is sin.,La desgracia es pecado.
+004376,CLD-004473,dialogo,end01_koko.dsf,140251,1395,39,Máscara,Mask,CLD-004471,continuidad_corta_probable,1,Misfortune is the taste of honey.,La desgracia tiene sabor a miel.
 004377,CLD-004474,dialogo,end01_koko.dsf,140251,1395,58,,,,sin_hablante_verificable,19,"Oh, so it's delicious?","¿Ah, entonces está delicioso?"
-004378,CLD-004475,personaje_interlocutor,end01_koko.dsf,140251,1395,62,Mascarilla,Mask,CLD-004475,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-004379,CLD-004476,dialogo,end01_koko.dsf,140251,1395,64,Mascarilla,Mask,CLD-004475,primer_mensaje_tras_nombre,2,The heavens will not bless you.,Los cielos no te bendecirán.
-004380,CLD-004477,dialogo,end01_koko.dsf,140251,1395,65,Mascarilla,Mask,CLD-004475,continuidad_corta_probable,1,Because you're going to die here!,¡Porque vas a morir aquí!
-004381,CLD-004478,dialogo,end01_koko.dsf,140251,1395,66,Mascarilla,Mask,CLD-004475,continuidad_corta_probable,1,"Hee, hee, hee, hee!","¡Je, je, je, je!"
+004378,CLD-004475,personaje_interlocutor,end01_koko.dsf,140251,1395,62,Máscara,Mask,CLD-004475,opcode_0x6E_nombre_explicito,,Mask,Máscara
+004379,CLD-004476,dialogo,end01_koko.dsf,140251,1395,64,Máscara,Mask,CLD-004475,primer_mensaje_tras_nombre,2,The heavens will not bless you.,Los cielos no te bendecirán.
+004380,CLD-004477,dialogo,end01_koko.dsf,140251,1395,65,Máscara,Mask,CLD-004475,continuidad_corta_probable,1,Because you're going to die here!,¡Porque vas a morir aquí!
+004381,CLD-004478,dialogo,end01_koko.dsf,140251,1395,66,Máscara,Mask,CLD-004475,continuidad_corta_probable,1,"Hee, hee, hee, hee!","¡Je, je, je, je!"
 004382,CLD-004479,dialogo,end01_koko.dsf,145201,1397,32,,,,sin_hablante_verificable,,"Oh, this isn't the toilet?","¿Ah, esto no es el baño?"
 004383,CLD-004480,dialogo,end01_koko.dsf,145201,1397,33,,,,sin_hablante_verificable,1,"I'm sorry, I made a mistake.","Lo siento, cometí un error."
 004384,CLD-004481,dialogo,end01_koko.dsf,145201,1397,46,,,,sin_hablante_verificable,13,Huh?,¿Eh?
@@ -4404,9 +4404,9 @@
 004403,CLD-004500,dialogo,end01_koko.dsf,145201,1397,118,,,,sin_hablante_verificable,7,"Oh, geez.","Oh, cielos."
 004404,CLD-004501,dialogo,end01_koko.dsf,145201,1397,119,,,,sin_hablante_verificable,1,I'm so unlucky to be sealed by mistake.,Soy muy mala suerte por haber sido sellada por error.
 004405,CLD-004502,dialogo,end01_koko.dsf,145201,1397,120,,,,sin_hablante_verificable,1,Won't the heavens bless me one more time?,¿No me bendecirán los cielos una vez más?
-004406,CLD-004503,personaje_interlocutor,end02_despina.dsf,140301,1399,30,Mascarilla,Mask,CLD-004503,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-004407,CLD-004504,dialogo,end02_despina.dsf,140301,1399,35,Mascarilla,Mask,CLD-004503,primer_mensaje_tras_nombre_probable,5,You ran and have forsaken me.,Huiste y me abandonaste.
-004408,CLD-004505,dialogo,end02_despina.dsf,140301,1399,36,Mascarilla,Mask,CLD-004503,continuidad_corta_probable,1,"Yet, how are you so strong?","Sin embargo, ¿cómo eres tan fuerte?"
+004406,CLD-004503,personaje_interlocutor,end02_despina.dsf,140301,1399,30,Máscara,Mask,CLD-004503,opcode_0x6E_nombre_explicito,,Mask,Máscara
+004407,CLD-004504,dialogo,end02_despina.dsf,140301,1399,35,Máscara,Mask,CLD-004503,primer_mensaje_tras_nombre_probable,5,You ran and have forsaken me.,Huiste y me abandonaste.
+004408,CLD-004505,dialogo,end02_despina.dsf,140301,1399,36,Máscara,Mask,CLD-004503,continuidad_corta_probable,1,"Yet, how are you so strong?","Sin embargo, ¿cómo eres tan fuerte?"
 004409,CLD-004506,dialogo,end02_despina.dsf,140301,1399,40,,,,sin_hablante_verificable,4,You've been running from me this whole time.,Has estado huyendo de mí todo este tiempo.
 004410,CLD-004507,dialogo,end02_despina.dsf,140301,1399,41,,,,sin_hablante_verificable,1,"How, then, did you become this strong?","¿Cómo, entonces, te volviste tan fuerte?"
 004411,CLD-004508,dialogo,end02_despina.dsf,140301,1399,61,,,,sin_hablante_verificable,20,Because I have the Magic Circle.,Porque tengo el Círculo mágico.
@@ -4414,11 +4414,11 @@
 004413,CLD-004510,dialogo,end02_despina.dsf,140301,1399,64,,,,sin_hablante_verificable,1,"I am the genius sorceress, Despina.","Soy la hechicera genio, Despina."
 004414,CLD-004511,dialogo,end02_despina.dsf,140301,1399,75,,,,sin_hablante_verificable,11,"In your words, it is the circle of friends.","En tus palabras, es el círculo de amigos."
 004415,CLD-004512,dialogo,end02_despina.dsf,140301,1399,77,,,,sin_hablante_verificable,2,We're just made differently.,Simplemente estamos hechos de forma diferente.
-004416,CLD-004513,personaje_interlocutor,end02_despina.dsf,140301,1399,89,Mascarilla,Mask,CLD-004513,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-004417,CLD-004514,dialogo,end02_despina.dsf,140301,1399,94,Mascarilla,Mask,CLD-004513,primer_mensaje_tras_nombre_probable,5,I see... The circle of friends...,Ya veo... El círculo de amigos...
-004418,CLD-004515,dialogo,end02_despina.dsf,140301,1399,95,Mascarilla,Mask,CLD-004513,continuidad_corta_probable,1,I wish I had that...,Ojalá tuviera eso...
-004419,CLD-004516,dialogo,end02_despina.dsf,140301,1399,97,Mascarilla,Mask,CLD-004513,continuidad_corta_probable,2,I see... We're just different...,Ya veo... Simplemente somos diferentes...
-004420,CLD-004517,dialogo,end02_despina.dsf,140301,1399,98,Mascarilla,Mask,CLD-004513,continuidad_corta_probable,1,Sniff...,Oler...
+004416,CLD-004513,personaje_interlocutor,end02_despina.dsf,140301,1399,89,Máscara,Mask,CLD-004513,opcode_0x6E_nombre_explicito,,Mask,Máscara
+004417,CLD-004514,dialogo,end02_despina.dsf,140301,1399,94,Máscara,Mask,CLD-004513,primer_mensaje_tras_nombre_probable,5,I see... The circle of friends...,Ya veo... El círculo de amigos...
+004418,CLD-004515,dialogo,end02_despina.dsf,140301,1399,95,Máscara,Mask,CLD-004513,continuidad_corta_probable,1,I wish I had that...,Ojalá tuviera eso...
+004419,CLD-004516,dialogo,end02_despina.dsf,140301,1399,97,Máscara,Mask,CLD-004513,continuidad_corta_probable,2,I see... We're just different...,Ya veo... Simplemente somos diferentes...
+004420,CLD-004517,dialogo,end02_despina.dsf,140301,1399,98,Máscara,Mask,CLD-004513,continuidad_corta_probable,1,Sniff...,Oler...
 004421,CLD-004518,dialogo,end02_despina.dsf,140301,1399,118,,,,sin_hablante_verificable,20,"Now, let's go home.","Ahora, vámonos a casa."
 004422,CLD-004519,dialogo,end02_despina.dsf,140301,1399,182,,,,sin_hablante_verificable,64,You're finally back!,¡Por fin has vuelto!
 004423,CLD-004520,dialogo,end02_despina.dsf,140301,1399,191,,,,sin_hablante_verificable,9,We were all waiting for you.,Todos te estábamos esperando.
@@ -4515,14 +4515,14 @@
 004514,CLD-004611,dialogo,end02_despina.dsf,140351,1401,63,¿Battleblo?,Battleblo?,CLD-004609,continuidad_corta_probable,1,You call yourself a genius sorceress?!,¿Te haces llamar hechicera genio?
 004515,CLD-004612,personaje_interlocutor,end02_despina.dsf,140351,1401,72,¿Souma?,Souma?,CLD-004612,opcode_0x6E_nombre_explicito,,Souma?,¿Souma?
 004516,CLD-004613,dialogo,end02_despina.dsf,140351,1401,74,¿Souma?,Souma?,CLD-004612,primer_mensaje_tras_nombre,2,You always think you're so high and mighty.,Siempre te crees muy superior y poderoso.
-004517,CLD-004614,personaje_interlocutor,end02_despina.dsf,140351,1401,84,¿Palma de coco?,Coco?,CLD-004614,opcode_0x6E_nombre_explicito,,Coco?,¿Palma de coco?
-004518,CLD-004615,dialogo,end02_despina.dsf,140351,1401,86,¿Palma de coco?,Coco?,CLD-004614,primer_mensaje_tras_nombre,2,I'm sick of doing business here.,Estoy harto de hacer negocios aquí.
+004517,CLD-004614,personaje_interlocutor,end02_despina.dsf,140351,1401,84,¿Coco?,Coco?,CLD-004614,opcode_0x6E_nombre_explicito,,Coco?,¿Coco?
+004518,CLD-004615,dialogo,end02_despina.dsf,140351,1401,86,¿Coco?,Coco?,CLD-004614,primer_mensaje_tras_nombre,2,I'm sick of doing business here.,Estoy harto de hacer negocios aquí.
 004519,CLD-004616,personaje_interlocutor,end02_despina.dsf,140351,1401,96,¿Dotache?,Dotache?,CLD-004616,opcode_0x6E_nombre_explicito,,Dotache?,¿Dotache?
 004520,CLD-004617,dialogo,end02_despina.dsf,140351,1401,98,¿Dotache?,Dotache?,CLD-004616,primer_mensaje_tras_nombre,2,I got nothing for you to drink. Get out of here.,No tengo nada para que bebas. Lárgate de aquí.
-004521,CLD-004618,personaje_interlocutor,end02_despina.dsf,140351,1401,108,¿Chelín?,Bob?,CLD-004618,opcode_0x6E_nombre_explicito,,Bob?,¿Chelín?
-004522,CLD-004619,dialogo,end02_despina.dsf,140351,1401,110,¿Chelín?,Bob?,CLD-004618,primer_mensaje_tras_nombre,2,You so CRAZY!,¡Estás tan LOCO!
-004523,CLD-004620,personaje_interlocutor,end02_despina.dsf,140351,1401,120,¿Domingo?,Sunday?,CLD-004620,opcode_0x6E_nombre_explicito,,Sunday?,¿Domingo?
-004524,CLD-004621,dialogo,end02_despina.dsf,140351,1401,122,¿Domingo?,Sunday?,CLD-004620,primer_mensaje_tras_nombre,2,Don't you ever come near me again.,No te acerques a mí nunca más.
+004521,CLD-004618,personaje_interlocutor,end02_despina.dsf,140351,1401,108,¿Bob?,Bob?,CLD-004618,opcode_0x6E_nombre_explicito,,Bob?,¿Bob?
+004522,CLD-004619,dialogo,end02_despina.dsf,140351,1401,110,¿Bob?,Bob?,CLD-004618,primer_mensaje_tras_nombre,2,You so CRAZY!,¡Estás tan LOCO!
+004523,CLD-004620,personaje_interlocutor,end02_despina.dsf,140351,1401,120,¿Sunday?,Sunday?,CLD-004620,opcode_0x6E_nombre_explicito,,Sunday?,¿Sunday?
+004524,CLD-004621,dialogo,end02_despina.dsf,140351,1401,122,¿Sunday?,Sunday?,CLD-004620,primer_mensaje_tras_nombre,2,Don't you ever come near me again.,No te acerques a mí nunca más.
 004525,CLD-004622,personaje_interlocutor,end02_despina.dsf,140351,1401,132,¿Pudding?,Pudding?,CLD-004622,opcode_0x6E_nombre_explicito,,Pudding?,¿Pudding?
 004526,CLD-004623,dialogo,end02_despina.dsf,140351,1401,134,¿Pudding?,Pudding?,CLD-004622,primer_mensaje_tras_nombre,2,"In other words,","En otras palabras,"
 004527,CLD-004624,dialogo,end02_despina.dsf,140351,1401,135,¿Pudding?,Pudding?,CLD-004622,continuidad_corta_probable,1,everyone hates you.,Todos te odian.
@@ -4533,10 +4533,10 @@
 004532,CLD-004629,dialogo,end02_despina.dsf,140351,1401,150,,,,sin_hablante_verificable,1,Show yourself!,¡Muéstrate!
 004533,CLD-004630,dialogo,end02_despina.dsf,140351,1401,152,,,,sin_hablante_verificable,2,And...,Y...
 004534,CLD-004631,dialogo,end02_despina.dsf,140351,1401,153,,,,sin_hablante_verificable,1,Die!,¡El!
-004535,CLD-004632,personaje_interlocutor,end02_despina.dsf,140351,1401,187,Mascarilla,Mask,CLD-004632,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-004536,CLD-004633,dialogo,end02_despina.dsf,140351,1401,189,Mascarilla,Mask,CLD-004632,primer_mensaje_tras_nombre,2,"Hee, hee, hee.","Je, je, je."
-004537,CLD-004634,dialogo,end02_despina.dsf,140351,1401,190,Mascarilla,Mask,CLD-004632,continuidad_corta_probable,1,"In that case, I'll put you in a world of hurt!","¡En ese caso, te haré sufrir muchísimo!"
-004538,CLD-004635,dialogo,end02_despina.dsf,140351,1401,191,Mascarilla,Mask,CLD-004632,continuidad_corta_probable,1,You're not my friend!,¡No eres mi amigo!
+004535,CLD-004632,personaje_interlocutor,end02_despina.dsf,140351,1401,187,Máscara,Mask,CLD-004632,opcode_0x6E_nombre_explicito,,Mask,Máscara
+004536,CLD-004633,dialogo,end02_despina.dsf,140351,1401,189,Máscara,Mask,CLD-004632,primer_mensaje_tras_nombre,2,"Hee, hee, hee.","Je, je, je."
+004537,CLD-004634,dialogo,end02_despina.dsf,140351,1401,190,Máscara,Mask,CLD-004632,continuidad_corta_probable,1,"In that case, I'll put you in a world of hurt!","¡En ese caso, te haré sufrir muchísimo!"
+004538,CLD-004635,dialogo,end02_despina.dsf,140351,1401,191,Máscara,Mask,CLD-004632,continuidad_corta_probable,1,You're not my friend!,¡No eres mi amigo!
 004539,CLD-004636,dialogo,end02_despina.dsf,145301,1403,28,,,,sin_hablante_verificable,,Why did I even create this world?,¿Por qué creé este mundo?
 004540,CLD-004637,dialogo,end02_despina.dsf,145301,1403,29,,,,sin_hablante_verificable,1,What purpose did it serve?,¿Qué propósito tenía?
 004541,CLD-004638,dialogo,end02_despina.dsf,145301,1403,39,,,,sin_hablante_verificable,10,Creating this world,Creando este mundo
@@ -4574,17 +4574,17 @@
 004573,CLD-004670,dialogo,end03_souma.dsf,140401,1405,243,,,,sin_hablante_verificable,11,"But, stop calling me that.",Pero deja de llamarme así.
 004574,CLD-004671,dialogo,end03_souma.dsf,140401,1405,250,,,,sin_hablante_verificable,7,Sorry...,Lo siento...
 004575,CLD-004672,dialogo,end03_souma.dsf,140451,1407,35,,,,sin_hablante_verificable,,"Hey, there's the mask.","Oye, ahí está la máscara."
-004576,CLD-004673,personaje_interlocutor,end03_souma.dsf,140451,1407,39,Mascarilla,Mask,CLD-004673,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-004577,CLD-004674,dialogo,end03_souma.dsf,140451,1407,41,Mascarilla,Mask,CLD-004673,primer_mensaje_tras_nombre,2,You shouldn't have come here.,No deberías haber venido aquí.
+004576,CLD-004673,personaje_interlocutor,end03_souma.dsf,140451,1407,39,Máscara,Mask,CLD-004673,opcode_0x6E_nombre_explicito,,Mask,Máscara
+004577,CLD-004674,dialogo,end03_souma.dsf,140451,1407,41,Máscara,Mask,CLD-004673,primer_mensaje_tras_nombre,2,You shouldn't have come here.,No deberías haber venido aquí.
 004578,CLD-004675,dialogo,end03_souma.dsf,140451,1407,60,,,,sin_hablante_verificable,19,Wh-What?,¿Qué?
-004579,CLD-004676,personaje_interlocutor,end03_souma.dsf,140451,1407,66,Mascarilla,Mask,CLD-004676,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-004580,CLD-004677,dialogo,end03_souma.dsf,140451,1407,68,Mascarilla,Mask,CLD-004676,primer_mensaje_tras_nombre,2,I should have locked her up.,Debería haberla encerrado.
-004581,CLD-004678,dialogo,end03_souma.dsf,140451,1407,69,Mascarilla,Mask,CLD-004676,continuidad_corta_probable,1,And then she would be mine.,Y entonces ella sería mía.
+004579,CLD-004676,personaje_interlocutor,end03_souma.dsf,140451,1407,66,Máscara,Mask,CLD-004676,opcode_0x6E_nombre_explicito,,Mask,Máscara
+004580,CLD-004677,dialogo,end03_souma.dsf,140451,1407,68,Máscara,Mask,CLD-004676,primer_mensaje_tras_nombre,2,I should have locked her up.,Debería haberla encerrado.
+004581,CLD-004678,dialogo,end03_souma.dsf,140451,1407,69,Máscara,Mask,CLD-004676,continuidad_corta_probable,1,And then she would be mine.,Y entonces ella sería mía.
 004582,CLD-004679,dialogo,end03_souma.dsf,140451,1407,88,,,,sin_hablante_verificable,19,She doesn't belong to me.,Ella no me pertenece.
 004583,CLD-004680,dialogo,end03_souma.dsf,140451,1407,89,,,,sin_hablante_verificable,1,All I care about is her happiness!,¡Lo único que me importa es su felicidad!
-004584,CLD-004681,personaje_interlocutor,end03_souma.dsf,140451,1407,95,Mascarilla,Mask,CLD-004681,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-004585,CLD-004682,dialogo,end03_souma.dsf,140451,1407,97,Mascarilla,Mask,CLD-004681,primer_mensaje_tras_nombre,2,"Hee, hee, hee!","¡Je, je, je!"
-004586,CLD-004683,dialogo,end03_souma.dsf,140451,1407,98,Mascarilla,Mask,CLD-004681,continuidad_corta_probable,1,Don't lie to yourself!,¡No te mientas a ti mismo!
+004584,CLD-004681,personaje_interlocutor,end03_souma.dsf,140451,1407,95,Máscara,Mask,CLD-004681,opcode_0x6E_nombre_explicito,,Mask,Máscara
+004585,CLD-004682,dialogo,end03_souma.dsf,140451,1407,97,Máscara,Mask,CLD-004681,primer_mensaje_tras_nombre,2,"Hee, hee, hee!","¡Je, je, je!"
+004586,CLD-004683,dialogo,end03_souma.dsf,140451,1407,98,Máscara,Mask,CLD-004681,continuidad_corta_probable,1,Don't lie to yourself!,¡No te mientas a ti mismo!
 004587,CLD-004684,dialogo,end03_souma.dsf,145401,1409,28,,,,sin_hablante_verificable,,"What are you doing, Souma?","¿Qué estás haciendo, Souma?"
 004588,CLD-004685,dialogo,end03_souma.dsf,145401,1409,29,,,,sin_hablante_verificable,1,Don't tell me you want to go home.,No me digas que quieres irte a casa.
 004589,CLD-004686,dialogo,end03_souma.dsf,145401,1409,31,,,,sin_hablante_verificable,2,Hehehe. I found this awesome treasure.,Jejeje. Encontré este increíble tesoro.
@@ -4625,7 +4625,7 @@
 004624,CLD-004721,dialogo,end04_syabet.dsf,140501,1411,158,,,,sin_hablante_verificable,7,"At that time, I will protect you,","Cuando llegue ese momento, te protegeré,"
 004625,CLD-004722,dialogo,end04_syabet.dsf,140501,1411,159,,,,sin_hablante_verificable,1,"not by someone else's orders, but by my own will.","no por orden de nadie, sino por voluntad propia."
 004626,CLD-004723,dialogo,end04_syabet.dsf,140501,1411,160,,,,sin_hablante_verificable,1,Would you grace me with that opportunity?,¿Me concederías ese honor?
-004627,CLD-004724,dialogo,end04_syabet.dsf,140501,1411,167,,,,sin_hablante_verificable,7,Sherbet.,Sorbete.
+004627,CLD-004724,dialogo,end04_syabet.dsf,140501,1411,167,,,,sin_hablante_verificable,7,Sherbet.,Sherbet.
 004628,CLD-004725,dialogo,end04_syabet.dsf,140501,1411,169,,,,sin_hablante_verificable,2,Would you?,¿Lo harías?
 004629,CLD-004726,dialogo,end04_syabet.dsf,140501,1411,170,,,,sin_hablante_verificable,1,Please return soon.,"Por favor, regresa pronto."
 004630,CLD-004727,dialogo,end04_syabet.dsf,140501,1411,177,,,,sin_hablante_verificable,7,Yes!,¡Sí!
@@ -4633,7 +4633,7 @@
 004632,CLD-004729,dialogo,end04_syabet.dsf,140551,1413,37,,,,sin_hablante_verificable,1,Have you returned to,¿Has recuperado
 004633,CLD-004730,dialogo,end04_syabet.dsf,140551,1413,38,,,,sin_hablante_verificable,1,your original form?!,tu forma original?!
 004634,CLD-004731,personaje_interlocutor,end04_syabet.dsf,140551,1413,44,¿Princesa?,Princess?,CLD-004731,opcode_0x6E_nombre_explicito,,Princess?,¿Princesa?
-004635,CLD-004732,dialogo,end04_syabet.dsf,140551,1413,46,¿Princesa?,Princess?,CLD-004731,primer_mensaje_tras_nombre,2,Sherbet. You are utterly useless.,Sorbete. Eres completamente inútil.
+004635,CLD-004732,dialogo,end04_syabet.dsf,140551,1413,46,¿Princesa?,Princess?,CLD-004731,primer_mensaje_tras_nombre,2,Sherbet. You are utterly useless.,Sherbet. Eres completamente inútil.
 004636,CLD-004733,dialogo,end04_syabet.dsf,140551,1413,47,¿Princesa?,Princess?,CLD-004731,continuidad_corta_probable,1,Return to the kingdom at once.,Regresa al reino de inmediato.
 004637,CLD-004734,dialogo,end04_syabet.dsf,140551,1413,55,,,,sin_hablante_verificable,8,I cannot do that.,No puedo hacer eso.
 004638,CLD-004735,personaje_interlocutor,end04_syabet.dsf,140551,1413,61,¿Princesa?,Princess?,CLD-004735,opcode_0x6E_nombre_explicito,,Princess?,¿Princesa?
@@ -4660,7 +4660,7 @@
 004659,CLD-004756,dialogo,end07_bbrow.dsf,140801,1425,42,,,,sin_hablante_verificable,2,Now I can declare my love for her!,¡Ahora puedo declararle mi amor!
 004660,CLD-004757,dialogo,end07_bbrow.dsf,140801,1425,83,,,,sin_hablante_verificable,41,"So, you found it first.",Así que lo encontraste primero.
 004661,CLD-004758,dialogo,end07_bbrow.dsf,140801,1425,84,,,,sin_hablante_verificable,1,"Not bad, Battleblo.","No está mal, Battleblo."
-004662,CLD-004759,dialogo,end07_bbrow.dsf,140801,1425,92,,,,sin_hablante_verificable,8,Sunday!,¡Domingo!
+004662,CLD-004759,dialogo,end07_bbrow.dsf,140801,1425,92,,,,sin_hablante_verificable,8,Sunday!,¡Sunday!
 004663,CLD-004760,dialogo,end07_bbrow.dsf,140801,1425,93,,,,sin_hablante_verificable,1,I'll beat you to a bloody pulp!,¡Te voy a dar una paliza brutal!
 004664,CLD-004761,dialogo,end07_bbrow.dsf,140801,1425,99,,,,sin_hablante_verificable,6,Bring it on!,¡Dale!
 004665,CLD-004762,dialogo,end07_bbrow.dsf,140801,1425,127,,,,sin_hablante_verificable,28,Hahaha! I win!,¡Jajaja! ¡Gané!
@@ -4700,9 +4700,9 @@
 004699,CLD-004796,personaje_interlocutor,end07_bbrow.dsf,140851,1427,78,La voz de la máscara,Voice of the Mask,CLD-004796,opcode_0x6E_nombre_explicito,,Voice of the Mask,La voz de la máscara
 004700,CLD-004797,dialogo,end07_bbrow.dsf,140851,1427,80,La voz de la máscara,Voice of the Mask,CLD-004796,primer_mensaje_tras_nombre,2,You're an idiot.,Eres un idiota.
 004701,CLD-004798,dialogo,end07_bbrow.dsf,140851,1427,116,,,,sin_hablante_verificable,36,You tricked me!,¡Me engañaste!
-004702,CLD-004799,personaje_interlocutor,end07_bbrow.dsf,140851,1427,120,Mascarilla,Mask,CLD-004799,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-004703,CLD-004800,dialogo,end07_bbrow.dsf,140851,1427,122,Mascarilla,Mask,CLD-004799,primer_mensaje_tras_nombre,2,Letting you hold onto the ultimate shield,Permitiéndote aferrarte al escudo definitivo
-004704,CLD-004801,dialogo,end07_bbrow.dsf,140851,1427,123,Mascarilla,Mask,CLD-004799,continuidad_corta_probable,1,would be a complete waste!,¡Sería un completo desperdicio!
+004702,CLD-004799,personaje_interlocutor,end07_bbrow.dsf,140851,1427,120,Máscara,Mask,CLD-004799,opcode_0x6E_nombre_explicito,,Mask,Máscara
+004703,CLD-004800,dialogo,end07_bbrow.dsf,140851,1427,122,Máscara,Mask,CLD-004799,primer_mensaje_tras_nombre,2,Letting you hold onto the ultimate shield,Permitiéndote aferrarte al escudo definitivo
+004704,CLD-004801,dialogo,end07_bbrow.dsf,140851,1427,123,Máscara,Mask,CLD-004799,continuidad_corta_probable,1,would be a complete waste!,¡Sería un completo desperdicio!
 004705,CLD-004802,personaje_interlocutor,end07_bbrow.dsf,145801,1429,47,???,???,CLD-004802,opcode_0x6E_nombre_explicito,,???,???
 004706,CLD-004803,dialogo,end07_bbrow.dsf,145801,1429,49,???,???,CLD-004802,primer_mensaje_tras_nombre,2,That shield!,¡Ese escudo!
 004707,CLD-004804,dialogo,end07_bbrow.dsf,145801,1429,50,???,???,CLD-004802,continuidad_corta_probable,1,Are you also one who,¿Tú también buscas
@@ -4735,7 +4735,7 @@
 004734,CLD-004832,dialogo,end09_dodohige.dsf,141001,1435,67,,,,sin_hablante_verificable,39,The curse has been lifted!,¡La maldición se ha roto!
 004735,CLD-004833,dialogo,end09_dodohige.dsf,141001,1435,80,,,,sin_hablante_verificable,13,Princess Dot... You're beautiful...!,Princesa Dot... ¡Eres hermosa...!
 004736,CLD-004834,personaje_interlocutor,end09_dodohige.dsf,141001,1435,86,Princesa Dot,Princess Dot,CLD-004834,opcode_0x6E_nombre_explicito,,Princess Dot,Princesa Dot
-004737,CLD-004835,dialogo,end09_dodohige.dsf,141001,1435,88,Princesa Dot,Princess Dot,CLD-004834,primer_mensaje_tras_nombre,2,Sherbet.,Sorbete.
+004737,CLD-004835,dialogo,end09_dodohige.dsf,141001,1435,88,Princesa Dot,Princess Dot,CLD-004834,primer_mensaje_tras_nombre,2,Sherbet.,Sherbet.
 004738,CLD-004836,dialogo,end09_dodohige.dsf,141001,1435,96,,,,sin_hablante_verificable,8,Yes.,Sí.
 004739,CLD-004837,personaje_interlocutor,end09_dodohige.dsf,141001,1435,102,Princesa Dot,Princess Dot,CLD-004837,opcode_0x6E_nombre_explicito,,Princess Dot,Princesa Dot
 004740,CLD-004838,dialogo,end09_dodohige.dsf,141001,1435,104,Princesa Dot,Princess Dot,CLD-004837,primer_mensaje_tras_nombre,2,There are still many things in life,Aún hay muchas cosas en la vida
@@ -4759,23 +4759,23 @@
 004758,CLD-004856,dialogo,end09_dodohige.dsf,141001,1435,164,,,,sin_hablante_verificable,10,I will gladly oblige.,Con mucho gusto accederé.
 004759,CLD-004857,personaje_interlocutor,end09_dodohige.dsf,141001,1435,170,Princesa Dot,Princess Dot,CLD-004857,opcode_0x6E_nombre_explicito,,Princess Dot,Princesa Dot
 004760,CLD-004858,dialogo,end09_dodohige.dsf,141001,1435,172,Princesa Dot,Princess Dot,CLD-004857,primer_mensaje_tras_nombre,2,Thank you!,¡Gracias!
-004761,CLD-004859,personaje_interlocutor,end09_dodohige.dsf,141051,1437,28,Mascarilla,Mask,CLD-004859,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-004762,CLD-004860,dialogo,end09_dodohige.dsf,141051,1437,30,Mascarilla,Mask,CLD-004859,primer_mensaje_tras_nombre,2,I know.,Lo sé.
-004763,CLD-004861,dialogo,end09_dodohige.dsf,141051,1437,31,Mascarilla,Mask,CLD-004859,continuidad_corta_probable,1,You're actually a princess.,En realidad eres una princesa.
-004764,CLD-004862,dialogo,end09_dodohige.dsf,141051,1437,32,Mascarilla,Mask,CLD-004859,continuidad_corta_probable,1,Why did you come fight?,¿Por qué viniste a pelear?
+004761,CLD-004859,personaje_interlocutor,end09_dodohige.dsf,141051,1437,28,Máscara,Mask,CLD-004859,opcode_0x6E_nombre_explicito,,Mask,Máscara
+004762,CLD-004860,dialogo,end09_dodohige.dsf,141051,1437,30,Máscara,Mask,CLD-004859,primer_mensaje_tras_nombre,2,I know.,Lo sé.
+004763,CLD-004861,dialogo,end09_dodohige.dsf,141051,1437,31,Máscara,Mask,CLD-004859,continuidad_corta_probable,1,You're actually a princess.,En realidad eres una princesa.
+004764,CLD-004862,dialogo,end09_dodohige.dsf,141051,1437,32,Máscara,Mask,CLD-004859,continuidad_corta_probable,1,Why did you come fight?,¿Por qué viniste a pelear?
 004765,CLD-004863,dialogo,end09_dodohige.dsf,141051,1437,51,,,,sin_hablante_verificable,19,I have come to,He venido a
 004766,CLD-004864,dialogo,end09_dodohige.dsf,141051,1437,52,,,,sin_hablante_verificable,1,dispel this curse on me.,Disipa esta maldición que pesa sobre mí.
 004767,CLD-004865,dialogo,end09_dodohige.dsf,141051,1437,54,,,,sin_hablante_verificable,2,Defeating a being of deceit shall lift,Derrotar a un ser de engaño levantará
 004768,CLD-004866,dialogo,end09_dodohige.dsf,141051,1437,55,,,,sin_hablante_verificable,1,the form of deceit placed upon me.,la forma de engaño que se me impuso.
-004769,CLD-004867,personaje_interlocutor,end09_dodohige.dsf,141051,1437,59,Mascarilla,Mask,CLD-004867,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-004770,CLD-004868,dialogo,end09_dodohige.dsf,141051,1437,61,Mascarilla,Mask,CLD-004867,primer_mensaje_tras_nombre,2,Hehehe. Let me tell you something. You're just a,Jejeje. Déjame decirte algo. Eres solo un
-004771,CLD-004869,dialogo,end09_dodohige.dsf,141051,1437,62,Mascarilla,Mask,CLD-004867,continuidad_corta_probable,1,useless princess who can't do anything on her own.,Princesa inútil que no puede hacer nada por sí misma.
-004772,CLD-004870,dialogo,end09_dodohige.dsf,141051,1437,63,Mascarilla,Mask,CLD-004867,continuidad_corta_probable,1,There's no way you can lead an entire kingdom.,No hay manera de que puedas liderar un reino entero.
+004769,CLD-004867,personaje_interlocutor,end09_dodohige.dsf,141051,1437,59,Máscara,Mask,CLD-004867,opcode_0x6E_nombre_explicito,,Mask,Máscara
+004770,CLD-004868,dialogo,end09_dodohige.dsf,141051,1437,61,Máscara,Mask,CLD-004867,primer_mensaje_tras_nombre,2,Hehehe. Let me tell you something. You're just a,Jejeje. Déjame decirte algo. Eres solo un
+004771,CLD-004869,dialogo,end09_dodohige.dsf,141051,1437,62,Máscara,Mask,CLD-004867,continuidad_corta_probable,1,useless princess who can't do anything on her own.,Princesa inútil que no puede hacer nada por sí misma.
+004772,CLD-004870,dialogo,end09_dodohige.dsf,141051,1437,63,Máscara,Mask,CLD-004867,continuidad_corta_probable,1,There's no way you can lead an entire kingdom.,No hay manera de que puedas liderar un reino entero.
 004773,CLD-004871,dialogo,end09_dodohige.dsf,141051,1437,82,,,,sin_hablante_verificable,19,Oh?,¿Oh?
 004774,CLD-004872,dialogo,end09_dodohige.dsf,141051,1437,83,,,,sin_hablante_verificable,1,You can't know that until I try.,No puedes saberlo hasta que lo intente.
-004775,CLD-004873,personaje_interlocutor,end09_dodohige.dsf,141051,1437,87,Mascarilla,Mask,CLD-004873,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-004776,CLD-004874,dialogo,end09_dodohige.dsf,141051,1437,89,Mascarilla,Mask,CLD-004873,primer_mensaje_tras_nombre,2,Hehehehe!,¡Jejejeje!
-004777,CLD-004875,dialogo,end09_dodohige.dsf,141051,1437,90,Mascarilla,Mask,CLD-004873,continuidad_corta_probable,1,You're gonna die before you get the chance!,¡Vas a morir antes de tener la oportunidad!
+004775,CLD-004873,personaje_interlocutor,end09_dodohige.dsf,141051,1437,87,Máscara,Mask,CLD-004873,opcode_0x6E_nombre_explicito,,Mask,Máscara
+004776,CLD-004874,dialogo,end09_dodohige.dsf,141051,1437,89,Máscara,Mask,CLD-004873,primer_mensaje_tras_nombre,2,Hehehehe!,¡Jejejeje!
+004777,CLD-004875,dialogo,end09_dodohige.dsf,141051,1437,90,Máscara,Mask,CLD-004873,continuidad_corta_probable,1,You're gonna die before you get the chance!,¡Vas a morir antes de tener la oportunidad!
 004778,CLD-004876,dialogo,end09_dodohige.dsf,146001,1439,30,,,,sin_hablante_verificable,,"Hey, where is Dotache going?","Oye, ¿adónde va Dotache?"
 004779,CLD-004877,dialogo,end09_dodohige.dsf,146001,1439,44,,,,sin_hablante_verificable,14,To somewhere more secluded.,A un lugar más apartado.
 004780,CLD-004878,dialogo,end09_dodohige.dsf,146001,1439,46,,,,sin_hablante_verificable,2,It pains me to be called,Me duele que me llamen
@@ -4800,15 +4800,15 @@
 004799,CLD-004897,dialogo,end10_bobu.dsf,141101,1441,125,,,,sin_hablante_verificable,2,"I better hurry it up, then!",¡Será mejor que me dé prisa!
 004800,CLD-004898,dialogo,end10_bobu.dsf,141101,1441,126,,,,sin_hablante_verificable,1,Off to Despina's house I go!,¡Me voy a casa de Despina!
 004801,CLD-004899,dialogo,end10_bobu.dsf,141101,1441,127,,,,sin_hablante_verificable,1,"Bob's coming, baby!","¡Bob viene, nena!"
-004802,CLD-004900,personaje_interlocutor,end10_bobu.dsf,141151,1443,29,Mascarilla,Mask,CLD-004900,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-004803,CLD-004901,dialogo,end10_bobu.dsf,141151,1443,31,Mascarilla,Mask,CLD-004900,primer_mensaje_tras_nombre,2,"Hee, hee, hee, hee!","¡Je, je, je, je!"
-004804,CLD-004902,dialogo,end10_bobu.dsf,141151,1443,32,Mascarilla,Mask,CLD-004900,continuidad_corta_probable,1,Me hairy.,Yo peludo.
-004805,CLD-004903,dialogo,end10_bobu.dsf,141151,1443,33,Mascarilla,Mask,CLD-004900,continuidad_corta_probable,1,You baldy.,Calvo.
+004802,CLD-004900,personaje_interlocutor,end10_bobu.dsf,141151,1443,29,Máscara,Mask,CLD-004900,opcode_0x6E_nombre_explicito,,Mask,Máscara
+004803,CLD-004901,dialogo,end10_bobu.dsf,141151,1443,31,Máscara,Mask,CLD-004900,primer_mensaje_tras_nombre,2,"Hee, hee, hee, hee!","¡Je, je, je, je!"
+004804,CLD-004902,dialogo,end10_bobu.dsf,141151,1443,32,Máscara,Mask,CLD-004900,continuidad_corta_probable,1,Me hairy.,Yo peludo.
+004805,CLD-004903,dialogo,end10_bobu.dsf,141151,1443,33,Máscara,Mask,CLD-004900,continuidad_corta_probable,1,You baldy.,Calvo.
 004806,CLD-004904,dialogo,end10_bobu.dsf,141151,1443,52,,,,sin_hablante_verificable,19,Crazy!,¡Loco!
 004807,CLD-004905,dialogo,end10_bobu.dsf,141151,1443,53,,,,sin_hablante_verificable,1,I'm very hairy! Y'know?!,¡Soy muy peludo! ¿Sabes?
-004808,CLD-004906,personaje_interlocutor,end10_bobu.dsf,141151,1443,57,Mascarilla,Mask,CLD-004906,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-004809,CLD-004907,dialogo,end10_bobu.dsf,141151,1443,59,Mascarilla,Mask,CLD-004906,primer_mensaje_tras_nombre,2,Then I'll make you bald,¡Entonces te dejaré calvo
-004810,CLD-004908,dialogo,end10_bobu.dsf,141151,1443,60,Mascarilla,Mask,CLD-004906,continuidad_corta_probable,1,and turn you into a shut-in!,y te convertiré en un ermitaño!
+004808,CLD-004906,personaje_interlocutor,end10_bobu.dsf,141151,1443,57,Máscara,Mask,CLD-004906,opcode_0x6E_nombre_explicito,,Mask,Máscara
+004809,CLD-004907,dialogo,end10_bobu.dsf,141151,1443,59,Máscara,Mask,CLD-004906,primer_mensaje_tras_nombre,2,Then I'll make you bald,¡Entonces te dejaré calvo
+004810,CLD-004908,dialogo,end10_bobu.dsf,141151,1443,60,Máscara,Mask,CLD-004906,continuidad_corta_probable,1,and turn you into a shut-in!,y te convertiré en un ermitaño!
 004811,CLD-004909,dialogo,end10_bobu.dsf,141151,1443,79,,,,sin_hablante_verificable,19,See if you can try!,¡A ver si puedes intentarlo!
 004812,CLD-004910,dialogo,end10_bobu.dsf,146101,1445,23,,,,sin_hablante_verificable,,The hair I wanted all this time,El cabello que siempre quise
 004813,CLD-004911,dialogo,end10_bobu.dsf,146101,1445,24,,,,sin_hablante_verificable,1,can't be found here.,No se puede encontrar aquí.
@@ -4848,14 +4848,14 @@
 004847,CLD-004945,dialogo,end11_sunday.dsf,141201,1447,170,,,,sin_hablante_verificable,1,This is all thanks to you.,Todo esto es gracias a ti.
 004848,CLD-004946,dialogo,end11_sunday.dsf,141201,1447,181,,,,sin_hablante_verificable,11,W-Will I never get to fight you again?,¿Nunca más podré pelear contigo?
 004849,CLD-004947,dialogo,end11_sunday.dsf,141201,1447,182,,,,sin_hablante_verificable,1,That's kind of sad...,Eso es un poco triste...
-004850,CLD-004948,dialogo,end11_sunday.dsf,141201,1447,184,,,,sin_hablante_verificable,2,"But I'll cheer you on, Sunday...",Pero te animaré el domingo...
+004850,CLD-004948,dialogo,end11_sunday.dsf,141201,1447,184,,,,sin_hablante_verificable,2,"But I'll cheer you on, Sunday...",Pero te animaré Sunday...
 004851,CLD-004949,dialogo,end11_sunday.dsf,141201,1447,185,,,,sin_hablante_verificable,1,Because I'm your very first fan...,Porque soy tu primer fan...
-004852,CLD-004951,personaje_interlocutor,end11_sunday.dsf,141251,1449,28,Mascarilla,Mask,CLD-004951,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-004853,CLD-004952,dialogo,end11_sunday.dsf,141251,1449,30,Mascarilla,Mask,CLD-004951,primer_mensaje_tras_nombre,2,I have the ultimate sword.,Tengo la espada definitiva.
+004852,CLD-004951,personaje_interlocutor,end11_sunday.dsf,141251,1449,28,Máscara,Mask,CLD-004951,opcode_0x6E_nombre_explicito,,Mask,Máscara
+004853,CLD-004952,dialogo,end11_sunday.dsf,141251,1449,30,Máscara,Mask,CLD-004951,primer_mensaje_tras_nombre,2,I have the ultimate sword.,Tengo la espada definitiva.
 004854,CLD-004953,dialogo,end11_sunday.dsf,141251,1449,55,,,,sin_hablante_verificable,25,What?!,¡¿Qué?!
-004855,CLD-004954,personaje_interlocutor,end11_sunday.dsf,141251,1449,63,Mascarilla,Mask,CLD-004954,opcode_0x6E_nombre_explicito,,Mask,Mascarilla
-004856,CLD-004955,dialogo,end11_sunday.dsf,141251,1449,65,Mascarilla,Mask,CLD-004954,primer_mensaje_tras_nombre,2,"That is, you cannot win against","Es decir, no puedes ganar contra"
-004857,CLD-004956,dialogo,end11_sunday.dsf,141251,1449,66,Mascarilla,Mask,CLD-004954,continuidad_corta_probable,1,my gaze. You WILL lose.,mi mirada. Perderás.
+004855,CLD-004954,personaje_interlocutor,end11_sunday.dsf,141251,1449,63,Máscara,Mask,CLD-004954,opcode_0x6E_nombre_explicito,,Mask,Máscara
+004856,CLD-004955,dialogo,end11_sunday.dsf,141251,1449,65,Máscara,Mask,CLD-004954,primer_mensaje_tras_nombre,2,"That is, you cannot win against","Es decir, no puedes ganar contra"
+004857,CLD-004956,dialogo,end11_sunday.dsf,141251,1449,66,Máscara,Mask,CLD-004954,continuidad_corta_probable,1,my gaze. You WILL lose.,mi mirada. Perderás.
 004858,CLD-004957,dialogo,end11_sunday.dsf,141251,1449,85,,,,sin_hablante_verificable,19,No.,No.
 004859,CLD-004958,dialogo,end11_sunday.dsf,141251,1449,95,,,,sin_hablante_verificable,10,You don't know that until we fight!,¡Eso no lo sabrás hasta que peleemos!
 004860,CLD-004959,dialogo,end11_sunday.dsf,146201,1451,25,,,,sin_hablante_verificable,,It's so dark.,Está muy oscuro.
@@ -4878,24 +4878,24 @@
 004877,CLD-004978,dialogo,townMessage.dsf,171,1456,5,,,,sin_hablante_verificable,1,Step on it?,¿Darse prisa?
 004878,CLD-004979,opcion,townMessage.dsf,171,1456,7,,,,opcion_del_jugador,2,"No, you shouldn't.","No, no deberías."
 004879,CLD-004980,opcion,townMessage.dsf,171,1456,8,,,,opcion_del_jugador,1,Kill it! Kill it with fire!,¡Mátalo! ¡Mátalo con fuego!
-004880,CLD-004981,personaje_interlocutor,townMessage.dsf,171,1456,15,Bragas,Pumpky,CLD-004981,opcode_0x6E_nombre_explicito,,Pumpky,Bragas
-004881,CLD-004982,dialogo,townMessage.dsf,171,1456,17,Bragas,Pumpky,CLD-004981,primer_mensaje_tras_nombre,2,"Awesome, ⑨!","¡Genial, ⑨!"
-004882,CLD-004983,dialogo,townMessage.dsf,171,1456,18,Bragas,Pumpky,CLD-004981,continuidad_corta_probable,1,"Normally, people would step on me, but you didn't!","Normalmente, la gente me pisaría, ¡pero tú no!"
-004883,CLD-004984,dialogo,townMessage.dsf,171,1456,19,Bragas,Pumpky,CLD-004981,continuidad_corta_probable,1,That's what makes you awesome!,¡Eso es lo que te hace genial!
-004884,CLD-004985,personaje_interlocutor,townMessage.dsf,171,1456,23,Bragas,Pumpky,CLD-004985,opcode_0x6E_nombre_explicito,,Pumpky,Bragas
-004885,CLD-004986,dialogo,townMessage.dsf,171,1456,25,Bragas,Pumpky,CLD-004985,primer_mensaje_tras_nombre,2,Yeehaw!,¡Ey!
+004880,CLD-004981,personaje_interlocutor,townMessage.dsf,171,1456,15,Pumpky,Pumpky,CLD-004981,opcode_0x6E_nombre_explicito,,Pumpky,Pumpky
+004881,CLD-004982,dialogo,townMessage.dsf,171,1456,17,Pumpky,Pumpky,CLD-004981,primer_mensaje_tras_nombre,2,"Awesome, ⑨!","¡Genial, ⑨!"
+004882,CLD-004983,dialogo,townMessage.dsf,171,1456,18,Pumpky,Pumpky,CLD-004981,continuidad_corta_probable,1,"Normally, people would step on me, but you didn't!","Normalmente, la gente me pisaría, ¡pero tú no!"
+004883,CLD-004984,dialogo,townMessage.dsf,171,1456,19,Pumpky,Pumpky,CLD-004981,continuidad_corta_probable,1,That's what makes you awesome!,¡Eso es lo que te hace genial!
+004884,CLD-004985,personaje_interlocutor,townMessage.dsf,171,1456,23,Pumpky,Pumpky,CLD-004985,opcode_0x6E_nombre_explicito,,Pumpky,Pumpky
+004885,CLD-004986,dialogo,townMessage.dsf,171,1456,25,Pumpky,Pumpky,CLD-004985,primer_mensaje_tras_nombre,2,Yeehaw!,¡Ey!
 004886,CLD-004989,dialogo,townMessage.dsf,172,1457,4,,,,sin_hablante_verificable,,There are some pumpkins that look like a couple.,Hay algunas calabazas que parecen una pareja.
 004887,CLD-004990,dialogo,townMessage.dsf,172,1457,5,,,,sin_hablante_verificable,1,Step on them?,¿Los pisas?
 004888,CLD-004991,opcion,townMessage.dsf,172,1457,7,,,,opcion_del_jugador,2,"No, you shouldn't.","No, no deberías."
 004889,CLD-004992,opcion,townMessage.dsf,172,1457,8,,,,opcion_del_jugador,1,Erase!,¡Borrar!
 004890,CLD-004993,personaje_interlocutor,townMessage.dsf,172,1457,15,Pumply,Pumply,CLD-004993,opcode_0x6E_nombre_explicito,,Pumply,Pumply
 004891,CLD-004994,dialogo,townMessage.dsf,172,1457,17,Pumply,Pumply,CLD-004993,primer_mensaje_tras_nombre,2,Let's grow old together!,¡Envejezcamos juntos!
-004892,CLD-004995,personaje_interlocutor,townMessage.dsf,172,1457,19,Mangos,Pumi,CLD-004995,opcode_0x6E_nombre_explicito,,Pumi,Mangos
-004893,CLD-004996,dialogo,townMessage.dsf,172,1457,21,Mangos,Pumi,CLD-004995,primer_mensaje_tras_nombre,2,Not with you!,¡Contigo no!
+004892,CLD-004995,personaje_interlocutor,townMessage.dsf,172,1457,19,Pumi,Pumi,CLD-004995,opcode_0x6E_nombre_explicito,,Pumi,Pumi
+004893,CLD-004996,dialogo,townMessage.dsf,172,1457,21,Pumi,Pumi,CLD-004995,primer_mensaje_tras_nombre,2,Not with you!,¡Contigo no!
 004894,CLD-004997,personaje_interlocutor,townMessage.dsf,172,1457,25,Pumply,Pumply,CLD-004997,opcode_0x6E_nombre_explicito,,Pumply,Pumply
 004895,CLD-004998,dialogo,townMessage.dsf,172,1457,27,Pumply,Pumply,CLD-004997,primer_mensaje_tras_nombre,2,"Let's be together, even in the next life!","¡Estemos juntos, incluso en la otra vida!"
-004896,CLD-004999,personaje_interlocutor,townMessage.dsf,172,1457,29,Mangos,Pumi,CLD-004999,opcode_0x6E_nombre_explicito,,Pumi,Mangos
-004897,CLD-005000,dialogo,townMessage.dsf,172,1457,31,Mangos,Pumi,CLD-004999,primer_mensaje_tras_nombre,2,Not with you!,¡Contigo no!
+004896,CLD-004999,personaje_interlocutor,townMessage.dsf,172,1457,29,Pumi,Pumi,CLD-004999,opcode_0x6E_nombre_explicito,,Pumi,Pumi
+004897,CLD-005000,dialogo,townMessage.dsf,172,1457,31,Pumi,Pumi,CLD-004999,primer_mensaje_tras_nombre,2,Not with you!,¡Contigo no!
 004898,CLD-005003,dialogo,townMessage.dsf,173,1458,4,,,,sin_hablante_verificable,,There are lots of trees that seem to have faces on them.,Hay muchos árboles que parecen tener caras.
 004899,CLD-005004,dialogo,townMessage.dsf,173,1458,5,,,,sin_hablante_verificable,1,Let's try punching them.,Vamos a intentar darles un puñetazo.
 004900,CLD-005005,personaje_interlocutor,townMessage.dsf,173,1458,7,Zomatree,Zomatree,CLD-005005,opcode_0x6E_nombre_explicito,,Zomatree,Zomatree
@@ -5118,10 +5118,10 @@
 005117,CLD-005307,personaje_interlocutor,rmap.dsf,1001,1572,26,Es una mazmorra aleatoria.,It's a Random Dungeon.,CLD-005307,opcode_0x6E_nombre_explicito,,It's a Random Dungeon.,Es una mazmorra aleatoria.
 005118,CLD-005308,dialogo,rmap.dsf,1001,1572,28,Es una mazmorra aleatoria.,It's a Random Dungeon.,CLD-005307,primer_mensaje_tras_nombre,2,You seem to have some talent.,Parece que tienes cierto talento.
 005119,CLD-005309,dialogo,rmap.dsf,1001,1572,29,Es una mazmorra aleatoria.,It's a Random Dungeon.,CLD-005307,continuidad_corta_probable,1,I can take you somewhere nice in the future.,En el futuro puedo llevarte a algún lugar bonito.
-005120,CLD-005310,personaje_interlocutor,atkDefComment.dsf,2000,1581,2,Ese ermitaño,Hiyo Hermit,CLD-005310,opcode_0x6E_nombre_explicito,,Hiyo Hermit,Ese ermitaño
-005121,CLD-005311,dialogo,atkDefComment.dsf,2000,1581,4,Ese ermitaño,Hiyo Hermit,CLD-005310,primer_mensaje_tras_nombre,2,I am the Hiyo Hermit.,Soy el ermitaño de Hiyo.
-005122,CLD-005312,dialogo,atkDefComment.dsf,2000,1581,5,Ese ermitaño,Hiyo Hermit,CLD-005310,continuidad_corta_probable,1,I can tell the fortune of your stats.,Puedo predecir el futuro según tus estadísticas.
-005123,CLD-005313,dialogo,atkDefComment.dsf,2000,1581,6,Ese ermitaño,Hiyo Hermit,CLD-005310,continuidad_corta_probable,1,Harrrrgh!,¡Harrrgh!
+005120,CLD-005310,personaje_interlocutor,atkDefComment.dsf,2000,1581,2,Ermitaño Hiyo,Hiyo Hermit,CLD-005310,opcode_0x6E_nombre_explicito,,Hiyo Hermit,Ermitaño Hiyo
+005121,CLD-005311,dialogo,atkDefComment.dsf,2000,1581,4,Ermitaño Hiyo,Hiyo Hermit,CLD-005310,primer_mensaje_tras_nombre,2,I am the Hiyo Hermit.,Soy el ermitaño de Hiyo.
+005122,CLD-005312,dialogo,atkDefComment.dsf,2000,1581,5,Ermitaño Hiyo,Hiyo Hermit,CLD-005310,continuidad_corta_probable,1,I can tell the fortune of your stats.,Puedo predecir el futuro según tus estadísticas.
+005123,CLD-005313,dialogo,atkDefComment.dsf,2000,1581,6,Ermitaño Hiyo,Hiyo Hermit,CLD-005310,continuidad_corta_probable,1,Harrrrgh!,¡Harrrgh!
 005124,CLD-005314,dialogo,atkDefComment.dsf,2001,1582,0,,,,sin_hablante_verificable,,Twitchy twitch!,¡Tic nervioso!
 005125,CLD-005315,dialogo,atkDefComment.dsf,2001,1582,1,,,,sin_hablante_verificable,1,Ah-Ahhhhhh!,¡Ah-Ahhhhhh!
 005126,CLD-005316,dialogo,atkDefComment.dsf,2001,1582,2,,,,sin_hablante_verificable,1,The ATK! The ATK!,¡El ATK! ¡El ATK!
@@ -5131,7 +5131,7 @@
 005130,CLD-005320,dialogo,atkDefComment.dsf,2003,1584,0,,,,sin_hablante_verificable,,Aieeeee!,¡Aeeeeeeee!
 005131,CLD-005321,dialogo,atkDefComment.dsf,2003,1584,1,,,,sin_hablante_verificable,1,Your ATK is in a terrible state!,¡Tu ATK está en un estado terrible!
 005132,CLD-005322,dialogo,atkDefComment.dsf,2003,1584,2,,,,sin_hablante_verificable,1,Raise your ATK in the Magic Circle now!,¡Aumenta tu ATK en el Círculo mágico ahora!
-005133,CLD-005323,dialogo,atkDefComment.dsf,2004,1585,0,,,,sin_hablante_verificable,,Oho!,¡Despertar!
+005133,CLD-005323,dialogo,atkDefComment.dsf,2004,1585,0,,,,sin_hablante_verificable,,Oho!,¡Oh!
 005134,CLD-005324,dialogo,atkDefComment.dsf,2004,1585,1,,,,sin_hablante_verificable,1,Your ATK is too low!,¡Tu ATK es demasiado bajo!
 005135,CLD-005325,dialogo,atkDefComment.dsf,2004,1585,2,,,,sin_hablante_verificable,1,Raise your ATK in the Magic Circle now!,¡Aumenta tu ATK en el Círculo mágico ahora!
 005136,CLD-005326,dialogo,atkDefComment.dsf,2005,1586,0,,,,sin_hablante_verificable,,Your ATK is too low!,¡Tu ATK es demasiado bajo!
@@ -5173,7 +5173,7 @@
 005172,CLD-005362,dialogo,atkDefComment.dsf,2103,1601,0,,,,sin_hablante_verificable,,Aieeeee!,¡Aeeeeeeee!
 005173,CLD-005363,dialogo,atkDefComment.dsf,2103,1601,1,,,,sin_hablante_verificable,1,Your DEF is in a terrible state!,¡Tu DEF está en un estado terrible!
 005174,CLD-005364,dialogo,atkDefComment.dsf,2103,1601,2,,,,sin_hablante_verificable,1,Raise your DEF at the Magic Circle now!,¡Aumenta tu DEF en el Círculo mágico ahora!
-005175,CLD-005365,dialogo,atkDefComment.dsf,2104,1602,0,,,,sin_hablante_verificable,,Oho!,¡Despertar!
+005175,CLD-005365,dialogo,atkDefComment.dsf,2104,1602,0,,,,sin_hablante_verificable,,Oho!,¡Oh!
 005176,CLD-005366,dialogo,atkDefComment.dsf,2104,1602,1,,,,sin_hablante_verificable,1,Your DEF is too low!,¡Tu DEF es demasiado baja!
 005177,CLD-005367,dialogo,atkDefComment.dsf,2104,1602,2,,,,sin_hablante_verificable,1,Raise your DEF at the Magic Circle now!,¡Aumenta tu DEF en el Círculo mágico ahora!
 005178,CLD-005368,dialogo,atkDefComment.dsf,2105,1603,0,,,,sin_hablante_verificable,,Your DEF is too low!,¡Tu DEF es demasiado baja!

@@ -2172,7 +2172,7 @@ EN: This place really doesn't look like it's underground. I didn't think Arcanus
 IDS: CLD-000956, CLD-000957, CLD-000958 | órdenes 551-553
 
 HABLANTE NO VERIFICADO | CUADRO G00511 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Esperar! ¿Ese lugar es Arcanus Cella?
+ES: ¡Espera! ¿Ese lugar es Arcanus Cella?
 EN: Hold on! That place is Arcanus Cella?
 IDS: CLD-000959, CLD-000960 | órdenes 573-574
 
@@ -3282,9 +3282,9 @@ IDS: CLD-001418, CLD-001419, CLD-001420 | órdenes 8-10
 ======================================================================================
 ESCENA | demo1006_02.dsf | script_id=300614 | bloque=812
 ======================================================================================
-[NOMBRE EN PANTALLA] A pie   (CLD-001421)
+[NOMBRE EN PANTALLA] Piyyo   (CLD-001421)
 
-A pie | CUADRO G00724 [marcador_0x6E_inmediato]
+Piyyo | CUADRO G00724 [marcador_0x6E_inmediato]
 ES: En el suelo se pueden encontrar agua, hierba, fuego y hielo. Caminar sobre ellas te hará ir más lento, resbalar o proporcionar otros efectos adversos.
 EN: Water, grass, fire, and ice can be found on the ground. Walking on them will make you slower, slip, or provide other adverse effects.
 IDS: CLD-001422, CLD-001423, CLD-001424 | órdenes 4-6
@@ -3292,9 +3292,9 @@ IDS: CLD-001422, CLD-001423, CLD-001424 | órdenes 4-6
 ======================================================================================
 ESCENA | demo1006_02.dsf | script_id=300615 | bloque=813
 ======================================================================================
-[NOMBRE EN PANTALLA] Abril   (CLD-001425)
+[NOMBRE EN PANTALLA] Prillin   (CLD-001425)
 
-Abril | CUADRO G00726 [marcador_0x6E_inmediato]
+Prillin | CUADRO G00726 [marcador_0x6E_inmediato]
 ES: Las clases de hechiceros aprenden "magia" a medida que suben de nivel. Las clases guerreras aprenden "habilidades" al subir de nivel.
 EN: Sorcerer classes learn "magic" as they level up. Warrior classes learn "abilities" when they level up.
 IDS: CLD-001426, CLD-001427, CLD-001428 | órdenes 4-6
@@ -3322,9 +3322,9 @@ IDS: CLD-001434, CLD-001435, CLD-001436 | órdenes 4-6
 ======================================================================================
 ESCENA | demo1006_02.dsf | script_id=300617 | bloque=815
 ======================================================================================
-[NOMBRE EN PANTALLA] Barato   (CLD-001437)
+[NOMBRE EN PANTALLA] Poku   (CLD-001437)
 
-Barato | CUADRO G00732 [marcador_0x6E_inmediato]
+Poku | CUADRO G00732 [marcador_0x6E_inmediato]
 ES: ¡Los "artefactos" son geniales! Subir de nivel y los títulos de equipo no son nada ¡en comparación!
 EN: "Artifacts" are awesome! Leveling up and equipment titles are nothing in comparison!
 IDS: CLD-001438, CLD-001439, CLD-001440 | órdenes 4-6
@@ -3367,9 +3367,9 @@ IDS: CLD-001453, CLD-001454, CLD-001455 | órdenes 11-13
 ======================================================================================
 ESCENA | demo1006_02.dsf | script_id=300619 | bloque=817
 ======================================================================================
-[NOMBRE EN PANTALLA] Pozos   (CLD-001456)
+[NOMBRE EN PANTALLA] Piten   (CLD-001456)
 
-Pozos | CUADRO G00741 [marcador_0x6E_inmediato]
+Piten | CUADRO G00741 [marcador_0x6E_inmediato]
 ES: ¡Dependes demasiado del equipo! ¿Conoces los efectos de estado?
 EN: You're depending too much on equipment! Do you know about status effects?
 IDS: CLD-001457, CLD-001458 | órdenes 4-5
@@ -3450,17 +3450,16 @@ EN: To make a good sub character, it's better to level them up as a "main charac
 IDS: CLD-001489, CLD-001490, CLD-001491 | órdenes 23-25
 
 HABLANTE NO VERIFICADO | CUADRO G00757 [sin_marcador_de_hablante_para_esta_caja]
-ES: N-no te lo digo porque quiera. ¡Que quede claro!
+ES: ¡N-no creas que te lo digo porque quiera!
 EN: I-It's not like I'm telling you because I want to!
 IDS: CLD-001492, CLD-001493 | órdenes 27-28
-ALERTAS: PUNTUACION_ES_ANTES_DE_TERMINAR_ORIGINAL (CLD-001492→CLD-001493)
 
 ======================================================================================
 ESCENA | demo1006_02.dsf | script_id=300623 | bloque=821
 ======================================================================================
-[NOMBRE EN PANTALLA] Ajustar   (CLD-001494)
+[NOMBRE EN PANTALLA] Pigurui   (CLD-001494)
 
-Ajustar | CUADRO G00759 [marcador_0x6E_inmediato]
+Pigurui | CUADRO G00759 [marcador_0x6E_inmediato]
 ES: ¡No confío en ti! Planté minas terrestres así ¡Nadie puede entrar en nuestro pueblo!
 EN: I'm not trusting you! I planted land mines so no one can go into our village!
 IDS: CLD-001495, CLD-001496, CLD-001497 | órdenes 4-6
@@ -3498,9 +3497,9 @@ IDS: CLD-001508, CLD-001509 | órdenes 13-14
 ======================================================================================
 ESCENA | demo1006_02.dsf | script_id=300625 | bloque=823
 ======================================================================================
-[NOMBRE EN PANTALLA] hiyorton   (CLD-001510)
+[NOMBRE EN PANTALLA] Hiyorton   (CLD-001510)
 
-hiyorton | CUADRO G00767 [marcador_0x6E_inmediato]
+Hiyorton | CUADRO G00767 [marcador_0x6E_inmediato]
 ES: ¡Por fin compré mi propia casa! ¿Qué opinas? ¡Viviendo el sueño de Hiyoan!
 EN: I finally bought my own home! What do you think of it?! Livin' the Hiyoan dream!
 IDS: CLD-001511, CLD-001512, CLD-001513 | órdenes 4-6
@@ -3533,9 +3532,9 @@ IDS: CLD-001520, CLD-001521 | órdenes 4-5
 ======================================================================================
 ESCENA | demo1006_02.dsf | script_id=300628 | bloque=826
 ======================================================================================
-[NOMBRE EN PANTALLA] hola   (CLD-001522)
+[NOMBRE EN PANTALLA] Hiyonee   (CLD-001522)
 
-hola | CUADRO G00774 [marcador_0x6E_inmediato]
+Hiyonee | CUADRO G00774 [marcador_0x6E_inmediato]
 ES: Tengo un perro guardián en mi terraza.
 EN: I keep a guard dog on my terrace.
 IDS: CLD-001523 | órdenes 4-4
@@ -3543,9 +3542,9 @@ IDS: CLD-001523 | órdenes 4-4
 ======================================================================================
 ESCENA | demo1006_02.dsf | script_id=300629 | bloque=827
 ======================================================================================
-[NOMBRE EN PANTALLA] YouTubeyobaba   (CLD-001524)
+[NOMBRE EN PANTALLA] Hiyobaba   (CLD-001524)
 
-YouTubeyobaba | CUADRO G00776 [marcador_0x6E_inmediato]
+Hiyobaba | CUADRO G00776 [marcador_0x6E_inmediato]
 ES: Algunos de nosotros a veces podemos evolucionar hacia un tipo de batalla.
 EN: Some of us can sometimes evolve into a battle type.
 IDS: CLD-001525, CLD-001526 | órdenes 4-5
@@ -4173,7 +4172,7 @@ EN: Stop it right there! You really need to stop talking like that, "Dotache."
 IDS: CLD-001779, CLD-001780, CLD-001781 | órdenes 70-72
 
 HABLANTE NO VERIFICADO | CUADRO G00898 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Jadear! Cómo, cómo. ¡Tienes toda la razón!
+ES: ¡Ah! Cómo, cómo. ¡Tienes toda la razón!
 EN: Gasp! Hur, hur. Right you are!
 IDS: CLD-001782, CLD-001783 | órdenes 79-80
 
@@ -4449,7 +4448,7 @@ IDS: CLD-001892, CLD-001893, CLD-001894 | órdenes 39-41
 [NOMBRE EN PANTALLA] Voz masculina   (CLD-001895)
 
 Voz masculina | CUADRO G00954 [marcador_0x6E_cercano_por_verificar]
-ES: ¡Jejejeje! ¡Sabía que vendrías, domingo!
+ES: ¡Jejejeje! ¡Sabía que vendrías, Sunday!
 EN: Heehahaa! I knew you'd come, Sunday!
 IDS: CLD-001896, CLD-001897 | órdenes 49-50
 
@@ -4562,7 +4561,7 @@ EN: Could it be...?
 IDS: CLD-001944 | órdenes 260-260
 
 HABLANTE NO VERIFICADO | CUADRO G00979 [sin_marcador_de_hablante_para_esta_caja]
-ES: Ahora tienes acceso al domingo. Ahora tienes acceso a Battleblo. ¡Ahora puedes ir a una nueva mazmorra!
+ES: Sunday ya está disponible. Ahora tienes acceso a Battleblo. ¡Ahora puedes ir a una nueva mazmorra!
 EN: You now have access to Sunday. You now have access to Battleblo. You can now go to a new dungeon!
 IDS: CLD-001946, CLD-001947, CLD-001948 | órdenes 276-278
 
@@ -4571,7 +4570,7 @@ ESCENA | demo1103_00.dsf | script_id=110390 | bloque=873
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G00980 [sin_marcador_de_hablante_para_esta_caja]
-ES: Ahora tienes acceso al domingo. Ahora tienes acceso a Battleblo. ¡Ahora puedes ir a una nueva mazmorra!
+ES: Sunday ya está disponible. Ahora tienes acceso a Battleblo. ¡Ahora puedes ir a una nueva mazmorra!
 EN: You now have access to Sunday. You now have access to Battleblo. You can now go to a new dungeon!
 IDS: CLD-001950, CLD-001951, CLD-001952 | órdenes 14-16
 
@@ -4710,7 +4709,7 @@ EN: Who's there?
 IDS: CLD-001998 | órdenes 160-160
 
 HABLANTE NO VERIFICADO | CUADRO G01003 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Jejejeje! ¡Puedo decirlo! ¡Las mujeres pueden ser tan peligrosas! ¿Verdad? ¡Ese domingo me da muchísimos problemas!
+ES: ¡Jejejeje! ¡Puedo decirlo! ¡Las mujeres pueden ser tan peligrosas! ¿Verdad? ¡Sunday no hace más que darme problemas!
 EN: Heehahaha! I can tell! Women can be so dangerous! Am I right? That Sunday gives me trouble to no end!
 IDS: CLD-001999, CLD-002000, CLD-002001 | órdenes 208-210
 
@@ -4772,7 +4771,7 @@ EN: Hey!
 IDS: CLD-002019 | órdenes 399-399
 
 HABLANTE NO VERIFICADO | CUADRO G01017 [sin_marcador_de_hablante_para_esta_caja]
-ES: Palma de coco...?
+ES: ¿Coco...?
 EN: Coco...?
 IDS: CLD-002020 | órdenes 454-454
 
@@ -4963,7 +4962,7 @@ EN: Your face and hair are as eccentric as ever, Bob.
 IDS: CLD-002088, CLD-002089 | órdenes 171-172
 
 HABLANTE NO VERIFICADO | CUADRO G01052 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Despertar! ¡Ay, caramba! ¡Ahora me estoy sonrojando!
+ES: ¡Oh! ¡Ay, caramba! ¡Ahora me estoy sonrojando!
 EN: Oho! Aw, shucks! Now I'm blushing!
 IDS: CLD-002090, CLD-002091, CLD-002092 | órdenes 179-181
 
@@ -5028,7 +5027,7 @@ EN: Aaaaand. It's almost my birthday! I took a look at that shop and found this 
 IDS: CLD-002120, CLD-002121, CLD-002122 | órdenes 328-330
 
 HABLANTE NO VERIFICADO | CUADRO G01065 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¿Mascarilla?
+ES: ¿Máscara?
 EN: Mask?
 IDS: CLD-002123 | órdenes 346-346
 
@@ -5242,7 +5241,7 @@ EN: Ugh...
 IDS: CLD-002196 | órdenes 105-105
 
 HABLANTE NO VERIFICADO | CUADRO G01103 [sin_marcador_de_hablante_para_esta_caja]
-ES: Argh... ¡Jadear!
+ES: Argh... ¡Ah!
 EN: Argh... Gasp!
 IDS: CLD-002197, CLD-002198 | órdenes 115-116
 
@@ -6580,7 +6579,7 @@ EN: Despina, you were having a nightmare. Were you dreaming about that again?
 IDS: CLD-002705, CLD-002706 | órdenes 189-190
 
 HABLANTE NO VERIFICADO | CUADRO G01337 [sin_marcador_de_hablante_para_esta_caja]
-ES: Es por esa mascarilla. En serio, necesito tirar esa cosa a la basura.
+ES: Es por esa máscara. En serio, necesito tirar esa cosa a la basura.
 EN: It's because of that mask. I seriously need to trash that thing.
 IDS: CLD-002707, CLD-002708 | órdenes 202-203
 
@@ -6690,7 +6689,7 @@ ESCENA | demo1206_01.dsf | script_id=120601 | bloque=990
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G01358 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¿De verdad tengo que tirar la mascarilla? Eso no es divertido. Creo que algo podría pasar si lo mantenemos.
+ES: ¿De verdad tengo que tirar la máscara? Eso no es divertido. Creo que algo podría pasar si lo mantenemos.
 EN: Do I really have to throw the mask away? That's no fun. I think something might happen if we keep it.
 IDS: CLD-002745, CLD-002746, CLD-002747 | órdenes 5-7
 
@@ -6885,9 +6884,9 @@ HABLANTE NO VERIFICADO | CUADRO G01390 [sin_marcador_de_hablante_para_esta_caja]
 ES: Uf... ¿De verdad mi mala suerte se contagia a los demás?
 EN: Ugh. Does my misfortune really rub off on others?
 IDS: CLD-002813, CLD-002814 | órdenes 243-244
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-002815)
+[NOMBRE EN PANTALLA] Máscara   (CLD-002815)
 
-Mascarilla | CUADRO G01392 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01392 [marcador_0x6E_inmediato]
 ES: Por supuesto que no. No te preocupes por eso.
 EN: Of course not. Don't worry about it.
 IDS: CLD-002816, CLD-002817 | órdenes 256-257
@@ -7037,7 +7036,7 @@ ESCENA | demo1208_00.dsf | script_id=120800 | bloque=1017
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G01413 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Domingo!
+ES: ¡Sunday!
 EN: Sunday!
 IDS: CLD-002860 | órdenes 38-38
 
@@ -7144,7 +7143,7 @@ IDS: CLD-002902, CLD-002903, CLD-002904 | órdenes 224-226
 ALERTAS: PAUSA_DEL_ORIGINAL_MODIFICADA (CLD-002902)
 
 HABLANTE NO VERIFICADO | CUADRO G01434 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¿Qué tal si usamos una máscara en lugar de una espada? Me puse la mascarilla hace un rato y estuve dando vueltas por ahí. Fue muy divertido porque nadie me reconoció.
+ES: ¿Qué tal si usamos una máscara en lugar de una espada? Me puse la máscara hace un rato y estuve dando vueltas por ahí. Fue muy divertido porque nadie me reconoció.
 EN: How about wearing a mask instead of a sword? I wore the mask earlier and wandered around. It was so fun because no one recognized me.
 IDS: CLD-002905, CLD-002906, CLD-002907 | órdenes 233-235
 
@@ -7163,9 +7162,9 @@ Voz misteriosa | CUADRO G01438 [marcador_0x6E_inmediato]
 ES: No tengas miedo.
 EN: Don't be scared.
 IDS: CLD-002911 | órdenes 260-260
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-002912)
+[NOMBRE EN PANTALLA] Máscara   (CLD-002912)
 
-Mascarilla | CUADRO G01440 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01440 [marcador_0x6E_inmediato]
 ES: Solo tienes miedo porque tienes tal un pequeño círculo de amigos.
 EN: You're only scared because you have such a small circle of friends.
 IDS: CLD-002913, CLD-002914 | órdenes 287-288
@@ -7203,7 +7202,7 @@ ESCENA | demo1208_01.dsf | script_id=120802 | bloque=1020
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G01445 [sin_marcador_de_hablante_para_esta_caja]
-ES: Estoy seguro de que Pudding no quiere estar Mimado tanto como el domingo no quieren que los miren fijamente.
+ES: Estoy seguro de que a Pudding no le gusta que lo mimen, igual que a Sunday no le gusta que se queden mirándola.
 EN: I'm sure Pudding doesn't want to be babied as much as Sunday doesn't want to be stared at.
 IDS: CLD-002923, CLD-002924, CLD-002925 | órdenes 5-7
 
@@ -7407,9 +7406,9 @@ HABLANTE NO VERIFICADO | CUADRO G01482 [sin_marcador_de_hablante_para_esta_caja]
 ES: ¡La máscara!
 EN: The mask!
 IDS: CLD-002990 | órdenes 289-289
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-002991)
+[NOMBRE EN PANTALLA] Máscara   (CLD-002991)
 
-Mascarilla | CUADRO G01484 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01484 [marcador_0x6E_inmediato]
 ES: Estar enfermo puede ser muy triste. ¡Pero mejorará!
 EN: Being ill can be so sad. But it'll get better!
 IDS: CLD-002992, CLD-002993 | órdenes 295-296
@@ -7423,9 +7422,9 @@ HABLANTE NO VERIFICADO | CUADRO G01486 [sin_marcador_de_hablante_para_esta_caja]
 ES: ¿Por qué sigues volviendo?
 EN: Why do you keep coming back?!
 IDS: CLD-002996 | órdenes 311-311
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-002997)
+[NOMBRE EN PANTALLA] Máscara   (CLD-002997)
 
-Mascarilla | CUADRO G01488 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01488 [marcador_0x6E_inmediato]
 ES: Porque amo a los humanos. ¡Por eso vuelvo!
 EN: Because I love humans. That's why I come back!
 IDS: CLD-002998, CLD-002999 | órdenes 317-318
@@ -7653,21 +7652,21 @@ Crosstine | CUADRO G01528 [marcador_0x6E_inmediato]
 ES: No tienes por qué ser tan malo. Solo vine a ver... eso.
 EN: You don't have to be so mean. I only came to see... that.
 IDS: CLD-003080, CLD-003081 | órdenes 104-105
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003082)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003082)
 
-Mascarilla | CUADRO G01530 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01530 [marcador_0x6E_inmediato]
 ES: ¡Hagamos más amigos!
 EN: Let's make more friends!
 IDS: CLD-003083 | órdenes 116-116
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003084)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003084)
 
-Mascarilla | CUADRO G01532 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01532 [marcador_0x6E_inmediato]
 ES: ¡Todos somos amigos! ¡Hagamos 100 amigos!
 EN: Everyone's a friend! Let's make 100 friends!
 IDS: CLD-003085, CLD-003086 | órdenes 124-125
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003087)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003087)
 
-Mascarilla | CUADRO G01534 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01534 [marcador_0x6E_inmediato]
 ES: ¡Je, je! ¡Muchos amigos! ¡Diversión! ¡Diversión!
 EN: Hee, hee! Lots of friends! Fun! Fun!
 IDS: CLD-003088, CLD-003089 | órdenes 133-134
@@ -7704,9 +7703,9 @@ HABLANTE NO VERIFICADO | CUADRO G01543 [sin_marcador_de_hablante_para_esta_caja]
 ES: Ya no me importa. Ha cambiado por completo. Si quiere causar estragos, que lo haga. Soy compasivo.
 EN: I don't care anymore. It's completely changed. If it wants to wreak havoc, let it. I'm compassionate.
 IDS: CLD-003103, CLD-003104, CLD-003105 | órdenes 186-188
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003106)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003106)
 
-Mascarilla | CUADRO G01545 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01545 [marcador_0x6E_inmediato]
 ES: ¡Amigo! ¡Amigo! ¡Amigo!
 EN: Friend! Friend! Friend!
 IDS: CLD-003107 | órdenes 205-205
@@ -7716,9 +7715,9 @@ Crosstine | CUADRO G01547 [marcador_0x6E_inmediato]
 ES: (Vaya... Será mejor que le dé más poder a esa cosa.) más poder entonces.)
 EN: (Oh, my. It seems that I better give this thing more power then.)
 IDS: CLD-003109, CLD-003110, CLD-003111 | órdenes 211-213
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003112)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003112)
 
-Mascarilla | CUADRO G01549 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01549 [marcador_0x6E_inmediato]
 ES: ¿Qué vas a? No eres humano. ¿Un amigo?
 EN: What are you? You're not human. A friend?
 IDS: CLD-003113, CLD-003114, CLD-003115 | órdenes 222-224
@@ -7728,15 +7727,15 @@ Crosstine | CUADRO G01551 [marcador_0x6E_inmediato]
 ES: Si quieres tener más amigos, dar una fiesta. Vendrán muchos humanos.
 EN: If you want to get more friends, throw a party. You'll get lots of humans to come.
 IDS: CLD-003117, CLD-003118, CLD-003119 | órdenes 230-232
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003120)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003120)
 
-Mascarilla | CUADRO G01553 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01553 [marcador_0x6E_inmediato]
 ES: ¿Humanos? ¿Muchos? ¿Fiesta? ¿Círculo de amigos?
 EN: Humans? Lots? Party?! Circle of friends?!
 IDS: CLD-003121, CLD-003122 | órdenes 238-239
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003123)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003123)
 
-Mascarilla | CUADRO G01555 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01555 [marcador_0x6E_inmediato]
 ES: ¡Je, je, je, je, je, je, je! ¡Todos! ¡Felices! ¡Amplía tu círculo de amigos!
 EN: Hee, hee, hee, hee, hee, hee, hee! Everyone! Happy! Expand the circle of friends!
 IDS: CLD-003124, CLD-003125, CLD-003126 | órdenes 245-247
@@ -7802,7 +7801,7 @@ ESCENA | demo1210_01.dsf | script_id=121005 | bloque=1054
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G01564 [sin_marcador_de_hablante_para_esta_caja]
-ES: El domingo siempre ha sido mi rival, Arreglaré las cosas con ella en ¡Arcanus Cella de una vez por todas!
+ES: Sunday siempre ha sido mi rival, Arreglaré las cosas con ella en ¡Arcanus Cella de una vez por todas!
 EN: Sunday has always been my rival, I'll settle things with her in Arcanus Cella once and for all!
 IDS: CLD-003144, CLD-003145, CLD-003146 | órdenes 5-7
 
@@ -7881,9 +7880,9 @@ IDS: CLD-003165, CLD-003166, CLD-003167 | órdenes 4-6
 ======================================================================================
 ESCENA | demo1301_00.dsf | script_id=130100 | bloque=1067
 ======================================================================================
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003168)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003168)
 
-Mascarilla | CUADRO G01578 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01578 [marcador_0x6E_inmediato]
 ES: ¡Je, je, je...! ¿Cuándo es la fiesta?
 EN: Heh, heh, heh...! When's the party?
 IDS: CLD-003169, CLD-003170 | órdenes 43-44
@@ -7892,15 +7891,15 @@ HABLANTE NO VERIFICADO | CUADRO G01579 [sin_marcador_de_hablante_para_esta_caja]
 ES: ¿Eh?
 EN: Hm?
 IDS: CLD-003171 | órdenes 53-53
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003172)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003172)
 
-Mascarilla | CUADRO G01581 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01581 [marcador_0x6E_inmediato]
 ES: ¡Haré felices a todos!
 EN: I'll make everyone happy!
 IDS: CLD-003173 | órdenes 59-59
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003174)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003174)
 
-Mascarilla | CUADRO G01583 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01583 [marcador_0x6E_inmediato]
 ES: Te pondré en mi ¡círculo de los amigos!
 EN: I'll put you into my circle of friends!
 IDS: CLD-003175, CLD-003176 | órdenes 72-73
@@ -7911,7 +7910,7 @@ EN: Ahhh!
 IDS: CLD-003177 | órdenes 83-83
 
 HABLANTE NO VERIFICADO | CUADRO G01585 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¿Sorbete?
+ES: ¿Sherbet?
 EN: Sherbet?
 IDS: CLD-003178 | órdenes 107-107
 
@@ -7921,7 +7920,7 @@ EN: Are you all right? I...must leave now.
 IDS: CLD-003179, CLD-003180 | órdenes 114-115
 
 HABLANTE NO VERIFICADO | CUADRO G01587 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Esperar!
+ES: ¡Espera!
 EN: Wait!
 IDS: CLD-003181 | órdenes 126-126
 
@@ -8043,7 +8042,7 @@ IDS: CLD-003225, CLD-003226, CLD-003227 | órdenes 336-338
 [NOMBRE EN PANTALLA] Crosstine   (CLD-003228)
 
 Crosstine | CUADRO G01613 [marcador_0x6E_inmediato]
-ES: Genial. Sorbete. Tú también vienes, ¿verdad?
+ES: Genial. Sherbet, tú también vienes, ¿verdad?
 EN: That's great. Sherbet. You're coming, too, right?
 IDS: CLD-003229, CLD-003230 | órdenes 344-345
 
@@ -8183,7 +8182,7 @@ EN: She's a rival of mine! Right, barkeep?!
 IDS: CLD-003272, CLD-003273 | órdenes 38-39
 
 HABLANTE NO VERIFICADO | CUADRO G01633 [sin_marcador_de_hablante_para_esta_caja]
-ES: S-Sí. El domingo sin duda es tu rival.
+ES: S-Sí. Sunday sin duda es tu rival.
 EN: Y-Yeah. Sunday sure is your rival.
 IDS: CLD-003274, CLD-003275 | órdenes 46-47
 
@@ -8238,7 +8237,7 @@ EN: Hey, barkeep! Are you making that armor freak help out? You sure you'll be o
 IDS: CLD-003296, CLD-003297, CLD-003298 | órdenes 148-150
 
 HABLANTE NO VERIFICADO | CUADRO G01644 [sin_marcador_de_hablante_para_esta_caja]
-ES: Sí. El sorbete es realmente útil.
+ES: Sí. Sherbet es de mucha ayuda.
 EN: Yeah. Sherbet is really helpful.
 IDS: CLD-003299, CLD-003300 | órdenes 158-159
 
@@ -8413,7 +8412,7 @@ EN: That's why I kept chasing after her! Now I know why I'm so fixated on shield
 IDS: CLD-003358, CLD-003359, CLD-003360 | órdenes 37-39
 
 HABLANTE NO VERIFICADO | CUADRO G01671 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Domingo!
+ES: ¡Sunday!
 EN: Sunday!
 IDS: CLD-003361 | órdenes 47-47
 
@@ -8456,9 +8455,9 @@ HABLANTE NO VERIFICADO | CUADRO G01679 [sin_marcador_de_hablante_para_esta_caja]
 ES: (¡¿No lo entiendes?! ¿No basta con defenderme? ¿Tengo que pasar al ataque para que le entre en la cabeza?!)
 EN: (Can't you tell?! Is defense not enough?! Do I have to do offense to get it through her head?!))
 IDS: CLD-003379, CLD-003380, CLD-003381 | órdenes 139-141
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003382)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003382)
 
-Mascarilla | CUADRO G01681 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01681 [marcador_0x6E_inmediato]
 ES: ¡Je, je, je! ¡Rechazado! ¡Ahora necesitas un círculo de amigos!
 EN: Hee, hee, hee! Rejected! Now you need a circle of friends!
 IDS: CLD-003383, CLD-003384, CLD-003385 | órdenes 156-158
@@ -8469,7 +8468,7 @@ EN: Shut up! Shut up! Shut up! I don't just want to be friends!
 IDS: CLD-003386, CLD-003387 | órdenes 169-170
 
 HABLANTE NO VERIFICADO | CUADRO G01683 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Eres un asco, domingo!
+ES: ¡Eres un asco, Sunday!
 EN: You suck, Sunday!
 IDS: CLD-003388 | órdenes 172-172
 
@@ -8632,7 +8631,7 @@ EN: (There's one person more of a fool than him. If I'm fine with his gaze, then
 IDS: CLD-003431, CLD-003432, CLD-003433 | órdenes 58-60
 
 HABLANTE NO VERIFICADO | CUADRO G01707 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Hola! ¡Domingo! ¿Emocionado por la fiesta?
+ES: ¡Eh, Sunday! ¿Emocionado por la fiesta?
 EN: Hey! Sunday! Getting excited about the party?!
 IDS: CLD-003434, CLD-003435 | órdenes 75-76
 
@@ -8751,7 +8750,7 @@ IDS: CLD-003482, CLD-003483 | órdenes 418-419
 [NOMBRE EN PANTALLA] Crosstine   (CLD-003484)
 
 Crosstine | CUADRO G01734 [marcador_0x6E_inmediato]
-ES: Domingo. No estás sosteniendo tu espada.
+ES: Sunday. No estás sosteniendo tu espada.
 EN: Sunday. You're not holding up your sword.
 IDS: CLD-003485, CLD-003486 | órdenes 427-428
 
@@ -8777,18 +8776,18 @@ EN: It seems that you just created a whole new world for yourself to enjoy!
 IDS: CLD-003495, CLD-003496 | órdenes 460-461
 
 HABLANTE NO VERIFICADO | CUADRO G01740 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Oh, sí! ¡Domingo! ¡Bienvenido a mi mundo!
+ES: ¡Oh, sí! ¡Sunday! ¡Bienvenido a mi mundo!
 EN: Oh, yes! Sunday! Welcome to my world!
 IDS: CLD-003497, CLD-003498 | órdenes 468-469
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003499)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003499)
 
-Mascarilla | CUADRO G01742 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01742 [marcador_0x6E_inmediato]
 ES: ¡Ey! ¡No me dejes fuera de la conversación! ¡No puedes quedarte con toda la diversión para ti solo!
 EN: Hey! Don't leave me out of the loop! You can't keep all the fun to yourself!
 IDS: CLD-003500, CLD-003501, CLD-003502 | órdenes 485-487
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003503)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003503)
 
-Mascarilla | CUADRO G01744 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01744 [marcador_0x6E_inmediato]
 ES: ¡Quiero unirme a ese círculo de amigos!
 EN: I want to join in that circle of friends!
 IDS: CLD-003504 | órdenes 505-505
@@ -8994,7 +8993,7 @@ EN: You seem to look real happy, Coco. Are you preparing for the party?
 IDS: CLD-003564, CLD-003565 | órdenes 176-177
 
 HABLANTE NO VERIFICADO | CUADRO G01777 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Sí! ¡Estas cosas pueden ser muy divertidas! ¡Desde que vi a Sunday así, no puedo esperar a que empiece la fiesta!
+ES: ¡Sí! ¡Estas cosas pueden ser muy divertidas! Desde que vi a Sunday así, ¡no veo la hora de que empiece la fiesta!
 EN: Yes! These things can be so fun! I can't wait for the party to start ever since I saw Sunday like that!
 IDS: CLD-003566, CLD-003567, CLD-003568 | órdenes 184-186
 
@@ -9010,7 +9009,7 @@ IDS: CLD-003571 | órdenes 204-204
 [NOMBRE EN PANTALLA] Souma y Pudding   (CLD-003572)
 
 Souma y Pudding | CUADRO G01781 [marcador_0x6E_inmediato]
-ES: ¡¿Palma de coco?!
+ES: ¡¿Coco?!
 EN: Coco?!
 IDS: CLD-003573 | órdenes 224-224
 
@@ -9053,15 +9052,15 @@ HABLANTE NO VERIFICADO | CUADRO G01789 [sin_marcador_de_hablante_para_esta_caja]
 ES: ¿De verdad significa que se contagió de mí? ¿Era esto a lo que me estaba hablando el sueño?
 EN: Does it really mean that he caught it from me? Is this what the dream was telling me about?
 IDS: CLD-003584, CLD-003585 | órdenes 286-287
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003586)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003586)
 
-Mascarilla | CUADRO G01791 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01791 [marcador_0x6E_inmediato]
 ES: ¡Je, je, je! ¡Me alegro de que te hayas curado! ¿No te alegras de haber venido?
 EN: Heh, heh, heh! Glad you got cured! Aren't you glad you came here?!
 IDS: CLD-003587, CLD-003588, CLD-003589 | órdenes 301-303
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003590)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003590)
 
-Mascarilla | CUADRO G01793 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01793 [marcador_0x6E_inmediato]
 ES: ¡Ahora vamos a formar un círculo de amigos! ¡Solo para nosotros!
 EN: Now let's make a circle of friends! Just for us!
 IDS: CLD-003591, CLD-003592 | órdenes 322-323
@@ -9240,7 +9239,7 @@ ESCENA | demo1305_01.dsf | script_id=130512 | bloque=1135
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G01823 [sin_marcador_de_hablante_para_esta_caja]
-ES: Por ahora, parece que este problema No es causado por esa mascarilla.
+ES: Por ahora, parece que este problema No es causado por esa máscara.
 EN: For now, it seems like this problem isn't caused by that mask.
 IDS: CLD-003645, CLD-003646 | órdenes 9-10
 
@@ -9416,15 +9415,15 @@ HABLANTE NO VERIFICADO | CUADRO G01860 [sin_marcador_de_hablante_para_esta_caja]
 ES: ¡Los cielos me han bendecido!
 EN: The heavens have blessed me!
 IDS: CLD-003717 | órdenes 374-374
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003718)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003718)
 
-Mascarilla | CUADRO G01862 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01862 [marcador_0x6E_inmediato]
 ES: ¡Cielos, mi trasero!
 EN: Heavens, my butt!
 IDS: CLD-003719 | órdenes 392-392
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003720)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003720)
 
-Mascarilla | CUADRO G01864 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01864 [marcador_0x6E_inmediato]
 ES: ¡Me dejaron al margen otra vez y se divirtieron sin mí!
 EN: You guys left me out of the loop again and had so much fun!
 IDS: CLD-003721, CLD-003722 | órdenes 406-407
@@ -9443,9 +9442,9 @@ HABLANTE NO VERIFICADO | CUADRO G01867 [sin_marcador_de_hablante_para_esta_caja]
 ES: ¡H-Hola! ¡Despina!
 EN: H-Hey! Despina!
 IDS: CLD-003728 | órdenes 431-431
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003729)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003729)
 
-Mascarilla | CUADRO G01869 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01869 [marcador_0x6E_inmediato]
 ES: Jejeje. Siempre la he observado. Sé que siempre está sola. Sé que puedo crear un círculo de amigos con ella.
 EN: Hehehe. I've always watched her. I know she's always alone. I know I can create a circle of friends with her.
 IDS: CLD-003730, CLD-003731, CLD-003732 | órdenes 437-439
@@ -9487,9 +9486,9 @@ HABLANTE NO VERIFICADO | CUADRO G01879 [sin_marcador_de_hablante_para_esta_caja]
 ES: ¡Gah! ¡Odio esto! ¡Odio esto! ¡Odio esto!
 EN: Gah! I hate this! I hate this! I hate this!
 IDS: CLD-003748 | órdenes 503-503
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003749)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003749)
 
-Mascarilla | CUADRO G01881 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01881 [marcador_0x6E_inmediato]
 ES: ¡No me rendiré!
 EN: I won't give up!
 IDS: CLD-003750 | órdenes 516-516
@@ -9648,27 +9647,27 @@ HABLANTE NO VERIFICADO | CUADRO G01904 [sin_marcador_de_hablante_para_esta_caja]
 ES: Hmph. Es ese vagabundo otra vez.
 EN: Hmph. It's that stray again.
 IDS: CLD-003800 | órdenes 130-130
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003801)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003801)
 
-Mascarilla | CUADRO G01906 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01906 [marcador_0x6E_inmediato]
 ES: ¡Te encontré!
 EN: I found you!
 IDS: CLD-003802 | órdenes 166-166
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003803)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003803)
 
-Mascarilla | CUADRO G01908 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01908 [marcador_0x6E_inmediato]
 ES: ¡Je, je, je!
 EN: Hee, hee, hee!
 IDS: CLD-003804 | órdenes 181-181
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003805)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003805)
 
-Mascarilla | CUADRO G01910 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01910 [marcador_0x6E_inmediato]
 ES: ¡Seamos amigos!
 EN: Let's be friends!
 IDS: CLD-003806 | órdenes 197-197
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003807)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003807)
 
-Mascarilla | CUADRO G01912 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01912 [marcador_0x6E_inmediato]
 ES: ¡Y haz un círculo de amigos!
 EN: And make a circle of friends!
 IDS: CLD-003808 | órdenes 213-213
@@ -9677,15 +9676,15 @@ HABLANTE NO VERIFICADO | CUADRO G01913 [sin_marcador_de_hablante_para_esta_caja]
 ES: ¿Qué es eso?
 EN: What is that thing?!
 IDS: CLD-003809 | órdenes 268-268
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003810)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003810)
 
-Mascarilla | CUADRO G01915 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01915 [marcador_0x6E_inmediato]
 ES: ¡Vamos!
 EN: Let's go!
 IDS: CLD-003811 | órdenes 276-276
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-003812)
+[NOMBRE EN PANTALLA] Máscara   (CLD-003812)
 
-Mascarilla | CUADRO G01917 [marcador_0x6E_inmediato]
+Máscara | CUADRO G01917 [marcador_0x6E_inmediato]
 ES: ¡Vamos! ¡Vamos! ¡Ustedes se odiaban, ¿verdad?! ¿Por qué la estás protegiendo?
 EN: Come on! Come on! You guys hated each other, didn't you?! Why are you protecting her?!
 IDS: CLD-003813, CLD-003814, CLD-003815 | órdenes 435-437
@@ -10260,7 +10259,7 @@ ESCENA | demo1501_01.dsf | script_id=150112 | bloque=1201
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G02029 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¿Abajo? No la he visto por aquí.
+ES: ¿Asagi? No la he visto por aquí.
 EN: Asagi? I haven't seen her around here.
 IDS: CLD-004040, CLD-004041 | órdenes 9-10
 
@@ -10423,9 +10422,9 @@ IDS: CLD-004100, CLD-004101, CLD-004102 | órdenes 9-11
 ======================================================================================
 ESCENA | demo1502_01.dsf | script_id=150208 | bloque=1212
 ======================================================================================
-[NOMBRE EN PANTALLA] "Más bajo"   (CLD-004103)
+[NOMBRE EN PANTALLA] Asagi   (CLD-004103)
 
-"Más bajo" | CUADRO G02059 [marcador_0x6E_cercano_por_verificar]
+Asagi | CUADRO G02059 [marcador_0x6E_cercano_por_verificar]
 ES: Tengo que competir con todos los que están aquí. ¡Solo hay espacio para un personaje principal!
 EN: I have to compete with everyone here. There's only room for one main character!
 IDS: CLD-004104, CLD-004105 | órdenes 6-7
@@ -10587,7 +10586,7 @@ IDS: CLD-004172, CLD-004173, CLD-004174 | órdenes 352-354
 [NOMBRE EN PANTALLA] Asagi   (CLD-004175)
 
 Asagi | CUADRO G02096 [marcador_0x6E_inmediato]
-ES: ¡Esperar! ¡Algo parece extraño!
+ES: ¡Espera! ¡Algo parece extraño!
 EN: Wait! Something seems strange!
 IDS: CLD-004176, CLD-004177 | órdenes 381-382
 
@@ -10598,7 +10597,7 @@ IDS: CLD-004178, CLD-004179, CLD-004180 | órdenes 439-441
 [NOMBRE EN PANTALLA] Asagi   (CLD-004181)
 
 Asagi | CUADRO G02099 [marcador_0x6E_inmediato]
-ES: ¡Va a entrar en la mazmorra! ¡Esperar!
+ES: ¡Va a entrar en la mazmorra! ¡Espera!
 EN: It's going into the dungeon! Wait!
 IDS: CLD-004182, CLD-004183 | órdenes 457-458
 
@@ -11308,9 +11307,9 @@ HABLANTE NO VERIFICADO | CUADRO G02221 [sin_marcador_de_hablante_para_esta_caja]
 ES: ¡Mi Souma jamás diría algo así! ¡Tú eres la máscara!
 EN: My Souma would never say something like that! You're the mask!
 IDS: CLD-004428, CLD-004429 | órdenes 76-77
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-004430)
+[NOMBRE EN PANTALLA] Máscara   (CLD-004430)
 
-Mascarilla | CUADRO G02223 [marcador_0x6E_inmediato]
+Máscara | CUADRO G02223 [marcador_0x6E_inmediato]
 ES: ¡Je, je, je! ¡Me descubriste! ¡Ya no te quiero!
 EN: Heh, heh, heh! You found me out! I don't want you anymore!
 IDS: CLD-004431, CLD-004432 | órdenes 86-87
@@ -11416,9 +11415,9 @@ HABLANTE NO VERIFICADO | CUADRO G02241 [sin_marcador_de_hablante_para_esta_caja]
 ES: Oh, es la máscara. ¡Los cielos me han bendecido!
 EN: Oh, it's the mask. The heavens have blessed me!
 IDS: CLD-004469, CLD-004470 | órdenes 31-32
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-004471)
+[NOMBRE EN PANTALLA] Máscara   (CLD-004471)
 
-Mascarilla | CUADRO G02243 [marcador_0x6E_inmediato]
+Máscara | CUADRO G02243 [marcador_0x6E_inmediato]
 ES: La desgracia es pecado. La desgracia tiene sabor a miel.
 EN: Misfortune is sin. Misfortune is the taste of honey.
 IDS: CLD-004472, CLD-004473 | órdenes 38-39
@@ -11427,9 +11426,9 @@ HABLANTE NO VERIFICADO | CUADRO G02244 [sin_marcador_de_hablante_para_esta_caja]
 ES: ¿Ah, entonces está delicioso?
 EN: Oh, so it's delicious?
 IDS: CLD-004474 | órdenes 58-58
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-004475)
+[NOMBRE EN PANTALLA] Máscara   (CLD-004475)
 
-Mascarilla | CUADRO G02246 [marcador_0x6E_inmediato]
+Máscara | CUADRO G02246 [marcador_0x6E_inmediato]
 ES: Los cielos no te bendecirán. ¡Porque vas a morir aquí! ¡Je, je, je, je!
 EN: The heavens will not bless you. Because you're going to die here! Hee, hee, hee, hee!
 IDS: CLD-004476, CLD-004477, CLD-004478 | órdenes 64-66
@@ -11494,9 +11493,9 @@ IDS: CLD-004500, CLD-004501, CLD-004502 | órdenes 118-120
 ======================================================================================
 ESCENA | end02_despina.dsf | script_id=140301 | bloque=1399
 ======================================================================================
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-004503)
+[NOMBRE EN PANTALLA] Máscara   (CLD-004503)
 
-Mascarilla | CUADRO G02261 [marcador_0x6E_cercano_por_verificar]
+Máscara | CUADRO G02261 [marcador_0x6E_cercano_por_verificar]
 ES: Huiste y me abandonaste. Sin embargo, ¿cómo eres tan fuerte?
 EN: You ran and have forsaken me. Yet, how are you so strong?
 IDS: CLD-004504, CLD-004505 | órdenes 35-36
@@ -11525,9 +11524,9 @@ HABLANTE NO VERIFICADO | CUADRO G02266 [sin_marcador_de_hablante_para_esta_caja]
 ES: Simplemente estamos hechos de forma diferente.
 EN: We're just made differently.
 IDS: CLD-004512 | órdenes 77-77
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-004513)
+[NOMBRE EN PANTALLA] Máscara   (CLD-004513)
 
-Mascarilla | CUADRO G02268 [marcador_0x6E_cercano_por_verificar]
+Máscara | CUADRO G02268 [marcador_0x6E_cercano_por_verificar]
 ES: Ya veo... El círculo de amigos... Ojalá tuviera eso...
 EN: I see... The circle of friends... I wish I had that...
 IDS: CLD-004514, CLD-004515 | órdenes 94-95
@@ -11792,9 +11791,9 @@ IDS: CLD-004610, CLD-004611 | órdenes 62-63
 ES: Siempre te crees muy superior y poderoso.
 EN: You always think you're so high and mighty.
 IDS: CLD-004613 | órdenes 74-74
-[NOMBRE EN PANTALLA] ¿Palma de coco?   (CLD-004614)
+[NOMBRE EN PANTALLA] ¿Coco?   (CLD-004614)
 
-¿Palma de coco? | CUADRO G02331 [marcador_0x6E_inmediato]
+¿Coco? | CUADRO G02331 [marcador_0x6E_inmediato]
 ES: Estoy harto de hacer negocios aquí.
 EN: I'm sick of doing business here.
 IDS: CLD-004615 | órdenes 86-86
@@ -11804,15 +11803,15 @@ IDS: CLD-004615 | órdenes 86-86
 ES: No tengo nada para que bebas. Lárgate de aquí.
 EN: I got nothing for you to drink. Get out of here.
 IDS: CLD-004617 | órdenes 98-98
-[NOMBRE EN PANTALLA] ¿Chelín?   (CLD-004618)
+[NOMBRE EN PANTALLA] ¿Bob?   (CLD-004618)
 
-¿Chelín? | CUADRO G02335 [marcador_0x6E_inmediato]
+¿Bob? | CUADRO G02335 [marcador_0x6E_inmediato]
 ES: ¡Estás tan LOCO!
 EN: You so CRAZY!
 IDS: CLD-004619 | órdenes 110-110
-[NOMBRE EN PANTALLA] ¿Domingo?   (CLD-004620)
+[NOMBRE EN PANTALLA] ¿Sunday?   (CLD-004620)
 
-¿Domingo? | CUADRO G02337 [marcador_0x6E_inmediato]
+¿Sunday? | CUADRO G02337 [marcador_0x6E_inmediato]
 ES: No te acerques a mí nunca más.
 EN: Don't you ever come near me again.
 IDS: CLD-004621 | órdenes 122-122
@@ -11837,9 +11836,9 @@ HABLANTE NO VERIFICADO | CUADRO G02342 [sin_marcador_de_hablante_para_esta_caja]
 ES: Y... ¡El!
 EN: And... Die!
 IDS: CLD-004630, CLD-004631 | órdenes 152-153
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-004632)
+[NOMBRE EN PANTALLA] Máscara   (CLD-004632)
 
-Mascarilla | CUADRO G02344 [marcador_0x6E_inmediato]
+Máscara | CUADRO G02344 [marcador_0x6E_inmediato]
 ES: Je, je, je. ¡En ese caso, te haré sufrir muchísimo! ¡No eres mi amigo!
 EN: Hee, hee, hee. In that case, I'll put you in a world of hurt! You're not my friend!
 IDS: CLD-004633, CLD-004634, CLD-004635 | órdenes 189-191
@@ -11975,9 +11974,9 @@ HABLANTE NO VERIFICADO | CUADRO G02368 [sin_marcador_de_hablante_para_esta_caja]
 ES: Oye, ahí está la máscara.
 EN: Hey, there's the mask.
 IDS: CLD-004672 | órdenes 35-35
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-004673)
+[NOMBRE EN PANTALLA] Máscara   (CLD-004673)
 
-Mascarilla | CUADRO G02370 [marcador_0x6E_inmediato]
+Máscara | CUADRO G02370 [marcador_0x6E_inmediato]
 ES: No deberías haber venido aquí.
 EN: You shouldn't have come here.
 IDS: CLD-004674 | órdenes 41-41
@@ -11986,9 +11985,9 @@ HABLANTE NO VERIFICADO | CUADRO G02371 [sin_marcador_de_hablante_para_esta_caja]
 ES: ¿Qué?
 EN: Wh-What?
 IDS: CLD-004675 | órdenes 60-60
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-004676)
+[NOMBRE EN PANTALLA] Máscara   (CLD-004676)
 
-Mascarilla | CUADRO G02373 [marcador_0x6E_inmediato]
+Máscara | CUADRO G02373 [marcador_0x6E_inmediato]
 ES: Debería haberla encerrado. Y entonces ella sería mía.
 EN: I should have locked her up. And then she would be mine.
 IDS: CLD-004677, CLD-004678 | órdenes 68-69
@@ -11997,9 +11996,9 @@ HABLANTE NO VERIFICADO | CUADRO G02374 [sin_marcador_de_hablante_para_esta_caja]
 ES: Ella no me pertenece. ¡Lo único que me importa es su felicidad!
 EN: She doesn't belong to me. All I care about is her happiness!
 IDS: CLD-004679, CLD-004680 | órdenes 88-89
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-004681)
+[NOMBRE EN PANTALLA] Máscara   (CLD-004681)
 
-Mascarilla | CUADRO G02376 [marcador_0x6E_inmediato]
+Máscara | CUADRO G02376 [marcador_0x6E_inmediato]
 ES: ¡Je, je, je! ¡No te mientas a ti mismo!
 EN: Hee, hee, hee! Don't lie to yourself!
 IDS: CLD-004682, CLD-004683 | órdenes 97-98
@@ -12108,7 +12107,7 @@ EN: At that time, I will protect you, not by someone else's orders, but by my ow
 IDS: CLD-004721, CLD-004722, CLD-004723 | órdenes 158-160
 
 HABLANTE NO VERIFICADO | CUADRO G02396 [sin_marcador_de_hablante_para_esta_caja]
-ES: Sorbete.
+ES: Sherbet.
 EN: Sherbet.
 IDS: CLD-004724 | órdenes 167-167
 
@@ -12133,7 +12132,7 @@ IDS: CLD-004728, CLD-004729, CLD-004730 | órdenes 36-38
 [NOMBRE EN PANTALLA] ¿Princesa?   (CLD-004731)
 
 ¿Princesa? | CUADRO G02401 [marcador_0x6E_inmediato]
-ES: Sorbete. Eres completamente inútil. Regresa al reino de inmediato.
+ES: Sherbet. Eres completamente inútil. Regresa al reino de inmediato.
 EN: Sherbet. You are utterly useless. Return to the kingdom at once.
 IDS: CLD-004732, CLD-004733 | órdenes 46-47
 
@@ -12208,7 +12207,7 @@ EN: So, you found it first. Not bad, Battleblo.
 IDS: CLD-004757, CLD-004758 | órdenes 83-84
 
 HABLANTE NO VERIFICADO | CUADRO G02416 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Domingo! ¡Te voy a dar una paliza brutal!
+ES: ¡Sunday! ¡Te voy a dar una paliza brutal!
 EN: Sunday! I'll beat you to a bloody pulp!
 IDS: CLD-004759, CLD-004760 | órdenes 92-93
 
@@ -12331,9 +12330,9 @@ HABLANTE NO VERIFICADO | CUADRO G02440 [sin_marcador_de_hablante_para_esta_caja]
 ES: ¡Me engañaste!
 EN: You tricked me!
 IDS: CLD-004798 | órdenes 116-116
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-004799)
+[NOMBRE EN PANTALLA] Máscara   (CLD-004799)
 
-Mascarilla | CUADRO G02442 [marcador_0x6E_inmediato]
+Máscara | CUADRO G02442 [marcador_0x6E_inmediato]
 ES: Permitiéndote aferrarte al escudo definitivo ¡Sería un completo desperdicio!
 EN: Letting you hold onto the ultimate shield would be a complete waste!
 IDS: CLD-004800, CLD-004801 | órdenes 122-123
@@ -12428,7 +12427,7 @@ IDS: CLD-004833 | órdenes 80-80
 [NOMBRE EN PANTALLA] Princesa Dot   (CLD-004834)
 
 Princesa Dot | CUADRO G02464 [marcador_0x6E_inmediato]
-ES: Sorbete.
+ES: Sherbet.
 EN: Sherbet.
 IDS: CLD-004835 | órdenes 88-88
 
@@ -12489,9 +12488,9 @@ IDS: CLD-004858 | órdenes 172-172
 ======================================================================================
 ESCENA | end09_dodohige.dsf | script_id=141051 | bloque=1437
 ======================================================================================
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-004859)
+[NOMBRE EN PANTALLA] Máscara   (CLD-004859)
 
-Mascarilla | CUADRO G02480 [marcador_0x6E_inmediato]
+Máscara | CUADRO G02480 [marcador_0x6E_inmediato]
 ES: Lo sé. En realidad eres una princesa. ¿Por qué viniste a pelear?
 EN: I know. You're actually a princess. Why did you come fight?
 IDS: CLD-004860, CLD-004861, CLD-004862 | órdenes 30-32
@@ -12505,9 +12504,9 @@ HABLANTE NO VERIFICADO | CUADRO G02482 [sin_marcador_de_hablante_para_esta_caja]
 ES: Derrotar a un ser de engaño levantará la forma de engaño que se me impuso.
 EN: Defeating a being of deceit shall lift the form of deceit placed upon me.
 IDS: CLD-004865, CLD-004866 | órdenes 54-55
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-004867)
+[NOMBRE EN PANTALLA] Máscara   (CLD-004867)
 
-Mascarilla | CUADRO G02484 [marcador_0x6E_inmediato]
+Máscara | CUADRO G02484 [marcador_0x6E_inmediato]
 ES: Jejeje. Déjame decirte algo. Eres solo un Princesa inútil que no puede hacer nada por sí misma. No hay manera de que puedas liderar un reino entero.
 EN: Hehehe. Let me tell you something. You're just a useless princess who can't do anything on her own. There's no way you can lead an entire kingdom.
 IDS: CLD-004868, CLD-004869, CLD-004870 | órdenes 61-63
@@ -12516,9 +12515,9 @@ HABLANTE NO VERIFICADO | CUADRO G02485 [sin_marcador_de_hablante_para_esta_caja]
 ES: ¿Oh? No puedes saberlo hasta que lo intente.
 EN: Oh? You can't know that until I try.
 IDS: CLD-004871, CLD-004872 | órdenes 82-83
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-004873)
+[NOMBRE EN PANTALLA] Máscara   (CLD-004873)
 
-Mascarilla | CUADRO G02487 [marcador_0x6E_inmediato]
+Máscara | CUADRO G02487 [marcador_0x6E_inmediato]
 ES: ¡Jejejeje! ¡Vas a morir antes de tener la oportunidad!
 EN: Hehehehe! You're gonna die before you get the chance!
 IDS: CLD-004874, CLD-004875 | órdenes 89-90
@@ -12604,9 +12603,9 @@ IDS: CLD-004897, CLD-004898, CLD-004899 | órdenes 125-127
 ======================================================================================
 ESCENA | end10_bobu.dsf | script_id=141151 | bloque=1443
 ======================================================================================
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-004900)
+[NOMBRE EN PANTALLA] Máscara   (CLD-004900)
 
-Mascarilla | CUADRO G02503 [marcador_0x6E_inmediato]
+Máscara | CUADRO G02503 [marcador_0x6E_inmediato]
 ES: ¡Je, je, je, je! Yo peludo. Calvo.
 EN: Hee, hee, hee, hee! Me hairy. You baldy.
 IDS: CLD-004901, CLD-004902, CLD-004903 | órdenes 31-33
@@ -12615,9 +12614,9 @@ HABLANTE NO VERIFICADO | CUADRO G02504 [sin_marcador_de_hablante_para_esta_caja]
 ES: ¡Loco! ¡Soy muy peludo! ¿Sabes?
 EN: Crazy! I'm very hairy! Y'know?!
 IDS: CLD-004904, CLD-004905 | órdenes 52-53
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-004906)
+[NOMBRE EN PANTALLA] Máscara   (CLD-004906)
 
-Mascarilla | CUADRO G02506 [marcador_0x6E_inmediato]
+Máscara | CUADRO G02506 [marcador_0x6E_inmediato]
 ES: ¡Entonces te dejaré calvo y te convertiré en un ermitaño!
 EN: Then I'll make you bald and turn you into a shut-in!
 IDS: CLD-004907, CLD-004908 | órdenes 59-60
@@ -12732,16 +12731,16 @@ EN: W-Will I never get to fight you again? That's kind of sad...
 IDS: CLD-004946, CLD-004947 | órdenes 181-182
 
 HABLANTE NO VERIFICADO | CUADRO G02528 [sin_marcador_de_hablante_para_esta_caja]
-ES: Pero te animaré el domingo... Porque soy tu primer fan...
+ES: Pero te animaré Sunday... Porque soy tu primer fan...
 EN: But I'll cheer you on, Sunday... Because I'm your very first fan...
 IDS: CLD-004948, CLD-004949 | órdenes 184-185
 
 ======================================================================================
 ESCENA | end11_sunday.dsf | script_id=141251 | bloque=1449
 ======================================================================================
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-004951)
+[NOMBRE EN PANTALLA] Máscara   (CLD-004951)
 
-Mascarilla | CUADRO G02530 [marcador_0x6E_inmediato]
+Máscara | CUADRO G02530 [marcador_0x6E_inmediato]
 ES: Tengo la espada definitiva.
 EN: I have the ultimate sword.
 IDS: CLD-004952 | órdenes 30-30
@@ -12750,9 +12749,9 @@ HABLANTE NO VERIFICADO | CUADRO G02531 [sin_marcador_de_hablante_para_esta_caja]
 ES: ¡¿Qué?!
 EN: What?!
 IDS: CLD-004953 | órdenes 55-55
-[NOMBRE EN PANTALLA] Mascarilla   (CLD-004954)
+[NOMBRE EN PANTALLA] Máscara   (CLD-004954)
 
-Mascarilla | CUADRO G02533 [marcador_0x6E_inmediato]
+Máscara | CUADRO G02533 [marcador_0x6E_inmediato]
 ES: Es decir, no puedes ganar contra mi mirada. Perderás.
 EN: That is, you cannot win against my gaze. You WILL lose.
 IDS: CLD-004955, CLD-004956 | órdenes 65-66
@@ -12835,15 +12834,15 @@ EN: There's something that resembles a pumpkin. Step on it?
 IDS: CLD-004977, CLD-004978 | órdenes 4-5
   OPCIÓN: No, no deberías.   [CLD-004979]
   OPCIÓN: ¡Mátalo! ¡Mátalo con fuego!   [CLD-004980]
-[NOMBRE EN PANTALLA] Bragas   (CLD-004981)
+[NOMBRE EN PANTALLA] Pumpky   (CLD-004981)
 
-Bragas | CUADRO G02550 [marcador_0x6E_inmediato]
+Pumpky | CUADRO G02550 [marcador_0x6E_inmediato]
 ES: ¡Genial, ⑨! Normalmente, la gente me pisaría, ¡pero tú no! ¡Eso es lo que te hace genial!
 EN: Awesome, ⑨! Normally, people would step on me, but you didn't! That's what makes you awesome!
 IDS: CLD-004982, CLD-004983, CLD-004984 | órdenes 17-19
-[NOMBRE EN PANTALLA] Bragas   (CLD-004985)
+[NOMBRE EN PANTALLA] Pumpky   (CLD-004985)
 
-Bragas | CUADRO G02552 [marcador_0x6E_inmediato]
+Pumpky | CUADRO G02552 [marcador_0x6E_inmediato]
 ES: ¡Ey!
 EN: Yeehaw!
 IDS: CLD-004986 | órdenes 25-25
@@ -12864,9 +12863,9 @@ Pumply | CUADRO G02557 [marcador_0x6E_inmediato]
 ES: ¡Envejezcamos juntos!
 EN: Let's grow old together!
 IDS: CLD-004994 | órdenes 17-17
-[NOMBRE EN PANTALLA] Mangos   (CLD-004995)
+[NOMBRE EN PANTALLA] Pumi   (CLD-004995)
 
-Mangos | CUADRO G02559 [marcador_0x6E_inmediato]
+Pumi | CUADRO G02559 [marcador_0x6E_inmediato]
 ES: ¡Contigo no!
 EN: Not with you!
 IDS: CLD-004996 | órdenes 21-21
@@ -12876,9 +12875,9 @@ Pumply | CUADRO G02561 [marcador_0x6E_inmediato]
 ES: ¡Estemos juntos, incluso en la otra vida!
 EN: Let's be together, even in the next life!
 IDS: CLD-004998 | órdenes 27-27
-[NOMBRE EN PANTALLA] Mangos   (CLD-004999)
+[NOMBRE EN PANTALLA] Pumi   (CLD-004999)
 
-Mangos | CUADRO G02563 [marcador_0x6E_inmediato]
+Pumi | CUADRO G02563 [marcador_0x6E_inmediato]
 ES: ¡Contigo no!
 EN: Not with you!
 IDS: CLD-005000 | órdenes 31-31
@@ -13652,9 +13651,9 @@ IDS: CLD-005308, CLD-005309 | órdenes 28-29
 ======================================================================================
 ESCENA | atkDefComment.dsf | script_id=2000 | bloque=1581
 ======================================================================================
-[NOMBRE EN PANTALLA] Ese ermitaño   (CLD-005310)
+[NOMBRE EN PANTALLA] Ermitaño Hiyo   (CLD-005310)
 
-Ese ermitaño | CUADRO G02695 [marcador_0x6E_inmediato]
+Ermitaño Hiyo | CUADRO G02695 [marcador_0x6E_inmediato]
 ES: Soy el ermitaño de Hiyo. Puedo predecir el futuro según tus estadísticas. ¡Harrrgh!
 EN: I am the Hiyo Hermit. I can tell the fortune of your stats. Harrrrgh!
 IDS: CLD-005311, CLD-005312, CLD-005313 | órdenes 4-6
@@ -13691,7 +13690,7 @@ ESCENA | atkDefComment.dsf | script_id=2004 | bloque=1585
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G02699 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Despertar! ¡Tu ATK es demasiado bajo! ¡Aumenta tu ATK en el Círculo mágico ahora!
+ES: ¡Oh! ¡Tu ATK es demasiado bajo! ¡Aumenta tu ATK en el Círculo mágico ahora!
 EN: Oho! Your ATK is too low! Raise your ATK in the Magic Circle now!
 IDS: CLD-005323, CLD-005324, CLD-005325 | órdenes 0-2
 
@@ -13844,7 +13843,7 @@ ESCENA | atkDefComment.dsf | script_id=2104 | bloque=1602
 ======================================================================================
 
 HABLANTE NO VERIFICADO | CUADRO G02716 [sin_marcador_de_hablante_para_esta_caja]
-ES: ¡Despertar! ¡Tu DEF es demasiado baja! ¡Aumenta tu DEF en el Círculo mágico ahora!
+ES: ¡Oh! ¡Tu DEF es demasiado baja! ¡Aumenta tu DEF en el Círculo mágico ahora!
 EN: Oho! Your DEF is too low! Raise your DEF at the Magic Circle now!
 IDS: CLD-005365, CLD-005366, CLD-005367 | órdenes 0-2
 

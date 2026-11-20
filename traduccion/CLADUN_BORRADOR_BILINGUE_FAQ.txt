@@ -5682,7 +5682,7 @@ Así que me descuidé un poco.
 ORIGINAL:
 Hold on!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Esperar!
+¡Espera!
 
 [000940] DIÁLOGO | CLD-000960
 ORIGINAL:
@@ -8426,7 +8426,7 @@ Pulsa la tecla ⑬ en Arcanus Cella para leer el diccionario.
 ORIGINAL:
 Piyyo
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-A pie
+Piyyo
 
 [001389] DIÁLOGO | CLD-001422
 ORIGINAL:
@@ -8450,7 +8450,7 @@ proporcionar otros efectos adversos.
 ORIGINAL:
 Prillin
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Abril
+Prillin
 
 [001393] DIÁLOGO | CLD-001426
 ORIGINAL:
@@ -8522,7 +8522,7 @@ El equipo que sueltan los enemigos fuertes tiene buenos títulos.
 ORIGINAL:
 Poku
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Barato
+Poku
 
 [001405] DIÁLOGO | CLD-001438
 ORIGINAL:
@@ -8636,7 +8636,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Piten
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pozos
+Piten
 
 [001424] DIÁLOGO | CLD-001457
 ORIGINAL:
@@ -8852,19 +8852,19 @@ puede obtener más HP y Maná.
 ORIGINAL:
 I-It's not like I'm telling you
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-N-no te lo digo porque quiera.
+¡N-no creas que te lo digo
 
 [001460] DIÁLOGO | CLD-001493
 ORIGINAL:
 because I want to!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Que quede claro!
+porque quiera!
 
 [001461] PERSONAJE | CLD-001494
 ORIGINAL:
 Pigurui
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ajustar
+Pigurui
 
 [001462] DIÁLOGO | CLD-001495
 ORIGINAL:
@@ -8960,7 +8960,7 @@ solo con artefactos!
 ORIGINAL:
 Hiyorton
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-hiyorton
+Hiyorton
 
 [001478] DIÁLOGO | CLD-001511
 ORIGINAL:
@@ -9032,7 +9032,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Hiyonee
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-hola
+Hiyonee
 
 [001490] DIÁLOGO | CLD-001523
 ORIGINAL:
@@ -9044,7 +9044,7 @@ Tengo un perro guardián en mi terraza.
 ORIGINAL:
 Hiyobaba
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-YouTubeyobaba
+Hiyobaba
 
 [001492] DIÁLOGO | CLD-001525
 ORIGINAL:
@@ -10586,7 +10586,7 @@ Así, "Dotache".
 ORIGINAL:
 Gasp!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Jadear!
+¡Ah!
 
 [001744] DIÁLOGO | CLD-001783
 ORIGINAL:
@@ -11261,7 +11261,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I knew you'd come, Sunday!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Sabía que vendrías, domingo!
+¡Sabía que vendrías, Sunday!
 
 [001854] DIÁLOGO | CLD-001898
 ORIGINAL:
@@ -11549,7 +11549,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 You now have access to Sunday.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ahora tienes acceso al domingo.
+Sunday ya está disponible.
 
 [001902] DIÁLOGO | CLD-001947
 ORIGINAL:
@@ -11567,7 +11567,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 You now have access to Sunday.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ahora tienes acceso al domingo.
+Sunday ya está disponible.
 
 [001905] DIÁLOGO | CLD-001951
 ORIGINAL:
@@ -11883,7 +11883,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 That Sunday gives me trouble to no end!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Ese domingo me da muchísimos problemas!
+¡Sunday no hace más que darme problemas!
 
 [001956] DIÁLOGO | CLD-002002
 ORIGINAL:
@@ -11997,7 +11997,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Coco...?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Palma de coco...?
+¿Coco...?
 
 [001975] DIÁLOGO | CLD-002021
 ORIGINAL:
@@ -12420,7 +12420,7 @@ como siempre, Bob.
 ORIGINAL:
 Oho!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Despertar!
+¡Oh!
 
 [002043] DIÁLOGO | CLD-002091
 ORIGINAL:
@@ -12618,7 +12618,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Mascarilla?
+¿Máscara?
 
 [002076] DIÁLOGO | CLD-002124
 ORIGINAL:
@@ -13065,7 +13065,7 @@ Argh...
 ORIGINAL:
 Gasp!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Jadear!
+¡Ah!
 
 [002148] DIÁLOGO | CLD-002199
 ORIGINAL:
@@ -16108,7 +16108,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 It's because of that mask.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Es por esa mascarilla.
+Es por esa máscara.
 
 [002646] DIÁLOGO | CLD-002708
 ORIGINAL:
@@ -16329,7 +16329,7 @@ SCRIPT: demo1206_01.dsf
 ORIGINAL:
 Do I really have to throw the mask away?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿De verdad tengo que tirar la mascarilla?
+¿De verdad tengo que tirar la máscara?
 
 [002682] DIÁLOGO | CLD-002746
 ORIGINAL:
@@ -16754,7 +16754,7 @@ se contagia a los demás?
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [002752] DIÁLOGO | CLD-002816
 ORIGINAL:
@@ -17015,7 +17015,7 @@ SCRIPT: demo1208_00.dsf
 ORIGINAL:
 Sunday!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Domingo!
+¡Sunday!
 
 [002793] DIÁLOGO | CLD-002861
 ORIGINAL:
@@ -17291,7 +17291,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I wore the mask earlier and wandered around.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Me puse la mascarilla hace un rato y estuve dando vueltas por ahí.
+Me puse la máscara hace un rato y estuve dando vueltas por ahí.
 
 [002839] DIÁLOGO | CLD-002907
 ORIGINAL:
@@ -17327,7 +17327,7 @@ No tengas miedo.
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [002845] DIÁLOGO | CLD-002913
 ORIGINAL:
@@ -17386,19 +17386,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I'm sure Pudding doesn't want to be
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Estoy seguro de que Pudding no quiere estar
+Estoy seguro de que a Pudding no le gusta que lo mimen,
 
 [002854] DIÁLOGO | CLD-002924
 ORIGINAL:
 babied as much as Sunday doesn't
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mimado tanto como el domingo no
+igual que a Sunday no le gusta
 
 [002855] DIÁLOGO | CLD-002925
 ORIGINAL:
 want to be stared at.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-quieren que los miren fijamente.
+que se queden mirándola.
 
 [002856] DIÁLOGO | CLD-002926
 ORIGINAL:
@@ -17804,7 +17804,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [002922] DIÁLOGO | CLD-002992
 ORIGINAL:
@@ -17840,7 +17840,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [002928] DIÁLOGO | CLD-002998
 ORIGINAL:
@@ -18353,7 +18353,7 @@ Solo vine a ver... eso.
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003011] DIÁLOGO | CLD-003083
 ORIGINAL:
@@ -18365,7 +18365,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003013] DIÁLOGO | CLD-003085
 ORIGINAL:
@@ -18383,7 +18383,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003016] DIÁLOGO | CLD-003088
 ORIGINAL:
@@ -18497,7 +18497,7 @@ Soy compasivo.
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003035] DIÁLOGO | CLD-003107
 ORIGINAL:
@@ -18533,7 +18533,7 @@ más poder entonces.)
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003041] DIÁLOGO | CLD-003113
 ORIGINAL:
@@ -18581,7 +18581,7 @@ Vendrán muchos humanos.
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003049] DIÁLOGO | CLD-003121
 ORIGINAL:
@@ -18599,7 +18599,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003052] DIÁLOGO | CLD-003124
 ORIGINAL:
@@ -18718,7 +18718,7 @@ Esta vez no...
 ORIGINAL:
 Sunday has always been my rival,
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El domingo siempre ha sido mi rival,
+Sunday siempre ha sido mi rival,
 
 [003071] DIÁLOGO | CLD-003145
 ORIGINAL:
@@ -18872,7 +18872,7 @@ SCRIPT: demo1301_00.dsf
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003095] DIÁLOGO | CLD-003169
 ORIGINAL:
@@ -18896,7 +18896,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003099] DIÁLOGO | CLD-003173
 ORIGINAL:
@@ -18908,7 +18908,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003101] DIÁLOGO | CLD-003175
 ORIGINAL:
@@ -18932,7 +18932,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Sherbet?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Sorbete?
+¿Sherbet?
 
 [003105] DIÁLOGO | CLD-003179
 ORIGINAL:
@@ -18950,7 +18950,7 @@ Debo irme ahora.
 ORIGINAL:
 Wait!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Esperar!
+¡Espera!
 
 [003108] DIÁLOGO | CLD-003182
 ORIGINAL:
@@ -19244,7 +19244,7 @@ Genial.
 ORIGINAL:
 Sherbet. You're coming, too, right?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sorbete. Tú también vienes, ¿verdad?
+Sherbet, tú también vienes, ¿verdad?
 
 [003157] DIÁLOGO | CLD-003232
 ORIGINAL:
@@ -19512,7 +19512,7 @@ S-Sí.
 ORIGINAL:
 Sunday sure is your rival.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El domingo sin duda es tu rival.
+Sunday sin duda es tu rival.
 
 [003200] DIÁLOGO | CLD-003276
 ORIGINAL:
@@ -19662,7 +19662,7 @@ Sí.
 ORIGINAL:
 Sherbet is really helpful.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El sorbete es realmente útil.
+Sherbet es de mucha ayuda.
 
 [003225] DIÁLOGO | CLD-003301
 ORIGINAL:
@@ -20026,7 +20026,7 @@ me obsesionan tanto los escudos!
 ORIGINAL:
 Sunday!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Domingo!
+¡Sunday!
 
 [003284] DIÁLOGO | CLD-003362
 ORIGINAL:
@@ -20152,7 +20152,7 @@ para que le entre en la cabeza?!)
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003305] DIÁLOGO | CLD-003383
 ORIGINAL:
@@ -20188,7 +20188,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 You suck, Sunday!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Eres un asco, domingo!
+¡Eres un asco, Sunday!
 
 [003311] DIÁLOGO | CLD-003389
 ORIGINAL:
@@ -20462,7 +20462,7 @@ Entonces aún hay esperanza...)
 ORIGINAL:
 Hey! Sunday!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Hola! ¡Domingo!
+¡Eh, Sunday!
 
 [003355] DIÁLOGO | CLD-003435
 ORIGINAL:
@@ -20768,7 +20768,7 @@ Crosstine
 ORIGINAL:
 Sunday.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Domingo.
+Sunday.
 
 [003406] DIÁLOGO | CLD-003486
 ORIGINAL:
@@ -20840,7 +20840,7 @@ para disfrutarlo a tu gusto!
 ORIGINAL:
 Oh, yes! Sunday!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Oh, sí! ¡Domingo!
+¡Oh, sí! ¡Sunday!
 
 [003418] DIÁLOGO | CLD-003498
 ORIGINAL:
@@ -20852,7 +20852,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003420] DIÁLOGO | CLD-003500
 ORIGINAL:
@@ -20876,7 +20876,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003424] DIÁLOGO | CLD-003504
 ORIGINAL:
@@ -21258,13 +21258,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I can't wait for the party to start
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Desde que vi a Sunday así,
+Desde que vi a Sunday así,
 
 [003486] DIÁLOGO | CLD-003568
 ORIGINAL:
 ever since I saw Sunday like that!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-no puedo esperar a que empiece la fiesta!
+¡no veo la hora de que empiece la fiesta!
 
 [003487] DIÁLOGO | CLD-003569
 ORIGINAL:
@@ -21294,7 +21294,7 @@ Souma y Pudding
 ORIGINAL:
 Coco?!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡¿Palma de coco?!
+¡¿Coco?!
 
 [003492] DIÁLOGO | CLD-003574
 ORIGINAL:
@@ -21372,7 +21372,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003505] DIÁLOGO | CLD-003587
 ORIGINAL:
@@ -21396,7 +21396,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003509] DIÁLOGO | CLD-003591
 ORIGINAL:
@@ -21725,7 +21725,7 @@ Por ahora, parece que este problema
 ORIGINAL:
 isn't caused by that mask.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No es causado por esa mascarilla.
+No es causado por esa máscara.
 
 
 ==================================================================
@@ -22162,7 +22162,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003635] DIÁLOGO | CLD-003719
 ORIGINAL:
@@ -22174,7 +22174,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003637] DIÁLOGO | CLD-003721
 ORIGINAL:
@@ -22228,7 +22228,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003646] DIÁLOGO | CLD-003730
 ORIGINAL:
@@ -22348,7 +22348,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003666] DIÁLOGO | CLD-003750
 ORIGINAL:
@@ -22658,7 +22658,7 @@ Hmph. Es ese vagabundo otra vez.
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003716] DIÁLOGO | CLD-003802
 ORIGINAL:
@@ -22670,7 +22670,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003718] DIÁLOGO | CLD-003804
 ORIGINAL:
@@ -22682,7 +22682,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003720] DIÁLOGO | CLD-003806
 ORIGINAL:
@@ -22694,7 +22694,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003722] DIÁLOGO | CLD-003808
 ORIGINAL:
@@ -22712,7 +22712,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003725] DIÁLOGO | CLD-003811
 ORIGINAL:
@@ -22724,7 +22724,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [003727] DIÁLOGO | CLD-003813
 ORIGINAL:
@@ -24083,7 +24083,7 @@ el Inframundo antes de venir aquí.
 ORIGINAL:
 Asagi?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Abajo?
+¿Asagi?
 
 [003951] DIÁLOGO | CLD-004041
 ORIGINAL:
@@ -24453,7 +24453,7 @@ Allí antes.
 ORIGINAL:
 Asagi”
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-"Más bajo"
+Asagi
 
 [004011] DIÁLOGO | CLD-004104
 ORIGINAL:
@@ -24890,7 +24890,7 @@ Asagi
 ORIGINAL:
 Wait!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Esperar!
+¡Espera!
 
 [004083] DIÁLOGO | CLD-004177
 ORIGINAL:
@@ -24932,7 +24932,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Wait!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Esperar!
+¡Espera!
 
 [004090] DIÁLOGO | CLD-004185
 ORIGINAL:
@@ -26441,7 +26441,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [004334] DIÁLOGO | CLD-004431
 ORIGINAL:
@@ -26692,7 +26692,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [004375] DIÁLOGO | CLD-004472
 ORIGINAL:
@@ -26716,7 +26716,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [004379] DIÁLOGO | CLD-004476
 ORIGINAL:
@@ -26889,7 +26889,7 @@ SCRIPT: end02_despina.dsf
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [004407] DIÁLOGO | CLD-004504
 ORIGINAL:
@@ -26949,7 +26949,7 @@ Simplemente estamos hechos de forma diferente.
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [004417] DIÁLOGO | CLD-004514
 ORIGINAL:
@@ -27555,7 +27555,7 @@ Siempre te crees muy superior y poderoso.
 ORIGINAL:
 Coco?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Palma de coco?
+¿Coco?
 
 [004518] DIÁLOGO | CLD-004615
 ORIGINAL:
@@ -27579,7 +27579,7 @@ No tengo nada para que bebas. Lárgate de aquí.
 ORIGINAL:
 Bob?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Chelín?
+¿Bob?
 
 [004522] DIÁLOGO | CLD-004619
 ORIGINAL:
@@ -27591,7 +27591,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Sunday?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Domingo?
+¿Sunday?
 
 [004524] DIÁLOGO | CLD-004621
 ORIGINAL:
@@ -27663,7 +27663,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [004536] DIÁLOGO | CLD-004633
 ORIGINAL:
@@ -27914,7 +27914,7 @@ Oye, ahí está la máscara.
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [004577] DIÁLOGO | CLD-004674
 ORIGINAL:
@@ -27932,7 +27932,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [004580] DIÁLOGO | CLD-004677
 ORIGINAL:
@@ -27962,7 +27962,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [004585] DIÁLOGO | CLD-004682
 ORIGINAL:
@@ -28225,7 +28225,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Sherbet.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sorbete.
+Sherbet.
 
 [004628] DIÁLOGO | CLD-004725
 ORIGINAL:
@@ -28273,7 +28273,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Sherbet. You are utterly useless.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sorbete. Eres completamente inútil.
+Sherbet. Eres completamente inútil.
 
 [004636] DIÁLOGO | CLD-004733
 ORIGINAL:
@@ -28440,7 +28440,7 @@ No está mal, Battleblo.
 ORIGINAL:
 Sunday!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Domingo!
+¡Sunday!
 
 [004663] DIÁLOGO | CLD-004760
 ORIGINAL:
@@ -28680,7 +28680,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [004703] DIÁLOGO | CLD-004800
 ORIGINAL:
@@ -28895,7 +28895,7 @@ Princesa Dot
 ORIGINAL:
 Sherbet.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sorbete.
+Sherbet.
 
 [004738] DIÁLOGO | CLD-004836
 ORIGINAL:
@@ -29039,7 +29039,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [004762] DIÁLOGO | CLD-004860
 ORIGINAL:
@@ -29087,7 +29087,7 @@ la forma de engaño que se me impuso.
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [004770] DIÁLOGO | CLD-004868
 ORIGINAL:
@@ -29123,7 +29123,7 @@ No puedes saberlo hasta que lo intente.
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [004776] DIÁLOGO | CLD-004874
 ORIGINAL:
@@ -29290,7 +29290,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [004803] DIÁLOGO | CLD-004901
 ORIGINAL:
@@ -29326,7 +29326,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [004809] DIÁLOGO | CLD-004907
 ORIGINAL:
@@ -29583,7 +29583,7 @@ Eso es un poco triste...
 ORIGINAL:
 But I'll cheer you on, Sunday...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pero te animaré el domingo...
+Pero te animaré Sunday...
 
 [004851] DIÁLOGO | CLD-004949
 ORIGINAL:
@@ -29595,7 +29595,7 @@ Porque soy tu primer fan...
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [004853] DIÁLOGO | CLD-004952
 ORIGINAL:
@@ -29613,7 +29613,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mascarilla
+Máscara
 
 [004856] DIÁLOGO | CLD-004955
 ORIGINAL:
@@ -29768,7 +29768,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Pumpky
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bragas
+Pumpky
 
 [004881] DIÁLOGO | CLD-004982
 ORIGINAL:
@@ -29792,7 +29792,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Pumpky
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bragas
+Pumpky
 
 [004885] DIÁLOGO | CLD-004986
 ORIGINAL:
@@ -29840,7 +29840,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Pumi
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mangos
+Pumi
 
 [004893] DIÁLOGO | CLD-004996
 ORIGINAL:
@@ -29864,7 +29864,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Pumi
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mangos
+Pumi
 
 [004897] DIÁLOGO | CLD-005000
 ORIGINAL:
@@ -31219,7 +31219,7 @@ SCRIPT: atkDefComment.dsf
 ORIGINAL:
 Hiyo Hermit
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ese ermitaño
+Ermitaño Hiyo
 
 [005121] DIÁLOGO | CLD-005311
 ORIGINAL:
@@ -31297,7 +31297,7 @@ ESPAÑOL (posteditado_contextualmente_por_IA):
 ORIGINAL:
 Oho!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Despertar!
+¡Oh!
 
 [005134] DIÁLOGO | CLD-005324
 ORIGINAL:
@@ -31549,7 +31549,7 @@ ESPAÑOL (posteditado_contextualmente_por_IA):
 ORIGINAL:
 Oho!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Despertar!
+¡Oh!
 
 [005176] DIÁLOGO | CLD-005366
 ORIGINAL:
@@ -38766,7 +38766,7 @@ Tara
 ORIGINAL:
 Salmon
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Salmón
+Salmon
 
 [006281] NOMBRES JEFES | CLD-006512
 ORIGINAL:
@@ -38778,25 +38778,25 @@ Massa
 ORIGINAL:
 Snapper
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pargo
+Snapper
 
 [006283] NOMBRES JEFES | CLD-006514
 ORIGINAL:
 Swordfish
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pez espada
+Swordfish
 
 [006284] NOMBRES JEFES | CLD-006515
 ORIGINAL:
 Harbinger
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Heraldo
+Harbinger
 
 [006285] NOMBRES JEFES | CLD-006516
 ORIGINAL:
 Pine
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pino
+Pine
 
 [006286] NOMBRES JEFES | CLD-006517
 ORIGINAL:
@@ -38874,25 +38874,25 @@ Dogo
 ORIGINAL:
 Doom Dragon
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Dragón de la Perdición
+Doom Dragon
 
 [006299] NOMBRES JEFES | CLD-006530
 ORIGINAL:
 Dark Knight
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Caballero Oscuro
+Dark Knight
 
 [006300] NOMBRES JEFES | CLD-006531
 ORIGINAL:
 Phantom
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Fantasma
+Phantom
 
 [006301] NOMBRES JEFES | CLD-006532
 ORIGINAL:
 Bloodbath
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Matanza
+Bloodbath
 
 [006302] NOMBRES JEFES | CLD-006533
 ORIGINAL:
@@ -38958,31 +38958,31 @@ EL No.1
 ORIGINAL:
 Benchwarmer
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Suplente
+Benchwarmer
 
 [006313] NOMBRES JEFES | CLD-006544
 ORIGINAL:
 Boss No.1
 ESPAÑOL (posteditado_contextualmente_por_IA):
-Jefe 1
+Boss No.1
 
 [006314] NOMBRES JEFES | CLD-006545
 ORIGINAL:
 Cat
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Gato
+Cat
 
 [006315] NOMBRES JEFES | CLD-006546
 ORIGINAL:
 Gondola
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Góndola
+Gondola
 
 [006316] NOMBRES JEFES | CLD-006547
 ORIGINAL:
 Wiiiich
 ESPAÑOL (posteditado_contextualmente_por_IA):
-Bruuuuja
+Wiiiich
 
 [006317] NOMBRES JEFES | CLD-006548
 ORIGINAL:
@@ -39030,13 +39030,13 @@ Maginabo
 ORIGINAL:
 Seven
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Siete
+Seven
 
 [006325] NOMBRES JEFES | CLD-006556
 ORIGINAL:
 Eight
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ocho
+Eight
 
 [006326] NOMBRES JEFES | CLD-006557
 ORIGINAL:
@@ -39048,7 +39048,7 @@ Xantos
 ORIGINAL:
 Titan
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Titán
+Titan
 
 [006328] NOMBRES JEFES | CLD-006559
 ORIGINAL:
@@ -39072,19 +39072,19 @@ Neim
 ORIGINAL:
 Moneyman
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hombre de dinero
+Moneyman
 
 [006332] NOMBRES JEFES | CLD-006563
 ORIGINAL:
 Wraith
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Fantasma
+Wraith
 
 [006333] NOMBRES JEFES | CLD-006564
 ORIGINAL:
 Ghosty
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Fantasma
+Ghosty
 
 [006334] NOMBRES JEFES | CLD-006565
 ORIGINAL:
@@ -39108,7 +39108,7 @@ Kitty
 ORIGINAL:
 Red Zombie
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Zombi rojo
+Red Zombie
 
 [006338] NOMBRES JEFES | CLD-006569
 ORIGINAL:
@@ -39120,7 +39120,7 @@ Galci
 ORIGINAL:
 Pappino
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Papino
+Pappino
 
 [006340] NOMBRES JEFES | CLD-006571
 ORIGINAL:
@@ -39156,7 +39156,7 @@ Simma
 ORIGINAL:
 Wargod
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-dios de la guerra
+Wargod
 
 [006346] NOMBRES JEFES | CLD-006577
 ORIGINAL:
@@ -39174,13 +39174,13 @@ Suzaki
 ORIGINAL:
 Hornet
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Avispón
+Hornet
 
 [006349] NOMBRES JEFES | CLD-006580
 ORIGINAL:
 Knocker
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Aldaba
+Knocker
 
 [006350] NOMBRES JEFES | CLD-006581
 ORIGINAL:
@@ -39228,25 +39228,25 @@ Zazan
 ORIGINAL:
 Bhole Surfer
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Surfista de agujeros
+Bhole Surfer
 
 [006358] NOMBRES JEFES | CLD-006589
 ORIGINAL:
 IceQueenYoko
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Reina de Hielo Yoko
+IceQueenYoko
 
 [006359] NOMBRES JEFES | CLD-006590
 ORIGINAL:
 King Ma
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Rey Ma
+King Ma
 
 [006360] NOMBRES JEFES | CLD-006591
 ORIGINAL:
 Kunoichi
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-kunoichi
+Kunoichi
 
 [006361] NOMBRES JEFES | CLD-006592
 ORIGINAL:
@@ -39258,7 +39258,7 @@ Guhaha
 ORIGINAL:
 Meowzer
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Miau
+Meowzer
 
 [006363] NOMBRES JEFES | CLD-006594
 ORIGINAL:
@@ -39312,7 +39312,7 @@ Tanturn
 ORIGINAL:
 Jaws
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Fauces
+Jaws
 
 [006372] NOMBRES JEFES | CLD-006603
 ORIGINAL:
@@ -39324,7 +39324,7 @@ Nov
 ORIGINAL:
 Mandom
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hombre
+Mandom
 
 [006374] NOMBRES JEFES | CLD-006605
 ORIGINAL:
@@ -39336,7 +39336,7 @@ Ozur
 ORIGINAL:
 Dill
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Eneldo
+Dill
 
 [006376] NOMBRES JEFES | CLD-006607
 ORIGINAL:
@@ -39390,7 +39390,7 @@ Menmen
 ORIGINAL:
 Mudman
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hombre de barro
+Mudman
 
 [006385] NOMBRES JEFES | CLD-006616
 ORIGINAL:
@@ -39438,7 +39438,7 @@ Eyeroot
 ORIGINAL:
 Glassy
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Vidrioso
+Glassy
 
 [006393] NOMBRES JEFES | CLD-006624
 ORIGINAL:
@@ -39450,7 +39450,7 @@ Yuli
 ORIGINAL:
 Russel
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Russell
+Russel
 
 [006395] NOMBRES JEFES | CLD-006626
 ORIGINAL:
@@ -39474,7 +39474,7 @@ Kinton
 ORIGINAL:
 Gourme
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Gourmet
+Gourme
 
 [006399] NOMBRES JEFES | CLD-006630
 ORIGINAL:
@@ -39486,7 +39486,7 @@ Jii
 ORIGINAL:
 Leggy
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Zanquilargo
+Leggy
 
 [006401] NOMBRES JEFES | CLD-006632
 ORIGINAL:
@@ -39504,7 +39504,7 @@ Xantor
 ORIGINAL:
 Blackheart
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Corazón Negro
+Blackheart
 
 [006404] NOMBRES JEFES | CLD-006635
 ORIGINAL:
@@ -39567,7 +39567,7 @@ Muchos círculos mágicos basados en ATK.
 ORIGINAL:
 High HP, low Mana.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Muchos puntos de vida, poco maná.
+Mucha vida, poco maná.
 
 [006413] PERSONAJES | CLD-006644
 ORIGINAL:
@@ -39601,7 +39601,7 @@ Sube de nivel para aprender magia de ataque.
 ORIGINAL:
 Focus on SP, but less spaces for Subs.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Concéntrese en los lanzadores abridores, pero deje menos espacio para los suplentes.
+Prioriza los SP, pero tiene menos casillas para personajes de apoyo.
 
 [006418] PERSONAJES | CLD-006649
 ORIGINAL:
@@ -39619,7 +39619,7 @@ Souma
 ORIGINAL:
 A boy whipped by Pudding. Constantly worrying.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Un niño azotado por Pudding. Constantemente preocupado.
+Un chico dominado por Pudding, siempre preocupado.
 
 [006421] PERSONAJES | CLD-006653
 ORIGINAL:
@@ -39653,7 +39653,7 @@ Habilidades promedio.
 ORIGINAL:
 Sherbet
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sorbete
+Sherbet
 
 [006426] PERSONAJES | CLD-006658
 ORIGINAL:
@@ -39681,7 +39681,7 @@ Sube de nivel para aprender magia de curación/apoyo.
 ORIGINAL:
 Lots of space for Subs with level up bonuses.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mucho espacio para suscripciones con bonificaciones por subir de nivel.
+Muchas casillas para personajes de apoyo, con bonificaciones al subir de nivel.
 
 [006430] PERSONAJES | CLD-006662
 ORIGINAL:
@@ -39693,7 +39693,7 @@ Puntos de vida bajos, maná bajo.
 ORIGINAL:
 Coco
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Palma de coco
+Coco
 
 [006432] PERSONAJES | CLD-006664
 ORIGINAL:
@@ -39801,7 +39801,7 @@ Sube de nivel para aprender magia de curación/apoyo.
 ORIGINAL:
 Lots of space for Subs with level up bonuses.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mucho espacio para suscripciones con bonificaciones por subir de nivel.
+Muchas casillas para personajes de apoyo, con bonificaciones al subir de nivel.
 
 [006448] PERSONAJES | CLD-006681
 ORIGINAL:
@@ -39813,13 +39813,13 @@ Puntos de vida bajos, maná bajo.
 ORIGINAL:
 Bob
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Chelín
+Bob
 
 [006450] PERSONAJES | CLD-006683
 ORIGINAL:
 A constantly excited man with a fro.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Un hombre constantemente excitado con un peinado afro.
+Un hombre siempre entusiasmado y con peinado afro.
 
 [006451] PERSONAJES | CLD-006684
 ORIGINAL:
@@ -39841,7 +39841,7 @@ Sube de nivel para aprender magia de ataque.
 ORIGINAL:
 Focus on SP, but less spaces for Subs.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Concéntrese en los lanzadores abridores, pero deje menos espacio para los suplentes.
+Prioriza los SP, pero tiene menos casillas para personajes de apoyo.
 
 [006454] PERSONAJES | CLD-006687
 ORIGINAL:
@@ -39853,7 +39853,7 @@ Maná alto, puntos de vida bajos.
 ORIGINAL:
 Sunday
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Domingo
+Sunday
 
 [006456] PERSONAJES | CLD-006689
 ORIGINAL:
@@ -39940,7 +39940,7 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 マナは高いがHPが低い。
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tiene mucha mana pero poca HP.
+Tiene mucho maná, pero pocos HP.
 QA: estado_fuente_pendiente
 
 [006469] PERSONAJES | CLD-006703
@@ -39963,7 +39963,7 @@ Sube de nivel para aprender magia de ataque.
 ORIGINAL:
 Focus on SP, but less spaces for Subs.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Concéntrese en los lanzadores abridores, pero deje menos espacio para los suplentes.
+Prioriza los SP, pero tiene menos casillas para personajes de apoyo.
 
 [006472] PERSONAJES | CLD-006706
 ORIGINAL:
@@ -40010,13 +40010,13 @@ Masa
 ORIGINAL:
 Nine
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Nueve
+Nine
 
 [006479] NOMBRES PERSONAJES | CLD-006713
 ORIGINAL:
 Rich
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Rico
+Rich
 
 [006480] NOMBRES PERSONAJES | CLD-006714
 ORIGINAL:
@@ -40040,7 +40040,7 @@ Dogma
 ORIGINAL:
 Buggy
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Calesa
+Buggy
 
 [006484] NOMBRES PERSONAJES | CLD-006718
 ORIGINAL:
@@ -40094,7 +40094,7 @@ Gudd
 ORIGINAL:
 Beads
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Rosario
+Beads
 
 [006493] NOMBRES PERSONAJES | CLD-006727
 ORIGINAL:
@@ -40124,7 +40124,7 @@ Akir
 ORIGINAL:
 Dull
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Aburrido
+Dull
 
 [006498] NOMBRES PERSONAJES | CLD-006732
 ORIGINAL:
@@ -40154,7 +40154,7 @@ Nick
 ORIGINAL:
 Potter
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Alfarero
+Potter
 
 [006503] NOMBRES PERSONAJES | CLD-006737
 ORIGINAL:
@@ -40166,13 +40166,13 @@ Doko
 ORIGINAL:
 Basque
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-vasco
+Basque
 
 [006505] NOMBRES PERSONAJES | CLD-006739
 ORIGINAL:
 Flak
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Fuego antiaéreo
+Flak
 
 [006506] NOMBRES PERSONAJES | CLD-006740
 ORIGINAL:
@@ -40196,7 +40196,7 @@ Dan
 ORIGINAL:
 Melado
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Melaza
+Melado
 
 [006510] NOMBRES PERSONAJES | CLD-006744
 ORIGINAL:
@@ -40214,7 +40214,7 @@ Kai
 ORIGINAL:
 Muddler
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mezclador
+Muddler
 
 [006513] NOMBRES PERSONAJES | CLD-006747
 ORIGINAL:
@@ -40292,13 +40292,13 @@ Jin
 ORIGINAL:
 Kaiser
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Emperador
+Kaiser
 
 [006526] NOMBRES PERSONAJES | CLD-006760
 ORIGINAL:
 Bambino
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Niño
+Bambino
 
 [006527] NOMBRES PERSONAJES | CLD-006761
 ORIGINAL:
@@ -40310,7 +40310,7 @@ Redd
 ORIGINAL:
 Blu
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Azul
+Blu
 
 [006529] NOMBRES PERSONAJES | CLD-006763
 ORIGINAL:
@@ -40334,13 +40334,13 @@ Goro
 ORIGINAL:
 Ten
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Diez
+Ten
 
 [006533] NOMBRES PERSONAJES | CLD-006767
 ORIGINAL:
 Pulse
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Legumbres
+Pulse
 
 [006534] NOMBRES PERSONAJES | CLD-006768
 ORIGINAL:
@@ -40358,7 +40358,7 @@ Galo
 ORIGINAL:
 Janus
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Jano
+Janus
 
 [006537] NOMBRES PERSONAJES | CLD-006771
 ORIGINAL:
@@ -40418,7 +40418,7 @@ Koro
 ORIGINAL:
 Lucky
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Afortunado
+Lucky
 
 [006547] NOMBRES PERSONAJES | CLD-006781
 ORIGINAL:
@@ -40466,13 +40466,13 @@ Deckie
 ORIGINAL:
 Flint
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pedernal
+Flint
 
 [006555] NOMBRES PERSONAJES | CLD-006789
 ORIGINAL:
 Taurus
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tauro
+Taurus
 
 [006556] NOMBRES PERSONAJES | CLD-006790
 ORIGINAL:
@@ -40490,7 +40490,7 @@ Ikkii
 ORIGINAL:
 Dogi
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Dogos
+Dogi
 
 [006559] NOMBRES PERSONAJES | CLD-006793
 ORIGINAL:
@@ -40508,7 +40508,7 @@ Bogo
 ORIGINAL:
 Gerrard
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Gerard
+Gerrard
 
 [006562] NOMBRES PERSONAJES | CLD-006796
 ORIGINAL:
@@ -40592,7 +40592,7 @@ Pich
 ORIGINAL:
 Bros
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hermanos
+Bros
 
 [006576] NOMBRES PERSONAJES | CLD-006810
 ORIGINAL:
@@ -40604,7 +40604,7 @@ Din
 ORIGINAL:
 Slash
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Barra oblicua
+Slash
 
 [006578] NOMBRES PERSONAJES | CLD-006812
 ORIGINAL:
@@ -40622,7 +40622,7 @@ Daigo
 ORIGINAL:
 Gap
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Brecha
+Gap
 
 [006581] NOMBRES PERSONAJES | CLD-006815
 ORIGINAL:
@@ -40711,7 +40711,7 @@ Miu
 ORIGINAL:
 Berry
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Baya
+Berry
 
 [006595] NOMBRES PERSONAJES | CLD-006829
 ORIGINAL:
@@ -40723,7 +40723,7 @@ Pel
 ORIGINAL:
 Ladybug
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mariquita
+Ladybug
 
 [006597] NOMBRES PERSONAJES | CLD-006831
 ORIGINAL:
@@ -40741,7 +40741,7 @@ Kotori
 ORIGINAL:
 Maya
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-maya
+Maya
 
 [006600] NOMBRES PERSONAJES | CLD-006834
 ORIGINAL:
@@ -40765,7 +40765,7 @@ Saya
 ORIGINAL:
 Pacific
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pacífico
+Pacific
 
 [006604] NOMBRES PERSONAJES | CLD-006838
 ORIGINAL:
@@ -40801,13 +40801,13 @@ Liza
 ORIGINAL:
 Roxanne
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Roxana
+Roxanne
 
 [006610] NOMBRES PERSONAJES | CLD-006844
 ORIGINAL:
 Lily
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Lirio
+Lily
 
 [006611] NOMBRES PERSONAJES | CLD-006845
 ORIGINAL:
@@ -40831,7 +40831,7 @@ Katel
 ORIGINAL:
 Kefir
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Kéfir
+Kefir
 
 [006615] NOMBRES PERSONAJES | CLD-006849
 ORIGINAL:
@@ -40849,7 +40849,7 @@ Abelia
 ORIGINAL:
 Giddy
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mareado
+Giddy
 
 [006618] NOMBRES PERSONAJES | CLD-006852
 ORIGINAL:
@@ -40897,7 +40897,7 @@ Cotte
 ORIGINAL:
 Belle
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Beldad
+Belle
 
 [006626] NOMBRES PERSONAJES | CLD-006860
 ORIGINAL:
@@ -40927,7 +40927,7 @@ Plana
 ORIGINAL:
 Lutefisk
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-pez laúd
+Lutefisk
 
 [006631] NOMBRES PERSONAJES | CLD-006865
 ORIGINAL:
@@ -40993,7 +40993,7 @@ Tohka
 ORIGINAL:
 Pinkie
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Dedo meñique
+Pinkie
 
 [006642] NOMBRES PERSONAJES | CLD-006876
 ORIGINAL:
@@ -41029,19 +41029,19 @@ Alyssa
 ORIGINAL:
 Marin
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Marín
+Marin
 
 [006648] NOMBRES PERSONAJES | CLD-006882
 ORIGINAL:
 Marylin
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Marilyn
+Marylin
 
 [006649] NOMBRES PERSONAJES | CLD-006883
 ORIGINAL:
 Sutro
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sutra
+Sutro
 
 [006650] NOMBRES PERSONAJES | CLD-006884
 ORIGINAL:
@@ -41089,7 +41089,7 @@ Marie
 ORIGINAL:
 Kool
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Genial
+Kool
 
 [006658] NOMBRES PERSONAJES | CLD-006892
 ORIGINAL:
@@ -41155,7 +41155,7 @@ Kotsu
 ORIGINAL:
 Rio
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Río
+Rio
 
 [006669] NOMBRES PERSONAJES | CLD-006903
 ORIGINAL:
@@ -41173,7 +41173,7 @@ Lilly
 ORIGINAL:
 Piper
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Flautista
+Piper
 
 [006672] NOMBRES PERSONAJES | CLD-006906
 ORIGINAL:
@@ -41227,7 +41227,7 @@ Mako
 ORIGINAL:
 Sandie
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Arenoso
+Sandie
 
 [006681] NOMBRES PERSONAJES | CLD-006915
 ORIGINAL:
@@ -41293,7 +41293,7 @@ Steph
 ORIGINAL:
 Chime
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Repicar
+Chime
 
 [006692] NOMBRES PERSONAJES | CLD-006926
 ORIGINAL:
@@ -41317,7 +41317,7 @@ Machter
 ORIGINAL:
 Pallas
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Palas
+Pallas
 
 [006696] NOMBRES PERSONAJES | CLD-006930
 ORIGINAL:
@@ -41329,7 +41329,7 @@ Saki
 ORIGINAL:
 Cloche
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Campana
+Cloche
 
 [006698] NOMBRES PERSONAJES | CLD-006932
 ORIGINAL:
@@ -41371,7 +41371,7 @@ Milt
 ORIGINAL:
 Pan
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cacerola
+Pan
 
 [006705] NOMBRES PERSONAJES | CLD-006939
 ORIGINAL:
@@ -41407,7 +41407,7 @@ Komo
 ORIGINAL:
 Daisy
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Margarita
+Daisy
 
 [006711] NOMBRES PERSONAJES | CLD-006945
 ORIGINAL:
@@ -41419,7 +41419,7 @@ Shurelia
 ORIGINAL:
 Melon
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Melón
+Melon
 
 [006713] NOMBRES PERSONAJES | CLD-006947
 ORIGINAL:
@@ -41455,7 +41455,7 @@ Sunnie
 ORIGINAL:
 Violet
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Violeta
+Violet
 
 
 ##################################################################
@@ -41473,7 +41473,7 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 グミ
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pegajoso
+Gumi
 QA: estado_fuente_pendiente
 
 [006721] NOMBRES PERSONAJES | CLD-006954
@@ -41494,7 +41494,7 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 シャーベット
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-sorbete
+Sherbet
 QA: estado_fuente_pendiente
 
 [006724] NOMBRES PERSONAJES | CLD-006957
@@ -41508,21 +41508,21 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 ココ
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Palma de coco
+Coco
 QA: estado_fuente_pendiente
 
 [006726] NOMBRES PERSONAJES | CLD-006958
 ORIGINAL:
 バトルブロー
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Golpe de batalla
+Battleblo
 QA: estado_fuente_pendiente
 
 [006727] NOMBRES PERSONAJES | CLD-006959
 ORIGINAL:
 エージ
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-edad
+Eiji
 QA: estado_fuente_pendiente
 
 [006728] NOMBRES PERSONAJES | CLD-006960
@@ -41536,14 +41536,14 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 ボブ
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Chelín
+Bob
 QA: estado_fuente_pendiente
 
 [006730] NOMBRES PERSONAJES | CLD-006961
 ORIGINAL:
 サンデー
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Domingo
+Sunday
 QA: estado_fuente_pendiente
 
 [006731] NOMBRES PERSONAJES | CLD-006962
@@ -46100,7 +46100,7 @@ Es hora de una batalla campal.
 ORIGINAL:
 Run!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Correr!
+¡Corre!
 
 [007422] LUGARES MAZMORRAS | CLD-007653
 ORIGINAL:
@@ -46280,7 +46280,7 @@ Es hora de una batalla campal.
 ORIGINAL:
 Run!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Correr!
+¡Corre!
 
 [007452] LUGARES MAZMORRAS | CLD-007683
 ORIGINAL:
@@ -46460,7 +46460,7 @@ Es hora de una batalla campal.
 ORIGINAL:
 Run!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Correr!
+¡Corre!
 
 [007482] LUGARES MAZMORRAS | CLD-007713
 ORIGINAL:
@@ -46640,7 +46640,7 @@ Es hora de una batalla campal.
 ORIGINAL:
 Run!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Correr!
+¡Corre!
 
 [007512] LUGARES MAZMORRAS | CLD-007743
 ORIGINAL:
@@ -53859,7 +53859,7 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 グミ
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pegajoso
+Gumi
 QA: estado_fuente_pendiente
 
 [008497] NOMBRES PERSONAJES | CLD-008756
@@ -53880,7 +53880,7 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 シャーベット
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-sorbete
+Sherbet
 QA: estado_fuente_pendiente
 
 [008500] NOMBRES PERSONAJES | CLD-008759
@@ -53894,21 +53894,21 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 ココ
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Palma de coco
+Coco
 QA: estado_fuente_pendiente
 
 [008502] NOMBRES PERSONAJES | CLD-008760
 ORIGINAL:
 バトルブロー
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Golpe de batalla
+Battleblo
 QA: estado_fuente_pendiente
 
 [008503] NOMBRES PERSONAJES | CLD-008761
 ORIGINAL:
 エージ
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-edad
+Eiji
 QA: estado_fuente_pendiente
 
 [008504] NOMBRES PERSONAJES | CLD-008762
@@ -53922,14 +53922,14 @@ QA: estado_fuente_pendiente
 ORIGINAL:
 ボブ
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Chelín
+Bob
 QA: estado_fuente_pendiente
 
 [008506] NOMBRES PERSONAJES | CLD-008763
 ORIGINAL:
 サンデー
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Domingo
+Sunday
 QA: estado_fuente_pendiente
 
 [008507] NOMBRES PERSONAJES | CLD-008764
@@ -55467,7 +55467,7 @@ QA: estado_fuente_pendiente|bytes_incompletos
 ORIGINAL:
 炎上
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Controversia
+En llamas
 QA: estado_fuente_pendiente
 
 [008726] ATRIBUTOS TERRENO | CLD-F-TIPATTR-0217-nombre_atributo
