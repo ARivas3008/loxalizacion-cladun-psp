@@ -11,6 +11,12 @@ Aplicación nativa Go/Win32 sin Python, C, .NET ni instalación de runtimes. La 
 - El ejecutable **privado de pruebas** se compila incorporando un BPS ya generado y verificado por el integrador de este proyecto. Entonces sí aplica la traducción sin solicitar ningún archivo adicional. No debe publicarse como parche jugable hasta validar PPSSPP.
 - La antigua versión `parcheador-v0.1.0` pedía un `.bps` por separado y además tenía una constante SHA-256 incompleta. **Está obsoleta y no debe utilizarse**.
 
+## Corrección de «Examinar» — v0.1.1
+
+En Windows, `GetOpenFileNameW` requiere que la lista de filtros esté representada como una cadena UTF-16 con separadores NUL. El código anterior utilizaba `syscall.StringToUTF16` sobre un texto con `\x00`, lo que provoca un **panic** en Go y cierra el programa al pulsar **Examinar**. Ahora se construye el filtro mediante `utf16.Encode` sin perder los separadores. También se informa de errores Win32 distintos de la cancelación normal, se mantienen vivos los buffers durante la llamada modal y se añadió una prueba de regresión de los filtros y del tamaño de `OPENFILENAMEW` en Windows x64.
+
+El `.exe` privado v0.1.1 conserva el parche BPS incorporado: **solo se selecciona la ISO original**. La compilación pública de GitHub sigue siendo una vista previa sin traducción integrada, por la falta de validación en PPSSPP.
+
 ## Interfaz de usuario
 
 1. Abrir el `.exe` experimental entregado para pruebas.

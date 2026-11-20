@@ -9,6 +9,7 @@ import (
 	"strings"
 	"sync"
 	"syscall"
+	"unicode/utf16"
 	"unsafe"
 
 	"github.com/ARivas3008/loxalizacion-cladun-psp/patcher/internal/automatic"
@@ -52,6 +53,7 @@ var (
 	procDeleteObject    = gdi32.NewProc("DeleteObject")
 	procGetOpenFile     = comdlg32.NewProc("GetOpenFileNameW")
 	procGetSaveFile     = comdlg32.NewProc("GetSaveFileNameW")
+	procCommDlgError    = comdlg32.NewProc("CommDlgExtendedError")
 )
 
 const (
@@ -252,18 +254,36 @@ func createUI(hwnd uintptr) {
 	call(procSetTimer, hwnd, timerID, 125, 0)
 }
 
+// OPENFILENAMEW requires a multi-string: display\0pattern\0...\0\0.
+// syscall.StringToUTF16 deliberately panics on embedded NUL; that used to
+// crash the entire GUI as soon as the user pressed "Examinar".
+func isoFilterUTF16() []uint16 {
+	return utf16.Encode([]rune("Imagen PSP (*.iso)\x00*.iso\x00Todos los archivos (*.*)\x00*.*\x00\x00"))
+}
+
 func chooseFile() string {
 	buf := make([]uint16, 32768)
-	filter := "Imagen PSP (*.iso)\x00*.iso\x00Todos los archivos (*.*)\x00*.*\x00\x00"
-	f := syscall.StringToUTF16(filter)
+	filter := isoFilterUTF16()
+	title := u16("Seleccionar ISO original de Cladun (USA)")
+	defExt := u16("iso")
 	options := openFileName{
-		Owner: app.hwnd, Filter: &f[0], File: &buf[0], MaxFile: uint32(len(buf)),
-		Title:  u16("Seleccionar ISO original de Cladun (USA)"),
+		Owner: app.hwnd, Filter: &filter[0], File: &buf[0], MaxFile: uint32(len(buf)),
+		Title:  title,
 		Flags:  ofnExplorer | ofnNoChangeDir | ofnPathMustExist | ofnFileMustExist,
-		DefExt: u16("iso"),
+		DefExt: defExt,
 	}
 	options.StructSize = uint32(unsafe.Sizeof(options))
-	if call(procGetOpenFile, uintptr(unsafe.Pointer(&options))) == 0 {
+	chosen := call(procGetOpenFile, uintptr(unsafe.Pointer(&options)))
+	// The Win32 common dialog retains these pointers for the whole modal call.
+	runtime.KeepAlive(filter)
+	runtime.KeepAlive(buf)
+	runtime.KeepAlive(title)
+	runtime.KeepAlive(defExt)
+	if chosen == 0 {
+		// Cancel is not an error, but failures must not silently vanish.
+		if code := call(procCommDlgError); code != 0 {
+			showError("No se pudo abrir el explorador", fmt.Sprintf("Windows devolvió el error 0x%04X al abrir el selector de ISO.", code))
+		}
 		return ""
 	}
 	return syscall.UTF16ToString(buf)
@@ -432,7 +452,7 @@ func main() {
 		showError("Error de inicio", "No se pudo registrar la ventana de Windows.")
 		return
 	}
-	hwnd := call(procCreateWindow, 0, uintptr(unsafe.Pointer(className)), uintptr(unsafe.Pointer(u16("Cladun · ISO al español (experimental)"))), wsOverlappedWindow|wsVisible|wsClipChildren,
+	hwnd := call(procCreateWindow, 0, uintptr(unsafe.Pointer(className)), uintptr(unsafe.Pointer(u16("Cladun · ISO al español (experimental) v0.1.1"))), wsOverlappedWindow|wsVisible|wsClipChildren,
 		140, 80, 772, 643, 0, 0, instance, 0)
 	if hwnd == 0 {
 		return
