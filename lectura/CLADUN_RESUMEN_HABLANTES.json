@@ -1,0 +1,15 @@
+{
+  "total_csv": 9237,
+  "total_texto_script": 5207,
+  "total_fuera_script": 4030,
+  "conteos_atribucion": {
+    "sin_hablante_verificable": 3579,
+    "opcion_del_jugador": 113,
+    "primer_mensaje_tras_nombre": 319,
+    "continuidad_corta_probable": 715,
+    "primer_mensaje_tras_nombre_probable": 81
+  },
+  "csv_fuente_sha256": "f0a56ae0c773982e137fd0d2a99cbe52f27f836eebcf41800e5c8a6d6260e6f9",
+  "csv_borrador_sha256": "fe39e4cd10d35be39c24cb29e6d30153296c081d31cf66edbaa5aa94eac32b2d",
+  "aviso": "Atribución de guion es una guía y no evidencia visual completa. Debe cotejarse en PPSSPP."
+}
