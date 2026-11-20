@@ -25,6 +25,7 @@ from extract_cladun import iso9660_entries, read_iso_file, pspfs_entries, dsarc_
 from font_es_patch import SOURCE_SHA256, sha256_file
 from font_es_narrow import build as build_font, verify as verify_font
 from imy_repack_safe import recompress
+from script_event_guard import audit_script_rebuild
 from ajustes_campos_es import effective
 from graficos_texto_es import GRAPHICS, patch_png
 
@@ -215,7 +216,7 @@ def slot_not_in_command(start, end, allowed):
     return not any(start <= off < end for off in allowed)
 
 
-def rebuild_script_arc(archive, replacements):
+def rebuild_script_arc(archive, replacements, *, event_report=None, strict_event_offsets=False):
     children = dsarc_entries(archive)
     by_name = {x["name"]: x for x in children}
     require(set(by_name) == {"AISCRIPT.DAT", "AISCRIPT.TBL", "SCRIPT.DAT", "SCRIPT.TBL"},
@@ -225,6 +226,12 @@ def rebuild_script_arc(archive, replacements):
     script_old = archive[script["offset"]:script["offset"] + script["size"]]
     tbl_old = archive[tbl["offset"]:tbl["offset"] + tbl["size"]]
     new_script, new_tbl = text_command_rebuild(script_old, tbl_old, replacements)
+    # Independent command-by-command comparison before any DSARC or IMY packing.
+    event_audit = audit_script_rebuild(
+        script_old, tbl_old, new_script, new_tbl, replacements,
+        require_fixed_offsets=strict_event_offsets)
+    if event_report is not None:
+        event_report.update(event_audit)
     new_tbl_start = strict_next(script["offset"] + len(new_script), 512)
     archive_len = align(new_tbl_start + len(new_tbl), 256)
     result = bytearray(archive_len)
@@ -628,12 +635,29 @@ def append_text_containers(source_iso, source_pack, entries, replacements, resul
 
 
 def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
-          experimental_partial=False, add_spanish_font=True):
+          experimental_partial=False, add_spanish_font=True, event_safe_only=False):
     source_iso, candidate, report = map(Path, (source_iso, candidate, report))
     require(source_iso.resolve() != candidate.resolve(), "Cannot overwrite source ISO")
     require(sha256_file(source_iso) == SOURCE_SHA256, "Wrong Cladun USA source ISO")
     rows = source_rows(source_csv, draft_csv)
     changes, blocked, unchanged = plan_rows(rows)
+    event_deferred = []
+    if event_safe_only:
+        # An equal-byte replacement cannot move a later opcode or script start.
+        # This deliberately skips longer/shorter translations rather than
+        # risking a hidden jump to an obsolete command offset.
+        allowed = []
+        for src, old, new in changes.get(TARGET_SCRIPT, []):
+            if len(old) == len(new):
+                allowed.append((src, old, new))
+            else:
+                event_deferred.append(src["grupo_id"])
+                blocked.append({"grupo_id": src["grupo_id"],
+                                "motivo": "CAMBIO_LONGITUD_SCRIPT_EVENTO_PENDIENTE"})
+        if allowed:
+            changes[TARGET_SCRIPT] = allowed
+        else:
+            changes.pop(TARGET_SCRIPT, None)
     all_changed = sum(len(x) for x in changes.values())
     counted = Counter(x["motivo"] for x in blocked)
     result = {"estado": "BLOQUEADO_SIN_CANDIDATO", "original_sha256": SOURCE_SHA256,
@@ -642,6 +666,8 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
               "bloqueos": dict(counted),
               "bloqueos_por_grupo": blocked,
               "modo_completo": not experimental_partial,
+              "modo_eventos_offsets_fijos": event_safe_only,
+              "dialogos_pospuestos_por_desplazamiento": len(event_deferred),
               "ppsspp_validado": False, "aprobado_para_distribucion": False}
     report.parent.mkdir(parents=True, exist_ok=True)
     report.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -661,6 +687,7 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
         table = {e["name"]: e for e in entries}
         replacements = {}
         applied = set()
+        event_audit = None
         if TARGET_SCRIPT in changes:
             stored, raw, method = parent_content(package, table["SCRIPT.SDT"])
             require(method.startswith("IMY"), "SCRIPT.SDT compression format changed")
@@ -669,7 +696,10 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
                 at = int(src["offset_hex"], 16)
                 require(at not in script_changes, "Duplicate SCRIPT.DAT text offset")
                 script_changes[at] = (old, new, src["grupo_id"])
-            rewritten = rebuild_script_arc(raw, script_changes)
+            event_audit = {}
+            rewritten = rebuild_script_arc(
+                raw, script_changes, event_report=event_audit,
+                strict_event_offsets=event_safe_only)
             replacements["SCRIPT.SDT"] = (recompress(stored, rewritten), len(rewritten))
             applied.update(a["grupo_id"] for a, old, new in changes[TARGET_SCRIPT])
 
@@ -728,7 +758,13 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
                        "recursos_no_textuales_mismo_offset_y_mismos_bytes": 349 - len(replacements),
                        "fuente_es_prototipo": add_spanish_font,
                        "graficos_textuales_verificados": graphic_audits,
-                       "todos_los_textos_insertados": len(blocked) == 0})
+                       "todos_los_textos_insertados": len(blocked) == 0,
+                       "auditoria_eventos": event_audit,
+                       "control_logico_no_textual_intacto": bool(event_audit and
+                           event_audit["nontext_payload_changes"] == 0 and
+                           event_audit["opcode_instruction_id_order_changes"] == 0),
+                       "offsets_de_comandos_preservados": bool(event_audit and
+                           event_audit["all_command_offsets_preserved"])})
         report.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n",
                           encoding="utf-8")
     return result
@@ -745,12 +781,15 @@ def main():
     p.add_argument("--experimental-parcial", action="store_true",
                    help="Allow candidate with unhandled text (never claim full translation)")
     p.add_argument("--sin-fuente", action="store_true", help="Developer-only, no Spanish glyphs")
+    p.add_argument("--event-safe-only", action="store_true",
+                   help="Conservar absolutamente todos los offsets de comandos; pospone textos de longitud diferente")
     args = p.parse_args()
     try:
         summary = build(args.iso, args.candidate, args.report,
                         source_csv=args.original, draft_csv=args.borrador,
                         experimental_partial=args.experimental_parcial,
-                        add_spanish_font=not args.sin_fuente)
+                        add_spanish_font=not args.sin_fuente,
+                        event_safe_only=args.event_safe_only)
         print(json.dumps({k: v for k, v in summary.items() if k != "bloqueos_por_grupo"},
                          indent=2, ensure_ascii=False))
     except Exception as exc:
