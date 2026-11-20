@@ -113,18 +113,32 @@ def build_bps(source: Path, target: Path, patch: Path) -> dict:
             pending = 0
             kind = None
 
+        def consume(action, part):
+            nonlocal kind, pending, literal
+            if not part:
+                return
+            if kind is not None and kind != action:
+                flush()
+            kind = action
+            pending += len(part)
+            if action == TARGET_READ:
+                literal.extend(part)
+
         while True:
             current = candidate.read(BLOCK)
             if not current:
                 break
             before = original.read(len(current))
-            act = SOURCE_READ if before == current else TARGET_READ
-            if kind is not None and act != kind:
-                flush()
-            kind = act
-            pending += len(current)
-            if kind == TARGET_READ:
-                literal.extend(current)
+            if before == current:
+                consume(SOURCE_READ, current)
+            elif before and len(before) < len(current) and current.startswith(before):
+                # An appended text archive may begin after the end of the
+                # original ISO in the middle of a block. Copy its unchanged
+                # prefix rather than unnecessarily embedding it as literal.
+                consume(SOURCE_READ, before)
+                consume(TARGET_READ, current[len(before):])
+            else:
+                consume(TARGET_READ, current)
         flush()
         require(copy_count + literal_count == target_size, "Patch omits target bytes")
         output.write(struct.pack("<II", file_crc32(source), file_crc32(target)))
