@@ -46,3 +46,7 @@ La versión de lectura que **une los renglones de una misma caja de diálogo** y
 - [Método, ejemplos, limitaciones e instrucciones para editar](docs/GUIA_RECONSTRUCCION_GUION.md).
 
 **Seguridad:** el texto español y los originales siguen intactos. Los cambios de hablante solo se atribuyen cerca de nombres 0x6E; no se adivinan nombres en escenas ambiguas. El resultado es material editable/de revisión, **no** un parche ni prueba de PPSSPP. GitHub Actions regenera las vistas en esta rama.
+
+## Correcciones selectivas de rarezas (20/11/2026)
+
+Se ha preparado un libro mayor de **687 correcciones justificadas por el guion ES/EN** (8.550 entradas permanecen intactas). La revisión no aplica una traducción masiva ni altera originales o recursos PSP. [Plan antes/después](qa/revision_rareza_2026-11-20.csv) · [criterios y procedimiento](docs/REVISION_SELECTIVA_RAREZAS_2026-11-20.md) · [validador con preimagen exacta](tools/aplicar_revision_rareza.py). La automatización sincroniza el CSV y todos los guiones; los casos no demostrables se documentan en un informe aparte. **No equivale a un nuevo parche binario aprobado.**

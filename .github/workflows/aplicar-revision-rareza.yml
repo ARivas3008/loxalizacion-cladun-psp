@@ -1,0 +1,49 @@
+name: Aplicar rarezas revisadas al guion de Cladun
+on:
+  push:
+    branches: [revision-manual-dialogos]
+    paths:
+      - 'qa/revision_rareza_2026-11-20.csv'
+      - 'qa/alertas_reconstruccion_antes_revision.csv'
+      - 'tools/aplicar_revision_rareza.py'
+      - 'tests/test_revision_rareza.py'
+      - '.github/workflows/aplicar-revision-rareza.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: rarezas-revision-manual-dialogos
+  cancel-in-progress: false
+jobs:
+  correcciones-focalizadas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verificar integridad del plan, alertas y caracteres
+        run: |
+          python -m unittest discover -s tests -p test_revision_rareza.py -v
+          python tools/aplicar_revision_rareza.py
+      - name: Aplicar únicamente cambios del plan auditado
+        run: python tools/aplicar_revision_rareza.py --aplicar
+      - name: Validación final de textos y glosario
+        run: |
+          python tools/verificar_borrador_es.py
+          python -m unittest discover -s tests -v
+          python tools/verificar_integridad.py --raiz .
+      - name: Subir guiones y registro actualizados a la misma rama
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add traduccion/CLADUN_BORRADOR_ES.csv traduccion/CLADUN_BORRADOR_ES.txt traduccion/CLADUN_BORRADOR_BILINGUE_FAQ.txt qa/correcciones_manuales.csv qa/INFORME_REVISION_RAREZA_2026-11-20.json qa/REVISION_RAREZA_PENDIENTES.csv
+          git add lectura/CLADUN_GUION_CON_HABLANTES_ES.txt lectura/CLADUN_LECTURA_TOTAL_CON_HABLANTES_ES.txt lectura/CLADUN_AUDITORIA_HABLANTES.csv lectura/CLADUN_RESUMEN_HABLANTES.json
+          git add lectura/CLADUN_GUION_RECONSTRUIDO_LECTURA_ES.txt lectura/CLADUN_GUION_RECONSTRUIDO_COTEJO_ES_EN.txt lectura/CLADUN_TODO_TEXTO_RECONSTRUIDO_ES_EN.txt lectura/CLADUN_MAPA_DE_DIALOGOS_RECONSTRUIDOS.csv lectura/CLADUN_ALERTAS_RECONSTRUCCION.csv lectura/CLADUN_RESUMEN_RECONSTRUCCION.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'fix(es): corregir exclusivamente rarezas cotejadas con el guion original'
+            git push origin HEAD:revision-manual-dialogos
+          fi
