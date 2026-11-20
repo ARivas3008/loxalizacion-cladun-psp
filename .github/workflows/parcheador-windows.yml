@@ -1,0 +1,41 @@
+name: Compilar parcheador Windows
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'patcher/**'
+      - '.github/workflows/parcheador-windows.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  windows-exe:
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: patcher
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: patcher/go.mod
+          cache-dependency-path: patcher/go.mod
+      - name: Pruebas del motor BPS
+        shell: pwsh
+        run: go test -v ./...
+      - name: Compilar ejecutable autónomo
+        shell: pwsh
+        run: go build -trimpath -ldflags='-H=windowsgui -s -w' -o Cladun-Parcheador-Windows-x64.exe ./cmd/cladun-patcher
+      - name: Resumen de SHA-256
+        shell: pwsh
+        run: Get-FileHash Cladun-Parcheador-Windows-x64.exe -Algorithm SHA256 | Format-List
+      - name: Publicar EXE como artefacto descargable
+        uses: actions/upload-artifact@v4
+        with:
+          name: Cladun-Parcheador-Windows-x64
+          path: patcher/Cladun-Parcheador-Windows-x64.exe
+          if-no-files-found: error
+          retention-days: 90
