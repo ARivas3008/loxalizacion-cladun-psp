@@ -1,4 +1,5 @@
 *.exe
 *.partial
-# Track audited differential BPS for reproducible experimental Windows build.
-# Never commit ISO, DATA.DAT, decrypted game archives or unrelated commercial assets.
+*.bps
+# El diferencial se produce LOCALMENTE desde la ISO propia; nunca subirlo al repositorio.
+# No versionar ISO, DATA.DAT, fuentes comerciales, archivos expandidos ni ejecutables.
