@@ -5,6 +5,7 @@ on:
     paths:
       - 'qa/plan_revision_consolidada_2026-11-20.csv'
       - 'tools/aplicar_revision_consolidada.py'
+      - 'tools/ajustes_campos_es.py'
       - 'tests/test_revision_consolidada.py'
       - '.github/workflows/revision-consolidada.yml'
   workflow_dispatch:
