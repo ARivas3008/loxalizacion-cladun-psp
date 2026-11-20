@@ -74,8 +74,8 @@ class TestCapturas20261120(unittest.TestCase):
                 self.assertEqual(record["revision_es"], REVISION)
                 self.assertEqual(decode_spanish(encode_spanish(desired)), desired)
                 label = "DIÁLOGO" if record["origen"] == "SCRIPT.SDT/SCRIPT.DAT" else "INTERFAZ"
-                self.assertIn(f"[{gid}] {label}\\n{desired}\\n", self.readable)
-                self.assertIn(f"ESPAÑOL ({REVISION}):\\n{desired}\\n", self.bilingual)
+                self.assertIn(f"[{gid}] {label}\n{desired}\n", self.readable)
+                self.assertIn(f"ESPAÑOL ({REVISION}):\n{desired}\n", self.bilingual)
 
     def test_option_labels_have_conservative_character_budget(self):
         index = {row["grupo_id"]: row for row in self.draft}
@@ -83,7 +83,7 @@ class TestCapturas20261120(unittest.TestCase):
             with self.subTest(id=gid):
                 line = index[gid]["espanol"]
                 self.assertLessEqual(len(line), 18)
-                self.assertNotIn("\\n", line)
+                self.assertNotIn("\n", line)
                 self.assertNotIn("%", line)
                 self.assertEqual(index[gid]["origen"], "DATABASE.DAT/STRTBL.DAT")
 
