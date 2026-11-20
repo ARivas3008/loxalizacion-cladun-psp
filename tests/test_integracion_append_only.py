@@ -136,6 +136,31 @@ class TestsSafeAppend(unittest.TestCase):
                                 struct.unpack_from("<I", member, 5 * 4)[0] + 5], b"Hola\0")
         self.assertEqual(struct.unpack_from("<I", member, 651 * 4)[0], 0)
 
+    def test_real_psp_imy_envelope_header_is_chunk_capacity_not_total_size(self):
+        """Reproduce the USA 8-block SCRIPT.SDT envelope semantics with 2 blocks."""
+        header = synthetic_imy_header(stride=16, rows=2)
+        chunk_size = 32
+        chunk_a = compress_block(b"A" * 32, header)
+        chunk_b = compress_block(b"B" * 32, header)
+        off_a = 16
+        off_b = (off_a + len(chunk_a) + 3) & ~3
+        original = (struct.pack("<IIII", 2, chunk_size, off_a, off_b)
+                    + chunk_a + b"\0" * (off_b - off_a - len(chunk_a)) + chunk_b)
+        from extract_cladun import decompress
+        restored, codec = decompress(original, 64)
+        self.assertEqual(restored, b"A" * 32 + b"B" * 32)
+
+        updated = recompress(original, b"C" * 32 + b"D" * 64)
+        self.assertEqual(struct.unpack_from("<II", updated), (2, 32))
+        restored, codec = decompress(updated, 96)
+        self.assertEqual(restored, b"C" * 32 + b"D" * 64)
+
+        # Force the previously unchecked format mismatch. Must fail closed.
+        tampered = bytearray(original)
+        struct.pack_into("<I", tampered, 4, 64)
+        with self.assertRaises(ValueError):
+            recompress(bytes(tampered), b"C" * 32 + b"D" * 64)
+
     def test_reject_odd_imy_expansion(self):
         header = synthetic_imy_header()
         raw = b"\x00\x01" * 16
