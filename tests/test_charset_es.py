@@ -10,10 +10,10 @@ class CharsetTest(unittest.TestCase):
     def test_roundtrip_all(self):
         text='¿Qué día es? ¡Sí, señor! Pudding: «ñandú», pingüino, ō. 日本語'
         self.assertEqual(decode_spanish(encode_spanish(text)),text)
-    def test_cp932_private_codes(self):
+    def test_cp932_halfwidth_codes(self):
         self.assertEqual(len(ES_GLYPHS),19)
         self.assertEqual(encode_spanish(ES_GLYPHS).hex().upper(),
-                         ''.join(f'{CODE_BASE+i:04X}' for i in range(19)))
+                         ''.join(f'{CODE_BASE+i:02X}' for i in range(19)))
     def test_reject_damaged_source(self):
         with self.assertRaises(ValueError):
             encode_spanish('Texto perdido \ufffd')
@@ -21,6 +21,6 @@ class CharsetTest(unittest.TestCase):
         self.assertEqual(ascii_diagnostic_preview('¿Dónde está? ¡Sí!'),'?Donde esta? !Si!')
     def test_existing_cp932_unchanged(self):
         self.assertEqual(encode_spanish('Hiyoji'),b'Hiyoji')
-        self.assertEqual(len(encode_spanish('á')),2)
+        self.assertEqual(len(encode_spanish('á')),1)
 
 if __name__=='__main__':unittest.main()

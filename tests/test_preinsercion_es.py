@@ -31,9 +31,9 @@ class TestPreinsercion(unittest.TestCase):
         self.assertEqual(check_row(a, b)["estado"], "BLOQUEADO_CAMBIO_LONGITUD_SCRIPT")
 
     def test_script_igual_bytes_solo_candidato_no_aprobado(self):
-        a, b = pair("Hello?", "Adiós!")  # 6 frente a 7 bytes por ó -> no pasa
+        a, b = pair("Hello?", "Adiós!!")  # 6 frente a 7 bytes por puntuación -> no pasa
         self.assertEqual(check_row(a, b)["estado"], "BLOQUEADO_CAMBIO_LONGITUD_SCRIPT")
-        b["espanol"] = "¡Sí!"  # 6 bytes con signos y letra PUA
+        b["espanol"] = "¿Hola?"  # 6 bytes usando un signo CP932 de un byte
         self.assertEqual(len(encode_spanish(b["espanol"])), 6)
         out = check_row(a, b)
         self.assertEqual(out["estado"], "CANDIDATO_A_ENSAYO_NO_VALIDADO")
@@ -45,7 +45,7 @@ class TestPreinsercion(unittest.TestCase):
         self.assertEqual(check_row(a, b)["estado"], "BLOQUEADO_FUENTE_MODIFICADA")
 
     def test_campo_fijo_rechaza_desborde_incluyendo_nul(self):
-        a, b = pair("Item", "Señal", "DATABASE.DAT/ARTIFACT.DAT", "6")
+        a, b = pair("Item", "Señal", "DATABASE.DAT/ARTIFACT.DAT", "5")
         self.assertEqual(check_row(a, b)["estado"], "BLOQUEADO_DESBORDE_CAMPO")
 
     def test_campo_fijo_permite_ensayo_sin_aprobarlo(self):

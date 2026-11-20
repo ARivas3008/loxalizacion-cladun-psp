@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""Cladun USA PSP Spanish codec (private CP932 extension F5A0-F5B2).
+"""Cladun USA PSP Spanish codec (single-byte CP932 halfwidth slot A1-B3).
 
-Codes align with the experimental 19-entry FONT.BIN extension. Byte reversal
-is tested; correct in-game rendering still requires PPSSPP verification.
+The engine treats private F5xx codes as double-width, causing visibly broken
+spacing. Reserve nineteen single-byte halfwidth SJIS codes instead, while
+relocating original atlas cells to keep their glyphs intact.
 """
 from __future__ import annotations
 import unicodedata
 
 ES_GLYPHS = 'áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō'
-CODE_BASE = 0xF5A0  # strictly greater than max original FONT.BIN code 0xF592
-ES_BYTES = {c:(CODE_BASE+i).to_bytes(2,'big') for i,c in enumerate(ES_GLYPHS)}
+CODE_BASE = 0xA1  # single-byte CP932 halfwidth range, absent in original FONT.BIN
+ES_BYTES = {c:bytes([CODE_BASE+i]) for i,c in enumerate(ES_GLYPHS)}
 ES_TO_PRIVATE = {c:b.decode('cp932') for c,b in ES_BYTES.items()}
 PRIVATE_TO_ES = {v:k for k,v in ES_TO_PRIVATE.items()}
 assert len(ES_GLYPHS)==len(ES_BYTES)==len(ES_TO_PRIVATE)==len(PRIVATE_TO_ES)==19
@@ -36,5 +37,5 @@ def ascii_diagnostic_preview(text: str) -> str:
 if __name__=='__main__':
     sample='¿Qué día es? ¡Sí, señor! Ñandú y pingüino. «Pudding», ō.'
     assert decode_spanish(encode_spanish(sample))==sample
-    assert encode_spanish(ES_GLYPHS).hex().upper()==''.join(f'{CODE_BASE+i:04X}' for i in range(19))
+    assert encode_spanish(ES_GLYPHS)==bytes(range(CODE_BASE,CODE_BASE+len(ES_GLYPHS)))
     print('CODEC ROUNDTRIP OK — visual verification pending')

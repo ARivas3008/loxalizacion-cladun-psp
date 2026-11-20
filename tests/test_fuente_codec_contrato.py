@@ -5,7 +5,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 from charset_es import CODE_BASE as CODEC_BASE, ES_GLYPHS, ES_BYTES, encode_spanish, decode_spanish
-from font_es_patch import CODE_BASE as FONT_BASE, CHARACTERS, BASE_GLYPHS
+from font_es_narrow import CODE_BASE as FONT_BASE, CHARACTERS, BASE_GLYPHS
 
 
 class TestSpanishFontContract(unittest.TestCase):
@@ -15,7 +15,7 @@ class TestSpanishFontContract(unittest.TestCase):
         self.assertEqual(len(CHARACTERS), len(BASE_GLYPHS))
         self.assertEqual(len(CHARACTERS), 19)
         self.assertEqual([int.from_bytes(ES_BYTES[c], "big") for c in CHARACTERS],
-                         list(range(0xF5A0, 0xF5B3)))
+                         list(range(0xA1, 0xB4)))
 
     def test_normalization_does_not_silently_modify_translation(self):
         # Una entrada descompuesta debe normalizarse explícitamente por edición,

@@ -15,10 +15,11 @@ import (
 	"github.com/ARivas3008/loxalizacion-cladun-psp/patcher/internal/bps"
 )
 
-// This is a PRIVATE EXPERIMENTAL patch generated from the exact USA ISO.
-// The target is a binary candidate, NOT validated for gameplay in PPSSPP.
-const PatchSHA256 = "b913cb5509f22721ff533f88848facdc894a3047b66a2597aaa7f333741d69e0"
-const TargetSHA256 = "27864a48787e54dff7e211214becf26ddbc688a84a1cf78fb444686a8e475f18"
+// This is an EXPERIMENTAL patch generated from the exact USA ISO.
+// Startup, music selection and early story dialogue were smoke-tested in PPSSPP;
+// this does not certify the complete game.
+const PatchSHA256 = "300f0eabccf7bf64b2d1eb0e783d31a213f62fdc006ac193fad2918b23e92b80"
+const TargetSHA256 = "6d874a2e04fa9b27c14cbc42a49e91308d82c802b3f247ac1f0f1841953dd261"
 
 func PayloadValid(patch []byte) bool {
 	if len(patch) < 19 || string(patch[:4]) != "BPS1" {

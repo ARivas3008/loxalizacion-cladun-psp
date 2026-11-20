@@ -22,8 +22,8 @@ import tempfile
 from auditar_preinsercion_es import SOURCE, DRAFT, IMMUTABLE, check_row, read_csv
 from charset_es import encode_spanish, decode_spanish
 from extract_cladun import iso9660_entries, read_iso_file, pspfs_entries, dsarc_entries, decompress
-from font_es_patch import SOURCE_SHA256, sha256_file, build as build_font
-from font_es_guard import verify as verify_font
+from font_es_patch import SOURCE_SHA256, sha256_file
+from font_es_narrow import build as build_font, verify as verify_font
 from imy_repack_safe import recompress
 from ajustes_campos_es import effective
 from graficos_texto_es import GRAPHICS, patch_png

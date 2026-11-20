@@ -246,7 +246,7 @@ func createUI(hwnd uintptr) {
 	}
 	label("Salida automática: Cladun-ES-EXPERIMENTAL.iso junto a la ISO original.", 52, 371, 662, 23, app.smallFont, 0x677d95)
 
-	label("Versión experimental. No está validada en PPSSPP ni se garantiza que arranque.", 42, 435, 685, 23, app.smallFont, 0x395572)
+	label("Probado el inicio en PPSSPP. Quedan mapas, combates y partidas por comprobar.", 42, 435, 685, 23, app.smallFont, 0x395572)
 	label("No se altera ni sobrescribe la ISO original. El resultado se verifica por SHA-256.", 42, 461, 680, 23, app.smallFont, 0x677d95)
 	app.status = label("Selecciona tu ISO para comenzar.", 42, 544, 510, 27, app.editFont, 0x395572)
 	app.apply = button("Crear ISO de prueba", 533, 509, 179, 43, idApply, app.labelFont)
@@ -404,7 +404,7 @@ func wndProc(hwnd uintptr, message uint32, wparam, lparam uintptr) uintptr {
 				showError("No se pudo aplicar el parche", err.Error())
 			} else {
 				setText(app.status, "Completado: SHA-256 final verificado. Prueba en PPSSPP.")
-				showInfo("Parche aplicado", "La ISO experimental se guardó en:\n\n"+output+"\n\nSHA-256:\n"+info.TargetSHA256+"\n\nISO de prueba: compatibilidad en PPSSPP todavía no validada.")
+				showInfo("Parche aplicado", "La ISO experimental se guardó en:\n\n"+output+"\n\nSHA-256:\n"+info.TargetSHA256+"\n\nSe verificaron el arranque y los primeros textos en PPSSPP; no toda la aventura.")
 			}
 		}
 		return 0
@@ -452,7 +452,7 @@ func main() {
 		showError("Error de inicio", "No se pudo registrar la ventana de Windows.")
 		return
 	}
-	hwnd := call(procCreateWindow, 0, uintptr(unsafe.Pointer(className)), uintptr(unsafe.Pointer(u16("Cladun · ISO al español (experimental) v0.1.1"))), wsOverlappedWindow|wsVisible|wsClipChildren,
+	hwnd := call(procCreateWindow, 0, uintptr(unsafe.Pointer(className)), uintptr(unsafe.Pointer(u16("Cladun · ISO al español (experimental) v0.1.3"))), wsOverlappedWindow|wsVisible|wsClipChildren,
 		140, 80, 772, 643, 0, 0, instance, 0)
 	if hwnd == 0 {
 		return

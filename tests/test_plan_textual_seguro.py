@@ -10,7 +10,7 @@ from test_preinsercion_es import pair
 from charset_es import encode_spanish
 
 
-def fixture(en="Hello?", es="¡Sí!"):
+def fixture(en="Hello?", es="¿Hola?"):
     source, draft = pair(en, es)
     source["grupo_id"] = draft["grupo_id"] = "000001"
     source["offset_hex"] = draft["offset_hex"] = "0x4"
@@ -55,7 +55,7 @@ class TestPlanTextualSeguro(unittest.TestCase):
     def test_difiere_unicamente_en_reemplazo_declarado(self):
         src, dst, script = fixture()
         edits = build_entries(src, dst, ["000001"], script)
-        new = script[:4] + encode_spanish("¡Sí!") + script[10:]
+        new = script[:4] + encode_spanish("¿Hola?") + script[10:]
         self.assertTrue(assert_exact_member_replacements(script, new, edits))
         with self.assertRaises(ValueError):
             assert_exact_member_replacements(script, b"Z" + new[1:], edits)

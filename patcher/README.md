@@ -65,3 +65,42 @@ En v0.1.2 el integrador reconstruye las seis PNG de texto **dentro del mismo slo
 [Informe detallado de diagnóstico y reproducción](../docs/DIAGNOSTICO_NOW_LOADING_2026-11-20.md).
 
 La herramienta no transmite datos por red, no incluye telemetría y no distribuye archivos comerciales de juego en el código público. El `.exe` privado no está firmado digitalmente. Windows puede mostrar SmartScreen.
+
+
+## Actualización v0.1.3 — traducción revisada + caracteres españoles compactos
+
+La compilación **Cladun-Parcheador-ES-v0.1.3-Windows-x64.exe** incluye un
+único parche diferencial BPS de la ISO USA, sin pedir archivos adicionales.
+Requiere la ISO original cuyo SHA-256 es `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f`.
+Verifica la integridad y produce la ISO experimental de SHA-256
+`6d874a2e04fa9b27c14cbc42a49e91308d82c802b3f247ac1f0f1841953dd261`.
+El diferencial incorporado tiene SHA-256
+`300f0eabccf7bf64b2d1eb0e783d31a213f62fdc006ac193fad2918b23e92b80`.
+
+**Cambios:** actualización del español tras auditoría estática de las 9.237
+unidades, fuente de 19 glifos españoles en el rango de un byte `0xA1..0xB3`
+en vez de los códigos de dos bytes `0xF5A0..0xF5B2`, conservación exacta
+de los 2.721 glifos de origen y verificación binaria de los 345 archivos
+PSPFS fuera de los contenedores de localización.
+
+**Verificación PPSSPP:** arranque, menú, selección musical y continuación a
+los diálogos iniciales; en pantalla se leen **música** y **configuración**
+sin el espacio introducido por el códec anterior. **No** se han completado
+todas las misiones, mapas, combates, guardados ni todas las pantallas. Por
+ello se publica como *experimental/pre-release* y no como traducción final.
+
+La rama `revision-manual-dialogos` conserva el glosario, los 9.237 IDs,
+los TXT bilingües, los informes y el código de regeneración.
+
+**Compilación reproducible de la versión experimental** (sin la ISO comercial):
+
+```sh
+cd patcher
+go test ./...
+GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -tags cladun_embedded -trimpath -ldflags='-H=windowsgui -s -w' -o Cladun-Parcheador-ES-v0.1.3-Windows-x64.exe ./cmd/cladun-patcher
+```
+
+El `.bps` solo contiene el diferencial necesario para reconstruir la ISO
+traducida a partir de una copia legítima; **no se distribuye la ISO comercial**.
+Las advertencias históricas de v0.1.2 conservadas arriba no describen la
+compilación actual. Véase [validación v0.1.3](../docs/PPSSPP_CARACTERES_ES_Y_PARCEHADO_2026-11-20.md).

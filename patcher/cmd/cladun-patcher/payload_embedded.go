@@ -4,7 +4,8 @@ package main
 
 import _ "embed"
 
-// PRIVATE TEST BUILD ONLY: DO NOT COMMIT OR DISTRIBUTE GAME ASSETS.
+// Experimental user patch: differential BPS only, no ISO.
+// The included payload is integrity checked by automatic.PayloadValid.
 //
 //go:embed traduccion_es_experimental.bps
 var integratedPatch []byte

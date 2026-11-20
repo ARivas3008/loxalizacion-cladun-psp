@@ -21,7 +21,7 @@ class TestFixedFieldSpanish(unittest.TestCase):
     def test_insertion_labels_fit_100_percent_of_fixed_fields(self):
         translated, counts = audit_effective(self.src, self.draft)
         self.assertEqual(len(translated), 9237)
-        self.assertEqual(counts.get("etiqueta_compacta_para_campo_fijo"), 280)
+        self.assertEqual(counts.get("etiqueta_compacta_para_campo_fijo"), 269)
         self.assertEqual(counts.get("original_truncado_verificado_por_bytes"), 2)
         for src, draft in zip(self.src, translated):
             if src["origen"].startswith("DATABASE.DAT/") and src["capacidad_campo"]:

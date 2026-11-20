@@ -1,4 +1,4 @@
 *.exe
 *.partial
-# Private experimental ISO/BPS payload; never push to GitHub.
-traduccion_es_experimental.bps
+# Track audited differential BPS for reproducible experimental Windows build.
+# Never commit ISO, DATA.DAT, decrypted game archives or unrelated commercial assets.

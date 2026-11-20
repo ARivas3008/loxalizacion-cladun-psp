@@ -1,0 +1,56 @@
+name: Publicar parcheador Cladun ES v0.1.3 experimental
+on:
+  push:
+    branches: [revision-manual-dialogos]
+    paths:
+      - 'patcher/**'
+      - 'tools/font_es_narrow.py'
+      - 'tools/charset_es.py'
+      - 'docs/PPSSPP_CARACTERES_ES_Y_PARCEHADO_2026-11-20.md'
+      - '.github/workflows/publicar-parcheador-es-v013.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: patcher/go.mod
+          cache-dependency-path: patcher/go.mod
+      - name: Verificar SHA-256 del BPS de la traducción
+        shell: pwsh
+        run: |
+          $p='patcher/cmd/cladun-patcher/traduccion_es_experimental.bps'
+          $hash=(Get-FileHash $p -Algorithm SHA256).Hash.ToLowerInvariant()
+          if ($hash -ne '300f0eabccf7bf64b2d1eb0e783d31a213f62fdc006ac193fad2918b23e92b80') { throw "BPS incorrecto: $hash" }
+      - name: Probar el aplicador y compilar Win64 sin dependencias
+        working-directory: patcher
+        shell: pwsh
+        run: |
+          go test -v ./...
+          go build -tags cladun_embedded -trimpath -ldflags='-H=windowsgui -s -w' -o Cladun-Parcheador-ES-v0.1.3-Windows-x64.exe ./cmd/cladun-patcher
+          $exe=(Get-Item 'Cladun-Parcheador-ES-v0.1.3-Windows-x64.exe')
+          if ($exe.Length -lt 1500000) { throw 'El ejecutable carece del parche integrado' }
+          Get-FileHash $exe.FullName -Algorithm SHA256 | Format-List
+      - name: Adjuntar ejecutable de Windows
+        uses: actions/upload-artifact@v4
+        with:
+          name: Cladun-Parcheador-ES-v0.1.3-Windows-x64
+          path: patcher/Cladun-Parcheador-ES-v0.1.3-Windows-x64.exe
+          if-no-files-found: error
+      - name: Publicar prerelease en GitHub
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $tag = 'cladun-es-v0.1.3-experimental'
+          $asset = 'patcher/Cladun-Parcheador-ES-v0.1.3-Windows-x64.exe'
+          gh release view $tag --repo $env:GITHUB_REPOSITORY *> $null
+          if ($LASTEXITCODE -eq 0) {
+            gh release upload $tag $asset --clobber --repo $env:GITHUB_REPOSITORY
+          } else {
+            gh release create $tag $asset --repo $env:GITHUB_REPOSITORY --target $env:GITHUB_SHA --title 'Cladun ES v0.1.3 (experimental)' --prerelease --notes 'ISO USA única; traducción revisada; fuente española de un byte; menús y primeros diálogos verificados en PPSSPP 1.20.4. No se distribuye ninguna ISO. Pruebas de aventura completa pendientes.'
+          }
