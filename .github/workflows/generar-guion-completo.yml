@@ -1,0 +1,60 @@
+name: Reconstruir guion completo Cladun
+on:
+  push:
+    branches: [revision-manual-dialogos]
+    paths:
+      - 'tools/reconstruir_guion_completo.py'
+      - 'tests/test_reconstruir_guion_completo.py'
+      - 'docs/GUIA_RECONSTRUCCION_GUION.md'
+      - 'traduccion/CLADUN_BORRADOR_ES.csv'
+      - 'corpus/CLADUN_TODO_TEXTO_ORIGINAL.csv'
+      - '.github/workflows/generar-guion-completo.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  reconstruir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Tests de reconstrucción e integridad
+        run: python -m unittest discover -s tests -p 'test_reconstruir_guion_completo.py' -v
+      - name: Crear TXT completo, mapa CSV y alertas
+        run: python tools/reconstruir_guion_completo.py
+      - name: Verificar inventario y texto concatenado
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r=json.loads(Path('lectura/CLADUN_RESUMEN_RECONSTRUCCION.json').read_text())
+          assert r['total_registros_originales']==9237
+          assert r['fragmentos_script']==5207 and r['registros_otros_recursos']==4030
+          assert r['nombres_de_hablante']==400 and r['opciones']==113
+          assert r['integridad']['ids_conservados']==9237
+          for name in ('CLADUN_GUION_RECONSTRUIDO_LECTURA_ES.txt',
+                       'CLADUN_GUION_RECONSTRUIDO_COTEJO_ES_EN.txt',
+                       'CLADUN_TODO_TEXTO_RECONSTRUIDO_ES_EN.txt',
+                       'CLADUN_MAPA_DE_DIALOGOS_RECONSTRUIDOS.csv',
+                       'CLADUN_ALERTAS_RECONSTRUCCION.csv'):
+              assert Path('lectura',name).stat().st_size > 1000
+          PY
+      - name: Publicar solo las vistas de lectura (nunca binarios)
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add lectura/CLADUN_GUION_RECONSTRUIDO_LECTURA_ES.txt \
+            lectura/CLADUN_GUION_RECONSTRUIDO_COTEJO_ES_EN.txt \
+            lectura/CLADUN_TODO_TEXTO_RECONSTRUIDO_ES_EN.txt \
+            lectura/CLADUN_MAPA_DE_DIALOGOS_RECONSTRUIDOS.csv \
+            lectura/CLADUN_ALERTAS_RECONSTRUCCION.csv \
+            lectura/CLADUN_RESUMEN_RECONSTRUCCION.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'docs: publicar guion completo reconstruido y mapa de fragmentos'
+            git push origin HEAD:revision-manual-dialogos
+          fi

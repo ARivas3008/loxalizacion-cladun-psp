@@ -33,3 +33,16 @@ No subir binarios del juego, ni una ISO, ni retratos, tiles, atlas o sprites. Es
 ## Referencia editorial cruzada: La Pucelle
 
 Se ha incorporado en esta rama una **copia de solo consulta** de [36 términos investigados en La Pucelle](referencias/la_pucelle/terminos_investigados.csv), junto con los [criterios transferibles de estilo](docs/ESTILO_COMPARTIDO_LA_PUCELLE.md) y un [auditor reproducible](tools/auditar_referencia_la_pucelle.py). La comparación de los 36 términos con los 67 del glosario de Cladun no encontró coincidencias exactas de términos fuente y no modificó ninguna traducción. El objetivo es mejorar la revisión narrativa sin mezclar el universo, las mecánicas o los nombres de los dos juegos.
+
+## Guion narrativo íntegro con intervenciones reconstruidas
+
+La versión de lectura que **une los renglones de una misma caja de diálogo** y presenta las escenas completas se genera con [`tools/reconstruir_guion_completo.py`](tools/reconstruir_guion_completo.py). Archivos producidos:
+
+- [Lectura continua en español](lectura/CLADUN_GUION_RECONSTRUIDO_LECTURA_ES.txt), agrupada por escena, intervención y hablante cuando existe marcador verificable.
+- [Cotejo bilingüe ES/EN con ID de cada fragmento y alertas](lectura/CLADUN_GUION_RECONSTRUIDO_COTEJO_ES_EN.txt).
+- [Todos los 9.237 textos con el guion reconstruido y apéndice de recursos](lectura/CLADUN_TODO_TEXTO_RECONSTRUIDO_ES_EN.txt).
+- [Mapa CSV de intervenciones](lectura/CLADUN_MAPA_DE_DIALOGOS_RECONSTRUIDOS.csv), con columnas vacías para proponer correcciones narrativas; las propuestas no se reinsertan automáticamente.
+- [Alertas de reconstrucción](lectura/CLADUN_ALERTAS_RECONSTRUCCION.csv) y [resumen cuantitativo](lectura/CLADUN_RESUMEN_RECONSTRUCCION.json).
+- [Método, ejemplos, limitaciones e instrucciones para editar](docs/GUIA_RECONSTRUCCION_GUION.md).
+
+**Seguridad:** el texto español y los originales siguen intactos. Los cambios de hablante solo se atribuyen cerca de nombres 0x6E; no se adivinan nombres en escenas ambiguas. El resultado es material editable/de revisión, **no** un parche ni prueba de PPSSPP. GitHub Actions regenera las vistas en esta rama.
