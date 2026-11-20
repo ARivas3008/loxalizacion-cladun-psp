@@ -1,0 +1,21 @@
+name: Exportar fuentes de localización (sin recursos comerciales)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/exportar-fuentes-parcheador.yml'
+permissions:
+  contents: read
+jobs:
+  fuentes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Empaquetar archivos públicos versionados
+        run: git archive --format=zip --output=cladun-fuentes.zip HEAD
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cladun-fuentes-versionadas
+          path: cladun-fuentes.zip
+          retention-days: 3
