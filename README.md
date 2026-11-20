@@ -143,3 +143,9 @@ No se incluye una ISO ni archivos gráficos/binarios originales del videojuego. 
 - [Prueba de códec sobre la ISO original (19/11/2026)](reports/roundtrip_imy_multibloque_iso_real_2026-11-19.json): reempaquetado de 8 bloques IMY de SCRIPT.SDT y 5 de DATABASE.DAT, recuperando todos los bytes originales en la decodificación posterior. Se corrigió la cabecera para conservar el tamaño real por bloque (`131072` bytes), no el tamaño total del recurso. **No implica PPSSPP verificado.**
 
 - [Exportador de parche BPS diferencial](tools/generar_parche_bps.py) y [protocolo de uso](docs/PARCHE_BPS_EXPERIMENTAL.md): a partir de una ISO candidata privada creada por el integrador, produce un archivo BPS experimental solo tras reconstruir exactamente la candidata desde la ISO original y comprobar que los assets no textuales sean idénticos. Requiere `--experimental`; no acredita aún PPSSPP ni constituye un lanzamiento final.
+
+## Parcheador gráfico para Windows (descarga sin instalar Python)
+
+- **[Parcheador Windows x64 — GitHub Releases](https://github.com/ARivas3008/loxalizacion-cladun-psp/releases/tag/parcheador-v0.1.0)**. El workflow [Compilar parcheador Windows](.github/workflows/parcheador-windows.yml) genera el ejecutable sin dependencias externas para usuarios finales y lo publica como versión preliminar.
+- **[Código fuente, pruebas, guía y controles de integridad](patcher/README.md)**. Admite BPS1, verifica SHA-256 de ISO original y CRC32, muestra progreso y nunca sobrescribe la imagen original.
+- **Nota:** actualmente hay un **aplicador** de BPS, pero **todavía no existe una versión final del parche español comprobada en PPSSPP**. No confundir el ejecutable con un parche jugable ni dar por demostrada la integridad de los assets de un BPS arbitrario.
