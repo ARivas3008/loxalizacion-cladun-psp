@@ -1,0 +1,22 @@
+{
+  "estado": "aplicado",
+  "total_corpus": 9237,
+  "correcciones_justificadas": 687,
+  "entradas_sin_modificar": 8550,
+  "cambios_nombres": 135,
+  "cambios_contexto": 506,
+  "cambios_puntuacion": 46,
+  "fuente_original_sha256": "f0a56ae0c773982e137fd0d2a99cbe52f27f836eebcf41800e5c8a6d6260e6f9",
+  "excepcion": "2 fragmentos japoneses de origen truncado quedan sin reconstruir",
+  "advertencia": "Cambios editoriales: NO implican validación visual PPSSPP ni nuevo parche compilado",
+  "alertas_residuales": {
+    "PAUSA_DEL_ORIGINAL_MODIFICADA": 11,
+    "PUNTUACION_ES_ANTES_DE_TERMINAR_ORIGINAL": 13,
+    "FRASE_CORTADA_POR_PUNTO": 1,
+    "UNION_ENTRE_CAJAS_POR_ORACION_INCOMPLETA_REVISAR": 1,
+    "NOMBRE_PROPIO_TRADUCIDO_REVISAR": 82,
+    "SIN_TRADUCCION": 2
+  },
+  "total_alertas_residuales": 110,
+  "csv_traduccion_sha256": "68e4cefd75c0467a5087245a59657c83c5461945c8273e6b98effd0303d70e89"
+}

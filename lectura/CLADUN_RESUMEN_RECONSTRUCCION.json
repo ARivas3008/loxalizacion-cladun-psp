@@ -15,15 +15,15 @@
     "marcador_0x6E_cercano_por_verificar": 81
   },
   "alertas_heuristicas": {
-    "PAUSA_DEL_ORIGINAL_MODIFICADA": 15,
-    "PUNTUACION_ES_ANTES_DE_TERMINAR_ORIGINAL": 266,
-    "FRASE_CORTADA_POR_PUNTO": 123,
+    "PAUSA_DEL_ORIGINAL_MODIFICADA": 11,
+    "PUNTUACION_ES_ANTES_DE_TERMINAR_ORIGINAL": 13,
+    "FRASE_CORTADA_POR_PUNTO": 1,
     "UNION_ENTRE_CAJAS_POR_ORACION_INCOMPLETA_REVISAR": 1,
-    "NOMBRE_PROPIO_TRADUCIDO_REVISAR": 217,
+    "NOMBRE_PROPIO_TRADUCIDO_REVISAR": 82,
     "SIN_TRADUCCION": 2
   },
   "csv_fuente_sha256": "f0a56ae0c773982e137fd0d2a99cbe52f27f836eebcf41800e5c8a6d6260e6f9",
-  "csv_borrador_sha256": "fe39e4cd10d35be39c24cb29e6d30153296c081d31cf66edbaa5aa94eac32b2d",
+  "csv_borrador_sha256": "68e4cefd75c0467a5087245a59657c83c5461945c8273e6b98effd0303d70e89",
   "integridad": {
     "ids_conservados": 9237,
     "csv_original_sin_modificar": true,

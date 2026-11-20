@@ -1,4 +1,4 @@
-CLADUN: THIS IS AN RPG! (PSP USA)
+﻿CLADUN: THIS IS AN RPG! (PSP USA)
 BORRADOR ESPAÑOL — REVISIÓN CONTEXTUAL PARCIAL
 9.237 posiciones ordenadas por recurso y script. No está listo para reinserción.
 
@@ -1159,7 +1159,7 @@ Saltar te permite superar las trampas.
 Pulsa el botón ⑯ para abrir el menú.
 
 [000378] DIÁLOGO
-Selecciona Rendirse para salir de la mazmorra.
+Selecciona Rendirse para salir de la mazmorra
 
 [000379] DIÁLOGO
 y regresar a Arcanus Cella.
@@ -1552,7 +1552,7 @@ Puedes colocar artefactos
 en las casillas para artefactos.
 
 [000509] DIÁLOGO
-Los personajes secundarios consumirán maná.
+Los personajes secundarios consumirán maná
 
 [000510] DIÁLOGO
 para activar varios artefactos.
@@ -1660,7 +1660,7 @@ Saltar te permite superar las trampas.
 Pulsa el botón ⑯ para abrir el menú.
 
 [000545] DIÁLOGO
-Selecciona Rendirse para salir de la mazmorra.
+Selecciona Rendirse para salir de la mazmorra
 
 [000546] DIÁLOGO
 y regresar a Arcanus Cella.
@@ -1846,10 +1846,10 @@ Su potencia aumenta en proporción al número de dragones.
 Inflige daño a todos los enemigos en pantalla.
 
 [000607] DIÁLOGO
-Una vez activado, estarás en un estado especial.
+Una vez activado, entrarás en un estado especial
 
 [000608] DIÁLOGO
-llamada G Star.
+llamado G Star.
 
 [000609] DIÁLOGO
 El estado continuará mientras usted esté en el piso.
@@ -1927,10 +1927,10 @@ Simplemente introduce tu nombre y podrás empezar.
 Deberás seleccionar un nombre que se utilizará únicamente para el juego inalámbrico.
 
 [000634] DIÁLOGO
-Serás el anfitrión y crearás una sala.
+Serás el anfitrión y crearás una sala
 
 [000635] DIÁLOGO
-en el que los jugadores jugarán en modo cooperativo.
+en la que los jugadores podrán participar en modo cooperativo.
 
 [000636] DIÁLOGO
 En el modo cooperativo, no puedes golpear a otros jugadores.
@@ -1939,16 +1939,16 @@ En el modo cooperativo, no puedes golpear a otros jugadores.
 Despejen el escenario haciendo que todos alcancen la meta.
 
 [000638] DIÁLOGO
-Puedes revivir a los jugadores caídos.
+Puedes revivir a los jugadores caídos
 
 [000639] DIÁLOGO
 aunque con 1 HP.
 
 [000640] DIÁLOGO
-Serás el anfitrión y crearás una sala.
+Serás el anfitrión y crearás una sala
 
 [000641] DIÁLOGO
-en el que los jugadores jugarán en modo Versus.
+en la que los jugadores podrán participar en modo Versus.
 
 [000642] DIÁLOGO
 En el modo Versus, cada jugador puede golpear al otro.
@@ -1957,7 +1957,7 @@ En el modo Versus, cada jugador puede golpear al otro.
 El jugador que sobreviva y llegue a la meta gana.
 
 [000644] DIÁLOGO
-Puedes revivir a los jugadores caídos.
+Puedes revivir a los jugadores caídos
 
 [000645] DIÁLOGO
 aunque con 1 HP.
@@ -1999,22 +1999,22 @@ Volver
 Esta mazmorra de 99 pisos cambia de forma constantemente.
 
 [000658] DIÁLOGO
-Una vez que entras, no puedes escapar a menos que...
+Una vez dentro, solo podrás salir si
 
 [000659] DIÁLOGO
-Ríndete o busca la salida.
+eliges Rendirse o encuentras la salida.
 
 [000660] DIÁLOGO
-Equipo raro, títulos y monstruos de nivel 99.
+Se dice que aquí hay equipo raro, títulos y monstruos de nivel 99
 
 [000661] DIÁLOGO
-Se dice que se encuentran aquí.
+que puedes encontrar en esta mazmorra.
 
 [000662] DIÁLOGO
-Salga de la mazmorra por la salida habitual.
+Sal de la mazmorra por la salida habitual
 
 [000663] DIÁLOGO
-y regresar a Arcanus Cella.
+y regresa a Arcanus Cella.
 
 [000664] DIÁLOGO
 Sin embargo, no puedes continuar.
@@ -2236,10 +2236,10 @@ Su potencia aumenta en proporción al número de dragones.
 Inflige daño a todos los enemigos en la pantalla.
 
 [000737] DIÁLOGO
-Una vez activado, estarás en un estado especial.
+Una vez activado, entrarás en un estado especial
 
 [000738] DIÁLOGO
-llamada G Star.
+llamado G Star.
 
 [000739] DIÁLOGO
 El estado continuará mientras usted esté en el piso.
@@ -2310,10 +2310,10 @@ No basta con derrotar a los enemigos para abrir las puertas.
 Esqueleto moribundo
 
 [000760] DIÁLOGO
-Hay enemigos en este mapa.
+Hay enemigos en este mapa
 
 [000761] DIÁLOGO
-¡Eso hará lo imposible! ¡Más o menos!
+que harán lo imposible. ¡Más o menos!
 
 [000762] DIÁLOGO
 Ten cuidado.
@@ -2352,10 +2352,10 @@ Esqueleto moribundo
 Esqueleto moribundo
 
 [000774] DIÁLOGO
-Aquí puedes encontrar a los ladrones de gatos.
+Los ladrones de gatos que encontrarás aquí
 
 [000775] DIÁLOGO
-Compramos demasiado y nos quedamos sin G.
+compraron demasiado y se quedaron sin G.
 
 [000776] DIÁLOGO
 ¿Son realmente ladrones? Nadie lo sabe.
@@ -2417,10 +2417,10 @@ Tu mamá y tu papá
 Me pediste que te cuidara.
 
 [000794] DIÁLOGO
-De no ser así, jamás habría faltado a mis clases.
+De no ser así, jamás habría faltado a mis clases
 
 [000795] DIÁLOGO
-venir hasta aquí.
+para venir hasta aquí.
 
 [000796] DIÁLOGO
 Puddie, tú eres...
@@ -2566,10 +2566,10 @@ Eso no es divertido.
 Presiento la presencia de un monstruo.
 
 [000842] DIÁLOGO
-Estaba desesperado, así que dejé mi espada y mi armadura.
+Estaba tan alterado que dejé mi espada y mi armadura
 
 [000843] DIÁLOGO
-De vuelta en el dojo.
+en el dojo.
 
 [000844] DIÁLOGO
 Aunque yo sea un "Guerrero",
@@ -2647,7 +2647,7 @@ El césped y los charcos pueden
 Realmente me ralentiza.
 
 [000869] DIÁLOGO
-Tengo que saber qué estoy pisando.
+Tengo que saber qué estoy pisando
 
 [000870] DIÁLOGO
 para maximizar mi velocidad de movimiento.
@@ -2670,10 +2670,10 @@ SCRIPT: demo1002_00.dsf
 ¿Eh? ¿Estamos... al aire libre?
 
 [000875] DIÁLOGO
-Pero no recuerdo haber subido escaleras.
+Pero no recuerdo haber subido escaleras
 
 [000876] DIÁLOGO
-o subir una colina...
+ni haber escalado una colina...
 
 [000877] DIÁLOGO
 Es muy brillante.
@@ -2769,10 +2769,10 @@ No voy a dejar que esto me afecte. Ni un poquito.
 A-Mientras la casa esté bien, todo está bien.
 
 [000908] DIÁLOGO
-Esos afortunados tontos sin duda escaparon.
+Esos tontos con suerte se salvaron
 
 [000909] DIÁLOGO
-Me superó por un pelo.
+de mí por los pelos.
 
 [000910] DIÁLOGO
 Hmph. Finalmente se rindieron.
@@ -2871,10 +2871,10 @@ Así que me descuidé un poco.
 Sí.
 
 [000942] DIÁLOGO
-Leí todas las leyendas sobre ello.
+Leí todas las leyendas al respecto
 
 [000943] DIÁLOGO
-¡En la biblioteca de papá!
+¡en la biblioteca de papá!
 
 [000944] DIÁLOGO
 Arcanus Cella es la entrada al otro mundo.
@@ -2958,16 +2958,16 @@ Ahora lárgate de aquí.
 ¿Hay una salida?
 
 [000971] DIÁLOGO
-Será mejor que lo revise antes de Pudding.
+Será mejor que lo revise antes de que Pudding
 
 [000972] DIÁLOGO
-Ella misma se mete en más problemas.
+se meta en más problemas.
 
 [000973] DIÁLOGO
 Lamento haber destruido tu casa.
 
 [000974] DIÁLOGO
-Realmente debería estar intentando arreglarlo.
+Realmente debería estar intentando arreglarlo
 
 [000975] DIÁLOGO
 ahora mismo.
@@ -3064,10 +3064,10 @@ Gato negro
 No soy un gato.
 
 [001003] DIÁLOGO
-Soy Crosstine y vengo.
+Soy Crosstine y provengo
 
 [001004] DIÁLOGO
-de linaje noble.
+de un linaje noble.
 
 [001005] DIÁLOGO
 Este lugar está hecho un desastre.
@@ -3082,10 +3082,10 @@ Crosstine
 ¿Tú también estás de regreso?
 
 [001009] DIÁLOGO
-Estaba viendo a mi amigo.
+También estaba despidiendo
 
 [001010] DIÁLOGO
-apagado también.
+a un amigo.
 
 [001011] DIÁLOGO
 Así que esta es realmente la salida.
@@ -3103,10 +3103,10 @@ Crosstine
 Si es posible, ¿podría quedarse un rato?
 
 [001016] DIÁLOGO
-Hay una persona que te deseo.
+Hay alguien con quien quiero
 
 [001017] DIÁLOGO
-todos para hacerse amigos.
+que todos ustedes se hagan amigos.
 
 [001018] DIÁLOGO
 ¿Y esa persona es... humana?
@@ -3124,10 +3124,10 @@ Una muy bonita, de hecho.
 ¿Viste eso, Souma?
 
 [001023] DIÁLOGO
-La casa destruida fue reconstruida.
+La casa destruida se reconstruyó
 
 [001024] DIÁLOGO
-¡en seguida!
+¡en un instante!
 
 [001025] DIÁLOGO
 ¡Eso sí que es brujería!
@@ -3139,10 +3139,10 @@ Crosstine
 Despina es una hechicera con mucho talento.
 
 [001028] DIÁLOGO
-Reconstruir una casa es algo muy insignificante.
+Reconstruir una casa es una tarea insignificante
 
 [001029] DIÁLOGO
-tarea que ella debe cumplir.
+para ella.
 
 [001030] DIÁLOGO
 ¡El gato habló!
@@ -3151,10 +3151,10 @@ tarea que ella debe cumplir.
 Crosstine
 
 [001032] DIÁLOGO
-Soy Crosstine y vengo.
+Soy Crosstine y provengo
 
 [001033] DIÁLOGO
-de linaje noble.
+de un linaje noble.
 
 [001034] DIÁLOGO
 ¡Sabía que podía esperar esto de Arcanus Cella!
@@ -3175,16 +3175,16 @@ Crosstine
 Hablando de diversión,
 
 [001040] DIÁLOGO
-Puedes usar el "Portal de Teletransporte" que está al lado de la fuente.
+Puedes usar el "Portal de Teletransporte" que está al lado de la fuente
 
 [001041] DIÁLOGO
 para ir a muchos mundos diferentes.
 
 [001042] DIÁLOGO
-¿Seré capaz de encontrar el tesoro?
+¿Encontraré allí el tesoro
 
 [001043] DIÁLOGO
-¿De mis sueños allí?
+de mis sueños?
 
 [001044] PERSONAJE
 Crosstine
@@ -3276,10 +3276,10 @@ SCRIPT: demo1003_01.dsf
 ==================================================================
 
 [001072] DIÁLOGO
-Me pregunto de dónde viene el agua de ese lago.
+Me pregunto de dónde viene el agua de ese lago
 
 [001073] DIÁLOGO
-Viene de dónde y adónde va.
+y adónde irá.
 
 [001074] DIÁLOGO
 Hay una máscara extraña allí.
@@ -3351,10 +3351,10 @@ y "Puertas del Infierno" a veces pueden
 Proporcionan efectos realmente buenos.
 
 [001097] DIÁLOGO
-Puedes probar suerte en los primeros pisos.
+Puedes probar suerte en las primeras plantas
 
 [001098] DIÁLOGO
-Si crees que puedes asumir el riesgo.
+si crees que puedes asumir el riesgo.
 
 
 ==================================================================
@@ -3362,10 +3362,10 @@ SCRIPT: demo1004_00.dsf
 ==================================================================
 
 [001099] DIÁLOGO
-¿Es esta la puerta que se supone que es?
+¿Es esta la puerta que debería
 
 [001100] DIÁLOGO
-¿Para conducir a todo tipo de mazmorras?
+conducir a toda clase de mazmorras?
 
 [001101] DIÁLOGO
 Parece que sí.
@@ -3380,13 +3380,13 @@ Los tesoros están aquí...
 ¡Mi espíritu aventurero está desbordante!
 
 [001105] DIÁLOGO
-Ahí va Pudding otra vez, usando términos vulgares.
+Otra vez Pudding hablando con groserías.
 
 [001106] DIÁLOGO
-¿Sabe siquiera cuántas críticas recibo?
+¿Sabe cuántas críticas recibo
 
 [001107] DIÁLOGO
-¿Todo el tiempo por su culpa?
+por su culpa?
 
 [001108] DIÁLOGO
 ¿Dijiste algo?
@@ -3452,10 +3452,10 @@ Bueno...
 No me dan ganas de ir de fiesta.
 
 [001129] DIÁLOGO
-¿Ves? Encontraste un tesoro.
+¿V-ves? Encontraste un tesoro
 
 [001130] DIÁLOGO
-incluso sin poner un pie en una mazmorra.
+sin siquiera entrar en una mazmorra.
 
 [001131] DIÁLOGO
 Por ahora, conformate con eso.
@@ -3516,13 +3516,13 @@ Pudding está esperando de vuelta en Arcanus Cella,
 Así que será mejor que encuentre algún tesoro para llevarme de vuelta.
 
 [001147] DIÁLOGO
-Esta vez tengo un arma, así que al menos puedo...
+Esta vez tengo un arma, así que al menos puedo
 
 [001148] DIÁLOGO
-defenderse de los enemigos.
+defenderme de los enemigos.
 
 [001149] DIÁLOGO
-Pulsa el botón ㊦ en el momento preciso.
+Pulsa el botón ㊦ en el momento preciso
 
 [001150] DIÁLOGO
 para hacer un combo de 3 golpes.
@@ -3546,10 +3546,10 @@ Esta es "La cueva de Hiyo".
 Aquí es donde vivimos nosotros "Hiyo".
 
 [001157] DIÁLOGO
-Pero, un monstruo aterrador acaba de aparecer hace un rato.
+Pero hace un rato llegó un monstruo aterrador
 
 [001158] DIÁLOGO
-y nos robaron nuestra casa.
+y nos robó nuestro hogar.
 
 [001159] DIÁLOGO
 ¡Está dentro de nuestra casa!
@@ -3567,7 +3567,7 @@ Atacar a los enemigos por el costado o por la espalda será
 Aumentar el daño, la tasa de crítico y la tasa de rotura.
 
 [001164] DIÁLOGO
-Los golpes críticos aumentan el daño infligido.
+Los golpes críticos aumentan el daño infligido
 
 [001165] DIÁLOGO
 mientras que los golpes de ruptura pueden dejar a los enemigos inmóviles.
@@ -3798,13 +3798,13 @@ Obtendrás estadísticas que te convertirán en un mejor jugador principal.
 El personaje gana más ATK y DEF.
 
 [001241] DIÁLOGO
-En otras palabras, lo mejor es seguir cambiando de rol.
+En otras palabras, lo mejor es alternar los papeles
 
 [001242] DIÁLOGO
-alrededor para que puedas volverte más eficaz
+para que cada personaje aproveche
 
 [001243] DIÁLOGO
-en el papel particular de cada personaje.
+mejor su función.
 
 [001244] DIÁLOGO
 Los personajes que quieras usar como principales deberían ser
@@ -3895,13 +3895,13 @@ Quizás debería dejarte y marcharme.
 ¡Cállate la boca, asqueroso psicópata!
 
 [001270] DIÁLOGO
-Si tanto quieres ir, te dejaré.
+Si tantas ganas tienes de ir, te dejaré
 
 [001271] DIÁLOGO
-Ve allí junto con tu amigo cobarde.
+acompañar a tu amigo miedoso,
 
 [001272] DIÁLOGO
-En forma de "animadora" para él.
+pero solo como su animadora.
 
 [001273] DIÁLOGO
 ¿Eh? ¿Qué quieres decir? Yo no hago cosplay.
@@ -3970,7 +3970,7 @@ se transfiere al personaje secundario.
 Si puedo convertirme en su escudo...
 
 [001295] DIÁLOGO
-Quizás pueda ayudar.
+Quizás pueda ayudar
 
 [001296] DIÁLOGO
 cumplir los deseos de Pudding.
@@ -3982,19 +3982,19 @@ Además de eso, el Círculo mágico es...
 ¡Gracias, Despina!
 
 [001299] DIÁLOGO
-Ahora puedo ir a buscar tesoros.
+¡Ahora puedo ir a buscar tesoros
 
 [001300] DIÁLOGO
-¡Yo sola!
+por mi cuenta!
 
 [001301] DIÁLOGO
 Sobre tesoros...
 
 [001302] DIÁLOGO
-Todo lo que se obtenga irá a parar a todos.
+Todo lo que consigan será para quienes
 
 [001303] DIÁLOGO
-participando en el Círculo mágico.
+participen en el Círculo mágico.
 
 [001304] DIÁLOGO
 Una vez que salgas del Círculo mágico, obtendrás
@@ -4072,7 +4072,7 @@ Intentaré apoyarte como suplente entonces.
 Simplemente no te mates, ¿de acuerdo?
 
 [001329] DIÁLOGO
-Piensa en lo que diría tu madre.
+Piensa en lo que diría tu madre
 
 [001330] DIÁLOGO
 si ella te viera así.
@@ -4131,10 +4131,10 @@ Asegúrese de lavarse las manos al regresar.
 Tamako
 
 [001347] DIÁLOGO
-Es muy raro ver a Despina.
+Es muy raro ver a Despina
 
 [001348] DIÁLOGO
-Salga a la calle durante el día.
+salir de casa a plena luz del día.
 
 [001349] DIÁLOGO
 Debió de ser así de ruidoso.
@@ -4160,10 +4160,10 @@ SCRIPT: demo1006_02.dsf
 Piyohiko
 
 [001355] DIÁLOGO
-Hice trampas y las coloqué por todas partes para que no...
+Puse trampas por todas partes para que ningún
 
 [001356] DIÁLOGO
-¡El monstruo volverá a apoderarse de nuestra casa!
+monstruo vuelva a adueñarse de nuestro hogar.
 
 [001357] DIÁLOGO
 El "alimento" principal de esta habitación
@@ -4172,7 +4172,7 @@ El "alimento" principal de esta habitación
 ¡Pueden hacer trampas!
 
 [001359] DIÁLOGO
-Pero ahora ni siquiera puedo entrar.
+Pero ahora ni siquiera puedo entrar
 
 [001360] DIÁLOGO
 mi propia casa.
@@ -4217,10 +4217,10 @@ No rompas los "Bloques Destructibles" usando
 ¡Un arma con la propiedad contundente ③!
 
 [001374] DIÁLOGO
-No mantengas pulsado el botón ㊦ para cargar.
+No mantengas pulsado el botón ㊦ para cargar
 
 [001375] DIÁLOGO
-¡Y ataca con el arma contundente!
+y atacar con un arma contundente.
 
 [001376] DIÁLOGO
 ¡Será mejor que no hagas eso!
@@ -4241,13 +4241,13 @@ Nadie sabe nada,
 Pico
 
 [001382] DIÁLOGO
-Así que pulsa el botón ⑯ en medio de la batalla para abrir el menú.
+Así que pulsa el botón ⑯ durante el combate para abrir el menú.
 
 [001383] DIÁLOGO
-Puedes abrir el "Diccionario".
+En el "Diccionario" puedes consultar
 
 [001384] DIÁLOGO
-para comprobar lo que no sabes.
+lo que todavía no sabes.
 
 [001385] DIÁLOGO
 El juego no se pausa cuando el Diccionario está fuera.
@@ -4274,7 +4274,7 @@ proporcionar otros efectos adversos.
 Abril
 
 [001393] DIÁLOGO
-Las clases de hechiceros aprenden "magia".
+Las clases de hechiceros aprenden "magia"
 
 [001394] DIÁLOGO
 a medida que suben de nivel.
@@ -4346,13 +4346,13 @@ Eso es darle demasiado crédito a "Artifacts".
 Los artefactos también tienen vulnerabilidades.
 
 [001417] DIÁLOGO
-Si el personaje secundario que activó el Artefacto
+Si el personaje de apoyo que activó el artefacto
 
 [001418] DIÁLOGO
-Si mueres en batalla, también perderás los beneficios.
+muere en combate, también perderás los beneficios
 
 [001419] DIÁLOGO
-de ese Artefacto.
+de ese artefacto.
 
 [001420] DIÁLOGO
 En ese sentido, su equipo permanecerá con
@@ -4382,10 +4382,10 @@ se encuentran entre los más comunes
 efectos de estado.
 
 [001429] DIÁLOGO
-Si te quedas "desnudo", te despojarán de tus ropas.
+Si quedas "desnudo", perderás
 
 [001430] DIÁLOGO
-de su equipo.
+tu equipo.
 
 [001431] DIÁLOGO
 ¡Cuidado con los ataques de ladrones de guante blanco!
@@ -4439,10 +4439,10 @@ el "personaje principal" y el "personaje secundario"
 Subir de nivel de una manera completamente diferente.
 
 [001448] DIÁLOGO
-Un "guerrero" que permanece como el "principal" todo el tiempo.
+Un "guerrero" que siempre sea el principal
 
 [001449] DIÁLOGO
-Obtendrá puntos de vida y maná adicionales.
+obtendrá HP y maná adicionales.
 
 [001450] DIÁLOGO
 El que se quedó más como "sub"
@@ -4472,10 +4472,10 @@ para subirlos de nivel como "personaje principal" para que
 puede obtener más HP y Maná.
 
 [001459] DIÁLOGO
-No es como si te lo estuviera diciendo.
+N-no te lo digo porque quiera.
 
 [001460] DIÁLOGO
-¡Porque quiero!
+¡Que quede claro!
 
 [001461] PERSONAJE
 Ajustar
@@ -4490,10 +4490,10 @@ Planté minas terrestres así
 ¡Nadie puede entrar en nuestro pueblo!
 
 [001465] DIÁLOGO
-Será una muerte instantánea para los que somos como nosotros.
+Será una muerte instantánea para seres como nosotros
 
 [001466] DIÁLOGO
-¡Porque no podemos saltar las trampas!
+porque no podemos saltar las trampas.
 
 [001467] DIÁLOGO
 ¡Jejejeje!
@@ -4508,22 +4508,22 @@ Los artefactos son cruciales.
 Cuando yo era el legendario Hiyokki,
 
 [001471] DIÁLOGO
-Fui derrotado por un aventurero.
+me derrotó un aventurero
 
 [001472] DIÁLOGO
 con más de 100 ATK.
 
 [001473] DIÁLOGO
-Puede que no lo creas, pero ese aventurero...
+Aunque no lo creas, lo único que llevaba
 
 [001474] DIÁLOGO
-El único equipo era el "palo de madera".
+aquel aventurero era un "Palo de madera".
 
 [001475] DIÁLOGO
-En otras palabras, puedes aumentar tu ATK a 100.
+¡En otras palabras, puedes alcanzar 100 ATK
 
 [001476] DIÁLOGO
-¡Solo con artefactos!
+solo con artefactos!
 
 [001477] PERSONAJE
 hiyorton
@@ -4600,10 +4600,10 @@ Tu actitud de sabelotodo me molesta.
 En fin, déjame mostrarte el Círculo mágico.
 
 [001500] DIÁLOGO
-¿Entendiste qué es el Círculo mágico?
+¿Has entendido cómo funciona el Círculo mágico
 
 [001501] DIÁLOGO
-¿De qué se trata simplemente a partir de esa explicación?
+solo con esa explicación?
 
 [001502] OPCIÓN
 No
@@ -4624,10 +4624,10 @@ Muy bien.
 Toma esto.
 
 [001508] DIÁLOGO
-No tienes que darme las gracias. Simplemente no te quiero.
+No hace falta que me des las gracias. Solo quiero evitar
 
 [001509] DIÁLOGO
-para que luego viniera llorando a mí.
+que luego vengas llorando a mí.
 
 [001510] DIÁLOGO
 Pero esta es toda la ayuda que recibirás de mi parte.
@@ -4651,10 +4651,10 @@ O habla conmigo o
 Abrir la pantalla del menú.
 
 [001517] DIÁLOGO
-No podrás modificar el Círculo mágico.
+No podrás modificar el Círculo mágico
 
 [001518] DIÁLOGO
-una vez que estés en las mazmorras.
+una vez que entres en las mazmorras.
 
 [001519] DIÁLOGO
 Los Círculos Mágicos se utilizan para potenciar el
@@ -4720,7 +4720,7 @@ El papel de los "personajes secundarios" no es solo
 para proteger al "personaje principal".
 
 [001540] DIÁLOGO
-Los "Subs" pueden consumir "Maná".
+Los "Subs" pueden consumir "Maná"
 
 [001541] DIÁLOGO
 para encender estas cosas llamadas
@@ -4774,10 +4774,10 @@ Puedes colocar "Artefactos" que puedan
 acelera tu movimiento o "CRT".
 
 [001558] DIÁLOGO
-Intentemos usar mis artefactos.
+Probemos mis artefactos
 
 [001559] DIÁLOGO
-y practica activándolos.
+y practiquemos cómo activarlos.
 
 [001560] DIÁLOGO
 El "Artefacto" que colocarás será
@@ -4795,10 +4795,10 @@ Utilice los "Artefactos" de esta manera para
 realzar continuamente al "personaje principal".
 
 [001565] DIÁLOGO
-Sin embargo, los "artefactos" deben estar conectados.
+Sin embargo, los artefactos deben estar conectados
 
 [001566] DIÁLOGO
-a los subpersonajes o no se activará.
+a los personajes de apoyo para activarse.
 
 [001567] DIÁLOGO
 Conecta los caminos de esta manera
@@ -4810,7 +4810,7 @@ para activarlos.
 El artefacto que acabas de colocar es el
 
 [001570] DIÁLOGO
-"Maná más 1", un artefacto muy útil.
+"Maná más 1", un artefacto muy útil
 
 [001571] DIÁLOGO
 que se puede colocar en cualquier lugar.
@@ -4828,13 +4828,13 @@ cuando no hay ninguna vía conectada.
 Eso es todo en cuanto a lo básico.
 
 [001576] DIÁLOGO
-Oh, sí. Cuando tu "personaje secundario" muere.
+Ah, sí. Cuando un personaje de apoyo muere
 
 [001577] DIÁLOGO
-En combate, los artefactos asociados se desactivarán.
+en combate, los artefactos asociados se desactivan.
 
 [001578] DIÁLOGO
-Téngalo en cuenta.
+Tenlo en cuenta.
 
 [001579] DIÁLOGO
 Ahora vete.
@@ -4863,10 +4863,10 @@ SCRIPT: demo1007_01.dsf
 ==================================================================
 
 [001586] DIÁLOGO
-Hmm. No parece haber nada.
+Mmm... No parece que haya nada raro
 
 [001587] DIÁLOGO
-Lo de la máscara es extraño.
+en la máscara. Qué lástima.
 
 [001588] DIÁLOGO
 Demasiado.
@@ -4881,10 +4881,10 @@ Pero los "personajes secundarios" tienen
 quedarse aquí... Hm...
 
 [001592] DIÁLOGO
-Ahora puedo echarme la siesta todo lo que quiera.
+Ahora puedo echarme la siesta cuando quiera
 
 [001593] DIÁLOGO
-sin ser molestados.
+sin que nadie me moleste.
 
 [001594] PERSONAJE
 Tamako
@@ -5030,10 +5030,10 @@ Por cierto, no vi ninguna tienda abierta.
 ¿De verdad puedo usarlo?
 
 [001640] DIÁLOGO
-Creo que estará bien siempre y cuando no lo hagas.
+Creo que estarás bien mientras no
 
 [001641] DIÁLOGO
-molestar al loco de esa casa.
+molestes al cascarrabias de esa casa.
 
 [001642] DIÁLOGO
 Ah, y otra cosa.
@@ -5051,7 +5051,7 @@ Realmente debería necesitarlo. Sí.
 ("¿Máscara de la felicidad?"
 
 [001647] DIÁLOGO
-Supongo que está aburrida de eso.
+Supongo que está aburrida de eso
 
 [001648] DIÁLOGO
 ya.)
@@ -5078,19 +5078,19 @@ Mi billetera está en algún lugar.
 T-Tienes muy mala suerte, ¿verdad?
 
 [001656] DIÁLOGO
-Desde aquí puedes acceder a todo tipo de mazmorras.
+Desde aquí puedes ir a toda clase de mazmorras.
 
 [001657] DIÁLOGO
-Tal vez puedas encontrarlo ahí dentro. O tal vez puedas...
+Tal vez lo encuentres allí. También puedes
 
 [001658] DIÁLOGO
-Golpea monstruos para conseguir dinero y objetos.
+ganar dinero y objetos derrotando monstruos.
 
 [001659] DIÁLOGO
 ¡Es una idea genial!
 
 [001660] DIÁLOGO
-Ella solo quería conseguir más miembros.
+Ella solo quería conseguir más miembros
 
 [001661] DIÁLOGO
 en su Círculo mágico...
@@ -5108,7 +5108,7 @@ Te lo contaré todo, pero si encuentras alguno
 tesoro, será mejor que me lo enseñes primero.
 
 [001666] DIÁLOGO
-Simplemente pondré la máscara en tu cuenta.
+Simplemente pondré la máscara en tu cuenta
 
 [001667] DIÁLOGO
 por ahora.
@@ -5156,10 +5156,10 @@ Ahora tienes acceso a la tienda.
 Adquiera equipos y objetos en la tienda.
 
 [001682] DIÁLOGO
-También podrías obtener acceso a contenido VIP.
+También podrías acceder a contenido VIP
 
 [001683] DIÁLOGO
-si sigues superando tus tiempos de limpieza.
+si sigues mejorando tus tiempos.
 
 [001684] DIÁLOGO
 Ahora tienes acceso a Coco.
@@ -5259,13 +5259,13 @@ SCRIPT: demo1101_02.dsf
 Esqueleto moribundo
 
 [001713] DIÁLOGO
-¿Por qué compiten en tales condiciones?
+¿Por qué compiten en un lugar tan estrecho?
 
 [001714] DIÁLOGO
-¿Un espacio reducido?
+Me dieron un golpe
 
 [001715] DIÁLOGO
-Me golpearon y ahora mírame...
+y ahora mírame...
 
 [001716] PERSONAJE
 Esqueleto moribundo
@@ -5360,10 +5360,10 @@ Así, "Dotache".
 Cómo, cómo. ¡Tienes toda la razón!
 
 [001745] DIÁLOGO
-Ahora, ¿dónde está la casa más?
+¿Dónde estará la casa más adecuada
 
 [001746] DIÁLOGO
-¿Apropiado para mi nueva vida?
+para mi nueva vida?
 
 [001747] PERSONAJE
 Crosstine
@@ -5447,7 +5447,7 @@ Ahora tienes acceso a la taberna.
 ¡Ahora puedes ir a una nueva mazmorra!
 
 [001774] DIÁLOGO
-Habla con Dotache en la taberna.
+Habla con Dotache en la taberna
 
 [001775] DIÁLOGO
 para iniciar la creación del personaje.
@@ -5470,7 +5470,7 @@ SCRIPT: demo1102_01.dsf
 ==================================================================
 
 [001780] DIÁLOGO
-Me pregunto si el tipo barbudo de la taberna...
+Me pregunto si el barbudo de la taberna
 
 [001781] DIÁLOGO
 se unirá a mi Círculo mágico.
@@ -5625,10 +5625,10 @@ Esqueleto moribundo
 No intentes derrotar a todos los enemigos.
 
 [001830] DIÁLOGO
-Si luchas contra todos ellos, acabarás como yo.
+Si te enfrentas a todos sin pensar, acabarás como yo
 
 [001831] DIÁLOGO
-sin pensar en cómo funciona la mazmorra.
+por no entender cómo funciona la mazmorra.
 
 [001832] PERSONAJE
 Esqueleto moribundo
@@ -5759,13 +5759,13 @@ No es que lo odie particularmente.
 ¡No me importa si te gusto o no!
 
 [001873] DIÁLOGO
-¡He oído que hay un hechizo realmente genial aquí!
+¡Dicen que aquí hay un hechizo increíble!
 
 [001874] DIÁLOGO
-Definitivamente iré a buscarlo.
+¡Encontraré el escudo definitivo
 
 [001875] DIÁLOGO
-¡El escudo definitivo ante ti!
+antes que tú!
 
 [001876] DIÁLOGO
 ¡Te arrepentirás de esto!
@@ -5825,10 +5825,10 @@ Consigue la espada definitiva.
 ¿Un hechizo, eh?
 
 [001895] DIÁLOGO
-Sin embargo, debo encontrar la espada definitiva.
+Sin embargo, debo encontrar la espada definitiva
 
 [001896] DIÁLOGO
-Porque debo hacerme más fuerte.
+porque necesito hacerme más fuerte.
 
 [001897] DIÁLOGO
 Cuando me metí en un callejón,
@@ -5881,10 +5881,10 @@ pero si Pudding se convierte en un "personaje secundario",
 ¿No se lastimará?
 
 [001912] DIÁLOGO
-Me alegra mucho tener clientes.
+¡Qué alegría que haya clientes
 
 [001913] DIÁLOGO
-¡Aquí se pueden comprar escudos y espadas!
+que quieran comprar escudos y espadas!
 
 [001914] DIÁLOGO
 ¡Los cielos me han bendecido!
@@ -5935,22 +5935,22 @@ Pero creo que el gatito tiene algo
 en común conmigo.
 
 [001930] DIÁLOGO
-A menos que quieras morir por mi espada,
+Si no quieres morir bajo mi espada,
 
 [001931] DIÁLOGO
-No me mires a los ojos.
+no me mires a los ojos
 
 [001932] DIÁLOGO
-cuando me hablas.
+cuando hables conmigo.
 
 [001933] DIÁLOGO
-No puedo olvidar la vez que Sunday me dio una paliza.
+¡Jamás olvidaré cómo Sunday derribó
 
 [001934] DIÁLOGO
-¡Este tipo enorme en la calle!
+a un tipo enorme en plena calle!
 
 [001935] DIÁLOGO
-¡Soy el único que puede vencerla!
+¡Solo yo puedo vencerla!
 
 
 ==================================================================
@@ -5982,10 +5982,10 @@ En lo que a mí respecta, ¡estoy encantado de tener este trabajo!
 ¡Conocer gente nueva es genial!
 
 [001944] DIÁLOGO
-Parece que ya le estás cogiendo el truco.
+¡Parece que ya le has cogido el truco
 
 [001945] DIÁLOGO
-¡De ese cachivache del camarero!
+a eso de ser tabernero!
 
 [001946] DIÁLOGO
 ¡Seguro que volveré más tarde!
@@ -6084,13 +6084,13 @@ Palma de coco...?
 Crosstine
 
 [001978] DIÁLOGO
-Sherbet, eres un tonto.
+Sherbet, qué tonto eres.
 
 [001979] DIÁLOGO
-La princesa solo te llama acosador.
+La princesa te llama acosador
 
 [001980] DIÁLOGO
-Porque sigues merodeando a su alrededor.
+porque siempre merodeas a su alrededor.
 
 [001981] DIÁLOGO
 Pero protegiendo a la princesa en secreto
@@ -6220,7 +6220,7 @@ Pero por otro lado, tiene una potencia pésima.
 Esqueleto moribundo
 
 [002020] DIÁLOGO
-Solo quería probar suerte en esto.
+Solo quería probar suerte en este
 
 [002021] DIÁLOGO
 bosque infestado de dragones.
@@ -6243,13 +6243,13 @@ No lo entiendo. ¿Por qué se están multiplicando?
 ¿Mi mundo uno tras otro?
 
 [002026] DIÁLOGO
-Hmph. Soy compasivo, así que no lo haré.
+Bah. Soy compasivo, así que no voy a
 
 [002027] DIÁLOGO
-obligarlos a irse, siempre y cuando no lo hagan
+obligarlos a irse mientras no
 
 [002028] DIÁLOGO
-interferir en mi vida.
+interfieran en mi vida.
 
 [002029] DIÁLOGO
 ¿Eh?
@@ -6285,10 +6285,10 @@ Voz de canto
 ¿Cómo estás?
 
 [002040] DIÁLOGO
-Tu cara y tu cabello son igual de excéntricos.
+Tu cara y tu pelo son tan extravagantes
 
 [002041] DIÁLOGO
-Como siempre, Bob.
+como siempre, Bob.
 
 [002042] DIÁLOGO
 ¡Despertar!
@@ -6300,13 +6300,13 @@ Como siempre, Bob.
 ¡Ahora me estoy sonrojando!
 
 [002045] DIÁLOGO
-¡Pero voy a seguir intentándolo y esforzándome cada vez más!
+¡Pero seguiré esforzándome cada vez más!
 
 [002046] DIÁLOGO
-Soy un niño de corazón y nunca estaré satisfecho.
+Soy un niño de corazón y no estaré satisfecho
 
 [002047] DIÁLOGO
-¡Hasta que sea el mejor! ¡Mírame... con estilo!
+hasta ser el mejor. ¡Mírame... qué estilo!
 
 [002048] DIÁLOGO
 Mirarte fijamente me pudrirá los ojos hasta la médula.
@@ -6360,13 +6360,13 @@ Usaré mi fabuloso gusto para dárselos
 ¡Entonces todos estarán contentos!
 
 [002065] DIÁLOGO
-¿Oh? ¿Quieres convertir a los humanos en...?
+¿Ah? ¿Quieres convertir a los humanos
 
 [002066] DIÁLOGO
-¿Criaturas extrañas como tú?
+en criaturas extrañas como tú?
 
 [002067] DIÁLOGO
-¡Me parece una idea estupenda!
+¡Me encanta esa idea!
 
 [002068] DIÁLOGO
 ¡Oh, tú!
@@ -6381,13 +6381,13 @@ Usaré mi fabuloso gusto para dárselos
 Increíble.
 
 [002072] DIÁLOGO
-Yyyyy. ¡Ya casi es mi cumpleaños!
+Yyyyy... ¡Casi es mi cumpleaños!
 
 [002073] DIÁLOGO
-Le eché un vistazo a esa tienda.
+Pasé por esa tienda
 
 [002074] DIÁLOGO
-¡Y encontré esta fabulosa máscara!
+¡y encontré esta máscara fabulosa!
 
 [002075] DIÁLOGO
 ¿Mascarilla?
@@ -6515,13 +6515,13 @@ Quizás debería cortarme el pelo.
 Me pregunto qué color de pelo debería elegir.
 
 [002115] DIÁLOGO
-Ehh, veamos. Mi trabajo es...
+Eh, veamos. Mi trabajo consiste en
 
 [002116] DIÁLOGO
-barre la parte delantera de la tienda y...
+barrer frente a la tienda y... ¡Ah, hola!
 
 [002117] DIÁLOGO
-¡Oh, hola! ¡Bienvenido!
+¡Bienvenido!
 
 [002118] PERSONAJE
 Crosstine
@@ -6636,13 +6636,13 @@ Debe haber salido volando a algún sitio.
 Eso es bueno...
 
 [002152] DIÁLOGO
-De ninguna manera...
+N-no puede ser... Ese gato dijo que curaríamos
 
 [002153] DIÁLOGO
-Ese gato dijo que podíamos curar cualquier enfermedad.
+cualquier enfermedad si teníamos la máscara...
 
 [002154] DIÁLOGO
-Si tuviéramos la mascarilla... Suspiro...
+Ay...
 
 [002155] DIÁLOGO
 ¿Gato? Ah, te refieres al callejero.
@@ -6669,10 +6669,10 @@ No te serviría de nada involucrarte.
 ¿Entonces no curará enfermedades?
 
 [002163] DIÁLOGO
-Souma, ¿hay alguien?
+Souma, ¿conoces a alguien
 
 [002164] DIÁLOGO
-¿Sabes que eso es enfermizo?
+que esté enfermo?
 
 [002165] DIÁLOGO
 Bien...
@@ -6708,13 +6708,13 @@ Sí.
 Intenté detenerla, pero ya sabes cómo es.
 
 [002176] DIÁLOGO
-Supongo que sí, es deprimente estar encerrado.
+Supongo que es deprimente estar encerrada
 
 [002177] DIÁLOGO
-Todo el tiempo. Si yo fuera ella, querría tomar un poco de sol.
+todo el tiempo. Si fuera ella, querría tomar el sol.
 
 [002178] DIÁLOGO
-De vuelta en nuestro mundo, ella fue hospitalizada.
+De vuelta en nuestro mundo, ella fue hospitalizada
 
 [002179] DIÁLOGO
 y de hecho se quedó donde estaba.
@@ -6818,10 +6818,10 @@ problemas propios.
 Tener cosas que resolver puede ser algo bueno.
 
 [002211] DIÁLOGO
-¿Puedes por favor no traer cosas raras que suenen falsas?
+Por favor, no traigas enfermedades
 
 [002212] DIÁLOGO
-¿Enfermedades en mi mundo puro y dichoso?
+de nombre disparatado a mi mundo tan feliz.
 
 [002213] PERSONAJE
 Tamako
@@ -6871,7 +6871,7 @@ SCRIPT: demo1202_00.dsf
 ¡Por Dios!
 
 [002227] DIÁLOGO
-¡Dame un poco de espacio! Eres como un acosador.
+¡Dame un poco de espacio! Eres como un acos-
 
 [002228] DIÁLOGO
 ¿Souma?
@@ -6916,13 +6916,13 @@ Pero, ¿por qué andas husmeando?
 Estoy seguro de que a esa persona no le gusta.
 
 [002242] DIÁLOGO
-¿Cómo lo supiste?
+¿Cómo lo supiste? La persona a quien protejo
 
 [002243] DIÁLOGO
-La persona a la que estoy protegiendo me encuentra.
+me considera bastante molesto...
 
 [002244] DIÁLOGO
-Muy molesto... por decir lo menos.
+por decirlo suavemente.
 
 [002245] DIÁLOGO
 Es porque no soy lo suficientemente considerado.
@@ -6958,13 +6958,13 @@ Este lugar es relativamente seguro.
 Quizás sea buena idea dar un paso atrás.
 
 [002256] DIÁLOGO
-Entonces, ¿puedo intentar aumentar?
+Entonces, ¿puedo buscar más armaduras
 
 [002257] DIÁLOGO
-¿Mi colección de armaduras en las mazmorras?
+en las mazmorras? Así también
 
 [002258] DIÁLOGO
-También puede contribuir a proteger a esa persona.
+podré proteger a esa persona.
 
 [002259] DIÁLOGO
 Ahora entiendo por qué no le caes bien a esa persona.
@@ -7030,10 +7030,10 @@ Por eso puedo hacer con él lo que quiera.
 ¡Oye, espera!
 
 [002280] DIÁLOGO
-¿Puedes enseñarle a Sherbet?
+¿Puedes enseñarle a Sherbet
 
 [002281] DIÁLOGO
-¿Sobre el Círculo mágico?
+cómo funciona el Círculo mágico?
 
 [002282] DIÁLOGO
 Es un verdadero fastidio.
@@ -7080,10 +7080,10 @@ SCRIPT: demo1202_01.dsf
 ==================================================================
 
 [002295] DIÁLOGO
-¿No te resulta molesto cuando la gente...?
+¿No te molesta que los demás
 
 [002296] DIÁLOGO
-¿Sigue diciéndote "no"?
+te digan que no todo el tiempo?
 
 [002297] DIÁLOGO
 Me alegra tener más gente conmigo ahora.
@@ -7134,13 +7134,13 @@ No me lo han ordenado.
 Crosstine
 
 [002313] DIÁLOGO
-Alguien tiene que hacer algo.
+Alguien tiene que hacer algo
 
 [002314] DIÁLOGO
-sobre esa voz. Creo que mis oídos
+con esa voz. A este paso,
 
 [002315] DIÁLOGO
-A este ritmo, se pudrirá.
+se me van a pudrir los oídos.
 
 [002316] DIÁLOGO
 Hmph. Yo, la hechicera talentosa Despina,
@@ -7152,25 +7152,25 @@ No estoy aquí para que puedas confiar en mí.
 Tamako
 
 [002319] DIÁLOGO
-No puedo moverme, así que me encanta mirar.
+No puedo moverme, pero me encanta ver
 
 [002320] DIÁLOGO
-los diferentes tipos de personas de tantos
+a tantas personas de mundos diferentes
 
 [002321] DIÁLOGO
-Aquí confluyen mundos únicos.
+venir hasta aquí.
 
 [002322] PERSONAJE
 Tamako
 
 [002323] DIÁLOGO
-No puedo moverme, así que me encanta mirar.
+No puedo moverme, pero me encanta ver
 
 [002324] DIÁLOGO
-los diferentes tipos de personas de tantos
+a tantas personas de mundos diferentes
 
 [002325] DIÁLOGO
-Aquí confluyen mundos únicos.
+venir hasta aquí.
 
 [002326] DIÁLOGO
 Parece que solo fue mi imaginación.
@@ -7265,10 +7265,10 @@ Tu cara también es
 ¡Perfecto! ¡Súper bien!
 
 [002355] DIÁLOGO
-(Esa melodía otra vez...)
+(Esa melodía otra vez... Ya no puedo
 
 [002356] DIÁLOGO
-No puedo mantener esta mentira.
+seguir manteniendo esta mentira.)
 
 [002357] DIÁLOGO
 (Continuando por más tiempo.)
@@ -7355,13 +7355,13 @@ Su rostro y su voz son espeluznantes.
 L-Lo siento...
 
 [002385] DIÁLOGO
-Yo! Despina!
+¡Eh, Despina!
 
 [002386] DIÁLOGO
-¿No es realmente, realmente raro?
+¿No es rarísimo
 
 [002387] DIÁLOGO
-¿Para que salgas de tu casa?
+que salgas de casa?
 
 [002388] DIÁLOGO
 Solo vine a tirar esto.
@@ -7379,10 +7379,10 @@ Solo vine a tirar esto.
 H-Hola, Despina...
 
 [002393] DIÁLOGO
-No te preocupes. No te ahuyentaré.
+No te preocupes. No te echaré
 
 [002394] DIÁLOGO
-Porque pareces un monstruo de la naturaleza.
+solo por parecer un monstruo.
 
 [002395] DIÁLOGO
 Soy compasivo.
@@ -7411,13 +7411,13 @@ SCRIPT: demo1203_01.dsf
 ¡Será más fácil encontrar tesoros!
 
 [002402] DIÁLOGO
-¿Mi vida no será nada más?
+¿Mi vida se reducirá a ser
 
 [002403] DIÁLOGO
-¿Más que ser el chico de los recados de Pudding?
+el recadero de Pudding?
 
 [002404] DIÁLOGO
-¿Para eso es todo que sirvo?
+¿Acaso no sirvo para nada más?
 
 [002405] DIÁLOGO
 Han estado cayendo excrementos de pájaros
@@ -7429,7 +7429,7 @@ el cielo sin parar.
 Pero supongo que eso pasa todo el tiempo.
 
 [002408] DIÁLOGO
-El camarero rara vez te mira a los ojos.
+El camarero rara vez te mira a los ojos
 
 [002409] DIÁLOGO
 cuando estás hablando con él.
@@ -7504,10 +7504,10 @@ No tengo boca, así que no puedo decirlo de todos modos.
 ¡Hola, ⑨!
 
 [002433] DIÁLOGO
-Me uniré al Círculo mágico.
+¡Me uniré al Círculo mágico
 
 [002434] DIÁLOGO
-¡En mis días libres!
+en mis días libres!
 
 
 ==================================================================
@@ -7688,13 +7688,13 @@ Yo... no me gusta ese gato callejero.
 Arcanus Cella estaba en su boca...)
 
 [002491] DIÁLOGO
-Quiero echarlo de mi mundo, pero es...
+Quiero expulsarlo de mi mundo, pero
 
 [002492] DIÁLOGO
-protegido por algo. Algo poderoso y
+algo lo protege. Algo muy poderoso y mágico,
 
 [002493] DIÁLOGO
-Mágico. Hasta el punto de que entorpece mis hechizos.
+tanto que interfiere con mis hechizos.
 
 [002494] DIÁLOGO
 ¡Odio esto! ¡Odio esto! ¡Odio esto!
@@ -7736,13 +7736,13 @@ Hmph. Parece que los únicos que vienen
 En este mundo hay gente extraña con problemas.
 
 [002507] DIÁLOGO
-No hay manera de que pueda encontrar a alguien para
+Aquí no hay manera de encontrar a alguien
 
 [002508] DIÁLOGO
-enamorarse de aquí. A este paso, no.
+de quien enamorarme. A este paso...
 
 [002509] DIÁLOGO
-Será mejor que encuentre la espada definitiva pronto...
+Más vale que encuentre pronto la espada definitiva.
 
 [002510] PERSONAJE
 Voz misteriosa
@@ -7798,10 +7798,10 @@ Ella es de noble cuna.
 Bueno, entonces. ¡Será mejor que me ponga manos a la obra!
 
 [002526] DIÁLOGO
-Mi colección de armaduras es tan...
+Mi colección de armaduras es
 
 [002527] DIÁLOGO
-ahora es más grande.
+mucho mayor ahora.
 
 [002528] DIÁLOGO
 ¡Me encantaa
@@ -7875,10 +7875,10 @@ SCRIPT: demo1205_00.dsf
 ¡He oído que eres coleccionista de armaduras!
 
 [002550] DIÁLOGO
-¿Estás tratando de encontrar el?
+¿Buscas la "armadura definitiva"
 
 [002551] DIÁLOGO
-¿"Armadura definitiva" o algo así?
+o algo por el estilo?
 
 [002552] DIÁLOGO
 ¿Armadura definitiva?
@@ -7893,7 +7893,7 @@ SCRIPT: demo1205_00.dsf
 ¡Será mejor que te quites de mi camino!
 
 [002556] DIÁLOGO
-Puede que coleccione armaduras, pero eso es solo como un medio.
+Puede que coleccione armaduras, pero eso es solo como un medio
 
 [002557] DIÁLOGO
 para servir a aquel a quien deseo proteger.
@@ -7908,13 +7908,13 @@ La armadura solo me ayuda a lograr ese objetivo.
 ¡Te has burlado de mí, ¿verdad?!
 
 [002561] DIÁLOGO
-Prote... ¡¿Qué?!
+¡Prote...! ¡¿Qué?! Yo creía que todos
 
 [002562] DIÁLOGO
-Pensé que todos solo deseaban convertirse en...
+solo buscaban hacerse más fuertes
 
 [002563] DIÁLOGO
-¡Más fuertes por sus propios deseos!
+por sus propios deseos.
 
 [002564] DIÁLOGO
 No estoy del todo seguro de entenderlo,
@@ -7926,13 +7926,13 @@ Pero tú solo quieres un escudo, ¿verdad?
 Puedes tener esto.
 
 [002567] DIÁLOGO
-Despina no lo quería de todos modos. Lo encontré en el
+Despina no lo quería. Lo encontré
 
 [002568] DIÁLOGO
-El suelo de allí. Estoy seguro de que no le importaría.
+allí en el suelo. Seguro que no le importaría
 
 [002569] DIÁLOGO
-si lo usaste como escudo.
+que lo usaras de escudo.
 
 [002570] DIÁLOGO
 ¡Argh!
@@ -7997,7 +7997,7 @@ Era un sueño de Pudding, saludable.
 Despina rara vez baja a la tienda,
 
 [002589] DIÁLOGO
-Entonces, tal vez debería ir a su casa.
+Entonces, tal vez debería ir a su casa
 
 [002590] DIÁLOGO
 y preguntarle si necesita algo.
@@ -8033,13 +8033,13 @@ Solo quiero que todos
 Crosstine
 
 [002601] DIÁLOGO
-De hecho conocí a Despina.
+Conocí a Despina
 
 [002602] DIÁLOGO
 cuando todavía era un bebé.
 
 [002603] DIÁLOGO
-Era tan linda en aquel entonces.
+Era adorable entonces.
 
 [002604] DIÁLOGO
 Debo deshacerme de esa máscara.
@@ -8051,25 +8051,25 @@ Esa es la única mancha en mi vida.
 Tamako
 
 [002607] DIÁLOGO
-No puedo ver, pero puedo sentir.
+No puedo ver, pero siento que Despina
 
 [002608] DIÁLOGO
-que Despina pasó por bastante
+sufrió muchísimo
 
 [002609] DIÁLOGO
-Sufrí mucho dolor antes de venir aquí.
+antes de venir aquí.
 
 [002610] PERSONAJE
 Tamako
 
 [002611] DIÁLOGO
-No puedo ver, pero puedo sentir.
+No puedo ver, pero siento que Despina
 
 [002612] DIÁLOGO
-que Despina pasó por bastante
+sufrió muchísimo
 
 [002613] DIÁLOGO
-Sufrí mucho dolor antes de venir aquí.
+antes de venir aquí.
 
 [002614] DIÁLOGO
 Una máscara...
@@ -8119,13 +8119,13 @@ Sí, lo soy.
 ???
 
 [002628] DIÁLOGO
-Despina, tienes poderes realmente asombrosos.
+Despina, tienes unos poderes increíbles
 
 [002629] DIÁLOGO
-Como tu abuelo, ¿verdad?
+como los de tu abuelo, ¿verdad?
 
 [002630] DIÁLOGO
-¿Por qué no te conviertes en un ermitaño como él?
+¿Por qué no te vuelves ermitaña como él?
 
 [002631] DIÁLOGO
 Parece una buena idea.
@@ -8194,13 +8194,13 @@ Es ese chico con tan mala suerte.
 ¿Necesitas algún medicamento?
 
 [002653] DIÁLOGO
-No lo quiero. Me veo mejor que un zombi.
+No lo quiero. Me veo mejor que un zombi, ¿no?
 
 [002654] DIÁLOGO
-¿No es así? ¿Eso es todo lo que viniste a decir?
+¿Es eso todo lo que venías a decir?
 
 [002655] DIÁLOGO
-Ahora vete.
+Pues vete.
 
 [002656] DIÁLOGO
 ¡Bueno!
@@ -8221,22 +8221,22 @@ Tíralo lo más lejos que puedas.
 ¡Claro que sí!
 
 [002662] DIÁLOGO
-¿Despina? Me alegro mucho de haberlo hecho.
+¿Despina? ¡Me alegro muchísimo
 
 [002663] DIÁLOGO
-¡Llegó a Arcanus Cella!
+de haber venido a Arcanus Cella!
 
 [002664] DIÁLOGO
-¡De otra manera no habría conocido a todos!
+¡Si no, no habría conocido a todos!
 
 [002665] DIÁLOGO
-Pareces como si nada te preocupara jamás.
+Parece que nunca te preocupa nada.
 
 [002666] DIÁLOGO
-¿No te cansas de parpadear?
+¿No te cansas de lucir
 
 [002667] DIÁLOGO
-¿Esa sonrisa tuya?
+esa sonrisa de oreja a oreja?
 
 [002668] DIÁLOGO
 ¡Pero de verdad me siento feliz!
@@ -8298,13 +8298,13 @@ Creo que algo podría pasar si lo mantenemos.
 Me pregunto si la mala suerte es contagiosa.
 
 [002686] DIÁLOGO
-Siempre tengo pesadillas en las que me encuentro...
+Siempre tengo pesadillas en las que
 
 [002687] DIÁLOGO
-perseguido por un ojo gigante.
+me persigue un ojo gigante.
 
 [002688] DIÁLOGO
-Simplemente lo mato y normalmente ahí termina todo.
+Lo mato y casi siempre se acaba todo.
 
 [002689] DIÁLOGO
 ¡Escudo, mis pies!
@@ -8319,10 +8319,10 @@ Simplemente lo mato y normalmente ahí termina todo.
 ¿Qué se supone que debo hacer?
 
 [002693] DIÁLOGO
-¿Pensaste en qué?
+¿Has pensado qué regalo
 
 [002694] DIÁLOGO
-¿Qué regalo de cumpleaños me puedes dar?
+vas a hacerme por mi cumpleaños?
 
 [002695] PERSONAJE
 Crosstine
@@ -8390,10 +8390,10 @@ Ahora no lo sé
 ¡Maldita sea!
 
 [002715] DIÁLOGO
-¿Qué se supone que debo hacer?
+¿Qué voy a hacer
 
 [002716] DIÁLOGO
-¡¿Y mi vida ahora?!
+con mi vida ahora?!
 
 [002717] DIÁLOGO
 No tengo nada más que hacer que...
@@ -8474,13 +8474,13 @@ Pero me alegro de que estés bien.
 ¡Estás maldito!
 
 [002743] DIÁLOGO
-Esperar...
+Un momento...
 
 [002744] DIÁLOGO
-¿Qué estaba intentando?
+¿Qué estaba intentando
 
 [002745] DIÁLOGO
-¿Para hacerlo de nuevo?
+hacer?
 
 [002746] DIÁLOGO
 ¡Oh, bueno!
@@ -8492,10 +8492,10 @@ Esperar...
 ¡Y aléjate de mí, maldita sea!
 
 [002749] DIÁLOGO
-Ugh. ¿Mi desgracia?
+Uf... ¿De verdad mi mala suerte
 
 [002750] DIÁLOGO
-¿Realmente influye en los demás?
+se contagia a los demás?
 
 [002751] PERSONAJE
 Mascarilla
@@ -8510,10 +8510,10 @@ No te preocupes por eso.
 ¡La máscara!
 
 [002755] DIÁLOGO
-Acabo de acordarme de Despina.
+¡Acabo de recordar que Despina
 
 [002756] DIÁLOGO
-¡Me pidió que lo tirara lejos!
+me pidió que la tirara muy lejos!
 
 [002757] DIÁLOGO
 ¡Ahora puedes ir a una nueva mazmorra!
@@ -8572,10 +8572,10 @@ Parece que Battleblo era
 Inofensivo después de todo.
 
 [002774] DIÁLOGO
-Battleblo ideó una estrategia totalmente nueva.
+¡Battleblo inventó una forma de bailar
 
 [002775] DIÁLOGO
-¡Qué tipo de baile! ¡Es funkadelic!
+totalmente nueva! ¡Es funkadelic!
 
 [002776] PERSONAJE
 Crosstine
@@ -8599,7 +8599,7 @@ Hay demasiada gente aquí.
 Tamako
 
 [002783] DIÁLOGO
-Despina proviene de una larga estirpe.
+Despina procede de una larga estirpe
 
 [002784] DIÁLOGO
 de hechiceros.
@@ -8608,7 +8608,7 @@ de hechiceros.
 Tamako
 
 [002786] DIÁLOGO
-Despina proviene de una larga estirpe.
+Despina procede de una larga estirpe
 
 [002787] DIÁLOGO
 de hechiceros.
@@ -8693,10 +8693,10 @@ Despina estaba buscando esta máscara,
 Así que lo traje conmigo.
 
 [002811] DIÁLOGO
-Creo que puedes guardar esa espada.
+Creo que ya puedes guardar esa espada,
 
 [002812] DIÁLOGO
-Ahora, domingo.
+Sunday.
 
 [002813] DIÁLOGO
 Lo siento, camarero.
@@ -8708,13 +8708,13 @@ No es que le tenga miedo a esa máscara.
 Simplemente no soporto que la gente me mire.
 
 [002816] DIÁLOGO
-Me da un sudor frío y urticaria cuando...
+Me entra un sudor frío y me salen ronchas
 
 [002817] DIÁLOGO
-Sé que hay gente que me observa.
+cuando sé que alguien me mira.
 
 [002818] DIÁLOGO
-Mi corazón se acelera y empiezo a marearme.
+Se me acelera el corazón y me mareo.
 
 [002819] DIÁLOGO
 Tengo úlceras. Por favor, no me mires.
@@ -8744,31 +8744,31 @@ Así que estás buscando la espada definitiva
 ¿Está relacionado con eso?
 
 [002828] DIÁLOGO
-Con la espada definitiva, no tendré que...
+Con la espada definitiva, ya no tendré
 
 [002829] DIÁLOGO
-Ya no me preocupa la mirada de los demás.
+que preocuparme por las miradas ajenas.
 
 [002830] DIÁLOGO
-Solo quiero vivir como cualquier persona normal.
+Solo quiero vivir como los demás.
 
 [002831] DIÁLOGO
-Si tengo que blandir una espada todo el tiempo, no lo haré.
+Si tengo que llevar siempre una espada,
 
 [002832] DIÁLOGO
-poder tener citas o mirar fijamente a los ojos de un hombre
+no podré salir con nadie ni mirar
 
 [002833] DIÁLOGO
-¡Ojos, y mucho menos darle un beso!
+a un hombre a los ojos, ¡ni darle un beso!
 
 [002834] DIÁLOGO
-No creo que puedas hacer eso de todos modos.
+No creo que puedas hacer eso
 
 [002835] DIÁLOGO
 si llevas la espada definitiva.
 
 [002836] DIÁLOGO
-Supongo que, después de todo, eres como cualquier otra chica.
+Supongo que eres como cualquier otra chica.
 
 [002837] DIÁLOGO
 ¿Qué tal si usamos una máscara en lugar de una espada?
@@ -8833,13 +8833,13 @@ Mimado tanto como el domingo no
 quieren que los miren fijamente.
 
 [002856] DIÁLOGO
-Tal vez esa máscara realmente no lo sea.
+Quizá esa máscara no sea realmente
 
 [002857] DIÁLOGO
-Después de todo, la máscara de la felicidad.
+la máscara de la felicidad.
 
 [002858] DIÁLOGO
-Pero me trajo muchísima felicidad...
+Pero me hizo muy feliz...
 
 [002859] DIÁLOGO
 Por favor...
@@ -8848,10 +8848,10 @@ Por favor...
 Por favor, no me mires fijamente.
 
 [002861] DIÁLOGO
-¿Qué te pasa con ese ceño fruncido?
+¿A qué viene ese ceño
 
 [002862] DIÁLOGO
-¿en tu cara?
+tan fruncido?
 
 [002863] DIÁLOGO
 ¡Argh!
@@ -8881,7 +8881,7 @@ Crosstine
 Je, je...
 
 [002872] DIÁLOGO
-No sé si realmente necesitas un tesoro.
+No sé si realmente necesitas un tesoro
 
 [002873] DIÁLOGO
 para lograr tu objetivo.
@@ -8896,19 +8896,19 @@ mirando por la ventana.
 Tamako
 
 [002877] DIÁLOGO
-No puedo ver, pero nunca lo tendré.
+No puedo ver, pero al menos
 
 [002878] DIÁLOGO
-Tampoco me apuntaban con una espada.
+nadie me apuntará con una espada.
 
 [002879] PERSONAJE
 Tamako
 
 [002880] DIÁLOGO
-No puedo ver, pero nunca lo tendré.
+No puedo ver, pero al menos
 
 [002881] DIÁLOGO
-Tampoco me apuntaban con una espada.
+nadie me apuntará con una espada.
 
 [002882] DIÁLOGO
 Estoy acostumbrado a ver esto en mi país,
@@ -8954,13 +8954,13 @@ pero estoy irritado ahora mismo porque no puedo
 ¿De verdad estás gravemente enfermo?
 
 [002893] DIÁLOGO
-Sí, me muero si me río demasiado.
+Sí, moriré si me río demasiado.
 
 [002894] DIÁLOGO
-Aunque no me ría a carcajadas, se acumula.
+Aunque no me ría en voz alta, se acumula
 
 [002895] DIÁLOGO
-y finalmente moriré en 6 meses.
+y moriré en unos seis meses.
 
 [002896] DIÁLOGO
 ¡Tienes que estar bromeando!
@@ -8969,16 +8969,16 @@ y finalmente moriré en 6 meses.
 ¡Más vale que no sea contagioso!
 
 [002898] DIÁLOGO
-¿Qué gano yo mintiéndote?
+¿Qué gano con mentirte? Dicen que mejoraría
 
 [002899] DIÁLOGO
-Dicen que podría mejorar si me contagio.
+si contagiara a otra persona, pero
 
 [002900] DIÁLOGO
-Otra persona, pero es una posibilidad entre un millón.
+solo hay una posibilidad entre un millón.
 
 [002901] DIÁLOGO
-Vine aquí porque vi un letrero.
+Vine aquí porque vi un letrero
 
 [002902] DIÁLOGO
 en un sueño que tuve.
@@ -9020,10 +9020,10 @@ A estas alturas, toda la energía debería estar recargada.
 Crosstine
 
 [002915] DIÁLOGO
-Es lo mismo que la vez que estuvo con su abuelo.
+Es como lo que ocurrió con su abuelo,
 
 [002916] DIÁLOGO
-Así que parece que todo va bien.
+así que parece que todo va bien.
 
 [002917] DIÁLOGO
 De ninguna manera...
@@ -9047,10 +9047,10 @@ Estar enfermo puede ser muy triste.
 ¡Pero mejorará!
 
 [002924] DIÁLOGO
-¿No lo tiró Despina?
+¿No tiró Despina esa máscara
 
 [002925] DIÁLOGO
-¿Como... muchas veces?
+como... un montón de veces?
 
 [002926] DIÁLOGO
 ¿Por qué sigues volviendo?
@@ -9089,10 +9089,10 @@ Ni más ni menos.
 Entonces, ¿por qué no destruirlo?
 
 [002938] DIÁLOGO
-¿No crees que yo habría...?
+¿No crees que ya
 
 [002939] DIÁLOGO
-¿Ya lo intentaste?
+lo habría intentado?
 
 [002940] DIÁLOGO
 Puedes tocarlo,
@@ -9377,7 +9377,7 @@ Crosstine
 ¿No vas a destruirlo?
 
 [003029] DIÁLOGO
-Será malo si acumula más energía.
+Será malo si acumula más energía
 
 [003030] DIÁLOGO
 que la que tiene actualmente.
@@ -9401,10 +9401,10 @@ Mascarilla
 Crosstine
 
 [003037] DIÁLOGO
-(Oh, Dios mío.
+(Vaya... Será mejor que le dé
 
 [003038] DIÁLOGO
-Parece que será mejor que le dé esto a esta cosa.
+más poder a esa cosa.)
 
 [003039] DIÁLOGO
 más poder entonces.)
@@ -9461,7 +9461,7 @@ Crosstine
 ¡Je, je!
 
 [003057] DIÁLOGO
-Ahora volverá a manos de los humanos.
+Ahora volverá a manos de los humanos
 
 [003058] DIÁLOGO
 un poco más.
@@ -9490,7 +9490,7 @@ Me alegro de haberlo vendido.
 Me alegro de no haber dejado que Pudding se lo comiera.
 
 [003065] DIÁLOGO
-Me pregunto cómo Bob cambia de color.
+Me pregunto cómo Bob cambia de color
 
 [003066] DIÁLOGO
 tan rápido.
@@ -9644,13 +9644,13 @@ Parece que te he causado problemas innecesarios.
 Me iré enseguida, así que por favor discúlpenme.
 
 [003113] DIÁLOGO
-P-Pero, simplemente no pareces ese tipo de persona.
+P-pero no pareces de los que
 
 [003114] DIÁLOGO
-Eso sería un acosador.
+acosarían a alguien.
 
 [003115] DIÁLOGO
-Y tú también me protegiste hace un momento.
+Y además me acabas de proteger.
 
 [003116] DIÁLOGO
 ¿Quién eres?
@@ -9677,7 +9677,7 @@ Orígenes y motivos dudosos a mi alrededor.
 Desobedeceré las órdenes solo por esta vez.
 
 [003124] DIÁLOGO
-Estoy aquí por orden del antiguo rey.
+Estoy aquí por orden del antiguo rey
 
 [003125] DIÁLOGO
 para protegerte, princesa.
@@ -9716,13 +9716,13 @@ Permítame entonces agradecerle una vez más.
 Gracias por todo.
 
 [003137] DIÁLOGO
-Y espero sinceramente que lo hagas.
+Y espero sinceramente
 
 [003138] DIÁLOGO
-Continúa sirviéndome de ahora en adelante.
+que sigas a mi servicio.
 
 [003139] DIÁLOGO
-Princesa... He desobedecido mis órdenes.
+Princesa... He desobedecido mis órdenes
 
 [003140] DIÁLOGO
 revelándote mi misión.
@@ -9737,10 +9737,10 @@ Entonces, como castigo,
 Te ordeno que seas mi guardaespaldas.
 
 [003144] DIÁLOGO
-No importa lo que pase, estaré...
+¡Pase lo que pase, seré tu escudo
 
 [003145] DIÁLOGO
-¡Tu escudo hasta que muera!
+hasta que muera!
 
 [003146] DIÁLOGO
 Je, je. Siempre exageras todo.
@@ -9793,13 +9793,13 @@ SCRIPT: demo1301_01.dsf
 Bueno, no me importaría unirme.
 
 [003161] DIÁLOGO
-Esa máscara es realmente peligrosa.
+Esa máscara es muy peligrosa.
 
 [003162] DIÁLOGO
-¿Por qué intentó Crosstine...?
+¿Por qué intentó Crosstine
 
 [003163] DIÁLOGO
-¿Me convences para comprarlo?
+que yo la comprara?
 
 [003164] DIÁLOGO
 ¡Oh, vaya! Una fiesta. ¡Suena divertido!
@@ -9823,13 +9823,13 @@ Una fiesta...
 Me pregunto si Sunday se va a arreglar.
 
 [003171] DIÁLOGO
-Revelarle mi identidad iba en contra de mi voluntad.
+Revelarle mi identidad iba en contra
 
 [003172] DIÁLOGO
-las órdenes que me atan.
+de las órdenes que debo cumplir.
 
 [003173] DIÁLOGO
-Sin embargo, ahora me siento mucho mejor.
+Sin embargo, ahora me siento mejor.
 
 [003174] DIÁLOGO
 ¡Oh!
@@ -9850,10 +9850,10 @@ Soy un gato, así que solo observaré.
 ¡Diviértete en la fiesta!
 
 [003180] DIÁLOGO
-¿Qué sucede con respecto a la mascarilla?
+Lo que ocurra con la máscara
 
 [003181] DIÁLOGO
-No es asunto mío.
+no es asunto mío.
 
 [003182] PERSONAJE
 Tamako
@@ -9927,13 +9927,13 @@ Jeje...
 No te preocupes por eso.
 
 [003204] DIÁLOGO
-Lo llaman fiesta, pero te trajeron aquí.
+Lo llaman fiesta, pero te trajeron aquí
 
 [003205] DIÁLOGO
-trabajar. ¿No es una lata?
+a trabajar. ¿No es una lata?
 
 [003206] DIÁLOGO
-¿Puedo hacer algo para ayudarte?
+¿Puedo ayudarte en algo?
 
 [003207] DIÁLOGO
 Estoy bien.
@@ -9957,10 +9957,10 @@ Está muy adentro.
 Déjame ir a buscarlo una vez más entonces.
 
 [003214] DIÁLOGO
-(Tenía la intención de resolver todos los asuntos
+(Pensaba resolverlo por mi cuenta,
 
 [003215] DIÁLOGO
-por mi cuenta, pero supongo que...
+pero supongo que no hacía falta.)
 
 [003216] DIÁLOGO
 No había necesidad de eso.
@@ -10026,7 +10026,7 @@ Yo tampoco me había dado cuenta.
 (Debo compensar a Sherbet.
 
 [003237] DIÁLOGO
-Porque ella me había brindado su apoyo.
+Porque ella me había brindado su apoyo
 
 [003238] DIÁLOGO
 todo este tiempo...)
@@ -10073,13 +10073,13 @@ El armario se cayó mientras lo estábamos montando.
 ¡Pero eso pasa todo el tiempo!
 
 [003251] DIÁLOGO
-Fiestas...
+Fiestas... Una de las tantas cosas que detesto.
 
 [003252] DIÁLOGO
-Una de las muchas cosas que detesto. Me llevaron a...
+Provocaron numerosas peleas,
 
 [003253] DIÁLOGO
-Muchas peleas, la mayoría de ellas provocadas por mí.
+casi todas por mi culpa.
 
 [003254] DIÁLOGO
 A todos y a mí mismo...
@@ -10165,34 +10165,34 @@ Je. ¿Cómo pude ser tan estúpido?
 ¡Ni siquiera me daba cuenta de mis propios sentimientos!
 
 [003280] DIÁLOGO
-¡Por eso seguí persiguiéndola!
+¡Por eso la seguía a todas partes!
 
 [003281] DIÁLOGO
-Ahora sé por qué estoy tan obsesionado.
+¡Ahora entiendo por qué
 
 [003282] DIÁLOGO
-¡en escudos!
+me obsesionan tanto los escudos!
 
 [003283] DIÁLOGO
 ¡Domingo!
 
 [003284] DIÁLOGO
-Otra vez tú. ¿Te saltaste tus obligaciones?
+Otra vez tú. ¿Dejaste tus obligaciones
 
 [003285] DIÁLOGO
-¿Para prepararse para la fiesta?
+para preparar la fiesta?
 
 [003286] DIÁLOGO
-¿Todo esto solo para presumir de tu escudo otra vez?
+¿Solo para volver a presumir de tu escudo?
 
 [003287] DIÁLOGO
-¡Hoy no!
+¡H-hoy no!
 
 [003288] DIÁLOGO
-Hoy te diré por qué estoy tan...
+¡Hoy te explicaré por qué
 
 [003289] DIÁLOGO
-¡Obsesionados con los escudos!
+me obsesionan tanto los escudos!
 
 [003290] DIÁLOGO
 ¡Es para protegerte de las miradas de los demás!
@@ -10228,13 +10228,13 @@ Dejando eso de lado, ¿qué opinas de esta espada?
 Puaj...
 
 [003301] DIÁLOGO
-(¿No te das cuenta?!
+(¡¿No lo entiendes?! ¿No basta con defenderme?
 
 [003302] DIÁLOGO
-¿Acaso la defensa no es suficiente? ¿Tengo que atacar?
+¿Tengo que pasar al ataque
 
 [003303] DIÁLOGO
-¿¡para que se lo meta en la cabeza?!))
+para que le entre en la cabeza?!)
 
 [003304] PERSONAJE
 Mascarilla
@@ -10264,13 +10264,13 @@ Qué hombre tan extraño.
 Espera, ¿miradas...?
 
 [003313] DIÁLOGO
-Nunca me di cuenta de que nunca me molestó su mirada.
+Nunca me había dado cuenta de que su mirada no me molestaba.
 
 [003314] DIÁLOGO
-¿Cuándo fui así? ¿Empezó?
+¿Desde cuándo me siento así?
 
 [003315] DIÁLOGO
-¿Recuerdan cuando llegué a este mundo?
+¿Desde que llegué a este mundo?
 
 [003316] DIÁLOGO
 No, eso no importa.
@@ -10302,19 +10302,19 @@ Deseo algo emocionante
 sucedería.
 
 [003324] DIÁLOGO
-Quizás esa máscara no sea gran cosa después de todo.
+Quizá esa máscara no sea gran cosa.
 
 [003325] DIÁLOGO
-Lo único que hace es volar hacia abajo.
+Solo sabe caer al suelo
 
 [003326] DIÁLOGO
-y que te den bofetadas.
+y recibir golpes.
 
 [003327] DIÁLOGO
-Me pregunto si Despina se unirá.
+Me pregunto si Despina irá
 
 [003328] DIÁLOGO
-en la fiesta.
+a la fiesta.
 
 [003329] DIÁLOGO
 Siento otra mirada una vez más.
@@ -10329,10 +10329,10 @@ Estoy seguro de que esta vez no es Battleblo.
 Es muy divertido ayudar.
 
 [003333] DIÁLOGO
-Consigue el peinado perfecto y lo conseguirás.
+Ponte un peinado perfecto
 
 [003334] DIÁLOGO
-¡Toda la atención, ⑨!
+¡y todas las miradas serán para ti, ⑨!
 
 [003335] PERSONAJE
 Crosstine
@@ -10356,25 +10356,25 @@ No me gusta. ¿Dónde se supone que debo descansar?
 Tamako
 
 [003342] DIÁLOGO
-La máscara es realmente peligrosa. Es absorbente.
+La máscara es muy peligrosa.
 
 [003343] DIÁLOGO
-energía negativa cada vez
+Absorbe energía negativa cada vez
 
 [003344] DIÁLOGO
-Se acerca a un ser humano.
+que se acerca a un humano.
 
 [003345] PERSONAJE
 Tamako
 
 [003346] DIÁLOGO
-La máscara es realmente peligrosa. Es absorbente.
+La máscara es muy peligrosa.
 
 [003347] DIÁLOGO
-energía negativa cada vez
+Absorbe energía negativa cada vez
 
 [003348] DIÁLOGO
-Se acerca a un ser humano.
+que se acerca a un humano.
 
 [003349] DIÁLOGO
 Así que fue rechazado.
@@ -10580,10 +10580,10 @@ Esto no se siente nada mal.
 Crosstine
 
 [003415] DIÁLOGO
-Parece que acabas de crear un mundo completamente nuevo.
+¡Parece que acabas de crear un mundo nuevo
 
 [003416] DIÁLOGO
-¡Para que lo disfrutes tú mismo!
+para disfrutarlo a tu gusto!
 
 [003417] DIÁLOGO
 ¡Oh, sí! ¡Domingo!
@@ -10713,10 +10713,10 @@ Pudding, ¿cómo te sientes?
 ¿Notas algo raro?
 
 [003456] DIÁLOGO
-Esta vez tengo un arma, así que al menos puedo...
+Esta vez tengo un arma, así que al menos puedo
 
 [003457] DIÁLOGO
-defenderse de los enemigos.
+defenderme de los enemigos.
 
 [003458] DIÁLOGO
 Pero, ¿no es eso un poco extraño?
@@ -10749,10 +10749,10 @@ Ahora que lo mencionas, me siento mucho mejor.
 No pensé que me curaría.
 
 [003468] DIÁLOGO
-Te guardaste uno de los objetos en el bolsillo.
+¿Te guardaste en el bolsillo uno de los objetos
 
 [003469] DIÁLOGO
-¿Lo encontraste?
+que encontraste?
 
 [003470] DIÁLOGO
 Ese tesoro en particular
@@ -10776,13 +10776,13 @@ Parece que todavía tienes los dedos pegajosos.
 ¡Venir aquí fue lo mejor que hemos hecho en nuestra vida!
 
 [003477] DIÁLOGO
-Ajá.
+Ajá. Pero recuerda
 
 [003478] DIÁLOGO
-Pero será mejor que recuerdes que te estoy dejando.
+que solo por hoy te permito
 
 [003479] DIÁLOGO
-Llámame así solo por hoy.
+llamarme así.
 
 [003480] DIÁLOGO
 Oh, hola Pudding y Souma.
@@ -10800,10 +10800,10 @@ Pareces muy feliz, Coco.
 ¡Sí! ¡Estas cosas pueden ser muy divertidas!
 
 [003485] DIÁLOGO
-¡Estoy deseando que empiece la fiesta!
+¡Desde que vi a Sunday así,
 
 [003486] DIÁLOGO
-¡Desde que vi a Sunday así!
+no puedo esperar a que empiece la fiesta!
 
 [003487] DIÁLOGO
 ¡Los cielos me deben haber bendecido!
@@ -10833,10 +10833,10 @@ No me digas... ¿Te reíste mucho?
 Pues sí. Nos lo estábamos pasando genial...
 
 [003496] DIÁLOGO
-Pero escuché que era contagioso.
+Pero oí que solo había una posibilidad
 
 [003497] DIÁLOGO
-una probabilidad entre un millón...
+entre un millón de que fuera contagioso...
 
 [003498] DIÁLOGO
 Pero te curas si infectas a otra persona, ¿verdad?
@@ -10982,7 +10982,7 @@ Pero ahora Coco está enferma... ¿Qué debo hacer...?
 ¡Realmente es un desgraciado con muy mala suerte!
 
 [003544] DIÁLOGO
-Dudo mucho que podamos hacer una fiesta.
+Dudo mucho que podamos hacer una fiesta
 
 [003545] DIÁLOGO
 con el giro tan dramático que están tomando las cosas.
@@ -11059,7 +11059,7 @@ Jejeje...
 ¿Eh?
 
 [003568] DIÁLOGO
-Oh, cierto... no se suponía que debía reírme.
+Ah, cierto... No debía reírme,
 
 [003569] DIÁLOGO
 pero no pude evitarlo...
@@ -11164,10 +11164,10 @@ Me lo agradecerás después.
 Crosstine
 
 [003603] DIÁLOGO
-Ella solo dijo eso porque realmente es así.
+Lo dijo porque es imposible
 
 [003604] DIÁLOGO
-Es imposible revivir a alguien por medios normales.
+revivir a alguien por medios normales.
 
 [003605] DIÁLOGO
 ...
@@ -11185,10 +11185,10 @@ Incluso tu abuelo finalmente no pudo
 para resucitar a los muertos.
 
 [003610] DIÁLOGO
-Sin embargo, es un suceso bastante raro.
+Sin embargo, es muy raro ver
 
 [003611] DIÁLOGO
-para ver a la misántropa Despina
+a la misántropa Despina
 
 [003612] DIÁLOGO
 ayudar a otra persona.
@@ -11230,10 +11230,10 @@ Aparte de eso,
 Todo lo demás es prácticamente igual.
 
 [003625] DIÁLOGO
-¡Espera, espera, espera! Pero el color de su piel lo hace...
+¡Espera! Pero el color de su piel
 
 [003626] DIÁLOGO
-¡Parece que se está pudriendo!
+¡hace que parezca estar pudriéndose!
 
 [003627] DIÁLOGO
 ¡Jajaja! ¡Esa es una gran canción!
@@ -11266,10 +11266,10 @@ Mascarilla
 Mascarilla
 
 [003637] DIÁLOGO
-Me habéis vuelto a dejar fuera de la conversación.
+¡Me dejaron al margen otra vez
 
 [003638] DIÁLOGO
-¡Y me divertí muchísimo!
+y se divirtieron sin mí!
 
 [003639] DIÁLOGO
 ¿Te divertiste?
@@ -11320,10 +11320,10 @@ Por eso la familiar
 No se puede tocar.
 
 [003655] DIÁLOGO
-Espera, ¿eso significa?
+¡Me volvieron a dejar al margen
 
 [003656] DIÁLOGO
-¿Me resultas familiar?
+y se divirtieron sin mí!
 
 [003657] PERSONAJE
 Crosstine
@@ -11388,16 +11388,16 @@ Parece que sigo teniendo tan mala suerte como cuando estaba vivo.
 La máscara buscaba a Despina.
 
 [003676] DIÁLOGO
-Realmente no creo que sea una buena idea.
+No creo que deba salir de casa
 
 [003677] DIÁLOGO
-para que ella abandone su casa por el momento.
+por el momento.
 
 [003678] DIÁLOGO
-Voy a romper esa estúpida máscara.
+¡Voy a destrozar esa maldita máscara
 
 [003679] DIÁLOGO
-¡Con mis propias manos! ¡O con escudo!
+con mis propias manos! ¡O con mi escudo!
 
 [003680] DIÁLOGO
 ¿Estás enferma, Coco?
@@ -11480,10 +11480,10 @@ El cabello de todos está igual que siempre,
 ¡Pero sus caras! ¡Tan diferentes!
 
 [003705] DIÁLOGO
-Tienes razón en eso. Hay algo.
+Tienes razón. Hay algo
 
 [003706] DIÁLOGO
-son diferentes entre sí.
+distinto en ellos.
 
 [003707] DIÁLOGO
 ¡Todo gracias al Círculo mágico!
@@ -11495,13 +11495,13 @@ son diferentes entre sí.
 ¡Es una promesa entre tú y yo!
 
 [003710] DIÁLOGO
-¿Qué le pasa?
+¿Qué le pasa? Creía que solo me había sacado
 
 [003711] DIÁLOGO
-Pensé que solo me había traído para presumir.
+para presumir de los peinados
 
 [003712] DIÁLOGO
-los peinados que hizo para la fiesta.
+que hizo para la fiesta.
 
 [003713] DIÁLOGO
 El Círculo mágico... Hmm...
@@ -11588,13 +11588,13 @@ Aunque... no soy de los que dejan una deuda sin pagar.
 Crosstine
 
 [003741] DIÁLOGO
-No sirve de nada.
+No sirve de nada. Los familiares como yo
 
 [003742] DIÁLOGO
-Los familiares como yo no pueden revivir a menos que...
+solo podemos revivir si
 
 [003743] DIÁLOGO
-Lo hacen nuestros maestros.
+nos resucitan nuestros amos.
 
 [003744] DIÁLOGO
 ¿Entonces dónde está tu amo?
@@ -11642,13 +11642,13 @@ en contra de eso, Despina.
 Crosstine
 
 [003759] DIÁLOGO
-Pero el Círculo mágico puede ser un método eficaz.
+Pero el Círculo mágico puede servir
 
 [003760] DIÁLOGO
-contramedida contra ella. Ahora que tiene un cuerpo,
+para contrarrestarla. Ahora que tiene un cuerpo,
 
 [003761] DIÁLOGO
-Podrás hacerle daño.
+podrás hacerle daño.
 
 [003762] DIÁLOGO
 ¿Quieres que derrote a esa cosa?
@@ -11660,13 +11660,13 @@ Crosstine
 ¡Je, je! ¿Crees que puedes hacerlo?
 
 [003765] DIÁLOGO
-Despina...
+Despina... Por favor.
 
 [003766] DIÁLOGO
-Por favor. Por favor, inténtalo.
+Intenta superar
 
 [003767] DIÁLOGO
-superar este desafío.
+este desafío.
 
 [003768] PERSONAJE
 Crosstine
@@ -11711,19 +11711,19 @@ Si sigues así, cerrarás la puerta a
 ¡Tu futuro también! ¡Es increíble!
 
 [003782] DIÁLOGO
-Pero parece que la mascarilla es un obstáculo.
+Pero parece que la máscara es un obstáculo
 
 [003783] DIÁLOGO
-Por un futuro más brillante.
+para tu futuro más prometedor.
 
 [003784] DIÁLOGO
-No entiendo.
+No lo entiendo. ¿Por qué todos ustedes
 
 [003785] DIÁLOGO
-¿Por qué se están obligando todos ustedes?
+insisten tanto en involucrarse
 
 [003786] DIÁLOGO
-¿involucrarse en mis problemas?
+en mis problemas?
 
 [003787] DIÁLOGO
 Eso es porque todos cambiamos
@@ -11810,13 +11810,13 @@ Porque soy muy compasivo,
 Lo perdonaré por eso.
 
 [003815] DIÁLOGO
-Unámonos todos y derrotemos.
+¡Unámonos todos
 
 [003816] DIÁLOGO
-¡Esa máscara!
+para derrotar esa máscara!
 
 [003817] DIÁLOGO
-¡Por Despina y por todos los demás!
+¡Por Despina y por los demás!
 
 [003818] DIÁLOGO
 Ustedes son un grupo bastante impulsivo.
@@ -11840,10 +11840,10 @@ Pero esto puede ser aceptable de vez en cuando.
 ¡Préstame tu fuerza!
 
 [003825] DIÁLOGO
-No soy tan compasivo como para...
+No soy tan compasivo como para
 
 [003826] DIÁLOGO
-¡Deja que esa máscara corra libremente!
+dejar que esa máscara ande libre.
 
 [003827] DIÁLOGO
 Ahora tienes acceso a Despina.
@@ -11914,25 +11914,25 @@ Sin duda has causado bastantes problemas.
 Tamako
 
 [003848] DIÁLOGO
-Parece que la máscara es lo suficientemente fuerte.
+Parece que la máscara ya es capaz
 
 [003849] DIÁLOGO
-Destruir el mundo ahora.
+de destruir el mundo.
 
 [003850] DIÁLOGO
-Se ha convertido en una verdadera molestia.
+Se ha vuelto una molestia.
 
 [003851] PERSONAJE
 Tamako
 
 [003852] DIÁLOGO
-Parece que la máscara es lo suficientemente fuerte.
+Parece que la máscara ya es capaz
 
 [003853] DIÁLOGO
-Destruir el mundo ahora.
+de destruir el mundo.
 
 [003854] DIÁLOGO
-Se ha convertido en una verdadera molestia.
+Se ha vuelto una molestia.
 
 [003855] DIÁLOGO
 ¿Hay algo que pueda hacer?
@@ -11973,10 +11973,10 @@ Crosstine
 No soy un gato.
 
 [003866] DIÁLOGO
-Provengo de un linaje noble.
+Provengo de un linaje noble
 
 [003867] DIÁLOGO
-y mi nombre es Crosstine.
+y me llamo Crosstine.
 
 [003868] DIÁLOGO
 (Creo que he elegido a la persona más rara hasta ahora.
@@ -11994,13 +11994,13 @@ Tú puedes ser el próximo "personaje principal".
 Espera un poco más, ¿de acuerdo?
 
 [003873] DIÁLOGO
-¡Más te vale cumplir esa promesa!
+¡Más te vale cumplir tu promesa!
 
 [003874] DIÁLOGO
-Y será mejor que trabajes muy duro.
+¡Y trabajar muy duro
 
 [003875] DIÁLOGO
-¡Entonces, como un "personaje secundario"!
+como personaje de apoyo!
 
 [003876] PERSONAJE
 Asagi
@@ -12030,13 +12030,13 @@ Soy Asagi.
 ¡Vengo del mundo de MES!
 
 [003885] DIÁLOGO
-¿Mundo de MES?
+¿Mundo de MES? ¿Te refieres
 
 [003886] DIÁLOGO
-¿Te refieres a la consola de sobremesa?
+a la consola llamada
 
 [003887] DIÁLOGO
-¿Se llama Sistema de Disfrute Mimtengo?
+Mimtengo Enjoyment System?
 
 [003888] DIÁLOGO
 Así parece Arcanus Cella
@@ -12060,7 +12060,7 @@ Asagi
 ¿Ah? ¿De verdad eres tú quien habla?
 
 [003895] DIÁLOGO
-He oído hablar mucho de ustedes.
+He oído hablar mucho de ustedes
 
 [003896] DIÁLOGO
 de ese gato callejero.
@@ -12078,10 +12078,10 @@ Oh, no importa.
 Asagi
 
 [003901] DIÁLOGO
-Simplemente se están ayudando mutuamente.
+Simplemente se ayudan entre ustedes
 
 [003902] DIÁLOGO
-¿En el Círculo mágico, verdad?
+en el Círculo mágico, ¿verdad?
 
 [003903] DIÁLOGO
 ¡Pero eso es algo bueno!
@@ -12090,7 +12090,7 @@ Simplemente se están ayudando mutuamente.
 Asagi
 
 [003905] DIÁLOGO
-Nadie juega como "personaje secundario".
+Nadie que juegue como personaje de apoyo
 
 [003906] DIÁLOGO
 tiene derecho a reírse de mí.
@@ -12182,13 +12182,13 @@ Oh, vaya.
 ¿De verdad va a hacerlo sola?
 
 [003934] DIÁLOGO
-Creo que será mejor que mantenga la vista fija.
+Será mejor que la vigile.
 
 [003935] DIÁLOGO
-fuera por ella.
+Podría acabar muerta
 
 [003936] DIÁLOGO
-Podría morir en una zanja en algún lugar.
+en alguna zanja.
 
 [003937] DIÁLOGO
 ¡Ay de mí, Dios mío!
@@ -12244,13 +12244,13 @@ SCRIPT: demo1502_00.dsf
 ¡Estás loca, Asagi!
 
 [003953] DIÁLOGO
-¿Cómo pudiste simplemente irte?
+¿Cómo pudiste irte
 
 [003954] DIÁLOGO
-¿Y morir así?
+y morir así?!
 
 [003955] DIÁLOGO
-Solo un idiota iría a una mazmorra peligrosa.
+Solo un idiota iría a una mazmorra peligrosa
 
 [003956] DIÁLOGO
 completamente sola.
@@ -12280,10 +12280,10 @@ Asagi
 Asagi
 
 [003965] DIÁLOGO
-¿Cómo se supone que esto es el?
+¿Cómo va a ser este el mundo
 
 [003966] DIÁLOGO
-"¿Un mundo donde cualquiera puede convertirse en el protagonista?!"
+donde cualquiera puede ser protagonista?
 
 [003967] DIÁLOGO
 ¡Todo es mentira!
@@ -12316,7 +12316,7 @@ Aunque yo pueda ser el "personaje principal",
 ¡Eso no es lo que es un verdadero personaje principal!
 
 [003977] DIÁLOGO
-Pero aun así, las mazmorras son realmente difíciles.
+Pero aun así, las mazmorras son realmente difíciles
 
 [003978] DIÁLOGO
 si no recibes ayuda de los demás.
@@ -12328,19 +12328,19 @@ Asagi
 Oh, está bien.
 
 [003981] DIÁLOGO
-Supongo que no me dejas otra opción.
+Supongo que no me dejas otra opción
 
 [003982] DIÁLOGO
 pero para usarlo.
 
 [003983] DIÁLOGO
-¡Oh sí, nena!
+¡Oh, sí, nena!
 
 [003984] DIÁLOGO
-Te haré un peinado que te quedará bien.
+Te haré un peinado digno
 
 [003985] DIÁLOGO
-¡Sería perfecto para un personaje principal!
+de un personaje principal!
 
 [003986] PERSONAJE
 Asagi
@@ -12536,7 +12536,7 @@ Yo soy uno de ellos.
 También he conocido a los otros Asagis.
 
 [004047] DIÁLOGO
-Les estoy dejando que cubran mis papeles secundarios.
+Les estoy dejando que cubran mis papeles secundarios
 
 [004048] DIÁLOGO
 mientras visito Arcanus Cella.
@@ -12587,10 +12587,10 @@ Asagi
 ¡Soy el único Asagi auténtico!
 
 [004064] DIÁLOGO
-Lo entiendo. Esto es como el juego de "encuentra las diferencias".
+Ya veo. Esto es como esos pasatiempos
 
 [004065] DIÁLOGO
-Rompecabezas. Se me dan bastante bien.
+de encontrar las diferencias. Se me dan bien.
 
 [004066] DIÁLOGO
 Hemos luchado codo con codo,
@@ -12623,19 +12623,19 @@ Asagi
 ¡Ese es un impostor!
 
 [004076] DIÁLOGO
-Simplemente dale una paliza hasta convertirla en una pulpa sangrienta.
+¡Dale una paliza hasta dejarlo hecho polvo
 
 [004077] DIÁLOGO
-¡A tu antojo!
+sin contenerte!
 
 [004078] DIÁLOGO
-Ahora bien. Todos ustedes, invitados no deseados.
+Bien. Invitados no deseados,
 
 [004079] DIÁLOGO
-Ahora serán reducidos a polvo.
+todos acabarán hechos polvo
 
 [004080] DIÁLOGO
-durante mi "fiesta de bienvenida".
+en mi «fiesta de bienvenida».
 
 [004081] PERSONAJE
 Asagi
@@ -12703,10 +12703,10 @@ Solo pensar que hay tantas copias
 Una imagen tuya puede parecer muy inquietante.
 
 [004101] DIÁLOGO
-¡Uf! No tuve la oportunidad de lucirme.
+¡Uf! No pude lucir
 
 [004102] DIÁLOGO
-Mi escudo se mueve.
+mis técnicas con el escudo.
 
 [004103] DIÁLOGO
 Me encantan los rompecabezas.
@@ -12813,10 +12813,10 @@ Vi a Susie sentada en una zapatería.
 ¡Impresionante!
 
 [004136] DIÁLOGO
-¿Es este el poder del "personaje principal"?
+¿Es este el poder del personaje principal
 
 [004137] DIÁLOGO
-¡¿Del Círculo mágico?!
+del Círculo mágico?
 
 [004138] DIÁLOGO
 ¡Es... IMPRESIONANTE! @#$%!
@@ -12996,10 +12996,10 @@ Solo pensar que hay tantas copias
 ¿Podría tratarse de un nuevo tipo de acosador?
 
 [004192] DIÁLOGO
-¡Uf! No tuve la oportunidad de lucirme.
+¡Uf! No pude lucir
 
 [004193] DIÁLOGO
-Mi escudo se mueve.
+mis técnicas con el escudo.
 
 [004194] DIÁLOGO
 Me encantan los rompecabezas.
@@ -13164,7 +13164,7 @@ Bien. Parece que puedo proyectar mi voz bastante bien.
 ¿Cuándo era la audición?
 
 [004243] DIÁLOGO
-Tendré que esperar para conseguir la espada definitiva.
+Tendré que esperar para conseguir la espada definitiva
 
 [004244] DIÁLOGO
 hasta que derrotemos la máscara.
@@ -13179,13 +13179,13 @@ Toma tu espada y
 Espera, eso no suena bien.
 
 [004248] DIÁLOGO
-Iré y derrotaré a la máscara.
+Iré a derrotar la máscara
 
 [004249] DIÁLOGO
-y obtén el escudo definitivo
+y conseguiré el escudo definitivo
 
 [004250] DIÁLOGO
-¡al mismo tiempo!
+al mismo tiempo.
 
 [004251] DIÁLOGO
 Me estoy poniendo nervioso.
@@ -13239,7 +13239,7 @@ Es un alivio que no me llamen callejero.
 Mmm. Debería volver a casa primero.
 
 [004268] DIÁLOGO
-Tengo un impulso repentino de ver una foto.
+Tengo un impulso repentino de ver una foto
 
 [004269] DIÁLOGO
 de mamá y papá.
@@ -13337,13 +13337,13 @@ Tu enfermedad está curada, así que
 ¿Por qué no nos vamos a casa?
 
 [004299] DIÁLOGO
-Mi enfermedad está curada, así que
+Ya me curé, así que
 
 [004300] DIÁLOGO
-Creo que es un buen momento para empezar.
+es buen momento para buscar
 
 [004301] DIÁLOGO
-Buscando un nuevo lugar para ir de aventuras.
+un nuevo lugar donde vivir aventuras.
 
 [004302] DIÁLOGO
 Lo sabía.
@@ -13352,13 +13352,13 @@ Lo sabía.
 No tienes intención de volver a casa.
 
 [004304] DIÁLOGO
-Finalmente me recuperé, así que...
+¡Por fin me recuperé!
 
 [004305] DIÁLOGO
-mi cuerpo me está diciendo que me vaya
+Mi cuerpo me pide salir a buscar
 
 [004306] DIÁLOGO
-encuentra tesoros más interesantes.
+tesoros más interesantes.
 
 [004307] DIÁLOGO
 Esa es una forma indirecta de ser terco.
@@ -13367,10 +13367,10 @@ Esa es una forma indirecta de ser terco.
 (Supongo que ya no tendré que preocuparme por ella.
 
 [004309] DIÁLOGO
-Parece que este es mi trabajo aquí.
+Parece que mi trabajo aquí
 
 [004310] DIÁLOGO
-(Finalmente está terminado.)
+por fin ha terminado.)
 
 [004311] DIÁLOGO
 Ahora, será mejor que decida adónde ir después.
@@ -13406,7 +13406,7 @@ No te obligaré.
 ¡Espérame!
 
 [004322] DIÁLOGO
-¿Eh? Creí que te quedabas allí atrás.
+¿Eh? Creí que te quedabas allí atrás
 
 [004323] DIÁLOGO
 en el Círculo mágico.
@@ -13466,7 +13466,7 @@ Oye, este río es...
 ¿Por qué hay un parque de atracciones aquí?
 
 [004342] DIÁLOGO
-No creo que haya pasado mucho tiempo.
+No creo que haya pasado mucho tiempo
 
 [004343] DIÁLOGO
 desde que llegué aquí.
@@ -13496,10 +13496,10 @@ Mmm, dice la fecha, pero no puedo verla.
 Esperar...
 
 [004352] DIÁLOGO
-De ninguna manera. Han pasado 100 años.
+No puede ser. ¿Han pasado cien años
 
 [004353] DIÁLOGO
-¿Desde que me fui?
+desde que me fui?!
 
 [004354] DIÁLOGO
 ¿Lo estaba viendo bien?
@@ -13800,19 +13800,19 @@ Veo...
 ¿Uno solo para mí?
 
 [004450] DIÁLOGO
-¿Por qué tengo que dar?
+¿Por qué tendría que hacerte
 
 [004451] DIÁLOGO
-¿Un regalo de cumpleaños para ti?
+un regalo de cumpleaños?
 
 [004452] DIÁLOGO
-¡Oh! ¡Chica loca!
+¡Ah, estás loca!
 
 [004453] DIÁLOGO
-¿No te acuerdas de eso?
+¿No recuerdas que yo te hice un regalo
 
 [004454] DIÁLOGO
-¡¿Te hice un regalo por tu cumpleaños?!
+en tu cumpleaños?!
 
 [004455] DIÁLOGO
 ¿Qué regalo de cumpleaños?
@@ -13896,13 +13896,13 @@ Espera, ¿estás diciendo que Bob es mi abuelo?
 Crosstine
 
 [004482] DIÁLOGO
-Tu abuelo se había encerrado en un mundo que
+Tu abuelo también se aisló en un mundo
 
 [004483] DIÁLOGO
-También se creó el Círculo mágico.
+que él mismo creó. El Círculo mágico
 
 [004484] DIÁLOGO
-Tanto entonces como ahora han proporcionado una ayuda muy necesaria.
+nos ayudó entonces y vuelve a ayudarnos ahora.
 
 [004485] DIÁLOGO
 ¡Realmente te he presionado mucho!
@@ -13932,10 +13932,10 @@ tuvo un efecto secundario tan extraño.
 Crosstine
 
 [004494] DIÁLOGO
-Y tú seguirás caminando.
+Y tú seguirás caminando
 
 [004495] DIÁLOGO
-el mismo camino.
+por el mismo camino.
 
 [004496] DIÁLOGO
 ¡Me niego rotundamente!
@@ -13980,10 +13980,10 @@ Entonces...!
 Crosstine
 
 [004510] DIÁLOGO
-El plan para evitar que te conviertas en un ermitaño.
+¡El plan para evitar que te recluyas
 
 [004511] DIÁLOGO
-¡Es un éxito!
+ha sido un éxito!
 
 [004512] PERSONAJE
 ¿Battleblo?
@@ -14123,7 +14123,7 @@ No. No tengo ningún problema con eso.
 Ya no estoy enferma.
 
 [004556] DIÁLOGO
-No puedo seguir necesitando que me protejas.
+No puedo seguir necesitando que me protejas
 
 [004557] DIÁLOGO
 para siempre.
@@ -14284,10 +14284,10 @@ Tengo intención de dejar este trabajo.
 ¿Qué?
 
 [004608] DIÁLOGO
-¿E-Entonces eso significa?
+¿E-entonces eso significa
 
 [004609] DIÁLOGO
-¿Te has dado por vencido conmigo?
+que te has rendido conmigo?
 
 [004610] DIÁLOGO
 Hasta ahora, había vivido mi vida
@@ -14299,7 +14299,7 @@ Solo siguiendo las órdenes que me dieron.
 Nada de eso fue por mi propia voluntad.
 
 [004613] DIÁLOGO
-Ni siquiera se me pasó por la cabeza desobedecer órdenes.
+Ni siquiera se me pasó por la cabeza desobedecer órdenes
 
 [004614] DIÁLOGO
 en el pasado, pero contigo,
@@ -14332,13 +14332,13 @@ Volveré a contactarte más adelante.
 ¿Oh?
 
 [004624] DIÁLOGO
-En ese momento, te protegeré.
+Cuando llegue ese momento, te protegeré,
 
 [004625] DIÁLOGO
-No por órdenes de nadie más, sino por mi propia voluntad.
+no por orden de nadie, sino por voluntad propia.
 
 [004626] DIÁLOGO
-¿Me harías el honor de brindarme esa oportunidad?
+¿Me concederías ese honor?
 
 [004627] DIÁLOGO
 Sorbete.
@@ -14356,10 +14356,10 @@ Por favor, regresa pronto.
 ¿Princesa?
 
 [004632] DIÁLOGO
-¿Has regresado a?
+¿Has recuperado
 
 [004633] DIÁLOGO
-¿¡Tu forma original?!
+tu forma original?!
 
 [004634] PERSONAJE
 ¿Princesa?
@@ -14505,10 +14505,10 @@ No me importa hacerlo.
 ¡¿Está seguro?!
 
 [004680] DIÁLOGO
-Ganaste. No me importaría salir contigo.
+Has ganado. No me importa acompañarte
 
 [004681] DIÁLOGO
-En tu viaje, reuniendo escudos.
+en tu viaje para reunir escudos.
 
 [004682] DIÁLOGO
 ...¿Disculpe?
@@ -14586,10 +14586,10 @@ Permitiéndote aferrarte al escudo definitivo
 ¡Ese escudo!
 
 [004707] DIÁLOGO
-¿Eres tú también uno de los que...?
+¿Tú también buscas
 
 [004708] DIÁLOGO
-¿Busca el escudo definitivo?
+el escudo definitivo?!
 
 [004709] DIÁLOGO
 ¿Tú también? Pero el título del más grande
@@ -14690,10 +14690,10 @@ Sí.
 Princesa Dot
 
 [004740] DIÁLOGO
-Todavía hay muchas cosas en la vida.
+Aún hay muchas cosas en la vida
 
 [004741] DIÁLOGO
-Eso me desanimará o me complicará la vida.
+que me desanimarán o complicarán las cosas.
 
 [004742] DIÁLOGO
 ¿Podré contar contigo entonces?
@@ -14729,13 +14729,13 @@ pero debo rendir cuentas a quienes me apoyan.
 Por lo tanto, no puedo eludir mis obligaciones.
 
 [004753] DIÁLOGO
-Volveré al reino.
+Regresaré al reino.
 
 [004754] DIÁLOGO
-¿Vendrás conmigo?
+¿Vendrás conmigo,
 
 [004755] DIÁLOGO
-¿Sorbete?
+Sherbet?
 
 [004756] DIÁLOGO
 Esto no es una orden.
@@ -14902,10 +14902,10 @@ Calvo.
 Mascarilla
 
 [004809] DIÁLOGO
-Entonces te dejaré calvo.
+¡Entonces te dejaré calvo
 
 [004810] DIÁLOGO
-¡Y te convertirán en un ermitaño!
+y te convertiré en un ermitaño!
 
 [004811] DIÁLOGO
 ¡A ver si puedes intentarlo!
@@ -14961,7 +14961,7 @@ Ya no lo necesito.
 ¿Fue solo mi imaginación?
 
 [004827] DIÁLOGO
-Lo que realmente necesitaba no era una espada.
+Lo que realmente necesitaba no era una espada
 
 [004828] DIÁLOGO
 capaz de desviar las miradas indiscretas de la gente,
@@ -15272,10 +15272,10 @@ está esparcido por todo el suelo.
 Es una olla muy profunda.
 
 [004929] DIÁLOGO
-Hay una sustancia blanca y viscosa dentro.
+Hay una sustancia blanca y viscosa dentro
 
 [004930] DIÁLOGO
-la olla.
+de la olla.
 
 [004931] DIÁLOGO
 Hay muchas máquinas con muchas protuberancias.
@@ -15353,7 +15353,7 @@ Algo marrón se está moviendo.
 Se siente bien, tío.
 
 [004956] DIÁLOGO
-Estas son las legendarias prendas "Sweaty Sweats".
+Estas son las legendarias prendas "Sweaty Sweats"
 
 [004957] DIÁLOGO
 como se señala en el de esta semana
@@ -15455,16 +15455,16 @@ La anciana fue a bañarse al río.
 Mientras la anciana se bañaba,
 
 [004990] DIÁLOGO
-Un ñame gigante flotaba río abajo. Ella lo recogió.
+Un ñame gigante flotaba río abajo. Ella lo recogió
 
 [004991] DIÁLOGO
 y se lo llevó a casa, queriendo cenar esa misma noche.
 
 [004992] DIÁLOGO
-Después de regresar a casa, intentó comer el ñame.
+De vuelta en casa, intentó comerse el ñame
 
 [004993] DIÁLOGO
-pero de dentro salió un bebé.
+pero un bebé salió de su interior.
 
 [004994] DIÁLOGO
 Continuará en el capítulo 2.
@@ -15473,13 +15473,13 @@ Continuará en el capítulo 2.
 Las aventuras del héroe del ñame, capítulo 2
 
 [004996] DIÁLOGO
-El anciano y la anciana le pusieron nombre al bebé.
+El anciano y la anciana llamaron al bebé
 
 [004997] DIÁLOGO
-"Ñame." El joven "Ñame"
+«Ñame». El pequeño Ñame
 
 [004998] DIÁLOGO
-Luego creció, lenta pero seguramente.
+fue creciendo poco a poco.
 
 [004999] DIÁLOGO
 Un día, dijo Yam,
@@ -15746,7 +15746,7 @@ The "Barcanus Cellar."
 No lo entiendo.
 
 [005087] DIÁLOGO
-El hada de Arcanus Cella se ha marchado.
+El hada de Arcanus Cella partió
 
 [005088] DIÁLOGO
 en busca de la paz.
@@ -15906,37 +15906,37 @@ Puedo predecir el futuro según tus estadísticas.
 ¡Tu ATK es demasiado bajo!
 
 [005137] DIÁLOGO
-Debes aumentar el número de artefactos.
+¡Equipa más artefactos
 
 [005138] DIÁLOGO
-¡Eso aumentará tu ATK!
+que aumenten tu ATK!
 
 [005139] DIÁLOGO
 Tu ATK es bastante bajo.
 
 [005140] DIÁLOGO
-Debes aumentar el número de artefactos.
+Equipa más artefactos
 
 [005141] DIÁLOGO
-¡Eso aumentará tu ATK!
+que aumenten tu ATK!
 
 [005142] DIÁLOGO
 Tu ATK no es muy bueno.
 
 [005143] DIÁLOGO
-Debes aumentar el número de artefactos.
+Equipa más artefactos
 
 [005144] DIÁLOGO
-¡Eso aumentará tu ATK!
+que aumenten tu ATK!
 
 [005145] DIÁLOGO
 Tu ATK es un poco bajo.
 
 [005146] DIÁLOGO
-¿Qué tal si añadimos algunos artefactos de ATK?
+¿Y si añades artefactos de ATK
 
 [005147] DIÁLOGO
-¿A tu Círculo mágico?
+a tu Círculo mágico?
 
 [005148] DIÁLOGO
 Tu ATK es normal.
@@ -16032,37 +16032,37 @@ Se te da bastante bien usar el Círculo mágico.
 ¡Tu DEF es demasiado baja!
 
 [005179] DIÁLOGO
-Debes aumentar el número de artefactos.
+¡Equipa más artefactos
 
 [005180] DIÁLOGO
-¡Eso aumentará tu DEF!
+que aumenten tu DEF!
 
 [005181] DIÁLOGO
-Tu DEF es bastante bajo.
+Tu DEF es bastante baja.
 
 [005182] DIÁLOGO
-Debes aumentar el número de artefactos.
+Equipa más artefactos
 
 [005183] DIÁLOGO
-¡Eso aumentará tu DEF!
+que aumenten tu DEF!
 
 [005184] DIÁLOGO
 Tu DEF no es muy buena.
 
 [005185] DIÁLOGO
-Debes aumentar el número de artefactos.
+Equipa más artefactos
 
 [005186] DIÁLOGO
-eso aumentará tu DEF.
+que aumenten tu DEF.
 
 [005187] DIÁLOGO
-Tu DEF es un poco bajo.
+Tu DEF es un poco baja.
 
 [005188] DIÁLOGO
-¿Qué tal si añadimos algunos artefactos DEF?
+¿Y si añades artefactos de DEF
 
 [005189] DIÁLOGO
-¿A tu Círculo mágico?
+a tu Círculo mágico?
 
 [005190] DIÁLOGO
 Tu DEF es normal.
@@ -19602,7 +19602,7 @@ Tara
 Salmón
 
 [006281] NOMBRES JEFES
-Masa
+Massa
 
 [006282] NOMBRES JEFES
 Pargo
@@ -19617,7 +19617,7 @@ Heraldo
 Pino
 
 [006286] NOMBRES JEFES
-Jimbeí
+Jimbei
 
 [006287] NOMBRES JEFES
 Gandler
@@ -19626,13 +19626,13 @@ Gandler
 Gengai
 
 [006289] NOMBRES JEFES
-lo haré
+Zan
 
 [006290] NOMBRES JEFES
-Medgio
+Medgius
 
 [006291] NOMBRES JEFES
-Cita
+Ballan
 
 [006292] NOMBRES JEFES
 Ganjan
@@ -19641,7 +19641,7 @@ Ganjan
 Deathlon
 
 [006294] NOMBRES JEFES
-Sala de serpientes
+Snakerum
 
 [006295] NOMBRES JEFES
 Gala
@@ -19650,7 +19650,7 @@ Gala
 Bundie
 
 [006297] NOMBRES JEFES
-Pequeño
+Dogo
 
 [006298] NOMBRES JEFES
 Dragón de la Perdición
@@ -19665,13 +19665,13 @@ Fantasma
 Matanza
 
 [006302] NOMBRES JEFES
-Tiempo
+Denbo
 
 [006303] NOMBRES JEFES
-Estúpido
+Stuppie
 
 [006304] NOMBRES JEFES
-Masa
+Taro
 
 [006305] NOMBRES JEFES
 Garron
@@ -19683,10 +19683,10 @@ Zozo
 Elunda
 
 [006308] NOMBRES JEFES
-Magia
+Magito
 
 [006309] NOMBRES JEFES
-Chico
+Killes
 
 [006310] NOMBRES JEFES
 Edis
@@ -19710,25 +19710,25 @@ Góndola
 Bruuuuja
 
 [006317] NOMBRES JEFES
-Césped
+Odan
 
 [006318] NOMBRES JEFES
-Biblioteca
+Bibilo
 
 [006319] NOMBRES JEFES
 Roza Quinn
 
 [006320] NOMBRES JEFES
-Molestario
+Pesterman
 
 [006321] NOMBRES JEFES
-Confío
+Confido
 
 [006322] NOMBRES JEFES
 Condesta
 
 [006323] NOMBRES JEFES
-Suceder
+Maginabo
 
 [006324] NOMBRES JEFES
 Siete
@@ -19737,13 +19737,13 @@ Siete
 Ocho
 
 [006326] NOMBRES JEFES
-Xanthos
+Xantos
 
 [006327] NOMBRES JEFES
 Titán
 
 [006328] NOMBRES JEFES
-Pedernal
+Selci
 
 [006329] NOMBRES JEFES
 Lalado
@@ -19761,19 +19761,19 @@ Fantasma
 Fantasma
 
 [006334] NOMBRES JEFES
-Olvidar
+Manta
 
 [006335] NOMBRES JEFES
 Dragobeth
 
 [006336] NOMBRES JEFES
-Bote
+Kitty
 
 [006337] NOMBRES JEFES
 Zombi rojo
 
 [006338] NOMBRES JEFES
-galos
+Galci
 
 [006339] NOMBRES JEFES
 Papino
@@ -19782,16 +19782,16 @@ Papino
 Onigiri
 
 [006341] NOMBRES JEFES
-Almuerzo
+Nesti
 
 [006342] NOMBRES JEFES
-Medio
+Poole
 
 [006343] NOMBRES JEFES
-Colmillos
+Zanne
 
 [006344] NOMBRES JEFES
-Nadar
+Simma
 
 [006345] NOMBRES JEFES
 dios de la guerra
@@ -19812,13 +19812,13 @@ Aldaba
 Oneshot
 
 [006351] NOMBRES JEFES
-Para nosotros
+Mums
 
 [006352] NOMBRES JEFES
 Takata
 
 [006353] NOMBRES JEFES
-negro
+Neguro
 
 [006354] NOMBRES JEFES
 Menando
@@ -19848,7 +19848,7 @@ Guhaha
 Miau
 
 [006363] NOMBRES JEFES
-en todos lados
+Kudo
 
 [006364] NOMBRES JEFES
 Yama
@@ -19860,7 +19860,7 @@ Mokonan
 Taiger
 
 [006367] NOMBRES JEFES
-Permanecer
+Degg
 
 [006368] NOMBRES JEFES
 Anle
@@ -19881,7 +19881,7 @@ Nov
 Hombre
 
 [006374] NOMBRES JEFES
-Disculpa
+Ozur
 
 [006375] NOMBRES JEFES
 Eneldo
@@ -19890,13 +19890,13 @@ Eneldo
 Halmas
 
 [006377] NOMBRES JEFES
-Soles
+Sunsas
 
 [006378] NOMBRES JEFES
 HIYH
 
 [006379] NOMBRES JEFES
-hareru
+Hareru
 
 [006380] NOMBRES JEFES
 Ugo
@@ -19905,16 +19905,16 @@ Ugo
 Guspa
 
 [006382] NOMBRES JEFES
-Rama
+Gren
 
 [006383] NOMBRES JEFES
-A pesar de
+Menmen
 
 [006384] NOMBRES JEFES
 Hombre de barro
 
 [006385] NOMBRES JEFES
-Nombre
+Suna
 
 [006386] NOMBRES JEFES
 Creman
@@ -19923,13 +19923,13 @@ Creman
 Slesshi
 
 [006388] NOMBRES JEFES
-Para
+Domin
 
 [006389] NOMBRES JEFES
 Bajish
 
 [006390] NOMBRES JEFES
-Como
+Pei
 
 [006391] NOMBRES JEFES
 Eyeroot
@@ -19938,7 +19938,7 @@ Eyeroot
 Vidrioso
 
 [006393] NOMBRES JEFES
-Julio
+Yuli
 
 [006394] NOMBRES JEFES
 Russell
@@ -19974,7 +19974,7 @@ Corazón Negro
 Bajo
 
 [006405] NOMBRES JEFES
-Narciso
+Daffun
 
 [006406] NOMBRES JEFES
 Cornerman
@@ -20213,16 +20213,16 @@ DATABASE.DAT/CHARNAMEMAN.DAT
 Dunn
 
 [006474] NOMBRES PERSONAJES
-Cañada
+Glen
 
 [006475] NOMBRES PERSONAJES
 Tensa
 
 [006476] NOMBRES PERSONAJES
-TIERRA
+Yuta
 
 [006477] NOMBRES PERSONAJES
-Tiempo
+Masa
 
 [006478] NOMBRES PERSONAJES
 Nueve
@@ -20231,7 +20231,7 @@ Nueve
 Rico
 
 [006480] NOMBRES PERSONAJES
-Libro
+Buug
 
 [006481] NOMBRES PERSONAJES
 Yuma
@@ -20252,19 +20252,19 @@ Dudd
 Astor
 
 [006487] NOMBRES PERSONAJES
-Asunto
+Maada
 
 [006488] NOMBRES PERSONAJES
 Allen
 
 [006489] NOMBRES PERSONAJES
-Iglesia
+Kirk
 
 [006490] NOMBRES PERSONAJES
 Zabian
 
 [006491] NOMBRES PERSONAJES
-Bien
+Gudd
 
 [006492] NOMBRES PERSONAJES
 Rosario
@@ -20273,34 +20273,34 @@ Rosario
 Tseng
 
 [006494] NOMBRES PERSONAJES
-Hielo
+Buz
 
 [006495] NOMBRES PERSONAJES
-Dividir
+Vando
 
 [006496] NOMBRES PERSONAJES
-Fin
+Akir
 
 [006497] NOMBRES PERSONAJES
 Aburrido
 
 [006498] NOMBRES PERSONAJES
-Espinilla
+Shin
 
 [006499] NOMBRES PERSONAJES
-Fatigar
+Tucker
 
 [006500] NOMBRES PERSONAJES
 Thomas
 
 [006501] NOMBRES PERSONAJES
-Mella
+Nick
 
 [006502] NOMBRES PERSONAJES
 Alfarero
 
 [006503] NOMBRES PERSONAJES
-Anuncio
+Doko
 
 [006504] NOMBRES PERSONAJES
 vasco
@@ -20312,10 +20312,10 @@ Fuego antiaéreo
 Manaj
 
 [006507] NOMBRES PERSONAJES
-Especificaciones
+Spek
 
 [006508] NOMBRES PERSONAJES
-Y
+Dan
 
 [006509] NOMBRES PERSONAJES
 Melaza
@@ -20324,7 +20324,7 @@ Melaza
 Kyon
 
 [006511] NOMBRES PERSONAJES
-Cuando
+Kai
 
 [006512] NOMBRES PERSONAJES
 Mezclador
@@ -20339,10 +20339,10 @@ Yan
 Roger
 
 [006516] NOMBRES PERSONAJES
-Micro
+Mike
 
 [006517] NOMBRES PERSONAJES
-Puntilla
+Brad
 
 [006518] NOMBRES PERSONAJES
 Brian
@@ -20351,19 +20351,19 @@ Brian
 Don
 
 [006520] NOMBRES PERSONAJES
-Libra
+Pon
 
 [006521] NOMBRES PERSONAJES
-Hola
+Hoho
 
 [006522] NOMBRES PERSONAJES
-A menos que
+Mura
 
 [006523] NOMBRES PERSONAJES
 Ogasa
 
 [006524] NOMBRES PERSONAJES
-Audiencia
+Jin
 
 [006525] NOMBRES PERSONAJES
 Emperador
@@ -20378,7 +20378,7 @@ Redd
 Azul
 
 [006529] NOMBRES PERSONAJES
-Herrero
+Smith
 
 [006530] NOMBRES PERSONAJES
 Zader
@@ -20396,7 +20396,7 @@ Legumbres
 Beara
 
 [006535] NOMBRES PERSONAJES
-Acceso
+Galo
 
 [006536] NOMBRES PERSONAJES
 Jano
@@ -20408,13 +20408,13 @@ Jadd
 Pitt
 
 [006539] NOMBRES PERSONAJES
-La clave
+Keebo
 
 [006540] NOMBRES PERSONAJES
-Muslos
+Bedra
 
 [006541] NOMBRES PERSONAJES
-Lugar
+Tabo
 
 [006542] NOMBRES PERSONAJES
 Ellis
@@ -20426,7 +20426,7 @@ Babhi
 Quinn
 
 [006545] NOMBRES PERSONAJES
-Corazón
+Koro
 
 [006546] NOMBRES PERSONAJES
 Afortunado
@@ -20435,19 +20435,19 @@ Afortunado
 Heinrich
 
 [006548] NOMBRES PERSONAJES
-Hazlo.
+Enza
 
 [006549] NOMBRES PERSONAJES
-Moderado
+Dede
 
 [006550] NOMBRES PERSONAJES
 Andie
 
 [006551] NOMBRES PERSONAJES
-Migración
+Fudo
 
 [006552] NOMBRES PERSONAJES
-Alrededor
+Korul
 
 [006553] NOMBRES PERSONAJES
 Deckie
@@ -20462,13 +20462,13 @@ Tauro
 Mingos
 
 [006557] NOMBRES PERSONAJES
-Los dos
+Ikkii
 
 [006558] NOMBRES PERSONAJES
 Dogos
 
 [006559] NOMBRES PERSONAJES
-Como
+Coby
 
 [006560] NOMBRES PERSONAJES
 Bogo
@@ -20477,28 +20477,28 @@ Bogo
 Gerard
 
 [006562] NOMBRES PERSONAJES
-Petirrojo
+Robin
 
 [006563] NOMBRES PERSONAJES
 Tilma
 
 [006564] NOMBRES PERSONAJES
-Banda
+Bann
 
 [006565] NOMBRES PERSONAJES
-Encimera
+Kanta
 
 [006566] NOMBRES PERSONAJES
-Tejido
+Doku
 
 [006567] NOMBRES PERSONAJES
-Debajo
+Osti
 
 [006568] NOMBRES PERSONAJES
-Su
+Niy
 
 [006569] NOMBRES PERSONAJES
-Puerro
+Riki
 
 [006570] NOMBRES PERSONAJES
 Ganmo
@@ -20510,16 +20510,16 @@ Garras
 Silva
 
 [006573] NOMBRES PERSONAJES
-Caer
+Defal
 
 [006574] NOMBRES PERSONAJES
-Foto
+Pich
 
 [006575] NOMBRES PERSONAJES
 Hermanos
 
 [006576] NOMBRES PERSONAJES
-de
+Din
 
 [006577] NOMBRES PERSONAJES
 Barra oblicua
@@ -20534,10 +20534,10 @@ Daigo
 Brecha
 
 [006581] NOMBRES PERSONAJES
-Viernes
+Zoma
 
 [006582] NOMBRES PERSONAJES
-Toma una foto
+Chup
 
 [006583] NOMBRES PERSONAJES
 Maxoff
@@ -20554,7 +20554,7 @@ DATABASE.DAT/CHARNAMEWOMAN.DAT
 Misha
 
 [006586] NOMBRES PERSONAJES
-Cálmate.
+Tulie
 
 [006587] NOMBRES PERSONAJES
 Hillie
@@ -20566,10 +20566,10 @@ Luri
 Yoko
 
 [006590] NOMBRES PERSONAJES
-Sensación
+Feely
 
 [006591] NOMBRES PERSONAJES
-Entonces
+Kaya
 
 [006592] NOMBRES PERSONAJES
 Asuka
@@ -20581,13 +20581,13 @@ Miu
 Baya
 
 [006595] NOMBRES PERSONAJES
-Por el
+Pel
 
 [006596] NOMBRES PERSONAJES
 Mariquita
 
 [006597] NOMBRES PERSONAJES
-Oficial
+Luna
 
 [006598] NOMBRES PERSONAJES
 Kotori
@@ -20596,25 +20596,25 @@ Kotori
 maya
 
 [006600] NOMBRES PERSONAJES
-Tiempo
+Nako
 
 [006601] NOMBRES PERSONAJES
-A mí
+Meg
 
 [006602] NOMBRES PERSONAJES
-I
+Saya
 
 [006603] NOMBRES PERSONAJES
 Pacífico
 
 [006604] NOMBRES PERSONAJES
-Correo electrónico
+Meili
 
 [006605] NOMBRES PERSONAJES
 Lin
 
 [006606] NOMBRES PERSONAJES
-Corrió
+Ran
 
 [006607] NOMBRES PERSONAJES
 DJ
@@ -20629,19 +20629,19 @@ Roxana
 Lirio
 
 [006611] NOMBRES PERSONAJES
-Tipo
+Momo
 
 [006612] NOMBRES PERSONAJES
 Kat
 
 [006613] NOMBRES PERSONAJES
-Caldera
+Katel
 
 [006614] NOMBRES PERSONAJES
 Kéfir
 
 [006615] NOMBRES PERSONAJES
-Modismo
+Kari
 
 [006616] NOMBRES PERSONAJES
 Abelia
@@ -20656,7 +20656,7 @@ Nico
 Halle
 
 [006620] NOMBRES PERSONAJES
-Dónde
+Kur
 
 [006621] NOMBRES PERSONAJES
 Milea
@@ -20668,22 +20668,22 @@ Yuu
 Bella
 
 [006624] NOMBRES PERSONAJES
-Cocido
+Cotte
 
 [006625] NOMBRES PERSONAJES
 Beldad
 
 [006626] NOMBRES PERSONAJES
-Ana
+Anne
 
 [006627] NOMBRES PERSONAJES
-María
+Maryla
 
 [006628] NOMBRES PERSONAJES
 Lira
 
 [006629] NOMBRES PERSONAJES
-Plan
+Plana
 
 [006630] NOMBRES PERSONAJES
 pez laúd
@@ -20698,19 +20698,19 @@ Rosa
 Julie
 
 [006634] NOMBRES PERSONAJES
-Polla
+Pik
 
 [006635] NOMBRES PERSONAJES
-Úlcera
+Miki
 
 [006636] NOMBRES PERSONAJES
 Tiki
 
 [006637] NOMBRES PERSONAJES
-Caminar
+Yur
 
 [006638] NOMBRES PERSONAJES
-shizuna
+Shizuna
 
 [006639] NOMBRES PERSONAJES
 Natalie
@@ -20722,16 +20722,16 @@ Tohka
 Dedo meñique
 
 [006642] NOMBRES PERSONAJES
-Magia
+Magik
 
 [006643] NOMBRES PERSONAJES
 Millie
 
 [006644] NOMBRES PERSONAJES
-Mapa
+Peta
 
 [006645] NOMBRES PERSONAJES
-Brazo
+Sandria
 
 [006646] NOMBRES PERSONAJES
 Alyssa
@@ -20746,10 +20746,10 @@ Marilyn
 Sutra
 
 [006650] NOMBRES PERSONAJES
-Minuto-minuto
+Min-Min
 
 [006651] NOMBRES PERSONAJES
-Estados Unidos
+Uts
 
 [006652] NOMBRES PERSONAJES
 Hima
@@ -20761,22 +20761,22 @@ Tatiana
 Niro
 
 [006655] NOMBRES PERSONAJES
-Mármol
+Marm
 
 [006656] NOMBRES PERSONAJES
-María
+Marie
 
 [006657] NOMBRES PERSONAJES
 Genial
 
 [006658] NOMBRES PERSONAJES
-Este
+Toto
 
 [006659] NOMBRES PERSONAJES
-Leche
+Nono
 
 [006660] NOMBRES PERSONAJES
-Miley
+Mileu
 
 [006661] NOMBRES PERSONAJES
 Fal
@@ -20797,7 +20797,7 @@ Nene
 Dorothy
 
 [006667] NOMBRES PERSONAJES
-Kochi
+Kotsu
 
 [006668] NOMBRES PERSONAJES
 Río
@@ -20818,10 +20818,10 @@ Kilma
 Elsapa
 
 [006674] NOMBRES PERSONAJES
-Ahora
+Issa
 
 [006675] NOMBRES PERSONAJES
-Rostro
+Fuula
 
 [006676] NOMBRES PERSONAJES
 Fia
@@ -20833,7 +20833,7 @@ Eileen
 Tsubasa
 
 [006679] NOMBRES PERSONAJES
-Semana
+Mako
 
 [006680] NOMBRES PERSONAJES
 Arenoso
@@ -20845,13 +20845,13 @@ Marris
 Roxy
 
 [006683] NOMBRES PERSONAJES
-Deportes
+Kirol
 
 [006684] NOMBRES PERSONAJES
-Puente
+Tilta
 
 [006685] NOMBRES PERSONAJES
-lu-lu
+Lu-Lu
 
 [006686] NOMBRES PERSONAJES
 Karen
@@ -20860,7 +20860,7 @@ Karen
 Lexi
 
 [006688] NOMBRES PERSONAJES
-Fortaleza
+Papu
 
 [006689] NOMBRES PERSONAJES
 Romis
@@ -20884,7 +20884,7 @@ Machter
 Palas
 
 [006696] NOMBRES PERSONAJES
-Liberar
+Saki
 
 [006697] NOMBRES PERSONAJES
 Campana
@@ -20893,19 +20893,19 @@ Campana
 Kagura
 
 [006699] NOMBRES PERSONAJES
-Como
+Mint
 
 [006700] NOMBRES PERSONAJES
 Lila
 
 [006701] NOMBRES PERSONAJES
-Herida
+Luka
 
 [006702] NOMBRES PERSONAJES
 Sakura
 
 [006703] NOMBRES PERSONAJES
-Lecha
+Milt
 
 [006704] NOMBRES PERSONAJES
 Cacerola
@@ -20917,13 +20917,13 @@ Pillos
 Selena
 
 [006707] NOMBRES PERSONAJES
-Gastar
+Chi
 
 [006708] NOMBRES PERSONAJES
 Cassis
 
 [006709] NOMBRES PERSONAJES
-Ingresar
+Komo
 
 [006710] NOMBRES PERSONAJES
 Margarita
@@ -20938,10 +20938,10 @@ Melón
 Nanoha
 
 [006714] NOMBRES PERSONAJES
-Vaya cosa
+Tohko
 
 [006715] NOMBRES PERSONAJES
-María
+Mary
 
 [006716] NOMBRES PERSONAJES
 Allie

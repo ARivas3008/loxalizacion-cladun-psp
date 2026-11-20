@@ -1,4 +1,4 @@
-CLADUN: THIS IS AN RPG! (PSP USA)
+﻿CLADUN: THIS IS AN RPG! (PSP USA)
 COTEJO BILINGÜE ORIGINAL / ESPAÑOL
 Los grupos conservan sus IDs, originales y referencias. Revisión contextual parcial.
 
@@ -2295,7 +2295,7 @@ Pulsa el botón ⑯ para abrir el menú.
 ORIGINAL:
 Select Give Up to quit the dungeon
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Selecciona Rendirse para salir de la mazmorra.
+Selecciona Rendirse para salir de la mazmorra
 
 [000379] DIÁLOGO | CLD-000398
 ORIGINAL:
@@ -3081,7 +3081,7 @@ en las casillas para artefactos.
 ORIGINAL:
 Sub Characters will consume Mana
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los personajes secundarios consumirán maná.
+Los personajes secundarios consumirán maná
 
 [000510] DIÁLOGO | CLD-000529
 ORIGINAL:
@@ -3298,7 +3298,7 @@ Pulsa el botón ⑯ para abrir el menú.
 ORIGINAL:
 Select Give Up to quit the dungeon
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Selecciona Rendirse para salir de la mazmorra.
+Selecciona Rendirse para salir de la mazmorra
 
 [000546] DIÁLOGO | CLD-000565
 ORIGINAL:
@@ -3670,13 +3670,13 @@ Inflige daño a todos los enemigos en pantalla.
 ORIGINAL:
 Once activated, you will be in a special state
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Una vez activado, estarás en un estado especial.
+Una vez activado, entrarás en un estado especial
 
 [000608] DIÁLOGO | CLD-000627
 ORIGINAL:
 called the G Star.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-llamada G Star.
+llamado G Star.
 
 [000609] DIÁLOGO | CLD-000628
 ORIGINAL:
@@ -3832,13 +3832,13 @@ Deberás seleccionar un nombre que se utilizará únicamente para el juego inal�
 ORIGINAL:
 You will be the host and create a room
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Serás el anfitrión y crearás una sala.
+Serás el anfitrión y crearás una sala
 
 [000635] DIÁLOGO | CLD-000654
 ORIGINAL:
 in which players will play in Co-op Mode.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-en el que los jugadores jugarán en modo cooperativo.
+en la que los jugadores podrán participar en modo cooperativo.
 
 [000636] DIÁLOGO | CLD-000655
 ORIGINAL:
@@ -3856,7 +3856,7 @@ Despejen el escenario haciendo que todos alcancen la meta.
 ORIGINAL:
 You can revive downed players
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puedes revivir a los jugadores caídos.
+Puedes revivir a los jugadores caídos
 
 [000639] DIÁLOGO | CLD-000658
 ORIGINAL:
@@ -3868,13 +3868,13 @@ aunque con 1 HP.
 ORIGINAL:
 You will be the host and create a room
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Serás el anfitrión y crearás una sala.
+Serás el anfitrión y crearás una sala
 
 [000641] DIÁLOGO | CLD-000660
 ORIGINAL:
 in which players will play in Versus Mode.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-en el que los jugadores jugarán en modo Versus.
+en la que los jugadores podrán participar en modo Versus.
 
 [000642] DIÁLOGO | CLD-000661
 ORIGINAL:
@@ -3892,7 +3892,7 @@ El jugador que sobreviva y llegue a la meta gana.
 ORIGINAL:
 You can revive downed players
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puedes revivir a los jugadores caídos.
+Puedes revivir a los jugadores caídos
 
 [000645] DIÁLOGO | CLD-000664
 ORIGINAL:
@@ -3976,37 +3976,37 @@ Esta mazmorra de 99 pisos cambia de forma constantemente.
 ORIGINAL:
 Once you go in, you cannot escape unless you
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Una vez que entras, no puedes escapar a menos que...
+Una vez dentro, solo podrás salir si
 
 [000659] DIÁLOGO | CLD-000678
 ORIGINAL:
 Give Up or find the Exit.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ríndete o busca la salida.
+eliges Rendirse o encuentras la salida.
 
 [000660] DIÁLOGO | CLD-000679
 ORIGINAL:
 Rare equipment, titles, and LV 99 monsters
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Equipo raro, títulos y monstruos de nivel 99.
+Se dice que aquí hay equipo raro, títulos y monstruos de nivel 99
 
 [000661] DIÁLOGO | CLD-000680
 ORIGINAL:
 are said to be found here.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Se dice que se encuentran aquí.
+que puedes encontrar en esta mazmorra.
 
 [000662] DIÁLOGO | CLD-000681
 ORIGINAL:
 Go through the usual Exit to quit the dungeon
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Salga de la mazmorra por la salida habitual.
+Sal de la mazmorra por la salida habitual
 
 [000663] DIÁLOGO | CLD-000682
 ORIGINAL:
 and return to Arcanus Cella.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-y regresar a Arcanus Cella.
+y regresa a Arcanus Cella.
 
 [000664] DIÁLOGO | CLD-000683
 ORIGINAL:
@@ -4450,13 +4450,13 @@ Inflige daño a todos los enemigos en la pantalla.
 ORIGINAL:
 Once activated, you will be in a special state
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Una vez activado, estarás en un estado especial.
+Una vez activado, entrarás en un estado especial
 
 [000738] DIÁLOGO | CLD-000757
 ORIGINAL:
 called the G Star.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-llamada G Star.
+llamado G Star.
 
 [000739] DIÁLOGO | CLD-000758
 ORIGINAL:
@@ -4593,13 +4593,13 @@ Esqueleto moribundo
 ORIGINAL:
 There are enemies on this map
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hay enemigos en este mapa.
+Hay enemigos en este mapa
 
 [000761] DIÁLOGO | CLD-000780
 ORIGINAL:
 that will do the impossible! Kinda!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Eso hará lo imposible! ¡Más o menos!
+que harán lo imposible. ¡Más o menos!
 
 [000762] DIÁLOGO | CLD-000781
 ORIGINAL:
@@ -4677,13 +4677,13 @@ Esqueleto moribundo
 ORIGINAL:
 The Cat Burglars you can find here
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Aquí puedes encontrar a los ladrones de gatos.
+Los ladrones de gatos que encontrarás aquí
 
 [000775] DIÁLOGO | CLD-000794
 ORIGINAL:
 bought too much and are out of G.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Compramos demasiado y nos quedamos sin G.
+compraron demasiado y se quedaron sin G.
 
 [000776] DIÁLOGO | CLD-000795
 ORIGINAL:
@@ -4802,13 +4802,13 @@ Me pediste que te cuidara.
 ORIGINAL:
 If not, I would never have skipped my lessons
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-De no ser así, jamás habría faltado a mis clases.
+De no ser así, jamás habría faltado a mis clases
 
 [000795] DIÁLOGO | CLD-000814
 ORIGINAL:
 to come all the way here.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-venir hasta aquí.
+para venir hasta aquí.
 
 [000796] DIÁLOGO | CLD-000815
 ORIGINAL:
@@ -5095,13 +5095,13 @@ Presiento la presencia de un monstruo.
 ORIGINAL:
 I was frantic, so I left my sword and armor
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Estaba desesperado, así que dejé mi espada y mi armadura.
+Estaba tan alterado que dejé mi espada y mi armadura
 
 [000843] DIÁLOGO | CLD-000862
 ORIGINAL:
 back at the dojo.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-De vuelta en el dojo.
+en el dojo.
 
 [000844] DIÁLOGO | CLD-000863
 ORIGINAL:
@@ -5257,7 +5257,7 @@ Realmente me ralentiza.
 ORIGINAL:
 I gotta know what I'm stepping on
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tengo que saber qué estoy pisando.
+Tengo que saber qué estoy pisando
 
 [000870] DIÁLOGO | CLD-000890
 ORIGINAL:
@@ -5298,13 +5298,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 But I don't remember climbing stairs
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pero no recuerdo haber subido escaleras.
+Pero no recuerdo haber subido escaleras
 
 [000876] DIÁLOGO | CLD-000896
 ORIGINAL:
 or going up a hill...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-o subir una colina...
+ni haber escalado una colina...
 
 [000877] DIÁLOGO | CLD-000897
 ORIGINAL:
@@ -5496,13 +5496,13 @@ A-Mientras la casa esté bien, todo está bien.
 ORIGINAL:
 Those lucky fools certainly escaped
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Esos afortunados tontos sin duda escaparon.
+Esos tontos con suerte se salvaron
 
 [000909] DIÁLOGO | CLD-000929
 ORIGINAL:
 from me by a hair's breadth.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Me superó por un pelo.
+de mí por los pelos.
 
 [000910] DIÁLOGO | CLD-000930
 ORIGINAL:
@@ -5700,13 +5700,13 @@ Sí.
 ORIGINAL:
 I read all the legends about it
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Leí todas las leyendas sobre ello.
+Leí todas las leyendas al respecto
 
 [000943] DIÁLOGO | CLD-000963
 ORIGINAL:
 in Daddy's library!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡En la biblioteca de papá!
+¡en la biblioteca de papá!
 
 [000944] DIÁLOGO | CLD-000964
 ORIGINAL:
@@ -5874,13 +5874,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I better check it out before Pudding
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Será mejor que lo revise antes de Pudding.
+Será mejor que lo revise antes de que Pudding
 
 [000972] DIÁLOGO | CLD-000992
 ORIGINAL:
 gets herself into more trouble.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ella misma se mete en más problemas.
+se meta en más problemas.
 
 [000973] DIÁLOGO | CLD-000993
 ORIGINAL:
@@ -5892,7 +5892,7 @@ Lamento haber destruido tu casa.
 ORIGINAL:
 I really should be trying to fix it
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Realmente debería estar intentando arreglarlo.
+Realmente debería estar intentando arreglarlo
 
 [000975] DIÁLOGO | CLD-000995
 ORIGINAL:
@@ -6076,13 +6076,13 @@ No soy un gato.
 ORIGINAL:
 I'm Crosstine, and I come
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Soy Crosstine y vengo.
+Soy Crosstine y provengo
 
 [001004] DIÁLOGO | CLD-001024
 ORIGINAL:
 from a noble bloodline.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-de linaje noble.
+de un linaje noble.
 
 [001005] DIÁLOGO | CLD-001025
 ORIGINAL:
@@ -6112,13 +6112,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I was just seeing my friend
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Estaba viendo a mi amigo.
+También estaba despidiendo
 
 [001010] DIÁLOGO | CLD-001030
 ORIGINAL:
 off as well.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-apagado también.
+a un amigo.
 
 [001011] DIÁLOGO | CLD-001031
 ORIGINAL:
@@ -6154,13 +6154,13 @@ Si es posible, ¿podría quedarse un rato?
 ORIGINAL:
 There's this person I want you
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hay una persona que te deseo.
+Hay alguien con quien quiero
 
 [001017] DIÁLOGO | CLD-001037
 ORIGINAL:
 all to become friends with.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-todos para hacerse amigos.
+que todos ustedes se hagan amigos.
 
 [001018] DIÁLOGO | CLD-001038
 ORIGINAL:
@@ -6196,13 +6196,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 The destroyed house got rebuilt
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La casa destruida fue reconstruida.
+La casa destruida se reconstruyó
 
 [001024] DIÁLOGO | CLD-001044
 ORIGINAL:
 in an instant!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡en seguida!
+¡en un instante!
 
 [001025] DIÁLOGO | CLD-001045
 ORIGINAL:
@@ -6226,13 +6226,13 @@ Despina es una hechicera con mucho talento.
 ORIGINAL:
 Rebuilding a house is a very insignificant
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Reconstruir una casa es algo muy insignificante.
+Reconstruir una casa es una tarea insignificante
 
 [001029] DIÁLOGO | CLD-001049
 ORIGINAL:
 task for her to accomplish.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-tarea que ella debe cumplir.
+para ella.
 
 [001030] DIÁLOGO | CLD-001050
 ORIGINAL:
@@ -6250,13 +6250,13 @@ Crosstine
 ORIGINAL:
 I'm Crosstine, and I come
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Soy Crosstine y vengo.
+Soy Crosstine y provengo
 
 [001033] DIÁLOGO | CLD-001053
 ORIGINAL:
 from a noble bloodline.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-de linaje noble.
+de un linaje noble.
 
 [001034] DIÁLOGO | CLD-001054
 ORIGINAL:
@@ -6298,7 +6298,7 @@ Hablando de diversión,
 ORIGINAL:
 you can use the "Warp Gate" next to the fountain
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puedes usar el "Portal de Teletransporte" que está al lado de la fuente.
+Puedes usar el "Portal de Teletransporte" que está al lado de la fuente
 
 [001041] DIÁLOGO | CLD-001061
 ORIGINAL:
@@ -6310,13 +6310,13 @@ para ir a muchos mundos diferentes.
 ORIGINAL:
 Would I be able to find the treasure
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Seré capaz de encontrar el tesoro?
+¿Encontraré allí el tesoro
 
 [001043] DIÁLOGO | CLD-001063
 ORIGINAL:
 of my dreams there?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿De mis sueños allí?
+de mis sueños?
 
 [001044] PERSONAJE | CLD-001064
 ORIGINAL:
@@ -6495,13 +6495,13 @@ SCRIPT: demo1003_01.dsf
 ORIGINAL:
 I wonder where the water of that lake
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Me pregunto de dónde viene el agua de ese lago.
+Me pregunto de dónde viene el agua de ese lago
 
 [001073] DIÁLOGO | CLD-001095
 ORIGINAL:
 comes from and where it goes.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Viene de dónde y adónde va.
+y adónde irá.
 
 [001074] DIÁLOGO | CLD-001097
 ORIGINAL:
@@ -6645,13 +6645,13 @@ Proporcionan efectos realmente buenos.
 ORIGINAL:
 You can try your luck on the earlier floors
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puedes probar suerte en los primeros pisos.
+Puedes probar suerte en las primeras plantas
 
 [001098] DIÁLOGO | CLD-001121
 ORIGINAL:
 if you think you can handle the risk.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Si crees que puedes asumir el riesgo.
+si crees que puedes asumir el riesgo.
 
 
 ==================================================================
@@ -6662,13 +6662,13 @@ SCRIPT: demo1004_00.dsf
 ORIGINAL:
 Is this the door that's supposed
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Es esta la puerta que se supone que es?
+¿Es esta la puerta que debería
 
 [001100] DIÁLOGO | CLD-001123
 ORIGINAL:
 to lead to all kinds of dungeons?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Para conducir a todo tipo de mazmorras?
+conducir a toda clase de mazmorras?
 
 [001101] DIÁLOGO | CLD-001124
 ORIGINAL:
@@ -6698,19 +6698,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 There goes Pudding again, using crass terms.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ahí va Pudding otra vez, usando términos vulgares.
+Otra vez Pudding hablando con groserías.
 
 [001106] DIÁLOGO | CLD-001129
 ORIGINAL:
 Does she even know how much flak I get
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Sabe siquiera cuántas críticas recibo?
+¿Sabe cuántas críticas recibo
 
 [001107] DIÁLOGO | CLD-001130
 ORIGINAL:
 all the time because of her?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Todo el tiempo por su culpa?
+por su culpa?
 
 [001108] DIÁLOGO | CLD-001131
 ORIGINAL:
@@ -6842,13 +6842,13 @@ No me dan ganas de ir de fiesta.
 ORIGINAL:
 S-See? You found a treasure
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Ves? Encontraste un tesoro.
+¿V-ves? Encontraste un tesoro
 
 [001130] DIÁLOGO | CLD-001153
 ORIGINAL:
 even without setting foot in a dungeon.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-incluso sin poner un pie en una mazmorra.
+sin siquiera entrar en una mazmorra.
 
 [001131] DIÁLOGO | CLD-001154
 ORIGINAL:
@@ -6960,19 +6960,19 @@ Así que será mejor que encuentre algún tesoro para llevarme de vuelta.
 ORIGINAL:
 This time, I have a weapon, so I can at least
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Esta vez tengo un arma, así que al menos puedo...
+Esta vez tengo un arma, así que al menos puedo
 
 [001148] DIÁLOGO | CLD-001171
 ORIGINAL:
 fend off enemies.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-defenderse de los enemigos.
+defenderme de los enemigos.
 
 [001149] DIÁLOGO | CLD-001172
 ORIGINAL:
 Press the ㊦ Button with the right timing
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pulsa el botón ㊦ en el momento preciso.
+Pulsa el botón ㊦ en el momento preciso
 
 [001150] DIÁLOGO | CLD-001173
 ORIGINAL:
@@ -7020,13 +7020,13 @@ Aquí es donde vivimos nosotros "Hiyo".
 ORIGINAL:
 But, a scary monster just came earlier
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pero, un monstruo aterrador acaba de aparecer hace un rato.
+Pero hace un rato llegó un monstruo aterrador
 
 [001158] DIÁLOGO | CLD-001181
 ORIGINAL:
 and stole our home from us.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-y nos robaron nuestra casa.
+y nos robó nuestro hogar.
 
 [001159] DIÁLOGO | CLD-001182
 ORIGINAL:
@@ -7062,7 +7062,7 @@ Aumentar el daño, la tasa de crítico y la tasa de rotura.
 ORIGINAL:
 Critical hits increase damage dealt
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los golpes críticos aumentan el daño infligido.
+Los golpes críticos aumentan el daño infligido
 
 [001165] DIÁLOGO | CLD-001189
 ORIGINAL:
@@ -7524,19 +7524,19 @@ El personaje gana más ATK y DEF.
 ORIGINAL:
 In other words, it's best to keep switching roles
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-En otras palabras, lo mejor es seguir cambiando de rol.
+En otras palabras, lo mejor es alternar los papeles
 
 [001242] DIÁLOGO | CLD-001273
 ORIGINAL:
 around so you can become more effective
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-alrededor para que puedas volverte más eficaz
+para que cada personaje aproveche
 
 [001243] DIÁLOGO | CLD-001274
 ORIGINAL:
 at each character's particular role.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-en el papel particular de cada personaje.
+mejor su función.
 
 [001244] DIÁLOGO | CLD-001275
 ORIGINAL:
@@ -7708,19 +7708,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 If you want to go that badly, I'll let you
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Si tanto quieres ir, te dejaré.
+Si tantas ganas tienes de ir, te dejaré
 
 [001271] DIÁLOGO | CLD-001302
 ORIGINAL:
 go there together with your wimpy friend.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ve allí junto con tu amigo cobarde.
+acompañar a tu amigo miedoso,
 
 [001272] DIÁLOGO | CLD-001303
 ORIGINAL:
 In the form of a "cheerleader" for him.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-En forma de "animadora" para él.
+pero solo como su animadora.
 
 [001273] DIÁLOGO | CLD-001304
 ORIGINAL:
@@ -7858,7 +7858,7 @@ Si puedo convertirme en su escudo...
 ORIGINAL:
 I just may be able to help
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Quizás pueda ayudar.
+Quizás pueda ayudar
 
 [001296] DIÁLOGO | CLD-001327
 ORIGINAL:
@@ -7882,13 +7882,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Now I can go search for treasures
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ahora puedo ir a buscar tesoros.
+¡Ahora puedo ir a buscar tesoros
 
 [001300] DIÁLOGO | CLD-001331
 ORIGINAL:
 by myself!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Yo sola!
+por mi cuenta!
 
 [001301] DIÁLOGO | CLD-001332
 ORIGINAL:
@@ -7900,13 +7900,13 @@ Sobre tesoros...
 ORIGINAL:
 Anything obtained will go to everyone
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Todo lo que se obtenga irá a parar a todos.
+Todo lo que consigan será para quienes
 
 [001303] DIÁLOGO | CLD-001334
 ORIGINAL:
 participating in the Magic Circle.
 ESPAÑOL (posteditado_contextualmente_por_IA):
-participando en el Círculo mágico.
+participen en el Círculo mágico.
 
 [001304] DIÁLOGO | CLD-001335
 ORIGINAL:
@@ -8062,7 +8062,7 @@ Simplemente no te mates, ¿de acuerdo?
 ORIGINAL:
 Think about what your mom would say
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Piensa en lo que diría tu madre.
+Piensa en lo que diría tu madre
 
 [001330] DIÁLOGO | CLD-001361
 ORIGINAL:
@@ -8175,13 +8175,13 @@ Tamako
 ORIGINAL:
 It's so rare to see Despina
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Es muy raro ver a Despina.
+Es muy raro ver a Despina
 
 [001348] DIÁLOGO | CLD-001381
 ORIGINAL:
 go outside in the daylight.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Salga a la calle durante el día.
+salir de casa a plena luz del día.
 
 [001349] DIÁLOGO | CLD-001382
 ORIGINAL:
@@ -8228,13 +8228,13 @@ Piyohiko
 ORIGINAL:
 I had traps made and placed 'em everywhere so no
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hice trampas y las coloqué por todas partes para que no...
+Puse trampas por todas partes para que ningún
 
 [001356] DIÁLOGO | CLD-001389
 ORIGINAL:
 monster will take over our home again!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡El monstruo volverá a apoderarse de nuestra casa!
+monstruo vuelva a adueñarse de nuestro hogar.
 
 [001357] DIÁLOGO | CLD-001390
 ORIGINAL:
@@ -8252,7 +8252,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 But now I can't even go inside
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pero ahora ni siquiera puedo entrar.
+Pero ahora ni siquiera puedo entrar
 
 [001360] DIÁLOGO | CLD-001393
 ORIGINAL:
@@ -8342,13 +8342,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Don't hold the ㊦ Button to charge up
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No mantengas pulsado el botón ㊦ para cargar.
+No mantengas pulsado el botón ㊦ para cargar
 
 [001375] DIÁLOGO | CLD-001408
 ORIGINAL:
 and attack with the blunt weapon!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Y ataca con el arma contundente!
+y atacar con un arma contundente.
 
 [001376] DIÁLOGO | CLD-001409
 ORIGINAL:
@@ -8390,19 +8390,19 @@ Pico
 ORIGINAL:
 so press the ⑯ Button mid-battle to open the menu.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Así que pulsa el botón ⑯ en medio de la batalla para abrir el menú.
+Así que pulsa el botón ⑯ durante el combate para abrir el menú.
 
 [001383] DIÁLOGO | CLD-001416
 ORIGINAL:
 You can open the "Dictionary"
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puedes abrir el "Diccionario".
+En el "Diccionario" puedes consultar
 
 [001384] DIÁLOGO | CLD-001417
 ORIGINAL:
 to check on what you don't know.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-para comprobar lo que no sabes.
+lo que todavía no sabes.
 
 [001385] DIÁLOGO | CLD-001418
 ORIGINAL:
@@ -8456,7 +8456,7 @@ Abril
 ORIGINAL:
 Sorcerer classes learn "magic"
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Las clases de hechiceros aprenden "magia".
+Las clases de hechiceros aprenden "magia"
 
 [001394] DIÁLOGO | CLD-001427
 ORIGINAL:
@@ -8600,19 +8600,19 @@ Los artefactos también tienen vulnerabilidades.
 ORIGINAL:
 If the sub character who activated the Artifact
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Si el personaje secundario que activó el Artefacto
+Si el personaje de apoyo que activó el artefacto
 
 [001418] DIÁLOGO | CLD-001451
 ORIGINAL:
 dies in battle, you will also lose the benefits
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Si mueres en batalla, también perderás los beneficios.
+muere en combate, también perderás los beneficios
 
 [001419] DIÁLOGO | CLD-001452
 ORIGINAL:
 from that Artifact.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-de ese Artefacto.
+de ese artefacto.
 
 [001420] DIÁLOGO | CLD-001453
 ORIGINAL:
@@ -8672,13 +8672,13 @@ efectos de estado.
 ORIGINAL:
 If you become "Naked," you'll be stripped
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Si te quedas "desnudo", te despojarán de tus ropas.
+Si quedas "desnudo", perderás
 
 [001430] DIÁLOGO | CLD-001463
 ORIGINAL:
 of your equpment.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-de su equipo.
+tu equipo.
 
 [001431] DIÁLOGO | CLD-001464
 ORIGINAL:
@@ -8786,13 +8786,13 @@ Subir de nivel de una manera completamente diferente.
 ORIGINAL:
 A "warrior" that stays as the "main" all the time
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Un "guerrero" que permanece como el "principal" todo el tiempo.
+Un "guerrero" que siempre sea el principal
 
 [001449] DIÁLOGO | CLD-001482
 ORIGINAL:
 will get extra HP and Mana.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Obtendrá puntos de vida y maná adicionales.
+obtendrá HP y maná adicionales.
 
 [001450] DIÁLOGO | CLD-001483
 ORIGINAL:
@@ -8852,13 +8852,13 @@ puede obtener más HP y Maná.
 ORIGINAL:
 I-It's not like I'm telling you
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No es como si te lo estuviera diciendo.
+N-no te lo digo porque quiera.
 
 [001460] DIÁLOGO | CLD-001493
 ORIGINAL:
 because I want to!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Porque quiero!
+¡Que quede claro!
 
 [001461] PERSONAJE | CLD-001494
 ORIGINAL:
@@ -8888,13 +8888,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 It'll be instant death for ones like us
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Será una muerte instantánea para los que somos como nosotros.
+Será una muerte instantánea para seres como nosotros
 
 [001466] DIÁLOGO | CLD-001499
 ORIGINAL:
 because we can't jump over traps!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Porque no podemos saltar las trampas!
+porque no podemos saltar las trampas.
 
 [001467] DIÁLOGO | CLD-001500
 ORIGINAL:
@@ -8924,7 +8924,7 @@ Cuando yo era el legendario Hiyokki,
 ORIGINAL:
 I was beaten by an adventurer
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Fui derrotado por un aventurero.
+me derrotó un aventurero
 
 [001472] DIÁLOGO | CLD-001505
 ORIGINAL:
@@ -8936,25 +8936,25 @@ con más de 100 ATK.
 ORIGINAL:
 You may not believe it, but that adventurer's
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puede que no lo creas, pero ese aventurero...
+Aunque no lo creas, lo único que llevaba
 
 [001474] DIÁLOGO | CLD-001507
 ORIGINAL:
 only equipment was the "Wooden Stick."
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El único equipo era el "palo de madera".
+aquel aventurero era un "Palo de madera".
 
 [001475] DIÁLOGO | CLD-001508
 ORIGINAL:
 In other words, you can raise your ATK to 100
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-En otras palabras, puedes aumentar tu ATK a 100.
+¡En otras palabras, puedes alcanzar 100 ATK
 
 [001476] DIÁLOGO | CLD-001509
 ORIGINAL:
 with just Artifacts!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Solo con artefactos!
+solo con artefactos!
 
 [001477] PERSONAJE | CLD-001510
 ORIGINAL:
@@ -9103,13 +9103,13 @@ En fin, déjame mostrarte el Círculo mágico.
 ORIGINAL:
 Did you understand what the Magic Circle
 ESPAÑOL (posteditado_contextualmente_por_IA):
-¿Entendiste qué es el Círculo mágico?
+¿Has entendido cómo funciona el Círculo mágico
 
 [001501] DIÁLOGO | CLD-001534
 ORIGINAL:
 is about simply from that explanation?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿De qué se trata simplemente a partir de esa explicación?
+solo con esa explicación?
 
 [001502] OPCIÓN | CLD-001535
 ORIGINAL:
@@ -9151,13 +9151,13 @@ Toma esto.
 ORIGINAL:
 No need to thank me. I simply don't want you
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No tienes que darme las gracias. Simplemente no te quiero.
+No hace falta que me des las gracias. Solo quiero evitar
 
 [001509] DIÁLOGO | CLD-001543
 ORIGINAL:
 to come crying to me later.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-para que luego viniera llorando a mí.
+que luego vengas llorando a mí.
 
 [001510] DIÁLOGO | CLD-001544
 ORIGINAL:
@@ -9205,13 +9205,13 @@ Abrir la pantalla del menú.
 ORIGINAL:
 You won't be able to alter the Magic Circle
 ESPAÑOL (posteditado_contextualmente_por_IA):
-No podrás modificar el Círculo mágico.
+No podrás modificar el Círculo mágico
 
 [001518] DIÁLOGO | CLD-001552
 ORIGINAL:
 once you're in the dungeons.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-una vez que estés en las mazmorras.
+una vez que entres en las mazmorras.
 
 [001519] DIÁLOGO | CLD-001553
 ORIGINAL:
@@ -9343,7 +9343,7 @@ para proteger al "personaje principal".
 ORIGINAL:
 "Subs" can consume "Mana"
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los "Subs" pueden consumir "Maná".
+Los "Subs" pueden consumir "Maná"
 
 [001541] DIÁLOGO | CLD-001575
 ORIGINAL:
@@ -9451,13 +9451,13 @@ acelera tu movimiento o "CRT".
 ORIGINAL:
 Let's try using my Artifacts
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Intentemos usar mis artefactos.
+Probemos mis artefactos
 
 [001559] DIÁLOGO | CLD-001593
 ORIGINAL:
 and practice activating them.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-y practica activándolos.
+y practiquemos cómo activarlos.
 
 [001560] DIÁLOGO | CLD-001594
 ORIGINAL:
@@ -9493,13 +9493,13 @@ realzar continuamente al "personaje principal".
 ORIGINAL:
 However, "Artifacts" must be connected
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sin embargo, los "artefactos" deben estar conectados.
+Sin embargo, los artefactos deben estar conectados
 
 [001566] DIÁLOGO | CLD-001600
 ORIGINAL:
 to the sub characters or it won't activate.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-a los subpersonajes o no se activará.
+a los personajes de apoyo para activarse.
 
 [001567] DIÁLOGO | CLD-001601
 ORIGINAL:
@@ -9523,7 +9523,7 @@ El artefacto que acabas de colocar es el
 ORIGINAL:
 "Mana Plus 1," a very useful Artifact
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-"Maná más 1", un artefacto muy útil.
+"Maná más 1", un artefacto muy útil
 
 [001571] DIÁLOGO | CLD-001605
 ORIGINAL:
@@ -9559,19 +9559,19 @@ Eso es todo en cuanto a lo básico.
 ORIGINAL:
 Oh, yes. When your "sub character" dies
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Oh, sí. Cuando tu "personaje secundario" muere.
+Ah, sí. Cuando un personaje de apoyo muere
 
 [001577] DIÁLOGO | CLD-001611
 ORIGINAL:
 in battle, associated Artifacts will deactivate.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-En combate, los artefactos asociados se desactivarán.
+en combate, los artefactos asociados se desactivan.
 
 [001578] DIÁLOGO | CLD-001612
 ORIGINAL:
 Keep that in mind.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Téngalo en cuenta.
+Tenlo en cuenta.
 
 [001579] DIÁLOGO | CLD-001613
 ORIGINAL:
@@ -9624,13 +9624,13 @@ SCRIPT: demo1007_01.dsf
 ORIGINAL:
 Hmm. There's doesn't seem to be anything
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hmm. No parece haber nada.
+Mmm... No parece que haya nada raro
 
 [001587] DIÁLOGO | CLD-001622
 ORIGINAL:
 strange about the mask.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Lo de la máscara es extraño.
+en la máscara. Qué lástima.
 
 [001588] DIÁLOGO | CLD-001623
 ORIGINAL:
@@ -9660,13 +9660,13 @@ quedarse aquí... Hm...
 ORIGINAL:
 Now I can nap all I want
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ahora puedo echarme la siesta todo lo que quiera.
+Ahora puedo echarme la siesta cuando quiera
 
 [001593] DIÁLOGO | CLD-001628
 ORIGINAL:
 without getting disturbed.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-sin ser molestados.
+sin que nadie me moleste.
 
 [001594] PERSONAJE | CLD-001629
 ORIGINAL:
@@ -9953,13 +9953,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I think it'll be fine as long as you don't
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Creo que estará bien siempre y cuando no lo hagas.
+Creo que estarás bien mientras no
 
 [001641] DIÁLOGO | CLD-001676
 ORIGINAL:
 bother the crank in that house.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-molestar al loco de esa casa.
+molestes al cascarrabias de esa casa.
 
 [001642] DIÁLOGO | CLD-001677
 ORIGINAL:
@@ -9995,7 +9995,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I guess she's bored of it
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Supongo que está aburrida de eso.
+Supongo que está aburrida de eso
 
 [001648] DIÁLOGO | CLD-001683
 ORIGINAL:
@@ -10049,19 +10049,19 @@ T-Tienes muy mala suerte, ¿verdad?
 ORIGINAL:
 You can go to all sorts of dungeons from here.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Desde aquí puedes acceder a todo tipo de mazmorras.
+Desde aquí puedes ir a toda clase de mazmorras.
 
 [001657] DIÁLOGO | CLD-001692
 ORIGINAL:
 Maybe you can find it in there. That, or you can
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tal vez puedas encontrarlo ahí dentro. O tal vez puedas...
+Tal vez lo encuentres allí. También puedes
 
 [001658] DIÁLOGO | CLD-001693
 ORIGINAL:
 beat up monsters for money and items.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Golpea monstruos para conseguir dinero y objetos.
+ganar dinero y objetos derrotando monstruos.
 
 [001659] DIÁLOGO | CLD-001694
 ORIGINAL:
@@ -10073,7 +10073,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 She just wanted to get more members
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ella solo quería conseguir más miembros.
+Ella solo quería conseguir más miembros
 
 [001661] DIÁLOGO | CLD-001696
 ORIGINAL:
@@ -10109,7 +10109,7 @@ tesoro, será mejor que me lo enseñes primero.
 ORIGINAL:
 I'll just put the mask on your tab
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Simplemente pondré la máscara en tu cuenta.
+Simplemente pondré la máscara en tu cuenta
 
 [001667] DIÁLOGO | CLD-001702
 ORIGINAL:
@@ -10205,13 +10205,13 @@ Adquiera equipos y objetos en la tienda.
 ORIGINAL:
 You might also gain access to VIP stuff
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-También podrías obtener acceso a contenido VIP.
+También podrías acceder a contenido VIP
 
 [001683] DIÁLOGO | CLD-001720
 ORIGINAL:
 if you keep besting your clear times.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-si sigues superando tus tiempos de limpieza.
+si sigues mejorando tus tiempos.
 
 [001684] DIÁLOGO | CLD-001722
 ORIGINAL:
@@ -10401,19 +10401,19 @@ Esqueleto moribundo
 ORIGINAL:
 Why do they race in such
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Por qué compiten en tales condiciones?
+¿Por qué compiten en un lugar tan estrecho?
 
 [001714] DIÁLOGO | CLD-001753
 ORIGINAL:
 a cramped space?!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Un espacio reducido?
+Me dieron un golpe
 
 [001715] DIÁLOGO | CLD-001754
 ORIGINAL:
 I got hit and now look at me...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Me golpearon y ahora mírame...
+y ahora mírame...
 
 [001716] PERSONAJE | CLD-001755
 ORIGINAL:
@@ -10598,13 +10598,13 @@ Cómo, cómo. ¡Tienes toda la razón!
 ORIGINAL:
 Now where is the house most
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ahora, ¿dónde está la casa más?
+¿Dónde estará la casa más adecuada
 
 [001746] DIÁLOGO | CLD-001785
 ORIGINAL:
 fitting for my new life?!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Apropiado para mi nueva vida?
+para mi nueva vida?
 
 [001747] PERSONAJE | CLD-001786
 ORIGINAL:
@@ -10772,7 +10772,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Talk to Dotache in the tavern
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Habla con Dotache en la taberna.
+Habla con Dotache en la taberna
 
 [001775] DIÁLOGO | CLD-001817
 ORIGINAL:
@@ -10813,7 +10813,7 @@ SCRIPT: demo1102_01.dsf
 ORIGINAL:
 I wonder if the bearded guy at the tavern
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Me pregunto si el tipo barbudo de la taberna...
+Me pregunto si el barbudo de la taberna
 
 [001781] DIÁLOGO | CLD-001825
 ORIGINAL:
@@ -11118,13 +11118,13 @@ No intentes derrotar a todos los enemigos.
 ORIGINAL:
 You'll end up like me if you fight all of them
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Si luchas contra todos ellos, acabarás como yo.
+Si te enfrentas a todos sin pensar, acabarás como yo
 
 [001831] DIÁLOGO | CLD-001875
 ORIGINAL:
 without thinking about how the dungeon works.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-sin pensar en cómo funciona la mazmorra.
+por no entender cómo funciona la mazmorra.
 
 [001832] PERSONAJE | CLD-001876
 ORIGINAL:
@@ -11381,19 +11381,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I heard there's a really great spell here!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡He oído que hay un hechizo realmente genial aquí!
+¡Dicen que aquí hay un hechizo increíble!
 
 [001874] DIÁLOGO | CLD-001918
 ORIGINAL:
 I'll definitely go and find the
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Definitivamente iré a buscarlo.
+¡Encontraré el escudo definitivo
 
 [001875] DIÁLOGO | CLD-001919
 ORIGINAL:
 ultimate shield before you!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡El escudo definitivo ante ti!
+antes que tú!
 
 [001876] DIÁLOGO | CLD-001920
 ORIGINAL:
@@ -11513,13 +11513,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Nevertheless, I must find the ultimate sword
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sin embargo, debo encontrar la espada definitiva.
+Sin embargo, debo encontrar la espada definitiva
 
 [001896] DIÁLOGO | CLD-001940
 ORIGINAL:
 for I must become stronger.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Porque debo hacerme más fuerte.
+porque necesito hacerme más fuerte.
 
 [001897] DIÁLOGO | CLD-001941
 ORIGINAL:
@@ -11620,13 +11620,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I'm so glad to have customers
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Me alegra mucho tener clientes.
+¡Qué alegría que haya clientes
 
 [001913] DIÁLOGO | CLD-001959
 ORIGINAL:
 here to buy shields and swords!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Aquí se pueden comprar escudos y espadas!
+que quieran comprar escudos y espadas!
 
 [001914] DIÁLOGO | CLD-001960
 ORIGINAL:
@@ -11728,37 +11728,37 @@ en común conmigo.
 ORIGINAL:
 Unless you want to die by my sword,
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-A menos que quieras morir por mi espada,
+Si no quieres morir bajo mi espada,
 
 [001931] DIÁLOGO | CLD-001977
 ORIGINAL:
 don't look into my eye
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No me mires a los ojos.
+no me mires a los ojos
 
 [001932] DIÁLOGO | CLD-001978
 ORIGINAL:
 when you talk to me.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-cuando me hablas.
+cuando hables conmigo.
 
 [001933] DIÁLOGO | CLD-001979
 ORIGINAL:
 I can't forget the time Sunday smacked down
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No puedo olvidar la vez que Sunday me dio una paliza.
+¡Jamás olvidaré cómo Sunday derribó
 
 [001934] DIÁLOGO | CLD-001980
 ORIGINAL:
 this huge guy on the street!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Este tipo enorme en la calle!
+a un tipo enorme en plena calle!
 
 [001935] DIÁLOGO | CLD-001981
 ORIGINAL:
 I'm the only one that can beat her!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Soy el único que puede vencerla!
+¡Solo yo puedo vencerla!
 
 
 ==================================================================
@@ -11817,13 +11817,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 You really seem to be getting the hang
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Parece que ya le estás cogiendo el truco.
+¡Parece que ya le has cogido el truco
 
 [001945] DIÁLOGO | CLD-001991
 ORIGINAL:
 of that barkeep thingamajig!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡De ese cachivache del camarero!
+a eso de ser tabernero!
 
 [001946] DIÁLOGO | CLD-001992
 ORIGINAL:
@@ -12021,19 +12021,19 @@ Crosstine
 ORIGINAL:
 Sherbet, you're such a fool.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sherbet, eres un tonto.
+Sherbet, qué tonto eres.
 
 [001979] DIÁLOGO | CLD-002025
 ORIGINAL:
 The princess only calls you a stalker
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La princesa solo te llama acosador.
+La princesa te llama acosador
 
 [001980] DIÁLOGO | CLD-002026
 ORIGINAL:
 because you keep sneaking around her.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Porque sigues merodeando a su alrededor.
+porque siempre merodeas a su alrededor.
 
 [001981] DIÁLOGO | CLD-002027
 ORIGINAL:
@@ -12283,7 +12283,7 @@ Esqueleto moribundo
 ORIGINAL:
 I just wanted to try my luck at this
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Solo quería probar suerte en esto.
+Solo quería probar suerte en este
 
 [002021] DIÁLOGO | CLD-002069
 ORIGINAL:
@@ -12324,19 +12324,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Hmph. I am compassionate, so I will not
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hmph. Soy compasivo, así que no lo haré.
+Bah. Soy compasivo, así que no voy a
 
 [002027] DIÁLOGO | CLD-002075
 ORIGINAL:
 force them to leave, as long as they do not
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-obligarlos a irse, siempre y cuando no lo hagan
+obligarlos a irse mientras no
 
 [002028] DIÁLOGO | CLD-002076
 ORIGINAL:
 interfere with my life.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-interferir en mi vida.
+interfieran en mi vida.
 
 [002029] DIÁLOGO | CLD-002077
 ORIGINAL:
@@ -12408,13 +12408,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Your face and hair are as eccentric
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tu cara y tu cabello son igual de excéntricos.
+Tu cara y tu pelo son tan extravagantes
 
 [002041] DIÁLOGO | CLD-002089
 ORIGINAL:
 as ever, Bob.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Como siempre, Bob.
+como siempre, Bob.
 
 [002042] DIÁLOGO | CLD-002090
 ORIGINAL:
@@ -12438,19 +12438,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 But I'm gonna keep trying and trying harder!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Pero voy a seguir intentándolo y esforzándome cada vez más!
+¡Pero seguiré esforzándome cada vez más!
 
 [002046] DIÁLOGO | CLD-002094
 ORIGINAL:
 I'm a boy at heart and I'll never be satisfied
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Soy un niño de corazón y nunca estaré satisfecho.
+Soy un niño de corazón y no estaré satisfecho
 
 [002047] DIÁLOGO | CLD-002095
 ORIGINAL:
 until I'm the best! Look at me... stylin'!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Hasta que sea el mejor! ¡Mírame... con estilo!
+hasta ser el mejor. ¡Mírame... qué estilo!
 
 [002048] DIÁLOGO | CLD-002096
 ORIGINAL:
@@ -12558,19 +12558,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Oh? You want to turn the humans into
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Oh? ¿Quieres convertir a los humanos en...?
+¿Ah? ¿Quieres convertir a los humanos
 
 [002066] DIÁLOGO | CLD-002114
 ORIGINAL:
 strange creatures like yourself?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Criaturas extrañas como tú?
+en criaturas extrañas como tú?
 
 [002067] DIÁLOGO | CLD-002115
 ORIGINAL:
 I welcome that idea!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Me parece una idea estupenda!
+¡Me encanta esa idea!
 
 [002068] DIÁLOGO | CLD-002116
 ORIGINAL:
@@ -12600,19 +12600,19 @@ Increíble.
 ORIGINAL:
 Aaaaand. It's almost my birthday!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Yyyyy. ¡Ya casi es mi cumpleaños!
+Yyyyy... ¡Casi es mi cumpleaños!
 
 [002073] DIÁLOGO | CLD-002121
 ORIGINAL:
 I took a look at that shop
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Le eché un vistazo a esa tienda.
+Pasé por esa tienda
 
 [002074] DIÁLOGO | CLD-002122
 ORIGINAL:
 and found this faaaaaabulous mask!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Y encontré esta fabulosa máscara!
+¡y encontré esta máscara fabulosa!
 
 [002075] DIÁLOGO | CLD-002123
 ORIGINAL:
@@ -12863,19 +12863,19 @@ Me pregunto qué color de pelo debería elegir.
 ORIGINAL:
 Uhh, let's see. My job is to
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ehh, veamos. Mi trabajo es...
+Eh, veamos. Mi trabajo consiste en
 
 [002116] DIÁLOGO | CLD-002167
 ORIGINAL:
 sweep the front of the store and...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-barre la parte delantera de la tienda y...
+barrer frente a la tienda y... ¡Ah, hola!
 
 [002117] DIÁLOGO | CLD-002168
 ORIGINAL:
 Oh, hi! Welcome!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Oh, hola! ¡Bienvenido!
+¡Bienvenido!
 
 [002118] PERSONAJE | CLD-002169
 ORIGINAL:
@@ -13095,19 +13095,19 @@ Eso es bueno...
 ORIGINAL:
 N-No way...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-De ninguna manera...
+N-no puede ser... Ese gato dijo que curaríamos
 
 [002153] DIÁLOGO | CLD-002204
 ORIGINAL:
 That cat said we could cure any sickness
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ese gato dijo que podíamos curar cualquier enfermedad.
+cualquier enfermedad si teníamos la máscara...
 
 [002154] DIÁLOGO | CLD-002205
 ORIGINAL:
 if we had the mask... Sigh...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Si tuviéramos la mascarilla... Suspiro...
+Ay...
 
 [002155] DIÁLOGO | CLD-002206
 ORIGINAL:
@@ -13161,13 +13161,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Souma, is there someone
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Souma, ¿hay alguien?
+Souma, ¿conoces a alguien
 
 [002164] DIÁLOGO | CLD-002215
 ORIGINAL:
 you know that's sick?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Sabes que eso es enfermizo?
+que esté enfermo?
 
 [002165] DIÁLOGO | CLD-002216
 ORIGINAL:
@@ -13239,19 +13239,19 @@ Intenté detenerla, pero ya sabes cómo es.
 ORIGINAL:
 I guess it does get depressing when you're locked up
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Supongo que sí, es deprimente estar encerrado.
+Supongo que es deprimente estar encerrada
 
 [002177] DIÁLOGO | CLD-002228
 ORIGINAL:
 all the time. If I were her, I'd want to get some sun.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Todo el tiempo. Si yo fuera ella, querría tomar un poco de sol.
+todo el tiempo. Si fuera ella, querría tomar el sol.
 
 [002178] DIÁLOGO | CLD-002229
 ORIGINAL:
 Back in our world, she was hospitalized
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-De vuelta en nuestro mundo, ella fue hospitalizada.
+De vuelta en nuestro mundo, ella fue hospitalizada
 
 [002179] DIÁLOGO | CLD-002230
 ORIGINAL:
@@ -13454,13 +13454,13 @@ Tener cosas que resolver puede ser algo bueno.
 ORIGINAL:
 Can you please not bring freaky fake-sounding
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Puedes por favor no traer cosas raras que suenen falsas?
+Por favor, no traigas enfermedades
 
 [002212] DIÁLOGO | CLD-002266
 ORIGINAL:
 diseases into my pure, blissful world?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Enfermedades en mi mundo puro y dichoso?
+de nombre disparatado a mi mundo tan feliz.
 
 [002213] PERSONAJE | CLD-002267
 ORIGINAL:
@@ -13555,7 +13555,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 give me some space! You're like a stalk-
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Dame un poco de espacio! Eres como un acosador.
+¡Dame un poco de espacio! Eres como un acos-
 
 [002228] DIÁLOGO | CLD-002282
 ORIGINAL:
@@ -13645,19 +13645,19 @@ Estoy seguro de que a esa persona no le gusta.
 ORIGINAL:
 How did you know?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Cómo lo supiste?
+¿Cómo lo supiste? La persona a quien protejo
 
 [002243] DIÁLOGO | CLD-002297
 ORIGINAL:
 The person I am guarding finds me
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La persona a la que estoy protegiendo me encuentra.
+me considera bastante molesto...
 
 [002244] DIÁLOGO | CLD-002298
 ORIGINAL:
 very annoying... to say the least.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Muy molesto... por decir lo menos.
+por decirlo suavemente.
 
 [002245] DIÁLOGO | CLD-002299
 ORIGINAL:
@@ -13729,19 +13729,19 @@ Quizás sea buena idea dar un paso atrás.
 ORIGINAL:
 Then, can I try to increase
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Entonces, ¿puedo intentar aumentar?
+Entonces, ¿puedo buscar más armaduras
 
 [002257] DIÁLOGO | CLD-002311
 ORIGINAL:
 my armor collection in the dungeons?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Mi colección de armaduras en las mazmorras?
+en las mazmorras? Así también
 
 [002258] DIÁLOGO | CLD-002312
 ORIGINAL:
 It can lead to protecting that person, too.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-También puede contribuir a proteger a esa persona.
+podré proteger a esa persona.
 
 [002259] DIÁLOGO | CLD-002313
 ORIGINAL:
@@ -13873,13 +13873,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Can you teach Sherbet
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Puedes enseñarle a Sherbet?
+¿Puedes enseñarle a Sherbet
 
 [002281] DIÁLOGO | CLD-002335
 ORIGINAL:
 about the Magic Circle?!
 ESPAÑOL (posteditado_contextualmente_por_IA):
-¿Sobre el Círculo mágico?
+cómo funciona el Círculo mágico?
 
 [002282] DIÁLOGO | CLD-002336
 ORIGINAL:
@@ -13968,13 +13968,13 @@ SCRIPT: demo1202_01.dsf
 ORIGINAL:
 Don't you find it annoying when people
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿No te resulta molesto cuando la gente...?
+¿No te molesta que los demás
 
 [002296] DIÁLOGO | CLD-002352
 ORIGINAL:
 keep saying "no" to you?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Sigue diciéndote "no"?
+te digan que no todo el tiempo?
 
 [002297] DIÁLOGO | CLD-002353
 ORIGINAL:
@@ -14076,19 +14076,19 @@ Crosstine
 ORIGINAL:
 Someone needs to do something
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Alguien tiene que hacer algo.
+Alguien tiene que hacer algo
 
 [002314] DIÁLOGO | CLD-002370
 ORIGINAL:
 about that voice. I think my ears
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-sobre esa voz. Creo que mis oídos
+con esa voz. A este paso,
 
 [002315] DIÁLOGO | CLD-002371
 ORIGINAL:
 will rot at this rate.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-A este ritmo, se pudrirá.
+se me van a pudrir los oídos.
 
 [002316] DIÁLOGO | CLD-002372
 ORIGINAL:
@@ -14112,19 +14112,19 @@ Tamako
 ORIGINAL:
 I can't move, so I love watching
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No puedo moverme, así que me encanta mirar.
+No puedo moverme, pero me encanta ver
 
 [002320] DIÁLOGO | CLD-002376
 ORIGINAL:
 the different kinds of people from so many
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-los diferentes tipos de personas de tantos
+a tantas personas de mundos diferentes
 
 [002321] DIÁLOGO | CLD-002377
 ORIGINAL:
 unique worlds come here.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Aquí confluyen mundos únicos.
+venir hasta aquí.
 
 [002322] PERSONAJE | CLD-002378
 ORIGINAL:
@@ -14136,19 +14136,19 @@ Tamako
 ORIGINAL:
 I can't move, so I love watching
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No puedo moverme, así que me encanta mirar.
+No puedo moverme, pero me encanta ver
 
 [002324] DIÁLOGO | CLD-002380
 ORIGINAL:
 the different kinds of people from so many
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-los diferentes tipos de personas de tantos
+a tantas personas de mundos diferentes
 
 [002325] DIÁLOGO | CLD-002381
 ORIGINAL:
 unique worlds come here.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Aquí confluyen mundos únicos.
+venir hasta aquí.
 
 [002326] DIÁLOGO | CLD-002382
 ORIGINAL:
@@ -14333,13 +14333,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 (That melody again...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-(Esa melodía otra vez...)
+(Esa melodía otra vez... Ya no puedo
 
 [002356] DIÁLOGO | CLD-002412
 ORIGINAL:
 I can't keep this lie
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No puedo mantener esta mentira.
+seguir manteniendo esta mentira.)
 
 [002357] DIÁLOGO | CLD-002413
 ORIGINAL:
@@ -14513,19 +14513,19 @@ L-Lo siento...
 ORIGINAL:
 Yo! Despina!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Yo! Despina!
+¡Eh, Despina!
 
 [002386] DIÁLOGO | CLD-002442
 ORIGINAL:
 Isn't it, like, really, really rare
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿No es realmente, realmente raro?
+¿No es rarísimo
 
 [002387] DIÁLOGO | CLD-002443
 ORIGINAL:
 for you to get out of your house?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Para que salgas de tu casa?
+que salgas de casa?
 
 [002388] DIÁLOGO | CLD-002444
 ORIGINAL:
@@ -14561,13 +14561,13 @@ H-Hola, Despina...
 ORIGINAL:
 Don't worry. I won't chase you away just
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No te preocupes. No te ahuyentaré.
+No te preocupes. No te echaré
 
 [002394] DIÁLOGO | CLD-002450
 ORIGINAL:
 because you look like a freak of nature.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Porque pareces un monstruo de la naturaleza.
+solo por parecer un monstruo.
 
 [002395] DIÁLOGO | CLD-002451
 ORIGINAL:
@@ -14620,19 +14620,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Will my life be nothing more
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Mi vida no será nada más?
+¿Mi vida se reducirá a ser
 
 [002403] DIÁLOGO | CLD-002461
 ORIGINAL:
 than being Pudding's butt boy?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Más que ser el chico de los recados de Pudding?
+el recadero de Pudding?
 
 [002404] DIÁLOGO | CLD-002462
 ORIGINAL:
 Is that all I'm good for?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Para eso es todo que sirvo?
+¿Acaso no sirvo para nada más?
 
 [002405] DIÁLOGO | CLD-002463
 ORIGINAL:
@@ -14656,7 +14656,7 @@ Pero supongo que eso pasa todo el tiempo.
 ORIGINAL:
 The barkeep rarely ever looks at your eyes
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El camarero rara vez te mira a los ojos.
+El camarero rara vez te mira a los ojos
 
 [002409] DIÁLOGO | CLD-002467
 ORIGINAL:
@@ -14806,13 +14806,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I'll join the Magic Circle
 ESPAÑOL (posteditado_contextualmente_por_IA):
-Me uniré al Círculo mágico.
+¡Me uniré al Círculo mágico
 
 [002434] DIÁLOGO | CLD-002492
 ORIGINAL:
 on the days I'm off!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡En mis días libres!
+en mis días libres!
 
 
 ==================================================================
@@ -15164,19 +15164,19 @@ Arcanus Cella estaba en su boca...)
 ORIGINAL:
 I want to kick it out of my world, but it's
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Quiero echarlo de mi mundo, pero es...
+Quiero expulsarlo de mi mundo, pero
 
 [002492] DIÁLOGO | CLD-002550
 ORIGINAL:
 protected by something. Something powerful and
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-protegido por algo. Algo poderoso y
+algo lo protege. Algo muy poderoso y mágico,
 
 [002493] DIÁLOGO | CLD-002551
 ORIGINAL:
 magical. To the point that it hinders my spells.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mágico. Hasta el punto de que entorpece mis hechizos.
+tanto que interfiere con mis hechizos.
 
 [002494] DIÁLOGO | CLD-002552
 ORIGINAL:
@@ -15260,19 +15260,19 @@ En este mundo hay gente extraña con problemas.
 ORIGINAL:
 There's no way I can find someone to
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No hay manera de que pueda encontrar a alguien para
+Aquí no hay manera de encontrar a alguien
 
 [002508] DIÁLOGO | CLD-002566
 ORIGINAL:
 fall in love with here. Not at this rate.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-enamorarse de aquí. A este paso, no.
+de quien enamorarme. A este paso...
 
 [002509] DIÁLOGO | CLD-002567
 ORIGINAL:
 I better find the ultimate sword soon...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Será mejor que encuentre la espada definitiva pronto...
+Más vale que encuentre pronto la espada definitiva.
 
 [002510] PERSONAJE | CLD-002568
 ORIGINAL:
@@ -15379,13 +15379,13 @@ Bueno, entonces. ¡Será mejor que me ponga manos a la obra!
 ORIGINAL:
 My armor collection is so much
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mi colección de armaduras es tan...
+Mi colección de armaduras es
 
 [002527] DIÁLOGO | CLD-002587
 ORIGINAL:
 bigger now.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-ahora es más grande.
+mucho mayor ahora.
 
 [002528] DIÁLOGO | CLD-002588
 ORIGINAL:
@@ -15528,13 +15528,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Are you trying to find the
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Estás tratando de encontrar el?
+¿Buscas la "armadura definitiva"
 
 [002551] DIÁLOGO | CLD-002611
 ORIGINAL:
 "ultimate armor" or something?!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿"Armadura definitiva" o algo así?
+o algo por el estilo?
 
 [002552] DIÁLOGO | CLD-002612
 ORIGINAL:
@@ -15564,7 +15564,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I may collect armor, but that is only as a means
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puede que coleccione armaduras, pero eso es solo como un medio.
+Puede que coleccione armaduras, pero eso es solo como un medio
 
 [002557] DIÁLOGO | CLD-002617
 ORIGINAL:
@@ -15594,19 +15594,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Prote... What?!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Prote... ¡¿Qué?!
+¡Prote...! ¡¿Qué?! Yo creía que todos
 
 [002562] DIÁLOGO | CLD-002622
 ORIGINAL:
 I thought everyone only wishes to become
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pensé que todos solo deseaban convertirse en...
+solo buscaban hacerse más fuertes
 
 [002563] DIÁLOGO | CLD-002623
 ORIGINAL:
 stronger for their own desires!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Más fuertes por sus propios deseos!
+por sus propios deseos.
 
 [002564] DIÁLOGO | CLD-002624
 ORIGINAL:
@@ -15630,19 +15630,19 @@ Puedes tener esto.
 ORIGINAL:
 Despina didn't want it anyway. I found it on the
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Despina no lo quería de todos modos. Lo encontré en el
+Despina no lo quería. Lo encontré
 
 [002568] DIÁLOGO | CLD-002628
 ORIGINAL:
 ground over there. I'm sure she wouldn't mind
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El suelo de allí. Estoy seguro de que no le importaría.
+allí en el suelo. Seguro que no le importaría
 
 [002569] DIÁLOGO | CLD-002629
 ORIGINAL:
 if you used it as a shield.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-si lo usaste como escudo.
+que lo usaras de escudo.
 
 [002570] DIÁLOGO | CLD-002630
 ORIGINAL:
@@ -15767,7 +15767,7 @@ Despina rara vez baja a la tienda,
 ORIGINAL:
 so maybe I should go to her place
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Entonces, tal vez debería ir a su casa.
+Entonces, tal vez debería ir a su casa
 
 [002590] DIÁLOGO | CLD-002652
 ORIGINAL:
@@ -15839,7 +15839,7 @@ Crosstine
 ORIGINAL:
 I actually met Despina
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-De hecho conocí a Despina.
+Conocí a Despina
 
 [002602] DIÁLOGO | CLD-002664
 ORIGINAL:
@@ -15851,7 +15851,7 @@ cuando todavía era un bebé.
 ORIGINAL:
 She was so cute back then.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Era tan linda en aquel entonces.
+Era adorable entonces.
 
 [002604] DIÁLOGO | CLD-002666
 ORIGINAL:
@@ -15875,19 +15875,19 @@ Tamako
 ORIGINAL:
 I can't see, but I can sense
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No puedo ver, pero puedo sentir.
+No puedo ver, pero siento que Despina
 
 [002608] DIÁLOGO | CLD-002670
 ORIGINAL:
 that Despina went through quite
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-que Despina pasó por bastante
+sufrió muchísimo
 
 [002609] DIÁLOGO | CLD-002671
 ORIGINAL:
 a lot of pain before coming here.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sufrí mucho dolor antes de venir aquí.
+antes de venir aquí.
 
 [002610] PERSONAJE | CLD-002672
 ORIGINAL:
@@ -15899,19 +15899,19 @@ Tamako
 ORIGINAL:
 I can't see, but I can sense
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No puedo ver, pero puedo sentir.
+No puedo ver, pero siento que Despina
 
 [002612] DIÁLOGO | CLD-002674
 ORIGINAL:
 that Despina went through quite
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-que Despina pasó por bastante
+sufrió muchísimo
 
 [002613] DIÁLOGO | CLD-002675
 ORIGINAL:
 a lot of pain before coming here.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sufrí mucho dolor antes de venir aquí.
+antes de venir aquí.
 
 [002614] DIÁLOGO | CLD-002676
 ORIGINAL:
@@ -16006,19 +16006,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Despina, you have really amazing powers
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Despina, tienes poderes realmente asombrosos.
+Despina, tienes unos poderes increíbles
 
 [002629] DIÁLOGO | CLD-002691
 ORIGINAL:
 like your grandfather, right?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Como tu abuelo, ¿verdad?
+como los de tu abuelo, ¿verdad?
 
 [002630] DIÁLOGO | CLD-002692
 ORIGINAL:
 Why don't you become a hermit like him?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Por qué no te conviertes en un ermitaño como él?
+¿Por qué no te vuelves ermitaña como él?
 
 [002631] DIÁLOGO | CLD-002693
 ORIGINAL:
@@ -16156,19 +16156,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Don't want it. I look better than a zombie,
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No lo quiero. Me veo mejor que un zombi.
+No lo quiero. Me veo mejor que un zombi, ¿no?
 
 [002654] DIÁLOGO | CLD-002716
 ORIGINAL:
 don't I? Is that all you came to say?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿No es así? ¿Eso es todo lo que viniste a decir?
+¿Es eso todo lo que venías a decir?
 
 [002655] DIÁLOGO | CLD-002717
 ORIGINAL:
 Now get out.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ahora vete.
+Pues vete.
 
 [002656] DIÁLOGO | CLD-002718
 ORIGINAL:
@@ -16210,37 +16210,37 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Despina? I'm really glad that I
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Despina? Me alegro mucho de haberlo hecho.
+¿Despina? ¡Me alegro muchísimo
 
 [002663] DIÁLOGO | CLD-002725
 ORIGINAL:
 came to Arcanus Cella!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Llegó a Arcanus Cella!
+de haber venido a Arcanus Cella!
 
 [002664] DIÁLOGO | CLD-002726
 ORIGINAL:
 I wouldn't have met everyone otherwise!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡De otra manera no habría conocido a todos!
+¡Si no, no habría conocido a todos!
 
 [002665] DIÁLOGO | CLD-002727
 ORIGINAL:
 You look like nothing ever troubles you.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pareces como si nada te preocupara jamás.
+Parece que nunca te preocupa nada.
 
 [002666] DIÁLOGO | CLD-002728
 ORIGINAL:
 Don't you get tired of flashing
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿No te cansas de parpadear?
+¿No te cansas de lucir
 
 [002667] DIÁLOGO | CLD-002729
 ORIGINAL:
 that grin of yours?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Esa sonrisa tuya?
+esa sonrisa de oreja a oreja?
 
 [002668] DIÁLOGO | CLD-002730
 ORIGINAL:
@@ -16359,19 +16359,19 @@ Me pregunto si la mala suerte es contagiosa.
 ORIGINAL:
 I always have nightmares where I'm getting
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Siempre tengo pesadillas en las que me encuentro...
+Siempre tengo pesadillas en las que
 
 [002687] DIÁLOGO | CLD-002751
 ORIGINAL:
 chased by a giant eye.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-perseguido por un ojo gigante.
+me persigue un ojo gigante.
 
 [002688] DIÁLOGO | CLD-002752
 ORIGINAL:
 I just kill it and usually that's the end of it.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Simplemente lo mato y normalmente ahí termina todo.
+Lo mato y casi siempre se acaba todo.
 
 [002689] DIÁLOGO | CLD-002753
 ORIGINAL:
@@ -16401,13 +16401,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Did you think of what
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Pensaste en qué?
+¿Has pensado qué regalo
 
 [002694] DIÁLOGO | CLD-002758
 ORIGINAL:
 birthday present to give me?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Qué regalo de cumpleaños me puedes dar?
+vas a hacerme por mi cumpleaños?
 
 [002695] PERSONAJE | CLD-002759
 ORIGINAL:
@@ -16538,13 +16538,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 What am I supposed to do
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Qué se supone que debo hacer?
+¿Qué voy a hacer
 
 [002716] DIÁLOGO | CLD-002780
 ORIGINAL:
 with my life now?!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡¿Y mi vida ahora?!
+con mi vida ahora?!
 
 [002717] DIÁLOGO | CLD-002781
 ORIGINAL:
@@ -16706,19 +16706,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Wait...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Esperar...
+Un momento...
 
 [002744] DIÁLOGO | CLD-002808
 ORIGINAL:
 What was I trying
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Qué estaba intentando?
+¿Qué estaba intentando
 
 [002745] DIÁLOGO | CLD-002809
 ORIGINAL:
 to do again?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Para hacerlo de nuevo?
+hacer?
 
 [002746] DIÁLOGO | CLD-002810
 ORIGINAL:
@@ -16742,13 +16742,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Ugh. Does my misfortune
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ugh. ¿Mi desgracia?
+Uf... ¿De verdad mi mala suerte
 
 [002750] DIÁLOGO | CLD-002814
 ORIGINAL:
 really rub off on others?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Realmente influye en los demás?
+se contagia a los demás?
 
 [002751] PERSONAJE | CLD-002815
 ORIGINAL:
@@ -16778,13 +16778,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I just remembered Despina
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Acabo de acordarme de Despina.
+¡Acabo de recordar que Despina
 
 [002756] DIÁLOGO | CLD-002820
 ORIGINAL:
 asked me to throw it far away!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Me pidió que lo tirara lejos!
+me pidió que la tirara muy lejos!
 
 [002757] DIÁLOGO | CLD-002822
 ORIGINAL:
@@ -16897,13 +16897,13 @@ Inofensivo después de todo.
 ORIGINAL:
 Battleblo came up with a totally new
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Battleblo ideó una estrategia totalmente nueva.
+¡Battleblo inventó una forma de bailar
 
 [002775] DIÁLOGO | CLD-002841
 ORIGINAL:
 kind of dance! It's funkadelic!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Qué tipo de baile! ¡Es funkadelic!
+totalmente nueva! ¡Es funkadelic!
 
 [002776] PERSONAJE | CLD-002842
 ORIGINAL:
@@ -16951,7 +16951,7 @@ Tamako
 ORIGINAL:
 Despina comes from a long line
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Despina proviene de una larga estirpe.
+Despina procede de una larga estirpe
 
 [002784] DIÁLOGO | CLD-002850
 ORIGINAL:
@@ -16969,7 +16969,7 @@ Tamako
 ORIGINAL:
 Despina comes from a long line
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Despina proviene de una larga estirpe.
+Despina procede de una larga estirpe
 
 [002787] DIÁLOGO | CLD-002853
 ORIGINAL:
@@ -17129,13 +17129,13 @@ Así que lo traje conmigo.
 ORIGINAL:
 I think you can put that sword away
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Creo que puedes guardar esa espada.
+Creo que ya puedes guardar esa espada,
 
 [002812] DIÁLOGO | CLD-002880
 ORIGINAL:
 now, Sunday.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ahora, domingo.
+Sunday.
 
 [002813] DIÁLOGO | CLD-002881
 ORIGINAL:
@@ -17159,19 +17159,19 @@ Simplemente no soporto que la gente me mire.
 ORIGINAL:
 I break out in a cold sweat and hives when
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Me da un sudor frío y urticaria cuando...
+Me entra un sudor frío y me salen ronchas
 
 [002817] DIÁLOGO | CLD-002885
 ORIGINAL:
 I know people are watching me.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sé que hay gente que me observa.
+cuando sé que alguien me mira.
 
 [002818] DIÁLOGO | CLD-002886
 ORIGINAL:
 My heart races and I start to get dizzy.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mi corazón se acelera y empiezo a marearme.
+Se me acelera el corazón y me mareo.
 
 [002819] DIÁLOGO | CLD-002887
 ORIGINAL:
@@ -17231,43 +17231,43 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 With the ultimate sword, I won't have to
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Con la espada definitiva, no tendré que...
+Con la espada definitiva, ya no tendré
 
 [002829] DIÁLOGO | CLD-002897
 ORIGINAL:
 worry about the gaze of others anymore.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ya no me preocupa la mirada de los demás.
+que preocuparme por las miradas ajenas.
 
 [002830] DIÁLOGO | CLD-002898
 ORIGINAL:
 I just want to live like any normal person.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Solo quiero vivir como cualquier persona normal.
+Solo quiero vivir como los demás.
 
 [002831] DIÁLOGO | CLD-002899
 ORIGINAL:
 If I have to brandish a sword all the time, I won't
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Si tengo que blandir una espada todo el tiempo, no lo haré.
+Si tengo que llevar siempre una espada,
 
 [002832] DIÁLOGO | CLD-002900
 ORIGINAL:
 be able to go on dates or gaze into a man's
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-poder tener citas o mirar fijamente a los ojos de un hombre
+no podré salir con nadie ni mirar
 
 [002833] DIÁLOGO | CLD-002901
 ORIGINAL:
 eyes, let alone get my smooch on!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Ojos, y mucho menos darle un beso!
+a un hombre a los ojos, ¡ni darle un beso!
 
 [002834] DIÁLOGO | CLD-002902
 ORIGINAL:
 I don't think you can do that anyway,
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No creo que puedas hacer eso de todos modos.
+No creo que puedas hacer eso
 
 [002835] DIÁLOGO | CLD-002903
 ORIGINAL:
@@ -17279,7 +17279,7 @@ si llevas la espada definitiva.
 ORIGINAL:
 I guess you're like any other girl after all.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Supongo que, después de todo, eres como cualquier otra chica.
+Supongo que eres como cualquier otra chica.
 
 [002837] DIÁLOGO | CLD-002905
 ORIGINAL:
@@ -17404,19 +17404,19 @@ quieren que los miren fijamente.
 ORIGINAL:
 Maybe that mask really isn't
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tal vez esa máscara realmente no lo sea.
+Quizá esa máscara no sea realmente
 
 [002857] DIÁLOGO | CLD-002927
 ORIGINAL:
 the mask of happiness after all.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Después de todo, la máscara de la felicidad.
+la máscara de la felicidad.
 
 [002858] DIÁLOGO | CLD-002928
 ORIGINAL:
 But it brought me so much happiness...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pero me trajo muchísima felicidad...
+Pero me hizo muy feliz...
 
 [002859] DIÁLOGO | CLD-002929
 ORIGINAL:
@@ -17434,13 +17434,13 @@ Por favor, no me mires fijamente.
 ORIGINAL:
 What's with that scowl
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Qué te pasa con ese ceño fruncido?
+¿A qué viene ese ceño
 
 [002862] DIÁLOGO | CLD-002932
 ORIGINAL:
 on your face?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿en tu cara?
+tan fruncido?
 
 [002863] DIÁLOGO | CLD-002933
 ORIGINAL:
@@ -17500,7 +17500,7 @@ Je, je...
 ORIGINAL:
 I don't know if you really need treasure
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No sé si realmente necesitas un tesoro.
+No sé si realmente necesitas un tesoro
 
 [002873] DIÁLOGO | CLD-002943
 ORIGINAL:
@@ -17530,13 +17530,13 @@ Tamako
 ORIGINAL:
 I can't see, but I'll never have
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No puedo ver, pero nunca lo tendré.
+No puedo ver, pero al menos
 
 [002878] DIÁLOGO | CLD-002948
 ORIGINAL:
 a sword pointed at me, either.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tampoco me apuntaban con una espada.
+nadie me apuntará con una espada.
 
 [002879] PERSONAJE | CLD-002949
 ORIGINAL:
@@ -17548,13 +17548,13 @@ Tamako
 ORIGINAL:
 I can't see, but I'll never have
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No puedo ver, pero nunca lo tendré.
+No puedo ver, pero al menos
 
 [002881] DIÁLOGO | CLD-002951
 ORIGINAL:
 a sword pointed at me, either.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tampoco me apuntaban con una espada.
+nadie me apuntará con una espada.
 
 [002882] DIÁLOGO | CLD-002952
 ORIGINAL:
@@ -17636,19 +17636,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Yeah, I'll die if I laugh too much.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sí, me muero si me río demasiado.
+Sí, moriré si me río demasiado.
 
 [002894] DIÁLOGO | CLD-002964
 ORIGINAL:
 Even if I don't laugh out loud, it accumulates
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Aunque no me ría a carcajadas, se acumula.
+Aunque no me ría en voz alta, se acumula
 
 [002895] DIÁLOGO | CLD-002965
 ORIGINAL:
 and I'll eventually die in 6 months.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-y finalmente moriré en 6 meses.
+y moriré en unos seis meses.
 
 [002896] DIÁLOGO | CLD-002966
 ORIGINAL:
@@ -17666,25 +17666,25 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 What do I gain from lying to you?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Qué gano yo mintiéndote?
+¿Qué gano con mentirte? Dicen que mejoraría
 
 [002899] DIÁLOGO | CLD-002969
 ORIGINAL:
 They say that I might get better if I infect
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Dicen que podría mejorar si me contagio.
+si contagiara a otra persona, pero
 
 [002900] DIÁLOGO | CLD-002970
 ORIGINAL:
 someone else, but it's a one in a million chance.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Otra persona, pero es una posibilidad entre un millón.
+solo hay una posibilidad entre un millón.
 
 [002901] DIÁLOGO | CLD-002971
 ORIGINAL:
 I came here because I saw a sign
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Vine aquí porque vi un letrero.
+Vine aquí porque vi un letrero
 
 [002902] DIÁLOGO | CLD-002972
 ORIGINAL:
@@ -17768,13 +17768,13 @@ Crosstine
 ORIGINAL:
 It's the same as the time with her grandfather,
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Es lo mismo que la vez que estuvo con su abuelo.
+Es como lo que ocurrió con su abuelo,
 
 [002916] DIÁLOGO | CLD-002986
 ORIGINAL:
 so it seems to be going smoothly.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Así que parece que todo va bien.
+así que parece que todo va bien.
 
 [002917] DIÁLOGO | CLD-002987
 ORIGINAL:
@@ -17822,13 +17822,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Didn't Despina throw it away
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿No lo tiró Despina?
+¿No tiró Despina esa máscara
 
 [002925] DIÁLOGO | CLD-002995
 ORIGINAL:
 like... a lot of times?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Como... muchas veces?
+como... un montón de veces?
 
 [002926] DIÁLOGO | CLD-002996
 ORIGINAL:
@@ -17906,13 +17906,13 @@ Entonces, ¿por qué no destruirlo?
 ORIGINAL:
 Don't you think that I would have
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿No crees que yo habría...?
+¿No crees que ya
 
 [002939] DIÁLOGO | CLD-003009
 ORIGINAL:
 already tried?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Ya lo intentaste?
+lo habría intentado?
 
 [002940] DIÁLOGO | CLD-003010
 ORIGINAL:
@@ -18467,7 +18467,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 It'll be bad if it accumulates more power
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Será malo si acumula más energía.
+Será malo si acumula más energía
 
 [003030] DIÁLOGO | CLD-003102
 ORIGINAL:
@@ -18515,13 +18515,13 @@ Crosstine
 ORIGINAL:
 (Oh, my.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-(Oh, Dios mío.
+(Vaya... Será mejor que le dé
 
 [003038] DIÁLOGO | CLD-003110
 ORIGINAL:
 It seems that I better give this thing
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Parece que será mejor que le dé esto a esta cosa.
+más poder a esa cosa.)
 
 [003039] DIÁLOGO | CLD-003111
 ORIGINAL:
@@ -18635,7 +18635,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Now it'll go back to the humans
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ahora volverá a manos de los humanos.
+Ahora volverá a manos de los humanos
 
 [003058] DIÁLOGO | CLD-003130
 ORIGINAL:
@@ -18688,7 +18688,7 @@ Me alegro de no haber dejado que Pudding se lo comiera.
 ORIGINAL:
 I wonder how Bob changes colors
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Me pregunto cómo Bob cambia de color.
+Me pregunto cómo Bob cambia de color
 
 [003066] DIÁLOGO | CLD-003140
 ORIGINAL:
@@ -18986,19 +18986,19 @@ Me iré enseguida, así que por favor discúlpenme.
 ORIGINAL:
 B-But, you just don't seem like the kind
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-P-Pero, simplemente no pareces ese tipo de persona.
+P-pero no pareces de los que
 
 [003114] DIÁLOGO | CLD-003188
 ORIGINAL:
 that would be a stalker.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Eso sería un acosador.
+acosarían a alguien.
 
 [003115] DIÁLOGO | CLD-003189
 ORIGINAL:
 And you protected me just now as well.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Y tú también me protegiste hace un momento.
+Y además me acabas de proteger.
 
 [003116] DIÁLOGO | CLD-003190
 ORIGINAL:
@@ -19052,7 +19052,7 @@ Desobedeceré las órdenes solo por esta vez.
 ORIGINAL:
 I am here by order of the former king
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Estoy aquí por orden del antiguo rey.
+Estoy aquí por orden del antiguo rey
 
 [003125] DIÁLOGO | CLD-003199
 ORIGINAL:
@@ -19130,19 +19130,19 @@ Gracias por todo.
 ORIGINAL:
 And I sincerely hope that you will
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Y espero sinceramente que lo hagas.
+Y espero sinceramente
 
 [003138] DIÁLOGO | CLD-003212
 ORIGINAL:
 continue to serve me from now on.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Continúa sirviéndome de ahora en adelante.
+que sigas a mi servicio.
 
 [003139] DIÁLOGO | CLD-003213
 ORIGINAL:
 Princess... I have defied my orders
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Princesa... He desobedecido mis órdenes.
+Princesa... He desobedecido mis órdenes
 
 [003140] DIÁLOGO | CLD-003214
 ORIGINAL:
@@ -19172,13 +19172,13 @@ Te ordeno que seas mi guardaespaldas.
 ORIGINAL:
 No matter what may happen, I shall be
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No importa lo que pase, estaré...
+¡Pase lo que pase, seré tu escudo
 
 [003145] DIÁLOGO | CLD-003219
 ORIGINAL:
 your shield until I die!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Tu escudo hasta que muera!
+hasta que muera!
 
 [003146] DIÁLOGO | CLD-003220
 ORIGINAL:
@@ -19279,19 +19279,19 @@ Bueno, no me importaría unirme.
 ORIGINAL:
 That mask is really dangerous.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Esa máscara es realmente peligrosa.
+Esa máscara es muy peligrosa.
 
 [003162] DIÁLOGO | CLD-003238
 ORIGINAL:
 Why did Crosstine try to
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Por qué intentó Crosstine...?
+¿Por qué intentó Crosstine
 
 [003163] DIÁLOGO | CLD-003239
 ORIGINAL:
 get me to buy it?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Me convences para comprarlo?
+que yo la comprara?
 
 [003164] DIÁLOGO | CLD-003240
 ORIGINAL:
@@ -19339,19 +19339,19 @@ Me pregunto si Sunday se va a arreglar.
 ORIGINAL:
 Revealing my identity to her was against
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Revelarle mi identidad iba en contra de mi voluntad.
+Revelarle mi identidad iba en contra
 
 [003172] DIÁLOGO | CLD-003248
 ORIGINAL:
 the orders that bind me.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-las órdenes que me atan.
+de las órdenes que debo cumplir.
 
 [003173] DIÁLOGO | CLD-003249
 ORIGINAL:
 However, I feel much better now.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sin embargo, ahora me siento mucho mejor.
+Sin embargo, ahora me siento mejor.
 
 [003174] DIÁLOGO | CLD-003250
 ORIGINAL:
@@ -19393,13 +19393,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 What happens in regards to the mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Qué sucede con respecto a la mascarilla?
+Lo que ocurra con la máscara
 
 [003181] DIÁLOGO | CLD-003257
 ORIGINAL:
 is none my concern.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No es asunto mío.
+no es asunto mío.
 
 [003182] PERSONAJE | CLD-003258
 ORIGINAL:
@@ -19542,19 +19542,19 @@ No te preocupes por eso.
 ORIGINAL:
 They call it a party, but they brought you here
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Lo llaman fiesta, pero te trajeron aquí.
+Lo llaman fiesta, pero te trajeron aquí
 
 [003205] DIÁLOGO | CLD-003281
 ORIGINAL:
 to work. Doesn't that just suck?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-trabajar. ¿No es una lata?
+a trabajar. ¿No es una lata?
 
 [003206] DIÁLOGO | CLD-003282
 ORIGINAL:
 Can I do anything to help you out?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Puedo hacer algo para ayudarte?
+¿Puedo ayudarte en algo?
 
 [003207] DIÁLOGO | CLD-003283
 ORIGINAL:
@@ -19602,13 +19602,13 @@ Déjame ir a buscarlo una vez más entonces.
 ORIGINAL:
 (I had intended on settling matters all
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-(Tenía la intención de resolver todos los asuntos
+(Pensaba resolverlo por mi cuenta,
 
 [003215] DIÁLOGO | CLD-003291
 ORIGINAL:
 on my own, but I suppose
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-por mi cuenta, pero supongo que...
+pero supongo que no hacía falta.)
 
 [003216] DIÁLOGO | CLD-003292
 ORIGINAL:
@@ -19740,7 +19740,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 For she had given me her support
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Porque ella me había brindado su apoyo.
+Porque ella me había brindado su apoyo
 
 [003238] DIÁLOGO | CLD-003314
 ORIGINAL:
@@ -19829,19 +19829,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Parties...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Fiestas...
+Fiestas... Una de las tantas cosas que detesto.
 
 [003252] DIÁLOGO | CLD-003330
 ORIGINAL:
 One of many things I despise. They led to
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Una de las muchas cosas que detesto. Me llevaron a...
+Provocaron numerosas peleas,
 
 [003253] DIÁLOGO | CLD-003331
 ORIGINAL:
 many scuffles, most of which were my doing.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Muchas peleas, la mayoría de ellas provocadas por mí.
+casi todas por mi culpa.
 
 [003254] DIÁLOGO | CLD-003332
 ORIGINAL:
@@ -20008,19 +20008,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 That's why I kept chasing after her!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Por eso seguí persiguiéndola!
+¡Por eso la seguía a todas partes!
 
 [003281] DIÁLOGO | CLD-003359
 ORIGINAL:
 Now I know why I'm so fixated
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ahora sé por qué estoy tan obsesionado.
+¡Ahora entiendo por qué
 
 [003282] DIÁLOGO | CLD-003360
 ORIGINAL:
 on shields!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡en escudos!
+me obsesionan tanto los escudos!
 
 [003283] DIÁLOGO | CLD-003361
 ORIGINAL:
@@ -20032,37 +20032,37 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 You again. Did you skip out on your duties
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Otra vez tú. ¿Te saltaste tus obligaciones?
+Otra vez tú. ¿Dejaste tus obligaciones
 
 [003285] DIÁLOGO | CLD-003363
 ORIGINAL:
 to prepare for the party?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Para prepararse para la fiesta?
+para preparar la fiesta?
 
 [003286] DIÁLOGO | CLD-003364
 ORIGINAL:
 All just to show off your shield again?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Todo esto solo para presumir de tu escudo otra vez?
+¿Solo para volver a presumir de tu escudo?
 
 [003287] DIÁLOGO | CLD-003365
 ORIGINAL:
 N-Not today!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Hoy no!
+¡H-hoy no!
 
 [003288] DIÁLOGO | CLD-003366
 ORIGINAL:
 I'll tell you today why I'm so
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hoy te diré por qué estoy tan...
+¡Hoy te explicaré por qué
 
 [003289] DIÁLOGO | CLD-003367
 ORIGINAL:
 fixated on shields!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Obsesionados con los escudos!
+me obsesionan tanto los escudos!
 
 [003290] DIÁLOGO | CLD-003368
 ORIGINAL:
@@ -20134,19 +20134,19 @@ Puaj...
 ORIGINAL:
 (Can't you tell?!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-(¿No te das cuenta?!
+(¡¿No lo entiendes?! ¿No basta con defenderme?
 
 [003302] DIÁLOGO | CLD-003380
 ORIGINAL:
 Is defense not enough?! Do I have to do offense
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Acaso la defensa no es suficiente? ¿Tengo que atacar?
+¿Tengo que pasar al ataque
 
 [003303] DIÁLOGO | CLD-003381
 ORIGINAL:
 to get it through her head?!))
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿¡para que se lo meta en la cabeza?!))
+para que le entre en la cabeza?!)
 
 [003304] PERSONAJE | CLD-003382
 ORIGINAL:
@@ -20206,19 +20206,19 @@ Espera, ¿miradas...?
 ORIGINAL:
 I never realized that I never minded his gaze.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Nunca me di cuenta de que nunca me molestó su mirada.
+Nunca me había dado cuenta de que su mirada no me molestaba.
 
 [003314] DIÁLOGO | CLD-003392
 ORIGINAL:
 When was I like this? Did it start
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Cuándo fui así? ¿Empezó?
+¿Desde cuándo me siento así?
 
 [003315] DIÁLOGO | CLD-003393
 ORIGINAL:
 back when I came to this world?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Recuerdan cuando llegué a este mundo?
+¿Desde que llegué a este mundo?
 
 [003316] DIÁLOGO | CLD-003394
 ORIGINAL:
@@ -20277,31 +20277,31 @@ sucedería.
 ORIGINAL:
 Maybe that mask isn't much after all.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Quizás esa máscara no sea gran cosa después de todo.
+Quizá esa máscara no sea gran cosa.
 
 [003325] DIÁLOGO | CLD-003405
 ORIGINAL:
 All it does is fly downward
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Lo único que hace es volar hacia abajo.
+Solo sabe caer al suelo
 
 [003326] DIÁLOGO | CLD-003406
 ORIGINAL:
 and get slapped around.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-y que te den bofetadas.
+y recibir golpes.
 
 [003327] DIÁLOGO | CLD-003407
 ORIGINAL:
 I wonder if Despina will join in
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Me pregunto si Despina se unirá.
+Me pregunto si Despina irá
 
 [003328] DIÁLOGO | CLD-003408
 ORIGINAL:
 on the party.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-en la fiesta.
+a la fiesta.
 
 [003329] DIÁLOGO | CLD-003409
 ORIGINAL:
@@ -20331,13 +20331,13 @@ Es muy divertido ayudar.
 ORIGINAL:
 Get the perfect hairdo and you'll get
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Consigue el peinado perfecto y lo conseguirás.
+Ponte un peinado perfecto
 
 [003334] DIÁLOGO | CLD-003414
 ORIGINAL:
 all the attention, ⑨!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Toda la atención, ⑨!
+¡y todas las miradas serán para ti, ⑨!
 
 [003335] PERSONAJE | CLD-003415
 ORIGINAL:
@@ -20385,19 +20385,19 @@ Tamako
 ORIGINAL:
 The mask is really dangerous. It's absorbing
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La máscara es realmente peligrosa. Es absorbente.
+La máscara es muy peligrosa.
 
 [003343] DIÁLOGO | CLD-003423
 ORIGINAL:
 negative energy each time
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-energía negativa cada vez
+Absorbe energía negativa cada vez
 
 [003344] DIÁLOGO | CLD-003424
 ORIGINAL:
 it goes near a human.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Se acerca a un ser humano.
+que se acerca a un humano.
 
 [003345] PERSONAJE | CLD-003425
 ORIGINAL:
@@ -20409,19 +20409,19 @@ Tamako
 ORIGINAL:
 The mask is really dangerous. It's absorbing
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La máscara es realmente peligrosa. Es absorbente.
+La máscara es muy peligrosa.
 
 [003347] DIÁLOGO | CLD-003427
 ORIGINAL:
 negative energy each time
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-energía negativa cada vez
+Absorbe energía negativa cada vez
 
 [003348] DIÁLOGO | CLD-003428
 ORIGINAL:
 it goes near a human.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Se acerca a un ser humano.
+que se acerca a un humano.
 
 [003349] DIÁLOGO | CLD-003429
 ORIGINAL:
@@ -20828,13 +20828,13 @@ Crosstine
 ORIGINAL:
 It seems that you just created a whole new world
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Parece que acabas de crear un mundo completamente nuevo.
+¡Parece que acabas de crear un mundo nuevo
 
 [003416] DIÁLOGO | CLD-003496
 ORIGINAL:
 for yourself to enjoy!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Para que lo disfrutes tú mismo!
+para disfrutarlo a tu gusto!
 
 [003417] DIÁLOGO | CLD-003497
 ORIGINAL:
@@ -21084,13 +21084,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 This time, I have a weapon, so I can at least
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Esta vez tengo un arma, así que al menos puedo...
+Esta vez tengo un arma, así que al menos puedo
 
 [003457] DIÁLOGO | CLD-003539
 ORIGINAL:
 fend off enemies.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-defenderse de los enemigos.
+defenderme de los enemigos.
 
 [003458] DIÁLOGO | CLD-003540
 ORIGINAL:
@@ -21156,13 +21156,13 @@ No pensé que me curaría.
 ORIGINAL:
 You pocketed one of the items
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Te guardaste uno de los objetos en el bolsillo.
+¿Te guardaste en el bolsillo uno de los objetos
 
 [003469] DIÁLOGO | CLD-003551
 ORIGINAL:
 you found?!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Lo encontraste?
+que encontraste?
 
 [003470] DIÁLOGO | CLD-003552
 ORIGINAL:
@@ -21210,19 +21210,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Uh-huh.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ajá.
+Ajá. Pero recuerda
 
 [003478] DIÁLOGO | CLD-003560
 ORIGINAL:
 But you better remember that I'm letting you
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pero será mejor que recuerdes que te estoy dejando.
+que solo por hoy te permito
 
 [003479] DIÁLOGO | CLD-003561
 ORIGINAL:
 call me that only for today.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Llámame así solo por hoy.
+llamarme así.
 
 [003480] DIÁLOGO | CLD-003562
 ORIGINAL:
@@ -21258,13 +21258,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I can't wait for the party to start
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Estoy deseando que empiece la fiesta!
+¡Desde que vi a Sunday así,
 
 [003486] DIÁLOGO | CLD-003568
 ORIGINAL:
 ever since I saw Sunday like that!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Desde que vi a Sunday así!
+no puedo esperar a que empiece la fiesta!
 
 [003487] DIÁLOGO | CLD-003569
 ORIGINAL:
@@ -21324,13 +21324,13 @@ Pues sí. Nos lo estábamos pasando genial...
 ORIGINAL:
 But I heard that it being contagious was
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pero escuché que era contagioso.
+Pero oí que solo había una posibilidad
 
 [003497] DIÁLOGO | CLD-003579
 ORIGINAL:
 a million to one chance...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-una probabilidad entre un millón...
+entre un millón de que fuera contagioso...
 
 [003498] DIÁLOGO | CLD-003580
 ORIGINAL:
@@ -21617,7 +21617,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I really doubt we can still have a party
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Dudo mucho que podamos hacer una fiesta.
+Dudo mucho que podamos hacer una fiesta
 
 [003545] DIÁLOGO | CLD-003629
 ORIGINAL:
@@ -21766,7 +21766,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Oh, right... I wasn't supposed to laugh,
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Oh, cierto... no se suponía que debía reírme.
+Ah, cierto... No debía reírme,
 
 [003569] DIÁLOGO | CLD-003653
 ORIGINAL:
@@ -21976,13 +21976,13 @@ Crosstine
 ORIGINAL:
 She only said that because it really is
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ella solo dijo eso porque realmente es así.
+Lo dijo porque es imposible
 
 [003604] DIÁLOGO | CLD-003688
 ORIGINAL:
 impossible to revive someone under normal means.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Es imposible revivir a alguien por medios normales.
+revivir a alguien por medios normales.
 
 [003605] DIÁLOGO | CLD-003689
 ORIGINAL:
@@ -22018,13 +22018,13 @@ para resucitar a los muertos.
 ORIGINAL:
 However, it is quite a rare occurrence
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sin embargo, es un suceso bastante raro.
+Sin embargo, es muy raro ver
 
 [003611] DIÁLOGO | CLD-003695
 ORIGINAL:
 to see the misanthropic Despina
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-para ver a la misántropa Despina
+a la misántropa Despina
 
 [003612] DIÁLOGO | CLD-003696
 ORIGINAL:
@@ -22108,13 +22108,13 @@ Todo lo demás es prácticamente igual.
 ORIGINAL:
 Wait, wait, wait! But his skin color makes him
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Espera, espera, espera! Pero el color de su piel lo hace...
+¡Espera! Pero el color de su piel
 
 [003626] DIÁLOGO | CLD-003710
 ORIGINAL:
 look like he's rotting!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Parece que se está pudriendo!
+¡hace que parezca estar pudriéndose!
 
 [003627] DIÁLOGO | CLD-003711
 ORIGINAL:
@@ -22180,13 +22180,13 @@ Mascarilla
 ORIGINAL:
 You guys left me out of the loop again
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Me habéis vuelto a dejar fuera de la conversación.
+¡Me dejaron al margen otra vez
 
 [003638] DIÁLOGO | CLD-003722
 ORIGINAL:
 and had so much fun!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Y me divertí muchísimo!
+y se divirtieron sin mí!
 
 [003639] DIÁLOGO | CLD-003723
 ORIGINAL:
@@ -22288,13 +22288,13 @@ No se puede tocar.
 ORIGINAL:
 Wait, does that mean
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Espera, ¿eso significa?
+¡Me volvieron a dejar al margen
 
 [003656] DIÁLOGO | CLD-003740
 ORIGINAL:
 you're a familiar?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Me resultas familiar?
+y se divirtieron sin mí!
 
 [003657] PERSONAJE | CLD-003741
 ORIGINAL:
@@ -22419,25 +22419,25 @@ La máscara buscaba a Despina.
 ORIGINAL:
 I really don't think it's a good idea
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Realmente no creo que sea una buena idea.
+No creo que deba salir de casa
 
 [003677] DIÁLOGO | CLD-003763
 ORIGINAL:
 for her to leave her house for the time being.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-para que ella abandone su casa por el momento.
+por el momento.
 
 [003678] DIÁLOGO | CLD-003764
 ORIGINAL:
 I'll tear up that stupid mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Voy a romper esa estúpida máscara.
+¡Voy a destrozar esa maldita máscara
 
 [003679] DIÁLOGO | CLD-003765
 ORIGINAL:
 with my bare hands! Or shield!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Con mis propias manos! ¡O con escudo!
+con mis propias manos! ¡O con mi escudo!
 
 [003680] DIÁLOGO | CLD-003766
 ORIGINAL:
@@ -22598,13 +22598,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 You're right about that. There is something
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tienes razón en eso. Hay algo.
+Tienes razón. Hay algo
 
 [003706] DIÁLOGO | CLD-003792
 ORIGINAL:
 different about them.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-son diferentes entre sí.
+distinto en ellos.
 
 [003707] DIÁLOGO | CLD-003793
 ORIGINAL:
@@ -22628,19 +22628,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 What's with him?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Qué le pasa?
+¿Qué le pasa? Creía que solo me había sacado
 
 [003711] DIÁLOGO | CLD-003797
 ORIGINAL:
 I thought he only brought me out to show off
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pensé que solo me había traído para presumir.
+para presumir de los peinados
 
 [003712] DIÁLOGO | CLD-003798
 ORIGINAL:
 the hairstyles he made for the party.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-los peinados que hizo para la fiesta.
+que hizo para la fiesta.
 
 [003713] DIÁLOGO | CLD-003799
 ORIGINAL:
@@ -22814,19 +22814,19 @@ Crosstine
 ORIGINAL:
 It's no use.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No sirve de nada.
+No sirve de nada. Los familiares como yo
 
 [003742] DIÁLOGO | CLD-003828
 ORIGINAL:
 Familiars like me cannot revive unless
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los familiares como yo no pueden revivir a menos que...
+solo podemos revivir si
 
 [003743] DIÁLOGO | CLD-003829
 ORIGINAL:
 it is done by our masters.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Lo hacen nuestros maestros.
+nos resucitan nuestros amos.
 
 [003744] DIÁLOGO | CLD-003830
 ORIGINAL:
@@ -22922,19 +22922,19 @@ Crosstine
 ORIGINAL:
 But the Magic Circle can be an effective
 ESPAÑOL (posteditado_contextualmente_por_IA):
-Pero el Círculo mágico puede ser un método eficaz.
+Pero el Círculo mágico puede servir
 
 [003760] DIÁLOGO | CLD-003846
 ORIGINAL:
 countermeasure against it. Now that it has a body,
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-contramedida contra ella. Ahora que tiene un cuerpo,
+para contrarrestarla. Ahora que tiene un cuerpo,
 
 [003761] DIÁLOGO | CLD-003847
 ORIGINAL:
 you will be able to hurt it.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Podrás hacerle daño.
+podrás hacerle daño.
 
 [003762] DIÁLOGO | CLD-003848
 ORIGINAL:
@@ -22958,19 +22958,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Despina...
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Despina...
+Despina... Por favor.
 
 [003766] DIÁLOGO | CLD-003852
 ORIGINAL:
 Please. Please try to
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Por favor. Por favor, inténtalo.
+Intenta superar
 
 [003767] DIÁLOGO | CLD-003853
 ORIGINAL:
 overcome this challenge.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-superar este desafío.
+este desafío.
 
 [003768] PERSONAJE | CLD-003854
 ORIGINAL:
@@ -23060,31 +23060,31 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 But it seems that the mask is a hindrance
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pero parece que la mascarilla es un obstáculo.
+Pero parece que la máscara es un obstáculo
 
 [003783] DIÁLOGO | CLD-003869
 ORIGINAL:
 to your brighter future.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Por un futuro más brillante.
+para tu futuro más prometedor.
 
 [003784] DIÁLOGO | CLD-003870
 ORIGINAL:
 I don't understand.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No entiendo.
+No lo entiendo. ¿Por qué todos ustedes
 
 [003785] DIÁLOGO | CLD-003871
 ORIGINAL:
 Why are all of you forcing yourselves
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Por qué se están obligando todos ustedes?
+insisten tanto en involucrarse
 
 [003786] DIÁLOGO | CLD-003872
 ORIGINAL:
 to get involved in my problems?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿involucrarse en mis problemas?
+en mis problemas?
 
 [003787] DIÁLOGO | CLD-003873
 ORIGINAL:
@@ -23258,19 +23258,19 @@ Lo perdonaré por eso.
 ORIGINAL:
 Let's all join together and defeat
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Unámonos todos y derrotemos.
+¡Unámonos todos
 
 [003816] DIÁLOGO | CLD-003902
 ORIGINAL:
 that mask!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Esa máscara!
+para derrotar esa máscara!
 
 [003817] DIÁLOGO | CLD-003903
 ORIGINAL:
 For Despina and everyone else!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Por Despina y por todos los demás!
+¡Por Despina y por los demás!
 
 [003818] DIÁLOGO | CLD-003904
 ORIGINAL:
@@ -23318,13 +23318,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I am not so compassionate that I will
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No soy tan compasivo como para...
+No soy tan compasivo como para
 
 [003826] DIÁLOGO | CLD-003912
 ORIGINAL:
 allow that mask to run free!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Deja que esa máscara corra libremente!
+dejar que esa máscara ande libre.
 
 [003827] DIÁLOGO | CLD-003914
 ORIGINAL:
@@ -23461,19 +23461,19 @@ Tamako
 ORIGINAL:
 It seems the mask is strong enough
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Parece que la máscara es lo suficientemente fuerte.
+Parece que la máscara ya es capaz
 
 [003849] DIÁLOGO | CLD-003937
 ORIGINAL:
 to destroy the world now.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Destruir el mundo ahora.
+de destruir el mundo.
 
 [003850] DIÁLOGO | CLD-003938
 ORIGINAL:
 It's become such a nuisance.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Se ha convertido en una verdadera molestia.
+Se ha vuelto una molestia.
 
 [003851] PERSONAJE | CLD-003939
 ORIGINAL:
@@ -23485,19 +23485,19 @@ Tamako
 ORIGINAL:
 It seems the mask is strong enough
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Parece que la máscara es lo suficientemente fuerte.
+Parece que la máscara ya es capaz
 
 [003853] DIÁLOGO | CLD-003941
 ORIGINAL:
 to destroy the world now.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Destruir el mundo ahora.
+de destruir el mundo.
 
 [003854] DIÁLOGO | CLD-003942
 ORIGINAL:
 It's become such a nuisance.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Se ha convertido en una verdadera molestia.
+Se ha vuelto una molestia.
 
 [003855] DIÁLOGO | CLD-003943
 ORIGINAL:
@@ -23574,13 +23574,13 @@ No soy un gato.
 ORIGINAL:
 I come from a noble bloodline
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Provengo de un linaje noble.
+Provengo de un linaje noble
 
 [003867] DIÁLOGO | CLD-003955
 ORIGINAL:
 and my name is Crosstine.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-y mi nombre es Crosstine.
+y me llamo Crosstine.
 
 [003868] DIÁLOGO | CLD-003956
 ORIGINAL:
@@ -23616,19 +23616,19 @@ Espera un poco más, ¿de acuerdo?
 ORIGINAL:
 You better keep that promise!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Más te vale cumplir esa promesa!
+¡Más te vale cumplir tu promesa!
 
 [003874] DIÁLOGO | CLD-003962
 ORIGINAL:
 And you better work real hard
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Y será mejor que trabajes muy duro.
+¡Y trabajar muy duro
 
 [003875] DIÁLOGO | CLD-003963
 ORIGINAL:
 as a "sub character," then!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Entonces, como un "personaje secundario"!
+como personaje de apoyo!
 
 [003876] PERSONAJE | CLD-003964
 ORIGINAL:
@@ -23688,19 +23688,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 World of MES?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Mundo de MES?
+¿Mundo de MES? ¿Te refieres
 
 [003886] DIÁLOGO | CLD-003974
 ORIGINAL:
 You mean the home console
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Te refieres a la consola de sobremesa?
+a la consola llamada
 
 [003887] DIÁLOGO | CLD-003975
 ORIGINAL:
 called the Mimtengo Enjoyment System?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Se llama Sistema de Disfrute Mimtengo?
+Mimtengo Enjoyment System?
 
 [003888] DIÁLOGO | CLD-003976
 ORIGINAL:
@@ -23748,7 +23748,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I heard all about you people
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-He oído hablar mucho de ustedes.
+He oído hablar mucho de ustedes
 
 [003896] DIÁLOGO | CLD-003984
 ORIGINAL:
@@ -23784,13 +23784,13 @@ Asagi
 ORIGINAL:
 You're just helping each other out
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Simplemente se están ayudando mutuamente.
+Simplemente se ayudan entre ustedes
 
 [003902] DIÁLOGO | CLD-003990
 ORIGINAL:
 in the Magic Circle, right?
 ESPAÑOL (posteditado_contextualmente_por_IA):
-¿En el Círculo mágico, verdad?
+en el Círculo mágico, ¿verdad?
 
 [003903] DIÁLOGO | CLD-003991
 ORIGINAL:
@@ -23808,7 +23808,7 @@ Asagi
 ORIGINAL:
 No one playing as the "sub character"
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Nadie juega como "personaje secundario".
+Nadie que juegue como personaje de apoyo
 
 [003906] DIÁLOGO | CLD-003994
 ORIGINAL:
@@ -23987,19 +23987,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I think I better keep an eye
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Creo que será mejor que mantenga la vista fija.
+Será mejor que la vigile.
 
 [003935] DIÁLOGO | CLD-004025
 ORIGINAL:
 out for her.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-fuera por ella.
+Podría acabar muerta
 
 [003936] DIÁLOGO | CLD-004026
 ORIGINAL:
 She might die in a ditch somewhere.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Podría morir en una zanja en algún lugar.
+en alguna zanja.
 
 [003937] DIÁLOGO | CLD-004027
 ORIGINAL:
@@ -24106,19 +24106,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 How could you just go
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Cómo pudiste simplemente irte?
+¿Cómo pudiste irte
 
 [003954] DIÁLOGO | CLD-004044
 ORIGINAL:
 and die like that?!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Y morir así?
+y morir así?!
 
 [003955] DIÁLOGO | CLD-004045
 ORIGINAL:
 Only an idiot would go to a dangerous dungeon
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Solo un idiota iría a una mazmorra peligrosa.
+Solo un idiota iría a una mazmorra peligrosa
 
 [003956] DIÁLOGO | CLD-004046
 ORIGINAL:
@@ -24178,13 +24178,13 @@ Asagi
 ORIGINAL:
 How is this supposed to be the
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Cómo se supone que esto es el?
+¿Cómo va a ser este el mundo
 
 [003966] DIÁLOGO | CLD-004056
 ORIGINAL:
 "world where anyone can become a main character?!"
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-"¿Un mundo donde cualquiera puede convertirse en el protagonista?!"
+donde cualquiera puede ser protagonista?
 
 [003967] DIÁLOGO | CLD-004057
 ORIGINAL:
@@ -24250,7 +24250,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 But still, the dungeons are really hard
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pero aun así, las mazmorras son realmente difíciles.
+Pero aun así, las mazmorras son realmente difíciles
 
 [003978] DIÁLOGO | CLD-004069
 ORIGINAL:
@@ -24274,7 +24274,7 @@ Oh, está bien.
 ORIGINAL:
 I guess you leave me no choice
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Supongo que no me dejas otra opción.
+Supongo que no me dejas otra opción
 
 [003982] DIÁLOGO | CLD-004073
 ORIGINAL:
@@ -24286,19 +24286,19 @@ pero para usarlo.
 ORIGINAL:
 Oh yeah, baby!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Oh sí, nena!
+¡Oh, sí, nena!
 
 [003984] DIÁLOGO | CLD-004075
 ORIGINAL:
 I'll give you a hairstyle that'll
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Te haré un peinado que te quedará bien.
+Te haré un peinado digno
 
 [003985] DIÁLOGO | CLD-004076
 ORIGINAL:
 be fit for a main character!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Sería perfecto para un personaje principal!
+de un personaje principal!
 
 [003986] PERSONAJE | CLD-004077
 ORIGINAL:
@@ -24680,7 +24680,7 @@ También he conocido a los otros Asagis.
 ORIGINAL:
 I'm letting them cover my minor roles
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Les estoy dejando que cubran mis papeles secundarios.
+Les estoy dejando que cubran mis papeles secundarios
 
 [004048] DIÁLOGO | CLD-004142
 ORIGINAL:
@@ -24782,13 +24782,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I get it. This is like the "spot the difference"
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Lo entiendo. Esto es como el juego de "encuentra las diferencias".
+Ya veo. Esto es como esos pasatiempos
 
 [004065] DIÁLOGO | CLD-004159
 ORIGINAL:
 puzzles. I'm quite good at them.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Rompecabezas. Se me dan bastante bien.
+de encontrar las diferencias. Se me dan bien.
 
 [004066] DIÁLOGO | CLD-004160
 ORIGINAL:
@@ -24854,31 +24854,31 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Just beat it into a bloody pulp
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Simplemente dale una paliza hasta convertirla en una pulpa sangrienta.
+¡Dale una paliza hasta dejarlo hecho polvo
 
 [004077] DIÁLOGO | CLD-004171
 ORIGINAL:
 to your heart's content!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡A tu antojo!
+sin contenerte!
 
 [004078] DIÁLOGO | CLD-004172
 ORIGINAL:
 Now then. All of you uninvited guests
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ahora bien. Todos ustedes, invitados no deseados.
+Bien. Invitados no deseados,
 
 [004079] DIÁLOGO | CLD-004173
 ORIGINAL:
 shall now be ground into dust
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ahora serán reducidos a polvo.
+todos acabarán hechos polvo
 
 [004080] DIÁLOGO | CLD-004174
 ORIGINAL:
 during my "welcoming party."
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-durante mi "fiesta de bienvenida".
+en mi «fiesta de bienvenida».
 
 [004081] PERSONAJE | CLD-004175
 ORIGINAL:
@@ -25009,13 +25009,13 @@ Una imagen tuya puede parecer muy inquietante.
 ORIGINAL:
 Gah. I didn't get a chance to show off
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Uf! No tuve la oportunidad de lucirme.
+¡Uf! No pude lucir
 
 [004102] DIÁLOGO | CLD-004198
 ORIGINAL:
 my shield moves.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mi escudo se mueve.
+mis técnicas con el escudo.
 
 [004103] DIÁLOGO | CLD-004199
 ORIGINAL:
@@ -25224,13 +25224,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Is this the power of the "main character"
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Es este el poder del "personaje principal"?
+¿Es este el poder del personaje principal
 
 [004137] DIÁLOGO | CLD-004233
 ORIGINAL:
 of the Magic Circle?!
 ESPAÑOL (posteditado_contextualmente_por_IA):
-¡¿Del Círculo mágico?!
+del Círculo mágico?
 
 [004138] DIÁLOGO | CLD-004234
 ORIGINAL:
@@ -25575,13 +25575,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Gah. I didn't get a chance to show off
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Uf! No tuve la oportunidad de lucirme.
+¡Uf! No pude lucir
 
 [004193] DIÁLOGO | CLD-004289
 ORIGINAL:
 my shield moves.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mi escudo se mueve.
+mis técnicas con el escudo.
 
 [004194] DIÁLOGO | CLD-004290
 ORIGINAL:
@@ -25896,7 +25896,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I'll have to hold off on the ultimate sword
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tendré que esperar para conseguir la espada definitiva.
+Tendré que esperar para conseguir la espada definitiva
 
 [004244] DIÁLOGO | CLD-004341
 ORIGINAL:
@@ -25926,19 +25926,19 @@ Espera, eso no suena bien.
 ORIGINAL:
 I'll go and defeat the mask
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Iré y derrotaré a la máscara.
+Iré a derrotar la máscara
 
 [004249] DIÁLOGO | CLD-004346
 ORIGINAL:
 and get the ultimate shield
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-y obtén el escudo definitivo
+y conseguiré el escudo definitivo
 
 [004250] DIÁLOGO | CLD-004347
 ORIGINAL:
 at the same time!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡al mismo tiempo!
+al mismo tiempo.
 
 [004251] DIÁLOGO | CLD-004348
 ORIGINAL:
@@ -26046,7 +26046,7 @@ Mmm. Debería volver a casa primero.
 ORIGINAL:
 I have the sudden urge to see a picture
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tengo un impulso repentino de ver una foto.
+Tengo un impulso repentino de ver una foto
 
 [004269] DIÁLOGO | CLD-004366
 ORIGINAL:
@@ -26237,19 +26237,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 My illness is cured, so
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mi enfermedad está curada, así que
+Ya me curé, así que
 
 [004300] DIÁLOGO | CLD-004397
 ORIGINAL:
 I think it's a great time to start
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Creo que es un buen momento para empezar.
+es buen momento para buscar
 
 [004301] DIÁLOGO | CLD-004398
 ORIGINAL:
 looking for a new place to go adventuring at.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Buscando un nuevo lugar para ir de aventuras.
+un nuevo lugar donde vivir aventuras.
 
 [004302] DIÁLOGO | CLD-004399
 ORIGINAL:
@@ -26267,19 +26267,19 @@ No tienes intención de volver a casa.
 ORIGINAL:
 I finally became healthy, so
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Finalmente me recuperé, así que...
+¡Por fin me recuperé!
 
 [004305] DIÁLOGO | CLD-004402
 ORIGINAL:
 my body is telling me to go
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-mi cuerpo me está diciendo que me vaya
+Mi cuerpo me pide salir a buscar
 
 [004306] DIÁLOGO | CLD-004403
 ORIGINAL:
 find more interesting treasures.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-encuentra tesoros más interesantes.
+tesoros más interesantes.
 
 [004307] DIÁLOGO | CLD-004404
 ORIGINAL:
@@ -26297,13 +26297,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Looks like my job here
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Parece que este es mi trabajo aquí.
+Parece que mi trabajo aquí
 
 [004310] DIÁLOGO | CLD-004407
 ORIGINAL:
 is finally done.)
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-(Finalmente está terminado.)
+por fin ha terminado.)
 
 [004311] DIÁLOGO | CLD-004408
 ORIGINAL:
@@ -26375,7 +26375,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Huh? I thought you were staying back there
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Eh? Creí que te quedabas allí atrás.
+¿Eh? Creí que te quedabas allí atrás
 
 [004323] DIÁLOGO | CLD-004420
 ORIGINAL:
@@ -26495,7 +26495,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 I don't think a lot of time passed
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No creo que haya pasado mucho tiempo.
+No creo que haya pasado mucho tiempo
 
 [004343] DIÁLOGO | CLD-004440
 ORIGINAL:
@@ -26555,13 +26555,13 @@ Esperar...
 ORIGINAL:
 No way. 100 years passed
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-De ninguna manera. Han pasado 100 años.
+No puede ser. ¿Han pasado cien años
 
 [004353] DIÁLOGO | CLD-004450
 ORIGINAL:
 since I left?!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Desde que me fui?
+desde que me fui?!
 
 [004354] DIÁLOGO | CLD-004451
 ORIGINAL:
@@ -27153,31 +27153,31 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Why do I have to give
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Por qué tengo que dar?
+¿Por qué tendría que hacerte
 
 [004451] DIÁLOGO | CLD-004548
 ORIGINAL:
 a birthday present to you?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Un regalo de cumpleaños para ti?
+un regalo de cumpleaños?
 
 [004452] DIÁLOGO | CLD-004549
 ORIGINAL:
 Oh! Crazy girl!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Oh! ¡Chica loca!
+¡Ah, estás loca!
 
 [004453] DIÁLOGO | CLD-004550
 ORIGINAL:
 Don't you remember that
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿No te acuerdas de eso?
+¿No recuerdas que yo te hice un regalo
 
 [004454] DIÁLOGO | CLD-004551
 ORIGINAL:
 I gave YOU a present on your birthday?!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡¿Te hice un regalo por tu cumpleaños?!
+en tu cumpleaños?!
 
 [004455] DIÁLOGO | CLD-004552
 ORIGINAL:
@@ -27345,19 +27345,19 @@ Crosstine
 ORIGINAL:
 Your grandfather had shut himself in a world he
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tu abuelo se había encerrado en un mundo que
+Tu abuelo también se aisló en un mundo
 
 [004483] DIÁLOGO | CLD-004580
 ORIGINAL:
 created, as well. Having the Magic Circle
 ESPAÑOL (posteditado_contextualmente_por_IA):
-También se creó el Círculo mágico.
+que él mismo creó. El Círculo mágico
 
 [004484] DIÁLOGO | CLD-004581
 ORIGINAL:
 then and now have provided much needed help.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tanto entonces como ahora han proporcionado una ayuda muy necesaria.
+nos ayudó entonces y vuelve a ayudarnos ahora.
 
 [004485] DIÁLOGO | CLD-004582
 ORIGINAL:
@@ -27417,13 +27417,13 @@ Crosstine
 ORIGINAL:
 And you will continue to walk
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Y tú seguirás caminando.
+Y tú seguirás caminando
 
 [004495] DIÁLOGO | CLD-004592
 ORIGINAL:
 the same path.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-el mismo camino.
+por el mismo camino.
 
 [004496] DIÁLOGO | CLD-004593
 ORIGINAL:
@@ -27513,13 +27513,13 @@ Crosstine
 ORIGINAL:
 The plan to stop you from being a shut-in
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El plan para evitar que te conviertas en un ermitaño.
+¡El plan para evitar que te recluyas
 
 [004511] DIÁLOGO | CLD-004608
 ORIGINAL:
 is a success!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Es un éxito!
+ha sido un éxito!
 
 [004512] PERSONAJE | CLD-004609
 ORIGINAL:
@@ -27794,7 +27794,7 @@ Ya no estoy enferma.
 ORIGINAL:
 I can't keep having you protect me
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No puedo seguir necesitando que me protejas.
+No puedo seguir necesitando que me protejas
 
 [004557] DIÁLOGO | CLD-004654
 ORIGINAL:
@@ -28111,13 +28111,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Th-Then does that mean
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿E-Entonces eso significa?
+¿E-entonces eso significa
 
 [004609] DIÁLOGO | CLD-004706
 ORIGINAL:
 you have given up on me?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Te has dado por vencido conmigo?
+que te has rendido conmigo?
 
 [004610] DIÁLOGO | CLD-004707
 ORIGINAL:
@@ -28141,7 +28141,7 @@ Nada de eso fue por mi propia voluntad.
 ORIGINAL:
 I never even thought of defying orders
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ni siquiera se me pasó por la cabeza desobedecer órdenes.
+Ni siquiera se me pasó por la cabeza desobedecer órdenes
 
 [004614] DIÁLOGO | CLD-004711
 ORIGINAL:
@@ -28207,19 +28207,19 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 At that time, I will protect you,
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-En ese momento, te protegeré.
+Cuando llegue ese momento, te protegeré,
 
 [004625] DIÁLOGO | CLD-004722
 ORIGINAL:
 not by someone else's orders, but by my own will.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-No por órdenes de nadie más, sino por mi propia voluntad.
+no por orden de nadie, sino por voluntad propia.
 
 [004626] DIÁLOGO | CLD-004723
 ORIGINAL:
 Would you grace me with that opportunity?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Me harías el honor de brindarme esa oportunidad?
+¿Me concederías ese honor?
 
 [004627] DIÁLOGO | CLD-004724
 ORIGINAL:
@@ -28255,13 +28255,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Have you returned to
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Has regresado a?
+¿Has recuperado
 
 [004633] DIÁLOGO | CLD-004730
 ORIGINAL:
 your original form?!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿¡Tu forma original?!
+tu forma original?!
 
 [004634] PERSONAJE | CLD-004731
 ORIGINAL:
@@ -28548,13 +28548,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 You won. I don't mind going out with you
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ganaste. No me importaría salir contigo.
+Has ganado. No me importa acompañarte
 
 [004681] DIÁLOGO | CLD-004778
 ORIGINAL:
 on your journey, gathering shields.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-En tu viaje, reuniendo escudos.
+en tu viaje para reunir escudos.
 
 [004682] DIÁLOGO | CLD-004779
 ORIGINAL:
@@ -28710,13 +28710,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 Are you also one who
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Eres tú también uno de los que...?
+¿Tú también buscas
 
 [004708] DIÁLOGO | CLD-004805
 ORIGINAL:
 seeks the ultimate shield?!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Busca el escudo definitivo?
+el escudo definitivo?!
 
 [004709] DIÁLOGO | CLD-004806
 ORIGINAL:
@@ -28913,13 +28913,13 @@ Princesa Dot
 ORIGINAL:
 There are still many things in life
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Todavía hay muchas cosas en la vida.
+Aún hay muchas cosas en la vida
 
 [004741] DIÁLOGO | CLD-004839
 ORIGINAL:
 that will dishearten me or complicate my life.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Eso me desanimará o me complicará la vida.
+que me desanimarán o complicarán las cosas.
 
 [004742] DIÁLOGO | CLD-004840
 ORIGINAL:
@@ -28991,19 +28991,19 @@ Por lo tanto, no puedo eludir mis obligaciones.
 ORIGINAL:
 I will return to the kingdom.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Volveré al reino.
+Regresaré al reino.
 
 [004754] DIÁLOGO | CLD-004852
 ORIGINAL:
 Will you come with me,
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Vendrás conmigo?
+¿Vendrás conmigo,
 
 [004755] DIÁLOGO | CLD-004853
 ORIGINAL:
 Sherbet?
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Sorbete?
+Sherbet?
 
 [004756] DIÁLOGO | CLD-004854
 ORIGINAL:
@@ -29332,13 +29332,13 @@ Mascarilla
 ORIGINAL:
 Then I'll make you bald
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Entonces te dejaré calvo.
+¡Entonces te dejaré calvo
 
 [004810] DIÁLOGO | CLD-004908
 ORIGINAL:
 and turn you into a shut-in!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Y te convertirán en un ermitaño!
+y te convertiré en un ermitaño!
 
 [004811] DIÁLOGO | CLD-004909
 ORIGINAL:
@@ -29445,7 +29445,7 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 What I truly needed was not a sword
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Lo que realmente necesitaba no era una espada.
+Lo que realmente necesitaba no era una espada
 
 [004828] DIÁLOGO | CLD-004926
 ORIGINAL:
@@ -30062,13 +30062,13 @@ Es una olla muy profunda.
 ORIGINAL:
 There's white slimy stuff inside
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hay una sustancia blanca y viscosa dentro.
+Hay una sustancia blanca y viscosa dentro
 
 [004930] DIÁLOGO | CLD-005047
 ORIGINAL:
 the pot.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-la olla.
+de la olla.
 
 [004931] DIÁLOGO | CLD-005050
 ORIGINAL:
@@ -30224,7 +30224,7 @@ Se siente bien, tío.
 ORIGINAL:
 Th-These are the legendary clothes "Sweaty Sweats"
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Estas son las legendarias prendas "Sweaty Sweats".
+Estas son las legendarias prendas "Sweaty Sweats"
 
 [004957] DIÁLOGO | CLD-005098
 ORIGINAL:
@@ -30429,7 +30429,7 @@ Mientras la anciana se bañaba,
 ORIGINAL:
 a giant yam floated down the river. She picked it up
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Un ñame gigante flotaba río abajo. Ella lo recogió.
+Un ñame gigante flotaba río abajo. Ella lo recogió
 
 [004991] DIÁLOGO | CLD-005140
 ORIGINAL:
@@ -30441,13 +30441,13 @@ y se lo llevó a casa, queriendo cenar esa misma noche.
 ORIGINAL:
 After returning home, she tried to eat the yam
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Después de regresar a casa, intentó comer el ñame.
+De vuelta en casa, intentó comerse el ñame
 
 [004993] DIÁLOGO | CLD-005142
 ORIGINAL:
 but a baby popped out from inside.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-pero de dentro salió un bebé.
+pero un bebé salió de su interior.
 
 [004994] DIÁLOGO | CLD-005143
 ORIGINAL:
@@ -30465,19 +30465,19 @@ Las aventuras del héroe del ñame, capítulo 2
 ORIGINAL:
 The old man and woman named the baby
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El anciano y la anciana le pusieron nombre al bebé.
+El anciano y la anciana llamaron al bebé
 
 [004997] DIÁLOGO | CLD-005148
 ORIGINAL:
 "Yam." The young "Yam"
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-"Ñame." El joven "Ñame"
+«Ñame». El pequeño Ñame
 
 [004998] DIÁLOGO | CLD-005149
 ORIGINAL:
 then grew up, slowly but surely.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Luego creció, lenta pero seguramente.
+fue creciendo poco a poco.
 
 [004999] DIÁLOGO | CLD-005150
 ORIGINAL:
@@ -31011,7 +31011,7 @@ No lo entiendo.
 ORIGINAL:
 The fairy of Arcanus Cella has departed
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-El hada de Arcanus Cella se ha marchado.
+El hada de Arcanus Cella partió
 
 [005088] DIÁLOGO | CLD-005255
 ORIGINAL:
@@ -31321,13 +31321,13 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 You must increase the number of Artifacts
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Debes aumentar el número de artefactos.
+¡Equipa más artefactos
 
 [005138] DIÁLOGO | CLD-005328
 ORIGINAL:
 that will raise your ATK!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Eso aumentará tu ATK!
+que aumenten tu ATK!
 
 [005139] DIÁLOGO | CLD-005329
 ORIGINAL:
@@ -31339,13 +31339,13 @@ Tu ATK es bastante bajo.
 ORIGINAL:
 You must increase the number of Artifacts
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Debes aumentar el número de artefactos.
+Equipa más artefactos
 
 [005141] DIÁLOGO | CLD-005331
 ORIGINAL:
 that will raise your ATK!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Eso aumentará tu ATK!
+que aumenten tu ATK!
 
 [005142] DIÁLOGO | CLD-005332
 ORIGINAL:
@@ -31357,13 +31357,13 @@ Tu ATK no es muy bueno.
 ORIGINAL:
 You must increase the number of Artifacts
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Debes aumentar el número de artefactos.
+Equipa más artefactos
 
 [005144] DIÁLOGO | CLD-005334
 ORIGINAL:
 that will raise your ATK!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Eso aumentará tu ATK!
+que aumenten tu ATK!
 
 [005145] DIÁLOGO | CLD-005335
 ORIGINAL:
@@ -31375,13 +31375,13 @@ Tu ATK es un poco bajo.
 ORIGINAL:
 How about adding some ATK Artifacts
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Qué tal si añadimos algunos artefactos de ATK?
+¿Y si añades artefactos de ATK
 
 [005147] DIÁLOGO | CLD-005337
 ORIGINAL:
 to your Magic Circle?
 ESPAÑOL (posteditado_contextualmente_por_IA):
-¿A tu Círculo mágico?
+a tu Círculo mágico?
 
 [005148] DIÁLOGO | CLD-005338
 ORIGINAL:
@@ -31573,31 +31573,31 @@ ESPAÑOL (borrador_automatico_sin_revision_narrativa):
 ORIGINAL:
 You must increase the number of Artifacts
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Debes aumentar el número de artefactos.
+¡Equipa más artefactos
 
 [005180] DIÁLOGO | CLD-005370
 ORIGINAL:
 that will raise your DEF!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Eso aumentará tu DEF!
+que aumenten tu DEF!
 
 [005181] DIÁLOGO | CLD-005371
 ORIGINAL:
 Your DEF is quite low.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tu DEF es bastante bajo.
+Tu DEF es bastante baja.
 
 [005182] DIÁLOGO | CLD-005372
 ORIGINAL:
 You must increase the number of Artifacts
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Debes aumentar el número de artefactos.
+Equipa más artefactos
 
 [005183] DIÁLOGO | CLD-005373
 ORIGINAL:
 that will raise your DEF!
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¡Eso aumentará tu DEF!
+que aumenten tu DEF!
 
 [005184] DIÁLOGO | CLD-005374
 ORIGINAL:
@@ -31609,31 +31609,31 @@ Tu DEF no es muy buena.
 ORIGINAL:
 You must increase the number of Artifacts
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Debes aumentar el número de artefactos.
+Equipa más artefactos
 
 [005186] DIÁLOGO | CLD-005376
 ORIGINAL:
 that will raise your DEF.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-eso aumentará tu DEF.
+que aumenten tu DEF.
 
 [005187] DIÁLOGO | CLD-005377
 ORIGINAL:
 Your DEF is a bit low.
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tu DEF es un poco bajo.
+Tu DEF es un poco baja.
 
 [005188] DIÁLOGO | CLD-005378
 ORIGINAL:
 How about adding some DEF Artifacts
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-¿Qué tal si añadimos algunos artefactos DEF?
+¿Y si añades artefactos de DEF
 
 [005189] DIÁLOGO | CLD-005379
 ORIGINAL:
 to your Magic Circle?
 ESPAÑOL (posteditado_contextualmente_por_IA):
-¿A tu Círculo mágico?
+a tu Círculo mágico?
 
 [005190] DIÁLOGO | CLD-005380
 ORIGINAL:
@@ -38772,7 +38772,7 @@ Salmón
 ORIGINAL:
 Massa
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Masa
+Massa
 
 [006282] NOMBRES JEFES | CLD-006513
 ORIGINAL:
@@ -38802,7 +38802,7 @@ Pino
 ORIGINAL:
 Jimbei
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Jimbeí
+Jimbei
 
 [006287] NOMBRES JEFES | CLD-006518
 ORIGINAL:
@@ -38820,19 +38820,19 @@ Gengai
 ORIGINAL:
 Zan
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-lo haré
+Zan
 
 [006290] NOMBRES JEFES | CLD-006521
 ORIGINAL:
 Medgius
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Medgio
+Medgius
 
 [006291] NOMBRES JEFES | CLD-006522
 ORIGINAL:
 Ballan
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cita
+Ballan
 
 [006292] NOMBRES JEFES | CLD-006523
 ORIGINAL:
@@ -38850,7 +38850,7 @@ Deathlon
 ORIGINAL:
 Snakerum
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sala de serpientes
+Snakerum
 
 [006295] NOMBRES JEFES | CLD-006526
 ORIGINAL:
@@ -38868,7 +38868,7 @@ Bundie
 ORIGINAL:
 Dogo
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pequeño
+Dogo
 
 [006298] NOMBRES JEFES | CLD-006529
 ORIGINAL:
@@ -38898,19 +38898,19 @@ Matanza
 ORIGINAL:
 Denbo
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tiempo
+Denbo
 
 [006303] NOMBRES JEFES | CLD-006534
 ORIGINAL:
 Stuppie
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Estúpido
+Stuppie
 
 [006304] NOMBRES JEFES | CLD-006535
 ORIGINAL:
 Taro
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Masa
+Taro
 
 [006305] NOMBRES JEFES | CLD-006536
 ORIGINAL:
@@ -38934,13 +38934,13 @@ Elunda
 ORIGINAL:
 Magito
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Magia
+Magito
 
 [006309] NOMBRES JEFES | CLD-006540
 ORIGINAL:
 Killes
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Chico
+Killes
 
 [006310] NOMBRES JEFES | CLD-006541
 ORIGINAL:
@@ -38988,13 +38988,13 @@ Bruuuuja
 ORIGINAL:
 Odan
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Césped
+Odan
 
 [006318] NOMBRES JEFES | CLD-006549
 ORIGINAL:
 Bibilo
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Biblioteca
+Bibilo
 
 [006319] NOMBRES JEFES | CLD-006550
 ORIGINAL:
@@ -39006,13 +39006,13 @@ Roza Quinn
 ORIGINAL:
 Pesterman
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Molestario
+Pesterman
 
 [006321] NOMBRES JEFES | CLD-006552
 ORIGINAL:
 Confido
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Confío
+Confido
 
 [006322] NOMBRES JEFES | CLD-006553
 ORIGINAL:
@@ -39024,7 +39024,7 @@ Condesta
 ORIGINAL:
 Maginabo
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Suceder
+Maginabo
 
 [006324] NOMBRES JEFES | CLD-006555
 ORIGINAL:
@@ -39042,7 +39042,7 @@ Ocho
 ORIGINAL:
 Xantos
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Xanthos
+Xantos
 
 [006327] NOMBRES JEFES | CLD-006558
 ORIGINAL:
@@ -39054,7 +39054,7 @@ Titán
 ORIGINAL:
 Selci
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Pedernal
+Selci
 
 [006329] NOMBRES JEFES | CLD-006560
 ORIGINAL:
@@ -39090,7 +39090,7 @@ Fantasma
 ORIGINAL:
 Manta
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Olvidar
+Manta
 
 [006335] NOMBRES JEFES | CLD-006566
 ORIGINAL:
@@ -39102,7 +39102,7 @@ Dragobeth
 ORIGINAL:
 Kitty
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bote
+Kitty
 
 [006337] NOMBRES JEFES | CLD-006568
 ORIGINAL:
@@ -39114,7 +39114,7 @@ Zombi rojo
 ORIGINAL:
 Galci
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-galos
+Galci
 
 [006339] NOMBRES JEFES | CLD-006570
 ORIGINAL:
@@ -39132,25 +39132,25 @@ Onigiri
 ORIGINAL:
 Nesti
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Almuerzo
+Nesti
 
 [006342] NOMBRES JEFES | CLD-006573
 ORIGINAL:
 Poole
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Medio
+Poole
 
 [006343] NOMBRES JEFES | CLD-006574
 ORIGINAL:
 Zanne
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Colmillos
+Zanne
 
 [006344] NOMBRES JEFES | CLD-006575
 ORIGINAL:
 Simma
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Nadar
+Simma
 
 [006345] NOMBRES JEFES | CLD-006576
 ORIGINAL:
@@ -39192,7 +39192,7 @@ Oneshot
 ORIGINAL:
 Mums
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Para nosotros
+Mums
 
 [006352] NOMBRES JEFES | CLD-006583
 ORIGINAL:
@@ -39204,7 +39204,7 @@ Takata
 ORIGINAL:
 Neguro
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-negro
+Neguro
 
 [006354] NOMBRES JEFES | CLD-006585
 ORIGINAL:
@@ -39264,7 +39264,7 @@ Miau
 ORIGINAL:
 Kudo
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-en todos lados
+Kudo
 
 [006364] NOMBRES JEFES | CLD-006595
 ORIGINAL:
@@ -39288,7 +39288,7 @@ Taiger
 ORIGINAL:
 Degg
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Permanecer
+Degg
 
 [006368] NOMBRES JEFES | CLD-006599
 ORIGINAL:
@@ -39330,7 +39330,7 @@ Hombre
 ORIGINAL:
 Ozur
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Disculpa
+Ozur
 
 [006375] NOMBRES JEFES | CLD-006606
 ORIGINAL:
@@ -39348,7 +39348,7 @@ Halmas
 ORIGINAL:
 Sunsas
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Soles
+Sunsas
 
 [006378] NOMBRES JEFES | CLD-006609
 ORIGINAL:
@@ -39360,7 +39360,7 @@ HIYH
 ORIGINAL:
 Hareru
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-hareru
+Hareru
 
 [006380] NOMBRES JEFES | CLD-006611
 ORIGINAL:
@@ -39378,13 +39378,13 @@ Guspa
 ORIGINAL:
 Gren
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Rama
+Gren
 
 [006383] NOMBRES JEFES | CLD-006614
 ORIGINAL:
 Menmen
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-A pesar de
+Menmen
 
 [006384] NOMBRES JEFES | CLD-006615
 ORIGINAL:
@@ -39396,7 +39396,7 @@ Hombre de barro
 ORIGINAL:
 Suna
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Nombre
+Suna
 
 [006386] NOMBRES JEFES | CLD-006617
 ORIGINAL:
@@ -39414,7 +39414,7 @@ Slesshi
 ORIGINAL:
 Domin
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Para
+Domin
 
 [006389] NOMBRES JEFES | CLD-006620
 ORIGINAL:
@@ -39426,7 +39426,7 @@ Bajish
 ORIGINAL:
 Pei
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Como
+Pei
 
 [006391] NOMBRES JEFES | CLD-006622
 ORIGINAL:
@@ -39444,7 +39444,7 @@ Vidrioso
 ORIGINAL:
 Yuli
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Julio
+Yuli
 
 [006394] NOMBRES JEFES | CLD-006625
 ORIGINAL:
@@ -39516,7 +39516,7 @@ Bajo
 ORIGINAL:
 Daffun
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Narciso
+Daffun
 
 [006406] NOMBRES JEFES | CLD-006637
 ORIGINAL:
@@ -39986,7 +39986,7 @@ Dunn
 ORIGINAL:
 Glen
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cañada
+Glen
 
 [006475] NOMBRES PERSONAJES | CLD-006709
 ORIGINAL:
@@ -39998,13 +39998,13 @@ Tensa
 ORIGINAL:
 Yuta
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-TIERRA
+Yuta
 
 [006477] NOMBRES PERSONAJES | CLD-006711
 ORIGINAL:
 Masa
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tiempo
+Masa
 
 [006478] NOMBRES PERSONAJES | CLD-006712
 ORIGINAL:
@@ -40022,7 +40022,7 @@ Rico
 ORIGINAL:
 Buug
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Libro
+Buug
 
 [006481] NOMBRES PERSONAJES | CLD-006715
 ORIGINAL:
@@ -40064,7 +40064,7 @@ Astor
 ORIGINAL:
 Maada
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Asunto
+Maada
 
 [006488] NOMBRES PERSONAJES | CLD-006722
 ORIGINAL:
@@ -40076,7 +40076,7 @@ Allen
 ORIGINAL:
 Kirk
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Iglesia
+Kirk
 
 [006490] NOMBRES PERSONAJES | CLD-006724
 ORIGINAL:
@@ -40088,7 +40088,7 @@ Zabian
 ORIGINAL:
 Gudd
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Bien
+Gudd
 
 [006492] NOMBRES PERSONAJES | CLD-006726
 ORIGINAL:
@@ -40106,19 +40106,19 @@ Tseng
 ORIGINAL:
 Buz
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hielo
+Buz
 
 [006495] NOMBRES PERSONAJES | CLD-006729
 ORIGINAL:
 Vando
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Dividir
+Vando
 
 [006496] NOMBRES PERSONAJES | CLD-006730
 ORIGINAL:
 Akir
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Fin
+Akir
 
 [006497] NOMBRES PERSONAJES | CLD-006731
 ORIGINAL:
@@ -40130,13 +40130,13 @@ Aburrido
 ORIGINAL:
 Shin
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Espinilla
+Shin
 
 [006499] NOMBRES PERSONAJES | CLD-006733
 ORIGINAL:
 Tucker
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Fatigar
+Tucker
 
 [006500] NOMBRES PERSONAJES | CLD-006734
 ORIGINAL:
@@ -40148,7 +40148,7 @@ Thomas
 ORIGINAL:
 Nick
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mella
+Nick
 
 [006502] NOMBRES PERSONAJES | CLD-006736
 ORIGINAL:
@@ -40160,7 +40160,7 @@ Alfarero
 ORIGINAL:
 Doko
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Anuncio
+Doko
 
 [006504] NOMBRES PERSONAJES | CLD-006738
 ORIGINAL:
@@ -40184,13 +40184,13 @@ Manaj
 ORIGINAL:
 Spek
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Especificaciones
+Spek
 
 [006508] NOMBRES PERSONAJES | CLD-006742
 ORIGINAL:
 Dan
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Y
+Dan
 
 [006509] NOMBRES PERSONAJES | CLD-006743
 ORIGINAL:
@@ -40208,7 +40208,7 @@ Kyon
 ORIGINAL:
 Kai
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cuando
+Kai
 
 [006512] NOMBRES PERSONAJES | CLD-006746
 ORIGINAL:
@@ -40238,13 +40238,13 @@ Roger
 ORIGINAL:
 Mike
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Micro
+Mike
 
 [006517] NOMBRES PERSONAJES | CLD-006751
 ORIGINAL:
 Brad
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puntilla
+Brad
 
 [006518] NOMBRES PERSONAJES | CLD-006752
 ORIGINAL:
@@ -40262,19 +40262,19 @@ Don
 ORIGINAL:
 Pon
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Libra
+Pon
 
 [006521] NOMBRES PERSONAJES | CLD-006755
 ORIGINAL:
 Hoho
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hola
+Hoho
 
 [006522] NOMBRES PERSONAJES | CLD-006756
 ORIGINAL:
 Mura
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-A menos que
+Mura
 
 [006523] NOMBRES PERSONAJES | CLD-006757
 ORIGINAL:
@@ -40286,7 +40286,7 @@ Ogasa
 ORIGINAL:
 Jin
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Audiencia
+Jin
 
 [006525] NOMBRES PERSONAJES | CLD-006759
 ORIGINAL:
@@ -40316,7 +40316,7 @@ Azul
 ORIGINAL:
 Smith
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Herrero
+Smith
 
 [006530] NOMBRES PERSONAJES | CLD-006764
 ORIGINAL:
@@ -40352,7 +40352,7 @@ Beara
 ORIGINAL:
 Galo
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Acceso
+Galo
 
 [006536] NOMBRES PERSONAJES | CLD-006770
 ORIGINAL:
@@ -40376,19 +40376,19 @@ Pitt
 ORIGINAL:
 Keebo
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-La clave
+Keebo
 
 [006540] NOMBRES PERSONAJES | CLD-006774
 ORIGINAL:
 Bedra
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Muslos
+Bedra
 
 [006541] NOMBRES PERSONAJES | CLD-006775
 ORIGINAL:
 Tabo
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Lugar
+Tabo
 
 [006542] NOMBRES PERSONAJES | CLD-006776
 ORIGINAL:
@@ -40412,7 +40412,7 @@ Quinn
 ORIGINAL:
 Koro
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Corazón
+Koro
 
 [006546] NOMBRES PERSONAJES | CLD-006780
 ORIGINAL:
@@ -40430,13 +40430,13 @@ Heinrich
 ORIGINAL:
 Enza
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Hazlo.
+Enza
 
 [006549] NOMBRES PERSONAJES | CLD-006783
 ORIGINAL:
 Dede
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Moderado
+Dede
 
 [006550] NOMBRES PERSONAJES | CLD-006784
 ORIGINAL:
@@ -40448,13 +40448,13 @@ Andie
 ORIGINAL:
 Fudo
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Migración
+Fudo
 
 [006552] NOMBRES PERSONAJES | CLD-006786
 ORIGINAL:
 Korul
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Alrededor
+Korul
 
 [006553] NOMBRES PERSONAJES | CLD-006787
 ORIGINAL:
@@ -40484,7 +40484,7 @@ Mingos
 ORIGINAL:
 Ikkii
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Los dos
+Ikkii
 
 [006558] NOMBRES PERSONAJES | CLD-006792
 ORIGINAL:
@@ -40496,7 +40496,7 @@ Dogos
 ORIGINAL:
 Coby
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Como
+Coby
 
 [006560] NOMBRES PERSONAJES | CLD-006794
 ORIGINAL:
@@ -40514,7 +40514,7 @@ Gerard
 ORIGINAL:
 Robin
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Petirrojo
+Robin
 
 [006563] NOMBRES PERSONAJES | CLD-006797
 ORIGINAL:
@@ -40526,37 +40526,37 @@ Tilma
 ORIGINAL:
 Bann
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Banda
+Bann
 
 [006565] NOMBRES PERSONAJES | CLD-006799
 ORIGINAL:
 Kanta
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Encimera
+Kanta
 
 [006566] NOMBRES PERSONAJES | CLD-006800
 ORIGINAL:
 Doku
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tejido
+Doku
 
 [006567] NOMBRES PERSONAJES | CLD-006801
 ORIGINAL:
 Osti
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Debajo
+Osti
 
 [006568] NOMBRES PERSONAJES | CLD-006802
 ORIGINAL:
 Niy
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Su
+Niy
 
 [006569] NOMBRES PERSONAJES | CLD-006803
 ORIGINAL:
 Riki
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puerro
+Riki
 
 [006570] NOMBRES PERSONAJES | CLD-006804
 ORIGINAL:
@@ -40580,13 +40580,13 @@ Silva
 ORIGINAL:
 Defal
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Caer
+Defal
 
 [006574] NOMBRES PERSONAJES | CLD-006808
 ORIGINAL:
 Pich
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Foto
+Pich
 
 [006575] NOMBRES PERSONAJES | CLD-006809
 ORIGINAL:
@@ -40598,7 +40598,7 @@ Hermanos
 ORIGINAL:
 Din
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-de
+Din
 
 [006577] NOMBRES PERSONAJES | CLD-006811
 ORIGINAL:
@@ -40628,13 +40628,13 @@ Brecha
 ORIGINAL:
 Zoma
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Viernes
+Zoma
 
 [006582] NOMBRES PERSONAJES | CLD-006816
 ORIGINAL:
 Chup
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Toma una foto
+Chup
 
 [006583] NOMBRES PERSONAJES | CLD-006817
 ORIGINAL:
@@ -40663,7 +40663,7 @@ Misha
 ORIGINAL:
 Tulie
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cálmate.
+Tulie
 
 [006587] NOMBRES PERSONAJES | CLD-006821
 ORIGINAL:
@@ -40687,13 +40687,13 @@ Yoko
 ORIGINAL:
 Feely
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Sensación
+Feely
 
 [006591] NOMBRES PERSONAJES | CLD-006825
 ORIGINAL:
 Kaya
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Entonces
+Kaya
 
 [006592] NOMBRES PERSONAJES | CLD-006826
 ORIGINAL:
@@ -40717,7 +40717,7 @@ Baya
 ORIGINAL:
 Pel
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Por el
+Pel
 
 [006596] NOMBRES PERSONAJES | CLD-006830
 ORIGINAL:
@@ -40729,7 +40729,7 @@ Mariquita
 ORIGINAL:
 Luna
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Oficial
+Luna
 
 [006598] NOMBRES PERSONAJES | CLD-006832
 ORIGINAL:
@@ -40747,19 +40747,19 @@ maya
 ORIGINAL:
 Nako
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tiempo
+Nako
 
 [006601] NOMBRES PERSONAJES | CLD-006835
 ORIGINAL:
 Meg
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-A mí
+Meg
 
 [006602] NOMBRES PERSONAJES | CLD-006836
 ORIGINAL:
 Saya
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-I
+Saya
 
 [006603] NOMBRES PERSONAJES | CLD-006837
 ORIGINAL:
@@ -40771,7 +40771,7 @@ Pacífico
 ORIGINAL:
 Meili
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Correo electrónico
+Meili
 
 [006605] NOMBRES PERSONAJES | CLD-006839
 ORIGINAL:
@@ -40783,7 +40783,7 @@ Lin
 ORIGINAL:
 Ran
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Corrió
+Ran
 
 [006607] NOMBRES PERSONAJES | CLD-006841
 ORIGINAL:
@@ -40813,7 +40813,7 @@ Lirio
 ORIGINAL:
 Momo
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Tipo
+Momo
 
 [006612] NOMBRES PERSONAJES | CLD-006846
 ORIGINAL:
@@ -40825,7 +40825,7 @@ Kat
 ORIGINAL:
 Katel
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Caldera
+Katel
 
 [006614] NOMBRES PERSONAJES | CLD-006848
 ORIGINAL:
@@ -40837,7 +40837,7 @@ Kéfir
 ORIGINAL:
 Kari
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Modismo
+Kari
 
 [006616] NOMBRES PERSONAJES | CLD-006850
 ORIGINAL:
@@ -40867,7 +40867,7 @@ Halle
 ORIGINAL:
 Kur
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Dónde
+Kur
 
 [006621] NOMBRES PERSONAJES | CLD-006855
 ORIGINAL:
@@ -40891,7 +40891,7 @@ Bella
 ORIGINAL:
 Cotte
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Cocido
+Cotte
 
 [006625] NOMBRES PERSONAJES | CLD-006859
 ORIGINAL:
@@ -40903,13 +40903,13 @@ Beldad
 ORIGINAL:
 Anne
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ana
+Anne
 
 [006627] NOMBRES PERSONAJES | CLD-006861
 ORIGINAL:
 Maryla
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-María
+Maryla
 
 [006628] NOMBRES PERSONAJES | CLD-006862
 ORIGINAL:
@@ -40921,7 +40921,7 @@ Lira
 ORIGINAL:
 Plana
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Plan
+Plana
 
 [006630] NOMBRES PERSONAJES | CLD-006864
 ORIGINAL:
@@ -40951,13 +40951,13 @@ Julie
 ORIGINAL:
 Pik
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Polla
+Pik
 
 [006635] NOMBRES PERSONAJES | CLD-006869
 ORIGINAL:
 Miki
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Úlcera
+Miki
 
 [006636] NOMBRES PERSONAJES | CLD-006870
 ORIGINAL:
@@ -40969,13 +40969,13 @@ Tiki
 ORIGINAL:
 Yur
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Caminar
+Yur
 
 [006638] NOMBRES PERSONAJES | CLD-006872
 ORIGINAL:
 Shizuna
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-shizuna
+Shizuna
 
 [006639] NOMBRES PERSONAJES | CLD-006873
 ORIGINAL:
@@ -40999,7 +40999,7 @@ Dedo meñique
 ORIGINAL:
 Magik
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Magia
+Magik
 
 [006643] NOMBRES PERSONAJES | CLD-006877
 ORIGINAL:
@@ -41011,13 +41011,13 @@ Millie
 ORIGINAL:
 Peta
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mapa
+Peta
 
 [006645] NOMBRES PERSONAJES | CLD-006879
 ORIGINAL:
 Sandria
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Brazo
+Sandria
 
 [006646] NOMBRES PERSONAJES | CLD-006880
 ORIGINAL:
@@ -41047,13 +41047,13 @@ Sutra
 ORIGINAL:
 Min-Min
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Minuto-minuto
+Min-Min
 
 [006651] NOMBRES PERSONAJES | CLD-006885
 ORIGINAL:
 Uts
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Estados Unidos
+Uts
 
 [006652] NOMBRES PERSONAJES | CLD-006886
 ORIGINAL:
@@ -41077,13 +41077,13 @@ Niro
 ORIGINAL:
 Marm
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Mármol
+Marm
 
 [006656] NOMBRES PERSONAJES | CLD-006890
 ORIGINAL:
 Marie
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-María
+Marie
 
 [006657] NOMBRES PERSONAJES | CLD-006891
 ORIGINAL:
@@ -41095,19 +41095,19 @@ Genial
 ORIGINAL:
 Toto
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Este
+Toto
 
 [006659] NOMBRES PERSONAJES | CLD-006893
 ORIGINAL:
 Nono
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Leche
+Nono
 
 [006660] NOMBRES PERSONAJES | CLD-006894
 ORIGINAL:
 Mileu
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Miley
+Mileu
 
 [006661] NOMBRES PERSONAJES | CLD-006895
 ORIGINAL:
@@ -41149,7 +41149,7 @@ Dorothy
 ORIGINAL:
 Kotsu
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Kochi
+Kotsu
 
 [006668] NOMBRES PERSONAJES | CLD-006902
 ORIGINAL:
@@ -41191,13 +41191,13 @@ Elsapa
 ORIGINAL:
 Issa
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ahora
+Issa
 
 [006675] NOMBRES PERSONAJES | CLD-006909
 ORIGINAL:
 Fuula
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Rostro
+Fuula
 
 [006676] NOMBRES PERSONAJES | CLD-006910
 ORIGINAL:
@@ -41221,7 +41221,7 @@ Tsubasa
 ORIGINAL:
 Mako
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Semana
+Mako
 
 [006680] NOMBRES PERSONAJES | CLD-006914
 ORIGINAL:
@@ -41245,19 +41245,19 @@ Roxy
 ORIGINAL:
 Kirol
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Deportes
+Kirol
 
 [006684] NOMBRES PERSONAJES | CLD-006918
 ORIGINAL:
 Tilta
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Puente
+Tilta
 
 [006685] NOMBRES PERSONAJES | CLD-006919
 ORIGINAL:
 Lu-Lu
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-lu-lu
+Lu-Lu
 
 [006686] NOMBRES PERSONAJES | CLD-006920
 ORIGINAL:
@@ -41275,7 +41275,7 @@ Lexi
 ORIGINAL:
 Papu
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Fortaleza
+Papu
 
 [006689] NOMBRES PERSONAJES | CLD-006923
 ORIGINAL:
@@ -41323,7 +41323,7 @@ Palas
 ORIGINAL:
 Saki
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Liberar
+Saki
 
 [006697] NOMBRES PERSONAJES | CLD-006931
 ORIGINAL:
@@ -41341,7 +41341,7 @@ Kagura
 ORIGINAL:
 Mint
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Como
+Mint
 
 [006700] NOMBRES PERSONAJES | CLD-006934
 ORIGINAL:
@@ -41353,7 +41353,7 @@ Lila
 ORIGINAL:
 Luka
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Herida
+Luka
 
 [006702] NOMBRES PERSONAJES | CLD-006936
 ORIGINAL:
@@ -41365,7 +41365,7 @@ Sakura
 ORIGINAL:
 Milt
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Lecha
+Milt
 
 [006704] NOMBRES PERSONAJES | CLD-006938
 ORIGINAL:
@@ -41389,7 +41389,7 @@ Selena
 ORIGINAL:
 Chi
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Gastar
+Chi
 
 [006708] NOMBRES PERSONAJES | CLD-006942
 ORIGINAL:
@@ -41401,7 +41401,7 @@ Cassis
 ORIGINAL:
 Komo
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Ingresar
+Komo
 
 [006710] NOMBRES PERSONAJES | CLD-006944
 ORIGINAL:
@@ -41431,13 +41431,13 @@ Nanoha
 ORIGINAL:
 Tohko
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-Vaya cosa
+Tohko
 
 [006715] NOMBRES PERSONAJES | CLD-006949
 ORIGINAL:
 Mary
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-María
+Mary
 
 [006716] NOMBRES PERSONAJES | CLD-006950
 ORIGINAL:
