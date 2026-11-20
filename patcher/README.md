@@ -1,3 +1,5 @@
+> **20/11/2026 — v0.1.4 experimental de eventos protegidos (PARCIAL):** el nuevo BPS del corpus consolidado sustituye 3.724 registros, pero pospone 4.524 diálogos que cambiarían longitudes y offsets de eventos. Conserva los offsets de 51.705 comandos originales y el códec español de un byte A1–B3. No es traducción completa ni ha pasado pruebas de esta compilación en PPSSPP. Ver [auditoría de integración](../docs/INTEGRACION_EVENTOS_PROTEGIDOS_2026-11-20.md). Los hashes v0.1.3 que figuran más abajo son históricos, y su BPS no debe emplearse con v0.1.4.
+
 # Cladun · Parcheador de ISO única (Windows x64)
 
 Aplicación nativa Go/Win32 sin Python, C, .NET ni instalación de runtimes. La interfaz **solo pide la ISO original**. Detecta automáticamente la versión USA auditada mediante el SHA-256 completo y crea `Cladun-ES-EXPERIMENTAL.iso` en la misma carpeta. La imagen original jamás se sobrescribe.
