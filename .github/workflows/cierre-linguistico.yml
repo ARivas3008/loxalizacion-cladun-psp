@@ -1,0 +1,52 @@
+name: Cerrar revisión lingüística estática de Cladun
+on:
+  push:
+    branches: [revision-manual-dialogos]
+    paths:
+      - 'qa/plan_cierre_linguistico.txt'
+      - 'tools/cerrar_qa_linguistico.py'
+      - 'tests/test_cierre_linguistico.py'
+      - '.github/workflows/cierre-linguistico.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: cierre-linguistico-cladun
+  cancel-in-progress: false
+jobs:
+  cierre:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Dependencia para pruebas gráficas del repositorio
+        run: python -m pip install 'Pillow>=12,<14'
+      - name: Validar el libro de 227 cambios y las 110 decisiones
+        run: |
+          python -m unittest discover -s tests -p 'test_cierre_linguistico.py' -v
+          python tools/cerrar_qa_linguistico.py
+      - name: Aplicar solo español y reconstruir vistas, nunca parche/ISO
+        run: python tools/cerrar_qa_linguistico.py --aplicar
+      - name: QA completo de fuentes, narración y guardas de integración
+        run: |
+          python -m unittest discover -s tests -v
+          python tools/verificar_borrador_es.py
+          python tools/verificar_integridad.py --raiz .
+          python tools/cerrar_qa_linguistico.py
+      - name: Publicar los datos lingüísticos y dictámenes en la misma rama
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add traduccion/CLADUN_BORRADOR_ES.csv traduccion/CLADUN_BORRADOR_ES.txt traduccion/CLADUN_BORRADOR_BILINGUE_FAQ.txt
+          git add qa/correcciones_manuales.csv qa/AUDITORIA_110_ALERTAS_CERRADAS.csv qa/INFORME_CIERRE_LINGUISTICO_2026-11-20.json
+          git add lectura/CLADUN_GUION_CON_HABLANTES_ES.txt lectura/CLADUN_LECTURA_TOTAL_CON_HABLANTES_ES.txt lectura/CLADUN_AUDITORIA_HABLANTES.csv lectura/CLADUN_RESUMEN_HABLANTES.json
+          git add lectura/CLADUN_GUION_RECONSTRUIDO_LECTURA_ES.txt lectura/CLADUN_GUION_RECONSTRUIDO_COTEJO_ES_EN.txt lectura/CLADUN_TODO_TEXTO_RECONSTRUIDO_ES_EN.txt lectura/CLADUN_MAPA_DE_DIALOGOS_RECONSTRUIDOS.csv lectura/CLADUN_ALERTAS_RECONSTRUCCION.csv lectura/CLADUN_RESUMEN_RECONSTRUCCION.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'fix(es): cerrar 110 alertas con 227 revisiones contextuales trazables'
+            git push origin HEAD:revision-manual-dialogos
+          fi

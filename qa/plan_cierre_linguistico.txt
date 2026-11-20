@@ -1,0 +1,228 @@
+text_id,es_anterior,es_corregido,categoria,justificacion,original
+CLD-000959,¡Esperar!,¡Espera!,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,Hold on!
+CLD-001421,A pie,Piyyo,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Piyyo
+CLD-001425,Abril,Prillin,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Prillin
+CLD-001437,Barato,Poku,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Poku
+CLD-001456,Pozos,Piten,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Piten
+CLD-001492,N-no te lo digo porque quiera.,¡N-no creas que te lo digo,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,I-It's not like I'm telling you
+CLD-001493,¡Que quede claro!,porque quiera!,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,because I want to!
+CLD-001494,Ajustar,Pigurui,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Pigurui
+CLD-001510,hiyorton,Hiyorton,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Hiyorton
+CLD-001522,hola,Hiyonee,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Hiyonee
+CLD-001524,YouTubeyobaba,Hiyobaba,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Hiyobaba
+CLD-001782,¡Jadear!,¡Ah!,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,Gasp!
+CLD-001897,"¡Sabía que vendrías, domingo!","¡Sabía que vendrías, Sunday!",coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,"I knew you'd come, Sunday!"
+CLD-001946,Ahora tienes acceso al domingo.,Sunday ya está disponible.,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,You now have access to Sunday.
+CLD-001950,Ahora tienes acceso al domingo.,Sunday ya está disponible.,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,You now have access to Sunday.
+CLD-002001,¡Ese domingo me da muchísimos problemas!,¡Sunday no hace más que darme problemas!,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,That Sunday gives me trouble to no end!
+CLD-002020,Palma de coco...?,¿Coco...?,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,Coco...?
+CLD-002090,¡Despertar!,¡Oh!,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,Oho!
+CLD-002123,¿Mascarilla?,¿Máscara?,coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,Mask?
+CLD-002198,¡Jadear!,¡Ah!,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,Gasp!
+CLD-002707,Es por esa mascarilla.,Es por esa máscara.,coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,It's because of that mask.
+CLD-002745,¿De verdad tengo que tirar la mascarilla?,¿De verdad tengo que tirar la máscara?,coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,Do I really have to throw the mask away?
+CLD-002815,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-002860,¡Domingo!,¡Sunday!,coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,Sunday!
+CLD-002906,Me puse la mascarilla hace un rato y estuve dando vueltas por ahí.,Me puse la máscara hace un rato y estuve dando vueltas por ahí.,coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,I wore the mask earlier and wandered around.
+CLD-002912,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-002923,Estoy seguro de que Pudding no quiere estar,"Estoy seguro de que a Pudding no le gusta que lo mimen,",relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,I'm sure Pudding doesn't want to be
+CLD-002924,Mimado tanto como el domingo no,igual que a Sunday no le gusta,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,babied as much as Sunday doesn't
+CLD-002925,quieren que los miren fijamente.,que se queden mirándola.,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,want to be stared at.
+CLD-002991,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-002997,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003082,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003084,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003087,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003106,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003112,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003120,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003123,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003144,"El domingo siempre ha sido mi rival,","Sunday siempre ha sido mi rival,",coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,"Sunday has always been my rival,"
+CLD-003168,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003172,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003174,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003178,¿Sorbete?,¿Sherbet?,coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,Sherbet?
+CLD-003181,¡Esperar!,¡Espera!,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,Wait!
+CLD-003230,"Sorbete. Tú también vienes, ¿verdad?","Sherbet, tú también vienes, ¿verdad?",relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,"Sherbet. You're coming, too, right?"
+CLD-003275,El domingo sin duda es tu rival.,Sunday sin duda es tu rival.,coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,Sunday sure is your rival.
+CLD-003300,El sorbete es realmente útil.,Sherbet es de mucha ayuda.,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,Sherbet is really helpful.
+CLD-003361,¡Domingo!,¡Sunday!,coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,Sunday!
+CLD-003382,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003388,"¡Eres un asco, domingo!","¡Eres un asco, Sunday!",coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,"You suck, Sunday!"
+CLD-003434,¡Hola! ¡Domingo!,"¡Eh, Sunday!",relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,Hey! Sunday!
+CLD-003485,Domingo.,Sunday.,coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,Sunday.
+CLD-003497,"¡Oh, sí! ¡Domingo!","¡Oh, sí! ¡Sunday!",coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,"Oh, yes! Sunday!"
+CLD-003499,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003503,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003567,"¡Desde que vi a Sunday así,","Desde que vi a Sunday así,",relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,I can't wait for the party to start
+CLD-003568,no puedo esperar a que empiece la fiesta!,¡no veo la hora de que empiece la fiesta!,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,ever since I saw Sunday like that!
+CLD-003573,¡¿Palma de coco?!,¡¿Coco?!,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,Coco?!
+CLD-003586,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003590,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003646,No es causado por esa mascarilla.,No es causado por esa máscara.,coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,isn't caused by that mask.
+CLD-003718,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003720,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003729,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003749,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003801,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003803,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003805,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003807,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003810,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-003812,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004040,¿Abajo?,¿Asagi?,coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,Asagi?
+CLD-004103,"""Más bajo""",Asagi,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Asagi”
+CLD-004176,¡Esperar!,¡Espera!,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,Wait!
+CLD-004183,¡Esperar!,¡Espera!,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,Wait!
+CLD-004430,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004471,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004475,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004503,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004513,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004614,¿Palma de coco?,¿Coco?,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Coco?
+CLD-004618,¿Chelín?,¿Bob?,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Bob?
+CLD-004620,¿Domingo?,¿Sunday?,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Sunday?
+CLD-004632,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004673,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004676,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004681,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004724,Sorbete.,Sherbet.,coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,Sherbet.
+CLD-004732,Sorbete. Eres completamente inútil.,Sherbet. Eres completamente inútil.,coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,Sherbet. You are utterly useless.
+CLD-004759,¡Domingo!,¡Sunday!,coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,Sunday!
+CLD-004799,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004835,Sorbete.,Sherbet.,coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,Sherbet.
+CLD-004859,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004867,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004873,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004900,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004906,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004948,Pero te animaré el domingo...,Pero te animaré Sunday...,coherencia_dialogo_nombres,Nombre propio de personaje o máscara: coherencia con textos originales de la misma escena,"But I'll cheer you on, Sunday..."
+CLD-004951,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004954,Mascarilla,Máscara,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Mask
+CLD-004981,Bragas,Pumpky,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Pumpky
+CLD-004985,Bragas,Pumpky,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Pumpky
+CLD-004995,Mangos,Pumi,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Pumi
+CLD-004999,Mangos,Pumi,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Pumi
+CLD-005310,Ese ermitaño,Ermitaño Hiyo,identidad_hablante,Hablante cotejado con denominación usada en el guion o traducción de máscara,Hiyo Hermit
+CLD-005323,¡Despertar!,¡Oh!,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,Oho!
+CLD-005365,¡Despertar!,¡Oh!,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,Oho!
+CLD-006511,Salmón,Salmon,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Salmon
+CLD-006513,Pargo,Snapper,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Snapper
+CLD-006514,Pez espada,Swordfish,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Swordfish
+CLD-006515,Heraldo,Harbinger,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Harbinger
+CLD-006516,Pino,Pine,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Pine
+CLD-006529,Dragón de la Perdición,Doom Dragon,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Doom Dragon
+CLD-006530,Caballero Oscuro,Dark Knight,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Dark Knight
+CLD-006531,Fantasma,Phantom,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Phantom
+CLD-006532,Matanza,Bloodbath,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Bloodbath
+CLD-006543,Suplente,Benchwarmer,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Benchwarmer
+CLD-006544,Jefe 1,Boss No.1,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Boss No.1
+CLD-006545,Gato,Cat,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Cat
+CLD-006546,Góndola,Gondola,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Gondola
+CLD-006547,Bruuuuja,Wiiiich,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Wiiiich
+CLD-006555,Siete,Seven,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Seven
+CLD-006556,Ocho,Eight,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Eight
+CLD-006558,Titán,Titan,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Titan
+CLD-006562,Hombre de dinero,Moneyman,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Moneyman
+CLD-006563,Fantasma,Wraith,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Wraith
+CLD-006564,Fantasma,Ghosty,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Ghosty
+CLD-006568,Zombi rojo,Red Zombie,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Red Zombie
+CLD-006570,Papino,Pappino,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Pappino
+CLD-006576,dios de la guerra,Wargod,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Wargod
+CLD-006579,Avispón,Hornet,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Hornet
+CLD-006580,Aldaba,Knocker,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Knocker
+CLD-006588,Surfista de agujeros,Bhole Surfer,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Bhole Surfer
+CLD-006589,Reina de Hielo Yoko,IceQueenYoko,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",IceQueenYoko
+CLD-006590,Rey Ma,King Ma,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",King Ma
+CLD-006591,kunoichi,Kunoichi,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Kunoichi
+CLD-006593,Miau,Meowzer,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Meowzer
+CLD-006602,Fauces,Jaws,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Jaws
+CLD-006604,Hombre,Mandom,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Mandom
+CLD-006606,Eneldo,Dill,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Dill
+CLD-006615,Hombre de barro,Mudman,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Mudman
+CLD-006623,Vidrioso,Glassy,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Glassy
+CLD-006625,Russell,Russel,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Russel
+CLD-006629,Gourmet,Gourme,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Gourme
+CLD-006631,Zanquilargo,Leggy,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Leggy
+CLD-006634,Corazón Negro,Blackheart,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Blackheart
+CLD-006643,"Muchos puntos de vida, poco maná.","Mucha vida, poco maná.",relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,"High HP, low Mana."
+CLD-006648,"Concéntrese en los lanzadores abridores, pero deje menos espacio para los suplentes.","Prioriza los SP, pero tiene menos casillas para personajes de apoyo.",relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,"Focus on SP, but less spaces for Subs."
+CLD-006652,Un niño azotado por Pudding. Constantemente preocupado.,"Un chico dominado por Pudding, siempre preocupado.",relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,A boy whipped by Pudding. Constantly worrying.
+CLD-006657,Sorbete,Sherbet,personaje_jugable,Nombre de personaje jugable conservado (mismo nombre en guion),Sherbet
+CLD-006661,Mucho espacio para suscripciones con bonificaciones por subir de nivel.,"Muchas casillas para personajes de apoyo, con bonificaciones al subir de nivel.",relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,Lots of space for Subs with level up bonuses.
+CLD-006663,Palma de coco,Coco,personaje_jugable,Nombre de personaje jugable conservado (mismo nombre en guion),Coco
+CLD-006680,Mucho espacio para suscripciones con bonificaciones por subir de nivel.,"Muchas casillas para personajes de apoyo, con bonificaciones al subir de nivel.",relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,Lots of space for Subs with level up bonuses.
+CLD-006682,Chelín,Bob,personaje_jugable,Nombre de personaje jugable conservado (mismo nombre en guion),Bob
+CLD-006683,Un hombre constantemente excitado con un peinado afro.,Un hombre siempre entusiasmado y con peinado afro.,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,A constantly excited man with a fro.
+CLD-006686,"Concéntrese en los lanzadores abridores, pero deje menos espacio para los suplentes.","Prioriza los SP, pero tiene menos casillas para personajes de apoyo.",relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,"Focus on SP, but less spaces for Subs."
+CLD-006688,Domingo,Sunday,personaje_jugable,Nombre de personaje jugable conservado (mismo nombre en guion),Sunday
+CLD-006702,Tiene mucha mana pero poca HP.,"Tiene mucho maná, pero pocos HP.",relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,マナは高いがHPが低い。
+CLD-006705,"Concéntrese en los lanzadores abridores, pero deje menos espacio para los suplentes.","Prioriza los SP, pero tiene menos casillas para personajes de apoyo.",relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,"Focus on SP, but less spaces for Subs."
+CLD-006712,Nueve,Nine,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Nine
+CLD-006713,Rico,Rich,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Rich
+CLD-006717,Calesa,Buggy,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Buggy
+CLD-006726,Rosario,Beads,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Beads
+CLD-006731,Aburrido,Dull,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Dull
+CLD-006736,Alfarero,Potter,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Potter
+CLD-006738,vasco,Basque,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Basque
+CLD-006739,Fuego antiaéreo,Flak,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Flak
+CLD-006743,Melaza,Melado,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Melado
+CLD-006746,Mezclador,Muddler,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Muddler
+CLD-006759,Emperador,Kaiser,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Kaiser
+CLD-006760,Niño,Bambino,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Bambino
+CLD-006762,Azul,Blu,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Blu
+CLD-006766,Diez,Ten,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Ten
+CLD-006767,Legumbres,Pulse,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Pulse
+CLD-006770,Jano,Janus,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Janus
+CLD-006780,Afortunado,Lucky,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Lucky
+CLD-006788,Pedernal,Flint,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Flint
+CLD-006789,Tauro,Taurus,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Taurus
+CLD-006792,Dogos,Dogi,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Dogi
+CLD-006795,Gerard,Gerrard,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Gerrard
+CLD-006809,Hermanos,Bros,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Bros
+CLD-006811,Barra oblicua,Slash,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Slash
+CLD-006814,Brecha,Gap,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Gap
+CLD-006828,Baya,Berry,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Berry
+CLD-006830,Mariquita,Ladybug,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Ladybug
+CLD-006833,maya,Maya,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Maya
+CLD-006837,Pacífico,Pacific,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Pacific
+CLD-006843,Roxana,Roxanne,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Roxanne
+CLD-006844,Lirio,Lily,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Lily
+CLD-006848,Kéfir,Kefir,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Kefir
+CLD-006851,Mareado,Giddy,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Giddy
+CLD-006859,Beldad,Belle,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Belle
+CLD-006864,pez laúd,Lutefisk,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Lutefisk
+CLD-006875,Dedo meñique,Pinkie,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Pinkie
+CLD-006881,Marín,Marin,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Marin
+CLD-006882,Marilyn,Marylin,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Marylin
+CLD-006883,Sutra,Sutro,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Sutro
+CLD-006891,Genial,Kool,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Kool
+CLD-006902,Río,Rio,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Rio
+CLD-006905,Flautista,Piper,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Piper
+CLD-006914,Arenoso,Sandie,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Sandie
+CLD-006925,Repicar,Chime,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Chime
+CLD-006929,Palas,Pallas,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Pallas
+CLD-006931,Campana,Cloche,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Cloche
+CLD-006938,Cacerola,Pan,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Pan
+CLD-006944,Margarita,Daisy,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Daisy
+CLD-006946,Melón,Melon,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Melon
+CLD-006952,Violeta,Violet,catalogo_identidades,"Nombre propio de un catálogo de nombres, no traducir como sustantivo común",Violet
+CLD-F-DAIHYOU-0001-nombre_personaje,Pegajoso,Gumi,identidad_japonesa,Nombre propio japonés transliterado o cotejado con el reparto inglés; Eiji requiere corroboración de forma oficial,グミ
+CLD-006956,sorbete,Sherbet,identidad_japonesa,Nombre propio japonés transliterado o cotejado con el reparto inglés; Eiji requiere corroboración de forma oficial,シャーベット
+CLD-F-DAIHYOU-0006-nombre_personaje,Palma de coco,Coco,identidad_japonesa,Nombre propio japonés transliterado o cotejado con el reparto inglés; Eiji requiere corroboración de forma oficial,ココ
+CLD-006958,Golpe de batalla,Battleblo,identidad_japonesa,Nombre propio japonés transliterado o cotejado con el reparto inglés; Eiji requiere corroboración de forma oficial,バトルブロー
+CLD-006959,edad,Eiji,identidad_japonesa,Nombre propio japonés transliterado o cotejado con el reparto inglés; Eiji requiere corroboración de forma oficial,エージ
+CLD-F-DAIHYOU-0010-nombre_personaje,Chelín,Bob,identidad_japonesa,Nombre propio japonés transliterado o cotejado con el reparto inglés; Eiji requiere corroboración de forma oficial,ボブ
+CLD-006961,Domingo,Sunday,identidad_japonesa,Nombre propio japonés transliterado o cotejado con el reparto inglés; Eiji requiere corroboración de forma oficial,サンデー
+CLD-007652,¡Correr!,¡Corre!,correccion_interfaz,Frase exclamativa dirigida al jugador; infinitivo de MTL impropio,Run!
+CLD-007682,¡Correr!,¡Corre!,correccion_interfaz,Frase exclamativa dirigida al jugador; infinitivo de MTL impropio,Run!
+CLD-007712,¡Correr!,¡Corre!,correccion_interfaz,Frase exclamativa dirigida al jugador; infinitivo de MTL impropio,Run!
+CLD-007742,¡Correr!,¡Corre!,correccion_interfaz,Frase exclamativa dirigida al jugador; infinitivo de MTL impropio,Run!
+CLD-F-SIEN-0001-nombre_personaje,Pegajoso,Gumi,identidad_japonesa,Nombre propio japonés transliterado o cotejado con el reparto inglés; Eiji requiere corroboración de forma oficial,グミ
+CLD-008758,sorbete,Sherbet,identidad_japonesa,Nombre propio japonés transliterado o cotejado con el reparto inglés; Eiji requiere corroboración de forma oficial,シャーベット
+CLD-F-SIEN-0006-nombre_personaje,Palma de coco,Coco,identidad_japonesa,Nombre propio japonés transliterado o cotejado con el reparto inglés; Eiji requiere corroboración de forma oficial,ココ
+CLD-008760,Golpe de batalla,Battleblo,identidad_japonesa,Nombre propio japonés transliterado o cotejado con el reparto inglés; Eiji requiere corroboración de forma oficial,バトルブロー
+CLD-008761,edad,Eiji,identidad_japonesa,Nombre propio japonés transliterado o cotejado con el reparto inglés; Eiji requiere corroboración de forma oficial,エージ
+CLD-F-SIEN-0010-nombre_personaje,Chelín,Bob,identidad_japonesa,Nombre propio japonés transliterado o cotejado con el reparto inglés; Eiji requiere corroboración de forma oficial,ボブ
+CLD-008763,Domingo,Sunday,identidad_japonesa,Nombre propio japonés transliterado o cotejado con el reparto inglés; Eiji requiere corroboración de forma oficial,サンデー
+CLD-F-TIPATTR-0216-nombre_atributo,Controversia,En llamas,relectura_contextual,Revisión de la intervención completa ES/EN y corrección literal o de terminología,炎上

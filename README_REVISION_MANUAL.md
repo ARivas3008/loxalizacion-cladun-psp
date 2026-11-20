@@ -50,3 +50,7 @@ La versión de lectura que **une los renglones de una misma caja de diálogo** y
 ## Correcciones selectivas de rarezas (20/11/2026)
 
 Se ha preparado un libro mayor de **687 correcciones justificadas por el guion ES/EN** (8.550 entradas permanecen intactas). La revisión no aplica una traducción masiva ni altera originales o recursos PSP. [Plan antes/después](qa/revision_rareza_2026-11-20.csv) · [criterios y procedimiento](docs/REVISION_SELECTIVA_RAREZAS_2026-11-20.md) · [validador con preimagen exacta](tools/aplicar_revision_rareza.py). La automatización sincroniza el CSV y todos los guiones; los casos no demostrables se documentan en un informe aparte. **No equivale a un nuevo parche binario aprobado.**
+
+## Cierre de alertas lingüísticas estáticas — 20/11/2026
+
+Se revisaron las 110 alertas históricas y se documentó un dictamen por cada una. Se han preparado **227 correcciones complementarias** para nombres propios, intervenciones y etiquetas, todas con preimagen exacta y cambios limitados a `espanol`. [Plan editable y auditable](qa/plan_cierre_linguistico.txt) · [informe de metodología y límites](docs/CIERRE_REVISION_LINGUISTICA_2026-11-20.md) · [herramienta de aplicación segura](tools/cerrar_qa_linguistico.py). **No se incorporan todavía al parcheador ni se certifica PPSSPP.** La revisión estática no equivale a aprobación literaria humana de las 9.237 entradas.
