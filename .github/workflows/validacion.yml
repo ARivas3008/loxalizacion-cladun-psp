@@ -14,6 +14,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Instalar dependencia de gráficos para la localización de rótulos
+        run: python -m pip install 'Pillow>=12,<14'
       - name: Probar integridad, fuente y prevención de desbordes
         run: python -m unittest discover -s tests -v
       - name: Verificar fuente, índices y TXT
@@ -25,6 +27,9 @@ jobs:
           python tools/auditar_preinsercion_es.py --reporte reports/preinsercion_ci.json --filas reports/preinsercion_ci.csv
       - name: Medir integrabilidad append-only sin crear ISO
         run: python tools/reportar_integrabilidad_es.py --reporte reports/integrabilidad_ci.json
+      - name: Rechazar un plan estático incompleto sin probar el emulador
+        run: |
+          python -c "import json; j=json.load(open('reports/integrabilidad_ci.json')); assert j['cobertura_preparacion_100_pct'] and j['pendientes']==0 and j['total']==9237, j"
       - name: Conservar informes de QA (sin activos comerciales)
         uses: actions/upload-artifact@v4
         with:

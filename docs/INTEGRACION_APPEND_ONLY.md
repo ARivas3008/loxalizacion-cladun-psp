@@ -1,6 +1,6 @@
 # Integración append-only para evitar cambios en assets ajenos
 
-**Estado: implementación experimental, NO parche final validado.** Se congela la traducción y se trabaja en la reinserción.
+**Estado: 9.237/9.237 rutas de inserción estructuralmente preparadas; NO parche final validado en PPSSPP.** Se congela la traducción y se trabaja en la reinserción.
 
 ## Hallazgos verificados en la ISO USA
 
@@ -53,6 +53,19 @@ Esto **no demuestra todavía** que el cargador PSPFS acepte los recursos añadid
 
 ## Pendientes que impiden llamarlo parche completo
 
-Los últimos informes estáticos identifican 280 desbordes de campo, 816 entradas sin capacidad modelada, seis textos gráficos y dos originales incompletos. Se deben resolver por estructura, no forzar inserciones destructivas.
+El último informe de integrabilidad entrega **8.491 cambios técnicamente planificados, 746 cadenas sin cambios de bytes y 0 bloqueos**. Los 280 desbordamientos históricos se tratan con etiquetas compactas solo para la inserción; 2 originales defectuosos se cotejan por bytes exactos; los seis rótulos gráficos tienen regiones de edición verificadas por SHA y píxeles. Las 816 entradas antiguamente sin capacidad se resuelven a través de reconstrucción de tablas y créditos, no inventando espacio.
 
 También faltan pruebas reales en PPSSPP de arranque, diálogos, signos españoles, retratos, mapas, tiles y combate. La garantía de bytes es separada de la validación del motor y sus gráficos.
+
+
+## Cobertura actualizada y verificación de rótulos
+
+- [Adaptador de campos fijos](../tools/ajustes_campos_es.py): traducciones literarias intactas; 280 etiquetas de inserción compactas y 2 orígenes truncados explícitos, sin escribir fuera del campo.
+- [Localizador de seis PNG](../tools/graficos_texto_es.py): edición limitada al texto y comparación de píxeles **exactos** fuera del rectángulo; no tocar retratos, tiles ni otras imágenes.
+- [Prueba REAL en la ISO aportada](../reports/ensayo_graficos_iso_2026-11-18.json): 348 recursos PSPFS diferentes de SYS.DAT2 y 11 archivos ISO9660 ajenos conservaron tanto bytes como offsets. Esto solo prueba el ensayo aislado de los seis gráficos.
+- La ISO candidata del integrador ahora se prepara en una ruta temporal y se publica atómicamente solo tras pruebas y reevaluación del SHA de origen. No se sobrescriben archivos.
+- **El modo estricto ya puede planificar el 100 % del corpus**, pero la ejecución conjunta con PPSSPP y las posibles referencias de salto no identificadas del intérprete siguen sin verificar. Nunca anunciar el parche como final solo por pasar estas pruebas.
+
+## Validación adicional del códec IMY (19/11/2026)
+
+Una auditoría posterior detectó que la segunda palabra de la cabecera global IMY representa el **tamaño de bloque descomprimido** (`131072` bytes en esta ISO), **no** la longitud total del contenedor. Se corrigió `tools/imy_repack_safe.py` y se añadió una prueba de dos bloques que debe fallar si se introduce nuevamente el tamaño total. Una prueba privada sobre la ISO proporcionada descomprimió y volvió a recomprimir de forma íntegra `SCRIPT.SDT` (8 bloques, 930.304 bytes expandidos) y `DATABASE.DAT` (5 bloques, 620.032 bytes expandidos): ambos recuperaron **exactamente** los bytes originales tras la segunda descompresión. Se publica solo el [informe no comercial](../reports/roundtrip_imy_multibloque_iso_real_2026-11-19.json). Esta evidencia demuestra el formato de recompresión, no el funcionamiento del juego ni la inserción española íntegra. Sigue pendiente una prueba en PPSSPP con una ISO candidata conjunta.

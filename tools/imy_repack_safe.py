@@ -96,6 +96,15 @@ def recompress(original_stored: bytes, new_decoded: bytes) -> bytes:
     headers = [original_stored[off:off + 32] for off in offsets]
     require(all(len(h) == 32 and h[:4] == b"IMY\x00" for h in headers),
             "Unrecognized IMY chunk header")
+    # The second word of an IMY multi-block envelope is the UNCOMPRESSED
+    # CHUNK CAPACITY, not the total expanded resource size. Cladun USA ships
+    # SCRIPT.SDT and DATABASE.DAT with 0x20000 (131072) here, despite their
+    # full decompressed sizes being 930304 and 620032 respectively.
+    chunk_size = u32(original_stored, 4)
+    require(chunk_size == u16(headers[0], 8) * u16(headers[0], 12),
+            "IMY envelope chunk size differs from actual first block")
+    require(all(u16(h, 8) * u16(h, 12) == chunk_size for h in headers[:-1]),
+            "Non-final IMY block geometry differs from envelope chunk size")
     earlier = sum(u16(h, 8) * u16(h, 12) for h in headers[:-1])
     last = bytearray(headers[-1])
     stride = u16(last, 8)
@@ -109,7 +118,7 @@ def recompress(original_stored: bytes, new_decoded: bytes) -> bytes:
     struct.pack_into("<I", last, 4, 0x20 | ((new_rows // 2) << 8))
     headers[-1] = bytes(last)
 
-    result = bytearray(struct.pack("<II", blocks, len(new_decoded)) + b"\0" * (4 * blocks))
+    result = bytearray(struct.pack("<II", blocks, chunk_size) + b"\0" * (4 * blocks))
     cursor = 0
     for index, header in enumerate(headers):
         length = u16(header, 8) * u16(header, 12)
