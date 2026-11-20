@@ -1,0 +1,32 @@
+{
+  "fecha": "2026-11-19",
+  "estado": "PASS_RECOMPRESION_MULTIBLOQUE_ORIGINAL_ROUNDTRIP_NO_RUNTIME",
+  "iso_fuente_sha256": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "iso_fuente_bytes": 305496064,
+  "method": "Private no-op test: decode each original PSPFS IMY archive, recompress preserving original 131072-byte capacity, decode reconstructed output, assert equality to original entire decompressed member",
+  "resources": [
+    {
+      "parent": "SCRIPT.SDT",
+      "imy_blocks": 8,
+      "expanded_original": 930304,
+      "stored_original": 699624,
+      "stored_repacked": 700483,
+      "chunk_capacity_original_and_repacked": 131072,
+      "decoded_byte_exact_match": true
+    },
+    {
+      "parent": "DATABASE.DAT",
+      "imy_blocks": 5,
+      "expanded_original": 620032,
+      "stored_original": 230876,
+      "stored_repacked": 230965,
+      "chunk_capacity_original_and_repacked": 131072,
+      "decoded_byte_exact_match": true
+    }
+  ],
+  "private_source_iso_unchanged": true,
+  "runtime_ppsspp_verified": false,
+  "full_translation_inserted": false,
+  "commercial_assets_published": false,
+  "observation": "Previous IMY wrapper erroneously wrote total expanded size instead of fixed per-chunk capacity. Fixed in tools/imy_repack_safe.py, and multi-block regression test added."
+}
