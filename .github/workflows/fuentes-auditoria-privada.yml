@@ -1,0 +1,25 @@
+name: Paquete de fuentes para auditoria local (sin assets comerciales)
+on:
+  push:
+    branches: [integracion-eventos-segura-20261120]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fuentes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verificar exclusiones
+        run: |
+          if git ls-files | grep -Ei '\.(iso|cso|pbp|7z|bps|exe)$'; then
+            echo 'RECHAZADO: binarios comerciales o ejecutables versionados'; exit 1
+          fi
+      - name: Empaquetar fuentes y corpus del repositorio
+        run: tar -czf /tmp/cladun-fuentes-auditoria.tar.gz tools patcher tests corpus traduccion docs qa reports .github README.md AGENTS.md
+      - name: Publicar snapshot de auditoria textual
+        uses: actions/upload-artifact@v4
+        with:
+          name: cladun-fuentes-auditoria
+          path: /tmp/cladun-fuentes-auditoria.tar.gz
+          retention-days: 1
