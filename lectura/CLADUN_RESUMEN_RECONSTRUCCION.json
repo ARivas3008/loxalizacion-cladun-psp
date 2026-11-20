@@ -22,7 +22,7 @@
     "SIN_TRADUCCION": 2
   },
   "csv_fuente_sha256": "f0a56ae0c773982e137fd0d2a99cbe52f27f836eebcf41800e5c8a6d6260e6f9",
-  "csv_borrador_sha256": "72b99c5fd00292de0a54e5c3bafd8eddac00c49dfaa75db492cd2d2dddbb4114",
+  "csv_borrador_sha256": "dcf9beaedafdf0acff6012babd12a046e3f0f64ca2573b71f67b534da653b69f",
   "integridad": {
     "ids_conservados": 9237,
     "csv_original_sin_modificar": true,
