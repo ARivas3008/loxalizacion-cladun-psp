@@ -20,6 +20,7 @@ import struct
 import tempfile
 
 from auditar_preinsercion_es import SOURCE, DRAFT, IMMUTABLE, check_row, read_csv
+from menu_layout_es import patch_canonical_menu_layout
 from charset_es import encode_spanish, decode_spanish
 from extract_cladun import iso9660_entries, read_iso_file, pspfs_entries, dsarc_entries, decompress
 from font_es_patch import SOURCE_SHA256, sha256_file
@@ -640,6 +641,11 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
     require(source_iso.resolve() != candidate.resolve(), "Cannot overwrite source ISO")
     require(sha256_file(source_iso) == SOURCE_SHA256, "Wrong Cladun USA source ISO")
     rows = source_rows(source_csv, draft_csv)
+    layout_f1 = None
+    # El borrador completo es literario. Ajustar solo la presentación
+    # verificada al compilar su versión canónica, no ensayos --borrador.
+    if Path(source_csv).resolve() == Path(SOURCE).resolve() and Path(draft_csv).resolve() == Path(DRAFT).resolve():
+        rows, layout_f1 = patch_canonical_menu_layout(rows)
     changes, blocked, unchanged = plan_rows(rows)
     event_deferred = []
     if event_safe_only:
@@ -668,7 +674,8 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
               "modo_completo": not experimental_partial,
               "modo_eventos_offsets_fijos": event_safe_only,
               "dialogos_pospuestos_por_desplazamiento": len(event_deferred),
-              "ppsspp_validado": False, "aprobado_para_distribucion": False}
+              "ppsspp_validado": False, "aprobado_para_distribucion": False,
+              "f1_presentacion_menu": layout_f1}
     report.parent.mkdir(parents=True, exist_ok=True)
     report.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     if blocked and not experimental_partial:
