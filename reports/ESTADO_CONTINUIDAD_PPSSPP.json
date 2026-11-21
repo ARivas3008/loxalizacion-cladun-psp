@@ -139,7 +139,10 @@
     "Intento experimental +1 espacio 005709: ISO/BPS construidos y guardas pasan, pero no hay captura PPSSPP utilizable",
     "2026-11-21: archivo 7z extraído; ISO original autenticada 305496064 bytes SHA b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
     "2026-11-21: auditoría independiente ISO9660/PVD original: DATA.DAT offset 113770496, size 191697408, PSPFS_V1 349 entradas únicas con offsets dentro del contenedor",
-    "2026-11-21: py_compile de herramientas y tests ON/OFF nuevos: PASS (únicamente sintaxis)"
+    "2026-11-21: py_compile de herramientas y tests ON/OFF nuevos: PASS (únicamente sintaxis)",
+    "2026-11-21: DATABASE.DAT IMY + FONT.ARC originales decodificados en privado, STRTBL.DAT y FONT.BIN con SHA-256 exactos históricos",
+    "2026-11-21: fuente FONT.BIN original: ON 84px, EN 84px, Sí 80px, OFF 84px, APAGADO 115px, No 77px; 005709 F1 303px, +1 ideográfico 318px (solo avances, NO PPSSPP)",
+    "GitHub Actions 44904208388 y 44904203528 para caa60c0...: 130 Python PASS, Go PASS, corpus/integrabilidad PASS, build público Windows sin payload PASS"
   ],
   "pruebas_no_ejecutadas": [
     "Prueba PPSSPP valida del candidato extra +1 ideografico en 005709; no aprobado",
@@ -228,17 +231,18 @@
   },
   "ejecucion_ci_actual": {
     "workflow": "validacion-integracion-eventos.yml",
-    "run_id": 44864818033,
-    "commit": "24ecc52a6565bd8ef29aa019c2e7c2a8848fec80",
+    "run_id": 44904208388,
+    "run_id_adicional": 44904203528,
+    "commit": "caa60c00121e04d8bf955ca9ed9872cbf39cc5d1",
     "resultado": "SUCCESS",
-    "python_tests": 126,
+    "python_tests": 130,
     "go_tests": "PASS",
     "integridad_corpus": "PASS",
     "validacion_borrador": "PASS",
     "integrabilidad": "PASS",
     "public_windows_build": "PASS_SIN_PAYLOAD",
-    "ppsspp_real": "EJECUTADO F1 EN ENTORNO PRIVADO; NO EN CI",
-    "generacion_iso_bps": "EJECUTADA EN ENTORNO PRIVADO; ROUNDTRIP OK"
+    "ppsspp_real": "NO_EJECUTADO_2026_11_21",
+    "generacion_iso_bps": "NO_EJECUTADA_2026_11_21"
   },
   "evidencias_nuevas_sesion": [
     "reports/RESULTADOS_F1_PPSSPP_REAL_2026-11-20.json",
@@ -267,7 +271,8 @@
     ],
     "archivos_documentacion": [
       "docs/RESULTADO_F1_SESION_2026-11-21.md",
-      "prompts/SIGUIENTE_TAREA.md"
+      "prompts/SIGUIENTE_TAREA.md",
+      "reports/f1_metricas_onoff_original_2026-11-21.json"
     ],
     "ppSSPP_ejecutado": false,
     "capturas_nuevas": 0,
@@ -281,6 +286,42 @@
       "005713": "         No"
     },
     "integridad_candidata_nueva": "NO_VERIFICADA",
-    "pr_draft_permanece": true
+    "pr_draft_permanece": true,
+    "original_strtbl_sha256": "16d9da36c05380cbb8af7eba53cb26c7b3e21f8ef5c80fdb90fdba20621044bf",
+    "original_font_sha256": "1f1f5692fecb3b4a66c50f4b20191c1f2658a32ca1220902a5888ae9a11afb46",
+    "original_strtbl_slots": 654,
+    "original_strtbl_strings": 651,
+    "original_menu_indices": {
+      "005709": 501,
+      "005710": 502,
+      "005711": 503,
+      "005712": 504,
+      "005713": 505
+    },
+    "avances_onoff_original_font_px": {
+      "on_original": 84,
+      "en_borrador": 84,
+      "si_candidata": 80,
+      "off_original": 84,
+      "apagado_borrador": 115,
+      "no_candidata": 77,
+      "activado_candidata": 123,
+      "desactivado_candidata": 135,
+      "005709_layout_minimo": 303,
+      "005709_extra_ideografico": 318
+    },
+    "ci": {
+      "run_ids": [
+        44904208388,
+        44904203528
+      ],
+      "head_sha": "caa60c00121e04d8bf955ca9ed9872cbf39cc5d1",
+      "status": "SUCCESS",
+      "python_tests": 130,
+      "go": "PASS",
+      "integrabilidad": "PASS",
+      "build_windows_publico_sin_payload": "PASS",
+      "ppsspp_ci": false
+    }
   }
 }

@@ -31,3 +31,26 @@ python tools/generar_parche_bps.py --original "$ISO_ORIGINAL" --candidato /ruta/
 ```
 
 Usar rutas de salida inexistentes. Ensayar +1 espacio en 005709 como CSV alternativo y exigir hash histórico antes de continuar. Comparar PPSSPP con original y F1, todas las posiciones del cursor, ayudas y al menos dos estados por pantalla; no dar por solucionado F2. Repetir auditoría 349 PSPFS/DSARC/ISO9660, 51.705 comandos, 46.308 no textuales, 1.625 scripts, cero desplazamientos, 4.524 traducciones pospuestas. No consolidar CSV/TXT ni cerrar F1 sin evidencia de emulador.
+
+## Medición adicional desde FONT.BIN original (ejecución 21/11)
+
+Se descodificó **DATABASE.DAT (IMY: 230876 bytes almacenados, 620032 expandidos)** y **FONT.ARC** de la ISO privada, sin exportar assets. Los miembros originales quedaron autenticados: `STRTBL.DAT` SHA-256 `16d9da36c05380cbb8af7eba53cb26c7b3e21f8ef5c80fdb90fdba20621044bf` (17744 B) y `FONT.BIN` SHA-256 `1f1f5692fecb3b4a66c50f4b20191c1f2658a32ca1220902a5888ae9a11afb46` (10888 B; 2721 glifos).
+
+En STRTBL hay 654 punteros y 651 cadenas no vacías. Secuencia literal de índices **501–505**: 005709 = «Show decimal points for damage» con siete U+3000; 005710 = diez ASCII + ON; 005711 = un U+3000 + «Under 1 ON»; 005712 = un ASCII + «Under 10 ON»; 005713 = nueve ASCII + OFF. Confirmar que el borrador de 005711–12 conserva su semántica antes de aprobar un cambio de ON/OFF.
+
+| Cadena con sangría | Ancho real de avance de fuente (px) |
+| --- | ---: |
+| 005710 original `          ON` | 84 |
+| 005710 borrador `          EN` | 84 |
+| 005710 candidata `          Sí` | 80 |
+| 005713 original `         OFF` | 84 |
+| 005713 borrador `         APAGADO` | 115 |
+| 005713 candidata `         No` | 77 |
+| 005710 alternativa `          Activado` | 123 |
+| 005713 alternativa `         Desactivado` | 135 |
+
+Las métricas del glifo `í` se obtienen de su base estrecha `i`, conforme al códec A1–B3. Para 005709, presentación mínima = **303 px** de avance; +1 U+3000 = **318 px** (+15 px de avance, sin que ello pruebe +16 px de caja PPSSPP). **No adoptar «Sí/No» sin ajuste de anclaje y comparación visual.** Datos también en `reports/f1_metricas_onoff_original_2026-11-21.json`.
+
+## CI de este commit
+
+GitHub Actions `44904208388` y `44904203528` en el commit `caa60c00121e04d8bf955ca9ed9872cbf39cc5d1`: **SUCCESS**. Log del primero: **130 pruebas Python** en 4,486 s; comprobación de integridad y borrador, integrabilidad estática, `go test ./...` y compilación Windows x64 **sin payload** correctas. Esto no ejecuta PPSSPP ni compila ISO/BPS privados.

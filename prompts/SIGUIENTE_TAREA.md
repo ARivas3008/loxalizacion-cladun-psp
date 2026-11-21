@@ -53,3 +53,11 @@ Para +1 generar CSV separado de 9.237 filas con **solo 005709.espanol** = «Deci
 ## Cierre y relevo RECURSIVO OBLIGATORIO
 
 Al finalizar identifica las pruebas realmente ejecutadas, SHA de binarios/PNG nuevos, logs Python/Go/CI, capturas PPSSPP reales y rutas privadas, auditoría binaria distinta de visual y funcional, fallos y bloqueos concretos. Anota commits, rama y PR. **Actualiza `reports/ESTADO_CONTINUIDAD_PPSSPP.json` y REGENERA `prompts/SIGUIENTE_TAREA.md` con OTRO PROMPT COMPLETO y AUTÓNOMO; muéstralo al usuario. El nuevo prompt DEBE exigir, a su vez, generar otro prompt al cerrar la siguiente tarea.** Repetir hasta implementar y probar todo el juego. F2: atlas/glifos; F3: intro inglés; F4: intérprete/4.524 scripts; F5: gameplay; F6: BPS/EXE/QA final. **No avanzar si F1 sigue bloqueada sin documentarlo.**
+
+## Evidencia adicional y CI (21/11/2026)
+
+Se descodificaron de la ISO USA real `DATABASE.DAT`/STRTBL.DAT y `FONT.ARC`/FONT.BIN. Verificados por SHA histórico: STRTBL `16d9da36c05380cbb8af7eba53cb26c7b3e21f8ef5c80fdb90fdba20621044bf`, FONT `1f1f5692fecb3b4a66c50f4b20191c1f2658a32ca1220902a5888ae9a11afb46`. STRTBL tiene 654 punteros/651 cadenas. Índices 501–505 corresponden a IDs 005709–005713; los dos centrales son originales «　Under 1 ON» (005711) y « Under 10 ON» (005712); revisa su semántica en cualquier pantalla.
+
+Avance de fuente **original**, no medida visual: 005710 ON 84 px, borrador EN 84 px, candidato Sí 80 px; 005713 OFF 84 px, borrador APAGADO 115 px, candidato No 77 px; variantes Activado/Desactivado 123/135 px. 005709 mínimo español 303 px y +1 ideográfico 318 px; el salto +15 de avance no demuestra +16 de anchura de caja en PPSSPP. **Antes de consolidar Sí/No, resolver anclaje derecho y captura.** Reporte `reports/f1_metricas_onoff_original_2026-11-21.json`.
+
+GitHub Actions para commit `caa60c00121e04d8bf955ca9ed9872cbf39cc5d1`: runs **44904208388** y **44904203528**, ambos SUCCESS; **130 tests Python**, Go test, integridad/planificación y compilación Windows pública **sin payload** PASS. No sustituyen PPSSPP real ni auditoría de ISO candidata. Si hay nuevos commits, verifica CI del HEAD exacto antes de afirmar validación actual.
