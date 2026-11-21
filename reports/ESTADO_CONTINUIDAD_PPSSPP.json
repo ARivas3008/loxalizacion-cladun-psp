@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1 CERRADA EN EL ALCANCE DE OPCIONES EN PPSSPP REAL: ancho 764px original y ES, Sí/No, cursores/ayudas/Controles y regreso; F2 iconos atlas pendiente",
+  "fase_actual": "F1 CERRADA Opciones. F2 ABIERTA: auditados 2721 glifos preservados +19, búsqueda MIPS código->índice para texto y negativos atlas old/new en seis iconos de Controles. Pendiente textura real y QA 19 glifos en escenas.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -95,16 +95,18 @@
     {
       "id": "F2-ICONOS",
       "prioridad": "P1",
-      "estado": "PENDIENTE_MODELO_ACCESO_POR_CODIGO_VS_INDICE_ATLAS",
+      "estado": "ABIERTA_CON_PRUEBAS_OLD_NEW_EN_PPSSPP_CONTROLES",
       "descripcion": "19 nuevos glifos A1-B3 desplazan +19 indices de 2626 glifos; falta verificar uso por codigo vs indice",
       "causa": "NO_DETERMINADA",
-      "evidencia_parcial": "PPSSPP F1 21/11: L/R/cuadrado/círculo/cruz/triángulo visibles en Controles, sin prueba de acceso por código vs índice físico +19"
+      "evidencia_parcial": "PPSSPP F1 21/11: L/R/cuadrado/círculo/cruz/triángulo visibles en Controles, sin prueba de acceso por código vs índice físico +19",
+      "resultado_21_11": "MIPS código->índice en texto C; iconos Controles no usan celdas old/new alteradas, 0 diferencia en seis ROIs, control C sí cambió. Origen gráfico exacto pendiente."
     },
     {
       "id": "F2-SIGNOS",
       "prioridad": "P1",
-      "estado": "CORRECCION_BINARIA_SIN_VALIDACION_VISUAL",
-      "descripcion": "¿ ¡ corregidos en atlas; no probados exhaustivamente en dialogo PPSSPP"
+      "estado": "BINARIO_ATLAS_VERIFICADO_VISUAL_19_GLYPHS_PENDIENTE",
+      "descripcion": "¿ ¡ corregidos en atlas; no probados exhaustivamente en dialogo PPSSPP",
+      "resultado_21_11": "19 glifos A1-B3 añadidos preservando 2721 antiguos; falta PPSSPP de cada signo/tilde en escenas."
     },
     {
       "id": "F3-INTRO",
@@ -165,7 +167,10 @@
     "21/11 tarde: 27 PNG reales scrot en ZIP privado SHA 66f23bd..., 18 capturas Opciones de la candidata final, 2 de la original, 2 de +1 ideográfico, controles/título; navegación completa volumen, Real/Retro, 4 modos daño, efectos, Capturas y Controles, regreso a título.",
     "21/11 tarde: herramienta de compilación canónica produce ISO 496689f... idéntica byte a byte a candidata experimentada PPSSPP; BPS canónico daaa64a... idéntico con roundtrip.",
     "21/11 tarde: 2 cambios literarios 005710 EN->Sí y 005713 APAGADO->No, CSV/TXT/plain+bilingüe/QA/vista sincronizados en único commit a94e695c..., resto del corpus 9237 intacto.",
-    "GitHub Actions 21/11 run 44956876063/44956870486 commit 88edf04: 140 Python tests SUCCESS, corpus/borrador/integrabilidad SUCCESS, Go SUCCESS y compilación Windows SIN payload SUCCESS; PPSSPP real ocurrió fuera del CI."
+    "GitHub Actions 21/11 run 44956876063/44956870486 commit 88edf04: 140 Python tests SUCCESS, corpus/borrador/integrabilidad SUCCESS, Go SUCCESS y compilación Windows SIN payload SUCCESS; PPSSPP real ocurrió fuera del CI.",
+    "F2 21/11: auditoría ISO USA y F1, 2721/2721 códigos/métricas/píxeles idénticos más 19 glifos A1-B3; PPSSPP debugger RAM FONT.BIN 0x09075000, PC 0x089089C8 lhu lectura real de código C.",
+    "F2 21/11: 2 ISO privadas font-only old/new, 349 PSPFS 348 ajenos exactos, BPS desde ISO F1 roundtrip exacto, PPSSPP real Controles 6 iconos 0 pixel diff / Correr 504 / Cambiar 536.",
+    "F2 21/11: PPSSPP F1 regresión Opciones 756 px interior x342..1097; GitHub CI código commit 202ff8d 146 Python tests y Go PASS, 44959226947/44959222272 SUCCESS."
   ],
   "pruebas_no_ejecutadas": [
     "Prueba PPSSPP valida del candidato extra +1 ideografico en 005709; no aprobado",
@@ -180,10 +185,10 @@
     "21/11: generación de ISO/BPS nuevas y comparación hash/roundtrip faltan (repo completo y PPSSPP no descargables en contenedor sin DNS).",
     "21/11: variante +1 genera CSV en Python CI, pero NO fue probada gráficamente en PPSSPP ni generó ISO/BPS en este entorno."
   ],
-  "siguiente_accion": "F2: investigar indices físicos del atlas +19 por 19 glifos A1-B3; demostrar mediante traza/referencias internas si símbolos L/R/cuadrado/círculo/cruz/triángulo usan código o índice físico; probar tildes/¿¡ en diálogo real; después F3 intro.",
+  "siguiente_accion": "F2: localizar el origen preciso de texturas/iconos L/R/□/○/×/△ en Controles, HUD, tutoriales y diálogos; validar 19 glifos A1–B3 en PPSSPP real y repetir regresión F1.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
   "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
-  "ultimo_commit_trabajo": "ad41bee059ce12065cdde05df5a862da1e8e9017",
+  "ultimo_commit_trabajo": "202ff8d92513106f2e24a193c5032500bcc74c2d (código F2; ver HEAD posterior de docs)",
   "obligacion_de_relevo": "Al terminar cada etapa actualizar estado, crear prompts/SIGUIENTE_TAREA.md con prompt autonomo que a su vez obligue a generar el siguiente",
   "hashes_antiguos_v015_no_verificados_en_esta_sesion": false,
   "f1_experimento_estatico": {
@@ -256,19 +261,18 @@
   },
   "ejecucion_ci_actual": {
     "workflow": "validacion-integracion-eventos.yml",
-    "run_id": 44956876063,
-    "run_id_adicional": 44956870486,
-    "commit": "88edf04a4667289e45d725828e4c74efd19b1507",
+    "commit": "202ff8d92513106f2e24a193c5032500bcc74c2d",
+    "run_ids": [
+      44959226947,
+      44959222272
+    ],
     "resultado": "SUCCESS",
-    "python_tests": 140,
+    "python_tests": 146,
     "go_tests": "PASS",
-    "integridad_corpus": "PASS",
-    "validacion_borrador": "PASS",
+    "corpus": "PASS",
     "integrabilidad": "PASS",
-    "public_windows_build": "PASS_SIN_PAYLOAD",
-    "ppsspp_real": "EJECUTADO_2026_11_21_PRIVADO_NO_CI",
-    "generacion_iso_bps": "EJECUTADA_PRIVADA_2026_11_21_NO_CI",
-    "nota": "Este resultado de CI corresponde al último commit probado 88edf04; una edición documental posterior requiere CI de su propio SHA."
+    "build_windows_publico": "PASS_SIN_PAYLOAD",
+    "nota": "CI confirmado del commit de código; revisar CI del HEAD documental posterior. No sustituye PPSSPP real."
   },
   "evidencias_nuevas_sesion": [
     "reports/RESULTADOS_F1_PPSSPP_REAL_2026-11-20.json",
@@ -469,5 +473,56 @@
     ],
     "estado_rama": "PR #7 borrador, no fusionar"
   },
-  "nota_historial": "Las entradas de pruebas_no_ejecutadas con fecha 21/11 primeras sesiones son históricas y fueron superadas en la sesión tarde del mismo día; ver f1_cierre_2026_11_21 como estado vigente."
+  "nota_historial": "Las entradas de pruebas_no_ejecutadas con fecha 21/11 primeras sesiones son históricas y fueron superadas en la sesión tarde del mismo día; ver f1_cierre_2026_11_21 como estado vigente.",
+  "f2_sesion_2026_11_21": {
+    "estado": "F2_ABIERTA_PRUEBA_REAL_CON_RESULTADOS_PARCIALES",
+    "fuente_usa_sha256": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "f1_iso_sha256": "496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986",
+    "glifos_usa_conservados_codigos_metricas_raster": 2721,
+    "glifos_espanoles_anadidos": 19,
+    "byte_codes": "A1-B3",
+    "indice_insercion": 95,
+    "font_bin_ram": "0x09075000",
+    "mips_pc_code_to_index": "0x089089C8",
+    "mips_instruction": "lhu t2,0(t1)",
+    "watchpoint_C_hits": 1867,
+    "watchpoint_square_hits": 0,
+    "watchpoint_circle_hits": 0,
+    "ppsspp": "1.20.4 real Xvfb :67 software 1280x720",
+    "old_probe_iso_sha256": "48cf0228f6084bf3359db534651054960c3c94388bf4afa114b9af493630798d",
+    "new_probe_iso_sha256": "77d101111409794e2db25cc4c0eb0707149078416759aa3dd4a3d68db1113b90",
+    "old_probe_bps_from_f1_sha256": "cb29cc5299bf29dde2c311d435fc721b21264eb9aa463af336cde5e9ccefecda",
+    "new_probe_bps_from_f1_sha256": "375750f62421e2f8fd5a40883479e19367e5632b07e9a97ed452e89b434737ac",
+    "bps_roundtrip_exacto": true,
+    "pspfs_total": 349,
+    "pspfs_ajenos_preservados_por_sonda": 348,
+    "iconos_controles_6_rois_0_diferencias_en_ambas_sondas": true,
+    "control_C_diferencias_pixeles_Correr": 504,
+    "control_C_diferencias_pixeles_Cambiar": 536,
+    "f1_regresion_opciones_756_interiores_764_exteriores": true,
+    "zip_privado": "Cladun_ES_F2_PPSSPP_Pruebas_Indices_2026-11-21_EVIDENCIAS_PRIVADAS.zip",
+    "zip_sha256": "a4320955f84210776cd5857ed2174d2f81c437b3cf2ba712e92d4b6764b1c2b8",
+    "capturas_png_privadas": 8,
+    "tools_publicos": [
+      "tools/auditar_atlas_f2.py",
+      "tools/generar_probe_f2_indice.py"
+    ],
+    "tests_publicos": [
+      "tests/test_atlas_f2.py"
+    ],
+    "code_commit": "202ff8d92513106f2e24a193c5032500bcc74c2d",
+    "ci_code_runs": [
+      44959226947,
+      44959222272
+    ],
+    "python_tests_ci": 146,
+    "ci_go": "PASS",
+    "limite": "Solo se demuestra que Controles no usa las celdas alteradas old/new y que texto C pasa por lookup; todavía no el gráfico exacto ni glifos completos",
+    "bloqueos": [
+      "identificar recurso/textura e instrucción de render de iconos",
+      "otros contextos HUD/tutoriales",
+      "pantallas reales con 19 caracteres A1-B3",
+      "F3-F6 pendientes"
+    ]
+  }
 }

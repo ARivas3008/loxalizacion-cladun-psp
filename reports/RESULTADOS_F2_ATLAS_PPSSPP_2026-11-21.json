@@ -1,0 +1,130 @@
+{
+  "schema": "cladun.f2.real_ppsspp_atlas_independent.v1",
+  "date": "2026-11-21",
+  "status": "F2_OPEN_CONTROLS_ONLY",
+  "source_original_sha256": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "f1_canonical_sha256": "496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986",
+  "font": {
+    "original_glyphs": 2721,
+    "spanish_glyphs": 2740,
+    "inserted": 19,
+    "code_range": "A1-B3",
+    "insert_after": 95,
+    "all_original_codes_metrics_pixels_preserved": true,
+    "symbol_indices": [
+      [
+        "□",
+        "81A0",
+        166,
+        185
+      ],
+      [
+        "○",
+        "819B",
+        162,
+        181
+      ],
+      [
+        "×",
+        "817E",
+        143,
+        162
+      ],
+      [
+        "△",
+        "81A2",
+        168,
+        187
+      ],
+      [
+        "L",
+        "4C",
+        44,
+        44
+      ],
+      [
+        "R",
+        "52",
+        50,
+        50
+      ]
+    ]
+  },
+  "debug": {
+    "ppsspp": "1.20.4 official Linux, Xvfb :67, 1280×720, software, 960×544",
+    "module": "CLDN_TRIAL",
+    "module_base": "0x08804000",
+    "font_table_psp": "0x09075000",
+    "trace_pc": "0x089089C8",
+    "instruction": "lhu t2,0(t1)",
+    "lookup": "binary code->index, 4-byte records (text C)",
+    "watchpoint_C_hits": 1867,
+    "square_hits": 0,
+    "circle_hits": 0,
+    "scope": "Only during observed Controls execution"
+  },
+  "probes": {
+    "new_iso_sha256": "77d101111409794e2db25cc4c0eb0707149078416759aa3dd4a3d68db1113b90",
+    "old_iso_sha256": "48cf0228f6084bf3359db534651054960c3c94388bf4afa114b9af493630798d",
+    "new_bps_from_f1_sha256": "375750f62421e2f8fd5a40883479e19367e5632b07e9a97ed452e89b434737ac",
+    "old_bps_from_f1_sha256": "cb29cc5299bf29dde2c311d435fc721b21264eb9aa463af336cde5e9ccefecda",
+    "roundtrip": true,
+    "pspfs": 349,
+    "unrelated_pspfs_exact": 348,
+    "only_font_arc_touched": true,
+    "font_bin_unchanged": true,
+    "base_is_F1_not_USA": true
+  },
+  "visual": {
+    "authentic_scrot": true,
+    "compared_regions": [
+      "R",
+      "□",
+      "×",
+      "○",
+      "△",
+      "L"
+    ],
+    "pixels_changed_in_each_icon_from_F1": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pixels_changed_C_Correr": 504,
+    "pixels_changed_C_Cambiar": 536,
+    "conclusion": "Controls icons unchanged despite old/new font raster manipulation; this does not identify actual icon resource.",
+    "f1_options_actual_px_inside": 756,
+    "f1_options_approx_outer": 764,
+    "baseline_png_sha256": "d1e5ebde3afd7eaf2c0e88243311528b834b7a94180819374c7a2883448c57f5",
+    "new_png_sha256": "0a84bfa2d6f5e4cb4586076b6c35f2c367b82ba3305f63787c0a790bc136bbf3",
+    "old_png_sha256": "c9c5776a49c1c788d26aa14bcacbff2b772845ca9caf3130f3671b01ab59fd1e",
+    "zip_private": "Cladun_ES_F2_PPSSPP_Pruebas_Indices_2026-11-21_EVIDENCIAS_PRIVADAS.zip",
+    "zip_sha256": "a4320955f84210776cd5857ed2174d2f81c437b3cf2ba712e92d4b6764b1c2b8",
+    "captures": 8
+  },
+  "code": {
+    "commit": "202ff8d92513106f2e24a193c5032500bcc74c2d",
+    "files": [
+      "tools/auditar_atlas_f2.py",
+      "tools/generar_probe_f2_indice.py",
+      "tests/test_atlas_f2.py"
+    ],
+    "new_tests": 6,
+    "python_ci_tests": 146,
+    "go_ci": "PASS",
+    "runs": [
+      44959226947,
+      44959222272
+    ]
+  },
+  "pending": [
+    "Identify exact icon sprite/texture and draw MIPS routine",
+    "PPSSPP real all 19 Spanish glyphs and HUD/tutorial",
+    "Preserve F1 and event-safe-only",
+    "F3-F6 pending"
+  ],
+  "publication": "No proprietary ISO/BPS/FONT/EBOOT/RAM/screenshots in GitHub"
+}
