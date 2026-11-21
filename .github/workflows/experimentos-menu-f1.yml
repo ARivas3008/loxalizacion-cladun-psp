@@ -1,0 +1,74 @@
+name: Variantes aisladas del menú F1 (solo CSV, sin ISO)
+
+on:
+  push:
+    branches: [integracion-eventos-segura-20261120]
+    paths:
+      - .github/workflows/experimentos-menu-f1.yml
+      - tools/experimento_menu_f1.py
+      - tests/test_experimento_menu_f1.py
+      - reports/menu_f1_metricas_subconjunto_2026-11-20.json
+      - traduccion/CLADUN_BORRADOR_ES.csv
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  csv-experimentales:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validación de herramientas y del subconjunto FONT.BIN
+        run: python -m unittest discover -s tests -p 'test_experimento_menu_f1.py' -v
+      - name: Crear tres variantes sin activos binarios
+        run: |
+          mkdir -p /tmp/cladun-menu-f1/csv /tmp/cladun-menu-f1/reportes
+          for nombre in solo-005697 solo-005709 los-cinco; do
+            case "$nombre" in
+              solo-005697) args="--ids 005697" ;;
+              solo-005709) args="--ids 005709" ;;
+              los-cinco) args="" ;;
+            esac
+            python tools/experimento_menu_f1.py \
+              --metricas-snapshot reports/menu_f1_metricas_subconjunto_2026-11-20.json \
+              --salida-csv "/tmp/cladun-menu-f1/csv/$nombre.csv" \
+              --reporte "/tmp/cladun-menu-f1/reportes/$nombre.json" $args
+          done
+      - name: Acreditar diferencias exactas y procedencia de métricas
+        run: |
+          python - <<'PY'
+          import csv,hashlib,json,pathlib
+          root=pathlib.Path('/tmp/cladun-menu-f1')
+          with open('traduccion/CLADUN_BORRADOR_ES.csv',encoding='utf-8-sig',newline='') as f:
+              original=list(csv.DictReader(f))
+          expected={'solo-005697':['005697'],'solo-005709':['005709'],
+                    'los-cinco':['005695','005696','005697','005698','005709']}
+          for name, ids in expected.items():
+              path=root/'csv'/f'{name}.csv'
+              with path.open(encoding='utf-8-sig',newline='') as f:
+                  variant=list(csv.DictReader(f))
+              assert len(original)==len(variant)==9237
+              changes=[]
+              for a,b in zip(original,variant):
+                  assert a['grupo_id']==b['grupo_id']
+                  diff=[key for key in a if a[key]!=b[key]]
+                  if diff:
+                      assert diff==['espanol'], (a['grupo_id'],diff)
+                      changes.append(a['grupo_id'])
+              assert changes==ids,(name,changes)
+              report=json.loads((root/'reportes'/f'{name}.json').read_text())
+              assert report['metricas_verificadas_con_iso_esta_ejecucion'] is False
+              assert report['ids_elegidos']==ids
+              assert report['numero_registros']==9237
+              print(name,'ids=',changes,'sha256=',hashlib.sha256(path.read_bytes()).hexdigest())
+          PY
+      - name: Publicar solo CSV experimentales e informes JSON (NO juego)
+        uses: actions/upload-artifact@v4
+        with:
+          name: cladun-menu-f1-variantes-csv
+          path: /tmp/cladun-menu-f1/
+          retention-days: 7
