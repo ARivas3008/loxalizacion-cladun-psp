@@ -7,7 +7,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 from menu_layout_es import (
     GROUP_ID, SOURCE_ORIGINAL, SOURCE_TRANSLATION, LAYOUT_TRANSLATION,
-    patch_canonical_menu_layout,
+    patch_canonical_menu_layout, patch_canonical_menu_values,
 )
 from experimento_menu_f1 import advance, load_metrics_snapshot
 from integrar_parche_seguro import source_rows, plan_rows
@@ -36,7 +36,7 @@ class TestMenuLayoutCanonico(unittest.TestCase):
         path = Path(__file__).resolve().parents[1] / "reports/menu_f1_metricas_subconjunto_2026-11-20.json"
         metricas, _ = load_metrics_snapshot(path)
         self.assertEqual(advance(SOURCE_ORIGINAL, metricas), 303)
-        self.assertEqual(advance(LAYOUT_TRANSLATION, metricas), 303)
+        self.assertEqual(advance(LAYOUT_TRANSLATION, metricas), 310)
 
     def test_plan_integracion_unico_cambio_binario(self):
         original_changes, original_blocked, original_same = plan_rows(self.rows)
@@ -54,6 +54,18 @@ class TestMenuLayoutCanonico(unittest.TestCase):
                     self.assertEqual(before[gid], after[gid])
                 else:
                     self.assertNotEqual(before[gid], after[gid])
+
+    def test_valores_onoff_y_margen_solo_en_presentacion(self):
+        rows, report = patch_canonical_menu_values(self.rows)
+        differences = [(a["grupo_id"], d["espanol"]) for (a,b), (_s,d)
+                       in zip(self.rows, rows) if b != d]
+        self.assertEqual(differences, [("005713", "         No ")])
+        self.assertEqual(report["IDs_verificados"], ["005710", "005713"])
+        self.assertEqual(next(d["espanol"] for s,d in rows if s["grupo_id"]=="005710"),
+                         "          Sí")
+        for gid in ("005711","005712"):
+            self.assertEqual(next(d for s,d in rows if s["grupo_id"]==gid),
+                             next(d for s,d in self.rows if s["grupo_id"]==gid))
 
     def test_falla_si_cambia_fuente_o_espanol_esperado(self):
         modified = list(self.rows)

@@ -19,8 +19,8 @@ from integrar_parche_seguro import source_rows
 from menu_layout_es import GROUP_ID, LAYOUT_TRANSLATION, patch_canonical_menu_layout
 
 EXPECTED = {
-    "005710": ("          ON", "          EN"),
-    "005713": ("         OFF", "         APAGADO"),
+    "005710": ("          ON", "          Sí"),
+    "005713": ("         OFF", "         No"),
 }
 LABELS = {
     "si-no": {"005710": "Sí", "005713": "No"},

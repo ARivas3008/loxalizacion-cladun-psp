@@ -1,0 +1,39 @@
+name: Consolidar F1 canónico CSV TXT QA en un solo commit
+on:
+  push:
+    branches: [integracion-eventos-segura-20261120]
+    paths: [tools/consolidar_f1_a_git.py]
+permissions:
+  contents: write
+jobs:
+  consolidar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generar cambios atómicos y verificar
+        run: |
+          python tools/consolidar_f1_a_git.py
+          python tools/verificar_integridad.py --raiz .
+          python tools/verificar_borrador_es.py
+          python -m unittest discover -s tests -q
+      - name: Registrar siete archivos sincronizados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add traduccion/CLADUN_BORRADOR_ES.csv \
+            traduccion/CLADUN_BORRADOR_ES.txt \
+            traduccion/CLADUN_BORRADOR_BILINGUE_FAQ.txt \
+            lectura/CLADUN_GUION_CON_HABLANTES_ES.txt \
+            lectura/CLADUN_LECTURA_TOTAL_CON_HABLANTES_ES.txt \
+            lectura/CLADUN_AUDITORIA_HABLANTES.csv \
+            qa/correcciones_manuales.csv
+          git diff --cached --check
+          git diff --cached --name-only
+          git commit -m "l10n(f1): sincronizar Sí/No en CSV, ambos TXT, bitácora y vistas"
+          git push origin HEAD:integracion-eventos-segura-20261120

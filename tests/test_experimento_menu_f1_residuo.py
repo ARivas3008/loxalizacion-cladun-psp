@@ -7,10 +7,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 from experimento_menu_f1_residuo import (
-    prepare_plus_one, build, LAYOUT_PLUS_ONE, EXPECTED_ISO_PLUS_ONE,
+    prepare_plus_one, build, LAYOUT_PLUS_ONE, LAYOUT_MINIMAL_HISTORICO, EXPECTED_ISO_PLUS_ONE,
 )
 from integrar_parche_seguro import source_rows
-from menu_layout_es import GROUP_ID, LAYOUT_TRANSLATION
+from menu_layout_es import GROUP_ID
 
 
 class TestF1PlusOne(unittest.TestCase):
@@ -22,8 +22,8 @@ class TestF1PlusOne(unittest.TestCase):
         out = prepare_plus_one(self.rows)
         diff = [(a["grupo_id"], d["espanol"])
                 for (a, b), (_s, d) in zip(self.rows, out) if b != d]
-        self.assertEqual(diff, [(GROUP_ID, LAYOUT_TRANSLATION + "\u3000")])
-        self.assertEqual(LAYOUT_PLUS_ONE, LAYOUT_TRANSLATION + "\u3000")
+        self.assertEqual(diff, [(GROUP_ID, LAYOUT_MINIMAL_HISTORICO + "\u3000")])
+        self.assertEqual(LAYOUT_PLUS_ONE, LAYOUT_MINIMAL_HISTORICO + "\u3000")
         self.assertEqual(LAYOUT_PLUS_ONE.count("\u3000"), 11)
         self.assertEqual(LAYOUT_PLUS_ONE.count(" "), 8)  # Dos espacios literarios + seis.
         self.assertEqual([s for s, d in out], [s for s, d in self.rows])

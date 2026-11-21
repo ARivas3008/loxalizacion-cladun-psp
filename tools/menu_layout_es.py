@@ -16,7 +16,7 @@ from charset_es import encode_spanish
 GROUP_ID = "005709"
 SOURCE_ORIGINAL = "Show decimal points for damage" + "　" * 7
 SOURCE_TRANSLATION = "Decimales de daño"
-LAYOUT_TRANSLATION = SOURCE_TRANSLATION + "　" * 10 + " " * 6
+LAYOUT_TRANSLATION = SOURCE_TRANSLATION + "　" * 10 + " " * 7
 
 def patch_canonical_menu_layout(rows):
     """Devuelve copias inmutables, modifica exclusivamente 005709.espanol."""
@@ -47,4 +47,41 @@ def patch_canonical_menu_layout(rows):
         "corpus_y_borrador_maestros_inmutables": True,
         "verificacion_ppsspp": "CORRECCION_740PX_INTERIOR_VS_756PX_USA_ORIGINAL",
         "faltan": ["margen residual de 16px", "valor EN de 005710", "QA de todas las escenas"],
+    }
+
+
+# F1 QA real 21/11/2026: «No» requiere un ASCII final para igualar
+# el avance original OFF=84px. El texto literario conserva «No» sin relleno.
+VALUES_EXPECTED = {
+    "005710": ("          ON", "          Sí"),
+    "005713": ("         OFF", "         No"),
+}
+
+def patch_canonical_menu_values(rows):
+    output, changed, verified = [], 0, set()
+    for src, dst in rows:
+        gid = src["grupo_id"]
+        if gid not in VALUES_EXPECTED:
+            output.append((src, dst))
+            continue
+        original, translated = VALUES_EXPECTED[gid]
+        if (gid in verified or src["origen"] != "DATABASE.DAT/STRTBL.DAT"
+                or src["original"] != original or dst["original"] != original
+                or src["bytes_hex"].upper() != original.encode("cp932").hex().upper()
+                or dst["espanol"] != translated):
+            raise ValueError(f"F1: preimagen de valor desconocida: {gid}")
+        verified.add(gid)
+        if gid == "005713":
+            fixed = translated + " "
+            encode_spanish(fixed)
+            dst = {**dst, "espanol": fixed}
+            changed += 1
+        output.append((src, dst))
+    if verified != set(VALUES_EXPECTED) or changed != 1:
+        raise ValueError("F1: no se verificaron ambos valores ON/OFF")
+    return output, {
+        "originales_y_redaccion_es_inmutables": True,
+        "anclaje_solo_presentacion": "005713 agrega un espacio ASCII final",
+        "IDs_verificados": sorted(verified),
+        "qa_ppsspp_menu_opciones": "PROBADO_VISUALMENTE_2026-11-21_NO_F2",
     }

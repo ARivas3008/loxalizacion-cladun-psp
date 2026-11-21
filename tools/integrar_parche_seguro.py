@@ -20,7 +20,7 @@ import struct
 import tempfile
 
 from auditar_preinsercion_es import SOURCE, DRAFT, IMMUTABLE, check_row, read_csv
-from menu_layout_es import patch_canonical_menu_layout
+from menu_layout_es import patch_canonical_menu_layout, patch_canonical_menu_values
 from charset_es import encode_spanish, decode_spanish
 from extract_cladun import iso9660_entries, read_iso_file, pspfs_entries, dsarc_entries, decompress
 from font_es_patch import SOURCE_SHA256, sha256_file
@@ -646,6 +646,8 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
     # verificada al compilar su versión canónica, no ensayos --borrador.
     if Path(source_csv).resolve() == Path(SOURCE).resolve() and Path(draft_csv).resolve() == Path(DRAFT).resolve():
         rows, layout_f1 = patch_canonical_menu_layout(rows)
+        rows, values_f1 = patch_canonical_menu_values(rows)
+        layout_f1["onoff_presentacion"] = values_f1
     changes, blocked, unchanged = plan_rows(rows)
     event_deferred = []
     if event_safe_only:

@@ -24,18 +24,18 @@ class TestExperimentoOnOffF1(unittest.TestCase):
             if old_dest != new_dest:
                 self.assertEqual([k for k in old_dest if old_dest[k] != new_dest[k]], ["espanol"])
                 differences[old_src["grupo_id"]] = new_dest["espanol"]
-        self.assertEqual(set(differences), {GROUP_ID, *EXPECTED})
+        self.assertEqual(set(differences), {GROUP_ID})
         self.assertEqual(differences[GROUP_ID], LAYOUT_TRANSLATION)
-        self.assertEqual(differences["005710"], "          Sí")
-        self.assertEqual(differences["005713"], "         No")
+        self.assertEqual(next(d["espanol"] for a,d in updated if a["grupo_id"]=="005710"), "          Sí")
+        self.assertEqual(next(d["espanol"] for a,d in updated if a["grupo_id"]=="005713"), "         No")
         self.assertEqual(report["ids_contexto_intactos"], ["005711", "005712"])
 
     def test_id_aislado_mantiene_otro_valor_original_del_borrador(self):
         updated, info = prepare_rows(self.pairs, selected=("005710",))
         changed = [a["grupo_id"] for (a, b), (_, c) in zip(self.pairs, updated) if b != c]
-        self.assertEqual(changed, [GROUP_ID, "005710"])
+        self.assertEqual(changed, [GROUP_ID])
         other = next(d for s, d in updated if s["grupo_id"] == "005713")
-        self.assertEqual(other["espanol"], "         APAGADO")
+        self.assertEqual(other["espanol"], "         No")
 
     def test_rechaza_preimagen_modificada(self):
         manipulated = list(self.pairs)
@@ -50,9 +50,9 @@ class TestExperimentoOnOffF1(unittest.TestCase):
         changed, report = prepare_rows(self.pairs, mode="si-no-espacio-final")
         diffs = {a["grupo_id"]: b["espanol"] for a,b in changed
                  if original[a["grupo_id"]] != b}
-        self.assertEqual(set(diffs), {"005709", "005710", "005713"})
+        self.assertEqual(set(diffs), {"005709", "005713"})
         self.assertEqual(diffs["005713"], "         No ")
-        self.assertEqual(diffs["005710"], "          Sí")
+        self.assertEqual(next(b["espanol"] for a,b in changed if a["grupo_id"] == "005710"), "          Sí")
         for gid in ("005711", "005712"):
             self.assertEqual(next(b for a,b in changed if a["grupo_id"] == gid),
                              original[gid])

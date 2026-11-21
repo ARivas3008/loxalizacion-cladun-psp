@@ -16,12 +16,12 @@ from experimento_menu_f1 import read_rows, load_metrics, advance, sha256
 from font_es_patch import SOURCE_SHA256
 from integrar_parche_seguro import source_rows
 from menu_layout_es import (
-    GROUP_ID, SOURCE_ORIGINAL, SOURCE_TRANSLATION, LAYOUT_TRANSLATION,
-    patch_canonical_menu_layout,
+    GROUP_ID, SOURCE_ORIGINAL, SOURCE_TRANSLATION,
 )
 
 EXTRA = "\u3000"
-LAYOUT_PLUS_ONE = LAYOUT_TRANSLATION + EXTRA
+LAYOUT_MINIMAL_HISTORICO = SOURCE_TRANSLATION + "　" * 10 + " " * 6
+LAYOUT_PLUS_ONE = LAYOUT_MINIMAL_HISTORICO + EXTRA
 EXPECTED_ISO_PLUS_ONE = "f97fa355fce8d7ab55a81fc711e944185ebdce4a320a5077695cb445acd303c8"
 EXPECTED_BPS_PLUS_ONE = "279bd99d7a0cfb87fd1bb4a03ee67ecc250d51563e14f12e213283922a8634fc"
 
@@ -30,19 +30,19 @@ def prepare_plus_one(pairs):
     """Solo modifica 005709.espanol, exige preimagen verificada y 9237 filas."""
     if len(pairs) != 9237:
         raise ValueError("Recuento de corpus inesperado")
-    canonical, report = patch_canonical_menu_layout(pairs)
     changed = 0
     after = []
-    for src, dest in canonical:
+    for src, dest in pairs:
         if src["grupo_id"] == GROUP_ID:
             if (src["original"] != SOURCE_ORIGINAL
                     or src["origen"] != "DATABASE.DAT/STRTBL.DAT"
-                    or dest["espanol"] != LAYOUT_TRANSLATION):
+                    or dest["espanol"] != SOURCE_TRANSLATION
+                    or src["bytes_hex"].upper() != SOURCE_ORIGINAL.encode("cp932").hex().upper()):
                 raise ValueError("005709 preimagen inesperada")
             dest = {**dest, "espanol": LAYOUT_PLUS_ONE}
             changed += 1
         after.append((src, dest))
-    if changed != 1 or report["id"] != GROUP_ID:
+    if changed != 1:
         raise ValueError("005709 ausente o duplicado")
     differing = [(a["grupo_id"], [k for k in b if b[k] != d[k]])
                  for (a, b), (_s, d) in zip(pairs, after) if b != d]
@@ -68,7 +68,7 @@ def build(csv_out: Path, report_out: Path, *, iso: Path | None = None):
             raise ValueError("ISO USA SHA-256 no coincide")
         metrics, font_sha = load_metrics(iso)
         before_width = advance(SOURCE_ORIGINAL, metrics)
-        min_width = advance(LAYOUT_TRANSLATION, metrics)
+        min_width = advance(LAYOUT_MINIMAL_HISTORICO, metrics)
         extra_width = advance(LAYOUT_PLUS_ONE, metrics)
         if (before_width, min_width, extra_width) != (303, 303, 318):
             raise ValueError("Métricas de fuente inesperadas")
