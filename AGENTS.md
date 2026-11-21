@@ -90,3 +90,12 @@ Los subconjuntos `confirmados_formato` y `revisar_visibilidad` son vistas deriva
 - Nunca subir una ISO comercial, DATA.DAT, fuentes de juego ni PNG originales/editados.
 - Un parche exportado se genera con `tools/generar_parche_bps.py`, a partir de una ISO candidata y un informe SHA-256 del integrador, bajo comprobación independiente de 349 recursos PSPFS y los archivos ISO9660.
 - BPS solo se publica localmente después de aplicar el propio parche a la ISO fuente y confirmar que el SHA-256 reconstruido coincide con la candidata. Hasta validar PPSSPP la opción `--experimental` es obligatoria y no se aprueba una distribución final.
+
+
+## Actualización obligatoria para v0.1.5 — evidencia real y continuidad (20/11/2026)
+
+- **Prioridad y versión:** [plan F1–F6](docs/PLAN_HASTA_IMPLEMENTACION_PPSSPP_2026-11-20.md), [prompt de inicio](prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md) y [estado JSON](reports/ESTADO_CONTINUIDAD_PPSSPP.json). Las reglas históricas más arriba sobre glifos **F5A0–F5B2** corresponden a un prototipo antiguo: la integración **actual usa A1–B3, un byte**, en `tools/charset_es.py` + `tools/font_es_narrow.py`; no copiar F5xx a candidatos v0.1.5+.
+- **Hallazgo PPSSPP demostrado:** las opciones se comprimen desde ≈764 a ≈333 px, con valores y etiquetas superpuestos. La causa todavía no se conoce; la corrección con capturas comparables es prioridad F1. La introducción también presenta inglés. NO declarar parche completo ni interfaz correcta.
+- **Integración protegida actual:** `--experimental-parcial --event-safe-only` aplaza **4.524** cambios de longitud de script y conserva offsets de **51.705** comandos y **1.625** scripts. Reconstruir scripts con desplazamientos sin modelar referencias del motor está prohibido, aun cuando se conserven los bytes de opcodes.
+- **Criterio de pruebas:** guardar evidencia PPSSPP real con la ISO original como control, hashes por archivo, informe de regresión, tests y causa. No presentar imágenes de fuente ni capturas construidas como evidencia del motor. Mantener separados QA binario, QA visual y QA de aventura.
+- **Relevo obligatorio:** al cerrar CADA tarea, actualizar `reports/ESTADO_CONTINUIDAD_PPSSPP.json`, crear/actualizar `prompts/SIGUIENTE_TAREA.md` con prompt autónomo (fase concreta, recursos/IDs, comandos, hashes y resultados) y exigir en ese nuevo prompt que se genere otro al concluir. Nunca saltar una fase bloqueada sin documentar por qué.
