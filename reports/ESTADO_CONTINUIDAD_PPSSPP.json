@@ -1,12 +1,12 @@
 {
   "schema": "cladun.ppsspp.continuity.v1",
-  "fecha_corte": "2026-11-20",
+  "fecha_corte": "2026-11-21",
   "repositorio": "https://github.com/ARivas3008/loxalizacion-cladun-psp",
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1: anchura de Opciones recuperada y causa aislada en PPSSPP real; cierre total pendiente de 16px/valores/QA",
-  "version_iso_ensayada": "v0.1.6-F1-EXPERIMENTAL-PARCIAL-VISUAL_OPCIONES",
+  "fase_actual": "F1 ABIERTA: original autenticado y generador experimental ON/OFF añadido; PPSSPP nuevo bloqueado por descarga DNS; faltan 16px/valores/QA",
+  "version_iso_ensayada": "NO SE CONSTRUYO NI ENSAYO NUEVA ISO EL 2026-11-21; anterior v0.1.6 F1",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
     "iso_v015": "9be7b07a2c5c8c9026ffd0f829f613237f9a31e8fe2455856649ff6c1fe2b4ef",
@@ -136,7 +136,10 @@
     "PPSSPP 1.20.4 real: original Opciones 764px, v015 332px, 005697 332px, 005709 748px, cinco 748px exteriores",
     "PPSSPP real: desplazamiento cursor, ayudas, submenú Controles 005709",
     "CI GitHub run 44864818033: 126 pruebas Python, integridad y borrador, integrabilidad, Go test, build publico Windows sin payload",
-    "Intento experimental +1 espacio 005709: ISO/BPS construidos y guardas pasan, pero no hay captura PPSSPP utilizable"
+    "Intento experimental +1 espacio 005709: ISO/BPS construidos y guardas pasan, pero no hay captura PPSSPP utilizable",
+    "2026-11-21: archivo 7z extraído; ISO original autenticada 305496064 bytes SHA b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "2026-11-21: auditoría independiente ISO9660/PVD original: DATA.DAT offset 113770496, size 191697408, PSPFS_V1 349 entradas únicas con offsets dentro del contenedor",
+    "2026-11-21: py_compile de herramientas y tests ON/OFF nuevos: PASS (únicamente sintaxis)"
   ],
   "pruebas_no_ejecutadas": [
     "Prueba PPSSPP valida del candidato extra +1 ideografico en 005709; no aprobado",
@@ -145,9 +148,11 @@
     "QA del acceso por codigo frente a indice de los iconos en todo el motor",
     "reproduccion de intro completamente traducida, segundo nivel, enciclopedia, combates, guardado/carga",
     "Prueba del EXE privado en Windows x64",
-    "Modelo de saltos internos probado para reinsertar los 4524 scripts protegidos"
+    "Modelo de saltos internos probado para reinsertar los 4524 scripts protegidos",
+    "2026-11-21: nueva ejecución PPSSPP real, PNG o prueba +1: bloqueo de descarga del AppImage por DNS; no hay capturas nuevas",
+    "2026-11-21: suite Python/Go completa local, reconstrucción ISO/BPS nuevas y auditoría de candidatas: no realizadas por falta de checkout de red; comprobar CI por commit"
   ],
-  "siguiente_accion": "Continuar F1: resolver 16px residuales mediante prueba PPSSPP reproducible del candidato +1 ideografico, corregir valor 005710 EN por alternativa natural, recorrer todas las opciones/ayudas/controles y registrar nuevo BPS; no desactivar --event-safe-only",
+  "siguiente_accion": "Obtener PPSSPP oficial SHA esperado, probar visualmente variante +1 005709, luego ON 005710 y OFF 005713 con CSV aislados y 005709 incorporado; auditar ISO/BPS privadas y recorrer Opciones; conservar --event-safe-only.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
   "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
   "ultimo_commit_trabajo": "ad41bee059ce12065cdde05df5a862da1e8e9017",
@@ -242,5 +247,40 @@
     "BPS privado Cladun_ES_F1_v016_EXPERIMENTAL_EVENT_SAFE.bps"
   ],
   "artefacto_evidencias_privado_f1": "Cladun_F1_capturas_reales_PPSSPP_2026-11-20.zip (local privado, no GitHub)",
-  "prompt_relevo_verificado": "Se generó nuevo prompt autónomo con archivos, hashes, comandos, PPSSPP real, bloqueos F1 y obligación recursiva"
+  "prompt_relevo_verificado": "Se generó nuevo prompt autónomo con archivos, hashes, comandos, PPSSPP real, bloqueos F1 y obligación recursiva",
+  "f1_sesion_2026_11_21": {
+    "estado": "ABIERTA_BLOQUEO_QA_VISUAL",
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "original_iso_bytes": 305496064,
+    "original_data_dat_offset": 113770496,
+    "original_data_dat_size": 191697408,
+    "original_pspfs_valid": 349,
+    "ejecutado": [
+      "extraccion ISO USA 7z",
+      "hash SHA-256 ISO original",
+      "auditoria ISO9660/PSPFS origen 349 rangos/nombres",
+      "sintaxis py_compile herramienta/test ONOFF"
+    ],
+    "archivos_codigo": [
+      "tools/experimento_onoff_f1.py",
+      "tests/test_experimento_onoff_f1.py"
+    ],
+    "archivos_documentacion": [
+      "docs/RESULTADO_F1_SESION_2026-11-21.md",
+      "prompts/SIGUIENTE_TAREA.md"
+    ],
+    "ppSSPP_ejecutado": false,
+    "capturas_nuevas": 0,
+    "iso_bps_nuevos": false,
+    "csv_canonico_modificado": false,
+    "tests_python_suite_local": "NO_EJECUTADOS",
+    "go_tests_local": "NO_EJECUTADOS",
+    "bloqueo": "AppImage oficial ausente; descarga GitHub/apt falló por DNS en contenedor",
+    "onoff_propuesta_no_adoptada": {
+      "005710": "          Sí",
+      "005713": "         No"
+    },
+    "integridad_candidata_nueva": "NO_VERIFICADA",
+    "pr_draft_permanece": true
+  }
 }
