@@ -66,6 +66,39 @@ def load_metrics(iso: Path) -> tuple[dict[int, int], str]:
     return metrics, hashlib.sha256(font_bin).hexdigest()
 
 
+
+def load_metrics_snapshot(path: Path) -> tuple[dict[int, int], str]:
+    """Subset of measured original advances, for CI text-only experiments.
+
+    This snapshot does NOT independently authenticate the original ISO or font;
+    use --iso for local asset-backed verification. The snapshot is diagnostic.
+    """
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if data.get("schema") != "cladun.menu_f1.font_metrics_subset.v1":
+        raise ValueError("Unsupported metric snapshot")
+    if data.get("iso_original_sha256") != SOURCE_SHA256:
+        raise ValueError("Metric snapshot describes another ISO")
+    if data.get("glifos_originales") != 2721:
+        raise ValueError("Unexpected original glyph count")
+    h = data.get("fuente_font_bin_sha256")
+    if h != "1f1f5692fecb3b4a66c50f4b20191c1f2658a32ca1220902a5888ae9a11afb46":
+        raise ValueError("FONT.BIN snapshot provenance mismatch")
+    values = data.get("avances_por_codigo_hex")
+    if not isinstance(values, dict) or not values:
+        raise ValueError("Missing code advances")
+    metrics = {}
+    for raw_code, advance_px in values.items():
+        if not re.fullmatch(r"[0-9A-F]{4}", raw_code):
+            raise ValueError("Invalid font code in snapshot")
+        code = int(raw_code, 16)
+        if code in metrics or type(advance_px) is not int or not 1 <= advance_px <= 16:
+            raise ValueError("Invalid snapshot advance")
+        metrics[code] = advance_px
+    if metrics.get(0x20) != 7 or metrics.get(0x8140) != 15:
+        raise ValueError("Original space advances disagree")
+    return metrics, h
+
+
 def advance(text: str, metrics: dict[int, int]) -> int:
     total = 0
     for char in text:
@@ -124,8 +157,9 @@ def variant(original: str, spanish: str, gid: str, metrics: dict[int, int]) -> s
     raise ValueError("ID ajeno al experimento F1: " + gid)
 
 
-def build(source: Path, draft: Path, iso: Path, csv_out: Path, report_out: Path,
-          selected: tuple[str, ...] = TARGET_IDS) -> dict:
+def build(source: Path, draft: Path, iso: Path | None, csv_out: Path, report_out: Path,
+          selected: tuple[str, ...] = TARGET_IDS,
+          metricas_snapshot: Path | None = None) -> dict:
     selected = tuple(dict.fromkeys(selected))
     if not selected or set(selected) - set(TARGET_IDS):
         raise ValueError("Los IDs deben pertenecer al conjunto F1")
@@ -135,13 +169,16 @@ def build(source: Path, draft: Path, iso: Path, csv_out: Path, report_out: Path,
         raise ValueError("CSV e informe deben ser archivos diferentes")
     if csv_out.exists() or report_out.exists():
         raise FileExistsError("Destinos ya existentes: no sobrescribir evidencias")
-    if sha256(iso) != SOURCE_SHA256:
+    if (iso is None) == (metricas_snapshot is None):
+        raise ValueError("Se requiere exactamente --iso o --metricas-snapshot")
+    if iso is not None and sha256(iso) != SOURCE_SHA256:
         raise ValueError("SHA-256 ISO original incorrecto")
     fields, rows = read_rows(draft)
     _, originals = read_rows(source)
     if len(rows) != 9237 or len(originals) != len(rows):
         raise ValueError("Corpus incompleto")
-    metrics, font_hash = load_metrics(iso)
+    metrics, font_hash = (load_metrics(iso) if iso is not None
+                          else load_metrics_snapshot(metricas_snapshot))
     changes = []
     for src, row in zip(originals, rows):
         if (src["grupo_id"] != row["grupo_id"] or
@@ -180,6 +217,8 @@ def build(source: Path, draft: Path, iso: Path, csv_out: Path, report_out: Path,
     result = {
         "schema": "cladun.menu_f1.static_experiment.v1",
         "estado": "SOLO_CANDIDATA_CSV_SIN_PPSSPP",
+        "metricas_verificadas_con_iso_esta_ejecucion": iso is not None,
+        "metodo_metricas": "ISO_REAL" if iso is not None else "SUBCONJUNTO_ESTATICO_HISTORICO",
         "iso_original_sha256": SOURCE_SHA256,
         "font_bin_original_sha256": font_hash,
         "csv_borrador_canonico_sha256": sha256(draft),
@@ -200,13 +239,16 @@ def build(source: Path, draft: Path, iso: Path, csv_out: Path, report_out: Path,
 
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--iso", type=Path, required=True, help="ISO USA original verificada (privada)")
+    p.add_argument("--iso", type=Path, help="ISO USA original verificada (privada)")
+    p.add_argument("--metricas-snapshot", type=Path,
+                   help="Datos derivados de FONT.BIN para CSV estáticos CI; NO prueba ISO")
     p.add_argument("--salida-csv", type=Path, required=True)
     p.add_argument("--reporte", type=Path, required=True)
     p.add_argument("--ids", nargs="+", choices=TARGET_IDS, default=list(TARGET_IDS))
     args = p.parse_args()
     report = build(SOURCE, DRAFT, args.iso, args.salida_csv,
-                   args.reporte, tuple(args.ids))
+                   args.reporte, tuple(args.ids),
+                   metricas_snapshot=args.metricas_snapshot)
     print(json.dumps({"estado": report["estado"],
                       "cambios": report["filas_cambiadas"]},
                      ensure_ascii=False, indent=2))
