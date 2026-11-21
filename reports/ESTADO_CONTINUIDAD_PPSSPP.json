@@ -5,8 +5,8 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1: auditoría estática realizada; reparación visual bloqueada a PPSSPP/aislamiento",
-  "version_iso_ensayada": "v0.1.5-EXPERIMENTAL-PARCIAL",
+  "fase_actual": "F1: anchura de Opciones recuperada y causa aislada en PPSSPP real; cierre total pendiente de 16px/valores/QA",
+  "version_iso_ensayada": "v0.1.6-F1-EXPERIMENTAL-PARCIAL-VISUAL_OPCIONES",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
     "iso_v015": "9be7b07a2c5c8c9026ffd0f829f613237f9a31e8fe2455856649ff6c1fe2b4ef",
@@ -14,23 +14,27 @@
     "zip_evidencias": "4ba957b9ae85e8e41e165974bcf9dff97fa9eeabbcf582c25eaa9b00ddf60f7b",
     "strtbl_original": "16d9da36c05380cbb8af7eba53cb26c7b3e21f8ef5c80fdb90fdba20621044bf",
     "font_bin_original": "1f1f5692fecb3b4a66c50f4b20191c1f2658a32ca1220902a5888ae9a11afb46",
-    "iso_f1_nueva": null,
-    "bps_f1_nuevo": null
+    "iso_f1_nueva": "9b7fc809bb106953a91d6ad6e4e23363eb7fb92760659607d484f71132b5da89",
+    "bps_f1_nuevo": "5047fa7b565f84ec204f7f1dde4e47752eb2013af8daa40d68714ca7255b1566",
+    "zip_evidencias_f1_nuevo": "4d7f83259dcfe37242700c6cce1dbbee9e36945c1860d5e9fff9a30c7b58cae2",
+    "ppsspp_appimage_oficial": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21"
   },
-  "entorno_pruebas": "PPSSPP 1.20.4 Linux x86_64, software/llvmpipe Xvfb 1280x720 ventana 960x544",
+  "entorno_pruebas": "PPSSPP 1.20.4 Linux x86_64 AppImage oficial (SHA verificado), Xvfb 1280x720x24, ventana 960x544, render software, SDL_AUDIODRIVER=dummy",
   "artefacto_evidencias_privado": "Evidencias_reales_PPSSPP_Cladun_ES_v015.zip",
   "evidencia_positiva": [
     "arranque y menu principal",
     "acceso a Opciones",
     "seleccion de musica Real/Retro",
     "avance a introduccion",
-    "música y configuración visibles sin espacios tras acentos"
+    "música y configuración visibles sin espacios tras acentos",
+    "F1: opción Decimales de daño de 005709 devuelve cuadro 332->748px exteriores, comparado contra 764px USA bajo PPSSPP real",
+    "F1: navegación y apertura de Controles en candidata 005709, iconos mostrados (sin QA integral de atlas)"
   ],
   "incidencias": [
     {
       "id": "F1-MENU",
       "prioridad": "P0",
-      "estado": "DIAGNOSTICO_ESTATICO_EVIDENCIADO_PENDIENTE_PPSSPP",
+      "estado": "CAUSA_COMPROBADA_CORRECCION_DE_ANCHURA_PPSSPP_PARCIAL_QA_PENDIENTE",
       "descripcion": "Cuadro Opciones ~764 px original frente a ~333 px parche y superposiciones",
       "ids_a_revisar": [
         "005687-005718",
@@ -41,17 +45,39 @@
         "005709",
         "005713"
       ],
-      "causa": "NO_DETERMINADA: se demostró pérdida de ancho/sangría en 5 cadenas; relación causal con ventana 764->333 aún por aislar",
+      "causa": "Pérdida del relleno final ideográfico en STRTBL.DAT grupo_id 005709 elimina el ancho usado para dimensionar la ventana. La sustitución aislada 005709 es la condición que recupera el cuadro.",
       "diagnostico_estatico_confirmado": true,
-      "correccion_aceptada": false,
-      "prueba_visual_nueva": false,
-      "candidata_iso_nueva": false,
+      "correccion_aceptada": true,
+      "prueba_visual_nueva": true,
+      "candidata_iso_nueva": true,
       "ids_candidato_ensayo": [
         "005695",
         "005696",
         "005697",
         "005698",
         "005709"
+      ],
+      "correccion_aceptada_alcance": "anchura de Opciones sin superposicion observada; NO cierre total de F1",
+      "ids_corregidos": [
+        "005709"
+      ],
+      "anchura_original_exterior_px": 764,
+      "anchura_v015_exterior_px": 332,
+      "anchura_f1_exterior_px": 748,
+      "sesiones_ppsspp": [
+        "USA original",
+        "v015 reconstruida exacta",
+        "solo 005697 negativo",
+        "solo 005709 positivo",
+        "los cinco comparativo",
+        "submenu Controles 005709"
+      ],
+      "pendientes": [
+        "16px restantes respecto USA",
+        "005710 EN, revisar traducción",
+        "005713 APAGADO y valores con cursor",
+        "modo de controles y glifos de atlas QA exhaustivo",
+        "verificacion de regreso a menú y ajustes guardados"
       ]
     },
     {
@@ -59,7 +85,8 @@
       "prioridad": "P1",
       "estado": "RIESGO_NO_CERTIFICADO",
       "descripcion": "19 nuevos glifos A1-B3 desplazan +19 indices de 2626 glifos; falta verificar uso por codigo vs indice",
-      "causa": "NO_DETERMINADA"
+      "causa": "NO_DETERMINADA",
+      "evidencia_parcial": "Pantalla de controles 005709 PPSSPP real muestra iconos, sin revisión de los +19 indices del atlas ni todas las escenas"
     },
     {
       "id": "F2-SIGNOS",
@@ -100,36 +127,34 @@
     "textos_script_diferente_longitud_aplazados": 4524
   },
   "pruebas_realmente_ejecutadas": [
-    "BPS aplicado a ISO USA exacta (histórico v0.1.5, no repetido en esta etapa)",
-    "arranque PPSSPP (histórico v0.1.5, no repetido en esta etapa)",
-    "menú principal y configuración (histórico v0.1.5, no repetido en esta etapa)",
-    "inicio y parte de introducción (histórico v0.1.5, no repetido en esta etapa)",
-    "ISO original USA extraída de 7z y SHA-256 cotejado en esta sesión",
-    "PSPFS original: inventario de 349 entradas",
-    "STRTBL original: decodificado desde DATABASE.DAT comprimida IMY y SHA-256 calculado",
-    "FONT.BIN original: 2721 métricas y SHA-256 calculados; cinco variantes con avance propuesto idéntico al original",
-    "CI: 120 pruebas Python, integridad y borrador, integrabilidad, Go test, build Windows público sin payload"
+    "SHA-256 ISO USA del 7z cotejado y 349 PSPFS identificados",
+    "ISO v0.1.5 reconstruida sin cambios idéntica al hash histórico 9be7b07a...",
+    "ISO/BPS individuales 005697, 005709, cinco IDs; hashes y BPS roundtrip en los 3",
+    "ISO/BPS canonicos F1 v016 compilan byte a byte identicos a variante 005709 probada",
+    "349 PSPFS, 345 recursos PSPFS ajenos preservados, ISO9660 ajenos invariantes",
+    "51.705 comandos, 46.308 no textuales, 1.625 scripts y cero offsets de comandos desplazados; 4.524 aplazados",
+    "PPSSPP 1.20.4 real: original Opciones 764px, v015 332px, 005697 332px, 005709 748px, cinco 748px exteriores",
+    "PPSSPP real: desplazamiento cursor, ayudas, submenú Controles 005709",
+    "CI GitHub run 44864818033: 126 pruebas Python, integridad y borrador, integrabilidad, Go test, build publico Windows sin payload",
+    "Intento experimental +1 espacio 005709: ISO/BPS construidos y guardas pasan, pero no hay captura PPSSPP utilizable"
   ],
   "pruebas_no_ejecutadas": [
-    "toda la aventura",
-    "todos los iconos",
-    "EXE en Windows",
-    "todos los signos en diálogo",
-    "generación efectiva de CSV completo de variante usando ISO y repositorio reunidos en un mismo entorno",
-    "generación de una ISO F1 candidata y BPS F1 nuevos",
-    "roundtrip BPS y SHA-256 F1",
-    "guardas PSPFS, ISO9660 y eventos sobre candidata F1",
-    "PPSSPP real con ISO original/v0.1.5/nuevas variantes comparadas",
-    "aislamiento causal de función de cálculo de anchura de ventana"
+    "Prueba PPSSPP valida del candidato extra +1 ideografico en 005709; no aprobado",
+    "Correccion y verificacion de los 16px de diferencia residual",
+    "Revisión lingüística y pruebas de todas las posiciones 005710 (EN), 005713 (APAGADO) y variantes de opciones",
+    "QA del acceso por codigo frente a indice de los iconos en todo el motor",
+    "reproduccion de intro completamente traducida, segundo nivel, enciclopedia, combates, guardado/carga",
+    "Prueba del EXE privado en Windows x64",
+    "Modelo de saltos internos probado para reinsertar los 4524 scripts protegidos"
   ],
-  "siguiente_accion": "F1: ejecutar 005697 y 005709 por separado con --borrador y --event-safe-only; reconstruir ISO/BPS en entorno con repo+ISO; comparar pantallas reales PPSSPP, aislar causa de ventana antes de consolidar.",
+  "siguiente_accion": "Continuar F1: resolver 16px residuales mediante prueba PPSSPP reproducible del candidato +1 ideografico, corregir valor 005710 EN por alternativa natural, recorrer todas las opciones/ayudas/controles y registrar nuevo BPS; no desactivar --event-safe-only",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
-  "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
-  "ultimo_commit_trabajo": "0599f978b200fde6670564c2a5e6311e23572b1f",
+  "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md (actualizacion obligatoria pendiente en commit siguiente)",
+  "ultimo_commit_trabajo": "a004154e0e0cea090fcf3a8a1331ace9280bcbd8",
   "obligacion_de_relevo": "Al terminar cada etapa actualizar estado, crear prompts/SIGUIENTE_TAREA.md con prompt autonomo que a su vez obligue a generar el siguiente",
-  "hashes_antiguos_v015_no_verificados_en_esta_sesion": true,
+  "hashes_antiguos_v015_no_verificados_en_esta_sesion": false,
   "f1_experimento_estatico": {
-    "estado": "HERRAMIENTA_GENERACION_VARIANTES_VERSIONADA_SIN_CANDIDATA_ISO",
+    "estado": "CAUSA_AISLADA_EN_PPSSPP_Y_OVERRIDE_CANONICO_COMPILADO",
     "iso_original_bytes": 305496064,
     "pspfs_original_numero_recursos": 349,
     "fuente_avance_espacio_ascii": 7,
@@ -186,26 +211,35 @@
       "reports/menu_f1_metricas_original_2026-11-20.json",
       "docs/EXPERIMENTO_MENU_F1_2026-11-20.md"
     ],
-    "nota": "Anchos obtenidos leyendo FONT.BIN original: NO son capturas ni medidas de caja PPSSPP."
+    "nota": "Anchos obtenidos leyendo FONT.BIN original: NO son capturas ni medidas de caja PPSSPP.",
+    "conclusion_visual": "005709 cambia ancho exterior 332 (v015) a 748px; 005697 solo no lo cambia; cinco correcciones tampoco mejoran sobre 005709; original 764px",
+    "codigo_implementado": [
+      "tools/menu_layout_es.py",
+      "tools/integrar_parche_seguro.py",
+      "tests/test_menu_layout_es.py"
+    ],
+    "hash_iso_canónico_f1": "9b7fc809bb106953a91d6ad6e4e23363eb7fb92760659607d484f71132b5da89",
+    "hash_bps_canónico_f1": "5047fa7b565f84ec204f7f1dde4e47752eb2013af8daa40d68714ca7255b1566"
   },
   "ejecucion_ci_actual": {
     "workflow": "validacion-integracion-eventos.yml",
-    "run_id": 44861999891,
-    "commit": "a75bcb34954cc38483977e7550f8d40ea1305b5e",
+    "run_id": 44864818033,
+    "commit": "24ecc52a6565bd8ef29aa019c2e7c2a8848fec80",
     "resultado": "SUCCESS",
-    "python_tests": 120,
+    "python_tests": 126,
     "go_tests": "PASS",
     "integridad_corpus": "PASS",
     "validacion_borrador": "PASS",
     "integrabilidad": "PASS",
     "public_windows_build": "PASS_SIN_PAYLOAD",
-    "ppsspp_real": "NO_EJECUTADO",
-    "generacion_iso_bps": "NO_EJECUTADA"
+    "ppsspp_real": "EJECUTADO F1 EN ENTORNO PRIVADO; NO EN CI",
+    "generacion_iso_bps": "EJECUTADA EN ENTORNO PRIVADO; ROUNDTRIP OK"
   },
   "evidencias_nuevas_sesion": [
-    "reports/menu_f1_metricas_original_2026-11-20.json",
-    "docs/EXPERIMENTO_MENU_F1_2026-11-20.md",
-    "tests/test_experimento_menu_f1.py",
-    "GitHub Actions run 44861999891 (Python+Go en verde)"
-  ]
+    "reports/RESULTADOS_F1_PPSSPP_REAL_2026-11-20.json",
+    "docs/RESULTADO_F1_PPSSPP_2026-11-20.md",
+    "capturas reales PNG y manifiesto SHA privado ZIP Cladun_F1_capturas_reales_PPSSPP_2026-11-20.zip",
+    "BPS privado Cladun_ES_F1_v016_EXPERIMENTAL_EVENT_SAFE.bps"
+  ],
+  "artefacto_evidencias_privado_f1": "Cladun_F1_capturas_reales_PPSSPP_2026-11-20.zip (local privado, no GitHub)"
 }
