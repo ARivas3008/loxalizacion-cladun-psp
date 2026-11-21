@@ -24,6 +24,9 @@ EXPECTED = {
 }
 LABELS = {
     "si-no": {"005710": "Sí", "005713": "No"},
+    # Solo experimento de presentacion: el espacio final de No iguala
+    # los 84 px de OFF segun FONT.BIN USA; no validar sin PPSSPP.
+    "si-no-espacio-final": {"005710": "Sí", "005713": "No "},
     "activado-desactivado": {"005710": "Activado", "005713": "Desactivado"},
 }
 CONTROL_IDS = ("005711", "005712")

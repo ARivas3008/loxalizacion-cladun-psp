@@ -45,6 +45,19 @@ class TestExperimentoOnOffF1(unittest.TestCase):
         with self.assertRaises(ValueError):
             prepare_rows(manipulated)
 
+    def test_variante_espacio_final_mantiene_005709_y_005711_005712(self):
+        original = {a["grupo_id"]: b for a, b in self.pairs}
+        changed, report = prepare_rows(self.pairs, mode="si-no-espacio-final")
+        diffs = {a["grupo_id"]: b["espanol"] for a,b in changed
+                 if original[a["grupo_id"]] != b}
+        self.assertEqual(set(diffs), {"005709", "005710", "005713"})
+        self.assertEqual(diffs["005713"], "         No ")
+        self.assertEqual(diffs["005710"], "          Sí")
+        for gid in ("005711", "005712"):
+            self.assertEqual(next(b for a,b in changed if a["grupo_id"] == gid),
+                             original[gid])
+        self.assertEqual(report["ids_contexto_intactos"], ["005711", "005712"])
+
     def test_no_sobrescribe_evidencia_ni_toca_maestros(self):
         with tempfile.TemporaryDirectory() as tmp:
             csv_path = Path(tmp) / "candidato.csv"
