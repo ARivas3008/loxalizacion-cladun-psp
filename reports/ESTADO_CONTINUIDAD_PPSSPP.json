@@ -5,13 +5,17 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1: diagnostico y correccion del menu de configuracion",
+  "fase_actual": "F1: auditoría estática realizada; reparación visual bloqueada a PPSSPP/aislamiento",
   "version_iso_ensayada": "v0.1.5-EXPERIMENTAL-PARCIAL",
   "hashes_sha256": {
-    "iso_original": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
     "iso_v015": "9be7b07a2c5c8c9026ffd0f829f613237f9a31e8fe2455856649ff6c1fe2b4ef",
     "bps_v015": "976fda78adf3e6c2c3c31d5b89bc2f04b18c0905789305b25e9d0a58bf8cea0c",
-    "zip_evidencias": "4ba957b9ae85e8e41e165974bcf9dff97fa9eeabbcf582c25eaa9b00ddf60f7b"
+    "zip_evidencias": "4ba957b9ae85e8e41e165974bcf9dff97fa9eeabbcf582c25eaa9b00ddf60f7b",
+    "strtbl_original": "16d9da36c05380cbb8af7eba53cb26c7b3e21f8ef5c80fdb90fdba20621044bf",
+    "font_bin_original": "1f1f5692fecb3b4a66c50f4b20191c1f2658a32ca1220902a5888ae9a11afb46",
+    "iso_f1_nueva": null,
+    "bps_f1_nuevo": null
   },
   "entorno_pruebas": "PPSSPP 1.20.4 Linux x86_64, software/llvmpipe Xvfb 1280x720 ventana 960x544",
   "artefacto_evidencias_privado": "Evidencias_reales_PPSSPP_Cladun_ES_v015.zip",
@@ -26,7 +30,7 @@
     {
       "id": "F1-MENU",
       "prioridad": "P0",
-      "estado": "CONFIRMADO_NO_CORREGIDO",
+      "estado": "DIAGNOSTICO_ESTATICO_EVIDENCIADO_PENDIENTE_PPSSPP",
       "descripcion": "Cuadro Opciones ~764 px original frente a ~333 px parche y superposiciones",
       "ids_a_revisar": [
         "005687-005718",
@@ -37,7 +41,18 @@
         "005709",
         "005713"
       ],
-      "causa": "NO_DETERMINADA"
+      "causa": "NO_DETERMINADA: se demostró pérdida de ancho/sangría en 5 cadenas; relación causal con ventana 764->333 aún por aislar",
+      "diagnostico_estatico_confirmado": true,
+      "correccion_aceptada": false,
+      "prueba_visual_nueva": false,
+      "candidata_iso_nueva": false,
+      "ids_candidato_ensayo": [
+        "005695",
+        "005696",
+        "005697",
+        "005698",
+        "005709"
+      ]
     },
     {
       "id": "F2-ICONOS",
@@ -85,20 +100,112 @@
     "textos_script_diferente_longitud_aplazados": 4524
   },
   "pruebas_realmente_ejecutadas": [
-    "BPS aplicado a ISO USA exacta",
-    "arranque PPSSPP",
-    "menú principal y configuración",
-    "inicio y parte de introducción"
+    "BPS aplicado a ISO USA exacta (histórico v0.1.5, no repetido en esta etapa)",
+    "arranque PPSSPP (histórico v0.1.5, no repetido en esta etapa)",
+    "menú principal y configuración (histórico v0.1.5, no repetido en esta etapa)",
+    "inicio y parte de introducción (histórico v0.1.5, no repetido en esta etapa)",
+    "ISO original USA extraída de 7z y SHA-256 cotejado en esta sesión",
+    "PSPFS original: inventario de 349 entradas",
+    "STRTBL original: decodificado desde DATABASE.DAT comprimida IMY y SHA-256 calculado",
+    "FONT.BIN original: 2721 métricas y SHA-256 calculados; cinco variantes con avance propuesto idéntico al original",
+    "CI: 120 pruebas Python, integridad y borrador, integrabilidad, Go test, build Windows público sin payload"
   ],
   "pruebas_no_ejecutadas": [
     "toda la aventura",
     "todos los iconos",
     "EXE en Windows",
-    "todos los signos en diálogo"
+    "todos los signos en diálogo",
+    "generación efectiva de CSV completo de variante usando ISO y repositorio reunidos en un mismo entorno",
+    "generación de una ISO F1 candidata y BPS F1 nuevos",
+    "roundtrip BPS y SHA-256 F1",
+    "guardas PSPFS, ISO9660 y eventos sobre candidata F1",
+    "PPSSPP real con ISO original/v0.1.5/nuevas variantes comparadas",
+    "aislamiento causal de función de cálculo de anchura de ventana"
   ],
-  "siguiente_accion": "F1: aislar causa de anchura, sangrías y solapamiento de Opciones; probar corrección real en PPSSPP contra original",
+  "siguiente_accion": "F1: ejecutar 005697 y 005709 por separado con --borrador y --event-safe-only; reconstruir ISO/BPS en entorno con repo+ISO; comparar pantallas reales PPSSPP, aislar causa de ventana antes de consolidar.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
-  "archivo_prompt_siguiente_generado": null,
-  "ultimo_commit_trabajo": null,
-  "obligacion_de_relevo": "Al terminar cada etapa actualizar estado, crear prompts/SIGUIENTE_TAREA.md con prompt autonomo que a su vez obligue a generar el siguiente"
+  "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
+  "ultimo_commit_trabajo": "0599f978b200fde6670564c2a5e6311e23572b1f",
+  "obligacion_de_relevo": "Al terminar cada etapa actualizar estado, crear prompts/SIGUIENTE_TAREA.md con prompt autonomo que a su vez obligue a generar el siguiente",
+  "hashes_antiguos_v015_no_verificados_en_esta_sesion": true,
+  "f1_experimento_estatico": {
+    "estado": "HERRAMIENTA_GENERACION_VARIANTES_VERSIONADA_SIN_CANDIDATA_ISO",
+    "iso_original_bytes": 305496064,
+    "pspfs_original_numero_recursos": 349,
+    "fuente_avance_espacio_ascii": 7,
+    "fuente_avance_espacio_ideografico": 15,
+    "ids_con_variantes_propuestas": [
+      "005695",
+      "005696",
+      "005697",
+      "005698",
+      "005709"
+    ],
+    "ids_sin_cambio_propuesto": [
+      "005713"
+    ],
+    "anchos_px": [
+      {
+        "grupo_id": "005695",
+        "original": 85,
+        "es_actual": 33,
+        "variante": 85
+      },
+      {
+        "grupo_id": "005696",
+        "original": 83,
+        "es_actual": 59,
+        "variante": 83
+      },
+      {
+        "grupo_id": "005697",
+        "original": 99,
+        "es_actual": 22,
+        "variante": 99
+      },
+      {
+        "grupo_id": "005698",
+        "original": 170,
+        "es_actual": 106,
+        "variante": 170
+      },
+      {
+        "grupo_id": "005709",
+        "original": 303,
+        "es_actual": 111,
+        "variante": 303
+      },
+      {
+        "grupo_id": "005713",
+        "original": 84,
+        "es_actual": 115,
+        "variante": null
+      }
+    ],
+    "evidencia_rutas": [
+      "reports/menu_f1_metricas_original_2026-11-20.json",
+      "docs/EXPERIMENTO_MENU_F1_2026-11-20.md"
+    ],
+    "nota": "Anchos obtenidos leyendo FONT.BIN original: NO son capturas ni medidas de caja PPSSPP."
+  },
+  "ejecucion_ci_actual": {
+    "workflow": "validacion-integracion-eventos.yml",
+    "run_id": 44861999891,
+    "commit": "a75bcb34954cc38483977e7550f8d40ea1305b5e",
+    "resultado": "SUCCESS",
+    "python_tests": 120,
+    "go_tests": "PASS",
+    "integridad_corpus": "PASS",
+    "validacion_borrador": "PASS",
+    "integrabilidad": "PASS",
+    "public_windows_build": "PASS_SIN_PAYLOAD",
+    "ppsspp_real": "NO_EJECUTADO",
+    "generacion_iso_bps": "NO_EJECUTADA"
+  },
+  "evidencias_nuevas_sesion": [
+    "reports/menu_f1_metricas_original_2026-11-20.json",
+    "docs/EXPERIMENTO_MENU_F1_2026-11-20.md",
+    "tests/test_experimento_menu_f1.py",
+    "GitHub Actions run 44861999891 (Python+Go en verde)"
+  ]
 }
