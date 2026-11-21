@@ -1,0 +1,365 @@
+{
+  "schema": "cladun.ppsspp.continuity.v1",
+  "fecha_corte": "2026-11-21",
+  "repositorio": "https://github.com/ARivas3008/loxalizacion-cladun-psp",
+  "rama_base": "integracion-eventos-segura-20261120",
+  "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
+  "pr_es_borrador": true,
+  "fase_actual": "F1 ABIERTA: ISO original re-auditada 349 PSPFS y 51705 eventos; variante aislada +1 U+3000 preparada y 134 tests PASS; PPSSPP y candidatos privados NO ejecutados.",
+  "version_iso_ensayada": "NO SE CONSTRUYO NI ENSAYO NUEVA ISO EL 2026-11-21; anterior v0.1.6 F1",
+  "hashes_sha256": {
+    "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "iso_v015": "9be7b07a2c5c8c9026ffd0f829f613237f9a31e8fe2455856649ff6c1fe2b4ef",
+    "bps_v015": "976fda78adf3e6c2c3c31d5b89bc2f04b18c0905789305b25e9d0a58bf8cea0c",
+    "zip_evidencias": "4ba957b9ae85e8e41e165974bcf9dff97fa9eeabbcf582c25eaa9b00ddf60f7b",
+    "strtbl_original": "16d9da36c05380cbb8af7eba53cb26c7b3e21f8ef5c80fdb90fdba20621044bf",
+    "font_bin_original": "1f1f5692fecb3b4a66c50f4b20191c1f2658a32ca1220902a5888ae9a11afb46",
+    "iso_f1_nueva": "9b7fc809bb106953a91d6ad6e4e23363eb7fb92760659607d484f71132b5da89",
+    "bps_f1_nuevo": "5047fa7b565f84ec204f7f1dde4e47752eb2013af8daa40d68714ca7255b1566",
+    "zip_evidencias_f1_nuevo": "4d7f83259dcfe37242700c6cce1dbbee9e36945c1860d5e9fff9a30c7b58cae2",
+    "ppsspp_appimage_oficial": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21"
+  },
+  "entorno_pruebas": "PPSSPP 1.20.4 Linux x86_64 AppImage oficial (SHA verificado), Xvfb 1280x720x24, ventana 960x544, render software, SDL_AUDIODRIVER=dummy",
+  "artefacto_evidencias_privado": "Evidencias_reales_PPSSPP_Cladun_ES_v015.zip",
+  "evidencia_positiva": [
+    "arranque y menu principal",
+    "acceso a Opciones",
+    "seleccion de musica Real/Retro",
+    "avance a introduccion",
+    "música y configuración visibles sin espacios tras acentos",
+    "F1: opción Decimales de daño de 005709 devuelve cuadro 332->748px exteriores, comparado contra 764px USA bajo PPSSPP real",
+    "F1: navegación y apertura de Controles en candidata 005709, iconos mostrados (sin QA integral de atlas)"
+  ],
+  "incidencias": [
+    {
+      "id": "F1-MENU",
+      "prioridad": "P0",
+      "estado": "CAUSA_COMPROBADA_CORRECCION_DE_ANCHURA_PPSSPP_PARCIAL_QA_PENDIENTE",
+      "descripcion": "Cuadro Opciones ~764 px original frente a ~333 px parche y superposiciones",
+      "ids_a_revisar": [
+        "005687-005718",
+        "005695",
+        "005696",
+        "005697",
+        "005698",
+        "005709",
+        "005713"
+      ],
+      "causa": "Pérdida del relleno final ideográfico en STRTBL.DAT grupo_id 005709 elimina el ancho usado para dimensionar la ventana. La sustitución aislada 005709 es la condición que recupera el cuadro.",
+      "diagnostico_estatico_confirmado": true,
+      "correccion_aceptada": true,
+      "prueba_visual_nueva": true,
+      "candidata_iso_nueva": true,
+      "ids_candidato_ensayo": [
+        "005695",
+        "005696",
+        "005697",
+        "005698",
+        "005709"
+      ],
+      "correccion_aceptada_alcance": "anchura de Opciones sin superposicion observada; NO cierre total de F1",
+      "ids_corregidos": [
+        "005709"
+      ],
+      "anchura_original_exterior_px": 764,
+      "anchura_v015_exterior_px": 332,
+      "anchura_f1_exterior_px": 748,
+      "sesiones_ppsspp": [
+        "USA original",
+        "v015 reconstruida exacta",
+        "solo 005697 negativo",
+        "solo 005709 positivo",
+        "los cinco comparativo",
+        "submenu Controles 005709"
+      ],
+      "pendientes": [
+        "16px restantes respecto USA",
+        "005710 EN, revisar traducción",
+        "005713 APAGADO y valores con cursor",
+        "modo de controles y glifos de atlas QA exhaustivo",
+        "verificacion de regreso a menú y ajustes guardados"
+      ]
+    },
+    {
+      "id": "F2-ICONOS",
+      "prioridad": "P1",
+      "estado": "RIESGO_NO_CERTIFICADO",
+      "descripcion": "19 nuevos glifos A1-B3 desplazan +19 indices de 2626 glifos; falta verificar uso por codigo vs indice",
+      "causa": "NO_DETERMINADA",
+      "evidencia_parcial": "Pantalla de controles 005709 PPSSPP real muestra iconos, sin revisión de los +19 indices del atlas ni todas las escenas"
+    },
+    {
+      "id": "F2-SIGNOS",
+      "prioridad": "P1",
+      "estado": "CORRECCION_BINARIA_SIN_VALIDACION_VISUAL",
+      "descripcion": "¿ ¡ corregidos en atlas; no probados exhaustivamente en dialogo PPSSPP"
+    },
+    {
+      "id": "F3-INTRO",
+      "prioridad": "P0",
+      "estado": "CONFIRMADO_NO_CORREGIDO",
+      "descripcion": "Introduccion conserva frases en ingles; falta localizar recurso/ID"
+    },
+    {
+      "id": "F4-SCRIPTS",
+      "prioridad": "P0",
+      "estado": "PROTEGIDO_PARCIAL",
+      "descripcion": "4524 cambios de longitud de SCRIPT.DAT aplazados para preservar offsets"
+    },
+    {
+      "id": "F5-JUEGO",
+      "prioridad": "P1",
+      "estado": "PENDIENTE",
+      "descripcion": "Segundo nivel, enciclopedia, combate y guardado/carga no certificados"
+    },
+    {
+      "id": "F6-EXE",
+      "prioridad": "P1",
+      "estado": "PENDIENTE",
+      "descripcion": "EXE privado no probado en Windows x64"
+    }
+  ],
+  "eventos_originales": {
+    "bloques_script": 1625,
+    "comandos_script": 51705,
+    "comandos_no_textuales": 46308,
+    "textos_script_misma_longitud_insertados": 376,
+    "textos_script_diferente_longitud_aplazados": 4524
+  },
+  "pruebas_realmente_ejecutadas": [
+    "SHA-256 ISO USA del 7z cotejado y 349 PSPFS identificados",
+    "ISO v0.1.5 reconstruida sin cambios idéntica al hash histórico 9be7b07a...",
+    "ISO/BPS individuales 005697, 005709, cinco IDs; hashes y BPS roundtrip en los 3",
+    "ISO/BPS canonicos F1 v016 compilan byte a byte identicos a variante 005709 probada",
+    "349 PSPFS, 345 recursos PSPFS ajenos preservados, ISO9660 ajenos invariantes",
+    "51.705 comandos, 46.308 no textuales, 1.625 scripts y cero offsets de comandos desplazados; 4.524 aplazados",
+    "PPSSPP 1.20.4 real: original Opciones 764px, v015 332px, 005697 332px, 005709 748px, cinco 748px exteriores",
+    "PPSSPP real: desplazamiento cursor, ayudas, submenú Controles 005709",
+    "CI GitHub run 44864818033: 126 pruebas Python, integridad y borrador, integrabilidad, Go test, build publico Windows sin payload",
+    "Intento experimental +1 espacio 005709: ISO/BPS construidos y guardas pasan, pero no hay captura PPSSPP utilizable",
+    "2026-11-21: archivo 7z extraído; ISO original autenticada 305496064 bytes SHA b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "2026-11-21: auditoría independiente ISO9660/PVD original: DATA.DAT offset 113770496, size 191697408, PSPFS_V1 349 entradas únicas con offsets dentro del contenedor",
+    "2026-11-21: py_compile de herramientas y tests ON/OFF nuevos: PASS (únicamente sintaxis)",
+    "2026-11-21: DATABASE.DAT IMY + FONT.ARC originales decodificados en privado, STRTBL.DAT y FONT.BIN con SHA-256 exactos históricos",
+    "2026-11-21: fuente FONT.BIN original: ON 84px, EN 84px, Sí 80px, OFF 84px, APAGADO 115px, No 77px; 005709 F1 303px, +1 ideográfico 318px (solo avances, NO PPSSPP)",
+    "GitHub Actions 44904208388 y 44904203528 para caa60c0...: 130 Python PASS, Go PASS, corpus/integrabilidad PASS, build público Windows sin payload PASS",
+    "21/11 nueva sesión: auditoría binaria privada ISO USA original, 16 ISO9660 (12 archivos), 349 PSPFS, DSARC DATABASE.DAT=30 FONT.ARC=7 SCRIPT.SDT=4, 1625 scripts, 51705 comandos, 46308 no textuales, 5397 textuales; todo en origen solamente.",
+    "21/11: métricas reales de FONT.BIN para las 32 cadenas 005687–005718: 005709 original=303, borrador=111, F1 mínimo=303, +1=318px; 005710 ON/EN=84px, Sí=80; 005713 OFF=84, APAGADO=115, No=77; métricas estáticas NO visuales.",
+    "GitHub Actions HEAD de código 3c6276dc: runs 44905002958 y 44904998228 PASS, 134 tests Python, Go PASS, integridad/planificación PASS, build Windows público sin payload PASS."
+  ],
+  "pruebas_no_ejecutadas": [
+    "Prueba PPSSPP valida del candidato extra +1 ideografico en 005709; no aprobado",
+    "Correccion y verificacion de los 16px de diferencia residual",
+    "Revisión lingüística y pruebas de todas las posiciones 005710 (EN), 005713 (APAGADO) y variantes de opciones",
+    "QA del acceso por codigo frente a indice de los iconos en todo el motor",
+    "reproduccion de intro completamente traducida, segundo nivel, enciclopedia, combates, guardado/carga",
+    "Prueba del EXE privado en Windows x64",
+    "Modelo de saltos internos probado para reinsertar los 4524 scripts protegidos",
+    "2026-11-21: nueva ejecución PPSSPP real, PNG o prueba +1: bloqueo de descarga del AppImage por DNS; no hay capturas nuevas",
+    "2026-11-21: suite Python/Go completa local, reconstrucción ISO/BPS nuevas y auditoría de candidatas: no realizadas por falta de checkout de red; comprobar CI por commit",
+    "21/11: generación de ISO/BPS nuevas y comparación hash/roundtrip faltan (repo completo y PPSSPP no descargables en contenedor sin DNS).",
+    "21/11: variante +1 genera CSV en Python CI, pero NO fue probada gráficamente en PPSSPP ni generó ISO/BPS en este entorno."
+  ],
+  "siguiente_accion": "F1 P0: generar CSV privado +1 con tools/experimento_menu_f1_residuo.py, integrarlo --borrador --event-safe-only, cotejar ISO SHA f97fa...03c8 y BPS 279b...4fc, probar PPSSPP real anchos y cursor; luego ensayar ON/OFF y auditar candidata 349/51705/1625; sin F2.",
+  "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
+  "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
+  "ultimo_commit_trabajo": "ad41bee059ce12065cdde05df5a862da1e8e9017",
+  "obligacion_de_relevo": "Al terminar cada etapa actualizar estado, crear prompts/SIGUIENTE_TAREA.md con prompt autonomo que a su vez obligue a generar el siguiente",
+  "hashes_antiguos_v015_no_verificados_en_esta_sesion": false,
+  "f1_experimento_estatico": {
+    "estado": "CAUSA_AISLADA_EN_PPSSPP_Y_OVERRIDE_CANONICO_COMPILADO",
+    "iso_original_bytes": 305496064,
+    "pspfs_original_numero_recursos": 349,
+    "fuente_avance_espacio_ascii": 7,
+    "fuente_avance_espacio_ideografico": 15,
+    "ids_con_variantes_propuestas": [
+      "005695",
+      "005696",
+      "005697",
+      "005698",
+      "005709"
+    ],
+    "ids_sin_cambio_propuesto": [
+      "005713"
+    ],
+    "anchos_px": [
+      {
+        "grupo_id": "005695",
+        "original": 85,
+        "es_actual": 33,
+        "variante": 85
+      },
+      {
+        "grupo_id": "005696",
+        "original": 83,
+        "es_actual": 59,
+        "variante": 83
+      },
+      {
+        "grupo_id": "005697",
+        "original": 99,
+        "es_actual": 22,
+        "variante": 99
+      },
+      {
+        "grupo_id": "005698",
+        "original": 170,
+        "es_actual": 106,
+        "variante": 170
+      },
+      {
+        "grupo_id": "005709",
+        "original": 303,
+        "es_actual": 111,
+        "variante": 303
+      },
+      {
+        "grupo_id": "005713",
+        "original": 84,
+        "es_actual": 115,
+        "variante": null
+      }
+    ],
+    "evidencia_rutas": [
+      "reports/menu_f1_metricas_original_2026-11-20.json",
+      "docs/EXPERIMENTO_MENU_F1_2026-11-20.md"
+    ],
+    "nota": "Anchos obtenidos leyendo FONT.BIN original: NO son capturas ni medidas de caja PPSSPP.",
+    "conclusion_visual": "005709 cambia ancho exterior 332 (v015) a 748px; 005697 solo no lo cambia; cinco correcciones tampoco mejoran sobre 005709; original 764px",
+    "codigo_implementado": [
+      "tools/menu_layout_es.py",
+      "tools/integrar_parche_seguro.py",
+      "tests/test_menu_layout_es.py"
+    ],
+    "hash_iso_canónico_f1": "9b7fc809bb106953a91d6ad6e4e23363eb7fb92760659607d484f71132b5da89",
+    "hash_bps_canónico_f1": "5047fa7b565f84ec204f7f1dde4e47752eb2013af8daa40d68714ca7255b1566"
+  },
+  "ejecucion_ci_actual": {
+    "workflow": "validacion-integracion-eventos.yml",
+    "run_id": 44905002958,
+    "run_id_adicional": 44904998228,
+    "commit": "3c6276dc7f13974fbd085510c96e91cff53c1f3c",
+    "resultado": "SUCCESS",
+    "python_tests": 134,
+    "go_tests": "PASS",
+    "integridad_corpus": "PASS",
+    "validacion_borrador": "PASS",
+    "integrabilidad": "PASS",
+    "public_windows_build": "PASS_SIN_PAYLOAD",
+    "ppsspp_real": "NO_EJECUTADO_2026_11_21",
+    "generacion_iso_bps": "NO_EJECUTADA_2026_11_21"
+  },
+  "evidencias_nuevas_sesion": [
+    "reports/RESULTADOS_F1_PPSSPP_REAL_2026-11-20.json",
+    "docs/RESULTADO_F1_PPSSPP_2026-11-20.md",
+    "capturas reales PNG y manifiesto SHA privado ZIP Cladun_F1_capturas_reales_PPSSPP_2026-11-20.zip",
+    "BPS privado Cladun_ES_F1_v016_EXPERIMENTAL_EVENT_SAFE.bps"
+  ],
+  "artefacto_evidencias_privado_f1": "Cladun_F1_capturas_reales_PPSSPP_2026-11-20.zip (local privado, no GitHub)",
+  "prompt_relevo_verificado": "Se generó nuevo prompt autónomo con archivos, hashes, comandos, PPSSPP real, bloqueos F1 y obligación recursiva",
+  "f1_sesion_2026_11_21": {
+    "estado": "ABIERTA_BLOQUEO_QA_VISUAL",
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "original_iso_bytes": 305496064,
+    "original_data_dat_offset": 113770496,
+    "original_data_dat_size": 191697408,
+    "original_pspfs_valid": 349,
+    "ejecutado": [
+      "extraccion ISO USA 7z",
+      "hash SHA-256 ISO original",
+      "auditoria ISO9660/PSPFS origen 349 rangos/nombres",
+      "sintaxis py_compile herramienta/test ONOFF"
+    ],
+    "archivos_codigo": [
+      "tools/experimento_onoff_f1.py",
+      "tests/test_experimento_onoff_f1.py"
+    ],
+    "archivos_documentacion": [
+      "docs/RESULTADO_F1_SESION_2026-11-21.md",
+      "prompts/SIGUIENTE_TAREA.md",
+      "reports/f1_metricas_onoff_original_2026-11-21.json"
+    ],
+    "ppSSPP_ejecutado": false,
+    "capturas_nuevas": 0,
+    "iso_bps_nuevos": false,
+    "csv_canonico_modificado": false,
+    "tests_python_suite_local": "NO_EJECUTADOS",
+    "go_tests_local": "NO_EJECUTADOS",
+    "bloqueo": "AppImage oficial ausente; descarga GitHub/apt falló por DNS en contenedor",
+    "onoff_propuesta_no_adoptada": {
+      "005710": "          Sí",
+      "005713": "         No"
+    },
+    "integridad_candidata_nueva": "NO_VERIFICADA",
+    "pr_draft_permanece": true,
+    "original_strtbl_sha256": "16d9da36c05380cbb8af7eba53cb26c7b3e21f8ef5c80fdb90fdba20621044bf",
+    "original_font_sha256": "1f1f5692fecb3b4a66c50f4b20191c1f2658a32ca1220902a5888ae9a11afb46",
+    "original_strtbl_slots": 654,
+    "original_strtbl_strings": 651,
+    "original_menu_indices": {
+      "005709": 501,
+      "005710": 502,
+      "005711": 503,
+      "005712": 504,
+      "005713": 505
+    },
+    "avances_onoff_original_font_px": {
+      "on_original": 84,
+      "en_borrador": 84,
+      "si_candidata": 80,
+      "off_original": 84,
+      "apagado_borrador": 115,
+      "no_candidata": 77,
+      "activado_candidata": 123,
+      "desactivado_candidata": 135,
+      "005709_layout_minimo": 303,
+      "005709_extra_ideografico": 318
+    },
+    "ci": {
+      "run_ids": [
+        44904208388,
+        44904203528
+      ],
+      "head_sha": "caa60c00121e04d8bf955ca9ed9872cbf39cc5d1",
+      "status": "SUCCESS",
+      "python_tests": 130,
+      "go": "PASS",
+      "integrabilidad": "PASS",
+      "build_windows_publico_sin_payload": "PASS",
+      "ppsspp_ci": false
+    },
+    "audit_original_local_executed": true,
+    "original_data_dat_sha256": "7f4db811e5d079ed58c15ee21cc14ab472d58d93f5c97378982a922c39af3404",
+    "original_iso9660_records": 16,
+    "original_iso9660_files": 12,
+    "original_pspfs_entries": 349,
+    "original_dsarc_counts": {
+      "DATABASE.DAT": 30,
+      "FONT.ARC": 7,
+      "SCRIPT.SDT": 4
+    },
+    "original_script_commands": 51705,
+    "original_script_nontext": 46308,
+    "original_script_text": 5397,
+    "original_script_starts": 1625,
+    "font_metric_005709_px": {
+      "source": 303,
+      "draft": 111,
+      "canonical": 303,
+      "plus_one": 318
+    },
+    "verified_code_commit": "3c6276dc7f13974fbd085510c96e91cff53c1f3c",
+    "code_ci_runs": [
+      44905002958,
+      44904998228
+    ],
+    "code_ci_result": "SUCCESS",
+    "code_ci_python_tests": 134,
+    "nuevo_generador_plus_one": "tools/experimento_menu_f1_residuo.py",
+    "nuevo_test_plus_one": "tests/test_experimento_menu_f1_residuo.py",
+    "reporte_original": "reports/auditoria_original_f1_2026-11-21.json",
+    "reporte_metricas": "reports/metricas_menu_f1_2026-11-21.json",
+    "roundtrip_nuevo": false,
+    "auditoria_candidata_nueva": false
+  }
+}

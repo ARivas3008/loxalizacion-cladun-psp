@@ -452,7 +452,7 @@ func main() {
 		showError("Error de inicio", "No se pudo registrar la ventana de Windows.")
 		return
 	}
-	hwnd := call(procCreateWindow, 0, uintptr(unsafe.Pointer(className)), uintptr(unsafe.Pointer(u16("Cladun · ISO al español (experimental) v0.1.3"))), wsOverlappedWindow|wsVisible|wsClipChildren,
+	hwnd := call(procCreateWindow, 0, uintptr(unsafe.Pointer(className)), uintptr(unsafe.Pointer(u16("Cladun · ISO al español (eventos protegidos · experimental) v0.1.5"))), wsOverlappedWindow|wsVisible|wsClipChildren,
 		140, 80, 772, 643, 0, 0, instance, 0)
 	if hwnd == 0 {
 		return

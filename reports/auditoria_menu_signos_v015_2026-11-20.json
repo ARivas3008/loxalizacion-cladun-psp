@@ -1,0 +1,49 @@
+{
+  "schema": "cladun.es.font_symbol_audit.v1",
+  "status": "EXPERIMENTAL_PARTIAL_NO_PPSSPP_VERIFICATION",
+  "source_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "v014_iso_sha256": "7d7d598c719500deaf58cb8535106396745221da16f39ee9e3a2530f92da9fc8",
+  "v015_iso_sha256": "9be7b07a2c5c8c9026ffd0f829f613237f9a31e8fe2455856649ff6c1fe2b4ef",
+  "v015_bps_sha256": "976fda78adf3e6c2c3c31d5b89bc2f04b18c0905789305b25e9d0a58bf8cea0c",
+  "v015_exe_sha256": "82d33e51277a7fb3eaecc522bad89cb2f5974a65a81d1c81ed5c5e5d55d89606",
+  "font_arc_size_before_after_bytes": [
+    144192,
+    144192
+  ],
+  "original_glyphs_preserved_by_cp932_code": 2721,
+  "all_font_record_count": 2740,
+  "changed_font_glyph_codes_vs_v014": [
+    "0x00af",
+    "0x00b0"
+  ],
+  "other_glyphs_pixel_unchanged_vs_v014": 2738,
+  "verified_native_symbols_by_code": 23,
+  "symbols_whose_physical_index_moved": 23,
+  "physical_index_delta": 19,
+  "original_glyphs_whose_physical_index_moved": 2626,
+  "config_label_ids_exactly_translated": [
+    "005687",
+    "005688",
+    "005689",
+    "005690",
+    "005691",
+    "005692",
+    "005693",
+    "005694"
+  ],
+  "misaligned_spacing_candidates": [
+    "005695",
+    "005696",
+    "005697",
+    "005698",
+    "005709",
+    "005713"
+  ],
+  "untranslated_script_changes_deferred_for_event_offsets": 4524,
+  "remaining_348_pspfs_entries_equal_to_v014": true,
+  "patch_roundtrip_hash_matches": true,
+  "ppsspp_font_visual_verified": false,
+  "ppsspp_symbol_index_access_verified": false,
+  "full_game_playtested": false,
+  "release_certified": false
+}

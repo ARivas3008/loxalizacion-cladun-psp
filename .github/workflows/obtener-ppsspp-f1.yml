@@ -1,0 +1,25 @@
+name: PPSSPP 1.20.4 verificado para QA F1 (sin juegos)
+on:
+  push:
+    branches: [integracion-eventos-segura-20261120]
+    paths:
+      - .github/workflows/obtener-ppsspp-f1.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preparar-emulador:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar AppImage oficial y cotejar SHA-256 de GitHub Release
+        run: |
+          curl --fail --show-error --location --retry 3 --output /tmp/PPSSPP-v1.20.4-x86_64.AppImage \
+            'https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-v1.20.4-anylinux-x86_64.AppImage'
+          echo '661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21  /tmp/PPSSPP-v1.20.4-x86_64.AppImage' | sha256sum -c -
+          test "$(wc -c </tmp/PPSSPP-v1.20.4-x86_64.AppImage)" -eq 50689748
+      - name: Disponible solo como artefacto temporal sin juegos
+        uses: actions/upload-artifact@v4
+        with:
+          name: ppsspp-v1-20-4-linux-x86-64-oficial
+          path: /tmp/PPSSPP-v1.20.4-x86_64.AppImage
+          retention-days: 1
