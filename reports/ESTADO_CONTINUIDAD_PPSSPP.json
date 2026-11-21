@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1 ABIERTA: original autenticado y generador experimental ON/OFF añadido; PPSSPP nuevo bloqueado por descarga DNS; faltan 16px/valores/QA",
+  "fase_actual": "F1 ABIERTA: ISO original re-auditada 349 PSPFS y 51705 eventos; variante aislada +1 U+3000 preparada y 134 tests PASS; PPSSPP y candidatos privados NO ejecutados.",
   "version_iso_ensayada": "NO SE CONSTRUYO NI ENSAYO NUEVA ISO EL 2026-11-21; anterior v0.1.6 F1",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -142,7 +142,10 @@
     "2026-11-21: py_compile de herramientas y tests ON/OFF nuevos: PASS (únicamente sintaxis)",
     "2026-11-21: DATABASE.DAT IMY + FONT.ARC originales decodificados en privado, STRTBL.DAT y FONT.BIN con SHA-256 exactos históricos",
     "2026-11-21: fuente FONT.BIN original: ON 84px, EN 84px, Sí 80px, OFF 84px, APAGADO 115px, No 77px; 005709 F1 303px, +1 ideográfico 318px (solo avances, NO PPSSPP)",
-    "GitHub Actions 44904208388 y 44904203528 para caa60c0...: 130 Python PASS, Go PASS, corpus/integrabilidad PASS, build público Windows sin payload PASS"
+    "GitHub Actions 44904208388 y 44904203528 para caa60c0...: 130 Python PASS, Go PASS, corpus/integrabilidad PASS, build público Windows sin payload PASS",
+    "21/11 nueva sesión: auditoría binaria privada ISO USA original, 16 ISO9660 (12 archivos), 349 PSPFS, DSARC DATABASE.DAT=30 FONT.ARC=7 SCRIPT.SDT=4, 1625 scripts, 51705 comandos, 46308 no textuales, 5397 textuales; todo en origen solamente.",
+    "21/11: métricas reales de FONT.BIN para las 32 cadenas 005687–005718: 005709 original=303, borrador=111, F1 mínimo=303, +1=318px; 005710 ON/EN=84px, Sí=80; 005713 OFF=84, APAGADO=115, No=77; métricas estáticas NO visuales.",
+    "GitHub Actions HEAD de código 3c6276dc: runs 44905002958 y 44904998228 PASS, 134 tests Python, Go PASS, integridad/planificación PASS, build Windows público sin payload PASS."
   ],
   "pruebas_no_ejecutadas": [
     "Prueba PPSSPP valida del candidato extra +1 ideografico en 005709; no aprobado",
@@ -153,9 +156,11 @@
     "Prueba del EXE privado en Windows x64",
     "Modelo de saltos internos probado para reinsertar los 4524 scripts protegidos",
     "2026-11-21: nueva ejecución PPSSPP real, PNG o prueba +1: bloqueo de descarga del AppImage por DNS; no hay capturas nuevas",
-    "2026-11-21: suite Python/Go completa local, reconstrucción ISO/BPS nuevas y auditoría de candidatas: no realizadas por falta de checkout de red; comprobar CI por commit"
+    "2026-11-21: suite Python/Go completa local, reconstrucción ISO/BPS nuevas y auditoría de candidatas: no realizadas por falta de checkout de red; comprobar CI por commit",
+    "21/11: generación de ISO/BPS nuevas y comparación hash/roundtrip faltan (repo completo y PPSSPP no descargables en contenedor sin DNS).",
+    "21/11: variante +1 genera CSV en Python CI, pero NO fue probada gráficamente en PPSSPP ni generó ISO/BPS en este entorno."
   ],
-  "siguiente_accion": "Obtener PPSSPP oficial SHA esperado, probar visualmente variante +1 005709, luego ON 005710 y OFF 005713 con CSV aislados y 005709 incorporado; auditar ISO/BPS privadas y recorrer Opciones; conservar --event-safe-only.",
+  "siguiente_accion": "F1 P0: generar CSV privado +1 con tools/experimento_menu_f1_residuo.py, integrarlo --borrador --event-safe-only, cotejar ISO SHA f97fa...03c8 y BPS 279b...4fc, probar PPSSPP real anchos y cursor; luego ensayar ON/OFF y auditar candidata 349/51705/1625; sin F2.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
   "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
   "ultimo_commit_trabajo": "ad41bee059ce12065cdde05df5a862da1e8e9017",
@@ -231,11 +236,11 @@
   },
   "ejecucion_ci_actual": {
     "workflow": "validacion-integracion-eventos.yml",
-    "run_id": 44904208388,
-    "run_id_adicional": 44904203528,
-    "commit": "caa60c00121e04d8bf955ca9ed9872cbf39cc5d1",
+    "run_id": 44905002958,
+    "run_id_adicional": 44904998228,
+    "commit": "3c6276dc7f13974fbd085510c96e91cff53c1f3c",
     "resultado": "SUCCESS",
-    "python_tests": 130,
+    "python_tests": 134,
     "go_tests": "PASS",
     "integridad_corpus": "PASS",
     "validacion_borrador": "PASS",
@@ -254,7 +259,7 @@
   "prompt_relevo_verificado": "Se generó nuevo prompt autónomo con archivos, hashes, comandos, PPSSPP real, bloqueos F1 y obligación recursiva",
   "f1_sesion_2026_11_21": {
     "estado": "ABIERTA_BLOQUEO_QA_VISUAL",
-    "original_iso_sha256": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
     "original_iso_bytes": 305496064,
     "original_data_dat_offset": 113770496,
     "original_data_dat_size": 191697408,
@@ -322,6 +327,39 @@
       "integrabilidad": "PASS",
       "build_windows_publico_sin_payload": "PASS",
       "ppsspp_ci": false
-    }
+    },
+    "audit_original_local_executed": true,
+    "original_data_dat_sha256": "7f4db811e5d079ed58c15ee21cc14ab472d58d93f5c97378982a922c39af3404",
+    "original_iso9660_records": 16,
+    "original_iso9660_files": 12,
+    "original_pspfs_entries": 349,
+    "original_dsarc_counts": {
+      "DATABASE.DAT": 30,
+      "FONT.ARC": 7,
+      "SCRIPT.SDT": 4
+    },
+    "original_script_commands": 51705,
+    "original_script_nontext": 46308,
+    "original_script_text": 5397,
+    "original_script_starts": 1625,
+    "font_metric_005709_px": {
+      "source": 303,
+      "draft": 111,
+      "canonical": 303,
+      "plus_one": 318
+    },
+    "verified_code_commit": "3c6276dc7f13974fbd085510c96e91cff53c1f3c",
+    "code_ci_runs": [
+      44905002958,
+      44904998228
+    ],
+    "code_ci_result": "SUCCESS",
+    "code_ci_python_tests": 134,
+    "nuevo_generador_plus_one": "tools/experimento_menu_f1_residuo.py",
+    "nuevo_test_plus_one": "tests/test_experimento_menu_f1_residuo.py",
+    "reporte_original": "reports/auditoria_original_f1_2026-11-21.json",
+    "reporte_metricas": "reports/metricas_menu_f1_2026-11-21.json",
+    "roundtrip_nuevo": false,
+    "auditoria_candidata_nueva": false
   }
 }
