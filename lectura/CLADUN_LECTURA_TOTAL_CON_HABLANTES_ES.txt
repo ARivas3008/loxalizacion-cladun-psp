@@ -29523,7 +29523,7 @@ Floors cleared record cut in half...
   EN: Show decimal points for damage　　　　　　　
 
 [CLD-005900] grupo=005710 recurso=DATABASE.DAT/STRTBL.DAT
-  ES:           EN
+  ES:           Sí
   EN:           ON
 
 [CLD-005901] grupo=005711 recurso=DATABASE.DAT/STRTBL.DAT
@@ -29535,7 +29535,7 @@ Floors cleared record cut in half...
   EN:  Under 10 ON
 
 [CLD-005903] grupo=005713 recurso=DATABASE.DAT/STRTBL.DAT
-  ES:          APAGADO
+  ES:          No
   EN:          OFF
 
 [CLD-005904] grupo=005714 recurso=DATABASE.DAT/STRTBL.DAT

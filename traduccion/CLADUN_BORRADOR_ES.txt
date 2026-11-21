@@ -17799,7 +17799,7 @@ Salir de la configuración de botones.
 Decimales de daño
 
 [005710] INTERFAZ
-          EN
+          Sí
 
 [005711] INTERFAZ
 Menos de 1: SÍ
@@ -17808,7 +17808,7 @@ Menos de 1: SÍ
 Menos de 10: SÍ
 
 [005713] INTERFAZ
-         APAGADO
+         No
 
 [005714] INTERFAZ
 Muestra decimales en el daño.
