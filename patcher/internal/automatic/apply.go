@@ -17,9 +17,9 @@ import (
 
 // This is an EXPERIMENTAL patch generated from the exact USA ISO.
 // Event offsets are preserved in this PARTIAL edition (4,524 scripts deferred).
-// This exact edition has NOT been play-tested in PPSSPP.
-const PatchSHA256 = "cbb3dfe5882524cc0f98e0f0007cfb63bec26abdbae6249fc07077d37d4ad9af"
-const TargetSHA256 = "7d7d598c719500deaf58cb8535106396745221da16f39ee9e3a2530f92da9fc8"
+// v0.1.5 fixes the horizontal origin of ¿ and ¡. PPSSPP rendering of this edition remains unverified.
+const PatchSHA256 = "976fda78adf3e6c2c3c31d5b89bc2f04b18c0905789305b25e9d0a58bf8cea0c"
+const TargetSHA256 = "9be7b07a2c5c8c9026ffd0f829f613237f9a31e8fe2455856649ff6c1fe2b4ef"
 
 func PayloadValid(patch []byte) bool {
 	if len(patch) < 19 || string(patch[:4]) != "BPS1" {
