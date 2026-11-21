@@ -149,5 +149,19 @@
     "F4": "4524 scripts de longitud diferente protegidos",
     "F5": "aventura/niveles/combate/guardado/carga",
     "F6": "BPS final Windows EXE QA completa"
+  },
+  "ci": {
+    "checked_head": "88edf04a4667289e45d725828e4c74efd19b1507",
+    "run_ids": [
+      44956876063,
+      44956870486
+    ],
+    "conclusion": "success",
+    "python_tests": 140,
+    "go": "PASS",
+    "corpus": "PASS",
+    "integrabilidad": "PASS",
+    "windows_build": "PASS_SIN_PAYLOAD",
+    "ppsspp_real": "EN_ENTORNO_PRIVADO_SEPARADO_NO_CI"
   }
 }

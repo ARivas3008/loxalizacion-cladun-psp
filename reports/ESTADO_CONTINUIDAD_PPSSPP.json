@@ -164,7 +164,8 @@
     "21/11 tarde: ISO ES +1 ASCII + Sí/No SHA 496689f..., BPS daaa64a..., roundtrip exacto, 349 PSPFS 345 ajenos intactos, ISO9660/DSARC ajenos intactos, 51705 opcodes, 46308 nontext, 1625 starts, 0 offsets movidos, 4524 aplazados.",
     "21/11 tarde: 27 PNG reales scrot en ZIP privado SHA 66f23bd..., 18 capturas Opciones de la candidata final, 2 de la original, 2 de +1 ideográfico, controles/título; navegación completa volumen, Real/Retro, 4 modos daño, efectos, Capturas y Controles, regreso a título.",
     "21/11 tarde: herramienta de compilación canónica produce ISO 496689f... idéntica byte a byte a candidata experimentada PPSSPP; BPS canónico daaa64a... idéntico con roundtrip.",
-    "21/11 tarde: 2 cambios literarios 005710 EN->Sí y 005713 APAGADO->No, CSV/TXT/plain+bilingüe/QA/vista sincronizados en único commit a94e695c..., resto del corpus 9237 intacto."
+    "21/11 tarde: 2 cambios literarios 005710 EN->Sí y 005713 APAGADO->No, CSV/TXT/plain+bilingüe/QA/vista sincronizados en único commit a94e695c..., resto del corpus 9237 intacto.",
+    "GitHub Actions 21/11 run 44956876063/44956870486 commit 88edf04: 140 Python tests SUCCESS, corpus/borrador/integrabilidad SUCCESS, Go SUCCESS y compilación Windows SIN payload SUCCESS; PPSSPP real ocurrió fuera del CI."
   ],
   "pruebas_no_ejecutadas": [
     "Prueba PPSSPP valida del candidato extra +1 ideografico en 005709; no aprobado",
@@ -255,18 +256,19 @@
   },
   "ejecucion_ci_actual": {
     "workflow": "validacion-integracion-eventos.yml",
-    "run_id": 44905002958,
-    "run_id_adicional": 44904998228,
-    "commit": "3c6276dc7f13974fbd085510c96e91cff53c1f3c",
+    "run_id": 44956876063,
+    "run_id_adicional": 44956870486,
+    "commit": "88edf04a4667289e45d725828e4c74efd19b1507",
     "resultado": "SUCCESS",
-    "python_tests": 134,
+    "python_tests": 140,
     "go_tests": "PASS",
     "integridad_corpus": "PASS",
     "validacion_borrador": "PASS",
     "integrabilidad": "PASS",
     "public_windows_build": "PASS_SIN_PAYLOAD",
-    "ppsspp_real": "NO_EJECUTADO_2026_11_21",
-    "generacion_iso_bps": "NO_EJECUTADA_2026_11_21"
+    "ppsspp_real": "EJECUTADO_2026_11_21_PRIVADO_NO_CI",
+    "generacion_iso_bps": "EJECUTADA_PRIVADA_2026_11_21_NO_CI",
+    "nota": "Este resultado de CI corresponde al último commit probado 88edf04; una edición documental posterior requiere CI de su propio SHA."
   },
   "evidencias_nuevas_sesion": [
     "reports/RESULTADOS_F1_PPSSPP_REAL_2026-11-20.json",

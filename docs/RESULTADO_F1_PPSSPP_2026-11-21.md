@@ -58,3 +58,7 @@ Se ejecutaron en sesión Python de pruebas y verificadores de integridad y plani
 ## Relevo recursivo
 
 Ver `prompts/SIGUIENTE_TAREA.md`. La próxima tarea debe comenzar **F2: 19 glifos A1–B3, desplazamiento +19 índices del atlas, botones e interacciones por código versus índice**, conservando congelada la solución F1 y exigiendo otro prompt autónomo al terminar.
+
+## Verificación final de GitHub Actions (21/11/2026)
+
+Las ejecuciones `44956876063` y `44956870486` del commit `88edf04a4667289e45d725828e4c74efd19b1507` resultaron **SUCCESS**. El log registra **140 pruebas Python**, integridad de corpus y borrador, integrabilidad, `go test ./...` y compilación pública Windows x64 SIN payload; prohibición de versionar ISO/BPS verificada. Esto es CI de código; la QA visual/ISO/BPS privada está documentada por separado. Esta incorporación documental da lugar a un HEAD nuevo que debe cotejarse nuevamente antes de declarar CI del HEAD actual.
