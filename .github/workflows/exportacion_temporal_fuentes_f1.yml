@@ -1,0 +1,27 @@
+# Temporal: transferir únicamente fuentes publicadas en el repositorio para
+# probar localmente el integrador sin descargar por DNS. NO incluir ISO/BPS.
+name: Exportacion temporal fuentes F1 sin juego
+on:
+  push:
+    branches: [integracion-eventos-segura-20261120]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fuentes-f1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Empaquetar solo fuentes versionadas (NO ISO ni assets del juego)
+        run: |
+          if git ls-files | grep -Ei '\.(iso|cso|pbp|7z|bps|exe)$'; then
+            echo 'ERROR: material de juego no autorizado en el repositorio'; exit 1
+          fi
+          tar -czf "$RUNNER_TEMP/fuentes_cladun_f1.tar.gz" --exclude='.git'             AGENTS.md README.md .github tools tests corpus traduccion qa reports patcher lectura docs prompts
+      - name: Artefacto temporal de fuentes, nunca material comercial
+        uses: actions/upload-artifact@v4
+        with:
+          name: fuentes_cladun_f1
+          path: ${{ runner.temp }}/fuentes_cladun_f1.tar.gz
+          retention-days: 1
+          if-no-files-found: error
