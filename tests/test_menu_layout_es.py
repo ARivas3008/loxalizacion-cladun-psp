@@ -32,7 +32,7 @@ class TestMenuLayoutCanonico(unittest.TestCase):
                 self.assertEqual(src1["original"], SOURCE_ORIGINAL)
         self.assertEqual(changed, [(GROUP_ID, ["espanol"])])
 
-    def test_mantiene_anchura_del_original_segun_font(self):
+    def test_avance_310px_difiere_7px_pero_caja_ppsspp_es_igual(self):
         path = Path(__file__).resolve().parents[1] / "reports/menu_f1_metricas_subconjunto_2026-11-20.json"
         metricas, _ = load_metrics_snapshot(path)
         self.assertEqual(advance(SOURCE_ORIGINAL, metricas), 303)

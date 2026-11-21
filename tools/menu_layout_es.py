@@ -45,8 +45,8 @@ def patch_canonical_menu_layout(rows):
         "presentacion_es": repr(LAYOUT_TRANSLATION),
         "cambios_solo_en_presentacion": True,
         "corpus_y_borrador_maestros_inmutables": True,
-        "verificacion_ppsspp": "CORRECCION_740PX_INTERIOR_VS_756PX_USA_ORIGINAL",
-        "faltan": ["margen residual de 16px", "valor EN de 005710", "QA de todas las escenas"],
+        "verificacion_ppsspp": "OPCIONES_756PX_INTERIOR_CANONICO_IGUAL_USA_PPSSPP_2026_11_21",
+        "faltan": ["F2 símbolos por código/índice del atlas", "F3 introducción", "F4 scripts", "F5 QA aventura"],
     }
 
 
