@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Instalar Pillow para QA
+        run: python -m pip install 'Pillow>=12,<14'
       - name: Generar cambios atómicos y verificar
         run: |
           python tools/consolidar_f1_a_git.py

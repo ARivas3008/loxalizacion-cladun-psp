@@ -39,3 +39,5 @@ def main():
         if final.get(gid)!=new:raise ValueError("Sync falló "+gid)
     print("F1 LITERARIA SINCRONIZADA: 2 registros, 2 TXT, bitácora, vistas")
 if __name__=="__main__": main()
+
+# Reintento CI: instalar Pillow antes de ejecutar pruebas de gráficos.
