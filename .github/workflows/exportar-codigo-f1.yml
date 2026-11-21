@@ -1,0 +1,28 @@
+name: Exportar código público F1 para ejecución privada local
+on:
+  push:
+    branches: [integracion-eventos-segura-20261120]
+    paths:
+      - .github/workflows/exportar-codigo-f1.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exportar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Empaquetar exclusivamente el repositorio git
+        run: |
+          git archive --format=zip --output=/tmp/cladun-f1-repo-codigo.zip HEAD
+          unzip -l /tmp/cladun-f1-repo-codigo.zip | tail -1
+          if unzip -Z1 /tmp/cladun-f1-repo-codigo.zip | grep -Ei '\.(iso|cso|pbp|7z|bps|exe)$'; then
+            echo "Se detectó un binario restringido"; exit 1
+          fi
+          sha256sum /tmp/cladun-f1-repo-codigo.zip
+      - name: Exportar sin ISO ni BPS
+        uses: actions/upload-artifact@v4
+        with:
+          name: cladun-f1-codigo-publico
+          path: /tmp/cladun-f1-repo-codigo.zip
+          retention-days: 1
