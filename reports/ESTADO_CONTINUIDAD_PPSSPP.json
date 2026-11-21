@@ -1,0 +1,104 @@
+{
+  "schema": "cladun.ppsspp.continuity.v1",
+  "fecha_corte": "2026-11-20",
+  "repositorio": "https://github.com/ARivas3008/loxalizacion-cladun-psp",
+  "rama_base": "integracion-eventos-segura-20261120",
+  "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
+  "pr_es_borrador": true,
+  "fase_actual": "F1: diagnostico y correccion del menu de configuracion",
+  "version_iso_ensayada": "v0.1.5-EXPERIMENTAL-PARCIAL",
+  "hashes_sha256": {
+    "iso_original": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "iso_v015": "9be7b07a2c5c8c9026ffd0f829f613237f9a31e8fe2455856649ff6c1fe2b4ef",
+    "bps_v015": "976fda78adf3e6c2c3c31d5b89bc2f04b18c0905789305b25e9d0a58bf8cea0c",
+    "zip_evidencias": "4ba957b9ae85e8e41e165974bcf9dff97fa9eeabbcf582c25eaa9b00ddf60f7b"
+  },
+  "entorno_pruebas": "PPSSPP 1.20.4 Linux x86_64, software/llvmpipe Xvfb 1280x720 ventana 960x544",
+  "artefacto_evidencias_privado": "Evidencias_reales_PPSSPP_Cladun_ES_v015.zip",
+  "evidencia_positiva": [
+    "arranque y menu principal",
+    "acceso a Opciones",
+    "seleccion de musica Real/Retro",
+    "avance a introduccion",
+    "música y configuración visibles sin espacios tras acentos"
+  ],
+  "incidencias": [
+    {
+      "id": "F1-MENU",
+      "prioridad": "P0",
+      "estado": "CONFIRMADO_NO_CORREGIDO",
+      "descripcion": "Cuadro Opciones ~764 px original frente a ~333 px parche y superposiciones",
+      "ids_a_revisar": [
+        "005687-005718",
+        "005695",
+        "005696",
+        "005697",
+        "005698",
+        "005709",
+        "005713"
+      ],
+      "causa": "NO_DETERMINADA"
+    },
+    {
+      "id": "F2-ICONOS",
+      "prioridad": "P1",
+      "estado": "RIESGO_NO_CERTIFICADO",
+      "descripcion": "19 nuevos glifos A1-B3 desplazan +19 indices de 2626 glifos; falta verificar uso por codigo vs indice",
+      "causa": "NO_DETERMINADA"
+    },
+    {
+      "id": "F2-SIGNOS",
+      "prioridad": "P1",
+      "estado": "CORRECCION_BINARIA_SIN_VALIDACION_VISUAL",
+      "descripcion": "¿ ¡ corregidos en atlas; no probados exhaustivamente en dialogo PPSSPP"
+    },
+    {
+      "id": "F3-INTRO",
+      "prioridad": "P0",
+      "estado": "CONFIRMADO_NO_CORREGIDO",
+      "descripcion": "Introduccion conserva frases en ingles; falta localizar recurso/ID"
+    },
+    {
+      "id": "F4-SCRIPTS",
+      "prioridad": "P0",
+      "estado": "PROTEGIDO_PARCIAL",
+      "descripcion": "4524 cambios de longitud de SCRIPT.DAT aplazados para preservar offsets"
+    },
+    {
+      "id": "F5-JUEGO",
+      "prioridad": "P1",
+      "estado": "PENDIENTE",
+      "descripcion": "Segundo nivel, enciclopedia, combate y guardado/carga no certificados"
+    },
+    {
+      "id": "F6-EXE",
+      "prioridad": "P1",
+      "estado": "PENDIENTE",
+      "descripcion": "EXE privado no probado en Windows x64"
+    }
+  ],
+  "eventos_originales": {
+    "bloques_script": 1625,
+    "comandos_script": 51705,
+    "comandos_no_textuales": 46308,
+    "textos_script_misma_longitud_insertados": 376,
+    "textos_script_diferente_longitud_aplazados": 4524
+  },
+  "pruebas_realmente_ejecutadas": [
+    "BPS aplicado a ISO USA exacta",
+    "arranque PPSSPP",
+    "menú principal y configuración",
+    "inicio y parte de introducción"
+  ],
+  "pruebas_no_ejecutadas": [
+    "toda la aventura",
+    "todos los iconos",
+    "EXE en Windows",
+    "todos los signos en diálogo"
+  ],
+  "siguiente_accion": "F1: aislar causa de anchura, sangrías y solapamiento de Opciones; probar corrección real en PPSSPP contra original",
+  "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
+  "archivo_prompt_siguiente_generado": null,
+  "ultimo_commit_trabajo": null,
+  "obligacion_de_relevo": "Al terminar cada etapa actualizar estado, crear prompts/SIGUIENTE_TAREA.md con prompt autonomo que a su vez obligue a generar el siguiente"
+}
