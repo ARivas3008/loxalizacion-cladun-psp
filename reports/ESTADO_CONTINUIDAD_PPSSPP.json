@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1 CERRADA solo en Opciones según pruebas previas. F2 ABIERTA: auditoría independiente ISO USA/KITAJIMA y sonda RGB en memoria PASS; SIN nueva traza MIPS/GE/VRAM, QA 19 multicontesto ni regresión F1.",
+  "fase_actual": "F1 aprobada anteriormente solo Opciones; F2 ABIERTA. Nuevo QA binario de 19 glifos y 100 texels, cliente WS PPSSPP v1.20.4 implementado, pero SIN PPSSPP REAL nuevo ni GE/VRAM ni regresión F1 960x544.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -176,7 +176,8 @@
     "21/11 F2: PPSSPP controles F1 vs KITAJIMA magenta, 2 PNG originales +2 probe, 6 ROIs cambiar, negativos texto/borde cero; BPS diferencial desde F1 roundtrip.",
     "21/11 F2: PPSSPP un solo mensaje diagnostico con los 19 glifos; 2 PNG cada variante, amarillo ROI 516->0; blanca a4273198...; BPS diferencial desde ISO diagnóstica roundtrip.",
     "21/11 F2: Python suite local 152 PASS (1 skip), Go PASS, corpus/borrador/preinsercion/integrabilidad PASS.",
-    "21/11 F2 relevo: auditoría de ISO USA desde 7z y KITAJIMA por SHA/origen; 27 RGB simulados solo en memoria; 7 unitarios sintéticos PASS; NO nuevas capturas ni GE/VRAM."
+    "21/11 F2 relevo: auditoría de ISO USA desde 7z y KITAJIMA por SHA/origen; 27 RGB simulados solo en memoria; 7 unitarios sintéticos PASS; NO nuevas capturas ni GE/VRAM.",
+    "21/11 F2: ISO USA sha y rasters FONT redecodificados; 19/19 geométricos y 100 texels index15; 24 tests sintéticos locales PASS. No PPSSPP ni pruebas funcionales nuevas."
   ],
   "pruebas_no_ejecutadas": [
     "Prueba PPSSPP valida del candidato extra +1 ideografico en 005709; no aprobado",
@@ -667,5 +668,24 @@
     "blanco_por_defecto": false,
     "nuevos_png_iso_bps": false,
     "limitacion": "Sin AppImage PPSSPP oficial ni ISO F1 canónica en entorno local; no afirmarlos."
+  },
+  "f2_qa_estatica_websocket_2026_11_21": {
+    "estado": "F2_ABIERTA",
+    "report": "reports/RESULTADOS_F2_QA_ESTATICA_WS_2026-11-21.json",
+    "doc": "docs/F2_QA_ESTATICA_WS_2026-11-21.md",
+    "new_code": [
+      "tools/f2_qa_raster_19.py",
+      "tools/f2_ppsspp_ws_1204.py"
+    ],
+    "local_synthetic_tests": "24 PASS",
+    "original_iso_usa_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "glyphs": 19,
+    "ink_texels": 100,
+    "runtime_ppsspp_this_turn": false,
+    "new_png_count": 0,
+    "new_bps_count": 0,
+    "new_iso_count": 0,
+    "new_ge_pcs": 0,
+    "white_new_ink_default": false
   }
 }
