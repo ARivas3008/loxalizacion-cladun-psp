@@ -1,0 +1,83 @@
+{
+  "schema": "cladun.f2.authentic_iso_asset_contact_sheet_not_gameplay.2026-11-22.v1",
+  "status": "F2_ABIERTA_ESTUDIO_VISUAL_ESTATICO_DE_ASSETS",
+  "original_iso": {
+    "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "bytes": 305496064,
+    "source_bytes_rechecked": true
+  },
+  "source_archive": {
+    "name": "SYSGRA.ARC",
+    "sha256": "63d9443084a2aeab8c2a3f79aebdb130eaf6c5d2e86f8be51346d7458ab81854",
+    "members": 27
+  },
+  "method": "27 decoded IMY + PSP unswizzle tiled 16x8 bytes + exact original stored RGBA palette; each 0x84 color-definition presented as 256-swatch chart, not gameplay",
+  "private_evidence": {
+    "private_png": "Cladun_F2_Atlas_SYSGRA_27_Previsualizacion_Privada_NO_PPSSPP_2026-11-22.png",
+    "private_png_sha256": "947f7a0b2ae98a879dc57fd5c6d8dc7b655cf6b80af3389073fcab5fc4e7ed7f",
+    "private_png_bytes": 177957,
+    "private_detail_png": "Cladun_F2_TUIKA_MES_Texto_Embebido_Previsualizacion_Privada.png",
+    "private_detail_sha256": "d2ecd78a2a816c49d7f4c79f3a744c3760b510764883603157d45a8861eaedcb",
+    "private_detail_bytes": 13731,
+    "private_manifest": "Cladun_F2_Previsualizacion_SYSGRA_Manifest_PRIVADO_2026-11-22.json",
+    "private_manifest_sha256": "a4e28f2fa9c055efb0a445625158213a1a9bb031a357ede43f16185e0a2be6ec"
+  },
+  "findings": [
+    {
+      "name": "KITAJIMA_KARI.IMY",
+      "static_asset_content": "PlayStation control-button shapes",
+      "ppsspp_runtime_proven_in_this_relay": false,
+      "prior_real_proof_in_controls": true
+    },
+    {
+      "name": "SYS1.IMY",
+      "static_asset_content": "multicolored icons and symbols",
+      "runtime_context": "NOT_PROVEN"
+    },
+    {
+      "name": "MAHO_ST.IMY",
+      "static_asset_content": "LV Mana HP SP ATK DEF CRI BRK Walk Run labels",
+      "runtime_context": "NOT_PROVEN"
+    },
+    {
+      "name": "TUIKA_MES.IMY",
+      "stored_sha256": "c47140753a462cc5b1cc454ee79e0c37b526f06ba5c663b957a91202ebd09127",
+      "static_asset_content": "embedded graphical English labels: Replenished HP for all!, Recovered SP!, Attack all enemies on screen!, Nullified traps!, No special attack",
+      "needs_translation_as_graphic": true,
+      "runtime_context": "NOT_PROVEN"
+    },
+    {
+      "name": "DAMAGE.IMY",
+      "static_asset_content": "number/symbol glyph sprites",
+      "runtime_context": "NOT_PROVEN"
+    }
+  ],
+  "qa": {
+    "new_synthetic_tests": 17,
+    "total_python_tests_passed": 291,
+    "code_commit": "a440785480a4fa8eee8bfb68c47ee0d065c3e71b",
+    "ci_push_run_id": 45045487042,
+    "ci_pr_run_id": 45045491994,
+    "both_success": true,
+    "go_integrity_success": true,
+    "windows_build_success": true
+  },
+  "runtime": {
+    "new_ppsspp_1204_emulation": false,
+    "authentic_gameplay_png_count": 0,
+    "actual_ge_dumps": 0,
+    "icon_mips_ram_ge_vram_causality_proven": false,
+    "all_19_spanish_glyphs_multicontext_ppsspp_proven": false,
+    "f1_x11_current_regression": false
+  },
+  "safety": {
+    "game_assets_published_to_github": false,
+    "canonical_corpus_modified": false,
+    "source_iso_modified": false,
+    "white_new_ink_default_changed": false,
+    "event_safe_only_removed": false,
+    "pr7_draft": true
+  },
+  "blocker": "No official PPSSPP 1.20.4 AppImage installed, github.com DNS fails in terminal and container.download did not retrieve official asset; canonical F1 ISO not locally present",
+  "followup": "Prioritize locating official PPSSPP/ISO F1; once running determine TUIKA_MES English texture runtime use; design collision-free graphical localization by isolated IMY/CLUT probes and DSARC/PSPFS invariants; 19 glyphs and F1 regressions"
+}
