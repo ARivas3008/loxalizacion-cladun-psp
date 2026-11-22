@@ -64,24 +64,29 @@ def inspect_container(archive: bytes) -> dict:
     if len({r["name"] for r in items}) != count:
         raise ValueError("Duplicate DSARC member name")
     spans = []
-    rows = []
+    prelim = []
     for r in items:
         start, size = r["offset"], r["size"]
         end = start + size
         if size <= 0 or start < table_end or end > len(archive):
             raise ValueError("Invalid DSARC member offset/size")
+        prelim.append((r, start, end))
+        spans.append((start, end))
+    # Verify topology BEFORE classifying bytes: an overlapping member can
+    # corrupt the next magic and otherwise hide the actual structural cause.
+    spans.sort()
+    if any(prev_end > cur_start for (_, prev_end), (cur_start, _) in zip(spans, spans[1:])):
+        raise ValueError("DSARC members overlap")
+    rows = []
+    for r, start, end in prelim:
         member = archive[start:end]
         fmt = classify_header(r["name"], member)
         rows.append({
             "index": r["index"], "name": r["name"],
-            "offset": start, "length": size,
+            "offset": start, "length": end - start,
             "signature_kind": fmt, "sha256": sha256(member),
             "ppsspp_runtime_use_proven": False,
         })
-        spans.append((start, end))
-    spans.sort()
-    if any(prev_end > cur_start for (_, prev_end), (cur_start, _) in zip(spans, spans[1:])):
-        raise ValueError("DSARC members overlap")
     return {"container_magic": archive[:8].decode("ascii"),
             "members_count": count, "members": rows}
 
