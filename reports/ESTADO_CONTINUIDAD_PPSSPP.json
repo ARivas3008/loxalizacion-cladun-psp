@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1 CERRADA Opciones. F2 ABIERTA: auditados 2721 glifos preservados +19, búsqueda MIPS código->índice para texto y negativos atlas old/new en seis iconos de Controles. Pendiente textura real y QA 19 glifos en escenas.",
+  "fase_actual": "F1 CERRADA solo Opciones; F2 ABIERTA: KITAJIMA_KARI.IMY confirmado en seis iconos de Controles con PPSSPP real y color blanco experimental de 19 glifos probado en una ayuda, sin adoptar en F1. Falta MIPS/GE y QA multicontesto.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -39,7 +39,9 @@
     "21/11: PPSSPP real +1 U+3000 x326..1097 (772/780), rechazo por exceso 16px",
     "21/11: PPSSPP real +1 ASCII x342..1097 (756/764), ancho original exacto",
     "21/11: PPSSPP real candidata combinada 005709 +1 ASCII y 005710 Sí / 005713 No con espaciado de presentación; 18 capturas Opciones interiores 756px; cambio de todos valores",
-    "21/11: PPSSPP real Controles abierto, iconos visibles, restablecer controles y volver a título"
+    "21/11: PPSSPP real Controles abierto, iconos visibles, restablecer controles y volver a título",
+    "F2 21/11: KITAJIMA_KARI.IMY (SYSGRA.ARC) confirmado con PPSSPP: 27 bytes paleta, seis iconos magenta, texto/borde 0 diferencias y 348 PSPFS exactos.",
+    "F2 21/11: glifos españoles CP932 A1-B3 en ayuda real mostraban 516 pixels amarillos por tinta CLUT indice15; opt-in 100 texels indice1 blanco -> 0 amarillos en dos PNG reales, original 2721 intacto."
   ],
   "incidencias": [
     {
@@ -170,7 +172,10 @@
     "GitHub Actions 21/11 run 44956876063/44956870486 commit 88edf04: 140 Python tests SUCCESS, corpus/borrador/integrabilidad SUCCESS, Go SUCCESS y compilación Windows SIN payload SUCCESS; PPSSPP real ocurrió fuera del CI.",
     "F2 21/11: auditoría ISO USA y F1, 2721/2721 códigos/métricas/píxeles idénticos más 19 glifos A1-B3; PPSSPP debugger RAM FONT.BIN 0x09075000, PC 0x089089C8 lhu lectura real de código C.",
     "F2 21/11: 2 ISO privadas font-only old/new, 349 PSPFS 348 ajenos exactos, BPS desde ISO F1 roundtrip exacto, PPSSPP real Controles 6 iconos 0 pixel diff / Correr 504 / Cambiar 536.",
-    "F2 21/11: PPSSPP F1 regresión Opciones 756 px interior x342..1097; GitHub CI código commit 202ff8d 146 Python tests y Go PASS, 44959226947/44959222272 SUCCESS."
+    "F2 21/11: PPSSPP F1 regresión Opciones 756 px interior x342..1097; GitHub CI código commit 202ff8d 146 Python tests y Go PASS, 44959226947/44959222272 SUCCESS.",
+    "21/11 F2: PPSSPP controles F1 vs KITAJIMA magenta, 2 PNG originales +2 probe, 6 ROIs cambiar, negativos texto/borde cero; BPS diferencial desde F1 roundtrip.",
+    "21/11 F2: PPSSPP un solo mensaje diagnostico con los 19 glifos; 2 PNG cada variante, amarillo ROI 516->0; blanca a4273198...; BPS diferencial desde ISO diagnóstica roundtrip.",
+    "21/11 F2: Python suite local 152 PASS (1 skip), Go PASS, corpus/borrador/preinsercion/integrabilidad PASS."
   ],
   "pruebas_no_ejecutadas": [
     "Prueba PPSSPP valida del candidato extra +1 ideografico en 005709; no aprobado",
@@ -183,9 +188,11 @@
     "2026-11-21: nueva ejecución PPSSPP real, PNG o prueba +1: bloqueo de descarga del AppImage por DNS; no hay capturas nuevas",
     "2026-11-21: suite Python/Go completa local, reconstrucción ISO/BPS nuevas y auditoría de candidatas: no realizadas por falta de checkout de red; comprobar CI por commit",
     "21/11: generación de ISO/BPS nuevas y comparación hash/roundtrip faltan (repo completo y PPSSPP no descargables en contenedor sin DNS).",
-    "21/11: variante +1 genera CSV en Python CI, pero NO fue probada gráficamente en PPSSPP ni generó ISO/BPS en este entorno."
+    "21/11: variante +1 genera CSV en Python CI, pero NO fue probada gráficamente en PPSSPP ni generó ISO/BPS en este entorno.",
+    "F2: no se siguió rutina de carga MIPS/GE/VRAM ni iconos HUD/tutorial/combate.",
+    "F2: 19 glifos solo en un mensaje de diagnostico, no QA en varias escenas ni adopcion default de tinta blanca."
   ],
-  "siguiente_accion": "F2: localizar el origen preciso de texturas/iconos L/R/□/○/×/△ en Controles, HUD, tutoriales y diálogos; validar 19 glifos A1–B3 en PPSSPP real y repetir regresión F1.",
+  "siguiente_accion": "Continuar F2: trazado real de KITAJIMA_KARI.IMY hasta RAM/VRAM/PC MIPS y GE; ensayar HUD/tutoriales/combate; validar 19 glifos en varias escenas y regresar a F1 960x544 antes de adoptar tinta blanca por defecto.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
   "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
   "ultimo_commit_trabajo": "202ff8d92513106f2e24a193c5032500bcc74c2d (código F2; ver HEAD posterior de docs)",
@@ -266,13 +273,15 @@
       44959226947,
       44959222272
     ],
-    "resultado": "SUCCESS",
+    "resultado": "PENDIENTE_HEAD_FINAL",
     "python_tests": 146,
     "go_tests": "PASS",
     "corpus": "PASS",
     "integrabilidad": "PASS",
     "build_windows_publico": "PASS_SIN_PAYLOAD",
-    "nota": "CI confirmado del commit de código; revisar CI del HEAD documental posterior. No sustituye PPSSPP real."
+    "nota": "Verificar GitHub Actions de commit HEAD final tras docs; CI no sustituye PPSSPP.",
+    "python_tests_local": 152,
+    "go_local": "PASS"
   },
   "evidencias_nuevas_sesion": [
     "reports/RESULTADOS_F1_PPSSPP_REAL_2026-11-20.json",
@@ -524,5 +533,118 @@
       "pantallas reales con 19 caracteres A1-B3",
       "F3-F6 pendientes"
     ]
+  },
+  "f2_continuacion_2026_11_21": {
+    "estado": "ABIERTA",
+    "recurso_iconos_controles": {
+      "resource": "PSP_GAME/USRDIR/DATA.DAT → SYSGRA.ARC → KITAJIMA_KARI.IMY",
+      "pspfs_index": 225,
+      "pspfs_offset": 895488,
+      "dsarc_index": 17,
+      "dsarc_offset": 57856,
+      "imy_bytes": 2480,
+      "imy_sha256": "0ce89df69ad71a9ef3165217d7cb98103a1fb0e08c53ca3a85c594dfaa7a2190",
+      "probe_iso_sha256": "b634fe468158a7ba5c3242896d4b1c43e711de53a19869c3b469a4877bc2e73d",
+      "probe_bps_from_F1_sha256": "4b0a47d9ff2b33f364be45f508ab4510776c0bb6b4cc7245236699c5fbe25c61",
+      "bps_roundtrip_exact": true,
+      "changed_palette_rgb_bytes": 27,
+      "unchanged_pspfs": 348,
+      "unchanged_dsarc_members": 26,
+      "ppsspp_real_rois_changed": {
+        "R": 1136,
+        "square": 1360,
+        "cross": 1353,
+        "circle": 1353,
+        "triangle": 1337,
+        "L": 1143
+      },
+      "text_pixels_changed": 0,
+      "border_pixels_changed": 0,
+      "proven": "Seis iconos de pantalla CONTROLES proceden del miembro exacto, paleta causal magenta.",
+      "unproven": "No trazada instrucción MIPS/GE/VRAM ni iconos HUD/tutoriales/combate."
+    },
+    "correccion_tinta_optativa": {
+      "characters": "áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō",
+      "count": 19,
+      "diagnostic_line_id": "005694",
+      "private_csv_sha256": "800709d105a86e6da3252c44e4a2138fa8fec01e51afd0283e27913d272f1f7e",
+      "diagnostic_iso_yellow_sha256": "58f98b65185f39f172de0b5da97b9ce6fecb009e61b9462632f602485c99e4ca",
+      "diagnostic_bps_from_USA_sha256": "a95039e13f9ace10d7b14f7a2587c0297c4889bf5f87a0263da289d6cc40f971",
+      "corrected_iso_white_sha256": "a42731988835bddb9dc81ef6d242b9c5029030256f210838881a1d48aed2de33",
+      "white_bps_from_yellow_sha256": "2a698e1efaa1c2333dbd86ac8c3a9fabbd369382c4b8c7d3ad0ab7c7f2ffac3f",
+      "roundtrips_exact": true,
+      "defect": "Índice CLUT 15 amarillo (247,247,0) en FONT_00.IMY usado para trazos añadidos; índice 1 blanco (255,255,255).",
+      "fix": "white_new_ink=True solo nuevos 19 glifos; índice 15->1 en 100 texels; F1 mantiene False por defecto.",
+      "changed_texels": 100,
+      "original_2721_glyphs_unchanged": true,
+      "font_bin_unchanged": true,
+      "other_348_pspfs_unchanged": true,
+      "ppsspp_real_screenshots_each": 2,
+      "pixel_roi": {
+        "x": [
+          40,
+          700
+        ],
+        "y": [
+          624,
+          700
+        ],
+        "yellow_RGB": "R>180,G>170,B<80",
+        "yellow_before": 516,
+        "yellow_after": 0,
+        "bright_before": 10560,
+        "bright_after": 11046
+      },
+      "limits": "Un único mensaje diagnóstico real; falta comprobar cada forma, avance, recorte, anclaje y varios contextos."
+    },
+    "private_evidence": {
+      "private_zip_name": "Cladun_ES_F2_Iconos_Tinta_19Glifos_PPSSPP_2026-11-21_EVIDENCIAS_PRIVADAS.zip",
+      "zip_sha256": "af93e1d702d1d53d10d9fcfb326030c1a62cfb7c4ea4482846d7f26a83c49cad",
+      "zip_bytes": 1260036,
+      "raw_pngs": 9,
+      "raw_png_sha256": [
+        {
+          "name": "F1_CONTROLES_ESTADO_1.png",
+          "sha256": "6bdcc97c6fbd983e3d903476156642d3b572d048fec12918df103b000b68d653"
+        },
+        {
+          "name": "F1_CONTROLES_ESTADO_2.png",
+          "sha256": "b78e9c5b95d473da91eeade7dd568fc91ab575a3633a30ba38aac41a0ead8997"
+        },
+        {
+          "name": "F2_KITAJIMA_MAGENTA_ESTADO_1.png",
+          "sha256": "8cf72592f7ba3619b5867549b5cc25f2d0f3ce31bae6bef676eb5e002b0d5db3"
+        },
+        {
+          "name": "F2_KITAJIMA_MAGENTA_ESTADO_2.png",
+          "sha256": "92b4438623a94d92abfe23df4abeff81d2e0264e9427dc350168fba0414d84c8"
+        },
+        {
+          "name": "F2_GLIFOS_19_TINTA_AMARILLA_ESTADO_1.png",
+          "sha256": "9989de8f72b5185042bec185b2c6d3726009c8fdb4d4dd44f7a5cd2b3655213d"
+        },
+        {
+          "name": "F2_GLIFOS_19_TINTA_AMARILLA_ESTADO_2.png",
+          "sha256": "6b9ddcc5b8924c3bd32ef4ce3a7af6a2050c7bcf97ad95504cbf71c44fa98c7b"
+        },
+        {
+          "name": "F2_GLIFOS_19_TINTA_BLANCA_ESTADO_1.png",
+          "sha256": "4503105258b4107c32d62c6f59cccef28c45af616e767bf22a93f24ec90f9236"
+        },
+        {
+          "name": "F2_GLIFOS_19_TINTA_BLANCA_ESTADO_2.png",
+          "sha256": "52499859d51f76610aec45b348cb9d8f52bc46f397521b0bfc26c951bb118362"
+        },
+        {
+          "name": "F2_OPCIONES_CON_TINTA_BLANCA.png",
+          "sha256": "d6074826d5d577c3ffff6281958f4ef396d0bfb39052a58b904f44e8543d0499"
+        }
+      ],
+      "github_uploaded": false
+    },
+    "ci_final": "PENDIENTE",
+    "siguiente_prompt": "prompts/SIGUIENTE_TAREA.md",
+    "f1_intacta": true,
+    "pr_draft": true
   }
 }

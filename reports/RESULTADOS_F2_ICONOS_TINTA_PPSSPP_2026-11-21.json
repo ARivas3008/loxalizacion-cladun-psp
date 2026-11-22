@@ -1,0 +1,155 @@
+{
+  "schema": "cladun.f2.continuacion_iconos_tinta_2026_11_21.v1",
+  "fecha_local": "2026-11-21 America/Lima",
+  "estado": "F2_ABIERTA_CON_PRUEBAS_PPSSPP_REALES",
+  "ppsspp_version": "1.20.4 Linux AppImage oficial",
+  "appimage_sha256": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21",
+  "video_environment": "Xvfb :78 fullscreen1280x720 software; las medidas F1 756/764 previas usan ventana960x544",
+  "source_usa_sha256": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "f1_sha256": "496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986",
+  "f1_bps_sha256": "daaa64ab1994271debc6464f3c70ab0f30a2ab3f9a1743dbd6a65f3c88d20acd",
+  "icon_probe": {
+    "resource": "PSP_GAME/USRDIR/DATA.DAT → SYSGRA.ARC → KITAJIMA_KARI.IMY",
+    "pspfs_index": 225,
+    "pspfs_offset": 895488,
+    "dsarc_index": 17,
+    "dsarc_offset": 57856,
+    "imy_bytes": 2480,
+    "imy_sha256": "0ce89df69ad71a9ef3165217d7cb98103a1fb0e08c53ca3a85c594dfaa7a2190",
+    "probe_iso_sha256": "b634fe468158a7ba5c3242896d4b1c43e711de53a19869c3b469a4877bc2e73d",
+    "probe_bps_from_F1_sha256": "4b0a47d9ff2b33f364be45f508ab4510776c0bb6b4cc7245236699c5fbe25c61",
+    "bps_roundtrip_exact": true,
+    "changed_palette_rgb_bytes": 27,
+    "unchanged_pspfs": 348,
+    "unchanged_dsarc_members": 26,
+    "ppsspp_real_rois_changed": {
+      "R": 1136,
+      "square": 1360,
+      "cross": 1353,
+      "circle": 1353,
+      "triangle": 1337,
+      "L": 1143
+    },
+    "text_pixels_changed": 0,
+    "border_pixels_changed": 0,
+    "proven": "Seis iconos de pantalla CONTROLES proceden del miembro exacto, paleta causal magenta.",
+    "unproven": "No trazada instrucción MIPS/GE/VRAM ni iconos HUD/tutoriales/combate."
+  },
+  "glyph_probe": {
+    "characters": "áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō",
+    "count": 19,
+    "diagnostic_line_id": "005694",
+    "private_csv_sha256": "800709d105a86e6da3252c44e4a2138fa8fec01e51afd0283e27913d272f1f7e",
+    "diagnostic_iso_yellow_sha256": "58f98b65185f39f172de0b5da97b9ce6fecb009e61b9462632f602485c99e4ca",
+    "diagnostic_bps_from_USA_sha256": "a95039e13f9ace10d7b14f7a2587c0297c4889bf5f87a0263da289d6cc40f971",
+    "corrected_iso_white_sha256": "a42731988835bddb9dc81ef6d242b9c5029030256f210838881a1d48aed2de33",
+    "white_bps_from_yellow_sha256": "2a698e1efaa1c2333dbd86ac8c3a9fabbd369382c4b8c7d3ad0ab7c7f2ffac3f",
+    "roundtrips_exact": true,
+    "defect": "Índice CLUT 15 amarillo (247,247,0) en FONT_00.IMY usado para trazos añadidos; índice 1 blanco (255,255,255).",
+    "fix": "white_new_ink=True solo nuevos 19 glifos; índice 15->1 en 100 texels; F1 mantiene False por defecto.",
+    "changed_texels": 100,
+    "original_2721_glyphs_unchanged": true,
+    "font_bin_unchanged": true,
+    "other_348_pspfs_unchanged": true,
+    "ppsspp_real_screenshots_each": 2,
+    "pixel_roi": {
+      "x": [
+        40,
+        700
+      ],
+      "y": [
+        624,
+        700
+      ],
+      "yellow_RGB": "R>180,G>170,B<80",
+      "yellow_before": 516,
+      "yellow_after": 0,
+      "bright_before": 10560,
+      "bright_after": 11046
+    },
+    "limits": "Un único mensaje diagnóstico real; falta comprobar cada forma, avance, recorte, anclaje y varios contextos."
+  },
+  "private_evidence": {
+    "private_zip_name": "Cladun_ES_F2_Iconos_Tinta_19Glifos_PPSSPP_2026-11-21_EVIDENCIAS_PRIVADAS.zip",
+    "zip_sha256": "af93e1d702d1d53d10d9fcfb326030c1a62cfb7c4ea4482846d7f26a83c49cad",
+    "zip_bytes": 1260036,
+    "raw_pngs": 9,
+    "raw_png_sha256": [
+      {
+        "name": "F1_CONTROLES_ESTADO_1.png",
+        "sha256": "6bdcc97c6fbd983e3d903476156642d3b572d048fec12918df103b000b68d653"
+      },
+      {
+        "name": "F1_CONTROLES_ESTADO_2.png",
+        "sha256": "b78e9c5b95d473da91eeade7dd568fc91ab575a3633a30ba38aac41a0ead8997"
+      },
+      {
+        "name": "F2_KITAJIMA_MAGENTA_ESTADO_1.png",
+        "sha256": "8cf72592f7ba3619b5867549b5cc25f2d0f3ce31bae6bef676eb5e002b0d5db3"
+      },
+      {
+        "name": "F2_KITAJIMA_MAGENTA_ESTADO_2.png",
+        "sha256": "92b4438623a94d92abfe23df4abeff81d2e0264e9427dc350168fba0414d84c8"
+      },
+      {
+        "name": "F2_GLIFOS_19_TINTA_AMARILLA_ESTADO_1.png",
+        "sha256": "9989de8f72b5185042bec185b2c6d3726009c8fdb4d4dd44f7a5cd2b3655213d"
+      },
+      {
+        "name": "F2_GLIFOS_19_TINTA_AMARILLA_ESTADO_2.png",
+        "sha256": "6b9ddcc5b8924c3bd32ef4ce3a7af6a2050c7bcf97ad95504cbf71c44fa98c7b"
+      },
+      {
+        "name": "F2_GLIFOS_19_TINTA_BLANCA_ESTADO_1.png",
+        "sha256": "4503105258b4107c32d62c6f59cccef28c45af616e767bf22a93f24ec90f9236"
+      },
+      {
+        "name": "F2_GLIFOS_19_TINTA_BLANCA_ESTADO_2.png",
+        "sha256": "52499859d51f76610aec45b348cb9d8f52bc46f397521b0bfc26c951bb118362"
+      },
+      {
+        "name": "F2_OPCIONES_CON_TINTA_BLANCA.png",
+        "sha256": "d6074826d5d577c3ffff6281958f4ef396d0bfb39052a58b904f44e8543d0499"
+      }
+    ],
+    "github_uploaded": false
+  },
+  "binary_invariants": {
+    "iso9660_unrelated_preserved": true,
+    "pspfs_count": 349,
+    "pspfs_unrelated_to_icon_probe": 348,
+    "pspfs_unrelated_to_font_probe": 348,
+    "original_script_starts": 1625,
+    "commands": 51705,
+    "nontext_commands": 46308,
+    "script_offsets_moved": 0,
+    "deferred_script_translations": 4524,
+    "event_safe_only": true
+  },
+  "tests": {
+    "local_python": 152,
+    "skipped": 1,
+    "go": "PASS",
+    "corpus_integrity": "PASS",
+    "draft": "PASS",
+    "preinsertion": "PASS",
+    "integrability": "PASS",
+    "github_actions_final_head": "PENDIENTE_COMPROBACION_TRAS_COMMIT"
+  },
+  "code_files": [
+    "tools/generar_probe_f2_iconos.py",
+    "tools/generar_probe_f2_glifos.py",
+    "tools/generar_probe_f2_tinta.py",
+    "tools/font_es_narrow.py",
+    "tests/test_probe_iconos_f2.py",
+    "tests/test_probe_glifos_f2.py",
+    "tests/test_tinta_es_f2.py"
+  ],
+  "remaining": [
+    "PC MIPS/GE de carga a VRAM no trazado",
+    "HUD, tutoriales, combate no ensayados",
+    "QA 19 glifos en varias escenas y geometrías incompleta",
+    "F1 960x544 debe revalidarse antes de activar white_new_ink de forma predeterminada",
+    "F3 intro inglés, F4 4524 scripts, F5 gameplay, F6 BPS/EXE final pendientes"
+  ]
+}

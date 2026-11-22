@@ -126,5 +126,11 @@
     "Preserve F1 and event-safe-only",
     "F3-F6 pending"
   ],
-  "publication": "No proprietary ISO/BPS/FONT/EBOOT/RAM/screenshots in GitHub"
+  "publication": "No proprietary ISO/BPS/FONT/EBOOT/RAM/screenshots in GitHub",
+  "continuacion_iconos_tinta_2026_11_21": {
+    "estado": "ABIERTA",
+    "report": "reports/RESULTADOS_F2_ICONOS_TINTA_PPSSPP_2026-11-21.json",
+    "resource": "SYSGRA.ARC/KITAJIMA_KARI.IMY",
+    "private_zip_sha256": "af93e1d702d1d53d10d9fcfb326030c1a62cfb7c4ea4482846d7f26a83c49cad"
+  }
 }
