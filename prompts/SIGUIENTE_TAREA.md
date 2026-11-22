@@ -1,4 +1,4 @@
-# CLADUN ES — RELEVO AUTÓNOMO F2: ejecutar por fin PPSSPP 1.20.4 con sonda TUIKA y verificar F1/19 glifos
+# CLADUN ES — RELEVO AUTÓNOMO F2: PPSSPP 1.20.4, cotejo A/B TUIKA con hashes y 19 glifos; F3–F6 recursivas
 
 Actúa como especialista PSP MIPS, PPSSPP oficial 1.20.4, depurador WebSocket, GPU GE/VRAM, DSARC/PSPFS/ISO9660, IMY 4bpp, CLUT y localización CP932 española. **Debes experimentar de verdad, ejecutar pruebas, corregir código, conservar seguridad de binarios y actualizar GitHub**. Separa evidencia de bytes ISO originales, tests sintéticos/CI y gameplay REAL en PPSSPP. No inventar emulación, capturas, direcciones MIPS/RAM/VRAM, hashes ni resultados.
 
@@ -10,7 +10,7 @@ Repositorio https://github.com/ARivas3008/loxalizacion-cladun-psp. Rama `integra
 
 Primero verificar HEAD, tree SHA, PR y workflows `push`/`pull_request` sobre exactamente el mismo HEAD. Intentar `git fetch origin`, `git switch integracion-eventos-segura-20261120`, `git pull --ff-only`, `git status --short`, `git rev-parse HEAD` en checkout local. Entornos previos: DNS de github.com roto; si falla NO declarar git sincronizado, usar conector GitHub `expected_sha`.
 
-Leer COMPLETOS `AGENTS.md`, `README.md`, `docs/PLAN_HASTA_IMPLEMENTACION_PPSSPP_2026-11-20.md`, `docs/RESULTADO_F1_PPSSPP_2026-11-21.md`, `docs/RESULTADO_F2_ATLAS_PPSSPP_2026-11-21.md`, `docs/F2_ICONOS_TINTA_PPSSPP_2026-11-21.md`, `docs/F2_AUDITORIA_ORIGEN_SOLO_LECTURA_2026-11-21.md`, `docs/F2_QA_ESTATICA_WS_2026-11-21.md`, `docs/F2_LECTOR_GE_V6_2026-11-21.md`, `docs/F2_RELEVO_CAPTURA_RAM_2026-11-21.md`, `docs/F2_FE_ERRATAS_SHA256_SNAPSHOT_RAM_2026-11-21.md`, `docs/F2_RELEVO_WS_BREAKPOINT_2026-11-21.md`, `docs/F2_PREPARACION_DIRECCIONES_GE_2026-11-21.md`, `docs/F2_INVENTARIO_SYSGRA_2026-11-22.md`, `docs/F2_CATALOGO_GLOBAL_DSARC_2026-11-22.md`, `docs/F2_DOS_FUENTES_IMY_DECODIFICADAS_2026-11-22.md`, `docs/F2_SYSGRA_27_IMY_PALETAS_2026-11-22.md`, `docs/F2_PREVISUALIZACION_PRIVADA_SYSGRA_TEXTO_EN_GRAFICOS_2026-11-22.md`, `docs/F2_SONDA_MAGENTA_TUIKA_CLUT_PPSSPP_PENDIENTE_2026-11-22.md` y NUEVO `docs/F2_TUIKA_CLUT2_CONTADOR_PIXEL_MASK_2026-11-22.md`. Leer `reports/ESTADO_CONTINUIDAD_PPSSPP.json`, `reports/RESULTADO_F2_TUIKA_CLUT2_PIXELES_2026-11-22.json`, informes F2 anteriores, este prompt, código `tools/`, tests, integrador, parcheador Go y workflows.
+Leer COMPLETOS `AGENTS.md`, `README.md`, `docs/PLAN_HASTA_IMPLEMENTACION_PPSSPP_2026-11-20.md`, `docs/RESULTADO_F1_PPSSPP_2026-11-21.md`, `docs/RESULTADO_F2_ATLAS_PPSSPP_2026-11-21.md`, `docs/F2_ICONOS_TINTA_PPSSPP_2026-11-21.md`, `docs/F2_AUDITORIA_ORIGEN_SOLO_LECTURA_2026-11-21.md`, `docs/F2_QA_ESTATICA_WS_2026-11-21.md`, `docs/F2_LECTOR_GE_V6_2026-11-21.md`, `docs/F2_RELEVO_CAPTURA_RAM_2026-11-21.md`, `docs/F2_FE_ERRATAS_SHA256_SNAPSHOT_RAM_2026-11-21.md`, `docs/F2_RELEVO_WS_BREAKPOINT_2026-11-21.md`, `docs/F2_PREPARACION_DIRECCIONES_GE_2026-11-21.md`, `docs/F2_INVENTARIO_SYSGRA_2026-11-22.md`, `docs/F2_CATALOGO_GLOBAL_DSARC_2026-11-22.md`, `docs/F2_DOS_FUENTES_IMY_DECODIFICADAS_2026-11-22.md`, `docs/F2_SYSGRA_27_IMY_PALETAS_2026-11-22.md`, `docs/F2_PREVISUALIZACION_PRIVADA_SYSGRA_TEXTO_EN_GRAFICOS_2026-11-22.md`, `docs/F2_SONDA_MAGENTA_TUIKA_CLUT_PPSSPP_PENDIENTE_2026-11-22.md` y NUEVO `docs/F2_TUIKA_CLUT2_CONTADOR_PIXEL_MASK_2026-11-22.md` y NUEVO `docs/F2_RELEVO_COTEJO_AB_2026-11-22.md`. Leer `reports/ESTADO_CONTINUIDAD_PPSSPP.json`, `reports/RESULTADO_F2_TUIKA_CLUT2_PIXELES_2026-11-22.json`, NUEVO `reports/RESULTADO_F2_COTEJO_CAPTURAS_AB_2026-11-22.json`, informes F2 anteriores, este prompt, código `tools/`, tests, integrador, parcheador Go y workflows.
 
 Prohibido subir a GitHub ISO, BPS, DATA.DAT, EBOOT, IMY, FONT.ARC, PNG originales/retocados, RAM, dumps GE/VRAM, imágenes comerciales, ejecutables de juego. Solo código, tests sintéticos, hashes, métricas y documentación. Archivos privados fuera del repositorio.
 
@@ -24,7 +24,7 @@ F2: 2721 glifos originales preservados más 19 nuevos A1–B3 `áéíóúÁÉÍ�
 
 DATA.DAT tiene 349 PSPFS; cuatro contenedores DSARC SYS.DAT2 (6 PNG), SE.ARC (68 SPS), SYSGRA.ARC (27 IMY), FONT.ARC (7) =108 miembros. Dos fuentes distintas `SYSGRA.ARC/FONT.IMY` 256×256 vs `FONT.ARC/FONT_00.IMY` 512×256; su función real por escena sigue sin resolverse.
 
-## 3. ÚLTIMO AVANCE AUTÉNTICO: efecto de 3 bytes CLUT sobre exactamente 9144 píxeles
+## 3. AVANCES AUTÉNTICOS: TUIKA, 9144 píxeles estáticos y réplica independiente de la sonda
 
 `TUIKA_MES.IMY` (SYSGRA.ARC PSPFS225, DSARC24) contiene texto inglés **gráfico** —por ejemplo «Replenished HP for all!», «Recovered SP!», «Attack all enemies on screen!», «No special attack»— que no está garantizado por las 9237 entradas textuales del corpus. El recurso en sí fue auditado, no su contexto de aparición en el juego.
 
@@ -34,7 +34,7 @@ Sonda original/privada ya generada:
 - Solo **3 bytes RGB** cambiados (offset absoluto ISO decimal 114744872–114744874), RGBA antes (249,251,249,255), después (255,0,255,255). No cambió alfa; **348 de 348 PSPFS vecinos y 26 de 26 miembros DSARC vecinos** intactos, tablas y el resto de la ISO bit a bit sin alterar.
 - Código de generación `tools/f2_probe_tuika_palette_privado.py`, pruebas sintéticas (22).
 
-**NUEVO**: `tools/f2_cotejar_impacto_clut_tuika.py` reconstruye la textura original en memoria, compara ISO originales y de prueba con SHA completos y usa descompresión IMY + unswizzle PSP 16×8. Índices 4bpp antes/después son idénticos (SHA `3c181786f72008c144a2187d362d289d453b4f00d93fe5f8cb2facc0f23d14d5`), superficie 256×256 =65536 píxeles. **9144** usan índice2 (13,952637 %) y cambiarían de blanco a magenta en render directo de ese atlas; otros **56392** sin cambio. Píxeles activos en 200 filas, **14 franjas horizontales**, máscara de efecto SHA `382ae8d2ffa8908979050b5e83f38ec9967b461bbf9b614dd92775da90e409ba`. Test suite `tests/test_f2_cotejar_impacto_clut_tuika.py` añade **19 tests**. Commit de código `3241f5ca9463e202e3b9b1371bf0deefa52f4673`, CI push `45052513223`, PR `45052519322`, **332 tests Python**, Go/integridad/build Windows sin BPS. Estos son tests binarios/sintéticos, NO PPSSPP.
+**NUEVO**: `tools/f2_cotejar_impacto_clut_tuika.py` reconstruye la textura original en memoria, compara ISO originales y de prueba con SHA completos y usa descompresión IMY + unswizzle PSP 16×8. Índices 4bpp antes/después son idénticos (SHA `3c181786f72008c144a2187d362d289d453b4f00d93fe5f8cb2facc0f23d14d5`), superficie 256×256 =65536 píxeles. **9144** usan índice2 (13,952637 %) y cambiarían de blanco a magenta en render directo de ese atlas; otros **56392** sin cambio. Píxeles activos en 200 filas, **14 franjas horizontales**, máscara de efecto SHA `382ae8d2ffa8908979050b5e83f38ec9967b461bbf9b614dd92775da90e409ba`. Test suite `tests/test_f2_cotejar_impacto_clut_tuika.py` añade **19 tests**. Commit de código `3241f5ca9463e202e3b9b1371bf0deefa52f4673`, CI push `45052513223`, PR `45052519322`, **332 tests Python**, Go/integridad/build Windows sin BPS. Estos son tests binarios/sintéticos, NO PPSSPP. **NUEVO RELEVO 22/11:** en un entorno distinto se extrajo de nuevo la ISO 305496064 bytes del 7z del usuario mediante libarchive, y se reprodujo independientemente la ISO TUIKA magenta exacta. El cotejo íntegro de 305496064 bytes mostró SOLO las 3 diferencias 114744872–114744874, SHA sonda b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa, 349 PSPFS (348 vecinos idénticos) y 27 DSARC (26 vecinos idénticos), tablas intactas. No se ejecutó PPSSPP y la ISO F1 canónica no está presente en este entorno. **Nueva herramienta tools/f2_cotejar_capturas_tuika.py con 21 pruebas locales SINTÉTICAS PASS**, no representa capturas del juego. Los 332 tests Python del HEAD histórico no incluyen esos 21; verificar recuento y PASS del HEAD nuevo en CI.
 
 Comparación privada de tres paneles: `CLADUN_F2_TUIKA_CLUT2_ANÁLISIS_ESTATICO_NO_PPSSPP_2026-11-22.png`, SHA `ec595486a96922d2066883cee9e2d4d895c3eda4525168d4dc15d865c659f50b`; informe privado `CLADUN_F2_TUIKA_CLUT2_CUANTIFICACION_PRIVADA_2026-11-22.json`, SHA `4c0836c0661bebc876b6271bffb516f88de435df3af1efcf39c49dc36d169c8d`. PRIVADOS: no versionar ni reutilizar como «capturas PPSSPP». Esta sonda recolorea todo píxel CLUT2; NO se ha demostrado su uso real ni traducido gráficos.
 
@@ -44,9 +44,24 @@ python tools/f2_probe_tuika_palette_privado.py --iso-usa /PRIVATE/USA.iso --sali
 python tools/f2_cotejar_impacto_clut_tuika.py --iso-usa /PRIVATE/USA.iso --iso-sonda /PRIVATE/TUIKA_magenta.iso --reporte-privado /PRIVATE/TUIKA_pixeles.json --png-privado /PRIVATE/TUIKA_comparacion.png
 ```
 
-## 4. Prioridad real del siguiente relevo: PPSSPP y cadena funcional
+## 4. NUEVO: cotejador A/B de capturas privadas, sin confundir ISO en disco con ISO cargada
 
-Localizar auténtico PPSSPP Linux 1.20.4 https://github.com/hrydgard/ppsspp/releases/tag/v1.20.4; verificar SHA exacto **antes de ejecutar**. Último entorno no lo tenía y `curl`/Git fallaban por DNS `Could not resolve host: github.com`. Si persiste, registrar NO DISPONIBLE; nunca inventar captura/juego. Recuperar o reconstruir ISO F1 canónica de manera PRIVADA con `--experimental-parcial --event-safe-only` y SHA exacto, preservando original.
+Herramienta `tools/f2_cotejar_capturas_tuika.py`, tests `tests/test_f2_cotejar_capturas_tuika.py`. **21 de 21 tests locales sintéticos PASS**. Verifica que cada versión tenga exactamente dos PNG y un `manifest_PRIVATE.json` del cliente PPSSPP v1.20.4, título y escena coincidentes, tamaños/hash SHA256 auténticos de archivos, rutas privadas sin symlink ni overwrite, y SHA completos de ambas ISOs en disco. Computa diferencias por píxel y candidatos magenta, nunca inserta PNG o datos comerciales en su informe. Se ha probado con PNG **creados artificialmente SOLO para unit tests**, no con capturas PPSSPP.
+
+CONTRAINDICACIÓN: ese comparador NO verifica que PPSSPP haya cargado realmente la ISO declarada ni que ambos cuadros estén perfectamente alineados. El reporte mantiene `runtime_loaded_iso_identity_proven=false`, `frame_alignment_verified=false` y `tuika_texture_runtime_origin_proven=false`. Cero candidatos magenta en una escena no demuestra ausencia de uso del atlas; un candidato magenta exige inspección manual de ROI/control negativo y la cadena MIPS/RAM/GE/VRAM.
+
+En dos sesiones auténticas con juego original y sonda, respectivamente, crear DOS capturas PNG reales privadas cada una, con la **MISMA escena, mismo estado y misma versión**. Solo entonces ejecutar:
+
+    python tools/f2_ppsspp_ws_1204.py --scene TUIKA_HABILIDADES --salida-privada /PRIVATE/ab_usa_NUEVO --port 24192 --ge-dump
+    # Reiniciar PPSSPP con la ISO sonda, volver al mismo estado/escena:
+    python tools/f2_ppsspp_ws_1204.py --scene TUIKA_HABILIDADES --salida-privada /PRIVATE/ab_probe_NUEVO --port 24192 --ge-dump
+    python tools/f2_cotejar_capturas_tuika.py --manifest-usa /PRIVATE/ab_usa_NUEVO/manifest_PRIVATE.json --manifest-sonda /PRIVATE/ab_probe_NUEVO/manifest_PRIVATE.json --iso-usa /PRIVATE/USA.iso --iso-sonda /PRIVATE/TUIKA_magenta.iso --reporte-privado /PRIVATE/reporte_AB_NUEVO.json
+
+Acreditar por separado el binario arrancado en PPSSPP; la etiqueta de escena del manifiesto no prueba identidad de disco. No usar esta herramienta como evidencia de F1 X11 960x544: PNG de framebuffer PSP y ventana desktop son observaciones distintas.
+
+## 5. Prioridad real del siguiente relevo: PPSSPP y cadena funcional
+
+Localizar auténtico PPSSPP Linux 1.20.4 https://github.com/hrydgard/ppsspp/releases/tag/v1.20.4; verificar SHA exacto **antes de ejecutar**. Último entorno no lo tenía y `curl`/Git fallaban por DNS `Could not resolve host: github.com`; en el último relevo `container.download` también falló. La publicación oficial confirma AppImage SHA sin que ello implique que se haya descargado/ejecutado. Si persiste, registrar NO DISPONIBLE; nunca inventar captura/juego. Recuperar o reconstruir ISO F1 canónica de manera PRIVADA con `--experimental-parcial --event-safe-only` y SHA exacto, preservando original.
 
 Con PPSSPP real, comparar las ISOs USA ORIGINAL y sonda TUIKA MAGENTA, en **idénticas escenas y controles**, dos PNG por versión, hashes y captures X11 privadas, idealmente mensajes de habilidades/tienda/ataque. Verificar ROI de letras, cambio a magenta y no cambios en iconos ajenos; si no aparecen cambios en una escena, no declarar nunca que no se usa TUIKA. Identificar uso de `SYS1.IMY`, `MAHO_ST.IMY`, `KITAJIMA_KARI.IMY`, las dos fuentes FONT y PALETE_0–3 por pruebas funcionales independientes, no por nombre de archivo.
 
@@ -58,7 +73,7 @@ python tools/f2_ram_provenance_1204.py --iso-usa /PRIVATE/USA.iso --salida-priva
 ```
 Para `--scan-ram`, CPU detenida/ticks estables, watchpoint solo a dirección PSP RAM auténtica con coincidencia real, en sesión nueva, nunca offset ISO (ej. `0x06D68C00`). Respetar breakpoints ajenos. Confirmar evento `reason==memory.breakpoint`, `relatedAddress` correcto, PC MIPS real, descompresión/copia a RAM, TEXTADDR/CLUT, PRIM/TRANSFERSTART, VRAM y píxel final. Un hash o candidato GE NO prueban cadena causal.
 
-## 5. QA F2 19 glifos, regresión F1, integridad y protección de scripts
+## 6. QA F2 19 glifos, regresión F1, integridad y protección de scripts
 
 Probar visualmente en PPSSPP real cada `áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō` en CONTROLES/HUD/tutorial/ayuda/diálogo/combate y menús, capturas auténticas privadas. Revisar CLUT blanca/amarilla, altura, interlineado, recorte de «í» ×4 y mayúsculas y15, ancho y botones L/R □○×△. Diagnósticos CSV/ISO PRIVADOS con `tools/generar_probe_f2_glifos.py` y `tools/generar_probe_f2_tinta.py` sin alterar 9237 registros canónicos. Mantener `white_new_ink=False` hasta pruebas satisfactorias.
 
@@ -84,8 +99,8 @@ git diff --check
 ```
 Si no hay checkout local real, comprobar pruebas Python/Go/Windows e integridad vía AMBAS GitHub Actions de SHA final; **NO atribuir esos resultados a PPSSPP**.
 
-## 6. F3–F6 pendientes y RELEVO OBLIGATORIO
+## 7. F3–F6 pendientes y RELEVO OBLIGATORIO
 
 F2 ABIERTA hasta demostrar en PPSSPP 1.20.4 cadena MIPS→RAM→GE→VRAM de iconos y fuentes, uso real de mensajes gráficos TUIKA, 19 glifos en contextos pertinentes y regresión F1. F3 intro inglesa; F4 4524 scripts con referencias/saltos/eventos seguros; F5 recorrer historia, combate, HUD, inventario, retratos, enciclopedia, guardado/carga; F6 BPS final y EXE Windows con pruebas end-to-end. Nunca fusionar PR #7 ni declarar 100% antes.
 
-AL FINAL: commit GitHub con código/tests/docs sin binarios comerciales, actualizar `reports/ESTADO_CONTINUIDAD_PPSSPP.json` y un informe de metadatos, verificar HEAD PR DRAFT y DOS Actions SUCCESS. **REESCRIBIR POR COMPLETO `prompts/SIGUIENTE_TAREA.md` CON OTRO PROMPT AUTÓNOMO ACTUALIZADO, CON ESTA MISMA OBLIGACIÓN RECURSIVA, Y MOSTRARLO ÍNTEGRO AL USUARIO. Repetir hasta F2–F6 autentificadas.**
+AL FINAL: commit GitHub con código/tests/docs sin binarios comerciales, incluyendo metadatos de la réplica de ISO y el nuevo comparador A/B, actualizar `reports/ESTADO_CONTINUIDAD_PPSSPP.json` y un informe de metadatos, verificar HEAD PR DRAFT y DOS Actions SUCCESS. **REESCRIBIR POR COMPLETO `prompts/SIGUIENTE_TAREA.md` CON OTRO PROMPT AUTÓNOMO ACTUALIZADO Y COMPLETO; VOLVER A EXIGIR A ESE RELEVO LA MISMA REESCRITURA RECURSIVA; MOSTRARLO ÍNTEGRO AL USUARIO. Repetir hasta F2–F6 autentificadas.**

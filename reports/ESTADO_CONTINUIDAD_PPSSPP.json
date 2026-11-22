@@ -1,11 +1,11 @@
 {
   "schema": "cladun.ppsspp.continuity.v1",
-  "fecha_corte": "2026-11-21",
+  "fecha_corte": "2026-11-22",
   "repositorio": "https://github.com/ARivas3008/loxalizacion-cladun-psp",
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1 Opciones histórico aprobada; F2 ABIERTA: nueva comparación real de ISO USA y sonda magenta TUIKA descomprime índices 4bpp idénticos (32.768 bytes), 9.144 píxeles index2 de 65.536 (13,952637%), 14 franjas, 200 filas. 19 pruebas sintéticas añadidas, 332 tests Python CI aprobados, Go/integridad/build Windows aprobado. Sin PPSSPP real 1.20.4, cadena MIPS/RAM/GE/VRAM, 19 glifos multicontesto, ni regresión nueva de F1 X11.",
+  "fase_actual": "F1 Opciones históricamente aprobada; F2 ABIERTA. Réplica auténtica desde 7z de ISO USA y TUIKA magenta con SHA exactos, SOLO 3 bytes ISO modificados, 348 vecinos PSPFS/26 DSARC intactos. Nuevo cotejador de 2+2 capturas PPSSPP con 21 pruebas sintéticas locales PASS, pero sin capturas reales nuevas. PPSSPP 1.20.4/AppImage ausente y descarga fallida, MIPS/RAM/GE/VRAM, 19 glifos multicontesto y regresión F1 X11 aún pendientes. F3-F6 abiertas.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -23,7 +23,8 @@
     "iso_f1_extra_ideografico_no_adoptada": "f97fa355fce8d7ab55a81fc711e944185ebdce4a320a5077695cb445acd303c8",
     "bps_f1_extra_ideografico_no_adoptado": "279bd99d7a0cfb87fd1bb4a03ee67ecc250d51563e14f12e213283922a8634fc",
     "iso_f1_ascii_aislada": "2f781c94b3ea835bd317d741793d0e3ed8ec9626dc2ab43a7ee501231e0b1edd",
-    "bps_f1_ascii_aislada": "96db2092c14c8c854db93d3f27b6c219e698cc22c2e6947dbddfc5c4dcbbc79b"
+    "bps_f1_ascii_aislada": "96db2092c14c8c854db93d3f27b6c219e698cc22c2e6947dbddfc5c4dcbbc79b",
+    "iso_tuika_magenta_experimental": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa"
   },
   "entorno_pruebas": "PPSSPP 1.20.4 Linux x86_64 AppImage oficial (SHA verificado), Xvfb 1280x720x24, ventana 960x544, render software, SDL_AUDIODRIVER=dummy",
   "artefacto_evidencias_privado": "Evidencias_reales_PPSSPP_Cladun_ES_v015.zip",
@@ -178,7 +179,10 @@
     "21/11 F2: Python suite local 152 PASS (1 skip), Go PASS, corpus/borrador/preinsercion/integrabilidad PASS.",
     "21/11 F2 relevo: auditoría de ISO USA desde 7z y KITAJIMA por SHA/origen; 27 RGB simulados solo en memoria; 7 unitarios sintéticos PASS; NO nuevas capturas ni GE/VRAM.",
     "21/11 F2: ISO USA sha y rasters FONT redecodificados; 19/19 geométricos y 100 texels index15; 24 tests sintéticos locales PASS. No PPSSPP ni pruebas funcionales nuevas.",
-    "F2 21/11 nuevo: inspector sintético PPSSPPGE v6 Zstd, 9 tests nuevos PASS, total 33 tests locales PASS; ISO USA SHA exacto y atlas 19 glifos/100 texels revalidados. NO nuevas pruebas PPSSPP reales."
+    "F2 21/11 nuevo: inspector sintético PPSSPPGE v6 Zstd, 9 tests nuevos PASS, total 33 tests locales PASS; ISO USA SHA exacto y atlas 19 glifos/100 texels revalidados. NO nuevas pruebas PPSSPP reales.",
+    "22/11 nuevo relevo: ISO 7z extraída por libarchive, tamaño 305496064 bytes y SHA original b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f confirmado en este entorno.",
+    "22/11 nuevo relevo: sonda ISO TUIKA magenta reconstruida y comparada byte por byte con USA: únicamente offsets 114744872/873/874 alterados y SHA b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa, tablas PSPFS y DSARC intactas, 348/348 vecinos PSPFS y 26/26 DSARC iguales.",
+    "22/11 nuevo relevo: herramienta f2_cotejar_capturas_tuika.py y 21/21 pruebas SINTÉTICAS locales PASS con manifiestos y PNG fabricados como fixtures; NO PPSSPP ni capturas de juego."
   ],
   "pruebas_no_ejecutadas": [
     "Prueba PPSSPP valida del candidato extra +1 ideografico en 005709; no aprobado",
@@ -193,7 +197,9 @@
     "21/11: generación de ISO/BPS nuevas y comparación hash/roundtrip faltan (repo completo y PPSSPP no descargables en contenedor sin DNS).",
     "21/11: variante +1 genera CSV en Python CI, pero NO fue probada gráficamente en PPSSPP ni generó ISO/BPS en este entorno.",
     "F2: no se siguió rutina de carga MIPS/GE/VRAM ni iconos HUD/tutorial/combate.",
-    "F2: 19 glifos solo en un mensaje de diagnostico, no QA en varias escenas ni adopcion default de tinta blanca."
+    "F2: 19 glifos solo en un mensaje de diagnostico, no QA en varias escenas ni adopcion default de tinta blanca.",
+    "22/11 nuevo relevo: descarga/ejecución del AppImage oficial PPSSPP 1.20.4 falló; no se tomaron nuevas capturas A/B, no se midió ventana X11 F1 ni se grabaron GE reales.",
+    "22/11 nuevo relevo: no se acreditó la identidad de ISO cargada en runtime, uso de TUIKA en pantalla, cadena MIPS/RAM/GE/VRAM ni prueba multicontesto de los 19 glifos."
   ],
   "siguiente_accion": "Continuar F2: trazado real de KITAJIMA_KARI.IMY hasta RAM/VRAM/PC MIPS y GE; ensayar HUD/tutoriales/combate; validar 19 glifos en varias escenas y regresar a F1 960x544 antes de adoptar tinta blanca por defecto.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
@@ -1084,5 +1090,21 @@
     "pr7_draft": true,
     "documentation": "docs/F2_TUIKA_CLUT2_CONTADOR_PIXEL_MASK_2026-11-22.md",
     "report": "reports/RESULTADO_F2_TUIKA_CLUT2_PIXELES_2026-11-22.json"
+  },
+  "ultimo_relevo": {
+    "date": "2026-11-22",
+    "report": "reports/RESULTADO_F2_COTEJO_CAPTURAS_AB_2026-11-22.json",
+    "documentation": "docs/F2_RELEVO_COTEJO_AB_2026-11-22.md",
+    "new_tool": "tools/f2_cotejar_capturas_tuika.py",
+    "new_test": "tests/test_f2_cotejar_capturas_tuika.py",
+    "local_synthetic_tests_pass": 21,
+    "original_iso_validated": true,
+    "probe_iso_validated": true,
+    "private_png_ppsspp_new": 0,
+    "real_ppsspp_available": false,
+    "new_f1_regression": false,
+    "all_19_glyphs_verified": false,
+    "git_clone_success": false,
+    "ci_of_next_commit_pending_verification": true
   }
 }
