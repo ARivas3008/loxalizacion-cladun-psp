@@ -36,6 +36,58 @@ GE_NAMES.update({0xA8+i:f'TEXBUFWIDTH{i}' for i in range(8)})
 GE_NAMES.update({0xB8+i:f'TEXSIZE{i}' for i in range(8)})
 
 
+MAX_GE_ADDRESS_OBSERVATIONS=150
+
+def _hexaddr(v:int)->str:
+    return '0x%08X' % v
+
+def _known_vram_window(v:int)->bool:
+    """Classify candidate numeric region only; not proof of a VRAM upload."""
+    return 0x04000000<=v<0x04200000
+
+def ge_addresses_from_state(registers:dict[int,int], trigger:int)->dict:
+    """Pure address metadata derived exactly from PPSSPP v1.20.4 GPUState.h.
+
+    Only register arguments seen in this *recording* are used. Missing INIT or
+    previous-frame GPU state means the candidate list may be incomplete.
+    Neither a candidate address nor a PRIM proves a texture was ever uploaded.
+    """
+    result={}
+    if trigger==0x04:
+        if 0x1E in registers:
+            result['texture_mapping_enabled_seen']=bool(registers[0x1E]&1)
+        if 0xC3 in registers:
+            result['texture_format_seen']=registers[0xC3]&0xF
+        slots=[]
+        for level in range(8):
+            a,b=0xA0+level,0xA8+level
+            if a in registers and b in registers:
+                addr=(registers[a]&0xFFFFF0)|((registers[b]<<8)&0x0F000000)
+                slots.append({'mip_level':level,'address_candidate':_hexaddr(addr),
+                              'in_primary_2mib_vram_window':_known_vram_window(addr)})
+        if slots:result['texture_address_candidates']=slots
+        if 0xB0 in registers and 0xB1 in registers:
+            addr=(registers[0xB0]&0x00FFFFF0)|((registers[0xB1]<<8)&0x0F000000)
+            result['clut_address_candidate']=_hexaddr(addr)
+            result['clut_in_primary_2mib_vram_window']=_known_vram_window(addr)
+        if 0xC5 in registers:
+            result['clut_format_seen']=registers[0xC5]&3
+    if trigger==0xEA:
+        if 0xB2 in registers and 0xB3 in registers:
+            addr=(registers[0xB2]&0xFFFFF0)|((registers[0xB3]&0xFF0000)<<8)
+            result['transfer_source_address_candidate']=_hexaddr(addr)
+            result['source_in_primary_2mib_vram_window']=_known_vram_window(addr)
+        if 0xB4 in registers and 0xB5 in registers:
+            addr=(registers[0xB4]&0xFFFFF0)|((registers[0xB5]&0xFF0000)<<8)
+            result['transfer_destination_address_candidate']=_hexaddr(addr)
+            result['destination_in_primary_2mib_vram_window']=_known_vram_window(addr)
+        if 0xEE in registers:
+            result['transfer_width_pixels_seen']=(registers[0xEE]&0x3FF)+1
+            result['transfer_height_pixels_seen']=((registers[0xEE]>>10)&0x3FF)+1
+        result['transfer_bpp_bytes_seen']=4 if (registers[0xEA]&1) else 2
+    return result
+
+
 def _zstd_decompress(compressed:bytes,expected:int)->bytes:
     """Decompress into an exactly sized, bounded output buffer."""
     if not 0<=expected<=MAX_PAYLOAD:
@@ -87,6 +139,9 @@ def inspect(blob:bytes)->dict:
     kinds=collections.Counter()
     ge=collections.Counter()
     findings=[]
+    address_observations=[]
+    gpu_registers_seen={}
+    total_ge_address_triggers=0
     for i in range(num):
         kind,sz,ptr=struct.unpack_from('<BII',commands,i*COMMAND_STRIDE)
         if kind not in KINDS:
@@ -100,6 +155,16 @@ def inspect(blob:bytes)->dict:
             for j in range(0,sz,4):
                 word=struct.unpack_from('<I',pushbuf,ptr+j)[0]
                 op=word>>24
+                gpu_registers_seen[op]=word&0x00FFFFFF
+                if op in (0x04,0xEA):
+                    total_ge_address_triggers+=1
+                    if len(address_observations)<MAX_GE_ADDRESS_OBSERVATIONS:
+                        event={'recorder_index':i,'word_index':j//4,
+                               'trigger':'PRIM' if op==0x04 else 'TRANSFERSTART',
+                               'state_completeness':'PARTIAL_ONLY_REGISTERS_OBSERVED_IN_DUMP'}
+                        if op==0x04:event['primitive_vertex_count_seen']=word&0xFFFF
+                        event.update(ge_addresses_from_state(gpu_registers_seen,op))
+                        address_observations.append(event)
                 if op in GE_NAMES:
                     ge[GE_NAMES[op]]+=1
                     if len(findings)<150 and op in (0x04,0xB0,0xB1,0xB2,0xB3,0xB4,0xB5,0xC2,0xC3,0xC5,0xEA):
@@ -112,6 +177,9 @@ def inspect(blob:bytes)->dict:
             'pushbuffer_size':bufsz,'recorded_types':dict(sorted(kinds.items())),
             'ge_register_opcode_counts':dict(sorted(ge.items())),
             'command_positions_limited_to_150':findings,
+            'ge_address_candidates_limited_to_150':address_observations,
+            'ge_address_trigger_count_total':total_ge_address_triggers,
+            'addresses_are_partial_unverified_candidates':True,
             'mips_pc_proven':False,'texture_identity_proven':False,
             'vram_upload_proven':False,'visual_context_proven':False}
 

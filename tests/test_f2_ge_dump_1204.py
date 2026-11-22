@@ -25,6 +25,53 @@ def fixture(ty=1,ptr=0,sz=None,words=None,extra=b''):
     return hdr+struct.pack('<II',1,len(raw))+compress(cmd)+compress(raw)+extra
 
 class TestGEV6(unittest.TestCase):
+
+    def test_ge_texture_clut_address_candidates_are_stateful_not_proof(self):
+        words=[
+            0x1E000001,       # textureMapEnable=1
+            0xA0012340,       # texaddr0 low bits
+            0xA8040020,       # texbufwidth0 carries 0x04000000
+            0xB0005670,
+            0xB1040000,
+            0xC3000004,       # indexed 4-bit format
+            0x04000006,       # prim
+        ]
+        report=inspect(fixture(words=words))
+        obs=report['ge_address_candidates_limited_to_150']
+        self.assertEqual(len(obs),1)
+        self.assertEqual(obs[0]['texture_address_candidates'][0]['address_candidate'],'0x04012340')
+        self.assertEqual(obs[0]['clut_address_candidate'],'0x04005670')
+        self.assertTrue(obs[0]['texture_mapping_enabled_seen'])
+        self.assertEqual(obs[0]['texture_format_seen'],4)
+        self.assertEqual(obs[0]['primitive_vertex_count_seen'],6)
+        self.assertFalse(report['texture_identity_proven'])
+        self.assertFalse(report['vram_upload_proven'])
+    def test_missing_upper_texture_bits_yield_no_fabricated_address(self):
+        report=inspect(fixture(words=[0xA0012340,0x04000004]))
+        self.assertNotIn('texture_address_candidates',
+                         report['ge_address_candidates_limited_to_150'][0])
+        self.assertNotIn('clut_address_candidate',
+                         report['ge_address_candidates_limited_to_150'][0])
+    def test_transfer_addresses_use_pspsdk_gpu_state_formula(self):
+        words=[0xB2001000,0xB3040020,0xB4002000,0xB5040020,
+               0xEE000000,0xEA000001]
+        report=inspect(fixture(words=words))
+        obs=report['ge_address_candidates_limited_to_150'][0]
+        self.assertEqual(obs['trigger'],'TRANSFERSTART')
+        self.assertEqual(obs['transfer_source_address_candidate'],'0x04001000')
+        self.assertEqual(obs['transfer_destination_address_candidate'],'0x04002000')
+        self.assertEqual(obs['transfer_width_pixels_seen'],1)
+        self.assertEqual(obs['transfer_height_pixels_seen'],1)
+        self.assertEqual(obs['transfer_bpp_bytes_seen'],4)
+        self.assertTrue(obs['source_in_primary_2mib_vram_window'])
+        self.assertFalse(report['vram_upload_proven'])
+    def test_non_vram_address_classified_without_identity_claim(self):
+        report=inspect(fixture(words=[0xA0001000,0xA8080020,0x04000001]))
+        addr=report['ge_address_candidates_limited_to_150'][0]['texture_address_candidates'][0]
+        self.assertEqual(addr['address_candidate'],'0x08001000')
+        self.assertFalse(addr['in_primary_2mib_vram_window'])
+        self.assertTrue(report['addresses_are_partial_unverified_candidates'])
+
     def test_static_extracts_ge_register_metadata(self):
         data=fixture()
         r=inspect(data)
