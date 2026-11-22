@@ -1,0 +1,122 @@
+{
+  "schema": "cladun.f2.tuika_clut2_real_original_and_probe_static_pixel_effect.v1",
+  "status": "F2_ABIERTA_REAL_ISO_STATIC_QA_SIN_PPSSPP",
+  "source_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "probe_iso_sha256": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa",
+  "source_original_extracted_user_7z": true,
+  "source_iso_bytes": 305496064,
+  "source_member": "SYSGRA.ARC/TUIKA_MES.IMY",
+  "source_member_sha256": "c47140753a462cc5b1cc454ee79e0c37b526f06ba5c663b957a91202ebd09127",
+  "probe_member_sha256": "efcf4f41f57c300476e8ce54a32dea01f242dda3fbf3fb9c4e0b582bad8f5252",
+  "decoded_index_sha256": "3c181786f72008c144a2187d362d289d453b4f00d93fe5f8cb2facc0f23d14d5",
+  "source_and_probe_pixel_index_bytes_identical": true,
+  "palette_index": 2,
+  "before_rgba": [
+    249,
+    251,
+    249,
+    255
+  ],
+  "after_rgba": [
+    255,
+    0,
+    255,
+    255
+  ],
+  "original_and_probe_iso_delta_bytes": 3,
+  "all_neighbors_unmodified_as_per_previous_probe": {
+    "pspfs": 348,
+    "dsarc": 26
+  },
+  "static_4bpp_raster_dimensions": [
+    256,
+    256
+  ],
+  "histogram_original_indices": [
+    45784,
+    10608,
+    9144,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "counterfactual_colored_pixels": 9144,
+  "counterfactual_changed_pixel_fraction": 0.13952637,
+  "unchanged_pixels": 56392,
+  "active_pixel_rows": 200,
+  "horizontal_text_symbol_bands": 14,
+  "pixel_extent_xy_inclusive": [
+    2,
+    2,
+    247,
+    249
+  ],
+  "mask_sha256": "382ae8d2ffa8908979050b5e83f38ec9967b461bbf9b614dd92775da90e409ba",
+  "row_counts_sha256": "6474284bb855d184557b2e894851e54905a848531be098000bd7e6b747c2ea2b",
+  "private_report": {
+    "filename": "CLADUN_F2_TUIKA_CLUT2_CUANTIFICACION_PRIVADA_2026-11-22.json",
+    "sha256": "4c0836c0661bebc876b6271bffb516f88de435df3af1efcf39c49dc36d169c8d",
+    "stored_in_github": false
+  },
+  "private_exact_static_comparison": {
+    "filename": "CLADUN_F2_TUIKA_CLUT2_ANÁLISIS_ESTATICO_NO_PPSSPP_2026-11-22.png",
+    "sha256": "ec595486a96922d2066883cee9e2d4d895c3eda4525168d4dc15d865c659f50b",
+    "bytes": 16809,
+    "dimensions": [
+      768,
+      298
+    ],
+    "stored_in_github": false,
+    "panels": [
+      "original indexed asset, unswizzled",
+      "magenta CLUT2 counterfactual",
+      "effect mask"
+    ],
+    "is_gameplay_capture": false
+  },
+  "code": {
+    "tool": "tools/f2_cotejar_impacto_clut_tuika.py",
+    "tests": "tests/test_f2_cotejar_impacto_clut_tuika.py",
+    "commit": "3241f5ca9463e202e3b9b1371bf0deefa52f4673",
+    "additional_synthetic_tests": 19,
+    "full_python_tests_ci": 332,
+    "local_synthetic_tests": 19,
+    "git_actions_push_run_id": 45052513223,
+    "git_actions_pr_run_id": 45052519322,
+    "test_ci_push_success": true,
+    "code_ci_python_go_integrity_windows_build_success": true,
+    "full_real_iso_and_probe_used_for_local_static_measurement": true
+  },
+  "future_experiments": {
+    "ppsspp_1204_available": false,
+    "ppsspp_new_execution": false,
+    "authentic_gameplay_screenshots_count": 0,
+    "ge_dumps_count": 0,
+    "mips_ram_ge_vram_causal_proven": false,
+    "tuika_on_screen_proven": false,
+    "all_19_glyphs_ppsspp_multicontext_verified": false,
+    "f1_x11_new_regression_verified": false,
+    "canonical_f1_iso_present": false
+  },
+  "binary_safety": {
+    "source_iso_untouched": true,
+    "source_and_probe_original_graphic_pixels_untouched": true,
+    "canonical_9237_texts_untouched": true,
+    "white_new_ink_default_false": true,
+    "event_safe_only_preserved": true,
+    "pr7_draft": true,
+    "no_game_bin_uploaded": true
+  },
+  "evidence_level": "CORRELATED_STATIC_ISO_INDEX_PALETTE_EFFECT_ONLY_NOT_RUNTIME",
+  "next_priority": "Acquire authenticated PPSSPP 1.20.4 and F1 ISO, execute A/B original vs exact magenta probe in relevant contexts; correlate runtime pixel/CLUT and MIPS/RAM/GE/VRAM; QA 19 Spanish glyphs and F1 X11."
+}
