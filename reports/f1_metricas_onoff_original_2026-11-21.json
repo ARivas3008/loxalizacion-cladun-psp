@@ -2,7 +2,7 @@
   "schema": "cladun.f1.original_font_menu_metrics.v1",
   "fecha": "2026-11-21",
   "metodo": "ISO comercial USA privada autenticada; DATABASE.DAT IMY decodificado; STRTBL.DAT y FONT.BIN SHA exactos; avances de FONT.BIN; no es visual PPSSPP",
-  "iso_original_sha256": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "iso_original_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
   "original_data_dat_offset": 113770496,
   "original_data_dat_size": 191697408,
   "strtbl_sha256": "16d9da36c05380cbb8af7eba53cb26c7b3e21f8ef5c80fdb90fdba20621044bf",

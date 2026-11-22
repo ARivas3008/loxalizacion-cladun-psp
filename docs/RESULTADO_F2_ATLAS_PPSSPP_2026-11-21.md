@@ -4,7 +4,7 @@
 
 ## 1. Auditoría binaria de las ISOs
 
-Original USA SHA-256 `b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f` (305.496.064 bytes), F1 canónica `496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986`. La auditoría independiente ejecutada `tools/auditar_atlas_f2.py` reconstruyó `FONT.BIN` y sus seis `FONT_00–05.IMY`: 2.721 glifos originales → 2.740 españoles, 19 nuevos de un byte `A1-B3` en el índice 95. **Los 2.721 originales preservan códigos, métricas y raster 16×16 exactos**, desplazados +19. FONT.ARC mantiene sus siete miembros.
+Original USA SHA-256 `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f` (305.496.064 bytes), F1 canónica `496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986`. La auditoría independiente ejecutada `tools/auditar_atlas_f2.py` reconstruyó `FONT.BIN` y sus seis `FONT_00–05.IMY`: 2.721 glifos originales → 2.740 españoles, 19 nuevos de un byte `A1-B3` en el índice 95. **Los 2.721 originales preservan códigos, métricas y raster 16×16 exactos**, desplazados +19. FONT.ARC mantiene sus siete miembros.
 
 Ejemplos código CP932/índice antiguo→nuevo: □ 81A0 166→185; ○ 819B 162→181; × 817E 143→162; △ 81A2 168→187. L ASCII índice44, R ASCII índice50 intactos.
 

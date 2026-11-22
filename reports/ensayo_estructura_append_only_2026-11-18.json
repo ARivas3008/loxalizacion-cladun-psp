@@ -2,7 +2,7 @@
   "fecha": "2026-11-18",
   "edicion": "Cladun This Is an RPG USA PSP",
   "status": "PASS_STRUCTURAL_BINARY_ISOLATION_ONLY_NOT_RUNTIME",
-  "sha256_source_iso": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "sha256_source_iso": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
   "sha256_candidate_single_demo": "1e6c332fc248c60a85d69754e0ccca415ba2d54e0790e64a7efa521226422e03",
   "sample_note": "1 sustitución ASCII sintética de verificación técnica; no representa el corpus español",
   "source_iso_size_bytes": 305496064,

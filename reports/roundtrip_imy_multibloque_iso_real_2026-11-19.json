@@ -1,7 +1,7 @@
 {
   "fecha": "2026-11-19",
   "estado": "PASS_RECOMPRESION_MULTIBLOQUE_ORIGINAL_ROUNDTRIP_NO_RUNTIME",
-  "iso_fuente_sha256": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "iso_fuente_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
   "iso_fuente_bytes": 305496064,
   "method": "Private no-op test: decode each original PSPFS IMY archive, recompress preserving original 131072-byte capacity, decode reconstructed output, assert equality to original entire decompressed member",
   "resources": [

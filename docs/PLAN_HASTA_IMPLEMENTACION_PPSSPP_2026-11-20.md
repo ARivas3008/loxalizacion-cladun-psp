@@ -8,7 +8,7 @@ Se ejecutaron original USA y candidato v0.1.5 en PPSSPP 1.20.4 Linux x86_64 (sof
 
 **Paquete de capturas privadas**, entregado en la conversación: `Evidencias_reales_PPSSPP_Cladun_ES_v015.zip`. Sus nombres son: `01_menu_principal_v015.png`, `02_configuracion_original_USA.png`, `03_configuracion_parche_v015.png`, `04_comparacion_original_vs_v015.png`, `05_opcion_musica_y_tilde.png`, `06_inicio_partida_seleccion_musica.png`, `07_intro_ingles_aun_visible.png`, `08_intro_animacion_sin_audio.mp4`. El ZIP incluye informe y hashes. **No se subieron activos comerciales a GitHub.**
 
-Hashes SHA-256: ISO USA `b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f`, candidata v0.1.5 `9be7b07a2c5c8c9026ffd0f829f613237f9a31e8fe2455856649ff6c1fe2b4ef`, BPS v0.1.5 `976fda78adf3e6c2c3c31d5b89bc2f04b18c0905789305b25e9d0a58bf8cea0c`. Solo se distribuyen deltas y ejecutables experimentales privados por separado, no ISOs.
+Hashes SHA-256: ISO USA `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f`, candidata v0.1.5 `9be7b07a2c5c8c9026ffd0f829f613237f9a31e8fe2455856649ff6c1fe2b4ef`, BPS v0.1.5 `976fda78adf3e6c2c3c31d5b89bc2f04b18c0905789305b25e9d0a58bf8cea0c`. Solo se distribuyen deltas y ejecutables experimentales privados por separado, no ISOs.
 
 ## Rutas y recursos para trabajar
 

@@ -5,7 +5,7 @@
   "ppsspp_version": "1.20.4 Linux AppImage oficial",
   "appimage_sha256": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21",
   "video_environment": "Xvfb :78 fullscreen1280x720 software; las medidas F1 756/764 previas usan ventana960x544",
-  "source_usa_sha256": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "source_usa_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
   "f1_sha256": "496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986",
   "f1_bps_sha256": "daaa64ab1994271debc6464f3c70ab0f30a2ab3f9a1743dbd6a65f3c88d20acd",
   "icon_probe": {

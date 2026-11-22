@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1 validada anteriormente solo Opciones; F2 ABIERTA. Captura WebSocket 1.20.4 reparada, ISO USA e icono reautenticados, sonda RAM sin escritura preparada, 193 tests Python CI; SIN nueva PPSSPP real, GE/VRAM, 19 glifos multicontesto ni F1 960x544.",
+  "fase_actual": "F1 aprobada históricamente solo Opciones. F2 ABIERTA: ISO USA y KITAJIMA autenticados en este relevo; sonda RAM con snapshot CPU estable y protección de pausas; SHA de 62 caracteres corregido en documentación. NO prueba PPSSPP real nueva, ni RAM→GE→VRAM, ni QA 19 glifos multicontesto, ni regresión F1.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -153,7 +153,7 @@
     "PPSSPP real: desplazamiento cursor, ayudas, submenú Controles 005709",
     "CI GitHub run 44864818033: 126 pruebas Python, integridad y borrador, integrabilidad, Go test, build publico Windows sin payload",
     "Intento experimental +1 espacio 005709: ISO/BPS construidos y guardas pasan, pero no hay captura PPSSPP utilizable",
-    "2026-11-21: archivo 7z extraído; ISO original autenticada 305496064 bytes SHA b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "2026-11-21: archivo 7z extraído; ISO original autenticada 305496064 bytes SHA b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
     "2026-11-21: auditoría independiente ISO9660/PVD original: DATA.DAT offset 113770496, size 191697408, PSPFS_V1 349 entradas únicas con offsets dentro del contenedor",
     "2026-11-21: py_compile de herramientas y tests ON/OFF nuevos: PASS (únicamente sintaxis)",
     "2026-11-21: DATABASE.DAT IMY + FONT.ARC originales decodificados en privado, STRTBL.DAT y FONT.BIN con SHA-256 exactos históricos",
@@ -488,7 +488,7 @@
   "nota_historial": "Las entradas de pruebas_no_ejecutadas con fecha 21/11 primeras sesiones son históricas y fueron superadas en la sesión tarde del mismo día; ver f1_cierre_2026_11_21 como estado vigente.",
   "f2_sesion_2026_11_21": {
     "estado": "F2_ABIERTA_PRUEBA_REAL_CON_RESULTADOS_PARCIALES",
-    "fuente_usa_sha256": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "fuente_usa_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
     "f1_iso_sha256": "496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986",
     "glifos_usa_conservados_codigos_metricas_raster": 2721,
     "glifos_espanoles_anadidos": 19,
@@ -696,7 +696,7 @@
     "script": "tools/f2_ge_dump_1204.py",
     "tests": "tests/test_f2_ge_dump_1204.py",
     "pruebas_locales": "33 PASS combinadas (24 previas +9 nuevas) usando fixtures sintéticos",
-    "original_iso_sha256": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
     "ge_dump_real_nuevo": false,
     "pc_mips_nuevo": null,
     "vram_nueva": null,
@@ -714,7 +714,7 @@
       "51c4f9a956f92784aeeff8b2d7f44baa9ac54424",
       "ee83ed5a4ff7cdcb8a60b84436db82a6613be009"
     ],
-    "iso_original_sha256": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "iso_original_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
     "compressed_member_sha256": "0ce89df69ad71a9ef3165217d7cb98103a1fb0e08c53ca3a85c594dfaa7a2190",
     "private_manifest_sha256": "e8604ef2cf0303b1fa29b6c986f916528a36845d0846d4c0df396c6e2facdbb9",
     "github_actions_ee83_push": "success",
@@ -729,5 +729,22 @@
     "white_new_ink_default": false,
     "corpus_untouched": true,
     "event_safe_only_preserved": true
+  },
+  "f2_relevo_integridad_hash_y_snapshot_2026_11_21": {
+    "estado": "F2_ABIERTA",
+    "origen_usa_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "origen_usa_bytes": 305496064,
+    "kitajima_sha256": "0ce89df69ad71a9ef3165217d7cb98103a1fb0e08c53ca3a85c594dfaa7a2190",
+    "error_documental_detectado": "Algunos docs/reports/prompts usaban una cadena de 62 hex para el SHA USA; corregidos al valor real de 64.",
+    "herramientas_sha_preexistentes": "Ya correctas, sin modificación de constantes",
+    "sonda_ram": "snapshot CPU detenido, ticks estables, y no reanudar break ajeno",
+    "pr_draft": true,
+    "f1_960x544_regresion_nueva": false,
+    "ppsspp_real_nuevo": false,
+    "ram_ge_vram_demostrado": false,
+    "glifos_19_multicontesto_nuevo": false,
+    "white_new_ink_default": false,
+    "event_safe_only_inmutable": true,
+    "source_original_iso_unchanged": true
   }
 }

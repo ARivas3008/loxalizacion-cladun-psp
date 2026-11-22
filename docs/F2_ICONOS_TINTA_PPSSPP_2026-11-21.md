@@ -4,7 +4,7 @@
 
 ## 1. F1 y entorno inalterados
 
-ISO USA original SHA-256 `b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f`, ISO canónica F1 `496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986`, BPS experimental USA→F1 `daaa64ab1994271debc6464f3c70ab0f30a2ab3f9a1743dbd6a65f3c88d20acd`. Ninguno se modificó.
+ISO USA original SHA-256 `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f`, ISO canónica F1 `496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986`, BPS experimental USA→F1 `daaa64ab1994271debc6464f3c70ab0f30a2ab3f9a1743dbd6a65f3c88d20acd`. Ninguno se modificó.
 
 PPSSPP oficial AppImage 1.20.4 SHA-256 `661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21`. Nuevas pruebas con Xvfb :78, **fullscreen 1280×720**, render software, captura cruda `scrot`. **No trasladar cifras de pantalla fullscreen a las medidas F1 de 756px interiores / ≈764 exteriores, obtenidas con ventana 960×544**.
 

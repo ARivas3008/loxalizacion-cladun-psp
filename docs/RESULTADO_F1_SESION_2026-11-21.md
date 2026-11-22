@@ -2,7 +2,7 @@
 
 ## Verificado en esta sesión
 
-- Archivo privado 7z extraído con libarchive. ISO USA **305.496.064 bytes** y SHA-256 **b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f**.
+- Archivo privado 7z extraído con libarchive. ISO USA **305.496.064 bytes** y SHA-256 **b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f**.
 - ISO9660 original: `DATA.DAT` offset **113.770.496** bytes, tamaño **191.697.408**, cabecera `PSPFS_V1` y **349 entradas** con nombres únicos y rangos válidos. Esto audita el *original*, no una ISO recompilada.
 - PR #7 abierto como borrador sobre `revision-manual-dialogos`, rama `integracion-eventos-segura-20261120`.
 - Se añadieron `tools/experimento_onoff_f1.py` y `tests/test_experimento_onoff_f1.py`. Su sintaxis se comprobó mediante `python -m py_compile`; no se contó esa prueba como suite Python completa.

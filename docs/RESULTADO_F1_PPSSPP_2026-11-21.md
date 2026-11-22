@@ -4,7 +4,7 @@
 
 ## Entorno y autenticación
 
-- ISO comercial USA privada legalmente aportada: 305.496.064 bytes; SHA-256 `b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f`.
+- ISO comercial USA privada legalmente aportada: 305.496.064 bytes; SHA-256 `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f`.
 - PPSSPP **real**, AppImage oficial Linux x86_64 1.20.4 SHA-256 `661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21`. AppImage sin alterar; extraído para entorno aislado. En .env **local** se eligió `SDL_AUDIODRIVER=dummy` en vez de pulseaudio, sin alterar binario.
 - Xvfb 1280×720×24, ventana 960×544 en (160,88), software renderer / llvmpipe, entradas Return/Down/z y teclas reales enviadas a Xvfb con XTest/pyautogui; PNG crudos capturados con **scrot** y medidos sin retocar.
 
