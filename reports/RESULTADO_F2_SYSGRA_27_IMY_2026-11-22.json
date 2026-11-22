@@ -1,0 +1,95 @@
+{
+  "schema": "cladun.f2.sy_gra_27_imy_palettes_2026_11_22.v1",
+  "status": "F2_ABIERTA_EVIDENCIA_BINARIA_ESTATICAMENTE_AUTENTICADA_NO_PPSSPP",
+  "original_iso": {
+    "bytes": 305496064,
+    "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "read_real_original": true
+  },
+  "source_container": {
+    "name": "SYSGRA.ARC",
+    "pspfs_index": 225,
+    "bytes": 93696,
+    "sha256": "63d9443084a2aeab8c2a3f79aebdb130eaf6c5d2e86f8be51346d7458ab81854",
+    "dsarc_members": 27
+  },
+  "decoded": {
+    "all_27_members_successfully_reconstructed": true,
+    "unique_index_surfaces": 24,
+    "palette_16_color_members": 14,
+    "palette_256_color_members": 13,
+    "format_A4_members": 23,
+    "format_84_members": 4,
+    "zero_final_padding_2_bytes_members": 14,
+    "zero_final_padding_0_bytes_members": 13,
+    "trailing_zero_flag_command_counts": {
+      "0": 7,
+      "1": 6,
+      "2": 8,
+      "3": 6
+    },
+    "used_two_flag_stream_offsets": {
+      "0x60": 14,
+      "0x420": 13
+    },
+    "private_report_name": "CLADUN_F2_SYSGRA_27_IMY_Decodificados_privado_2026-11-22.json",
+    "private_report_bytes": 32673,
+    "private_report_sha256": "b17966be9d0f3a40570893453f38a5b6a24a52ec928427bc237680bfad24d717"
+  },
+  "palette_variants": {
+    "names": [
+      "PALETE_0.IMY",
+      "PALETE_1.IMY",
+      "PALETE_2.IMY",
+      "PALETE_3.IMY"
+    ],
+    "same_decoded_pixel_index_sha256": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+    "each_stores_256_rgba_entries": true,
+    "all_four_rgba_sha256_distinct": true,
+    "palette_sha256": [
+      "3c7418b3bf3fbc0113a12810b1240c18ee62251536e3a3c9be49edbe5d0b039d",
+      "b8d7c9bb62b766d2cf51d8845adc38c7beee9b52dc92812245e2108a6e295b96",
+      "e026fd63860231303decf30ceff045ab6e00473dcc55af7a5d7ba1aca1979cec",
+      "fc1b460db85bc7cbf20d942a080eef05b65fa74c157b4fcb7a6c2ee4ad27698e"
+    ],
+    "function_in_game": "NOT_PROVEN_BY_ISO_ONLY"
+  },
+  "code_and_ci": {
+    "code_commit": "70d3aed096f57234fb66038c320cef2e21311b49",
+    "code_file": "tools/f2_auditar_27_imy_sysgra.py",
+    "tests_file": "tests/test_f2_auditar_27_imy_sysgra.py",
+    "new_synthetic_tests_passed": 25,
+    "total_python_tests_passed": 274,
+    "push_run": 45042960385,
+    "pr_run": 45042967194,
+    "both_success": true,
+    "go_tests_success": true,
+    "windows_build_success_without_bps": true
+  },
+  "no_runtime_claims": {
+    "ppsspp_1204_executed": false,
+    "new_ppsspp_screenshots": 0,
+    "new_ge_dumps": 0,
+    "mips_ram_ge_vram_chain_proven": false,
+    "all_19_glyphs_visual_verified": false,
+    "f1_window_960x544_new_regression_verified": false,
+    "hud_tutorial_battle_icon_asset_associations_proven": false
+  },
+  "access_blockers": {
+    "ppsspp_official_binary_found": false,
+    "github_direct_dns_error": "Could not resolve host: github.com",
+    "local_git_fetch_exit": 128,
+    "local_git_switch_exit": 128,
+    "local_git_pull_exit": 1,
+    "local_git_head_available": false,
+    "canonical_f1_iso_found": false
+  },
+  "preservation": {
+    "iso_original_unchanged": true,
+    "canonical_corpus_unchanged": true,
+    "no_game_assets_to_github": true,
+    "default_white_new_ink_false": true,
+    "event_safe_only_not_removed": true,
+    "pr7_draft": true
+  }
+}
