@@ -81,6 +81,46 @@ def scan_ram(client: Client, signature: bytes, start=DEFAULT_START,
             'findings_limitations':'An exact compressed signature is an observation in RAM, not evidence of an upload to GE/VRAM.'}
 
 
+def scan_ram_snapshot(client: Client, signature: bytes, start=DEFAULT_START,
+                      end=DEFAULT_END, chunk=DEFAULT_CHUNK) -> dict:
+    """Scan a consistent STOPPED PSP CPU; do not stitch asynchronous snapshots.
+
+    A verified compressed copy in RAM still does not prove any GE upload.
+    Preserve externally established debugger pauses, including failures.
+    """
+    original = client.request('cpu.status')
+    was_paused = original.get('stepping') is True
+    paused_here = False
+    try:
+        if not was_paused:
+            client.notify('cpu.stepping')
+            client.wait_broadcast('cpu.stepping')
+            paused_here = True
+        start_status = client.request('cpu.status')
+        if start_status.get('stepping') is not True:
+            raise RuntimeError('No se confirmó CPU detenida antes de leer RAM')
+        before = start_status.get('ticks')
+        if not isinstance(before, (int,float)):
+            raise RuntimeError('PPSSPP no informó ticks de emulación')
+        result = scan_ram(client, signature, start, end, chunk)
+        end_status = client.request('cpu.status')
+        after = end_status.get('ticks')
+        if end_status.get('stepping') is not True or after != before:
+            raise RuntimeError('CPU avanzó mientras se escaneaba RAM; invalidar resultados')
+        result.update({'snapshot_cpu_stepping_confirmed':True,
+                       'snapshot_emulated_ticks':before,
+                       'pause_preexisted':was_paused,
+                       'mips_pc_proven':False, 'ge_vram_upload_proven':False})
+        return result
+    finally:
+        if paused_here:
+            # Never resume if another debugger already resumed the CPU.
+            current=client.request('cpu.status')
+            if current.get('stepping') is True:
+                client.notify('cpu.resume')
+                client.wait_broadcast('cpu.resume')
+
+
 def watch_address_once(client: Client,address:int,size:int=4) -> dict:
     """One breakpoint and a CPU stop; never modify PSP memory or game code.
 
@@ -95,27 +135,29 @@ def watch_address_once(client: Client,address:int,size:int=4) -> dict:
     client.request('memory.breakpoint.add',address=address,size=size,
                    enabled=True,log=False,read=True,write=True,change=False)
     halted=False
+    matching_break=False
     try:
         event=client.wait_broadcast('cpu.stepping')
         halted=client.request('cpu.status').get('stepping') is True
         if not halted:
             raise RuntimeError('No se confirmó pausa de CPU tras evento')
+        related=event.get('relatedAddress')
+        matching_break=isinstance(related,int) and address<=related<address+size
         pc=event.get('pc')
         if not isinstance(pc,int) or pc%4 or not MIN_ADDR<=pc<MAX_ADDR:
             raise ValueError('PC MIPS no válido en el evento de pausa')
         disasm=client.request('memory.disasm',address=pc-16,count=12).get('lines',[])
         regs=client.request('cpu.getAllRegs').get('categories',[])
-        related=event.get('relatedAddress')
         return {'watched_address':address,'watched_size':size,'cpu_pc_at_pause':pc,
                 'broadcast_reason':event.get('reason'),'related_address':related,
-                'possible_matching_memory_break':isinstance(related,int) and address<=related<address+size,
+                'possible_matching_memory_break':matching_break,
                 'disassembly':disasm,'registers':regs,'ge_upload_proven':False,
                 'vram_address_proven':False}
     finally:
         try:
             client.request('memory.breakpoint.remove',address=address,size=size)
         finally:
-            if halted:
+            if halted and matching_break:
                 client.notify('cpu.resume')
                 client.wait_broadcast('cpu.resume')
 
@@ -162,7 +204,7 @@ def main():
             report['actual_ram_trace']='PPSSPP debugger WebSocket connected'
             report['game_id']=game.get('id')
             if args.scan_ram:
-                report['ram_scan']=scan_ram(client,signature)
+                report['ram_scan']=scan_ram_snapshot(client,signature)
             if args.watch_address is not None:
                 report['watchpoint']=watch_address_once(client,args.watch_address)
         finally:

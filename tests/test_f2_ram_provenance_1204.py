@@ -2,7 +2,7 @@
 import base64,hashlib,tempfile,unittest,sys
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'tools'))
-from f2_ram_provenance_1204 import verified_signature,scan_ram,watch_address_once
+from f2_ram_provenance_1204 import verified_signature,scan_ram,scan_ram_snapshot,watch_address_once
 
 class RAMClient:
     def __init__(self,start,raw,unreadable=()):
@@ -78,6 +78,7 @@ class TestSignatureAndRAM(unittest.TestCase):
         c=WatchClient(related=False)
         result=watch_address_once(c,0x08809000)
         self.assertFalse(result['possible_matching_memory_break'])
+        self.assertTrue(c.paused, 'Una pausa ajena nunca debe reanudarse automáticamente')
     def test_watchpoint_external_pause_preserved(self):
         c=WatchClient(paused=True)
         with self.assertRaises(RuntimeError):watch_address_once(c,0x08809000)
@@ -90,5 +91,54 @@ class TestSignatureAndRAM(unittest.TestCase):
         self.assertFalse(c.paused)
     def test_watchpoint_invalid_size(self):
         with self.assertRaises(ValueError):watch_address_once(WatchClient(),0x08809000,1000)
+
+
+class SnapshotClient(RAMClient):
+    def __init__(self,start,raw,stepping=False,mutate_ticks=False):
+        super().__init__(start,raw)
+        self.stepping=stepping
+        self.ticks=200
+        self.mutate_ticks=mutate_ticks
+        self.requests=0
+        self.notifications=[]
+    def request(self,event,**kwargs):
+        if event=='cpu.status':
+            self.requests+=1
+            if self.mutate_ticks and self.requests>=3:
+                self.ticks+=10
+            return {'stepping':self.stepping,'ticks':self.ticks}
+        return super().request(event,**kwargs)
+    def notify(self,event):
+        self.notifications.append(event)
+    def wait_broadcast(self,event):
+        if event=='cpu.stepping':self.stepping=True;return {'event':event}
+        if event=='cpu.resume':self.stepping=False;return {'event':event}
+        raise AssertionError(event)
+
+class TestSnapshotConsistency(unittest.TestCase):
+    def test_scans_paused_and_resumes_if_client_paused(self):
+        start=0x08800000
+        sig=b'Z'*256
+        c=SnapshotClient(start,b'A'*(4096-50)+sig+b'B'*(4096-206))
+        report=scan_ram_snapshot(c,sig,start,start+8192,chunk=4096)
+        self.assertEqual(report['exact_ram_hits_max_32'],[start+4096-50])
+        self.assertTrue(report['snapshot_cpu_stepping_confirmed'])
+        self.assertFalse(report['pause_preexisted'])
+        self.assertEqual(c.notifications,['cpu.stepping','cpu.resume'])
+        self.assertFalse(c.stepping)
+    def test_preserves_external_pause(self):
+        start=0x08800000
+        c=SnapshotClient(start,b'A'*4096,stepping=True)
+        report=scan_ram_snapshot(c,b'Z'*256,start,start+4096,chunk=4096)
+        self.assertTrue(report['pause_preexisted'])
+        self.assertTrue(c.stepping)
+        self.assertEqual(c.notifications,[])
+    def test_rejects_scan_if_emulated_ticks_advance(self):
+        start=0x08800000
+        c=SnapshotClient(start,b'A'*4096,mutate_ticks=True)
+        with self.assertRaisesRegex(RuntimeError,'CPU avanzó'):
+            scan_ram_snapshot(c,b'Z'*256,start,start+4096,chunk=4096)
+        self.assertFalse(c.stepping)
+        self.assertEqual(c.notifications,['cpu.stepping','cpu.resume'])
 
 if __name__=='__main__':unittest.main()
