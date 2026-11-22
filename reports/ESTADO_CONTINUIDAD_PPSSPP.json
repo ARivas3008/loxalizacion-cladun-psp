@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1 aprobada históricamente solo Opciones. F2 ABIERTA; nuevo lector GE PPSSPPGE v6 con 9 tests sintéticos PASS, total 33 locales; NO nueva PPSSPP real/MIPS/VRAM, PNG, ISO/BPS, ni F1 960x544.",
+  "fase_actual": "F1 validada anteriormente solo Opciones; F2 ABIERTA. Captura WebSocket 1.20.4 reparada, ISO USA e icono reautenticados, sonda RAM sin escritura preparada, 193 tests Python CI; SIN nueva PPSSPP real, GE/VRAM, 19 glifos multicontesto ni F1 960x544.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -198,7 +198,7 @@
   "siguiente_accion": "Continuar F2: trazado real de KITAJIMA_KARI.IMY hasta RAM/VRAM/PC MIPS y GE; ensayar HUD/tutoriales/combate; validar 19 glifos en varias escenas y regresar a F1 960x544 antes de adoptar tinta blanca por defecto.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
   "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
-  "ultimo_commit_trabajo": "19e44bf298ee87a8aaaa3c390e3c10e767068bc2",
+  "ultimo_commit_trabajo": "ee83ed5a4ff7cdcb8a60b84436db82a6613be009",
   "obligacion_de_relevo": "Al terminar cada etapa actualizar estado, crear prompts/SIGUIENTE_TAREA.md con prompt autonomo que a su vez obligue a generar el siguiente",
   "hashes_antiguos_v015_no_verificados_en_esta_sesion": false,
   "f1_experimento_estatico": {
@@ -705,5 +705,29 @@
     "white_new_ink_default": false,
     "f2_cerrada": false,
     "observacion": "La grabación GE muestra comandos cuando exista, pero no demuestra automáticamente su procedencia MIPS."
+  },
+  "f2_ws_capture_ram_probe_2026_11_21": {
+    "estado": "F2_ABIERTA_QA_BINARIA_Y_CI_NO_RUNTIME",
+    "report": "reports/RESULTADO_F2_RELEVO_CAPTURA_RAM_2026-11-21.json",
+    "doc": "docs/F2_RELEVO_CAPTURA_RAM_2026-11-21.md",
+    "code_commits": [
+      "51c4f9a956f92784aeeff8b2d7f44baa9ac54424",
+      "ee83ed5a4ff7cdcb8a60b84436db82a6613be009"
+    ],
+    "iso_original_sha256": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "compressed_member_sha256": "0ce89df69ad71a9ef3165217d7cb98103a1fb0e08c53ca3a85c594dfaa7a2190",
+    "private_manifest_sha256": "e8604ef2cf0303b1fa29b6c986f916528a36845d0846d4c0df396c6e2facdbb9",
+    "github_actions_ee83_push": "success",
+    "github_actions_ee83_pr": "success",
+    "ci_python_tests": 193,
+    "screenshots_new": 0,
+    "ge_dumps_real_new": 0,
+    "ram_hits_real_new": 0,
+    "verified_mips_icon_pc_new": 0,
+    "verified_vram_addresses_new": 0,
+    "f1_window_regression_new": false,
+    "white_new_ink_default": false,
+    "corpus_untouched": true,
+    "event_safe_only_preserved": true
   }
 }

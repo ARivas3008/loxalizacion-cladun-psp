@@ -1,0 +1,68 @@
+{
+  "schema": "cladun.f2.ws_capture_fix_and_ram_signature.2026-11-21.v1",
+  "phase": "F2_OPEN_NO_NEW_PPSSPP_RUNTIME",
+  "reference_head": "ee83ed5a4ff7cdcb8a60b84436db82a6613be009",
+  "code_commits": [
+    "51c4f9a956f92784aeeff8b2d7f44baa9ac54424",
+    "ee83ed5a4ff7cdcb8a60b84436db82a6613be009"
+  ],
+  "correction": {
+    "file": "tools/f2_ppsspp_ws_1204.py",
+    "finding": "PPSSPP v1.20.4 GPUBufferSubscriber GenericStreamBuffer refuses gpu.buffer.screenshot unless CPU or GPU stepping",
+    "solution": "Record next GE frame first while CPU running; then for each PSP framebuffer screenshot pause CPU, await cpu.stepping broadcast, capture, resume only pauses induced by our client",
+    "explicitly_not_desktop_960x544": true,
+    "tests_added_synthetic": 6
+  },
+  "original_verified": {
+    "iso_bytes": 305496064,
+    "iso_sha256": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "kitajima_absolute_iso_offset": 114723840,
+    "kitajima_imy_compressed_size": 2480,
+    "kitajima_sha256": "0ce89df69ad71a9ef3165217d7cb98103a1fb0e08c53ca3a85c594dfaa7a2190",
+    "source_origin_manifest_sha256": "e8604ef2cf0303b1fa29b6c986f916528a36845d0846d4c0df396c6e2facdbb9",
+    "auth_reexecuted_on_actual_iso": true
+  },
+  "ram_probe": {
+    "file": "tools/f2_ram_provenance_1204.py",
+    "test_file": "tests/test_f2_ram_provenance_1204.py",
+    "tests_added_synthetic": 10,
+    "overlapping_chunk_signature_detection": true,
+    "skips_unreadable_regions_without_joining": true,
+    "no_memory_write_requests": true,
+    "conditional_breakpoint_cpu_pc_disassembly_register_capture": "READY_UNEXECUTED_IN_REAL_PPSSPP",
+    "note": "Exact compressed IMY bytes in RAM are not proof of a GE upload; only trigger observed stops and evidence corroborated against GPU commands could establish provenance"
+  },
+  "tests": {
+    "original_usa_iso_sha256_local": "PASS",
+    "kitajima_imy_sha256_local": "PASS",
+    "local_f2_prior_33_synthetic": "PASS",
+    "local_ram_10_synthetic": "PASS",
+    "github_actions_head_51c4": "push and PR success, 183 Python tests",
+    "github_actions_head_ee83": "push and PR success, 193 Python tests; Go and Windows CI also successful",
+    "entire_repo_local_python": "NOT_RUN_NO_GIT_CHECKOUT_DNS",
+    "entire_repo_local_go": "NOT_RUN_NO_GIT_CHECKOUT_DNS"
+  },
+  "unavailable": {
+    "ppsspp_appimage_v1204_local": true,
+    "ppsspp_appimage_status": "ABSENT_DNS_DOWNLOAD_BLOCKED",
+    "iso_f1_local": true,
+    "iso_f1_status": "ABSENT",
+    "real_ppsspp_new_png": 0,
+    "real_ppsspp_ge_dumps": 0,
+    "new_verified_mips_pc": 0,
+    "new_verified_vram_addresses": 0,
+    "f1_regression_real_960x544": "NOT_RUN",
+    "glyphs_19_real_multicontext": "NOT_RUN",
+    "iso_generated": 0,
+    "bps_generated": 0
+  },
+  "preserved": {
+    "pr7_draft": true,
+    "iso_original_intact": true,
+    "canonical_text_files_untouched": true,
+    "integrator_untouched": true,
+    "white_new_ink_default": false,
+    "event_safe_only_unchanged": true,
+    "proprietary_graphics_committed": false
+  }
+}
