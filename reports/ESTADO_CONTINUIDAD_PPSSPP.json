@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1 Opciones cerrada históricamente; F2 ABIERTA. Relevo: vista previa real de 27 texturas originales SYSGRA tras IMY+PSP unswizzle+RGBA CLUT; inglés gráfico en TUIKA_MES.IMY detectado (no figura necesariamente en 9237 entradas). 291 tests Python CI PASS, Go/Windows PASS. Sin nueva ejecución PPSSPP, RAM→GE→VRAM ni 19 glifos multicontesto.",
+  "fase_actual": "F1 Opciones cerrada históricamente, nueva regresión no hecha. F2 ABIERTA: ISO sonda TUIKA_MES.IMY magenta de EXACTAMENTE 3 bytes RGB desde ISO USA original SHA autenticado; 348 vecinos PSPFS y 26 DSARC sin cambiar, tabla y disco resto idénticos. 22 tests sintéticos nuevos, 313 total CI Python + Go/Windows PASS. No PPSSPP real 1.20.4 en este relevo; 19 glifos, TUIKA en gameplay, MIPS/RAM/GE/VRAM y F1 X11 no probados ahora.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -198,7 +198,7 @@
   "siguiente_accion": "Continuar F2: trazado real de KITAJIMA_KARI.IMY hasta RAM/VRAM/PC MIPS y GE; ensayar HUD/tutoriales/combate; validar 19 glifos en varias escenas y regresar a F1 960x544 antes de adoptar tinta blanca por defecto.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
   "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
-  "ultimo_commit_trabajo": "a440785480a4fa8eee8bfb68c47ee0d065c3e71b",
+  "ultimo_commit_trabajo": "ff91106a6997019bbd532c449160101df04f460a",
   "obligacion_de_relevo": "Al terminar cada etapa actualizar estado, crear prompts/SIGUIENTE_TAREA.md con prompt autonomo que a su vez obligue a generar el siguiente",
   "hashes_antiguos_v015_no_verificados_en_esta_sesion": false,
   "f1_experimento_estatico": {
@@ -1010,5 +1010,43 @@
     "tests": "tests/test_f2_previsualizar_sysgra_privado.py",
     "documentation": "docs/F2_PREVISUALIZACION_PRIVADA_SYSGRA_TEXTO_EN_GRAFICOS_2026-11-22.md",
     "report": "reports/RESULTADO_F2_PREVISUALIZACION_SYSGRA_2026-11-22.json"
+  },
+  "f2_tuika_sonda_rgba2_privada_2026_11_22": {
+    "status": "F2_OPEN_ISO_PRIVATE_PROBE_AUTHENTIC_STATIC_ONLY",
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "new_iso_sha256": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa",
+    "new_member_sha256": "efcf4f41f57c300476e8ce54a32dea01f242dda3fbf3fb9c4e0b582bad8f5252",
+    "source_member_sha256": "c47140753a462cc5b1cc454ee79e0c37b526f06ba5c663b957a91202ebd09127",
+    "absolute_iso_changed_offsets": [
+      114744872,
+      114744873,
+      114744874
+    ],
+    "changed_bytes": 3,
+    "pspfs_unchanged_neighbors": 348,
+    "dsarc_unchanged_neighbors": 26,
+    "no_other_iso_byte_changed": true,
+    "original_alpha_unchanged": true,
+    "private_report_sha256": "05287b3af776794936e5a548f351585f2413e12877fea9ac62d58292a53b438d",
+    "code_commit": "ff91106a6997019bbd532c449160101df04f460a",
+    "new_synthetic_tests": 22,
+    "total_python_tests_ci_passed": 313,
+    "ci_push_run_id": 45051308641,
+    "ci_pr_run_id": 45051315010,
+    "both_code_ci_success": true,
+    "ppsspp_game_emulation_executed": false,
+    "new_authentic_ppsspp_screenshots": 0,
+    "new_ge_dump": 0,
+    "mips_ram_ge_vram_causal_icon_trace_proven": false,
+    "tuika_gameplay_use_proven": false,
+    "all_19_glyphs_multicontext_proven": false,
+    "f1_x11_current_regression_proven": false,
+    "white_new_ink_default": false,
+    "event_safe_only_preserved": true,
+    "pr7_draft": true,
+    "report": "reports/RESULTADO_F2_SONDA_TUIKA_CLUT_2026-11-22.json",
+    "documentation": "docs/F2_SONDA_MAGENTA_TUIKA_CLUT_PPSSPP_PENDIENTE_2026-11-22.md",
+    "tool": "tools/f2_probe_tuika_palette_privado.py",
+    "tests": "tests/test_f2_probe_tuika_palette_privado.py"
   }
 }
