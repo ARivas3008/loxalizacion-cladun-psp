@@ -2,7 +2,7 @@
 import base64,hashlib,tempfile,unittest,sys
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'tools'))
-from f2_ram_provenance_1204 import verified_signature,scan_ram,scan_ram_snapshot,watch_address_once
+from f2_ram_provenance_1204 import verified_signature,scan_ram,scan_ram_snapshot,watch_address_once,assert_watchpoint_free
 
 class RAMClient:
     def __init__(self,start,raw,unreadable=()):
@@ -17,10 +17,11 @@ class RAMClient:
 class WatchClient:
     def __init__(self,paused=False,related=True,raise_in_disasm=False):
         self.paused=paused;self.related=related;self.raise_in_disasm=raise_in_disasm
-        self.calls=[]
+        self.calls=[];self.existing_checks=[];self.reason='memory.breakpoint'
     def request(self,event,**kw):
         self.calls.append(event)
         if event=='cpu.status':return {'stepping':self.paused}
+        if event=='memory.breakpoint.list':return {'breakpoints':self.existing_checks}
         if event in ('memory.breakpoint.add','memory.breakpoint.remove'):
             return {'event':event}
         if event=='memory.disasm':
@@ -32,7 +33,7 @@ class WatchClient:
         self.calls.append('WAIT '+event)
         if event=='cpu.stepping':
             self.paused=True
-            return {'pc':0x08808000,'reason':'memory.read',
+            return {'pc':0x08808000,'reason':self.reason,
                     'relatedAddress':0x08809000 if self.related else 0x0880A000}
         if event=='cpu.resume':self.paused=False;return {}
         raise AssertionError(event)
@@ -140,5 +141,48 @@ class TestSnapshotConsistency(unittest.TestCase):
             scan_ram_snapshot(c,b'Z'*256,start,start+4096,chunk=4096)
         self.assertFalse(c.stepping)
         self.assertEqual(c.notifications,['cpu.stepping','cpu.resume'])
+
+
+class TestWatchpointOwnership(unittest.TestCase):
+    def test_overlapping_existing_breakpoint_rejected_without_side_effect(self):
+        client=WatchClient()
+        client.existing_checks=[{'address':0x08809002,'size':4,'enabled':False}]
+        with self.assertRaisesRegex(RuntimeError,'breakpoint del operador'):
+            watch_address_once(client,0x08809000,4)
+        self.assertNotIn('memory.breakpoint.add',client.calls)
+        self.assertNotIn('memory.breakpoint.remove',client.calls)
+        self.assertNotIn('cpu.resume',client.calls)
+    def test_adjacent_previous_breakpoint_allowed(self):
+        client=WatchClient()
+        client.existing_checks=[{'address':0x08809004,'size':4,'enabled':True}]
+        result=watch_address_once(client,0x08809000,4)
+        self.assertTrue(result['possible_matching_memory_break'])
+        self.assertIn('memory.breakpoint.remove',client.calls)
+    def test_zero_size_old_breakpoint_fails_closed(self):
+        client=WatchClient()
+        client.existing_checks=[{'address':0x08809000,'size':0}]
+        with self.assertRaisesRegex(RuntimeError,'ambiguo'):
+            watch_address_once(client,0x08809000,4)
+        self.assertNotIn('memory.breakpoint.add',client.calls)
+    def test_unrelated_reason_same_address_does_not_resume(self):
+        client=WatchClient()
+        client.reason='cpu.breakpoint'
+        result=watch_address_once(client,0x08809000)
+        self.assertFalse(result['possible_matching_memory_break'])
+        self.assertTrue(client.paused)
+        self.assertNotIn('cpu.resume',client.calls)
+        self.assertIn('memory.breakpoint.remove',client.calls)
+    def test_memory_breakpoint_reason_with_wrong_address_is_unrelated(self):
+        client=WatchClient(related=False)
+        result=watch_address_once(client,0x08809000)
+        self.assertEqual(result['broadcast_reason'],'memory.breakpoint')
+        self.assertFalse(result['possible_matching_memory_break'])
+        self.assertTrue(client.paused)
+    def test_invalid_breakpoint_list_is_rejected(self):
+        class NoList:
+            def request(self,event,**kwargs):
+                return {'breakpoints':'invalid'}
+        with self.assertRaises(RuntimeError):
+            assert_watchpoint_free(NoList(),0x08809000,4)
 
 if __name__=='__main__':unittest.main()

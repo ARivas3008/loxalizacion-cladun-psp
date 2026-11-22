@@ -121,6 +121,28 @@ def scan_ram_snapshot(client: Client, signature: bytes, start=DEFAULT_START,
                 client.wait_broadcast('cpu.resume')
 
 
+def assert_watchpoint_free(client: Client, address:int, size:int) -> None:
+    """Fail closed before add/remove; preserve pre-existing PPSSPP memory checks.
+
+    PPSSPP 1.20.4 memory.breakpoint.list returns address/size. Zero-size or
+    malformed entries are ambiguous and must NOT be overwritten.
+    Concurrent changes from another debugger client are not protected.
+    """
+    data=client.request('memory.breakpoint.list')
+    records=data.get('breakpoints')
+    if not isinstance(records,list):
+        raise RuntimeError('No se pudo consultar la lista real de breakpoints')
+    for bp in records:
+        if not isinstance(bp,dict):
+            raise RuntimeError('Breakpoint preexistente sin estructura válida')
+        prev,prev_size=bp.get('address'),bp.get('size')
+        if (type(prev) is not int or type(prev_size) is not int or
+                not 0<=prev<0x100000000 or not 0<prev_size<=0x100000000-prev):
+            raise RuntimeError('Breakpoint preexistente con rango ambiguo; preservar')
+        if address<prev+prev_size and prev<address+size:
+            raise RuntimeError('El rango ya tiene un breakpoint del operador; no sobrescribir')
+
+
 def watch_address_once(client: Client,address:int,size:int=4) -> dict:
     """One breakpoint and a CPU stop; never modify PSP memory or game code.
 
@@ -132,6 +154,9 @@ def watch_address_once(client: Client,address:int,size:int=4) -> dict:
     status=client.request('cpu.status')
     if status.get('stepping') is True:
         raise RuntimeError('CPU ya detenida: preservar pausa del operador')
+    assert_watchpoint_free(client,address,size)
+    if client.request('cpu.status').get('stepping') is True:
+        raise RuntimeError('CPU detenida por otro depurador antes de instalar watchpoint')
     client.request('memory.breakpoint.add',address=address,size=size,
                    enabled=True,log=False,read=True,write=True,change=False)
     halted=False
@@ -142,7 +167,7 @@ def watch_address_once(client: Client,address:int,size:int=4) -> dict:
         if not halted:
             raise RuntimeError('No se confirmó pausa de CPU tras evento')
         related=event.get('relatedAddress')
-        matching_break=isinstance(related,int) and address<=related<address+size
+        matching_break=(event.get('reason')=='memory.breakpoint' and type(related) is int and related==address)
         pc=event.get('pc')
         if not isinstance(pc,int) or pc%4 or not MIN_ADDR<=pc<MAX_ADDR:
             raise ValueError('PC MIPS no válido en el evento de pausa')
