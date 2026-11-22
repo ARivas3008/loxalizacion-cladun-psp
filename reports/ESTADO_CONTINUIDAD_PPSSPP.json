@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1 Opciones históricamente aprobada; F2 ABIERTA. Réplica auténtica desde 7z de ISO USA y TUIKA magenta con SHA exactos, SOLO 3 bytes ISO modificados, 348 vecinos PSPFS/26 DSARC intactos. Nuevo cotejador de 2+2 capturas PPSSPP con 21 pruebas sintéticas locales PASS, pero sin capturas reales nuevas. PPSSPP 1.20.4/AppImage ausente y descarga fallida, MIPS/RAM/GE/VRAM, 19 glifos multicontesto y regresión F1 X11 aún pendientes. F3-F6 abiertas.",
+  "fase_actual": "F1 Opciones aprobada históricamente, F2 ABIERTA. ISO USA auténtica del 7z y TUIKA magenta recalculadas (3 bytes ISO, 348 PSPFS/26 DSARC vecinos intactos). Nueva segmentación estática autenticada TUIKA CLUT2: 9144 píxeles, 14 franjas, 200 filas, 18 tests sintéticos nuevos PASS. PPSSPP AppImage no disponible, gameplay/RAM/GE/VRAM/glifos multicontesto y regresión F1 X11 siguen sin verificación nueva. F3–F6 pendientes.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -182,7 +182,11 @@
     "F2 21/11 nuevo: inspector sintético PPSSPPGE v6 Zstd, 9 tests nuevos PASS, total 33 tests locales PASS; ISO USA SHA exacto y atlas 19 glifos/100 texels revalidados. NO nuevas pruebas PPSSPP reales.",
     "22/11 nuevo relevo: ISO 7z extraída por libarchive, tamaño 305496064 bytes y SHA original b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f confirmado en este entorno.",
     "22/11 nuevo relevo: sonda ISO TUIKA magenta reconstruida y comparada byte por byte con USA: únicamente offsets 114744872/873/874 alterados y SHA b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa, tablas PSPFS y DSARC intactas, 348/348 vecinos PSPFS y 26/26 DSARC iguales.",
-    "22/11 nuevo relevo: herramienta f2_cotejar_capturas_tuika.py y 21/21 pruebas SINTÉTICAS locales PASS con manifiestos y PNG fabricados como fixtures; NO PPSSPP ni capturas de juego."
+    "22/11 nuevo relevo: herramienta f2_cotejar_capturas_tuika.py y 21/21 pruebas SINTÉTICAS locales PASS con manifiestos y PNG fabricados como fixtures; NO PPSSPP ni capturas de juego.",
+    "22/11 relevo autónomo posterior: ISO original 7z autenticada de nuevo (305496064 bytes, SHA b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f), usando libarchive local real.",
+    "22/11 relevo autónomo posterior: ISO TUIKA sonda auténtica replicada SHA b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa; diferencia exacta 3 bytes offsets 114744872–114744874, comprobados fuente/sonda completos; vecinos 348 PSPFS y 26 DSARC preservados.",
+    "22/11 relevo autónomo posterior: máscara TUIKA original reconstruida en memoria mediante descompresión IMY y unswizzle PSP; máscara exacta SHA 382ae8..., 9144 pixels CLUT2, 14 franjas/200 filas; reportes SOLO metadatos.",
+    "22/11 relevo autónomo posterior: tests locales SINTÉTICOS del nuevo mapa de franjas 18/18 PASS; no PPSSPP."
   ],
   "pruebas_no_ejecutadas": [
     "Prueba PPSSPP valida del candidato extra +1 ideografico en 005709; no aprobado",
@@ -199,7 +203,8 @@
     "F2: no se siguió rutina de carga MIPS/GE/VRAM ni iconos HUD/tutorial/combate.",
     "F2: 19 glifos solo en un mensaje de diagnostico, no QA en varias escenas ni adopcion default de tinta blanca.",
     "22/11 nuevo relevo: descarga/ejecución del AppImage oficial PPSSPP 1.20.4 falló; no se tomaron nuevas capturas A/B, no se midió ventana X11 F1 ni se grabaron GE reales.",
-    "22/11 nuevo relevo: no se acreditó la identidad de ISO cargada en runtime, uso de TUIKA en pantalla, cadena MIPS/RAM/GE/VRAM ni prueba multicontesto de los 19 glifos."
+    "22/11 nuevo relevo: no se acreditó la identidad de ISO cargada en runtime, uso de TUIKA en pantalla, cadena MIPS/RAM/GE/VRAM ni prueba multicontesto de los 19 glifos.",
+    "22/11 relevo autónomo posterior: PPSSPP oficial AppImage descarga fallida (Github DNS), no prueba A/B con capturas auténticas, no cadena MIPS/RAM/GE/VRAM, no nuevo test de 19 glifos ni regresión ventana X11 F1."
   ],
   "siguiente_accion": "Continuar F2: trazado real de KITAJIMA_KARI.IMY hasta RAM/VRAM/PC MIPS y GE; ensayar HUD/tutoriales/combate; validar 19 glifos en varias escenas y regresar a F1 960x544 antes de adoptar tinta blanca por defecto.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
@@ -1092,19 +1097,25 @@
     "report": "reports/RESULTADO_F2_TUIKA_CLUT2_PIXELES_2026-11-22.json"
   },
   "ultimo_relevo": {
-    "date": "2026-11-22",
-    "report": "reports/RESULTADO_F2_COTEJO_CAPTURAS_AB_2026-11-22.json",
-    "documentation": "docs/F2_RELEVO_COTEJO_AB_2026-11-22.md",
-    "new_tool": "tools/f2_cotejar_capturas_tuika.py",
-    "new_test": "tests/test_f2_cotejar_capturas_tuika.py",
-    "local_synthetic_tests_pass": 21,
-    "original_iso_validated": true,
-    "probe_iso_validated": true,
-    "private_png_ppsspp_new": 0,
-    "real_ppsspp_available": false,
-    "new_f1_regression": false,
-    "all_19_glyphs_verified": false,
-    "git_clone_success": false,
-    "ci_of_next_commit_pending_verification": true
+    "fecha": "2026-11-22",
+    "fase": "F2_ABIERTA",
+    "informe": "reports/RESULTADO_F2_MAPA_FRANJAS_TUIKA_2026-11-22.json",
+    "documento": "docs/F2_MAPA_FRANJAS_TUIKA_2026-11-22.md",
+    "herramienta": "tools/f2_mapa_franjas_tuika.py",
+    "pruebas": "tests/test_f2_mapa_franjas_tuika.py",
+    "tests_sinteticos_locales_ok": 18,
+    "iso_usa_sha256_autenticado": true,
+    "iso_tuika_sonda_sha256_autenticado": true,
+    "mask_sha256": "382ae8d2ffa8908979050b5e83f38ec9967b461bbf9b614dd92775da90e409ba",
+    "bandas": 14,
+    "clut2_pixeles": 9144,
+    "informe_privado_sha256": "23f02aa43e4d153c3d62ff065676788c34d6116890f158466ab5c0d9cf8f866e",
+    "ppsspp_ejecutado": false,
+    "pp_sspp_capturas_nuevas": 0,
+    "ge_mips_vram_probado": false,
+    "glifos_19_multicontexto_probados": false,
+    "f1_960x544_regresion_nueva": false,
+    "modificado_codigo_canonico_parche": false,
+    "ci_nuevo_head_pendiente": true
   }
 }
