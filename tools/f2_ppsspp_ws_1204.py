@@ -4,6 +4,8 @@
 Todo archivo generado va a una carpeta privada FUERA del repositorio.
 NO es una traza GE/MIPS/VRAM completa; no falsificar esa conclusión.
 La dependencia websocket-client es opcional y solo se importa al conectar.
+La GPU en v1.20.4 requiere CPU/GPU detenida para framebuffer;
+la grabación de siguiente frame necesita CPU en ejecución.
 """
 from __future__ import annotations
 import argparse,base64,hashlib,json,re,time
@@ -49,21 +51,76 @@ class Client:
             return msg
         raise TimeoutError('Respuestas WebSocket sin ticket esperado')
 
+    def notify(self,event,**kwargs):
+        """PPSSPP cpu.stepping/resume do NOT reply with the request ticket."""
+        self.conn.send(json.dumps({'event':event,**kwargs}))
+
+    def wait_broadcast(self,event):
+        for _ in range(1000):
+            msg=json.loads(self.conn.recv())
+            if msg.get('event')=='error' and 'ticket' not in msg:
+                raise RuntimeError(f'{event}: '+str(msg.get('message')))
+            if msg.get('event')==event and 'ticket' not in msg:
+                return msg
+        raise TimeoutError('No llegó el evento broadcast '+event)
+
+
+def _pause_for_gpu_read(client):
+    """PPSSPP v1.20.4 GPUBufferSubscriber rejects requests while CPU is running."""
+    status=client.request('cpu.status')
+    if status.get('stepping') is True:
+        return False,status.get('ticks')
+    client.notify('cpu.stepping')
+    step=client.wait_broadcast('cpu.stepping')
+    if client.request('cpu.status').get('stepping') is not True:
+        raise RuntimeError('La CPU no confirmó la pausa antes de leer la GPU')
+    return True,step.get('ticks')
+
+
+def _resume_after_gpu_read(client,paused_here):
+    if paused_here:
+        client.notify('cpu.resume')
+        client.wait_broadcast('cpu.resume')
+
 def capture(client,scene,folder,ge_dump=False):
+    """Real GPU readbacks need a stepping CPU; GE next-frame recorder needs a RUNNING CPU.
+
+    These images represent the PSP output framebuffer, NOT the 960x544 desktop
+    window. Never pass them off as the old F1 window-size regression screenshots.
+    """
     shots=[]
-    for i in range(2):
-        response=client.request('gpu.buffer.screenshot',type='uri')
-        png=parse_uri(response.get('uri'))
-        if not png.startswith(b'\x89PNG\r\n\x1a\n'):
-            raise ValueError('No se recibió PNG auténtico')
-        shots.append(exclusive(folder/f'{scene}_{i+1:02d}.png',png))
-        if i==0:time.sleep(0.4)
     gpu=None
     if ge_dump:
+        if client.request('cpu.status').get('stepping') is True:
+            raise RuntimeError('Para gpu.record.dump la CPU debe estar ejecutándose; reanúdala primero')
+        # PPSSPP GPURecordSubscriber records NEXT frame asynchronously.
         resp=client.request('gpu.record.dump')
         raw=parse_uri(resp.get('uri'),'application/octet-stream',256*1024*1024)
+        if raw[:8]!=b'PPSSPPGE':
+            raise ValueError('La grabación no contiene cabecera PPSSPPGE')
         gpu=exclusive(folder/f'{scene}_GE_PRIVATE.dump',raw)
-    return {'screenshots':shots,'gpu_record':gpu}
+    for i in range(2):
+        paused_here,ticks=_pause_for_gpu_read(client)
+        try:
+            response=client.request('gpu.buffer.screenshot',type='uri')
+            png=parse_uri(response.get('uri'))
+            if not png.startswith(b'\x89PNG\r\n\x1a\n'):
+                raise ValueError('No se recibió PNG auténtico')
+            shot=exclusive(folder/f'{scene}_{i+1:02d}.png',png)
+            shot['psp_framebuffer_width']=response.get('width')
+            shot['psp_framebuffer_height']=response.get('height')
+            shot['emulated_ticks_at_pause']=ticks
+            shots.append(shot)
+        finally:
+            # Preserve externally established debugger pauses, including failures.
+            _resume_after_gpu_read(client,paused_here)
+        if i==0:time.sleep(0.4)
+    return {'screenshots':shots,'gpu_record':gpu,
+            'source':'gpu.buffer.screenshot on paused PSP emulator (not desktop window)',
+            'two_distinct_frames_proven':len(shots)==2 and
+                all(isinstance(s.get('emulated_ticks_at_pause'),(int,float)) for s in shots) and
+                shots[1]['emulated_ticks_at_pause']>shots[0]['emulated_ticks_at_pause'],
+            'f1_960x544_window_regression_proven':False}
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)

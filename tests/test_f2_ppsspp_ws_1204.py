@@ -27,4 +27,104 @@ class TestF2WS(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             p=Path(d);(p/'.git').mkdir()
             with self.assertRaises(ValueError):output_dir(p/'new',p)
+
+class EmulatedProtocol:
+    """Fake source-API messages; NO game or PPSSPP instance."""
+    def __init__(self,stepping=False,invalid_png=False):
+        self.stepping=stepping
+        self.invalid_png=invalid_png
+        self.messages=[]
+        self.sent=[]
+        self.ticks=300
+    def send(self,value):
+        req=json.loads(value)
+        event=req['event']
+        self.sent.append(event)
+        ticket=req.get('ticket')
+        if event=='cpu.status':
+            self.messages.append({'event':event,'ticket':ticket,
+                                  'stepping':self.stepping,'ticks':self.ticks})
+        elif event=='cpu.stepping':
+            if not self.stepping:
+                self.stepping=True
+                self.ticks+=1000
+                self.messages.append({'event':'cpu.stepping','pc':0x08804000,'ticks':self.ticks})
+        elif event=='cpu.resume':
+            self.stepping=False
+            self.messages.append({'event':'cpu.resume'})
+        elif event=='gpu.buffer.screenshot':
+            if not self.stepping:
+                self.messages.append({'event':'error','ticket':ticket,'message':'Neither CPU or GPU is stepping'})
+            else:
+                image=(b'NOTPNG' if self.invalid_png else b'\x89PNG\r\n\x1a\nSYNTHETIC')
+                uri='data:image/png;base64,'+base64.b64encode(image).decode()
+                self.messages.append({'event':event,'ticket':ticket,'uri':uri,'width':480,'height':272})
+        elif event=='gpu.record.dump':
+            if self.stepping:
+                self.messages.append({'event':'error','ticket':ticket,'message':'Recorder already busy'})
+            else:
+                uri='data:application/octet-stream;base64,'+base64.b64encode(b'PPSSPPGE'+b'SYNTHETIC').decode()
+                self.messages.append({'event':event,'ticket':ticket,'uri':uri})
+        else:
+            raise AssertionError('Unexpected synthetic request: '+event)
+    def recv(self):
+        if not self.messages:
+            raise AssertionError('Unexpected recv with no synthetic messages')
+        return json.dumps(self.messages.pop(0))
+
+class TestF2CaptureStepping(unittest.TestCase):
+    def test_pause_before_every_screenshot_and_resume(self):
+        from f2_ppsspp_ws_1204 import capture
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as d,patch('f2_ppsspp_ws_1204.time.sleep'):
+            ws=EmulatedProtocol()
+            r=capture(Client(ws),'CONTROLES',Path(d))
+            self.assertEqual(len(r['screenshots']),2)
+            self.assertEqual(ws.sent.count('cpu.stepping'),2)
+            self.assertEqual(ws.sent.count('cpu.resume'),2)
+            self.assertTrue(r['two_distinct_frames_proven'])
+            self.assertFalse(r['f1_960x544_window_regression_proven'])
+            self.assertEqual(r['screenshots'][0]['psp_framebuffer_width'],480)
+            self.assertFalse(ws.stepping)
+    def test_ge_dump_recorded_while_cpu_running_first(self):
+        from f2_ppsspp_ws_1204 import capture
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as d,patch('f2_ppsspp_ws_1204.time.sleep'):
+            ws=EmulatedProtocol()
+            r=capture(Client(ws),'CONTROLES',Path(d),True)
+            self.assertLess(ws.sent.index('gpu.record.dump'),ws.sent.index('cpu.stepping'))
+            self.assertEqual(r['gpu_record']['bytes'],len(b'PPSSPPGE'+b'SYNTHETIC'))
+    def test_existing_debugger_pause_preserved(self):
+        from f2_ppsspp_ws_1204 import capture
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as d,patch('f2_ppsspp_ws_1204.time.sleep'):
+            ws=EmulatedProtocol(stepping=True)
+            r=capture(Client(ws),'OPTIONS',Path(d))
+            self.assertEqual(ws.sent.count('cpu.resume'),0)
+            self.assertEqual(ws.sent.count('cpu.stepping'),0)
+            self.assertFalse(r['two_distinct_frames_proven'])
+            self.assertTrue(ws.stepping)
+    def test_ge_dump_not_allowed_when_already_paused(self):
+        from f2_ppsspp_ws_1204 import capture
+        with tempfile.TemporaryDirectory() as d:
+            ws=EmulatedProtocol(stepping=True)
+            with self.assertRaises(RuntimeError):
+                capture(Client(ws),'OPTIONS',Path(d),True)
+            self.assertNotIn('gpu.record.dump',ws.sent)
+    def test_capture_failure_restores_running_cpu(self):
+        from f2_ppsspp_ws_1204 import capture
+        with tempfile.TemporaryDirectory() as d:
+            ws=EmulatedProtocol(invalid_png=True)
+            with self.assertRaises(ValueError):
+                capture(Client(ws),'DIALOGUE',Path(d))
+            self.assertEqual(ws.sent.count('cpu.resume'),1)
+            self.assertFalse(ws.stepping)
+    def test_paused_cpu_rejects_running_gpu_recorder(self):
+        from f2_ppsspp_ws_1204 import capture
+        with tempfile.TemporaryDirectory() as d:
+            ws=EmulatedProtocol(stepping=True)
+            with self.assertRaises(RuntimeError):
+                capture(Client(ws),'COMBATE',Path(d),True)
+            self.assertEqual(ws.sent,['cpu.status'])
+
 if __name__=='__main__':unittest.main()
