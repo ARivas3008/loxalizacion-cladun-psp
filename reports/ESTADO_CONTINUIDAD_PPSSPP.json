@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1 Opciones aprobada históricamente; F2 ABIERTA. Relevo 22/11: ISO USA autenticada, 4 contenedores DSARC y 108 miembros con 108 SHA únicos verificados; SYSGRA/FONT.IMY y FONT.ARC/FONT_00.IMY distintos en bytes comprimidos. 233 tests CI PASS, Go/Windows PASS. NO PPSSPP real nuevo, no evidencia RAM→GE→VRAM, 19 glifos multicontesto ni F1 X11 nueva.",
+  "fase_actual": "F1 PPSSPP histórica cerrada; F2 ABIERTA. Ambas imágenes FONT.IMY (SYSGRA) y FONT_00.IMY (FONT.ARC) decodificadas DE LA ISO USA REAL sin exportar píxeles: 256x256 vs 512x256, indices [0,1,15] vs [0,1], hashes de raster distintos. 249 tests Python CI PASS, Go/Windows PASS. Emulación PPSSPP real, 19 glifos multicontesto, F1 regresión nueva y causalidad MIPS RAM GE VRAM NO PROBADO.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -198,7 +198,7 @@
   "siguiente_accion": "Continuar F2: trazado real de KITAJIMA_KARI.IMY hasta RAM/VRAM/PC MIPS y GE; ensayar HUD/tutoriales/combate; validar 19 glifos en varias escenas y regresar a F1 960x544 antes de adoptar tinta blanca por defecto.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
   "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
-  "ultimo_commit_trabajo": "822a17dc457ec761a56164db6fdcbc8b7fa8f93d",
+  "ultimo_commit_trabajo": "5242371ee8b0410a6456ee9241d81a453445b1c6",
   "obligacion_de_relevo": "Al terminar cada etapa actualizar estado, crear prompts/SIGUIENTE_TAREA.md con prompt autonomo que a su vez obligue a generar el siguiente",
   "hashes_antiguos_v015_no_verificados_en_esta_sesion": false,
   "f1_experimento_estatico": {
@@ -905,5 +905,44 @@
     "pr7_draft": true,
     "report": "reports/RESULTADO_F2_CATALOGO_GLOBAL_DSARC_2026-11-22.json",
     "documentation": "docs/F2_CATALOGO_GLOBAL_DSARC_2026-11-22.md"
+  },
+  "f2_dos_fuentes_imy_decodificadas_2026_11_22": {
+    "status": "F2_OPEN_STATIC_ONLY",
+    "code_commit": "5242371ee8b0410a6456ee9241d81a453445b1c6",
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "first_4bpp_size": "256x256",
+    "second_4bpp_size": "512x256",
+    "first_decoded_sha256": "5d4ff855af1132ea0abf204b5a4c44ddce28b55758772feba21ce6163cc6c4fc",
+    "second_decoded_sha256": "7bb085850b0eca09d03e6553565cd687be16d3af76fac2de076bc23b82cff3eb",
+    "first_palette_indices": [
+      0,
+      1,
+      15
+    ],
+    "second_palette_indices": [
+      0,
+      1
+    ],
+    "private_report_sha256": "9d4f13e039ee18c176b45d34b21c2376ce2ffde78f2251179aa18743a3b6cb9b",
+    "tool": "tools/f2_auditar_dos_fuentes_imy.py",
+    "tests": "tests/test_f2_auditar_dos_fuentes_imy.py",
+    "new_tests": 16,
+    "code_ci_python_tests_passed": 249,
+    "ci_push_run_id": 45041694305,
+    "ci_pr_run_id": 45041700035,
+    "ci_both_success": true,
+    "official_ppsspp_missing": true,
+    "f1_iso_missing": true,
+    "full_mips_ram_ge_vram_causality_proven": false,
+    "original_iso_not_modified": true,
+    "all_19_glyphs_visual_proven": false,
+    "f1_960x544_new_regression_proven": false,
+    "white_new_ink_default": false,
+    "event_safe_only_required": true,
+    "pr7_draft": true,
+    "new_authentic_ppsspp_screenshots": 0,
+    "new_ge_dumps": 0,
+    "report": "reports/RESULTADO_F2_DOS_FUENTES_IMY_2026-11-22.json",
+    "documentation": "docs/F2_DOS_FUENTES_IMY_DECODIFICADAS_2026-11-22.md"
   }
 }

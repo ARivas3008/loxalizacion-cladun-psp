@@ -1,0 +1,102 @@
+{
+  "schema": "cladun.f2.original_two_font_images_decoded.2026-11-22.v1",
+  "status": "F2_OPEN_STATIC_EVIDENCE_NO_PPSSPP",
+  "verified": {
+    "original_iso_bytes": 305496064,
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "original_iso_real_read": true,
+    "image_type": "IMY 0xA4 4bpp, decoded in memory",
+    "comparison": [
+      {
+        "container": "SYSGRA.ARC",
+        "member": "FONT.IMY",
+        "pspfs_index": 225,
+        "dsarc_index": 14,
+        "stored_bytes": 4148,
+        "stored_sha256": "50143c165f10aa71ac77d4a2b09fd69012b1eceac4a102bf8e2b8157bf8b5915",
+        "flags_header_field": "0x8060",
+        "compressed_flags": 3910,
+        "original_texture_width": 256,
+        "original_texture_height": 256,
+        "decoded_4bpp_bytes": 32768,
+        "decoded_sha256": "5d4ff855af1132ea0abf204b5a4c44ddce28b55758772feba21ce6163cc6c4fc",
+        "used_pixel_indices": [
+          0,
+          1,
+          15
+        ],
+        "pixel_counts_for_indices": {
+          "0": 61045,
+          "1": 2119,
+          "15": 2372
+        }
+      },
+      {
+        "container": "FONT.ARC",
+        "member": "FONT_00.IMY",
+        "pspfs_index": 308,
+        "dsarc_index": 1,
+        "stored_bytes": 17468,
+        "stored_sha256": "698bc5b398a16c3f2a4615527dac6a36dbae73666a7c45c3787bb00a728a8478",
+        "flags_header_field": "0x0060",
+        "compressed_flags": 17342,
+        "original_texture_width": 512,
+        "original_texture_height": 256,
+        "decoded_4bpp_bytes": 65536,
+        "decoded_sha256": "7bb085850b0eca09d03e6553565cd687be16d3af76fac2de076bc23b82cff3eb",
+        "used_pixel_indices": [
+          0,
+          1
+        ],
+        "pixel_counts_for_indices": {
+          "0": 99164,
+          "1": 31908
+        }
+      }
+    ],
+    "both_imy_streams_fully_consumed": true,
+    "decoded_raster_sizes_different": true,
+    "decoded_sha256_different": true,
+    "ram_mips_ge_vram_proven": false,
+    "runtime_function_of_each_font": "NOT_PROVEN",
+    "all_19_glpyhs_visual": "NOT_PROVEN",
+    "private_metadata_file": "CLADUN_F2_dos_fuentes_decodificadas_metrica_privada_2026-11-22.json",
+    "private_metadata_sha256": "9d4f13e039ee18c176b45d34b21c2376ce2ffde78f2251179aa18743a3b6cb9b"
+  },
+  "code": {
+    "commit": "5242371ee8b0410a6456ee9241d81a453445b1c6",
+    "tool": "tools/f2_auditar_dos_fuentes_imy.py",
+    "tests": "tests/test_f2_auditar_dos_fuentes_imy.py",
+    "new_synthetic_tests": 16,
+    "original_binary_test": "PASS_PRIVATE",
+    "total_python_ci_pass": 249,
+    "push_action": 45041694305,
+    "pr_action": 45041700035,
+    "ci_success": true,
+    "go_success": true,
+    "windows_public_build_success": true
+  },
+  "blockers": {
+    "official_ppsspp_appimage_present": false,
+    "download_error": "Could not resolve host github.com",
+    "git_fetch_error": "Could not resolve host github.com",
+    "git_switch_error": "invalid reference: integracion-eventos-segura-20261120 (empty checkout)",
+    "git_pull_error": "Could not resolve host github.com",
+    "canonical_f1_iso_present": false,
+    "gameplay_emulation_executed_in_this_turn": false,
+    "new_authentic_ppsspp_pngs": 0,
+    "new_ge_dumps": 0,
+    "new_mips_pc_icon_proven": 0,
+    "new_vram_icon_addresses_proven": 0,
+    "new_f1_window_960x544_regression": false
+  },
+  "safety": {
+    "original_iso_unchanged": true,
+    "corpus_unchanged": true,
+    "font_repack_unchanged": true,
+    "white_new_ink_default_false": true,
+    "event_safe_only_retained": true,
+    "pr7_draft": true,
+    "commercial_asset_bytes_uploaded_to_github": false
+  }
+}

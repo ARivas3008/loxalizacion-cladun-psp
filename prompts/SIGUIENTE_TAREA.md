@@ -1,84 +1,98 @@
-# CLADUN ES — SIGUIENTE RELEVO AUTÓNOMO F2: PPSSPP REAL, fuentes duplicadas en archivos distintos, MIPS→GE→VRAM y regresión F1
+# CLADUN ES — RELEVO AUTÓNOMO F2: validar dos fuentes originales en PPSSPP y cerrar RAM→GE→VRAM
 
-Especialidad obligatoria: ingeniería inversa PSP MIPS, PPSSPP oficial 1.20.4 con WebSocket debugger, GPU GE/VRAM, DSARC/PSPFS/ISO9660, IMY/CLUT, CP932 español, BPS y QA de interfaz. Ejecuta cambios y experimentos auténticos, valida SHA-256, publica código y evidencias METADATOS a GitHub. **No basta con redactar instrucciones. No inventes capturas, emulación, direcciones MIPS/VRAM, hashes o resultados funcionales.**
+Actúa como ingeniero sénior PSP MIPS, PPSSPP oficial v1.20.4 con depurador WebSocket, GPU GE/VRAM, IMY/CLUT, ISO9660/PSPFS/DSARC, CP932 español, BPS y QA funcional de videojuegos. Ejecuta experimentos reales, modifica herramientas/código cuando corresponda, corre pruebas, publica GitHub y entrega evidencia auténtica. **No se permite inventar capturas, PC MIPS, direcciones RAM o VRAM, hashes, logs ni resultados jugables.**
 
-**OBLIGACIÓN RECURSIVA:** al terminar REESCRIBE COMPLETAMENTE este mismo archivo `prompts/SIGUIENTE_TAREA.md` con un NUEVO prompt autónomo íntegro, que nuevamente exija reescribirlo, y muéstralo íntegro al usuario. Repetir hasta que F2, F3, F4, F5 y F6 estén realmente implementadas y verificadas; nunca prometer trabajos en segundo plano.
+**OBLIGACIÓN RECURSIVA INNEGOCIABLE:** AL FINAL REESCRIBE ÍNTEGRAMENTE el archivo `prompts/SIGUIENTE_TAREA.md` con un NUEVO prompt completo, autónomo y actualizado que contenga esta MISMA obligación de regeneración y muéstralo íntegro al usuario. Continuar en sucesivos relevos hasta implementar y comprobar F2, F3, F4, F5 y F6. No prometer trabajo futuro o asíncrono.
 
-## 1. GitHub: integridad del trabajo y fuentes obligatorias
+## 1. GitHub, permisos y lectura obligatoria
 
-Repositorio `https://github.com/ARivas3008/loxalizacion-cladun-psp`. Rama `integracion-eventos-segura-20261120`; PR #7 `https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7`, base `revision-manual-dialogos`, mantener **DRAFT**. Antes de modificar: verificar HEAD, árbol, PR, estado de las dos GitHub Actions y ausencia de trabajo paralelo. En checkout local ejecutar `git fetch origin`, `git switch integracion-eventos-segura-20261120`, `git pull --ff-only`, `git status --short`, `git rev-parse HEAD`. Si DNS impide Git directo, registrar fallo y usar conector GitHub con expected_sha; no afirmar sincronización falsa. Nunca forzar la referencia ni fusionar PR.
+Repositorio: https://github.com/ARivas3008/loxalizacion-cladun-psp
 
-Leer ÍNTEGROS AGENTS.md, README.md, docs/PLAN_HASTA_IMPLEMENTACION_PPSSPP_2026-11-20.md, docs/RESULTADO_F1_PPSSPP_2026-11-21.md, docs/RESULTADO_F2_ATLAS_PPSSPP_2026-11-21.md, docs/F2_ICONOS_TINTA_PPSSPP_2026-11-21.md, docs/F2_AUDITORIA_ORIGEN_SOLO_LECTURA_2026-11-21.md, docs/F2_QA_ESTATICA_WS_2026-11-21.md, docs/F2_LECTOR_GE_V6_2026-11-21.md, docs/F2_RELEVO_CAPTURA_RAM_2026-11-21.md, docs/F2_FE_ERRATAS_SHA256_SNAPSHOT_RAM_2026-11-21.md, docs/F2_RELEVO_WS_BREAKPOINT_2026-11-21.md, docs/F2_PREPARACION_DIRECCIONES_GE_2026-11-21.md, docs/F2_INVENTARIO_SYSGRA_2026-11-22.md y NUEVA docs/F2_CATALOGO_GLOBAL_DSARC_2026-11-22.md. Leer informes F2 completos en reports/ incluyendo reports/RESULTADO_F2_CATALOGO_GLOBAL_DSARC_2026-11-22.json, reports/ESTADO_CONTINUIDAD_PPSSPP.json, este prompt y código/tests/patcher/.github/workflows.
+Rama: `integracion-eventos-segura-20261120`; PR #7: https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7; base `revision-manual-dialogos`. Conservar PR **DRAFT**, NO fusionar. Antes de escribir, verificar HEAD, tree, PR y ambas GitHub Actions. En checkout local intentar exactamente:
+git fetch origin
+git switch integracion-eventos-segura-20261120
+git pull --ff-only
+git status --short
+git rev-parse HEAD
 
-PROHIBIDO subir ISO, BPS, EBOOT, DATA.DAT, FONT.ARC, IMY, PNG comerciales, RAM, dumps GE, texturas, ejecutables de juegos. Evidencias de esos tipos solo en ubicación privada externa al repo; subir únicamente código, tests, resumen de metadatos, informes no comerciales y SHA.
+Si falla la descarga Git por DNS, registrar fallo real y usar GitHub conectado con `expected_sha`; nunca force-push ni sustitución de trabajo ajeno. En el relevo previo la terminal devolvió `Could not resolve host: github.com` y el checkout local quedó sin rama/HEAD.
 
-## 2. Referencias autenticadas e invariantes
+Leer completos: `AGENTS.md`, `README.md`, `docs/PLAN_HASTA_IMPLEMENTACION_PPSSPP_2026-11-20.md`, `docs/RESULTADO_F1_PPSSPP_2026-11-21.md`, `docs/RESULTADO_F2_ATLAS_PPSSPP_2026-11-21.md`, `docs/F2_ICONOS_TINTA_PPSSPP_2026-11-21.md`, `docs/F2_AUDITORIA_ORIGEN_SOLO_LECTURA_2026-11-21.md`, `docs/F2_QA_ESTATICA_WS_2026-11-21.md`, `docs/F2_LECTOR_GE_V6_2026-11-21.md`, `docs/F2_RELEVO_CAPTURA_RAM_2026-11-21.md`, `docs/F2_FE_ERRATAS_SHA256_SNAPSHOT_RAM_2026-11-21.md`, `docs/F2_RELEVO_WS_BREAKPOINT_2026-11-21.md`, `docs/F2_PREPARACION_DIRECCIONES_GE_2026-11-21.md`, `docs/F2_INVENTARIO_SYSGRA_2026-11-22.md`, `docs/F2_CATALOGO_GLOBAL_DSARC_2026-11-22.md`, `docs/F2_DOS_FUENTES_IMY_DECODIFICADAS_2026-11-22.md`, informes F2 de `reports/`, `reports/ESTADO_CONTINUIDAD_PPSSPP.json`, este prompt, `tools/`, `tests/`, `patcher/` y `.github/workflows/`.
 
-ISO USA PRIVADA del 7z aportado: 305496064 bytes, SHA-256 EXACTO de 64 hex:
-`b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f`.
-No reintroducir la versión incorrecta de 62 caracteres; mantener tests/test_f2_sha256_references.py. ISO F1 canónica SHA `496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986`. BPS experimental USA→F1 SHA `daaa64ab1994271debc6464f3c70ab0f30a2ab3f9a1743dbd6a65f3c88d20acd`. AppImage PPSSPP Linux oficial v1.20.4 SHA `661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21`.
+**No publicar ISO, BPS, EBOOT, DATA.DAT, FONT.ARC, IMY, texturas, RAM, GPU dumps, capturas PNG comerciales ni ejecutables del juego en GitHub.** Mantener estas evidencias en una ruta PRIVADA; a GitHub únicamente código, tests, métricas, documentación y SHA.
 
-F1 Opciones aprobada HISTÓRICAMENTE en PPSSPP real Xvfb 1280×720, ventana X11 960×544, interior 756 px, exterior ~764 px. ID 005709 diez espacios ideográficos más 7 ASCII; 005710 «Sí»; 005713 «No» + espacio ASCII de presentación. Una captura PSP framebuffer no demuestra ancho de ventana X11: volver a medir usando scrot/X11.
+## 2. Fuente original y precedentes exactos
 
-F2: 2721 glifos originales conservados + 19 A1–B3 `áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō`. Tabla MIPS de TEXTO `0x09075000`, PC `0x089089C8`, instrucción `lhu t2,0(t1)`: NO identificar como iconos. ICONOS CONTROLES históricamente aislados en DATA.DAT→SYSGRA.ARC (PSPFS índice 225, offset 895488)→KITAJIMA_KARI.IMY (DSARC índice 17/27, offset 57856, longitud 2480), SHA `0ce89df69ad71a9ef3165217d7cb98103a1fb0e08c53ca3a85c594dfaa7a2190`, offset ISO absoluto 114723840 NO es RAM. Prueba magenta previa: 27 bytes RGB cambiados y seis iconos de CONTROLES, 348 vecinos PSPFS +26 DSARC intactos. HUD/combate NO probados.
+ISO original USA privada, proveniente del 7z aportado por el usuario: 305496064 bytes y SHA256 canónico (64 hex):
+`b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f`
 
-Tinta FONT_00.IMY: CLUT15 amarilla RGB(247,247,0) y CLUT1 blanca RGB(255,255,255). `white_new_ink=True` optativa cambia 100 texels nuevos sin tocar los 2721 originales; conservar `False` predeterminado. ISOs experimentales amarilla `58f98b65185f39f172de0b5da97b9ce6fecb009e61b9462632f602485c99e4ca`, blanca `a42731988835bddb9dc81ef6d242b9c5029030256f210838881a1d48aed2de33` y BPS amarillo→blanco `2a698e1efaa1c2333dbd86ac8c3a9fabbd369382c4b8c7d3ad0ab7c7f2ffac3f`; una ayuda anterior de amarillo 516→0 NO acredita todos los 19 caracteres.
+NO usar su antigua variante errónea de 62 caracteres. Mantener `tests/test_f2_sha256_references.py`. ISO F1 canónica privada SHA `496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986`; BPS experimental USA→F1 SHA `daaa64ab1994271debc6464f3c70ab0f30a2ab3f9a1743dbd6a65f3c88d20acd`; PPSSPP AppImage oficial Linux v1.20.4 SHA `661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21`.
 
-## 3. NUEVO hallazgo real del relevo precedente: hay cuatro DSARC, no solo SYSGRA
+F1 Opciones **aprobada históricamente en PPSSPP REAL**: Xvfb 1280×720, ventana X11 960×544, ancho interior 756px y exterior ~764px; ID 005709 diez espacios ideográficos más 7 ASCII, ID 005710 Sí, ID 005713 No con espacio ASCII al final. La textura framebuffer PSP NO acredita dimensiones de una ventana X11. Repetir con captura real y navegación.
 
-Se releyó la ISO USA auténtica, con fuente derivada de ISO9660 en vez de inventar offsets. DATA.DAT offset ISO 113770496; 349 PSPFS. Los cuatro contenedores DSARC reconocidos por firma en la tabla son:
-- PSPFS 0: SYS.DAT2, 6 PNG.
-- PSPFS 188: SE.ARC, 68 SPS.
-- PSPFS 225: SYSGRA.ARC, 27 IMY.
-- PSPFS 308: FONT.ARC, 7 recursos BIN/IMY.
-**Total 108 miembros, 108 SHA-256 diferentes**, todos comprobados y sin solapamientos. Informe detallado PRIVADO de 108 filas `CLADUN_F2_catalogo_DSARC_108_privado_2026-11-22.json`, SHA `9938fd9fc0eba271494ecdfeec49c1ffd95291b0abecdc33ca65ee97c00bc567` (SOLO metadatos).
+Fuente F2: 2721 glifos originales conservados, 19 A1–B3 añadidos =2740, cadena completa `áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō`. Tabla RAM de TEXTO `0x09075000` y MIPS PC `0x089089C8` con `lhu t2,0(t1)`: no son prueba del código de ICONOS. CLUT15 amarilla RGB(247,247,0), índice1 blanco RGB(255,255,255). `white_new_ink=True` altera optativamente 100 texels solo nuevos; preservar `False` por defecto hasta validación completa.
 
-Posible línea nueva de investigación visual: **SYSGRA.ARC/FONT.IMY** SHA `50143c165f10aa71ac77d4a2b09fd69012b1eceac4a102bf8e2b8157bf8b5915` es distinto EN BYTES almacenados de **FONT.ARC/FONT_00.IMY** SHA `698bc5b398a16c3f2a4615527dac6a36dbae73666a7c45c3787bb00a728a8478`. NO afirmar que sean diferentes visualmente o se usen en un contexto sin observación. Se debe comparar su papel funcional, especialmente interfaz y HUD, antes de cerrar F2.
+Iconos CONTROLES demostrados históricamente mediante sonda magenta: DATA.DAT→SYSGRA.ARC (PSPFS225 offset895488)→KITAJIMA_KARI.IMY (DSARC17/27, offset57856, 2480 bytes) SHA `0ce89df69ad71a9ef3165217d7cb98103a1fb0e08c53ca3a85c594dfaa7a2190`, offset ISO 114723840 (0x06D68C00) **NO dirección RAM**. 27 bytes RGB alterados y seis iconos cambiados, 348 PSPFS y 26 DSARC vecinos idénticos. No extrapolar a HUD, tutorial o combate sin más pruebas.
 
-Herramienta nueva `tools/f2_catalogo_global_dsarc_usa.py` autentica ISO y verifica todas las estructuras y firmas sin exportar recursos; `tests/test_f2_catalogo_global_dsarc_usa.py` contiene 12 tests sintéticos. Commits de código `375eec3d7bcb3dbc878f9579ed49e9af92279091` y corrección real de orden de validación `822a17dc457ec761a56164db6fdcbc8b7fa8f93d`. El primer CI falló por solapamiento detectado como cabecera PNG mala y se corrigió para verificar primero la topología; Actions del código reparado push `45040317705` y PR `45040322660` ambas SUCCESS con **233 tests Python**, Go e integridad y build Windows. Son pruebas estáticas, NO PPSSPP.
+## 3. NUEVA evidencia reproducible: dos fuentes decodificadas NO iguales
 
-Anteriormente se identificaron solo por nombre 12 candidatos SYSGRA: HP_BAR, HP_KAO0, HP_KAO1, HP_KAO2, LVSP, LVSP_NUM, DAMAGE, EXP_BAR, MAHO_BAR, MAHO_ST, SYS1, ZOKUSEI. NO asignarles HUD o combate hasta comprobarlos funcionalmente.
+En el relevo anterior se autenticó ISO USA REAL y se decodificaron EN MEMORIA los dos recursos IMY tipo 0xA4, sin exportar gráficos. La herramienta `tools/f2_auditar_dos_fuentes_imy.py` valida ISO exacta, firma de cada miembro, stream, offsets, flags y geometría, y guarda solo estadísticas. Pruebas sintéticas en `tests/test_f2_auditar_dos_fuentes_imy.py`: **16 nuevas**, commit de código `5242371ee8b0410a6456ee9241d81a453445b1c6`. Actions push `45041694305` y PR `45041700035` ambas SUCCESS: **249 pruebas Python**, Go, integridad y compilación Windows pública. No demuestran gameplay.
 
-## 4. PRIORIDAD: conseguir PPSSPP oficial y probar verdadera procedencia gráfica
+Resultados REALES del binario USA:
+- `SYSGRA.ARC/FONT.IMY` (PSPFS225, DSARC14): 4148 bytes almacenados, SHA `50143c165f10aa71ac77d4a2b09fd69012b1eceac4a102bf8e2b8157bf8b5915`; decodificado 4bpp **256×256**, 32768 bytes, índices píxel CLUT **0,1,15**, SHA decodificada `5d4ff855af1132ea0abf204b5a4c44ddce28b55758772feba21ce6163cc6c4fc`.
+- `FONT.ARC/FONT_00.IMY` (PSPFS308, DSARC1): 17468 bytes almacenados, SHA `698bc5b398a16c3f2a4615527dac6a36dbae73666a7c45c3787bb00a728a8478`; decodificado 4bpp **512×256**, 65536 bytes, índices **0,1**, SHA decodificada `7bb085850b0eca09d03e6553565cd687be16d3af76fac2de076bc23b82cff3eb`.
 
-Comprobar PPSSPP AppImage real desde `https://github.com/hrydgard/ppsspp/releases/tag/v1.20.4`; validar SHA exacto antes de ejecutar. En anterior entorno AppImage y F1 no estaban presentes; Git/curl no resolvían DNS. Si sigue bloqueado, señalar SIN EJECUCIÓN, jamás inventar PNG/GE, y realizar una mejora verificable alternativa. Xvfb 1280×720, scrot y ventana 960×544 solo sirven como evidencia cuando hay emulador funcionando con juego.
+**Conclusión válida:** no son copias idénticas de la misma imagen ni en formato comprimido ni descomprimido. **No se ha determinado cuál se usa en menús, HUD ni diálogos, ni que uno dibuje textos concretos.** Las paletas efectivas y el renderizado solo se comprueban en PPSSPP. Informe de 2 texturas REAL/PRIVADO: `CLADUN_F2_dos_fuentes_decodificadas_metrica_privada_2026-11-22.json`, SHA `9d4f13e039ee18c176b45d34b21c2376ce2ffde78f2251179aa18743a3b6cb9b`.
 
-Recuperar ISO F1 canónica privada o reconstruirla desde la USA mediante integrador auditado y `--experimental-parcial --event-safe-only`, manteniendo ISO original intacta; exigir hash exacto. No compartir ningún binario comercial. El PR permanece DRAFT.
+Auditorías anteriores: cuatro contenedores DSARC: SYS.DAT2 (6 PNG), SE.ARC (68 SPS), SYSGRA.ARC (27 IMY), FONT.ARC (7 BIN/IMY), total 108 recursos y 108 SHA distintos. `tools/f2_catalogo_global_dsarc_usa.py`, `tools/f2_inventario_sysgra_usa.py`. Doce nombres sugestivos de HUD/combate son **solo candidatos**, no atribuciones: HP_BAR, HP_KAO0, HP_KAO1, HP_KAO2, LVSP, LVSP_NUM, DAMAGE, EXP_BAR, MAHO_BAR, MAHO_ST, SYS1, ZOKUSEI. Comparar funcionalmente con controles positivos y negativos.
 
-Con juego REAL visible en CONTROLES, debugger WebSocket `ws://127.0.0.1:24192/debugger`, subprotocolo `debugger.ppsspp.org`. Verificar `version`, `game.status`, `cpu.status`. PPSSPP 1.20.4 admite `memory.read`, `memory.disasm`, `memory.breakpoint.list/add/remove`, `cpu.getAllRegs`, `cpu.stepping/resume`, `gpu.buffer.screenshot`, `gpu.record.dump`; no inventar `cpu.breakpoint.hit` ni `gpu.displaylist.disasm`.
+## 4. PRIORIDAD: PPSSPP 1.20.4 REAL, depurador, RAM y GPU
 
-Con CPU CORRIENDO, en carpeta PRIVADA NUEVA:
-`python tools/f2_ppsspp_ws_1204.py --scene CONTROLES --salida-privada /tmp/cladun-f2-controles-real --port 24192 --ge-dump`
-`python tools/f2_ge_dump_1204.py --entrada-privada /tmp/cladun-f2-controles-real/CONTROLES_GE_PRIVATE.dump --reporte-privado /tmp/cladun-f2-ge-real.json`
-`python tools/f2_ram_provenance_1204.py --iso-usa /PRIVATE/USA.iso --salida-privada /tmp/cladun-f2-origen-real --solo-origen`
+Buscar AppImage oficial en https://github.com/hrydgard/ppsspp/releases/tag/v1.20.4. Comprobar versión y SHA esperado antes de ejecutar, no instalar otro binario y declarar PPSSPP 1.20.4 sin autenticación. En el último entorno no hubo PPSSPP ni ISO F1; red por DNS `Could not resolve host github.com`. Si continúa el bloqueo, consignar `NO EJECUTADO` y buscar una mejora REAL reproducible diferente, sin fabricar capturas.
 
-Para RAM, `--scan-ram` con CPU realmente detenida y ticks verificados; si existe firma en RAM auténtica, en contexto nuevo y con un solo debugger usar `--watch-address 0xDIRECCION_PSP_RAM`; jamás el offset ISO 0x06D68C00. Solo atribuir un watchpoint con `reason == memory.breakpoint` y `relatedAddress == inicio`; preservar pausas y puntos de vigilancia ajenos. Correlacionar PC MIPS real, lectura comprimida, descompresor, escritura en RAM, registros TEXADDR/CLUT, PRIM/TRANSFERSTART, transferencias a VRAM y pixel final. `tools/f2_ge_dump_1204.py` publica CANDIDATOS de direcciones, NO causalidad por sí solo. Comparar por separado KITAJIMA, SYSGRA/FONT.IMY, FONT.ARC/FONT_00.IMY y candidatos HUD/combate con controles positivos y negativos.
+Recuperar ISO F1 canónica o reproducirla con integrador seguro desde USA, en ruta PRIVADA, sin sobrescribir original, preservar `--experimental-parcial --event-safe-only`, autenticar SHA F1 exacto. Xvfb a 1280×720 y ventana PPSSPP 960×544, medir con scrot SOLO SI el emulador real está abierto.
 
-Capturar al menos DOS PNG auténticos por CONTROLES, HUD, tutorial, ayuda, diálogos y combate y hash SHA individual PRIVADO; registrar evidencia X11 cuando se mida ventana, nunca un montaje.
+En CONTROLES auténticos, depurador `ws://127.0.0.1:24192/debugger` subprotocolo `debugger.ppsspp.org`; confirmar `version`, `game.status`, `cpu.status`. Admitidos: `memory.read`, `memory.disasm`, `memory.breakpoint.list/add/remove`, `cpu.getAllRegs`, `cpu.stepping/resume`, `gpu.buffer.screenshot`, `gpu.record.dump`. No inventar `cpu.breakpoint.hit` ni `gpu.displaylist.disasm`.
 
-## 5. QA de 19 glifos, F1 y seguridad total
+Con CPU corriendo, directorio PRIVADO NUEVO:
+`python tools/f2_ppsspp_ws_1204.py --scene CONTROLES --salida-privada /tmp/f2-controles-REAL-nuevo --port 24192 --ge-dump`
 
-Validar individualmente `áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō` en PPSSPP real y múltiples pantallas, además de L/R/□○×△, ancho, avance, altura, acentos, márgenes y clipping (í x4 y mayúsculas y15), líneas y CLUT. Usar `tools/generar_probe_f2_glifos.py` y `tools/generar_probe_f2_tinta.py` solo en CSV/ISO diagnósticos PRIVADOS, sin alterar 9237 registros canónicos. No habilitar tinta blanca predeterminada antes de probar F1 Opciones actual y navegación, IDs 005709/005710/005713, ventana 960×544 y márgenes 756/~764.
+Analizar solo un dump real:
+`python tools/f2_ge_dump_1204.py --entrada-privada /tmp/f2-controles-REAL-nuevo/CONTROLES_GE_PRIVATE.dump --reporte-privado /tmp/f2-ge-REAL-nuevo.json`
 
-Comprobar invariantes: 349 PSPFS, 345 recursos fuera de cuatro contenedores autorizados, 348 vecinos PSPFS en sondas aisladas FONT.ARC/SYSGRA.ARC, 26 DSARC vecinos KITAJIMA, ISO9660 restante idéntico; SCRIPT.DAT 51705 comandos, 46308 no textuales, 1625 inicios, desplazamientos cero y 4524 traducciones de script aplazadas. NO retirar `--event-safe-only`. Si se genera BPS solo experimental y privado: `--experimental --event-safe-only`, SHA origen/salida y roundtrip exacto.
+Verificar origen comprimido RAM con:
+`python tools/f2_ram_provenance_1204.py --iso-usa /PRIVATE/USA.iso --salida-privada /tmp/f2-ram-origen-REAL-nuevo --solo-origen`
 
-Ejecutar comandos cuando exista checkout local:
+Después `--scan-ram` en carpeta distinta con CPU detenida y ticks estables; solo si existe coincidencia PSP RAM exacta, nueva sesión y `--watch-address 0xDIRECCION_PSP_RAM` usando un depurador único, nunca 0x06D68C00. Atribuir pausas solo si `reason == "memory.breakpoint"` y `relatedAddress` igual a rango vigilado. Capturar PC MIPS realmente observado, lectura/descompresión RAM, selección CLUT, TEXADDR/PRIM/TRANSFERSTART y dirección VRAM candidata con bytes y dibujo final demostrados. Un hash de textura, una coincidencia RAM o un registro GE aislados NO prueban cadena causal.
+
+Contrastar SEPARADAMENTE KITAJIMA, SYSGRA/FONT.IMY y FONT.ARC/FONT_00.IMY, además de los 12 candidatos, en CONTROLES, HUD, tutorial, ayuda, diálogos y combate; controls positivos y negativos, al menos DOS PNG PPSSPP auténticos por escena y SHA de cada uno, datos comerciales en PRIVADO. Para F1 exigir ventana X11 genuina 960×544, no framebuffer PSP.
+
+## 5. Los 19 signos y seguridad integral
+
+Verificar cada `áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō` visualmente en varios contextos PPSSPP: ancho, advance, altura/acento, interlineado, recorte de `í` x4 y mayúsculas y15, interacción con □ ○ × △ y L/R, CLUT, navegación y retorno. Si faltan ejemplos naturales, generar CSV diagnóstico PRIVADO de 9237 registros con `tools/generar_probe_f2_glifos.py`, comparar `tools/generar_probe_f2_tinta.py` sin editar textos canónicos. No cambiar `white_new_ink=False` hasta F1 regresada.
+
+Blindaje obligatorio: 349 PSPFS, 345 fuera de los cuatro contenedores autorizados, 348 vecinos PSPFS en sondas aisladas, 26 vecinos DSARC de KITAJIMA, otros archivos ISO9660 sin cambios; SCRIPT.DAT 51705 comandos, 46308 no textuales, 1625 inicios, 0 desplazamientos, 4524 traducciones de script pospuestas. NUNCA eliminar `--event-safe-only`. BPS solo experimental privado, `--experimental --event-safe-only`, SHA de entrada/salida y roundtrip exacto.
+
+Ejecutar en checkout si es viable:
 `python -m unittest discover -s tests -v`
 `python tools/verificar_integridad.py --raiz .`
 `python tools/verificar_borrador_es.py`
 `python tools/auditar_preinsercion_es.py --reporte /tmp/f2-preflight.json`
 `python tools/reportar_integrabilidad_es.py --reporte /tmp/f2-integrabilidad.json`
 `python tools/f2_auditar_origen_iconos.py --iso-usa /PRIVATE/USA.iso --reporte /tmp/f2-origen.json`
-`python tools/f2_qa_raster_19.py --iso-usa /PRIVATE/USA.iso --reporte /tmp/f2-glifos.json`
+`python tools/f2_qa_raster_19.py --iso-usa /PRIVATE/USA.iso --reporte /tmp/f2-19.json`
 `python tools/f2_inventario_sysgra_usa.py --iso-usa /PRIVATE/USA.iso --reporte /tmp/f2-sysgra.json`
 `python tools/f2_catalogo_global_dsarc_usa.py --iso-usa /PRIVATE/USA.iso --reporte /tmp/f2-dsarc.json`
+`python tools/f2_auditar_dos_fuentes_imy.py --iso-usa /PRIVATE/USA.iso --reporte /tmp/f2-dos-imy.json`
 `(cd patcher && go test ./...)`
 `git diff --check`
 
-Diferenciar pruebas Python/Go/Windows en GitHub Actions de emulación real y comparar el SHA del HEAD FINAL del PR con los dos workflows. Registrar explícitamente comandos omitidos y ausencia de recursos, sin declarar ejecuciones ficticias.
+Si el Git directo sigue bloqueado, comprobar desde los logs GitHub Actions del HEAD FINAL: tests Python/Go, integridad, compilación pública Windows, PR DRAFT, SHA y branch; no presentar CI como emulación.
 
-## 6. Fases pendientes y relevo recursivo al terminar
+## 6. F3–F6 y relevo obligatorio
 
-F2 ABIERTA hasta demostrar cadena RAM→MIPS→GE→VRAM de iconos, fuente de tipografía de cada contexto, 19 glifos multicontesto y F1 de ventana real. F3 intro inglesa; F4 ingeniería de saltos y referencias seguros de 4524 textos SCRIPT.DAT; F5 recorrer historia, combate, HUD, inventario, retratos, enciclopedia y guardado/carga; F6 crear BPS final y EXE Windows con QA completo. No merge de PR #7 hasta terminar.
+F2 sigue ABIERTA hasta demostrar el uso real en memoria/GE/VRAM de iconos y fuentes, 19 glifos multicontesto y F1 960×544. F3: intro todavía inglesa; F4: ingeniería y protección de saltos/referencias de 4524 cambios pendientes; F5: juego integral, diálogos, combates, HUD, retratos, inventario, enciclopedia, guardado/carga; F6: BPS final y EXE Windows, prueba de aplicación y QA end-to-end. Mantener PR #7 en DRAFT mientras falten.
 
-Al concluir actualizar código, pruebas, docs y `reports/ESTADO_CONTINUIDAD_PPSSPP.json`, registrar commit y hashes reales y diferenciar HECHO / NO PROBADO. No subir materiales comerciales. Reescribir **POR COMPLETO** `prompts/SIGUIENTE_TAREA.md` con un nuevo prompt autónomo, mostrarlo íntegro al usuario y exigir de nuevo la misma obligación para la siguiente tarea. RECURSIVIDAD OBLIGATORIA HASTA F2–F6 CERRADAS DE VERDAD.
+Al terminar publicar SOLO informes, herramientas y tests, actualizar `reports/ESTADO_CONTINUIDAD_PPSSPP.json`, hashes y estados NO PROBADO, y comprobar las DOS Actions del HEAD final. Nunca subir datos comerciales.
+
+**RECURSIVIDAD OBLIGATORIA HASTA F2–F6 VERIFICADAS: REESCRIBE ÍNTEGRAMENTE `prompts/SIGUIENTE_TAREA.md` CON OTRO PROMPT AUTÓNOMO COMPLETO; INCLUYE ESTA MISMA OBLIGACIÓN Y MUÉSTRALO ÍNTEGRO AL USUARIO AL FINAL.**
