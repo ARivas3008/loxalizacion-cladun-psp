@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1 aprobada anteriormente solo Opciones; F2 ABIERTA. Nuevo QA binario de 19 glifos y 100 texels, cliente WS PPSSPP v1.20.4 implementado, pero SIN PPSSPP REAL nuevo ni GE/VRAM ni regresión F1 960x544.",
+  "fase_actual": "F1 aprobada históricamente solo Opciones. F2 ABIERTA; nuevo lector GE PPSSPPGE v6 con 9 tests sintéticos PASS, total 33 locales; NO nueva PPSSPP real/MIPS/VRAM, PNG, ISO/BPS, ni F1 960x544.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -177,7 +177,8 @@
     "21/11 F2: PPSSPP un solo mensaje diagnostico con los 19 glifos; 2 PNG cada variante, amarillo ROI 516->0; blanca a4273198...; BPS diferencial desde ISO diagnóstica roundtrip.",
     "21/11 F2: Python suite local 152 PASS (1 skip), Go PASS, corpus/borrador/preinsercion/integrabilidad PASS.",
     "21/11 F2 relevo: auditoría de ISO USA desde 7z y KITAJIMA por SHA/origen; 27 RGB simulados solo en memoria; 7 unitarios sintéticos PASS; NO nuevas capturas ni GE/VRAM.",
-    "21/11 F2: ISO USA sha y rasters FONT redecodificados; 19/19 geométricos y 100 texels index15; 24 tests sintéticos locales PASS. No PPSSPP ni pruebas funcionales nuevas."
+    "21/11 F2: ISO USA sha y rasters FONT redecodificados; 19/19 geométricos y 100 texels index15; 24 tests sintéticos locales PASS. No PPSSPP ni pruebas funcionales nuevas.",
+    "F2 21/11 nuevo: inspector sintético PPSSPPGE v6 Zstd, 9 tests nuevos PASS, total 33 tests locales PASS; ISO USA SHA exacto y atlas 19 glifos/100 texels revalidados. NO nuevas pruebas PPSSPP reales."
   ],
   "pruebas_no_ejecutadas": [
     "Prueba PPSSPP valida del candidato extra +1 ideografico en 005709; no aprobado",
@@ -197,7 +198,7 @@
   "siguiente_accion": "Continuar F2: trazado real de KITAJIMA_KARI.IMY hasta RAM/VRAM/PC MIPS y GE; ensayar HUD/tutoriales/combate; validar 19 glifos en varias escenas y regresar a F1 960x544 antes de adoptar tinta blanca por defecto.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
   "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
-  "ultimo_commit_trabajo": "202ff8d92513106f2e24a193c5032500bcc74c2d (código F2; ver HEAD posterior de docs)",
+  "ultimo_commit_trabajo": "19e44bf298ee87a8aaaa3c390e3c10e767068bc2",
   "obligacion_de_relevo": "Al terminar cada etapa actualizar estado, crear prompts/SIGUIENTE_TAREA.md con prompt autonomo que a su vez obligue a generar el siguiente",
   "hashes_antiguos_v015_no_verificados_en_esta_sesion": false,
   "f1_experimento_estatico": {
@@ -687,5 +688,22 @@
     "new_iso_count": 0,
     "new_ge_pcs": 0,
     "white_new_ink_default": false
+  },
+  "f2_lector_ppsspp_ge_v6_2026_11_21": {
+    "estado": "PREPARADO_ESTATICO_PENDIENTE_PPSSPP_REAL",
+    "documento": "docs/F2_LECTOR_GE_V6_2026-11-21.md",
+    "informe": "reports/RESULTADOS_F2_GE_DUMP_2026-11-21.json",
+    "script": "tools/f2_ge_dump_1204.py",
+    "tests": "tests/test_f2_ge_dump_1204.py",
+    "pruebas_locales": "33 PASS combinadas (24 previas +9 nuevas) usando fixtures sintéticos",
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "ge_dump_real_nuevo": false,
+    "pc_mips_nuevo": null,
+    "vram_nueva": null,
+    "capturas_png_nuevas": 0,
+    "regresion_f1_960_544_repetida": false,
+    "white_new_ink_default": false,
+    "f2_cerrada": false,
+    "observacion": "La grabación GE muestra comandos cuando exista, pero no demuestra automáticamente su procedencia MIPS."
   }
 }
