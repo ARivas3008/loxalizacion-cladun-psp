@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1 CERRADA solo Opciones; F2 ABIERTA: KITAJIMA_KARI.IMY confirmado en seis iconos de Controles con PPSSPP real y color blanco experimental de 19 glifos probado en una ayuda, sin adoptar en F1. Falta MIPS/GE y QA multicontesto.",
+  "fase_actual": "F1 CERRADA solo en Opciones según pruebas previas. F2 ABIERTA: auditoría independiente ISO USA/KITAJIMA y sonda RGB en memoria PASS; SIN nueva traza MIPS/GE/VRAM, QA 19 multicontesto ni regresión F1.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -175,7 +175,8 @@
     "F2 21/11: PPSSPP F1 regresión Opciones 756 px interior x342..1097; GitHub CI código commit 202ff8d 146 Python tests y Go PASS, 44959226947/44959222272 SUCCESS.",
     "21/11 F2: PPSSPP controles F1 vs KITAJIMA magenta, 2 PNG originales +2 probe, 6 ROIs cambiar, negativos texto/borde cero; BPS diferencial desde F1 roundtrip.",
     "21/11 F2: PPSSPP un solo mensaje diagnostico con los 19 glifos; 2 PNG cada variante, amarillo ROI 516->0; blanca a4273198...; BPS diferencial desde ISO diagnóstica roundtrip.",
-    "21/11 F2: Python suite local 152 PASS (1 skip), Go PASS, corpus/borrador/preinsercion/integrabilidad PASS."
+    "21/11 F2: Python suite local 152 PASS (1 skip), Go PASS, corpus/borrador/preinsercion/integrabilidad PASS.",
+    "21/11 F2 relevo: auditoría de ISO USA desde 7z y KITAJIMA por SHA/origen; 27 RGB simulados solo en memoria; 7 unitarios sintéticos PASS; NO nuevas capturas ni GE/VRAM."
   ],
   "pruebas_no_ejecutadas": [
     "Prueba PPSSPP valida del candidato extra +1 ideografico en 005709; no aprobado",
@@ -646,5 +647,25 @@
     "siguiente_prompt": "prompts/SIGUIENTE_TAREA.md",
     "f1_intacta": true,
     "pr_draft": true
+  },
+  "continuacion_f2_auditoria_origen_2026_11_21": {
+    "estado": "F2_ABIERTA",
+    "report": "reports/RESULTADO_F2_AUDITORIA_ORIGEN_2026-11-21.json",
+    "doc": "docs/F2_AUDITORIA_ORIGEN_SOLO_LECTURA_2026-11-21.md",
+    "script": "tools/f2_auditar_origen_iconos.py",
+    "tests": "tests/test_f2_auditar_origen_iconos.py",
+    "iso_original_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "offset_iso_absoluto": 114723840,
+    "pspfs": 349,
+    "dsarc": 27,
+    "cambio_rgb_en_memoria": 27,
+    "pruebas_unitarias_locales": "7 PASS",
+    "ppsspp_real_esta_ejecucion": false,
+    "ge_vram_mips_completado": false,
+    "qa_19_multicontexto": false,
+    "regresion_f1_nueva": false,
+    "blanco_por_defecto": false,
+    "nuevos_png_iso_bps": false,
+    "limitacion": "Sin AppImage PPSSPP oficial ni ISO F1 canónica en entorno local; no afirmarlos."
   }
 }
