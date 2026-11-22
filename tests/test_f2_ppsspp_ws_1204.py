@@ -11,6 +11,38 @@ class TestF2WS(unittest.TestCase):
     def test_ticket_matching(self):
         ws=Fake([{'event':'cpu.resume'},{'event':'version','ticket':1,'name':'PPSSPP'}])
         self.assertEqual(Client(ws).request('version')['name'],'PPSSPP')
+
+    def test_unticketed_cpu_events_are_buffered_during_ticket_response(self):
+        ws=Fake([{'event':'cpu.stepping','pc':0x08804000,'ticks':100},
+                 {'event':'version','ticket':1,'name':'PPSSPP'}])
+        client=Client(ws)
+        self.assertEqual(client.request('version')['name'],'PPSSPP')
+        self.assertEqual(client.wait_broadcast('cpu.stepping')['pc'],0x08804000)
+
+    def test_unrelated_broadcasts_remain_available(self):
+        ws=Fake([{'event':'cpu.resume'},
+                 {'event':'cpu.stepping','pc':0x08804100},
+                 {'event':'version','ticket':1,'name':'PPSSPP'}])
+        c=Client(ws)
+        c.request('version')
+        self.assertEqual(c.wait_broadcast('cpu.stepping')['pc'],0x08804100)
+        self.assertEqual(c.wait_broadcast('cpu.resume')['event'],'cpu.resume')
+
+    def test_notify_invalidates_previous_broadcast_of_same_type(self):
+        ws=Fake([{'event':'cpu.stepping','pc':42},
+                 {'event':'version','ticket':1,'name':'PPSSPP'},
+                 {'event':'cpu.stepping','pc':80}])
+        c=Client(ws)
+        c.request('version')
+        c.notify('cpu.stepping')
+        self.assertEqual(c.wait_broadcast('cpu.stepping')['pc'],80)
+
+    def test_asynchronous_error_never_silently_ignored(self):
+        ws=Fake([{'event':'error','message':'CPU not started'},
+                 {'event':'version','ticket':1,'name':'PPSSPP'}])
+        with self.assertRaises(RuntimeError):
+            Client(ws).request('version')
+
     def test_errors_not_success(self):
         ws=Fake([{'event':'error','ticket':1,'message':'rejected'}])
         with self.assertRaises(RuntimeError):Client(ws).request('gpu.buffer.texture')

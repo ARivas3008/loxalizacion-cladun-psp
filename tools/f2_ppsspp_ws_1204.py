@@ -39,13 +39,23 @@ def exclusive(path,data):
     return {'name':path.name,'bytes':len(data),'sha256':digest(data)}
 
 class Client:
-    def __init__(self,conn):self.conn=conn;self.ticket=0
+    def __init__(self,conn):
+        self.conn=conn
+        self.ticket=0
+        self._broadcasts=[]  # Unsolicited debugger events may arrive before replies
     def request(self,event,**kwargs):
         self.ticket+=1;ticket=self.ticket
         self.conn.send(json.dumps({'event':event,'ticket':ticket,**kwargs}))
         for _ in range(1000):
             msg=json.loads(self.conn.recv())
-            if msg.get('ticket')!=ticket:continue
+            if msg.get('ticket')!=ticket:
+                if msg.get('ticket') is None:
+                    if msg.get('event')=='error':
+                        raise RuntimeError('Error asíncrono del depurador: '+str(msg.get('message')))
+                    if len(self._broadcasts)>=256:
+                        raise RuntimeError('Cola de eventos PPSSPP excedida; no descartar silenciosamente')
+                    self._broadcasts.append(msg)
+                continue
             if msg.get('event')=='error':raise RuntimeError(f'{event}: '+str(msg.get('message')))
             if msg.get('event')!=event:raise ValueError('Ticket correlacionado a evento incorrecto')
             return msg
@@ -53,15 +63,29 @@ class Client:
 
     def notify(self,event,**kwargs):
         """PPSSPP cpu.stepping/resume do NOT reply with the request ticket."""
+        # Do not mistake an event already processed by a prior command for a
+        # new pause/resume. Broadcasts still waiting on the socket are verified
+        # independently using cpu.status and observed emulation ticks.
+        self._broadcasts=[x for x in self._broadcasts if x.get('event')!=event]
         self.conn.send(json.dumps({'event':event,**kwargs}))
 
     def wait_broadcast(self,event):
+        for i,msg in enumerate(self._broadcasts):
+            if msg.get('event')==event:
+                self._broadcasts.pop(i)
+                return msg
         for _ in range(1000):
             msg=json.loads(self.conn.recv())
             if msg.get('event')=='error' and 'ticket' not in msg:
                 raise RuntimeError(f'{event}: '+str(msg.get('message')))
             if msg.get('event')==event and 'ticket' not in msg:
                 return msg
+            if msg.get('ticket') is None:
+                if len(self._broadcasts)>=256:
+                    raise RuntimeError('Cola de eventos PPSSPP excedida')
+                self._broadcasts.append(msg)
+            else:
+                raise RuntimeError('Respuesta con ticket inesperado esperando evento '+event)
         raise TimeoutError('No llegó el evento broadcast '+event)
 
 
