@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1 Opciones aprobada históricamente; F2 ABIERTA. En este relevo se autenticó ISO USA, SYSGRA y 27 miembros IMY (12 candidatos solo por nombre, sin asignación visual); nueva herramienta de inventario y 221 tests Python en CI. SIN PPSSPP real, RAM→GE→VRAM, validación de 19 glifos multicontesto ni regresión F1 nueva.",
+  "fase_actual": "F1 Opciones aprobada históricamente; F2 ABIERTA. Relevo 22/11: ISO USA autenticada, 4 contenedores DSARC y 108 miembros con 108 SHA únicos verificados; SYSGRA/FONT.IMY y FONT.ARC/FONT_00.IMY distintos en bytes comprimidos. 233 tests CI PASS, Go/Windows PASS. NO PPSSPP real nuevo, no evidencia RAM→GE→VRAM, 19 glifos multicontesto ni F1 X11 nueva.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -198,7 +198,7 @@
   "siguiente_accion": "Continuar F2: trazado real de KITAJIMA_KARI.IMY hasta RAM/VRAM/PC MIPS y GE; ensayar HUD/tutoriales/combate; validar 19 glifos en varias escenas y regresar a F1 960x544 antes de adoptar tinta blanca por defecto.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
   "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
-  "ultimo_commit_trabajo": "bf5fa79a27f889e2391ff7d40b6b56c8bb7e28ca",
+  "ultimo_commit_trabajo": "822a17dc457ec761a56164db6fdcbc8b7fa8f93d",
   "obligacion_de_relevo": "Al terminar cada etapa actualizar estado, crear prompts/SIGUIENTE_TAREA.md con prompt autonomo que a su vez obligue a generar el siguiente",
   "hashes_antiguos_v015_no_verificados_en_esta_sesion": false,
   "f1_experimento_estatico": {
@@ -852,5 +852,58 @@
     "private_original_iso_not_published": true,
     "docs": "docs/F2_INVENTARIO_SYSGRA_2026-11-22.md",
     "report": "reports/RESULTADO_F2_INVENTARIO_SYSGRA_2026-11-22.json"
+  },
+  "f2_catalogo_global_dsarc_2026_11_22": {
+    "phase": "F2_OPEN_STATIC_BINARY",
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "original_iso_length": 305496064,
+    "iso9660_data_offset": 113770496,
+    "four_dsarc_names": [
+      "SYS.DAT2",
+      "SE.ARC",
+      "SYSGRA.ARC",
+      "FONT.ARC"
+    ],
+    "four_dsarc_member_counts": [
+      6,
+      68,
+      27,
+      7
+    ],
+    "all_108_member_hashes_distinct": true,
+    "verified_distinct_fonts": {
+      "sygra_font_imy_sha256": "50143c165f10aa71ac77d4a2b09fd69012b1eceac4a102bf8e2b8157bf8b5915",
+      "font_arc_font00_imy_sha256": "698bc5b398a16c3f2a4615527dac6a36dbae73666a7c45c3787bb00a728a8478"
+    },
+    "original_source_real_read": true,
+    "compressed_assets_distinct_not_runtime_function": true,
+    "private_metadata_report_file": "CLADUN_F2_catalogo_DSARC_108_privado_2026-11-22.json",
+    "private_metadata_report_sha256": "9938fd9fc0eba271494ecdfeec49c1ffd95291b0abecdc33ca65ee97c00bc567",
+    "commits": [
+      "375eec3d7bcb3dbc878f9579ed49e9af92279091",
+      "822a17dc457ec761a56164db6fdcbc8b7fa8f93d"
+    ],
+    "tests_added": 12,
+    "initial_ci_failure": "test_reject_overlap detected topology check after signature (confirmed fixed)",
+    "fixed_ci_push_run_id": 45040317705,
+    "fixed_ci_pr_run_id": 45040322660,
+    "fixed_ci_python_tests": 233,
+    "fixed_ci_go_and_windows": "SUCCESS",
+    "real_ppsspp_appimage_available": false,
+    "f1_canonical_iso_available": false,
+    "new_authentic_ppsspp_png": 0,
+    "new_ppsspp_ge_dump": 0,
+    "new_icon_mips_pcs": 0,
+    "new_icon_vram_addresses": 0,
+    "all_19_visual_multicontext_proven": false,
+    "f1_window_960x544_new_regression_proven": false,
+    "all_phases_f3_to_f6_pending": true,
+    "private_iso_preserved": true,
+    "canonical_corpus_unchanged": true,
+    "white_new_ink_default_changed": false,
+    "event_safe_only_preserved": true,
+    "pr7_draft": true,
+    "report": "reports/RESULTADO_F2_CATALOGO_GLOBAL_DSARC_2026-11-22.json",
+    "documentation": "docs/F2_CATALOGO_GLOBAL_DSARC_2026-11-22.md"
   }
 }
