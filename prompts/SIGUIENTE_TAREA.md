@@ -1,74 +1,76 @@
-# CLADUN ES — RELEVO F2 AUTÓNOMO: PPSSPP REAL, vigilancia MIPS segura, GPU GE/VRAM y 19 caracteres
+# CLADUN ES — RELEVO AUTÓNOMO F2: cerrar evidencia PPSSPP REAL, direcciones GE/VRAM, 19 glifos y F1
 
-Actúa como ingeniero sénior PSP MIPS, depurador WebSocket PPSSPP oficial v1.20.4, GPU GE y VRAM, archivo ISO9660/PSPFS/DSARC, IMY/CLUT, CP932 español, inserción BPS segura y QA. No basta con escribir consejos: ejecuta pruebas, cambia archivos cuando los resultados lo avalen, actualiza GitHub y entrega evidencias auténticas. **NO inventar capturas, resultados de emulador, PCs MIPS, comandos GE, hashes ni pruebas de juego.**
+Actúa como especialista sénior PSP/MIPS/GE, PPSSPP oficial v1.20.4, RAM y textura/CLUT, IMY, DSARC, PSPFS, CP932, seguridad de recursos, BPS y localización al español. **Haz trabajo auténtico**: ejecuta herramientas, inspecciona evidencia, edita código cuando haya fallos reproducibles, corre tests, publica GitHub y registra lo realizado. Jamás inventes un PC, dirección VRAM, PNG, dump o resultado funcional.
 
-**OBLIGACIÓN RECURSIVA INNEGOCIABLE:** al finalizar REESCRIBE ÍNTEGRAMENTE `prompts/SIGUIENTE_TAREA.md` con otro prompt autónomo que incluya la MISMA obligación, y muéstralo íntegro al usuario. Repetir en cada relevo hasta completar y verificar F2, F3, F4, F5 y F6 sin declarar trabajo asíncrono.
+**RECURSIVIDAD INNEGOCIABLE:** cuando termines, REESCRIBE ÍNTEGRAMENTE este mismo archivo prompts/SIGUIENTE_TAREA.md con otro prompt autónomo completo, con la MISMA obligación recursiva y con referencias a tus cambios reales; muéstralo íntegro al usuario. Repetir hasta implementar y comprobar F2, F3, F4, F5 y F6. No prometer trabajo en segundo plano.
 
-## 1. Inicio: preservar GitHub y leer fuentes
+## 1. GitHub y lectura obligatoria
 
-Repositorio: https://github.com/ARivas3008/loxalizacion-cladun-psp
-Rama de trabajo: `integracion-eventos-segura-20261120`. PR #7: https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7, base `revision-manual-dialogos`. Mantener **DRAFT** y NO fusionar.
+Repo: https://github.com/ARivas3008/loxalizacion-cladun-psp
+Rama: integracion-eventos-segura-20261120
+PR: https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7
+Base: revision-manual-dialogos
 
-Verifica HEAD remoto, árbol, PR y ambas Actions antes de tocar archivos. Intenta exactamente `git fetch origin`, `git switch integracion-eventos-segura-20261120`, `git pull --ff-only`, `git status --short`, `git rev-parse HEAD`. Si no funciona el Git de terminal por DNS/restricción, usa GitHub conectado y NO afirmar que `git fetch` se ejecutó. Nunca force-push, checkout destructivo ni sobrescribir otros cambios.
+Mantener PR DRAFT. Verificar SHA del HEAD, árbol, PR y ambas GitHub Actions. Antes de modificar: git fetch origin; git switch integracion-eventos-segura-20261120; git pull --ff-only; git status --short; git rev-parse HEAD. Si falla el Git directo, registrar error y usar conector GitHub con SHA esperado, sin afirmar que git fetch funcionó. No hacer force push, merge o reemplazar commits ajenos.
 
-Lee COMPLETOS: AGENTS.md, README.md, docs/PLAN_HASTA_IMPLEMENTACION_PPSSPP_2026-11-20.md, docs/RESULTADO_F1_PPSSPP_2026-11-21.md, docs/RESULTADO_F2_ATLAS_PPSSPP_2026-11-21.md, docs/F2_ICONOS_TINTA_PPSSPP_2026-11-21.md, docs/F2_AUDITORIA_ORIGEN_SOLO_LECTURA_2026-11-21.md, docs/F2_QA_ESTATICA_WS_2026-11-21.md, docs/F2_LECTOR_GE_V6_2026-11-21.md, docs/F2_RELEVO_CAPTURA_RAM_2026-11-21.md, docs/F2_FE_ERRATAS_SHA256_SNAPSHOT_RAM_2026-11-21.md, docs/F2_RELEVO_WS_BREAKPOINT_2026-11-21.md, reports/RESULTADO_F2_WS_BREAKPOINT_2026-11-21.json, todos los informes F2 en reports/, reports/ESTADO_CONTINUIDAD_PPSSPP.json y este prompt. Revisar tools/, tests/, patcher/ y .github/workflows.
+Leer COMPLETOS AGENTS.md, README.md, docs/PLAN_HASTA_IMPLEMENTACION_PPSSPP_2026-11-20.md, docs/RESULTADO_F1_PPSSPP_2026-11-21.md, docs/RESULTADO_F2_ATLAS_PPSSPP_2026-11-21.md, docs/F2_ICONOS_TINTA_PPSSPP_2026-11-21.md, docs/F2_AUDITORIA_ORIGEN_SOLO_LECTURA_2026-11-21.md, docs/F2_QA_ESTATICA_WS_2026-11-21.md, docs/F2_LECTOR_GE_V6_2026-11-21.md, docs/F2_RELEVO_CAPTURA_RAM_2026-11-21.md, docs/F2_FE_ERRATAS_SHA256_SNAPSHOT_RAM_2026-11-21.md, docs/F2_RELEVO_WS_BREAKPOINT_2026-11-21.md, docs/F2_PREPARACION_DIRECCIONES_GE_2026-11-21.md, reports/RESULTADO_F2_DIRECCIONES_GE_2026-11-21.json, informes F2 de reports/, reports/ESTADO_CONTINUIDAD_PPSSPP.json y este prompt. Revisar tools/, tests/, patcher/ y .github/workflows.
 
-No subir ISO, BPS, EBOOT, DATA.DAT, FONT.ARC, RAM, texturas, dumps GPU ni PNG comerciales a GitHub. Solo métricas, scripts, tests y documentación. Guardar evidencia con SHA256 PRIVADAMENTE fuera de Git.
+Prohibido publicar archivos ISO, BPS, EBOOT, DATA.DAT, FONT.ARC, RAM, texturas, dump GPU o PNG comerciales en GitHub. Evidencia auténtica y hashes SOLO en almacenamiento privado fuera del repositorio; publicar únicamente metadatos y documentación.
 
-## 2. Hechos y SHA-256 innegociables
+## 2. Datos exactos y precedentes
 
-ISO USA original PRIVADA: **305496064 bytes**; SHA256 de 64 hex EXACTOS:
-`b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f`.
-NO usar la cadena errónea de 62 caracteres; tests/test_f2_sha256_references.py impide regresión. ISO F1 canónica SHA256 `496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986`. BPS experimental USA→F1 SHA `daaa64ab1994271debc6464f3c70ab0f30a2ab3f9a1743dbd6a65f3c88d20acd`. AppImage PPSSPP Linux oficial 1.20.4 SHA `661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21`.
+ISO USA original privada: 305496064 bytes, SHA256 64 caracteres:
+b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f
 
-F1 Opciones: PPSSPP real HISTÓRICO Xvfb 1280×720, VENTANA 960×544, 756px interior/aprox.764px exterior, ID 005709 diez espacios ideográficos más 7 ASCII, 005710 Sí, 005713 No con ASCII de presentación. No equiparar PNG framebuffer PSP con captura X11 real de ventana; para regresión repetir esa geometría y navegación.
+NO usar el SHA erróneo de 62 caracteres; el guard tests/test_f2_sha256_references.py debe permanecer activo. ISO F1 canónica SHA256 496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986. BPS fuente USA a F1 SHA daaa64ab1994271debc6464f3c70ab0f30a2ab3f9a1743dbd6a65f3c88d20acd. AppImage oficial PPSSPP Linux v1.20.4 SHA 661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21.
 
-F2 fuente: 2721 registros de glifos originales preservados más 19 A1–B3 = 2740. Los caracteres nuevos son `áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō`. Tabla de TEXTO código→índice PSP RAM `0x09075000`, PC `0x089089C8`, `lhu t2,0(t1)`: NO demuestra PC de iconos.
+F1 Opciones APROBADA HISTÓRICAMENTE en PPSSPP Xvfb 1280×720, ventana real 960×544: 756 píxeles interior, aproximadamente 764 exterior. ID 005709 diez espacios ideográficos más 7 ASCII; 005710 Sí; 005713 No más espacio ASCII de presentación. Una captura del framebuffer PSP NO sustituye una captura de ventana X11 960×544.
 
-Iconos de CONTROLES: DATA.DAT → SYSGRA.ARC PSPFS índice225 offset local 895488 → KITAJIMA_KARI.IMY DSARC índice17/27 offset 57856, longitud comprimida 2480 bytes, SHA256 `0ce89df69ad71a9ef3165217d7cb98103a1fb0e08c53ca3a85c594dfaa7a2190`. Su offset ISO absoluto `114723840=0x06D68C00` **NO es dirección RAM**. Prueba PPSSPP histórica de magenta alteró 27 bytes RGB y seis iconos en CONTROLES, conservó 348 PSPFS vecinos y 26 DSARC vecinos. No extrapolar a combate/HUD/tutorial.
+F2 fuente: 2721 glifos originales preservados byte por byte + 19 españoles A1–B3 =2740, caracteres áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō. Tabla RAM texto código→índice 0x09075000, MIPS PC 0x089089C8 con lhu t2,0(t1) prueba búsqueda de TEXTO y NO el dibujo de iconos.
 
-Tinta: CLUT15 amarillo RGB247,247,0 frente a CLUT1 blanco RGB255,255,255; `white_new_ink=True` optativo reemplaza 100 texels nuevos sin cambiar 2721 originales. **Mantener False por defecto**. ISO amarilla SHA `58f98b65185f39f172de0b5da97b9ce6fecb009e61b9462632f602485c99e4ca`; blanca `a42731988835bddb9dc81ef6d242b9c5029030256f210838881a1d48aed2de33`; BPS amarillo→blanco `2a698e1efaa1c2333dbd86ac8c3a9fabbd369382c4b8c7d3ad0ab7c7f2ffac3f`. El experimento visual antiguo solo probó amarillo 516→0 en una ayuda, NO 19 signos multicontesto.
+Iconos CONTROLES: DATA.DAT → SYSGRA.ARC (PSPFS índice225, offset 895488) → KITAJIMA_KARI.IMY (DSARC índice17/27, offset57856, comprimido 2480 bytes), SHA256 0ce89df69ad71a9ef3165217d7cb98103a1fb0e08c53ca3a85c594dfaa7a2190. Offset ISO 114723840, hexadecimal 0x06D68C00: NO es dirección RAM. Experimento histórico de magenta cambió 27 bytes RGB, seis iconos CONTROLES, 348 PSPFS y 26 DSARC vecinos idénticos. NO atribuir sin pruebas los iconos HUD, combate o tutorial al mismo recurso.
 
-## 3. Último avance VERIFICADO, y lo que NO demuestra
+Tinta FONT_00.IMY índice CLUT15 amarillo RGB(247,247,0) versus índice1 blanco RGB(255,255,255). white_new_ink=True es optativo, cambia solo 100 texels nuevos, preserva 2721 originales. Mantener False predeterminado. ISO amarilla SHA 58f98b65185f39f172de0b5da97b9ce6fecb009e61b9462632f602485c99e4ca; blanca SHA a42731988835bddb9dc81ef6d242b9c5029030256f210838881a1d48aed2de33; BPS amarilla→blanca SHA 2a698e1efaa1c2333dbd86ac8c3a9fabbd369382c4b8c7d3ad0ab7c7f2ffac3f. Ayuda histórica amarillo 516→0 NO prueba los 19 glifos.
 
-Se repitió QA ESTÁTICA real de la ISO original: 2721 registros, 19 glifos, 100 texels de tinta, informe detallado privado SHA256 `88edb8a2cf1a920f1ff7480cbe4b06f44d5441a1183720b71a07b393a49bfb80`; no son capturas PPSSPP.
+## 3. Novedad verdadera del último relevo: direcciones GE candidatas
 
-`tools/f2_ppsspp_ws_1204.py` ahora mantiene una cola acotada de broadcasts asíncronos cuando llegan mientras espera respuestas por ticket; no puede perder `cpu.stepping` ni `cpu.resume` silenciosamente. Esos eventos NO llevan ticket. Cuatro nuevos tests sintéticos, PASS. Para `gpu.buffer.screenshot`, PPSSPP 1.20.4 exige detener CPU/GPU, capturar y reanudar solo si la pausa la provocó el cliente. Para `gpu.record.dump`, grabar PRIMERO con CPU corriendo: captura siguiente frame. Dump privado nombre ESCENA_GE_PRIVATE.dump, no GE_FRAME.dump.
+El lector tools/f2_ge_dump_1204.py procesa PPSSPPGE v6 de PPSSPP oficial v1.20.4 y ahora reconstruye CANDIDATOS numéricos de textura, CLUT y transferencia en registros REGISTERS, con ubicación de recorder y word, a partir del código oficial hrydgard/ppsspp/v1.20.4 en GPU/GPUState.h y GPU/ge_constants.h. Campos: ge_address_candidates_limited_to_150, ge_address_trigger_count_total, addresses_are_partial_unverified_candidates. NO asigna identidad de textura ni PC MIPS ni prueba copia a VRAM; puede carecer del estado INIT/anterior al comienzo del dump. El booleano in_primary_2mib_vram_window solo clasifica un rango numérico y no demuestra subida. Se añadieron 4 tests sintéticos y ambos workflows del commit de código 161dcec70731e0472c5418547074d5a5d08c110f resultaron SUCCESS: 213 tests Python, Go y compilación Windows.
 
-`tools/f2_ram_provenance_1204.py` autentica la firma KITAJIMA, busca firma exacta en RAM mientras CPU está detenida, verifica ticks estables, y puede registrar el PC observado en watchpoint. **NUEVO PROTOCOLO DE SEGURIDAD**: consulta `memory.breakpoint.list` y falla si el rango ya tiene breakpoint de otro usuario; solo atribuye parada propia si broadcast `reason == "memory.breakpoint"` y `relatedAddress == inicio_watchpoint`. La razón exacta está verificada en el código fuente oficial PPSSPP `Core/Core.cpp` y `Core/Debugger/Breakpoints.cpp`. No reanudar pausas ajenas. No existe bloqueo transaccional entre clientes depuradores: usar solo un cliente. Se añadieron 6 pruebas sintéticas PASS.
+La ISO original real y el atlas se reauditaron en el entorno privado: 305496064 bytes, KITAJIMA 2480 bytes, 2721 registros y 19 glifos, 100 texels optativos. Hash del JSON estático 19 glifos: 88edb8a2cf1a920f1ff7480cbe4b06f44d5441a1183720b71a07b393a49bfb80. El manifiesto privado del relevo tiene SHA d105cec882bfbc2e6dd7e4ac2f41aad0717cbf2eac0abd6a1325892b7f3cb178. Estas pruebas NO son PPSSPP real.
 
-`tools/f2_ge_dump_1204.py` inspecciona registros PPSSPPGE v6 Zstd, enumera comandos GE y su posición sin copiar texturas. Solo sirve cuando el dump es realmente de PPSSPP. CI último código: **209 tests Python PASS, Go y Windows CI PASS**; estas pruebas NO prueban ejecución real de Cladun.
+tools/f2_ppsspp_ws_1204.py ya conserva notificaciones CPU sin ticket y captura GPU solo detenida; gpu.record.dump se inicia con CPU corriendo. tools/f2_ram_provenance_1204.py exige snapshot RAM con CPU parada, ticks sin cambio, evita pisar breakpoints ajenos y solo atribuye un stop cuando reason memory.breakpoint y relatedAddress coinciden con el inicio del rango. Son herramientas aún sin validación con PPSSPP en ESTE entorno.
 
-Bloqueo auténtico: en último contenedor no existía AppImage oficial PPSSPP ni ISO F1, el acceso GitHub por DNS e IP directa estaba bloqueado. Hay ISO USA auténtica; NO nuevos PNG, dumps GE, PCs de iconos, direcciones VRAM ni regresión F1. F2 sigue ABIERTA.
+## 4. Prioridad real: obtener PPSSPP y F1 canónica, ejecutar juego y correlacionar
 
-## 4. Prioridad: PPSSPP 1.20.4 REAL, de inicio a framebuffer
+Intentar acceder al AppImage oficial desde https://github.com/hrydgard/ppsspp/releases/tag/v1.20.4, autenticar SHA exacto antes de ejecutar. Verificar Xvfb 1280×720, ventana 960×544 con captura scrot; obtener F1 privada autenticada o reconstruirla mediante integrador oficial del repo solo tras revisar sus flags y validar SHA. No sobrescribir la ISO USA. Si la red falla, indicarlo y continuar con una prueba técnica auténtica diferente; NO inventar resultados.
 
-Buscar PPSSPP oficial https://github.com/hrydgard/ppsspp/releases/tag/v1.20.4, autenticar SHA SHA256 exacto antes de ejecutar. Verificar Xvfb, scrot, apertura en 960×544; recuperar o reconstruir ISO F1 PRIVADA solo con integrador revisado y SHA canónico, sin sobrescribir USA. Si no es posible, registrar NO PROBADO y avanzar con otro fallo reproducible real; no falsificar experiencia jugable.
+Con Cladun iniciado y CONTROLES a la vista, debugger local ws://127.0.0.1:24192/debugger, subprotocolo debugger.ppsspp.org. Confirmar version y game.status. Los eventos compatibles incluyen cpu.status/stepping/resume, memory.read/disasm, memory.breakpoint.list/add/remove, cpu.getAllRegs, gpu.buffer.screenshot y gpu.record.dump. NO usar cpu.breakpoint.hit ni gpu.displaylist.disasm inexistentes en v1.20.4.
 
-Arrancar Cladun con depurador WS LOCAL `ws://127.0.0.1:24192/debugger`, subprotocolo `debugger.ppsspp.org`; confirmar eventos `version`, `game.status`, `cpu.status`, `memory.read`, `memory.disasm`, `memory.breakpoint.list/add/remove`, `cpu.getAllRegs`, `cpu.stepping`, `cpu.resume`, `gpu.buffer.screenshot`, `gpu.record.dump`. NO inventar `cpu.breakpoint.hit` ni `gpu.displaylist.disasm`, ausentes v1.20.4.
+Con CPU corriendo, nuevo directorio PRIVADO fuera de Git:
+python tools/f2_ppsspp_ws_1204.py --scene CONTROLES --salida-privada /tmp/f2-controles-ppsspp-real-nuevo --port 24192 --ge-dump
 
-Pantalla CONTROLES auténtica y carpeta nueva PRIVADA:
-`python tools/f2_ppsspp_ws_1204.py --scene CONTROLES --salida-privada /tmp/f2-controles-real-nuevo --port 24192 --ge-dump`
-Luego:
-`python tools/f2_ge_dump_1204.py --entrada-privada /tmp/f2-controles-real-nuevo/CONTROLES_GE_PRIVATE.dump --reporte-privado /tmp/f2-ge-real-metadatos.json`
-Origen binario:
-`python tools/f2_ram_provenance_1204.py --iso-usa /PRIVATE/USA.iso --salida-privada /tmp/f2-origen-nuevo --solo-origen`
-RAM real: usar `--scan-ram` con NUEVA carpeta privada. Si se demuestra dirección RAM PSP de firma comprimida, preparar otro contexto para watchpoint `--watch-address 0xDIRECCION_RAM` en carpeta NUEVA; correlacionar evento memory.breakpoint genuino, PC, registros, descompresor, salida, GE TEXADDR/CLUT/PRIM/transferencia, VRAM, dibujo final. Un hit comprimido o un dump GE aislado no prueban procedencia. No tratar offset ISO como RAM ni tabla TEXTO como icono.
+Analizar privado el dump creado (nombre CONTROLES_GE_PRIVATE.dump):
+python tools/f2_ge_dump_1204.py --entrada-privada /tmp/f2-controles-ppsspp-real-nuevo/CONTROLES_GE_PRIVATE.dump --reporte-privado /tmp/f2-ge-candidatos-nuevo.json
 
-Repetir para CONTROLES, HUD, tutorial, ayuda, diálogos y combate por separado con controles positivos/negativos y al menos DOS PNG AUTÉNTICOS por escena (SHA256). Regresión F1 exige captura real de VENTANA X11 960×544, no la textura framebuffer PSP.
+Comparar REGISTERS: TEXADDR/TEXBUFWIDTH, CLUTADDR/CLUTADDRUPPER, PRIM, TRANSFERSTART y registros de transferencia; correlacionar sus posiciones y direcciones con RAM comprimida y RAM descomprimida, PC MIPS real de carga/descompresión/subida, contenido y geometría, CLUT y framebuffer final. Las direcciones en el informe son CANDIDATAS HASTA DEMOSTRACIÓN CON DATOS DEL JUEGO.
 
-## 5. QA caracteres e invariantes de parche seguro
+Probar origen real primero con:
+python tools/f2_ram_provenance_1204.py --iso-usa /PRIVATE/USA.iso --salida-privada /tmp/f2-origen-nuevo --solo-origen
 
-Analizar en PPSSPP cada uno de `áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō`: ancho, advance, acento, línea base, desplazamiento con □○×△ y L/R, recorte y15 de mayúsculas y x4 de í, interlineado, colores. Si faltan signos naturales generar CSV diagnóstico PRIVADO con `tools/generar_probe_f2_glifos.py` (9237 registros) y variación tinta con `tools/generar_probe_f2_tinta.py`. No modificar corpus canónico. No activar tinta blanca por defecto hasta regresión real de F1 960×544, 756 interiores/aprox764 exteriores, ID 005709 sangría, 005710 Sí, 005713 No, navegación y retorno.
+Después --scan-ram con directorio diferente; si existe coincidencia exacta comprobada, preparar otro contexto y --watch-address 0xDIRECCION_PSP_RAM con directorio nuevo, nunca 0x06D68C00. Usar un solo depurador y conservar pausas ajenas. No atribuir PC de texto a iconos. Ejecutar controles positivos y negativos en CONTROLES, HUD, tutorial, ayudas, diálogos y combate de forma separada, con DOS PNG auténticos por pantalla y SHA256.
 
-Preservar 349 PSPFS, 345 recursos ajenos a 4 contenedores, 348 PSPFS vecinos en sondas de FONT.ARC/SYSGRA.ARC, 26 DSARC vecinos, ISO9660 fuera de localización, SCRIPT.DAT 51705 comandos, 46308 no textuales, 1625 inicios, cero cambios de desplazamiento y 4524 traducciones de script aplazadas. **NO retirar nunca `--event-safe-only`**. Integración experimental desde USA `--experimental-parcial --event-safe-only`; BPS experimental `--experimental --event-safe-only` solo privado, origen SHA y roundtrip exactos.
+## 5. QA visual de los 19 glifos y regreso a F1
 
-Ejecutar `python -m unittest discover -s tests -v`; `python tools/verificar_integridad.py --raiz .`; `python tools/verificar_borrador_es.py`; `python tools/auditar_preinsercion_es.py --reporte /tmp/f2-preflight.json`; `python tools/reportar_integrabilidad_es.py --reporte /tmp/f2-integrabilidad.json`; `python tools/f2_auditar_origen_iconos.py --iso-usa /PRIVATE/USA.iso --reporte /tmp/f2-origen.json`; `python tools/f2_qa_raster_19.py --iso-usa /PRIVATE/USA.iso --reporte /tmp/f2-19.json`; `(cd patcher && go test ./...)`; `git diff --check`. Diferenciar CI de Python/Go/Windows de PPSSPP visual real; comprobar ambas Actions del HEAD FINAL. Si algo no se puede ejecutar, documentar el bloqueo exacto.
+Validar cada áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō en PPSSPP verdadero; registrar texto real, ancho, avance, tilde, clipping superior/inferior, í x4, mayúsculas y15, interacción con □○×△ y L/R, saltos de línea, CLUT y legibilidad. Si faltan caracteres en escenarios naturales, usar tools/generar_probe_f2_glifos.py para CSV diagnóstico PRIVADO de 9237 registros sin alterar corpus canónico. Comparar amarillo/white_new_ink opcional con tools/generar_probe_f2_tinta.py. No activar True por defecto sin F1 actual 960×544 y 756/764, 005709 005710 Sí 005713 No, abrir/cerrar CONTROLES, navegación.
 
-## 6. Entregables y regeneración recursiva
+Conservar 349 PSPFS, 345 fuera de cuatro contenedores de localización, 348 vecinos si solo se toca FONT.ARC/SYSGRA.ARC, 26 DSARC vecinos KITAJIMA, ISO9660 ajeno intacto; SCRIPT.DAT 51705 comandos, 46308 no textuales, 1625 inicios, cero desplazamientos, 4524 textos script pendientes. NUNCA eliminar --event-safe-only. Para integración candidata desde USA usar --experimental-parcial --event-safe-only; BPS privado --experimental --event-safe-only, identificar fuente y comprobar roundtrip SHA exacto.
 
-Actualizar archivos de código, tests, docs, reports/ESTADO_CONTINUIDAD_PPSSPP.json, manifiestos de SHA de evidencia privada y nueva documentación, sin exponer materiales comerciales. Registrar SHA y PC/direcciones que se hayan probado verdaderamente y campos `NO PROBADO` para los ausentes. Mantener PR #7 en DRAFT hasta completar el proyecto.
+Ejecutar en checkout disponible: python -m unittest discover -s tests -v; python tools/verificar_integridad.py --raiz .; python tools/verificar_borrador_es.py; python tools/auditar_preinsercion_es.py --reporte /tmp/f2-preflight.json; python tools/reportar_integrabilidad_es.py --reporte /tmp/f2-integrabilidad.json; python tools/f2_auditar_origen_iconos.py --iso-usa /PRIVATE/USA.iso --reporte /tmp/f2-origen.json; python tools/f2_qa_raster_19.py --iso-usa /PRIVATE/USA.iso --reporte /tmp/f2-raster.json; (cd patcher && go test ./...); git diff --check. Distinguir pruebas CI Python/Go/Windows de pruebas PPSSPP auténticas; verificar push y pull_request del HEAD FINAL.
 
-F2 abierta hasta demostrar cadena MIPS/RAM/GE/VRAM, 19 glifos multicontesto y regresión F1 auténtica. F3 intro inglesa; F4 control de saltos/referencias de 4524 scripts; F5 juego completo, HUD, inventario, retratos, enciclopedia, combate y guardar/cargar; F6 BPS final, EXE Windows y QA integral.
+## 6. Entregables y regla que debe repetirse
 
-**AL FINAL REESCRIBE COMPLETAMENTE `prompts/SIGUIENTE_TAREA.md` CON OTRO PROMPT AUTÓNOMO ÍNTEGRO, MUÉSTRALO AL USUARIO Y EXIGE DE NUEVO LA MISMA RECURSIVIDAD HASTA COMPLETAR Y VERIFICAR F2–F6.**
+Actualizar docs, reports/ESTADO_CONTINUIDAD_PPSSPP.json, test y herramientas y registrar hashes de cada evidencia real o NO GENERADO. Mantener PR #7 DRAFT, sin publicar archivos comerciales y sin declarar F2 cerrada sin la cadena completa RAM→MIPS→GE→VRAM, 19 signos multicontesto y regresión F1 real.
+
+F3: introducir y validar la intro inglesa. F4: referencias/saltos seguros de 4524 textos script. F5: aventura, combate, HUD, retratos, inventario, enciclopedia, guardar y cargar. F6: BPS final, ejecutable Windows y QA integral.
+
+**AL TERMINAR REESCRIBE POR COMPLETO prompts/SIGUIENTE_TAREA.md, MUESTRA EL NUEVO PROMPT ÍNTEGRO Y EXIGE EN ÉL OTRA VEZ LA MISMA REGENERACIÓN RECURSIVA HASTA F2–F6 AUTÉNTICAMENTE COMPLETADAS.**
