@@ -40,3 +40,8 @@ Commits de código F2 `202ff8d92513106f2e24a193c5032500bcc74c2d` incluyen `tools
 **F2 ABIERTA**: pendiente localizar textura y función de dibujado de iconos, ensayar HUD/tutoriales/combate, y mostrar las 19 letras españolas A1–B3 incluidas ¿¡, ñ/Ñ, ü/Ü, áéíóú/ÁÉÍÓÚ, «» y ō en escenas auténticas, dos capturas por estado. La futura modificación debe preservar F1 y seguridad de eventos. F3 intro inglesa, F4 4524 scripts, F5 aventura, F6 BPS/EXE completos continúan sin terminar.
 
 La siguiente tarea **debe regenerar de nuevo** `prompts/SIGUIENTE_TAREA.md` y `reports/ESTADO_CONTINUIDAD_PPSSPP.json`, mostrar el prompt y mantener PR #7 draft.
+
+
+## Continuación 21/11: textura de iconos de Controles y 19 glifos
+
+La anterior descripción de «textura aún desconocida» quedó superada **solo para Controles**: la paleta de `SYSGRA.ARC/KITAJIMA_KARI.IMY` produce cambios controlados de 6 iconos en PPSSPP real, texto sin diferencias. Los 19 glifos españoles se mostraron en una ayuda y la tinta amarilla CLUT15 se corrigió optativamente a blanco CLUT1 con 100 texels y dos PNG reales, pero F2 sigue ABIERTA. Informe completo: [F2_ICONOS_TINTA_PPSSPP_2026-11-21.md](F2_ICONOS_TINTA_PPSSPP_2026-11-21.md). Estado y hashes: [RESULTADOS_F2_ICONOS_TINTA_PPSSPP_2026-11-21.json](../reports/RESULTADOS_F2_ICONOS_TINTA_PPSSPP_2026-11-21.json).
