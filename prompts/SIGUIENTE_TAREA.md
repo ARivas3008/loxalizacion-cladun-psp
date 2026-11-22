@@ -18,7 +18,7 @@ Leer íntegramente `AGENTS.md`, `README.md`, `docs/PLAN_HASTA_IMPLEMENTACION_PPS
 
 ## 2. Fuentes binarias auténticas y estado consolidado
 
-ISO USA original del usuario: **305496064 bytes**, SHA256 `b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f`; nunca usar el antiguo hash de 62 caracteres. ISO F1 canónica previa SHA `496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986`, BPS USA→F1 SHA `daaa64ab1994271debc6464f3c70ab0f30a2ab3f9a1743dbd6a65f3c88d20acd`. PPSSPP Linux AppImage oficial v1.20.4 SHA `661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21`.
+ISO USA original del usuario: **305496064 bytes**, SHA256 `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f`; nunca usar el antiguo hash de 62 caracteres. ISO F1 canónica previa SHA `496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986`, BPS USA→F1 SHA `daaa64ab1994271debc6464f3c70ab0f30a2ab3f9a1743dbd6a65f3c88d20acd`. PPSSPP Linux AppImage oficial v1.20.4 SHA `661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21`.
 
 F1 Opciones pasó **históricamente PPSSPP real** con Xvfb 1280×720, ventana auténtica 960×544, 756px interiores y ~764 exteriores, ID 005709 diez espacios ideográficos más 7 ASCII, 005710 Sí, 005713 No con espacio ASCII. Nueva regresión X11 aún no repetida; framebuffer PSP no prueba tamaños de ventana X11.
 
