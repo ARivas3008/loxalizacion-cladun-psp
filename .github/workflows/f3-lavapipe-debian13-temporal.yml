@@ -1,0 +1,33 @@
+name: F3 TEMPORAL transporte Mesa lavapipe Debian13 sin juego
+on:
+  push:
+    branches: [integracion-eventos-segura-20261120]
+permissions:
+  contents: read
+jobs:
+  mesa-debian13:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Descargar paquetes libres Debian 13 Mesa lavapipe sin instalar
+        run: |
+          set -eu
+          mkdir -p /tmp/mesa-lavapipe-debian13
+          for pkg in mesa-vulkan-drivers mesa-libgallium; do
+            url="https://deb.debian.org/debian/pool/main/m/mesa/$pkg""_25.0.7-2%2Bdeb13u1_amd64.deb"
+            curl --fail --location --retry 3 --retry-delay 2 --connect-timeout 15 --max-time 150 \
+              "$url" -o "/tmp/mesa-lavapipe-debian13/$pkg.deb"
+            dpkg-deb --field "/tmp/mesa-lavapipe-debian13/$pkg.deb" Package Version Architecture
+            test "$(dpkg-deb --field "/tmp/mesa-lavapipe-debian13/$pkg.deb" Architecture)" = amd64
+            test "$(dpkg-deb --field "/tmp/mesa-lavapipe-debian13/$pkg.deb" Version)" = '25.0.7-2+deb13u1'
+          done
+          sha256sum /tmp/mesa-lavapipe-debian13/*.deb
+          echo 'NO Cladun/ISO/game assets; only original Debian 13 binary packages.'
+      - name: Conservar solo paquetes de Debian sin ISO
+        uses: actions/upload-artifact@v4
+        with:
+          name: f3-lavapipe-debian13-official-no-games
+          path: /tmp/mesa-lavapipe-debian13/*.deb
+          retention-days: 1
+          compression-level: 0
+          if-no-files-found: error
