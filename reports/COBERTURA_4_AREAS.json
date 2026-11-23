@@ -49,7 +49,7 @@
     },
     "p0_p1_abiertos": null,
     "cierre_100": false,
-    "matriz_casos_definidos": 45
+    "matriz_casos_definidos": 47
   },
   "evidencias": {
     "A_actual": [
@@ -106,6 +106,22 @@
         "opcode_0c_ID_script_matches": 86,
         "AI_matches_all_three": 0,
         "semantic_MIPS_proven": false
+      },
+      {
+        "tipo": "F4 R11 scan de desplazamiento de argumentos contra SCRIPT.TBL",
+        "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "opcode_0a_literal": 320,
+        "opcode_0a_minus100": 860,
+        "opcode_0a_total": 862,
+        "opcode_0b_literal": 75,
+        "opcode_0b_minus100": 158,
+        "opcode_0b_total": 166,
+        "opcode_0c_literal": 86,
+        "opcode_0c_minus100": 66,
+        "delta_scan": "-256..256",
+        "candidate_bloque_directo": 758,
+        "candidate_bloque_menos100": 757,
+        "mips_proven": false
       }
     ],
     "B_actual": [
@@ -133,6 +149,12 @@
         "hechos": 15,
         "total": 15,
         "ci_final": "VERIFICAR_DESPUES_PUBLICACION"
+      },
+      {
+        "tipo": "R11: tools/f4_r11_desfase_ids.py",
+        "tests_local_sinteticos": 15,
+        "resultado": "PASS",
+        "ci_final": "POR_COMPROBAR"
       }
     ],
     "B_historica": [
@@ -155,7 +177,8 @@
     "Sin candidata final, BPS final ni Windows x64 E2E",
     "F4: 22 igualdades u32 no prueban referencias; falta MIPS real sobre opcode 0x0A y 0x01/0x02.",
     "R9: coincidencia 0x0A desde scr01.dsf/20/20 offset SCRIPT.DAT 7420 -> valor100100, NO validada como llamada en MIPS real; 21 aparentes saltos son 6 patrones de enteros comunes.",
-    "F4-R10: tres opcodes 0x0A/0x0B/0x0C muestran coincidencias SCRIPT ID pero no semantica MIPS; PPSSPP 1.20.4 no disponible por DNS en terminal; 4524 textos variables siguen diferidos."
+    "F4-R10: tres opcodes 0x0A/0x0B/0x0C muestran coincidencias SCRIPT ID pero no semantica MIPS; PPSSPP 1.20.4 no disponible por DNS en terminal; 4524 textos variables siguen diferidos.",
+    "R11: opcode 0x0A u32=100100 puede apuntar al ID 100000/bloque757 bajo candidato +100; NO validar como salto hasta observar MIPS real; 0x0B u32=3 posible centinela, significado desconocido"
   ],
   "siguiente_relevo": "prompts/SIGUIENTE_TAREA.md",
   "advertencia": "Los denominadores de cobertura contextual, gráficos y casos totales no están certificados. La matriz inicial no es universo completo. Ningún 100% de las cuatro áreas está verificado."

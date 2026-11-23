@@ -44,3 +44,7 @@ En la ISO original A: 862 opcodes 0x0A con 320/862 valores u32 iguales a IDs de 
 ## R10 — cruce real SCRIPT/AISCRIPT y clasificación 0x0B/0x0C (23/11/2026)
 
 Nueva evidencia A: 1.625 IDs SCRIPT, 552 AISCRIPT, seis IDs en común. En 0x0A/0x0B/0x0C se encontraron respectivamente 320/75/86 coincidencias u32 con SCRIPT.TBL, **0** con AISCRIPT.TBL. Los 166 0x0B tienen quinto byte 100 en 112 casos, 101 en 54. No demuestra llamadas/saltos. 15 tests B sintéticos nuevos PASS local, nuevos Q044/Q045 NOT_RUN, total 45 casos definidos. PPSSPP C no ejecutado; sin cambios de ISO ni liberación de los 4524 diferidos. Ver docs/F4_R10_CRUCE_SCRIPT_AISCRIPT_2026-11-23.md.
+
+## R11 — corrección estadística del destino 0x0A (23/11/2026)
+
+**A ISO auténtica:** de 862 argumentos 0x0A, solo 320 coinciden literalmente con IDs SCRIPT.TBL, frente a **860/862 cuando se resta 100**; únicas excepciones 0 y 1. En 0x0B son 75/166 literales frente a **158/166 al restar 100**, únicas excepciones ocho valores 3. En 0x0C **delta 0 gana con 86/102**, por lo que no aplicar regla a ciegas. Esto convierte el candidato `scr01.dsf`/0x0A/offset7420/u32=100100 en posible destino **ID 100000/bloque757**, no ID100100/bloque758. Ambas opciones MIPS NO PROBADAS. Auditor `tools/f4_r11_desfase_ids.py`, 15 tests B sintéticos PASS local y reparseo A real de 51.705 comandos; nuevos Q046/Q047 NOT_RUN, total 47 casos. PPSSPP C ausente, 4.524 variables siguen protegidos. Ver `docs/F4_R11_DESFASE_IDS_2026-11-23.md`.

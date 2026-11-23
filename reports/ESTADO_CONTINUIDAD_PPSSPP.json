@@ -1921,5 +1921,48 @@
     "protected_original_modified": false,
     "PR7_remain_draft": true,
     "next_prompt": "prompts/SIGUIENTE_TAREA.md"
+  },
+  "relevo_f4_r11_2026_11_23": {
+    "head_start_verified": "d287b766461dbd796a810be3163b4e47663efe72",
+    "source_original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "command_count": 51705,
+    "opcode_0a": {
+      "total": 862,
+      "identity_matches": 320,
+      "minus_100_matches": 860,
+      "exceptions": {
+        "0": 1,
+        "1": 1
+      }
+    },
+    "opcode_0b": {
+      "total": 166,
+      "identity_matches": 75,
+      "minus_100_matches": 158,
+      "exceptions": {
+        "3": 8
+      }
+    },
+    "opcode_0c": {
+      "total": 102,
+      "identity_matches": 86,
+      "minus_100_matches": 66
+    },
+    "source_candidate": {
+      "block": 20,
+      "command_order": 20,
+      "command_offset": 7420,
+      "operand": 100100,
+      "old_hypothesis_literal_block": 758,
+      "new_hypothesis_minus100_block": 757
+    },
+    "tests_synthetic_local_pass": 15,
+    "ppsspp_C_this_relay": false,
+    "iso_modified": false,
+    "variable_changes_deferred": 4524,
+    "qa_defined": 47,
+    "qa_r11_new_pass": 0,
+    "four_areas_closed": false,
+    "next": "prompts/SIGUIENTE_TAREA.md"
   }
 }

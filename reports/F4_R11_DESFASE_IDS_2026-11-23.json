@@ -1,0 +1,139 @@
+{
+  "schema": "cladun.f4.r11_script_id_delta_readonly.v1",
+  "date": "2026-11-23",
+  "source": "A_AUTHENTIC_ISO_STATIC_NOT_PPSSPP",
+  "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+  "script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37",
+  "script_blocks": 1625,
+  "original_commands": 51705,
+  "nontext_commands": 46308,
+  "delta_scan_min": -256,
+  "delta_scan_max": 256,
+  "operand_source": "u32 little-endian payload offset 0",
+  "profile": {
+    "0x0a": {
+      "commands": 862,
+      "literal_matches": 320,
+      "minus_100_matches": 860,
+      "minus_100_distinct_script_ids": 278,
+      "minus_100_exceptions": {
+        "0": 1,
+        "1": 1
+      },
+      "best_deltas": [
+        {
+          "delta": 100,
+          "matches": 860
+        },
+        {
+          "delta": 99,
+          "matches": 735
+        },
+        {
+          "delta": 101,
+          "matches": 426
+        },
+        {
+          "delta": 98,
+          "matches": 421
+        },
+        {
+          "delta": 110,
+          "matches": 354
+        },
+        {
+          "delta": 0,
+          "matches": 320
+        }
+      ]
+    },
+    "0x0b": {
+      "commands": 166,
+      "literal_matches": 75,
+      "minus_100_matches": 158,
+      "minus_100_distinct_script_ids": 139,
+      "minus_100_exceptions": {
+        "3": 8
+      },
+      "best_deltas": [
+        {
+          "delta": 100,
+          "matches": 158
+        },
+        {
+          "delta": 99,
+          "matches": 101
+        },
+        {
+          "delta": 101,
+          "matches": 101
+        },
+        {
+          "delta": 55,
+          "matches": 81
+        },
+        {
+          "delta": 0,
+          "matches": 75
+        }
+      ]
+    },
+    "0x0c": {
+      "commands": 102,
+      "literal_matches": 86,
+      "minus_100_matches": 66,
+      "minus_100_distinct_script_ids": 61,
+      "minus_100_exceptions": {
+        "100": 36
+      },
+      "best_deltas": [
+        {
+          "delta": 0,
+          "matches": 86
+        },
+        {
+          "delta": 90,
+          "matches": 82
+        },
+        {
+          "delta": -100,
+          "matches": 78
+        },
+        {
+          "delta": -10,
+          "matches": 75
+        },
+        {
+          "delta": -110,
+          "matches": 69
+        },
+        {
+          "delta": 100,
+          "matches": 66
+        }
+      ]
+    }
+  },
+  "candidate_anchor": {
+    "source_block": 20,
+    "source_script_name": "scr01.dsf",
+    "command_order": 20,
+    "source_command_offset": 7420,
+    "opcode": "0x0a",
+    "instruction_id": 818,
+    "operand_u32": 100100,
+    "literal_id": 100100,
+    "literal_target_block": 758,
+    "minus_100_target_id": 100000,
+    "minus_100_target_block": 757
+  },
+  "source_private_independent_iso_report_sha256": "5cf5f3e1f7b61f1bcb1ca6b41154cab091e03dde2b2ebcd69015ce0d33bad79b",
+  "new_synthetic_tests_local_passed": 15,
+  "interpretation": "Hipótesis muy fuerte de ID codificado como id+100 en opcodes 0x0A/0x0B; no demostrado por PSP MIPS. 0x0C no adopta uniformemente ese patrón.",
+  "runtime_ppsspp_this_relay": false,
+  "mips_semantics_verified": false,
+  "relocalization_authorized": false,
+  "original_iso_modified": false,
+  "commercial_game_bytes_in_report": false
+}
