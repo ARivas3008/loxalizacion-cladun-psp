@@ -1893,5 +1893,33 @@
     "all_areas_100": false,
     "commercial_assets_modified": false,
     "next": "prompts/SIGUIENTE_TAREA.md"
+  },
+  "relevo_f4_r10_2026_11_23": {
+    "date": "2026-11-23",
+    "head_initial": "19e1dcad50ba2e16d9aa3b6e229fbd653ae48d9c",
+    "code_commit": "7bf03fc9c95b1e5dfac099ae09790f379fc60d58",
+    "iso_original_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "source_script_blocks": 1625,
+    "ai_script_blocks": 552,
+    "original_commands": 51705,
+    "opcode_0a_commands": 862,
+    "opcode_0a_script_ids": 320,
+    "opcode_0b_commands": 166,
+    "opcode_0b_script_ids": 75,
+    "opcode_0c_commands": 102,
+    "opcode_0c_script_ids": 86,
+    "cross_namespace_matches_in_operands": 0,
+    "table_id_overlap": 6,
+    "opcode_0b_byte100": 112,
+    "opcode_0b_byte101": 54,
+    "new_tests_synthetic_local_PASS": 15,
+    "real_PPSSPP_C_executed": false,
+    "real_MIPS_PC_new": false,
+    "global_deferred": 4524,
+    "QA_defined": 45,
+    "QA_new_pass": 0,
+    "protected_original_modified": false,
+    "PR7_remain_draft": true,
+    "next_prompt": "prompts/SIGUIENTE_TAREA.md"
   }
 }

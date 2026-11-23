@@ -49,7 +49,7 @@
     },
     "p0_p1_abiertos": null,
     "cierre_100": false,
-    "matriz_casos_definidos": 43
+    "matriz_casos_definidos": 45
   },
   "evidencias": {
     "A_actual": [
@@ -94,6 +94,18 @@
         "coincidencias_relativas": 21,
         "motivos_relativos": 6,
         "ppsspp": false
+      },
+      {
+        "tipo": "F4-R10 cruce real de 0x0A/0x0B/0x0C SCRIPT/AISCRIPT",
+        "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "script_ids": 1625,
+        "ai_script_ids": 552,
+        "solapamiento_ids": 6,
+        "opcode_0a_ID_script_matches": 320,
+        "opcode_0b_ID_script_matches": 75,
+        "opcode_0c_ID_script_matches": 86,
+        "AI_matches_all_three": 0,
+        "semantic_MIPS_proven": false
       }
     ],
     "B_actual": [
@@ -114,6 +126,13 @@
         "total": 13,
         "resultado": "PASS_LOCAL",
         "ci_nuevo": "PENDIENTE_AL_PUBLICAR"
+      },
+      {
+        "tipo": "R10: tools/f4_r10_cruce_script_ai.py y 15 tests",
+        "resultado": "PASS_LOCAL_SINTETICO",
+        "hechos": 15,
+        "total": 15,
+        "ci_final": "VERIFICAR_DESPUES_PUBLICACION"
       }
     ],
     "B_historica": [
@@ -135,7 +154,8 @@
     "F2 TUIKA no vinculado a combate real; 19 glifos no certificados multicontesto",
     "Sin candidata final, BPS final ni Windows x64 E2E",
     "F4: 22 igualdades u32 no prueban referencias; falta MIPS real sobre opcode 0x0A y 0x01/0x02.",
-    "R9: coincidencia 0x0A desde scr01.dsf/20/20 offset SCRIPT.DAT 7420 -> valor100100, NO validada como llamada en MIPS real; 21 aparentes saltos son 6 patrones de enteros comunes."
+    "R9: coincidencia 0x0A desde scr01.dsf/20/20 offset SCRIPT.DAT 7420 -> valor100100, NO validada como llamada en MIPS real; 21 aparentes saltos son 6 patrones de enteros comunes.",
+    "F4-R10: tres opcodes 0x0A/0x0B/0x0C muestran coincidencias SCRIPT ID pero no semantica MIPS; PPSSPP 1.20.4 no disponible por DNS en terminal; 4524 textos variables siguen diferidos."
   ],
   "siguiente_relevo": "prompts/SIGUIENTE_TAREA.md",
   "advertencia": "Los denominadores de cobertura contextual, gráficos y casos totales no están certificados. La matriz inicial no es universo completo. Ningún 100% de las cuatro áreas está verificado."

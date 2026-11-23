@@ -40,3 +40,7 @@ El barrido de **101.659 ventanas u32** en argumentos de **46.308 comandos no tex
 ## R9 — nuevo perfil estático 0x0A y reducción de falsos candidatos (23/11/2026)
 
 En la ISO original A: 862 opcodes 0x0A con 320/862 valores u32 iguales a IDs de script (183 distintos). Un candidato externo concreto, scr01.dsf bloque 20, orden 20, offset 7420, ID de instrucción 818, u32 100100, coincide con script demo1001_00 bloque 758; NO demuestra llamada MIPS. Los 21 matches relativos previos de 0x01/0x02 forman seis patrones de valores frecuentes 23/32/55/85, no 21 saltos. 13 tests sintéticos B locales nuevos PASS; ISO sin modificaciones; PPSSPP C NO EJECUTADO. Nueva matriz Q043 NOT_RUN; 43 casos definidos, universo final aún NO MEDIBLE. Ver docs/F4_R9_PERFIL_OPCODES_2026-11-23.md. Ningún cierre T/G/R/Q, PR #7 sigue DRAFT.
+
+## R10 — cruce real SCRIPT/AISCRIPT y clasificación 0x0B/0x0C (23/11/2026)
+
+Nueva evidencia A: 1.625 IDs SCRIPT, 552 AISCRIPT, seis IDs en común. En 0x0A/0x0B/0x0C se encontraron respectivamente 320/75/86 coincidencias u32 con SCRIPT.TBL, **0** con AISCRIPT.TBL. Los 166 0x0B tienen quinto byte 100 en 112 casos, 101 en 54. No demuestra llamadas/saltos. 15 tests B sintéticos nuevos PASS local, nuevos Q044/Q045 NOT_RUN, total 45 casos definidos. PPSSPP C no ejecutado; sin cambios de ISO ni liberación de los 4524 diferidos. Ver docs/F4_R10_CRUCE_SCRIPT_AISCRIPT_2026-11-23.md.
