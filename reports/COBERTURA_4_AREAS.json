@@ -1,0 +1,94 @@
+{
+  "schema": "cladun.cobertura_cuatro_areas.v1",
+  "fecha": "2026-11-23",
+  "corte_utc": "2026-11-23T21:11:27Z",
+  "rama": "integracion-eventos-segura-20261120",
+  "head_inicial_verificado": "f8f59d894c8477c832774a0dc7acfb82093f0a44",
+  "pr": 7,
+  "pr_draft_verificado": true,
+  "traduccion": {
+    "borrador": {
+      "hechos": 9235,
+      "total": 9237
+    },
+    "aprobados_contextualmente": {
+      "hechos": null,
+      "total": null
+    },
+    "en_juego": {
+      "hechos": null,
+      "total": null
+    },
+    "inventario_visible_completo": false,
+    "cierre_100": false
+  },
+  "graficos": {
+    "inventario_completo": false,
+    "aprobados_ppsspp": {
+      "hechos": null,
+      "total": null
+    },
+    "cierre_100": false
+  },
+  "romhacking": {
+    "sustituciones": {
+      "hechos": 3724,
+      "total": 8248
+    },
+    "diferidas": 4524,
+    "relocalizaciones_seguras_demostradas": false,
+    "release_bps_exe_e2e": false,
+    "cierre_100": false
+  },
+  "betatesting": {
+    "matriz_completa": false,
+    "matriz_inicial_casos": 42,
+    "aprobados": {
+      "hechos": null,
+      "total": null
+    },
+    "p0_p1_abiertos": null,
+    "cierre_100": false
+  },
+  "evidencias": {
+    "A_actual": [
+      {
+        "tipo": "ISO_USA_ORIGINAL_PRIVADA",
+        "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "bytes": 305496064,
+        "pspfs": 349,
+        "data_dat_offset": 113770496,
+        "data_dat_bytes": 191697408,
+        "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+        "script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37"
+      }
+    ],
+    "B_actual": [
+      {
+        "tipo": "11 tests sintéticos locales",
+        "resultado": "PASS",
+        "scope": "validador de metadatos, sin repo completo ni ISO en tests"
+      }
+    ],
+    "B_historica": [
+      {
+        "tipo": "CI HEAD inicial",
+        "pull_request_run": 45256952901,
+        "push_run": 45256935071,
+        "conclusion": "success",
+        "scope": "sin ISO"
+      }
+    ],
+    "C_actual": [],
+    "C_historica": "F1 Opciones y primer mapa según informes anteriores; no revalidado aquí"
+  },
+  "bloqueos": [
+    "AppImage PPSSPP oficial v1.20.4 no encontrada en entorno actual; DNS GitHub terminal bloqueado",
+    "No modelo MIPS real para 4524 textos aplazados",
+    "Origen gráfico del texto de prólogo no demostrado",
+    "F2 TUIKA no vinculado a combate real; 19 glifos no certificados multicontesto",
+    "Sin candidata final, BPS final ni Windows x64 E2E"
+  ],
+  "siguiente_relevo": "prompts/SIGUIENTE_TAREA.md",
+  "advertencia": "Los denominadores de cobertura contextual, gráficos y casos totales no están certificados. La matriz inicial no es universo completo. Ningún 100% de las cuatro áreas está verificado."
+}

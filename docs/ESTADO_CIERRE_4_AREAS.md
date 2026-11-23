@@ -1,0 +1,34 @@
+# CLADUN ES — estado auditable de cierre T/G/R/Q (23-11-2026)
+
+**Corte de este relevo: 2026-11-23T21:11:27Z.** Estado: **T PARTIAL, G BLOCKED, R PARTIAL/BLOCKED, Q NOT_RUN**. Este documento no convierte pruebas A/B en evidencia C. PR #7 permanece OPEN/DRAFT. Las pruebas históricas no se adjudican a esta sesión.
+
+## A: verificación binaria auténtica de esta sesión
+
+ISO USA extraída por libarchive desde el .7z del usuario en una carpeta privada fuera del repositorio, sin modificación: **305.496.064 bytes**, SHA256 `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f`. Su volumen ISO9660 es `CLASSIC_DUNGEON_TRIAL_AND_APPEND`; contiene **16 registros ISO9660**, `PSP_GAME/USRDIR/DATA.DAT` en offset **113.770.496**, longitud **191.697.408**. Se comprobaron por límites y SHA los **349 registros PSPFS**; manifiesto privado de metadatos SHA256 `39ab95f5cb0f6f4b749e96db447faddf9881fd2b7a3f99c02ea4b7bb9cf97248`.
+
+PSPFS #231 `SCRIPT.SDT`: **699.624 bytes** comprimidos, SHA256 `1811742d7d3e88da530c1fd2b98885e8426f7af761f7c89aecc80f34ffdbe2d4`, descomprime a **930.304 bytes** y **4 DSARC**. `SCRIPT.DAT`: **633.344 bytes**, SHA256 `c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358`; `SCRIPT.TBL`: **52.016 bytes**, SHA256 `f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37`. Coinciden con el baseline histórico; **no se editaron los recursos ni se creó ISO candidata**.
+
+**No se reparsearon los 51.705 comandos en esta sesión**: sus recuentos y la simulación de 11 textos proceden de los informes anteriores, no de la auditoría nueva. Tampoco se ha observado PC MIPS, prólogo dibujado o TUIKA en juego.
+
+## B: cobertura real versus métricas históricas
+
+| Apartado | Métrica con población | Estado |
+|---|---|---|
+| T | 9.235/9.237 textos escritos (99,98 % del CSV); 2 origen truncado; aprobación contextual y visibilidad de todo el juego **NO MEDIBLES** | PARTIAL |
+| G | 6 PNG y 27 IMY de estudios históricos; inventario completo de imágenes con inglés y aprobación en PPSSPP desconocidos | BLOCKED / NO MEDIBLE |
+| R | 3.724/8.248 sustituciones planificadas (45,15 %) en candidata parcial histórica; 4.524 aplazadas; sin modelo MIPS para longitudes variables | PARTIAL / BLOCKED |
+| Q | **42 casos iniciales** definidos, **0 ejecutados en este relevo**; no representan necesariamente todos los casos finales | NOT_RUN / cobertura total NO MEDIBLE |
+
+Nuevo validador `tools/qa_cobertura_4_areas.py` con **11 pruebas sintéticas PASS locales** y rechazo explícito de PASS C sin hashes, cierre con denominadores nulos, 4524 diferidas o matriz incompleta. El PASS del validador significa *consistencia de metadatos*, no juego probado. Nuevo `qa/MATRIZ_BETATESTING_COBERTURA.csv` define 42 casos sin falsificar `PASS`; `reports/COBERTURA_4_AREAS.json` conserva null para mediciones ausentes. En el HEAD inicial `f8f59d894c8477c832774a0dc7acfb82093f0a44` se verificaron Actions **45256952901 (PR)** y **45256935071 (push)**: SUCCESS, sin ISO. El CI del nuevo commit se verificará separadamente.
+
+## C: pruebas de juego no ejecutadas ahora
+
+No hay binario oficial PPSSPP v1.20.4 disponible en este contenedor, y `git ls-remote` falló con `Could not resolve host: github.com`. El conector GitHub sí está habilitado. Históricamente existen capturas de Opciones F1 y primer mapa, **pero ninguna captura, trama GE, PC MIPS o test C se produjo ahora**. Falta la procedencia de las letras del prólogo, TUIKA en combate, glifos multicontesto, segundo nivel, enciclopedia, guardado/carga y Windows x64 E2E.
+
+## Reglas y siguiente paso
+
+No se tocó corpus, fuentes, gráficos, EBOOT, `SCRIPT.DAT/TBL`, BPS, ISO ni rama base. `--event-safe-only`, `white_new_ink=False` y PR DRAFT siguen obligatorios. Hay que obtener PPSSPP 1.20.4 oficial y autenticar PID/FD ISO/WS antes de la prueba C, o continuar con auditoría de solo lectura mientras dure el bloqueo. No subir assets comerciales, capturas ni dumps.
+
+Comandos para un checkout real (no ejecutados aquí por DNS): `python -m unittest discover -s tests -v`, `python tools/qa_cobertura_4_areas.py`, `python tools/qa_cobertura_4_areas.py --require-closed` (debe FALLAR todavía), `python tools/f3_simular_intro_mismo_tamano.py --iso-original /PRIVADO/USA.iso --reporte-privado /PRIVADO/sim.json`, `python tools/f3_presupuesto_padding_intro.py --iso-original /PRIVADO/USA.iso --reporte-privado /PRIVADO/padding.json`, `(cd patcher && go test ./...)`.
+
+**Cierre automático: 0/4 áreas.** No certificar 100% por que exista matriz, script de validación o Actions en verde.

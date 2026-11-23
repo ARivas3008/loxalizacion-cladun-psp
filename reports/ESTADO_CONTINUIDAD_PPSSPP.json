@@ -1827,5 +1827,26 @@
     "commercial_assets_published": false,
     "pr7_open_draft_required": true,
     "final_ci_after_doc_commit": "PENDING"
+  },
+  "relevo_cuatro_areas_2026_11_23": {
+    "corte_utc": "2026-11-23T21:11:27Z",
+    "head_inicial_verificado": "f8f59d894c8477c832774a0dc7acfb82093f0a44",
+    "pr_draft": true,
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "verificacion_original_actual": "A ISO extraída, 349 PSPFS hasheados, SCRIPT.DAT/TBL reextraídos y cotejados",
+    "qa_matriz_inicial_casos": 42,
+    "qa_tests_sinteticos_locales_pass": 11,
+    "qa_C_ejecutado_en_este_relevo": false,
+    "areas_cerradas": [],
+    "demo1001_85_variables_bloqueados": true,
+    "script_4524_diferidos": true,
+    "ppSSPP_no_disponible": true,
+    "ci_anterior_head": {
+      "push": 45256935071,
+      "pr": 45256952901,
+      "success": true
+    },
+    "siguiente_prompt": "prompts/SIGUIENTE_TAREA.md",
+    "nota": "No ejecución de PPSSPP ni cambio de ISO; QA documentada y auditable."
   }
 }
