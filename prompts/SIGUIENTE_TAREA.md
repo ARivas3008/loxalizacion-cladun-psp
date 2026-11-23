@@ -1,4 +1,4 @@
-# CLADUN ES — RELEVO AUTÓNOMO F3-R6: 97 TEXTOS ANCLADOS A ISO, 588 POSICIONES HIPOTÉTICAS, INTÉRPRETE MIPS Y PRÓLOGO; F2 Y F4–F6 ABIERTAS
+# CLADUN ES — NUEVO RELEVO AUTÓNOMO F2/F3-R7: 11 DIÁLOGOS DE IGUAL TAMAÑO SIMULADOS, 85 EVENTOS BLOQUEADOS, PPSSPP TUIKA Y 19 GLIFOS; F4–F6 ABIERTAS
 
 **Corte: 23/11/2026.** Eres ingeniero sénior PSP MIPS, PPSSPP oficial 1.20.4, WebSocket/GE/VRAM, ISO9660/PSPFS/DSARC, IMY, CLUT y localización CP932 española. **EJECUTA** trabajo comprobable, tests y correcciones solamente con causalidad. NO basta aconsejar. Divide las evidencias: **A original ISO comercial auténtica**, **B datos reales de borrador y tests sintéticos/CI**, **C ejecución auténtica de PPSSPP**. Nunca inventes PC MIPS, dumps, capturas, hash, disponibilidad, Actions ni publicaciones.
 
@@ -14,7 +14,7 @@ PR #7: https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7
 Base: `revision-manual-dialogos`.
 **Conservar OPEN/DRAFT, sin merge, sin force push, sin editar rama base ni corpus fuente.**
 
-HEAD histórico F3-R5 de pruebas: `e0e47fa0e145732c83769af22c3a57e3fcc8eb4c` (CI push y PR SUCCESS). Ancestros F3-R4: `0c4a606c397d00e176bed4b11f62833d44803e0d`, F2 paralelo A/B/A: `161b7d4f2f64656f67143f8cbdd9e3290dd691ea`. **NINGUNO DE ELLOS DEBE SUPONERSE HEAD ACTUAL.** Comprobar inmediatamente:
+HEAD auténtico al inicio de este relevo F3-R6: `a3b7f8c5b663b86b070c8af06378faf1e250fea6` (NO asumir HEAD actual al siguiente turno). HEAD histórico F3-R5 de pruebas: `e0e47fa0e145732c83769af22c3a57e3fcc8eb4c` (CI push y PR SUCCESS). Ancestros F3-R4: `0c4a606c397d00e176bed4b11f62833d44803e0d`, F2 paralelo A/B/A: `161b7d4f2f64656f67143f8cbdd9e3290dd691ea`. **NINGUNO DE ELLOS DEBE SUPONERSE HEAD ACTUAL.** Comprobar inmediatamente:
 
 ~~~bash
 git fetch origin
@@ -26,7 +26,7 @@ git rev-parse HEAD
 
 Si terminal falla por DNS github.com, no fingir checkout; usar GitHub conector `fetch_file`, `create_blob/create_tree/create_commit/update_ref` con `expected_sha` y `force:false`, comprobando la rama antes de escribir y conservando trabajos paralelos F2.
 
-LEER COMPLETOS: `AGENTS.md`, `README.md`, `prompts/SIGUIENTE_TAREA.md`, `reports/ESTADO_CONTINUIDAD_PPSSPP.json`, `docs/F3_R5_ANCLA_DEMO1001_Y_DERIVA_2026-11-23.md`, `reports/RESULTADO_F3_R5_ANCLA_Y_DERIVA_2026-11-23.json`, `reports/F3_DEMO1001_GEOMETRIA_ORIGINAL_2026-11-23.json`, `tools/f3_anclar_intro.py`, `tests/test_f3_anclar_intro.py`, `tools/f3_auditar_intro.py`, `tools/f3_campos_alineacion.py`, `tools/f3_referencias_riesgo.py`, `tools/script_event_guard.py`, `tools/integrar_parche_seguro.py`, `tools/charset_es.py`, `docs/F3_ANIME_IMY_ESTRUCTURAS_2026-11-23.md`, `docs/F3_ANIME_TOPOLOGIA_2026-11-23.md`, `docs/F3_PROLOGO_ANIME000_DEPENDENCIA_PPSSPP_REAL_2026-11-23.md`. Para F2: `docs/F2_COTEJO_X11_ABA_CONTROL_TEMPORAL_2026-11-23.md`, `docs/F2_IMPACTO_GLOBAL_CLUT2_REAL_2026-11-23.md`, `docs/F2_GE_ONLY_WEB_SOCKET_SIN_FRAMEBUFFER_2026-11-23.md`, `docs/F2_MAPA_JUGABLE_GE_X11_F1_2026-11-23.md`, `tools/f2_cotejar_x11_aba.py`, `tools/f2_ppsspp_ws_1204.py`, `tools/f2_ruta_ws_liberacion_segura.py`, `tools/f2_ws_procedencia_ppsspp.py`, `tools/f2_ge_dump_1204.py` y sus tests.
+LEER COMPLETOS: `AGENTS.md`, `README.md`, `prompts/SIGUIENTE_TAREA.md`, `reports/ESTADO_CONTINUIDAD_PPSSPP.json`, `docs/F3_R6_SIMULACION_11_MISMA_LONGITUD_2026-11-23.md`, `reports/RESULTADO_F3_R6_SIMULACION_11_2026-11-23.json`, `tools/f3_simular_intro_mismo_tamano.py`, `tests/test_f3_simular_intro_mismo_tamano.py`, `tools/f3_presupuesto_padding_intro.py`, `reports/F3_DEMO1001_PADDING_ORIGINAL_2026-11-23.json`, `docs/F3_R5_ANCLA_DEMO1001_Y_DERIVA_2026-11-23.md`, `reports/RESULTADO_F3_R5_ANCLA_Y_DERIVA_2026-11-23.json`, `reports/F3_DEMO1001_GEOMETRIA_ORIGINAL_2026-11-23.json`, `tools/f3_anclar_intro.py`, `tests/test_f3_anclar_intro.py`, `tools/f3_auditar_intro.py`, `tools/f3_campos_alineacion.py`, `tools/f3_referencias_riesgo.py`, `tools/script_event_guard.py`, `tools/integrar_parche_seguro.py`, `tools/charset_es.py`, `docs/F3_ANIME_IMY_ESTRUCTURAS_2026-11-23.md`, `docs/F3_ANIME_TOPOLOGIA_2026-11-23.md`, `docs/F3_PROLOGO_ANIME000_DEPENDENCIA_PPSSPP_REAL_2026-11-23.md`. Para F2: `docs/F2_COTEJO_X11_ABA_CONTROL_TEMPORAL_2026-11-23.md`, `docs/F2_IMPACTO_GLOBAL_CLUT2_REAL_2026-11-23.md`, `docs/F2_GE_ONLY_WEB_SOCKET_SIN_FRAMEBUFFER_2026-11-23.md`, `docs/F2_MAPA_JUGABLE_GE_X11_F1_2026-11-23.md`, `tools/f2_cotejar_x11_aba.py`, `tools/f2_ppsspp_ws_1204.py`, `tools/f2_ruta_ws_liberacion_segura.py`, `tools/f2_ws_procedencia_ppsspp.py`, `tools/f2_ge_dump_1204.py` y sus tests.
 
 ## 2. ISO y PPSSPP: binarios solamente PRIVADOS
 
@@ -83,6 +83,29 @@ F1 Opciones históricas en PPSSPP real: **756 px interior / ≈764 exterior**, S
 F2 **ABIERTA**. Atlas TUIKA CLUT2 original auténtico: 256×256, índice2 **9.144 texeles** y **3.506 en siete zonas protegidas**; no cambiar paleta global para parche final porque recolorearía iconos, cifras, japonés. Sonda RGB de tres bytes solo diagnóstica. Ya existe `tools/f2_cotejar_x11_aba.py` de tres capturas independientes **USA antes → sonda → USA después** (16 tests sintéticos históricos), con control de píxeles inestables; usar junto a comparador A/B, X11 960×544 y `--ge-only` auténtico, nunca llamar X11 framebuffer WS. Sigue faltando **escena de combate/habilidad verdadera** en USA/sonda, vínculo causal TUIKA → RAM → MIPS → GE → VRAM, iconos HUD/tutorial y QA completo de 19 caracteres **áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō** en menús, ayudas, HUD y combate con distintas tintas. Mantener 2.721 glifos originales, 19 A1–B3 y `white_new_ink=False`.
 
 F4: **4.524** textos script de diferente longitud aplazados. F5: QA integral juego ciudad/pisos/mapas/combat/habilidades/HUD/inventario/retratos/audio/guardado/carga/enciclopedia y regresión F1. F6: BPS final y EXE Windows x64 aplicados end-to-end y auditados con ISO propia en privado antes de distribución de parche, nunca payload comercial. Conservar 9.237 registros, 9.235 español/2 excepciones, 349 PSPFS, glosario, rama base y PR DRAFT.
+
+## 5A. NUEVO F3-R6: 11 CAMBIOS DE IGUAL LONGITUD PROBADOS SOBRE ISO ORIGINAL EN MEMORIA
+
+Se ejecutó realmente A **en ISO USA original auténtica privada**. Primero se autenticó tamaño 305496064 y SHA256 `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f`; se extrajo en memoria DATA.DAT→PSPFS 231 SCRIPT.SDT (IMY comprimido 8 bloques)→DSARC SCRIPT.DAT 633344B (SHA256 `c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358`) y SCRIPT.TBL 52016B (SHA256 `f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37`). Se verificaron 1625 bloques, 51705 comandos, 46308 no textuales, 7 bloques demo1001/878 comandos/97 textos/2728 bytes fuente.
+
+Del CSV GitHub auténtico `traduccion/CLADUN_BORRADOR_ES.csv`, blob Git SHA1 `400a9c9ec06f7456b5ec6e11f7502d711b0a976e`, se seleccionaron SOLO LAS 11 traducciones de tamaño idéntico tras codificar CP932 español A1–B3. Se comprobó cada offset/texto fuente original/ID script y se sustituyeron los bytes en una copia PYTHON EN MEMORIA de SCRIPT.DAT, NUNCA en ISO ni BPS, sin exportar SCRIPT.DAT. Se realizó segunda lectura real integral: **51705/51705 comandos** mantuvieron inicio, ID, opcode y orden; **46308 no textuales** idénticos byte a byte; SCRIPT.TBL/inicios de los 1625 bloques sin cambios, 0 movimientos. Exactamente **11 campos** de texto se alteraron (211 bytes de contenido diferentes) en bloques 758,760,762; los otros 86 intro intactos. SHA256 virtual de archivo SOLO EN MEMORIA `f042e862cb0f47f4a172ab28872fe9d412d4b0c5f5cf6041b162a39e5531eee9`. **NO SE ESCRIBIÓ NI PUBLICÓ EL ARCHIVO**, y este dato estático NO prueba seguridad del intérprete MIPS o visual PPSSPP. Los 85 de longitud distinta siguen BLOQUEADOS.
+
+Código B NUEVO: `tools/f3_simular_intro_mismo_tamano.py`, `tests/test_f3_simular_intro_mismo_tamano.py` (15 pruebas sintéticas y una integración con CSV real planeadas). Reutiliza el ancla ISO+CSV de `f3_anclar_intro`, el parser `read_commands` y `audit_script_rebuild(require_fixed_offsets=True)`, fuerza inmutabilidad de todos los comandos no textuales y tablas. Los tests CI deben ejecutarse con los scripts de repositorio reales, sin ISO. Los reportes públicos solo incluyen números, SHA y métricas; ninguna cadena/archivo comercial. Verificar GitHub Actions push y pull_request SUCCESS exactamente sobre HEAD final; no confundir B con juego C.
+
+Comandos:
+
+~~~bash
+# CI / checkout sin ISO, valida SHA borrador real 9237 filas, huella 97 y 11 candidatas:
+python tools/f3_simular_intro_mismo_tamano.py
+python -m unittest discover -s tests -p 'test_f3_simular_intro_mismo_tamano.py' -v
+
+# En contenedor local con ISO ORIGINAL del usuario y ruta privada, solo lectura + sim RAM:
+python tools/f3_simular_intro_mismo_tamano.py --iso-original /PRIVADO/USA.iso --reporte-privado /PRIVADO/F3_R6_11_MISMO_TAMANO.json
+~~~
+
+**OTRO AVANCE PARALelo F3**: se añadió el test/plan de presupuesto de padding `tools/f3_presupuesto_padding_intro.py`, `tests/test_f3_presupuesto_padding_intro.py`, `reports/F3_DEMO1001_PADDING_ORIGINAL_2026-11-23.json`. Deben preservarse. Aunque un texto variable cupiera en tail padding, NO puede desplazarse comando ni saltar sin intérprete MIPS probado. Los **588 offsets hipotéticos desplazados**, 85 textos de longitud variable y 4524 globales siguen sin autorización de inserción. NO fusionar, NO forzar push, NO tocar rama base.
+
+**C F2/F3 pendiente**: PPSSPP oficial 1.20.4 AppImage no existe en este contenedor; curl github.com falló por DNS y descarga alternativa falló. NO hubo nuevo juego, capturas, GE/VRAM/PC MIPS ni 19 glifos multicontesto. Prioridad adquirir binario auténtico SHA `661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21`; A/B/A de TUIKA en combate usando USA/sonda, WS --ge-only con provenance y glifos 19 en ayudas/menús/combate. CLUT2 global afectaría 9144 texeles, 3506 protegidos: diagnóstico únicamente.
 
 ## 6. Publicación segura, CI FINAL y regeneración
 
