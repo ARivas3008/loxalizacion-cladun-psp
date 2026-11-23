@@ -61,6 +61,16 @@
         "data_dat_bytes": 191697408,
         "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
         "script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37"
+      },
+      {
+        "tipo": "F4-R8: comparacion u32 original",
+        "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "comandos": 51705,
+        "no_textuales": 46308,
+        "ventanas_u32": 101659,
+        "coincidencias_id_externo": 1,
+        "coincidencias_relativas": 21,
+        "referencias_MIPS_demostradas": 0
       }
     ],
     "B_actual": [
@@ -68,6 +78,12 @@
         "tipo": "11 tests sintéticos locales",
         "resultado": "PASS",
         "scope": "validador de metadatos, sin repo completo ni ISO en tests"
+      },
+      {
+        "tipo": "F4-R8: nueva herramienta y pruebas sintéticas",
+        "hechos": 10,
+        "total": 10,
+        "resultado": "PASS_LOCAL_SINTETICO_NO_C"
       }
     ],
     "B_historica": [
@@ -87,7 +103,8 @@
     "No modelo MIPS real para 4524 textos aplazados",
     "Origen gráfico del texto de prólogo no demostrado",
     "F2 TUIKA no vinculado a combate real; 19 glifos no certificados multicontesto",
-    "Sin candidata final, BPS final ni Windows x64 E2E"
+    "Sin candidata final, BPS final ni Windows x64 E2E",
+    "F4: 22 igualdades u32 no prueban referencias; falta MIPS real sobre opcode 0x0A y 0x01/0x02."
   ],
   "siguiente_relevo": "prompts/SIGUIENTE_TAREA.md",
   "advertencia": "Los denominadores de cobertura contextual, gráficos y casos totales no están certificados. La matriz inicial no es universo completo. Ningún 100% de las cuatro áreas está verificado."
