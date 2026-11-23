@@ -1,4 +1,4 @@
-# CLADUN ES — SIGUIENTE RELEVO AUTÓNOMO F2: TUIKA de 14 bandas mixtas, 8.625 bordes negros, PPSSPP REAL, 19 glifos y avance F3–F6
+# CLADUN ES — RELEVO AUTÓNOMO F2: 7 subregiones TUIKA y 9.738 píxeles bloqueados, PPSSPP A/B REAL, 19 glifos, F1 y F3–F6
 
 Actúa como ingeniero sénior PSP MIPS, PPSSPP oficial v1.20.4 con depurador WebSocket, GPU GE/VRAM, ISO9660/PSPFS/DSARC, IMY paletizado 4bpp/CLUT, CP932 español, compilación segura y QA. TRABAJA de verdad: comprueba recursos aportados, ejecuta auditorías y pruebas, corrige código o parche privado si los resultados lo justifican, actualiza GitHub y publica evidencias. Es inaceptable inventar escenas, capturas, PC MIPS, direcciones RAM/VRAM, comandos GE, hashes, resultados de juego o regresiones. Separa siempre: (A) bytes ISO original auténticos; (B) unit tests sintéticos/CI; (C) gameplay PPSSPP realmente ejecutado.
 
@@ -11,7 +11,7 @@ Rama a modificar: integracion-eventos-segura-20261120
 PR #7: https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7
 Base del PR: revision-manual-dialogos. PR debe seguir ABIERTO, DRAFT, sin MERGE ni FORCE PUSH.
 
-HEAD ANTERIOR a este relevo: 2933bb9e5e08d4d83bef45c1800b1f824c28c407, árbol 9ea5a710d73884d3c945c89bda167c8835c965e9; ambas Actions sobre ese HEAD éxito: push 45066695557 y pull_request 45066837859, cada una con 371 tests Python y Go/integridad/build Windows público sin payload. EL HEAD DE ESTE RELEVO HA CAMBIADO: leer SHA actual y nunca reutilizar el anterior como si siguiera vigente; comprobar las dos Actions del SHA final.
+HEAD comprobado ANTES DEL RELEVO DE SUBREGIONES: 1c404406c100cd6a376e1941d473d943cf9312d3; GitHub Actions sobre exactamente ese HEAD: push 45106979181 y pull_request 45106984046, ambas SUCCESS, 394 tests Python ejecutados (1 omitido), integridad, Go y compilación Windows pública sin payload. Este HEAD es histórico al iniciar el nuevo relevo; leer el HEAD de AHORA y las dos Actions del SHA final, no reutilizar el anterior. El PR #7 estaba DRAFT, abierto, base revision-manual-dialogos.
 
 Intentar en checkout verdadero:
     git fetch origin
@@ -23,7 +23,7 @@ Intentar en checkout verdadero:
 
 En los últimos entornos no existe checkout local auténtico y falla la DNS de github.com; no declarar sincronización ni tests sobre un clon inexistente. El conector GitHub sí funcionó: leer ref+tree+PR, y escribir vía create_blob/create_tree/create_commit/update_ref con expected_sha y force:false. Si falla una actualización, volver a leer HEAD; no sobrescribir modificaciones ajenas.
 
-Leer COMPLETOS AGENTS.md, README.md, prompts/SIGUIENTE_TAREA.md, reports/ESTADO_CONTINUIDAD_PPSSPP.json, reports/RESULTADO_F2_TUIKA_ROTULOS_2026-11-22.json y nuevo docs/F2_TUIKA_CATALOGO_ROTULOS_2026-11-22.md. Asimismo:
+Leer COMPLETOS AGENTS.md, README.md, prompts/SIGUIENTE_TAREA.md, reports/ESTADO_CONTINUIDAD_PPSSPP.json, reports/RESULTADO_F2_TUIKA_ROTULOS_2026-11-22.json, docs/F2_TUIKA_CATALOGO_ROTULOS_2026-11-22.md; y NUEVOS docs/F2_TUIKA_SUBREGIONES_PROTEGIDAS_2026-11-23.md y reports/RESULTADO_F2_TUIKA_SUBREGIONES_2026-11-23.json. Leer herramientas nuevas tools/f2_tuika_proteger_subregiones.py y tests/test_f2_tuika_proteger_subregiones.py. Asimismo:
 - docs/PLAN_HASTA_IMPLEMENTACION_PPSSPP_2026-11-20.md; docs/RESULTADO_F1_PPSSPP_2026-11-21.md; docs/RESULTADO_F2_ATLAS_PPSSPP_2026-11-21.md; docs/F2_ICONOS_TINTA_PPSSPP_2026-11-21.md.
 - docs/F2_AUDITORIA_ORIGEN_SOLO_LECTURA_2026-11-21.md; docs/F2_QA_ESTATICA_WS_2026-11-21.md; docs/F2_LECTOR_GE_V6_2026-11-21.md; docs/F2_RELEVO_CAPTURA_RAM_2026-11-21.md; docs/F2_FE_ERRATAS_SHA256_SNAPSHOT_RAM_2026-11-21.md; docs/F2_RELEVO_WS_BREAKPOINT_2026-11-21.md; docs/F2_PREPARACION_DIRECCIONES_GE_2026-11-21.md.
 - docs/F2_INVENTARIO_SYSGRA_2026-11-22.md; docs/F2_CATALOGO_GLOBAL_DSARC_2026-11-22.md; docs/F2_DOS_FUENTES_IMY_DECODIFICADAS_2026-11-22.md; docs/F2_SYSGRA_27_IMY_PALETAS_2026-11-22.md; docs/F2_PREVISUALIZACION_PRIVADA_SYSGRA_TEXTO_EN_GRAFICOS_2026-11-22.md; docs/F2_SONDA_MAGENTA_TUIKA_CLUT_PPSSPP_PENDIENTE_2026-11-22.md; docs/F2_TUIKA_CLUT2_CONTADOR_PIXEL_MASK_2026-11-22.md; docs/F2_RELEVO_COTEJO_AB_2026-11-22.md; docs/F2_MAPA_FRANJAS_TUIKA_2026-11-22.md.
@@ -87,7 +87,30 @@ Sonda magenta TUIKA CLUT2 PREVIA para test A/B: original RGB(249,251,249,255) �
     b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa
 Cotejo íntegro previo: 305496064 bytes, otros 348 PSPFS, otros 26 DSARC y tablas intactos. 9144 píxeles index2 se volverían magenta SI el atlas se dibuja sin cambio de CLUT en PPSSPP. TODAVÍA NO PROBADO EN JUEGO.
 
-## 4. PRIORIDAD CRÍTICA: ARRANCAR PPSSPP AUTÉNTICO Y HACER A/B REAL
+## 4. NUEVO RELEVO AUTÉNTICO 23/11: 7 SUBREGIONES TUIKA, 3 GAPS, GUARDIA DE INSERCIÓN SOLO EN MEMORIA
+
+En este nuevo entorno se EXTRAYÓ de nuevo la ISO USA auténtica del 7z con libarchive y se calculó SHA256 completo 305496064 bytes: b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f. Un decodificador independiente leyó TUIKA_MES.IMY SHA c47140753a462cc5b1cc454ee79e0c37b526f06ba5c663b957a91202ebd09127, reconstruyó índices raster PSP 4bpp de 256×256 con SHA del flujo comprimido/decodificado 3c181786f72008c144a2187d362d289d453b4f00d93fe5f8cb2facc0f23d14d5 y nuevo SHA de valores lineales índice por píxel (65536 bytes): a3da2c0d728288c2842b0d9164f4dd220c4713eaa19b3559ef7105f837f8106d. La máscara CLUT2 reprodujo 382ae8d2ffa8908979050b5e83f38ec9967b461bbf9b614dd92775da90e409ba.
+
+**NUEVO HECHO BINARIO ESTÁTICO:** No son 14 rótulos independientes; las franjas 10 y 13 mezclan texto con números e iconos. Los siguientes subrectángulos ORIGINALES (x0,y0,x1,y1 inclusive) se verificaron por SHA256 del índice lineal sin exportar píxeles comerciales:
+- Franja 0 mezcla japonés + inglés [1,2,240,15], protegida íntegra, 1190 index0 + 1060 index1 + 1110 index2.
+- Franja 10 rótulo «G Star On!» [4,181,79,196], NO aprobado para editar, 468 index0 +410 index1 +338 index2.
+- Franja 10 iconos [92,181,115,196], protegidos, 192 index0+108 index1+84 index2.
+- Franja 11 controles [1,199,136,214], protegidos, 1546 index0+360 index1+270 index2.
+- Franja 12 dígitos 0–9 [1,218,138,231], protegidos, 688 index0+644 index1+600 index2.
+- Franja 13 dígitos 0–9 [1,236,108,249], protegidos, 484 index0+516 index1+512 index2.
+- Franja 13 «No special attack» [112,236,248,249], NO aprobado para editar, 745 index0+581 index1+592 index2.
+
+TRES SEPARADORES totalmente transparentes originales CLUT0 (NO solo ausencia de tinta blanca): franja10 x80–91 y181–196 (192 píxeles), franja13 x109–111 y236–249 (42 píxeles entre números y mensaje), y franja13 x190–199 y236–249 (140 píxeles entre palabras). El SHA de cada uno de los siete subrectángulos está en el reporte mencionado y codificado como invariante estricto en la herramienta.
+
+NUEVO `tools/f2_tuika_proteger_subregiones.py` autentica ISO, IMY, índices original y 7 regiones/3 gaps; calcula huellas/contadores; lista exactamente 9738 posiciones BLOQUEADAS: iconos, dígitos, región japonesa mixta y gaps. `guard_candidate` trabaja únicamente en memoria con arrays índices 256×256, PERMITE CERO CAMBIOS por defecto, rechaza cambios fuera de una hipotética máscara futura explícita o que afecten píxeles bloqueados. **Una máscara aprobada por el caller NO es autorización de integrar en el videojuego.** NO se escribió ninguna ISO, patch, IMY o PNG comercial ni se aprobaron ROI; NO activar traducciones de los textos por ahora. `tests/test_f2_tuika_proteger_subregiones.py`: 32 tests locales SINTÉTICOS PASS (no PPSSPP); auditor privado autónomo sobre ISO auténtica con hashes/segmentos PASS. JSON privado `TUIKA_protected_subregions_authentic_static_PRIVATE.json` SHA256 ab23878975415fed52ba0f97cdca4f75be973ab1b52768459397e82b51138439; SOLO métricas publicadas en reports/RESULTADO_F2_TUIKA_SUBREGIONES_2026-11-23.json. Documentación docs/F2_TUIKA_SUBREGIONES_PROTEGIDAS_2026-11-23.md.
+
+Para repetir con ISO auténtica SOLO PRIVADA:
+
+    python tools/f2_tuika_proteger_subregiones.py --iso-usa /PRIVATE/USA.iso --reporte-privado /PRIVATE/TUIKA_subregiones_nuevo.json
+
+No confundir separación espacial en el archivo con función real o límite seguro en PPSSPP. El texto «Sin ataque especial» podría no encajar en [112..248], requiere glyph atlas fuente/bordes y gameplay; los números deben sobrevivir bit a bit. El objetivo del siguiente relevo es PPSSPP real A/B original y sonda por escena concreta y cadena MIPS→RAM→GE→VRAM; no acumular informes estáticos de escaso valor sin avanzar hacia runtime. La ISO F1 canónica no se reconstruyó ni PPSSPP se ejecutó en este relevo (DNS de github.com falló). F2 SIGUE ABIERTA.
+
+## 5. PRIORIDAD CRÍTICA: ARRANCAR PPSSPP AUTÉNTICO Y HACER A/B REAL
 
 En los relevos recientes PPSSPP AppImage oficial no estaba instalado y tanto clone como descarga GitHub fallaron (DNS Could not resolve host: github.com). Intentar localizar AppImage v1.20.4 legítimo, comprobar SHA completo ANTES de ejecutar, comprobar arquitectura Linux x86_64 y funcionalidad X11/Xvfb/SDL. No reemplazarlo por un emulador diferente etiquetado falsamente 1.20.4. Si no hay binario, dejar bloqueo explícito y avanzar solo en auditorías útiles, nunca imágenes fabricadas como evidencia.
 
@@ -110,13 +133,13 @@ Comandos orientativos con rutas privadas nuevas:
 
 El comparador A/B SOLO autentica imágenes/ISO en disco, NO que PPSSPP haya cargado efectivamente esas ISOs ni que los frames estén alineados. No declarar runtime_loaded_iso_identity_proven=true sin evidencia independiente. No subir PNG, dumps o ISOs a GitHub.
 
-## 5. QA DE F2: 19 GLIFOS Y REGRESIÓN F1
+## 6. QA DE F2: 19 GLIFOS Y REGRESIÓN F1
 
 Con ISO F1 canónica autenticada (reconstruir PRIVADAMENTE si no está presente) demostrar los 19 caracteres áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō en ayudas, tutorial, menús, diálogo, HUD y combate. Capturas PPSSPP auténticas, ROI correctas, CLUT, tintas, bbox, recortes e interlineado; probar botones L/R □○×△ y que no haya distorsión de retratos, iconos, tiles y demás assets. Diagnósticos privados tools/generar_probe_f2_glifos.py y tools/generar_probe_f2_tinta.py; no cambiar corpus canon.
 
 Regresión F1 Opciones PPSSPP real ventana de escritorio X11 960×544 con Xvfb 1280×720, scrot, 756px interior/~764px exterior, Sí/No, música/configuración, navegación; NO medirlo con framebuffer PSP como si fuese la ventana. white_new_ink=False hasta superar QA multicontesto y regresión completa.
 
-## 6. INTEGRIDAD, TESTS, CI Y ENTREGA GITHUB
+## 7. INTEGRIDAD, TESTS, CI Y ENTREGA GITHUB
 
 Con un checkout REAL y binarios privados presentes ejecutar cuando corresponda:
     python -m unittest discover -s tests -v
@@ -129,17 +152,18 @@ Con un checkout REAL y binarios privados presentes ejecutar cuando corresponda:
     python tools/f2_auditar_27_imy_sysgra.py --iso-usa /PRIVATE/USA.iso --reporte /tmp/27_imy_nuevo.json
     python tools/f2_mapa_franjas_tuika.py --iso-usa /PRIVATE/USA.iso --iso-sonda /PRIVATE/TUIKA_magenta_NUEVA.iso --reporte-privado /PRIVATE/bandas_nuevo.json
     python tools/f2_tuika_rotulos_privado.py --iso-usa /PRIVATE/USA.iso --reporte-privado /PRIVATE/rotulos_nuevo.json
+    python tools/f2_tuika_proteger_subregiones.py --iso-usa /PRIVATE/USA.iso --reporte-privado /PRIVATE/subregiones_nuevo.json
     (cd patcher && go test ./...)
     git diff --check
 
 Si falta checkout local auténtico, NO afirmar ejecución local de toda la suite: verificar los logs de AMBAS GitHub Actions para HEAD FINAL (push y pull_request), nombres de jobs, pruebas Python, integridad, Go y build Windows sin payload. Reportar el recuento y distinción CI vs PPSSPP. Evitar editar corpus, traducciones o scripts sin compuertas de seguridad.
 
-## 7. F3–F6 SIGUIENTES, NO DECLARAR PORCENTAJES ARBITRARIOS
+## 8. F3–F6 SIGUIENTES, NO DECLARAR PORCENTAJES ARBITRARIOS
 
 F2 sigue ABIERTA hasta conectar MIPS→RAM→GE→VRAM de iconos/fuentes/uso de TUIKA; 19 glifos en todos los contextos pertinentes, CLUT y F1 real X11 sin regresiones. Las 14 bandas TUIKA NO están aprobadas para repintar por ahora.
 
 F3: resolver introducción aún en inglés; rastrear procedencia (no suponer SCRIPT ni gráficos) y traducir con pruebas reales y QA. F4: analizar e integrar las 4524 sustituciones SCRIPT.DAT aplazadas con relocación, saltos y eventos seguros, sin cambiar accidentalmente 46308 comandos no textuales ni los 1625 arranques. F5: QA completa de diálogos, historia, combate, HUD, inventario, retratos, enciclopedia, assets, guardado/carga, errores y todas las fases. F6: BPS español definitivo verificable con SHA/source/target, aplicador EXE Windows probado end-to-end, instrucciones y auditoría de offsets/recursos, solo después de F2–F5 demostradas. No fusionar PR #7 sin autorización.
 
-## 8. CIERRE RECURSIVO OBLIGATORIO
+## 9. CIERRE RECURSIVO OBLIGATORIO
 
 Antes de terminar: (1) documentar lo que se ejecutó realmente y lo que quedó bloqueado; (2) actualizar reports/ESTADO_CONTINUIDAD_PPSSPP.json y un informe de metadatos, protegiendo datos comerciales; (3) commit seguro sobre integracion-eventos-segura-20261120 mediante expected_sha, sin force ni merge; (4) verificar PR #7 DRAFT y DOS Actions SUCCESS sobre SHA FINAL, no SHA anterior; (5) REESCRIBIR COMPLETAMENTE prompts/SIGUIENTE_TAREA.md con NUEVO PROMPT COMPLETO, autónomo y actualizado, y MOSTRARLO ÍNTEGRO; (6) el nuevo prompt DEBE CONTENER DE NUEVO ESTA MISMA OBLIGACIÓN RECURSIVA. Repetir hasta F2–F6 autentificadas. Nunca inventar evidencia PPSSPP para cerrar la fase.

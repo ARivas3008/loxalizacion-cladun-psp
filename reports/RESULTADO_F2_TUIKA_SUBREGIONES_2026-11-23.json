@@ -1,0 +1,186 @@
+{
+  "schema": "cladun.f2.tuika_readonly_original_subregions_audited.v1",
+  "date": "2026-11-23",
+  "status": "F2_ABIERTA_SOLO_BYTES_ISO_REAL_SIN_PPSSPP",
+  "iso_original": {
+    "bytes": 305496064,
+    "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "reextracted_from_user_7z": true
+  },
+  "original_tuika_member_sha256": "c47140753a462cc5b1cc454ee79e0c37b526f06ba5c663b957a91202ebd09127",
+  "original_decoded_tiled_indices_sha256": "3c181786f72008c144a2187d362d289d453b4f00d93fe5f8cb2facc0f23d14d5",
+  "original_linear_index_bytes_sha256": "a3da2c0d728288c2842b0d9164f4dd220c4713eaa19b3559ef7105f837f8106d",
+  "clut2_mask_sha256": "382ae8d2ffa8908979050b5e83f38ec9967b461bbf9b614dd92775da90e409ba",
+  "texture_px": [
+    256,
+    256
+  ],
+  "regions": [
+    {
+      "name": "band00_mixed_japanese",
+      "xyxy_inclusive": [
+        1,
+        2,
+        240,
+        15
+      ],
+      "classification": "LOCKED_UNRESOLVED_MIXED",
+      "index0": 1190,
+      "index1": 1060,
+      "index2": 1110,
+      "row_major_indices_sha256": "035e418ba097eeeca464729c5d8a3fc20fd4e0164ba7c22dfa74817cd8caa933",
+      "editing_approved": false,
+      "ppsspp_context_proven": false
+    },
+    {
+      "name": "band10_g_star_label",
+      "xyxy_inclusive": [
+        4,
+        181,
+        79,
+        196
+      ],
+      "classification": "PROVISIONAL_LABEL_LOCKED",
+      "index0": 468,
+      "index1": 410,
+      "index2": 338,
+      "row_major_indices_sha256": "6b6f8d988c81022b5913af4686fa9b6468f3fd3c66ec84e90298d5ac9de7ae42",
+      "editing_approved": false,
+      "ppsspp_context_proven": false
+    },
+    {
+      "name": "band10_control_icons",
+      "xyxy_inclusive": [
+        92,
+        181,
+        115,
+        196
+      ],
+      "classification": "LOCKED_ICON",
+      "index0": 192,
+      "index1": 108,
+      "index2": 84,
+      "row_major_indices_sha256": "c130f1d94b27467b3cfe603e0dfbfc0e922c6ae777ff52557788537b57314268",
+      "editing_approved": false,
+      "ppsspp_context_proven": false
+    },
+    {
+      "name": "band11_control_symbols",
+      "xyxy_inclusive": [
+        1,
+        199,
+        136,
+        214
+      ],
+      "classification": "LOCKED_ICON",
+      "index0": 1546,
+      "index1": 360,
+      "index2": 270,
+      "row_major_indices_sha256": "036958ab369722152f658807d6cb9bfb246374996e582881326fe08a4e055677",
+      "editing_approved": false,
+      "ppsspp_context_proven": false
+    },
+    {
+      "name": "band12_digits_0_to_9",
+      "xyxy_inclusive": [
+        1,
+        218,
+        138,
+        231
+      ],
+      "classification": "LOCKED_DIGITS",
+      "index0": 688,
+      "index1": 644,
+      "index2": 600,
+      "row_major_indices_sha256": "ada283d0d131636eeac112d2982979fd737fa1cf7ec042b9f034626b1dcbd08c",
+      "editing_approved": false,
+      "ppsspp_context_proven": false
+    },
+    {
+      "name": "band13_digits_0_to_9",
+      "xyxy_inclusive": [
+        1,
+        236,
+        108,
+        249
+      ],
+      "classification": "LOCKED_DIGITS",
+      "index0": 484,
+      "index1": 516,
+      "index2": 512,
+      "row_major_indices_sha256": "315e2178f7391c79d5105cf862050b7d1a44e263a8d05a7d22ca7a8c3caacada",
+      "editing_approved": false,
+      "ppsspp_context_proven": false
+    },
+    {
+      "name": "band13_no_special_attack",
+      "xyxy_inclusive": [
+        112,
+        236,
+        248,
+        249
+      ],
+      "classification": "PROVISIONAL_LABEL_LOCKED",
+      "index0": 745,
+      "index1": 581,
+      "index2": 592,
+      "row_major_indices_sha256": "a02845ad02253e0333466b1f879d2acea66d59564c15796e06a5f2dc90ceb32e",
+      "editing_approved": false,
+      "ppsspp_context_proven": false
+    }
+  ],
+  "empty_index0_gaps": [
+    {
+      "name": "band10_label_to_icons",
+      "xyxy_inclusive": [
+        80,
+        181,
+        91,
+        196
+      ],
+      "pixels": 192
+    },
+    {
+      "name": "band13_digits_to_text",
+      "xyxy_inclusive": [
+        109,
+        236,
+        111,
+        249
+      ],
+      "pixels": 42
+    },
+    {
+      "name": "band13_special_to_attack",
+      "xyxy_inclusive": [
+        190,
+        236,
+        199,
+        249
+      ],
+      "pixels": 140
+    }
+  ],
+  "lock_and_guard": {
+    "locked_position_count": 9738,
+    "default_allowed_change_pixels": 0,
+    "protect_all_digits_symbols_mixed_japanese": true,
+    "protect_empty_gaps": true,
+    "explicit_allowed_mask_is_not_gameplay_approval": true,
+    "conditional_editing_not_applied": true
+  },
+  "verification": {
+    "original_iso_sha_recomputed": true,
+    "source_IMY_parsed_and_unswizzled": true,
+    "region_sha_all_seven_match": true,
+    "all_gaps_index0_true": true,
+    "local_synthetic_tests_pass": 32,
+    "production_script_cli_with_full_repo_not_run_locally": true,
+    "gameplay_ppsspp_executed": false,
+    "new_ppsspp_pngs": 0,
+    "source_unmodified": true,
+    "corpus_modified": false
+  },
+  "private_meta_sha256": "ab23878975415fed52ba0f97cdca4f75be973ab1b52768459397e82b51138439",
+  "next": "Obtener PPSSPP oficial v1.20.4 autenticado y validar en juego las etiquetas TUIKA por A/B; rótulo y dígitos separados no equivalen a ROI editable; verificar los 19 glifos, regresión F1; F3-6 pendientes."
+}
