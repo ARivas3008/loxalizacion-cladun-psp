@@ -1,0 +1,125 @@
+{
+  "schema": "cladun.f2.ws_real_f1_controls_ge.v1",
+  "date": "2026-11-23",
+  "status": "F2_OPEN",
+  "original_iso": {
+    "bytes": 305496064,
+    "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f"
+  },
+  "f1_iso": {
+    "bytes": 306456576,
+    "sha256": "496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986",
+    "script_strings_deferred": 4524,
+    "integrated_substitutions": 3724
+  },
+  "ppsspp": {
+    "official_v": "v1.20.4",
+    "file_bytes": 50689748,
+    "sha256": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21",
+    "real_usa_running": true,
+    "real_f1_running": true,
+    "remote_debugger_local_port": 24192,
+    "subprotocol": "debugger.ppsspp.org",
+    "ws_version_authenticated": true,
+    "game_id": "NPUH10072",
+    "cpu_status_real": true,
+    "launcher_audio_shim_requires": "SHARUN_ALLOW_LD_PRELOAD=1",
+    "binary_modified": false
+  },
+  "real_pid_ws_iso": {
+    "source": "tools/f2_ws_procedencia_ppsspp.py",
+    "same_pid_owns_tcp_listener": true,
+    "same_pid_holds_iso_fd_open": true,
+    "pid_starttime_stable": true,
+    "original_iso_in_render_gpu_proven": false
+  },
+  "real_f1_options": {
+    "x11_window": [
+      960,
+      544
+    ],
+    "options_internal_width_px": 756,
+    "options_outer_width_estimate_px": 764,
+    "ui_labels_visible": [
+      "Vol. efectos",
+      "Vol. música",
+      "Tipo música",
+      "Decimales de daño",
+      "Sí",
+      "No",
+      "Controles"
+    ],
+    "visual_check_ppsspp_real": true
+  },
+  "real_f1_controls": {
+    "tested": true,
+    "visible_labels": [
+      "Correr",
+      "Bloquear",
+      "Ataque",
+      "Saltar",
+      "Magia",
+      "Cambiar",
+      "Por defecto",
+      "Fin",
+      "Pulsa el botón para configurar."
+    ],
+    "visible_icons": [
+      "R",
+      "□",
+      "×",
+      "○",
+      "△",
+      "L"
+    ],
+    "input_method": "authentic PPSSPP websocket input.buttons.press",
+    "icon_source_texture_proven": false,
+    "all_19_glyphs_tested": false
+  },
+  "ge_original": {
+    "size_bytes": 10367,
+    "sha256": "6defdec107b1c35c2b87d6a90cb1786f418256eeb5d4f81a52dc9586b57587b2",
+    "record_count": 48,
+    "prim_count": 10
+  },
+  "ge_f1_controls": {
+    "size_bytes": 38546,
+    "sha256": "e32efb103488f70c7e656217efdb0ea09b4747b5d77ea9d5af95747412c098af",
+    "record_format_version": 6,
+    "record_count": 398,
+    "PRIM": 124,
+    "TEXADDR0": 10,
+    "CLUTADDR": 10,
+    "TEXTURE0": 14,
+    "CLUT": 11
+  },
+  "gpu_buffer_screenshot": {
+    "command_attempted": true,
+    "result": "Could not download output",
+    "worked": false
+  },
+  "tuiKA_combat_ab_screenshots": false,
+  "mips_to_ram_to_ge_to_vram_proven": false,
+  "qa": {
+    "python_tests_run": 491,
+    "python_skipped": 1,
+    "python_failures": 0,
+    "new_synthetic_ws_pid_tests": 9,
+    "integrity": "PASS",
+    "spanish_draft": "PASS",
+    "go_test": "PASS",
+    "ci_final_head_pending": true
+  },
+  "not_done": [
+    "TUIKA game-graphics A/B gameplay",
+    "19 glyphs all contexts",
+    "hardware buffer framebuffer acquisition",
+    "GE texture resource attribution",
+    "F3 intro",
+    "F4 4524 scripts",
+    "F5 complete gameplay",
+    "F6 final EXE"
+  ],
+  "private_evidence_zip_sha256": "7253770b10f475d88c71d74c86ca7a1e414048d8158e4d6ce662bd789b4a94e5",
+  "commercial_assets_committed": 0
+}

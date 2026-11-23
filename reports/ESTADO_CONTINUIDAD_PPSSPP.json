@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F2 ABIERTA: PPSSPP oficial 1.20.4 ejecutado REAL con ISO USA y sonda, X11 _NET_WM_PID y /proc FD corroborados, splash A/B idéntico; 1152 píxeles magenta ya originales (falso positivo descartado); WS 24192 NO escuchó, gameplay TUIKA/19 glifos/GE/VRAM pendiente.",
+  "fase_actual": "F2 ABIERTA: PPSSPP oficial v1.20.4 WS v1.20.4/NPUH10072 y CPU corriendo; mismo PID dueño socket LISTEN 24192 e ISO F1 exacta abierta (FD + starttime), UI F1 Opciones 756px interior/764 exterior y Controles con R L □×○△ observados y español sin espacios. GE real titulo USA y Controles F1 (48/398 registros). TUIKA gameplay y 19 glifos multicontesto/GE→VRAM SIN demostrar. F3–F6 pendientes.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -24,7 +24,9 @@
     "bps_f1_extra_ideografico_no_adoptado": "279bd99d7a0cfb87fd1bb4a03ee67ecc250d51563e14f12e213283922a8634fc",
     "iso_f1_ascii_aislada": "2f781c94b3ea835bd317d741793d0e3ed8ec9626dc2ab43a7ee501231e0b1edd",
     "bps_f1_ascii_aislada": "96db2092c14c8c854db93d3f27b6c219e698cc22c2e6947dbddfc5c4dcbbc79b",
-    "iso_tuika_magenta_experimental": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa"
+    "iso_tuika_magenta_experimental": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa",
+    "ge_f1_controles_real": "e32efb103488f70c7e656217efdb0ea09b4747b5d77ea9d5af95747412c098af",
+    "ge_usa_titulo_real": "6defdec107b1c35c2b87d6a90cb1786f418256eeb5d4f81a52dc9586b57587b2"
   },
   "entorno_pruebas": "PPSSPP 1.20.4 Linux x86_64 AppImage oficial (SHA verificado), Xvfb 1280x720x24, ventana 960x544, render software, SDL_AUDIODRIVER=dummy",
   "artefacto_evidencias_privado": "Evidencias_reales_PPSSPP_Cladun_ES_v015.zip",
@@ -221,7 +223,7 @@
     "23/11 F3: PPSSPP 1.20.4 oficial Linux AppImage NO descargable por DNS GitHub; no emulación nueva, ni pantallas A/B intro. Evidencias F1 PPSSPP originales históricas sí son válidas, no repetidas.",
     "23/11 F3: sin reubicación ni inserción de los 85 diálogos de distinta longitud; sin análisis dinámico de referencias/jumps de SCRIPT.DAT; no afirmar F3 terminada."
   ],
-  "siguiente_accion": "Seguir F2: obtener debugger WebSocket real y escena de habilidades/combate, capturar A/B TUIKA sincronizado; descartar magenta natural de SYSTEM PRiSM; verificar 19 glifos y regresión F1 sin sacrificar eventos.",
+  "siguiente_accion": "Ejecutar PPSSPP+WS en misma escena de combate/habilidades USA/sonda TUIKA para comprobar uso funcional real mediante A/B y trazas GE; verificar los 19 glifos multicontesto. Mantener F2 abierta.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
   "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
   "ultimo_commit_trabajo": "3241f5ca9463e202e3b9b1371bf0deefa52f4673",
@@ -1228,5 +1230,44 @@
     "go_test_embedded": "NOT_RUN_WITHOUT_PRIVATE_BPS",
     "windows_no_payload_build": "PASS",
     "next_prompt": "prompts/SIGUIENTE_TAREA.md"
+  },
+  "f2_ws_real_f1_controles_2026_11_23": {
+    "documentation": "docs/F2_WS_REAL_F1_CONTROLES_GE_2026-11-23.md",
+    "report": "reports/RESULTADO_F2_WS_REAL_F1_CONTROLES_GE_2026-11-23.json",
+    "code": "tools/f2_ws_procedencia_ppsspp.py",
+    "tests": "tests/test_f2_ws_procedencia_ppsspp.py",
+    "ppsspp_official_version": "v1.20.4",
+    "sharun_ld_preload_workaround": "SHARUN_ALLOW_LD_PRELOAD=1 in container; original PPSSPP executable unmodified",
+    "websocket_port_24192_listening": true,
+    "protocol_version_ppsspp_v1204": true,
+    "game_id_NPUH10072": true,
+    "process_socket_listener_and_iso_fd_same_pid": true,
+    "iso_f1_bytes": 306456576,
+    "iso_f1_sha256": "496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986",
+    "options_width_internal_px": 756,
+    "options_width_external_approx_px": 764,
+    "controls_screen_icons_visible": [
+      "R",
+      "L",
+      "square",
+      "cross",
+      "circle",
+      "triangle"
+    ],
+    "ge_usa_title_sha256": "6defdec107b1c35c2b87d6a90cb1786f418256eeb5d4f81a52dc9586b57587b2",
+    "ge_usa_title_records": 48,
+    "ge_f1_controls_sha256": "e32efb103488f70c7e656217efdb0ea09b4747b5d77ea9d5af95747412c098af",
+    "ge_f1_controls_records": 398,
+    "ge_f1_controls_PRIM": 124,
+    "gpu_buffer_screenshot_failed": "Could not download output",
+    "tuiKA_gameplay_proven": false,
+    "mips_ram_ge_vram_chain_proven": false,
+    "nineteen_glyphs_all_contexts_verified": false,
+    "python_tests": 491,
+    "python_skipped": 1,
+    "go_tests": "PASS",
+    "private_evidence_zip_sha256": "7253770b10f475d88c71d74c86ca7a1e414048d8158e4d6ce662bd789b4a94e5",
+    "new_prompt": "prompts/SIGUIENTE_TAREA.md",
+    "status": "F2_OPEN"
   }
 }

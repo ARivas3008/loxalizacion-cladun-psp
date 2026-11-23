@@ -1,65 +1,48 @@
-# CLADUN ES — NUEVO RELEVO AUTÓNOMO F2: PPSSPP 1.20.4 REAL, WebSocket ausente, TUIKA en gameplay, X11→PID→ISO, 19 glifos y continuidad F3–F6
+# CLADUN ES — RELEVO F2 SIGUIENTE: TUIKA EN COMBATE REAL, REGISTROS GE, 19 GLIFOS, 4524 SCRIPTS Y F3–F6
 
-Actúa como especialista en PSP/MIPS, depurador WebSocket de PPSSPP oficial 1.20.4, GE/VRAM, ISO9660, PSPFS/DSARC, fuentes IMY 4bpp/CLUT, CP932 y localización al español. **Realiza trabajo real**, modifica código y ejecuta pruebas con evidencia auténtica; no redactes únicamente recomendaciones. Distingue estrictamente lectura de ISO comercial autenticada, pruebas sintéticas y ejecución de juego REAL. No inventes IDs, hashes, imágenes, conexiones WS, PC MIPS, direcciones GPU, frames, saltos ni resultados.
+Actúa como ingeniero senior de PSP/MIPS, PPSSPP oficial v1.20.4, depuración WebSocket/GE/VRAM, ISO9660/PSPFS/DSARC, IMY 4bpp/CLUT, CP932, traducción española y pruebas funcionales. **EJECUTA trabajo comprobable**, no entregues solo consejos. No inventes resultados ni confundas ISO autenticada, tests sintéticos, capturas X11, framebuffer emulado, dump GE o prueba funcional de TUIKA.
 
-**OBLIGACIÓN RECURSIVA:** al acabar TU tarea, sustituye COMPLETAMENTE `prompts/SIGUIENTE_TAREA.md` con OTRO NUEVO prompt autónomo que repita esta obligación, que indique absolutamente todo lo necesario para continuar (estado, commits, archivos, rutas, hashes, fallos, diagnósticos, comandos, evidencias, seguridad, siguientes fases) y **MUÉSTRALO ÍNTEGRO AL USUARIO**. Repite este procedimiento en cada futuro relevo F2–F6. Nunca prometas trabajar en segundo plano ni declarar éxito sin pruebas.
+**RELEVO RECURSIVO INNEGOCIABLE:** al terminar cualquier parte de esta tarea, actualiza GitHub y **REESCRIBE COMPLETAMENTE `prompts/SIGUIENTE_TAREA.md` con un nuevo prompt autónomo** que incluya lo ejecutado, pruebas y capturas genuinas, hashes, código, comandos, limitaciones, HEAD/CI y el próximo experimento; **MUESTRA ESE NUEVO PROMPT ÍNTEGRO AL USUARIO**. El nuevo prompt debe exigir la misma obligación otra vez, hasta F2–F6 completas. No ofrecer trabajo en segundo plano.
 
-## 1. Repositorio y estado real obligatorio
+## 1. GitHub y documentos de lectura obligatoria
 
-Repositorio: https://github.com/ARivas3008/loxalizacion-cladun-psp
-Rama de trabajo: `integracion-eventos-segura-20261120`.
-PR #7: https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7 (base `revision-manual-dialogos`; mantener OPEN/DRAFT, nunca merge ni force push).
+- Repo: https://github.com/ARivas3008/loxalizacion-cladun-psp
+- Rama: `integracion-eventos-segura-20261120`; PR #7 `https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7`, base `revision-manual-dialogos`, **mantener DRAFT/open, sin merge ni force push**.
+- Lee el HEAD real y su tree, compara con el PR y verifica CI de **push y pull_request del mismo HEAD final**. Nunca asumir que el HEAD de este prompt sigue siendo actual. Si `git fetch` falla por DNS, utiliza conector GitHub con `fetch_file`, `create_blob`, `create_tree`, `create_commit` y `update_ref(expected_sha,force:false)` sin fingir checkout.
+- Lee completos `AGENTS.md`, `README.md`, `prompts/SIGUIENTE_TAREA.md`, `reports/ESTADO_CONTINUIDAD_PPSSPP.json`, `docs/F2_WS_REAL_F1_CONTROLES_GE_2026-11-23.md`, `reports/RESULTADO_F2_WS_REAL_F1_CONTROLES_GE_2026-11-23.json`, `docs/F2_PPSSPP_REAL_X11_AB_TUIKA_2026-11-23.md`, `docs/F2_PROCEDENCIA_ISO_PROCESO_PPSSPP_2026-11-23.md`, `docs/F2_TUIKA_SUBREGIONES_PROTEGIDAS_2026-11-23.md`, `docs/F2_TUIKA_CATALOGO_ROTULOS_2026-11-22.md`, `docs/RESULTADO_F1_PPSSPP_2026-11-21.md`, `docs/PLAN_HASTA_IMPLEMENTACION_PPSSPP_2026-11-20.md`, los reportes JSON relacionados y tests de la rama.
+- Antes de modificar datos, revisa `tools/f2_ws_procedencia_ppsspp.py`, `tools/f2_x11_ppsspp_procfs_capture.py`, `tools/f2_iso_proceso_ppsspp.py`, `tools/f2_ppsspp_ws_1204.py`, `tools/f2_ge_dump_1204.py`, `tools/f2_ram_provenance_1204.py`, `tools/f2_cotejar_capturas_tuika.py`, `tools/f2_probe_tuika_palette_privado.py`, `tools/f2_qa_raster_19.py`, `tools/f2_auditar_origen_iconos.py`, `tools/f2_tuika_proteger_subregiones.py`, `tools/integrar_parche_seguro.py`, `tools/script_event_guard.py` y `tests/test_f2_ws_procedencia_ppsspp.py`.
+- Usa el archivo privado de evidencias entregado al usuario: `Cladun_F2_PPSSPP_WS_F1_CONTROLES_EVIDENCIAS_REALES_23-11-2026.zip`; no está en GitHub, ni debes poner capturas/dumps del juego allí.
 
-Antes de cambiar archivos, leer y comprobar el HEAD ACTUAL, tree, PR y Actions del HEAD final, no usar un SHA antiguo como HEAD supuesto. Si `git fetch` falla por DNS, usar conector GitHub (`fetch_file`, `create_blob`, `create_tree`, `create_commit`, `update_ref` con SHA esperado y `force:false`) sin fingir checkout local. Ejecutar tests reales contra un snapshot autenticado del mismo HEAD. No dejar workflows temporales de exportación.
+## 2. Estado real verificado del relevo 23/11/2026
 
-Documentación y estado PRIORITARIOS que debes leer COMPLETOS:
-- `AGENTS.md`, `README.md` y `prompts/SIGUIENTE_TAREA.md`.
-- `docs/F2_PPSSPP_REAL_X11_AB_TUIKA_2026-11-23.md` y `reports/RESULTADO_F2_PPSSPP_REAL_X11_AB_TUIKA_2026-11-23.json`.
-- `reports/ESTADO_CONTINUIDAD_PPSSPP.json`.
-- `docs/F2_PROCEDENCIA_ISO_PROCESO_PPSSPP_2026-11-23.md`, `reports/RESULTADO_F2_PROCEDENCIA_ISO_PROCFS_2026-11-23.json`.
-- `docs/F2_TUIKA_SUBREGIONES_PROTEGIDAS_2026-11-23.md`, `docs/F2_MAPA_FRANJAS_TUIKA_2026-11-22.md`, `docs/F2_TUIKA_CATALOGO_ROTULOS_2026-11-22.md`.
-- `docs/PLAN_HASTA_IMPLEMENTACION_PPSSPP_2026-11-20.md`, `docs/RESULTADO_F1_PPSSPP_2026-11-21.md`, `docs/RESULTADO_F2_ATLAS_PPSSPP_2026-11-21.md` y demás auditorías F2 y reportes JSON.
-- `tools/f2_x11_ppsspp_procfs_capture.py`, `tests/test_f2_x11_ppsspp_procfs_capture.py`, `tools/f2_ppsspp_ws_1204.py`, `tools/f2_iso_proceso_ppsspp.py`, `tools/f2_cotejar_capturas_tuika.py`, `tools/f2_ge_dump_1204.py`, `tools/f2_ram_provenance_1204.py`.
-- `tools/f2_probe_tuika_palette_privado.py`, `tools/f2_tuika_proteger_subregiones.py`, `tools/f2_qa_raster_19.py`, `tools/f2_auditar_origen_iconos.py`, `tools/integrar_parche_seguro.py` y `tools/script_event_guard.py`.
+- ISO USA privada del 7z del usuario: **305.496.064 bytes**, SHA256 `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f`.
+- ISO **F1 española** protegida, construida desde USA: **306.456.576 bytes**, SHA256 `496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986`, resultado idéntico a F1 histórica. F1 puede medir más que USA por append-only: **no exigir tamaño original a F1**.
+- Sonda TUIKA original de tres bytes CLUT2 magenta SHA256 `b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa`, 348 PSPFS vecinos y 26 DSARC vecinos inalterados. No se visualizó todavía una escena real donde la sonda cambie el juego: el splash SYSTEM PRiSM contiene 1.152 píxeles magenta NATIVOS e idénticos en USA/sonda. Esto fue un falso positivo descartado por comparación A/B pixel a pixel.
+- PPSSPP `v1.20.4` **oficial AppImage Linux x86_64**, **50.689.748 bytes**, SHA256 `661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21`. Xvfb 1280×720, ventana X11 960×544, software backend, ejecutable original sin modificar.
+- **WebSocket YA FUNCIONA realmente**: puerto TCP 24192 LISTEN, `ws://127.0.0.1:24192/debugger`, subprotocolo `debugger.ppsspp.org`, eventos `version` → PPSSPP v1.20.4, `game.status` → NPUH10072 Cladun, `cpu.status` → CPU ejecutándose. **Causa del bloqueo anterior**: lanzador AppImage **Sharun** descartaba `LD_PRELOAD` usado para el shim de audio privado; `SHARUN_ALLOW_LD_PRELOAD=1` transmitió el shim externo y permitió que la app arrancara sin modificar el binario oficial. En otros entornos, probar sin shim si funciona. Archivo INI realmente utilizado contiene `RemoteDebuggerOnStartup=True`, `RemoteDebuggerLocal=True` y `RemoteISOPort=24192`.
+- `tools/f2_ws_procedencia_ppsspp.py` demuestra en F1 real: **el mismo proceso** (PID efímero) posee el socket LISTEN de WebSocket Y mantiene abierto mediante FD el **mismo inodo** de ISO F1; PID starttime estable y SHA ISO autenticado. Metadatos de X11 y PID también se comprobaron. **No** deducir de ello que una textura concreta haya llegado a GE ni el origen de todos los píxeles. Prueba sintética de sockets con 9 tests nuevos.
+- Capturas reales F1, mediante `input.buttons.press`: título→Opciones; ancho interior cuadro **756 px** / exterior ≈**764 px**; etiquetas correctas `Vol. efectos`, `Vol. música`, `Tipo música`, `Decimales de daño`, `Sí`, `No`. Se navegó a **Controles**, que dibuja **R, □, ×, ○, △, L** con `Correr, Bloquear, Ataque, Saltar, Magia, Cambiar` y ayuda `Pulsa el botón para configurar.`. No aparece el defecto antiguo de espaciado en `música` ni `Sí` en estas pantallas. **Esto NO prueba los 19 glifos en todas las escenas**.
+- Se obtuvo `gpu.record.dump` verdadero en USA título: **10.367 bytes**, SHA256 `6defdec107b1c35c2b87d6a90cb1786f418256eeb5d4f81a52dc9586b57587b2`, 48 registros/10 PRIM. En F1 **Controles**: **38.546 bytes**, SHA256 `e32efb103488f70c7e656217efdb0ea09b4747b5d77ea9d5af95747412c098af`, formato PPSSPPGE v6, **398 registros y 124 PRIM**, 10 TEXADDR0, 10 CLUTADDR, 14 TEXTURE0 y 11 CLUT. Esas direcciones son candidatas, **sin origen TUIKA ni KITAJIMA atribuido**. `gpu.buffer.screenshot` devolvió `Could not download output` incluso con CPU detenida en renderizador usado; usar X11 como evidencia visual mientras se investiga buffer/GPU.
+- Test locales: **491 Python tests OK, uno omitido**, integridad original 9.237, borrador 9.235 español + 2 excepciones, `go test ./...` OK. Nuevos CI push/PR deben revisarse sobre HEAD exacto final.
+- Datos protegidos: 349 PSPFS, 51.705 comandos en 1.625 scripts, 46.308 no textuales, **4.524 traducciones de script diferentes en longitud aplazadas** por `--event-safe-only`. NO mover offsets de eventos para hacer aparentar 100%.
 
-## 2. Estado autentificado al cierre del relevo 23/11
+## 3. Prioridad F2 ahora: demostrar uso funcional de TUIKA en combate/habilidades
 
-**ISO USA original privada del 7z del usuario:**
-- 305.496.064 bytes; SHA256 `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f`. Debe verificarse nuevamente antes de usar.
-- La ISO F1 históricamente aprobada en PPSSPP tiene SHA `496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986`; no fue regenerada ni sometida a regresión nueva en este relevo.
-- Sonda privada TUIKA magenta regenerada desde original: SHA `b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa`. SOLO 3 bytes RGB cambiados en offsets absolutos 114744872–114744874. Se validaron 348/348 PSPFS vecinos y 26/26 DSARC vecinos. No se editó ningún texto ni gráfico fuera de paleta.
+**A. Autenticación:** verificar SHA y tamaño de USA/sonda/F1/PPSSPP en ficheros reales. Nada de confundir un hash documental con bytes presentes.
 
-**PPSSPP auténtico:**
-- Oficial `PPSSPP-v1.20.4-anylinux-x86_64.AppImage`: 50.689.748 bytes, SHA256 `661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21`.
-- Se recuperó y ejecutó en Linux x86_64 bajo Xvfb 1280×720, SDL/ventana X11 960×544, software renderer. Logs REAL muestran `Booted` de ISO USA y de sonda.
-- Problema de audio específico del contenedor: launcher transformaba `SDL_AUDIODRIVER=dummy` en `pulseaudio`; para permitir ejecución se usó un shim EXTERNO/PRIVADO `LD_PRELOAD` que devuelve `dummy` para `getenv("SDL_AUDIODRIVER")`. El binario de PPSSPP no se modificó. Si el sistema nuevo ejecuta directamente, no imponer shim; si lo usa, registrarlo. Jamás incluir binario comercial o shim compilado en Git.
-- Nueva herramienta X11 vincula ventana `NPUH10072 : CLADUN: This is an RPG!`, `_NET_WM_PID` y descriptor `/proc/<pid>/fd` al inodo de ISO autenticado, con PID/starttime estables antes/después. **No acredita juego cargado funcionalmente ni relación con servidor WS o textura GE**. PIDs 1574/1948/2141 fueron efímeros, NO reutilizarlos.
-- 7 tests sintéticos X11 nuevos, suite local **482 tests Python OK (uno omitido)**, verificadores de corpus, borrador y auditorías estáticas OK. Go normal OK; Go `cladun_embedded` no ejecutable en snapshot sin BPS privado (`go:embed`). Windows sin payload compila.
+**B. Inicio:** PPSSPP real con WebSocket activo. Si usas Sharun en este contenedor, `SHARUN_ALLOW_LD_PRELOAD=1` + shim externo ya probado; no modificar executable. Valida INI de la sesión, puerto TCP y handshake. Ejecuta `f2_ws_procedencia_ppsspp.py` por PID e ISO específicos y `f2_x11_ppsspp_procfs_capture.py` si capturas X11; no reutilices PID de sesión anterior.
 
-**A/B de splash — falsación importante:**
-- En la captura de `SYSTEM PRiSM` la ISO sonda contiene 1.152 píxeles RGB(255,0,255), pero **el juego USA ORIGINAL también tiene exactamente 1.152**.
-- PNG original y sonda SHA256 idénticos `c20b515ddee01cdfd1bd55de184c079fc1a50ad45df9512dc5d9bf2a15fa078f` y **0/522.240 píxeles RGB distintos**. **No es evidencia de efecto de TUIKA**. Las capturas diferentes de logos/ticks dan falsos positivos, y el color magenta natural no sirve para identificar esa textura.
-- Evidencias privadas de la conversación (no Git) contienen las capturas y manifiestos. No extraer imágenes de textos del repositorio ni publicarlas en Git.
+**C. Control reproducible:** usar interfaz real o WS oficial `input.buttons.press` con `button` y `duration`, que se comprobó contra el juego. La pantalla título ha respondido a círculo en una de las transiciones y Opciones a cruz; no asumir botones globales fijos sin observar. Documenta cada paso hasta combate/efecto/trampa. Guarda estado válido si el juego lo permite, fuera de Git, y reproduce con USA y sonda.
 
-**WS BLOQUEADO:**
-- Se probaron configuración `RemoteDebuggerOnStartup=True`, puerto `24192` y CLI `--debugger=24192`, pero no se vio servicio TCP escuchando. NO hubo conexión WS real, `gpu.record.dump`, `gpu.buffer.screenshot`, ni trazas RAM/GE.
-- No concluir que PPSSPP 1.20.4 no tiene WS: investigar configuración, servicios, parámetros reales y posibles diferencias SDL/Qt; verificar con un socket auténtico y protocolo `debugger.ppsspp.org`. No inventar éxitos.
+**D. A/B TUIKA:** llegar a un mensaje donde `SYSGRA.ARC/TUIKA_MES.IMY` pueda usarse. Capturar ISO USA (A) y sonda (B) en la **misma escena y estado** con control temporal y región de pantalla, excluyendo el splash SYSTEM PRiSM. Buscar diferencia localizada magenta, incluir negativo/positivo. Si no hay cambio, registrar resultado negativo solo para la escena probada. No editar franjas TUIKA, japoneses, números, iconos, ni CLUT/ROI a ciegas; 7 subregiones y tres huecos transparentes están protegidos.
 
-**F2 ABIERTA:** 19 glifos `áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō`, símbolos L/R/□○×△, CLUT en amarillo/blanco, textos de TUIKA y su uso en juego NO validados multicontesto. Código mantiene `white_new_ink=False`. FONT.ARC/FONT_00.IMY 512×256 es DISTINTO de SYSGRA.ARC/FONT.IMY 256×256. Las 14 franjas TUIKA incluyen números/japonés/controles protegidos: no son 14 cadenas editables ni hay ROIs aprobadas. F1 opciones solo PASÓ históricamente; sin regresión nueva. F3–F6 pendientes, 4.524 traducciones de longitud distinta aplazadas para proteger offsets de 51.705 comandos/1.625 scripts.
+**E. GPU/VRAM:** grabar `gpu.record.dump` real en el mismo momento de la escena usando CPU ejecutándose; analizarlo con `f2_ge_dump_1204.py`. Intentar `gpu.buffer.renderColor` mientras CPU/GPU se detiene para investigar por qué `gpu.buffer.screenshot` da `Could not download output`, o probar otro backend real, registrando los resultados. Investigar secuencia `IMY→decodificación RAM→GE TEXADDR/CLUT/PRIM/TRANSFERSTART→VRAM→píxel` con evidencia binaria/runtime; no inventar PC MIPS/VRAM. Capturas X11 y volcados GE son distintas clases de evidencia. No atribuir iconos al PC `0x089089C8` (proceso de fuente textual).
 
-## 3. TAREA PRIORITARIA AHORA: efecto funcional real de TUIKA y WS
+**F. 19 glifos:** probar `áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō` y `L/R/□/○/×/△` en ayuda, diálogo, HUD, tutorial, equipamiento, combate y menús; distintas CLUT blanco/amarillo y recorte de signos. Diferenciar `FONT.ARC/FONT_00.IMY` (512×256) de `SYSGRA.ARC/FONT.IMY` (256×256), y conservar `white_new_ink=False` salvo validación visual multicontesto. Registrar cada carácter/contexto, no marcar 19/19 por ver `música` y `Sí`.
 
-1. Obtener y SHA-verificar PPSSPP oficial 1.20.4, original y sonda, antes de ejecutar. Si no se puede descargar, revisar si el AppImage oficial ya existe en adjuntos de la conversación, como se consiguió en el relevo 23/11. No confundir metadatos remotos con archivos presentes.
-2. Abrir PPSSPP y comprobar que TÍTULO, PID, _NET_WM_PID, /proc starttime, ISO fd y pantalla X11 pertenecen a la misma sesión. Usar `f2_x11_ppsspp_procfs_capture.py` para corroboración, no como sustituto de GPU. Si no hay fd, dejar desconocido.
-3. **Habilitar WS REAL** de PPSSPP 1.20.4: verificar opción Developer Tools/Remote Debugger, archivo de configuración efectivamente leído, puerto TCP en LISTEN, handshake WebSocket, `version`, `game.status` y `cpu.status`. Si la build SDL lo impide, probar otra build oficial 1.20.4 compatible o documentar el bloqueo técnicamente; no simular server ni usar HTTP 8080 ajeno a PPSSPP.
-4. Llegar por **gameplay REAL** a una pantalla con mensajes de habilidad/combate/trampas donde `SYSGRA.ARC/TUIKA_MES.IMY` sea candidata razonable. No asumir uso por nombre de archivo o por la pantalla de splash. Conservar un estado reproducible de juego y entrar al MISMO lugar en ambas ISO.
-5. Grabar A (USA) y B (sonda) con igual escena, posición, animación/ticks o sincronización documentada; controles negativos y positivos. Cotejar PNGs, áreas, color y contexto, excluyendo falsos positivos naturales de `SYSTEM PRiSM`. Si NO aparece magenta, registrar resultado negativo en esa escena, que NO descarta TUIKA en todas las escenas.
-6. Si WS conecta: grabar `gpu.record.dump` con CPU en ejecución; pausar correctamente para `gpu.buffer.screenshot`; asociar datos a PID/ISO y sin confundir ventana X11 con framebuffer PSP. Analizar `f2_ge_dump_1204.py`, RAM read/watchpoint real, GE TEXADDR, CLUT, PRIM, TRANSFERSTART y VRAM. No confundir offset ISO `0x06D68C00` con dirección MIPS. No atribuir a iconos el PC `0x089089C8` (búsqueda de fuente TEXTOS, no iconos).
-7. **Revalidar F1** realmente en PPSSPP: X11 960×544, Opciones interior aprox. 756 px/exterior 764 px, música/configuración, IDs `005709`, `005710 Sí`, `005713 No`; navegación y no solapamiento.
-8. **19 glifos y símbolos**: verificar en Controles, ayuda, diálogo, HUD y combate; métricas, signos, colores, índices físicos, fuentes independientes y recortes. Mantener `white_new_ink=False` salvo prueba real multicontesto.
-9. Si el problema queda bloqueado, dejar código nuevo y pruebas de la próxima hipótesis concreta; NO declarar F2 cerrada. Añadir tests de regresión para el fallo realmente encontrado.
+**G. Regresión F1 y seguridad:** confirmar Opciones≈764 px exterior y ayudas `005709/005710 Sí/005713 No`, sin colisiones, retratos intactos, eventos no cambiados. No desactivar `--event-safe-only`, no alterar offsets de SCRIPT.DAT ni otros assets ajenos.
 
-## 4. Rutas, comandos reproducibles y seguridad
+## 4. Comandos reproducibles en directorios privados NUEVOS
 
 ~~~bash
 git fetch origin
@@ -68,25 +51,27 @@ git pull --ff-only
 git status --short
 git rev-parse HEAD
 git rev-parse 'HEAD^{tree}'
-# Si falla DNS, operar mediante conector GitHub; nunca fingir git local.
-sha256sum /PRIVATE/USA.iso /PRIVATE/PPSSPP-v1.20.4-anylinux-x86_64.AppImage
-python tools/f2_probe_tuika_palette_privado.py --iso-usa /PRIVATE/USA.iso \
-  --salida-iso-privada /PRIVATE/TUIKA_sonda_nueva.iso \
-  --reporte-privado /PRIVATE/sonda_nueva.json
-python tools/f2_tuika_proteger_subregiones.py --iso-usa /PRIVATE/USA.iso \
-  --reporte-privado /PRIVATE/subregiones_nuevas.json
-python tools/f2_auditar_origen_iconos.py --iso-usa /PRIVATE/USA.iso --reporte /PRIVATE/iconos_nuevos.json
-python tools/f2_qa_raster_19.py --iso-usa /PRIVATE/USA.iso --reporte /PRIVATE/glifos_nuevos.json
-# Con PPSSPP X11 realmente iniciado y PID confirmado:
-python tools/f2_x11_ppsspp_procfs_capture.py --display :95 --pid PID_REAL --iso /PRIVATE/USA.iso --tipo usa \
-  --png-privado /PRIVATE/A_NUEVO.png --manifiesto-privado /PRIVATE/A_NUEVO.json
-# Solo tras verificar ws://127.0.0.1:24192/debugger con subprotocolo debugger.ppsspp.org:
-python tools/f2_ppsspp_ws_1204.py --scene TUIKA_HABILIDADES --salida-privada /PRIVATE/A_WS_NUEVO \
-  --port 24192 --ge-dump --pid-ppsspp PID_REAL --iso-en-proceso /PRIVATE/USA.iso --tipo-iso usa
-# Reinicia PPSSPP con ISO sonda y otra ruta nueva; nunca sobrescribas datos.
-python tools/f2_cotejar_capturas_tuika.py --manifest-usa /PRIVATE/A_WS_NUEVO/manifest_PRIVATE.json \
-  --manifest-sonda /PRIVATE/B_WS_NUEVO/manifest_PRIVATE.json --iso-usa /PRIVATE/USA.iso \
-  --iso-sonda /PRIVATE/TUIKA_sonda_nueva.iso --reporte-privado /PRIVATE/AB_NUEVO.json
+sha256sum /PRIVATE/USA.iso /PRIVATE/SONDA_TUIKA.iso /PRIVATE/F1.iso /PRIVATE/PPSSPP-v1.20.4-anylinux-x86_64.AppImage
+# Usar el PID ACTUAL de PPSSPP; puerto 24192 LISTEN real:
+python tools/f2_ws_procedencia_ppsspp.py --pid PID_REAL --port 24192 \
+  --iso-privada /PRIVATE/F1.iso --tipo f1 \
+  --informe-privado /PRIVATE/WS_PID_F1_NUEVO.json
+# Repetir con --tipo usa o sonda, rutas nuevas, cuando se inicie otra ISO.
+python tools/f2_x11_ppsspp_procfs_capture.py --display :98 --pid PID_REAL \
+  --iso /PRIVATE/USA.iso --tipo usa \
+  --png-privado /PRIVATE/A_REAL.png --manifiesto-privado /PRIVATE/A_PROCFS.json
+# Una vez EN ESCENA TUIKA real, no solo splash:
+python tools/f2_ppsspp_ws_1204.py --scene TUIKA_HABILIDADES \
+  --salida-privada /PRIVATE/WS_A_NUEVA --port 24192 --ge-dump \
+  --pid-ppsspp PID_REAL --iso-en-proceso /PRIVATE/USA.iso --tipo-iso usa
+# Repetir con sonda y otro PID. Cotejar:
+python tools/f2_cotejar_capturas_tuika.py \
+  --manifest-usa /PRIVATE/WS_A_NUEVA/manifest_PRIVATE.json \
+  --manifest-sonda /PRIVATE/WS_B_NUEVA/manifest_PRIVATE.json \
+  --iso-usa /PRIVATE/USA.iso --iso-sonda /PRIVATE/SONDA_TUIKA.iso \
+  --reporte-privado /PRIVATE/AB_TUIKA_NUEVO.json
+python tools/f2_ge_dump_1204.py --entrada-privada /PRIVATE/GE_REAL.dump \
+  --reporte-privado /PRIVATE/GE_ANALISIS_NUEVO.json
 python -m unittest discover -s tests -v
 python tools/verificar_integridad.py --raiz .
 python tools/verificar_borrador_es.py
@@ -96,15 +81,18 @@ python tools/reportar_integrabilidad_es.py --reporte /tmp/integrabilidad_nuevo.j
 git diff --check
 ~~~
 
-No publicar ni versionar: ISO, BPS, comercial DATA.DAT, EBOOT, FONT.ARC, IMY, imágenes o capturas del juego, GE dumps, RAM ni PPSSPP AppImage/EXE. Generar pruebas en carpetas absolutas PRIVADAS, nombres nuevos sin overwrite. No alterar corpus original ni eventos ni contenido ajeno. Mantener `--event-safe-only`, PR DRAFT, base original y BPS privado experimental. No cambiar blancos/texturas solo por una hipótesis de dibujo.
+Los comandos A/B dependen de conseguir **sesiones reales en el contexto correcto**. No generan pruebas de TUIKA por sí solos. No colocar archivo de screenshot, dump, ISO, DATA.DAT, EBOOT, IMG/IMY, FONT.ARC, BPS, PPSSPP o EXE con payload dentro del checkout ni GitHub; solo código, tests sintéticos, JSON con métricas y docs. No modificar el corpus original ni las ramas base.
 
-## 5. Después de F2 (sin saltar prioridades)
+## 5. Fases posteriores F3–F6
 
-**F3:** localizar y traducir inglés restante de intro con identificación exacta de recurso/cadena y pruebas PPSSPP sin eventos rotos.
-**F4:** estudiar intérprete MIPS, referencias relativas/absolutas, saltos y tablas de `SCRIPT.DAT` para integrar con seguridad los 4.524 textos aplazados; nunca mover offsets sin modelo validado.
-**F5:** prueba exhaustiva de ciudad, combate, pisos, enciclopedia, guardado/carga, HUD, retratos, mapas, inventario, iconos y caracteres españoles.
-**F6:** BPS candidato auditado y roundtrip, hashes actualizados de parcheador Go, EXE Windows x64 con payload privado y ejecución real final; documentos de release solo tras pruebas completas.
+**F3:** textos de intro en inglés: encontrar recurso/ID exacto, traducir sin alterar eventos, captura antes/después real.
 
-## 6. ENTREGA OBLIGATORIA DEL NUEVO RELEVO
+**F4:** resolver de forma probada referencias de saltos y offsets en SCRIPT.DAT/SCRIPT.TBL/intérprete MIPS para incorporar con seguridad los **4.524** cambios aplazados, verificando órdenes/opcodes y pruebas runtime. Nunca proclamar cobertura completa por sólo reconstruir strings.
 
-Al finalizar: (1) pruebas realmente ejecutadas e imágenes X11/WS auténticas frente a tests sintéticos; (2) causa y bytes/código alterados con tests; (3) SHA256 por versión y reportes; (4) actualización de `reports/ESTADO_CONTINUIDAD_PPSSPP.json` y nuevo informe en `docs/` + `reports/`; (5) commits y PR #7 DRAFT sin merge, sin force, sin activos comerciales; (6) DOS checks CI push+PR SUCCESS sobre el MISMO HEAD final o bloquear explícitamente; y (7) **REESCRIBIR COMPLETAMENTE `prompts/SIGUIENTE_TAREA.md` con otro prompt autónomo íntegro y autocontenido, y MOSTRARLO ÍNTEGRO AL USUARIO**. Ese prompt debe volver a exigir recursivamente lo mismo. Si F2 no finaliza, el siguiente prompt debe continuar F2 y señalar una prueba de mayor valor; NO saltar artificialmente a F3.
+**F5:** campaña con QA de clases, combate, ciudad, pisos, enciclopedia, mapas, HUD, equipos, retratos, guardado/carga, paletas, iconos y glifos.
+
+**F6:** BPS con roundtrip/hash, integridad PSPFS/DSARC, actualización hashes del parcheador Go, EXE x64 con BPS privado realmente probado en Windows, documentación y publicación después del QA, sin compartir ISO comercial.
+
+## 6. Entregables y RELEVO RECURSIVO INNEGOCIABLE
+
+Al terminar debes: (1) identificar cambios y causas verdaderamente demostradas; (2) distinguir tests sintéticos de capturas PPSSPP, sockets y GPU reales; (3) entregar evidencias privadas auténticas, hashes ISO/BPS/GE y nuevas regresiones; (4) actualizar un informe en `docs/`, JSON en `reports/` y `reports/ESTADO_CONTINUIDAD_PPSSPP.json`; (5) crear commit verificable sin force, mantener PR #7 DRAFT y verificar **dos CI SUCCESS sobre el mismo HEAD final** o registrar bloqueo; (6) **REESCRIBIR COMPLETAMENTE `prompts/SIGUIENTE_TAREA.md` y MOSTRAR SU CONTENIDO ÍNTEGRO AL USUARIO**. Ese nuevo prompt debe repetir textualmente esta obligación recursiva y llevar archivos, hashes, comandos, tareas y pruebas. Si F2 sigue sin prueba TUIKA multicontesto, **seguir F2 en el próximo relevo**; no saltar artificialmente a F3.
