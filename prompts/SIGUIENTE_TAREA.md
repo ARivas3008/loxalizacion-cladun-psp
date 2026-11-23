@@ -1,4 +1,4 @@
-# CLADUN ES — NUEVO RELEVO AUTÓNOMO F3-R4: REFERENCIAS DE EVENTOS, PRÓLOGO VISUAL Y F2 TUIKA; F4–F6 ABIERTAS
+# CLADUN ES — RELEVO AUTÓNOMO F2/F3-R4: COMPARADOR TUIKA X11/GE, 19 GLIFOS, 85 EVENTOS Y PRÓLOGO IMY; F4–F6 ABIERTAS
 
 **Corte: 23/11/2026.** Eres ingeniero sénior de PSP MIPS, PPSSPP oficial v1.20.4, ISO9660/PSPFS/DSARC, IMY, fuentes CP932 A1–B3, GE/VRAM y WebSocket. Ejecuta análisis, pruebas y correcciones reales, no solo recomendaciones. Distingue evidencia **A** (ISO auténtica), **B** (sintéticos/CI) y **C** (juego ejecutado en PPSSPP). No inventes capturas, PCs, direcciones, tramas, hashes, éxito CI ni publicaciones.
 
@@ -10,7 +10,7 @@
 
 Repositorio: https://github.com/ARivas3008/loxalizacion-cladun-psp . Rama: `integracion-eventos-segura-20261120`. PR #7 https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7 . Base: `revision-manual-dialogos`. Mantener **OPEN/DRAFT, sin merge, sin force push**. No modificar corpus original, rama base, ni recursos comerciales.
 
-Los SHA `cffd12b0550ac47f92980ebeb195fe1afabce9ab`, `79e803510d2f2d5f08efe3d2b6cc7ff0810692db` son HISTÓRICOS, no asumir HEAD actual. Primero:
+Los SHA `70558c570ee6fd4534e5f30e9bf7dbc9a9b1e505`, `cffd12b0550ac47f92980ebeb195fe1afabce9ab` y `79e803510d2f2d5f08efe3d2b6cc7ff0810692db` son HISTÓRICOS, no asumir HEAD actual. Primero:
 ```bash
 git fetch origin
 git switch integracion-eventos-segura-20261120
@@ -20,7 +20,7 @@ git rev-parse HEAD
 ```
 Si el terminal no resuelve github.com, NO fingir clone/checkout. El conector GitHub puede fetch y usar create_blob/create_tree/create_commit/update_ref con `expected_sha` y `force:false`; revalidar HEAD antes de cada escritura.
 
-Leer completos: `AGENTS.md`, `README.md`, este prompt, `reports/ESTADO_CONTINUIDAD_PPSSPP.json`, `docs/F3_REFERENCIAS_RIESGO_2026-11-23.md`, `reports/RESULTADO_F3_REFERENCIAS_RIESGO_2026-11-23.json`, `tools/f3_referencias_riesgo.py`, su test; `docs/F3_ANIME_TOPOLOGIA_2026-11-23.md`, `docs/F3_ANIME_IMY_ESTRUCTURAS_2026-11-23.md`, `docs/F3_PROLOGO_ANIME000_DEPENDENCIA_PPSSPP_REAL_2026-11-23.md`, `docs/F3_INTRO_INTENTO_PPSSPP_Y_ORIGEN_SCRIPTS_2026-11-23.md`, `tools/f3_auditar_intro.py`, `tools/f3_anime_topologia.py`, `tools/f3_anime_imy_estructuras.py`, `tools/script_event_guard.py`, `tools/integrar_parche_seguro.py`, `tools/charset_es.py`. Conservar F2: `docs/F2_GE_ONLY_WEB_SOCKET_SIN_FRAMEBUFFER_2026-11-23.md`, `docs/F2_REVALIDACION_ISO_TUIKA_Y_RELEASE_WS_2026-11-23.md`, `docs/F2_MAPA_JUGABLE_GE_X11_F1_2026-11-23.md`, herramientas `f2_ppsspp_ws_1204.py`, `f2_ruta_ws_liberacion_segura.py`, `f2_ge_dump_1204.py`, `f2_ws_procedencia_ppsspp.py`, `f2_tuika_proteger_subregiones.py` y tests.
+Leer completos: `AGENTS.md`, `README.md`, este prompt, `docs/F2_COTEJO_X11_AB_CON_GUARDAS_2026-11-23.md`, `reports/RESULTADO_F2_COTEJO_X11_AB_2026-11-23.json`, `tools/f2_cotejar_x11_tuika.py`, `tests/test_f2_cotejar_x11_tuika.py`, `reports/ESTADO_CONTINUIDAD_PPSSPP.json`, `docs/F3_REFERENCIAS_RIESGO_2026-11-23.md`, `reports/RESULTADO_F3_REFERENCIAS_RIESGO_2026-11-23.json`, `tools/f3_referencias_riesgo.py`, su test; `docs/F3_ANIME_TOPOLOGIA_2026-11-23.md`, `docs/F3_ANIME_IMY_ESTRUCTURAS_2026-11-23.md`, `docs/F3_PROLOGO_ANIME000_DEPENDENCIA_PPSSPP_REAL_2026-11-23.md`, `docs/F3_INTRO_INTENTO_PPSSPP_Y_ORIGEN_SCRIPTS_2026-11-23.md`, `tools/f3_auditar_intro.py`, `tools/f3_anime_topologia.py`, `tools/f3_anime_imy_estructuras.py`, `tools/script_event_guard.py`, `tools/integrar_parche_seguro.py`, `tools/charset_es.py`. Conservar F2: `docs/F2_GE_ONLY_WEB_SOCKET_SIN_FRAMEBUFFER_2026-11-23.md`, `docs/F2_REVALIDACION_ISO_TUIKA_Y_RELEASE_WS_2026-11-23.md`, `docs/F2_MAPA_JUGABLE_GE_X11_F1_2026-11-23.md`, herramientas `f2_ppsspp_ws_1204.py`, `f2_ruta_ws_liberacion_segura.py`, `f2_ge_dump_1204.py`, `f2_ws_procedencia_ppsspp.py`, `f2_tuika_proteger_subregiones.py` y tests.
 
 ## 2. Hashes y límites de publicación
 
@@ -62,7 +62,26 @@ F2 permanece **ABIERTA**: PPSSPP F1 anterior llegó a mapa jugable, pero no A/B 
 
 F5: QA auténtico aventura, combate, segundo piso, retratos, HUD, glifos, guardado/carga, enciclopedia, sonido. F6: BPS final/EXE Windows x64 con pruebas end-to-end sin publicar assets. Preservar 9237 registros, 9235 en español/2 excepciones, 349 PSPFS, 2721 glifos originales+19 nuevos, `white_new_ink=False`, `--event-safe-only`. Mantener PR #7 DRAFT.
 
-## 6. Validación y publicación
+## 6. NUEVO F2: cotejo X11 A/B aislado, evidencia A y B, NO C
+
+Se releyeron físicamente ambas ISOs privadas de la sesión, sin alterarlas: USA 305496064 B SHA256 b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f y sonda 305496064 B SHA256 b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa. Comparación integral por bloques: EXACTAMENTE tres cambios, offsets absolutos 114744872 249→255, 114744873 251→0, 114744874 249→255, alfa intacta. PSPFS/DSARC vecinos ya auditados en relevo previo. Un cambio binario NO prueba textura en la GPU.
+
+NUEVO tools/f2_cotejar_x11_tuika.py y tests/test_f2_cotejar_x11_tuika.py: 16 tests sintéticos locales PASS usando shim local de interfaz auxiliar (NO versionado). Exigir CI con el helper auténtico en el checkout. El nuevo comparador toma manifiestos v1 y PNG X11 960x544 de DOS sesiones USA/sonda independientes creados con tools/f2_x11_ppsspp_procfs_capture.py, autentica hash/tamaño ISO original+sonda, SHA PNG, dimensiones, roles, testigos PID/inodo/starttime DECLARADOS, y compara RGB completo/ROI opcional. Solo genera informe privado con números y hashes: NUNCA afirma sincronía de escena, origen causal de TUIKA, framebuffer PSP o MIPS→RAM→GE→VRAM. La etiqueta --escena es manual e insuficiente. tools/f2_cotejar_capturas_tuika.py es EXCLUSIVA para PNG framebuffer WebSocket, NO X11. Control negativo SYSTEM PRiSM: 1152 magenta nativos, PNG USA/sonda históricamente idénticos; no contar como confirmación.
+
+Intento de descargar AppImage oficial v1.20.4 Linux x86_64 desde releases/hrydgard/ppsspp: falló la descarga al contenedor. Ninguna ejecución nueva PPSSPP ni captura/GE nueva. Los dos archivos ISO privados sí existen y fueron revalidados. Intentar emulación C en próximo entorno; declarar fallo exacto si no procede.
+
+PRIORIDAD F2: PPSSPP auténtico y SHA correcto; arranque USA y sonda independientes hasta habilidad, trampa o combate confirmado tras Comenzar→Real→Cheery Girl→START SKIP visible. Autenticar WS local 24192 con versión, PID, socket LISTEN, FD de ISO y CPU; usar tools/f2_ruta_ws_liberacion_segura.py con ACK y checkpoints manuales, no dejar teclas retenidas. En ambas sesiones obtener dos manifest X11 con PNG y, mientras CPU corre, gpu.record.dump mediante tools/f2_ppsspp_ws_1204.py --ge-dump --ge-only (NO PNG). Comparar con nuevo cotejador X11: ROI solo si se fundamenta visualmente. Rastrear TUIKA_MES.IMY→RAM→MIPS→GE TEXADDR/CLUT/PRIM→VRAM auténtico; direcciones candidatas o magenta nuevo NO bastan. No mezclar GPU readback con X11. Conservar 14 bandas/7 subregiones TUIKA, white_new_ink=False, 2721 glifos originales y 19 nuevos A1–B3. Validar áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō en ayudas, menús, diálogos, HUD y combate, paletas y anchuras; repetir F1 Opciones 756px/≈764px. F2 ABIERTA hasta todo eso.
+
+Comandos con PID/rutas reales, nunca ejecutarlos literalmente sin obtener datos:
+
+    python tools/f2_ws_procedencia_ppsspp.py --pid PID_REAL --port 24192 --iso-privada /PRIVATE/USA.iso --tipo usa --informe-privado /PRIVATE/W_A.json
+    python tools/f2_x11_ppsspp_procfs_capture.py --display :98 --pid PID_REAL --iso /PRIVATE/USA.iso --tipo usa --png-privado /PRIVATE/A/escena.png --manifiesto-privado /PRIVATE/A/session.json
+    python tools/f2_ppsspp_ws_1204.py --scene HABILIDAD_REAL --salida-privada /PRIVATE/GE_A --port 24192 --ge-dump --ge-only --pid-ppsspp PID_REAL --iso-en-proceso /PRIVATE/USA.iso --tipo-iso usa
+    python tools/f2_cotejar_x11_tuika.py --manifest-usa /PRIVATE/A/session.json --manifest-sonda /PRIVATE/B/session.json --iso-usa /PRIVATE/USA.iso --iso-sonda /PRIVATE/SONDA.iso --escena HABILIDAD_DECLARADA --reporte-privado /PRIVATE/X11_AB.json
+
+Repetir con sonda, PID, carpeta y --tipo sonda / --tipo-iso sonda. No publicar datos comerciales, ni tratar tests como PPSSPP.
+
+## 7. Validación y publicación
 
 En checkout GIT VERDADERO:
 ```bash

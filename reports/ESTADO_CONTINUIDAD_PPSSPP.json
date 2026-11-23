@@ -1521,5 +1521,61 @@
     "github_head_ci_final": "PENDIENTE_VERIFICACION_POSTCOMMIT",
     "preserve_all_f2": true,
     "pr7_draft_required": true
+  },
+  "f2_cotejo_x11_ab_relevo_2026_11_23": {
+    "status": "F2_ABIERTA_A_ORIGINAL_REAL_B_16_SYNTH_C_NO_NEW_PPSSPP",
+    "prior_f3_branch_head": "70558c570ee6fd4534e5f30e9bf7dbc9a9b1e505",
+    "tool": "tools/f2_cotejar_x11_tuika.py",
+    "tests": "tests/test_f2_cotejar_x11_tuika.py",
+    "doc": "docs/F2_COTEJO_X11_AB_CON_GUARDAS_2026-11-23.md",
+    "report": "reports/RESULTADO_F2_COTEJO_X11_AB_2026-11-23.json",
+    "A": {
+      "original_iso_bytes": 305496064,
+      "original_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+      "probe_iso_bytes": 305496064,
+      "probe_sha256": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa",
+      "exact_difference_offsets": [
+        114744872,
+        114744873,
+        114744874
+      ],
+      "source_untouched": true
+    },
+    "B": {
+      "new_synthetic_tests_local_pass": 16,
+      "local_shim_not_published": true,
+      "real_helper_tests_need_CI": true,
+      "strict_x11_manifest_and_png_iso_sha_checks": true,
+      "roi_optional": true,
+      "scene_alignment_proven": false,
+      "texture_identity_proven": false
+    },
+    "C": {
+      "official_appimage_found_in_release": true,
+      "download_to_container_failed": true,
+      "ppsspp_executed_now": false,
+      "real_ge_dumps_now": 0,
+      "real_x11_pngs_now": 0,
+      "tuika_combat_scene_proven": false,
+      "all_19_glyphs_multicontext_proven": false,
+      "mips_ram_ge_vram_proven": false
+    },
+    "preserve": {
+      "f3_r3_numeric_reference_analysis": true,
+      "f3_imy_topology": true,
+      "demo1001_85_blocked": true,
+      "global_script_4524_blocked": true,
+      "event_safe_only": true,
+      "white_new_ink_false": true
+    },
+    "no_commercial_assets_uploaded": true,
+    "pr7_open_draft_required": true,
+    "recursive_prompt": "prompts/SIGUIENTE_TAREA.md"
+  },
+  "ultimo_relevo_f2": {
+    "date": "2026-11-23",
+    "status": "F2_OPEN_COMPARADOR_X11_A_B_ISO_AUTH_B16_SYNTH_C_NO_PPSSPP",
+    "doc": "docs/F2_COTEJO_X11_AB_CON_GUARDAS_2026-11-23.md",
+    "preserve_f3_r3": true
   }
 }
