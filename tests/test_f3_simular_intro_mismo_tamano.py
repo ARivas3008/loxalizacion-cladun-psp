@@ -31,7 +31,7 @@ def sample():
     table=bytearray(16+1625*32)
     struct.pack_into('<I',table,0,1625)
     for i in range(1625):
-        struct.pack_into('<I',table,16+i*32+4,0 if i==0 else16)
+        struct.pack_into('<I',table,16+i*32+4,0 if i==0 else 16)
     return [row],geo,data,bytes(table)
 
 
