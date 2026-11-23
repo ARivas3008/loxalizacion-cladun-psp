@@ -20,6 +20,8 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: F3-R5 acreditar 97 textos del borrador mediante anclaje de ISO original
         run: python tools/f3_anclar_intro.py
+      - name: F3-R6 verificar presupuesto padding de 7 scripts sin ISO comercial
+        run: python tools/f3_presupuesto_padding_intro.py
       - name: Comprobar integridad del corpus y borrador
         run: |
           python tools/verificar_integridad.py --raiz .
