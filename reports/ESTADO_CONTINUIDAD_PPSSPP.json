@@ -187,7 +187,7 @@
     "22/11 relevo autónomo posterior: ISO TUIKA sonda auténtica replicada SHA b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa; diferencia exacta 3 bytes offsets 114744872–114744874, comprobados fuente/sonda completos; vecinos 348 PSPFS y 26 DSARC preservados.",
     "22/11 relevo autónomo posterior: máscara TUIKA original reconstruida en memoria mediante descompresión IMY y unswizzle PSP; máscara exacta SHA 382ae8..., 9144 pixels CLUT2, 14 franjas/200 filas; reportes SOLO metadatos.",
     "22/11 relevo autónomo posterior: tests locales SINTÉTICOS del nuevo mapa de franjas 18/18 PASS; no PPSSPP.",
-    "22/11 relevo TUIKA: libarchive extrajo ISO auténtica 305496064 bytes SHA b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f, sin editar.",
+    "22/11 relevo TUIKA: libarchive extrajo ISO auténtica 305496064 bytes SHA b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f, sin editar.",
     "22/11 relevo TUIKA: previsualización privada original de índice 4bpp decodificado y segmentado; inspección visual provisional de 14 franjas, incluyendo rótulos LV, 5 mensajes, controles y dígitos; rectángulos = 9144 CLUT2 blancos +8625 CLUT1 negros +11839 índice0 transparentes.",
     "22/11 relevo TUIKA: nuevo script de informe no gráfico con 23/23 tests SINTÉTICOS locales PASS (dependencias equivalentes locales); auditor en ISO auténtica PASS (SHA, CLUT, medidas)."
   ],
