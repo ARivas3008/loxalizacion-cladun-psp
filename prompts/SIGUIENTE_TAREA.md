@@ -1,6 +1,6 @@
-# CLADUN ES — NUEVO RELEVO AUTÓNOMO F2/F3-R7: 11 DIÁLOGOS DE IGUAL TAMAÑO SIMULADOS, 85 EVENTOS BLOQUEADOS, PPSSPP TUIKA Y 19 GLIFOS; F4–F6 ABIERTAS
+# CLADUN ES — NUEVO RELEVO AUTÓNOMO F2/F3-R7 CONSOLIDADO: 11 TEXTOS FIJOS SEGUROS ESTRUCTURALMENTE, 3 BLOQUES SIN ESPACIO Y MIPS PENDIENTE; F4–F6 ABIERTAS
 
-**Corte: 23/11/2026.** Eres ingeniero sénior PSP MIPS, PPSSPP oficial 1.20.4, WebSocket/GE/VRAM, ISO9660/PSPFS/DSARC, IMY, CLUT y localización CP932 española. **EJECUTA** trabajo comprobable, tests y correcciones solamente con causalidad. NO basta aconsejar. Divide las evidencias: **A original ISO comercial auténtica**, **B datos reales de borrador y tests sintéticos/CI**, **C ejecución auténtica de PPSSPP**. Nunca inventes PC MIPS, dumps, capturas, hash, disponibilidad, Actions ni publicaciones.
+**Corte: 23/11/2026. Edición consolidada que conserva simultáneamente los resultados de simulación RAM de 11 textos y el presupuesto auténtico de padding de los siete bloques.** Eres ingeniero sénior PSP MIPS, PPSSPP oficial 1.20.4, WebSocket/GE/VRAM, ISO9660/PSPFS/DSARC, IMY, CLUT y localización CP932 española. **EJECUTA** trabajo comprobable, tests y correcciones solamente con causalidad. NO basta aconsejar. Divide las evidencias: **A original ISO comercial auténtica**, **B datos reales de borrador y tests sintéticos/CI**, **C ejecución auténtica de PPSSPP**. Nunca inventes PC MIPS, dumps, capturas, hash, disponibilidad, Actions ni publicaciones.
 
 ## 0. REGENERACIÓN RECURSIVA INNEGOCIABLE
 
@@ -106,6 +106,34 @@ python tools/f3_simular_intro_mismo_tamano.py --iso-original /PRIVADO/USA.iso --
 **OTRO AVANCE PARALelo F3**: se añadió el test/plan de presupuesto de padding `tools/f3_presupuesto_padding_intro.py`, `tests/test_f3_presupuesto_padding_intro.py`, `reports/F3_DEMO1001_PADDING_ORIGINAL_2026-11-23.json`. Deben preservarse. Aunque un texto variable cupiera en tail padding, NO puede desplazarse comando ni saltar sin intérprete MIPS probado. Los **588 offsets hipotéticos desplazados**, 85 textos de longitud variable y 4524 globales siguen sin autorización de inserción. NO fusionar, NO forzar push, NO tocar rama base.
 
 **C F2/F3 pendiente**: PPSSPP oficial 1.20.4 AppImage no existe en este contenedor; curl github.com falló por DNS y descarga alternativa falló. NO hubo nuevo juego, capturas, GE/VRAM/PC MIPS ni 19 glifos multicontesto. Prioridad adquirir binario auténtico SHA `661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21`; A/B/A de TUIKA en combate usando USA/sonda, WS --ge-only con provenance y glifos 19 en ayudas/menús/combate. CLUT2 global afectaría 9144 texeles, 3506 protegidos: diagnóstico únicamente.
+
+## 5A. AVANCE F3 paralelo, ISO real: presupuesto original de padding de los 85 textos de tamaño variable
+
+**Preservar la simulación RAM de los 11 textos de MISMO tamaño descrita arriba**: ese éxito estructural es independiente del riesgo de los **85** textos de longitud distinta. Además de esos 11, otro relevo F3-R6 autenticó nuevamente la ISO USA del usuario, abrió PSPFS 231 SCRIPT.SDT, releyó los siete bloques demo1001 y midió el final del último comando y el relleno CERO de cada bloque. No se modificó ningún contenido del juego.
+
+Nuevo código público tools/f3_presupuesto_padding_intro.py, tests/test_f3_presupuesto_padding_intro.py y manifiesto de solo metadatos reports/F3_DEMO1001_PADDING_ORIGINAL_2026-11-23.json; leer completos también docs/F3_R6_PADDING_ORIGINAL_Y_CAPACIDAD_2026-11-23.md y reports/RESULTADO_F3_R6_PRESUPUESTO_PADDING_2026-11-23.json. El auditor combina el manifiesto A con los 97 textos y el CSV real anclado del paso F3-R5, y opcionalmente revalida la ISO privada. CI ejecuta el auditor SIN ISO comercial; 14 tests sintéticos locales PASS y 1 integración con las 9237 filas que pasó en Actions. **691 tests Python PASS** en la CI código F3-R6 HEAD histórico a3b7f8c5b663b86b070c8af06378faf1e250fea6, push 45256245368 y pull_request 45256260754, ambas SUCCESS. No son pruebas C PPSSPP.
+
+Capacidad original asignada a los siete bloques: **10912 bytes**, con **48 bytes** de padding final cero. Bajo hipótesis de concatenación lineal y alineación de capacidad individual a 16 bytes:
+- ID 100000: padding 14, delta texto 0, ampliación 0.
+- ID 100100: padding 11, delta −1, ampliación 0, **pero 268 offsets internos hipotéticamente desplazados**.
+- ID 100190: padding 3, delta 0, ampliación 0.
+- ID 100101: padding 13, delta +115, **no cabe**, ampliación alineada mínima +112.
+- ID 100191: padding 2, delta 0, ampliación 0.
+- ID 100110: padding 4, delta +15, **no cabe**, ampliación mínima +16.
+- ID 100120: padding 1, delta +2, **no cabe**, ampliación mínima +16.
+
+**TOTAL: 3 BLOQUES NO CABEN; CAPACIDAD ADICIONAL INDIVIDUAL ALINEADA +144 BYTES. NO CONFUNDIR CON CRECIMIENTO VERIFICADO DE ISO.** El cálculo anterior sobre el borrador suma +131 bytes de texto y 588 inicios de comandos que cambiarían en la simulación sin padding; NO son saltos rotos demostrados. En especial, CABER en un bloque (100100) NO preserva automáticamente offsets internos, y menos aún la semántica MIPS. Ningún permiso de relocalización para los 85; --event-safe-only continúa obligatorio.
+
+Comandos adicionales, con checkout REAL:
+
+~~~bash
+python tools/f3_presupuesto_padding_intro.py
+python -m unittest discover -s tests -p 'test_f3_presupuesto_padding_intro.py' -v
+# Solo ISO AUTÉNTICA de usuario, salida JSON de métricas NUEVA fuera de Git:
+python tools/f3_presupuesto_padding_intro.py --iso-original /PRIVADO/USA.iso --reporte-privado /PRIVADO/PADDING_R7_NUEVO.json
+~~~
+
+**La siguiente acción no es aplicar estos +144 bytes:** primero localizar intérprete y destinos efectivos de los comandos MIPS con PPSSPP oficial, autenticar PID/ISO/WS, probar F3 demo1001 y F2 TUIKA en escenas reales. Mantener el PR #7 DRAFT y la regeneración recursiva. 
 
 ## 6. Publicación segura, CI FINAL y regeneración
 

@@ -1781,5 +1781,51 @@
     "no_final_patch_authorized": true,
     "CI_final_check_pending_at_creation": true,
     "pr7_keep_open_draft": true
+  },
+  "f3_r6_presupuesto_padding_2026_11_23": {
+    "status": "F3_ABIERTA",
+    "source_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "original_script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+    "original_script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37",
+    "tool": "tools/f3_presupuesto_padding_intro.py",
+    "tests": "tests/test_f3_presupuesto_padding_intro.py",
+    "manifest": "reports/F3_DEMO1001_PADDING_ORIGINAL_2026-11-23.json",
+    "doc": "docs/F3_R6_PADDING_ORIGINAL_Y_CAPACIDAD_2026-11-23.md",
+    "report": "reports/RESULTADO_F3_R6_PRESUPUESTO_PADDING_2026-11-23.json",
+    "A_authenticated_original_read_this_relay": true,
+    "A_padding_all_zero": true,
+    "A_intro_blocks": 7,
+    "A_intro_commands": 878,
+    "A_allocated_bytes": 10912,
+    "A_zero_tail_padding_total": 48,
+    "B_draft_source_anchor_sha256": "b0d42d8cd871246addf08a54e02c2a84cda52cab39f5810ef5ba2d9173e3e34e",
+    "B_net_text_delta": 131,
+    "B_hypothetically_changed_command_starts": 588,
+    "B_blocks_that_do_not_fit": 3,
+    "B_minimum_individually_aligned_capacity_extension_bytes": 144,
+    "B_synthetic_local_passed": 14,
+    "B_code_commit": "a3b7f8c5b663b86b070c8af06378faf1e250fea6",
+    "B_code_push_run": {
+      "id": 45256245368,
+      "conclusion": "success"
+    },
+    "B_code_pull_request_run": {
+      "id": 45256260754,
+      "conclusion": "success"
+    },
+    "B_code_ci_python_tests": 691,
+    "C_ppsspp_this_relay_executed": false,
+    "C_mips_interpreter_verified": false,
+    "C_prologue_visual_source_proven": false,
+    "all_85_unequal_length_blocked": true,
+    "global_4524_blocked": true,
+    "event_safe_only": true,
+    "white_new_ink_default": false,
+    "relocation_authorized": false,
+    "preserved_parallel_11_same_length_in_memory_simulation": true,
+    "preserved_parallel_F2_ABA_and_CLUT2": true,
+    "commercial_assets_published": false,
+    "pr7_open_draft_required": true,
+    "final_ci_after_doc_commit": "PENDING"
   }
 }
