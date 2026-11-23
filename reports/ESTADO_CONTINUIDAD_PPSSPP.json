@@ -1870,5 +1870,28 @@
     "romhacking_relocalizacion_autorizada": false,
     "areas_cerradas": [],
     "siguiente_prompt": "prompts/SIGUIENTE_TAREA.md"
+  },
+  "relevo_f4_r9_2026_11_23": {
+    "fecha_corte": "2026-11-23",
+    "head_al_inicio": "3b21082f285e4e91eb59688733ace1b9060ea72a",
+    "head_trabajo_codigo": "18ff23f3f73e5a5537f2fc912f202239aba8a19b",
+    "evidencia_A_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "evidencia_A_script_comandos": 51705,
+    "opcode_0a_total": 862,
+    "opcode_0a_valores_que_coinciden_id": 320,
+    "opcode_0a_ids_distintos": 183,
+    "candidato_scr01_dsf_offset": 7420,
+    "candidato_u32": 100100,
+    "coincidencias_relativas_R8": 21,
+    "motivos_unicos_relativos": 6,
+    "synthetic_tests_new_pass": 13,
+    "ppsspp_c_new": false,
+    "mips_semantics_proven": false,
+    "global_deferred_scripts": 4524,
+    "qa_defined_total": 43,
+    "qa_pass_new": 0,
+    "all_areas_100": false,
+    "commercial_assets_modified": false,
+    "next": "prompts/SIGUIENTE_TAREA.md"
   }
 }

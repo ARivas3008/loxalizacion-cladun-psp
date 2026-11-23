@@ -48,7 +48,8 @@
       "total": null
     },
     "p0_p1_abiertos": null,
-    "cierre_100": false
+    "cierre_100": false,
+    "matriz_casos_definidos": 43
   },
   "evidencias": {
     "A_actual": [
@@ -71,6 +72,28 @@
         "coincidencias_id_externo": 1,
         "coincidencias_relativas": 21,
         "referencias_MIPS_demostradas": 0
+      },
+      {
+        "tipo": "F4 R9 perfil 0x0A/0x01/0x02 en ISO original",
+        "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "op0a_total": 862,
+        "op0a_u32_iguales_ids": 320,
+        "ids_distintos": 183,
+        "origen_especifico": {
+          "source_block": 20,
+          "source_script_id": 69,
+          "source_script_name": "scr01.dsf",
+          "source_order": 20,
+          "source_command_offset": 7420,
+          "instruction_id": 818,
+          "operand_u32": 100100,
+          "target_block": 758,
+          "target_script_name": "demo1001_00.dsf",
+          "target_block_offset": 218128
+        },
+        "coincidencias_relativas": 21,
+        "motivos_relativos": 6,
+        "ppsspp": false
       }
     ],
     "B_actual": [
@@ -84,6 +107,13 @@
         "hechos": 10,
         "total": 10,
         "resultado": "PASS_LOCAL_SINTETICO_NO_C"
+      },
+      {
+        "tipo": "F4 R9 13 pruebas sintéticas",
+        "hechos": 13,
+        "total": 13,
+        "resultado": "PASS_LOCAL",
+        "ci_nuevo": "PENDIENTE_AL_PUBLICAR"
       }
     ],
     "B_historica": [
@@ -104,7 +134,8 @@
     "Origen gráfico del texto de prólogo no demostrado",
     "F2 TUIKA no vinculado a combate real; 19 glifos no certificados multicontesto",
     "Sin candidata final, BPS final ni Windows x64 E2E",
-    "F4: 22 igualdades u32 no prueban referencias; falta MIPS real sobre opcode 0x0A y 0x01/0x02."
+    "F4: 22 igualdades u32 no prueban referencias; falta MIPS real sobre opcode 0x0A y 0x01/0x02.",
+    "R9: coincidencia 0x0A desde scr01.dsf/20/20 offset SCRIPT.DAT 7420 -> valor100100, NO validada como llamada en MIPS real; 21 aparentes saltos son 6 patrones de enteros comunes."
   ],
   "siguiente_relevo": "prompts/SIGUIENTE_TAREA.md",
   "advertencia": "Los denominadores de cobertura contextual, gráficos y casos totales no están certificados. La matriz inicial no es universo completo. Ningún 100% de las cuatro áreas está verificado."

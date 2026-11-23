@@ -1,45 +1,44 @@
-# CLADUN ES — RELEVO AUTÓNOMO F3/F4-R9: INVESTIGAR 0x0A Y 0x01/0x02 SIN ROMPER EVENTOS; T/G/R/Q ABIERTAS
+# CLADUN ES — RELEVO AUTÓNOMO F4/F3-R10: TRÁFICO REAL DE 0x0A 100100 Y ORIGEN DEL PRÓLOGO; T/G/R/Q ABIERTAS
 
-**Corte:** 2026-11-23T21:29:33Z UTC. Repositorio: https://github.com/ARivas3008/loxalizacion-cladun-psp. Rama: integracion-eventos-segura-20261120. PR #7: https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7, estado OPEN/DRAFT, base revision-manual-dialogos. HEAD comprobado al inicio R8: 097a6b81056262be91e758fed380ed9f0e7a53f5. **NO asumir que es HEAD actual**: se publicaron commits R8 posteriores. Comprobar HEAD, PR y Actions de nuevo antes de modificar y después de publicar. Nunca force push, rebase destructivo ni fusionar PR #7 mientras existan tareas abiertas.
+Fecha de corte: 23/11/2026. Repositorio https://github.com/ARivas3008/loxalizacion-cladun-psp; rama integracion-eventos-segura-20261120, base revision-manual-dialogos y PR #7 OPEN/DRAFT. HEAD verificable antes del commit documental R9: 18ff23f3f73e5a5537f2fc912f202239aba8a19b; este relevo R10 se publicó DESPUÉS, por lo que DEBES consultar git rev-parse HEAD o GitHub API, anotar SHA EFECTIVO, estado CI push/PR y cambios concurrentes antes de escribir. Sin force push, sin merge ni modificación de la rama base.
 
-Actúa como equipo senior integrado: T (traducción natural española), G (texturas indexadas IMY/CLUT, fuentes CP932), R (ingeniería inversa PSP MIPS, ISO9660, PSPFS, DSARC, BPS y Go), Q (PPSSPP oficial v1.20.4, juegos completos y Windows x64). **Ejecuta código, inspecciones y pruebas reales EN ESTE TURNO; no te limites a planes.** Separar evidencia A (ISO original auténtica verificada), B (tests sintéticos/corpus/CI) y C (juego realmente ejecutado en PPSSPP oficial). Nunca fabricar PCs MIPS, capturas, tramas GPU, direcciones, hashes, resultados de CI o commits.
+Actúa como ingeniero sénior PSP MIPS y PPSSPP oficial v1.20.4, ISO9660/PSPFS/DSARC, gráficos IMY/CLUT CP932 español, QA y localización. Ejecuta realmente código, análisis, tests y correcciones basadas en causalidad. Separa A=ISO original comercial auténtica privada, B=código/CI/sintéticos, C=gameplay auténtico con emulador y procedencia de proceso. NO inventes saltos, PCs, GPU, capturas, hashes, pruebas, publicaciones ni éxito.
 
-## 0. REGLA RECURSIVA INNEGOCIABLE (copiarla íntegramente)
+## 0. REGLA RECURSIVA INNEGOCIABLE (reproducir completa en siguiente relevo)
 
 **Si cualquiera de los cuatro apartados sigue por debajo del 100 % VERIFICADO, al terminar CADA relevo debes sustituir por completo prompts/SIGUIENTE_TAREA.md en la rama de trabajo mediante un NUEVO prompt autosuficiente y exigirle que haga lo mismo al acabar.** No copies sin actualizar el prompt anterior. Incluye HEAD real, PR y CI reales, estado de cuatro áreas, pruebas A/B/C, hashes reales, archivos concretos, comandos correctos, fallos, hipótesis, tareas no terminadas, próximos criterios de cierre y prohibiciones. Muéstralo íntegro al usuario. Continúa por relevos en nuevas sesiones **solo mientras** existan tareas pendientes; cuando estén **las cuatro al 100 % confirmado**, cambia el entregable a informe final, checklist de lanzamiento y prompt de mantenimiento pospublicación. No generes artificialmente otro relevo de desarrollo tras cierre completo. Si no tienes acceso a GitHub, entrega el archivo nuevo en el chat y marca la escritura remota como NO EJECUTADA.
 
-Si hay bloqueo (por ejemplo PPSSPP ausente), realizar máxima auditoría segura y tests en el turno, documentar el bloqueo y la condición necesaria para desbloquear, y crear nuevo relevo. Una prueba B nunca sustituye C; no prometer trabajo asíncrono.
+Si se bloquea PPSSPP, haz máxima auditoría segura en sesión y deja bloqueo+condición precisa de desbloqueo. Una prueba B nunca sustituye C. No prometas trabajo en segundo plano.
 
-## 1. Estado inicial VERIFICABLE y nuevos hallazgos de R8
+## 1. Estado y evidencias a no falsear
 
-| Área | Métrica actual y situación | Para llegar a 100 % VERIFICADO |
-|---|---|---|
-| TRADUCCIÓN T | 9.235 de 9.237 filas del CSV con español, 99,98 % cobertura escrita; no calidad ni ejecución completas | 2 orígenes truncados 008723 y 008724, escenas/cajas, glosario, tildes, tutoriales, prólogo, texto gráfico y aprobación contextual en PPSSPP |
-| GRÁFICOS G | global NO MEDIBLE; se estudiaron seis PNG SYS.DAT2 y 27 IMY SYSGRA, fuente 2.721 glifos originales más 19 A1–B3 | inventariar todos los rótulos, proteger ROI/CLUT, demostrar TUIKA en combate y 19 glifos en múltiples escenas y tintas |
-| ROMHACKING R | 3.724 de 8.248 sustituciones aplicadas en candidato protegido histórico, **45,15 %** de ese conjunto; **4.524 diferidas** | validar saltos MIPS, reubicar sin daño, cero diferidas, BPS final e ISO/EXE Windows comprobados |
-| BETATESTING Q | 42 casos iniciales inventariados, todos NOT_RUN en R8; cobertura global NO MEDIBLE | ampliar universo de casos, ejecutar juego real C y Windows x64 E2E con 0 P0/P1 abiertos |
+TRADUCCIÓN T: 9.235/9.237 registros escritos (99,98% de borrador, NO de calidad/en juego); textos de origen truncado 008723/008724 y los gráficos del prólogo siguen sin validarse. Inventario total visible, revisión contextual y aprobación en ejecución NO MEDIBLES.
+GRÁFICOS G: 6 PNG en SYS.DAT2 y 27 IMY SYSGRA analizados históricamente, total gráfico visible NO MEDIBLE. TUIKA_MES.IMY tiene 9.144 texeles de CLUT2 y 3.506 en subregiones protegidas; NO realizar recolor global; falta A/B/A en combate real y 19 glifos multicontesto.
+ROMHACKING R: 3.724/8.248 cambios binarios planificados aplicados solo en candidata histórica (45,15% del conjunto); 4.524 diferidos por --event-safe-only. demo1001: 97 textos, 11 mismo tamaño simulados RAM-only, 85 variables bloqueados y 1 idéntico; 588 inicios cambiarían en hipótesis lineal, padding 48B y capacidad extra mínima 144B en tres bloques. Sin MIPS real y sin BPS+EXE final.
+BETATESTING Q: matriz inicial ampliada de 42 a 43 casos, con nuevo Q043 de la hipótesis 0x0A; los 43 están NOT_RUN en este relevo (no se convierte historial F1 en PASS de la candidata final). Universo total de escenarios NO MEDIBLE.
 
-A (nuevo R8): la ISO USA original aportada por el usuario mide 305.496.064 bytes y SHA256 b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f. En R8 estuvo disponible de forma PRIVADA, fuera del repo; verificar si sigue montada, sin inferir ruta. DATA.DAT tiene 349 PSPFS. Se releyeron SCRIPT.DAT SHA256 c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358 y SCRIPT.TBL SHA256 f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37. Reparseo del original: **1.625 bloques, 51.705 comandos, 46.308 no textuales, siete bloques demo1001 y 878 comandos demo1001.** Se hizo una nueva comprobación de **101.659 ventanas u32** en argumentos no textuales.
+EVIDENCIA A R9 AUTÉNTICA: ISO USA original extraída privadamente del archivo 7z del usuario, 305496064 bytes SHA256 b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f. DATA.DAT PSPFS 349; SCRIPT.DAT 633344B SHA256 c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358; SCRIPT.TBL 52016B SHA256 f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37. En A se reparsearon 1.625 scripts/51.705 comandos/46.308 no textuales, 7 bloques demo1001/878 comandos. La ISO permanece intacta. No asumir que la ruta temporal sobreviva al siguiente turno.
 
-**Resultado nuevo que debe guiar F4:** una coincidencia de ID script 100100 en un comando de otro bloque con opcode 0x0A y payload +0; **21 coincidencias de enteros relativos en comandos demo1001**: 0x01+0 (5), 0x02+2 (4), 0x02+6 (12). Dieciséis relativas caen en offsets +2 mod 4. Cero coincidencias u32 con offsets absolutos de comando o comienzo absoluto de bloque demo1001. **Coincidencia no es puntero, salto, PC ni referencia semántica; no se descartan otras formas de referencias.** Ver docs/F4_R8_REFERENCIAS_DEMO1001_2026-11-23.md y reports/F4_R8_REFERENCIAS_DEMO1001_2026-11-23.json. SHA256 informe privado de metadatos 7f23f8ae4ab52f97d6e6a86227a964325ec6f0c981c0de4644504bcff3b35c20.
+HALLAZGO F4 R9: 0x0A tiene 862 comandos con argumentos u32 de 4B; 320/862 valores coinciden con IDs de SCRIPT.TBL, 183 IDs distintos. Coincidencia externa singular: scr01.dsf, script ID 69, bloque 20, orden 20, comando offset 7420 de SCRIPT.DAT, opcode 0x0A, instruction_id 818, argumento 100100; hay un script ID 100100 en bloque 758, demo1001_00.dsf, inicio 218128. Es correspondencia ESTÁTICA, no una llamada probada. El opcode 0x01 usa payload 4B (4061 comandos), 0x02 usa payload 18B (2039 comandos). Los 21 matches relativos anteriores son SOLO SEIS PATRONES reiterados, muchos de valores frecuentes 23/32/55/85. 0x02 en campo+2 toma valor 23 en 1714/2039 instancias y en +6 toma 32 en 1439/2039: coincidencias a comandos internos podrían ser accidentales. Cero saltos probados.
 
-B: nuevo tools/f4_referencias_demo1001.py con tests/test_f4_referencias_demo1001.py (**10 pruebas sintéticas PASS locales**). Con 11 pruebas sintéticas previas de QA documental, 21 tests de ese subconjunto PASS local, NO suite completa. Verificar Actions del HEAD actual. C: **PPSSPP v1.20.4 NO ejecutado en R8**, no hay PCs/GE/VRAM/combate/prologo nuevos. Históricamente F1 Opciones 756px interior y primer mapa alcanzado en PPSSPP, pero no certificación de aventura.
+B R9: tools/f4_r9_perfil_opcodes.py con tests/test_f4_r9_perfil_opcodes.py: 13 tests sintéticos PASS locales. La función profile pasó contra comandos autenticados mediante parser ISO independiente. Informe privado sin bytes comerciales SHA256 590db156de24d894a3109369278733296d9074f59eae52aa903b828ae0dc0bc9; ver reporte público reports/F4_R9_PERFIL_OPCODES_2026-11-23.json, docs/F4_R9_PERFIL_OPCODES_2026-11-23.md. GitHub CI sobre HEAD final debe verificarse, sin presumir PASS futuro.
+C R9: PPSSPP oficial 1.20.4 NO EJECUTADO porque no está instalado y GitHub DNS del terminal no resuelve; capturas F1 y primer mapa son históricas, no actuales.
 
-## 2. Lectura y arranque obligado
+## 2. Primer paso, código y comandos
 
-Leer completos antes de modificar: AGENTS.md, README.md, CHANGELOG.md, docs/REPRODUCIBILIDAD.md, docs/PROTOCOLO_REINSERCION_FAIL_CLOSED.md, docs/INTEGRACION_EVENTOS_PROTEGIDOS_2026-11-20.md, docs/PLAN_HASTA_IMPLEMENTACION_PPSSPP_2026-11-20.md, docs/F4_R8_REFERENCIAS_DEMO1001_2026-11-23.md, reports/F4_R8_REFERENCIAS_DEMO1001_2026-11-23.json, tools/f4_referencias_demo1001.py, tools/f3_referencias_riesgo.py, tools/script_event_guard.py, tools/f3_anclar_intro.py, tools/f3_simular_intro_mismo_tamano.py, tools/f3_presupuesto_padding_intro.py, docs/F3_R6_PADDING_ORIGINAL_Y_CAPACIDAD_2026-11-23.md, docs/F3_ANIME_IMY_ESTRUCTURAS_2026-11-23.md, docs/F2_TUIKA_SUBREGIONES_PROTEGIDAS_2026-11-23.md, reports/ESTADO_CONTINUIDAD_PPSSPP.json, reports/COBERTURA_4_AREAS.json, qa/MATRIZ_BETATESTING_COBERTURA.csv, docs/ESTADO_CIERRE_4_AREAS.md y este prompt.
+Leer completos AGENTS.md, README.md, docs/PLAN_HASTA_IMPLEMENTACION_PPSSPP_2026-11-20.md, docs/INTEGRACION_EVENTOS_PROTEGIDOS_2026-11-20.md, docs/F4_R9_PERFIL_OPCODES_2026-11-23.md, reports/F4_R9_PERFIL_OPCODES_2026-11-23.json, tools/f4_r9_perfil_opcodes.py, tools/f4_referencias_demo1001.py, tools/f3_referencias_riesgo.py, tools/script_event_guard.py, tools/f3_anclar_intro.py, tools/f3_simular_intro_mismo_tamano.py, tools/f3_presupuesto_padding_intro.py, docs/F3_R6_PADDING_ORIGINAL_Y_CAPACIDAD_2026-11-23.md, docs/F3_ANIME_IMY_ESTRUCTURAS_2026-11-23.md, docs/F2_TUIKA_SUBREGIONES_PROTEGIDAS_2026-11-23.md, reports/ESTADO_CONTINUIDAD_PPSSPP.json, reports/COBERTURA_4_AREAS.json, qa/MATRIZ_BETATESTING_COBERTURA.csv, docs/ESTADO_CIERRE_4_AREAS.md y este prompt. Mantener 19 glifos A1–B3, white_new_ink=False; no regresar a F5A0–F5B2.
 
-Comandos en checkout auténtico (no fingir si DNS impide obtenerlo):
+Si hay checkout auténtico, no reclonar encima:
 
     git fetch origin
     git switch integracion-eventos-segura-20261120
     git pull --ff-only
-    git status --short
     git rev-parse HEAD
+    git status --short
     python -m unittest discover -s tests -v
-    python -m unittest discover -s tests -p 'test_f4_referencias_demo1001.py' -v
+    python -m unittest discover -s tests -p 'test_f4_r9_perfil_opcodes.py' -v
     python tools/qa_cobertura_4_areas.py
-    python tools/qa_cobertura_4_areas.py --require-closed
+    python tools/qa_cobertura_4_areas.py --require-closed  # DEBE FALLAR TODAVÍA
     python tools/verificar_integridad.py --raiz .
     python tools/verificar_borrador_es.py
     python tools/auditar_preinsercion_es.py --reporte /tmp/cladun-preflight.json
@@ -47,38 +46,32 @@ Comandos en checkout auténtico (no fingir si DNS impide obtenerlo):
     (cd patcher && go test ./...)
     git diff --check
 
-El comando --require-closed debe devolver no cero hasta que haya cuatro cierres. Con ISO autenticada en ruta PRIVADA, crear informes JSON NUEVOS fuera de Git:
+Con ISO original auténtica en directorio PRIVADO, fuera del checkout y usando ruta nueva:
 
-    python tools/f4_referencias_demo1001.py --iso-original /PRIVADO/Cladun_USA_original.iso --reporte-privado /PRIVADO/F4_REFERENCIAS_R9_NUEVO.json
-    python tools/f3_simular_intro_mismo_tamano.py --iso-original /PRIVADO/Cladun_USA_original.iso --reporte-privado /PRIVADO/F3_SIM_R9_NUEVO.json
-    python tools/f3_presupuesto_padding_intro.py --iso-original /PRIVADO/Cladun_USA_original.iso --reporte-privado /PRIVADO/F3_PADDING_R9_NUEVO.json
+    python tools/f4_r9_perfil_opcodes.py --iso-original /PRIVADO/Cladun_USA_original.iso --reporte-privado /PRIVADO/F4_R10_PERFIL_NUEVO.json
 
-Sin terminal GitHub, usar conector GitHub con lectura de HEAD, actualización no forzada y comprobación de CI push y PR en el HEAD FINAL. No publicar ISO, DATA.DAT, EBOOT, BPS con recursos comerciales sustanciales, FONT, IMY, capturas, dumps RAM/GE/VRAM ni imágenes del juego.
+No ejecutar flags supuestos de otras herramientas: leer --help.
 
-## 3. P0 — Experimentos concretos para avanzar en F4
+## 3. P0 concreto: probar o descartar 0x0A/100100 CON MIPS REAL
 
-**F4-a: comando externo 0x0A que contiene u32 igual al ID 100100.** Con PPSSPP oficial 1.20.4 autenticar binario, PID/starttime, ISO en file descriptor, WebSocket propio 24192 y juego efectivo; reproducir la escena que consume ese comando. Registrar verdadero PC y lecturas RAM. Investigar si el argumento +0 funciona como ID de destino, variable o literal. Demostrar destino efectivo, stack/estado y retorno con dos rutas; si no lo es, descartar hipótesis. No elevar esa sola igualdad numérica a referencia probada.
+Conseguir PPSSPP 1.20.4 oficial autenticado, SHA256 histórico AppImage 661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21; documentar backend, PID, starttime, FD a ISO original de hash correcto y WebSocket 24192 en el MISMO proceso. Reproducir escena donde scr01.dsf realmente se ejecute; no asumir que arranca automáticamente.
 
-**F4-b: 21 coincidencias relativas.** En los siete bloques demo1001, instrumentar opcode 0x01 offset +0 y opcode 0x02 offsets +2/+6; determinar si los enteros son comandos, ordinales, tiempos/contadores u otro formato observando comportamiento real. Distinguir referencias de 16 bits, relativas a bloque, referencias a script externo, IDs de comando y punteros del intérprete. Los valores pequeños pueden ser coincidencias accidentales. Desarrollar modelo reversible solo tras prueba MIPS, tests negativos y comparación A/B PPSSPP.
+En depurador, localizar estructura en RAM que representa SCRIPT.DAT offset 7420 (NO asumir RAM addr=offset), identificar cuándo el intérprete consume opcode 0x0A/ID 818/u32 100100; registrar PCs MIPS reales, registros, origen, acción de despacho, cambio de script y retorno. Comparar secuencia original con control positivo que demuestre qué campo dirige la ejecución, usando sondas privadas acotadas y reversible SOLO si no rompen el arranque. Registrar evidencia C y descartar hipótesis si no hay lectura ni transferencia. Extender modelo a llamadas/scripts indirectos y textos variables antes de cualquier relocalización.
 
-**F4-c: 85 textos variables demo1001.** Los 97 textos en siete bloques incluyen 11 cambios de misma longitud simulados en memoria, 85 variables bloqueados y 1 idéntico. Una concatenación hipotética afectaría 588/878 inicios y +131 bytes netos; padding original 48 bytes y faltan al menos 144 bytes en tres bloques alineados a 16. No mover un solo comando sin semántica comprobada de todos los saltos relevantes. Extender después el reubicador fail-closed por lotes a 4.524 traducciones pospuestas, con reparseo 51.705 comandos, sin alterar no-textos, audio, retratos, sprites ni tiles. Mantener --experimental-parcial --event-safe-only hasta seguridad demostrada.
+Para 0x01/0x02 NO repetir 21 falsos punteros como supuestos saltos: comprobar primero significado de sus valores frecuentes 23/32/55/85 en diversas escenas, analizar controles, tamaños y semántica de argumentos. La correspondencia con offsets de comandos puede ser coincidencia. Cubrir además ordinales, referencias de 16 bits, SCRIPT.TBL y otros callsites antes de liberar los 85 cambios variables demo1001 o 4524 globales.
 
-## 4. P0 F3 — Prologo gráfico
+## 4. P0 F3 y P1 T/G/Q + F6
 
-Frase inglesa visible: "Some say, because the treasures were there." La procedencia de sus letras NO está probada. ANIME000.IDT contiene 231 firmas IMY (136 tipo00, 95 tipo02), no 231 frames demostrados; renombrar ANIME000 provocó crash antes del título y NO prueba dónde están las letras. No repetir esa sonda destructiva. PPSSPP original con juego real → escena exacta → traza I/O→RAM→GE/VRAM con TEXADDR/CLUT/PRIM → origen verificable. Según resultado, edición de ROI bitmap o localización de script concreta, con original/sonda/original y sin CLUT global. No llamar a demo1001 fuente de esta frase sin prueba.
+F3: frase inglesa real Some say, because the treasures were there. procedencia gráfica no comprobada. ANIME000.IDT posee 231 firmas IMY (136 tipo00,95 tipo02) pero no demuestra autoría de letras; sonda de cambio de nombre causó crash pre-título, NO repetir. Ejecutar prólogo auténtico; capturar I/O→RAM→GE/VRAM, TEXADDR/CLUT/PRIM y ROI reproducible. Traducir solo tras causalidad con comparación A/B/A.
 
-## 5. P1 — Traducción, gráficos, QA y F6
+T: revisar por contexto 9.237 registros, 586 escenas/2.216 cajas, glosario y dos fuentes truncadas. Sincronizar borrador CSV, TXT, bilingüe y guiones en mismo commit; sin editar corpus origen; aprobar texto del HUD, gráficos y prólogo.
+G: TUIKA_MES en combate REAL, máscara editables sin recolor CLUT global, 19 glifos áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō en menús/HUD/diálogos/batalla con distintas tintas y 2.721 antiguos intactos, seis PNG y 27 IMY sin daños colaterales.
+Q: ejecutar los 43 casos inicialmente definidos, ampliar por escenas descubiertas; capturas de PPSSPP auténticas privadas con SHA y trazabilidad PID/ISO, 0 fallos P0/P1, nivel 2, enciclopedia, jefes, guardado-cerrar-reabrir-cargar, finales, regresión de Opciones F1.
+F6: solo con 0 textos diferidos, MIPS modelado y QA C completo, construir BPS final con roundtrip y hash, EXE Windows x64 con pruebas negativas E2E, revisión legal de distribución. No subir ISO, BPS comercial, EBOOT, DATA.DAT, IMY, fuentes, sprites, capturas, RAM/GE/VRAM a GitHub público.
 
-T: revisar 9.237 registros, naturalidad por escena/hablante, glosario, 2.216 cajas/586 escenas, variables/códigos/tildes, 008723/008724 origen truncado. Mantener corpus origen inmutable; sincronizar CSV, dos TXT, guiones y logs de cambios del mismo commit. Texto fuera del CSV y texto del prólogo deben incorporarse al universo visible.
+## 5. Entrega, GitHub y sucesión
 
-G: SYS.DAT2 seis PNG; SYSGRA.ARC 27 IMY; TUIKA_MES.IMY 256×256 4bpp con 9.144 texeles en CLUT2 y 3.506 en siete subregiones protegidas. No cambiar CLUT2 global como release. A/B/A en combate verdadero y máscaras ROI seguras; 19 glifos áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō en HUD, diálogos, menús y combate; preservar 2.721 glifos originales y white_new_ink=False.
+Actualizar sin borrar historia: reports/ESTADO_CONTINUIDAD_PPSSPP.json, reports/COBERTURA_4_AREAS.json, qa/MATRIZ_BETATESTING_COBERTURA.csv, docs/ESTADO_CIERRE_4_AREAS.md y los reportes de hallazgos. No atribuir evidencia C a B; porcentajes solo con numerador/denominador conocido y T/G/Q global NO MEDIBLE si falta censo. Compartir tabla inicial/final, comandos y resultados reales, hashes, evidencias A/B/C, archivos exactos, HEAD, CI push/PR verificados y estado del PR, fallos/rollback.
 
-Q: completar y ejecutar qa/MATRIZ_BETATESTING_COBERTURA.csv (42 casos iniciales, no universo cerrado), capturas privadas reales con SHA, PID/ISO/PPSSPP/backend, PASS/FAIL/BLOCKED/NOT_RUN honestos, retest F1, segundo nivel, inventario/enciclopedia, batalla/TUIKA, guardar-cerrar-reabrir-cargar, finales y créditos; 0 P0/P1 para cierre. No fingir screenshots.
+**AL FINAL: sustituir COMPLETAMENTE prompts/SIGUIENTE_TAREA.md por un relevo R11 autónomo y más concreto, mostrar íntegro su texto, mantener la REGLA RECURSIVA 0 hasta que T/G/R/Q alcancen cada uno el 100% REAL.** No fusionar PR #7 ni afirmar release antes de esa evidencia.
 
-F6: solo cuando 0 sustituciones diferidas, 100% de textos y gráficos verificados y QA C completo, generar BPS final desde ISO original con roundtrip y SHA exactos, y EXE Windows x64 con pruebas E2E de interfaz, negativos y regresión. Revisar viabilidad legal de distribución diferencial. No fusionar PR #7 antes de los cierres.
-
-## 6. Entrega obligatoria y siguiente prompt
-
-Entregar tabla T/G/R/Q antes/después, numeradores/denominadores reales, áreas NO MEDIBLES cuando corresponda, fuente A/B/C, SHA de ISO original y artefactos nuevos, lista exacta de rutas y commits, PPSSPP y CI reales o NO EJECUTADOS, errores y rollback. Actualizar reports/ESTADO_CONTINUIDAD_PPSSPP.json, reports/COBERTURA_4_AREAS.json, qa/MATRIZ_BETATESTING_COBERTURA.csv y docs/ESTADO_CIERRE_4_AREAS.md conservando registros anteriores.
-
-**Al concluir, REEMPLAZAR ÍNTEGRAMENTE prompts/SIGUIENTE_TAREA.md con otro prompt autónomo más específico R10, copiar la REGLA RECURSIVA 0, registrar HEAD/CI/PR efectivos, y mostrar el texto nuevo ENTERO al usuario.** Mantener T/G/R/Q abiertos hasta 100% realmente probado; si todo cierra, cambiar a informe final y mantenimiento.

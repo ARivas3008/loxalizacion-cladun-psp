@@ -1,0 +1,142 @@
+{
+  "schema": "cladun.f4.r9_opcode_operands_readonly.v1",
+  "date": "2026-11-23",
+  "source": "A_AUTHENTIC_USA_ORIGINAL_STATIC_NOT_PPSSPP",
+  "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+  "script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37",
+  "script_blocks": 1625,
+  "commands": 51705,
+  "nontext_commands": 46308,
+  "intro_blocks": 7,
+  "intro_commands": 878,
+  "nontext_opcode_counts_selected": {
+    "0x01": 4061,
+    "0x02": 2039,
+    "0x0a": 862
+  },
+  "opcode_0a_u32_script_id_matches": 320,
+  "opcode_0a_total_commands": 862,
+  "opcode_0a_unique_existing_script_ids": 183,
+  "opcode_0a_external_demo1001_candidates": [
+    {
+      "source_block": 20,
+      "source_script_id": 69,
+      "source_script_name": "scr01.dsf",
+      "source_order": 20,
+      "source_command_offset": 7420,
+      "instruction_id": 818,
+      "operand_u32": 100100,
+      "target_block": 758,
+      "target_script_name": "demo1001_00.dsf",
+      "target_block_offset": 218128
+    }
+  ],
+  "intro_relative_numeric_matches_total": 21,
+  "intro_relative_numeric_motifs": [
+    {
+      "source_block": 758,
+      "opcode": "0x02",
+      "argument_byte_offset": 6,
+      "operand_u32": 32,
+      "coincident_target_order": 4,
+      "coincident_target_opcode": "0x7c",
+      "occurrences": 10
+    },
+    {
+      "source_block": 760,
+      "opcode": "0x01",
+      "argument_byte_offset": 0,
+      "operand_u32": 85,
+      "coincident_target_order": 9,
+      "coincident_target_opcode": "0x7a",
+      "occurrences": 5
+    },
+    {
+      "source_block": 762,
+      "opcode": "0x02",
+      "argument_byte_offset": 2,
+      "operand_u32": 23,
+      "coincident_target_order": 1,
+      "coincident_target_opcode": "0x02",
+      "occurrences": 2
+    },
+    {
+      "source_block": 762,
+      "opcode": "0x02",
+      "argument_byte_offset": 6,
+      "operand_u32": 55,
+      "coincident_target_order": 3,
+      "coincident_target_opcode": "0x01",
+      "occurrences": 1
+    },
+    {
+      "source_block": 763,
+      "opcode": "0x02",
+      "argument_byte_offset": 2,
+      "operand_u32": 23,
+      "coincident_target_order": 1,
+      "coincident_target_opcode": "0x02",
+      "occurrences": 2
+    },
+    {
+      "source_block": 763,
+      "opcode": "0x02",
+      "argument_byte_offset": 6,
+      "operand_u32": 55,
+      "coincident_target_order": 3,
+      "coincident_target_opcode": "0x01",
+      "occurrences": 1
+    }
+  ],
+  "opcode_02_field_2_common_values": [
+    {
+      "value": 23,
+      "count": 1714
+    },
+    {
+      "value": 32,
+      "count": 308
+    },
+    {
+      "value": 46,
+      "count": 15
+    },
+    {
+      "value": 87,
+      "count": 2
+    }
+  ],
+  "opcode_02_field_6_common_values": [
+    {
+      "value": 32,
+      "count": 1439
+    },
+    {
+      "value": 23,
+      "count": 325
+    },
+    {
+      "value": 55,
+      "count": 270
+    },
+    {
+      "value": 78,
+      "count": 4
+    },
+    {
+      "value": 101,
+      "count": 1
+    }
+  ],
+  "private_independent_parser_report_sha256": "590db156de24d894a3109369278733296d9074f59eae52aa903b828ae0dc0bc9",
+  "independent_original_iso_analysis": "PASS",
+  "new_synthetic_tests_locally_passed": 13,
+  "semantic_MIPS_verified": false,
+  "relocation_authorized": false,
+  "ppsspp_1204_this_relay": false,
+  "original_iso_modified": false,
+  "commercial_resource_bytes_written": false,
+  "global_script_4524_deferred": true,
+  "note": "Los 320 u32 iguales a IDs no son llamadas demostradas; 21 coincidencias relativas contienen valores globalmente habituales. Verificar cada destino en MIPS real antes de reubicación."
+}
