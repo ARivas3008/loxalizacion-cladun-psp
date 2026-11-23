@@ -8,9 +8,9 @@ from __future__ import annotations
 import argparse,hashlib,json
 from pathlib import Path
 try:
-    from tools.f2_iso_proceso_ppsspp import validate_iso,proc_snapshot,paired_observations,SOURCE_SHA,PROBE_SHA
+    from tools.f2_iso_proceso_ppsspp import validate_iso,proc_snapshot,paired_observations,SOURCE_SHA,PROBE_SHA,F1_SHA
 except ModuleNotFoundError:
-    from f2_iso_proceso_ppsspp import validate_iso,proc_snapshot,paired_observations,SOURCE_SHA,PROBE_SHA
+    from f2_iso_proceso_ppsspp import validate_iso,proc_snapshot,paired_observations,SOURCE_SHA,PROBE_SHA,F1_SHA
 
 def verify_window_metadata(expected_pid:int,reported_pid:int,name:str,width:int,height:int,x:int,y:int):
     if reported_pid!=expected_pid or not isinstance(reported_pid,int) or expected_pid<=0:
