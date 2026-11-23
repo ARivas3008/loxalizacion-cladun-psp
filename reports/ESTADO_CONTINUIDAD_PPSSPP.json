@@ -1573,16 +1573,14 @@
     "recursive_prompt": "prompts/SIGUIENTE_TAREA.md"
   },
   "ultimo_relevo_f2": {
-    "fecha": "2026-11-23",
-    "fase": "F2_OPEN_CLUT2_GLOBAL_COLOR_RISK_A_REAL",
-    "fuente": "USA_original_and_probe_binary_256x256_4bpp_CLUT2",
-    "nuevos_texeles_afectados": 9144,
-    "protegidos": 3506,
-    "modificacion_paleta_global_aprobada_para_traduccion": false,
-    "prueba_ppsspp_nueva": false,
-    "preservacion_f3": true,
-    "doc": "docs/F2_IMPACTO_GLOBAL_CLUT2_REAL_2026-11-23.md",
-    "prompt_siguiente": "prompts/SIGUIENTE_TAREA.md"
+    "date": "2026-11-23",
+    "scope": "A_B_A_X11_TEMPORAL_CONTROL",
+    "status": "F2_ABIERTA_A_ORIGINAL_BINARIO_B16_SYNTH_C_EMULADOR_NO_DISPONIBLE",
+    "tool": "tools/f2_cotejar_x11_aba.py",
+    "doc": "docs/F2_COTEJO_X11_ABA_CONTROL_TEMPORAL_2026-11-23.md",
+    "original_clut2_affected_pixels": 9144,
+    "f3_numeric_analysis_preserved": true,
+    "next_prompt": "prompts/SIGUIENTE_TAREA.md"
   },
   "f2_clut2_cobertura_2026_11_23": {
     "state": "F2_OPEN_A_REAL_CLUT2_9144_B_NEW_14_SYNTH_C_NO_PPSSPP",
@@ -1649,5 +1647,35 @@
     "event_safe_only": true,
     "white_new_ink_default": false,
     "final_ci_post_commit": "PENDING_CHECK"
+  },
+  "f2_x11_aba_control_2026_11_23": {
+    "status": "F2_OPEN_A_REAL_ISO_CLUT2_B_16_SYNTH_LOCAL_C_NO_NEW_PPSSPP",
+    "historical_prior_head": "0c4a606c397d00e176bed4b11f62833d44803e0d",
+    "tool": "tools/f2_cotejar_x11_aba.py",
+    "tests": "tests/test_f2_cotejar_x11_aba.py",
+    "doc": "docs/F2_COTEJO_X11_ABA_CONTROL_TEMPORAL_2026-11-23.md",
+    "report": "reports/RESULTADO_F2_COTEJO_X11_ABA_2026-11-23.json",
+    "private_metadata_sha256": "d9449c1789cfe07545ceac281e49900167fa4f77f87ec040a3a786ec1f9befa4",
+    "authentic_original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "authentic_probe_iso_sha256": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa",
+    "three_iso_offsets": [
+      114744872,
+      114744873,
+      114744874
+    ],
+    "index2_pixels_verified_again": 9144,
+    "index2_seven_protected_regions": 3506,
+    "method": "Three real X11 captures must be USA_before/PROBE/USA_after; candidate mask only pixels stable in USA temporal controls",
+    "synthetic_tests_local_passed": 16,
+    "real_aba_captures_this_relay": 0,
+    "real_ppsspp_executed_this_relay": false,
+    "official_appimage_unavailable": true,
+    "pending_mips_ram_ge_vram": true,
+    "pending_19_glifs_multicontext": true,
+    "preserve_f3_numeric_and_imy": true,
+    "event_safe_only": true,
+    "white_new_ink_default_false": true,
+    "pr7_must_be_draft": true,
+    "final_ci_expected_on_commit": true
   }
 }

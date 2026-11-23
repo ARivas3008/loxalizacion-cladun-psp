@@ -1,4 +1,4 @@
-# CLADUN ES — NUEVO RELEVO AUTÓNOMO F3-R5: SEMÁNTICA REAL DE EVENTOS, PRÓLOGO Y F2 TUIKA; F4–F6 ABIERTAS
+# CLADUN ES — NUEVO RELEVO AUTÓNOMO F2/F3-R6: CONTROL TEMPORAL A/B/A TUIKA, 19 GLIFOS Y SEMÁNTICA DE EVENTOS MIPS; F4–F6 ABIERTAS
 
 **Fecha de corte: 23/11/2026.** Actúa como ingeniero sénior PSP/MIPS, PPSSPP oficial 1.20.4, WebSocket, GPU GE/VRAM, ISO9660/PSPFS/DSARC, IMY/CLUT y fuentes CP932 españolas. **EJECUTA** diagnósticos, código, pruebas y correcciones justificadas; no te limites a un plan. Divide pruebas en (A) ISO original auténtica y análisis binario, (B) tests sintéticos/CI de código, (C) ejecución GENUINA de PPSSPP. Nunca inventes capturas, PCs, hashes, direcciones o resultados.
 
@@ -13,7 +13,7 @@ Rama: integracion-eventos-segura-20261120
 PR #7: https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7
 Base: revision-manual-dialogos
 
-**Conservar PR OPEN/DRAFT, sin merge, sin force push, sin alterar corpus original ni rama base.** El HEAD al comienzo de F3-R4 fue dc76e1f020393c12060a5403866ca24245dd2ae9; los anteriores 70558c570ee6fd4534e5f30e9bf7dbc9a9b1e505 y cffd12b0550ac47f92980ebeb195fe1afabce9ab son HISTÓRICOS. No asumir que ninguno sigue siendo HEAD.
+**Conservar PR OPEN/DRAFT, sin merge, sin force push, sin alterar corpus original ni rama base.** HEAD auténtico al comienzo de este relevo F2/F3-R5: 0c4a606c397d00e176bed4b11f62833d44803e0d; el HEAD histórico F3-R4 fue dc76e1f020393c12060a5403866ca24245dd2ae9; los anteriores 70558c570ee6fd4534e5f30e9bf7dbc9a9b1e505 y cffd12b0550ac47f92980ebeb195fe1afabce9ab son HISTÓRICOS. No asumir que ninguno sigue siendo HEAD.
 
 Con checkout real:
 
@@ -27,7 +27,7 @@ git rev-parse HEAD
 
 Si la terminal no resuelve github.com, NO fingir clonación: GitHub conector fetch_file y Git Data create_blob/create_tree/create_commit/update_ref con expected_sha real y force:false. Revalidar branch HEAD y árbol antes de cualquier actualización; conservar progresos simultáneos de F2.
 
-Leer completos: AGENTS.md, README.md, prompts/SIGUIENTE_TAREA.md, reports/ESTADO_CONTINUIDAD_PPSSPP.json. Para F3: docs/F3_CAMPOS_ALINEACION_Y_EBOOT_2026-11-23.md, reports/RESULTADO_F3_CAMPOS_ALINEACION_2026-11-23.json, tools/f3_campos_alineacion.py, tests/test_f3_campos_alineacion.py, tools/f3_referencias_riesgo.py, tests/test_f3_referencias_riesgo.py, tools/f3_auditar_intro.py, tools/f3_anime_topologia.py, tools/f3_anime_imy_estructuras.py, tools/script_event_guard.py, tools/integrar_parche_seguro.py, tools/charset_es.py, docs/F3_PROLOGO_ANIME000_DEPENDENCIA_PPSSPP_REAL_2026-11-23.md y docs/F3_INTRO_INTENTO_PPSSPP_Y_ORIGEN_SCRIPTS_2026-11-23.md. Para F2: docs/F2_COTEJO_X11_AB_CON_GUARDAS_2026-11-23.md, docs/F2_IMPACTO_GLOBAL_CLUT2_REAL_2026-11-23.md, docs/F2_GE_ONLY_WEB_SOCKET_SIN_FRAMEBUFFER_2026-11-23.md, docs/F2_MAPA_JUGABLE_GE_X11_F1_2026-11-23.md, tools/f2_cotejar_x11_tuika.py, tools/f2_ppsspp_ws_1204.py, tools/f2_ruta_ws_liberacion_segura.py, tools/f2_ge_dump_1204.py, tools/f2_ws_procedencia_ppsspp.py y tests.
+Leer completos: AGENTS.md, README.md, prompts/SIGUIENTE_TAREA.md, reports/ESTADO_CONTINUIDAD_PPSSPP.json, docs/F2_COTEJO_X11_ABA_CONTROL_TEMPORAL_2026-11-23.md, reports/RESULTADO_F2_COTEJO_X11_ABA_2026-11-23.json, tools/f2_cotejar_x11_aba.py, tests/test_f2_cotejar_x11_aba.py. Para F3: docs/F3_CAMPOS_ALINEACION_Y_EBOOT_2026-11-23.md, reports/RESULTADO_F3_CAMPOS_ALINEACION_2026-11-23.json, tools/f3_campos_alineacion.py, tests/test_f3_campos_alineacion.py, tools/f3_referencias_riesgo.py, tests/test_f3_referencias_riesgo.py, tools/f3_auditar_intro.py, tools/f3_anime_topologia.py, tools/f3_anime_imy_estructuras.py, tools/script_event_guard.py, tools/integrar_parche_seguro.py, tools/charset_es.py, docs/F3_PROLOGO_ANIME000_DEPENDENCIA_PPSSPP_REAL_2026-11-23.md y docs/F3_INTRO_INTENTO_PPSSPP_Y_ORIGEN_SCRIPTS_2026-11-23.md. Para F2: docs/F2_COTEJO_X11_AB_CON_GUARDAS_2026-11-23.md, docs/F2_IMPACTO_GLOBAL_CLUT2_REAL_2026-11-23.md, docs/F2_GE_ONLY_WEB_SOCKET_SIN_FRAMEBUFFER_2026-11-23.md, docs/F2_MAPA_JUGABLE_GE_X11_F1_2026-11-23.md, tools/f2_cotejar_x11_tuika.py, tools/f2_ppsspp_ws_1204.py, tools/f2_ruta_ws_liberacion_segura.py, tools/f2_ge_dump_1204.py, tools/f2_ws_procedencia_ppsspp.py y tests.
 
 ## 2. Binarios originales, hashes, privacidad
 
@@ -80,6 +80,25 @@ F4: **4.524** textos SCRIPT.DAT de distinta longitud siguen aplazados. F5: QA ge
 Se publicó paralelamente docs/F2_IMPACTO_GLOBAL_CLUT2_REAL_2026-11-23.md, reports/RESULTADO_F2_CLUT2_COBERTURA_2026-11-23.json, tools/f2_tuika_clut2_cobertura.py y tests/test_f2_tuika_clut2_cobertura.py. Su análisis **A** sobre ISO original y sonda CLUT2 autenticadas demuestra que la modificación global de tres bytes RGB afectaría **9.144/65.536 texeles (13,95 %)** del atlas TUIKA 256x256: 3.506 en las siete subregiones protegidas, de los que 2.576 estrictamente LOCKED y 930 de etiquetas provisionales; 5.638 fuera. Los valores del histograma son índice0=45.784, índice1=10.608, índice2=9.144. **No usar CLUT2 global como parche final, podría recolorear dígitos/iconos/japonés**; solo sonda privada de diagnóstico. Este hallazgo NO demuestra carga GPU ni escena de combate y deja F2 ABIERTA. Sus 14 tests son sintéticos y CI debe validar imports reales.
 
 Leer también esa documentación/reporte, herramienta y tests antes de cambiar TUIKA. Conservar los recursos originales, ninguna modificación global de paleta y la obligación del A/B auténtico en habilidad antes de cualquier solución visual.
+
+## 6B. NUEVO F2 R5 — Control X11 A/B/A con doble original
+
+Este relevo releyó realmente las ISOs privadas original y sonda y las cotejó por completo: USA 305496064 bytes SHA256 b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f; sonda mismo tamaño SHA256 b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa. Tres cambios absolutos y SOLO tres: 114744872 (249→255), 114744873 (251→0), 114744874 (249→255). La fuente original NO cambió. Se redecodificó TUIKA_MES.IMY en memoria y se autenticaron hash IMY 3c181786f72008c144a2187d362d289d453b4f00d93fe5f8cb2facc0f23d14d5, hash de índices lineales a3da2c0d728288c2842b0d9164f4dd220c4713eaa19b3559ef7105f837f8106d y máscara CLUT2 382ae8d2ffa8908979050b5e83f38ec9967b461bbf9b614dd92775da90e409ba. La máscara contiene 9144 index2 y 3506 están en siete subregiones protegidas. Evidencia A (archivo auténtico) NO ES ejecución PPSSPP. Informe privado METADATOS JSON SHA256 d9449c1789cfe07545ceac281e49900167fa4f77f87ec040a3a786ec1f9befa4.
+
+NUEVAS herramientas públicas:
+- tools/f2_cotejar_x11_aba.py toma TRES manifiestos privados x11 (USA_antes, SONDA, USA_después) generados con tools/f2_x11_ppsspp_procfs_capture.py. Exige tres directorios privados y tres PIDs distintos DECLARADOS, bytes/SHA del PNG y hashes correctos de ISO en disco, ventana 960×544; no sobrescribe informe ni publica fotos.
+- Para cada pixel, si USA_antes != USA_después se marca control temporal inestable y no es candidato a cambio debido a sonda; si USA_antes == USA_después, la diferencia en B puede ser candidata. Cuenta magenta nuevo, magenta nativo, bboxes, ROI y fracción estable.
+- Incluso si A1==A2!=B, esto NO demuestra que B esté en el mismo frame de animación; las banderas de sincronía de escena, textura, gameplay y MIPS→RAM→GE→VRAM permanecen falsas. El control negativo SYSTEM PRiSM sigue siendo magenta nativo, NO TUIKA.
+- tests/test_f2_cotejar_x11_aba.py: 16 pruebas SINTÉTICAS LOCALES PASS; consultar CI con el helper real después de publicar. No confundir con C.
+
+Comando futuro con tres sesiones auténticas, cada una arrancada por separado, en HABILIDAD/COMBATE VISUALMENTE CONFIRMADOS:
+
+    python tools/f2_cotejar_x11_aba.py --manifest-usa-antes /PRIVATE/USA1/witness.json --manifest-sonda /PRIVATE/SONDA/witness.json --manifest-usa-despues /PRIVATE/USA2/witness.json --iso-usa /PRIVATE/USA.iso --iso-sonda /PRIVATE/SONDA.iso --escena COMBATE_TUIKA_CONFIRMAR --reporte-privado /PRIVATE/ABA_INFORME_NUEVO.json
+    python -m unittest discover -s tests -p 'test_f2_cotejar_x11_aba.py' -v
+
+Prioridad C: adquirir y autenticar realmente PPSSPP AppImage oficial 1.20.4 Linux x86_64 (SHA 661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21) antes de ejecutarlo; en este relevo no se encontró, github.com DNS falló y el servicio de descarga alternativo falló. C nuevo=0 capturas/GE. Reproducir A1/B/A2 realmente con testigos PID, WebSocket 24192/FD ISO, tres sesiones independientes, el mismo evento habilidad, y --ge-dump --ge-only en cada sesión. Investigar direcciones auténticas GE/VRAM/CPU y 19 glifos áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō en varias pantallas. Solo entonces avanzar F2. No repintar global CLUT2, pues afectaría 9144 texeles incluidos 3506 protegidos.
+
+F3: la evidencia paralela encontró falso positivo (1439 coincidencias de opcode 02 proceden del repetido entero 8192, NO saltos). 85 demo1001 y 4524 SCRIPT.DAT continúan bloqueados, intérprete MIPS no demostrado, ANIME000 tipo02/prologo aún desconocidos. Conservar todas las investigaciones F3, --event-safe-only, white_new_ink=False, 9237 corpus, 349 PSPFS, 2721 antiguos/19 nuevos, PR #7 OPEN/DRAFT. Prohibido subir material comercial. F4–F6 aún abiertas.
 
 ## 7. Publicación y verificación
 
