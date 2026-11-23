@@ -1,4 +1,4 @@
-# CLADUN ES — RELEVO AUTÓNOMO F2/F3-R4: COMPARADOR TUIKA X11/GE, 19 GLIFOS, 85 EVENTOS Y PRÓLOGO IMY; F4–F6 ABIERTAS
+# CLADUN ES — NUEVO RELEVO F2/F3-R5: 9.144 TEXELES CLUT2 TUIKA, A/B EN COMBATE, 19 GLIFOS Y EVENTOS; F4–F6 ABIERTAS
 
 **Corte: 23/11/2026.** Eres ingeniero sénior de PSP MIPS, PPSSPP oficial v1.20.4, ISO9660/PSPFS/DSARC, IMY, fuentes CP932 A1–B3, GE/VRAM y WebSocket. Ejecuta análisis, pruebas y correcciones reales, no solo recomendaciones. Distingue evidencia **A** (ISO auténtica), **B** (sintéticos/CI) y **C** (juego ejecutado en PPSSPP). No inventes capturas, PCs, direcciones, tramas, hashes, éxito CI ni publicaciones.
 
@@ -10,7 +10,7 @@
 
 Repositorio: https://github.com/ARivas3008/loxalizacion-cladun-psp . Rama: `integracion-eventos-segura-20261120`. PR #7 https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7 . Base: `revision-manual-dialogos`. Mantener **OPEN/DRAFT, sin merge, sin force push**. No modificar corpus original, rama base, ni recursos comerciales.
 
-Los SHA `70558c570ee6fd4534e5f30e9bf7dbc9a9b1e505`, `cffd12b0550ac47f92980ebeb195fe1afabce9ab` y `79e803510d2f2d5f08efe3d2b6cc7ff0810692db` son HISTÓRICOS, no asumir HEAD actual. Primero:
+Los SHA `dc76e1f020393c12060a5403866ca24245dd2ae9`, `70558c570ee6fd4534e5f30e9bf7dbc9a9b1e505`, `cffd12b0550ac47f92980ebeb195fe1afabce9ab` y `79e803510d2f2d5f08efe3d2b6cc7ff0810692db` son HISTÓRICOS, no asumir HEAD actual. Primero:
 ```bash
 git fetch origin
 git switch integracion-eventos-segura-20261120
@@ -20,7 +20,7 @@ git rev-parse HEAD
 ```
 Si el terminal no resuelve github.com, NO fingir clone/checkout. El conector GitHub puede fetch y usar create_blob/create_tree/create_commit/update_ref con `expected_sha` y `force:false`; revalidar HEAD antes de cada escritura.
 
-Leer completos: `AGENTS.md`, `README.md`, este prompt, `docs/F2_COTEJO_X11_AB_CON_GUARDAS_2026-11-23.md`, `reports/RESULTADO_F2_COTEJO_X11_AB_2026-11-23.json`, `tools/f2_cotejar_x11_tuika.py`, `tests/test_f2_cotejar_x11_tuika.py`, `reports/ESTADO_CONTINUIDAD_PPSSPP.json`, `docs/F3_REFERENCIAS_RIESGO_2026-11-23.md`, `reports/RESULTADO_F3_REFERENCIAS_RIESGO_2026-11-23.json`, `tools/f3_referencias_riesgo.py`, su test; `docs/F3_ANIME_TOPOLOGIA_2026-11-23.md`, `docs/F3_ANIME_IMY_ESTRUCTURAS_2026-11-23.md`, `docs/F3_PROLOGO_ANIME000_DEPENDENCIA_PPSSPP_REAL_2026-11-23.md`, `docs/F3_INTRO_INTENTO_PPSSPP_Y_ORIGEN_SCRIPTS_2026-11-23.md`, `tools/f3_auditar_intro.py`, `tools/f3_anime_topologia.py`, `tools/f3_anime_imy_estructuras.py`, `tools/script_event_guard.py`, `tools/integrar_parche_seguro.py`, `tools/charset_es.py`. Conservar F2: `docs/F2_GE_ONLY_WEB_SOCKET_SIN_FRAMEBUFFER_2026-11-23.md`, `docs/F2_REVALIDACION_ISO_TUIKA_Y_RELEASE_WS_2026-11-23.md`, `docs/F2_MAPA_JUGABLE_GE_X11_F1_2026-11-23.md`, herramientas `f2_ppsspp_ws_1204.py`, `f2_ruta_ws_liberacion_segura.py`, `f2_ge_dump_1204.py`, `f2_ws_procedencia_ppsspp.py`, `f2_tuika_proteger_subregiones.py` y tests.
+Leer completos: `AGENTS.md`, `README.md`, este prompt, `docs/F2_IMPACTO_GLOBAL_CLUT2_REAL_2026-11-23.md`, `reports/RESULTADO_F2_CLUT2_COBERTURA_2026-11-23.json`, `tools/f2_tuika_clut2_cobertura.py`, `tests/test_f2_tuika_clut2_cobertura.py`, `docs/F2_COTEJO_X11_AB_CON_GUARDAS_2026-11-23.md`, `reports/RESULTADO_F2_COTEJO_X11_AB_2026-11-23.json`, `tools/f2_cotejar_x11_tuika.py`, `tests/test_f2_cotejar_x11_tuika.py`, `reports/ESTADO_CONTINUIDAD_PPSSPP.json`, `docs/F3_REFERENCIAS_RIESGO_2026-11-23.md`, `reports/RESULTADO_F3_REFERENCIAS_RIESGO_2026-11-23.json`, `tools/f3_referencias_riesgo.py`, su test; `docs/F3_ANIME_TOPOLOGIA_2026-11-23.md`, `docs/F3_ANIME_IMY_ESTRUCTURAS_2026-11-23.md`, `docs/F3_PROLOGO_ANIME000_DEPENDENCIA_PPSSPP_REAL_2026-11-23.md`, `docs/F3_INTRO_INTENTO_PPSSPP_Y_ORIGEN_SCRIPTS_2026-11-23.md`, `tools/f3_auditar_intro.py`, `tools/f3_anime_topologia.py`, `tools/f3_anime_imy_estructuras.py`, `tools/script_event_guard.py`, `tools/integrar_parche_seguro.py`, `tools/charset_es.py`. Conservar F2: `docs/F2_GE_ONLY_WEB_SOCKET_SIN_FRAMEBUFFER_2026-11-23.md`, `docs/F2_REVALIDACION_ISO_TUIKA_Y_RELEASE_WS_2026-11-23.md`, `docs/F2_MAPA_JUGABLE_GE_X11_F1_2026-11-23.md`, herramientas `f2_ppsspp_ws_1204.py`, `f2_ruta_ws_liberacion_segura.py`, `f2_ge_dump_1204.py`, `f2_ws_procedencia_ppsspp.py`, `f2_tuika_proteger_subregiones.py` y tests.
 
 ## 2. Hashes y límites de publicación
 
@@ -81,7 +81,20 @@ Comandos con PID/rutas reales, nunca ejecutarlos literalmente sin obtener datos:
 
 Repetir con sonda, PID, carpeta y --tipo sonda / --tipo-iso sonda. No publicar datos comerciales, ni tratar tests como PPSSPP.
 
-## 7. Validación y publicación
+## 7. F2 NUEVO: CLUT2 global no es una edición de texto inocua
+
+**Evidencia A NUEVA EN EL ÚLTIMO RELEVO, extraída de bytes reales privados:** se autenticaron de nuevo por SHA y lectura de ISO los dos archivos USA (305496064 B, SHA256 b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f) y sonda (SHA256 b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa). EXACTAMENTE tres offsets distintos: 114744872, 114744873, 114744874. Se redecodificó TUIKA_MES.IMY A4 de 256×256 y se verificaron SHA de flujo IMY descomprimido **3c181786f72008c144a2187d362d289d453b4f00d93fe5f8cb2facc0f23d14d5**, índices lineales **a3da2c0d728288c2842b0d9164f4dd220c4713eaa19b3559ef7105f837f8106d** y máscara CLUT2 **382ae8d2ffa8908979050b5e83f38ec9967b461bbf9b614dd92775da90e409ba**. Se obtuvieron índice0=45784, índice1=10608, **índice2=9144**, i.e. **13,95 % del atlas**. Una sonda de tres bytes de paleta recolorearía virtualmente 9144 texeles, de los cuales **3506** pertenecen a las siete subregiones protegidas: 1110 banda japonesa, 338 G-star provisional, **84 iconos de control**, 270 símbolos, **600 dígitos banda12**, **512 dígitos banda13** y 592 etiqueta de ataque especial provisional. **2576** son LOCKED estrictos, **930** etiquetas provisionales protegidas, **5638** fuera de las siete regiones. Bbox de índice2 [2,2,247,249]. Estos son datos DE ATLAS, NO se ha visto a PPSSPP dibujarlos. Una modificación global de CLUT2 es una **SONDA DIAGNÓSTICA**, NO una traducción segura ni el resultado final: dañaría potencialmente números/iconos y rótulos ajenos.
+
+**Código B NUEVO:** tools/f2_tuika_clut2_cobertura.py, tests/test_f2_tuika_clut2_cobertura.py (14 tests SINTÉTICOS diseñados, contrastar CI sobre HEAD final). El auditor exige ISO USA+sonda y miembro exactos, solo tres bytes distintos, hashes IMY y máscara auténtica, cuenta cobertura y protege separadores. Escribe JSON privado de solo números, jamás PNG ni textura. Ejecutar cuando se disponga de ambas ISOs privadas:
+
+    python tools/f2_tuika_clut2_cobertura.py --iso-usa /PRIVATE/USA.iso --iso-sonda /PRIVATE/SONDA.iso --reporte-privado /PRIVATE/CLUT2_COBERTURA_NUEVA.json
+    python -m unittest discover -s tests -p 'test_f2_tuika_clut2_cobertura.py' -v
+
+**Evidencia C NO ejecutada ahora:** el AppImage oficial PPSSPP 1.20.4 no se encuentra en el contenedor y `curl` a github.com devuelve `Could not resolve host`. Por tanto no hubo nueva batalla, A/B X11, GE ni observación de 19 glifos. La prioridad sigue siendo recuperar el PPSSPP legítimo, entrar realmente a habilidad o combate en USA/sonda independientes, comparar con tools/f2_cotejar_x11_tuika.py y GE --ge-only, vincular MIPS/RAM/GE/VRAM al atlas, probar 19 caracteres multicontesto y cerrar F2 solo tras evidencia C. Proteger las 7 regiones y el resto de recursos. NO cambiar globalmente CLUT2 en un parche final ni elevar recuentos 4bpp a prueba gráfica.
+
+F3 referencia numérica sigue ABIERTA: coincidencias no equivalen a saltos; 85 textos demo1001 y 4524 de SCRIPT.DAT bloqueados. Preservar --event-safe-only, white_new_ink=False, PR #7 OPEN/DRAFT; F4–F6 pendientes.
+
+## 8. Validación y publicación
 
 En checkout GIT VERDADERO:
 ```bash

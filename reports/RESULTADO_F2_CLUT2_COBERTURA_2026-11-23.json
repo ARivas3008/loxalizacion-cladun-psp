@@ -1,0 +1,96 @@
+{
+  "schema": "cladun.f2.tuika_clut2_static_effect_2026_11_23",
+  "evidence_A": "AUTHENTIC_USER_ISO_AND_PROBE_READ_NO_PPSSPP",
+  "iso_usa": {
+    "size": 305496064,
+    "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f"
+  },
+  "iso_probe": {
+    "size": 305496064,
+    "sha256": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa"
+  },
+  "exact_changed_absolute_offsets": [
+    114744872,
+    114744873,
+    114744874
+  ],
+  "original_tuika_member_sha256": "c47140753a462cc5b1cc454ee79e0c37b526f06ba5c663b957a91202ebd09127",
+  "probe_tuika_member_sha256": "efcf4f41f57c300476e8ce54a32dea01f242dda3fbf3fb9c4e0b582bad8f5252",
+  "decoded_index_sha256": "3c181786f72008c144a2187d362d289d453b4f00d93fe5f8cb2facc0f23d14d5",
+  "linear_index_sha256": "a3da2c0d728288c2842b0d9164f4dd220c4713eaa19b3559ef7105f837f8106d",
+  "clut2_mask_sha256": "382ae8d2ffa8908979050b5e83f38ec9967b461bbf9b614dd92775da90e409ba",
+  "atlas": [
+    256,
+    256
+  ],
+  "index_histogram": {
+    "0": 45784,
+    "1": 10608,
+    "2": 9144
+  },
+  "clut2_affected_pixels": 9144,
+  "affected_fraction": 0.1395263671875,
+  "affected_bbox_inclusive": [
+    2,
+    2,
+    247,
+    249
+  ],
+  "protected_region_total_affected": 3506,
+  "strictly_locked_and_gaps_affected": 2576,
+  "provisional_label_regions_affected": 930,
+  "outside_seven_regions_and_gaps_affected": 5638,
+  "protected_regions": [
+    [
+      "band00_mixed_japanese",
+      1110
+    ],
+    [
+      "band10_g_star_label",
+      338
+    ],
+    [
+      "band10_control_icons",
+      84
+    ],
+    [
+      "band11_control_symbols",
+      270
+    ],
+    [
+      "band12_digits_0_to_9",
+      600
+    ],
+    [
+      "band13_digits_0_to_9",
+      512
+    ],
+    [
+      "band13_no_special_attack",
+      592
+    ]
+  ],
+  "indexed_mask_verified_against_preexisting_sha": true,
+  "verification_A_does_not_establish_gpu_runtime": true,
+  "evidence_B": {
+    "new_tool": "tools/f2_tuika_clut2_cobertura.py",
+    "new_tests": "tests/test_f2_tuika_clut2_cobertura.py",
+    "synthetic_tests_authored": 14,
+    "ci_checks_pending_at_report_creation": true
+  },
+  "evidence_C": {
+    "ppsspp_official_executed_in_this_relay": false,
+    "reason": "github.com DNS unavailable, no official PPSSPP binary",
+    "new_game_captures": 0,
+    "tuika_combat_ab_proven": false,
+    "glifs_19_multiscene_proven": false
+  },
+  "protection": {
+    "clut2_global_probe_is_not_safe_translation_patch": true,
+    "white_new_ink_false": true,
+    "event_safe_only": true,
+    "blocked_85": true,
+    "blocked_4524": true,
+    "pr7_open_draft_required": true
+  }
+}

@@ -1573,9 +1573,52 @@
     "recursive_prompt": "prompts/SIGUIENTE_TAREA.md"
   },
   "ultimo_relevo_f2": {
-    "date": "2026-11-23",
-    "status": "F2_OPEN_COMPARADOR_X11_A_B_ISO_AUTH_B16_SYNTH_C_NO_PPSSPP",
-    "doc": "docs/F2_COTEJO_X11_AB_CON_GUARDAS_2026-11-23.md",
-    "preserve_f3_r3": true
+    "fecha": "2026-11-23",
+    "fase": "F2_OPEN_CLUT2_GLOBAL_COLOR_RISK_A_REAL",
+    "fuente": "USA_original_and_probe_binary_256x256_4bpp_CLUT2",
+    "nuevos_texeles_afectados": 9144,
+    "protegidos": 3506,
+    "modificacion_paleta_global_aprobada_para_traduccion": false,
+    "prueba_ppsspp_nueva": false,
+    "preservacion_f3": true,
+    "doc": "docs/F2_IMPACTO_GLOBAL_CLUT2_REAL_2026-11-23.md",
+    "prompt_siguiente": "prompts/SIGUIENTE_TAREA.md"
+  },
+  "f2_clut2_cobertura_2026_11_23": {
+    "state": "F2_OPEN_A_REAL_CLUT2_9144_B_NEW_14_SYNTH_C_NO_PPSSPP",
+    "source_original_iso_sha": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "probe_iso_sha": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa",
+    "exact_three_offsets": [
+      114744872,
+      114744873,
+      114744874
+    ],
+    "atlas": "256x256 A4 indexed",
+    "histogram": {
+      "index0": 45784,
+      "index1": 10608,
+      "index2": 9144
+    },
+    "index2_mask_sha256": "382ae8d2ffa8908979050b5e83f38ec9967b461bbf9b614dd92775da90e409ba",
+    "index2_affected_in_seven_protected_regions": 3506,
+    "index2_strictly_locked": 2576,
+    "index2_provisional_label_regions": 930,
+    "index2_outside_protected": 5638,
+    "digits_band12_index2": 600,
+    "control_icons_band10_index2": 84,
+    "global_clut2_recolor_is_final_patch_safe": false,
+    "runtime_gpu_texture_proven": false,
+    "new_tool": "tools/f2_tuika_clut2_cobertura.py",
+    "new_tests": "tests/test_f2_tuika_clut2_cobertura.py",
+    "test_cases_added": 14,
+    "new_doc": "docs/F2_IMPACTO_GLOBAL_CLUT2_REAL_2026-11-23.md",
+    "new_report": "reports/RESULTADO_F2_CLUT2_COBERTURA_2026-11-23.json",
+    "official_ppsspp_binary_available": false,
+    "pp_sspp_executed_now": false,
+    "concurrent_f3_numeric_preserved": true,
+    "event_safe_only": true,
+    "white_new_ink_default_false": true,
+    "pr7_open_draft_required": true,
+    "final_ci_to_verify": true
   }
 }
