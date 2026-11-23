@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1 Opciones aprobada históricamente, sin nueva regresión; F2 ABIERTA. ISO USA auténtica reautenticada por SHA (305496064 bytes). Nuevo testigo Linux /proc ISO vs PID abierto integrado opcionalmente en capturas PPSSPP WebSocket y en cotejo A/B: distingue FD abierto del archivo en disco de verdadera identidad del juego, NO demostrada. 30 tests procfs SINTÉTICOS locales PASS; 19 tests integrados sintéticos adicionales pendientes de GitHub CI final. PPSSPP AppImage ausente por bloqueo DNS/descarga, cero nuevas capturas PPSSPP, cadena GE/VRAM desconocida, 19 glifos y F1 X11 multicontesto pendientes. F3–F6 pendientes.",
+  "fase_actual": "F3 ACTIVA: origen de introducción inglesa identificado en SCRIPT.SDT/SCRIPT.DAT, demo1001_00.dsf y demo1001_01.dsf, ISO USA ORIGINAL REAL verificó 7 bloques/878 comandos/98 opcodes textuales/97 campos no vacíos. Borrador real GitHub tiene 97/97 traducciones: 85 cambian longitud y quedan protegidas por --event-safe-only, 11 igual longitud distintos, 1 sin cambio. NO integrados/NO PPSSPP nuevo. F2 SIGUE ABIERTA. AppImage PPSSPP oficial v1.20.4 fue ejecutado REAL históricamente en F1 pero NO disponible en este contenedor por DNS/descarga. F4–F6 pendientes.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -194,7 +194,9 @@
     "23/11: TUIKA_MES.IMY original SHA c47140753a462cc5b1cc454ee79e0c37b526f06ba5c663b957a91202ebd09127 descomprimido/unswizzled; 7 subregiones indexadas autenticadas con SHA, 3 separadores transparentes índices0, 9738 posiciones protegidas (solo análisis ISO estático).",
     "23/11: 32 pruebas locales sintéticas PASS para guardia antidaño (sin ISO comercial ni PPSSPP); auditoría independiente de píxeles sobre ISO real PASS.",
     "23/11 relevo procedencia: autenticación real de ISO USA original de usuario 305496064 bytes, SHA b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f, solo lectura.",
-    "23/11 relevo procedencia: 30/30 tests locales SINTÉTICOS PASS Linux /proc PID/stat/cmdline/exe/fd, inodo/dispositivo y cambio de proceso, no PPSSPP."
+    "23/11 relevo procedencia: 30/30 tests locales SINTÉTICOS PASS Linux /proc PID/stat/cmdline/exe/fd, inodo/dispositivo y cambio de proceso, no PPSSPP.",
+    "23/11 F3: ISO comercial USA aportada original comprobada con SHA256 exacto b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f (305496064 bytes), solo lectura; SCRIPT.SDT PSPFS 231, SCRIPT.DAT 7 bloques demo1001/878 comandos/98 opcodes textuales/97 campos no vacíos/2728 bytes, fuente SCRIPT.DAT SHA c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358.",
+    "23/11 F3: GitHub Borrador ES blob 400a9c9ec06f7456b5ec6e11f7502d711b0a976e, 9237 filas; 97 demo1001 traducidas; codec A1-B3 CP932: 85 distintos en longitud bloqueados, 11 candidatos igual longitud, 1 idéntico, total ES 2859 bytes vs original 2728 (no aprobación inserción)."
   ],
   "pruebas_no_ejecutadas": [
     "Prueba PPSSPP valida del candidato extra +1 ideografico en 005709; no aprobado",
@@ -215,7 +217,9 @@
     "22/11 relevo autónomo posterior: PPSSPP oficial AppImage descarga fallida (Github DNS), no prueba A/B con capturas auténticas, no cadena MIPS/RAM/GE/VRAM, no nuevo test de 19 glifos ni regresión ventana X11 F1.",
     "22/11 relevo TUIKA: ningún PPSSPP oficial 1.20.4, no gameplay A/B, sin trazas RAM/GE/VRAM, sin nueva F1 X11 ni 19 glifos multicontesto; GitHub.com DNS falló.",
     "23/11: PPSSPP AppImage v1.20.4 NO DISPONIBLE; wget/curl GitHub bloqueado por DNS; sin screenshots A/B reales, sin traza MIPS/RAM/GE/VRAM, sin regresión nueva Opciones X11 ni QA real 19 glifos.",
-    "23/11 relevo procedencia: PPSSPP AppImage 1.20.4 oficial NO descargado (DNS github.com falla, container.download falló). Sin ejecución de Cladun, imágenes A/B nuevas, PC MIPS ni GE/VRAM nuevos."
+    "23/11 relevo procedencia: PPSSPP AppImage 1.20.4 oficial NO descargado (DNS github.com falla, container.download falló). Sin ejecución de Cladun, imágenes A/B nuevas, PC MIPS ni GE/VRAM nuevos.",
+    "23/11 F3: PPSSPP 1.20.4 oficial Linux AppImage NO descargable por DNS GitHub; no emulación nueva, ni pantallas A/B intro. Evidencias F1 PPSSPP originales históricas sí son válidas, no repetidas.",
+    "23/11 F3: sin reubicación ni inserción de los 85 diálogos de distinta longitud; sin análisis dinámico de referencias/jumps de SCRIPT.DAT; no afirmar F3 terminada."
   ],
   "siguiente_accion": "Continuar F2: trazado real de KITAJIMA_KARI.IMY hasta RAM/VRAM/PC MIPS y GE; ensayar HUD/tutoriales/combate; validar 19 glifos en varias escenas y regresar a F1 960x544 antes de adoptar tinta blanca por defecto.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
@@ -1109,30 +1113,23 @@
   },
   "ultimo_relevo": {
     "fecha": "2026-11-23",
-    "fase": "F2_ABIERTA",
-    "commit_prev": "948e9307ca0adfee613f73da40d0d70604a73b89",
-    "feature": "Instrumentación Linux /proc FD + WebSocket PPSSPP para robustecer procedencia de las ISOs A/B",
-    "new_code": [
-      "tools/f2_iso_proceso_ppsspp.py",
-      "tools/f2_ppsspp_ws_1204.py",
-      "tools/f2_cotejar_capturas_tuika.py"
-    ],
-    "new_tests": [
-      "tests/test_f2_iso_proceso_ppsspp.py",
-      "tests/test_f2_procfs_capture_integration.py",
-      "tests/test_f2_procfs_ab_witness_validation.py"
-    ],
-    "local_synthetic_tests_pass": 30,
-    "ci_final_pending": true,
-    "genuine_iso_verified": true,
-    "source_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
-    "ppsspp_runtime_available": false,
-    "gameplay_capture_count": 0,
-    "iso_fd_snapshot_not_loaded_game_proof": true,
-    "mips_ram_ge_vram_proven": false,
-    "white_new_ink": false,
-    "event_safe_only": true,
-    "pr_draft": true
+    "fase_prioritaria": "F3_INICIADA_F2_ABIERTA",
+    "commit_previo": "1e3acb99ec655de11026438a057eda8dcc96568d",
+    "source_real_original_iso_verified": true,
+    "source_script_intro_n": 97,
+    "spanish_translated": 97,
+    "spanish_different_length_blocked": 85,
+    "ppsspp_historical_appimage_1204_proven": true,
+    "ppsspp_executed_this_relay": false,
+    "no_changed_english_intro_inserted": true,
+    "no_game_bin_or_corpus_modified": true,
+    "new_code": "tools/f3_auditar_intro.py",
+    "new_tests": "tests/test_f3_auditar_intro.py",
+    "new_doc": "docs/F3_INTRO_INTENTO_PPSSPP_Y_ORIGEN_SCRIPTS_2026-11-23.md",
+    "new_report": "reports/RESULTADO_F3_INTRO_ORIGEN_2026-11-23.json",
+    "recursive_prompt_updated": "prompts/SIGUIENTE_TAREA.md",
+    "pr7_draft_required": true,
+    "new_head_actions_to_verify": true
   },
   "f2_procfs_witness_2026_11_23": {
     "schema": "cladun.f2.procfs_relay_status.v1",
@@ -1165,5 +1162,49 @@
     "event_safe_only_required": true,
     "pr7_draft": true,
     "new_head_ci_pending_until_commit": true
+  },
+  "f3_introduccion_2026_11_23": {
+    "fase": "F3_INICIADA_SIN_CIERRE_PPSSPP",
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "original_bytes": 305496064,
+    "script_pspfs_index": 231,
+    "script_pspfs_name": "SCRIPT.SDT",
+    "original_script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+    "original_script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37",
+    "named_source_files": [
+      "demo1001_00.dsf",
+      "demo1001_01.dsf"
+    ],
+    "script_blocks": 7,
+    "original_script_commands": 878,
+    "original_text_opcodes_with_empty": 98,
+    "nonempty_source_fields": 97,
+    "source_original_text_bytes": 2728,
+    "draft_corpus_rows": 9237,
+    "draft_spanish_intro_rows": 97,
+    "spanish_encoded_bytes": 2859,
+    "blocked_unequal_length": 85,
+    "same_length_candidate": 11,
+    "unchanged": 1,
+    "affected_ids": [
+      100100,
+      100101,
+      100110,
+      100120
+    ],
+    "mode_event_safe_only_preserved": true,
+    "white_new_ink": false,
+    "ppsspp_official_1204_executed_historically_f1": true,
+    "ppsspp_official_1204_new_executed": false,
+    "ppsspp_binary_download_current_env": false,
+    "original_iso_modified": false,
+    "original_corpus_modified": false,
+    "new_code": "tools/f3_auditar_intro.py",
+    "new_tests": "tests/test_f3_auditar_intro.py",
+    "public_report": "reports/RESULTADO_F3_INTRO_ORIGEN_2026-11-23.json",
+    "doc": "docs/F3_INTRO_INTENTO_PPSSPP_Y_ORIGEN_SCRIPTS_2026-11-23.md",
+    "private_report_sha256": "5f9865e5932c871b3e7b1a93b46e439fdb1979fd63041bccf404ed638c3bc5a0",
+    "linked_csv_to_original_iso_inside_new_tool_pending_full_run": true,
+    "next": "F3 primero: preparar reubicación y controles de flujo para 85 mensajes demo1001, con prueba real PPSSPP; conservar F2 abierta y 4524 scripts pendientes."
   }
 }

@@ -1,0 +1,30 @@
+name: F3 TEMPORAL obtener PPSSPP 1.20.4 OFICIAL sin juegos
+on:
+  push:
+    branches: [integracion-eventos-segura-20261120]
+permissions:
+  contents: read
+jobs:
+  ppsspp-oficial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Descargar solamente PPSSPP AppImage oficial
+        env:
+          URL: https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-v1.20.4-anylinux-x86_64.AppImage
+        run: |
+          set -eu
+          mkdir -p /tmp/ppsspp-official
+          curl --fail --location --retry 3 --retry-delay 2 --connect-timeout 15 --max-time 180 \
+            "$URL" -o /tmp/ppsspp-official/PPSSPP-v1.20.4-anylinux-x86_64.AppImage
+          test "$(stat --format=%s /tmp/ppsspp-official/PPSSPP-v1.20.4-anylinux-x86_64.AppImage)" -eq 50689748
+          echo "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21  /tmp/ppsspp-official/PPSSPP-v1.20.4-anylinux-x86_64.AppImage" | sha256sum --check
+          file /tmp/ppsspp-official/PPSSPP-v1.20.4-anylinux-x86_64.AppImage
+      - name: Publicar solo binario PPSSPP oficial verificado (sin ISO de Cladun)
+        uses: actions/upload-artifact@v4
+        with:
+          name: cladun-f3-ppsspp-official-v1204-no-games
+          path: /tmp/ppsspp-official/PPSSPP-v1.20.4-anylinux-x86_64.AppImage
+          retention-days: 1
+          compression-level: 0
+          if-no-files-found: error

@@ -1,0 +1,114 @@
+{
+  "schema": "cladun.f3.intro_origin_and_encoding_original_iso_draft.v1",
+  "fecha": "2026-11-23",
+  "fase": "F3_INICIADA_ORIGEN_ESTATICO_CONFIRMADO_NO_JUEGO",
+  "iso_original": {
+    "bytes": 305496064,
+    "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "verified_by_container_sha256sum": true,
+    "commercial_data_committed": false
+  },
+  "source": {
+    "iso9660_path": "PSP_GAME/USRDIR/DATA.DAT",
+    "pspfs": {
+      "index": 231,
+      "name": "SCRIPT.SDT",
+      "member_count": 4
+    },
+    "dsarc_members": [
+      "AISCRIPT.DAT",
+      "AISCRIPT.TBL",
+      "SCRIPT.DAT",
+      "SCRIPT.TBL"
+    ],
+    "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+    "script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37",
+    "script_files": [
+      "demo1001_00.dsf",
+      "demo1001_01.dsf"
+    ],
+    "script_blocks": 7,
+    "script_commands": 878,
+    "text_opcodes_including_one_empty": 98,
+    "nonempty_text_fields": 97,
+    "original_text_bytes": 2728
+  },
+  "draft_spain": {
+    "source": "traduccion/CLADUN_BORRADOR_ES.csv",
+    "blob_sha": "400a9c9ec06f7456b5ec6e11f7502d711b0a976e",
+    "total_rows": 9237,
+    "scene_rows": 97,
+    "scene_rows_with_spanish": 97,
+    "original_total_bytes": 2728,
+    "translated_cp932_spanish_total_bytes": 2859,
+    "change_categories": {
+      "same_bytes_original_and_spanish": 1,
+      "changed_same_length_candidate": 11,
+      "changed_different_length_event_safe_blocked": 85
+    },
+    "by_script_id": {
+      "100100": {
+        "file": "demo1001_00.dsf",
+        "rows": 44,
+        "blocked_unequal": 38,
+        "equal_length_changed": 5,
+        "unchanged": 1
+      },
+      "100101": {
+        "file": "demo1001_01.dsf",
+        "rows": 45,
+        "blocked_unequal": 40,
+        "equal_length_changed": 5,
+        "unchanged": 0
+      },
+      "100110": {
+        "file": "demo1001_01.dsf",
+        "rows": 5,
+        "blocked_unequal": 4,
+        "equal_length_changed": 1,
+        "unchanged": 0
+      },
+      "100120": {
+        "file": "demo1001_01.dsf",
+        "rows": 3,
+        "blocked_unequal": 3,
+        "equal_length_changed": 0,
+        "unchanged": 0
+      }
+    },
+    "corpus_rows_all_source_offset_hex_lengths_consistent": true,
+    "note": "Contadores castellanos del blob real de GitHub y bytes originales de ISO leídos por auditorías independientes; nueva herramienta fail-closed exige comparación individual al ejecutarse con ambos archivos juntos."
+  },
+  "media_inventory": {
+    "iso9660_named_pmf": 0,
+    "pspfs_named_pmf": 0,
+    "proves_no_encoded_video_or_graphic_text": false
+  },
+  "emulator": {
+    "official_ppsspp_1204_lnx_name": "PPSSPP-v1.20.4-anylinux-x86_64.AppImage",
+    "release_url": "https://github.com/hrydgard/ppsspp/releases/tag/v1.20.4",
+    "size_asset_bytes": 50689748,
+    "previous_20261121_real_ppsspp_f1_evidence": true,
+    "available_in_current_container": false,
+    "failed_download_reason": "getaddrinfo github.com DNS temporary failure; direct container.download failed",
+    "new_real_ppsspp_plays": 0,
+    "new_gameplay_png": 0
+  },
+  "integration": {
+    "auto_insertion_attempted": false,
+    "script_relocation_attempted": false,
+    "modified_iso": false,
+    "modified_script_or_corpus": false,
+    "event_safe_only_kept": true,
+    "white_new_ink_kept_false": true,
+    "f2_complete": false,
+    "f3_complete": false,
+    "read_only_provenance_enables_f3": true,
+    "reason": "85/97 intro fields change byte length and are withheld by event-safe-only; no PPSSPP new runtime proof"
+  },
+  "private_artifact": {
+    "path_basename": "F3_INTRO_BYTES_ISO_ORIGINAL_PRIVADO_20261123.json",
+    "sha256": "5f9865e5932c871b3e7b1a93b46e439fdb1979fd63041bccf404ed638c3bc5a0"
+  },
+  "next": "Auditar referencias y saltos de intérprete para 85 cambios de longitud en 4 IDs 100100/100101/100110/100120, sin desactivar event-safe-only. PPSSPP 1.20.4 auténtico cuando acceso disponible. PR #7 draft, F2 F4 F5 F6 pendientes."
+}
