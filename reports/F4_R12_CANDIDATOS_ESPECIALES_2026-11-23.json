@@ -1,0 +1,103 @@
+{
+  "schema": "cladun.f4.r12_operands_id_minus100_or_unmatched.v1",
+  "date": "2026-11-23",
+  "source": "A_AUTHENTIC_USA_ISO_STATIC_NOT_MIPS_OR_PPSSPP",
+  "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+  "script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37",
+  "script_blocks": 1625,
+  "commands": 51705,
+  "nontext_commands": 46308,
+  "script_id_0_exists": false,
+  "opcodes": {
+    "0x0A": {
+      "commands": 862,
+      "matches_operand_minus100": 860,
+      "different_script_ids_matched": 278,
+      "remaining_operands": {
+        "0": 1,
+        "1": 1
+      },
+      "remaining_source_script": "atkDefComment.dsf",
+      "remaining_source_block": 1581,
+      "remaining_offsets": [
+        626762,
+        626776
+      ],
+      "remaining_source_orders": [
+        9,
+        11
+      ]
+    },
+    "0x0B": {
+      "commands": 166,
+      "matches_operand_minus100": 158,
+      "different_script_ids_matched": 139,
+      "remaining_operands": {
+        "3": 8
+      },
+      "remaining_source_script": "mo_atk.dsf",
+      "remaining_source_blocks": [
+        337,
+        338
+      ],
+      "remaining_offsets": [
+        100889,
+        100909,
+        100929,
+        100949,
+        101060,
+        101083,
+        101119,
+        101142
+      ],
+      "trailing_u8_distribution": {
+        "100": 112,
+        "101": 54
+      },
+      "trailing_by_match": {
+        "100:matches_id": 104,
+        "100:unmatched": 8,
+        "101:matches_id": 54
+      }
+    },
+    "0x0C": {
+      "commands": 102,
+      "matches_operand_minus100": 66,
+      "different_script_ids_matched": 61,
+      "remaining_operands": {
+        "100": 36
+      },
+      "remaining_distinct_source_blocks": 34,
+      "remaining_distinct_script_names": 31,
+      "remaining_script_id_zero_available": false
+    }
+  },
+  "source_candidate": {
+    "script": "scr01.dsf",
+    "script_id": 69,
+    "block": 20,
+    "order": 20,
+    "opcode": "0x0A",
+    "instruction_id": 818,
+    "offset_script_dat": 7420,
+    "operand": 100100,
+    "candidate_minus100_script_id": 100000,
+    "candidate_minus100_block": 757,
+    "literal_script_id": 100100,
+    "literal_block": 758
+  },
+  "private_aggregate_readonly_sha256": "c858d33ac0ef8d23186a86f95997bfaea5d608518e7195fc8aa40995b09d4a54",
+  "method": "Parsers independientes ISO9660/PSPFS/DSARC/IMY + 51.705 comandos, clasificacion u32 LE por opcode, sin analisis dinamico. Herramienta publica usa original_script_children y read_commands.",
+  "new_tests_synthetic_local": 17,
+  "tools": [
+    "tools/f4_r12_candidatos_especiales.py",
+    "tests/test_f4_r12_candidatos_especiales.py"
+  ],
+  "ppsspp_executed": false,
+  "mips_semantics_proven": false,
+  "relocalization_authorized": false,
+  "iso_original_modified": false,
+  "commercial_bytes_published": false,
+  "interpretation": "En los tres opcodes, cada argumento es o ID+100 existente, o uno de unos pocos valores sin coincidencia. NO se afirma que esos valores sean centinelas ni que representen saltos."
+}

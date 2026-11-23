@@ -1964,5 +1964,50 @@
     "qa_r11_new_pass": 0,
     "four_areas_closed": false,
     "next": "prompts/SIGUIENTE_TAREA.md"
+  },
+  "relevo_f4_r12_2026_11_23": {
+    "fecha": "2026-11-23",
+    "head_inicial": "41d9a235ff332d0c05efe7c4ce8deb91b386b9e7",
+    "codigo_publicado": "5c6c109356b706838317926c6873e4e49f06abcc",
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "original_script_commands": 51705,
+    "original_nontext_commands": 46308,
+    "opcode_0a": {
+      "total": 862,
+      "minus100_id_match": 860,
+      "unmatched_values": {
+        "0": 1,
+        "1": 1
+      },
+      "special_source_block": 1581
+    },
+    "opcode_0b": {
+      "total": 166,
+      "minus100_id_match": 158,
+      "unmatched_values": {
+        "3": 8
+      },
+      "special_source_blocks": [
+        337,
+        338
+      ]
+    },
+    "opcode_0c": {
+      "total": 102,
+      "minus100_id_match": 66,
+      "unmatched_values": {
+        "100": 36
+      },
+      "special_source_blocks_unique": 34
+    },
+    "new_tests_local_B_pass": 17,
+    "PPSSPP_C_executed": false,
+    "MIPS_semantics_proven": false,
+    "ISO_modified": false,
+    "global_deferred": 4524,
+    "qa_defined": 49,
+    "qa_new_pass": 0,
+    "pr7_merge": false,
+    "next_prompt": "prompts/SIGUIENTE_TAREA.md"
   }
 }
