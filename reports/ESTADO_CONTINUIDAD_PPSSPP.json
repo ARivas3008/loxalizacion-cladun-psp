@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F2 ABIERTA: ISO USA 305496064 B y sonda TUIKA CLUT2 magenta reconstruidas y revalidadas por hash; 3 bytes, PSPFS/DSARC ajenos intactos. Capturador con nuevo modo --ge-only evita fallos de framebuffer al guardar dump GE real, con tests sintéticos; PPSSPP 1.20.4 NO ejecutado en este relevo. TUIKA A/B en combate y 19 glifos multicontexto SIN demostrar; F3–F6 pendientes. | F3-R2: metadatos de topología IMY en USA autenticada; 14 tests sintéticos; 85 eventos y letras del prólogo siguen pendientes; sin PPSSPP nuevo.",
+  "fase_actual": "F2 ABIERTA: ISO USA 305496064 B y sonda TUIKA CLUT2 magenta reconstruidas y revalidadas por hash; 3 bytes, PSPFS/DSARC ajenos intactos. Capturador con nuevo modo --ge-only evita fallos de framebuffer al guardar dump GE real, con tests sintéticos; PPSSPP 1.20.4 NO ejecutado en este relevo. TUIKA A/B en combate y 19 glifos multicontexto SIN demostrar; F3–F6 pendientes. | F3-R2: metadatos de topología IMY en USA autenticada; 14 tests sintéticos; 85 eventos y letras del prólogo siguen pendientes; sin PPSSPP nuevo. | F3-R3: auditor original SCRIPT.DAT detecta coincidencias numéricas de posibles offsets e IDs; no hay semántica MIPS ni reubicación segura, F3 ABIERTA.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -1486,6 +1486,40 @@
     "script_4524_deferred": true,
     "event_safe_only": true,
     "white_new_ink_default_false": true,
+    "pr7_draft_required": true
+  },
+  "f3_r3_referencias_numericas": {
+    "fecha": "2026-11-23",
+    "fase": "F3_ABIERTA",
+    "source_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "source_script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+    "source_script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37",
+    "code": "tools/f3_referencias_riesgo.py",
+    "tests": "tests/test_f3_referencias_riesgo.py",
+    "report": "reports/RESULTADO_F3_REFERENCIAS_RIESGO_2026-11-23.json",
+    "doc": "docs/F3_REFERENCIAS_RIESGO_2026-11-23.md",
+    "coincide_id_script": 4680,
+    "coincide_inicio_script": 39,
+    "coincide_offset_absoluto_comando": 2883,
+    "coincide_offset_absoluto_otro_bloque": 2706,
+    "coincide_offset_relativo_bloque": 1451,
+    "intro_candidates": {
+      "coincide_id_script": 25,
+      "coincide_inicio_script": 1,
+      "coincide_offset_absoluto_comando": 40,
+      "coincide_offset_absoluto_otro_bloque": 40,
+      "coincide_offset_relativo_bloque": 21
+    },
+    "local_synthetic_tests": 11,
+    "local_synthetic_tests_pass": true,
+    "current_ppsspp_real_executed": false,
+    "current_iso_static_verified": true,
+    "all_85_demo1001_still_blocked": true,
+    "all_4524_script_changes_still_blocked": true,
+    "event_safe_only": true,
+    "white_new_ink_default": false,
+    "github_head_ci_final": "PENDIENTE_VERIFICACION_POSTCOMMIT",
+    "preserve_all_f2": true,
     "pr7_draft_required": true
   }
 }
