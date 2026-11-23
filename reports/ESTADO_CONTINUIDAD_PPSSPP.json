@@ -1848,5 +1848,27 @@
     },
     "siguiente_prompt": "prompts/SIGUIENTE_TAREA.md",
     "nota": "No ejecución de PPSSPP ni cambio de ISO; QA documentada y auditable."
+  },
+  "relevo_f4_r8_2026_11_23": {
+    "corte_utc": "2026-11-23T21:29:33Z",
+    "head_previo": "097a6b81056262be91e758fed380ed9f0e7a53f5",
+    "iso_sha256_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "comandos_originales_reparseados": 51705,
+    "comandos_no_textuales": 46308,
+    "bloques_demo1001": 7,
+    "comandos_demo1001": 878,
+    "ventanas_u32": 101659,
+    "coincidencias_id_script_externo": 1,
+    "coincidencias_relativas_21": 21,
+    "referencias_MIPS_probadas": 0,
+    "tests_sinteticos_nuevos_locales_pass": 10,
+    "ppsspp_1_20_4_ejecutado": false,
+    "ge_vram_nuevo": false,
+    "script_cambios_4524_diferidos": true,
+    "prologo_origen_grafico_demostrado": false,
+    "ISO_modificada": false,
+    "romhacking_relocalizacion_autorizada": false,
+    "areas_cerradas": [],
+    "siguiente_prompt": "prompts/SIGUIENTE_TAREA.md"
   }
 }
