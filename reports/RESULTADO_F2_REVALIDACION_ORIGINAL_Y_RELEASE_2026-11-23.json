@@ -1,0 +1,65 @@
+{
+  "schema": "cladun.f2.iso_probe_revalidated_ws_release.v1",
+  "fecha": "2026-11-23",
+  "estado": "F2_ABIERTA_C_NO_EJECUTADO_EN_ESTE_RELEVO",
+  "head_inicio": "b8118782f29c3ae273767f2499da2b778b421858",
+  "evidencia_A": {
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "original_bytes": 305496064,
+    "sonda_sha256": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa",
+    "offsets_diferentes": [
+      114744872,
+      114744873,
+      114744874
+    ],
+    "rgb_original": [
+      249,
+      251,
+      249
+    ],
+    "rgb_sonda": [
+      255,
+      0,
+      255
+    ],
+    "alfa_intacta": true,
+    "tabla_pspfs_intacta": true,
+    "pspfs_vecinos_identicos": 348,
+    "tabla_dsarc_intacta": true,
+    "dsarc_vecinos_identicos": 26,
+    "tuiKA_miembro_original_sha256": "c47140753a462cc5b1cc454ee79e0c37b526f06ba5c663b957a91202ebd09127",
+    "informe_privado_sha256": "d048ab7901be937700a37b83a852b9b845367597dc4bc3c04f3ac9340be33443"
+  },
+  "evidencia_B": {
+    "herramienta": "tools/f2_ruta_ws_liberacion_segura.py",
+    "pruebas": "tests/test_f2_ruta_ws_liberacion_segura.py",
+    "pruebas_focalizadas": 17,
+    "fallos": 0,
+    "alcance": "WebSocket simulado, checkpoint manual, timeout y release con ACK; no emulación",
+    "suite_integral_en_este_relevo": false
+  },
+  "evidencia_C": {
+    "ppsspp_oficial_ejecutado_ahora": false,
+    "motivo": "AppImage y F1 no disponibles; DNS de GitHub falla en la terminal",
+    "nuevas_capturas": 0,
+    "nuevos_ge": 0,
+    "ab_tuika_habilidades": false,
+    "glifos_19_multicontexto": false,
+    "traza_mips_ram_ge_vram": false
+  },
+  "historico_no_revalidado": {
+    "f1_iso_sha256": "496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986",
+    "f1_iso_bytes": 306456576,
+    "ppsspp_appimage_sha256": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21",
+    "ge_mapa_f1_sha256": "d2195fbedd6f430d2a3823db28c12f9f9a9bc789964adefead0bab19298f06b4"
+  },
+  "invariantes": {
+    "corpus": 9237,
+    "traducciones": 9235,
+    "aplazadas": 4524,
+    "white_new_ink": false,
+    "event_safe_only": true
+  },
+  "f2_cerrada": false,
+  "pr7_draft_obligatorio": true
+}
