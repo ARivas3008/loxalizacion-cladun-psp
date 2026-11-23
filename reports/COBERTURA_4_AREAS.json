@@ -49,7 +49,7 @@
     },
     "p0_p1_abiertos": null,
     "cierre_100": false,
-    "matriz_casos_definidos": 49
+    "matriz_casos_definidos": 51
   },
   "evidencias": {
     "A_actual": [
@@ -152,6 +152,27 @@
         },
         "script_id_0_exists": false,
         "semantics_mips_confirmed": false
+      },
+      {
+        "tipo": "F4 R13 grafo numerico de intro original autentica",
+        "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "original_commands": 51705,
+        "links_principales": 5,
+        "opcode_mismo_nombre": {
+          "0x0A": 86,
+          "0x0B": 142,
+          "0x0C": 64
+        },
+        "opcode_coincidencias": {
+          "0x0A": 860,
+          "0x0B": 158,
+          "0x0C": 66
+        },
+        "script_intro_0c_pares": [
+          758,
+          760
+        ],
+        "mips_observed": false
       }
     ],
     "B_actual": [
@@ -192,6 +213,13 @@
         "total": 17,
         "resultado": "PASS_LOCAL_SINTETICO_NO_C",
         "ci_final": "VERIFICAR_DESPUES_DEL_COMMIT"
+      },
+      {
+        "tipo": "F4 R13 18 tests unitarios B sintéticos del grafo",
+        "hechos": 18,
+        "total": 18,
+        "resultado": "PASS_LOCAL_SINTETICO",
+        "CI_final": "VERIFICAR_DESPUES_PUBLICACION"
       }
     ],
     "B_historica": [
@@ -216,7 +244,8 @@
     "R9: coincidencia 0x0A desde scr01.dsf/20/20 offset SCRIPT.DAT 7420 -> valor100100, NO validada como llamada en MIPS real; 21 aparentes saltos son 6 patrones de enteros comunes.",
     "F4-R10: tres opcodes 0x0A/0x0B/0x0C muestran coincidencias SCRIPT ID pero no semantica MIPS; PPSSPP 1.20.4 no disponible por DNS en terminal; 4524 textos variables siguen diferidos.",
     "R11: opcode 0x0A u32=100100 puede apuntar al ID 100000/bloque757 bajo candidato +100; NO validar como salto hasta observar MIPS real; 0x0B u32=3 posible centinela, significado desconocido",
-    "R12: 0x0C tiene 36 valores 100 sin coincidencia tras −100, mientras los 66 restantes sí coinciden. Falta MIPS real para demostrar significados y control de flujo. 4524 diálogos variables siguen aplazados."
+    "R12: 0x0C tiene 36 valores 100 sin coincidencia tras −100, mientras los 66 restantes sí coinciden. Falta MIPS real para demostrar significados y control de flujo. 4524 diálogos variables siguen aplazados.",
+    "R13: grafo numérico de cinco enlaces entre scr01 y demo1001, sin lectura ejecutada MIPS. EBOOT ~PSP, PPSSPP oficial 1.20.4 no disponible y terminal sin DNS github.com; reubicacion de 4524 cambios variable bloqueada."
   ],
   "siguiente_relevo": "prompts/SIGUIENTE_TAREA.md",
   "advertencia": "Los denominadores de cobertura contextual, gráficos y casos totales no están certificados. La matriz inicial no es universo completo. Ningún 100% de las cuatro áreas está verificado."

@@ -2009,5 +2009,69 @@
     "qa_new_pass": 0,
     "pr7_merge": false,
     "next_prompt": "prompts/SIGUIENTE_TAREA.md"
+  },
+  "relevo_f4_r13_2026_11_23": {
+    "fecha": "2026-11-23",
+    "head_inicio": "cc335be8939214a9202ca324901b7e4ee3cc0a6c",
+    "commit_codigo": "1bc8baae4ff94f1fc88a5b37ac7d8c5532edb7cc",
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "original_commands": 51705,
+    "candidate_intro_links": [
+      {
+        "source_block": 20,
+        "source_order": 20,
+        "opcode": "0x0A",
+        "operand": 100100,
+        "shifted_target_block": 757,
+        "literal_target_block": 758
+      },
+      {
+        "source_block": 757,
+        "source_order": 2,
+        "opcode": "0x0A",
+        "operand": 100200,
+        "shifted_target_block": 758,
+        "literal_target_block": 764
+      },
+      {
+        "source_block": 758,
+        "source_order": 1,
+        "opcode": "0x0C",
+        "operand": 100290,
+        "shifted_target_block": 759,
+        "literal_target_block": 765
+      },
+      {
+        "source_block": 758,
+        "source_order": 416,
+        "opcode": "0x0A",
+        "operand": 100201,
+        "shifted_target_block": 760,
+        "literal_target_block": 766
+      },
+      {
+        "source_block": 760,
+        "source_order": 1,
+        "opcode": "0x0C",
+        "operand": 100291,
+        "shifted_target_block": 761,
+        "literal_target_block": null
+      }
+    ],
+    "graph_same_filename": {
+      "0x0A": 86,
+      "0x0B": 142,
+      "0x0C": 64
+    },
+    "new_synthetic_tests_local_pass": 18,
+    "official_PPSSPP_1204_available": false,
+    "MIPS_trace_real": false,
+    "original_assets_modified": false,
+    "variable_replacements_deferred": 4524,
+    "qa_cases_defined": 51,
+    "qa_new_executed": 0,
+    "closure_four_areas": false,
+    "PR7_merge": false,
+    "next": "prompts/SIGUIENTE_TAREA.md"
   }
 }
