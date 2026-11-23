@@ -15,7 +15,7 @@ La descarga al contenedor fracasó (`Could not resolve host: github.com` y fallo
 
 Se incorpora `tools/f2_iso_proceso_ppsspp.py` (independiente, sin terceros) y se amplía `tools/f2_ppsspp_ws_1204.py`, **optativamente**:
 
-1. Validar **SHA completo y tamaño de la ISO en disco**, de las dos variantes permitidas: USA `b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f` o TUIKA magenta `b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa`.
+1. Validar **SHA completo y tamaño de la ISO en disco**, de las dos variantes permitidas: USA `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f` o TUIKA magenta `b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa`.
 2. Muestrear `/proc/<pid>/stat` (campo Linux 22: starttime, incluso si `comm` contiene paréntesis), `cmdline` (comparación del argumento completo, nunca subcadena), `exe` (solo indicio de nombre de ejecutable) y `fd` (comparación `st_dev`+`st_ino`+`st_size` de los descriptores abiertos).
 3. Capturar dos PNG **solo si hay PPSSPP real conectado** mediante WebSocket oficial. Muestrear de nuevo el proceso, confirmar PID y starttime iguales, y **recalcular SHA ISO al terminar**; abortar si cambió inodo/archivo. No registrar rutas privadas ni imágenes dentro del JSON de procedencia.
 4. El testigo informa si el **mismo inodo de ISO** seguía abierto antes y después de capturar. Si fue cerrado/abierto solo durante un instante o se desmapeó, queda **desconocido**, no «ISO distinta». No demuestra que ese PID sirva el puerto del debugger, ni que el ISO fuese cargado como juego, ni la procedencia de TUIKA en GE/VRAM.
