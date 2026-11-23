@@ -100,7 +100,8 @@ def load_capture(manifest_path: Path, repo: Path) -> dict:
     return {'manifest_sha256': file_sha(src), 'scene': scene, 'version': data['ppsspp'],
             'game_title': data['game']['title'], 'frames': frames,
             'capture_times_advance': independent_times,
-            'dimensions': [list(f.size) for f in frames]}
+            'dimensions': [list(f.size) for f in frames],
+            'runtime_iso_evidence':data.get('runtime_iso_evidence')}
 
 
 def magenta(color: tuple[int, int, int]) -> bool:
@@ -142,6 +143,25 @@ def compare_pair(before: Image.Image, after: Image.Image) -> dict:
             'manual_scene_alignment_required': True}
 
 
+def evidence_summary(evidence: object, sha: str, role: str) -> dict:
+    """Never upgrade a self-declared witness to verified loaded-game identity."""
+    if evidence is None:
+        return {'manifest_has_procfs_witness':False,'reported_fd_open_before_after':False,
+                'loaded_game_iso_identity_proven':False}
+    if (not isinstance(evidence,dict) or
+        evidence.get('schema') != 'cladun.f2.ppsspp_procfs_capture_corroboration.v1' or
+        evidence.get('source_iso_sha256_verified_twice') != sha or
+        evidence.get('source_iso_role') != role or
+        not isinstance(evidence.get('paired'),dict) or
+        evidence['paired'].get('is_conclusive_proof_of_loaded_iso') is not False or
+        evidence.get('runtime_loaded_iso_identity_proven') is not False):
+        raise ValueError('Manifest declara testigo /proc inconsistente con ISO o evidencia')
+    return {'manifest_has_procfs_witness':True,
+            'reported_fd_open_before_after':evidence['paired'].get('same_inode_open_before_and_after') is True,
+            'loaded_game_iso_identity_proven':False,
+            'warning':'Declaración desde manifiesto privado: no certifica el juego en PPSSPP.'}
+
+
 def audit(usa_manifest: Path, probe_manifest: Path, usa_iso: Path, probe_iso: Path,
           output: Path, repo: Path) -> dict:
     output = private_path(output, repo, for_output=True)
@@ -159,6 +179,9 @@ def audit(usa_manifest: Path, probe_manifest: Path, usa_iso: Path, probe_iso: Pa
         raise ValueError('Capturas A/B no pueden compartir directorio')
     if a['scene'] != b['scene'] or a['version'] != b['version'] or a['game_title'] != b['game_title']:
         raise ValueError('Versiones, escenas o título del juego no coinciden')
+    procfs_summaries={
+        'original':evidence_summary(a['runtime_iso_evidence'],USA_SHA,'USA_original'),
+        'probe':evidence_summary(b['runtime_iso_evidence'],PROBE_SHA,'TUIKA_magenta_probe')}
     result = {'schema': 'cladun.f2.tuika_ppsspp_ab_metadata.v1',
               'scope': 'COMPARACION_ARCHIVOS_PRIVADOS_NO_AUTENTICA_JUEGO_POR_SI_SOLA',
               'scene': a['scene'], 'ppsspp_declared': a['version'],
@@ -167,6 +190,7 @@ def audit(usa_manifest: Path, probe_manifest: Path, usa_iso: Path, probe_iso: Pa
               'capture_times_advance': {'original': a['capture_times_advance'],
                                         'probe': b['capture_times_advance']},
               'pairs': [compare_pair(x, y) for x, y in zip(a['frames'], b['frames'])],
+              'optional_procfs_witness_declared_in_manifest':procfs_summaries,
               'frame_alignment_verified': False,
               'runtime_loaded_iso_identity_proven': False,
               'tuika_texture_runtime_origin_proven': False,

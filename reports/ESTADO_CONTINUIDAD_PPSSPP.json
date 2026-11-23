@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F1 Opciones aprobada históricamente (sin regresión nueva); F2 ABIERTA. ISO USA real 305496064 bytes verificada otra vez, TUIKA original 256×256 decodificada. NUEVO: 7 subregiones autenticadas por SHA, tres separadores totalmente índice0, 9738 posiciones de dígitos/iconos/mixto bloqueadas, 32 tests sintéticos locales PASS, ninguna ROI editable aprobada. PPSSPP 1.20.4 no disponible por DNS, sin nuevo gameplay/capturas A/B/MIPS→GE/VRAM, 19 glifos multicontesto y regresión X11 pendientes. F3–F6 pendientes.",
+  "fase_actual": "F1 Opciones aprobada históricamente, sin nueva regresión; F2 ABIERTA. ISO USA auténtica reautenticada por SHA (305496064 bytes). Nuevo testigo Linux /proc ISO vs PID abierto integrado opcionalmente en capturas PPSSPP WebSocket y en cotejo A/B: distingue FD abierto del archivo en disco de verdadera identidad del juego, NO demostrada. 30 tests procfs SINTÉTICOS locales PASS; 19 tests integrados sintéticos adicionales pendientes de GitHub CI final. PPSSPP AppImage ausente por bloqueo DNS/descarga, cero nuevas capturas PPSSPP, cadena GE/VRAM desconocida, 19 glifos y F1 X11 multicontesto pendientes. F3–F6 pendientes.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -192,7 +192,9 @@
     "22/11 relevo TUIKA: nuevo script de informe no gráfico con 23/23 tests SINTÉTICOS locales PASS (dependencias equivalentes locales); auditor en ISO auténtica PASS (SHA, CLUT, medidas).",
     "23/11: 7z de usuario extraído mediante libarchive, ISO original 305496064 bytes con SHA completo b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f y sin modificaciones.",
     "23/11: TUIKA_MES.IMY original SHA c47140753a462cc5b1cc454ee79e0c37b526f06ba5c663b957a91202ebd09127 descomprimido/unswizzled; 7 subregiones indexadas autenticadas con SHA, 3 separadores transparentes índices0, 9738 posiciones protegidas (solo análisis ISO estático).",
-    "23/11: 32 pruebas locales sintéticas PASS para guardia antidaño (sin ISO comercial ni PPSSPP); auditoría independiente de píxeles sobre ISO real PASS."
+    "23/11: 32 pruebas locales sintéticas PASS para guardia antidaño (sin ISO comercial ni PPSSPP); auditoría independiente de píxeles sobre ISO real PASS.",
+    "23/11 relevo procedencia: autenticación real de ISO USA original de usuario 305496064 bytes, SHA b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f, solo lectura.",
+    "23/11 relevo procedencia: 30/30 tests locales SINTÉTICOS PASS Linux /proc PID/stat/cmdline/exe/fd, inodo/dispositivo y cambio de proceso, no PPSSPP."
   ],
   "pruebas_no_ejecutadas": [
     "Prueba PPSSPP valida del candidato extra +1 ideografico en 005709; no aprobado",
@@ -212,7 +214,8 @@
     "22/11 nuevo relevo: no se acreditó la identidad de ISO cargada en runtime, uso de TUIKA en pantalla, cadena MIPS/RAM/GE/VRAM ni prueba multicontesto de los 19 glifos.",
     "22/11 relevo autónomo posterior: PPSSPP oficial AppImage descarga fallida (Github DNS), no prueba A/B con capturas auténticas, no cadena MIPS/RAM/GE/VRAM, no nuevo test de 19 glifos ni regresión ventana X11 F1.",
     "22/11 relevo TUIKA: ningún PPSSPP oficial 1.20.4, no gameplay A/B, sin trazas RAM/GE/VRAM, sin nueva F1 X11 ni 19 glifos multicontesto; GitHub.com DNS falló.",
-    "23/11: PPSSPP AppImage v1.20.4 NO DISPONIBLE; wget/curl GitHub bloqueado por DNS; sin screenshots A/B reales, sin traza MIPS/RAM/GE/VRAM, sin regresión nueva Opciones X11 ni QA real 19 glifos."
+    "23/11: PPSSPP AppImage v1.20.4 NO DISPONIBLE; wget/curl GitHub bloqueado por DNS; sin screenshots A/B reales, sin traza MIPS/RAM/GE/VRAM, sin regresión nueva Opciones X11 ni QA real 19 glifos.",
+    "23/11 relevo procedencia: PPSSPP AppImage 1.20.4 oficial NO descargado (DNS github.com falla, container.download falló). Sin ejecución de Cladun, imágenes A/B nuevas, PC MIPS ni GE/VRAM nuevos."
   ],
   "siguiente_accion": "Continuar F2: trazado real de KITAJIMA_KARI.IMY hasta RAM/VRAM/PC MIPS y GE; ensayar HUD/tutoriales/combate; validar 19 glifos en varias escenas y regresar a F1 960x544 antes de adoptar tinta blanca por defecto.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
@@ -1107,67 +1110,60 @@
   "ultimo_relevo": {
     "fecha": "2026-11-23",
     "fase": "F2_ABIERTA",
-    "commit_previo": "1c404406c100cd6a376e1941d473d943cf9312d3",
-    "codigo": "tools/f2_tuika_proteger_subregiones.py",
-    "pruebas": "tests/test_f2_tuika_proteger_subregiones.py",
-    "documento": "docs/F2_TUIKA_SUBREGIONES_PROTEGIDAS_2026-11-23.md",
-    "informe": "reports/RESULTADO_F2_TUIKA_SUBREGIONES_2026-11-23.json",
-    "iso_original_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
-    "member_sha256": "c47140753a462cc5b1cc454ee79e0c37b526f06ba5c663b957a91202ebd09127",
-    "unswizzled_linear_index_sha256": "a3da2c0d728288c2842b0d9164f4dd220c4713eaa19b3559ef7105f837f8106d",
-    "regiones_protegidas_o_bloqueadas_sha_authenticadas": 7,
-    "separadores_totalmente_transparentes_index0": 3,
-    "indexados_bloqueados_por_guarda": 9738,
-    "franja10": {
-      "rotulo": [
-        4,
-        181,
-        79,
-        196
-      ],
-      "simbolos": [
-        92,
-        181,
-        115,
-        196
-      ],
-      "separador_vacio": [
-        80,
-        181,
-        91,
-        196
-      ]
-    },
-    "franja13": {
-      "digitos": [
-        1,
-        236,
-        108,
-        249
-      ],
-      "mensaje": [
-        112,
-        236,
-        248,
-        249
-      ],
-      "separador_vacio": [
-        109,
-        236,
-        111,
-        249
-      ]
-    },
-    "editing_roi_approved": false,
-    "any_iso_or_corpus_modified": false,
-    "local_synthetic_tests_pass": 32,
-    "private_analysis_report_sha256": "ab23878975415fed52ba0f97cdca4f75be973ab1b52768459397e82b51138439",
-    "ppsspp_1204_executed": false,
-    "actual_ppsspp_pngs": 0,
-    "full_mips_ram_ge_vram_trace": false,
-    "glyphs_19_multicontext_runtime": false,
-    "f1_real_x11_regression_retested": false,
-    "pr7_draft_required": true,
-    "final_commit_actions_to_recheck": true
+    "commit_prev": "948e9307ca0adfee613f73da40d0d70604a73b89",
+    "feature": "Instrumentación Linux /proc FD + WebSocket PPSSPP para robustecer procedencia de las ISOs A/B",
+    "new_code": [
+      "tools/f2_iso_proceso_ppsspp.py",
+      "tools/f2_ppsspp_ws_1204.py",
+      "tools/f2_cotejar_capturas_tuika.py"
+    ],
+    "new_tests": [
+      "tests/test_f2_iso_proceso_ppsspp.py",
+      "tests/test_f2_procfs_capture_integration.py",
+      "tests/test_f2_procfs_ab_witness_validation.py"
+    ],
+    "local_synthetic_tests_pass": 30,
+    "ci_final_pending": true,
+    "genuine_iso_verified": true,
+    "source_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "ppsspp_runtime_available": false,
+    "gameplay_capture_count": 0,
+    "iso_fd_snapshot_not_loaded_game_proof": true,
+    "mips_ram_ge_vram_proven": false,
+    "white_new_ink": false,
+    "event_safe_only": true,
+    "pr_draft": true
+  },
+  "f2_procfs_witness_2026_11_23": {
+    "schema": "cladun.f2.procfs_relay_status.v1",
+    "source_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "source_iso_rehash_locally_verified": true,
+    "ppsspp_official_linux_1204_appimage_asset_bytes": 50689748,
+    "appimage_expected_sha256": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21",
+    "appimage_download_success": false,
+    "script": "tools/f2_iso_proceso_ppsspp.py",
+    "capture_integrated": "tools/f2_ppsspp_ws_1204.py",
+    "ab_cotejador": "tools/f2_cotejar_capturas_tuika.py",
+    "tests": [
+      "tests/test_f2_iso_proceso_ppsspp.py",
+      "tests/test_f2_procfs_capture_integration.py",
+      "tests/test_f2_procfs_ab_witness_validation.py"
+    ],
+    "report": "reports/RESULTADO_F2_PROCEDENCIA_ISO_PROCFS_2026-11-23.json",
+    "doc": "docs/F2_PROCEDENCIA_ISO_PROCESO_PPSSPP_2026-11-23.md",
+    "local_synthetic_procfs_tests_pass": 30,
+    "other_integrated_synthetic_tests_in_github_actions_expected": 19,
+    "private_report_sha256": "faaadcabef4676eee68af90728f09f3de28cb25e4edaff7a2250833a992ba145",
+    "actual_ppsspp_process_observed": false,
+    "runtime_loaded_iso_identity_proven": false,
+    "websocket_server_pid_correlated": false,
+    "linux_procfs_fd_evidence_only_no_gameplay": true,
+    "user_source_iso_modified": false,
+    "corpus_modified": false,
+    "commercial_game_payload_committed": false,
+    "white_new_ink_still_false": true,
+    "event_safe_only_required": true,
+    "pr7_draft": true,
+    "new_head_ci_pending_until_commit": true
   }
 }

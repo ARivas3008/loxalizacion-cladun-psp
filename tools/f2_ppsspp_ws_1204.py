@@ -146,15 +146,54 @@ def capture(client,scene,folder,ge_dump=False):
                 shots[1]['emulated_ticks_at_pause']>shots[0]['emulated_ticks_at_pause'],
             'f1_960x544_window_regression_proven':False}
 
+def capture_with_iso_witness(client, scene, folder, ge_dump, pid, iso, expected_sha, proc_root=Path('/proc')):
+    """Bind a procfs fd snapshot before/after GPU capture to the SAME PID.
+
+    Does NOT establish that this PID serves the WS endpoint, or that its open
+    ISO is the in-game image. A missing FD is inconclusive. Never invent proof.
+    """
+    try:
+        from tools.f2_iso_proceso_ppsspp import validate_iso, proc_snapshot, paired_observations
+    except ModuleNotFoundError:
+        from f2_iso_proceso_ppsspp import validate_iso, proc_snapshot, paired_observations
+    validated=validate_iso(iso,expected_sha)
+    first=proc_snapshot(pid,iso,proc_root)
+    if not first['ppsspp_executable_name_hint']:
+        raise ValueError('PID no corresponde a ejecutable nominalmente PPSSPP/AppRun')
+    captures=capture(client,scene,folder,ge_dump)
+    last=proc_snapshot(pid,iso,proc_root)
+    # Fail closed if the ISO was mutated in place while screenshots were taken.
+    revalidated=validate_iso(iso,expected_sha)
+    if revalidated['inode']!=validated['inode'] or revalidated['device']!=validated['device']:
+        raise ValueError('La ISO cambió de inodo durante la captura')
+    paired=paired_observations(first,last)
+    return captures,{
+        'schema':'cladun.f2.ppsspp_procfs_capture_corroboration.v1',
+        'source_iso_sha256_verified_twice':validated['source_iso_sha256'],
+        'source_iso_role':validated['expected_label'],
+        'before':first,'after':last,'paired':paired,
+        'websocket_server_pid_correlated':False,
+        'runtime_loaded_iso_identity_proven':False,
+        'mips_ram_ge_vram_proven':False,
+        'warning':'Un fd abierto por PPSSPP durante capturas solo corrobora acceso; NO certifica ISO cargada ni origen de la textura.'
+    }
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--scene',required=True)
     parser.add_argument('--salida-privada',type=Path,required=True)
     parser.add_argument('--port',type=int,default=24192)
     parser.add_argument('--ge-dump',action='store_true')
+    parser.add_argument('--pid-ppsspp',type=int,help='PID Linux para observación /proc antes/después')
+    parser.add_argument('--iso-en-proceso',type=Path,help='ISO original o sonda privada autenticada por SHA')
+    parser.add_argument('--tipo-iso',choices=('usa','sonda'))
     args=parser.parse_args()
     if not re.fullmatch('[A-Za-z0-9_-]{1,48}',args.scene):parser.error('Escena inválida')
     if not 1<=args.port<=65535:parser.error('Puerto incorrecto')
+    witness_args=(args.pid_ppsspp is not None,args.iso_en_proceso is not None,args.tipo_iso is not None)
+    if any(witness_args) and not all(witness_args):
+        parser.error('Para observar /proc se requieren --pid-ppsspp, --iso-en-proceso y --tipo-iso juntos')
     folder=output_dir(args.salida_privada,Path(__file__).resolve().parents[1])
     try:import websocket
     except ImportError as exc:raise RuntimeError('Instalar websocket-client para conectar a PPSSPP') from exc
@@ -172,11 +211,23 @@ def main():
             raise RuntimeError('Cladun no está iniciado')
         # PC conocido corresponde a búsqueda de TEXTO, NO dibujo de iconos.
         mips=client.request('memory.disasm',address=0x089089A0,count=32).get('lines',[])
+        if all(witness_args):
+            try:
+                from tools.f2_iso_proceso_ppsspp import SOURCE_SHA, PROBE_SHA
+            except ModuleNotFoundError:
+                from f2_iso_proceso_ppsspp import SOURCE_SHA, PROBE_SHA
+            expected=SOURCE_SHA if args.tipo_iso=='usa' else PROBE_SHA
+            shots,iso_witness=capture_with_iso_witness(client,args.scene,folder,args.ge_dump,
+                args.pid_ppsspp,args.iso_en_proceso,expected)
+        else:
+            shots,iso_witness=capture(client,args.scene,folder,args.ge_dump),None
         report={'schema':'cladun.f2.ppsspp_private_v1204.v1',
                 'runtime':'PPSSPP REAL SOLO CUANDO SE CONECTA A UN EMULADOR',
                 'ppsspp':ver.get('version'),'game':game,'scene':args.scene,
                 'mips_lookup_text':mips,
-                'captures':capture(client,args.scene,folder,args.ge_dump),
+                'captures':shots,
+                'runtime_iso_evidence':iso_witness,
+                'runtime_loaded_iso_identity_proven':False,
                 'ge_vram_pipeline_proven':False,
                 'nineteen_glyphs_multiscene_proven':False}
         encoded=(json.dumps(report,ensure_ascii=False,indent=2)+'\n').encode()
