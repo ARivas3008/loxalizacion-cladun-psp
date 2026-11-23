@@ -31,7 +31,7 @@ Leer completos: AGENTS.md, README.md, prompts/SIGUIENTE_TAREA.md, reports/ESTADO
 
 ## 2. Binarios originales, hashes, privacidad
 
-ISO USA aportada: **305496064 bytes** SHA256 **b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f**. ISO F1 española canónica histórica: **306456576 bytes** SHA256 **496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986**. BPS F1 histórico SHA256 **daaa64ab1994271debc6464f3c70ab0f30a2ab3f9a1743dbd6a65f3c88d20acd**. PPSSPP oficial 1.20.4 AppImage Linux x86_64 **50689748 bytes**, SHA256 **661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21**, URL https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-v1.20.4-anylinux-x86_64.AppImage. No ejecutar sin hash autenticado.
+ISO USA aportada: **305496064 bytes** SHA256 **b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f**. ISO F1 española canónica histórica: **306456576 bytes** SHA256 **496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986**. BPS F1 histórico SHA256 **daaa64ab1994271debc6464f3c70ab0f30a2ab3f9a1743dbd6a65f3c88d20acd**. PPSSPP oficial 1.20.4 AppImage Linux x86_64 **50689748 bytes**, SHA256 **661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21**, URL https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-v1.20.4-anylinux-x86_64.AppImage. No ejecutar sin hash autenticado.
 
 **NUNCA versionar ni distribuir ISO, BPS, DATA.DAT, PSP EBOOT, fuentes, IMY, fondos, sprites, capturas/PNG de PPSSPP, vídeos o dumps RAM/GE/VRAM.** Solo código propio, tests sintéticos, informes agregados de métricas y documentos. La ISO y sondas deben permanecer fuera del checkout; original inmutable.
 
