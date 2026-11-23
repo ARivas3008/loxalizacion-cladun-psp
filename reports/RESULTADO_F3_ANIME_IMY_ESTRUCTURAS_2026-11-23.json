@@ -1,0 +1,61 @@
+{
+  "schema": "cladun.f3.anime_imy_static_readonly.v1",
+  "evidence": "A_ORIGINAL_ISO_STATIC; NOT_C_PPSSPP",
+  "usa_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "usa_iso_size": 305496064,
+  "pspfs_entries": 349,
+  "resources": {
+    "234": {
+      "name": "ANIME000.IDT",
+      "stored_bytes": 3537936,
+      "sha256": "0e57353eb1d5f9688164b3453e57b0fd91ff77dee8e422844ba3fb0fef32eb37",
+      "first_u32_unsigned": 192,
+      "imy_header_occurrences": 231,
+      "header_types": {
+        "0x00": 136,
+        "0x02": 95
+      },
+      "legacy_flags_probe_by_type": {
+        "0x00": {
+          "ALGORITMO_LEGADO_CONSUME_FLAGS": 136
+        },
+        "0x02": {
+          "LONGITUD_DISTINTA": 40,
+          "LOOKBACK_INVALIDO": 55
+        }
+      },
+      "frame_count_or_intro_resource_proven": false
+    },
+    "235": {
+      "name": "ANIME001.LDT",
+      "stored_bytes": 287472,
+      "sha256": "cb7f1354e38ced1a5b19f36c2b45d939e59094e33de901d4b43dc8d65faaa174",
+      "first_u32_unsigned": 24,
+      "imy_header_occurrences": 24,
+      "header_types": {
+        "0x00": 24
+      },
+      "legacy_flags_probe_by_type": {
+        "0x00": {
+          "ALGORITMO_LEGADO_CONSUME_FLAGS": 24
+        }
+      },
+      "frame_count_or_intro_resource_proven": false
+    },
+    "236": {
+      "name": "ANIME002.LDT",
+      "stored_bytes": 2067856,
+      "sha256": "e1617dd4aea349f60953db9471e53c1524e9c3184b2566a4a732c3ecc756eec6",
+      "first_u32_unsigned": 39,
+      "imy_header_occurrences": 0,
+      "header_types": {},
+      "legacy_flags_probe_by_type": {},
+      "frame_count_or_intro_resource_proven": false
+    }
+  },
+  "game_assets_modified": false,
+  "textures_exported": false,
+  "visual_prologue_text_source_proven": false,
+  "runtime_ppsspp_executed_by_this_tool": false,
+  "conclusion": "IMY type 0x00 is compatible with the legacy flags algorithm in this read-only experiment; 0x02 is not. Neither result identifies intro lettering."
+}

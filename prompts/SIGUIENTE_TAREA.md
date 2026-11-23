@@ -1,91 +1,127 @@
-# CLADUN ES — RELEVO AUTÓNOMO F3: PRÓLOGO INGLÉS, ANIME000 Y 85 EVENTOS; F2 ABIERTA Y F4–F6
+# CLADUN ES — NUEVO RELEVO AUTÓNOMO F3-R2: IMY 0x02, ORIGEN DEL PRÓLOGO, 85 EVENTOS; F2 Y F4–F6 ABIERTAS
 
-Actúa como ingeniero sénior de PSP MIPS, PPSSPP oficial 1.20.4, depuración WebSocket/GE/VRAM, ISO9660/PSPFS/DSARC, animaciones IMY y codec CP932 español. REALIZA pruebas auténticas, modifica código solo con causalidad y verificaciones, actualiza GitHub y entrega evidencias. No inventes imágenes, hashes, memoria, instrucciones, datos de juego ni pruebas que no hayas ejecutado. Diferencia evidencia (A) original real, (B) tests sintéticos/CI y (C) PPSSPP auténtico.
+**Fecha:** 23/11/2026. **Mandato:** actúa como ingeniero sénior PSP MIPS, PPSSPP oficial 1.20.4, WebSocket/GE/VRAM, ISO9660/PSPFS/DSARC, IMY y CP932 español. REALIZA trabajo comprobable, pruebas y cambios de código solamente con causalidad; no te limites a aconsejar. Clasifica siempre evidencia (A) binarios originales auténticos, (B) sintético/CI y (C) PPSSPP real. No inventes imágenes, hashes, PCs, dumps, tests o éxitos.
 
-**OBLIGACIÓN RECURSIVA INNEGOCIABLE:** Al terminar REESCRIBE COMPLETAMENTE prompts/SIGUIENTE_TAREA.md con un OTRO PROMPT NUEVO completo, autónomo, actualizado con estado, archivos, hashes, comandos y pendientes; ese prompt vuelve a ordenar la MISMA REGENERACIÓN RECURSIVA hasta F2–F6 realmente completadas. Muéstralo íntegro al usuario y no prometas trabajo en segundo plano.
+## 0. OBLIGACIÓN RECURSIVA INNEGOCIABLE
 
-## 1. Repositorio y contratos
+**AL CONCLUIR, REESCRIBE COMPLETAMENTE prompts/SIGUIENTE_TAREA.md CON UN OTRO PROMPT NUEVO, ÍNTEGRO, AUTÓNOMO Y ACTUALIZADO**, incluyendo estado, archivos, hashes, comandos, resultados de CI, bloqueos y la **MISMA OBLIGACIÓN RECURSIVA** hasta que F2–F6 se completen REALMENTE. Muéstralo íntegro al usuario. Nunca prometas trabajo asíncrono o en segundo plano.
+
+## 1. Contrato de GitHub y archivos obligatorios
 
 - Repo https://github.com/ARivas3008/loxalizacion-cladun-psp
-- Rama integracion-eventos-segura-20261120. PR #7 https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7, base revision-manual-dialogos. Mantener ABIERTO, DRAFT, sin merge, sin force push.
-- Último HEAD antes de añadir este relevo F3 A/B/A: 1fd924f0a5b06769b1a060f1778cd2f02621e628; la rama había incorporado cambios F2 adicionales y se conservarán al hacer commit. Es histórico, por lo que comprobar SHA ACTUAL, tree, PR y dos GitHub Actions de push y pull_request en HEAD FINAL, no los del anterior.
-- Leer completos AGENTS.md, README.md, prompts/SIGUIENTE_TAREA.md, reports/ESTADO_CONTINUIDAD_PPSSPP.json, docs/F3_INTRO_INTENTO_PPSSPP_Y_ORIGEN_SCRIPTS_2026-11-23.md, docs/F3_PROLOGO_ANIME000_DEPENDENCIA_PPSSPP_REAL_2026-11-23.md, reports/RESULTADO_F3_PROLOGO_ANIME000_2026-11-23.json, tools/f3_auditar_intro.py, tools/f3_sonda_anime000_auditar.py y tests/test_f3_sonda_anime000_auditar.py.
-- Conservar los trabajos F2 de 23/11: docs/F2_WS_REAL_F1_CONTROLES_GE_2026-11-23.md y docs/F2_PPSSPP_REAL_X11_AB_TUIKA_2026-11-23.md; tools/f2_ws_procedencia_ppsspp.py, tools/f2_ppsspp_ws_1204.py, tools/f2_ge_dump_1204.py, tools/f2_tuika_proteger_subregiones.py y reports respectivos. Leer docs/RESULTADO_F1_PPSSPP_2026-11-21.md, tools/script_event_guard.py, tools/integrar_parche_seguro.py, tools/charset_es.py y tests de integración.
-- Prohibido publicar ISO, BPS, DATA.DAT, PSP EBOOT, animaciones, IMY, fuentes comerciales, PNG de juego, capturas de PPSSPP, RAM, GPU/GE/VRAM ni binarios de los juegos. Solamente código, tests sintéticos, métricas y hashes públicos; evidencia gráfica y sonda ISO, SOLO PRIVADAS, fuera de Git. No editar el corpus original ni la rama base.
+- Rama integracion-eventos-segura-20261120. PR #7 https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7 ; base revision-manual-dialogos.
+- **Conservar PR ABIERTO, DRAFT, sin merge ni force push. No editar rama base ni corpus original.**
+- Histórico inicial del usuario: HEAD 1fd924f0a5b06769b1a060f1778cd2f02621e628. Este relevo observó después HEAD b8118782f29c3ae273767f2499da2b778b421858 (2 commits adicionales). Son ANCESTROS: debes comprobar SHA ACTUAL y parent/tree al comenzar; nunca asumir esos SHA como actual.
+- En el relevo anterior el terminal no resolvía DNS github.com, pero el conector GitHub sí funcionó. No fingir clonación. Si falta DNS, usar conector fetch_file, Git Data create_blob/create_tree/create_commit/update_ref con expected_sha real y force:false.
 
-Comprobar primero un checkout VERDADERO: git fetch origin; git switch integracion-eventos-segura-20261120; git pull --ff-only; git status --short; git rev-parse HEAD. Si la terminal carece de DNS github.com no fingir clone. El conector GitHub funciona: fetch ref/tree/PR, create_blob/create_tree/create_commit/update_ref con expected_sha y force:false.
+Comprobación de checkout real:
 
-## 2. PPSSPP real, versión y lanzamiento reproducible
+~~~bash
+git fetch origin
+git switch integracion-eventos-segura-20261120
+git pull --ff-only
+git status --short
+git rev-parse HEAD
+~~~
 
-ISO USA ORIGINAL exacta de usuario: 305496064 bytes; SHA256 b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f.
-ISO F1 CANÓNICA histórica: 306456576 bytes; SHA256 496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986. BPS USA→F1 histórico daaa64ab1994271debc6464f3c70ab0f30a2ab3f9a1743dbd6a65f3c88d20acd.
-Emulador oficial PPSSPP 1.20.4 Linux x86_64 AppImage, 50689748 bytes, SHA256 661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21, descarga oficial https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-v1.20.4-anylinux-x86_64.AppImage.
+Leer ÍNTEGROS antes de tocar código: AGENTS.md, README.md, prompts/SIGUIENTE_TAREA.md, reports/ESTADO_CONTINUIDAD_PPSSPP.json, docs/F3_INTRO_INTENTO_PPSSPP_Y_ORIGEN_SCRIPTS_2026-11-23.md, docs/F3_PROLOGO_ANIME000_DEPENDENCIA_PPSSPP_REAL_2026-11-23.md, docs/F3_ANIME_IMY_ESTRUCTURAS_2026-11-23.md, los reports F3 homónimos, tools/f3_auditar_intro.py, tools/f3_sonda_anime000_auditar.py, tools/f3_anime_imy_estructuras.py y todos sus tests. Conservar y leer las evidencias F2: docs/F2_WS_REAL_F1_CONTROLES_GE_2026-11-23.md, docs/F2_PPSSPP_REAL_X11_AB_TUIKA_2026-11-23.md, docs/F2_MAPA_JUGABLE_GE_X11_F1_2026-11-23.md, docs/RESULTADO_F1_PPSSPP_2026-11-21.md, los reportes respectivos y tools/f2_ws_procedencia_ppsspp.py, tools/f2_ppsspp_ws_1204.py, tools/f2_ge_dump_1204.py, tools/f2_tuika_proteger_subregiones.py. Para eventos leer tools/script_event_guard.py, tools/integrar_parche_seguro.py, tools/charset_es.py y tests de integración.
 
-En el relevo precedente se reextrajeron los dos binarios auténticos (ISO del 7z y AppImage oficial previamente transportado por Actions). En Xvfb 1280x720, PPSSPP SDL 960x544 se arrancó de verdad con Vulkan/llvmpipe software y produjo screenshots originales. En este contenedor Xvfb con GLX hizo fallar GL; el lanzamiento más reproducible usó Xvfb -extension GLX, una configuración realmente cargada de PPSSPP con GraphicsBackend = 3 (VULKAN), VK_ICD_FILENAMES y VK_DRIVER_FILES apuntando al lvp_icd.json PRIVADO de Mesa Debian13, SDL_AUDIODRIVER=dummy y shim de audio LD_PRELOAD EXTERNO permitido con SHARUN_ALLOW_LD_PRELOAD=1. No alterar AppImage oficial. Comprobar su hash y los logs: Booted /PRIVATE/USA.iso y el menú real; no asumir éxito por el SHA documental.
+## 2. Binarios originales y SHA-256, SOLO PRIVADOS
 
-Comandos de referencia con rutas de archivo revalidadas:
-    sha256sum /PRIVATE/Cladun_USA.iso /PRIVATE/PPSSPP-v1.20.4-anylinux-x86_64.AppImage
-    Xvfb :88 -screen 0 1280x720x24 -ac -extension GLX +render -noreset &
-    export DISPLAY=:88
-    export SDL_AUDIODRIVER=dummy
-    export SHARUN_ALLOW_LD_PRELOAD=1
-    export VK_DRIVER_FILES=/PRIVATE/lvp_absolute.json
-    export VK_ICD_FILENAMES=/PRIVATE/lvp_absolute.json
-    # Comprobar la sección PPSSPP GraphicsBackend = 3 (VULKAN) del INI realmente cargado.
-    # Lanzar solamente PPSSPP oficial autenticado, con los argumentos reales del entorno.
+- ISO USA original aportada por usuario: **305496064 B**, SHA256 **b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f**.
+- ISO F1 canónica histórica: **306456576 B**, SHA256 **496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986**.
+- BPS USA→F1 histórico: **daaa64ab1994271debc6464f3c70ab0f30a2ab3f9a1743dbd6a65f3c88d20acd**.
+- PPSSPP **oficial 1.20.4 AppImage Linux x86_64**: **50689748 B**, SHA256 **661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21**.
+- URL oficial https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-v1.20.4-anylinux-x86_64.AppImage
+- DATA.DAT original offset absoluto ISO **113770496**, longitud **191697408 B**, tabla PSPFS_V1 de **349** entradas.
+- PSPFS 231 SCRIPT.SDT → SCRIPT.DAT SHA **c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358** y SCRIPT.TBL SHA **f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37**.
+- PSPFS 234 ANIME000.IDT 3537936 B SHA **0e57353eb1d5f9688164b3453e57b0fd91ff77dee8e422844ba3fb0fef32eb37**.
+- PSPFS 235 ANIME001.LDT 287472 B SHA **cb7f1354e38ced1a5b19f36c2b45d939e59094e33de901d4b43dc8d65faaa174**.
+- PSPFS 236 ANIME002.LDT 2067856 B SHA **e1617dd4aea349f60953db9471e53c1524e9c3184b2566a4a732c3ecc756eec6**.
 
-F2 recuperó además servidor WebSocket REAL puerto 24192 con SHARUN_ALLOW_LD_PRELOAD=1; `version`, `game.status`, `cpu.status` y `gpu.record.dump` llegaron a responder. F1 Opciones/Controles mostraba 756px interior, ~=764 exterior, etiquetas música/Sí/No y seis iconos; dump GE real de Controles 38.546 bytes, 398 registros/124 PRIM. NO confundir la existencia de GE con traza causal de la textura del prólogo.
+**PROHIBIDO subir ISO, DATA.DAT, BPS, PSP EBOOT, IMY/animaciones, fuentes del juego, recursos comerciales, PNG/capturas/vídeos de PPSSPP o dumps RAM/GE/VRAM.** Únicamente código, tests sintéticos, documentación, métricas e hashes públicos. A/B de ISOs y capturas **solo privados** y fuera de Git. No compartir assets originales, ni aunque no estén modificados.
 
-### Actualización F2 simultánea que DEBE conservarse
-Otro relevo de F2 llegó REALMENTE con ISO F1 española al primer mapa jugable de Cladun en PPSSPP oficial 1.20.4: se navegó por WebSocket desde título/Opciones/Controles hasta Comenzar, música Real y START SKIP, y se observó movimiento del personaje con HUD. Backend OpenGL/llvmpipe de aquella sesión, Xvfb :98, 960×544; NO confundir con nuestro Vulkan/llvmpipe en Xvfb :88. Fue autenticado el mismo PID con socket debugger y descriptor F1. Se generó GE PPSSPPGE real de 65.309 bytes SHA d2195fbedd6f430d2a3823db28c12f9f9a9bc789964adefead0bab19298f06b4, 989 registros, 301 PRIM, 43 TEXADDR0 y 40 CLUTADDR. Se reparó la aceptación de F1 de 306456576 bytes en f2_iso_proceso_ppsspp/f2_x11_ppsspp_procfs_capture/f2_ppsspp_ws_1204 y sus tests; el capturador X11 F1 autenticado ya pasó. Ver docs/F2_MAPA_JUGABLE_GE_X11_F1_2026-11-23.md y reports/RESULTADO_F2_MAPA_JUGABLE_F1_2026-11-23.json. TODAVÍA NO existe escena combat/habilidad con TUIKA A/B, ni 19 glifos multicontesto, ni prueba de textura prologo MIPS→GE→VRAM.
+## 3. Hallazgos nuevos de F3 — CONFIRMADOS A/B; NO identifican letras
 
-## 3. F3: dos orígenes/problemas diferentes
+Esta sesión extrajo la ISO original auténtica del 7z del usuario y la rehash verificó. Herramienta NUEVA tools/f3_anime_imy_estructuras.py, informe reports/RESULTADO_F3_ANIME_IMY_ESTRUCTURAS_2026-11-23.json, documentación docs/F3_ANIME_IMY_ESTRUCTURAS_2026-11-23.md y **14 tests sintéticos locales PASS**. No se ejecutó PPSSPP nuevamente en esta sesión, pues el AppImage no estaba disponible y el terminal carecía de DNS.
 
-A. PRÓLOGO VISUAL ANTERIOR A LA NARRATIVA demo1001: PPSSPP oficial real muestra frases en inglés sobre fondo animado, tanto en USA como en F1 canónica histórica. Ejemplo observado: "Some say, because the treasures were there." La frase completa no apareció como ASCII literal en los 349 recursos PSPFS descomprimidos; un match de "some say" fue un falso positivo en DATABASE.DAT/MONSTER.DAT (biografía de monstruo). Su textura, codificación o animación todavía NO se identificó.
+**A (original auténtico estático):**
+- ANIME000.IDT: 231 cabeceras IMY literales estructuralmente consistentes: **136 tipo 0x00**, **95 tipo 0x02**.
+- ANIME001.LDT: 24 cabeceras IMY de tipo 0x00.
+- ANIME002.LDT: cero firmas IMY literales.
+- En las 255 firmas, u32 de cabecera +4 = stride*rows + 32. Los primeros u32 de cada recurso son 192/24/39; NO atribuirlos sin prueba a cantidad de cuadros.
+- El algoritmo de flags/lookbacks IMY legado consumió longitud correcta en **160/160 tipo 0x00**, pero falló **95/95 tipo 0x02** (55 lookback inválido, 40 longitud distinta). Es evidencia de **INCOMPATIBILIDAD DE FLUJO**, no un códec 0x02 resuelto; tipo 0x00 tampoco acredita paletas, geometría ni renderizado. No activar ni repintar tipo 0x02 mediante decodificador F2/SYSGRA 0xA4.
+- Código e informes solo leen; no crean PNG, nuevas ISOs ni alteran traducciones.
 
-B. DIÁLOGOS NORMALES demo1001: ISO PSP_GAME/USRDIR/DATA.DAT → PSPFS 231 SCRIPT.SDT → SCRIPT.DAT/SCRIPT.TBL, scripts demo1001_00.dsf / demo1001_01.dsf. 7 bloques, 878 comandos, 98 opcodes de texto incluido uno vacío, 97 textos no vacíos (2728 bytes originales). Borrador traduccion/CLADUN_BORRADOR_ES.csv 9237 filas ya tiene español para los 97; codificados en CP932 A1–B3 ocupan 2859 bytes. 85 cambian longitud y están APLAZADOS por --event-safe-only, 11 longitud igual son candidatos, 1 no cambia. No declarar todo el inglés resuelto por integrar los 85.
+Reproducción privada exacta:
 
-## 4. Descubrimiento NUEVO de F3: dependencia de ANIME000 en arranque, NO prueba de letras
+~~~bash
+sha256sum /PRIVADO/Cladun_USA.iso
+python tools/f3_anime_imy_estructuras.py --iso-original /PRIVADO/Cladun_USA.iso --reporte /PRIVADO/ANIME_IMY_LECTURA_NUEVA.json
+python -m unittest tests.test_f3_anime_imy_estructuras -v
+~~~
 
-Inventario auténtico PSPFS 234 ANIME000.IDT (3.537.936 bytes; 231 ocurrencias IMY), 235 ANIME001.LDT (287.472 bytes; 24 ocurrencias IMY), 236 ANIME002.LDT (2.067.856 bytes; cero ocurrencias IMY literales). Los tipos IMY ANIME 0x00/0x02 no son automáticamente el formato SYSGRA 0xA4; decodificar con modelo correcto antes de repintar.
+**C histórico distinto:** en relevo previo PPSSPP 1.20.4 Vulkan real mostró el prólogo inglés. Sonda privada de 1 solo byte del descriptor PSPFS, offset ISO **113778009**, renombró ANIME000.IDT a ANIME000.XDT, produjo crash antes del título, PC PSP **0x08809498** leyendo **0x00000015**, y un A posterior recuperó el título original. ISO sonda privada SHA **576e9699395dd142b666ed3b9d121db5037c63302dc0c4eee862a04ccfcdbb36**. **SOLO prueba dependencia de arranque del nombre; NO procedencia de las letras. NO repetir renombrados destructivos para localizar imágenes.**
 
-Prueba A/B/A auténtica en PPSSPP oficial:
-- A ISO USA original intacta, SHA b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f: boot, título Start/Continue/Options, selección musical y prólogo INGLÉS reales; screenshot X11 SHA256 8dbd15865eb008d2036d59e7e3bab3d130c3dfd438732c1f455dc456b22812ab.
-- B SONDA PRIVADA EN COPIA ORIGINAL SOLO PARA DIAGNÓSTICO: en descriptor PSPFS índice 234, offset absoluto ISO 113778009, letra I del nombre ANIME000.IDT 0x49→X 0x58, nuevo ANIME000.XDT. Se verificó EXACTAMENTE UN byte alterado en 305496064, payload ANIME intacto, sonda privada SHA256 576e9699395dd142b666ed3b9d121db5037c63302dc0c4eee862a04ccfcdbb36. PPSSPP REAL alcanzó Booted pero ANTES del título se detuvo con pantalla azul INVALID MEMORY ACCESS, PC PSP 0x08809498, dirección 0x00000015; PNG real privado SHA 87f9c2b4d451b41a4dc890daf031cb60cdd44d9a09ec9f8094f6244c8c78cd89.
-- A control repetido: relanzar la ISO original devolvió menú jugable, screenshot real SHA256 893c975382aa89437d7e9b7691eab9cdc9c525d0a490ae1f6e884c6499a57ba5.
+## 4. F3 PRIORIDAD 1: PRÓLOGO VISUAL EN INGLÉS
 
-CONCLUSIÓN ESTRICTA: el nombre/referencia ANIME000.IDT es necesario en el arranque; cambiarlo deja el juego NO JUGABLE. **NO** demuestra que ANIME000 contenga las letras del prólogo, porque el fallo precede a esa escena. No volver a renombrar recursos para preparar una traducción. **Nunca** añadir la ISO sonda al repo ni distribuirla. La herramienta nueva tools/f3_sonda_anime000_auditar.py hace SOLO LECTURA: SHA de ambas ISO, control de PSPFS y diff de un byte; tests/test_f3_sonda_anime000_auditar.py contiene 14 tests sintéticos PASS. Resultado privado del auditor SHA 6709edd4dd80494054ffaef2e9121cfbd9b951fb9f1cf32b9b3ff2e7bf9693a7.
+El prólogo antes del diálogo demo1001 muestra inglés tanto USA como F1. Frase real observada, ejemplo: “Some say, because the treasures were there.” No se encontró esa frase completa como ASCII literal en los 349 PSPFS descomprimidos. El match parcial en DATABASE.DAT/MONSTER.DAT fue un **falso positivo** (biografía de monstruo). La procedencia de la textura/letras sigue **NO DEMOSTRADA**.
 
-Comando de verificación privada, solo si la sonda de diagnóstico ya existe y nunca para un parche:
-    python tools/f3_sonda_anime000_auditar.py --iso-original /PRIVATE/USA.iso --iso-sonda-privada /PRIVATE/ANIME000_UNBYTE_DIAG.iso --reporte-privado /PRIVATE/f3_guardia_nueva.json
+Pasos, en orden:
+1. Recuperar emulador oficial exacto SHA y USA original. Autenticar la MISMA sesión con PID/ISO FD/socket WS/versión, no solo log Booted.
+2. Alcanzar el prólogo **REAL** sin alterar el archivo ANIME000. Registrar por WebSocket/PSP I/O recursos cargados, PC MIPS pertinente, RAM, GE gpu.record.dump con TEXADDR/CLUT/PRIM, y frames privados temporizados, durante una frase visible.
+3. Comparar direcciones RAM y VRAM y datos de textura contra miembros PSPFS originales. Una coincidencia de nombre o un GE de otra pantalla NO acredita causalidad de texto.
+4. Si no hay traza, investigar índices y formato 0x02 con parsers fail-closed y roundtrip; una hipótesis de frame/paleta requiere evidencia independiente. No inferir «delta» por un error de lookback.
+5. Solo tras identificar textura/CLUT específica, preparar **sonda CROMÁTICA aislada, reversible y PRIVADA** que no afecte el arranque, certificar spans PSPFS/DSARC y demás recursos, y hacer A/B sincronizado + control negativo en la **misma escena**.
+6. Solo cuando se demuestre procedencia, reconstruir letras españolas del prólogo en ROI limitado, sin tocar iconos/fondos/números, validar PSP 480x272, X11 960x544, tildes, paletas, rendimiento y una reproducción completa de la escena. Mantener evidencia comercial privada.
 
-## 5. Siguiente experimento PRIORITARIO de F3
+## 5. F3 PRIORIDAD 2: 85 DIÁLOGOS DEMO1001 BLOQUEADOS
 
-1. Identificar en contexto REAL de prólogo qué recursos se cargan sin bloquear el inicio, mediante PPSSPP WebSocket oficial de la sesión o registro PSP I/O. Capturar GPU GE real durante frase y verificar TEXADDR/CLUT/PRIM, RAM y textura frente a ISO original; no atribuir PC a fuente por el nombre de archivo.
-2. Si no hay traza, investigar los encabezados ANIME000.IDT/ANIME001.LDT y paletas con parsers fail-closed, exclusivamente en privado. Elegir una sonda CROMÁTICA ISOLADA y NO DESTRUCTIVA en una textura/CLUT concreta cuyos bytes puedan autenticar; comprobar íntegramente el resto de PSPFS, DSARC y comandos, probar que el juego sigue entrando al prólogo, y hacer A/B PIXEL SINCRONIZADO con CONTROL NEGATIVO. Un crash antes de escena no confirma la procedencia de ninguna letra.
-3. Una vez identificado el origen del texto visual, reconstruir únicamente el área de las letras de esas frases en español sin invadir números, iconos o fondos; validar dimensiones 480x272 PSP y ventana 960x544, rendimiento, tildes, paletas e integridad. NO publicar la imagen comercial.
-4. Por separado, modelar las referencias/saltos de SCRIPT.DAT e intérprete MIPS para los 85 cambios de longitud en 4 IDs demo1001. Crear pruebas independientes de punteros, saltos y orden de 51705 comandos y 1625 entradas antes de una ISO privada experimental. No quitar --event-safe-only ni declarar safe por preservar opcodes si se mueven offsets.
-5. Reproducir la INTRO COMPLETA en PPSSPP auténtico USA/F1/candidato, con registros/capturas privadas reales, episodios, efectos, retratos y texto. No cerrar F3 antes de ello.
+Ruta: DATA.DAT → PSPFS 231 SCRIPT.SDT → DSARC SCRIPT.DAT/SCRIPT.TBL. Dos nombres: demo1001_00.dsf y demo1001_01.dsf; **7 bloques** ID 100000/100100/100190/100101/100191/100110/100120 con **878 comandos** por bloque **5/422/27/339/28/23/34**, 98 opcodes textuales y 97 cadenas no vacías. El borrador español tiene traducciones para las 97: 2728 bytes origen, 2859 CP932 español A1–B3; **85** distinta longitud, **11** longitud compatible candidatos, **1** sin cambio.
 
-## 6. F2/F4–F6 e integridad
+Estas 85 entradas NO se han integrado; mantener --event-safe-only. Para desbloquear:
+1. Ejecutar tools/f3_auditar_intro.py sobre ISO original y CSV para verificar los 97 offsets/bytes/IDs 1:1.
+2. Investigar intérprete PSP MIPS y estructura de saltos/llamadas a scripts; localizar destinos y referencias internas/externas de los comandos, no adivinarlo al encontrar un u16/u32 parecido a un offset.
+3. Construir modelo de relocalización con pruebas independientes y fail-closed para 51705 comandos, 46308 comandos no textuales, 1625 bloques y metadatos SCRIPT.TBL. Si cambia longitud, verificar destino exacto de todos los saltos.
+4. Solo con causalidad y tests, generar ISO privada de 85 cambios, auditar integridad completa y ejecutar demo1001 real USA/F1/candidato con diálogos, retratos, efectos, START SKIP y estados. Hasta entonces no autorizar reconstrucción variable.
 
-F2 ABIERTA: rastro funcional de TUIKA en combate/habilidades, 19 glifos áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō multicontexto, iconos controles/HUD/combat, GE/VRAM y regresión F1. F2 WS/GE X11 demostrados anteriormente deben preservarse. SYSTEM PRiSM ya tenía 1152 píxeles magenta tanto en USA como sonda, diferencia cero: no usarlo de evidencia TUIKA.
-F3 ACTIVA: prólogo inglés visual de origen desconocido y 85 scripts demo1001 bloqueados.
-F4: integrar con seguridad los 4524 textos SCRIPT.DAT aplazados. F5: QA integral juego/saves/enciclopedia/combate/HUD/retratos. F6: BPS final y EXE Windows aplicados y probados end-to-end sin distribuir ISO/assets.
-Preservar 9237 registros, 9235 español/2 excepciones, 349 PSPFS, 46308 comandos no textuales, 2721 glifos originales +19 nuevos A1–B3 y white_new_ink=False por defecto. Las pruebas de runtime y las de integridad binaria son distintas. PR #7 DRAFT sin merge.
+## 6. Mantener F2 ABIERTA; F4–F6 sin falsear progreso
 
-## 7. Pruebas, commit y RECURSIVIDAD FINAL
+**F2 histórico C preservado**:
+- PPSSPP oficial 1.20.4 ISO F1, Opciones 756 px interiores/≈764 exteriores, Sí/No, música y 6 iconos; WebSocket puerto 24192 version/game.status/cpu.status mismo PID+ISO; GE Controles 38546 B / 398 registros / 124 PRIM.
+- Otra sesión PPSSPP F1 real alcanzó primer mapa jugable con HUD y movimiento tras START SKIP, backend OpenGL/llvmpipe Xvfb :98. GE 65309 B SHA **d2195fbedd6f430d2a3823db28c12f9f9a9bc789964adefead0bab19298f06b4**, 989 registros, 301 PRIM, 43 TEXADDR0, 40 CLUTADDR. NO demuestra TUIKA ni el prólogo.
+- En prueba de splash SYSTEM PRiSM había 1152 píxeles magenta tanto USA como sonda: **0 diferencias**. NO atribuir magenta al TUIKA.
+- F2 pendientes: A/B real TUIKA en combate/habilidad, traza MIPS→RAM→GE→VRAM, iconos en HUD/tutorial/combate y 19 glifos **áéíóúÁÉÍÓÚñÑüÜ¿¡«»ō** en múltiples contextos. Mantener 2721 glifos originales, 19 A1–B3, white_new_ink=False por defecto.
 
-En checkout verdadero ejecutar:
-    python -m unittest discover -s tests -v
-    python -m unittest tests.test_f3_auditar_intro tests.test_f3_sonda_anime000_auditar -v
-    python tools/verificar_integridad.py --raiz .
-    python tools/verificar_borrador_es.py
-    python tools/auditar_preinsercion_es.py --reporte /tmp/f3_preflight_nuevo.json
-    python tools/reportar_integrabilidad_es.py --reporte /tmp/f3_integrabilidad_nuevo.json
-    (cd patcher && go test ./...)
-    git diff --check
+**F4:** integrar con seguridad **4524** cambios de longitud de SCRIPT.DAT aplazados, solo con modelado y QA runtime. **F5:** juego completo, retratos, atlas, combate, enciclopedia, HUD, partidas guardadas/cargadas y regresión F1. **F6:** BPS final y EXE Windows x64 aplicados end-to-end y testados con ISO propia, sin distribuir payload. Conservar corpus 9237, traducción 9235/2 excepciones, 349 PSPFS, glosario, base y PR DRAFT.
 
-En el relevo anterior se ejecutó suite LOCAL del snapshot público con nuevo test: 517 Python PASS, uno omitido, integridad/CSV y Go PASS; comprobar nuevamente CI de ambas Actions sobre el HEAD FINAL tras publicación en GitHub. No confundir CI con PPSSPP.
+### PPSSPP, solo cuando binarios se hayan revalidado
 
-Al terminar: (1) pruebas y cambios auténticos, sin falsear; (2) documentación e informes públicos de métricas (jamás binarios comerciales), y reports/ESTADO_CONTINUIDAD_PPSSPP.json actualizado preservando hallazgos F2; (3) commit con expected_sha/force:false en rama sin merge del PR #7; (4) verificar exactamente dos validaciones principales CI push y PR SUCCESS sobre el mismo SHA final; (5) **REESCRIBIR COMPLETAMENTE prompts/SIGUIENTE_TAREA.md CON UN NUEVO PROMPT AUTÓNOMO E ÍNTEGRO QUE EXIJA DE NUEVO TODA ESTA MISMA OBLIGACIÓN RECURSIVA; MOSTRARLO ÍNTEGRO AL USUARIO.** Continuar hasta F2–F6 efectivamente completadas.
+En antecedentes Vulkan/llvmpipe se usó Xvfb :88 **sin GLX**, SDL 960×544, SDL_AUDIODRIVER=dummy, SHARUN_ALLOW_LD_PRELOAD=1, INI cargado GraphicsBackend=3, VK_DRIVER_FILES y VK_ICD_FILENAMES apuntando a JSON absoluto privado de lavapipe. En otra sesión OpenGL/llvmpipe funcionó en Xvfb :98; no mezclar backends. Comandos orientativos después de validar ejecutable:
+
+~~~bash
+sha256sum /PRIVADO/Cladun_USA.iso /PRIVADO/PPSSPP-v1.20.4-anylinux-x86_64.AppImage
+Xvfb :88 -screen 0 1280x720x24 -ac -extension GLX +render -noreset &
+export DISPLAY=:88 SDL_AUDIODRIVER=dummy SHARUN_ALLOW_LD_PRELOAD=1
+export VK_DRIVER_FILES=/PRIVADO/lvp_absolute.json
+export VK_ICD_FILENAMES=/PRIVADO/lvp_absolute.json
+# Verificar el INI efectivamente cargado; arrancar AppImage oficial con argumentos reales.
+~~~
+
+## 7. Validación, PUBLICACIÓN SEGURA y RECURSIVIDAD
+
+~~~bash
+python -m unittest discover -s tests -v
+python -m unittest tests.test_f3_auditar_intro tests.test_f3_sonda_anime000_auditar tests.test_f3_anime_imy_estructuras -v
+python tools/verificar_integridad.py --raiz .
+python tools/verificar_borrador_es.py
+python tools/auditar_preinsercion_es.py --reporte /tmp/f3_preflight.json
+python tools/reportar_integrabilidad_es.py --reporte /tmp/f3_integrabilidad.json
+(cd patcher && go test ./...)
+git diff --check
+git rev-parse HEAD
+~~~
+
+Si falta checkout, **NO atribuir esos comandos a ejecución local**: verificar GitHub Actions por separado. Publicar solo herramientas/tests sintéticos, JSON de métricas y docs, preservando todo F2 y el borrador. Commit fast-forward con expected_sha y force:false. Comprobar GitHub PR #7 todavía DRAFT y **dos validaciones de GitHub Actions (push y pull_request) sobre el mismo SHA HEAD FINAL** ambas SUCCESS; si no, registrar estado real sin suponer éxito.
+
+Entregar: evidencia A/B/C diferenciada, código modificado, ruta, comandos, hash, tests locales y CI, hallazgos y bloqueos, estado F2–F6. **REESCRIBIR COMPLETAMENTE prompts/SIGUIENTE_TAREA.md COMO UN TERCER PROMPT NUEVO, AUTÓNOMO Y ACTUALIZADO CON ESTA MISMA OBLIGACIÓN RECURSIVA INNEGOCIABLE; MOSTRARLO ÍNTEGRO AL USUARIO AL TERMINAR.** Nada de promesas de entrega futura.

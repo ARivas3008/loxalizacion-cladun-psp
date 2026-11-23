@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F2 ABIERTA: ejecución real de F1 llegó al primer mapa jugable con HUD/tilemap/personaje tras START SKIP; WebSocket autenticado PID/ISO; dump GE v6 65309 B (989 registros/301 PRIM). No hay A/B USA/sonda TUIKA en combate ni cadena IMY→RAM→GE→VRAM; tres lecturas GPU buffer fallaron en OpenGL/llvmpipe. Capturador X11/ISO/WS ampliado a rol F1 con SHA y tamaño exactos. F3–F6 pendientes. | F3 NUEVO: PPSSPP 1.20.4 Vulkan real, prólogo inglés en pantalla; sonda ANIME000.IDT con un byte renombrado causa crash antes del título, USA original recupera; origen de las letras NO demostrado. Los 85 scripts demo1001 siguen protegidos. F3 ABIERTA.",
+  "fase_actual": "F2 ABIERTA: ejecución real de F1 llegó al primer mapa jugable con HUD/tilemap/personaje tras START SKIP; WebSocket autenticado PID/ISO; dump GE v6 65309 B (989 registros/301 PRIM). No hay A/B USA/sonda TUIKA en combate ni cadena IMY→RAM→GE→VRAM; tres lecturas GPU buffer fallaron en OpenGL/llvmpipe. Capturador X11/ISO/WS ampliado a rol F1 con SHA y tamaño exactos. F3–F6 pendientes. | F3 NUEVO: PPSSPP 1.20.4 Vulkan real, prólogo inglés en pantalla; sonda ANIME000.IDT con un byte renombrado causa crash antes del título, USA original recupera; origen de las letras NO demostrado. Los 85 scripts demo1001 siguen protegidos. F3 ABIERTA. | F3 NUEVO análisis A: IMY 0x00 160/160 flags compatibles; 0x02 0/95, requiere modelo distinto. Prólogo sigue en inglés y sin origen causal. F2 ABIERTA.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -44,7 +44,8 @@
     "21/11: PPSSPP real candidata combinada 005709 +1 ASCII y 005710 Sí / 005713 No con espaciado de presentación; 18 capturas Opciones interiores 756px; cambio de todos valores",
     "21/11: PPSSPP real Controles abierto, iconos visibles, restablecer controles y volver a título",
     "F2 21/11: KITAJIMA_KARI.IMY (SYSGRA.ARC) confirmado con PPSSPP: 27 bytes paleta, seis iconos magenta, texto/borde 0 diferencias y 348 PSPFS exactos.",
-    "F2 21/11: glifos españoles CP932 A1-B3 en ayuda real mostraban 516 pixels amarillos por tinta CLUT indice15; opt-in 100 texels indice1 blanco -> 0 amarillos en dos PNG reales, original 2721 intacto."
+    "F2 21/11: glifos españoles CP932 A1-B3 en ayuda real mostraban 516 pixels amarillos por tinta CLUT indice15; opt-in 100 texels indice1 blanco -> 0 amarillos en dos PNG reales, original 2721 intacto.",
+    "23/11 F3 A NUEVA ISO auténtica SHA exacto: ANIME000/001/002 231/24/0 firmas IMY; 0x00 160/160 compatibilidad flags, 0x02 0/95, NO procedencia visual"
   ],
   "incidencias": [
     {
@@ -201,7 +202,9 @@
     "23/11 F3: GitHub Borrador ES blob 400a9c9ec06f7456b5ec6e11f7502d711b0a976e, 9237 filas; 97 demo1001 traducidas; codec A1-B3 CP932: 85 distintos en longitud bloqueados, 11 candidatos igual longitud, 1 idéntico, total ES 2859 bytes vs original 2728 (no aprobación inserción).",
     "23/11 F3 segundo relevo: AppImage PPSSPP v1.20.4 auténtico SHA 661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21; Xvfb 1280x720 -extension GLX, GraphicsBackend 3 VULKAN, llvmpipe y shim audio externo Sharun; Cladun USA original real booted, título y prólogo inglés capturados.",
     "23/11 F3 segundo relevo: ISO original b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f idéntica, copia privada ANIME000.IDT a ANIME000.XDT PSPFS índice 234, UN byte off 113778009 0x49→0x58, ISO sonda SHA 576e9699395dd142b666ed3b9d121db5037c63302dc0c4eee862a04ccfcdbb36; PPSSPP real invalid memory access PC 0x08809498 antes de título, control USA posterior arrancó menú.",
-    "23/11 F3 segundo relevo: auditor original-vs-diagnostic sobre dos ISO reales verificado 1/1 diferencia, 14 tests sintéticos nuevos PASS, suite local snapshot 517 Python OK skipped=1, integridad y borrador PASS, Go PASS; F3 no terminada."
+    "23/11 F3 segundo relevo: auditor original-vs-diagnostic sobre dos ISO reales verificado 1/1 diferencia, 14 tests sintéticos nuevos PASS, suite local snapshot 517 Python OK skipped=1, integridad y borrador PASS, Go PASS; F3 no terminada.",
+    "23/11 F3 A ISO original extraída del 7z SHA-256 y tamaño exactos; PSPFS 349; tres ANIME inventariados, sin extraer PNG ni modificar ISO",
+    "23/11 F3 B 14 pruebas unitarias sintéticas nuevas PASS sobre cabeceras IMY/PSPFS y fail-closed; NO PPSSPP nuevo"
   ],
   "pruebas_no_ejecutadas": [
     "Prueba PPSSPP valida del candidato extra +1 ideografico en 005709; no aprobado",
@@ -1120,17 +1123,17 @@
   },
   "ultimo_relevo": {
     "fecha": "2026-11-23",
-    "fase_prioritaria": "F3_PPROLOGO_ANIME000_ORIGEN_NO_PROBADO_F2_ABIERTA",
-    "previous_head": "e66196ab1e83a39ed0fd1440a26625913e0ccf21",
-    "authentic_ppsspp_run": true,
-    "verified_one_byte_probe_crash_pc": "0x08809498",
-    "authentic_original_a2_recovery": true,
-    "new_code": "tools/f3_sonda_anime000_auditar.py",
-    "new_tests": "tests/test_f3_sonda_anime000_auditar.py",
-    "source_iso_commercial_unchanged": true,
-    "corpus_scripts_events_unchanged": true,
-    "recursive_prompt_rewritten": "prompts/SIGUIENTE_TAREA.md",
-    "draft_pr_required": true
+    "fase_prioritaria": "F3_ACTIVE_ANIME_IMY_STATIC_MORE_PRECISE_F2_OPEN",
+    "repo_precommit_head_observed": "b8118782f29c3ae273767f2499da2b778b421858",
+    "real_original_iso_sha_reverified": true,
+    "new_tool": "tools/f3_anime_imy_estructuras.py",
+    "new_tests": "tests/test_f3_anime_imy_estructuras.py",
+    "new_report": "reports/RESULTADO_F3_ANIME_IMY_ESTRUCTURAS_2026-11-23.json",
+    "new_doc": "docs/F3_ANIME_IMY_ESTRUCTURAS_2026-11-23.md",
+    "original_corpus_and_integration_untouched": true,
+    "ppsspp_not_executed_this_relay": true,
+    "pr7_draft_required": true,
+    "recursive_prompt": "prompts/SIGUIENTE_TAREA.md"
   },
   "f2_procfs_witness_2026_11_23": {
     "schema": "cladun.f2.procfs_relay_status.v1",
@@ -1387,5 +1390,75 @@
     "white_new_ink_default_false": true,
     "pr7_draft_required": true,
     "next": "Probar paletas/bitmaps por sonda privada NO destructiva en prologue PPSSPP y/o trazar cargas a GE; no confundir dependencia de arranque con procedencia de letras; modelar referencias SCRIPT.DAT para 85 mensajes."
+  },
+  "ultimo_relevo_previo_f3_anime": {
+    "fecha": "2026-11-23",
+    "fase_prioritaria": "F3_PPROLOGO_ANIME000_ORIGEN_NO_PROBADO_F2_ABIERTA",
+    "previous_head": "e66196ab1e83a39ed0fd1440a26625913e0ccf21",
+    "authentic_ppsspp_run": true,
+    "verified_one_byte_probe_crash_pc": "0x08809498",
+    "authentic_original_a2_recovery": true,
+    "new_code": "tools/f3_sonda_anime000_auditar.py",
+    "new_tests": "tests/test_f3_sonda_anime000_auditar.py",
+    "source_iso_commercial_unchanged": true,
+    "corpus_scripts_events_unchanged": true,
+    "recursive_prompt_rewritten": "prompts/SIGUIENTE_TAREA.md",
+    "draft_pr_required": true
+  },
+  "f3_anime_imy_estructura_2026_11_23": {
+    "fecha": "2026-11-23",
+    "status": "F3_OPEN_ORIGINAL_ANIME_IMY_STRUCTURE_VERIFIED_PROLOGUE_LETTERS_UNPROVEN_F2_OPEN",
+    "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "authentic_original_iso_extracted_and_hashed_this_relay": true,
+    "pspfs_entries_original": 349,
+    "header_count_by_member": {
+      "234_ANIME000.IDT": 231,
+      "235_ANIME001.LDT": 24,
+      "236_ANIME002.LDT": 0
+    },
+    "anime000_legacy_types": {
+      "0x00": 136,
+      "0x02": 95
+    },
+    "anime001_legacy_types": {
+      "0x00": 24
+    },
+    "legacy_flag_probe_type_00_pass": 160,
+    "legacy_flag_probe_type_02_fail": 95,
+    "type_02_failure_breakdown": {
+      "invalid_lookback": 55,
+      "wrong_size": 40
+    },
+    "flags_only_not_graphics_causality": true,
+    "intro_letters_source_proven": false,
+    "script_intro_blocks": 7,
+    "script_intro_commands_real": 878,
+    "command_counts_by_intro_id": {
+      "100000": 5,
+      "100100": 422,
+      "100101": 339,
+      "100110": 23,
+      "100120": 34,
+      "100190": 27,
+      "100191": 28
+    },
+    "variable_length_intro_fields_blocked": 85,
+    "python_new_synthetic_tests_passed_local": 14,
+    "full_checkout_succeeded": false,
+    "terminal_github_dns_failed": true,
+    "ppsspp_appimage_present": false,
+    "new_ppsspp_runtime_this_relay": false,
+    "no_new_png_or_ge_dumps": true,
+    "original_iso_and_corpus_unchanged": true,
+    "white_new_ink_default_false": true,
+    "event_safe_only_kept": true,
+    "branch_pr7_draft_observed": true,
+    "report": "reports/RESULTADO_F3_ANIME_IMY_ESTRUCTURAS_2026-11-23.json",
+    "doc": "docs/F3_ANIME_IMY_ESTRUCTURAS_2026-11-23.md",
+    "tool": "tools/f3_anime_imy_estructuras.py",
+    "tests": "tests/test_f3_anime_imy_estructuras.py",
+    "next_prompt": "prompts/SIGUIENTE_TAREA.md",
+    "github_actions_final_head": "REVERIFY_AFTER_COMMIT",
+    "next": "Obtain authentic PPSSPP intro I/O to MIPS/RAM/GE/VRAM provenance; model IMY 0x02 without assumptive decoding; audit 85 variable-length intro events without disabling event-safe-only"
   }
 }
