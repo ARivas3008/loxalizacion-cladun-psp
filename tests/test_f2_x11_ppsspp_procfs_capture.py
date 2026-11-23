@@ -2,13 +2,15 @@
 import sys,unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'tools'))
-from f2_x11_ppsspp_procfs_capture import verify_window_metadata,checked_output
+from f2_x11_ppsspp_procfs_capture import verify_window_metadata,checked_output, SOURCE_SHA, PROBE_SHA, F1_SHA
 
 class TestX11Metadata(unittest.TestCase):
  def test_valid(self):
   data=verify_window_metadata(99,99,'NPUH10072 : CLADUN: This is an RPG!',960,544,160,88)
   self.assertEqual(data['window_pid'],99)
   self.assertTrue(data['window_size_960x544'])
+ def test_iso_sha_roles_are_distinct(self):
+  self.assertEqual(len({SOURCE_SHA, PROBE_SHA, F1_SHA}), 3)
  def test_invalid_pid(self):
   with self.assertRaises(ValueError):verify_window_metadata(99,98,'NPUH10072 : CLADUN',960,544,160,88)
  def test_invalid_game(self):

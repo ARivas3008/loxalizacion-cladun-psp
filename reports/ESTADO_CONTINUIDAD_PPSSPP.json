@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F2 ABIERTA: PPSSPP oficial v1.20.4 WS v1.20.4/NPUH10072 y CPU corriendo; mismo PID dueño socket LISTEN 24192 e ISO F1 exacta abierta (FD + starttime), UI F1 Opciones 756px interior/764 exterior y Controles con R L □×○△ observados y español sin espacios. GE real titulo USA y Controles F1 (48/398 registros). TUIKA gameplay y 19 glifos multicontesto/GE→VRAM SIN demostrar. F3–F6 pendientes.",
+  "fase_actual": "F2 ABIERTA: ejecución real de F1 llegó al primer mapa jugable con HUD/tilemap/personaje tras START SKIP; WebSocket autenticado PID/ISO; dump GE v6 65309 B (989 registros/301 PRIM). No hay A/B USA/sonda TUIKA en combate ni cadena IMY→RAM→GE→VRAM; tres lecturas GPU buffer fallaron en OpenGL/llvmpipe. Capturador X11/ISO/WS ampliado a rol F1 con SHA y tamaño exactos. F3–F6 pendientes.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -223,7 +223,7 @@
     "23/11 F3: PPSSPP 1.20.4 oficial Linux AppImage NO descargable por DNS GitHub; no emulación nueva, ni pantallas A/B intro. Evidencias F1 PPSSPP originales históricas sí son válidas, no repetidas.",
     "23/11 F3: sin reubicación ni inserción de los 85 diálogos de distinta longitud; sin análisis dinámico de referencias/jumps de SCRIPT.DAT; no afirmar F3 terminada."
   ],
-  "siguiente_accion": "Ejecutar PPSSPP+WS en misma escena de combate/habilidades USA/sonda TUIKA para comprobar uso funcional real mediante A/B y trazas GE; verificar los 19 glifos multicontesto. Mantener F2 abierta.",
+  "siguiente_accion": "F2: reproducir inicio y primer mapa en ISO USA y sonda con WebSocket, llegar a una misma escena de combate/trampa/habilidad, capturar A/B y GE y confirmar o refutar localmente efecto de TUIKA; verificar 19 glifos multicontesto. No pasar a F3 sin prueba F2.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
   "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
   "ultimo_commit_trabajo": "3241f5ca9463e202e3b9b1371bf0deefa52f4673",
@@ -1269,5 +1269,63 @@
     "private_evidence_zip_sha256": "7253770b10f475d88c71d74c86ca7a1e414048d8158e4d6ce662bd789b4a94e5",
     "new_prompt": "prompts/SIGUIENTE_TAREA.md",
     "status": "F2_OPEN"
+  },
+  "f2_relevo_mapa_jugable_ge_2026_11_23": {
+    "informe": "docs/F2_MAPA_JUGABLE_GE_X11_F1_2026-11-23.md",
+    "reporte": "reports/RESULTADO_F2_MAPA_JUGABLE_F1_2026-11-23.json",
+    "source_iso_usa_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "f1_iso_bytes": 306456576,
+    "f1_iso_sha256": "496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986",
+    "sonda_tuika_iso_sha256": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa",
+    "ppsspp_v": "1.20.4",
+    "window_x11": [
+      960,
+      544
+    ],
+    "graphics_backend": "OpenGL sobre llvmpipe",
+    "gameplay_first_map_reached": true,
+    "intro_english_visible": true,
+    "start_skip_dialog_marker_seen": true,
+    "movement_in_map_real": true,
+    "tuiKA_probe_ab_in_gameplay_proven": false,
+    "ge_gameplay_real": {
+      "sha256": "d2195fbedd6f430d2a3823db28c12f9f9a9bc789964adefead0bab19298f06b4",
+      "bytes": 65309,
+      "records": 989,
+      "prim": 301,
+      "texaddr0": 43,
+      "clutaddr": 40,
+      "texture_identity_proven": false
+    },
+    "gpu_buffers": {
+      "screenshot": "Could not download output",
+      "renderColor": "Could not download output",
+      "renderDepth": "Could not download output",
+      "cpu_resumed": true
+    },
+    "x11_iso_f1_real_witness": true,
+    "ws_iso_f1_real_witness": true,
+    "fixed_tool_limitations": [
+      "tools/f2_iso_proceso_ppsspp.py",
+      "tools/f2_x11_ppsspp_procfs_capture.py",
+      "tools/f2_ppsspp_ws_1204.py"
+    ],
+    "new_regression_tests": "tests/test_f2_x11_f1_capture_integration.py",
+    "full_python_tests": 499,
+    "skipped": 1,
+    "failures": 0,
+    "qa_integridad": "PASS",
+    "qa_borrador": "PASS",
+    "qa_preflight": "PASS_STATIC",
+    "qa_integrabilidad": "PASS_STATIC",
+    "go_tests": "PASS",
+    "private_zip_sha256": "cf63f5d8da8b831e1882c7f7204ad16abaa0656e600b10d6a73534b0dfb26b47",
+    "next_prompt": "prompts/SIGUIENTE_TAREA.md",
+    "remaining": [
+      "USA versus sonda A/B in confirmed TUIKA combat/traps scene",
+      "19 glyphs across scenes",
+      "MIPS RAM GE VRAM provenance",
+      "F3–F6"
+    ]
   }
 }

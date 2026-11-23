@@ -56,7 +56,9 @@ def checked_output(path:Path,repo:Path):
 
 def capture(xdisplay:str,pid:int,iso:Path,role:str,path:Path,repo:Path):
     from PIL import ImageGrab
-    expect=SOURCE_SHA if role=='usa' else PROBE_SHA
+    approved={'usa':SOURCE_SHA,'sonda':PROBE_SHA,'f1':F1_SHA}
+    if role not in approved:raise ValueError('Tipo ISO desconocido')
+    expect=approved[role]
     iso_first=validate_iso(iso,expect)
     first=proc_snapshot(pid,iso)
     window=find_window(xdisplay,pid)
@@ -92,7 +94,7 @@ def main():
     p.add_argument('--display',default=':95')
     p.add_argument('--pid',type=int,required=True)
     p.add_argument('--iso',type=Path,required=True)
-    p.add_argument('--tipo',choices=('usa','sonda'),required=True)
+    p.add_argument('--tipo',choices=('usa','sonda','f1'),required=True)
     p.add_argument('--png-privado',type=Path,required=True)
     p.add_argument('--manifiesto-privado',type=Path,required=True)
     a=p.parse_args()

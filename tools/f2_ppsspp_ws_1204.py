@@ -187,7 +187,7 @@ def main():
     parser.add_argument('--ge-dump',action='store_true')
     parser.add_argument('--pid-ppsspp',type=int,help='PID Linux para observación /proc antes/después')
     parser.add_argument('--iso-en-proceso',type=Path,help='ISO original o sonda privada autenticada por SHA')
-    parser.add_argument('--tipo-iso',choices=('usa','sonda'))
+    parser.add_argument('--tipo-iso',choices=('usa','sonda','f1'))
     args=parser.parse_args()
     if not re.fullmatch('[A-Za-z0-9_-]{1,48}',args.scene):parser.error('Escena inválida')
     if not 1<=args.port<=65535:parser.error('Puerto incorrecto')
@@ -213,10 +213,10 @@ def main():
         mips=client.request('memory.disasm',address=0x089089A0,count=32).get('lines',[])
         if all(witness_args):
             try:
-                from tools.f2_iso_proceso_ppsspp import SOURCE_SHA, PROBE_SHA
+                from tools.f2_iso_proceso_ppsspp import SOURCE_SHA, PROBE_SHA, F1_SHA
             except ModuleNotFoundError:
-                from f2_iso_proceso_ppsspp import SOURCE_SHA, PROBE_SHA
-            expected=SOURCE_SHA if args.tipo_iso=='usa' else PROBE_SHA
+                from f2_iso_proceso_ppsspp import SOURCE_SHA, PROBE_SHA, F1_SHA
+            expected={'usa':SOURCE_SHA,'sonda':PROBE_SHA,'f1':F1_SHA}[args.tipo_iso]
             shots,iso_witness=capture_with_iso_witness(client,args.scene,folder,args.ge_dump,
                 args.pid_ppsspp,args.iso_en_proceso,expected)
         else:

@@ -117,6 +117,16 @@ class TestProcfileAudit(unittest.TestCase):
         with patch.object(m,'ISO_SIZE',self.iso.stat().st_size),patch.object(m,'SOURCE_SHA',sha(self.iso.read_bytes())):
             r=m.validate_iso(self.iso,sha(self.iso.read_bytes()),self.repo)
             self.assertEqual(r['source_iso_bytes'],len(self.iso.read_bytes()))
+    def test_f1_synthetic_exact_size_and_hash(self):
+        actual_sha = sha(self.iso.read_bytes())
+        with patch.object(m, 'F1_SIZE', self.iso.stat().st_size), patch.object(m, 'F1_SHA', actual_sha):
+            r = m.validate_iso(self.iso, actual_sha, self.repo)
+        self.assertEqual(r['expected_label'], 'F1_es_event_safe')
+    def test_f1_synthetic_mismatched_size_rejected(self):
+        actual_sha = sha(self.iso.read_bytes())
+        with patch.object(m, 'F1_SIZE', self.iso.stat().st_size + 1), patch.object(m, 'F1_SHA', actual_sha):
+            with self.assertRaises(ValueError):
+                m.validate_iso(self.iso, actual_sha, self.repo)
     def test_no_paths_in_snapshot(self):
         r=self.snapshot();s=str(r)
         self.assertNotIn(str(self.iso),s)

@@ -14,7 +14,9 @@ from pathlib import Path
 
 SOURCE_SHA = 'b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f'
 PROBE_SHA = 'b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa'
+F1_SHA = '496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986'
 ISO_SIZE = 305496064
+F1_SIZE = 306456576
 APPIMAGE_SHA = '661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21'
 APPIMAGE_SIZE = 50689748
 
@@ -41,13 +43,17 @@ def canonical_private_input(path: Path, checkout: Path | None = None) -> Path:
 
 def validate_iso(iso: Path, expected_sha: str, checkout: Path | None = None) -> dict:
     iso = canonical_private_input(iso, checkout)
-    if expected_sha not in (SOURCE_SHA, PROBE_SHA):
-        raise ValueError('Solo hashes aprobados de ISO USA original/sonda')
+    if expected_sha not in (SOURCE_SHA, PROBE_SHA, F1_SHA):
+        raise ValueError('Solo hashes aprobados de ISO USA original/sonda/F1')
     st = iso.stat()
-    if st.st_size != ISO_SIZE or sha_file(iso) != expected_sha:
+    expected_size = F1_SIZE if expected_sha == F1_SHA else ISO_SIZE
+    if st.st_size != expected_size or sha_file(iso) != expected_sha:
         raise ValueError('La ISO no coincide exactamente con SHA/tamaño exigidos')
+    label = ('USA_original' if expected_sha == SOURCE_SHA else
+             'TUIKA_magenta_probe' if expected_sha == PROBE_SHA else
+             'F1_es_event_safe')
     return {'source_iso_sha256': expected_sha, 'source_iso_bytes': st.st_size,
-            'expected_label':'USA_original' if expected_sha == SOURCE_SHA else 'TUIKA_magenta_probe',
+            'expected_label':label,
             'inode':st.st_ino,'device':st.st_dev}
 
 def read_start_ticks(stat_bytes: bytes) -> int:
@@ -136,9 +142,9 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--pid',type=int,required=True)
     p.add_argument('--iso-privada',type=Path,required=True)
-    p.add_argument('--tipo',choices=('usa','sonda'),required=True)
+    p.add_argument('--tipo',choices=('usa','sonda','f1'),required=True)
     args=p.parse_args()
-    expected=SOURCE_SHA if args.tipo == 'usa' else PROBE_SHA
+    expected={'usa':SOURCE_SHA,'sonda':PROBE_SHA,'f1':F1_SHA}[args.tipo]
     trusted=validate_iso(args.iso_privada,expected)
     witness=proc_snapshot(args.pid,args.iso_privada)
     print(json.dumps({'iso':{k:v for k,v in trusted.items() if k not in ('inode','device')},
