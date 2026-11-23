@@ -1,0 +1,73 @@
+{
+  "schema": "cladun.f2.real_ppsspp_x11_ab_relay.v1",
+  "date": "2026-11-23",
+  "status": "F2_OPEN",
+  "source_iso": {
+    "bytes": 305496064,
+    "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f"
+  },
+  "ppsspp": {
+    "version": "1.20.4",
+    "arch": "Linux x86_64 AppImage official",
+    "bytes": 50689748,
+    "sha256": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21",
+    "real_original_booted": true,
+    "real_probe_booted": true,
+    "display": "Xvfb 1280x720; X11 960x544; software rendering",
+    "external_audio_workaround": "LD_PRELOAD getenv SDL_AUDIODRIVER=dummy; PPSSPP executable unchanged"
+  },
+  "probe": {
+    "sha256": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa",
+    "changed_bytes": 3,
+    "pspfs_neighbors_identical": 348,
+    "dsarc_neighbors_identical": 26
+  },
+  "x11_procfs": {
+    "net_wm_pid_matches_real_ppsspp_process": true,
+    "matched_iso_inode_fd_both_samples": true,
+    "pid_starttime_stable": true,
+    "loaded_game_iso_identity_proven": false,
+    "websocket_server_pid_correlated": false,
+    "psp_framebuffer_capture": false
+  },
+  "splash_ab": {
+    "scene": "SYSTEM PRiSM, NOT gameplay",
+    "original_png_sha256": "c20b515ddee01cdfd1bd55de184c079fc1a50ad45df9512dc5d9bf2a15fa078f",
+    "probe_png_sha256": "c20b515ddee01cdfd1bd55de184c079fc1a50ad45df9512dc5d9bf2a15fa078f",
+    "pixel_diff": 0,
+    "magenta_pixels_original": 1152,
+    "magenta_pixels_probe": 1152,
+    "probe_effect_proven": false,
+    "magenta_false_positive_ruled_out": true
+  },
+  "websocket": {
+    "attempted": true,
+    "requested_port": 24192,
+    "port_listening": false,
+    "handshake": false,
+    "ge_dump": false,
+    "mips_ram_ge_vram_proven": false
+  },
+  "qa": {
+    "python_tests_run": 482,
+    "python_skipped": 1,
+    "python_failures": 0,
+    "new_synthetic_x11_tests": 7,
+    "corpus_integrity": "PASS",
+    "spanish_draft": "PASS_9235_OF_9237",
+    "preflight": "PASS_STATIC",
+    "integrability": "PASS_STATIC",
+    "go_test_standard": "PASS",
+    "go_test_embedded": "BLOCKED_ABSENT_PRIVATE_BPS",
+    "windows_no_payload_build": "PASS"
+  },
+  "pending": [
+    "TUIKA gameplay positive/negative A/B",
+    "WebSocket server",
+    "F1 X11 regression",
+    "19 glyphs multi-context",
+    "MIPS RAM GE VRAM",
+    "F3 F4 F5 F6"
+  ],
+  "commercial_binary_committed": false
+}

@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F3 ACTIVA: origen de introducción inglesa identificado en SCRIPT.SDT/SCRIPT.DAT, demo1001_00.dsf y demo1001_01.dsf, ISO USA ORIGINAL REAL verificó 7 bloques/878 comandos/98 opcodes textuales/97 campos no vacíos. Borrador real GitHub tiene 97/97 traducciones: 85 cambian longitud y quedan protegidas por --event-safe-only, 11 igual longitud distintos, 1 sin cambio. NO integrados/NO PPSSPP nuevo. F2 SIGUE ABIERTA. AppImage PPSSPP oficial v1.20.4 fue ejecutado REAL históricamente en F1 pero NO disponible en este contenedor por DNS/descarga. F4–F6 pendientes.",
+  "fase_actual": "F2 ABIERTA: PPSSPP oficial 1.20.4 ejecutado REAL con ISO USA y sonda, X11 _NET_WM_PID y /proc FD corroborados, splash A/B idéntico; 1152 píxeles magenta ya originales (falso positivo descartado); WS 24192 NO escuchó, gameplay TUIKA/19 glifos/GE/VRAM pendiente.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -221,7 +221,7 @@
     "23/11 F3: PPSSPP 1.20.4 oficial Linux AppImage NO descargable por DNS GitHub; no emulación nueva, ni pantallas A/B intro. Evidencias F1 PPSSPP originales históricas sí son válidas, no repetidas.",
     "23/11 F3: sin reubicación ni inserción de los 85 diálogos de distinta longitud; sin análisis dinámico de referencias/jumps de SCRIPT.DAT; no afirmar F3 terminada."
   ],
-  "siguiente_accion": "Continuar F2: trazado real de KITAJIMA_KARI.IMY hasta RAM/VRAM/PC MIPS y GE; ensayar HUD/tutoriales/combate; validar 19 glifos en varias escenas y regresar a F1 960x544 antes de adoptar tinta blanca por defecto.",
+  "siguiente_accion": "Seguir F2: obtener debugger WebSocket real y escena de habilidades/combate, capturar A/B TUIKA sincronizado; descartar magenta natural de SYSTEM PRiSM; verificar 19 glifos y regresión F1 sin sacrificar eventos.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
   "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
   "ultimo_commit_trabajo": "3241f5ca9463e202e3b9b1371bf0deefa52f4673",
@@ -1206,5 +1206,27 @@
     "private_report_sha256": "5f9865e5932c871b3e7b1a93b46e439fdb1979fd63041bccf404ed638c3bc5a0",
     "linked_csv_to_original_iso_inside_new_tool_pending_full_run": true,
     "next": "F3 primero: preparar reubicación y controles de flujo para 85 mensajes demo1001, con prueba real PPSSPP; conservar F2 abierta y 4524 scripts pendientes."
+  },
+  "f2_relevo_ppsspp_real_x11_ab_2026_11_23": {
+    "documento": "docs/F2_PPSSPP_REAL_X11_AB_TUIKA_2026-11-23.md",
+    "reporte": "reports/RESULTADO_F2_PPSSPP_REAL_X11_AB_TUIKA_2026-11-23.json",
+    "code": "tools/f2_x11_ppsspp_procfs_capture.py",
+    "tests": "tests/test_f2_x11_ppsspp_procfs_capture.py",
+    "ISO_USA_SHA256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "PPSSPP_1204_SHA256": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21",
+    "probe_SHA256": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa",
+    "real_original_and_probe_booted": true,
+    "procfs_x11_PID_and_fd_corroborated": true,
+    "same_splash_A_B_pixel_differences": 0,
+    "magenta_pixels_in_each_splash": 1152,
+    "conclusion": "magenta already present in original; not proof of TUIKA effect",
+    "websocket_24192_connection": false,
+    "real_tuika_gameplay_proven": false,
+    "python_tests_run": 482,
+    "python_tests_skipped": 1,
+    "go_test_regular": "PASS",
+    "go_test_embedded": "NOT_RUN_WITHOUT_PRIVATE_BPS",
+    "windows_no_payload_build": "PASS",
+    "next_prompt": "prompts/SIGUIENTE_TAREA.md"
   }
 }
