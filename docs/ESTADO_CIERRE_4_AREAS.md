@@ -32,3 +32,7 @@ No se tocó corpus, fuentes, gráficos, EBOOT, `SCRIPT.DAT/TBL`, BPS, ISO ni ram
 Comandos para un checkout real (no ejecutados aquí por DNS): `python -m unittest discover -s tests -v`, `python tools/qa_cobertura_4_areas.py`, `python tools/qa_cobertura_4_areas.py --require-closed` (debe FALLAR todavía), `python tools/f3_simular_intro_mismo_tamano.py --iso-original /PRIVADO/USA.iso --reporte-privado /PRIVADO/sim.json`, `python tools/f3_presupuesto_padding_intro.py --iso-original /PRIVADO/USA.iso --reporte-privado /PRIVADO/padding.json`, `(cd patcher && go test ./...)`.
 
 **Cierre automático: 0/4 áreas.** No certificar 100% por que exista matriz, script de validación o Actions en verde.
+
+## R8 — auditoría estática F4 sobre la ISO auténtica (23/11/2026)
+
+El barrido de **101.659 ventanas u32** en argumentos de **46.308 comandos no textuales**, extraídos de la ISO USA original y reparseados como parte de 51.705 comandos, encontró **1 igualdad externa con ID demo1001** y **21 igualdades relativas dentro de demo1001**. Op 0x0A/+0: una coincidencia; 0x01/+0: cinco; 0x02/+2: cuatro; 0x02/+6: doce. **No son saltos demostrados; no autorizan reubicar las 4.524 traducciones aplazadas.** Diez tests sintéticos nuevos PASS local; PPSSPP C NO EJECUTADO. Informe en `docs/F4_R8_REFERENCIAS_DEMO1001_2026-11-23.md` y JSON asociado. T/G/R/Q siguen abiertos; los 42 casos QA siguen NOT_RUN en este relevo.
