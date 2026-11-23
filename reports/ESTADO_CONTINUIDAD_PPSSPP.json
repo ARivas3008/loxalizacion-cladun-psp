@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F2 ABIERTA: ISO USA 305496064 B y sonda TUIKA CLUT2 magenta reconstruidas y revalidadas por hash; 3 bytes, PSPFS/DSARC ajenos intactos. Capturador con nuevo modo --ge-only evita fallos de framebuffer al guardar dump GE real, con tests sintéticos; PPSSPP 1.20.4 NO ejecutado en este relevo. TUIKA A/B en combate y 19 glifos multicontexto SIN demostrar; F3–F6 pendientes.",
+  "fase_actual": "F2 ABIERTA: ISO USA 305496064 B y sonda TUIKA CLUT2 magenta reconstruidas y revalidadas por hash; 3 bytes, PSPFS/DSARC ajenos intactos. Capturador con nuevo modo --ge-only evita fallos de framebuffer al guardar dump GE real, con tests sintéticos; PPSSPP 1.20.4 NO ejecutado en este relevo. TUIKA A/B en combate y 19 glifos multicontexto SIN demostrar; F3–F6 pendientes. | F3-R2: metadatos de topología IMY en USA autenticada; 14 tests sintéticos; 85 eventos y letras del prólogo siguen pendientes; sin PPSSPP nuevo.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -1464,5 +1464,28 @@
     "doc": "docs/F2_GE_ONLY_WEB_SOCKET_SIN_FRAMEBUFFER_2026-11-23.md",
     "report": "reports/RESULTADO_F2_GE_ONLY_Y_ISO_2026-11-23.json",
     "next_prompt": "prompts/SIGUIENTE_TAREA.md"
+  },
+  "f3_imy_topologia_relevo_2026_11_23": {
+    "status": "F3_OPEN_A_REAL_ISO_B_14_SYNTH_C_NO_NEW_PPSSPP",
+    "iso_usa_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "public_doc": "docs/F3_ANIME_TOPOLOGIA_2026-11-23.md",
+    "public_report": "reports/RESULTADO_F3_ANIME_TOPOLOGIA_2026-11-23.json",
+    "code": "tools/f3_anime_topologia.py",
+    "tests": "tests/test_f3_anime_topologia.py",
+    "original_234_count": 231,
+    "type00": 136,
+    "type02": 95,
+    "extra_exact_identical_type02_intervals": 17,
+    "type02_longest_run": 36,
+    "synthetic_local_14_pass": true,
+    "private_report_sha256": "5cb78034a1495497a874a4f502dd21eaa07b2ac5796c392e4ea7db1539fa04e6",
+    "preserved_f2_ge_only_commit": "79e803510d2f2d5f08efe3d2b6cc7ff0810692db",
+    "ppsspp_this_relay": false,
+    "prologue_letters_source_verified": false,
+    "script_85_relocated": false,
+    "script_4524_deferred": true,
+    "event_safe_only": true,
+    "white_new_ink_default_false": true,
+    "pr7_draft_required": true
   }
 }
