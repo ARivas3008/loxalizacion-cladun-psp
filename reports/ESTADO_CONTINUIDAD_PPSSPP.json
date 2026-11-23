@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F2 ABIERTA: ISO original y sonda TUIKA revalidadas exactamente (3 bytes, 348 PSPFS y 26 DSARC ajenos intactos); 17 pruebas sintéticas para liberar entradas WebSocket. SIN nueva emulación PPSSPP ni A/B TUIKA en combate ni 19 glifos multicontesto; F3 ANIME000 continúa abierta en paralelo, F4–F6 pendientes.",
+  "fase_actual": "F2 ABIERTA: ISO USA 305496064 B y sonda TUIKA CLUT2 magenta reconstruidas y revalidadas por hash; 3 bytes, PSPFS/DSARC ajenos intactos. Capturador con nuevo modo --ge-only evita fallos de framebuffer al guardar dump GE real, con tests sintéticos; PPSSPP 1.20.4 NO ejecutado en este relevo. TUIKA A/B en combate y 19 glifos multicontexto SIN demostrar; F3–F6 pendientes.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -228,7 +228,7 @@
     "23/11 F3 segundo relevo: NO se probó una sonda visual NO destructiva que permitiera atribuir exactamente la tipografía del prólogo a ANIME000 o a un IMY; fallo ANIME000 ocurrió antes de la pantalla, por lo que no es evidencia de la textura de texto.",
     "23/11 F3 segundo relevo: NO se insertaron los 85 textos demo1001 de distinta longitud, sin modelo completo de saltos/referencias ni QA de reubicación; sin cambiar --event-safe-only."
   ],
-  "siguiente_accion": "Con PPSSPP 1.20.4 auténtico e ISOs originales SHA validadas, llegar desde título a mismo evento comprobado de trampa/habilidad en USA/sonda y realizar A/B sincronizado X11/GE/VRAM; auditar 19 glifos en varias pantallas, mantener F2 abierta.",
+  "siguiente_accion": "Autenticar emulador oficial e ISOs, repetir USA/sonda hasta habilidad real con WebSocket release seguro, capturar X11 + gpu.record.dump --ge-only, comparar escenas y localizar TUIKA MIPS/RAM/GE/VRAM; QA 19 glifos, mantener F2 abierta hasta prueba genuina.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
   "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
   "ultimo_commit_trabajo": "3241f5ca9463e202e3b9b1371bf0deefa52f4673",
@@ -1120,17 +1120,18 @@
   },
   "ultimo_relevo": {
     "fecha": "2026-11-23",
-    "fase_prioritaria": "F2_AB_TUIKA_COMBATE_PENDIENTE_F3_PARALELA_ABIERTA",
-    "previous_head": "b8118782f29c3ae273767f2499da2b778b421858",
-    "authentic_original_iso_revalidated": true,
-    "authentic_probe_three_byte_verified": true,
-    "targeted_mock_ws_tests_passed": 17,
-    "official_ppsspp_executed_this_relay": false,
-    "tuika_combat_proven": false,
-    "glyphs_19_multicontext_proven": false,
-    "original_and_corpus_unchanged": true,
-    "recursive_prompt_rewritten": "prompts/SIGUIENTE_TAREA.md",
-    "draft_pr_required": true
+    "fase_prioritaria": "F2_TUIKA_COMBATE_GEOSCENA_NO_ALCANZADA_NUEVO_GE_ONLY",
+    "previous_head": "46df9c92135821a74d8bcb9990212cd422aef67b",
+    "authentic_original_and_probe_revalidated": true,
+    "static_pspfs_dsarc_isolation_verified": true,
+    "real_ppsspp_executed_this_relay": false,
+    "new_GE_only_capture_mode_implemented": true,
+    "new_mock_tests_added": 3,
+    "CI_final_must_be_checked_after_push": true,
+    "preserve_f3_prologue_anime000": true,
+    "no_canonical_corpus_changes": true,
+    "no_commercial_assets_published": true,
+    "recursive_prompt": "prompts/SIGUIENTE_TAREA.md"
   },
   "f2_procfs_witness_2026_11_23": {
     "schema": "cladun.f2.procfs_relay_status.v1",
@@ -1420,6 +1421,48 @@
     "pr7_must_remain_draft": true,
     "doc": "docs/F2_REVALIDACION_ISO_TUIKA_Y_RELEASE_WS_2026-11-23.md",
     "report": "reports/RESULTADO_F2_REVALIDACION_ORIGINAL_Y_RELEASE_2026-11-23.json",
+    "next_prompt": "prompts/SIGUIENTE_TAREA.md"
+  },
+  "f2_ge_only_2026_11_23": {
+    "estado": "F2_ABIERTA_SIN_PPSSPP_NUEVO",
+    "starting_head": "46df9c92135821a74d8bcb9990212cd422aef67b",
+    "source_original_extracted_in_relay": true,
+    "original_iso_bytes": 305496064,
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "probe_iso_sha256": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa",
+    "verified_exact_deltas_absolute": [
+      114744872,
+      114744873,
+      114744874
+    ],
+    "pspfs_table_same": true,
+    "pspfs_unchanged_neighbors": 348,
+    "dsarc_table_same": true,
+    "dsarc_unchanged_neighbors": 26,
+    "original_tuika_sha256": "c47140753a462cc5b1cc454ee79e0c37b526f06ba5c663b957a91202ebd09127",
+    "probe_tuika_sha256": "efcf4f41f57c300476e8ce54a32dea01f242dda3fbf3fb9c4e0b582bad8f5252",
+    "private_metadata_sha256": "60c40acff0726b79e0be60d4b98a7fd6886194c97de90b36ece35eea0230836e",
+    "code_read_official_gpu_buffer_v1_20_4": true,
+    "code_level_buffer_error_explanation": "Could not download output occurs when backend GPUStepping buffer provider returns false; exact backend cause not yet proven",
+    "new_tool_mode": "tools/f2_ppsspp_ws_1204.py --ge-dump --ge-only",
+    "new_synthetic_tests": 3,
+    "synthetic_tests_files": [
+      "tests/test_f2_ppsspp_ws_1204.py"
+    ],
+    "github_full_ci_on_final_head_pending": true,
+    "real_ppsspp_this_relay": false,
+    "new_real_ge_dump_count": 0,
+    "new_ppsspp_png_count": 0,
+    "tuika_combat_runtime_ab_proven": false,
+    "glyphs_19_multicontext_proven": false,
+    "mips_ram_ge_vram_proven": false,
+    "canonical_corpus_changed": false,
+    "source_game_assets_changed_in_git": false,
+    "white_new_ink_default_changed": false,
+    "event_safe_only_preserved": true,
+    "pr7_open_draft_required": true,
+    "doc": "docs/F2_GE_ONLY_WEB_SOCKET_SIN_FRAMEBUFFER_2026-11-23.md",
+    "report": "reports/RESULTADO_F2_GE_ONLY_Y_ISO_2026-11-23.json",
     "next_prompt": "prompts/SIGUIENTE_TAREA.md"
   }
 }

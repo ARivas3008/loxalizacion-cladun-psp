@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""F2: dos capturas PNG reales mediante PPSSPP 1.20.4 WebSocket LOCAL.
+"""F2: dos PNG del framebuffer O volcado GE sin readback (modo --ge-only).
+El modo --ge-only es útil si OpenGL/llvmpipe rechaza gpu.buffer.screenshot.
+No probar el origen de una textura ni la procedencia MIPS con GE solamente.
 
 Todo archivo generado va a una carpeta privada FUERA del repositorio.
 NO es una traza GE/MIPS/VRAM completa; no falsificar esa conclusión.
@@ -106,12 +108,14 @@ def _resume_after_gpu_read(client,paused_here):
         client.notify('cpu.resume')
         client.wait_broadcast('cpu.resume')
 
-def capture(client,scene,folder,ge_dump=False):
+def capture(client,scene,folder,ge_dump=False,ge_only=False):
     """Real GPU readbacks need a stepping CPU; GE next-frame recorder needs a RUNNING CPU.
 
     These images represent the PSP output framebuffer, NOT the 960x544 desktop
     window. Never pass them off as the old F1 window-size regression screenshots.
     """
+    if ge_only and not ge_dump:
+        raise ValueError('El modo --ge-only requiere --ge-dump')
     shots=[]
     gpu=None
     if ge_dump:
@@ -123,6 +127,15 @@ def capture(client,scene,folder,ge_dump=False):
         if raw[:8]!=b'PPSSPPGE':
             raise ValueError('La grabación no contiene cabecera PPSSPPGE')
         gpu=exclusive(folder/f'{scene}_GE_PRIVATE.dump',raw)
+    if ge_only:
+        # No framebuffer readback: never claim a PSP screenshot or a texture identity.
+        return {'screenshots':[], 'gpu_record':gpu,
+                'source':'gpu.record.dump on running PPSSPP (GE-only; no framebuffer PNG)',
+                'two_distinct_frames_proven':False,
+                'gpu_framebuffer_readback_attempted':False,
+                'mips_ram_ge_vram_proven':False,
+                'texture_identity_proven':False,
+                'f1_960x544_window_regression_proven':False}
     for i in range(2):
         paused_here,ticks=_pause_for_gpu_read(client)
         try:
@@ -146,7 +159,7 @@ def capture(client,scene,folder,ge_dump=False):
                 shots[1]['emulated_ticks_at_pause']>shots[0]['emulated_ticks_at_pause'],
             'f1_960x544_window_regression_proven':False}
 
-def capture_with_iso_witness(client, scene, folder, ge_dump, pid, iso, expected_sha, proc_root=Path('/proc')):
+def capture_with_iso_witness(client, scene, folder, ge_dump, pid, iso, expected_sha, proc_root=Path('/proc'), ge_only=False):
     """Bind a procfs fd snapshot before/after GPU capture to the SAME PID.
 
     Does NOT establish that this PID serves the WS endpoint, or that its open
@@ -160,7 +173,7 @@ def capture_with_iso_witness(client, scene, folder, ge_dump, pid, iso, expected_
     first=proc_snapshot(pid,iso,proc_root)
     if not first['ppsspp_executable_name_hint']:
         raise ValueError('PID no corresponde a ejecutable nominalmente PPSSPP/AppRun')
-    captures=capture(client,scene,folder,ge_dump)
+    captures=capture(client,scene,folder,ge_dump,ge_only=ge_only)
     last=proc_snapshot(pid,iso,proc_root)
     # Fail closed if the ISO was mutated in place while screenshots were taken.
     revalidated=validate_iso(iso,expected_sha)
@@ -185,12 +198,16 @@ def main():
     parser.add_argument('--salida-privada',type=Path,required=True)
     parser.add_argument('--port',type=int,default=24192)
     parser.add_argument('--ge-dump',action='store_true')
+    parser.add_argument('--ge-only',action='store_true',
+                        help='Solo GE real, sin gpu.buffer.screenshot; requiere --ge-dump')
     parser.add_argument('--pid-ppsspp',type=int,help='PID Linux para observación /proc antes/después')
     parser.add_argument('--iso-en-proceso',type=Path,help='ISO original o sonda privada autenticada por SHA')
     parser.add_argument('--tipo-iso',choices=('usa','sonda','f1'))
     args=parser.parse_args()
     if not re.fullmatch('[A-Za-z0-9_-]{1,48}',args.scene):parser.error('Escena inválida')
     if not 1<=args.port<=65535:parser.error('Puerto incorrecto')
+    if args.ge_only and not args.ge_dump:
+        parser.error('--ge-only requiere --ge-dump')
     witness_args=(args.pid_ppsspp is not None,args.iso_en_proceso is not None,args.tipo_iso is not None)
     if any(witness_args) and not all(witness_args):
         parser.error('Para observar /proc se requieren --pid-ppsspp, --iso-en-proceso y --tipo-iso juntos')
@@ -218,9 +235,9 @@ def main():
                 from f2_iso_proceso_ppsspp import SOURCE_SHA, PROBE_SHA, F1_SHA
             expected={'usa':SOURCE_SHA,'sonda':PROBE_SHA,'f1':F1_SHA}[args.tipo_iso]
             shots,iso_witness=capture_with_iso_witness(client,args.scene,folder,args.ge_dump,
-                args.pid_ppsspp,args.iso_en_proceso,expected)
+                args.pid_ppsspp,args.iso_en_proceso,expected,ge_only=args.ge_only)
         else:
-            shots,iso_witness=capture(client,args.scene,folder,args.ge_dump),None
+            shots,iso_witness=capture(client,args.scene,folder,args.ge_dump,ge_only=args.ge_only),None
         report={'schema':'cladun.f2.ppsspp_private_v1204.v1',
                 'runtime':'PPSSPP REAL SOLO CUANDO SE CONECTA A UN EMULADOR',
                 'ppsspp':ver.get('version'),'game':game,'scene':args.scene,
@@ -233,6 +250,8 @@ def main():
         encoded=(json.dumps(report,ensure_ascii=False,indent=2)+'\n').encode()
         manifest=exclusive(folder/'manifest_PRIVATE.json',encoded)
         print(json.dumps({'manifest':manifest,'png':report['captures']['screenshots'],
+                          'ge_record':report['captures']['gpu_record'],
+                          'gpu_framebuffer_readback_attempted':not args.ge_only,
                           'ge_vram_pipeline_proven':False},ensure_ascii=False,indent=2))
     finally:conn.close()
 if __name__=='__main__':main()

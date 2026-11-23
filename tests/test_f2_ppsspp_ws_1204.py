@@ -151,6 +151,37 @@ class TestF2CaptureStepping(unittest.TestCase):
                 capture(Client(ws),'DIALOGUE',Path(d))
             self.assertEqual(ws.sent.count('cpu.resume'),1)
             self.assertFalse(ws.stepping)
+    def test_ge_only_saves_synthetic_dump_without_buffer_or_pause(self):
+        from f2_ppsspp_ws_1204 import capture
+        with tempfile.TemporaryDirectory() as d:
+            ws=EmulatedProtocol()
+            r=capture(Client(ws),'HABILIDAD',Path(d),ge_dump=True,ge_only=True)
+            self.assertEqual(r['screenshots'],[])
+            self.assertEqual(r['gpu_record']['bytes'],len(b'PPSSPPGE'+b'SYNTHETIC'))
+            self.assertEqual(r['source'],'gpu.record.dump on running PPSSPP (GE-only; no framebuffer PNG)')
+            self.assertFalse(r['gpu_framebuffer_readback_attempted'])
+            self.assertFalse(r['two_distinct_frames_proven'])
+            self.assertFalse(r['mips_ram_ge_vram_proven'])
+            self.assertFalse(r['texture_identity_proven'])
+            self.assertFalse(r['f1_960x544_window_regression_proven'])
+            self.assertEqual(ws.sent, ['cpu.status', 'gpu.record.dump'])
+            self.assertFalse(ws.stepping)
+            self.assertEqual(sorted(p.name for p in Path(d).iterdir()), ['HABILIDAD_GE_PRIVATE.dump'])
+    def test_ge_only_requires_explicit_record(self):
+        from f2_ppsspp_ws_1204 import capture
+        with tempfile.TemporaryDirectory() as d:
+            ws=EmulatedProtocol()
+            with self.assertRaises(ValueError):
+                capture(Client(ws),'HABILIDAD',Path(d),ge_only=True)
+            self.assertEqual(ws.sent,[])
+    def test_ge_only_rejects_paused_cpu_without_writing(self):
+        from f2_ppsspp_ws_1204 import capture
+        with tempfile.TemporaryDirectory() as d:
+            ws=EmulatedProtocol(stepping=True)
+            with self.assertRaises(RuntimeError):
+                capture(Client(ws),'HABILIDAD',Path(d),ge_dump=True,ge_only=True)
+            self.assertEqual(ws.sent,['cpu.status'])
+            self.assertEqual(list(Path(d).iterdir()),[])
     def test_paused_cpu_rejects_running_gpu_recorder(self):
         from f2_ppsspp_ws_1204 import capture
         with tempfile.TemporaryDirectory() as d:

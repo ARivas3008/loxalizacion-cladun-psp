@@ -1,0 +1,77 @@
+{
+  "schema": "cladun.f2.ge_only_isolated_original_probe.v1",
+  "date": "2026-11-23",
+  "initial_head": "46df9c92135821a74d8bcb9990212cd422aef67b",
+  "evidence_A": {
+    "extracted_uploaded_user_archive": true,
+    "original_iso_size": 305496064,
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "reconstructed_probe_size": 305496064,
+    "probe_sha256": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa",
+    "absolute_byte_offsets": [
+      114744872,
+      114744873,
+      114744874
+    ],
+    "source_rgb": [
+      249,
+      251,
+      249
+    ],
+    "probe_rgb": [
+      255,
+      0,
+      255
+    ],
+    "alpha_unchanged": true,
+    "pspfs_table_equal": true,
+    "pspfs_resources_total": 349,
+    "unchanged_pspfs_neighbors": 348,
+    "sysgra_original_sha256": "63d9443084a2aeab8c2a3f79aebdb130eaf6c5d2e86f8be51346d7458ab81854",
+    "dsarc_table_equal": true,
+    "dsarc_members_total": 27,
+    "unchanged_dsarc_neighbors": 26,
+    "tuika_original_sha256": "c47140753a462cc5b1cc454ee79e0c37b526f06ba5c663b957a91202ebd09127",
+    "tuika_probe_sha256": "efcf4f41f57c300476e8ce54a32dea01f242dda3fbf3fb9c4e0b582bad8f5252",
+    "private_metadata_json_sha256": "60c40acff0726b79e0be60d4b98a7fd6886194c97de90b36ece35eea0230836e"
+  },
+  "evidence_B": {
+    "official_ppsspp_source_read_at_tag": "v1.20.4",
+    "source_file": "Core/Debugger/WebSocket/GPUBufferSubscriber.cpp",
+    "source_control_flow": "Could not download output emitted after backend buffer-provider returns false, when already CPU/GPU stepping",
+    "new_mode": "--ge-dump --ge-only",
+    "tool": "tools/f2_ppsspp_ws_1204.py",
+    "tests": "tests/test_f2_ppsspp_ws_1204.py",
+    "new_mock_tests": 3,
+    "synthetic_only": true,
+    "full_ci_after_commit_required": true
+  },
+  "evidence_C": {
+    "official_ppsspp_executed_this_relay": false,
+    "blocker": "No PPSSPP v1.20.4 AppImage available and github.com DNS unreachable",
+    "new_x11_pngs": 0,
+    "new_real_ge_dumps": 0,
+    "tuika_combat_ab_proven": false,
+    "all_19_glyphs_multicontext_proven": false,
+    "texture_identity_mips_ram_ge_vram_proven": false
+  },
+  "protected": {
+    "user_original_iso_unchanged": true,
+    "commercial_assets_in_git": false,
+    "corpus_rows": 9237,
+    "spanish_rows": 9235,
+    "deferred_script_edits": 4524,
+    "event_safe_only": true,
+    "white_new_ink_default": false,
+    "pr7_draft": true
+  },
+  "file_changes": [
+    "tools/f2_ppsspp_ws_1204.py",
+    "tests/test_f2_ppsspp_ws_1204.py",
+    "docs/F2_GE_ONLY_WEB_SOCKET_SIN_FRAMEBUFFER_2026-11-23.md",
+    "reports/RESULTADO_F2_GE_ONLY_Y_ISO_2026-11-23.json",
+    "reports/ESTADO_CONTINUIDAD_PPSSPP.json",
+    "prompts/SIGUIENTE_TAREA.md"
+  ],
+  "next": "With genuine official PPSSPP and same in-game TUIKA scene, collect X11 A/B and GE-only A/B with procfs witness, analyze texture provenance and 19 glyphs; keep F2 open."
+}
