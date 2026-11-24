@@ -31,12 +31,12 @@ def classify(rows,script=None):
    new=encode_spanish(text)
    if decode_spanish(new)!=text:raise ValueError('codec non-roundtrip')
    offset=int(row['offset_hex'],16)
-   if script is not None and script[offset:offset+len(old)]!=old:
-    raise ValueError('source mismatch at '+gid)
   except (ValueError,UnicodeError) as exc:
    result['invalid_or_unencodable']+=1
    if len(examples)<10:examples.append({'group_id':gid,'reason':type(exc).__name__})
    continue
+  if script is not None and script[offset:offset+len(old)]!=old:
+   raise ValueError('authenticated source preimage mismatch at '+gid)
   delta=len(new)-len(old)
   result['translated_script_rows']+=1
   deltas[delta]+=1

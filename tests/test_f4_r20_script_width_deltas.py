@@ -24,9 +24,8 @@ class WidthDeltaTests(unittest.TestCase):
  def test_duplicate_gid_rejected(self):
   with self.assertRaises(ValueError):classify([row('1','Hi','Sí'),row('1','Hi','No')])
  def test_bad_original_preimage_not_counted(self):
-  x=classify([row('1','Hello','Adios')],b'Wrong')
-  self.assertEqual(x['invalid_or_unencodable'],1)
-  self.assertEqual(x.get('translated_script_rows',0),0)
+  with self.assertRaisesRegex(ValueError,'authenticated source preimage mismatch'):
+   classify([row('1','Hello','Adios')],b'Wrong')
  def test_authentic_preimage_success(self):
   x=classify([row('1','Hello','Adios')],b'Hello')
   self.assertEqual(x['evidence'],'A_AUTHENTIC_SCRIPT_PREIMAGE')
