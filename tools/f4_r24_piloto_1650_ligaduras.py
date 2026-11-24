@@ -112,6 +112,16 @@ def replace_original_script(src:bytes,tbl:bytes,selected)->tuple[bytes,dict]:
          "SCRIPT event guard violation")
  return bytes(dest),audit
 
+def font_allowed_span(offset:int,old_size:int,new_size:int,next_offset:int)->tuple[int,int]:
+ """Only font's old/new byte union, bounded strictly before the next PSPFS."""
+ if not all(type(n) is int for n in (offset,old_size,new_size,next_offset)):
+  raise ValueError("FONT slot parameters must be integers")
+ if offset<0 or old_size<=0 or new_size<=0 or next_offset<=offset:
+  raise ValueError("Unsafe FONT slot parameters")
+ end=offset+max(old_size,new_size)
+ require(end<=next_offset,"FONT allowed span overlaps an unrelated resource")
+ return offset,end
+
 def update_font_in_existing_candidate(original:Path,baseline:Path,
                                        output:Path,font_arc:bytes)->dict:
  """Replace only FONT.ARC + 4-byte PSPFS length, preserving all prior text edits."""
@@ -146,9 +156,9 @@ def update_font_in_existing_candidate(original:Path,baseline:Path,
  # while compact 19+44 occupies 144000. Clearing the retired 352-byte tail
  # changes bytes belonging to the OLD FONT.ARC, not an unrelated asset.
  # Authorize the full union of old/new FONT spans, never SE.ARC.
- span_end=font["offset"]+max(font["size_stored"],len(font_arc))
- require(span_end<=end,"FONT allowed span overlaps next PSPFS resource")
- outside_equal(pack,modified,[(meta,meta+4),(font["offset"],span_end)],
+ allowed_lo,allowed_hi=font_allowed_span(
+     font["offset"],font["size_stored"],len(font_arc),end)
+ outside_equal(pack,modified,[(meta,meta+4),(allowed_lo,allowed_hi)],
                "FONT replacement in baseline DATA.DAT")
  require(not any(modified[font["offset"]+len(font_arc):end]),
          "Retired font tail or remaining PSPFS padding not zero")
