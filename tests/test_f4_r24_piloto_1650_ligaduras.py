@@ -1,6 +1,8 @@
 """R24 security tests for a PRIVATE candidate, never runtime evidence."""
 import struct
 import unittest
+from tools.f4_r21_ligature_capacity import read_canonical
+from tools.f4_r21_ligature_overlay import make_plan
 from tools.f4_r24_piloto_1650_ligaduras import (
  TARGET_EXTRA,BASE_INTEGRATED,BASE_DEFERRED,TOTAL_PLANNED,
  selection,metrics,replace_original_script,replace_member_payload
@@ -100,6 +102,22 @@ class TestR24Pilot(unittest.TestCase):
   old,children=dsarc_fixture()
   with self.assertRaises(StopIteration):
    replace_member_payload(old,children,"WRONG_NAME",b"x")
+ def test_real_committed_corpus_yields_at_least_1650(self):
+  from pathlib import Path
+  corpus=Path(__file__).resolve().parents[1]/"traduccion/CLADUN_BORRADOR_ES.csv"
+  candidates,meta=make_plan(read_canonical(corpus),ligature_count=44)
+  self.assertEqual(len(candidates),2002)
+  chosen=selection(candidates,1650)
+  self.assertEqual(len(chosen),1650)
+  self.assertEqual(metrics(candidates,chosen)["candidate_baseline_plus_experiment_count"],5374)
+  self.assertEqual(len({i["offset"] for i in chosen}),1650)
+ def test_all_selected_preserve_source_length(self):
+  from pathlib import Path
+  corpus=Path(__file__).resolve().parents[1]/"traduccion/CLADUN_BORRADOR_ES.csv"
+  candidates,_=make_plan(read_canonical(corpus),ligature_count=44)
+  for item in selection(candidates,1650):
+   self.assertEqual(len(item["new"]),len(item["old"]))
+   self.assertEqual(item["bytes"],len(item["old"]))
  def test_source_preimage_never_silently_falls_back(self):
   # Real source scan requires an exact 1625-block SCRIPT.TBL, not a guessed offset.
   with self.assertRaises(Exception):
