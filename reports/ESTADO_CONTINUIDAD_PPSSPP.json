@@ -2275,5 +2275,91 @@
       "pull_request_run": 45303209991,
       "conclusion": "success"
     }
+  },
+  "relevo_r18_2026_11_23": {
+    "schema": "cladun.r18.ldt_and_overlay.v1",
+    "head_initial": "82572ebd81c0d0ccd1992eb34c5d1cdafeb2ff00",
+    "previous_ci": {
+      "push": 45303805062,
+      "pr": 45303813383,
+      "conclusion": "success"
+    },
+    "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "ldt": {
+      "ldt001_records": 24,
+      "ldt001_imy_streams": 24,
+      "ldt001_decoded_bytes": 1188160,
+      "ldt001_unclassified_tail_lengths": {
+        "60": 14,
+        "62": 10
+      },
+      "ldt001_nonzero_tails": 7,
+      "ldt002_records": 39,
+      "ldt002_nested_gzip_payloads": 57,
+      "ldt002_bpp_field_counts": {
+        "4": 56,
+        "8": 1
+      },
+      "ldt002_decoded_bytes": 1714688,
+      "ldt002_zero_padding_histogram": {
+        "0": 12,
+        "1": 14,
+        "2": 4,
+        "3": 12,
+        "4": 1,
+        "7": 1,
+        "8": 1,
+        "10": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "19": 1,
+        "23": 2,
+        "25": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1,
+        "31": 1
+      },
+      "ldt_member_bytes_accounted": [
+        287472,
+        2067856
+      ],
+      "runtime_or_visual_proven": false,
+      "repacking_authorized": false
+    },
+    "overlay": {
+      "r17_reviewed": 42,
+      "r17_static_eligible": 36,
+      "r17_context_pending": 6,
+      "new_intro": 15,
+      "new_scr01": 13,
+      "total_overlay": 64,
+      "payload_bytes": 2007,
+      "changed_bytes": 1773,
+      "script_sha256_virtual": "8b41c60d6e0def06672398dc4e195bcac5da98de7ba57a8ffe2995cde3f584cd",
+      "script_len": 633344,
+      "commands": 51705,
+      "nontext": 46308,
+      "offset_changes": 0,
+      "canonical_modified": false,
+      "ppsspp_executed": false
+    },
+    "gender_review": {
+      "group": "000859",
+      "proposal": "Tú eres la que siempre es imprudente.",
+      "bytes": 37,
+      "already_same_size": true,
+      "canonical_modified": false
+    },
+    "local_synthetic_tests_pass": 18,
+    "global_wrapper_local_execution": false,
+    "qa_defined": 60,
+    "qa_new_pass": 0,
+    "global_deferred": 4524,
+    "ppsspp_executed": false,
+    "assets_modified": false,
+    "release_authorized": false,
+    "next": "prompts/SIGUIENTE_TAREA.md"
   }
 }
