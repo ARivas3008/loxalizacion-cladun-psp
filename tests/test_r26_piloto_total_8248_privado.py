@@ -11,9 +11,12 @@ class TestR26FullTextPilot(unittest.TestCase):
   p=preview()
   self.assertEqual(p["source_rows"],9237)
   self.assertEqual(p["planned_all_changed_canonical_records"],8248)
-  self.assertEqual(p["planned_SCRIPT_dat_texts"],5207)
-  self.assertEqual(p["planned_other_textual_records"],3041)
-  self.assertEqual(p["planned_SCRIPT_same_length"],683)
+  self.assertEqual(p["planned_SCRIPT_dat_changed_texts"],4900)
+  self.assertEqual(p["all_SCRIPT_dat_translated_rows"],5207)
+  self.assertEqual(p["SCRIPT_dat_already_byte_identical_unmodified"],307)
+  self.assertEqual(p["planned_other_textual_records"],3348)
+  self.assertEqual(p["planned_SCRIPT_same_length_changed"],376)
+  self.assertEqual(p["all_SCRIPT_same_width_including_unchanged"],683)
   self.assertEqual(p["planned_SCRIPT_changed_length"],4524)
  def test_full_100pct_stays_experimental(self):
   p=preview()
@@ -25,8 +28,9 @@ class TestR26FullTextPilot(unittest.TestCase):
   self.assertFalse(p["release_authorized"])
   self.assertEqual(p["official_integrated_records_unchanged"],3724)
  def test_full_script_5207_is_not_8248(self):
-  self.assertEqual(SCRIPT_TARGET+3041,FULL_TARGET)
+  self.assertEqual(SCRIPT_TARGET+3348,FULL_TARGET)
   self.assertEqual(VARIABLE_SCRIPT_TARGET+EQUAL_SCRIPT_TARGET,SCRIPT_TARGET)
+  self.assertEqual(SCRIPT_TARGET+307,5207)
  def test_explicit_risk_required_even_before_source_iso(self):
   with self.assertRaisesRegex(ValueError,"experimental risk"):
    private_candidate("/source.iso","/candidate.iso",explicit_risk_acceptance=False)
