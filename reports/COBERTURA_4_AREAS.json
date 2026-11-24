@@ -162,6 +162,32 @@
       "release_autorizada": false,
       "hash_candidata_privada": "f2b27d575b1693a74589459d3ddbfe10349ce06c12474e4fe647ac3061e0b434",
       "informe": "reports/R23_FONT_COMPACT_STATIC.json"
+    },
+    "r24_mas_20_experimental": {
+      "historical_approved_not_changed": 3724,
+      "historical_deferred_not_changed": 4524,
+      "experimental_extra_target": 1650,
+      "candidate_target_3_724_plus_1_650": 5374,
+      "experimental_target_fraction": {
+        "hechos": 5374,
+        "total": 8248
+      },
+      "candidate_target_percent_not_approved": 65.1552,
+      "potential_gain_percentage_points": 20.00485,
+      "prototype_tool": "tools/f4_r24_piloto_1650_ligaduras.py",
+      "authentic_iso_source_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+      "authentic_source_script_commands": 51705,
+      "authentic_source_nontext_commands": 46308,
+      "authentic_source_noop_recompression_bytes": 700483,
+      "original_slot_bytes": 699904,
+      "original_slot_shortfall": 579,
+      "script_append_only_required": true,
+      "selected_1650_integrated_and_run_in_PPSSPP": false,
+      "combined_candidate_iso_created_in_current_relay": false,
+      "new_official_approved": 0,
+      "PPSSPP_r24_new_checks": 0,
+      "report": "reports/R24_ROMHACKING_MAS_20_PUNTOS.json",
+      "status": "EXPERIMENTAL_PRIVATE_PILOT_IMPLEMENTED_NOT_RELEASED"
     }
   },
   "betatesting": {
@@ -173,12 +199,17 @@
     },
     "p0_p1_abiertos": null,
     "cierre_100": false,
-    "matriz_casos_definidos": 66,
+    "matriz_casos_definidos": 68,
     "casos_r23_nuevos": [
       "Q065",
       "Q066"
     ],
-    "r23_pass_runtime_nuevos": 0
+    "r23_pass_runtime_nuevos": 0,
+    "casos_r24_nuevos": [
+      "Q067",
+      "Q068"
+    ],
+    "r24_new_PASS_C": 0
   },
   "evidencias": {
     "A_actual": [
