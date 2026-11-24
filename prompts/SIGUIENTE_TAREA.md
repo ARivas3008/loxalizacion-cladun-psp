@@ -1,70 +1,77 @@
-# CLADUN ES — R25: EJECUTAR PILOTO 3.724 + 1.650, VALIDAR PPSSPP Y ALCANZAR +20 PUNTOS REALES EN ROMHACKING
+# CLADUN ES — R26 RELEVO AUTÓNOMO ×4: CONSTRUIR 7.024 SUSTITUCIONES EN UNA ISO REAL Y VALIDAR 85,16 % EN PPSSPP
 
-## 0. Misión ejecutiva y relevo recursivo obligatorio
+## Misión, prohibiciones y obligación recursiva permanente
 
-El objetivo prioritario es transformar la **preparación R24** en **al menos 1.650 integraciones reales verificadas**, elevando romhacking de **3.724/8.248 = 45,1503 %** a **5.374/8.248 = 65,1552 %**, o **+20,00485 puntos**. Nunca publicar ese incremento si el juego no lo demuestra. Ejecución integral y verificable, no solo diseño. Plan de trabajo ×4 sobre los relevos originales: varias tandas largas de construcción, verificaciones positivas/negativas, inspección auténtica, reparación, regresión, CI y publicación. No declarar minutos trabajados ni resultados ficticios.
+Eres equipo sénior de romhacking PSP MIPS/PPSSPP 1.20.4, ISO9660/PSPFS/DSARC, IMY, CP932/atlas 4bpp/CLUT, traducción contextual y QA. No te limites a redactar planes: ejecuta código, repara fallos, genera pruebas A/B/C auténticas, trabaja en GitHub. Prohibido inventar capturas, comandos GE, direcciones RAM, hashes, porcentajes oficiales, tiempos de ejecución, tests o publicaciones.
 
-**Recursividad permanente:** si persiste cualquier pendiente de romhacking o de traducción/gráficos/betatesting, al FINAL sustituir COMPLETAMENTE `prompts/SIGUIENTE_TAREA.md` con R26 autosuficiente, que impondrá la misma recursividad a R27 y sucesivos. No hay promesa de trabajo en segundo plano: completar todo lo posible en el relevo. No ofrecer 100 % sin A/B/C, no reducir la seguridad para cumplir el porcentaje.
+**Objetivo del usuario:** avanzar otros **20 puntos porcentuales** respecto al objetivo experimental anterior de 65,1552 %. Intentar demostrar un **mismo candidato privado** de **7.024/8.248 = 85,1600 %**, sin regresiones, acumulando 3.724 anteriores + 2.002 crecientes con ligaduras + 1.298 cortos. La cifra **oficial** sigue siendo **3.724/8.248 = 45,1503 %**, **4.524 diferidas**, pues ni R24 ni R25 han ejecutado/validado visualmente el candidato total. **No modificar el porcentaje oficial** hasta demostrar todas las entradas en el juego y contar aprobaciones editoriales auténticas, caso por caso.
 
-Repositorio: `https://github.com/ARivas3008/loxalizacion-cladun-psp`, rama `integracion-eventos-segura-20261120`, PR #7 OPEN/DRAFT, base `revision-manual-dialogos`. Verificar HEAD, PR y CI push/PR **exactos** al comenzar; no merge, no force push. No subir ni publicar ISO, DATA.DAT, FONT.ARC, EBOOT, capturas comerciales, registros RAM, BPS con payload ni fuentes comerciales. Los reportes GitHub contendrán solo SHA, métricas y código propio.
+Repositorio: `https://github.com/ARivas3008/loxalizacion-cladun-psp`; rama `integracion-eventos-segura-20261120`; PR #7 OPEN/DRAFT, base `revision-manual-dialogos`. Verificar HEAD y CI push+PR **del mismo HEAD** antes de empezar; no hacer merge o force push. Fuente original aportada por usuario: `Cladun_This_Is_An_RPG_USA_PSN_PSP-PLAYASiA.7z`, extraer solo privadamente. ISO USA SHA256 `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f`, 305.496.064 bytes; en el entorno del relevado R25 estuvo en `/mnt/data/cladun_private/source_usa.iso`. **No asumir esa ruta si se reinicia el contenedor**. No publicar ISO, DATA.DAT, FONT.ARC, EBOOT, BPS comercial, contenido de juegos o capturas falsas. GitHub solo código propio, informes por hashes y tablas de IDs/offsets sin diálogos.
 
-**Clases de evidencia:** A = ISO USA original auténtica privada / análisis y hashes; B = algoritmos, corpus canónico, regresiones, CI sin juego; C = ejecución genuina de PPSSPP oficial v1.20.4, juego realmente representado, evidencia visual A/B/A y comportamiento de eventos. El PASS de B no cierra C. No marcar integrado oficial sin aceptación editorial contextual y PPSSPP C.
+Clasificar evidencias: **A** original ISO auténtica / inspección y candidato binario privado autenticado; **B** corpus/sintéticos/CI sin ISO comercial; **C** ejecución en PPSSPP oficial 1.20.4, framebuffers verdaderos, eventos y A/B/A. Un PASS CI no es un PASS C. Privacidad de datos de usuario.
 
-## 1. Punto de partida R24 (debe revalidarse)
+**RECURSIVIDAD INNEGOCIABLE:** al finalizar sustituye por completo `prompts/SIGUIENTE_TAREA.md` con R27 detallado, incluyendo recuentos comprobados, nuevas rutas, fallos, comandos de reproducción, y la misma instrucción recursiva hasta T/G/R/Q al 100 % real. Trabajar en tandas extensas ×4, múltiples experimentos y regresiones por relevo, no seis minutos por mensaje, sin declarar duraciones inventadas. Ejecutar ahora todo lo posible; no prometer trabajo posterior asíncrono.
 
-Fuente 7z aportada en conversación: `Cladun_This_Is_An_RPG_USA_PSN_PSP-PLAYASiA.7z`. ISO original privada USA **305.496.064 bytes**, SHA256 `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f`. `PSP_GAME/USRDIR/DATA.DAT`: 349 PSPFS, dentro `SCRIPT.SDT` PSPFS #231 en offset **9652224**, original comprimido **699624 B**, descomprimido **930304 B**, siguiente PSPFS offset **10352128** (slot 699904 B). 8 bloques IMY, 1.625 scripts, **51.705 comandos** (46.308 no textuales + 5.397 textuales), SCRIPT.DAT 633344 B SHA256 `c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358`, SCRIPT.TBL SHA256 `f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37`.
+## 1. Lectura obligatoria y punto técnico de partida
 
-**Descubrimiento nuevo A:** la recomposición IMY del SCRIPT original *sin modificar* genera **700.483 B** con roundtrip byte exacto, **579 bytes demasiado grande** para el slot de 699.904 B. No escribir SCRIPT.SDT in-place, incluso para una sola sustitución, a menos que se valide otro compresor que quepa. En R24 se implementó ruta `append-only` que actualiza solo la entrada SCRIPT.SDT y extensión ISO9660, mantiene instrucciones internas con offsets fijos y preserva los otros 347 PSPFS (salvo FONT.ARC experimental). Reproducir `python tools/f4_r24_script_slot_audit.py --iso-original /PRIVADO/Cladun_USA.iso`.
+1. `docs/R25_ROMHACKING_META_85_2026-11-24.md` (resumen).
+2. `reports/R25_ROMHACKING_OBJETIVO_85_PCT.json`, `reports/COBERTURA_4_AREAS.json`, `reports/ESTADO_CONTINUIDAD_PPSSPP.json`.
+3. `tools/f4_r25_piloto_85pct.py` (piloto binario completo B), `tools/f4_r24_piloto_1650_ligaduras.py` (validación final corregida **comparando contra base traducida 3724**, no contra ISO inglesa), `tools/f4_r23_font_compact_candidate.py`, `tools/f4_r21_ligature_overlay.py`, `tools/integrar_parche_seguro.py`, `tools/script_event_guard.py`, `tools/imy_repack_safe.py`, `tools/extract_cladun.py`.
+4. `traduccion/CLADUN_BORRADOR_ES.csv` (SHA git blob canónico fijado), `traduccion/propuestas/R24_COLA_EDITORIAL_1650.csv`, `traduccion/propuestas/R25_COLA_EDITORIAL_1298.csv`, `traduccion/propuestas/R25_COLA_CONJUNTA_3300.csv`; **todos los 3.300 IDs aún con revisión contextual PENDIENTE, PPSSPP NOT_RUN, canónico NO**.
+5. `tests/test_f4_r25_piloto_85pct.py`, `tests/test_f4_r24_piloto_1650_ligaduras.py`, `tests/test_f4_r24_script_slot_audit.py`, `.github/workflows/validacion-integracion-eventos.yml`.
+6. `docs/R23_FONT_IMY_COMPACT_2026-11-23.md`: 19 + 44 glifos y FONT.ARC 144.000 B; PSPFS 144.384 B; DSARC IMY 16+16 **experimental no probado por el motor**.
 
-**Traducción R:** oficial intacta **3.724/8.248 (45,15 %)**, diferidas **4.524**. El corpus contiene 2.883 textos SCRIPT que crecen, 1.641 que se acortan y 683 de igual ancho. Las 44 ligaduras sin colisiones generan **2.002 candidatas estrictas**. R24 selecciona determinísticamente 1.650 para formar un mismo piloto con las 3.724 de base; modelo objetivo **5.374/8.248 = 65,1552 %**, pero **NO** se generó ni ejecutó esa ISO combinada en R24, no subió la cifra oficial, no hubo nuevos C.
+R25 sí reabrió y releyó físicamente la ISO original, validando 349 PSPFS, SCRIPT.SDT 8 bloques IMY, SCRIPT.DAT **633.344 B** SHA `c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358`, SCRIPT.TBL **52.016 B** SHA `f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37`, **1.625 scripts**, **51.705 opcodes**, **46.308 no textuales**, **5.397 textuales**, último bloque 633.008. No mutó ISO original.
 
-**Fuente G/F2:** modelo de 19 glifos A1–B3 + 44 ligaduras B4–DF; 2.721 originales preservados; FONT.ARC compacta **144.000 B** dentro del slot de 144.384 B, utilizando **alineación DSARC IMY 16+16 experimental** frente al 512+16 histórico. R23 tiene una ISO privada solo con fuente, ver `docs/R23_FONT_IMY_COMPACT_2026-11-23.md`. **No se sabe si PPSSPP/juego acepta la alineación a 16**. Sin resolverla no se pueden aprobar las ligaduras.
+Límite de compresión R24: SCRIPT.SDT almacenado 699.624 B, slot hasta siguiente PSPFS 699.904 B; recomprimir el flujo **idéntico** con el encoder actual produce 700.483 B, **579 B de desbordamiento**. Reubicar `append-only` mediante PSPFS/ISO9660, jamás sobrescribir in-place solo por desear llegar a 85 %. Validar que todos los recursos no textuales mantengan bytes y offset exactos.
 
-R24 publicó:
-- `tools/f4_r24_piloto_1650_ligaduras.py` — **pipeline de un solo candidato**, reconstruye base 3.724 `--event-safe-only`, inserta FONT 44 compacta, añade 1.650 textos de igual longitud, recompone IMY, reubica SCRIPT.SDT `append-only` y verifica ISO9660/PSPFS/eventos. Exige ISO original y ruta candidata nueva fuera del Git, no distribuye.
-- `tools/f4_r24_script_slot_audit.py` — auditor real A de compresión no-op y capacidad; rechaza datos distintos.
-- `tests/test_f4_r24_piloto_1650_ligaduras.py` y `tests/test_f4_r24_script_slot_audit.py` — regresiones sintéticas y corpus canónico real, incluida cola de 2.002 y 1.650 seleccionables.
-- `reports/R24_ROMHACKING_MAS_20_PUNTOS.json`, `docs/R24_ROMHACKING_OBJETIVO_MAS_20_PUNTOS.md`, Q067/Q068 `NOT_RUN`. CI `.github/workflows/validacion-integracion-eventos.yml` contiene prueba estática adicional de 1.650. Validar runs propios antes de afirmar SUCCESS.
+## 2. Tanda A — ejecutar DE VERDAD el piloto R25 ISO A
 
-## 2. Tanda A — reproducir archivo fuente y producir PILOTO PRIVADO
+**No confundir pruebas B con ejecución auténtica A.** Usar checkout de GitHub completo y propia ISO obtenida legítimamente. Repetir:
 
-1. Confirmar actual HEAD, CI, SHA de ISO original. Reproducir auditores R21–R24, 7 FONT DSARC members y 8 bloques SCRIPT. No modificar original.
-2. Ejecutar `python tools/f4_r24_piloto_1650_ligaduras.py` sin ISO: exigir 2.002 posibles, 1.650 seleccionables, 5.374 de objetivo, `new_official_integrations = 0`.
-3. Ejecutar **realmente**:
 ```bash
+python -m unittest discover -s tests -p 'test_f4_r25*' -v
+python tools/f4_r25_piloto_85pct.py
 python tools/f4_r24_script_slot_audit.py --iso-original /PRIVADO/Cladun_USA.iso
-python tools/f4_r24_piloto_1650_ligaduras.py \
+python tools/f4_r25_piloto_85pct.py \
   --iso-original /PRIVADO/Cladun_USA.iso \
-  --candidate /PRIVADO/Cladun_R25_5374_PILOTO.iso
+  --candidate /PRIVADO/Cladun_R26_7024_PILOTO.iso
 ```
-4. Si falla, depurar la causa específica; añadir test de regresión, corregir sin saltarse las preimágenes, el control de longitud, los 51.705 comandos, los 46.308 no textuales, el hash de SOURCE, `SCRIPT.TBL` byte exacta, los 1.625 offsets, la fuente y los 347 otros PSPFS. Repetir hasta lograr un candidato privado validado o dejar bloqueo preciso.
-5. Confirmar contra la ISO original diferencias permitidas: FONT.ARC + SCRIPT.SDT + sus entradas PSPFS + registro de tamaño DATA.DAT y volumen ISO9660. Ningún EBOOT, retrato, tile, sprite o recurso no textual alterado.
 
-## 3. Tanda B — PPSSPP real y validez de 44 ligaduras
+El programa debe: verificar SHA, leer corpus 9.237 y planes 2.002+1.298; chequear **3.300** preimágenes en script original y 51.705 comandos exactos; construir una base nueva en ISO privada con **3.724** cambios, no una segunda ISO inconexa; cambiar únicamente FONT.ARC bajo protección de slot; editar 3.300 spans de **igual longitud** sobre la **misma base** sin desplazar scripts; conservar SCRIPT.TBL idéntica; comprimir con IMY roundtrip; reubicar SCRIPT.SDT append-only; comparar **347 recursos** externos contra la base ya traducida y validar cambios fuente→base autorizados; hashes finales de cada etapa, pruebas negativas de mutación y sin regeneración de capturas. Reportar candidato privado y hashes sin compartirlo.
 
-Con PPSSPP oficial 1.20.4 autenticado (AppImage histórico SHA256 `661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21`) probar A/B/A: original USA → piloto 5374 → original USA. Documentar procedencia del proceso: PID/starttime, FD de ISO y WebSocket game.status; captura real de opciones, prólogo, diálogos seleccionados, textos con "es/en/de/er", combate, TUIKA, mapa 2, enciclopedia, iconos, guardar/cargar. Inspeccionar GE/VRAM de FONT/IMY: anchura, tinte, orden de glifos, linebreaks, clipping y que 16+16 realmente funcione.
+**Depurar cualquier fallo** del pipeline; una herramienta nueva sin ejecución real no autoriza afirmar 85 %. Vigilar que el font patch reduzca 144.352→144.000 bytes y borre solo 352 B de la antigua fuente sin afectar SE.ARC; R25 ya agregó `font_allowed_span`. No aceptar escritura de archivos en repositorios. R25 corrigió `unchanged_resources_against_baseline` para comparar archivos ya traducidos contra la candidata base.
 
-Si PPSSPP no está disponible, no inventar C y seguir trabajando otras tareas A/B. Si IMY 16 falla, abandonar esa rama de inserción y probar compresión alternativa (histórica 512+16 sin exceso) o reubicación FONT append-only auditable; no romper elementos que siguen a FONT.ARC.
+## 3. Tanda B — pruebas visuales y lógica PPSSPP 1.20.4 A/B/A
 
-## 4. Tanda C — revisión editorial de 1.650 y evolución futura
+Verificar binario oficial PPSSPP, versión, SHA, backend, PID/starttime, FD del ISO propio y WS `game.status` antes de atribuir capturas. Hacer original USA → ISO 7024 → original USA, en mismas partidas y pantalla; menú configuración (tildes y desplazamiento de símbolos), prólogo, mapa2, combates, TUIKA, diálogo con ligaduras y signos, enciclopedia, sprites, retratos, tilemaps, UI, sonido, guardado/carga y escenas con referencias cruzadas.
 
-Usar `traduccion/propuestas/R24_COLA_EDITORIAL_1650.csv` (1.650 IDs, offsets y capacidades, todos `PENDIENTE_CONTEXTUAL`/`NOT_RUN`/`NO`, sin diálogos; 51.808 bytes de preimágenes). Ejecutar `test_editorial_manifest_matches_exact_Python_1650_selected` para obligar al cotejo con el algoritmo Python; si discrepa, corregir lista o selección y no integrar. Obtener lista exacta de los 1.650 elegidos por el plan, emparejar ID de `traduccion/CLADUN_BORRADOR_ES.csv` con `lectura/CLADUN_GUION_RECONSTRUIDO_COTEJO_ES_EN.txt` y `qa/correcciones_manuales.csv`. Evaluar individualmente por escena, hablante, género, consistencia terminológica, códigos de control, longitud en píxeles, tildes/¿¡, contexto y opción. Registrar una decisión por ID; cambios literarios no se aceptan automáticamente por caber en bytes. Re-ejecutar las guardas si el texto cambia y resolver texto truncado en fuente solo con evidencia. Otras **2.874 diferidas** quedarían si 1.650 se integran de verdad, pero no cambiar contador hasta entonces.
+Para los **1.298 textos más cortos**: hay 1–7 espacios ASCII agregados al final (**3.899 bytes en total**) para mantener la longitud del opcode; **no son equivalentes visualmente por definición**. Requieren confirmación individual de wrap, padding visible, líneas de más, caja o texto cortado y pérdida de fluidez. Si falla, revertir las 1.298, analizar una alternativa verdadera sin cambiar offsets: almacenamiento separado con enlace MIPS validado o compresión de texto equivalente que no altere renderización, con pruebas de control. Los 2.002 textos con ligadura dependen de confirmar las 44 nuevas tintas y la alineación DSARC interna de 16+16. No confundir legibilidad en imágenes sintéticas con C real.
 
-## 5. Tanda D — regresiones totales, actualización honesta de métricas y CI
+No hay PPSSPP oficial preinstalado en R25; si el entorno impide ejecutar C, informar la limitación y completar más A/B sin falsificar el cierre. No exportar capturas privadas al repositorio sin permisos/licencias.
+
+## 4. Tanda C — auditoría editorial granular, integración residual e ingeniería MIPS
+
+Para **todos los 3.300 IDs** de `traduccion/propuestas/R25_COLA_CONJUNTA_3300.csv`, cruzar escena/orden/hablante con `traduccion/CLADUN_BORRADOR_ES.csv`, glosario, QA manual y guion reconstruido. Verificar sentido, tildes, signos, nombres, largura de caja, retratos/indicadores, saltos de línea, comandos de control. Registrar decisión **individual** para cada ID; no marcar global PASS por interpolación.
+
+Si se prueban 7.024/8.248 reales, quedan **1.224** diferidas (no 4.524). Analizar las 1.224 restantes con otro modelo seguro: 881 textos crecientes fuera de los 2.002 strict y 343 textos cortos/u otros según resultados reales. Construir tablas de referencias MIPS antes de intentar textos de longitud variable. Los ocho dígitos de offsets que hay en script/table nunca se inventan. Inspeccionar `EBOOT.BIN` solo en entorno legítimo y con informe A MIPS verificable. No romper PSPFS ni scripts para perseguir 100 %.
+
+## 5. Tanda D — QA/CI/Windows y cierre de relevo real
 
 Ejecutar:
 ```bash
 python -m unittest discover -s tests -v
+python tools/f4_r25_piloto_85pct.py
 python tools/f4_r24_piloto_1650_ligaduras.py
-python tools/qa_cobertura_4_areas.py
-python tools/qa_cobertura_4_areas.py --require-closed  # FALLA mientras hay áreas abiertas
 python tools/verificar_integridad.py --raiz .
 python tools/verificar_borrador_es.py
-python tools/auditar_preinsercion_es.py --reporte /tmp/cladun-preflight.json
-python tools/reportar_integrabilidad_es.py --reporte /tmp/cladun-integrabilidad.json
+python tools/qa_cobertura_4_areas.py
+python tools/qa_cobertura_4_areas.py --require-closed  # falla si no está cerrado
 (cd patcher && go test ./...)
 git diff --check
 ```
-Verificar GH Actions **push y PR** del nuevo HEAD con URLs y conclusiones exactas. Mantener el PR #7 DRAFT, sin merge o force push. Actualizar `reports/COBERTURA_4_AREAS.json`, `reports/ESTADO_CONTINUIDAD_PPSSPP.json`, `docs/ESTADO_CIERRE_4_AREAS.md`, `qa/MATRIZ_BETATESTING_COBERTURA.csv`, reportes A/B/C y código. Repetir ruta Win64 BPS/EXE privada con rollback; probar 0 P0/P1.
+Último comando B del R24 requiere corpus; no basta con dejar un reporte. Ejecutar BPS y parcheador Go Windows x64 E2E **solo en equipo local privado**, con SHA+CRC, revertir ISO, cotejar 347 miembros no textuales y 0 P0/P1. Matriz QA `Q069/Q070` `NOT_RUN` hasta prueba C; total **70 casos**. Validar CI push y PR del mismo commit, reportar conclusiones y enlaces sin inventar.
 
-**Solo si TODO lo anterior demuestra el resultado en un mismo juego** elevar oficialmente R a `5.374/8.248` y diferidas a `2.874`. Si falla una condición, dejar `3.724/8.248` y explicar exactamente cuántos ensayos sí funcionaron, sin maquillar número. T, G y Q siguen independientes con cierre 100 % por evidencia real. **Al finalizar reemplazar completamente este archivo por R26**, conservando ×4, cuatro tandas, pruebas auténticas y continuación recursiva hasta completar T/G/R/Q sin fingir 100 %.
+**Actualiza**, según evidencia real, `reports/COBERTURA_4_AREAS.json`, `reports/ESTADO_CONTINUIDAD_PPSSPP.json`, `docs/ESTADO_CIERRE_4_AREAS.md`, `qa/MATRIZ_BETATESTING_COBERTURA.csv`, reportes nuevos, código, tests y docs. **Solo cuando 3.300 pasen A/B/C + editorial**, cambiar romhacking a **7.024/8.248 (85,16 %)**. Si solo pasa parte, contar solo entradas realmente aprobadas y mantener porcentaje verificable. Documentar cierres independientes de traducción, gráficos y betatesting. PR #7 continúa OPEN/DRAFT, no merge ni force push.
+
+**OBLIGATORIO AL TERMINAR:** sustituir completamente esta instrucción por `prompts/SIGUIENTE_TAREA.md` R27 autosuficiente con obligación de reescritura recursiva hasta que romhacking y T/G/Q sean 100 % comprobados. Incluir bloqueos específicos, rutas y herramientas, pruebas A/B/C, y no afirmar ejecución futura automática.
