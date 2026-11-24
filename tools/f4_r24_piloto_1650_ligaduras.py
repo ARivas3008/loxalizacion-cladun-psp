@@ -185,21 +185,44 @@ def replace_member_payload(unpacked:bytes,members:list[dict],name:str,
  require(dsarc_entries(out)==members,"SCRIPT.SDT child headers changed")
  return bytes(out)
 
-def validate_final(source:Path,result:Path,font_arc:bytes,expected_script:bytes,
+def unchanged_resources_against_baseline(
+    baseline_records:list[dict],baseline_pack:bytes,
+    candidate_records:list[dict],candidate_pack:bytes,
+    exempt:frozenset[str]=frozenset({"FONT.ARC","SCRIPT.SDT"}))->int:
+ """Compare to translated BASE, never to untouched USA for already translated members.
+
+ BASE already contains canonical DATABASE.DAT, STAFFROLL.TXT and SYS.DAT2.
+ Comparing them to the original ISO would reject a correct combined pilot.
+ The source-to-BASE step has its own isolation audit in integrar_parche_seguro.
+ """
+ require(len(baseline_records)==len(candidate_records)==349,
+         "PSPFS candidate/baseline inventory mismatch")
+ checked=0
+ for left,right in zip(baseline_records,candidate_records):
+  require(left["name"]==right["name"] and left["index"]==right["index"],
+          "Resource order changed")
+  if left["name"] in exempt:continue
+  require(left==right,"Unauthorized PSPFS metadata changed: "+left["name"])
+  start=left["offset"];n=left["size_stored"]
+  require(baseline_pack[start:start+n]==candidate_pack[start:start+n],
+          "BASE resource changed: "+left["name"])
+  checked+=1
+ require(checked==349-len(exempt),"PSPFS isolation count differs from baseline")
+ return checked
+
+def validate_final(source:Path,baseline:Path,result:Path,
+                   font_arc:bytes,expected_script:bytes,
                    original_table:bytes)->dict:
  require(file_sha256(source)==USA_SHA,"Original ISO unexpectedly altered")
  _,a_data,a_entries=read_resources(source)
+ _,base_pack,base_entries=read_resources(baseline)
  _,b_data,b_entries=read_resources(result)
- require(len(a_entries)==len(b_entries)==349,"Final PSPFS inventory changed")
- allow={"FONT.ARC","SCRIPT.SDT"}
- for left,right in zip(a_entries,b_entries):
-  require(left["name"]==right["name"] and left["index"]==right["index"],
-          "Resource order changed")
-  if left["name"] in allow:continue
-  require(left==right,"Unrelated PSPFS metadata relocated")
-  s=left["offset"];n=left["size_stored"]
-  require(a_data[s:s+n]==b_data[s:s+n],
-          "Nonfont and nonscript resource changed: "+left["name"])
+ require(len(a_entries)==len(base_entries)==len(b_entries)==349,
+         "Final PSPFS inventory changed")
+ # The initial baseline is created with the fail-closed original->BASE
+ # integrator. Verify no extra mutations in the following FONT+SCRIPT stages.
+ safe=unchanged_resources_against_baseline(
+    base_entries,base_pack,b_entries,b_data)
  font=next(x for x in b_entries if x["name"]=="FONT.ARC")
  require(b_data[font["offset"]:font["offset"]+font["size_stored"]]==font_arc,
          "Final FONT differs from plan")
@@ -226,7 +249,7 @@ def validate_final(source:Path,result:Path,font_arc:bytes,expected_script:bytes,
  return {
   "evidence":"A_AUTHENTIC_ISO_PRIVATE_STATIC_NO_PPSSPP",
   "pspfs_members":349,
-  "nontext_resource_members_byte_exact":347,
+  "all_nonfont_nonscript_resources_equal_to_translated_baseline":safe,
   "source_iso_sha256":USA_SHA,
   "private_pilot_iso_sha256":file_sha256(result),
   "final_script_archive_stored_bytes":script["size_stored"],
@@ -301,7 +324,7 @@ def run(source:Path,draft:Path,candidate:Path|None=None,
   require(appended["SCRIPT.SDT"]["offset_nuevo"]>=len(pack),
           "Joint PILOT did not append SCRIPT.SDT")
   report["authentic_private_pilot"]=validate_final(
-      source,staged,font_arc,modified,authentic_tbl)
+      source,baseline,staged,font_arc,modified,authentic_tbl)
   require(not target.exists(),"Output candidate exists")
   os.link(staged,target)  # atomic no-clobber
  report["pilot_created"]=True
