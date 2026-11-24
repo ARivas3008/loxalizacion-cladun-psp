@@ -226,6 +226,41 @@
       "source_tool": "tools/f4_r25_piloto_85pct.py",
       "manifest": "traduccion/propuestas/R25_COLA_CONJUNTA_3300.csv",
       "status": "B_STATIC_IMPLEMENTED_A_SOURCE_READONLY_NOT_A_CANDIDATE_RUNTIME"
+    },
+    "r26_auditoria_meta_100": {
+      "status": "A_AUTHENTIC_ISO_STRUCTURE_AND_B_TOTAL_PLANNER_ONLY_C_PENDING",
+      "source_script_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+      "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+      "all_planned_binary_changes": 8248,
+      "script_changed_bytes_rows": 4900,
+      "script_already_same_bytes_rows": 307,
+      "script_source_total_nonempty": 5207,
+      "script_changed_length_rows": 4524,
+      "script_equal_width_changed_rows": 376,
+      "other_text_resource_changes": 3348,
+      "all_changes_actually_applied_to_single_iso_now": false,
+      "original_script_blocks": 1625,
+      "original_command_count": 51705,
+      "original_nontext_command_count": 46308,
+      "original_padding_all_blocks_bytes": 14621,
+      "script_raw_english_to_spanish_growth_net_bytes": 9694,
+      "script_blocks_overflowing_raw": 253,
+      "script_raw_local_shortfall_bytes": 8077,
+      "script_44safe_optimized_net_bytes": -4382,
+      "script_44safe_optimized_block_overruns": 29,
+      "script_44safe_optimized_local_shortfall_bytes": 215,
+      "runtime_MIPS_references_verified": false,
+      "PPSSPP_runtime_C_verified": false,
+      "C_pass_new": 0,
+      "official_integrated_unchanged": 3724,
+      "official_deferred_unchanged": 4524,
+      "official_pct_unchanged": 45.1503,
+      "experimental_full_builder": "tools/r26_piloto_total_8248_privado.py",
+      "authentic_capacity_reproducer": "tools/r26_script_full_capacity_audit.py",
+      "report": "reports/R26_ROMHACKING_FULL_8248_DIAGNOSTICO.json",
+      "doc": "docs/R26_ROMHACKING_100_AUDITORIA_2026-11-24.md",
+      "release_authorized": false,
+      "full_ROMhacking_100pct_demonstrated": false
     }
   },
   "betatesting": {
@@ -237,7 +272,7 @@
     },
     "p0_p1_abiertos": null,
     "cierre_100": false,
-    "matriz_casos_definidos": 70,
+    "matriz_casos_definidos": 75,
     "casos_r23_nuevos": [
       "Q065",
       "Q066"
@@ -252,7 +287,15 @@
       "Q069",
       "Q070"
     ],
-    "r25_new_PASS_C": 0
+    "r25_new_PASS_C": 0,
+    "casos_r26_nuevos": [
+      "Q071",
+      "Q072",
+      "Q073",
+      "Q074",
+      "Q075"
+    ],
+    "r26_new_PASS_C": 0
   },
   "evidencias": {
     "A_actual": [
