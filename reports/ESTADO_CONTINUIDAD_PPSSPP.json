@@ -2448,6 +2448,29 @@
     "no_merge": true,
     "release_authorized": false,
     "docs": "docs/R23_FONT_IMY_COMPACT_2026-11-23.md",
-    "next_prompt": "prompts/SIGUIENTE_TAREA.md"
+    "next_prompt": "prompts/SIGUIENTE_TAREA.md",
+    "G_pspfs_triage": {
+      "original_iso_verified": true,
+      "source_349": true,
+      "extensions": {
+        "DAT2": 1,
+        "DMD": 187,
+        "ARC": 3,
+        "MPB": 37,
+        "DAT": 65,
+        "TXT": 1,
+        "SPS": 50,
+        "SDT": 1,
+        "IDT": 1,
+        "LDT": 3
+      },
+      "first_level_graphic_candidate_containers": 43,
+      "total_nested_graphics": null,
+      "approved_real_ppsspp": 0,
+      "completion_percent": null,
+      "report": "reports/R23_PSPFS_GRAPHICS_TRIAGE.json",
+      "tool": "tools/r23_pspfs_graphics_inventory.py",
+      "tests": "tests/test_r23_pspfs_graphics_inventory.py"
+    }
   }
 }
