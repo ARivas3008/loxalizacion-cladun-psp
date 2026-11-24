@@ -28,8 +28,8 @@ def create_records(existing:bytes,pairs:list[str])->bytes:
      or codes[95:INSERT]!=list(range(0xA1,0xB4))
      or codes[INSERT]<0x8140 or codes!=sorted(set(codes))):
   raise ValueError("Unexpected original/new font code ordering")
- if len(pairs)!=N_LIGATURES or len(set(pairs))!=N_LIGATURES:
-  raise ValueError("Exactly 44 distinct ligatures needed")
+ if not 0<=len(pairs)<=N_LIGATURES or len(set(pairs))!=len(pairs):
+  raise ValueError("Expected 0..44 distinct ligatures")
  recs=[existing[4+4*i:4+4*(i+1)] for i in range(n)]
  extra=[]
  for i,pair in enumerate(pairs):
@@ -38,8 +38,8 @@ def create_records(existing:bytes,pairs:list[str])->bytes:
   advance=WIDTHS[pair[0]]+WIDTHS[pair[1]]
   if advance>15:raise ValueError("Pair beyond 16-pixel atlas slot")
   extra.append(struct.pack("<HBB",FIRST_NEW+i,0,advance))
- result=struct.pack("<I",TOTAL)+b"".join(recs[:INSERT]+extra+recs[INSERT:])
- output_codes=[struct.unpack_from("<H",result,4+4*i)[0] for i in range(TOTAL)]
+ result=struct.pack("<I",N_BASE+N_ACCENTS+len(pairs))+b"".join(recs[:INSERT]+extra+recs[INSERT:])
+ output_codes=[struct.unpack_from("<H",result,4+4*i)[0] for i in range(N_BASE+N_ACCENTS+len(pairs))]
  if output_codes!=sorted(set(output_codes)):
   raise ValueError("Font index no longer sorted")
  return result
@@ -62,7 +62,7 @@ def insert_raster_slots(old:list[bytes],pairs:list[str])->tuple[list[bytes],dict
  if len(result)!=3072:
   raise ValueError("Font atlas exceeds six pages")
  for i in range(N_BASE+N_ACCENTS):
-  j=i+(N_LIGATURES if i>=INSERT else 0)
+  j=i+(len(pairs) if i>=INSERT else 0)
   if result[j]!=old[i]:
    raise ValueError("Historical glyph raster modified")
  return result,{"ligature_rasters":len(new),"max_used_x":most_right,
@@ -91,7 +91,7 @@ def require_font_slot_safe(original_arc_bytes:int,generated_arc_bytes:int,free_b
                    +str(verdict["in_place_excess_bytes"])+" bytes")
  return verdict
 
-def build_in_memory(iso:Path,draft:Path):
+def build_in_memory(iso:Path,draft:Path,*,ligature_count:int=44):
  try:
   from font_es_narrow import build_narrow_font_arc_from_iso,atlas_slots,encode_atlas
   from font_es_patch import archive,unswizzle,decode_imy_texture
@@ -101,7 +101,9 @@ def build_in_memory(iso:Path,draft:Path):
   from tools.font_es_patch import archive,unswizzle,decode_imy_texture
   from tools.extract_cladun import dsarc_entries
  rows=read_canonical(draft)
- pairs=analyze_collision_free(rows)["pairs"]
+ if not isinstance(ligature_count,int) or not 0<=ligature_count<=N_LIGATURES:
+  raise ValueError("Ligature count must be 0..44")
+ pairs=analyze_collision_free(rows)["pairs"][:ligature_count]
  original_meta=archive(iso)
  _,_,_,font_resource,old_arc,_=original_meta
  narrow,_=build_narrow_font_arc_from_iso(iso)
@@ -139,6 +141,8 @@ def build_in_memory(iso:Path,draft:Path):
    "base_font_arc_bytes":len(old_arc),
    "narrow_19_arc_bytes":len(narrow),"experimental_63_arc_bytes":len(out),
    "font_original_slot_margin":free_old,
+   "ligature_count":len(pairs),
+   "remaining_slot_bytes_after_repack":len(old_arc)+free_old-len(out),
    "can_write_in_original_slot_without_relocation":safety["can_write_in_place"],
    "shortfall_in_original_slot_bytes":safety["in_place_excess_bytes"],
    "append_only_relocation_needed":safety["append_only_relocation_needed"],
@@ -152,6 +156,13 @@ def main():
  p=argparse.ArgumentParser(description=__doc__)
  p.add_argument("--iso-original",type=Path,required=True)
  p.add_argument("--borrador",type=Path,default=Path("traduccion/CLADUN_BORRADOR_ES.csv"))
+ p.add_argument("--ligatures",type=int,choices=range(45),default=44,
+                help="Use first N collision-free pairs; 4 is in-slot candidate")
+ p.add_argument("--require-in-place",action="store_true",
+                help="Fail rather than silently requiring PSPFS relocation")
  a=p.parse_args()
- print(json.dumps(build_in_memory(a.iso_original,a.borrador),ensure_ascii=False,indent=2))
+ result=build_in_memory(a.iso_original,a.borrador,ligature_count=a.ligatures)
+ print(json.dumps(result,ensure_ascii=False,indent=2))
+ if a.require_in_place and not result["can_write_in_original_slot_without_relocation"]:
+  raise SystemExit("BLOCKED: generated FONT.ARC exceeds original PSPFS slot")
 if __name__=="__main__":main()
