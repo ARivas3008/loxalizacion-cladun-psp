@@ -99,10 +99,13 @@ def verify_resources(before,oldpack,after,newpack):
     require(intact==348,"Unexpected resource count")
     return intact
 
-def run(iso=None,candidate=None):
-    plan=make_plan()
-    result={"selected":TOTAL,"ascii":16,"existing_spanish_font_required":40,
-            "candidate_total_if_built":3780,"official_integrated_unchanged":3724,
+def run(iso=None,candidate=None, *, plan_builder=make_plan):
+    plan=plan_builder()
+    count=len(plan)
+    ascii_count=sum(x["new"].isascii() for x in plan)
+    require(count>0 and len({x["offset"] for x in plan})==count,"Empty or duplicate plan")
+    result={"selected":count,"ascii":ascii_count,"existing_spanish_font_required":count-ascii_count,
+            "candidate_total_if_built":3724+count,"official_integrated_unchanged":3724,
             "new_official_integrations":0,"private_candidate_written":False,
             "ppsspp_run":False,"release_authorized":False}
     if iso is None:

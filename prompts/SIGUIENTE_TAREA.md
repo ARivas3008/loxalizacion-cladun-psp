@@ -1,12 +1,12 @@
-# CLADUN ES — R30 autónomo: ejecutar acumulado 3.780, ampliar integración de longitud fija y cerrar ROMhacking
+# CLADUN ES — R31 autónomo: ejecutar acumulado 3.870 y seguir integración segura
 
-Objetivo 100% real. Verificar HEAD, CI push y PR #7 OPEN/DRAFT de rama integracion-eventos-segura-20261120, sin force push/merge. Leer docs/R29_INTEGRACION_LONGITUD_FIJA.md, reports/R29_INTEGRACION_LONGITUD_FIJA.json, tools/r29_integrar_longitud_fija.py, tools/r28_relocation_map.py y docs/R26_ROMHACKING_100_AUDITORIA_2026-11-24.md. R29 aplicó 56 textos a SCRIPT.DAT auténtico, 16 a ISO USA privada (348 PSPFS exactos, 51.705 offsets fijos, 46.308 no textuales intactos); 40 requieren fuente existente, no hay PPSSPP. El acumulado de 3.780 está implementado pero no ejecutado. No publicar ISO, BPS no aprobado ni activos comerciales.
+Objetivo ROMhacking 100% real. Rama integracion-eventos-segura-20261120, PR #7 DRAFT sin merge/force push. Verificar HEAD y CI. Leer docs/R30_INTEGRACION_REPETICIONES.md, reports/R30_INTEGRACION_REPETICIONES.json, tools/r30_integrar_repeticiones.py, tools/r29_integrar_longitud_fija.py, tools/r28_relocation_map.py, docs/R26_ROMHACKING_100_AUDITORIA_2026-11-24.md. R30 añadió 90 a 56 en SCRIPT auténtico, 146 sin mover offsets; ISO USA aislada 26 ASCII, 348 PSPFS intactos. No hay C ni candidata acumulada.
 
-1. Con checkout completo y original SHA b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f, ejecutar:
+1. Checkout íntegro y PPSSPP 1.20.4 oficial; ISO SHA b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f. Ejecutar:
 ```bash
-python -m unittest discover -s tests -p 'test_r29*' -v
-python tools/r29_integrar_longitud_fija.py --iso-original /PRIVADO/Cladun_USA.iso --candidate /PRIVADO/R30_3780_EXPERIMENTAL.iso
+python -m unittest discover -s tests -p 'test_r30*' -v
+python tools/r30_integrar_repeticiones.py --iso-original /PRIVADO/Cladun_USA.iso --candidate /PRIVADO/R31_3870_EXPERIMENTAL.iso
 ```
-Comprobar cada uno de los 56 IDs, 348 recursos ajenos exactos contra base, 3 DSARC hermanos, 0 offsets movidos, 19 glifos correctos. Ejecutar PPSSPP oficial 1.20.4 real A/B/A con PID/FD, render y eventos.
-2. Buscar más alternativas de igual ancho sin cambiar sentido ni marcadores; no sumar 56 a 3.724 sin pruebas C. Trabajar lotes extensos, excluir duplicados y preservar glosario/género/contexto. No usar 44 ligaduras ni espacios finales sin prueba de render. Resolver referencias MIPS mediante R28 mapa por bloque/orden; 29 déficits de capacidad y 4.524 diferidas siguen bloqueados oficialmente.
-3. Correr pruebas globales, Go, corpus, QA cuatro áreas y CI para HEAD. Actualizar informes y contadores según evidencia A/B/C; mantener 0 P0/P1 como criterio. Verificar BPS/EXE Windows E2E y campaña. No confundir prueba binaria con jugabilidad. Al terminar sustituir completamente prompts/SIGUIENTE_TAREA.md por R31 autónomo con obligación recursiva hasta 100% T/G/R/Q. No prometer ejecución automática.
+Verificar 146 nuevos textos, 120 con fuente española existente, 0 desplazamientos, 46.308 no textuales exactos, 348 recursos ajenos exactos vs base, fuente y controles en PPSSPP A/B/A. No contar 26 ASCII dos veces. No publicar ISO.
+2. Seleccionar más alternativas exactas por contexto, repetir validación de pares y controles; no forzar abreviaturas, relleno o ligaduras sin prueba. Investigar MIPS y 29 déficits de R26 con mapa R28. Conservar 3.724 oficiales hasta verificación C; no sustituir por 3.870 proyectadas.
+3. Ejecutar pruebas globales, Go, QA cuatro áreas, verificar CI de HEAD, publicar evidencias no comerciales, actualizar cifras A/B/C por separado. Completar campaña, BPS y EXE Win64 E2E antes de liberar. Al finalizar reemplazar COMPLETAMENTE prompts/SIGUIENTE_TAREA.md por R32 autónomo con recursividad hasta 100% T/G/R/Q. No prometer ejecución automática.

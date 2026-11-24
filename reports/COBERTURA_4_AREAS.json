@@ -283,6 +283,16 @@
       "combined_candidate_built": false,
       "official_new_integrations": 0,
       "ppsspp_run": false
+    },
+    "r30_exact_pairs": {
+      "report": "reports/R30_INTEGRACION_REPETICIONES.json",
+      "new_script_private": 90,
+      "cumulative_script_private": 146,
+      "cumulative_ascii_iso_private": 26,
+      "combined_target": 3870,
+      "combined_candidate_built": false,
+      "official_new_integrations": 0,
+      "ppsspp_run": false
     }
   },
   "betatesting": {
