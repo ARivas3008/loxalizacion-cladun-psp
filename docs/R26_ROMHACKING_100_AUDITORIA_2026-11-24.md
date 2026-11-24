@@ -79,3 +79,14 @@ python tools/r26_auditar_reubicacion_eventos_total.py \
 ```
 
 Se incluye `tests/test_r26_auditar_reubicacion_eventos_total.py`. Este relevo no ejecutó su modo A por carecer de checkout completo del corpus dentro del contenedor del binario original. Su resultado A queda pendiente sin estimar el número de instrucciones que realmente se moverían.
+
+### Manifiesto privado de los 8.248 cambios para QA
+
+Para cerrar la trazabilidad individual del denominador 8.248, el generador `tools/r26_piloto_total_8248_privado.py` admite `--manifest` y exporta a una **ruta absoluta nueva** (fuera de Git) una lista de **8.248 IDs**, procedencia, offset, ancho antiguo/nuevo y categoría `SCRIPT_VARIABLE` (4.524), `SCRIPT_FIXED` (376) u `OTHER_RESOURCE` (3.348). No incluye textos en español o inglés, bytes fuente ni activos comerciales. Cada fila conserva `PENDIENTE_CONTEXTUAL`, `NOT_RUN`, `NO`, y las 4.524 de longitud variable llevan `MIPS_references=UNVERIFIED`. Los **307** textos SCRIPT idénticos de origen y traducción no figuran entre estos 8.248 cambios, porque sus bytes ya coinciden. Los tests CI verifican los conteos y el carácter exclusivamente metadato.
+
+```bash
+python tools/r26_piloto_total_8248_privado.py \
+  --manifest /PRIVADO/R26_PLAN_8248_REVISION.json
+```
+
+Esto resuelve el inventario individual **B**, no los fallos de capacidad, visualización o salto en ejecución C. No introducir `PASS` hasta observar y aprobar cada caso.
