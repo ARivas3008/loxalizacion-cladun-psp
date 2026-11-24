@@ -48,11 +48,12 @@ def matching(text,pairs):
  return result
 
 def decode_encoded(raw,pairs):
- if len(pairs)!=CAPACITY:raise ValueError("Wrong dictionary")
+ if not 1<=len(pairs)<=CAPACITY:raise ValueError("Wrong dictionary")
  result=[];i=0
  while i<len(raw):
   b=raw[i]
   if CODE_START<=b<CODE_START+CAPACITY:
+   if b-CODE_START>=len(pairs):raise ValueError("Unmapped experimental ligature code")
    result.append(pairs[b-CODE_START]);i+=1
   elif 0x81<=b<=0x9f or 0xe0<=b<=0xfc:
    if i+1>=len(raw):raise ValueError("Truncated SJIS lead")
@@ -62,7 +63,7 @@ def decode_encoded(raw,pairs):
  return "".join(result)
 
 def encode_fixed(text,expected_bytes,pairs):
- if len(pairs)!=CAPACITY or len(set(pairs))!=CAPACITY or not all(allowed_pair(s) for s in pairs):
+ if not 1<=len(pairs)<=CAPACITY or len(set(pairs))!=len(pairs) or not all(allowed_pair(s) for s in pairs):
   raise ValueError("Invalid dictionary")
  ordinary=encode_spanish(text);delta=len(ordinary)-expected_bytes
  if delta<=0:raise ValueError("Do not pad shorter or identical strings")

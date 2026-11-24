@@ -15,9 +15,11 @@ except ModuleNotFoundError:
  from script_event_guard import read_commands,audit_script_rebuild
  from charset_es import encode_spanish
 
-def make_plan(rows):
+def make_plan(rows,*,ligature_count:int=44):
  report=analyze_collision_free(rows)
- pairs=report["pairs"]
+ if not isinstance(ligature_count,int) or not 1<=ligature_count<=44:
+  raise ValueError("Ligature count must be 1..44")
+ pairs=report["pairs"][:ligature_count]
  plan=[];filtered=0;attempted=0
  for row in rows:
   if row["origen"]!="SCRIPT.SDT/SCRIPT.DAT" or not row["espanol"]:
@@ -50,6 +52,7 @@ def make_plan(rows):
    "candidate_rows_with_controls_excluded":filtered,
    "candidates_after_strict_source_controls":len(plan),
    "candidate_payload_bytes":sum(x["bytes"] for x in plan),
+   "selected_ligatures":len(pairs),
    "candidate_codebook_hash":hashlib.sha256(",".join(pairs).encode("ascii")).hexdigest(),
    "font_patched":False,"canonical_approved":False,
    "runtime_proven":False,"deployment_authorized":False}
@@ -91,8 +94,9 @@ def main():
  p=argparse.ArgumentParser(description=__doc__)
  p.add_argument("--borrador",type=Path,default=Path("traduccion/CLADUN_BORRADOR_ES.csv"))
  p.add_argument("--iso-original",type=Path)
+ p.add_argument("--ligatures",type=int,choices=range(1,45),default=44)
  a=p.parse_args()
- plan,report=make_plan(read_canonical(a.borrador))
+ plan,report=make_plan(read_canonical(a.borrador),ligature_count=a.ligatures)
  if a.iso_original:
   source,tbl=original_script_children(a.iso_original)
   report["original_iso_replay"]=simulate_authenticated(source,tbl,plan)

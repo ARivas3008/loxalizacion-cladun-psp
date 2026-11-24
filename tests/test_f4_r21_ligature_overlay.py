@@ -36,4 +36,18 @@ class LigatureOverlaySafetyTests(unittest.TestCase):
  def test_authenticated_replay_rejects_invalid_source(self):
   with self.assertRaises(ValueError):
    simulate_authenticated(b"Wrong",b"Wrong",[])
+ def test_four_ligature_candidate_does_not_move_text_slots(self):
+  rows=read_canonical(ROOT/"traduccion/CLADUN_BORRADOR_ES.csv")
+  plan,summary=make_plan(rows,ligature_count=4)
+  self.assertEqual(len(plan),542)
+  self.assertEqual(summary["candidate_payload_bytes"],17076)
+  self.assertEqual(summary["selected_ligatures"],4)
+  self.assertFalse(summary["deployment_authorized"])
+ def test_reject_bad_ligature_count(self):
+  rows=read_canonical(ROOT/"traduccion/CLADUN_BORRADOR_ES.csv")
+  for count in (0,45,-1):
+   with self.assertRaises(ValueError):make_plan(rows,ligature_count=count)
+ def test_reject_code_that_is_not_in_four_ligature_font(self):
+  from f4_r21_ligature_capacity import decode_encoded
+  with self.assertRaises(ValueError):decode_encoded(bytes([0xB8]),["es","en","de","er"])
 if __name__=="__main__":unittest.main()
