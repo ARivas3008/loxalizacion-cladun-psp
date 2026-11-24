@@ -46,4 +46,27 @@ class Font63PrototypeTest(unittest.TestCase):
  def test_invalid_slot_geometry_rejected(self):
   for args in ((0,143888,496),(143888,-1,496),(143888,145696,-3)):
    with self.assertRaises(ValueError):slot_safety(*args)
+ def test_four_ligatures_create_sorted_inplace_code_range(self):
+  short=PAIRS[:4]
+  out=create_records(dummy_font(),short)
+  self.assertEqual(struct.unpack_from("<I",out)[0],2744)
+  codes=[struct.unpack_from("<H",out,4+i*4)[0] for i in range(2744)]
+  self.assertEqual(codes[INSERT:INSERT+4],[0xB4,0xB5,0xB6,0xB7])
+ def test_no_ligatures_keeps_narrow_original(self):
+  self.assertEqual(create_records(dummy_font(),[]),dummy_font())
+ def test_over_44_ligatures_rejected(self):
+  with self.assertRaises(ValueError):
+   create_records(dummy_font(),PAIRS+["aa"])
+ def test_four_ligatures_keep_2740_existing_atlas_cells(self):
+  old=[bytes(256) for _ in range(3072)]
+  for c in "abcdefghijklmnopqrstuvwxyz":
+   buf=bytearray(256);buf[0]=1;old[ord(c)-32]=bytes(buf)
+  new,stats=insert_raster_slots(old,PAIRS[:4])
+  self.assertEqual(stats["ligature_rasters"],4)
+  self.assertEqual(new[INSERT+4],old[INSERT])
+  self.assertEqual(new[0],old[0])
+ def test_slot_exact_boundary_is_allowed_without_slack(self):
+  result=require_font_slot_safe(143888,144384,496)
+  self.assertTrue(result["can_write_in_place"])
+  self.assertEqual(result["in_place_excess_bytes"],0)
 if __name__=="__main__":unittest.main()
