@@ -2146,5 +2146,21 @@
       "betatesting": false
     },
     "next_prompt": "prompts/SIGUIENTE_TAREA.md"
+  },
+  "relevo_f4_r16_2026_11_23": {
+    "head_inicio": "fdc8cc3093da4a385815c2d7d61507dd2f00abed",
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "private_report_sha256": "f6105a09bb2bec1e58518c594bc3a6db2f9a85c18d2013394f77196513201939",
+    "blocks": 8,
+    "anchors": 16,
+    "local_new_tests": 14,
+    "local_partial_tests": 101,
+    "artificial_blocks_found": 8,
+    "PPSSPP_real": false,
+    "mips_proven": false,
+    "qa_defined": 56,
+    "qa_new_pass": 0,
+    "deferred": 4524,
+    "next": "prompts/SIGUIENTE_TAREA.md"
   }
 }

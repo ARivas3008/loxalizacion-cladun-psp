@@ -49,7 +49,7 @@
     },
     "p0_p1_abiertos": null,
     "cierre_100": false,
-    "matriz_casos_definidos": 55
+    "matriz_casos_definidos": 56
   },
   "evidencias": {
     "A_actual": [
@@ -201,6 +201,22 @@
         "ocurrencias_por_huella": 1,
         "reporte_privado_hash": "5f86438b2ff6b670a663f41630394359f7458bb37b9341f78d564fb12e8a8554",
         "PPSSPP_RAM_observed": false
+      },
+      {
+        "tipo": "R16 cuerpos sin relleno, 8 bloques y 16 huellas disjuntas únicas",
+        "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "bloques": [
+          20,
+          757,
+          758,
+          759,
+          760,
+          761,
+          762,
+          763
+        ],
+        "private_report_sha256": "f6105a09bb2bec1e58518c594bc3a6db2f9a85c18d2013394f77196513201939",
+        "real_RAM": false
       }
     ],
     "B_actual": [
@@ -264,6 +280,14 @@
         "subset_local_87_PASS": true,
         "full_repo_local": false,
         "CI_SHA_FINAL": "VERIFICAR_DESPUES"
+      },
+      {
+        "tipo": "R16 localizador segmentado",
+        "tests_nuevos": 14,
+        "tests_local_parcial": 101,
+        "artificial_blocks_found": 8,
+        "artificial_blocks_total": 8,
+        "resultado": "PASS_B_NO_C"
       }
     ],
     "B_historica": [
@@ -291,7 +315,8 @@
     "R12: 0x0C tiene 36 valores 100 sin coincidencia tras −100, mientras los 66 restantes sí coinciden. Falta MIPS real para demostrar significados y control de flujo. 4524 diálogos variables siguen aplazados.",
     "R13: grafo numérico de cinco enlaces entre scr01 y demo1001, sin lectura ejecutada MIPS. EBOOT ~PSP, PPSSPP oficial 1.20.4 no disponible y terminal sin DNS github.com; reubicacion de 4524 cambios variable bloqueada.",
     "R14: AppImage PPSSPP 1.20.4 ausente y sin DNS github.com; preflight exit1 sin reporte C. Campos version WS v1.20.4 no incluyen PID/path; se exige /proc FD+socket antes de aceptar evidencia. 4524 textos diferidos.",
-    "R15: AppImage oficial 1.20.4 SHA publicado verificado pero no descargable (DNS github.com); localizador de 9 huellas no probado sobre memoria de juego, ninguna base RAM ni PC MIPS real. 4524 textos variables bloqueados. Falta P0/F4 y F3/F2."
+    "R15: AppImage oficial 1.20.4 SHA publicado verificado pero no descargable (DNS github.com); localizador de 9 huellas no probado sobre memoria de juego, ninguna base RAM ni PC MIPS real. 4524 textos variables bloqueados. Falta P0/F4 y F3/F2.",
+    "R16: PPSSPP oficial ausente, curl DNS error 6. Localizador segmentado preparado; falta AppImage oficial adjunto o sesión Linux propia, C pendiente."
   ],
   "siguiente_relevo": "prompts/SIGUIENTE_TAREA.md",
   "advertencia": "Los denominadores de cobertura contextual, gráficos y casos totales no están certificados. La matriz inicial no es universo completo. Ningún 100% de las cuatro áreas está verificado."

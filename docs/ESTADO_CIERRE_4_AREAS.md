@@ -64,3 +64,7 @@ Manifiesto autentico A de nueve instrucciones originales en offsets `7420,218095
 ## R15 — nueve huellas únicas y escaneo RAM autenticado, sin PPSSPP ejecutado (23/11/2026)
 
 A: ISO original SHA256 `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f`, SCRIPT.DAT 633344 B SHA256 `c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358`. Las nueve instrucciones R14 admiten cada una una ventana de 32 B única en SCRIPT.DAT; se publican solo SHA256/offsets, jamás bytes comerciales. B: `tools/f4_r15_localizador_ram.py` y 33 pruebas sintéticas nuevas PASS locales, 87 tests del checkout parcial PASS. El lector WS implementa `memory.read` base64 del PPSSPP v1.20.4 y exige ISO/AppImage/PID/FD/socket autenticados, mínimo tres coincidencias y digest completo de SCRIPT.DAT si está continuo. Una coincidencia **no prueba dispatch MIPS**. C: AppImage no descargado (DNS bloqueado); NO RAM/PC ni screenshots. Q054/Q055 NOT_RUN, total 55 casos definidos, universo aún abierto. T/G/R/Q `cierre_100=false`, 4.524 cambios diferidos y PR#7 DRAFT. Ver `docs/F4_R15_HUELLAS_RAM_2026-11-23.md`.
+
+## R16 — carga segmentada
+
+8 cuerpos auténticos, 16 huellas únicas disjuntas, 14 tests nuevos PASS, 101 tests locales parciales PASS. 8/8 cuerpos localizados en memoria artificial, NO PPSSPP. Q056 NOT_RUN; 56 casos definidos. 4.524 diferidos. Ver docs/F4_R16_BLOQUES_RAM_2026-11-23.md.
