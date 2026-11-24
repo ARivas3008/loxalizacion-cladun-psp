@@ -20,7 +20,13 @@
       "total": null
     },
     "inventario_visible_completo": false,
-    "cierre_100": false
+    "cierre_100": false,
+    "revision_64_r19": {
+      "apta_revision_estatica_no_canonica": 32,
+      "pendiente_contexto": 30,
+      "rechazada_estilistica": 2,
+      "aprobadas_finalmente": 0
+    }
   },
   "graficos": {
     "inventario_completo": false,
@@ -28,7 +34,12 @@
       "hechos": null,
       "total": null
     },
-    "cierre_100": false
+    "cierre_100": false,
+    "ldt001_hipotesis_rgba8888": {
+      "registros": 24,
+      "con_cuadruplas_no_nulas": 7,
+      "confirmado_en_ppsspp": false
+    }
   },
   "romhacking": {
     "sustituciones": {
@@ -38,7 +49,11 @@
     "diferidas": 4524,
     "relocalizaciones_seguras_demostradas": false,
     "release_bps_exe_e2e": false,
-    "cierre_100": false
+    "cierre_100": false,
+    "pruebas_negativas_r19": {
+      "nuevos_casos_sinteticos": 10,
+      "ci_pendiente_en_corte": true
+    }
   },
   "betatesting": {
     "matriz_completa": false,
@@ -49,7 +64,7 @@
     },
     "p0_p1_abiertos": null,
     "cierre_100": false,
-    "matriz_casos_definidos": 60
+    "matriz_casos_definidos": 62
   },
   "evidencias": {
     "A_actual": [
