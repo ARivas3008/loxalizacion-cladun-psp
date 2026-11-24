@@ -72,3 +72,10 @@ A: ISO original SHA256 `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d4976
 ## R17 — avance de cuatro áreas
 
 A: ANIME000: 192 registros, 231 flujos IMY, 136 tipo 0x00 y 95 tipo 0x02 compatibles con unidad de 4 B y límites verificados; 82/95 resultados distintos entre dos distancias verticales plausibles. TIPATTR 008723/008724 truncados en original; todos los 1625 bloques SCRIPT terminan en opcode 0x08. B: 16 tests nuevos PASS local, CI R16 2/2 SUCCESS. C: ausente. 58 casos definidos, Q057/Q058 NOT_RUN. Sin liberar 4524 ni cerrar áreas. Ver docs/R17_AVANCE_ESTATICO_2026-11-23.md. PR #7 DRAFT.
+
+
+## R17 — 42 alternativas de longitud fija para demo1001
+
+Se revisaron los 97 registros del prólogo; 42 de los 85 aplazados tienen propuestas españolas de igual tamaño, sin relleno artificial ni códigos de control. Solo se publican las propuestas y metadatos. La prueba independiente en memoria sobre SCRIPT.DAT auténtico conservó 51705 comandos, 46308 no textuales byte exactos y todos los offsets; 1028 bytes de texto distintos. SHA virtual (no archivo): 5e367618ebdbe617e5bf4efd01be21f17d2f14ecd5c6e47275fe2f3727f82037. El borrador canónico y su ancla F3-R5/R6 no cambian; 53 compatibles y 43 diferidos son una proyección si se aceptan las 42. Aplazados oficiales globales: 4524. Sin ISO nueva, PPSSPP ni autorización de inserción. 12 tests sintéticos locales del helper inicial; 28 acumulados R17. Primer commit R17 CI push 45303203679 y PR 45303209991 SUCCESS. La integración final del helper requiere CI propio.
+
+Reproducir desde raíz con `python tools/f3_simular_intro_mismo_tamano.py --propuestas traduccion/propuestas/DEMO1001_LONGITUD_FIJA_R17.csv --iso-original /ruta/privada/Cladun.iso`. Sin --iso-original solo valida ancla de borrador y plan. Revisar contexto, tono, género y términos antes de aceptar; sincronizar CSV/TXT/anclas si cambia el canónico, generar variante privada y ejecutar PPSSPP antes de promover.

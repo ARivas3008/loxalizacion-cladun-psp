@@ -72,8 +72,27 @@
     "padding_total": 14621,
     "relocation_authorized": false
   },
-  "B_local_tests": 16,
+  "B_local_tests": 28,
   "C_new": false,
   "assets_modified": false,
-  "variable_deferred": 4524
+  "variable_deferred": 4524,
+  "review_proposals": {
+    "proposal_rows": 42,
+    "canonical_intro_equal_length": 11,
+    "canonical_intro_deferred": 85,
+    "projected_equal_length": 53,
+    "projected_deferred": 43,
+    "commands_reparsed": 51705,
+    "nontext_byte_exact": 46308,
+    "changed_payload_bytes": 1028,
+    "all_command_offsets_preserved": true,
+    "virtual_script_dat_sha256": "5e367618ebdbe617e5bf4efd01be21f17d2f14ecd5c6e47275fe2f3727f82037",
+    "canonical_modified": false,
+    "global_deferred_unchanged": 4524,
+    "local_synthetic_tests_original_helper": 12,
+    "local_synthetic_tests_r17_total": 28,
+    "new_iso": false,
+    "PPSSPP_executed": false,
+    "deployment_authorized": false
+  }
 }

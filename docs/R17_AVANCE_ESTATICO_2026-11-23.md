@@ -11,3 +11,10 @@ B: 16 tests sintéticos locales PASS del nuevo núcleo (no suite completa). CI R
 Reproducir con ISO privada: python tools/f3_anime_imy_estructuras.py --iso-original /PRIVADO/USA.iso --reporte /PRIVADO/R17_anime_nuevo.json
 Tests: python -m unittest discover -s tests -p 'test_f3_anime_imy_r17.py' -v
 Informe de metadatos: reports/R17_AVANCE_ESTATICO_2026-11-23.json. Q057/Q058 NOT_RUN (58 casos definidos, universo final abierto). Las 4 áreas siguen abiertas. 
+
+
+## R17 — 42 alternativas de longitud fija para demo1001
+
+Se revisaron los 97 registros del prólogo; 42 de los 85 aplazados tienen propuestas españolas de igual tamaño, sin relleno artificial ni códigos de control. Solo se publican las propuestas y metadatos. La prueba independiente en memoria sobre SCRIPT.DAT auténtico conservó 51705 comandos, 46308 no textuales byte exactos y todos los offsets; 1028 bytes de texto distintos. SHA virtual (no archivo): 5e367618ebdbe617e5bf4efd01be21f17d2f14ecd5c6e47275fe2f3727f82037. El borrador canónico y su ancla F3-R5/R6 no cambian; 53 compatibles y 43 diferidos son una proyección si se aceptan las 42. Aplazados oficiales globales: 4524. Sin ISO nueva, PPSSPP ni autorización de inserción. 12 tests sintéticos locales del helper inicial; 28 acumulados R17. Primer commit R17 CI push 45303203679 y PR 45303209991 SUCCESS. La integración final del helper requiere CI propio.
+
+Reproducir desde raíz con `python tools/f3_simular_intro_mismo_tamano.py --propuestas traduccion/propuestas/DEMO1001_LONGITUD_FIJA_R17.csv --iso-original /ruta/privada/Cladun.iso`. Sin --iso-original solo valida ancla de borrador y plan. Revisar contexto, tono, género y términos antes de aceptar; sincronizar CSV/TXT/anclas si cambia el canónico, generar variante privada y ejecutar PPSSPP antes de promover.

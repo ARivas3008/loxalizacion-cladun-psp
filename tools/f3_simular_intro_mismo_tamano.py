@@ -152,6 +152,37 @@ def audit(draft:Path,geometry_path:Path,iso:Path|None=None)->dict:
     return summary
 
 
+def audit_proposals(draft:Path,geometry_path:Path,proposals:Path,iso:Path|None=None)->dict:
+    """Authenticate the canonical draft and test proposals separately; never deploy."""
+    try:
+        from tools.f3_propuestas_longitud_fija import proposal_plan, read_proposals
+    except ModuleNotFoundError:
+        from f3_propuestas_longitud_fija import proposal_plan, read_proposals
+    geometry=anchor.load_geometry(geometry_path)
+    rows,blob=anchor.read_draft(draft)
+    if blob!=anchor.DRAFT_BLOB_SHA1:
+        raise ValueError('Authentic 9237-row Git draft blob SHA changed')
+    _,score=prepare_plan(rows,geometry)
+    plan=proposal_plan(rows,geometry,read_proposals(proposals))
+    summary={'schema':'cladun.f3.review_proposals_plan.v1',
+             'source_draft_blob_sha1':blob,'same_length_candidates':len(plan),
+             'canonical_blocked_different_length':score['change_counts']['unequal'],
+             'changed_length_blocked':score['change_counts']['unequal']-len(plan),
+             'remaining_count_is_hypothetical':True,
+             'canonical_draft_modified':False,
+             'iso_original_reverified_this_call':iso is not None,
+             'script_in_memory_simulation_executed':iso is not None,
+             'game_asset_written':False,'event_safe_only_still_required':True,
+             'runtime_PPSSPP_verified':False,'gameplay_pass_proven':False,
+             'deployment_authorized':False}
+    if iso is not None:
+        data,table=original_script_children(Path(iso))
+        result=simulate_memory_only(data,table,geometry,plan)
+        result['schema']='cladun.f3.review_proposals_memory_simulation.v1'
+        summary['simulation']=result
+    return summary
+
+
 def main()->None:
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--borrador-es',type=Path,default=anchor.DRAFT_REL)
@@ -160,8 +191,10 @@ def main()->None:
                    help='Optional exact SHA original USA. Without ISO only checks Git draft.')
     p.add_argument('--reporte-privado',type=Path,
                    help='New absolute JSON outside all Git worktrees (no commercial payload)')
+    p.add_argument('--propuestas',type=Path,help='Review-only CSV; no canonical changes or deployment')
     args=p.parse_args()
-    out=audit(args.borrador_es,args.geometria,args.iso_original)
+    out=(audit_proposals(args.borrador_es,args.geometria,args.propuestas,args.iso_original)
+         if args.propuestas is not None else audit(args.borrador_es,args.geometria,args.iso_original))
     if args.reporte_privado is not None:
         path=report_path(args.reporte_privado)
         path.parent.mkdir(parents=True,exist_ok=True)
