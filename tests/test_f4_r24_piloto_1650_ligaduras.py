@@ -5,7 +5,7 @@ from tools.f4_r21_ligature_capacity import read_canonical
 from tools.f4_r21_ligature_overlay import make_plan
 from tools.f4_r24_piloto_1650_ligaduras import (
  TARGET_EXTRA,BASE_INTEGRATED,BASE_DEFERRED,TOTAL_PLANNED,
- selection,metrics,replace_original_script,replace_member_payload
+ selection,metrics,replace_original_script,replace_member_payload,font_allowed_span
 )
 from tools.extract_cladun import dsarc_entries
 
@@ -118,6 +118,23 @@ class TestR24Pilot(unittest.TestCase):
   for item in selection(candidates,1650):
    self.assertEqual(len(item["new"]),len(item["old"]))
    self.assertEqual(item["bytes"],len(item["old"]))
+ def test_font_shrink_144352_to_144000_clears_only_old_font(self):
+  # The R23 base 19-glyph font occupies 144352 bytes. New R24 compact
+  # 19+44 occupies 144000; authorize the FULL original resource tail.
+  off=11776
+  self.assertEqual(
+   font_allowed_span(off,144352,144000,156160),
+   (off,off+144352))
+ def test_font_growth_only_allowed_until_pspfs_neighbor(self):
+  self.assertEqual(font_allowed_span(11776,143888,144000,156160),
+                   (11776,11776+144000))
+ def test_font_oversize_rejected_before_neighbor_corruption(self):
+  with self.assertRaises(ValueError):
+   font_allowed_span(11776,144352,145696,156160)
+ def test_font_bool_or_negative_geometry_rejected(self):
+  for args in [(True,10,10,100),(-1,10,20,100),(10,0,20,100)]:
+   with self.subTest(args=args),self.assertRaises(ValueError):
+    font_allowed_span(*args)
  def test_source_preimage_never_silently_falls_back(self):
   # Real source scan requires an exact 1625-block SCRIPT.TBL, not a guessed offset.
   with self.assertRaises(Exception):
