@@ -146,6 +146,14 @@ def audit(iso: Path) -> dict:
                 raise ValueError('Recurso truncado')
             result[str(index)] = {'name': expected_name,
                                   **inventory_member(blob, expected_imy)}
+            if index == 234:
+                try:
+                    from tools.f3_anime_imy_r17 import analyze
+                except ModuleNotFoundError:
+                    from f3_anime_imy_r17 import analyze
+                if hashlib.sha256(blob).hexdigest() != '0e57353eb1d5f9688164b3453e57b0fd91ff77dee8e422844ba3fb0fef32eb37':
+                    raise ValueError('ANIME000 source hash differs')
+                result[str(index)]['r17_bounded_candidate'] = analyze(blob)
     if result['234']['header_types'] != {'0x00': 136, '0x02': 95}:
         raise ValueError('Tipos originales ANIME000 no coinciden')
     if result['235']['header_types'] != {'0x00': 24} or result['236']['header_types']:

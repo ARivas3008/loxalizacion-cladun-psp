@@ -68,3 +68,7 @@ A: ISO original SHA256 `b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d4976
 ## R16 — carga segmentada
 
 8 cuerpos auténticos, 16 huellas únicas disjuntas, 14 tests nuevos PASS, 101 tests locales parciales PASS. 8/8 cuerpos localizados en memoria artificial, NO PPSSPP. Q056 NOT_RUN; 56 casos definidos. 4.524 diferidos. Ver docs/F4_R16_BLOQUES_RAM_2026-11-23.md.
+
+## R17 — avance de cuatro áreas
+
+A: ANIME000: 192 registros, 231 flujos IMY, 136 tipo 0x00 y 95 tipo 0x02 compatibles con unidad de 4 B y límites verificados; 82/95 resultados distintos entre dos distancias verticales plausibles. TIPATTR 008723/008724 truncados en original; todos los 1625 bloques SCRIPT terminan en opcode 0x08. B: 16 tests nuevos PASS local, CI R16 2/2 SUCCESS. C: ausente. 58 casos definidos, Q057/Q058 NOT_RUN. Sin liberar 4524 ni cerrar áreas. Ver docs/R17_AVANCE_ESTATICO_2026-11-23.md. PR #7 DRAFT.

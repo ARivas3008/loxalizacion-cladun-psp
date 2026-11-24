@@ -49,7 +49,7 @@
     },
     "p0_p1_abiertos": null,
     "cierre_100": false,
-    "matriz_casos_definidos": 56
+    "matriz_casos_definidos": 58
   },
   "evidencias": {
     "A_actual": [
@@ -217,6 +217,86 @@
         ],
         "private_report_sha256": "f6105a09bb2bec1e58518c594bc3a6db2f9a85c18d2013394f77196513201939",
         "real_RAM": false
+      },
+      {
+        "tipo": "R17 ANIME000, TIPATTR, terminadores SCRIPT autenticos",
+        "schema": "cladun.r17.static_candidate.v1",
+        "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "anime000_sha256": "0e57353eb1d5f9688164b3453e57b0fd91ff77dee8e422844ba3fb0fef32eb37",
+        "anime": {
+          "record_count": 192,
+          "bytes_accounted": 3537936,
+          "headers_per_record": {
+            "1": 187,
+            "2": 2,
+            "4": 1,
+            "18": 2
+          },
+          "types_pass_bounded_candidate": {
+            "0": 136,
+            "2": 95
+          },
+          "zero_tail_bytes_histogram": {
+            "0": {
+              "0": 63,
+              "2": 69,
+              "4": 1,
+              "8": 2,
+              "10": 1
+            },
+            "2": {
+              "0": 74,
+              "4": 2,
+              "8": 13,
+              "12": 6
+            }
+          },
+          "type2_half_literal_rejected": 82,
+          "type2_half_stride_different_output": 82,
+          "type2_half_stride_invalid": 0,
+          "runtime_or_visual_proven": false,
+          "repacking_authorized": false
+        },
+        "tipattr": {
+          "sha256": "305fd0e55ec860873645fb64a14814344e906d8b0f819275c9cae279d06434b7",
+          "bytes": 11492,
+          "records": 302,
+          "stride": 38,
+          "fields": [
+            {
+              "group": "008723",
+              "index": 214,
+              "offset": 8148,
+              "capacity": 16,
+              "incomplete_bytes": 15,
+              "terminator": 0
+            },
+            {
+              "group": "008724",
+              "index": 215,
+              "offset": 8186,
+              "capacity": 16,
+              "incomplete_bytes": 15,
+              "terminator": 0
+            }
+          ],
+          "other_prefix_matches_in_database": 0,
+          "source_completion_proven": false
+        },
+        "script": {
+          "blocks": 1625,
+          "commands": 51705,
+          "nontext": 46308,
+          "terminal_opcode": "0x08",
+          "terminal_opcode_count": 1625,
+          "terminal_text_count": 0,
+          "padding_total": 14621,
+          "relocation_authorized": false
+        },
+        "B_local_tests": 16,
+        "C_new": false,
+        "assets_modified": false,
+        "variable_deferred": 4524
       }
     ],
     "B_actual": [
@@ -288,6 +368,12 @@
         "artificial_blocks_found": 8,
         "artificial_blocks_total": 8,
         "resultado": "PASS_B_NO_C"
+      },
+      {
+        "tipo": "R17 candidato IMY acotado",
+        "tests_nuevos": 16,
+        "resultado": "PASS_LOCAL_SINTETICO_NO_C",
+        "ci_final": "POR_VERIFICAR"
       }
     ],
     "B_historica": [
@@ -316,7 +402,8 @@
     "R13: grafo numérico de cinco enlaces entre scr01 y demo1001, sin lectura ejecutada MIPS. EBOOT ~PSP, PPSSPP oficial 1.20.4 no disponible y terminal sin DNS github.com; reubicacion de 4524 cambios variable bloqueada.",
     "R14: AppImage PPSSPP 1.20.4 ausente y sin DNS github.com; preflight exit1 sin reporte C. Campos version WS v1.20.4 no incluyen PID/path; se exige /proc FD+socket antes de aceptar evidencia. 4524 textos diferidos.",
     "R15: AppImage oficial 1.20.4 SHA publicado verificado pero no descargable (DNS github.com); localizador de 9 huellas no probado sobre memoria de juego, ninguna base RAM ni PC MIPS real. 4524 textos variables bloqueados. Falta P0/F4 y F3/F2.",
-    "R16: PPSSPP oficial ausente, curl DNS error 6. Localizador segmentado preparado; falta AppImage oficial adjunto o sesión Linux propia, C pendiente."
+    "R16: PPSSPP oficial ausente, curl DNS error 6. Localizador segmentado preparado; falta AppImage oficial adjunto o sesión Linux propia, C pendiente.",
+    "R17: geometría vertical IMY tipo 02 ambigua en 82/95; TIPATTR 2 campos truncados en origen; 1625 scripts terminan 0x08. PPSSPP ausente, no liberar variables."
   ],
   "siguiente_relevo": "prompts/SIGUIENTE_TAREA.md",
   "advertencia": "Los denominadores de cobertura contextual, gráficos y casos totales no están certificados. La matriz inicial no es universo completo. Ningún 100% de las cuatro áreas está verificado."
