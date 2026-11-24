@@ -91,7 +91,19 @@ def require_font_slot_safe(original_arc_bytes:int,generated_arc_bytes:int,free_b
                    +str(verdict["in_place_excess_bytes"])+" bytes")
  return verdict
 
-def build_in_memory(iso:Path,draft:Path,*,ligature_count:int=44):
+def compact_member_offset(end:int,alignment:int=512)->int:
+ """Return DSARC child start (16-byte header bias), never a PSPFS offset.
+
+ Alignment 16 is a *runtime-unverified experiment*. Historical members use
+ 512-byte alignment +16, so do not substitute this for a release build.
+ """
+ if type(end) is not int or end<0 or alignment not in (16,32,64,128,256,512):
+  raise ValueError("Unsupported DSARC offset/alignment")
+ return ((end+alignment-1)//alignment)*alignment+16
+
+
+def build_in_memory(iso:Path,draft:Path,*,ligature_count:int=44,
+                    member_alignment:int=512,include_binary:bool=False):
  try:
   from font_es_narrow import build_narrow_font_arc_from_iso,atlas_slots,encode_atlas
   from font_es_patch import archive,unswizzle,decode_imy_texture
@@ -103,6 +115,7 @@ def build_in_memory(iso:Path,draft:Path,*,ligature_count:int=44):
  rows=read_canonical(draft)
  if not isinstance(ligature_count,int) or not 0<=ligature_count<=N_LIGATURES:
   raise ValueError("Ligature count must be 0..44")
+ compact_member_offset(0,member_alignment)
  pairs=analyze_collision_free(rows)["pairs"][:ligature_count]
  original_meta=archive(iso)
  _,_,_,font_resource,old_arc,_=original_meta
@@ -120,7 +133,7 @@ def build_in_memory(iso:Path,draft:Path,*,ligature_count:int=44):
  header=bytearray(narrow[:b["offset"]]);out=bytearray(header)
  table_start=(16+len(kids)*2+3)//4*4
  for i,content in enumerate([newbin]+textures):
-  offset=b["offset"] if i==0 else (len(out)+511)//512*512+16
+  offset=b["offset"] if i==0 else compact_member_offset(len(out),member_alignment)
   if len(out)<offset:out.extend(bytes(offset-len(out)))
   out.extend(content)
   struct.pack_into("<II",out,table_start+i*48+40,len(content),offset)
@@ -135,13 +148,16 @@ def build_in_memory(iso:Path,draft:Path,*,ligature_count:int=44):
  # never write a result into that slot without independent relocation guards.
  free_old=min(x["offset"] for x in original_meta[2] if x["offset"]>font_resource["offset"])-(font_resource["offset"]+font_resource["size_stored"])
  safety=slot_safety(len(old_arc),len(out),free_old)
- return {"schema":"cladun.r21.font_63_glyphs_in_memory.v1",
+ result={"schema":"cladun.r23.font_63_glyphs_compact_experiment.v1",
    "evidence":"A_ORIGINAL_ISO_OFFLINE_NOT_PPSSPP",
    "new_font_arc_sha256_private_only":hashlib.sha256(out).hexdigest(),
    "base_font_arc_bytes":len(old_arc),
    "narrow_19_arc_bytes":len(narrow),"experimental_63_arc_bytes":len(out),
    "font_original_slot_margin":free_old,
    "ligature_count":len(pairs),
+   "member_alignment_bytes_experimental":member_alignment,
+   "member_offsets": [m["offset"] for m in again],
+   "historical_512_plus_16_alignment_preserved":member_alignment==512,
    "remaining_slot_bytes_after_repack":len(old_arc)+free_old-len(out),
    "can_write_in_original_slot_without_relocation":safety["can_write_in_place"],
    "shortfall_in_original_slot_bytes":safety["in_place_excess_bytes"],
@@ -151,6 +167,9 @@ def build_in_memory(iso:Path,draft:Path,*,ligature_count:int=44):
    **metric,
    "iso_written":False,"font_arc_exported":False,
    "ppsspp_render_verified":False,"safe_deployment_authorized":False}
+ if include_binary:
+  return bytes(out),result
+ return result
 
 def main():
  p=argparse.ArgumentParser(description=__doc__)
@@ -158,10 +177,13 @@ def main():
  p.add_argument("--borrador",type=Path,default=Path("traduccion/CLADUN_BORRADOR_ES.csv"))
  p.add_argument("--ligatures",type=int,choices=range(45),default=44,
                 help="Use first N collision-free pairs; 4 is in-slot candidate")
+ p.add_argument("--member-alignment",type=int,choices=(16,32,64,128,256,512),default=512,
+                help="EXPERIMENTAL: 16-byte DSARC packing is not PPSSPP-approved")
  p.add_argument("--require-in-place",action="store_true",
                 help="Fail rather than silently requiring PSPFS relocation")
  a=p.parse_args()
- result=build_in_memory(a.iso_original,a.borrador,ligature_count=a.ligatures)
+ result=build_in_memory(a.iso_original,a.borrador,ligature_count=a.ligatures,
+                        member_alignment=a.member_alignment)
  print(json.dumps(result,ensure_ascii=False,indent=2))
  if a.require_in_place and not result["can_write_in_original_slot_without_relocation"]:
   raise SystemExit("BLOCKED: generated FONT.ARC exceeds original PSPFS slot")
