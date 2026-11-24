@@ -1,7 +1,7 @@
 import struct,sys,unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"tools"))
-from f4_r21_ligature_font_prototype import (create_records,insert_raster_slots,INSERT,TOTAL)
+from f4_r21_ligature_font_prototype import (create_records,insert_raster_slots,slot_safety,require_font_slot_safe,INSERT,TOTAL)
 PAIRS="es en de er ue ar ra os te qu nt do ta as el or la to st on lo re an al co un na ie ca ro ad me da in pa so pe ci se nd mo sa po ed".split()
 def dummy_font():
  recs=[struct.pack("<HBB",code,0,7) for code in range(32,127)]
@@ -34,4 +34,16 @@ class Font63PrototypeTest(unittest.TestCase):
   self.assertEqual(new[94],old[94])
  def test_reject_invalid_atlas_shape(self):
   with self.assertRaises(ValueError):insert_raster_slots([bytes(256)]*10,PAIRS)
+ def test_authentic_original_margin_rejects_63_glyph_output(self):
+  x=slot_safety(143888,145696,496)
+  self.assertFalse(x["can_write_in_place"])
+  self.assertTrue(x["append_only_relocation_needed"])
+  self.assertEqual(x["in_place_excess_bytes"],1312)
+  with self.assertRaisesRegex(ValueError,"BLOCKED"):
+   require_font_slot_safe(143888,145696,496)
+ def test_safe_synthetic_font_stays_in_slot(self):
+  self.assertTrue(require_font_slot_safe(143888,144000,496)["can_write_in_place"])
+ def test_invalid_slot_geometry_rejected(self):
+  for args in ((0,143888,496),(143888,-1,496),(143888,145696,-3)):
+   with self.assertRaises(ValueError):slot_safety(*args)
 if __name__=="__main__":unittest.main()

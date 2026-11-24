@@ -69,6 +69,28 @@ def insert_raster_slots(old:list[bytes],pairs:list[str])->tuple[list[bytes],dict
                  "new_raster_ink_pixels":pixels,
                  "preserved_existing_19_plus_2721_glyphs":N_BASE+N_ACCENTS}
 
+def slot_safety(original_arc_bytes:int,generated_arc_bytes:int,free_bytes:int)->dict:
+ if not all(isinstance(x,int) for x in (original_arc_bytes,generated_arc_bytes,free_bytes)):
+  raise ValueError("Font slot geometry must be integer")
+ if original_arc_bytes<=0 or generated_arc_bytes<=0 or free_bytes<0:
+  raise ValueError("Unsafe font slot geometry")
+ capacity=original_arc_bytes+free_bytes
+ excess=max(0,generated_arc_bytes-capacity)
+ return {"original_arc_bytes":original_arc_bytes,
+         "generated_arc_bytes":generated_arc_bytes,
+         "maximum_in_place_arc_bytes":capacity,
+         "in_place_excess_bytes":excess,
+         "can_write_in_place":excess==0,
+         "append_only_relocation_needed":excess>0,
+         "PPSSPP_verified":False}
+
+def require_font_slot_safe(original_arc_bytes:int,generated_arc_bytes:int,free_bytes:int):
+ verdict=slot_safety(original_arc_bytes,generated_arc_bytes,free_bytes)
+ if not verdict["can_write_in_place"]:
+  raise ValueError("BLOCKED: font expansion exceeds PSPFS slot by "
+                   +str(verdict["in_place_excess_bytes"])+" bytes")
+ return verdict
+
 def build_in_memory(iso:Path,draft:Path):
  try:
   from font_es_narrow import build_narrow_font_arc_from_iso,atlas_slots,encode_atlas
@@ -110,13 +132,16 @@ def build_in_memory(iso:Path,draft:Path):
  # The original FONT.ARC has only 496 bytes before the next PSPFS resource:
  # never write a result into that slot without independent relocation guards.
  free_old=min(x["offset"] for x in original_meta[2] if x["offset"]>font_resource["offset"])-(font_resource["offset"]+font_resource["size_stored"])
+ safety=slot_safety(len(old_arc),len(out),free_old)
  return {"schema":"cladun.r21.font_63_glyphs_in_memory.v1",
    "evidence":"A_ORIGINAL_ISO_OFFLINE_NOT_PPSSPP",
    "new_font_arc_sha256_private_only":hashlib.sha256(out).hexdigest(),
    "base_font_arc_bytes":len(old_arc),
    "narrow_19_arc_bytes":len(narrow),"experimental_63_arc_bytes":len(out),
    "font_original_slot_margin":free_old,
-   "can_write_in_original_slot_without_relocation":len(out)<=len(old_arc)+free_old,
+   "can_write_in_original_slot_without_relocation":safety["can_write_in_place"],
+   "shortfall_in_original_slot_bytes":safety["in_place_excess_bytes"],
+   "append_only_relocation_needed":safety["append_only_relocation_needed"],
    "preserved_original_base_glyphs":N_BASE,
    "preserved_existing_spanish_glyphs":N_ACCENTS,
    **metric,
