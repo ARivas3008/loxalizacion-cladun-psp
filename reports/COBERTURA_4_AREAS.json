@@ -53,6 +53,29 @@
     "pruebas_negativas_r19": {
       "nuevos_casos_sinteticos": 10,
       "ci_pendiente_en_corte": true
+    },
+    "analisis_r20": {
+      "script_commands": 51705,
+      "script_text_commands": 5397,
+      "script_nontext_commands": 46308,
+      "blocks_with_text": 587,
+      "all_text_commands_have_following_commands": true,
+      "minimum_following_commands": 2,
+      "median_following_commands": 67,
+      "maximum_following_commands": 1025,
+      "following_nontext_exposures": 576378,
+      "following_text_exposures": 181792,
+      "following_total_exposures": 758170,
+      "script_translated_rows": 5207,
+      "same_byte_width": 683,
+      "variable_byte_width": 4524,
+      "growing": 2883,
+      "shrinking": 1641,
+      "variable_within_three_bytes": 1971,
+      "independently_authenticated_original_script": true,
+      "corpus_classification_evidence": "B_GIT_CORPUS_STATIC",
+      "variable_length_release_authorized": false,
+      "new_scr02_proposals_review_only": 6
     }
   },
   "betatesting": {

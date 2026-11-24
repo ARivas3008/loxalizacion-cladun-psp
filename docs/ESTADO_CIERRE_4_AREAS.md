@@ -101,3 +101,10 @@ Dictamen de las 42 propuestas R17: 36 aptas para ensayo estático (incluida revi
 - Commit b0aa8b4528168906921eb9787ed27e7e98974c30: CI push 45310281300 y PR 45310288041 SUCCESS. 952 tests, 1 omitido, incluidas diez regresiones nuevas de guardas de eventos.
 - ANIME001 IDs 6400/6410: 14/14 cuádruplas iguales desplazadas un índice, 0/15 iguales en posición; IDs 6960/6980: 15/15 iguales. Hipótesis de paleta NO validada en GPU; ver docs/R19_RELACIONES_PALETAS.md.
 - Matriz Q061/Q062 NOT_RUN, 62 casos definidos; sin nuevo PASS C. Corpus canónico sin cambios; 4524 variables bloqueadas.
+
+## R20 — ROMhacking: auditoría de 4524 diferencias de longitud
+
+- A privada, SCRIPT.DAT original SHA `c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358`: 5397 comandos textuales, 46308 no textuales, 587 bloques con texto; todos los textos tienen al menos 2 comandos posteriores, mediana 67, máximo 1025. Suma de exposiciones a comandos posteriores 758170 (NO son referencias MIPS verificadas). El padding de 14621 bytes no demuestra seguridad para cambios internos.
+- B, clasificación canónica por codec real CP932: 5207 traducciones SCRIPT; 683 igual longitud, 4524 distinta longitud, de las cuales 2883 crecen, 1641 disminuyen y 1971 difieren solo 1–3 bytes. Confirmado en CI `11ed7bd50` (push `45311298393`, PR `45311305834`, SUCCESS, 973 tests, 1 omitido). Después se endureció el fallo por preimagen y CI de `89a63050` (push `45311336942`, PR `45311343751`) SUCCESS.
+- B, nueva prueba de compensación de longitudes: aumentar un texto y reducir otro dentro del mismo bloque puede mantener el tamaño y tabla originales, pero mueve comandos internos. `--event-safe-only` debe rechazarla. Seis alternativas nuevas de scr02 son SOLO propuestas no canónicas, sin modificación del borrador.
+- R continúa 3724/8248 (45,15 %) integradas; 4524 bloqueadas, sin ingeniería MIPS/PPSSPP C ni BPS/EXE final. No inventar 100 %.
