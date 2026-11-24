@@ -27,10 +27,13 @@ except ModuleNotFoundError:
  from f3_referencias_riesgo import USA_SHA,file_sha256
 
 FULL_TARGET=8248
-SCRIPT_TARGET=5207
-NON_SCRIPT_TARGET=3041
+SCRIPT_TARGET=4900
+NON_SCRIPT_TARGET=3348
 VARIABLE_SCRIPT_TARGET=4524
-EQUAL_SCRIPT_TARGET=683
+EQUAL_SCRIPT_TARGET=376
+SCRIPT_ALL_TRANSLATED=5207
+SCRIPT_IDENTICAL_OLD_NEW=307
+SCRIPT_ALL_EQUAL_WIDTH=683
 
 def require(ok,reason):
  if not ok:raise ValueError(reason)
@@ -60,14 +63,21 @@ def preview(original_csv:Path|None=None,draft_csv:Path|None=None)->dict:
  ids=[row["grupo_id"] for changed in changes.values()
       for row,old,new in changed]
  require(len(set(ids))==FULL_TARGET,"Duplicate planned canonical IDs")
+ require(EQUAL_SCRIPT_TARGET+SCRIPT_IDENTICAL_OLD_NEW==SCRIPT_ALL_EQUAL_WIDTH,
+         "683 equal-width records must account for 307 byte-identical rows")
+ require(SCRIPT_ALL_TRANSLATED-SCRIPT_IDENTICAL_OLD_NEW==SCRIPT_TARGET,
+         "Original 5,207 visible texts include 307 already identical records")
  return {
   "schema":"cladun.r26.experimental_all_8248_text_insertions.v1",
   "evidence":"B_CORPUS_PLANNER_ONLY_NOT_ISO",
   "source_rows":len(rows),
   "planned_all_changed_canonical_records":n,
-  "planned_SCRIPT_dat_texts":len(script),
+  "planned_SCRIPT_dat_changed_texts":len(script),
+  "all_SCRIPT_dat_translated_rows":SCRIPT_ALL_TRANSLATED,
+  "SCRIPT_dat_already_byte_identical_unmodified":SCRIPT_IDENTICAL_OLD_NEW,
   "planned_other_textual_records":n-len(script),
-  "planned_SCRIPT_same_length":equal,
+  "planned_SCRIPT_same_length_changed":equal,
+  "all_SCRIPT_same_width_including_unchanged":SCRIPT_ALL_EQUAL_WIDTH,
   "planned_SCRIPT_changed_length":variable,
   "non_applied_or_nonchanged_source_rows":len(blocked)+unchanged,
   "deferred_untranslated_or_unsafe_records":len(blocked),
