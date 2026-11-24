@@ -88,6 +88,23 @@ class TestR25Pilot(unittest.TestCase):
   self.assertTrue(all(x["new"].endswith(b" "*x["padding"]) for x in pads))
   self.assertTrue(all(x["method"]==
     "TRAILING_ASCII_SPACES_VISUALLY_UNVERIFIED" for x in pads))
+ def test_full_3300_manifest_matches_exact_python_plan(self):
+  full=ROOT/"traduccion/propuestas/R25_COLA_CONJUNTA_3300.csv"
+  plan,_=choose_3300(read_canonical(CORPUS))
+  with full.open(encoding="utf-8",newline="") as f:
+   rows=list(csv.DictReader(f))
+  self.assertEqual(len(rows),3300)
+  self.assertEqual(len(plan),3300)
+  for row,item in zip(rows,plan):
+   self.assertEqual(row["grupo_id"],item["group_id"])
+   self.assertEqual(int(row["offset_hex"],16),item["offset"])
+   self.assertEqual(int(row["bytes_origen"]),item["bytes"])
+   self.assertEqual(int(row["espacios_experimentales"]),item["padding"])
+   expected="RELLENO_FINAL_NO_VALIDADO" if item["padding"] else "LIGADURAS_44"
+   self.assertEqual(row["metodo_experimental"],expected)
+   self.assertEqual(row["dictamen_editorial"],"PENDIENTE_CONTEXTUAL")
+   self.assertEqual(row["verificacion_ppsspp"],"NOT_RUN")
+   self.assertEqual(row["integracion_canonica"],"NO")
  def test_fail_if_canonical_manifest_not_identical(self):
   chosen,_=choose_3300(read_canonical(CORPUS))
   shorten=sorted((x for x in chosen if x["padding"]>0),
