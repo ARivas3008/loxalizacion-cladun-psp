@@ -118,3 +118,19 @@ Dictamen de las 42 propuestas R17: 36 aptas para ensayo estático (incluida revi
 **C:** 0 nuevas comprobaciones de juego en PPSSPP. Sin dispatcher MIPS confirmado, ISO española nueva, BPS definitivo ni EXE E2E. **R sigue exactamente 3.724/8.248 = 45,15 %, con 4.524 diferidas.** Q063/Q064 agregadas NOT_RUN (64 casos).
 
 Código: `tools/f4_r21_ligature_collision_safe.py`, `tools/f4_r21_ligature_font_prototype.py --ligatures 4 --require-in-place`, `tools/f4_r21_ligature_overlay.py --ligatures 4 --iso-original /PRIVADO/Cladun.iso`. La fuente original no se modifica por los ensayos.
+
+## R23 — fuente IMY compacta de 44 ligaduras, sin cierre ficticio
+
+**ISO original A y candidata privada A (sin PPSSPP):** Se identificó que el primer prototipo de 44 ligaduras requería 145.696 bytes por alinear cada IMY a 512+16. Con alineación experimental **16+16**, y preservando el códec IMY y sus seis roundtrips, el FONT.ARC queda en **144.000 bytes**, dentro de los **144.384 bytes** disponibles, con **384 bytes de margen**. SHA-256 de fuente compacta `1bbdd6cba7490753d6af80ca469262fb2080ab7160fc9a8237bffe3805267af4`. SHA-256 de ISO piloto privada `f2b27d575b1693a74589459d3ddbfe10349ce06c12474e4fe647ac3061e0b434`, mismo tamaño que original. Comprobados **2.721 glifos antiguos + 19 españoles**, **44 ligaduras**, 6/6 IMY, **348 recursos PSPFS ajenos byte idénticos** y tabla ISO9660 conservada. Los archivos comerciales permanecen privados.
+
+**Riesgo no resuelto:** una tabla DSARC correcta y seis descompresiones no certifican que el ejecutable PSP acepte alineación IMY distinta de la histórica de 512 bytes. **No distribuir ni habilitar en patcher canónico** sin ensayo PPSSPP real A/B/A, y no atribuir 2.002 textos candidatos de ligaduras como cambios integrados. La fuente con 4 ligaduras y alineación histórica sigue siendo alternativa sin prueba C.
+
+**Código/CI:** `tools/f4_r21_ligature_font_prototype.py` incorpora `--member-alignment 16` experimental, `tools/f4_r23_font_compact_candidate.py` crea una ISO de ensayo en ruta privada NUEVA con guardas 349 PSPFS, y `tests/test_f4_r23_compact_font_candidate.py` añade 12 pruebas sintéticas positivas y negativas. CI en commit `b8b5d71c977d9231b073e30d7394e334d64fc246`: push `45321731079` **SUCCESS**; PR `45321738170` **SUCCESS**. Informe `docs/R23_FONT_IMY_COMPACT_2026-11-23.md` y `reports/R23_FONT_COMPACT_STATIC.json`.
+
+**Métricas honestas, tras R23:**
+- T: **9.235/9.237** entradas españolas en CSV (**99,98 % de borrador**); 2 originales truncados; juego traducido y calidad contextual final **sin medición de cierre**.
+- G: inventario/render/aprobación total no realizado; **sin denominador para un porcentaje de gráficos completo**.
+- R: **3.724/8.248 = 45,15 %** sustituciones históricas aceptadas en candidato parcial; **4.524 diferidas**; 2.002 potenciales con ligaduras 44, pero **0 nuevos aceptados canónicamente**. Interpretación MIPS y validación dinámica siguen bloqueadas.
+- Q: **66 casos definidos**, Q065/Q066 `NOT_RUN`; la matriz completa de juego aún no está definida ni ejecutada; **0 nuevos PASS C**. Porcentaje de campaña integral **sin medir**.
+
+**Cierre real: 0/4 áreas.** PR #7 sigue DRAFT, sin merge ni force push, sin BPS/EXE final. El sucesor R24 debe validar compatibilidad DSARC de 16 bytes en PPSSPP oficial y ampliar el trabajo T/G/R/Q sin falsear los indicadores.
