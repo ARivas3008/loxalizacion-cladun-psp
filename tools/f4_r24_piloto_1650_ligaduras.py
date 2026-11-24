@@ -142,8 +142,16 @@ def update_font_in_existing_candidate(original:Path,baseline:Path,
   require(pack[st:st+n]==modified[st:st+n],
           "Nonfont PSPFS content mutation")
  meta=16+font["index"]*32+24
- outside_equal(pack,modified,[(meta,meta+4),(font["offset"],font["offset"]+len(font_arc))],
+ # The canonical 19-glyph baseline FONT.ARC occupies 144352 bytes,
+ # while compact 19+44 occupies 144000. Clearing the retired 352-byte tail
+ # changes bytes belonging to the OLD FONT.ARC, not an unrelated asset.
+ # Authorize the full union of old/new FONT spans, never SE.ARC.
+ span_end=font["offset"]+max(font["size_stored"],len(font_arc))
+ require(span_end<=end,"FONT allowed span overlaps next PSPFS resource")
+ outside_equal(pack,modified,[(meta,meta+4),(font["offset"],span_end)],
                "FONT replacement in baseline DATA.DAT")
+ require(not any(modified[font["offset"]+len(font_arc):end]),
+         "Retired font tail or remaining PSPFS padding not zero")
  # Base already includes other approved text edits; strict comparison is
  # intentionally to BASE, not original.
  require(output.stat().st_size==baseline.stat().st_size,"Font stage shifted ISO")
