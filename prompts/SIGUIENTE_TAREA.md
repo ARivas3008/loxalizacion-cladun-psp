@@ -18,6 +18,7 @@ Leer ANTES de cambiar:
 
 - `docs/R26_ROMHACKING_100_AUDITORIA_2026-11-24.md`, `reports/R26_ROMHACKING_FULL_8248_DIAGNOSTICO.json`, `reports/R26_29_BLOQUES_PRIORIDAD.csv` (**29 índices/IDs de script, faltan solo 215 B de espacio en la mejor hipótesis 44 ligaduras**).
 - `tools/r26_script_full_capacity_audit.py` (coteja original ISO+5207 traducciones frente a 1625 scripts), `tools/r26_piloto_total_8248_privado.py` (genera SIEMPRE candidato privado de 8248, solicita explícitamente riesgo por eventos desplazados, no permite lanzamiento).
+- `tools/r26_auditar_reubicacion_eventos_total.py` (recompone los 4.900 comandos de SCRIPT **solo en memoria**, compara 51.705 offsets y 46.308 no textuales, exige declarar desplazamientos; todavía sin MIPS/C).
 - `tests/test_r26_script_full_capacity_audit.py`, `tests/test_r26_piloto_total_8248_privado.py` y `.github/workflows/validacion-integracion-eventos.yml`.
 - `tools/integrar_parche_seguro.py`, `tools/script_event_guard.py`, `tools/imy_repack_safe.py`, `tools/extract_cladun.py`, `tools/iso_guard_global.py`, `tools/generar_parche_bps.py`.
 - `tools/f4_r25_piloto_85pct.py`, `tools/f4_r24_piloto_1650_ligaduras.py`, `tools/f4_r21_ligature_collision_safe.py`, `tools/f4_r23_font_compact_candidate.py`.
@@ -39,11 +40,14 @@ Leer ANTES de cambiar:
 ```bash
 python tools/r26_script_full_capacity_audit.py
 python tools/r26_piloto_total_8248_privado.py
+python tools/r26_auditar_reubicacion_eventos_total.py
 python -m unittest discover -s tests -p 'test_r26*' -v
 ```
 3. Construir **un único candidato privado no publicable**, aceptando explícitamente solo el riesgo experimental:
 ```bash
 python tools/r26_script_full_capacity_audit.py \
+  --iso-original /PRIVADO/Cladun_USA.iso
+python tools/r26_auditar_reubicacion_eventos_total.py \
   --iso-original /PRIVADO/Cladun_USA.iso
 python tools/r26_piloto_total_8248_privado.py \
   --iso-original /PRIVADO/Cladun_USA.iso \
