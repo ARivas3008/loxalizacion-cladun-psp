@@ -134,3 +134,7 @@ Código: `tools/f4_r21_ligature_collision_safe.py`, `tools/f4_r21_ligature_font_
 - Q: **66 casos definidos**, Q065/Q066 `NOT_RUN`; la matriz completa de juego aún no está definida ni ejecutada; **0 nuevos PASS C**. Porcentaje de campaña integral **sin medir**.
 
 **Cierre real: 0/4 áreas.** PR #7 sigue DRAFT, sin merge ni force push, sin BPS/EXE final. El sucesor R24 debe validar compatibilidad DSARC de 16 bytes en PPSSPP oficial y ampliar el trabajo T/G/R/Q sin falsear los indicadores.
+
+### R23 adicional — primer inventario gráfico autenticado de PSPFS
+
+Se releyeron los **349** registros PSPFS de la ISO USA original y se clasificaron por extensión: **187 DMD, 65 DAT, 50 SPS, 37 MPB, 3 ARC, 3 LDT, 1 IDT, 1 SDT, 1 DAT2 y 1 TXT**. Las familias gráficas de **primera pasada** suman **43 contenedores candidatos**: 37 MPB + 3 LDT + 1 IDT + 2 ARC (FONT.ARC y SYSGRA.ARC). `SE.ARC` es independiente y se excluye de ese subconjunto. Estos **43 NO constituyen el número total de imágenes**, pues hay IMY e imágenes anidadas y todavía no se ha demostrado cuáles muestran texto inglés; no se les atribuye un porcentaje de traducción gráfica. Informe `reports/R23_PSPFS_GRAPHICS_TRIAGE.json`; generador seguro `tools/r23_pspfs_graphics_inventory.py --iso-original /PRIVADO/USA.iso`; diez tests sintéticos `tests/test_r23_pspfs_graphics_inventory.py`. Mantener G ABIERTA sin inventar PASS visual C.
