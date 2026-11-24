@@ -2,7 +2,7 @@
 import unittest
 from unittest.mock import patch
 from tools.r26_piloto_total_8248_privado import (
- preview,private_candidate,FULL_TARGET,SCRIPT_TARGET,
+ preview,private_candidate,full_8248_metadata_manifest,FULL_TARGET,SCRIPT_TARGET,
  VARIABLE_SCRIPT_TARGET,EQUAL_SCRIPT_TARGET
 )
 
@@ -18,6 +18,25 @@ class TestR26FullTextPilot(unittest.TestCase):
   self.assertEqual(p["planned_SCRIPT_same_length_changed"],376)
   self.assertEqual(p["all_SCRIPT_same_width_including_unchanged"],683)
   self.assertEqual(p["planned_SCRIPT_changed_length"],4524)
+ def test_8248_metadata_ID_manifest_has_no_commercial_text(self):
+  rows=full_8248_metadata_manifest()
+  self.assertEqual(len(rows),8248)
+  self.assertEqual(len({r["grupo_id"] for r in rows}),8248)
+  kinds={}
+  for r in rows:
+   kinds[r["category"]]=kinds.get(r["category"],0)+1
+   self.assertNotIn("espanol",r)
+   self.assertNotIn("original",r)
+   self.assertNotIn("bytes_hex",r)
+   self.assertEqual(r["PPSSPP_C"],"NOT_RUN")
+   self.assertEqual(r["canonical_gameplay_integrated"],"NO")
+   self.assertEqual(r["editorial_review"],"PENDIENTE_CONTEXTUAL")
+   if r["category"]=="SCRIPT_VARIABLE":
+    self.assertNotEqual(r["original_bytes"],r["new_bytes"])
+    self.assertEqual(r["MIPS_references"],"UNVERIFIED")
+  self.assertEqual(kinds,{"SCRIPT_VARIABLE":4524,
+                          "SCRIPT_FIXED":376,
+                          "OTHER_RESOURCE":3348})
  def test_full_100pct_stays_experimental(self):
   p=preview()
   self.assertFalse(p["private_candidate_created"])
