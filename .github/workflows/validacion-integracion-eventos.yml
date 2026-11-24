@@ -50,6 +50,29 @@ jobs:
           assert not x['trailing_whitespace_visual_approved']
           assert not x['ISO_written']
           PY
+      - name: R26 preflight de 8248 cambios potenciales sin desplazar binario comercial
+        run: |
+          python tools/r26_piloto_total_8248_privado.py > /tmp/cladun_r26_8248_B.json
+          python tools/r26_script_full_capacity_audit.py > /tmp/cladun_r26_padding_B.json
+          python - <<'PY'
+          import json
+          p=json.load(open('/tmp/cladun_r26_8248_B.json',encoding='utf-8'))
+          a=json.load(open('/tmp/cladun_r26_padding_B.json',encoding='utf-8'))
+          assert p['planned_all_changed_canonical_records']==8248
+          assert p['planned_SCRIPT_dat_changed_texts']==4900
+          assert p['planned_other_textual_records']==3348
+          assert p['planned_SCRIPT_changed_length']==4524
+          assert p['planned_SCRIPT_same_length_changed']==376
+          assert p['SCRIPT_dat_already_byte_identical_unmodified']==307
+          assert not p['100_percent_ROMhacking_official']
+          assert not p['PPSSPP_1_20_4_C_verified']
+          assert not p['all_script_event_offsets_would_be_preserved']
+          assert a['translated_script_rows']==5207
+          assert a['net_text_growth_bytes']==9694
+          assert a['optimized_44_theoretical']['full_script_theoretical_net_delta_bytes']==-4382
+          assert a['historical_integrated_unchanged']==3724
+          assert not a['game_tested_ppsspp_C']
+          PY
       - name: F3-R5 acreditar 97 textos del borrador mediante anclaje de ISO original
         run: python tools/f3_anclar_intro.py
       - name: F3-R6 verificar presupuesto padding de 7 scripts sin ISO comercial
