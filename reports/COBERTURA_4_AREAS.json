@@ -39,6 +39,23 @@
       "registros": 24,
       "con_cuadruplas_no_nulas": 7,
       "confirmado_en_ppsspp": false
+    },
+    "r23_graphics_triage": {
+      "pspfs_source_authenticated": true,
+      "extension_inventory_total": 349,
+      "candidate_pspfs_graphics_first_pass": 43,
+      "candidate_breakdown": {
+        "MPB": 37,
+        "LDT": 3,
+        "IDT": 1,
+        "ARC_graphics": 2
+      },
+      "full_nested_graphics_inventory": false,
+      "all_english_text_bearing_images_identified": false,
+      "revised_raster_pixels_in_game": 0,
+      "percent_revised_graphics": null,
+      "C_new_approved": 0,
+      "report": "reports/R23_PSPFS_GRAPHICS_TRIAGE.json"
     }
   },
   "romhacking": {
