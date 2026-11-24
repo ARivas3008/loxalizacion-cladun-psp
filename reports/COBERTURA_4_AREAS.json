@@ -292,7 +292,10 @@
       "combined_target": 3870,
       "combined_candidate_built": false,
       "official_new_integrations": 0,
-      "ppsspp_run": false
+      "ppsspp_run": false,
+      "isolated_146_font_iso_built": true,
+      "isolated_146_font_iso_sha256": "ffc971b474bdea2860c0d5daa47ca716c6567aa6ac514b206f6ca69e505d951c",
+      "cumulative_isolated_iso_private": 146
     }
   },
   "betatesting": {

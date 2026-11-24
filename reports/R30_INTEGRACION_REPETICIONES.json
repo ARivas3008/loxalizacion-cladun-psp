@@ -46,5 +46,27 @@
   "official_new": 0,
   "ppsspp_run": false,
   "release_authorized": false,
-  "limitations": "Exact original and Spanish draft paired through Git blob, 90 additional offsets manually transferred and applied to authentic SCRIPT.DAT by private independent verifier. The 26 ASCII-only ISO is from USA original, not canonical F1 baseline. Full repository checkout unavailable by DNS; new cumulative builder not run locally. Context and runtime still pending."
+  "limitations": "Exact original and Spanish draft paired through Git blob, 90 additional offsets manually transferred and applied to authentic SCRIPT.DAT by private independent verifier. The 26 ASCII-only ISO is from USA original, not canonical F1 baseline. Full repository checkout unavailable by DNS; new cumulative builder not run locally. Context and runtime still pending. Subsequently an independent private builder reproduced the existing narrow font algorithm and packaged all 146 on the original ISO; this is not the 3,870 cumulative F1 candidate. The new CLI isolated mode uses existing repository codec and guards, and was not run locally; recompression may produce a different hash.",
+  "private_146_font_iso": {
+    "candidate_sha256": "ffc971b474bdea2860c0d5daa47ca716c6567aa6ac514b206f6ca69e505d951c",
+    "candidate_size": 306198528,
+    "original_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "non_script_nonfont_pspfs_identical": 347,
+    "script_dsarc_other_children_identical": 3,
+    "script_texts_applied": 146,
+    "font_original_glyphs_pixel_metrics_identical": 2721,
+    "font_new_glyphs": 19,
+    "font_original_size": 143888,
+    "font_new_size": 144192,
+    "font_slot_remaining": 192,
+    "font_sha256": "a250d8adec088e224e7ca5e12a6c0f5d097f7ff2c3bf953306fe04c0f6333a0f",
+    "font_original_sha256": "420613ae4a16595b00c75d17bfb86290e57a30419d81ddbc6f245035e63c9805",
+    "font_imy_roundtrip": 6,
+    "script_imy_roundtrip": 8,
+    "script_imy_repacked": 6,
+    "script_stored_size": 700636,
+    "source_range_equal_except_32_metadata_bytes_and_font_slot": true,
+    "ppsspp_run": false,
+    "isolated_original_not_F1": true
+  }
 }

@@ -72,12 +72,73 @@ def make_plan(draft=DRAFT):
 def run(iso=None,candidate=None):
     return build(iso,candidate,plan_builder=make_plan)
 
+def run_isolated(iso,candidate):
+    """Build 146 on authentic USA + existing 19-glyph font, not F1 baseline."""
+    import os
+    import tempfile
+    try:
+        from tools.f3_referencias_riesgo import original_script_children, file_sha256, USA_SHA
+        from tools.f4_r23_font_compact_candidate import candidate_path
+        from tools.f4_r24_piloto_1650_ligaduras import replace_original_script, replace_member_payload
+        from tools.integrar_parche_seguro import read_resources, parent_content, append_text_containers
+        from tools.font_es_narrow import build as build_font, verify as verify_font
+        from tools.extract_cladun import dsarc_entries, decompress
+        from tools.imy_repack_safe import recompress
+        from tools.r29_integrar_longitud_fija import verify_resources
+    except ModuleNotFoundError:
+        from f3_referencias_riesgo import original_script_children, file_sha256, USA_SHA
+        from f4_r23_font_compact_candidate import candidate_path
+        from f4_r24_piloto_1650_ligaduras import replace_original_script, replace_member_payload
+        from integrar_parche_seguro import read_resources, parent_content, append_text_containers
+        from font_es_narrow import build as build_font, verify as verify_font
+        from extract_cladun import dsarc_entries, decompress
+        from imy_repack_safe import recompress
+        from r29_integrar_longitud_fija import verify_resources
+    require(iso is not None and candidate is not None,"Private ISO and output required")
+    require(file_sha256(iso)==USA_SHA,"Authentic original required")
+    target=candidate_path(candidate,iso)
+    original,table=original_script_children(iso)
+    modified,guard=replace_original_script(original,table,make_plan())
+    require(guard["text_commands_replaced"]==COMBINED and guard["all_command_offsets_preserved"],
+            "Event guard failed")
+    with tempfile.TemporaryDirectory(prefix="r30_isolated_",dir=target.parent) as tmp:
+        root=Path(tmp)
+        fontbase=root/"font.iso"
+        build_font(iso,fontbase)
+        fontguard=verify_font(iso,fontbase)
+        require(fontguard["original_glyphs_identical"]==2721 and fontguard["new_glyphs"]==19,
+                "Font guard failed")
+        _,pack,records=read_resources(fontbase)
+        entry=next(x for x in records if x["name"]=="SCRIPT.SDT")
+        stored,decoded,codec=parent_content(pack,entry)
+        require(codec.startswith("IMY"),"Unexpected codec")
+        members=dsarc_entries(decoded)
+        archive=replace_member_payload(decoded,members,"SCRIPT.DAT",modified)
+        repacked=recompress(stored,archive)
+        require(decompress(repacked,len(archive))[0]==archive,"Roundtrip failed")
+        staged=root/"candidate.iso"
+        append_text_containers(fontbase,pack,records,{"SCRIPT.SDT":(repacked,len(archive))},staged)
+        _,final_pack,final_records=read_resources(staged)
+        unchanged=verify_resources(records,pack,final_records,final_pack)
+        new_entry=next(x for x in final_records if x["name"]=="SCRIPT.SDT")
+        _,final_archive,_=parent_content(final_pack,new_entry)
+        require(final_archive==archive and dsarc_entries(final_archive)==members,"Final script mismatch")
+        require(file_sha256(iso)==USA_SHA,"Source changed")
+        result={"isolated_original_not_F1":True,"script_texts_applied":COMBINED,
+            "font_guard":fontguard,"event_guard":guard,"non_script_resources_exact_vs_fontbase":unchanged,
+            "candidate_sha256":file_sha256(staged),"candidate_size":staged.stat().st_size,
+            "ppsspp_run":False,"release_authorized":False,"new_official_integrations":0}
+        os.link(staged,target)
+    return result
+
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument("--iso-original",type=Path)
     p.add_argument("--candidate",type=Path)
+    p.add_argument("--isolated-original",action="store_true",help="146 texts + 19 glyphs on USA, not F1")
     a=p.parse_args()
-    print(json.dumps(run(a.iso_original,a.candidate),indent=2))
+    result=run_isolated(a.iso_original,a.candidate) if a.isolated_original else run(a.iso_original,a.candidate)
+    print(json.dumps(result,indent=2))
 
 if __name__=="__main__":
     main()

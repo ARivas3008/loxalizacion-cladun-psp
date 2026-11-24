@@ -17,3 +17,15 @@ python tools/r30_integrar_repeticiones.py --iso-original /PRIVADO/Cladun_USA.iso
 ```
 
 Oficial: 3.724/8.248 = 45,15%. Acumulado experimental objetivo: 3.870/8.248 = 46,92%; 146 añadidos en SCRIPT, 26 en ISO aislada, sin doble conteo. Ningún PASS C ni autorización de publicación. Ver reports/R30_INTEGRACION_REPETICIONES.json.
+
+## Ampliación R30 — ISO aislada de 146 + fuente española (A real)
+
+Se construyó además una ISO privada a partir de USA original con los 146 textos y el algoritmo existente de fuente estrecha A1–B3, reproducido en un script local independiente. SHA-256 ffc971b474bdea2860c0d5daa47ca716c6567aa6ac514b206f6ca69e505d951c; 306.198.528 B. La fuente pasa de 143.888 a 144.192 B, conserva 192 B de margen, 2.721 registros/métricas y píxeles de glifos originales intactos, 19 nuevos no vacíos, 6 texturas IMY roundtrip. SCRIPT.SDT append-only 700.636 B; 8 IMY comprobados, 6 recompuestos; 3 DSARC hermanos intactos. Los otros 347 PSPFS son idénticos. El rango original de la ISO es idéntico fuera del slot FONT y 32 bytes de metadatos explícitos; fuente original SHA intacta. **No es la base traducida F1 de 3.724 ni el acumulado 3.870.** No se ejecutó PPSSPP ni se publica la ISO.
+
+Se agregó modo reproducible `--isolated-original` al integrador R30, usando la implementación existente de FONT/IMY y auditor independiente. Este modo no se ejecutó localmente con el checkout completo; puede generar un hash distinto por la estrategia de recomprimir todos los bloques IMY, aunque debe conservar los mismos invariantes.
+
+```bash
+python tools/r30_integrar_repeticiones.py --isolated-original --iso-original /PRIVADO/Cladun_USA.iso --candidate /PRIVADO/R30_ISOLATED_146.iso
+```
+
+Los 146 ya están físicamente en una ISO privada auténtica modificada, no solo en SCRIPT.DAT, pero la aprobación funcional y acumulada siguen pendientes.

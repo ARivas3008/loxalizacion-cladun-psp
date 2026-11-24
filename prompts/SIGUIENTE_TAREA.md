@@ -1,6 +1,6 @@
 # CLADUN ES — R31 autónomo: ejecutar acumulado 3.870 y seguir integración segura
 
-Objetivo ROMhacking 100% real. Rama integracion-eventos-segura-20261120, PR #7 DRAFT sin merge/force push. Verificar HEAD y CI. Leer docs/R30_INTEGRACION_REPETICIONES.md, reports/R30_INTEGRACION_REPETICIONES.json, tools/r30_integrar_repeticiones.py, tools/r29_integrar_longitud_fija.py, tools/r28_relocation_map.py, docs/R26_ROMHACKING_100_AUDITORIA_2026-11-24.md. R30 añadió 90 a 56 en SCRIPT auténtico, 146 sin mover offsets; ISO USA aislada 26 ASCII, 348 PSPFS intactos. No hay C ni candidata acumulada.
+Objetivo ROMhacking 100% real. Rama integracion-eventos-segura-20261120, PR #7 DRAFT sin merge/force push. Verificar HEAD y CI. Leer docs/R30_INTEGRACION_REPETICIONES.md, reports/R30_INTEGRACION_REPETICIONES.json, tools/r30_integrar_repeticiones.py, tools/r29_integrar_longitud_fija.py, tools/r28_relocation_map.py, docs/R26_ROMHACKING_100_AUDITORIA_2026-11-24.md. R30 añadió 90 a 56 en SCRIPT auténtico, 146 sin mover offsets; ISO USA aislada 26 ASCII, 348 PSPFS intactos. Además, R30 construyó una ISO USA aislada con los 146 textos y 19 signos A1–B3: SHA ffc971b474bdea2860c0d5daa47ca716c6567aa6ac514b206f6ca69e505d951c, 347 PSPFS ajenos intactos, 2721 glifos originales exactos. No hay C ni candidata acumulada. Probar esta ISO y reproducir con --isolated-original antes del candidato acumulado.
 
 1. Checkout íntegro y PPSSPP 1.20.4 oficial; ISO SHA b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f. Ejecutar:
 ```bash
