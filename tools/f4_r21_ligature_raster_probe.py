@@ -14,12 +14,13 @@ def combine_two_cells(first:bytes,second:bytes,advance_first:int,advance_second:
   raise ValueError("Ligature advance exceeds 15 pixels")
  if any(v>15 for v in first+second):
   raise ValueError("Raster index is not a 4bpp value")
- out=bytearray(256);clipping=overlap=0;max_x=-1
+ out=bytearray(first);clipping=overlap=0;max_x=-1
  for y in range(16):
   for x in range(16):
-   a=first[y*16+x]
-   if a:
-    out[y*16+x]=a;max_x=max(max_x,x)
+   if first[y*16+x]:
+    max_x=max(max_x,x)
+ for y in range(16):
+  for x in range(16):
    b=second[y*16+x]
    if not b:continue
    tx=x+advance_first
