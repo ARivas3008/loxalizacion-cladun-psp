@@ -6,10 +6,12 @@ try:
  from tools.f4_r21_ligature_capacity import read_canonical,analyze,encode_fixed
  from tools.f3_referencias_riesgo import original_script_children
  from tools.script_event_guard import read_commands,audit_script_rebuild
+ from tools.charset_es import encode_spanish
 except ModuleNotFoundError:
  from f4_r21_ligature_capacity import read_canonical,analyze,encode_fixed
  from f3_referencias_riesgo import original_script_children
  from script_event_guard import read_commands,audit_script_rebuild
+ from charset_es import encode_spanish
 
 def make_plan(rows):
  report=analyze(rows)
@@ -19,10 +21,6 @@ def make_plan(rows):
   if row["origen"]!="SCRIPT.SDT/SCRIPT.DAT" or not row["espanol"]:
    continue
   old=bytes.fromhex(row["bytes_hex"])
-  try:
-   from tools.charset_es import encode_spanish
-  except ModuleNotFoundError:
-   from charset_es import encode_spanish
   if len(encode_spanish(row["espanol"]))<=len(old):
    continue
   attempted+=1

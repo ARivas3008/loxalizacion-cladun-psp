@@ -9,8 +9,10 @@ class LigatureOverlaySafetyTests(unittest.TestCase):
  def test_public_corpus_plan_is_noncanonical(self):
   rows=read_canonical(ROOT/"traduccion/CLADUN_BORRADOR_ES.csv")
   plan,report=make_plan(rows)
-  self.assertGreater(len(plan),1000)
-  self.assertLessEqual(len(plan),2120)
+  self.assertEqual(len(plan),2073)
+  self.assertEqual(report["candidate_payload_bytes"],63743)
+  self.assertEqual(report["growing_texts"],2883)
+  self.assertEqual(report["candidate_rows_with_controls_excluded"],47)
   self.assertEqual(report["candidates_after_strict_source_controls"],len(plan))
   self.assertFalse(report["deployment_authorized"])
   self.assertFalse(report["canonical_approved"])
@@ -21,8 +23,15 @@ class LigatureOverlaySafetyTests(unittest.TestCase):
    self.assertNotEqual(item["old"],item["new"])
    self.assertTrue(all(32<=b<=126 and b not in (37,92) for b in item["old"]))
   self.assertEqual(len(set(z["offset"] for z in plan)),len(plan))
- def test_empty_source_produces_no_candidate(self):
-  self.assertFalse(False)
+ def test_source_controls_are_never_considered_for_overlay(self):
+  rows=read_canonical(ROOT/"traduccion/CLADUN_BORRADOR_ES.csv")
+  plan,_=make_plan(rows)
+  self.assertTrue(all(b"%" not in p["old"] and b"\\\\" not in p["old"] for p in plan))
+ def test_every_rewritten_slot_preserves_byte_length_and_utf8_ownership(self):
+  rows=read_canonical(ROOT/"traduccion/CLADUN_BORRADOR_ES.csv")
+  plan,_=make_plan(rows)
+  self.assertTrue(all(len(p["old"])==len(p["new"])==p["bytes"] for p in plan))
+  self.assertEqual(len({p["group_id"] for p in plan}),len(plan))
  def test_authenticated_replay_rejects_invalid_source(self):
   with self.assertRaises(ValueError):
    simulate_authenticated(b"Wrong",b"Wrong",[])
