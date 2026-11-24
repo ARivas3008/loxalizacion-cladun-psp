@@ -5,7 +5,7 @@ from tools.f4_r21_ligature_capacity import read_canonical
 from tools.f4_r21_ligature_overlay import make_plan
 from tools.f4_r24_piloto_1650_ligaduras import (
  TARGET_EXTRA,BASE_INTEGRATED,BASE_DEFERRED,TOTAL_PLANNED,
- selection,metrics,replace_original_script,replace_member_payload,font_allowed_span
+ selection,metrics,replace_original_script,replace_member_payload,font_allowed_span,unchanged_resources_against_baseline
 )
 from tools.extract_cladun import dsarc_entries
 
@@ -153,6 +153,48 @@ class TestR24Pilot(unittest.TestCase):
    self.assertEqual(row["dictamen_editorial"],"PENDIENTE_CONTEXTUAL")
    self.assertEqual(row["verificacion_ppsspp"],"NOT_RUN")
    self.assertEqual(row["integracion_canonica"],"NO")
+ def test_final_binary_comparison_uses_translated_baseline_not_original(self):
+  # In a canonical baseline DATABASE.DAT, SYS.DAT2 and STAFFROLL.TXT
+  # legitimately differ from the USA source: only the NEW FONT/SCRIPT
+  # may differ between baseline and final experimental ISO.
+  names=["DATA_%03d" %i for i in range(349)]
+  names[10]="DATABASE.DAT"
+  names[11]="STAFFROLL.TXT"
+  names[12]="SYS.DAT2"
+  names[231]="SCRIPT.SDT"
+  names[308]="FONT.ARC"
+  entries=[{"name":name,"index":i,"offset":i*8,"size_stored":8}
+           for i,name in enumerate(names)]
+  baseline=bytearray(b"o"*349*8)
+  for i in [10,11,12]:baseline[i*8:(i+1)*8]=b"SPANISH!"
+  candidate=bytearray(baseline)
+  candidate[231*8:232*8]=b"SCRIPT!!"
+  candidate[308*8:309*8]=b"FONT!!!!"
+  self.assertEqual(
+   unchanged_resources_against_baseline(entries,bytes(baseline),
+    entries,bytes(candidate)),347)
+ def test_reject_unrelated_neighboring_asset_mutation_after_baseline(self):
+  entries=[{"name":"FONT.ARC" if i==308 else
+            "SCRIPT.SDT" if i==231 else f"R_{i}",
+            "index":i,"offset":i*8,"size_stored":8} for i in range(349)]
+  old=b"x"*349*8
+  modified=bytearray(old);modified[5*8]=0
+  with self.assertRaises(ValueError):
+   unchanged_resources_against_baseline(entries,old,entries,bytes(modified))
+ def test_reject_other_metadata_mutation_after_baseline(self):
+  entries=[{"name":"FONT.ARC" if i==308 else
+            "SCRIPT.SDT" if i==231 else f"R_{i}",
+            "index":i,"offset":i*8,"size_stored":8} for i in range(349)]
+  wrong=[dict(x) for x in entries]
+  wrong[10]["offset"]+=1
+  with self.assertRaises(ValueError):
+   unchanged_resources_against_baseline(entries,b"x"*2792,wrong,b"x"*2792)
+ def test_reject_incomplete_349_inventory_after_baseline(self):
+  entries=[{"name":f"R_{i}","index":i,"offset":i*8,"size_stored":8}
+           for i in range(349)]
+  with self.assertRaises(ValueError):
+   unchanged_resources_against_baseline(entries[:-1],b"x"*2792,
+                                        entries[:-1],b"x"*2792)
  def test_source_preimage_never_silently_falls_back(self):
   # Real source scan requires an exact 1625-block SCRIPT.TBL, not a guessed offset.
   with self.assertRaises(Exception):
