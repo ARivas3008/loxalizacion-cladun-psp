@@ -1,0 +1,5 @@
+# R21 — 20 propuestas de igual longitud, posterior al prólogo
+
+Se cotejaron los fragmentos ingleses originales, la redacción del borrador y los textos contiguos recuperados del corpus. Las 20 alternativas mantienen exactamente el número de bytes CP932 del inglés original. Abarcan escenas 100300, 100304, 100400, 100403, 100500, 300507, 100600 y 100602, más un fragmento 002841. Se rechazaron expresiones forzadas o ambiguas cuando era imposible conservar el sentido en el espacio disponible. La revisión no sustituye validación narrativa ni prueba C en PPSSPP.
+
+CSV `traduccion/propuestas/SCRIPT_POSTPROLOGO_LONGITUD_FIJA_R21.csv` es **solo un lote de propuestas**, no un cambio canónico. Puede ensayarse con `python tools/f4_r18_propuestas_globales.py --propuestas traduccion/propuestas/SCRIPT_POSTPROLOGO_LONGITUD_FIJA_R21.csv --iso-original /PRIVADO/USA.iso`; el comando realiza simulación en RAM y auditoría de offsets, nunca exporta ISO. Los seis R20 y 64 R18 son lotes disjuntos. Las 4524 sustituciones oficiales siguen sin aprobarse. No se han alterado la fuente original, el borrador ni los derivados.
