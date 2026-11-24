@@ -16,6 +16,28 @@ def blocks_fixture():
  } for i in range(BLOCKS)]
 
 class TestR26ScriptFullCapacity(unittest.TestCase):
+ def test_A_29_block_priority_metadata_only_is_consistent(self):
+  import csv
+  path=ROOT/"reports/R26_29_BLOQUES_PRIORIDAD.csv"
+  with path.open(encoding="utf-8",newline="") as f:
+   rows=list(csv.DictReader(f))
+  self.assertEqual(len(rows),29)
+  self.assertEqual([int(x["rank"]) for x in rows],list(range(1,30)))
+  self.assertEqual(len({x["block_index"] for x in rows}),29)
+  self.assertEqual(len({x["script_id"] for x in rows}),29)
+  deficits=[]
+  for x in rows:
+   pad=int(x["original_padding_bytes"])
+   net=int(x["optimized_net_growth_bytes"])
+   deficit=int(x["remaining_overflow_bytes"])
+   self.assertGreater(deficit,0)
+   self.assertEqual(net-pad,deficit)
+   self.assertEqual(x["reference_fixup_status"],"UNVERIFIED")
+   self.assertEqual(x["ppsspp_status"],"NOT_RUN")
+   deficits.append(deficit)
+  self.assertEqual(deficits,sorted(deficits,reverse=True))
+  self.assertEqual(sum(deficits),215)
+  self.assertEqual(max(deficits),34)
  def test_source_corpus_completeness(self):
   sums,h=census(read_canonical(SOURCE))
   self.assertEqual(len(sums),586)
