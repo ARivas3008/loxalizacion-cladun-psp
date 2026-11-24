@@ -46,6 +46,8 @@ def classify(rows,script=None):
    if abs(delta)<=3:result['variable_within_3_bytes']+=1
    if delta>0:result['growing']+=1
    else:result['shrinking']+=1
+ for key in ('translated_script_rows','without_spanish','invalid_or_unencodable','same_byte_width','variable_byte_width','variable_within_3_bytes','growing','shrinking'):
+  result.setdefault(key,0)
  return {
   'schema':'cladun.r20.script_width_delta.v1',
   'evidence':'A_AUTHENTIC_SCRIPT_PREIMAGE' if script is not None else 'B_GIT_CORPUS_STATIC',
