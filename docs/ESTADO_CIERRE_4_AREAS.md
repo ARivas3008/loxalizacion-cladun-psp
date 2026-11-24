@@ -95,3 +95,9 @@ Dictamen de las 42 propuestas R17: 36 aptas para ensayo estático (incluida revi
 - Diez nuevos casos sintéticos de seguridad de eventos en `tests/test_script_event_guard_negative_r19.py`, incluidas cinco mutaciones que se habían ensayado de forma privada. CI de ese commit por verificar; no declarar PASS sin comprobar workflow.
 - Nueva hipótesis gráfica: 15 cuádruplas RGBA candidatas en colas ANIME001, 7 registros no nulos, no verificada por GE/VRAM. Casos Q061 y Q062 añadidos como `NOT_RUN` (62 definidos), sin inventar resultados C.
 - La simulación privada independiente de 64 cambios mantiene SHA virtual `8b41c60d6e0def06672398dc4e195bcac5da98de7ba57a8ffe2995cde3f584cd`, 51.705 comandos y 46.308 no textuales, offsets sin desplazamiento. No ISO candidata ni parche liberado.
+
+### R19 — verificación CI y relación entre paletas
+
+- Commit b0aa8b4528168906921eb9787ed27e7e98974c30: CI push 45310281300 y PR 45310288041 SUCCESS. 952 tests, 1 omitido, incluidas diez regresiones nuevas de guardas de eventos.
+- ANIME001 IDs 6400/6410: 14/14 cuádruplas iguales desplazadas un índice, 0/15 iguales en posición; IDs 6960/6980: 15/15 iguales. Hipótesis de paleta NO validada en GPU; ver docs/R19_RELACIONES_PALETAS.md.
+- Matriz Q061/Q062 NOT_RUN, 62 casos definidos; sin nuevo PASS C. Corpus canónico sin cambios; 4524 variables bloqueadas.
