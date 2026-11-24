@@ -273,7 +273,17 @@
       "mips_proven": false,
       "ppsspp_run": false
     },
-    "percent_integrated": 45.1503
+    "percent_integrated": 45.1503,
+    "r29_fixed_width": {
+      "report": "reports/R29_INTEGRACION_LONGITUD_FIJA.json",
+      "actual_private_script_edits": 56,
+      "actual_private_ascii_iso_edits": 16,
+      "additional_existing_font_required": 40,
+      "combined_target": 3780,
+      "combined_candidate_built": false,
+      "official_new_integrations": 0,
+      "ppsspp_run": false
+    }
   },
   "betatesting": {
     "matriz_completa": false,
