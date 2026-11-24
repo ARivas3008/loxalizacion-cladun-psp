@@ -14,6 +14,15 @@ def inspect_tail(tail):
  quads=[tuple(tail[len(pad)+4*i:len(pad)+4*(i+1)]) for i in range(15)]
  return {'alignment_bytes':len(pad),'unique_rgba_quads':len(set(quads)),'nonzero_rgba_quads':sum(any(q) for q in quads),'alpha_histogram':dict(sorted(Counter(q[3] for q in quads).items()))}
 
+def compare_candidate_quads(a,b):
+    """Compare 15-entry candidates; no GPU confirmation."""
+    if len(a)!=15 or len(b)!=15 or any(len(x)!=4 for x in a+b):
+        raise ValueError('expected 15 four-byte candidates per record')
+    return {'same_index':sum(x==y for x,y in zip(a,b)),
+            'one_step_shift':sum(a[i+1]==b[i] for i in range(14)),
+            'shared_unique':len(set(a)&set(b)),
+            'runtime_palette_confirmed':False}
+
 def inspect_member(blob):
  rows=[]
  for ident,body in records(blob,2):
