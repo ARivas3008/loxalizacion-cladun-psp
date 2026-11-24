@@ -34,7 +34,7 @@
     "existing_canonical_partials": 3724,
     "planned_overall_substitutions": 8248,
     "pilot_target_combined": 5374,
-    "pilot_target_percentage": 65.154,
+    "pilot_target_percentage": 65.1552,
     "pilot_target_gain_points": 20.00485,
     "total_strict_44_glyph_candidates_previous_R21": 2002,
     "pipeline_software_implemented": true,
@@ -74,7 +74,7 @@
     "romhacking_integrated": 3724,
     "romhacking_total": 8248,
     "romhacking_deferred": 4524,
-    "romhacking_percentage": 45.148,
+    "romhacking_percentage": 45.1503,
     "betatesting_cases_defined": 66,
     "betatesting_C_new_pass": 0,
     "all_four_100": false
