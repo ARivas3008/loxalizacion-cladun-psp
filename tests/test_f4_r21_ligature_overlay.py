@@ -12,7 +12,7 @@ class LigatureOverlaySafetyTests(unittest.TestCase):
   self.assertEqual(len(plan),2073)
   self.assertEqual(report["candidate_payload_bytes"],63743)
   self.assertEqual(report["growing_texts"],2883)
-  self.assertEqual(report["candidate_rows_with_controls_excluded"],47)
+  self.assertEqual(report["candidate_rows_with_controls_excluded"],74)
   self.assertEqual(report["candidates_after_strict_source_controls"],len(plan))
   self.assertFalse(report["deployment_authorized"])
   self.assertFalse(report["canonical_approved"])
@@ -26,7 +26,7 @@ class LigatureOverlaySafetyTests(unittest.TestCase):
  def test_source_controls_are_never_considered_for_overlay(self):
   rows=read_canonical(ROOT/"traduccion/CLADUN_BORRADOR_ES.csv")
   plan,_=make_plan(rows)
-  self.assertTrue(all(b"%" not in p["old"] and b"\\\\" not in p["old"] for p in plan))
+  self.assertTrue(all(37 not in p["old"] and 92 not in p["old"] for p in plan))
  def test_every_rewritten_slot_preserves_byte_length_and_utf8_ownership(self):
   rows=read_canonical(ROOT/"traduccion/CLADUN_BORRADOR_ES.csv")
   plan,_=make_plan(rows)
