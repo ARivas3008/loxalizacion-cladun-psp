@@ -296,6 +296,18 @@
       "isolated_146_font_iso_built": true,
       "isolated_146_font_iso_sha256": "ffc971b474bdea2860c0d5daa47ca716c6567aa6ac514b206f6ca69e505d951c",
       "cumulative_isolated_iso_private": 146
+    },
+    "r31_bulk_padding": {
+      "report": "reports/R31_BULK_PADDING.json",
+      "new_private_iso": 608,
+      "cumulative_isolated_iso": 754,
+      "pool_preimages_authentic": 1302,
+      "pool_unwritten": 694,
+      "combined_target_short": 4478,
+      "combined_target_all": 5172,
+      "combined_candidate_built": false,
+      "official_new_integrations": 0,
+      "ppsspp_run": false
     }
   },
   "betatesting": {

@@ -72,7 +72,7 @@ def make_plan(draft=DRAFT):
 def run(iso=None,candidate=None):
     return build(iso,candidate,plan_builder=make_plan)
 
-def run_isolated(iso,candidate):
+def run_isolated(iso,candidate, *, plan_builder=make_plan):
     """Build 146 on authentic USA + existing 19-glyph font, not F1 baseline."""
     import os
     import tempfile
@@ -98,8 +98,11 @@ def run_isolated(iso,candidate):
     require(file_sha256(iso)==USA_SHA,"Authentic original required")
     target=candidate_path(candidate,iso)
     original,table=original_script_children(iso)
-    modified,guard=replace_original_script(original,table,make_plan())
-    require(guard["text_commands_replaced"]==COMBINED and guard["all_command_offsets_preserved"],
+    plan=plan_builder()
+    count=len(plan)
+    require(count>0 and len({x["offset"] for x in plan})==count,"Invalid isolated plan")
+    modified,guard=replace_original_script(original,table,plan)
+    require(guard["text_commands_replaced"]==count and guard["all_command_offsets_preserved"],
             "Event guard failed")
     with tempfile.TemporaryDirectory(prefix="r30_isolated_",dir=target.parent) as tmp:
         root=Path(tmp)
@@ -124,7 +127,7 @@ def run_isolated(iso,candidate):
         _,final_archive,_=parent_content(final_pack,new_entry)
         require(final_archive==archive and dsarc_entries(final_archive)==members,"Final script mismatch")
         require(file_sha256(iso)==USA_SHA,"Source changed")
-        result={"isolated_original_not_F1":True,"script_texts_applied":COMBINED,
+        result={"isolated_original_not_F1":True,"script_texts_applied":count,
             "font_guard":fontguard,"event_guard":guard,"non_script_resources_exact_vs_fontbase":unchanged,
             "candidate_sha256":file_sha256(staged),"candidate_size":staged.stat().st_size,
             "ppsspp_run":False,"release_authorized":False,"new_official_integrations":0}
