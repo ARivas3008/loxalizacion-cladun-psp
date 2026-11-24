@@ -31,6 +31,25 @@ jobs:
           assert r['not_PPSSPP_proven'] and r['not_release_authorized']
           assert r['pilot_gain_percentage_points']>=20.0
           PY
+      - name: R25 comprobar 3300 candidatas para 85.16% y 0 validaciones C
+        run: |
+          python tools/f4_r25_piloto_85pct.py > /tmp/cladun_r25_85pct_B.json
+          python - <<'PY'
+          import json
+          x=json.load(open('/tmp/cladun_r25_85pct_B.json',encoding='utf-8'))
+          assert x['strict_ligatures_44_pool']==2002
+          assert x['shorter_safe_pool_with_gap_le_7']==1345
+          assert x['selected_growing_new']==2002
+          assert x['selected_shorter_new']==1298
+          assert x['selected_new_total']==3300
+          assert x['target_cumulative_binary_candidates']==7024
+          assert x['target_cumulative_percent']>=85.16
+          assert x['new_official_integrations']==0
+          assert not x['gameplay_C_approved']
+          assert not x['font_runtime_approved']
+          assert not x['trailing_whitespace_visual_approved']
+          assert not x['ISO_written']
+          PY
       - name: F3-R5 acreditar 97 textos del borrador mediante anclaje de ISO original
         run: python tools/f3_anclar_intro.py
       - name: F3-R6 verificar presupuesto padding de 7 scripts sin ISO comercial
