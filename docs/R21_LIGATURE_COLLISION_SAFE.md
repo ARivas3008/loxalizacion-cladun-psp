@@ -1,0 +1,11 @@
+# R21 — Corrección de colisiones en 44 ligaduras
+
+**Hallazgo adversario auténtico A:** el primer modelo de 44 parejas usaba solo avances de FONT.BIN y **11 parejas sí tenían trazos superpuestos** (`ue la lo re un ie ro in so se sa`). No había píxeles fuera de la celda, pero una composición por simple unión podía alterar el aspecto de la letra. El primer informe de 44/44 sin solapamientos era incorrecto: corregido tras inspección de los rásteres originales (FONT_00.IMY SHA256 `698bc5b398a16c3f2a4615527dac6a36dbae73666a7c45c3787bb00a728a8478`).
+
+Examen exhaustivo A de **672** pares de letras minúsculas con avance combinado máximo de 15 píxeles: **151** presentan solapamiento y **521** no. Se inmoviliza una lista de 151 colisiones ligada al SHA de la fuente auténtica. `verify_own_iso_raster` la reconstruye desde la ISO privada, comprueba las 672 parejas y rechaza cualquier deriva. No publica píxeles ni archivos comerciales.
+
+Con los 44 pares frecuentes elegidos **solo entre las 521 opciones sin solapamiento**, el modelo B sobre corpus canónico cambia de 2120 a **2042 de 2883 textos largos potencialmente ajustables**; después de filtros estrictos de origen ASCII, controles y marcadores quedan **2002 candidatos** (61.723 bytes de payload). Los **841** largos restantes no caben por este método, además de **1641** traducciones más cortas que siguen pendientes. Nada de esto está integrado en el parche.
+
+**Límite de espacio confirmado en copia privada A:** FONT.ARC original 143888 B, con margen PSPFS original de 496 B. Un repack preliminar en RAM con 19 acentos + 44 parejas seguras dio **145696 B**, crecimiento +1808 B, que excede el slot en **1312 B**. Las seis páginas IMY superaron roundtrip de bytes decodificados. Estos son cálculos de prototipo y no certificación PSPFS de una ISO modificada. **No escribir la fuente ampliada en el slot**: se necesita relocalización append-only con integridad total y pruebas C.
+
+Archivos: `tools/f4_r21_ligature_collision_safe.py`, `tests/test_f4_r21_ligature_collision_safe.py`. Ejecución B: `python tools/f4_r21_ligature_collision_safe.py`; autenticación A de máscaras: `python tools/f4_r21_ligature_collision_safe.py --iso-original /PRIVADO/USA.iso`. No declarar integración, render ni 100 %.
