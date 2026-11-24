@@ -43,7 +43,14 @@ python tools/r26_piloto_total_8248_privado.py
 python tools/r26_auditar_reubicacion_eventos_total.py
 python -m unittest discover -s tests -p 'test_r26*' -v
 ```
-3. Construir **un único candidato privado no publicable**, aceptando explícitamente solo el riesgo experimental:
+3. Antes del binario exportar **manifiesto de revisión de los 8.248 IDs** sin contenido comercial:
+```bash
+python tools/r26_piloto_total_8248_privado.py \
+  --manifest /PRIVADO/R27_MANIFIESTO_8248_REVISION.json
+```
+Exigir **4.524 SCRIPT_VARIABLE + 376 SCRIPT_FIXED + 3.348 OTHER_RESOURCE**; cada ID con QA `NOT_RUN`, editorial `PENDIENTE_CONTEXTUAL`, integración canónica `NO` y MIPS `UNVERIFIED` para los que mueven longitud. No aprobarlos por generar el JSON.
+
+4. Construir **un único candidato privado no publicable**, aceptando explícitamente solo el riesgo experimental:
 ```bash
 python tools/r26_script_full_capacity_audit.py \
   --iso-original /PRIVADO/Cladun_USA.iso
@@ -54,7 +61,7 @@ python tools/r26_piloto_total_8248_privado.py \
   --candidate /PRIVADO/Cladun_R27_8248_RIESGO_EVENTOS.iso \
   --i-accept-experimental-moving-event-offsets
 ```
-4. Si alguna guarda rechaza construcción (IMY final, DSARC, capacidad, redimensionamiento, condición CLI), diagnosticar y corregir en el código con test positivo/negativo, sin deshabilitar protección. Exigir 8.248 cambios reales, 4.900 SCRIPT, 46.308 nontext byte exact, 51.705 opcodes/IDs/orden, 349 PSPFS y recursos no textuales byte-identicos, original inalterado. Registrar **exactamente** los comandos/inicios que se desplazaron. Mantener el candidato fuera de Git y no dar instrucciones de distribuir.
+5. Si alguna guarda rechaza construcción (IMY final, DSARC, capacidad, redimensionamiento, condición CLI), diagnosticar y corregir en el código con test positivo/negativo, sin deshabilitar protección. Exigir 8.248 cambios reales, 4.900 SCRIPT, 46.308 nontext byte exact, 51.705 opcodes/IDs/orden, 349 PSPFS y recursos no textuales byte-identicos, original inalterado. Registrar **exactamente** los comandos/inicios que se desplazaron. Mantener el candidato fuera de Git y no dar instrucciones de distribuir.
 
 ## 3. Tanda B — resolver específicamente los 29 bloques y TODOS los punteros MIPS
 
