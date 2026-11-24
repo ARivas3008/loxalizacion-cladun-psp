@@ -1,0 +1,7 @@
+"grupo_id","script_id","offset_hex","original_bytes","propuesta_es","estado","justificacion"
+"000913","100200","0x000392DF","22","M-Me siento mareado...","PROPUESTA_NO_CANONICA_PENDIENTE_CONTEXTO","Restituye el tartamudeo I-I; verificar identidad del hablante."
+"000925","100200","0x00039626","31","¿Acabo de encontrar un tesoro?!","PROPUESTA_NO_CANONICA_PENDIENTE_CONTEXTO","Conserva la sorpresa de ?!; revisar signos según estilo del juego."
+"000931","100200","0x000397B7","16","¿Puedo llevarlo?","PROPUESTA_NO_CANONICA_PENDIENTE_CONTEXTO","Equivalencia de petición; confirmar que el objeto es transportable."
+"000937","100200","0x00039915","42","No creí que Arcanus Cella tuviera trampas,","PROPUESTA_NO_CANONICA_PENDIENTE_CONTEXTO","Mantiene continuidad abierta; cotejar frase siguiente."
+"000977","100200","0x0003A4CA","10","¡Disculpa!","PROPUESTA_NO_CANONICA_PENDIENTE_CONTEXTO","Alternativa de disculpa exacta; confirmar interlocutor y registro."
+"000991","100203","0x0003A987","6","¡Hola!","PROPUESTA_NO_CANONICA_PENDIENTE_CONTEXTO","Saludo exacto en bytes; exclamación cambia el énfasis, verificar escena."
