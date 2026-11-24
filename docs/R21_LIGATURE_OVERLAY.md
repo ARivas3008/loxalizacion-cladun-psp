@@ -1,0 +1,5 @@
+# R21 — Superposición virtual de 44 ligaduras con guardas de eventos
+
+`tools/f4_r21_ligature_overlay.py` convierte la hipótesis de 44 parejas en un plan comprobable de bytes para textos ingleses íntegramente ASCII y sin controles % ni barras invertidas. Cada texto propuesto tiene el **mismo número de bytes** que su slot inglés. El código comprueba IDs, offsets, solapamientos y codec reversible. Con `--iso-original` (solo copia privada autenticada), coteja cada preimagen con SCRIPT.DAT auténtico y ejecuta `audit_script_rebuild(require_fixed_offsets=True)` sobre una copia RAM, verificando 51.705 comandos y 46.308 no textuales. Nunca escribe ISO, FONT.ARC, BPS ni el corpus canónico.
+
+**Estos bytes son un experimento: el motor no está demostrado para B4–DF.** La ausencia de desplazamientos no certifica que los glifos se dibujen. La cifra de sustituciones integradas sigue siendo 3.724/8.248 (45,15%). Para ejecutar: `python tools/f4_r21_ligature_overlay.py`, y para evidencia A `python tools/f4_r21_ligature_overlay.py --iso-original /PRIVADO/Cladun.iso`. Nunca habilitar `--event-safe-only` para saltarse guardas.
