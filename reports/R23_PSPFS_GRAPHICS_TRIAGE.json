@@ -1,0 +1,46 @@
+{
+  "schema": "cladun.r23.pspfs_graphics_triage.v1",
+  "evidence": "A_ORIGINAL_ISO_METADATA_NOT_GRAPHICS_COMPLETION",
+  "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "source_pspfs_total": 349,
+  "exact_first_level_format_counts": {
+    "DAT2": 1,
+    "DMD": 187,
+    "ARC": 3,
+    "MPB": 37,
+    "DAT": 65,
+    "TXT": 1,
+    "SPS": 50,
+    "SDT": 1,
+    "IDT": 1,
+    "LDT": 3
+  },
+  "first_pass_graphics_candidates_total": 43,
+  "breakdown": {
+    "MPB": 37,
+    "LDT": 3,
+    "IDT": 1,
+    "graphics_ARC_FONT_and_SYSGRA": 2
+  },
+  "graphic_nested_formats_not_fully_enumerated": true,
+  "candidate_names_factual_examples": [
+    "TIKA.MPB",
+    "TIKA2.MPB",
+    "TITLE.MPB",
+    "TITLE_LOGO.MPB",
+    "ANIME000.IDT",
+    "ANIME001.LDT",
+    "ANIME002.LDT",
+    "MAPTIP.LDT",
+    "SYSGRA.ARC",
+    "FONT.ARC"
+  ],
+  "note": "Candidate format categories are not confirmation of English text, edited images, or exhaustive source raster count. No graphical completion percentage is computable.",
+  "pp_sspp_new_visual_tests": 0,
+  "graphic_edit_completion_pct": null,
+  "source_modified": false,
+  "commercial_bytes_exported": false,
+  "code": "tools/r23_pspfs_graphics_inventory.py",
+  "tests": "tests/test_r23_pspfs_graphics_inventory.py",
+  "status": "STATIC_TRIAGE_ONLY"
+}
