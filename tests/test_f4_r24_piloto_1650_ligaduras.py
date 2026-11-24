@@ -135,6 +135,24 @@ class TestR24Pilot(unittest.TestCase):
   for args in [(True,10,10,100),(-1,10,20,100),(10,0,20,100)]:
    with self.subTest(args=args),self.assertRaises(ValueError):
     font_allowed_span(*args)
+ def test_editorial_manifest_matches_exact_Python_1650_selected(self):
+  import csv
+  from pathlib import Path
+  root=Path(__file__).resolve().parents[1]
+  corpus=root/"traduccion/CLADUN_BORRADOR_ES.csv"
+  manifest=root/"traduccion/propuestas/R24_COLA_EDITORIAL_1650.csv"
+  plan,_=make_plan(read_canonical(corpus),ligature_count=44)
+  expected=selection(plan,1650)
+  with manifest.open(encoding="utf-8",newline="") as handle:
+   rows=list(csv.DictReader(handle))
+  self.assertEqual(len(rows),1650)
+  for row,item in zip(rows,expected):
+   self.assertEqual(row["grupo_id"],item["group_id"])
+   self.assertEqual(int(row["offset_hex"],16),item["offset"])
+   self.assertEqual(int(row["bytes_origen"]),item["bytes"])
+   self.assertEqual(row["dictamen_editorial"],"PENDIENTE_CONTEXTUAL")
+   self.assertEqual(row["verificacion_ppsspp"],"NOT_RUN")
+   self.assertEqual(row["integracion_canonica"],"NO")
  def test_source_preimage_never_silently_falls_back(self):
   # Real source scan requires an exact 1625-block SCRIPT.TBL, not a guessed offset.
   with self.assertRaises(Exception):
