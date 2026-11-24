@@ -2073,5 +2073,39 @@
     "closure_four_areas": false,
     "PR7_merge": false,
     "next": "prompts/SIGUIENTE_TAREA.md"
+  },
+  "relevo_f4_r14_2026_11_23": {
+    "cut": "2026-11-23",
+    "start_HEAD": "92dbe2e1b3e235ce0e62906adb159425347e3976",
+    "source_commits": [
+      "1cea38dad3bced04971514f8bc6cec7507d1af67",
+      "0d5f0aa33ae32c3fe2f5024e172b5896a5302fcf"
+    ],
+    "authentic_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "authentic_script_commands": 51705,
+    "script_dat_probe_offsets": [
+      7420,
+      218095,
+      218133,
+      223351,
+      223360,
+      223602,
+      223637,
+      227968,
+      228194
+    ],
+    "private_metadata_manifest_sha256": "4b979163721dea3ba539c601f85ba7d449eb31e3f4807cb99ef72b0e5b63ab62",
+    "official_PPSSPP_1204_WS_version_pid_field": false,
+    "local_B_tests_passed": 36,
+    "PPSSPP_installed": false,
+    "real_preflight_exit_code": 1,
+    "actual_C_run": false,
+    "actual_RAM_MIPS_PC": null,
+    "variable_texts_deferred": 4524,
+    "QA_defined_after": 53,
+    "new_QA_passed": 0,
+    "PR7_DRAFT": true,
+    "release_ready": false,
+    "next_prompt": "prompts/SIGUIENTE_TAREA.md"
   }
 }

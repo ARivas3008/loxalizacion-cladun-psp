@@ -49,7 +49,7 @@
     },
     "p0_p1_abiertos": null,
     "cierre_100": false,
-    "matriz_casos_definidos": 51
+    "matriz_casos_definidos": 53
   },
   "evidencias": {
     "A_actual": [
@@ -173,6 +173,25 @@
           760
         ],
         "mips_observed": false
+      },
+      {
+        "tipo": "F4 R14 manifest de 9 sondas validadas en ISO original autentica",
+        "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "numero_sondas": 9,
+        "offsets_script_dat": [
+          7420,
+          218095,
+          218133,
+          223351,
+          223360,
+          223602,
+          223637,
+          227968,
+          228194
+        ],
+        "commands_verified": 51705,
+        "nota": "son offsets de SCRIPT.DAT, NO RAM/PC MIPS",
+        "mips_proven": false
       }
     ],
     "B_actual": [
@@ -220,6 +239,14 @@
         "total": 18,
         "resultado": "PASS_LOCAL_SINTETICO",
         "CI_final": "VERIFICAR_DESPUES_PUBLICACION"
+      },
+      {
+        "tipo": "F4 R14 autenticar procedencia PPSSPP 1.20.4 + manifest: 36 tests",
+        "hechos": 36,
+        "total": 36,
+        "resultado": "PASS_LOCAL_SINTETICO",
+        "original_ppsspp_tag_verified": true,
+        "C_executed": false
       }
     ],
     "B_historica": [
@@ -245,7 +272,8 @@
     "F4-R10: tres opcodes 0x0A/0x0B/0x0C muestran coincidencias SCRIPT ID pero no semantica MIPS; PPSSPP 1.20.4 no disponible por DNS en terminal; 4524 textos variables siguen diferidos.",
     "R11: opcode 0x0A u32=100100 puede apuntar al ID 100000/bloque757 bajo candidato +100; NO validar como salto hasta observar MIPS real; 0x0B u32=3 posible centinela, significado desconocido",
     "R12: 0x0C tiene 36 valores 100 sin coincidencia tras −100, mientras los 66 restantes sí coinciden. Falta MIPS real para demostrar significados y control de flujo. 4524 diálogos variables siguen aplazados.",
-    "R13: grafo numérico de cinco enlaces entre scr01 y demo1001, sin lectura ejecutada MIPS. EBOOT ~PSP, PPSSPP oficial 1.20.4 no disponible y terminal sin DNS github.com; reubicacion de 4524 cambios variable bloqueada."
+    "R13: grafo numérico de cinco enlaces entre scr01 y demo1001, sin lectura ejecutada MIPS. EBOOT ~PSP, PPSSPP oficial 1.20.4 no disponible y terminal sin DNS github.com; reubicacion de 4524 cambios variable bloqueada.",
+    "R14: AppImage PPSSPP 1.20.4 ausente y sin DNS github.com; preflight exit1 sin reporte C. Campos version WS v1.20.4 no incluyen PID/path; se exige /proc FD+socket antes de aceptar evidencia. 4524 textos diferidos."
   ],
   "siguiente_relevo": "prompts/SIGUIENTE_TAREA.md",
   "advertencia": "Los denominadores de cobertura contextual, gráficos y casos totales no están certificados. La matriz inicial no es universo completo. Ningún 100% de las cuatro áreas está verificado."
