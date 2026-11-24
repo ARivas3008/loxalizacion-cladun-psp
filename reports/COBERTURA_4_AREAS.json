@@ -49,7 +49,7 @@
     },
     "p0_p1_abiertos": null,
     "cierre_100": false,
-    "matriz_casos_definidos": 53
+    "matriz_casos_definidos": 55
   },
   "evidencias": {
     "A_actual": [
@@ -192,6 +192,15 @@
         "commands_verified": 51705,
         "nota": "son offsets de SCRIPT.DAT, NO RAM/PC MIPS",
         "mips_proven": false
+      },
+      {
+        "tipo": "R15 nueve huellas de 32 bytes unicas en SCRIPT.DAT original autentico",
+        "source_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+        "huellas": 9,
+        "ocurrencias_por_huella": 1,
+        "reporte_privado_hash": "5f86438b2ff6b670a663f41630394359f7458bb37b9341f78d564fb12e8a8554",
+        "PPSSPP_RAM_observed": false
       }
     ],
     "B_actual": [
@@ -247,6 +256,14 @@
         "resultado": "PASS_LOCAL_SINTETICO",
         "original_ppsspp_tag_verified": true,
         "C_executed": false
+      },
+      {
+        "tipo": "R15 localizador seguro RAM WebSocket 1.20.4",
+        "tests_nuevos": 33,
+        "resultado": "PASS_LOCAL_SINTETICO",
+        "subset_local_87_PASS": true,
+        "full_repo_local": false,
+        "CI_SHA_FINAL": "VERIFICAR_DESPUES"
       }
     ],
     "B_historica": [
@@ -273,7 +290,8 @@
     "R11: opcode 0x0A u32=100100 puede apuntar al ID 100000/bloque757 bajo candidato +100; NO validar como salto hasta observar MIPS real; 0x0B u32=3 posible centinela, significado desconocido",
     "R12: 0x0C tiene 36 valores 100 sin coincidencia tras −100, mientras los 66 restantes sí coinciden. Falta MIPS real para demostrar significados y control de flujo. 4524 diálogos variables siguen aplazados.",
     "R13: grafo numérico de cinco enlaces entre scr01 y demo1001, sin lectura ejecutada MIPS. EBOOT ~PSP, PPSSPP oficial 1.20.4 no disponible y terminal sin DNS github.com; reubicacion de 4524 cambios variable bloqueada.",
-    "R14: AppImage PPSSPP 1.20.4 ausente y sin DNS github.com; preflight exit1 sin reporte C. Campos version WS v1.20.4 no incluyen PID/path; se exige /proc FD+socket antes de aceptar evidencia. 4524 textos diferidos."
+    "R14: AppImage PPSSPP 1.20.4 ausente y sin DNS github.com; preflight exit1 sin reporte C. Campos version WS v1.20.4 no incluyen PID/path; se exige /proc FD+socket antes de aceptar evidencia. 4524 textos diferidos.",
+    "R15: AppImage oficial 1.20.4 SHA publicado verificado pero no descargable (DNS github.com); localizador de 9 huellas no probado sobre memoria de juego, ninguna base RAM ni PC MIPS real. 4524 textos variables bloqueados. Falta P0/F4 y F3/F2."
   ],
   "siguiente_relevo": "prompts/SIGUIENTE_TAREA.md",
   "advertencia": "Los denominadores de cobertura contextual, gráficos y casos totales no están certificados. La matriz inicial no es universo completo. Ningún 100% de las cuatro áreas está verificado."

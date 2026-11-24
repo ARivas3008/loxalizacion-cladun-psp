@@ -2107,5 +2107,44 @@
     "PR7_DRAFT": true,
     "release_ready": false,
     "next_prompt": "prompts/SIGUIENTE_TAREA.md"
+  },
+  "relevo_f4_r15_2026_11_23": {
+    "fecha": "2026-11-23",
+    "start_head": "40ec6f9ee7e868840202aea797afad0d125c3057",
+    "codigo_commit": "92e004461a293e07024175140f6a708303d8b0ab",
+    "iso_original_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+    "unique_anchor_count": 9,
+    "anchor_size": 32,
+    "anchor_offsets": [
+      7420,
+      218095,
+      218133,
+      223351,
+      223360,
+      223602,
+      223637,
+      227968,
+      228194
+    ],
+    "private_anchor_report_sha256": "5f86438b2ff6b670a663f41630394359f7458bb37b9341f78d564fb12e8a8554",
+    "official_ppsspp_release_appimage_size": 50689748,
+    "official_ppsspp_release_appimage_sha256": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21",
+    "new_tests_synthetic_PASS": 33,
+    "available_local_subset_tests_PASS": 87,
+    "official_ppsspp_installed": false,
+    "real_C_trace": false,
+    "real_ram_base": null,
+    "ISO_modified": false,
+    "variable_deferred": 4524,
+    "qa_case_count": 55,
+    "new_QA_PASS": 0,
+    "closure": {
+      "traduccion": false,
+      "graficos": false,
+      "romhacking": false,
+      "betatesting": false
+    },
+    "next_prompt": "prompts/SIGUIENTE_TAREA.md"
   }
 }
