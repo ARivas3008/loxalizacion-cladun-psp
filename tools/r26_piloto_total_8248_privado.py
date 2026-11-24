@@ -94,6 +94,62 @@ def preview(original_csv:Path|None=None,draft_csv:Path|None=None)->dict:
   "100_percent_ROMhacking_official":False
  }
 
+def full_8248_metadata_manifest(
+    original_csv:Path|None=None,draft_csv:Path|None=None)->list[dict]:
+ """Enumerate ALL 8,248 byte-change IDs for QA, never copies source text.
+
+ All rows remain editorially and visually UNVERIFIED. The 307 SCRIPT rows
+ that already match English are omitted because they do not change bytes.
+ """
+ kwargs={}
+ if original_csv is not None:kwargs["source_csv"]=Path(original_csv)
+ if draft_csv is not None:kwargs["draft_csv"]=Path(draft_csv)
+ changes,blocked,unchanged=plan_rows(source_rows(**kwargs))
+ result=[]
+ for location,items in changes.items():
+  for source,old,new in items:
+   affected_script=location==TARGET_SCRIPT
+   category=("SCRIPT_VARIABLE" if affected_script and len(old)!=len(new)
+             else "SCRIPT_FIXED" if affected_script else "OTHER_RESOURCE")
+   result.append({
+     "grupo_id":source["grupo_id"],
+     "origen":location,
+     "offset_hex":source["offset_hex"],
+     "original_bytes":len(old),
+     "new_bytes":len(new),
+     "category":category,
+     "binary_admission":"B_STATIC_PLANNER_ONLY",
+     "editorial_review":"PENDIENTE_CONTEXTUAL",
+     "PPSSPP_C":"NOT_RUN",
+     "MIPS_references":"UNVERIFIED" if category=="SCRIPT_VARIABLE" else "NOT_APPLICABLE",
+     "canonical_gameplay_integrated":"NO"
+   })
+ result.sort(key=lambda x:x["grupo_id"])
+ counts={}
+ for row in result:counts[row["category"]]=counts.get(row["category"],0)+1
+ require(len(result)==8248 and len({x["grupo_id"] for x in result})==8248
+         and (counts.get("SCRIPT_VARIABLE",0),
+              counts.get("SCRIPT_FIXED",0),
+              counts.get("OTHER_RESOURCE",0))==(4524,376,3348),
+         "The full 8,248 manifest lost or duplicated records")
+ return result
+
+def write_private_review_manifest(path:Path,rows:list[dict])->dict:
+ """Write metadata-only private JSON, never overwrite files."""
+ path=Path(path)
+ require(path.is_absolute() and not path.exists()
+         and not path.is_symlink() and path.parent.is_dir(),
+         "Manifest must be a NEW absolute file in an existing private directory")
+ with path.open("x",encoding="utf-8") as f:
+  json.dump({"schema":"cladun.r26.8248_metadata_review_only.v1",
+             "commercial_dialogues_included":False,
+             "runtime_certified":False,"rows":rows},
+            f,ensure_ascii=False,indent=2)
+  f.write("\n")
+ return {"metadata_manifest_private_path":str(path),
+         "metadata_manifest_count":len(rows),
+         "gameplay_approved_count":0}
+
 def private_candidate(
   original_iso:Path, candidate_iso:Path, *, explicit_risk_acceptance:bool,
   original_csv:Path|None=None,draft_csv:Path|None=None)->dict:
@@ -172,6 +228,8 @@ def main():
  ap.add_argument("--borrador",type=Path)
  ap.add_argument("--iso-original",type=Path)
  ap.add_argument("--candidate",type=Path)
+ ap.add_argument("--manifest",type=Path,
+                 help="new private JSON of exactly 8248 IDs and risk status, NO game texts")
  ap.add_argument("--i-accept-experimental-moving-event-offsets",
                  action="store_true")
  args=ap.parse_args()
@@ -184,6 +242,9 @@ def main():
     args.iso_original,args.candidate,
     explicit_risk_acceptance=args.i_accept_experimental_moving_event_offsets,
     original_csv=args.original_csv,draft_csv=args.borrador)
+ if args.manifest:
+  meta=full_8248_metadata_manifest(args.original_csv,args.borrador)
+  data.update(write_private_review_manifest(args.manifest,meta))
  print(json.dumps(data,ensure_ascii=False,indent=2))
 
 if __name__=="__main__":main()
