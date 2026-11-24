@@ -4,7 +4,7 @@ from pathlib import Path
 from tools.f4_r21_ligature_capacity import read_canonical
 from tools.r26_script_full_capacity_audit import (
  BLOCKS,TRACKED,OFFICIAL_DONE,TOTAL_CHANGES,
- census,block_costs,audit,authentic_block_metadata
+ census,optimized_44_census,block_costs,audit,authentic_block_metadata
 )
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -26,6 +26,22 @@ class TestR26ScriptFullCapacity(unittest.TestCase):
   self.assertEqual(h["negative_byte_delta"],7414)
   self.assertEqual(sum(sums.values()),9694)
   self.assertEqual(h["growing"]+h["shrinking"]+h["equal"],TRACKED)
+ def test_real_corpus_44_ligatures_lowers_net_pressure(self):
+  sums,info=optimized_44_census(read_canonical(SOURCE))
+  self.assertEqual(len(sums),586)
+  self.assertEqual(sum(sums.values()),-4382)
+  self.assertEqual(info["safe_ligature_savings_bytes"],14076)
+  self.assertEqual(info["growing_rows_preserved_without_ligatures_due_controls"],74)
+  self.assertEqual(info["safe_growing_rows_still_resized_after_max_matches"],807)
+  self.assertEqual(info["safe_remaining_positive_text_byte_growth"],2482)
+  self.assertTrue(info["source_script_commands_would_move_in_this_mode"])
+  self.assertFalse(info["safe_to_deploy_or_claim_100pct"])
+ def test_compression_does_not_turn_B_into_100pct(self):
+  report=audit(SOURCE)
+  self.assertFalse(report["100pct_reached"])
+  self.assertFalse(report["game_tested_ppsspp_C"])
+  self.assertEqual(report["optimized_44_theoretical"][
+      "full_script_theoretical_net_delta_bytes"],-4382)
  def test_B_only_does_not_claim_authenticated_runtime(self):
   report=audit(SOURCE)
   self.assertEqual(report["source_original_status"],"NOT_SUPPLIED")
