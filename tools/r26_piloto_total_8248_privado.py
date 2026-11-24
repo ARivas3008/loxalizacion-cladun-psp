@@ -49,10 +49,12 @@ def preview(original_csv:Path|None=None,draft_csv:Path|None=None)->dict:
  script=changes.get(TARGET_SCRIPT,[])
  variable=sum(len(old)!=len(new) for _,old,new in script)
  equal=len(script)-variable
- require((len(rows),n,len(script),n-len(script),variable,equal)==(
-     9237,FULL_TARGET,SCRIPT_TARGET,NON_SCRIPT_TARGET,
-     VARIABLE_SCRIPT_TARGET,EQUAL_SCRIPT_TARGET),
-     "8,248 fixed campaign baseline drift; ABORT 100% pilot")
+ observed=(len(rows),n,len(script),n-len(script),variable,equal)
+ expected=(9237,FULL_TARGET,SCRIPT_TARGET,NON_SCRIPT_TARGET,
+           VARIABLE_SCRIPT_TARGET,EQUAL_SCRIPT_TARGET)
+ require(observed==expected,
+         f"8,248 fixed campaign baseline drift; observed={observed}, "
+         f"expected={expected}; ABORT 100% pilot")
  # Every record is uniquely planned or retained; actual source validation
  # is in source_rows + plan_rows and eventual private build.
  ids=[row["grupo_id"] for changed in changes.values()
