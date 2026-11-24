@@ -261,7 +261,19 @@
       "doc": "docs/R26_ROMHACKING_100_AUDITORIA_2026-11-24.md",
       "release_authorized": false,
       "full_ROMhacking_100pct_demonstrated": false
-    }
+    },
+    "r28_geometry_projection": {
+      "report": "reports/R28_ROMHACKING_GEOMETRIA.json",
+      "official_new_integrations": 0,
+      "moved_commands": 51555,
+      "moved_nontext_commands": 46164,
+      "moved_script_starts": 1615,
+      "source_authentic": true,
+      "synthetic_payload_only": true,
+      "mips_proven": false,
+      "ppsspp_run": false
+    },
+    "percent_integrated": 45.1503
   },
   "betatesting": {
     "matriz_completa": false,
