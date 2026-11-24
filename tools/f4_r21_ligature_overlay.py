@@ -3,18 +3,20 @@
 import argparse,hashlib,json
 from pathlib import Path
 try:
- from tools.f4_r21_ligature_capacity import read_canonical,analyze,encode_fixed
+ from tools.f4_r21_ligature_capacity import read_canonical,encode_fixed
+ from tools.f4_r21_ligature_collision_safe import analyze_collision_free
  from tools.f3_referencias_riesgo import original_script_children
  from tools.script_event_guard import read_commands,audit_script_rebuild
  from tools.charset_es import encode_spanish
 except ModuleNotFoundError:
- from f4_r21_ligature_capacity import read_canonical,analyze,encode_fixed
+ from f4_r21_ligature_capacity import read_canonical,encode_fixed
+ from f4_r21_ligature_collision_safe import analyze_collision_free
  from f3_referencias_riesgo import original_script_children
  from script_event_guard import read_commands,audit_script_rebuild
  from charset_es import encode_spanish
 
 def make_plan(rows):
- report=analyze(rows)
+ report=analyze_collision_free(rows)
  pairs=report["pairs"]
  plan=[];filtered=0;attempted=0
  for row in rows:

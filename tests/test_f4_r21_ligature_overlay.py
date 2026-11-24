@@ -2,21 +2,22 @@ import sys,unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"tools"))
-from f4_r21_ligature_capacity import read_canonical,decode_encoded,analyze
+from f4_r21_ligature_capacity import read_canonical,decode_encoded
+from f4_r21_ligature_collision_safe import analyze_collision_free
 from f4_r21_ligature_overlay import make_plan,simulate_authenticated
 
 class LigatureOverlaySafetyTests(unittest.TestCase):
  def test_public_corpus_plan_is_noncanonical(self):
   rows=read_canonical(ROOT/"traduccion/CLADUN_BORRADOR_ES.csv")
   plan,report=make_plan(rows)
-  self.assertEqual(len(plan),2073)
-  self.assertEqual(report["candidate_payload_bytes"],63743)
+  self.assertEqual(len(plan),2002)
+  self.assertEqual(report["candidate_payload_bytes"],61723)
   self.assertEqual(report["growing_texts"],2883)
   self.assertEqual(report["candidate_rows_with_controls_excluded"],74)
   self.assertEqual(report["candidates_after_strict_source_controls"],len(plan))
   self.assertFalse(report["deployment_authorized"])
   self.assertFalse(report["canonical_approved"])
-  pairs=analyze(rows)["pairs"]
+  pairs=analyze_collision_free(rows)["pairs"]
   for item in plan[:40]:
    self.assertEqual(len(item["old"]),len(item["new"]))
    self.assertEqual(len(item["old"]),item["bytes"])

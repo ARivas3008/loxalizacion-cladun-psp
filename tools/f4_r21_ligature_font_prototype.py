@@ -4,10 +4,12 @@ from __future__ import annotations
 import argparse,hashlib,json,struct
 from pathlib import Path
 try:
- from tools.f4_r21_ligature_capacity import read_canonical,analyze,WIDTHS
+ from tools.f4_r21_ligature_capacity import read_canonical,WIDTHS
+ from tools.f4_r21_ligature_collision_safe import analyze_collision_free
  from tools.f4_r21_ligature_raster_probe import combine_two_cells
 except ModuleNotFoundError:
- from f4_r21_ligature_capacity import read_canonical,analyze,WIDTHS
+ from f4_r21_ligature_capacity import read_canonical,WIDTHS
+ from f4_r21_ligature_collision_safe import analyze_collision_free
  from f4_r21_ligature_raster_probe import combine_two_cells
 
 FIRST_NEW=0xB4
@@ -77,7 +79,7 @@ def build_in_memory(iso:Path,draft:Path):
   from tools.font_es_patch import archive,unswizzle,decode_imy_texture
   from tools.extract_cladun import dsarc_entries
  rows=read_canonical(draft)
- pairs=analyze(rows)["pairs"]
+ pairs=analyze_collision_free(rows)["pairs"]
  original_meta=archive(iso)
  _,_,_,font_resource,old_arc,_=original_meta
  narrow,_=build_narrow_font_arc_from_iso(iso)

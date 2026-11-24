@@ -4,8 +4,10 @@ import argparse,hashlib,json,struct
 from pathlib import Path
 try:
  from tools.f4_r21_ligature_capacity import (read_canonical,select_pairs,WIDTHS)
+ from tools.f4_r21_ligature_collision_safe import analyze_collision_free
 except ModuleNotFoundError:
  from f4_r21_ligature_capacity import (read_canonical,select_pairs,WIDTHS)
+ from f4_r21_ligature_collision_safe import analyze_collision_free
 
 def combine_two_cells(first:bytes,second:bytes,advance_first:int,advance_second:int)->tuple[bytes,dict]:
  if len(first)!=256 or len(second)!=256:
@@ -78,13 +80,12 @@ def original_raster_probe(iso:Path,pairs:list[str])->dict:
          "repacking_authorized":False}
 
 def main():
- from f4_r21_ligature_capacity import analyze
  p=argparse.ArgumentParser(description=__doc__)
  p.add_argument("--iso-original",type=Path,required=True)
  p.add_argument("--borrador",type=Path,default=Path("traduccion/CLADUN_BORRADOR_ES.csv"))
  a=p.parse_args()
  rows=read_canonical(a.borrador)
- result=analyze(rows)
+ result=analyze_collision_free(rows)
  print(json.dumps(original_raster_probe(a.iso_original,result["pairs"]),indent=2))
 
 if __name__=="__main__":main()
