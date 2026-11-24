@@ -48,3 +48,7 @@ python tools/qa_cobertura_4_areas.py --require-closed  # se espera falla
 - Tras aceptación, actualizar realmente el contador 3.724→5.374, diferidas 4.524→2.874; **hoy NO procede** actualizarlo. Matriz QA Q067/Q068 sigue NOT_RUN, no se declara 100 %.
 
 El PR #7 sigue abierto en borrador; no hay merge, force push ni activos comerciales publicados.
+
+### Corrección posterior de seguridad FONT — tamaño decreciente
+
+Al revisar los metadatos históricos se detectó una condición que el primer pipeline de combinación bloqueaba correctamente: la fuente española de **19 glifos de la candidata base ocupa 144.352 B**, pero el prototipo compacto con **19+44 ocupa 144.000 B**. El borrado seguro de los **352 B retirados** no estaba incluido en la lista de bytes permitidos de la comparación independiente de la BASE. Se corrigió la guarda para permitir exactamente la **unión de los rangos FONT antiguos y nuevos**, acotada al inicio de `SE.ARC`, y exigir que los bytes retirados y los restantes 32 B del slot queden en cero. Se agregaron pruebas positivas y negativas específicas de tamaño decreciente, expansión a límite y desbordamiento. Esta es una corrección de validador, no una nueva aprobación C.
