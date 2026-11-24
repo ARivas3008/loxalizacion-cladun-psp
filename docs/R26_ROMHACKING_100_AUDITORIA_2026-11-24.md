@@ -67,3 +67,15 @@ Se agregaron **Q071–Q075** a `qa/MATRIZ_BETATESTING_COBERTURA.csv` (75 casos d
 Cierre mínimo para marcar **romhacking 100 % real**: una misma ISO privada con 8.248 sustituciones autentificadas y recursos intactos; todos los saltos y dependencias MIPS verificados/ajustados; fuentes y caracteres correctos; PPSSPP oficial con capturas auténticas y recorrido completo; reversión A/B/A; 8.248 entradas auditadas editorialmente según contexto; BPS/EXE Windows E2E. Hasta entonces **3.724/8.248 (45,15 %)** siguen siendo la métrica verificada, y la capacidad teórica B no la reemplaza.
 
 **Continuación recursiva:** `prompts/SIGUIENTE_TAREA.md` debe entregar R27 para construir y depurar la ISO piloto, resolver las 29 insuficiencias y las referencias MIPS, sin falsear C, manteniendo T/G/R/Q independientes.
+
+### Auditor sin escritura de offsets de los 4.900 cambios
+
+Se añadió `tools/r26_auditar_reubicacion_eventos_total.py`. El modo B ejecuta el planificador canónico y verifica exactamente **4.900** offsets textuales únicos (4.524 sustituciones que cambian de longitud, 376 del mismo tamaño; 307 textos ya idénticos) sin crear archivos del juego. El modo A toma la ISO propia USA auténtica, reconstruye `SCRIPT.DAT/TBL` **solo en memoria** mediante `text_command_rebuild`, reparsea 51.705 comandos con `script_event_guard.audit_script_rebuild` y produce contadores de offsets, starts, opcodes y comandos no textuales reubicados, hashes y metadatos **sin exportar ningún diálogo ni binario**. Rechaza cualquier mutación del orden de opcodes, IDs o bytes no textuales, y exige registrar que la reconstrucción desplaza comandos; aun así **no identifica ni corrige punteros MIPS**, y no es una ejecución C.
+
+```bash
+python tools/r26_auditar_reubicacion_eventos_total.py
+python tools/r26_auditar_reubicacion_eventos_total.py \
+    --iso-original /PRIVADO/Cladun_USA.iso
+```
+
+Se incluye `tests/test_r26_auditar_reubicacion_eventos_total.py`. Este relevo no ejecutó su modo A por carecer de checkout completo del corpus dentro del contenedor del binario original. Su resultado A queda pendiente sin estimar el número de instrucciones que realmente se moverían.
