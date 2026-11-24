@@ -2,7 +2,6 @@ import struct,sys,unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"tools"))
 from f4_r21_ligature_font_prototype import (create_records,insert_raster_slots,INSERT,TOTAL)
-from f4_r21_ligature_capacity import ASCII_LOWER_WIDTHS
 PAIRS="es en de er ue ar ra os te qu nt do ta as el or la to st on lo re an al co un na ie ca ro ad me da in pa so pe ci se nd mo sa po ed".split()
 def dummy_font():
  recs=[struct.pack("<HBB",code,0,7) for code in range(32,127)]
