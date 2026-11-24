@@ -1,5 +1,5 @@
 """Synthetic byte-width classification and source-authentication failures."""
-import sys,unittest
+import sys,unittest,csv,json
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'tools'))
 from f4_r20_script_width_deltas import classify
@@ -38,4 +38,12 @@ class WidthDeltaTests(unittest.TestCase):
   x=classify([{'grupo_id':'1','origen':'FONT.ARC','espanol':'Hola','bytes_hex':'00','offset_hex':'0'}])
   self.assertEqual(x.get('translated_script_rows',0),0)
 
+ def test_repository_corpus_static_metrics(self):
+  path=Path(__file__).resolve().parents[1]/'traduccion'/'CLADUN_BORRADOR_ES.csv'
+  with path.open(encoding='utf-8-sig',newline='') as stream:
+   result=classify(csv.DictReader(stream))
+  self.assertGreater(result.get('translated_script_rows',0),5000)
+  self.assertGreater(result.get('variable_byte_width',0),4000)
+  self.assertFalse(result['variable_length_insertion_authorized'])
+  print('R20_SCRIPT_WIDTH_METRICS='+json.dumps({k:v for k,v in result.items() if k not in ('delta_histogram','invalid_examples_without_text')},sort_keys=True))
 if __name__=='__main__':unittest.main()
