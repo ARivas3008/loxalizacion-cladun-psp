@@ -18,6 +18,19 @@ jobs:
         run: python -m pip install 'Pillow>=12,<14'
       - name: Pruebas completas, incluida protección de eventos
         run: python -m unittest discover -s tests -v
+      - name: R24 validar capacidad de +20pp experimental sin ISO ni cambio de porcentaje oficial
+        run: |
+          python tools/f4_r24_piloto_1650_ligaduras.py > /tmp/cladun_r24_piloto_B.json
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/cladun_r24_piloto_B.json',encoding='utf-8'))
+          assert r['fittable_44_strict_pool']==2002
+          assert r['selected_experimental_additions']==1650
+          assert r['candidate_baseline_plus_experiment_count']==5374
+          assert r['new_official_integrations']==0
+          assert r['not_PPSSPP_proven'] and r['not_release_authorized']
+          assert r['pilot_gain_percentage_points']>=20.0
+          PY
       - name: F3-R5 acreditar 97 textos del borrador mediante anclaje de ISO original
         run: python tools/f3_anclar_intro.py
       - name: F3-R6 verificar presupuesto padding de 7 scripts sin ISO comercial
