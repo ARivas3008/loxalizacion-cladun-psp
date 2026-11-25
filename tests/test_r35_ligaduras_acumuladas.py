@@ -1,5 +1,5 @@
 import unittest
-from tools.r35_ligaduras_acumuladas import make_plan, run, TOTAL, BASE
+from tools.r35_ligaduras_acumuladas import make_plan, run, TOTAL, BASE, residual_inventory
 
 class R35Tests(unittest.TestCase):
     @classmethod
@@ -17,6 +17,13 @@ class R35Tests(unittest.TestCase):
         self.assertTrue(all(len(x["old"])==len(x["new"]) for x in self.full))
         self.assertEqual(len({x["gid"] for x in self.full}),3745)
         self.assertTrue(all(a["offset"]+len(a["old"])<=b["offset"] for a,b in zip(self.full,self.full[1:])))
+
+    def test_residual_inventory(self):
+        residual=residual_inventory(self.selected,self.full)
+        self.assertEqual(residual["count"],1155)
+        self.assertEqual([b["count"] for b in residual["batches"]],[1000,155])
+        self.assertEqual(sum(residual["types"].values()),1155)
+        self.assertEqual(residual["newly_approved"],0)
 
     def test_no_false_promotion(self):
         self.assertEqual(self.report["official"],3724)
