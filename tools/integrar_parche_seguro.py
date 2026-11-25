@@ -138,6 +138,80 @@ def plan_rows(rows):
     return changes, blocked, unchanged
 
 
+def combine_verified_script_packs(allowed, deferred, plan):
+    """Join R29-R33 to the fixed-offset planner, without changing the corpus.
+
+    All entries must be previously deferred SCRIPT records, not new arbitrary
+    writes.  Return new lists; never mutate caller inputs on failure.
+    """
+    require(len(plan) == 1448, "Verified pack count drift")
+    require(len(allowed) == 376 and len(deferred) == 4524,
+            "Conservative baseline script counts drift")
+    base = {src["grupo_id"] for src, _, _ in allowed}
+    waiting = {src["grupo_id"]: (src, old, new) for src, old, new in deferred}
+    require(len(base) == len(allowed) and len(waiting) == len(deferred)
+            and not base.intersection(waiting), "Baseline IDs collide")
+    merged = list(allowed)
+    selected = set()
+    spans = [(int(src["offset_hex"], 16), len(old)) for src, old, _ in allowed]
+    for item in plan:
+        gid = item["gid"]
+        require(gid in waiting and gid not in selected, "Pack ID is not a unique deferred slot")
+        src, old, ordinary = waiting[gid]
+        new = item["new"]
+        require(src["origen"] == TARGET_SCRIPT and int(src["offset_hex"], 16) == item["offset"]
+                and src["grupo_id"] == item["group_id"]
+                and bytes.fromhex(src["bytes_hex"]) == old == item["old"]
+                and len(ordinary) != len(old) == len(new) and new != old
+                and b"\\x00" not in new, "Pack preimage/width/control mismatch")
+        text = decode_spanish(new)
+        require(encode_spanish(text) == new, "Pack encoding roundtrip failed")
+        selected.add(gid)
+        spans.append((item["offset"], len(old)))
+        merged.append((src, old, new))
+    spans.sort()
+    require(all(a + z <= b for (a, z), (b, _) in zip(spans, spans[1:])),
+            "Merged script spans overlap")
+    remaining = [r for r in deferred if r[0]["grupo_id"] not in selected]
+    require(len(merged) == 1824 and len(remaining) == 3076, "Merged count drift")
+    merged.sort(key=lambda r: int(r[0]["offset_hex"], 16))
+    return merged, remaining, selected
+
+
+def plan_event_safe(changes, blocked, *, verified_packs=False):
+    """Fixed offsets for both historical and accumulated conservative profiles."""
+    allowed, deferred = [], []
+    for src, old, new in changes.get(TARGET_SCRIPT, []):
+        (allowed if len(old) == len(new) else deferred).append((src, old, new))
+    info = None
+    if verified_packs:
+        # Lazy import avoids the r31 -> r29 -> this module import cycle.
+        try:
+            from tools.r31_bulk_padding import make_plan
+        except ModuleNotFoundError:
+            from r31_bulk_padding import make_plan
+        require(sum(map(len, changes.values())) == 8248, "Canonical admissible count drift")
+        plan = make_plan(pack="all")
+        allowed, deferred, selected = combine_verified_script_packs(allowed, deferred, plan)
+        info = {"baseline": 3724, "additional_exact": 146, "additional_padded": 1302,
+                "selected": len(selected), "total_planned": 5172, "remaining": 3076,
+                "runtime_verified": False, "release_authorized": False,
+                "selected_ids_sha256": hashlib.sha256(",".join(sorted(selected)).encode("ascii")).hexdigest()}
+    result = changes.copy()
+    if allowed:
+        result[TARGET_SCRIPT] = allowed
+    else:
+        result.pop(TARGET_SCRIPT, None)
+    event_deferred = [src["grupo_id"] for src, _, _ in deferred]
+    blocked = list(blocked) + [{"grupo_id": gid,
+                               "motivo": "CAMBIO_LONGITUD_SCRIPT_EVENTO_PENDIENTE"}
+                              for gid in event_deferred]
+    if verified_packs:
+        require(sum(map(len, result.values())) == 5172 and len(event_deferred) == 3076,
+                "Accumulated profile count drift")
+    return result, blocked, event_deferred, info
+
+
 def read_resources(iso):
     _, iso_files = iso9660_entries(iso)
     target = next((x for x in iso_files if x["path"] == "PSP_GAME/USRDIR/DATA.DAT"), None)
@@ -636,7 +710,8 @@ def append_text_containers(source_iso, source_pack, entries, replacements, resul
 
 
 def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
-          experimental_partial=False, add_spanish_font=True, event_safe_only=False):
+          experimental_partial=False, add_spanish_font=True, event_safe_only=False,
+          verified_packs=False):
     source_iso, candidate, report = map(Path, (source_iso, candidate, report))
     require(source_iso.resolve() != candidate.resolve(), "Cannot overwrite source ISO")
     require(sha256_file(source_iso) == SOURCE_SHA256, "Wrong Cladun USA source ISO")
@@ -650,22 +725,15 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
         layout_f1["onoff_presentacion"] = values_f1
     changes, blocked, unchanged = plan_rows(rows)
     event_deferred = []
+    accumulated = None
+    if verified_packs:
+        require(event_safe_only and experimental_partial and add_spanish_font
+                and Path(source_csv).resolve() == Path(SOURCE).resolve()
+                and Path(draft_csv).resolve() == Path(DRAFT).resolve(),
+                "Verified packs require canonical corpus, font, fixed offsets and experimental partial mode")
     if event_safe_only:
-        # An equal-byte replacement cannot move a later opcode or script start.
-        # This deliberately skips longer/shorter translations rather than
-        # risking a hidden jump to an obsolete command offset.
-        allowed = []
-        for src, old, new in changes.get(TARGET_SCRIPT, []):
-            if len(old) == len(new):
-                allowed.append((src, old, new))
-            else:
-                event_deferred.append(src["grupo_id"])
-                blocked.append({"grupo_id": src["grupo_id"],
-                                "motivo": "CAMBIO_LONGITUD_SCRIPT_EVENTO_PENDIENTE"})
-        if allowed:
-            changes[TARGET_SCRIPT] = allowed
-        else:
-            changes.pop(TARGET_SCRIPT, None)
+        changes, blocked, event_deferred, accumulated = plan_event_safe(
+            changes, blocked, verified_packs=verified_packs)
     all_changed = sum(len(x) for x in changes.values())
     counted = Counter(x["motivo"] for x in blocked)
     result = {"estado": "BLOQUEADO_SIN_CANDIDATO", "original_sha256": SOURCE_SHA256,
@@ -677,7 +745,8 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
               "modo_eventos_offsets_fijos": event_safe_only,
               "dialogos_pospuestos_por_desplazamiento": len(event_deferred),
               "ppsspp_validado": False, "aprobado_para_distribucion": False,
-              "f1_presentacion_menu": layout_f1}
+              "f1_presentacion_menu": layout_f1,
+              "perfil_conservador_acumulado": accumulated}
     report.parent.mkdir(parents=True, exist_ok=True)
     report.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     if blocked and not experimental_partial:
@@ -792,13 +861,16 @@ def main():
     p.add_argument("--sin-fuente", action="store_true", help="Developer-only, no Spanish glyphs")
     p.add_argument("--event-safe-only", action="store_true",
                    help="Conservar absolutamente todos los offsets de comandos; pospone textos de longitud diferente")
+    p.add_argument("--packs-verificados", action="store_true",
+                   help="Integrar 146 exactos + 1302 acolchados en la base conservadora; experimental, sin QA PPSSPP")
     args = p.parse_args()
     try:
         summary = build(args.iso, args.candidate, args.report,
                         source_csv=args.original, draft_csv=args.borrador,
                         experimental_partial=args.experimental_parcial,
                         add_spanish_font=not args.sin_fuente,
-                        event_safe_only=args.event_safe_only)
+                        event_safe_only=args.event_safe_only,
+                        verified_packs=args.packs_verificados)
         print(json.dumps({k: v for k, v in summary.items() if k != "bloqueos_por_grupo"},
                          indent=2, ensure_ascii=False))
     except Exception as exc:
