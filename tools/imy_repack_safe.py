@@ -23,7 +23,7 @@ def u32(blob, off):
     return struct.unpack_from("<I", blob, off)[0]
 
 
-def compress_block(raw: bytes, header: bytes) -> bytes:
+def compress_block(raw: bytes, header: bytes, *, pending_refs: bool = False) -> bytes:
     """Encode IMY word references; preserve first 32 bytes of PSP block header."""
     require(header[:4] == b"IMY\x00", "Invalid IMY header")
     stride, rows = u16(header, 8), u16(header, 12)
@@ -67,6 +67,12 @@ def compress_block(raw: bytes, header: bytes) -> bytes:
             continue
         word = raw[2 * i:2 * i + 2]
         previous = recent.get(word)
+        if pending_refs:
+            # A flush before a reference makes preceding pending literal words addressable.
+            for index in range(len(pending) - 2, -1, -2):
+                if pending[index:index + 2] == word:
+                    previous = len(literals) + index
+                    break
         if previous is not None:
             delta = len(literals) + len(pending) - previous
             if 2 <= delta <= 352 and delta % 2 == 0:

@@ -1,0 +1,51 @@
+{
+  "schema": "cladun.r55.static_diagnostic.v1",
+  "source_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "iso_bytes": 305496064,
+  "commands": 51705,
+  "nontext_exact": 46308,
+  "block_starts_and_tails_fixed": 1625,
+  "table_exact": true,
+  "pspfs_offsets_fixed": 349,
+  "unrelated_resources_exact": 348,
+  "slot_capacity": 699904,
+  "original_stored": 699624,
+  "profiles": [
+    {
+      "name": "R55_ENVELOPES",
+      "residuals": 21,
+      "donors": 21,
+      "moved": 27,
+      "nontext_moved": 5,
+      "outside_envelope": 0,
+      "relative_candidates": 3,
+      "absolute_local_candidates": 0,
+      "script_sha256": "e8091ae439740eb3371910ec3a7db3fd71329fd59be14c93ce036c1b0a3807e4",
+      "iso_sha256": "7e66059feffb47cf630751dc90ddc7dd75584118afc14b9ab3e13d1d91793a96",
+      "stored": 699648,
+      "remaining": 256
+    },
+    {
+      "name": "R52_ALL_ISOLATED",
+      "residuals": 33,
+      "donors": 35,
+      "moved": 146,
+      "nontext_moved": 104,
+      "outside_envelope": 119,
+      "relative_candidates": 31,
+      "absolute_local_candidates": 0,
+      "script_sha256": "6427c10b842bf237bcf996566c362c37879ba300d2cdc9788e50869c1dcba480",
+      "iso_sha256": "3d5c772ab19cb3d968d37f01d5529191df781bf4a2eacffc4c60c7c912262e39",
+      "stored": 699692,
+      "remaining": 212
+    }
+  ],
+  "both_iso_reopened": true,
+  "includes_font": false,
+  "accumulated_iso_built": false,
+  "accumulated_cli_run_locally": false,
+  "planned_envelope_total": 8236,
+  "remaining_envelope": 12,
+  "runtime_verified": false,
+  "release_authorized": false
+}

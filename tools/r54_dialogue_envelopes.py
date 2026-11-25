@@ -8,20 +8,29 @@ from collections import Counter
 from pathlib import Path
 from tools.script_event_guard import read_commands, audit_script_rebuild, require
 
-def choose(commands,residuals,donors):
+def choose(commands,residuals,donors,*,include_speakers=False):
     slots={c.offset+7:i for i,c in enumerate(commands) if c.content is not None}
     accepted={};envelopes=[]
     for p,(old,new,gid) in residuals.items():
         i=slots[p];c=commands[i]
         require(c.content==old and len(new)>len(old),"R54 source mismatch")
-        if c.code!=0x66: continue
-        l=r=i
-        while l>0 and commands[l-1].block==c.block and commands[l-1].code in (0x66,0x67):l-=1
-        while r+1<len(commands) and commands[r+1].block==c.block and commands[r+1].code in (0x66,0x67):r+=1
-        if l==0 or r+1==len(commands):continue
-        a,b=commands[l-1],commands[r+1]
-        if (a.block,a.code,b.block,b.code)!=(c.block,0x64,c.block,0x65):continue
-        group=commands[l:r+1]
+        if c.code==0x66:
+            l=r=i
+            while l>0 and commands[l-1].block==c.block and commands[l-1].code in (0x66,0x67):l-=1
+            while r+1<len(commands) and commands[r+1].block==c.block and commands[r+1].code in (0x66,0x67):r+=1
+            if l==0 or r+1==len(commands):continue
+            a,b=commands[l-1],commands[r+1]
+            if (a.block,a.code,b.block,b.code)!=(c.block,0x64,c.block,0x65):continue
+            group=commands[l:r+1]
+        elif include_speakers and c.code==0x6e:
+            r=i+1
+            if r>=len(commands) or (commands[r].block,commands[r].code)!=(c.block,0x64):continue
+            r+=1
+            while r<len(commands) and commands[r].block==c.block and commands[r].code in (0x66,0x67):r+=1
+            if r>=len(commands) or (commands[r].block,commands[r].code)!=(c.block,0x65):continue
+            a,b=c,commands[r]
+            group=commands[i:r]
+        else:continue
         if sum(x.offset+7 in residuals for x in group)!=1:continue
         local={x.offset+7:donors[x.offset+7] for x in group if x.offset+7 in donors}
         for q,(old_d,new_d,_) in local.items():
@@ -32,9 +41,9 @@ def choose(commands,residuals,donors):
         envelopes.append((c.block,a.offset,b.offset,gid))
     return accepted,envelopes
 
-def rebuild(data,table,residuals,donors,baseline=None):
+def rebuild(data,table,residuals,donors,baseline=None,*,include_speakers=False):
     commands,starts=read_commands(data,table)
-    selected,envelopes=choose(commands,residuals,donors)
+    selected,envelopes=choose(commands,residuals,donors,include_speakers=include_speakers)
     expected=dict(baseline or {})
     require(all(len(old)==len(new) for old,new,_ in expected.values()),"R54 baseline not fixed")
     expected.update(selected)
@@ -53,7 +62,7 @@ def rebuild(data,table,residuals,donors,baseline=None):
     for a,b in zip(commands,after):
         if a.offset==b.offset:continue
         require(any(block==a.block and l<a.offset<r for block,l,r,_ in envelopes)
-                and a.code in (0x66,0x67),"R54 movement escaped dialogue")
+                and a.code in ((0x64,0x66,0x67) if include_speakers else (0x66,0x67)),"R54 movement escaped dialogue")
     require(event["moved_script_starts"]==0,"R54 moved block")
     return bytes(out),event,envelopes
 
