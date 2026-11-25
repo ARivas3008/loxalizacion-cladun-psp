@@ -26,7 +26,7 @@ class BetaMovementTests(unittest.TestCase):
             with self.assertRaises(ValueError): movement(a,b,"r52")
     def test_reject_table_drift(self):
         a={"SCRIPT.DAT":b'a',"SCRIPT.TBL":b't',"AISCRIPT.DAT":b'i',"AISCRIPT.TBL":b'j'}
-        with self.assertRaises(ValueError): movement(a,{**a,"SCRIPT.TBL":b'x"},"r43")
+        with self.assertRaises(ValueError): movement(a,{**a,"SCRIPT.TBL":b'x'},"r43")
 
 if __name__=="__main__":
     unittest.main()
