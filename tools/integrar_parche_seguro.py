@@ -163,7 +163,7 @@ def combine_verified_script_packs(allowed, deferred, plan):
                 and src["grupo_id"] == item["group_id"]
                 and bytes.fromhex(src["bytes_hex"]) == old == item["old"]
                 and len(ordinary) != len(old) == len(new) and new != old
-                and b"\\x00" not in new, "Pack preimage/width/control mismatch")
+                and 0 not in new, "Pack preimage/width/control mismatch")
         text = decode_spanish(new)
         require(encode_spanish(text) == new, "Pack encoding roundtrip failed")
         selected.add(gid)
@@ -778,6 +778,11 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
             rewritten = rebuild_script_arc(
                 raw, script_changes, event_report=event_audit,
                 strict_event_offsets=event_safe_only)
+            if verified_packs:
+                require(event_audit["all_command_offsets_preserved"]
+                        and event_audit["nontext_commands_byte_exact"] == 46308
+                        and event_audit["text_commands_replaced"] == 1824,
+                        "Accumulated SCRIPT failed physical event audit")
             replacements["SCRIPT.SDT"] = (recompress(stored, rewritten), len(rewritten))
             applied.update(a["grupo_id"] for a, old, new in changes[TARGET_SCRIPT])
 
