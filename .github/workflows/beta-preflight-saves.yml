@@ -99,7 +99,7 @@ jobs:
             test -n "$w"
             sleep 4
             kill -0 "$pid"
-            xwininfo -id "$w"
+            xdotool getwindowgeometry "$w"
             import -window "$w" /tmp/cladun-captures/01-menu-ppsspp.png
             sleep 3
             import -window "$w" /tmp/cladun-captures/02-menu-ppsspp.png
