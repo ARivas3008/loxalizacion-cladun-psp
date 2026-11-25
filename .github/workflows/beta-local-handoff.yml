@@ -1,0 +1,149 @@
+name: Preparar paquete QA privado local (sin ISO)
+on:
+  push:
+    branches: [beta-provisional-r52-20261125]
+    paths: [.github/workflows/beta-local-handoff.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  saves-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Exportar codigo y emulador oficial
+        run: |
+          mkdir -p /tmp/qa-handoff
+          git archive --format=zip --output=/tmp/qa-handoff/cladun-source.zip HEAD
+          if unzip -Z1 /tmp/qa-handoff/cladun-source.zip | grep -Ei '\\.(iso|cso|pbp|7z|bps|exe)      - name: Leer indice ZIP remoto y extraer exclusivamente guardados Cladun
+        run: |
+          python - <<'PY'
+          import io,urllib.request,zipfile,hashlib,json,pathlib,struct,re
+          URL='https://archive.org/download/gamefaqs_savegames/psp_savegames.zip'
+          class Remote(io.RawIOBase):
+              def __init__(self):
+                  self.pos=0
+                  with urllib.request.urlopen(urllib.request.Request(URL,headers={'Range':'bytes=0-0','User-Agent':'Cladun-QA/1.0'}),timeout=25) as r:
+                      cr=r.headers.get('Content-Range','')
+                      if r.status!=206 or not re.fullmatch(r'bytes 0-0/\d+',cr):raise IOError('Range unavailable: '+str(r.status))
+                      self.size=int(cr.split('/')[-1])
+                      self.url=r.url
+              def seekable(self):return True
+              def readable(self):return True
+              def tell(self):return self.pos
+              def seek(self,o,w=0):
+                  self.pos=(0,self.pos,self.size)[w]+o
+                  if self.pos<0:raise IOError('negative seek')
+                  return self.pos
+              def read(self,n=-1):
+                  n=min(self.size-self.pos,n if n>=0 else self.size-self.pos)
+                  if n<=0:return b''
+                  if n>16*1024*1024:raise IOError('range safety cap')
+                  a,b=self.pos,self.pos+n-1
+                  q=urllib.request.Request(self.url,headers={'Range':f'bytes={a}-{b}','User-Agent':'Cladun-QA/1.0'})
+                  with urllib.request.urlopen(q,timeout=25) as r:
+                      if r.status!=206 or r.headers.get('Content-Range')!=f'bytes {a}-{b}/{self.size}':raise IOError('wrong range')
+                      data=r.read(n+1)
+                  if len(data)!=n:raise IOError('short range')
+                  self.pos+=n
+                  return data
+          def meta(data):
+              magic,version,keys,vals,n=struct.unpack_from('<4sIIII',data)
+              if magic!=b'\0PSF' or n>128:raise ValueError('invalid SFO')
+              out={}
+              for i in range(n):
+                  k,fmt,sz,mx,v=struct.unpack_from('<HHIII',data,20+i*16)
+                  if vals+v+sz>len(data):raise ValueError('SFO bounds')
+                  key=data[keys+k:data.index(b'\0',keys+k)].decode('ascii')
+                  if key in ('TITLE','SAVEDATA_TITLE','SAVEDATA_DIRECTORY'):
+                      out[key]=data[vals+v:vals+v+sz].rstrip(b'\0').decode('utf-8','replace')
+              return out
+          with zipfile.ZipFile(Remote()) as z:
+              found=[f for f in z.infolist() if not f.is_dir() and ('cladun' in f.filename.lower() or '980503' in f.filename.lower() or 'npuh10072' in f.filename.lower()) and 'cladun x2' not in f.filename.lower() and 'cladun-x2' not in f.filename.lower()]
+              print('Archive candidates:',[(f.filename,f.file_size) for f in found])
+              out=[]
+              for f in found:
+                  if f.file_size>10*1024*1024 or not f.filename.lower().endswith('.zip'):continue
+                  raw=z.read(f)
+                  try:
+                      with zipfile.ZipFile(io.BytesIO(raw)) as s:
+                          if s.testzip() is not None:continue
+                          entries=[meta(s.read(x)) for x in s.namelist() if pathlib.PurePosixPath(x).name=='PARAM.SFO']
+                          if not any(x.get('SAVEDATA_DIRECTORY','').startswith('NPUH10072') for x in entries):continue
+                          pathlib.Path('/tmp/qa-handoff',pathlib.PurePosixPath(f.filename).name).write_bytes(raw)
+                          out.append({'name':f.filename,'sha256':hashlib.sha256(raw).hexdigest(),'size':len(raw),'metadata':entries,'zip_crc':'PASS','loaded_in_game':False})
+                  except (ValueError,zipfile.BadZipFile):continue
+              print(json.dumps(out,ensure_ascii=False,indent=2))
+              assert len({x['sha256'] for x in out})>=2,'Two distinct compatible ZIPs not verified'
+          PY
+; then exit 1; fi
+          curl -fLsS --retry 2 --max-time 120 -o /tmp/qa-handoff/ppsspp.AppImage 'https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-v1.20.4-anylinux-x86_64.AppImage'
+          echo '661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21  /tmp/qa-handoff/ppsspp.AppImage' | sha256sum -c -
+      - name: Leer indice ZIP remoto y extraer exclusivamente guardados Cladun
+        run: |
+          python - <<'PY'
+          import io,urllib.request,zipfile,hashlib,json,pathlib,struct,re
+          URL='https://archive.org/download/gamefaqs_savegames/psp_savegames.zip'
+          class Remote(io.RawIOBase):
+              def __init__(self):
+                  self.pos=0
+                  with urllib.request.urlopen(urllib.request.Request(URL,headers={'Range':'bytes=0-0','User-Agent':'Cladun-QA/1.0'}),timeout=25) as r:
+                      cr=r.headers.get('Content-Range','')
+                      if r.status!=206 or not re.fullmatch(r'bytes 0-0/\d+',cr):raise IOError('Range unavailable: '+str(r.status))
+                      self.size=int(cr.split('/')[-1])
+                      self.url=r.url
+              def seekable(self):return True
+              def readable(self):return True
+              def tell(self):return self.pos
+              def seek(self,o,w=0):
+                  self.pos=(0,self.pos,self.size)[w]+o
+                  if self.pos<0:raise IOError('negative seek')
+                  return self.pos
+              def read(self,n=-1):
+                  n=min(self.size-self.pos,n if n>=0 else self.size-self.pos)
+                  if n<=0:return b''
+                  if n>16*1024*1024:raise IOError('range safety cap')
+                  a,b=self.pos,self.pos+n-1
+                  q=urllib.request.Request(self.url,headers={'Range':f'bytes={a}-{b}','User-Agent':'Cladun-QA/1.0'})
+                  with urllib.request.urlopen(q,timeout=25) as r:
+                      if r.status!=206 or r.headers.get('Content-Range')!=f'bytes {a}-{b}/{self.size}':raise IOError('wrong range')
+                      data=r.read(n+1)
+                  if len(data)!=n:raise IOError('short range')
+                  self.pos+=n
+                  return data
+          def meta(data):
+              magic,version,keys,vals,n=struct.unpack_from('<4sIIII',data)
+              if magic!=b'\0PSF' or n>128:raise ValueError('invalid SFO')
+              out={}
+              for i in range(n):
+                  k,fmt,sz,mx,v=struct.unpack_from('<HHIII',data,20+i*16)
+                  if vals+v+sz>len(data):raise ValueError('SFO bounds')
+                  key=data[keys+k:data.index(b'\0',keys+k)].decode('ascii')
+                  if key in ('TITLE','SAVEDATA_TITLE','SAVEDATA_DIRECTORY'):
+                      out[key]=data[vals+v:vals+v+sz].rstrip(b'\0').decode('utf-8','replace')
+              return out
+          with zipfile.ZipFile(Remote()) as z:
+              found=[f for f in z.infolist() if not f.is_dir() and ('cladun' in f.filename.lower() or '980503' in f.filename.lower() or 'npuh10072' in f.filename.lower()) and 'cladun x2' not in f.filename.lower() and 'cladun-x2' not in f.filename.lower()]
+              print('Archive candidates:',[(f.filename,f.file_size) for f in found])
+              out=[]
+              for f in found:
+                  if f.file_size>10*1024*1024 or not f.filename.lower().endswith('.zip'):continue
+                  raw=z.read(f)
+                  try:
+                      with zipfile.ZipFile(io.BytesIO(raw)) as s:
+                          if s.testzip() is not None:continue
+                          entries=[meta(s.read(x)) for x in s.namelist() if pathlib.PurePosixPath(x).name=='PARAM.SFO']
+                          if not any(x.get('SAVEDATA_DIRECTORY','').startswith('NPUH10072') for x in entries):continue
+                          out.append({'name':f.filename,'sha256':hashlib.sha256(raw).hexdigest(),'size':len(raw),'metadata':entries,'zip_crc':'PASS','loaded_in_game':False})
+                  except (ValueError,zipfile.BadZipFile):continue
+              print(json.dumps(out,ensure_ascii=False,indent=2))
+              assert len({x['sha256'] for x in out})>=2,'Two distinct compatible ZIPs not verified'
+          PY
+      - name: Entregar herramientas y guardados sin ISO
+        uses: actions/upload-artifact@v4
+        with:
+          name: cladun-local-qa-handoff
+          path: /tmp/qa-handoff/
+          retention-days: 2
+          compression-level: 0
