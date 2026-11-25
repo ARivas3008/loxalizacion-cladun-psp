@@ -1,4 +1,7 @@
 import unittest
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
 from tools.integrar_parche_seguro import (
     TARGET_SCRIPT, source_rows, plan_rows, plan_event_safe,
     combine_verified_script_packs, patch_canonical_menu_layout,
