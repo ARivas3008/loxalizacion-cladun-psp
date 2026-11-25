@@ -258,6 +258,7 @@ def main():
     require(file_sha256(args.original) == SOURCE_SHA256,
             "Original ISO SHA-256 mismatch")
     report = json.loads(args.informe_integracion.read_text(encoding="utf-8"))
+    require(not report.get("reubicacion_local_experimental"), "R44 local relocation diagnostic: BPS export forbidden")
     result_hash = file_sha256(args.candidato)
     require(report.get("original_sha256") == SOURCE_SHA256 and
             report.get("iso_resultante_sha256") == result_hash and

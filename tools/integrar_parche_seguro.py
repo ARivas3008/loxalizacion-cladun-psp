@@ -519,6 +519,38 @@ def combine_r43_concise(changes,blocked,deferred,accumulated,*,draft_csv=DRAFT):
           "full_script_ids_sha256":hashlib.sha256(",".join(sorted(r["grupo_id"] for r,_,_ in merged)).encode("ascii")).hexdigest()}
     return result,filtered,remaining,info
 
+
+def combine_r44_local_experimental(changes,blocked,deferred,accumulated,*,draft_csv=DRAFT):
+    """RISK: 33 new residual translations, 18 donors, moving command offsets."""
+    try:
+        from tools.r44_local_experimental import audit
+    except ModuleNotFoundError:
+        from r44_local_experimental import audit
+    baseline=changes[TARGET_SCRIPT]
+    full=[{"gid":r["grupo_id"],"offset":int(r["offset_hex"],16),"old":a,"new":b}
+          for r,a,b in baseline]
+    selected,donors,verification=audit(full,deferred)
+    extra={x["gid"]:x for x in selected}
+    require(set(extra)==set(deferred),"R44 deferred set drift")
+    by_id={r["grupo_id"]:r for r,_ in source_rows(SOURCE,draft_csv)}
+    merged=[(r,a,donors[r["grupo_id"]]["new"] if r["grupo_id"] in donors else b)
+            for r,a,b in baseline]
+    for gid,x in extra.items():
+        r=by_id[gid]
+        require(r["origen"]==TARGET_SCRIPT and int(r["offset_hex"],16)==x["offset"]
+                and bytes.fromhex(r["bytes_hex"])==x["old"] and 0 not in x["new"],"R44 slot mismatch")
+        merged.append((r,x["old"],x["new"]))
+    merged.sort(key=lambda x:int(x[0]["offset_hex"],16))
+    require(len(merged)==len({r["grupo_id"] for r,_,_ in merged})==4899,"R44 merged count")
+    result=changes.copy(); result[TARGET_SCRIPT]=merged
+    filtered=[b for b in blocked if b["grupo_id"] not in extra]
+    require(len(blocked)-len(filtered)==33 and sum(map(len,result.values()))==8247,"R44 profile drift")
+    info={**accumulated,"selected":4523,"total_planned":8247,"remaining":0,
+          "script_changes":4899,"resolved_original_target":8248,
+          "local_relocation_experimental":verification,
+          "full_script_ids_sha256":hashlib.sha256(",".join(sorted(r["grupo_id"] for r,_,_ in merged)).encode("ascii")).hexdigest()}
+    return result,filtered,[],info
+
 def read_resources(iso):
     _, iso_files = iso9660_entries(iso)
     target = next((x for x in iso_files if x["path"] == "PSP_GAME/USRDIR/DATA.DAT"), None)
@@ -1018,10 +1050,12 @@ def append_text_containers(source_iso, source_pack, entries, replacements, resul
 
 def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
           experimental_partial=False, add_spanish_font=True, event_safe_only=False,
-          verified_packs=False, unified_profile=False, extended_padding=False, verified_symbols=False, concise_verified=False, r39_verified=False, r40_verified=False, r42_verified=False, r43_verified=False):
+          verified_packs=False, unified_profile=False, extended_padding=False, verified_symbols=False, concise_verified=False, r39_verified=False, r40_verified=False, r42_verified=False, r43_verified=False, r44_local_experimental=False):
     source_iso, candidate, report = map(Path, (source_iso, candidate, report))
     require(source_iso.resolve() != candidate.resolve(), "Cannot overwrite source ISO")
     require(sha256_file(source_iso) == SOURCE_SHA256, "Wrong Cladun USA source ISO")
+    require(not r44_local_experimental or (r43_verified and experimental_partial and event_safe_only),
+            "R44 requires explicit local relocation experiment and R43 base")
     require(not r43_verified or r42_verified,"R43 requires R42 profile")
     require(not r42_verified or r40_verified,"R42 requires R40 profile")
     require(not r40_verified or r39_verified,"R40 requires R39 profile")
@@ -1085,6 +1119,9 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
         changes,blocked,event_deferred,accumulated=combine_r43_concise(
             changes,blocked,event_deferred,accumulated,draft_csv=draft_csv)
         unchanged += 1
+    if r44_local_experimental:
+        changes,blocked,event_deferred,accumulated=combine_r44_local_experimental(
+            changes,blocked,event_deferred,accumulated,draft_csv=draft_csv)
     all_changed = sum(len(x) for x in changes.values())
     counted = Counter(x["motivo"] for x in blocked)
     result = {"estado": "BLOQUEADO_SIN_CANDIDATO", "original_sha256": SOURCE_SHA256,
@@ -1093,7 +1130,8 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
               "bloqueos": dict(counted),
               "bloqueos_por_grupo": blocked,
               "modo_completo": not experimental_partial,
-              "modo_eventos_offsets_fijos": event_safe_only,
+              "modo_eventos_offsets_fijos": event_safe_only and not r44_local_experimental,
+              "reubicacion_local_experimental": r44_local_experimental,
               "dialogos_pospuestos_por_desplazamiento": len(event_deferred),
               "ppsspp_validado": False, "aprobado_para_distribucion": False,
               "f1_presentacion_menu": layout_f1,
@@ -1161,9 +1199,16 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
                     m=by_name[name]
                     return raw[m["offset"]:m["offset"]+m["size"]]
                 original_script, original_table = child("SCRIPT.DAT"), child("SCRIPT.TBL")
-                new_script,new_table = text_command_rebuild(original_script,original_table,script_changes)
-                event_audit = audit_script_rebuild(original_script,original_table,
-                    new_script,new_table,script_changes,require_fixed_offsets=True)
+                if r44_local_experimental:
+                    try:
+                        from tools.r44_local_experimental import rebuild
+                    except ModuleNotFoundError:
+                        from r44_local_experimental import rebuild
+                    new_script,new_table,event_audit=rebuild(original_script,original_table,script_changes)
+                else:
+                    new_script,new_table = text_command_rebuild(original_script,original_table,script_changes)
+                    event_audit = audit_script_rebuild(original_script,original_table,
+                        new_script,new_table,script_changes,require_fixed_offsets=True)
                 require(new_table==original_table,"R36 SCRIPT.TBL differs")
                 rewritten = replace_member_payload(raw,members,"SCRIPT.DAT",new_script)
                 packed, count = selective_repack(stored,rewritten)
@@ -1174,9 +1219,10 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
                     strict_event_offsets=event_safe_only)
                 packed = recompress(stored, rewritten)
             if verified_packs:
-                require(event_audit["all_command_offsets_preserved"]
+                require((event_audit["all_command_offsets_preserved"] if not r44_local_experimental
+                         else event_audit["moved_script_starts"]==0 and event_audit["moved_command_offsets"]==2712)
                         and event_audit["nontext_commands_byte_exact"] == 46308
-                        and event_audit["text_commands_replaced"] == (4866 if r43_verified else 4861 if r42_verified else 4840 if r40_verified else 4348 if r39_verified else 4172 if concise_verified else 4073 if verified_symbols else 4020 if extended_padding else 3745 if unified_profile else 1824),
+                        and event_audit["text_commands_replaced"] == (4899 if r44_local_experimental else 4866 if r43_verified else 4861 if r42_verified else 4840 if r40_verified else 4348 if r39_verified else 4172 if concise_verified else 4073 if verified_symbols else 4020 if extended_padding else 3745 if unified_profile else 1824),
                         "Accumulated SCRIPT failed physical event audit")
             replacements["SCRIPT.SDT"] = (packed, len(rewritten))
             applied.update(a["grupo_id"] for a, old, new in changes[TARGET_SCRIPT])
@@ -1271,7 +1317,17 @@ def main():
                    help="Con --perfil-unificado añade 275 rellenos y 53 textos CP932 verificados estáticamente; experimental.")
     p.add_argument("--perfil-acumulado", action="store_true",
                    help="Lotes R43: 8214 sustituciones, 1 registro resuelto sin cambios, 33 pendientes; experimental. No release.")
+    p.add_argument("--perfil-total-local-experimental",action="store_true",
+                   help="8247 substitutions + 1 unchanged; MOVES 2712 commands; private diagnostic only.")
+    p.add_argument("--acepto-reubicacion-local",action="store_true",
+                   help="Acknowledge unverified event references; no BPS export.")
     args = p.parse_args()
+    if args.perfil_total_local_experimental:
+        if not args.acepto_reubicacion_local or args.event_safe_only:
+            p.error("R44 requires explicit local-relocation acceptance and cannot be event-safe-only")
+        args.perfil_acumulado=True
+    elif args.acepto_reubicacion_local:
+        p.error("Risk flag requires the R44 experimental profile")
     try:
         summary = build(args.iso, args.candidate, args.report,
                         source_csv=args.original, draft_csv=args.borrador,
@@ -1286,7 +1342,8 @@ def main():
                         r39_verified=args.perfil_acumulado,
                         r40_verified=args.perfil_acumulado,
                         r42_verified=args.perfil_acumulado,
-                        r43_verified=args.perfil_acumulado)
+                        r43_verified=args.perfil_acumulado,
+                        r44_local_experimental=args.perfil_total_local_experimental)
         print(json.dumps({k: v for k, v in summary.items() if k != "bloqueos_por_grupo"},
                          indent=2, ensure_ascii=False))
     except Exception as exc:
