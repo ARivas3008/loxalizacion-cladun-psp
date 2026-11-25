@@ -9,6 +9,7 @@ from pathlib import Path
 import sys
 import tempfile
 sys.path.insert(0,str(Path(__file__).resolve().parent))
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from tools.r31_bulk_padding import make_plan as previous_plan, serialized, fnv
 from tools.f4_r21_ligature_overlay import make_plan as ligature_plan
 from tools.f4_r21_ligature_capacity import read_canonical, decode_encoded
@@ -90,6 +91,42 @@ def make_plan():
                          "pending":1155,"official":3724,"runtime_verified":False,
                          "release_authorized":False,"candidate_written":False}
 
+def residual_inventory(selected, full):
+    """Metadata-only residual triage in blocks of 1,000; no new insertion."""
+    from collections import Counter
+    from tools.charset_es import encode_spanish
+    from tools.f4_r21_ligature_capacity import matching
+    rows=read_canonical(DRAFT)
+    done={x["gid"] for x in full}
+    pending=[]
+    for r in rows:
+        if r["origen"]!=TARGET_SCRIPT or r["grupo_id"] in done:
+            continue
+        old=bytes.fromhex(r["bytes_hex"])
+        text=r["espanol"]
+        delta=len(encode_spanish(text))-len(old)
+        if delta==0:continue
+        controls=(any(c<32 or c>126 or c in (37,92) for c in old)
+                  or "%" in text or "\\" in text or not text.isprintable())
+        if controls:kind="CONTROL_OR_MULTIBYTE_REVIEW"
+        elif delta<0:kind="SHORTER_NEEDS_EDITORIAL_OR_PADDING"
+        elif len(matching(text,PAIRS))<delta:kind="GROWING_INSUFFICIENT_44_LIGATURES"
+        else:kind="OTHER_REVIEW"
+        pending.append({"id":r["grupo_id"],"offset":int(r["offset_hex"],16),
+                        "delta":delta,"kind":kind})
+    pending.sort(key=lambda r:r["offset"])
+    require(len(pending)==1155,"Residual script count drift")
+    batches=[]
+    for start in range(0,len(pending),1000):
+        part=pending[start:start+1000]
+        batches.append({"count":len(part),"types":dict(Counter(x["kind"] for x in part)),
+                        "positive":sum(x["delta"]>0 for x in part),
+                        "negative":sum(x["delta"]<0 for x in part),
+                        "ids_sha256":hashlib.sha256(",".join(x["id"] for x in part).encode("ascii")).hexdigest()})
+    return {"count":len(pending),"types":dict(Counter(x["kind"] for x in pending)),
+            "batches":batches,"newly_approved":0}
+
+
 def source_audit(iso, selected, full):
     require(file_sha256(iso)==USA_SHA,"Authentic USA required")
     original,table=original_script_children(iso)
@@ -104,6 +141,7 @@ def source_audit(iso, selected, full):
 
 def run(iso=None, candidate=None, *, experimental=False):
     selected,full,report=make_plan()
+    report["residual_inventory"]=residual_inventory(selected,full)
     if iso is None:
         require(candidate is None,"ISO required")
         return report
