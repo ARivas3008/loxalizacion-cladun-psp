@@ -81,10 +81,38 @@ jobs:
               z.extractall('/tmp/ppsspp-qa-home/.config/ppsspp/PSP/SAVEDATA')
           PY
           test -f /tmp/ppsspp-qa-home/.config/ppsspp/PSP/SAVEDATA/NPUH10072GMSV001/PARAM.SFO
-          set +e
-          timeout 15s xvfb-run -a env HOME=/tmp/ppsspp-qa-home XDG_CONFIG_HOME=/tmp/ppsspp-qa-home/.config PULSE_SERVER=unix:/tmp/cladun-pulse/native SDL_AUDIODRIVER=pulseaudio SHARUN_ALLOW_LD_PRELOAD=1 SDL_VIDEODRIVER=x11 LIBGL_ALWAYS_SOFTWARE=1 /tmp/squashfs-root/AppRun >/tmp/ppsspp-qa.log 2>&1
-          status=$?
-          set -e
-          tail -n 50 /tmp/ppsspp-qa.log
-          echo "emulator_exit=$status (124 indicates process remained alive for the 15s probe, not a gameplay pass)"
-          test "$status" -eq 124
+          mkdir -p /tmp/cladun-captures
+          if ! command -v import >/dev/null || ! command -v xdotool >/dev/null; then
+            sudo apt-get update -qq
+            sudo apt-get install -y --no-install-recommends imagemagick xdotool
+          fi
+          xvfb-run -a -s "-screen 0 1280x720x24" bash -c '
+            set -eu
+            env HOME=/tmp/ppsspp-qa-home XDG_CONFIG_HOME=/tmp/ppsspp-qa-home/.config PULSE_SERVER=unix:/tmp/cladun-pulse/native SDL_AUDIODRIVER=pulseaudio SHARUN_ALLOW_LD_PRELOAD=1 SDL_VIDEODRIVER=x11 LIBGL_ALWAYS_SOFTWARE=1 /tmp/squashfs-root/AppRun >/tmp/ppsspp-qa.log 2>&1 &
+            pid=$!
+            trap "kill $pid 2>/dev/null || true" EXIT
+            for n in $(seq 1 30); do
+              w=$(xdotool search --onlyvisible --name "PPSSPP" 2>/dev/null | head -1 || true)
+              if [ -n "$w" ]; then break; fi
+              sleep 1
+            done
+            test -n "$w"
+            sleep 4
+            kill -0 "$pid"
+            xwininfo -id "$w"
+            import -window "$w" /tmp/cladun-captures/01-menu-ppsspp.png
+            sleep 3
+            import -window "$w" /tmp/cladun-captures/02-menu-ppsspp.png
+            sha256sum /tmp/cladun-captures/*.png
+            convert /tmp/cladun-captures/01-menu-ppsspp.png -resize 320x180 -quality 40 /tmp/cladun-captures/preview.jpg
+            printf "CAPTURE_B64:"
+            base64 -w0 /tmp/cladun-captures/preview.jpg
+            echo
+          '
+          tail -n 30 /tmp/ppsspp-qa.log
+      - name: Subir capturas autenticas (sin ISO ni juego)
+        uses: actions/upload-artifact@v4
+        with:
+          name: capturas-ppsspp-preflight
+          path: /tmp/cladun-captures/
+          retention-days: 14
