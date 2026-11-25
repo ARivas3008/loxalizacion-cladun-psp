@@ -1,0 +1,50 @@
+{
+  "schema": "cladun.beta.saves.preflight.v1",
+  "date": "2026-11-25",
+  "game_id": "NPUH10072",
+  "emulator": {
+    "version": "1.20.4",
+    "size": 50689748,
+    "sha256": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21",
+    "official_download_verified": true,
+    "ci_run": 45719153166,
+    "process_alive_seconds": 15,
+    "timeout_exit_code": 124,
+    "game_loaded": false,
+    "audio": "private PulseAudio null sink",
+    "display": "Xvfb"
+  },
+  "source_archive": "https://archive.org/download/gamefaqs_savegames/psp_savegames.zip",
+  "archive_run": 45719211477,
+  "saves": [
+    {
+      "id": "22352",
+      "filename": "22352.zip",
+      "author": "Kwingster",
+      "size": 705296,
+      "sha256": "20b08ff803688eda5fa23d6c6b10b3a35b943d3dbada70fb59835203c4c94723",
+      "folder": "NPUH10072GMSV001",
+      "crc": "PASS",
+      "sfo": "PASS",
+      "runtime": "NOT_RUN"
+    },
+    {
+      "id": "26473",
+      "filename": "26473.zip",
+      "author": "Xenosagaxxx",
+      "size": 705564,
+      "sha256": "feedbc7ab824ddc6b1350d5d8da1caced792b3d79a36ea2a138191c81ab5cab1",
+      "folder": "NPUH10072GMSV001",
+      "crc": "PASS",
+      "sfo": "PASS",
+      "runtime": "NOT_RUN"
+    }
+  ],
+  "direct_gamefaqs_http": 403,
+  "local_appimage_download": "DNS_FAILED",
+  "source_iso_kept_private": true,
+  "full_beta_iso_built": false,
+  "gameplay_loads_passed": 0,
+  "runtime_verified": false,
+  "release_authorized": false
+}
