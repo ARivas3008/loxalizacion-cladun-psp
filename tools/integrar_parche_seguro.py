@@ -520,12 +520,14 @@ def combine_r43_concise(changes,blocked,deferred,accumulated,*,draft_csv=DRAFT):
     return result,filtered,remaining,info
 
 
-def combine_r44_local_experimental(changes,blocked,deferred,accumulated,*,draft_csv=DRAFT):
+def combine_r44_local_experimental(changes,blocked,deferred,accumulated,*,draft_csv=DRAFT,optimized=False):
     """RISK: 33 new residual translations, 18 donors, moving command offsets."""
     try:
         from tools.r44_local_experimental import audit
     except ModuleNotFoundError:
         from r44_local_experimental import audit
+    if optimized:
+        from tools.r52_local_optimized import audit
     baseline=changes[TARGET_SCRIPT]
     full=[{"gid":r["grupo_id"],"offset":int(r["offset_hex"],16),"old":a,"new":b}
           for r,a,b in baseline]
@@ -1050,10 +1052,12 @@ def append_text_containers(source_iso, source_pack, entries, replacements, resul
 
 def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
           experimental_partial=False, add_spanish_font=True, event_safe_only=False,
-          verified_packs=False, unified_profile=False, extended_padding=False, verified_symbols=False, concise_verified=False, r39_verified=False, r40_verified=False, r42_verified=False, r43_verified=False, r44_local_experimental=False):
+          verified_packs=False, unified_profile=False, extended_padding=False, verified_symbols=False, concise_verified=False, r39_verified=False, r40_verified=False, r42_verified=False, r43_verified=False, r44_local_experimental=False, r52_local_optimized=False):
     source_iso, candidate, report = map(Path, (source_iso, candidate, report))
     require(source_iso.resolve() != candidate.resolve(), "Cannot overwrite source ISO")
     require(sha256_file(source_iso) == SOURCE_SHA256, "Wrong Cladun USA source ISO")
+    require(not (r44_local_experimental and r52_local_optimized),"Choose exactly one local relocation profile")
+    r44_local_experimental = r44_local_experimental or r52_local_optimized
     require(not r44_local_experimental or (r43_verified and experimental_partial and event_safe_only),
             "R44 requires explicit local relocation experiment and R43 base")
     require(not r43_verified or r42_verified,"R43 requires R42 profile")
@@ -1121,7 +1125,7 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
         unchanged += 1
     if r44_local_experimental:
         changes,blocked,event_deferred,accumulated=combine_r44_local_experimental(
-            changes,blocked,event_deferred,accumulated,draft_csv=draft_csv)
+            changes,blocked,event_deferred,accumulated,draft_csv=draft_csv,optimized=r52_local_optimized)
     all_changed = sum(len(x) for x in changes.values())
     counted = Counter(x["motivo"] for x in blocked)
     result = {"estado": "BLOQUEADO_SIN_CANDIDATO", "original_sha256": SOURCE_SHA256,
@@ -1132,6 +1136,7 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
               "modo_completo": not experimental_partial,
               "modo_eventos_offsets_fijos": event_safe_only and not r44_local_experimental,
               "reubicacion_local_experimental": r44_local_experimental,
+              "perfil_reubicacion_local": "R52" if r52_local_optimized else "R44" if r44_local_experimental else None,
               "dialogos_pospuestos_por_desplazamiento": len(event_deferred),
               "ppsspp_validado": False, "aprobado_para_distribucion": False,
               "f1_presentacion_menu": layout_f1,
@@ -1204,6 +1209,8 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
                         from tools.r44_local_experimental import rebuild
                     except ModuleNotFoundError:
                         from r44_local_experimental import rebuild
+                    if r52_local_optimized:
+                        from tools.r52_local_optimized import rebuild
                     new_script,new_table,event_audit=rebuild(original_script,original_table,script_changes)
                 else:
                     new_script,new_table = text_command_rebuild(original_script,original_table,script_changes)
@@ -1220,7 +1227,7 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
                 packed = recompress(stored, rewritten)
             if verified_packs:
                 require((event_audit["all_command_offsets_preserved"] if not r44_local_experimental
-                         else event_audit["moved_script_starts"]==0 and event_audit["moved_command_offsets"]==2712)
+                         else event_audit["moved_script_starts"]==0 and event_audit["moved_command_offsets"]==(146 if r52_local_optimized else 2712))
                         and event_audit["nontext_commands_byte_exact"] == 46308
                         and event_audit["text_commands_replaced"] == (4899 if r44_local_experimental else 4866 if r43_verified else 4861 if r42_verified else 4840 if r40_verified else 4348 if r39_verified else 4172 if concise_verified else 4073 if verified_symbols else 4020 if extended_padding else 3745 if unified_profile else 1824),
                         "Accumulated SCRIPT failed physical event audit")
@@ -1319,10 +1326,14 @@ def main():
                    help="Lotes R43: 8214 sustituciones, 1 registro resuelto sin cambios, 33 pendientes; experimental. No release.")
     p.add_argument("--perfil-total-local-experimental",action="store_true",
                    help="8247 substitutions + 1 unchanged; MOVES 2712 commands; private diagnostic only.")
+    p.add_argument("--perfil-total-local-optimizado",action="store_true",
+                   help="R52: 8247 substitutions + 1 unchanged, 146 moved commands; private diagnostic only.")
     p.add_argument("--acepto-reubicacion-local",action="store_true",
                    help="Acknowledge unverified event references; no BPS export.")
     args = p.parse_args()
-    if args.perfil_total_local_experimental:
+    if args.perfil_total_local_experimental and args.perfil_total_local_optimizado:
+        p.error("Choose only one local relocation profile")
+    if args.perfil_total_local_experimental or args.perfil_total_local_optimizado:
         if not args.acepto_reubicacion_local or args.event_safe_only:
             p.error("R44 requires explicit local-relocation acceptance and cannot be event-safe-only")
         args.perfil_acumulado=True
@@ -1343,7 +1354,8 @@ def main():
                         r40_verified=args.perfil_acumulado,
                         r42_verified=args.perfil_acumulado,
                         r43_verified=args.perfil_acumulado,
-                        r44_local_experimental=args.perfil_total_local_experimental)
+                        r44_local_experimental=args.perfil_total_local_experimental,
+                        r52_local_optimized=args.perfil_total_local_optimizado)
         print(json.dumps({k: v for k, v in summary.items() if k != "bloqueos_por_grupo"},
                          indent=2, ensure_ascii=False))
     except Exception as exc:

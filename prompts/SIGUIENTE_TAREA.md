@@ -1,8 +1,6 @@
-# CLADUN ES — R47: solución de codificación fija o certificación MIPS del 0,40%
+# R53 — cerrar 33 residuales sobre R52 con pruebas de ejecución
 
-Verificar HEAD, CI, PR #7 DRAFT. R46 reprodujo independientemente los 78 cambios de R44 sobre ISO auténtica, con SHA idéntico; 33/33 residuales crecen y tienen comandos posteriores, 0/33 admisibles por la guarda fija, 2/33 incluso desbordan padding individual. La combinación mueve 2712 comandos (2221 no textuales). No promover.
-
-1. Ejecutar tools.r46_verificar_residuales y suite completa. Compilar y auditar perfil acumulado 8214+1, y modo experimental 8247+1 por separado. Usar ISO privada. Verificar BPS rechazado para modo local.
-2. Buscar una codificación alternativa sin mover offsets: optimizar diccionario de glifos compuestos preservando exactamente las 4866 traducciones previas, todas las métricas y símbolos originales; examinar el límite de anchura de cada slot. No sacrificar nombres, puntuación o glosario para cumplir un porcentaje.
-3. Si no es viable, certificar referencias MIPS con PPSSPP oficial 1.20.4 y pruebas A/B/A de 24 bloques; priorizar 81 coincidencias R45. No confundir coincidencia con puntero.
-4. Integrar solo tras guardas y evidencias auténticas. Mantener PR borrador, no merge, no force push, no activos comerciales. Sustituir este prompt por R48 autónomo con obligación recursiva hasta 100% real T/G/R/Q.
+1. Verificar HEAD y CI R52, PR #7 DRAFT. Si algún donante falla el guardia de texto exacto, no flexibilizarlo: usar el texto realmente planificado por R43 y recalcular optimización y métricas contra ISO auténtica.
+2. Compilar perfil acumulado fijo y perfil total local optimizado en privado, usando --perfil-total-local-optimizado --acepto-reubicacion-local solo para el experimental. Confirmar fuente completa y 4899 cambios SCRIPT + 3348 restantes, 1 sin cambio legítimo, comprobar BPS bloqueado. R52 solo creó ISO aislada de 95 cambios con fuente original, no acumulada.
+3. Trazar MIPS con PPSSPP oficial 1.20.4 en los 24 bloques con 146 comandos desplazados, 104 no textuales; barrido absoluto/local sin coincidencias no demuestra referencias indirectas. Alternativamente lograr codificación fija manteniendo significado, nombres, puntuación, 19 glifos y resto de traducciones. No imponer abreviaturas o sacrificar gramática.
+4. Integrar solo lo demostrado, auditar gráficos por separado (R50/R51) y mantener versión del prólogo del usuario. No publicar ISO/activos comerciales, no merge ni force push. Sustituir prompt recursivamente por R54 hasta cierre T/G/R/Q real.
