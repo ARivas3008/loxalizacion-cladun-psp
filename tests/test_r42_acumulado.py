@@ -1,6 +1,8 @@
 import unittest
+import sys
 from pathlib import Path
 from tempfile import TemporaryDirectory
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"tools"))
 from tools.integrar_parche_seguro import (
     source_rows,plan_rows,plan_event_safe,combine_unified_profile,combine_extended_padding,
     combine_verified_symbols,combine_reviewed_concise,combine_r39_concise,combine_r40_concise,
