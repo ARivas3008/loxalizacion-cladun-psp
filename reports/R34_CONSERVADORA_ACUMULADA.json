@@ -1,0 +1,40 @@
+{
+  "schema": "cladun.r34.accumulated_plan.v1",
+  "source_blob": "400a9c9ec06f7456b5ec6e11f7502d711b0a976e",
+  "source_rows": 9237,
+  "verified_packs": {
+    "exact": 146,
+    "padded": 1302,
+    "gaps": {
+      "1": 330,
+      "2": 278,
+      "3": 187,
+      "4": 166,
+      "5": 137,
+      "6": 114,
+      "7": 90
+    },
+    "combined": 1448,
+    "unique_ids": 1448,
+    "unique_offsets": 1448,
+    "overlaps": 0,
+    "all_equal_width": true,
+    "blocks": 360,
+    "source_bytes": 41487,
+    "combined_plan_fnv32": 4017724493,
+    "combined_preimage_fnv32": 1345572782
+  },
+  "historical_baseline": 3724,
+  "accumulated_planned": 5172,
+  "remaining": 3076,
+  "profile_implemented": true,
+  "accumulated_iso_built": false,
+  "ppsspp_run": false,
+  "official_integrated": 3724,
+  "release_authorized": false,
+  "initial_r33_ci": {
+    "id": 45543211973,
+    "conclusion": "success"
+  },
+  "scope": "Independent canonical corpus reconstruction via GitHub connector; no full checkout, no accumulated physical ISO. Source asset audit previously in R31-R33."
+}
