@@ -1,13 +1,11 @@
-# CLADUN ES — R34 autónomo: acumulación de 1.302 + 146 y F1
+# CLADUN ES — R35 autónomo: compilación real del nuevo perfil conservador acumulado
 
-Rama integracion-eventos-segura-20261120, PR #7 DRAFT. Sin force push ni merge. Verificar HEAD/CI. Leer reports/R33_PACKS_LARGOS.json, tools/r33_verificar_regresion.py, tools/r32_auditar_packs.py, tools/r31_bulk_padding.py y docs/R31_BULK_PADDING.md. R33 escribió 604 textos de gaps 3–6 y revalidó 90 de gap 7, 694 combinados, 245 bloques, 51.705 comandos, 46.308 no textuales exactos, 1.625 inicios, cero offsets movidos. ISO privada solo SCRIPT (sin fuente ni F1) SHA 5c305398f6c988fdbe93c30a13ace8cb1ecbec9e9b85023b2c7eaf492e26accd, 348 recursos ajenos exactos, BPS roundtrip exacto. R31 ya escribió 608 cortos por separado: 1.302/1.302 escritos entre relevos, pero NO todos combinados todavía. Oficial 3.724/8.248.
+PR #7 DRAFT, rama integracion-eventos-segura-20261120. Verificar HEAD/CI, no force push ni merge. Leer docs/R34_CONSERVADORA_ACUMULADA.md y reports/R34_CONSERVADORA_ACUMULADA.json. El parcheador principal tiene el perfil --packs-verificados: 3724 F1 + 146 exactos + 1302 acolchados = 5172 (62,71% plan del código); 1448 IDs y offsets únicos, 360 bloques, huellas 1345572782/4017724493. Oficial histórico 3724; no ISO acumulada ni C en R34. CI inicial R33 45543211973 SUCCESS.
 
-1. En checkout completo, con ISO original USA auténtica SHA b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f, ejecutar:
+1. Checkout completo y original auténtica SHA b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f. Ejecutar tests R34 y construir perfil único:
 ```bash
-PYTHONPATH=tools:. python -m tools.r33_verificar_regresion /PRIVADO/USA.iso --pack long
-PYTHONPATH=tools:. python -m tools.r32_auditar_packs /PRIVADO/USA.iso --pack all
-PYTHONPATH=tools:. python tools/r31_bulk_padding.py --pack all --allow-experimental-padding --iso-original /PRIVADO/USA.iso --candidate /PRIVADO/R34_5172.iso
+python tools/integrar_parche_seguro.py --iso /PRIVADO/USA.iso --candidate /PRIVADO/R35_5172.iso --report /PRIVADO/R35_5172.json --experimental-parcial --event-safe-only --packs-verificados
 ```
-Confirmar 3.724 baseline +146 exactos +1302 padded, cero solapamiento, 349 PSPFS, fuente A1–B3, 2721 glifos originales, DSARC/ISO9660 y BPS roundtrip. Si checkout falla, ejecutar verificador independiente y separar con rigor lo efectivamente escrito de lo proyectado. No publicar ISO, BPS diagnóstico o recursos comerciales.
-2. PPSSPP oficial 1.20.4 A/B/A de los gaps 1–7 con fuente correcta: ancho, wrapping, controles, prólogo, tutoriales, combate. No promover padding sin C. Resolver defectos detectados y ejecutar batería global, CI.
-3. Después 2002 ligaduras R25 deduplicadas, 29 déficits R26 y referencias MIPS, F2–F6; cero P0/P1. Mantener rama experimental. Al terminar sustituir COMPLETAMENTE prompts/SIGUIENTE_TAREA.md por R35 autónomo con la misma obligación recursiva hasta 100% real de T/G/R/Q.
+Confirmar 5172 cambios reales, 3076 diferidos, 1824 comandos textuales, 46308 no textuales exactos, 51705 comandos, 1625 scripts, cero offsets desplazados, fuente 19/2721, menú F1, recursos vecinos e ISO/BPS roundtrip. Si falta checkout o ISO, no inventar. 
+2. PPSSPP oficial 1.20.4 A/B/A, todos gaps 1–7, menús, prólogo, tutoriales, combate, wrapping, signos, eventos, saves. Solo promover grupos sin regresión y evidencia C.
+3. Después deduplicar 2002 ligaduras R25 contra 1448 ya seleccionados; 29 déficits R26, MIPS y QA F2–F6. No sumar dos veces ni confundir evidencia A/B/C. CI real y cero P0/P1. Al finalizar sustituir COMPLETAMENTE prompts/SIGUIENTE_TAREA.md por R36 autónomo, con obligación recursiva hasta 100% real T/G/R/Q.
