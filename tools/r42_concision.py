@@ -36,7 +36,7 @@ def audit(full, overlay=OVERLAY):
                 and not any(t.decode("cp932") in ICONS for t in tokens),
                 "R42 icon/control source rejected")
         require(text == text.strip() and text and all(32 <= ord(c) <= 126 or c in ES_GLYPHS for c in text)
-                and b"\\" not in old and "\\" not in text, "R42 unknown symbol")
+                and chr(92) not in old.decode("cp932") and chr(92) not in text, "R42 unknown symbol")
         ordinary = encode_spanish(text)
         if len(ordinary) > len(old):
             new = encode_fixed(text, len(old), PAIRS)
