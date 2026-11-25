@@ -407,6 +407,43 @@ def combine_r39_concise(changes,blocked,deferred,accumulated,*,draft_csv=DRAFT):
     return result,filtered,remaining,info
 
 
+def combine_r40_concise(changes,blocked,deferred,accumulated,*,draft_csv=DRAFT):
+    """R40: add the 492 authenticated concise alternatives to the entire R39 plan."""
+    try:
+        from tools.r40_concision import audit
+    except ModuleNotFoundError:
+        from r40_concision import audit
+    baseline=changes[TARGET_SCRIPT]
+    full=[{"gid":r["grupo_id"],"offset":int(r["offset_hex"],16),"old":a,"new":b}
+          for r,a,b in baseline]
+    selected,verification=audit(full)
+    extra={x["gid"]:x for x in selected}
+    require(len(extra)==492 and set(extra)<=set(deferred),"R40 non-deferred IDs")
+    by_id={r["grupo_id"]:r for r,_ in source_rows(SOURCE,draft_csv)}
+    merged=list(baseline)
+    for gid,x in extra.items():
+        r=by_id[gid]
+        require(r["origen"]==TARGET_SCRIPT and int(r["offset_hex"],16)==x["offset"]
+                and bytes.fromhex(r["bytes_hex"])==x["old"]
+                and len(x["old"])==len(x["new"]) and 0 not in x["new"],
+                "R40 slot mismatch")
+        merged.append((r,x["old"],x["new"]))
+    merged.sort(key=lambda x:int(x[0]["offset_hex"],16))
+    require(len({r["grupo_id"] for r,_,_ in merged})==4840
+            and all(int(a[0]["offset_hex"],16)+len(a[1])<=int(b[0]["offset_hex"],16)
+                    for a,b in zip(merged,merged[1:])), "R40 overlapping slots")
+    result=changes.copy()
+    result[TARGET_SCRIPT]=merged
+    remaining=[g for g in deferred if g not in extra]
+    filtered=[b for b in blocked if b["grupo_id"] not in extra]
+    require(len(remaining)==60 and len(blocked)-len(filtered)==492
+            and sum(map(len,result.values()))==8188,"R40 accumulated profile drift")
+    info={**accumulated,"selected":4464,"total_planned":8188,"remaining":60,
+          "script_changes":4840,"reviewed_concise_r40":verification,
+          "full_script_ids_sha256":hashlib.sha256(",".join(sorted(r["grupo_id"] for r,_,_ in merged)).encode("ascii")).hexdigest()}
+    return result,filtered,remaining,info
+
+
 def read_resources(iso):
     _, iso_files = iso9660_entries(iso)
     target = next((x for x in iso_files if x["path"] == "PSP_GAME/USRDIR/DATA.DAT"), None)
@@ -906,10 +943,11 @@ def append_text_containers(source_iso, source_pack, entries, replacements, resul
 
 def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
           experimental_partial=False, add_spanish_font=True, event_safe_only=False,
-          verified_packs=False, unified_profile=False, extended_padding=False, verified_symbols=False, concise_verified=False, r39_verified=False):
+          verified_packs=False, unified_profile=False, extended_padding=False, verified_symbols=False, concise_verified=False, r39_verified=False, r40_verified=False):
     source_iso, candidate, report = map(Path, (source_iso, candidate, report))
     require(source_iso.resolve() != candidate.resolve(), "Cannot overwrite source ISO")
     require(sha256_file(source_iso) == SOURCE_SHA256, "Wrong Cladun USA source ISO")
+    require(not r40_verified or r39_verified,"R40 requires R39 profile")
     require(not r39_verified or concise_verified,"R39 requires prior concise profile")
     require(not concise_verified or verified_symbols,"Concise profile requires verified symbols")
     require(not verified_symbols or extended_padding,"Verified symbols require extended profile")
@@ -959,6 +997,9 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
             changes,blocked,event_deferred,accumulated,draft_csv=draft_csv)
     if r39_verified:
         changes,blocked,event_deferred,accumulated=combine_r39_concise(
+            changes,blocked,event_deferred,accumulated,draft_csv=draft_csv)
+    if r40_verified:
+        changes,blocked,event_deferred,accumulated=combine_r40_concise(
             changes,blocked,event_deferred,accumulated,draft_csv=draft_csv)
     all_changed = sum(len(x) for x in changes.values())
     counted = Counter(x["motivo"] for x in blocked)
@@ -1051,7 +1092,7 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
             if verified_packs:
                 require(event_audit["all_command_offsets_preserved"]
                         and event_audit["nontext_commands_byte_exact"] == 46308
-                        and event_audit["text_commands_replaced"] == (4348 if r39_verified else 4172 if concise_verified else 4073 if verified_symbols else 4020 if extended_padding else 3745 if unified_profile else 1824),
+                        and event_audit["text_commands_replaced"] == (4840 if r40_verified else 4348 if r39_verified else 4172 if concise_verified else 4073 if verified_symbols else 4020 if extended_padding else 3745 if unified_profile else 1824),
                         "Accumulated SCRIPT failed physical event audit")
             replacements["SCRIPT.SDT"] = (packed, len(rewritten))
             applied.update(a["grupo_id"] for a, old, new in changes[TARGET_SCRIPT])
@@ -1145,7 +1186,7 @@ def main():
     p.add_argument("--residuales-verificados", action="store_true",
                    help="Con --perfil-unificado añade 275 rellenos y 53 textos CP932 verificados estáticamente; experimental.")
     p.add_argument("--perfil-acumulado", action="store_true",
-                   help="Todos los lotes verificados A/B hasta R39: 7696 textos, fuente compacta experimental. No release.")
+                   help="Todos los lotes verificados A/B hasta R40: 8188 textos, fuente compacta experimental. No release.")
     args = p.parse_args()
     try:
         summary = build(args.iso, args.candidate, args.report,
@@ -1158,7 +1199,8 @@ def main():
                         extended_padding=args.relleno_ampliado or args.residuales_verificados or args.perfil_acumulado,
                         verified_symbols=args.residuales_verificados or args.perfil_acumulado,
                         concise_verified=args.perfil_acumulado,
-                        r39_verified=args.perfil_acumulado)
+                        r39_verified=args.perfil_acumulado,
+                        r40_verified=args.perfil_acumulado)
         print(json.dumps({k: v for k, v in summary.items() if k != "bloqueos_por_grupo"},
                          indent=2, ensure_ascii=False))
     except Exception as exc:
