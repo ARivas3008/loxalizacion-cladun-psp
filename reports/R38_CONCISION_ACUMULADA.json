@@ -1,0 +1,97 @@
+{
+  "schema": "cladun.r38.concise_and_accumulated.v1",
+  "initial_head": "a49dd955fd72795d0d18fbcf36654d91579c107f",
+  "initial_ci": {
+    "id": 45545886400,
+    "conclusion": "success"
+  },
+  "source_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "canonical_blob": "400a9c9ec06f7456b5ec6e11f7502d711b0a976e",
+  "original_script_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+  "overlay_sha256": "7fc914e9cb3101cf43291d08252df0f71dec899f882eb9b823062442ec8f230b",
+  "editorial_selected": 99,
+  "editorial_scope": "Manual insertion-only concise proposals against canonical English/Spanish pairs; contextual scene and visual QA pending. Corpus unchanged.",
+  "canonical_plan_crosscheck": {
+    "count": 99,
+    "preimage_fnv32": 3379737130,
+    "plan_fnv32": 2701635106
+  },
+  "individual": {
+    "texts": 99,
+    "blocks": 19,
+    "source_bytes": 2961,
+    "padding_bytes": 59,
+    "changed_bytes": 2631,
+    "commands": 51705,
+    "nontext_exact": 46308,
+    "moved_offsets": 0,
+    "moved_script_starts": 0,
+    "script_table_exact": true,
+    "dsarc_siblings_exact": 3,
+    "preimage_sha256": "dc791b205aacfa66ddd092a19f4da24d4666651d68e88e3f2f65181fb02fac82",
+    "plan_sha256": "a74471f050d1365a607c114ba46d8283afa054e7aca76df5767f05c6b075700a",
+    "script_sha256": "f8842cb58e24d1a8fb7f04916fc2aa824df685e0f3015e6bbff13e30f867e9ff",
+    "archive_sha256": "74e5c884c3fdc9751d1e77c0df7f93d280773837ee3a62008c3678615e0314e7",
+    "imy_roundtrip": true,
+    "imy_repacked": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "imy_unchanged": [
+      0,
+      5,
+      6,
+      7
+    ],
+    "stored_bytes": 700544,
+    "compressed_sha256": "41b611b27d8ee2bd5f1e9bf6c760c8569d178b962356178961fd14bde8c24fe3"
+  },
+  "combined_R37_R38": {
+    "texts": 427,
+    "blocks": 139,
+    "source_bytes": 15067,
+    "padding_bytes": 3223,
+    "changed_bytes": 13532,
+    "commands": 51705,
+    "nontext_exact": 46308,
+    "moved_offsets": 0,
+    "moved_script_starts": 0,
+    "script_table_exact": true,
+    "dsarc_siblings_exact": 3,
+    "plan_fnv32": 3970964725,
+    "plan_sha256": "0979f21841e797217c51f4e6174a6faebbcf966ecbf75b6fb5551afe1a5a01dd",
+    "script_sha256": "6c168f7c04519bb101942435af46c42e9f3567667cbde61a7a0b2ef1e7eaa759",
+    "archive_sha256": "0ff24d8b117ee58698b8018204f51c3acad8d83164943accf961b0f2962356e4",
+    "imy_roundtrip": true,
+    "imy_repacked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "imy_unchanged": [
+      0,
+      7
+    ],
+    "stored_bytes": 700124,
+    "compressed_sha256": "8a04fd1bb58610723b3440d23716928a102e7a826f0dbabdb4165e1b3d46029f"
+  },
+  "prior": 7421,
+  "accumulated_profile": 7520,
+  "remaining": 728,
+  "remaining_categories": {
+    "ascii_overflow": 688,
+    "icon_overflow": 19,
+    "non_icon_multibyte": 11,
+    "format_control": 10
+  },
+  "official_historical": 3724,
+  "full_accumulated_iso_written": false,
+  "ppsspp_run": false,
+  "release_authorized": false,
+  "limitations": "Actual private SCRIPT/IMY tests executed independently on authenticated ISO; GitHub checkout blocked by DNS, full new accumulated ISO not built. No C."
+}
