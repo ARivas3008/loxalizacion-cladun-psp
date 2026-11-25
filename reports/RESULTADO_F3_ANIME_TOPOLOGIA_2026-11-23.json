@@ -1,0 +1,95 @@
+{
+  "schema": "cladun.f3.imy_adjacent_topology_readonly.v1",
+  "date": "2026-11-23",
+  "source": "A_original_USA_ISO_sha256_authenticated",
+  "original_iso": {
+    "size": 305496064,
+    "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f"
+  },
+  "members": {
+    "234": {
+      "name": "ANIME000.IDT",
+      "size": 3537936,
+      "sha256": "0e57353eb1d5f9688164b3453e57b0fd91ff77dee8e422844ba3fb0fef32eb37",
+      "literal_headers": 231,
+      "header_type_counts": {
+        "0x00": 136,
+        "0x02": 95
+      },
+      "adjacent_type_transitions": {
+        "00->00": 121,
+        "00->02": 15,
+        "02->00": 15,
+        "02->02": 79
+      },
+      "type_run_count": 31,
+      "longest_consecutive_run_by_type": {
+        "0x00": 101,
+        "0x02": 36
+      },
+      "exact_duplicate_adjacent_intervals_by_type": {
+        "0x00": 0,
+        "0x02": 17
+      },
+      "first_header_offset_bytes": 7568,
+      "max_adjacent_interval_bytes": 1211392,
+      "all_headers_4byte_aligned_and_flags_within_next_header": true
+    },
+    "235": {
+      "name": "ANIME001.LDT",
+      "size": 287472,
+      "sha256": "cb7f1354e38ced1a5b19f36c2b45d939e59094e33de901d4b43dc8d65faaa174",
+      "literal_headers": 24,
+      "header_type_counts": {
+        "0x00": 24
+      },
+      "adjacent_type_transitions": {
+        "00->00": 23
+      },
+      "type_run_count": 1,
+      "longest_consecutive_run_by_type": {
+        "0x00": 24
+      },
+      "exact_duplicate_adjacent_intervals_by_type": {
+        "0x00": 0
+      },
+      "first_header_offset_bytes": 32,
+      "max_adjacent_interval_bytes": 39596,
+      "all_headers_4byte_aligned_and_flags_within_next_header": true
+    },
+    "236": {
+      "name": "ANIME002.LDT",
+      "size": 2067856,
+      "sha256": "e1617dd4aea349f60953db9471e53c1524e9c3184b2566a4a732c3ecc756eec6",
+      "literal_headers": 0,
+      "header_type_counts": {},
+      "adjacent_type_transitions": {},
+      "type_run_count": 0,
+      "longest_consecutive_run_by_type": {},
+      "exact_duplicate_adjacent_intervals_by_type": {},
+      "first_header_offset_bytes": null,
+      "max_adjacent_interval_bytes": null,
+      "all_headers_4byte_aligned_and_flags_within_next_header": true
+    }
+  },
+  "validation": {
+    "static_usa_is_real": true,
+    "private_json_sha256": "5cb78034a1495497a874a4f502dd21eaa07b2ac5796c392e4ea7db1539fa04e6",
+    "synthetic_unit_tests_local_pass": 14,
+    "synthetic_unit_tests_local_failure": 0,
+    "whole_repo_suite_local": "NOT_RUN_NO_CHECKOUT_DNS",
+    "official_ppsspp_executed_in_this_relay": false,
+    "script_jump_semantics_verified": false
+  },
+  "safety": {
+    "iso_edited": false,
+    "game_bytes_published": false,
+    "source_intro_letters_proven": false,
+    "ty_02_decoder_proven": false,
+    "blocked_demo1001_85_unchanged": true,
+    "blocked_script_4524_unchanged": true,
+    "events_safe_only_kept": true,
+    "white_new_ink_default_false": true,
+    "pr7_draft_required": true
+  }
+}

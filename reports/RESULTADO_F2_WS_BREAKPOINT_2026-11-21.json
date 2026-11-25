@@ -1,0 +1,70 @@
+{
+  "schema": "cladun.f2.websocket_events_and_watchpoint_ownership.2026_11_21.v1",
+  "phase": "F2_OPEN_NO_NEW_PPSSPP_REAL",
+  "source_iso_verified": {
+    "bytes": 305496064,
+    "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f"
+  },
+  "icon_origin": {
+    "absolute_iso_offset": 114723840,
+    "compressed_imy_size": 2480,
+    "sha256": "0ce89df69ad71a9ef3165217d7cb98103a1fb0e08c53ca3a85c594dfaa7a2190"
+  },
+  "glyphs": {
+    "examined": 19,
+    "original_records": 2721,
+    "optional_white_new_ink_texels": 100,
+    "private_qa_report_sha256": "88edb8a2cf1a920f1ff7480cbe4b06f44d5441a1183720b71a07b393a49bfb80",
+    "source_original": true,
+    "new_ppsspp_visual": false
+  },
+  "changes": [
+    {
+      "commit": "4cc319092b16b1aee528c4359d0dd5b7da25f178",
+      "files": [
+        "tools/f2_ppsspp_ws_1204.py",
+        "tests/test_f2_ppsspp_ws_1204.py"
+      ],
+      "what": "Buffer unsolicited WS broadcasts during ticketed request and raise asynchronous errors instead of silently discarding.",
+      "new_synthetic_tests": 4
+    },
+    {
+      "commit": "a3d246b198a74ca8bcafcdc42534e76e3a97ae05",
+      "files": [
+        "tools/f2_ram_provenance_1204.py",
+        "tests/test_f2_ram_provenance_1204.py"
+      ],
+      "what": "Check memory.breakpoint.list to avoid modifying operator breakpoints; accept owned stop only if reason memory.breakpoint and relatedAddress equals watchpoint start.",
+      "new_synthetic_tests": 6
+    }
+  ],
+  "pp_sspp_official_source": "hrydgard/ppsspp tag v1.20.4; Core/Debugger/WebSocket/SteppingBroadcaster.cpp, BreakpointSubscriber.cpp, CPUCoreSubscriber.cpp; Core/Core.cpp, Core/Debugger/Breakpoints.cpp",
+  "ci": {
+    "python_tests": 209,
+    "github_push_run": "44984746966",
+    "github_push_result": "success",
+    "github_pr_run": "44984752291",
+    "github_pr_result": "success",
+    "go_patcher": "success_in_workflow",
+    "windows_public_build": "success_in_workflow",
+    "local_all_repo_unittest": "NOT_EXECUTED_NO_LOCAL_GIT_CHECKOUT",
+    "local_go": "NOT_EXECUTED_NO_LOCAL_GIT_CHECKOUT",
+    "local_glyph_static": "REAL_ORIGINAL_ISO_READONLY"
+  },
+  "limits": {
+    "ppsspp_1204_official_binary": "NOT_AVAILABLE",
+    "download_network": "NO_DNS_AND_IP_CONNECTION",
+    "f1_canonical_private_iso": "NOT_AVAILABLE",
+    "authentic_ppsspp_screenshots_new": 0,
+    "authentic_ge_dumps_new": 0,
+    "mips_to_ge_to_vram": "NOT_PROVEN",
+    "all_19_glyphs_ppsspp_multicontext": "NOT_PROVEN",
+    "f1_window_960x544_regression_new": "NOT_PROVEN",
+    "new_iso": 0,
+    "new_bps": 0,
+    "white_new_ink_default": false,
+    "sources_assets_unmodified": true,
+    "watchpoint_other_debugger_concurrent_mutations": "NOT_SERIALIZED"
+  },
+  "pr7_draft": true
+}

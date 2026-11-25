@@ -1,0 +1,101 @@
+name: Verificación de integración y eventos (sin ISO)
+on:
+  push:
+    branches: [integracion-eventos-segura-20261120]
+  pull_request:
+    branches: [revision-manual-dialogos]
+permissions:
+  contents: read
+jobs:
+  verificar-eventos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Pillow para pruebas de gráficos
+        run: python -m pip install 'Pillow>=12,<14'
+      - name: Pruebas completas, incluida protección de eventos
+        run: python -m unittest discover -s tests -v
+      - name: R24 validar capacidad de +20pp experimental sin ISO ni cambio de porcentaje oficial
+        run: |
+          python tools/f4_r24_piloto_1650_ligaduras.py > /tmp/cladun_r24_piloto_B.json
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/cladun_r24_piloto_B.json',encoding='utf-8'))
+          assert r['fittable_44_strict_pool']==2002
+          assert r['selected_experimental_additions']==1650
+          assert r['candidate_baseline_plus_experiment_count']==5374
+          assert r['new_official_integrations']==0
+          assert r['not_PPSSPP_proven'] and r['not_release_authorized']
+          assert r['pilot_gain_percentage_points']>=20.0
+          PY
+      - name: R25 comprobar 3300 candidatas para 85.16% y 0 validaciones C
+        run: |
+          python tools/f4_r25_piloto_85pct.py > /tmp/cladun_r25_85pct_B.json
+          python - <<'PY'
+          import json
+          x=json.load(open('/tmp/cladun_r25_85pct_B.json',encoding='utf-8'))
+          assert x['strict_ligatures_44_pool']==2002
+          assert x['shorter_safe_pool_with_gap_le_7']==1345
+          assert x['selected_growing_new']==2002
+          assert x['selected_shorter_new']==1298
+          assert x['selected_new_total']==3300
+          assert x['target_cumulative_binary_candidates']==7024
+          assert x['target_cumulative_percent']>=85.16
+          assert x['new_official_integrations']==0
+          assert not x['gameplay_C_approved']
+          assert not x['font_runtime_approved']
+          assert not x['trailing_whitespace_visual_approved']
+          assert not x['ISO_written']
+          PY
+      - name: R26 preflight de 8248 cambios potenciales sin desplazar binario comercial
+        run: |
+          python tools/r26_piloto_total_8248_privado.py > /tmp/cladun_r26_8248_B.json
+          python tools/r26_script_full_capacity_audit.py > /tmp/cladun_r26_padding_B.json
+          python - <<'PY'
+          import json
+          p=json.load(open('/tmp/cladun_r26_8248_B.json',encoding='utf-8'))
+          a=json.load(open('/tmp/cladun_r26_padding_B.json',encoding='utf-8'))
+          assert p['planned_all_changed_canonical_records']==8248
+          assert p['planned_SCRIPT_dat_changed_texts']==4900
+          assert p['planned_other_textual_records']==3348
+          assert p['planned_SCRIPT_changed_length']==4524
+          assert p['planned_SCRIPT_same_length_changed']==376
+          assert p['SCRIPT_dat_already_byte_identical_unmodified']==307
+          assert not p['100_percent_ROMhacking_official']
+          assert not p['PPSSPP_1_20_4_C_verified']
+          assert not p['all_script_event_offsets_would_be_preserved']
+          assert a['translated_script_rows']==5207
+          assert a['net_text_growth_bytes']==9694
+          assert a['optimized_44_theoretical']['full_script_theoretical_net_delta_bytes']==-4382
+          assert a['historical_integrated_unchanged']==3724
+          assert not a['game_tested_ppsspp_C']
+          PY
+      - name: F3-R5 acreditar 97 textos del borrador mediante anclaje de ISO original
+        run: python tools/f3_anclar_intro.py
+      - name: F3-R6 verificar presupuesto padding de 7 scripts sin ISO comercial
+        run: python tools/f3_presupuesto_padding_intro.py
+      - name: Comprobar integridad del corpus y borrador
+        run: |
+          python tools/verificar_integridad.py --raiz .
+          python tools/verificar_borrador_es.py
+      - name: Planificar integrabilidad sin generar ISO
+        run: |
+          python tools/reportar_integrabilidad_es.py --reporte reports/integrabilidad_ci_eventos.json
+          python -c "import json; r=json.load(open('reports/integrabilidad_ci_eventos.json')); assert r['total']==9237 and r['pendientes']==0"
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+      - name: Pruebas de integridad del parcheador Go
+        run: cd patcher && go test ./...
+      - name: Compilación pública Windows (sin BPS)
+        run: |
+          cd patcher
+          GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -trimpath -ldflags='-H=windowsgui -s -w' -o /tmp/cladun-sin-payload.exe ./cmd/cladun-patcher
+      - name: No versionar ISO ni BPS propietario
+        run: |
+          if git ls-files | grep -Ei '\.(iso|cso|pbp|7z|bps|exe)$'; then
+            echo "ERROR: binario o BPS versionado"; exit 1
+          fi

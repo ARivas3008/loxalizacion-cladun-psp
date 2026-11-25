@@ -1,0 +1,108 @@
+{
+  "schema": "cladun.f3.anime000_runtime_ab_a_metadata.v1",
+  "date": "2026-11-23",
+  "scope": "AUTHENTIC_PPSSPP_1204_X11_RUNTIME_AND_ORIGINAL_ISO_ONE_BYTE_DIAGNOSTIC",
+  "project_phase": "F3_OPEN_INTRO_TEXT_RESOURCE_NOT_YET_PROVEN; F2_OPEN",
+  "original_iso": {
+    "bytes": 305496064,
+    "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "from_user_7z": true,
+    "unchanged": true
+  },
+  "diagnostic_iso": {
+    "bytes": 305496064,
+    "sha256": "576e9699395dd142b666ed3b9d121db5037c63302dc0c4eee862a04ccfcdbb36",
+    "changed_byte_count": 1,
+    "absolute_byte_offset": 113778009,
+    "original_hex": "49",
+    "diagnostic_hex": "58",
+    "old_member_name": "ANIME000.IDT",
+    "new_member_name": "ANIME000.XDT",
+    "pspfs_index": 234,
+    "stored_member_size_bytes": 3537936,
+    "member_payload_changed": false,
+    "diagnostic_only_no_distribution": true
+  },
+  "official_ppsspp": {
+    "version": "1.20.4",
+    "platform": "Linux_x86_64_AppImage",
+    "bytes": 50689748,
+    "appimage_sha256": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21",
+    "runtime_graphics": "Vulkan/llvmpipe software",
+    "x11_virtual_display": "1280x720",
+    "sdl_window": "960x544",
+    "display_glx_disabled": true,
+    "graphics_config_set_to_vulkan": true,
+    "audio_external_shim": true,
+    "sharun_allow_ld_preload": true,
+    "commercial_game_or_emulator_modified": false
+  },
+  "actual_runtime": {
+    "experiment_control_a": "Original USA booted, title Start/Continue/Options, music-selection, prologue English visible",
+    "experiment_probe_b": "One-byte PSPFS name mutation ISO boot initially acknowledged then game crashed with INVALID MEMORY ACCESS before title menu",
+    "probe_b_psp_pc_hex": "0x08809498",
+    "probe_b_invalid_psp_access_hex": "0x00000015",
+    "probe_b_jit_symbol": "088094a8_z_un_08809354",
+    "experiment_control_a2": "Original USA restarted, boot and title menu recovered",
+    "original_english_prologue_x11_png_sha256": "8dbd15865eb008d2036d59e7e3bab3d130c3dfd438732c1f455dc456b22812ab",
+    "diagnostic_crash_x11_png_sha256": "87f9c2b4d451b41a4dc890daf031cb60cdd44d9a09ec9f8094f6244c8c78cd89",
+    "original_recovery_title_x11_png_sha256": "893c975382aa89437d7e9b7691eab9cdc9c525d0a490ae1f6e884c6499a57ba5",
+    "photos_real_ppsspp": true,
+    "public_committed_screenshots": 0,
+    "demonstrated_conclusion": "ANIME000.IDT filename/reference is needed before the title to avoid a crash in tested build",
+    "NOT_demonstrated": "ANIME000.IDT holds the visible English lettering in the prologue; no MIPS to specific frame/text texture to GE/VRAM trace"
+  },
+  "static_f3": {
+    "intro_named_scripts": [
+      "demo1001_00.dsf",
+      "demo1001_01.dsf"
+    ],
+    "spanish_intro_corpus_rows": 97,
+    "intro_unequal_length_blocked": 85,
+    "intro_equal_length_candidates": 11,
+    "intro_unchanged": 1,
+    "source_of_prologue_text": "NOT_DETERMINED",
+    "english_prologue_exact_sentence_matched_as_ascii_in_decoded_pspfs": false,
+    "incidental_some_say_match": "DATABASE.DAT/MONSTER.DAT monster description, NOT intro",
+    "candidate_animation_resources": [
+      {
+        "pspfs_index": 234,
+        "name": "ANIME000.IDT",
+        "bytes": 3537936,
+        "embedded_imy_header_occurrences": 231
+      },
+      {
+        "pspfs_index": 235,
+        "name": "ANIME001.LDT",
+        "bytes": 287472,
+        "embedded_imy_header_occurrences": 24
+      },
+      {
+        "pspfs_index": 236,
+        "name": "ANIME002.LDT",
+        "bytes": 2067856,
+        "embedded_imy_header_occurrences": 0
+      }
+    ]
+  },
+  "safety": {
+    "demo_name_mutation_permitted_for_release": false,
+    "sprite_or_font_modified": false,
+    "translation_inserted": false,
+    "corpus_9237_preserved": true,
+    "script_4524_deferred": true,
+    "events_safe_only": true,
+    "white_new_ink_default_false": true,
+    "pr7_must_remain_draft": true
+  },
+  "validation": {
+    "local_synthetic_test_cases_new": 14,
+    "local_source_snapshot_python_suite_tests_run": 517,
+    "local_python_suite_skipped": 1,
+    "local_go_tests_pass": true,
+    "local_integrity_check_pass": true,
+    "local_spanish_draft_check_pass": true,
+    "current_head_ci_after_commit": "VERIFY_SEPARATELY"
+  },
+  "next": "Use controlled nonbreaking resource-specific visual probes or PPSSPP debugger to identify prologue text texture in context; never infer from global filename ablation. Work on event relocation for 85 script entries; preserve F2 findings and PR draft."
+}

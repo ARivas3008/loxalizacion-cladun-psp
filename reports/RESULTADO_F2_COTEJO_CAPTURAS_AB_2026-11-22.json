@@ -1,0 +1,69 @@
+{
+  "schema": "cladun.f2.ab_tuika_probe_relay.v1",
+  "date": "2026-11-22",
+  "status": "F2_OPEN_STATIC_REAL_ISO_QA_SYNTHETIC_AB_COMPARER_NO_PPSSPP",
+  "binary": {
+    "original_iso_size": 305496064,
+    "original_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "probe_iso_size": 305496064,
+    "probe_sha256": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa",
+    "entire_iso_compared": true,
+    "exact_changed_absolute_offsets": [
+      114744872,
+      114744873,
+      114744874
+    ],
+    "before_rgba": [
+      249,
+      251,
+      249,
+      255
+    ],
+    "after_rgba": [
+      255,
+      0,
+      255,
+      255
+    ],
+    "pspfs_members": 349,
+    "pspfs_other_members_unchanged": 348,
+    "sysgra_dsarc_members": 27,
+    "sysgra_dsarc_others_unchanged": 26,
+    "pspfs_and_dsarc_tables_unchanged": true,
+    "original_tuika_sha256": "c47140753a462cc5b1cc454ee79e0c37b526f06ba5c663b957a91202ebd09127",
+    "probe_tuika_sha256": "efcf4f41f57c300476e8ce54a32dea01f242dda3fbf3fb9c4e0b582bad8f5252"
+  },
+  "new_code": {
+    "tool": "tools/f2_cotejar_capturas_tuika.py",
+    "tests": "tests/test_f2_cotejar_capturas_tuika.py",
+    "local_unit_tests_synthetic_pass": 21,
+    "local_unit_tests_synthetic_total": 21,
+    "real_ppsspp_frames_used": false,
+    "real_runtime_iso_loaded_identity_proven": false,
+    "mips_ram_ge_vram_proven": false,
+    "output_contains_gameplay_pixels": false
+  },
+  "environment": {
+    "git_clone_success": false,
+    "git_error": "Could not resolve host: github.com",
+    "official_appimage_download_success": false,
+    "official_ppsspp_appimage_sha256_from_release": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21",
+    "pp_sspp_session_executed": false,
+    "new_authentic_ppsspp_png": 0,
+    "new_ge_dumps": 0,
+    "canonical_f1_iso_locally_available": false,
+    "all_19_glyphs_multicontext_tested": false,
+    "f1_x11_960x544_regression_repeated": false
+  },
+  "protected_invariants": {
+    "corpus_rows_unchanged": 9237,
+    "old_glyphs_unchanged": 2721,
+    "additional_glyphs": 19,
+    "deferred_script_texts": 4524,
+    "event_safe_only_required": true,
+    "white_new_ink_default": false,
+    "pr7_draft": true,
+    "no_game_data_committed": true
+  },
+  "remaining": "PPSSPP real original/TUIKA A/B, GPU/VRAM/MIPS provenance, 19 glifos, F1 X11; F3 intro, F4 4524 script changes, F5 QA, F6 final patcher."
+}

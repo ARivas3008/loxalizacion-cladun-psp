@@ -1,0 +1,44 @@
+{
+  "schema": "cladun.r20.romhacking_progress.v1",
+  "source_iso_original_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "source_script_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+  "evidence_A_private": {
+    "script_blocks": 1625,
+    "commands": 51705,
+    "text_commands": 5397,
+    "nontext_commands": 46308,
+    "text_bearing_blocks": 587,
+    "min_following_commands": 2,
+    "median_following_commands": 67,
+    "max_following_commands": 1025,
+    "following_nontext_exposures": 576378,
+    "following_text_exposures": 181792,
+    "following_total_exposures": 758170,
+    "padding_bytes_total": 14621
+  },
+  "evidence_B_ci": {
+    "canonical_script_rows": 5207,
+    "same_width": 683,
+    "variable_width": 4524,
+    "variable_growing": 2883,
+    "variable_shrinking": 1641,
+    "variable_abs_delta_le3": 1971,
+    "new_equal_width_proposals_not_canonical": 6,
+    "confirmed_ci_head": "89a63050f9d4d85fccaf4c0cf5bbef64f5bffabc",
+    "ci_push": 45311336942,
+    "ci_pr": 45311343751,
+    "ci_success": true
+  },
+  "evidence_C": {
+    "ppsspp_executed": false,
+    "dispatcher_mips_verified": false
+  },
+  "official_substitutions": {
+    "integrated": 3724,
+    "total": 8248,
+    "pct": 45.15,
+    "deferred": 4524
+  },
+  "release_authorized": false,
+  "notes": "Counts of width deltas do not imply integration. 1971 near-width strings are a prioritization queue, not safe relocations."
+}

@@ -20,11 +20,13 @@ import struct
 import tempfile
 
 from auditar_preinsercion_es import SOURCE, DRAFT, IMMUTABLE, check_row, read_csv
+from menu_layout_es import patch_canonical_menu_layout, patch_canonical_menu_values
 from charset_es import encode_spanish, decode_spanish
 from extract_cladun import iso9660_entries, read_iso_file, pspfs_entries, dsarc_entries, decompress
 from font_es_patch import SOURCE_SHA256, sha256_file
 from font_es_narrow import build as build_font, verify as verify_font
 from imy_repack_safe import recompress
+from script_event_guard import audit_script_rebuild
 from ajustes_campos_es import effective
 from graficos_texto_es import GRAPHICS, patch_png
 
@@ -136,6 +138,421 @@ def plan_rows(rows):
     return changes, blocked, unchanged
 
 
+def combine_verified_script_packs(allowed, deferred, plan):
+    """Join R29-R33 to the fixed-offset planner, without changing the corpus.
+
+    All entries must be previously deferred SCRIPT records, not new arbitrary
+    writes.  Return new lists; never mutate caller inputs on failure.
+    """
+    require(len(plan) == 1448, "Verified pack count drift")
+    require(len(allowed) == 376 and len(deferred) == 4524,
+            "Conservative baseline script counts drift")
+    base = {src["grupo_id"] for src, _, _ in allowed}
+    waiting = {src["grupo_id"]: (src, old, new) for src, old, new in deferred}
+    require(len(base) == len(allowed) and len(waiting) == len(deferred)
+            and not base.intersection(waiting), "Baseline IDs collide")
+    merged = list(allowed)
+    selected = set()
+    spans = [(int(src["offset_hex"], 16), len(old)) for src, old, _ in allowed]
+    for item in plan:
+        gid = item["gid"]
+        require(gid in waiting and gid not in selected, "Pack ID is not a unique deferred slot")
+        src, old, ordinary = waiting[gid]
+        new = item["new"]
+        require(src["origen"] == TARGET_SCRIPT and int(src["offset_hex"], 16) == item["offset"]
+                and src["grupo_id"] == item["group_id"]
+                and bytes.fromhex(src["bytes_hex"]) == old == item["old"]
+                and len(ordinary) != len(old) == len(new) and new != old
+                and 0 not in new, "Pack preimage/width/control mismatch")
+        text = decode_spanish(new)
+        require(encode_spanish(text) == new, "Pack encoding roundtrip failed")
+        selected.add(gid)
+        spans.append((item["offset"], len(old)))
+        merged.append((src, old, new))
+    spans.sort()
+    require(all(a + z <= b for (a, z), (b, _) in zip(spans, spans[1:])),
+            "Merged script spans overlap")
+    remaining = [r for r in deferred if r[0]["grupo_id"] not in selected]
+    require(len(merged) == 1824 and len(remaining) == 3076, "Merged count drift")
+    merged.sort(key=lambda r: int(r[0]["offset_hex"], 16))
+    return merged, remaining, selected
+
+
+def plan_event_safe(changes, blocked, *, verified_packs=False):
+    """Fixed offsets for both historical and accumulated conservative profiles."""
+    allowed, deferred = [], []
+    for src, old, new in changes.get(TARGET_SCRIPT, []):
+        (allowed if len(old) == len(new) else deferred).append((src, old, new))
+    info = None
+    if verified_packs:
+        # Lazy import avoids the r31 -> r29 -> this module import cycle.
+        try:
+            from tools.r31_bulk_padding import make_plan, serialized, fnv
+        except ModuleNotFoundError:
+            from r31_bulk_padding import make_plan, serialized, fnv
+        require(sum(map(len, changes.values())) == 8248, "Canonical admissible count drift")
+        plan = make_plan(pack="all")
+        require(fnv(serialized(plan, False)) == 1345572782
+                and fnv(serialized(plan)) == 4017724493,
+                "R34 independently verified combined pack fingerprints differ")
+        allowed, deferred, selected = combine_verified_script_packs(allowed, deferred, plan)
+        info = {"baseline": 3724, "additional_exact": 146, "additional_padded": 1302,
+                "selected": len(selected), "total_planned": 5172, "remaining": 3076,
+                "runtime_verified": False, "release_authorized": False,
+                "selected_ids_sha256": hashlib.sha256(",".join(sorted(selected)).encode("ascii")).hexdigest()}
+    result = changes.copy()
+    if allowed:
+        result[TARGET_SCRIPT] = allowed
+    else:
+        result.pop(TARGET_SCRIPT, None)
+    event_deferred = [src["grupo_id"] for src, _, _ in deferred]
+    blocked = list(blocked) + [{"grupo_id": gid,
+                               "motivo": "CAMBIO_LONGITUD_SCRIPT_EVENTO_PENDIENTE"}
+                              for gid in event_deferred]
+    if verified_packs:
+        require(sum(map(len, result.values())) == 5172 and len(event_deferred) == 3076,
+                "Accumulated profile count drift")
+    return result, blocked, event_deferred, info
+
+
+def combine_unified_profile(changes, blocked, deferred, accumulated, *, draft_csv=DRAFT):
+    """R36 single-pass 7093 profile; preserve R34 and add only vetted ligatures."""
+    try:
+        from tools.r35_ligaduras_acumuladas import make_plan, PAIRS
+        from tools.f4_r21_ligature_capacity import decode_encoded
+    except ModuleNotFoundError:
+        from r35_ligaduras_acumuladas import make_plan, PAIRS
+        from f4_r21_ligature_capacity import decode_encoded
+    selected, full, verification = make_plan()
+    base = {src["grupo_id"]: (src, old, new) for src, old, new in changes[TARGET_SCRIPT]}
+    by_id = {src["grupo_id"]: src for src, dst in source_rows(SOURCE, draft_csv)}
+    extra = {x["gid"]: x for x in selected}
+    require(len(base) == 1824 and len(extra) == 1921
+            and set(extra) <= set(deferred) and not set(base) & set(extra),
+            "R36 duplicate or non-deferred text")
+    merged = list(base.values())
+    for gid, x in extra.items():
+        src = by_id[gid]
+        require(src["origen"] == TARGET_SCRIPT
+                and int(src["offset_hex"],16) == x["offset"]
+                and bytes.fromhex(src["bytes_hex"]) == x["old"]
+                and len(x["old"]) == len(x["new"]) and 0 not in x["new"],
+                "R36 source slot mismatch")
+        merged.append((src,x["old"],x["new"]))
+    merged.sort(key=lambda x:int(x[0]["offset_hex"],16))
+    require([(src["grupo_id"],int(src["offset_hex"],16),old,new) for src,old,new in merged]
+            == [(x["gid"],x["offset"],x["old"],x["new"]) for x in full],
+            "R36 independent full plan differs")
+    result = changes.copy()
+    result[TARGET_SCRIPT] = merged
+    remaining = [gid for gid in deferred if gid not in extra]
+    filtered = [b for b in blocked if b["grupo_id"] not in extra]
+    require(len(blocked)-len(filtered)==1921 and len(remaining)==1155
+            and sum(map(len,result.values()))==7093, "R36 totals differ")
+    info = {**accumulated,"selected":3369,"additional_ligatures":1921,
+            "r34_selected_ids_sha256":accumulated["selected_ids_sha256"],
+            "full_script_ids_sha256":hashlib.sha256(",".join(sorted(set(base)|set(extra))).encode("ascii")).hexdigest(),
+            "total_planned":7093,"remaining":1155,"script_changes":3745,
+            "compact_font_experimental":True,"runtime_verified":False,
+            "release_authorized":False,"r35_batch_verification":verification["batches"]}
+    info.pop("selected_ids_sha256",None)
+    return result,filtered,remaining,info
+
+
+def combine_extended_padding(changes,blocked,deferred,accumulated,*,draft_csv=DRAFT):
+    """R37 opt-in: longer whitespace is still visually unverified."""
+    try:
+        from tools.r37_relleno_ampliado import audit
+    except ModuleNotFoundError:
+        from r37_relleno_ampliado import audit
+    baseline=changes[TARGET_SCRIPT]
+    full=[{"gid":r["grupo_id"],"offset":int(r["offset_hex"],16),"old":a,"new":b}
+          for r,a,b in baseline]
+    selected,verification=audit(full)
+    extra={x["gid"]:x for x in selected}
+    require(len(extra)==275 and set(extra)<=set(deferred),"R37 non-deferred IDs")
+    by_id={r["grupo_id"]:r for r,_ in source_rows(SOURCE,draft_csv)}
+    merged=list(baseline)
+    for gid,x in extra.items():
+        r=by_id[gid]
+        require(r["origen"]==TARGET_SCRIPT and int(r["offset_hex"],16)==x["offset"]
+                and bytes.fromhex(r["bytes_hex"])==x["old"]
+                and len(x["old"])==len(x["new"]) and 0 not in x["new"],
+                "R37 slot mismatch")
+        merged.append((r,x["old"],x["new"]))
+    merged.sort(key=lambda x:int(x[0]["offset_hex"],16))
+    require(len({r["grupo_id"] for r,_,_ in merged})==4020
+            and all(int(a[0]["offset_hex"],16)+len(a[1])<=int(b[0]["offset_hex"],16)
+                    for a,b in zip(merged,merged[1:])), "R37 overlapping slots")
+    result=changes.copy()
+    result[TARGET_SCRIPT]=merged
+    remaining=[g for g in deferred if g not in extra]
+    filtered=[b for b in blocked if b["grupo_id"] not in extra]
+    require(len(remaining)==880 and len(blocked)-len(filtered)==275
+            and sum(map(len,result.values()))==7368,"R37 profile drift")
+    info={**accumulated,"selected":3644,"total_planned":7368,"remaining":880,
+          "script_changes":4020,"extended_padding":verification,
+          "full_script_ids_sha256":hashlib.sha256(",".join(sorted(r["grupo_id"] for r,_,_ in merged)).encode("ascii")).hexdigest()}
+    return result,filtered,remaining,info
+
+
+def combine_verified_symbols(changes,blocked,deferred,accumulated,*,draft_csv=DRAFT):
+    """R37: retain all original CP932 symbol bytes; do not promote runtime."""
+    try:
+        from tools.r37_simbolos_preservados import audit
+    except ModuleNotFoundError:
+        from r37_simbolos_preservados import audit
+    baseline=changes[TARGET_SCRIPT]
+    full=[{"gid":r["grupo_id"],"offset":int(r["offset_hex"],16),"old":a,"new":b}
+          for r,a,b in baseline]
+    selected,verification=audit(full)
+    extra={x["gid"]:x for x in selected}
+    require(len(extra)==53 and set(extra)<=set(deferred),"R37 symbol IDs not deferred")
+    by_id={r["grupo_id"]:r for r,_ in source_rows(SOURCE,draft_csv)}
+    merged=list(baseline)
+    for gid,x in extra.items():
+        r=by_id[gid]
+        require(r["origen"]==TARGET_SCRIPT and int(r["offset_hex"],16)==x["offset"]
+                and bytes.fromhex(r["bytes_hex"])==x["old"]
+                and len(x["old"])==len(x["new"]) and 0 not in x["new"],
+                "R37 symbol slot mismatch")
+        merged.append((r,x["old"],x["new"]))
+    merged.sort(key=lambda x:int(x[0]["offset_hex"],16))
+    require(len({r["grupo_id"] for r,_,_ in merged})==4073
+            and all(int(a[0]["offset_hex"],16)+len(a[1])<=int(b[0]["offset_hex"],16)
+                    for a,b in zip(merged,merged[1:])), "R37 symbol overlaps")
+    result=changes.copy()
+    result[TARGET_SCRIPT]=merged
+    remaining=[g for g in deferred if g not in extra]
+    filtered=[b for b in blocked if b["grupo_id"] not in extra]
+    require(len(remaining)==827 and len(blocked)-len(filtered)==53
+            and sum(map(len,result.values()))==7421,"R37 complete residual profile drift")
+    info={**accumulated,"selected":3697,"total_planned":7421,"remaining":827,
+          "script_changes":4073,"verified_symbols":verification,
+          "full_script_ids_sha256":hashlib.sha256(",".join(sorted(r["grupo_id"] for r,_,_ in merged)).encode("ascii")).hexdigest()}
+    return result,filtered,remaining,info
+
+
+def combine_reviewed_concise(changes,blocked,deferred,accumulated,*,draft_csv=DRAFT):
+    """R38: add the 99 authenticated concise alternatives to the entire R37 plan."""
+    try:
+        from tools.r38_concision import audit
+    except ModuleNotFoundError:
+        from r38_concision import audit
+    baseline=changes[TARGET_SCRIPT]
+    full=[{"gid":r["grupo_id"],"offset":int(r["offset_hex"],16),"old":a,"new":b}
+          for r,a,b in baseline]
+    selected,verification=audit(full)
+    extra={x["gid"]:x for x in selected}
+    require(len(extra)==99 and set(extra)<=set(deferred),"R38 non-deferred IDs")
+    by_id={r["grupo_id"]:r for r,_ in source_rows(SOURCE,draft_csv)}
+    merged=list(baseline)
+    for gid,x in extra.items():
+        r=by_id[gid]
+        require(r["origen"]==TARGET_SCRIPT and int(r["offset_hex"],16)==x["offset"]
+                and bytes.fromhex(r["bytes_hex"])==x["old"]
+                and len(x["old"])==len(x["new"]) and 0 not in x["new"],
+                "R38 slot mismatch")
+        merged.append((r,x["old"],x["new"]))
+    merged.sort(key=lambda x:int(x[0]["offset_hex"],16))
+    require(len({r["grupo_id"] for r,_,_ in merged})==4172
+            and all(int(a[0]["offset_hex"],16)+len(a[1])<=int(b[0]["offset_hex"],16)
+                    for a,b in zip(merged,merged[1:])), "R38 overlapping slots")
+    result=changes.copy()
+    result[TARGET_SCRIPT]=merged
+    remaining=[g for g in deferred if g not in extra]
+    filtered=[b for b in blocked if b["grupo_id"] not in extra]
+    require(len(remaining)==728 and len(blocked)-len(filtered)==99
+            and sum(map(len,result.values()))==7520,"R38 accumulated profile drift")
+    info={**accumulated,"selected":3796,"total_planned":7520,"remaining":728,
+          "script_changes":4172,"reviewed_concise":verification,
+          "full_script_ids_sha256":hashlib.sha256(",".join(sorted(r["grupo_id"] for r,_,_ in merged)).encode("ascii")).hexdigest()}
+    return result,filtered,remaining,info
+
+
+def combine_r39_concise(changes,blocked,deferred,accumulated,*,draft_csv=DRAFT):
+    """R39: add the 176 authenticated concise alternatives to the entire R37 plan."""
+    try:
+        from tools.r39_concision import audit
+    except ModuleNotFoundError:
+        from r39_concision import audit
+    baseline=changes[TARGET_SCRIPT]
+    full=[{"gid":r["grupo_id"],"offset":int(r["offset_hex"],16),"old":a,"new":b}
+          for r,a,b in baseline]
+    selected,verification=audit(full)
+    extra={x["gid"]:x for x in selected}
+    require(len(extra)==176 and set(extra)<=set(deferred),"R39 non-deferred IDs")
+    by_id={r["grupo_id"]:r for r,_ in source_rows(SOURCE,draft_csv)}
+    merged=list(baseline)
+    for gid,x in extra.items():
+        r=by_id[gid]
+        require(r["origen"]==TARGET_SCRIPT and int(r["offset_hex"],16)==x["offset"]
+                and bytes.fromhex(r["bytes_hex"])==x["old"]
+                and len(x["old"])==len(x["new"]) and 0 not in x["new"],
+                "R39 slot mismatch")
+        merged.append((r,x["old"],x["new"]))
+    merged.sort(key=lambda x:int(x[0]["offset_hex"],16))
+    require(len({r["grupo_id"] for r,_,_ in merged})==4348
+            and all(int(a[0]["offset_hex"],16)+len(a[1])<=int(b[0]["offset_hex"],16)
+                    for a,b in zip(merged,merged[1:])), "R39 overlapping slots")
+    result=changes.copy()
+    result[TARGET_SCRIPT]=merged
+    remaining=[g for g in deferred if g not in extra]
+    filtered=[b for b in blocked if b["grupo_id"] not in extra]
+    require(len(remaining)==552 and len(blocked)-len(filtered)==176
+            and sum(map(len,result.values()))==7696,"R39 accumulated profile drift")
+    info={**accumulated,"selected":3972,"total_planned":7696,"remaining":552,
+          "script_changes":4348,"reviewed_concise_r39":verification,
+          "full_script_ids_sha256":hashlib.sha256(",".join(sorted(r["grupo_id"] for r,_,_ in merged)).encode("ascii")).hexdigest()}
+    return result,filtered,remaining,info
+
+
+def combine_r40_concise(changes,blocked,deferred,accumulated,*,draft_csv=DRAFT):
+    """R40: add the 492 authenticated concise alternatives to the entire R39 plan."""
+    try:
+        from tools.r40_concision import audit
+    except ModuleNotFoundError:
+        from r40_concision import audit
+    baseline=changes[TARGET_SCRIPT]
+    full=[{"gid":r["grupo_id"],"offset":int(r["offset_hex"],16),"old":a,"new":b}
+          for r,a,b in baseline]
+    selected,verification=audit(full)
+    extra={x["gid"]:x for x in selected}
+    require(len(extra)==492 and set(extra)<=set(deferred),"R40 non-deferred IDs")
+    by_id={r["grupo_id"]:r for r,_ in source_rows(SOURCE,draft_csv)}
+    merged=list(baseline)
+    for gid,x in extra.items():
+        r=by_id[gid]
+        require(r["origen"]==TARGET_SCRIPT and int(r["offset_hex"],16)==x["offset"]
+                and bytes.fromhex(r["bytes_hex"])==x["old"]
+                and len(x["old"])==len(x["new"]) and 0 not in x["new"],
+                "R40 slot mismatch")
+        merged.append((r,x["old"],x["new"]))
+    merged.sort(key=lambda x:int(x[0]["offset_hex"],16))
+    require(len({r["grupo_id"] for r,_,_ in merged})==4840
+            and all(int(a[0]["offset_hex"],16)+len(a[1])<=int(b[0]["offset_hex"],16)
+                    for a,b in zip(merged,merged[1:])), "R40 overlapping slots")
+    result=changes.copy()
+    result[TARGET_SCRIPT]=merged
+    remaining=[g for g in deferred if g not in extra]
+    filtered=[b for b in blocked if b["grupo_id"] not in extra]
+    require(len(remaining)==60 and len(blocked)-len(filtered)==492
+            and sum(map(len,result.values()))==8188,"R40 accumulated profile drift")
+    info={**accumulated,"selected":4464,"total_planned":8188,"remaining":60,
+          "script_changes":4840,"reviewed_concise_r40":verification,
+          "full_script_ids_sha256":hashlib.sha256(",".join(sorted(r["grupo_id"] for r,_,_ in merged)).encode("ascii")).hexdigest()}
+    return result,filtered,remaining,info
+
+
+
+def combine_r42_concise(changes,blocked,deferred,accumulated,*,draft_csv=DRAFT):
+    """R42: add the 21 authenticated R42 alternatives to the complete R40 plan."""
+    try:
+        from tools.r42_concision import audit
+    except ModuleNotFoundError:
+        from r42_concision import audit
+    baseline=changes[TARGET_SCRIPT]
+    full=[{"gid":r["grupo_id"],"offset":int(r["offset_hex"],16),"old":a,"new":b}
+          for r,a,b in baseline]
+    selected,verification=audit(full)
+    extra={x["gid"]:x for x in selected}
+    require(len(extra)==21 and set(extra)<=set(deferred),"R42 non-deferred IDs")
+    by_id={r["grupo_id"]:r for r,_ in source_rows(SOURCE,draft_csv)}
+    merged=list(baseline)
+    for gid,x in extra.items():
+        r=by_id[gid]
+        require(r["origen"]==TARGET_SCRIPT and int(r["offset_hex"],16)==x["offset"]
+                and bytes.fromhex(r["bytes_hex"])==x["old"]
+                and len(x["old"])==len(x["new"]) and 0 not in x["new"],
+                "R42 slot mismatch")
+        merged.append((r,x["old"],x["new"]))
+    merged.sort(key=lambda x:int(x[0]["offset_hex"],16))
+    require(len({r["grupo_id"] for r,_,_ in merged})==4861
+            and all(int(a[0]["offset_hex"],16)+len(a[1])<=int(b[0]["offset_hex"],16)
+                    for a,b in zip(merged,merged[1:])), "R42 overlapping slots")
+    result=changes.copy()
+    result[TARGET_SCRIPT]=merged
+    remaining=[g for g in deferred if g not in extra]
+    filtered=[b for b in blocked if b["grupo_id"] not in extra]
+    require(len(remaining)==39 and len(blocked)-len(filtered)==21
+            and sum(map(len,result.values()))==8209,"R42 accumulated profile drift")
+    info={**accumulated,"selected":4485,"total_planned":8209,"remaining":39,
+          "script_changes":4861,"reviewed_concise_r42":verification,
+          "full_script_ids_sha256":hashlib.sha256(",".join(sorted(r["grupo_id"] for r,_,_ in merged)).encode("ascii")).hexdigest()}
+    return result,filtered,remaining,info
+
+
+
+def combine_r43_concise(changes,blocked,deferred,accumulated,*,draft_csv=DRAFT):
+    """Five new R43 slots; repair one previous slot and close one unchanged name."""
+    try:
+        from tools.r43_concision import audit, UNCHANGED_ID, REPAIR_ID
+    except ModuleNotFoundError:
+        from r43_concision import audit, UNCHANGED_ID, REPAIR_ID
+    baseline=changes[TARGET_SCRIPT]
+    full=[{"gid":r["grupo_id"],"offset":int(r["offset_hex"],16),"old":a,"new":b}
+          for r,a,b in baseline]
+    selected,repair,verification=audit(full)
+    extra={x["gid"]:x for x in selected}
+    resolved=set(extra)|{UNCHANGED_ID}
+    require(len(extra)==5 and resolved<=set(deferred),"R43 non-deferred ID")
+    by_id={r["grupo_id"]:r for r,_ in source_rows(SOURCE,draft_csv)}
+    merged=[(r,a,repair["new"] if r["grupo_id"]==REPAIR_ID else b) for r,a,b in baseline]
+    for gid,x in extra.items():
+        r=by_id[gid]
+        require(r["origen"]==TARGET_SCRIPT and int(r["offset_hex"],16)==x["offset"]
+                and bytes.fromhex(r["bytes_hex"])==x["old"] and len(x["old"])==len(x["new"])
+                and 0 not in x["new"],"R43 slot mismatch")
+        merged.append((r,x["old"],x["new"]))
+    merged.sort(key=lambda x:int(x[0]["offset_hex"],16))
+    require(len(merged)==len({r["grupo_id"] for r,_,_ in merged})==4866
+            and all(int(a[0]["offset_hex"],16)+len(a[1])<=int(b[0]["offset_hex"],16)
+                    for a,b in zip(merged,merged[1:])),"R43 overlapping slots")
+    result=changes.copy(); result[TARGET_SCRIPT]=merged
+    remaining=[g for g in deferred if g not in resolved]
+    filtered=[b for b in blocked if b["grupo_id"] not in resolved]
+    require(len(remaining)==33 and len(blocked)-len(filtered)==6
+            and sum(map(len,result.values()))==8214,"R43 profile drift")
+    info={**accumulated,"selected":4490,"total_planned":8214,"remaining":33,
+          "script_changes":4866,"resolved_without_new_bytes":1,"resolved_original_target":8215,
+          "reviewed_concise_r43":verification,
+          "full_script_ids_sha256":hashlib.sha256(",".join(sorted(r["grupo_id"] for r,_,_ in merged)).encode("ascii")).hexdigest()}
+    return result,filtered,remaining,info
+
+
+def combine_r44_local_experimental(changes,blocked,deferred,accumulated,*,draft_csv=DRAFT,optimized=False):
+    """RISK: 33 new residual translations, 18 donors, moving command offsets."""
+    try:
+        from tools.r44_local_experimental import audit
+    except ModuleNotFoundError:
+        from r44_local_experimental import audit
+    if optimized:
+        from tools.r52_local_optimized import audit
+    baseline=changes[TARGET_SCRIPT]
+    full=[{"gid":r["grupo_id"],"offset":int(r["offset_hex"],16),"old":a,"new":b}
+          for r,a,b in baseline]
+    selected,donors,verification=audit(full,deferred)
+    extra={x["gid"]:x for x in selected}
+    require(set(extra)==set(deferred),"R44 deferred set drift")
+    by_id={r["grupo_id"]:r for r,_ in source_rows(SOURCE,draft_csv)}
+    merged=[(r,a,donors[r["grupo_id"]]["new"] if r["grupo_id"] in donors else b)
+            for r,a,b in baseline]
+    for gid,x in extra.items():
+        r=by_id[gid]
+        require(r["origen"]==TARGET_SCRIPT and int(r["offset_hex"],16)==x["offset"]
+                and bytes.fromhex(r["bytes_hex"])==x["old"] and 0 not in x["new"],"R44 slot mismatch")
+        merged.append((r,x["old"],x["new"]))
+    merged.sort(key=lambda x:int(x[0]["offset_hex"],16))
+    require(len(merged)==len({r["grupo_id"] for r,_,_ in merged})==4899,"R44 merged count")
+    result=changes.copy(); result[TARGET_SCRIPT]=merged
+    filtered=[b for b in blocked if b["grupo_id"] not in extra]
+    require(len(blocked)-len(filtered)==33 and sum(map(len,result.values()))==8247,"R44 profile drift")
+    info={**accumulated,"selected":4523,"total_planned":8247,"remaining":0,
+          "script_changes":4899,"resolved_original_target":8248,
+          "local_relocation_experimental":verification,
+          "full_script_ids_sha256":hashlib.sha256(",".join(sorted(r["grupo_id"] for r,_,_ in merged)).encode("ascii")).hexdigest()}
+    return result,filtered,[],info
+
 def read_resources(iso):
     _, iso_files = iso9660_entries(iso)
     target = next((x for x in iso_files if x["path"] == "PSP_GAME/USRDIR/DATA.DAT"), None)
@@ -215,7 +632,7 @@ def slot_not_in_command(start, end, allowed):
     return not any(start <= off < end for off in allowed)
 
 
-def rebuild_script_arc(archive, replacements):
+def rebuild_script_arc(archive, replacements, *, event_report=None, strict_event_offsets=False):
     children = dsarc_entries(archive)
     by_name = {x["name"]: x for x in children}
     require(set(by_name) == {"AISCRIPT.DAT", "AISCRIPT.TBL", "SCRIPT.DAT", "SCRIPT.TBL"},
@@ -225,6 +642,12 @@ def rebuild_script_arc(archive, replacements):
     script_old = archive[script["offset"]:script["offset"] + script["size"]]
     tbl_old = archive[tbl["offset"]:tbl["offset"] + tbl["size"]]
     new_script, new_tbl = text_command_rebuild(script_old, tbl_old, replacements)
+    # Independent command-by-command comparison before any DSARC or IMY packing.
+    event_audit = audit_script_rebuild(
+        script_old, tbl_old, new_script, new_tbl, replacements,
+        require_fixed_offsets=strict_event_offsets)
+    if event_report is not None:
+        event_report.update(event_audit)
     new_tbl_start = strict_next(script["offset"] + len(new_script), 512)
     archive_len = align(new_tbl_start + len(new_tbl), 256)
     result = bytearray(archive_len)
@@ -628,12 +1051,81 @@ def append_text_containers(source_iso, source_pack, entries, replacements, resul
 
 
 def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
-          experimental_partial=False, add_spanish_font=True):
+          experimental_partial=False, add_spanish_font=True, event_safe_only=False,
+          verified_packs=False, unified_profile=False, extended_padding=False, verified_symbols=False, concise_verified=False, r39_verified=False, r40_verified=False, r42_verified=False, r43_verified=False, r44_local_experimental=False, r52_local_optimized=False):
     source_iso, candidate, report = map(Path, (source_iso, candidate, report))
     require(source_iso.resolve() != candidate.resolve(), "Cannot overwrite source ISO")
     require(sha256_file(source_iso) == SOURCE_SHA256, "Wrong Cladun USA source ISO")
+    require(not (r44_local_experimental and r52_local_optimized),"Choose exactly one local relocation profile")
+    r44_local_experimental = r44_local_experimental or r52_local_optimized
+    require(not r44_local_experimental or (r43_verified and experimental_partial and event_safe_only),
+            "R44 requires explicit local relocation experiment and R43 base")
+    require(not r43_verified or r42_verified,"R43 requires R42 profile")
+    require(not r42_verified or r40_verified,"R42 requires R40 profile")
+    require(not r40_verified or r39_verified,"R40 requires R39 profile")
+    require(not r39_verified or concise_verified,"R39 requires prior concise profile")
+    require(not concise_verified or verified_symbols,"Concise profile requires verified symbols")
+    require(not verified_symbols or extended_padding,"Verified symbols require extended profile")
+    require(not extended_padding or unified_profile,"Extended padding requires unified profile")
+    if unified_profile:
+        require(verified_packs and event_safe_only and experimental_partial and add_spanish_font,
+                "Unified profile requires verified packs, fixed offsets, font and explicit partial mode")
+        try:
+            from tools.f4_r23_font_compact_candidate import candidate_path
+        except ModuleNotFoundError:
+            from f4_r23_font_compact_candidate import candidate_path
+        candidate = candidate_path(candidate, source_iso)
+        require(report.resolve() not in (source_iso.resolve(),candidate.resolve(),
+                                        Path(source_csv).resolve(),Path(draft_csv).resolve())
+                and not report.exists() and not report.is_symlink(),
+                "Unified report must be a new file, never overwrite inputs or candidate")
     rows = source_rows(source_csv, draft_csv)
+    layout_f1 = None
+    # El borrador completo es literario. Ajustar solo la presentación
+    # verificada al compilar su versión canónica, no ensayos --borrador.
+    if Path(source_csv).resolve() == Path(SOURCE).resolve() and Path(draft_csv).resolve() == Path(DRAFT).resolve():
+        rows, layout_f1 = patch_canonical_menu_layout(rows)
+        rows, values_f1 = patch_canonical_menu_values(rows)
+        layout_f1["onoff_presentacion"] = values_f1
     changes, blocked, unchanged = plan_rows(rows)
+    event_deferred = []
+    accumulated = None
+    if verified_packs:
+        require(event_safe_only and experimental_partial and add_spanish_font
+                and Path(source_csv).resolve() == Path(SOURCE).resolve()
+                and Path(draft_csv).resolve() == Path(DRAFT).resolve(),
+                "Verified packs require canonical corpus, font, fixed offsets and experimental partial mode")
+    if event_safe_only:
+        changes, blocked, event_deferred, accumulated = plan_event_safe(
+            changes, blocked, verified_packs=verified_packs)
+    if unified_profile:
+        changes, blocked, event_deferred, accumulated = combine_unified_profile(
+            changes, blocked, event_deferred, accumulated, draft_csv=draft_csv)
+    if extended_padding:
+        changes,blocked,event_deferred,accumulated=combine_extended_padding(
+            changes,blocked,event_deferred,accumulated,draft_csv=draft_csv)
+    if verified_symbols:
+        changes,blocked,event_deferred,accumulated=combine_verified_symbols(
+            changes,blocked,event_deferred,accumulated,draft_csv=draft_csv)
+    if concise_verified:
+        changes,blocked,event_deferred,accumulated=combine_reviewed_concise(
+            changes,blocked,event_deferred,accumulated,draft_csv=draft_csv)
+    if r39_verified:
+        changes,blocked,event_deferred,accumulated=combine_r39_concise(
+            changes,blocked,event_deferred,accumulated,draft_csv=draft_csv)
+    if r40_verified:
+        changes,blocked,event_deferred,accumulated=combine_r40_concise(
+            changes,blocked,event_deferred,accumulated,draft_csv=draft_csv)
+    if r42_verified:
+        changes,blocked,event_deferred,accumulated=combine_r42_concise(
+            changes,blocked,event_deferred,accumulated,draft_csv=draft_csv)
+    if r43_verified:
+        changes,blocked,event_deferred,accumulated=combine_r43_concise(
+            changes,blocked,event_deferred,accumulated,draft_csv=draft_csv)
+        unchanged += 1
+    if r44_local_experimental:
+        changes,blocked,event_deferred,accumulated=combine_r44_local_experimental(
+            changes,blocked,event_deferred,accumulated,draft_csv=draft_csv,optimized=r52_local_optimized)
     all_changed = sum(len(x) for x in changes.values())
     counted = Counter(x["motivo"] for x in blocked)
     result = {"estado": "BLOQUEADO_SIN_CANDIDATO", "original_sha256": SOURCE_SHA256,
@@ -642,7 +1134,13 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
               "bloqueos": dict(counted),
               "bloqueos_por_grupo": blocked,
               "modo_completo": not experimental_partial,
-              "ppsspp_validado": False, "aprobado_para_distribucion": False}
+              "modo_eventos_offsets_fijos": event_safe_only and not r44_local_experimental,
+              "reubicacion_local_experimental": r44_local_experimental,
+              "perfil_reubicacion_local": "R52" if r52_local_optimized else "R44" if r44_local_experimental else None,
+              "dialogos_pospuestos_por_desplazamiento": len(event_deferred),
+              "ppsspp_validado": False, "aprobado_para_distribucion": False,
+              "f1_presentacion_menu": layout_f1,
+              "perfil_conservador_acumulado": accumulated}
     report.parent.mkdir(parents=True, exist_ok=True)
     report.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     if blocked and not experimental_partial:
@@ -655,12 +1153,34 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
             build_font(source_iso, interim)
             verify_font(source_iso, interim)
             base = interim
+            if unified_profile:
+                try:
+                    from tools.f4_r21_ligature_collision_safe import verify_own_iso_raster
+                    from tools.f4_r21_ligature_font_prototype import build_in_memory
+                    from tools.f4_r24_piloto_1650_ligaduras import update_font_in_existing_candidate
+                except ModuleNotFoundError:
+                    from f4_r21_ligature_collision_safe import verify_own_iso_raster
+                    from f4_r21_ligature_font_prototype import build_in_memory
+                    from f4_r24_piloto_1650_ligaduras import update_font_in_existing_candidate
+                result["auditoria_raster_original"] = verify_own_iso_raster(source_iso)
+                compact, metric = build_in_memory(source_iso, Path(draft_csv),
+                    ligature_count=44, member_alignment=16, include_binary=True)
+                require(len(compact)==144000 and metric["preserved_original_base_glyphs"]==2721
+                        and metric["preserved_existing_spanish_glyphs"]==19
+                        and metric["ligature_count"]==44
+                        and metric["can_write_in_original_slot_without_relocation"],
+                        "R36 compact font geometry drift")
+                base = Path(tmp) / "fuente-unificada.iso"
+                result["auditoria_fuente_unificada"] = update_font_in_existing_candidate(
+                    source_iso, interim, base, compact)
+                result["fuente_unificada"] = metric
         else:
             base = source_iso
         _, package, entries = read_resources(base)
         table = {e["name"]: e for e in entries}
         replacements = {}
         applied = set()
+        event_audit = None
         if TARGET_SCRIPT in changes:
             stored, raw, method = parent_content(package, table["SCRIPT.SDT"])
             require(method.startswith("IMY"), "SCRIPT.SDT compression format changed")
@@ -669,8 +1189,49 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
                 at = int(src["offset_hex"], 16)
                 require(at not in script_changes, "Duplicate SCRIPT.DAT text offset")
                 script_changes[at] = (old, new, src["grupo_id"])
-            rewritten = rebuild_script_arc(raw, script_changes)
-            replacements["SCRIPT.SDT"] = (recompress(stored, rewritten), len(rewritten))
+            event_audit = {}
+            if unified_profile:
+                # Single replay against the original archive; preserve DSARC geometry.
+                try:
+                    from tools.f4_r24_piloto_1650_ligaduras import replace_member_payload
+                    from tools.r32_auditar_packs import selective_repack
+                except ModuleNotFoundError:
+                    from f4_r24_piloto_1650_ligaduras import replace_member_payload
+                    from r32_auditar_packs import selective_repack
+                members = dsarc_entries(raw)
+                by_name = {m["name"]:m for m in members}
+                def child(name):
+                    m=by_name[name]
+                    return raw[m["offset"]:m["offset"]+m["size"]]
+                original_script, original_table = child("SCRIPT.DAT"), child("SCRIPT.TBL")
+                if r44_local_experimental:
+                    try:
+                        from tools.r44_local_experimental import rebuild
+                    except ModuleNotFoundError:
+                        from r44_local_experimental import rebuild
+                    if r52_local_optimized:
+                        from tools.r52_local_optimized import rebuild
+                    new_script,new_table,event_audit=rebuild(original_script,original_table,script_changes)
+                else:
+                    new_script,new_table = text_command_rebuild(original_script,original_table,script_changes)
+                    event_audit = audit_script_rebuild(original_script,original_table,
+                        new_script,new_table,script_changes,require_fixed_offsets=True)
+                require(new_table==original_table,"R36 SCRIPT.TBL differs")
+                rewritten = replace_member_payload(raw,members,"SCRIPT.DAT",new_script)
+                packed, count = selective_repack(stored,rewritten)
+                result["script_imy_repacked_blocks"] = count
+            else:
+                rewritten = rebuild_script_arc(
+                    raw, script_changes, event_report=event_audit,
+                    strict_event_offsets=event_safe_only)
+                packed = recompress(stored, rewritten)
+            if verified_packs:
+                require((event_audit["all_command_offsets_preserved"] if not r44_local_experimental
+                         else event_audit["moved_script_starts"]==0 and event_audit["moved_command_offsets"]==(146 if r52_local_optimized else 2712))
+                        and event_audit["nontext_commands_byte_exact"] == 46308
+                        and event_audit["text_commands_replaced"] == (4899 if r44_local_experimental else 4866 if r43_verified else 4861 if r42_verified else 4840 if r40_verified else 4348 if r39_verified else 4172 if concise_verified else 4073 if verified_symbols else 4020 if extended_padding else 3745 if unified_profile else 1824),
+                        "Accumulated SCRIPT failed physical event audit")
+            replacements["SCRIPT.SDT"] = (packed, len(rewritten))
             applied.update(a["grupo_id"] for a, old, new in changes[TARGET_SCRIPT])
 
         db_changes = {k.split("/", 1)[1]: records for k, records in changes.items()
@@ -728,7 +1289,13 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
                        "recursos_no_textuales_mismo_offset_y_mismos_bytes": 349 - len(replacements),
                        "fuente_es_prototipo": add_spanish_font,
                        "graficos_textuales_verificados": graphic_audits,
-                       "todos_los_textos_insertados": len(blocked) == 0})
+                       "todos_los_textos_insertados": len(blocked) == 0,
+                       "auditoria_eventos": event_audit,
+                       "control_logico_no_textual_intacto": bool(event_audit and
+                           event_audit["nontext_payload_changes"] == 0 and
+                           event_audit["opcode_instruction_id_order_changes"] == 0),
+                       "offsets_de_comandos_preservados": bool(event_audit and
+                           event_audit["all_command_offsets_preserved"])})
         report.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n",
                           encoding="utf-8")
     return result
@@ -745,12 +1312,50 @@ def main():
     p.add_argument("--experimental-parcial", action="store_true",
                    help="Allow candidate with unhandled text (never claim full translation)")
     p.add_argument("--sin-fuente", action="store_true", help="Developer-only, no Spanish glyphs")
+    p.add_argument("--event-safe-only", action="store_true",
+                   help="Conservar absolutamente todos los offsets de comandos; pospone textos de longitud diferente")
+    p.add_argument("--packs-verificados", action="store_true",
+                   help="Integrar 146 exactos + 1302 acolchados en la base conservadora; experimental, sin QA PPSSPP")
+    p.add_argument("--perfil-unificado", action="store_true",
+                   help="7093 textos, fuente compacta experimental 44 ligaduras; implica los modos parciales y offsets fijos. NO es release.")
+    p.add_argument("--relleno-ampliado", action="store_true",
+                   help="Con --perfil-unificado añade 275 textos con 8–31 espacios; riesgo visual sin PPSSPP.")
+    p.add_argument("--residuales-verificados", action="store_true",
+                   help="Con --perfil-unificado añade 275 rellenos y 53 textos CP932 verificados estáticamente; experimental.")
+    p.add_argument("--perfil-acumulado", action="store_true",
+                   help="Lotes R43: 8214 sustituciones, 1 registro resuelto sin cambios, 33 pendientes; experimental. No release.")
+    p.add_argument("--perfil-total-local-experimental",action="store_true",
+                   help="8247 substitutions + 1 unchanged; MOVES 2712 commands; private diagnostic only.")
+    p.add_argument("--perfil-total-local-optimizado",action="store_true",
+                   help="R52: 8247 substitutions + 1 unchanged, 146 moved commands; private diagnostic only.")
+    p.add_argument("--acepto-reubicacion-local",action="store_true",
+                   help="Acknowledge unverified event references; no BPS export.")
     args = p.parse_args()
+    if args.perfil_total_local_experimental and args.perfil_total_local_optimizado:
+        p.error("Choose only one local relocation profile")
+    if args.perfil_total_local_experimental or args.perfil_total_local_optimizado:
+        if not args.acepto_reubicacion_local or args.event_safe_only:
+            p.error("R44 requires explicit local-relocation acceptance and cannot be event-safe-only")
+        args.perfil_acumulado=True
+    elif args.acepto_reubicacion_local:
+        p.error("Risk flag requires the R44 experimental profile")
     try:
         summary = build(args.iso, args.candidate, args.report,
                         source_csv=args.original, draft_csv=args.borrador,
-                        experimental_partial=args.experimental_parcial,
-                        add_spanish_font=not args.sin_fuente)
+                        experimental_partial=args.experimental_parcial or args.perfil_unificado or args.perfil_acumulado,
+                        add_spanish_font=not args.sin_fuente,
+                        event_safe_only=args.event_safe_only or args.perfil_unificado or args.perfil_acumulado,
+                        verified_packs=args.packs_verificados or args.perfil_unificado or args.perfil_acumulado,
+                        unified_profile=args.perfil_unificado or args.perfil_acumulado,
+                        extended_padding=args.relleno_ampliado or args.residuales_verificados or args.perfil_acumulado,
+                        verified_symbols=args.residuales_verificados or args.perfil_acumulado,
+                        concise_verified=args.perfil_acumulado,
+                        r39_verified=args.perfil_acumulado,
+                        r40_verified=args.perfil_acumulado,
+                        r42_verified=args.perfil_acumulado,
+                        r43_verified=args.perfil_acumulado,
+                        r44_local_experimental=args.perfil_total_local_experimental,
+                        r52_local_optimized=args.perfil_total_local_optimizado)
         print(json.dumps({k: v for k, v in summary.items() if k != "bloqueos_por_grupo"},
                          indent=2, ensure_ascii=False))
     except Exception as exc:

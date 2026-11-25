@@ -1,0 +1,436 @@
+{
+  "schema": "cladun.f2.glyph_geometry_and_ws_v1204_20261121.v1",
+  "status": "F2_OPEN_STATIC_QA_ONLY",
+  "iso_usa_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "iso_usa_bytes": 305496064,
+  "source_rasters": 2721,
+  "spanish_glyphs": 19,
+  "atlas_total": 2740,
+  "ink15_texels": 100,
+  "glyphs": [
+    {
+      "glyph": "á",
+      "base": "a",
+      "raw_metric": "0007",
+      "code": "A1",
+      "slot": 95,
+      "bbox_original": [
+        0,
+        4,
+        6,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        0,
+        6,
+        13
+      ],
+      "index15_pixels": 4
+    },
+    {
+      "glyph": "é",
+      "base": "e",
+      "raw_metric": "0007",
+      "code": "A2",
+      "slot": 96,
+      "bbox_original": [
+        0,
+        4,
+        6,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        0,
+        6,
+        13
+      ],
+      "index15_pixels": 4
+    },
+    {
+      "glyph": "í",
+      "base": "i",
+      "raw_metric": "0103",
+      "code": "A3",
+      "slot": 97,
+      "bbox_original": [
+        2,
+        3,
+        3,
+        13
+      ],
+      "bbox_generada": [
+        2,
+        0,
+        4,
+        13
+      ],
+      "index15_pixels": 4
+    },
+    {
+      "glyph": "ó",
+      "base": "o",
+      "raw_metric": "0007",
+      "code": "A4",
+      "slot": 98,
+      "bbox_original": [
+        0,
+        4,
+        6,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        0,
+        6,
+        13
+      ],
+      "index15_pixels": 4
+    },
+    {
+      "glyph": "ú",
+      "base": "u",
+      "raw_metric": "0006",
+      "code": "A5",
+      "slot": 99,
+      "bbox_original": [
+        0,
+        4,
+        6,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        0,
+        6,
+        13
+      ],
+      "index15_pixels": 4
+    },
+    {
+      "glyph": "Á",
+      "base": "A",
+      "raw_metric": "0008",
+      "code": "A6",
+      "slot": 100,
+      "bbox_original": [
+        0,
+        0,
+        6,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        0,
+        6,
+        15
+      ],
+      "index15_pixels": 4
+    },
+    {
+      "glyph": "É",
+      "base": "E",
+      "raw_metric": "0007",
+      "code": "A7",
+      "slot": 101,
+      "bbox_original": [
+        0,
+        0,
+        6,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        0,
+        6,
+        15
+      ],
+      "index15_pixels": 4
+    },
+    {
+      "glyph": "Í",
+      "base": "I",
+      "raw_metric": "0104",
+      "code": "A8",
+      "slot": 102,
+      "bbox_original": [
+        0,
+        0,
+        5,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        0,
+        5,
+        15
+      ],
+      "index15_pixels": 4
+    },
+    {
+      "glyph": "Ó",
+      "base": "O",
+      "raw_metric": "0007",
+      "code": "A9",
+      "slot": 103,
+      "bbox_original": [
+        0,
+        0,
+        6,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        0,
+        6,
+        15
+      ],
+      "index15_pixels": 4
+    },
+    {
+      "glyph": "Ú",
+      "base": "U",
+      "raw_metric": "0007",
+      "code": "AA",
+      "slot": 104,
+      "bbox_original": [
+        0,
+        0,
+        6,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        0,
+        6,
+        15
+      ],
+      "index15_pixels": 4
+    },
+    {
+      "glyph": "ñ",
+      "base": "n",
+      "raw_metric": "0007",
+      "code": "AB",
+      "slot": 105,
+      "bbox_original": [
+        0,
+        4,
+        6,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        0,
+        6,
+        13
+      ],
+      "index15_pixels": 6
+    },
+    {
+      "glyph": "Ñ",
+      "base": "N",
+      "raw_metric": "0007",
+      "code": "AC",
+      "slot": 106,
+      "bbox_original": [
+        0,
+        0,
+        6,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        0,
+        6,
+        15
+      ],
+      "index15_pixels": 6
+    },
+    {
+      "glyph": "ü",
+      "base": "u",
+      "raw_metric": "0006",
+      "code": "AD",
+      "slot": 107,
+      "bbox_original": [
+        0,
+        4,
+        6,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        0,
+        6,
+        13
+      ],
+      "index15_pixels": 8
+    },
+    {
+      "glyph": "Ü",
+      "base": "U",
+      "raw_metric": "0007",
+      "code": "AE",
+      "slot": 108,
+      "bbox_original": [
+        0,
+        0,
+        6,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        0,
+        6,
+        15
+      ],
+      "index15_pixels": 8
+    },
+    {
+      "glyph": "¿",
+      "base": "?",
+      "raw_metric": "0006",
+      "code": "AF",
+      "slot": 109,
+      "bbox_original": [
+        0,
+        0,
+        6,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        2,
+        6,
+        15
+      ],
+      "index15_pixels": 0
+    },
+    {
+      "glyph": "¡",
+      "base": "!",
+      "raw_metric": "0103",
+      "code": "B0",
+      "slot": 110,
+      "bbox_original": [
+        0,
+        0,
+        1,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        2,
+        1,
+        15
+      ],
+      "index15_pixels": 0
+    },
+    {
+      "glyph": "«",
+      "base": "<",
+      "raw_metric": "0007",
+      "code": "B1",
+      "slot": 111,
+      "bbox_original": [
+        0,
+        0,
+        6,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "index15_pixels": 14
+    },
+    {
+      "glyph": "»",
+      "base": ">",
+      "raw_metric": "0007",
+      "code": "B2",
+      "slot": 112,
+      "bbox_original": [
+        0,
+        0,
+        6,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "index15_pixels": 14
+    },
+    {
+      "glyph": "ō",
+      "base": "o",
+      "raw_metric": "0007",
+      "code": "B3",
+      "slot": 113,
+      "bbox_original": [
+        0,
+        4,
+        6,
+        13
+      ],
+      "bbox_generada": [
+        0,
+        0,
+        6,
+        13
+      ],
+      "index15_pixels": 4
+    }
+  ],
+  "notes": [
+    "í: bbox x2..3 base -> x2..4 acentuada, advance raw 0103; solape NO demostrado",
+    "ÁÉÍÓÚÑÜ: y max=15; recorte NO demostrado",
+    "¿¡: x=0 preserved y=2..15; context needed",
+    "Comillas «» x0..7; spacing context needed"
+  ],
+  "private_detailed_report_sha256": "88edb8a2cf1a920f1ff7480cbe4b06f44d5441a1183720b71a07b393a49bfb80",
+  "local_synthetic_unit_tests": "24 PASS",
+  "github_tools": [
+    "tools/f2_qa_raster_19.py",
+    "tools/f2_ppsspp_ws_1204.py"
+  ],
+  "github_tests": [
+    "tests/test_f2_qa_raster_19.py",
+    "tests/test_f2_ppsspp_ws_1204.py"
+  ],
+  "ppsspp_tag": "hrydgard/ppsspp v1.20.4",
+  "ws_supported": [
+    "version",
+    "game.status",
+    "memory.read",
+    "memory.disasm",
+    "cpu.stepping",
+    "gpu.buffer.screenshot",
+    "gpu.record.dump",
+    "gpu.buffer.clut",
+    "gpu.buffer.texture",
+    "memory.breakpoint.add"
+  ],
+  "ws_not_in_1204": [
+    "gpu.displaylist.disasm",
+    "cpu.breakpoint.hit"
+  ],
+  "appimage_1204_local": false,
+  "iso_f1_local": false,
+  "real_ppsspp_png_this_session": 0,
+  "ge_pcs_new": 0,
+  "vram_addresses_new": 0,
+  "f1_960x544_rerun": false,
+  "new_isos": 0,
+  "new_bps": 0,
+  "white_new_ink_default": false,
+  "canonical_corpus_changed": false,
+  "phase_f3_f4_f5_f6": "PENDING"
+}

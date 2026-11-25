@@ -1,0 +1,7 @@
+# R43 — 8214 sustituciones + 1 disposición sin cambio (8215/8248)
+
+CI R42 reparada: run 45655569519 SUCCESS. Se reprodujo el plan R42 contra la ISO USA original; se añadieron cinco propuestas exactas y se corrigió el reparto de la frase Despina... / Please. Please try to / overcome this challenge. La primera línea ya era válida; el ruego pasa al ID 003766 sin variar anchura. 003765 no se contabiliza como sustitución nueva. Se mantiene el denominador 8248. El corpus literario no se modifica.
+
+Evidencia A aislada: 27 sustituciones (21 R42 +5 R43 +1 reparación previa), 51705 comandos, 46308 no textuales exactos, cero desplazamientos, SCRIPT.TBL y tres hermanos DSARC exactos, recomposición IMY reversible. Ver reports/R43_AUDITORIA.json. Los cinco nuevos más el ajuste contextual se unen al perfil experimental; quedan 33, que requieren como mínimo 40 bytes adicionales con las propuestas y diccionario actuales. 18 comparten una secuencia contigua de diálogos; 15 son diálogos aislados o rótulos de interlocutor. La ISO acumulada y PPSSPP siguen sin ejecutar; no promover oficial ni distribuir activos. La supresión del punto final en 004919 es una decisión de presentación para conservar todo el significado sin mover offsets, pendiente de QA. No eliminar signos de apertura ni abreviar nombres.
+
+El integrador exige anclas SHA de preimagen/plan, guardas de ancho, control de duplicados, 4866 cambios SCRIPT y 3348 otros, y el test de regresión mantiene todos los bytes anteriores excepto la reparación explícita 003766. Perfil histórico 3724 intacto.

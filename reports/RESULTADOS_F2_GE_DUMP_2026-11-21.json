@@ -1,0 +1,47 @@
+{
+  "schema": "cladun.f2.ge_dump_reader_preparation_2026_11_21.v1",
+  "status": "F2_OPEN_NO_NEW_PPSSPP_RUNTIME",
+  "source_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "source_iso_size": 305496064,
+  "original_font_glyphs": 2721,
+  "spanish_glyphs_statically_examined": 19,
+  "new_ink_texels_in_original_generator": 100,
+  "raster_detailed_sha256": "88edb8a2cf1a920f1ff7480cbe4b06f44d5441a1183720b71a07b393a49bfb80",
+  "ppsspp_source_tag": "hrydgard/ppsspp v1.20.4",
+  "dump_source_files": [
+    "GPU/Debugger/RecordFormat.h",
+    "GPU/Debugger/Record.cpp",
+    "GPU/Debugger/Playback.cpp",
+    "GPU/ge_constants.h"
+  ],
+  "ge_dump_codec": "Zstandard frame v6 libzstd.so.1; 24B header, 8B sizes, two size-prefixed compressed blocks; packed command records 9B",
+  "new_tool": "tools/f2_ge_dump_1204.py",
+  "new_tests": "tests/test_f2_ge_dump_1204.py",
+  "verification": {
+    "local_legacy_f2_synthetic_tests": 24,
+    "new_ge_dump_synthetic_tests": 9,
+    "combined_local_synthetic_tests": 33,
+    "local_iso_original_sha256": "PASS",
+    "local_f2_glyph_raster_analysis": "PASS",
+    "local_python_full_repo": "NOT_EXECUTED_NO_FULL_GIT_CHECKOUT",
+    "local_go_full_repo": "NOT_EXECUTED_NO_FULL_GIT_CHECKOUT",
+    "github_ci_final_head": "CHECK_AFTER_FINAL_COMMIT",
+    "real_ppsspp_appimage_1204": "NOT_AVAILABLE_DOWNLOAD_FAILED",
+    "iso_f1_canonical_local": "NOT_AVAILABLE",
+    "real_ppsspp_png_new": 0,
+    "authentic_ge_dump_new": 0,
+    "verified_mips_pc_new": 0,
+    "verified_vram_address_new": 0,
+    "f1_960x544_regression_new": "NOT_EXECUTED"
+  },
+  "safety": {
+    "original_iso_untouched": true,
+    "canonical_corpus_untouched": true,
+    "white_new_ink_default_unchanged": true,
+    "event_safe_only_unchanged": true,
+    "ge_reader_contains_no_proprietary_payload": true,
+    "repo_commercial_evidence_upload": false,
+    "f2_status": "OPEN",
+    "f3_to_f6": "PENDING"
+  }
+}

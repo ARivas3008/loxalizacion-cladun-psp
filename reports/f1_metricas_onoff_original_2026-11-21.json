@@ -1,0 +1,89 @@
+{
+  "schema": "cladun.f1.original_font_menu_metrics.v1",
+  "fecha": "2026-11-21",
+  "metodo": "ISO comercial USA privada autenticada; DATABASE.DAT IMY decodificado; STRTBL.DAT y FONT.BIN SHA exactos; avances de FONT.BIN; no es visual PPSSPP",
+  "iso_original_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "original_data_dat_offset": 113770496,
+  "original_data_dat_size": 191697408,
+  "strtbl_sha256": "16d9da36c05380cbb8af7eba53cb26c7b3e21f8ef5c80fdb90fdba20621044bf",
+  "font_sha256": "1f1f5692fecb3b4a66c50f4b20191c1f2658a32ca1220902a5888ae9a11afb46",
+  "font_glyphs": 2721,
+  "strtbl_pointer_slots": 654,
+  "strtbl_valid_strings": 651,
+  "indices_de_strtbl": {
+    "005709": 501,
+    "005710": 502,
+    "005711": 503,
+    "005712": 504,
+    "005713": 505
+  },
+  "originales_vecinos_005711_005712": {
+    "005711": "　Under 1 ON",
+    "005712": " Under 10 ON"
+  },
+  "registros": [
+    {
+      "id": "005710",
+      "estado": "original",
+      "texto": "          ON",
+      "avance_px": 84
+    },
+    {
+      "id": "005710",
+      "estado": "borrador",
+      "texto": "          EN",
+      "avance_px": 84
+    },
+    {
+      "id": "005710",
+      "estado": "candidata_no_aprobada",
+      "texto": "          Sí",
+      "avance_px": 80
+    },
+    {
+      "id": "005710",
+      "estado": "alternativa_no_aprobada",
+      "texto": "          Activado",
+      "avance_px": 123
+    },
+    {
+      "id": "005713",
+      "estado": "original",
+      "texto": "         OFF",
+      "avance_px": 84
+    },
+    {
+      "id": "005713",
+      "estado": "borrador",
+      "texto": "         APAGADO",
+      "avance_px": 115
+    },
+    {
+      "id": "005713",
+      "estado": "candidata_no_aprobada",
+      "texto": "         No",
+      "avance_px": 77
+    },
+    {
+      "id": "005713",
+      "estado": "alternativa_no_aprobada",
+      "texto": "         Desactivado",
+      "avance_px": 135
+    },
+    {
+      "id": "005709",
+      "estado": "layout_canónico_previo",
+      "texto_regla": "Decimales de daño + 10 U+3000 + 6 ASCII",
+      "avance_px": 303
+    },
+    {
+      "id": "005709",
+      "estado": "layout_extra_no_probado",
+      "texto_regla": "Layout canónico + 1 U+3000",
+      "avance_px": 318
+    }
+  ],
+  "nueva_iso_construida": false,
+  "capturas_ppsspp_nuevas": 0,
+  "estado_f1": "ABIERTA"
+}

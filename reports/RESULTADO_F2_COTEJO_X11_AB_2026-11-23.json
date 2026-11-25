@@ -1,0 +1,72 @@
+{
+  "schema": "cladun.f2.x11_ab_comparison_preparation.v1",
+  "date": "2026-11-23",
+  "starting_git_head": "cffd12b0550ac47f92980ebeb195fe1afabce9ab",
+  "evidence_A": {
+    "input": "two existing private ISO files read physically in this relay",
+    "original_iso_bytes": 305496064,
+    "source_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "probe_iso_bytes": 305496064,
+    "probe_sha256": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa",
+    "full_file_differences": [
+      {
+        "offset": 114744872,
+        "usa": 249,
+        "probe": 255
+      },
+      {
+        "offset": 114744873,
+        "usa": 251,
+        "probe": 0
+      },
+      {
+        "offset": 114744874,
+        "usa": 249,
+        "probe": 255
+      }
+    ],
+    "original_unchanged": true,
+    "full_container_audit_from_previous_relay_not_new": true
+  },
+  "evidence_B": {
+    "tool": "tools/f2_cotejar_x11_tuika.py",
+    "tests_file": "tests/test_f2_cotejar_x11_tuika.py",
+    "local_test_count": 16,
+    "local_passed": 16,
+    "local_test_interface": "synthetic_local_shim_for_existing_compare_helper; real_repo_helper_needs_CI",
+    "local_test_duration_seconds": 1.101,
+    "no_genuine_gameplay_screenshots_used": true,
+    "uses_existing_image_comparison_function": true,
+    "read_only_iso": true,
+    "private_output_metadata_only": true,
+    "ci_final_head_to_validate": true
+  },
+  "evidence_C": {
+    "ppsspp_official_download_attempted": true,
+    "ppsspp_official_download_succeeded": false,
+    "ppsspp_real_executed": false,
+    "new_real_gameplay_screenshots": 0,
+    "new_real_ge_dumps": 0,
+    "tuika_combat_ab_proven": false,
+    "nineteen_glyphs_multiscene_proven": false,
+    "mips_ram_ge_vram_proven": false
+  },
+  "dependencies": {
+    "preserved_f3_commit": "cffd12b0550ac47f92980ebeb195fe1afabce9ab",
+    "f3_anime000_imy_headers": 231,
+    "f3_type00": 136,
+    "f3_type02": 95,
+    "f3_visual_letters_proven": false,
+    "script_4524_deferred": true,
+    "event_safe_only": true,
+    "white_new_ink_false": true,
+    "corpus_rows": 9237
+  },
+  "github": {
+    "pr": 7,
+    "required_state": "OPEN",
+    "required_draft": true,
+    "no_force_push": true,
+    "merged": false
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "cladun.f4.r16_segmented_script_locator.v1",
+  "date": "2026-11-23",
+  "evidence_A": {
+    "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+    "script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37",
+    "commands": 51705,
+    "nontext": 46308,
+    "blocks": [
+      {
+        "block": 20,
+        "script_offset": 7104,
+        "command_bytes": 340,
+        "slot_bytes": 352,
+        "anchors_unique_disjoint_16B": 2
+      },
+      {
+        "block": 757,
+        "script_offset": 218080,
+        "command_bytes": 34,
+        "slot_bytes": 48,
+        "anchors_unique_disjoint_16B": 2
+      },
+      {
+        "block": 758,
+        "script_offset": 218128,
+        "command_bytes": 5269,
+        "slot_bytes": 5280,
+        "anchors_unique_disjoint_16B": 2
+      },
+      {
+        "block": 759,
+        "script_offset": 223408,
+        "command_bytes": 221,
+        "slot_bytes": 224,
+        "anchors_unique_disjoint_16B": 2
+      },
+      {
+        "block": 760,
+        "script_offset": 223632,
+        "command_bytes": 4355,
+        "slot_bytes": 4368,
+        "anchors_unique_disjoint_16B": 2
+      },
+      {
+        "block": 761,
+        "script_offset": 228000,
+        "command_bytes": 238,
+        "slot_bytes": 240,
+        "anchors_unique_disjoint_16B": 2
+      },
+      {
+        "block": 762,
+        "script_offset": 228240,
+        "command_bytes": 332,
+        "slot_bytes": 336,
+        "anchors_unique_disjoint_16B": 2
+      },
+      {
+        "block": 763,
+        "script_offset": 228576,
+        "command_bytes": 415,
+        "slot_bytes": 416,
+        "anchors_unique_disjoint_16B": 2
+      }
+    ],
+    "r15_windows_extending_past_command_body": [
+      7420,
+      218095,
+      223602,
+      227968
+    ],
+    "r15_window_crossing_slot": [
+      223602
+    ],
+    "private_metadata_sha256": "f6105a09bb2bec1e58518c594bc3a6db2f9a85c18d2013394f77196513201939"
+  },
+  "evidence_B": {
+    "new_synthetic_tests_passed": 14,
+    "local_partial_suite_passed": 101,
+    "offline_artificial_memory_original_blocks_found": 8,
+    "offline_artificial_memory_original_blocks_total": 8,
+    "real_memory_addresses": false
+  },
+  "evidence_C": {
+    "ppsspp_executed": false,
+    "real_ram_addresses": null,
+    "mips_pc": null,
+    "block_execution_proven": false,
+    "download_error": "curl (6) Could not resolve host: github.com"
+  },
+  "deferred_replacements": 4524,
+  "qa_cases_defined": 56,
+  "original_modified": false,
+  "relocation_allowed": false
+}

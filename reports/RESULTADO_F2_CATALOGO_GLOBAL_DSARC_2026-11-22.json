@@ -1,0 +1,90 @@
+{
+  "schema": "cladun.f2.all_dsarc_original_iso_metadata.2026-11-22.v1",
+  "status": "F2_OPEN_STATIC_ONLY",
+  "verified_source": {
+    "file_type": "USA original supplied 7z",
+    "size_bytes": 305496064,
+    "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "real_read": true
+  },
+  "pspfs_count": 349,
+  "iso9660_data_offset": 113770496,
+  "dsarc_archives": [
+    {
+      "pspfs_index": 0,
+      "name": "SYS.DAT2",
+      "members": 6,
+      "stored_sha256": "208220bf6f1142359f9fb3707f81fd4ecb876b75a5c00bd1c6c1cf82fb6c8175"
+    },
+    {
+      "pspfs_index": 188,
+      "name": "SE.ARC",
+      "members": 68,
+      "stored_sha256": "b075dabc58444292c1b23bb2207a935cba3f36e5381a63c48f21e814ad6c5d36"
+    },
+    {
+      "pspfs_index": 225,
+      "name": "SYSGRA.ARC",
+      "members": 27,
+      "stored_sha256": "63d9443084a2aeab8c2a3f79aebdb130eaf6c5d2e86f8be51346d7458ab81854"
+    },
+    {
+      "pspfs_index": 308,
+      "name": "FONT.ARC",
+      "members": 7,
+      "stored_sha256": "420613ae4a16595b00c75d17bfb86290e57a30419d81ddbc6f245035e63c9805"
+    }
+  ],
+  "total_dsarc_members": 108,
+  "distinct_member_sha256_count": 108,
+  "font_cross_container": {
+    "sygra_font_imy": "50143c165f10aa71ac77d4a2b09fd69012b1eceac4a102bf8e2b8157bf8b5915",
+    "font_arc_font_00_imy": "698bc5b398a16c3f2a4615527dac6a36dbae73666a7c45c3787bb00a728a8478",
+    "same_compressed_bytes": false,
+    "visually_similar_or_same_decoded": "NOT_PROVEN",
+    "functional_ui_usage": "NOT_PROVEN"
+  },
+  "private_report": {
+    "name": "CLADUN_F2_catalogo_DSARC_108_privado_2026-11-22.json",
+    "sha256": "9938fd9fc0eba271494ecdfeec49c1ffd95291b0abecdc33ca65ee97c00bc567",
+    "contains_commercial_payload_bytes": false
+  },
+  "code_commits": [
+    "375eec3d7bcb3dbc878f9579ed49e9af92279091",
+    "822a17dc457ec761a56164db6fdcbc8b7fa8f93d"
+  ],
+  "code_files": [
+    "tools/f2_catalogo_global_dsarc_usa.py",
+    "tests/test_f2_catalogo_global_dsarc_usa.py"
+  ],
+  "tests": {
+    "new_synthetic_count": 12,
+    "first_run_failed_on": "test_reject_overlap expected topology; actual PNG signature",
+    "fixed_validation_order": true,
+    "python_passed": 233,
+    "github_actions_push": 45040317705,
+    "github_actions_pr": 45040322660,
+    "both_success": true,
+    "go": "SUCCESS",
+    "windows_build_without_bps": "SUCCESS"
+  },
+  "blocked": {
+    "git_fetch": "DNS failure",
+    "ppsspp_official_v1_20_4": "NOT_AVAILABLE",
+    "f1_iso": "NOT_AVAILABLE",
+    "genuine_ppsspp_pngs_new": 0,
+    "genuine_ge_dumps_new": 0,
+    "mips_ram_ge_vram_proven": false,
+    "all_19_glphs_ppsspp_proven": false,
+    "f1_window_real_regression": false
+  },
+  "safety": {
+    "corpus_changes": 0,
+    "source_iso_preserved": true,
+    "patcher_changed": false,
+    "white_new_ink_default": false,
+    "event_safe_only_kept": true,
+    "pr7_draft": true
+  },
+  "next_required": "PPSSPP 1.20.4 official runtime with real screenshots, icon RAM→GE→VRAM causality, 19 glyphs and F1 X11 960x544"
+}

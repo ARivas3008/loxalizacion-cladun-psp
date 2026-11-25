@@ -90,3 +90,27 @@ Los subconjuntos `confirmados_formato` y `revisar_visibilidad` son vistas deriva
 - Nunca subir una ISO comercial, DATA.DAT, fuentes de juego ni PNG originales/editados.
 - Un parche exportado se genera con `tools/generar_parche_bps.py`, a partir de una ISO candidata y un informe SHA-256 del integrador, bajo comprobación independiente de 349 recursos PSPFS y los archivos ISO9660.
 - BPS solo se publica localmente después de aplicar el propio parche a la ISO fuente y confirmar que el SHA-256 reconstruido coincide con la candidata. Hasta validar PPSSPP la opción `--experimental` es obligatoria y no se aprueba una distribución final.
+
+
+## Actualización obligatoria para v0.1.5 — evidencia real y continuidad (20/11/2026)
+
+- **Prioridad y versión:** [plan F1–F6](docs/PLAN_HASTA_IMPLEMENTACION_PPSSPP_2026-11-20.md), [prompt de inicio](prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md) y [estado JSON](reports/ESTADO_CONTINUIDAD_PPSSPP.json). Las reglas históricas más arriba sobre glifos **F5A0–F5B2** corresponden a un prototipo antiguo: la integración **actual usa A1–B3, un byte**, en `tools/charset_es.py` + `tools/font_es_narrow.py`; no copiar F5xx a candidatos v0.1.5+.
+- **Hallazgo PPSSPP demostrado:** las opciones se comprimen desde ≈764 a ≈333 px, con valores y etiquetas superpuestos. La causa todavía no se conoce; la corrección con capturas comparables es prioridad F1. La introducción también presenta inglés. NO declarar parche completo ni interfaz correcta.
+- **Integración protegida actual:** `--experimental-parcial --event-safe-only` aplaza **4.524** cambios de longitud de script y conserva offsets de **51.705** comandos y **1.625** scripts. Reconstruir scripts con desplazamientos sin modelar referencias del motor está prohibido, aun cuando se conserven los bytes de opcodes.
+- **Criterio de pruebas:** guardar evidencia PPSSPP real con la ISO original como control, hashes por archivo, informe de regresión, tests y causa. No presentar imágenes de fuente ni capturas construidas como evidencia del motor. Mantener separados QA binario, QA visual y QA de aventura.
+- **Relevo obligatorio:** al cerrar CADA tarea, actualizar `reports/ESTADO_CONTINUIDAD_PPSSPP.json`, crear/actualizar `prompts/SIGUIENTE_TAREA.md` con prompt autónomo (fase concreta, recursos/IDs, comandos, hashes y resultados) y exigir en ese nuevo prompt que se genere otro al concluir. Nunca saltar una fase bloqueada sin documentar por qué.
+
+
+## Actualización vigente F1 (21/11/2026) y fase F2
+
+La información histórica sobre F1 contraída en ≈332px o semi-reparada en ≈748px es de versiones anteriores. **La versión canónica actual F1 en PPSSPP real 1.20.4 mide 756px interiores/≈764 exteriores, igual que USA original.** `005709` se empaqueta «Decimales de daño» +10 U+3000+7 ASCII. `005710` es «Sí» y `005713` «No» en CSV/TXT; +1 ASCII invisible final para `005713` solo en presentación. Se sincronizaron ambos TXT y QA en un commit. La ISO F1 canónica SHA `496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986` y BPS `daaa64ab1994271debc6464f3c70ab0f30a2ab3f9a1743dbd6a65f3c88d20acd` son experimentales parciales, preservan offsets de 51.705 comandos/1.625 scripts y difieren solo en recursos autorizados. Las 4.524 sustituciones de script protegidas **NO** se han aplicado. **F2 aún no resuelta**: iconos L/R/símbolos visibles en Controles NO demuestra acceso por código versus índices desplazados +19. PPSSPP, ISO/BPS y capturas deben permanecer privados; no fusionar PR ni declarar juego completo hasta F2–F6. [F1 informe](docs/RESULTADO_F1_PPSSPP_2026-11-21.md) · [prompt F2 recursivo](prompts/SIGUIENTE_TAREA.md).
+
+
+## Actualización F2 21/11/2026: diagnóstico diferencial, NO F2 completa
+
+PPSSPP 1.20.4 real confirmó búsqueda MIPS código→índice de texto C (`0x089089C8`, FONT.BIN RAM `0x09075000`). Las variantes privadas que alteran posiciones antiguas o nuevas de □/○/×/△ y C/L/R modificaron visualmente C como control positivo, pero **no** ninguno de los seis iconos de Controles (0 diferencias de píxeles en ROI). Solo se ha demostrado este comportamiento **en Controles**, no el origen exacto de la textura ni todos los contextos. Los 2.721 glifos anteriores conservan todos sus bits raster/métricas/códigos al insertar 19 A1–B3. Mantener F2 ABIERTA, F1 sin modificaciones y `--event-safe-only`. Leer `docs/RESULTADO_F2_ATLAS_PPSSPP_2026-11-21.md` y regenerar `prompts/SIGUIENTE_TAREA.md` en cada ejecución.
+
+
+## F2 del 21/11/2026: evidencia y prohibiciones adicionales
+
+Se comprobó en PPSSPP real que `SYSGRA.ARC/KITAJIMA_KARI.IMY` origina los seis iconos R/L/□/○/×/△ de **Controles** al modificar solo 27 bytes de CLUT, pero **NO** se ha demostrado la rutina concreta PC MIPS/GE ni HUD/tutorial/combate. En FONT_00.IMY la tinta nueva de los 19 glifos usa CLUT15 amarillo; el helper optativo `white_new_ink=True` cambia solo 100 texels nuevos al índice1 blanco. PPSSPP real dio amarillo 516→0 en una ayuda diagnóstica. **Mantener False por defecto** en F1 para no cambiar hashes del parche aprobado ni considerar terminada F2 por esa pantalla. Documentar ambos con `docs/F2_ICONOS_TINTA_PPSSPP_2026-11-21.md`; proteger corpus de 9.237 filas, 4.524 aplazados y `--event-safe-only`, no subir ISO/BPS/FONT/EBOOT/RAM/capturas ni el ZIP privado a GitHub. El relevo recursivo exige actualizar el JSON y generar nuevo prompt cada turno.

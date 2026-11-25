@@ -1,0 +1,5 @@
+# R21 — Auditor de composición de 44 ligaduras: evidencia raster A
+
+Herramienta de solo lectura `tools/f4_r21_ligature_raster_probe.py`, con pruebas sintéticas negativas. Comprobada de manera independiente sobre la **ISO auténtica privada**: se descomprimió FONT_00.IMY, se inspeccionaron las métricas de FONT.BIN y se formaron en RAM las 44 parejas minúsculas de `tools/f4_r21_ligature_capacity.py`. Resultado: **44/44 compuestas dentro de celda 16×16, cero píxeles fuera de celda, cero solapamientos entre las dos letras, extremo horizontal máximo x=14**, suma de avances hasta 15 píxeles. Estos resultados falsan la objeción de *clipping geométrico* en el atlas, **no** certifican lectura/avance real del motor ni legibilidad a resolución PSP.
+
+El código y sus tests no publican raster alguno ni alteran FONT.ARC. Para reproducir en entorno privado: `python tools/f4_r21_ligature_raster_probe.py --iso-original /PRIVADO/Cladun.iso`. La fuente ampliada y sus guardas reales siguen pendientes; **no contar 2120 como integradas**.

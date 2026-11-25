@@ -1,0 +1,132 @@
+{
+  "schema": "cladun.f1.real_ppsspp_visual.v1",
+  "fecha_local": "2026-11-20",
+  "estado": "F1_ANCHURA_CORREGIDA_VISUALMENTE_EN_OPCIONES_QA_TOTAL_PENDIENTE",
+  "fuente": "ISO USA exacta del 7z aportado por usuario; PPSSPP real no simulado",
+  "entorno": {
+    "emulador": "PPSSPP 1.20.4 Linux x86_64 oficial",
+    "appimage_sha256": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21",
+    "pantalla_xvfb": "1280x720x24",
+    "ventana": "960x544+160+88",
+    "backend": "software renderer / llvmpipe",
+    "audio": "SDL_AUDIODRIVER=dummy (configuración local, emulador no modificado)",
+    "teclas": "Return para comenzar, Down para Opciones, z para confirmar"
+  },
+  "medicion": {
+    "metodo": "PNG real scrot sin edicion; fila y=106, umbral todos los canales RGB>125, mayor segmento horizontal brillante x=160..1104; ancho exterior calculado sumando 8 px de bordes",
+    "borde_derecho_comun_x": 1097,
+    "resultados": [
+      {
+        "version": "USA original",
+        "archivo_captura_privado": "original_options_x.png",
+        "sha256_png": "afe5ebb8c9af15c9da49acfaf1e6ba1c4a45104b309a51598502a23609be99ac",
+        "x_izquierda": 342,
+        "interior_px": 756,
+        "exterior_aprox_px": 764,
+        "superposicion": false
+      },
+      {
+        "version": "v0.1.5 historica rehecha SHA exacto",
+        "archivo_captura_privado": "baseline_v015_options_real.png",
+        "sha256_png": "1ffc7ccd7669c402f143b3c6c56c8daeff874e4cfe101c8a34430fffaba73ecb",
+        "x_izquierda": 774,
+        "interior_px": 324,
+        "exterior_aprox_px": 332,
+        "superposicion": true
+      },
+      {
+        "version": "solo 005697 (control negativo)",
+        "archivo_captura_privado": "solo005697_options_real2.png",
+        "sha256_png": "5df7b165e406fdb8733c6e8e21c9b4be0165f2362f51de320a8c802d9c4f9a82",
+        "x_izquierda": 774,
+        "interior_px": 324,
+        "exterior_aprox_px": 332,
+        "superposicion": true
+      },
+      {
+        "version": "solo 005709 (control positivo)",
+        "archivo_captura_privado": "solo005709_after_z.png",
+        "sha256_png": "ffe2fee5c43f8f26740d63ceca19ddb622baf4860c6fd2a3b023fef6d8db1b94",
+        "x_izquierda": 358,
+        "interior_px": 740,
+        "exterior_aprox_px": 748,
+        "superposicion": false
+      },
+      {
+        "version": "cinco espaciados (comparativo)",
+        "archivo_captura_privado": "loscinco_options_real.png",
+        "sha256_png": "11c700cf3532be2995daf8bfa5244833450e2f004d6698ab6c93f10cd4fdfab2",
+        "x_izquierda": 358,
+        "interior_px": 740,
+        "exterior_aprox_px": 748,
+        "superposicion": false
+      }
+    ]
+  },
+  "causa_aislada": "Eliminar relleno final ideográfico/ASCII de la cadena original 005709 (Decimales de daño) reduce el ancho que calcula el motor para Opciones. Reponer únicamente el relleno recompone el cuadro; los otros 4 cambios no aportan anchura adicional.",
+  "implementacion": {
+    "grupo_id": "005709",
+    "recurso": "DATABASE.DAT/STRTBL.DAT",
+    "texto_es_literario_preservado": "Decimales de daño",
+    "texto_compilado_repr": "'Decimales de daño\\u3000\\u3000\\u3000\\u3000\\u3000\\u3000\\u3000\\u3000\\u3000\\u3000      '",
+    "archivos": [
+      "tools/menu_layout_es.py",
+      "tools/integrar_parche_seguro.py",
+      "tests/test_menu_layout_es.py"
+    ],
+    "override_solo_borrador_canonico": true,
+    "csv_y_txt_literarios_no_modificados": true,
+    "cambios_de_codigo_de_opcodes": 0
+  },
+  "hashes_sha256": {
+    "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "iso_v015": "9be7b07a2c5c8c9026ffd0f829f613237f9a31e8fe2455856649ff6c1fe2b4ef",
+    "iso_f1_canonica": "9b7fc809bb106953a91d6ad6e4e23363eb7fb92760659607d484f71132b5da89",
+    "bps_f1_canonico": "5047fa7b565f84ec204f7f1dde4e47752eb2013af8daa40d68714ca7255b1566",
+    "zip_evidencias_privado": "4d7f83259dcfe37242700c6cce1dbbee9e36945c1860d5e9fff9a30c7b58cae2"
+  },
+  "integridad": {
+    "bps_roundtrip_exact": true,
+    "recursos_pspfs_total": 349,
+    "pspfs_ajenos_a_4_contenedores_345_identicos": true,
+    "iso9660_ajenos_iguales": true,
+    "scripts": 1625,
+    "comandos_total": 51705,
+    "comandos_no_textuales_iguales": 46308,
+    "offsets_movidos": 0,
+    "comienzos_scripts_movidos": 0,
+    "traducciones_script_aplazadas": 4524,
+    "event_safe_only": true
+  },
+  "qa": {
+    "126_tests_python_en_ci": "PASS run 44864818033 (commit 24ecc52a6565bd8ef29aa019c2e7c2a8848fec80)",
+    "go_test": "PASS",
+    "integridad_corpus": "PASS",
+    "fuente_sin_alterar": "PASS",
+    "ppsspp_opciones_entrada_cursor_y_ayudas": "VERIFICADO_EN_005709",
+    "ppsspp_submenu_controles": "ABRE_Y_MUESTRA_ICONOS; SIN_CERTIFICAR_INDICES_EN_TODAS_ESCENAS",
+    "juego_completo": "NO_VERIFICADO",
+    "executable_privado_windows": "NO_VERIFICADO"
+  },
+  "bloqueos_f1": [
+    "Aun quedan 16 px de diferencia exterior frente al original, sin recortes observados en esta pantalla",
+    "005710 conserva valor 'EN' (incoherente con ON/OFF); no modificado",
+    "Falta QA exhaustiva de interacciones y estados 005713 y 005695-005718",
+    "Experimento con un espacio ideográfico extra construyó ISO/BPS, pero PPSSPP no produjo captura utilizable, NO aprobado"
+  ],
+  "resto": [
+    "F2 desplazamiento atlas+19/íconos pendiente",
+    "F3 intro con inglés pendiente",
+    "F4 4524 script protegidos",
+    "F5 juego/guardado/combate no probado",
+    "F6 EXE/entrega final pendiente"
+  ],
+  "no_publicado": [
+    "ISO",
+    "BPS",
+    "capturas con activos del juego",
+    "recursos comerciales extraidos"
+  ],
+  "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
+  "rama": "integracion-eventos-segura-20261120"
+}

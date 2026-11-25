@@ -1,0 +1,97 @@
+{
+  "schema": "cladun.r39.concise_accumulated.v1",
+  "initial_head": "232b2bae5f86ad24935b3bb4e2c2f0913221e5f0",
+  "initial_ci": {
+    "id": 45546507217,
+    "conclusion": "success"
+  },
+  "source_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "canonical_blob": "400a9c9ec06f7456b5ec6e11f7502d711b0a976e",
+  "original_script_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+  "overlay_sha256": "5fac6e55e1f0fb4631deb79934dfaa9a1d5b73c5cfa436f8331cf4341c2c0aa7",
+  "editorial_selected": 176,
+  "rejected_identical": [
+    "001626",
+    "001766"
+  ],
+  "editorial_scope": "Insertion-only concise translations and repeated strings, contextual and visual QA pending.",
+  "individual": {
+    "texts": 176,
+    "blocks": 90,
+    "source_bytes": 3529,
+    "padding_bytes": 136,
+    "changed_bytes": 3038,
+    "commands": 51705,
+    "nontext_exact": 46308,
+    "moved_offsets": 0,
+    "moved_script_starts": 0,
+    "script_table_exact": true,
+    "dsarc_siblings_exact": 3,
+    "preimage_fnv32": 1098652814,
+    "preimage_sha256": "f963e505414e29b3935bba106ece154b2f10727112b309f6b3e96207848d9229",
+    "plan_fnv32": 3013028385,
+    "plan_sha256": "03696a3f7fa8feb51b5dd015ec5f00dc63992b06f9ec3dff847891e951330b56",
+    "script_sha256": "52538ae965f26c9aef331059e1b8823221d3d7c130ca0ceeae7a43af942a7f3b",
+    "archive_sha256": "9071855ad3c559568f2f9761815014011b4edfb1890d40c6fdc56db026df331e",
+    "imy_roundtrip": true,
+    "imy_repacked": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "imy_unchanged": [
+      0,
+      1,
+      7
+    ],
+    "stored_bytes": 700676,
+    "compressed_sha256": "4cf6be6297d0f3ab9c3d8df4bded404b8dddc8472ce6fe1457a79754294a62f3"
+  },
+  "combined_R37_R38_R39": {
+    "texts": 603,
+    "blocks": 192,
+    "source_bytes": 18596,
+    "padding_bytes": 3359,
+    "changed_bytes": 16570,
+    "commands": 51705,
+    "nontext_exact": 46308,
+    "moved_offsets": 0,
+    "moved_script_starts": 0,
+    "script_table_exact": true,
+    "dsarc_siblings_exact": 3,
+    "plan_fnv32": 2752602953,
+    "plan_sha256": "c1fd2ee305b214e127da235717baba3c13a382055165ac2d129ea513d89b1a6f",
+    "script_sha256": "9a2665f90cf2a0ae4217d6732e62506d1c422d84808080177659b2083773a4aa",
+    "archive_sha256": "24f1c1ae386500c25f6cbb6f0c0db73304a387afad899f048635a708f843d1d9",
+    "imy_roundtrip": true,
+    "imy_repacked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "imy_unchanged": [
+      0,
+      7
+    ],
+    "stored_bytes": 700400,
+    "compressed_sha256": "f5280dd5fa6974e260022c74a220166fa5a4249af5e2eb80968ccdc6fa0c217b"
+  },
+  "prior": 7520,
+  "accumulated_profile": 7696,
+  "remaining": 552,
+  "remaining_categories": {
+    "ascii_overflow": 512,
+    "icon_overflow": 19,
+    "non_icon_multibyte": 11,
+    "format_control": 10
+  },
+  "official_historical": 3724,
+  "full_accumulated_iso_written": false,
+  "ppsspp_run": false,
+  "release_authorized": false
+}

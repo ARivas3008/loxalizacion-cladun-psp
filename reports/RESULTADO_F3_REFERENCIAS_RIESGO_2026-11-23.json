@@ -1,0 +1,50 @@
+{
+  "schema": "cladun.f3.script_numeric_candidates.v1",
+  "fecha": "2026-11-23",
+  "evidencia": "A_ISO_ORIGINAL_ANALISIS_ESTATICO_Y_B_TESTS_SINTETICOS_NO_C_PPSSPP",
+  "iso_original_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+  "script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37",
+  "script_blocks": 1625,
+  "commands": 51705,
+  "nontext_commands": 46308,
+  "intro_demo1001_blocks": 7,
+  "intro_demo1001_commands": 878,
+  "scan": "u32 deslizante en argumentos no textuales, excluyendo valor cero; UNA coincidencia puede ser falso positivo",
+  "candidate_counts_zero_excluded": {
+    "coincide_id_script": 4680,
+    "coincide_inicio_script": 39,
+    "coincide_offset_absoluto_comando": 2883,
+    "coincide_offset_absoluto_otro_bloque": 2706,
+    "coincide_offset_relativo_bloque": 1451
+  },
+  "intro_candidate_counts_zero_excluded": {
+    "coincide_id_script": 25,
+    "coincide_inicio_script": 1,
+    "coincide_offset_absoluto_comando": 40,
+    "coincide_offset_absoluto_otro_bloque": 40,
+    "coincide_offset_relativo_bloque": 21
+  },
+  "highest_numeric_frequency_sample": {
+    "opcode": "0x02",
+    "field_byte_offset": 5,
+    "absolute_command_offset_matches": 1439
+  },
+  "analytical_limit": "No se ha descodificado el control de flujo MIPS; los offsets coincidentes NO son punteros demostrados",
+  "new_local_synthetic_tests_run": 11,
+  "new_local_synthetic_tests_passed": 11,
+  "real_original_iso_analysis_passed": true,
+  "reported_local_private_audit_sha256": "67ebde958b044b3ae78d43da66686aafc4682baaab368d689592e850b2e10dd3",
+  "public_tool": "tools/f3_referencias_riesgo.py",
+  "public_tests": "tests/test_f3_referencias_riesgo.py",
+  "game_binaries_or_assets_modified": false,
+  "corpus_modified": false,
+  "ppsspp_reexecuted": false,
+  "blocked_variable_length_demo1001": 85,
+  "blocked_script_all": 4524,
+  "relocation_authorized": false,
+  "event_safe_only": true,
+  "white_new_ink_default": false,
+  "ci_final_head": "REQUIERE_COMPROBACION_FINAL_DEL_SHA",
+  "pspfs_entries": 349
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "cladun.r19.partial.v1",
+  "evidence_A": {
+    "ldt001": {
+      "records": 24,
+      "candidate_rgba_quads_per_record": 15,
+      "alignment_2_byte_records": 10,
+      "nonzero_candidate_records": 7,
+      "nonzero_record_ids": [
+        1010,
+        5999,
+        6400,
+        6410,
+        6950,
+        6960,
+        6980
+      ],
+      "gpu_format_verified": false
+    },
+    "script_overlay": {
+      "proposals": 64,
+      "payload_bytes": 2007,
+      "differing_bytes": 1773,
+      "commands": 51705,
+      "nontext_commands": 46308,
+      "offset_movements": 0,
+      "virtual_sha256": "8b41c60d6e0def06672398dc4e195bcac5da98de7ba57a8ffe2995cde3f584cd",
+      "negative_mutations_detected": [
+        "opcode",
+        "instruction_id",
+        "command_length",
+        "text_length",
+        "terminator"
+      ],
+      "canonical_modified": false
+    }
+  },
+  "evidence_B": {
+    "new_synthetic_tests_passed_locally": 5
+  },
+  "evidence_C": {
+    "ppsspp_executed": false
+  },
+  "four_areas_closed": false,
+  "notes": "Independent private verification; runtime palette and approved translation pending.",
+  "translation_review_r19": {
+    "proposals": 64,
+    "static_eligible": 32,
+    "context_pending": 30,
+    "stylistic_rejected": 2,
+    "final_approved": 0,
+    "canonical_modified": false,
+    "path": "traduccion/propuestas/DICTAMEN_64_R19.csv"
+  },
+  "graphics_palette_relation_r19": {
+    "record_a": 6400,
+    "record_b": 6410,
+    "one_step_shift_matches": 14,
+    "one_step_shift_comparisons": 14,
+    "same_position_matches": 0,
+    "identical_records": [
+      6960,
+      6980
+    ],
+    "identical_position_matches": 15,
+    "visual_confirmed": false
+  },
+  "romhacking_negative_tests_r19": {
+    "new_tests": 10,
+    "CI_push_success": 45310281300,
+    "CI_pr_success": 45310288041,
+    "total_tests_ran": 952,
+    "skipped": 1
+  },
+  "qa_matrix_cases_defined": 62,
+  "canonical_modified": false,
+  "ppsspp_executed": false
+}

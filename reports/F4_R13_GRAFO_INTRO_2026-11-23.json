@@ -1,0 +1,123 @@
+{
+  "schema": "cladun.f4.r13_intro_static_link_graph.v1",
+  "date": "2026-11-23",
+  "evidence": "A_AUTHENTIC_ISO_STATIC_NO_PPSSPP",
+  "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+  "script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37",
+  "script_blocks": 1625,
+  "commands": 51705,
+  "nontext_commands": 46308,
+  "code_files": [
+    "tools/f4_r13_grafo_intro.py",
+    "tests/test_f4_r13_grafo_intro.py"
+  ],
+  "synthetic_B_tests_local_passed": 18,
+  "static_links": [
+    {
+      "source_block": 20,
+      "source_order": 20,
+      "opcode": "0x0A",
+      "operand": 100100,
+      "shifted_target_block": 757,
+      "literal_target_block": 758
+    },
+    {
+      "source_block": 757,
+      "source_order": 2,
+      "opcode": "0x0A",
+      "operand": 100200,
+      "shifted_target_block": 758,
+      "literal_target_block": 764
+    },
+    {
+      "source_block": 758,
+      "source_order": 1,
+      "opcode": "0x0C",
+      "operand": 100290,
+      "shifted_target_block": 759,
+      "literal_target_block": 765
+    },
+    {
+      "source_block": 758,
+      "source_order": 416,
+      "opcode": "0x0A",
+      "operand": 100201,
+      "shifted_target_block": 760,
+      "literal_target_block": 766
+    },
+    {
+      "source_block": 760,
+      "source_order": 1,
+      "opcode": "0x0C",
+      "operand": 100291,
+      "shifted_target_block": 761,
+      "literal_target_block": null
+    }
+  ],
+  "opcode_graph_counts": {
+    "0x0A": {
+      "commands": 862,
+      "id_minus100_matches": 860,
+      "same_script_filename": 86,
+      "same_block": 0,
+      "distinct_source_blocks": 515,
+      "distinct_target_blocks": 278,
+      "unmatched_values": {
+        "0": 1,
+        "1": 1
+      }
+    },
+    "0x0B": {
+      "commands": 166,
+      "id_minus100_matches": 158,
+      "same_script_filename": 142,
+      "same_block": 0,
+      "distinct_source_blocks": 113,
+      "distinct_target_blocks": 139,
+      "unmatched_values": {
+        "3": 8
+      }
+    },
+    "0x0C": {
+      "commands": 102,
+      "id_minus100_matches": 66,
+      "same_script_filename": 64,
+      "same_block": 0,
+      "distinct_source_blocks": 63,
+      "distinct_target_blocks": 61,
+      "unmatched_values": {
+        "100": 36
+      }
+    }
+  },
+  "intro_0c_pairs": {
+    "758": {
+      "mapped_reference": 1,
+      "operand100": 1
+    },
+    "759": {
+      "mapped_reference": 0,
+      "operand100": 1
+    },
+    "760": {
+      "mapped_reference": 1,
+      "operand100": 1
+    },
+    "761": {
+      "mapped_reference": 0,
+      "operand100": 1
+    }
+  },
+  "private_metadata_report_sha256": "ca08137b06cdbb3a9d065a69bae7a552f3fdf393d8f567e2287f64085e7b25dd",
+  "EBOOT_BIN_PSP_encrypted_signature": "~PSP",
+  "BOOT_BIN_first_48_bytes_all_zero": true,
+  "official_PPSSPP_1204_present": false,
+  "official_AppImage_download_attempt": "FAILED_DNS_github.com",
+  "runtime_PC_MIPS_verified": false,
+  "event_control_flow_proven": false,
+  "relocalization_allowed": false,
+  "original_modified": false,
+  "commercial_assets_committed": false,
+  "interpretation": "Static numeric links only; no proof of executable control flow or calling/return behaviour."
+}

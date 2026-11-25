@@ -1,0 +1,73 @@
+{
+  "schema": "cladun.f4.r10.script_ai_namespace_readonly.v1",
+  "date": "2026-11-23",
+  "evidence": "A_AUTHENTIC_ISO_STATIC_NOT_PPSSPP",
+  "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+  "script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37",
+  "script_sdt_sha256": "1811742d7d3e88da530c1fd2b98885e8426f7af761f7c89aecc80f34ffdbe2d4",
+  "aiscript_tbl_sha256": "a1bf18abd792494f241f40651c6d11cbff108884c73df07e9a1395566035aede",
+  "aiscript_dat_sha256": "1e75764dcc501f182921039d5020b71b7732d3e2c44b83bb565c70d2297acb3c",
+  "aiscript_tbl_bytes": 17680,
+  "aiscript_dat_bytes": 225488,
+  "scripts": 1625,
+  "ai_scripts": 552,
+  "commands": 51705,
+  "nontext_commands": 46308,
+  "script_tbl_ids": 1625,
+  "aiscript_tbl_ids": 552,
+  "namespace_id_overlap_count": 6,
+  "opcodes": {
+    "0x0a": {
+      "payload_bytes": 4,
+      "commands": 862,
+      "matches_SCRIPT_TBL": 320,
+      "distinct_SCRIPT_TBL_ids": 183,
+      "matches_AISCRIPT_TBL": 0,
+      "matches_both_tables": 0,
+      "matches_neither_table": 542
+    },
+    "0x0b": {
+      "payload_bytes": 5,
+      "commands": 166,
+      "matches_SCRIPT_TBL": 75,
+      "distinct_SCRIPT_TBL_ids": 67,
+      "matches_AISCRIPT_TBL": 0,
+      "matches_both_tables": 0,
+      "matches_neither_table": 91
+    },
+    "0x0c": {
+      "payload_bytes": 4,
+      "commands": 102,
+      "matches_SCRIPT_TBL": 86,
+      "distinct_SCRIPT_TBL_ids": 49,
+      "matches_AISCRIPT_TBL": 0,
+      "matches_both_tables": 0,
+      "matches_neither_table": 16
+    }
+  },
+  "opcode_0b_trailing_byte_counts": {
+    "100": 112,
+    "101": 54
+  },
+  "source_100100_candidates": [
+    {
+      "source_block": 20,
+      "source_order": 20,
+      "source_command_offset": 7420,
+      "opcode": "0x0a",
+      "instruction_id": 818,
+      "operand_u32": 100100,
+      "source_script_name": "scr01.dsf",
+      "target_script_block": 758
+    }
+  ],
+  "private_original_metadata_report_sha256": "385bf2a9471287adebf226a921a4fbf8dd17b7017385ec1da12fb39d577ee7ea",
+  "synthetic_tests_local_passed": 15,
+  "proof_level": "NUMERIC_COINCIDENCE_ONLY",
+  "ppsspp_executed": false,
+  "mips_semantics_proven": false,
+  "relocalization_authorized": false,
+  "original_commercial_bytes_written": false,
+  "note": "Los opcodes 0x0A,0x0B,0x0C coinciden con 320/75/86 IDs SCRIPT, pero ninguno con los 552 IDs AISCRIPT; la correspondencia no prueba llamadas/saltos ni descarta otros formatos."
+}

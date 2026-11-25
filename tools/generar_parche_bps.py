@@ -244,6 +244,8 @@ def main():
     parser.add_argument("--informe-bps", required=True, type=Path)
     parser.add_argument("--experimental", action="store_true",
                         help="Mandatory acknowledgment: NOT a tested final release")
+    parser.add_argument("--event-safe-only", action="store_true",
+                        help="Aceptar candidato parcial únicamente si TODOS los offsets de eventos son idénticos")
     args = parser.parse_args()
     require(args.experimental, "BPS release is blocked without --experimental")
     require(args.salida.resolve() not in (args.original.resolve(), args.candidato.resolve(),
@@ -256,12 +258,29 @@ def main():
     require(file_sha256(args.original) == SOURCE_SHA256,
             "Original ISO SHA-256 mismatch")
     report = json.loads(args.informe_integracion.read_text(encoding="utf-8"))
+    require(not report.get("reubicacion_local_experimental"), "R44 local relocation diagnostic: BPS export forbidden")
     result_hash = file_sha256(args.candidato)
     require(report.get("original_sha256") == SOURCE_SHA256 and
             report.get("iso_resultante_sha256") == result_hash and
-            report.get("todos_los_textos_insertados") is True and
             report.get("ppsspp_validado") is False,
-            "Candidate does not match the full experimental integration audit")
+            "Candidate hashes do not match the integration audit")
+    events = report.get("auditoria_eventos") or {}
+    require(events.get("opcode_instruction_id_order_changes") == 0 and
+            events.get("nontext_payload_changes") == 0 and
+            events.get("table_metadata_changes_outside_start_offsets") == 0 and
+            events.get("nontext_commands_byte_exact") == 46308,
+            "Independent opcode/event audit is missing or did not pass")
+    if args.event_safe_only:
+        require(report.get("modo_eventos_offsets_fijos") is True and
+                report.get("offsets_de_comandos_preservados") is True and
+                events.get("moved_command_offsets") == 0 and
+                events.get("moved_script_starts") == 0 and
+                report.get("todos_los_textos_insertados") is False,
+                "Event-safe patch requires a deliberately partial, fixed-offset candidate")
+    else:
+        require(report.get("todos_los_textos_insertados") is True and
+                report.get("modo_eventos_offsets_fijos") is False,
+                "Full experimental patch requires complete audited translation")
     assert_unrelated_assets_exact(args.original, args.candidato)
     args.salida.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="cladun_bps_privado_", dir=args.salida.parent) as tmp:
@@ -277,6 +296,9 @@ def main():
         "source_sha256": SOURCE_SHA256, "candidate_sha256": result_hash,
         "bps_roundtrip_identical": True, "outside_text_assets_verified": True,
         "gameplay_ppsspp_verified": False, "approved_for_distribution": False,
+        "event_safe_only": args.event_safe_only,
+        "script_command_offsets_preserved": events.get("all_command_offsets_preserved"),
+        "script_texts_deferred": report.get("dialogos_pospuestos_por_desplazamiento", 0),
         **summary,
     }
     args.informe_bps.parent.mkdir(parents=True, exist_ok=True)

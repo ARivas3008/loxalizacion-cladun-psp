@@ -1,0 +1,837 @@
+{
+  "schema": "cladun.cobertura_cuatro_areas.v1",
+  "fecha": "2026-11-23",
+  "corte_utc": "2026-11-23T21:11:27Z",
+  "rama": "integracion-eventos-segura-20261120",
+  "head_inicial_verificado": "f8f59d894c8477c832774a0dc7acfb82093f0a44",
+  "pr": 7,
+  "pr_draft_verificado": true,
+  "traduccion": {
+    "borrador": {
+      "hechos": 9235,
+      "total": 9237
+    },
+    "aprobados_contextualmente": {
+      "hechos": null,
+      "total": null
+    },
+    "en_juego": {
+      "hechos": null,
+      "total": null
+    },
+    "inventario_visible_completo": false,
+    "cierre_100": false,
+    "revision_64_r19": {
+      "apta_revision_estatica_no_canonica": 32,
+      "pendiente_contexto": 30,
+      "rechazada_estilistica": 2,
+      "aprobadas_finalmente": 0
+    }
+  },
+  "graficos": {
+    "inventario_completo": false,
+    "aprobados_ppsspp": {
+      "hechos": null,
+      "total": null
+    },
+    "cierre_100": false,
+    "ldt001_hipotesis_rgba8888": {
+      "registros": 24,
+      "con_cuadruplas_no_nulas": 7,
+      "confirmado_en_ppsspp": false
+    },
+    "r23_graphics_triage": {
+      "pspfs_source_authenticated": true,
+      "extension_inventory_total": 349,
+      "candidate_pspfs_graphics_first_pass": 43,
+      "candidate_breakdown": {
+        "MPB": 37,
+        "LDT": 3,
+        "IDT": 1,
+        "ARC_graphics": 2
+      },
+      "full_nested_graphics_inventory": false,
+      "all_english_text_bearing_images_identified": false,
+      "revised_raster_pixels_in_game": 0,
+      "percent_revised_graphics": null,
+      "C_new_approved": 0,
+      "report": "reports/R23_PSPFS_GRAPHICS_TRIAGE.json"
+    }
+  },
+  "romhacking": {
+    "sustituciones": {
+      "hechos": 3724,
+      "total": 8248
+    },
+    "diferidas": 4524,
+    "relocalizaciones_seguras_demostradas": false,
+    "release_bps_exe_e2e": false,
+    "cierre_100": false,
+    "pruebas_negativas_r19": {
+      "nuevos_casos_sinteticos": 10,
+      "ci_pendiente_en_corte": true
+    },
+    "analisis_r20": {
+      "script_commands": 51705,
+      "script_text_commands": 5397,
+      "script_nontext_commands": 46308,
+      "blocks_with_text": 587,
+      "all_text_commands_have_following_commands": true,
+      "minimum_following_commands": 2,
+      "median_following_commands": 67,
+      "maximum_following_commands": 1025,
+      "following_nontext_exposures": 576378,
+      "following_text_exposures": 181792,
+      "following_total_exposures": 758170,
+      "script_translated_rows": 5207,
+      "same_byte_width": 683,
+      "variable_byte_width": 4524,
+      "growing": 2883,
+      "shrinking": 1641,
+      "variable_within_three_bytes": 1971,
+      "independently_authenticated_original_script": true,
+      "corpus_classification_evidence": "B_GIT_CORPUS_STATIC",
+      "variable_length_release_authorized": false,
+      "new_scr02_proposals_review_only": 6
+    },
+    "r21_ligatures": {
+      "evidence_A_private_authenticated_source": {
+        "iso_original_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "font_arc_sha256": "420613ae4a16595b00c75d17bfb86290e57a30419d81ddbc6f245035e63c9805",
+        "font00_sha256": "698bc5b398a16c3f2a4615527dac6a36dbae73666a7c45c3787bb00a728a8478",
+        "all_lowercase_pairs_with_advance_le_15": 672,
+        "raster_pairs_without_ink_overlap": 521,
+        "raster_pairs_with_ink_overlap": 151,
+        "font_original_bytes": 143888,
+        "font_pspfs_padding_original": 496,
+        "font_pspfs_padding_all_zero": true,
+        "font_4_ligature_repack_bytes": 144384,
+        "font_4_ligature_imy_pages_roundtrip": 6,
+        "font_4_ligature_in_place_fit_with_free_bytes": 0,
+        "font_44_ligature_repack_bytes": 145696,
+        "font_44_ligature_in_place_overflow": 1312,
+        "font_44_ligature_imy_pages_roundtrip": 6,
+        "experiment_only": true,
+        "PPSSPP_not_tested": true
+      },
+      "evidence_B_canonical_review_only": {
+        "script_rows": 5207,
+        "previously_integrated": 3724,
+        "total_planned": 8248,
+        "deferred": 4524,
+        "new_exact_width_postprologue_proposals": 20,
+        "new_exact_width_proposals_canonical_approved": 0,
+        "growing": 2883,
+        "shrinking": 1641,
+        "same_byte_width": 683,
+        "initial_44_pair_theory_unsafe": 2120,
+        "safe_pairs_available": 521,
+        "safe_44_pair_theory": 2042,
+        "safe_44_pair_strict": 2002,
+        "safe_44_pair_payload_bytes": 61723,
+        "safe_4_pair_theory": 552,
+        "safe_4_pair_strict": 542,
+        "safe_4_pair_payload_bytes": 17076,
+        "runtime_accepted_ligatures": 0,
+        "canonical_integrated_from_r21": 0
+      },
+      "evidence_C": {
+        "ppsspp_executed": false,
+        "MIPS_dispatcher_proven": false,
+        "font_and_ligatures_rendered": false,
+        "patch_E2E_tested": false
+      },
+      "percent_integrated": 45.148,
+      "false_claim_of_completion": false,
+      "note": "No counts above represent approved insertions. Private in-memory IMY roundtrip proves coding, not PSPFS full candidate or gameplay."
+    },
+    "r23_compact_imy_44": {
+      "fuente_original_sha256": "420613ae4a16595b00c75d17bfb86290e57a30419d81ddbc6f245035e63c9805",
+      "tamano_fuente_44_historica": 145696,
+      "tamano_fuente_44_compacta": 144000,
+      "capacidad_slot": 144384,
+      "margen_final": 384,
+      "pspfs_ajenos_byte_identicos": 348,
+      "paginas_IMY_roundtrip": 6,
+      "prueba_estatica_iso_privada": true,
+      "alineacion_16_runtime_probada": false,
+      "fuente_canonica_modificada": false,
+      "textos_2002_no_canonicos": true,
+      "ppsspp_C": false,
+      "candidato_ISO_privado": true,
+      "release_autorizada": false,
+      "hash_candidata_privada": "f2b27d575b1693a74589459d3ddbfe10349ce06c12474e4fe647ac3061e0b434",
+      "informe": "reports/R23_FONT_COMPACT_STATIC.json"
+    },
+    "r24_mas_20_experimental": {
+      "historical_approved_not_changed": 3724,
+      "historical_deferred_not_changed": 4524,
+      "experimental_extra_target": 1650,
+      "candidate_target_3_724_plus_1_650": 5374,
+      "experimental_target_fraction": {
+        "hechos": 5374,
+        "total": 8248
+      },
+      "candidate_target_percent_not_approved": 65.1552,
+      "potential_gain_percentage_points": 20.00485,
+      "prototype_tool": "tools/f4_r24_piloto_1650_ligaduras.py",
+      "authentic_iso_source_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+      "authentic_source_script_commands": 51705,
+      "authentic_source_nontext_commands": 46308,
+      "authentic_source_noop_recompression_bytes": 700483,
+      "original_slot_bytes": 699904,
+      "original_slot_shortfall": 579,
+      "script_append_only_required": true,
+      "selected_1650_integrated_and_run_in_PPSSPP": false,
+      "combined_candidate_iso_created_in_current_relay": false,
+      "new_official_approved": 0,
+      "PPSSPP_r24_new_checks": 0,
+      "report": "reports/R24_ROMHACKING_MAS_20_PUNTOS.json",
+      "status": "EXPERIMENTAL_PRIVATE_PILOT_IMPLEMENTED_NOT_RELEASED"
+    },
+    "r25_mas_20_sobre_piloto_r24": {
+      "schema": "cladun.r25.85pct_experimental_coverage.v1",
+      "official_integrated_unchanged": 3724,
+      "official_total_unchanged": 8248,
+      "official_pct_unchanged": 45.1503,
+      "official_deferred_unchanged": 4524,
+      "r24_experimental_target": 5374,
+      "r25_experimental_target": 7024,
+      "r25_additional_vs_r24_experimental": 1650,
+      "r25_total_additional_vs_historical": 3300,
+      "r25_target_percentage": 85.16,
+      "r25_target_improvement_vs_r24_points": 20.00485,
+      "r25_target_deferred_only_if_verified": 1224,
+      "eligible_strict_growing_with_44_safe_ligatures": 2002,
+      "eligible_strict_shortening_with_max7_trailing_spaces": 1345,
+      "selected_strict_shortening_experimental": 1298,
+      "trailing_ascii_padding_total_bytes": 3899,
+      "trailing_ascii_padding_max_per_record": 7,
+      "padding_visual_approved": false,
+      "FONT_compact_16_DSARC_runtime_approved": false,
+      "same_original_script_command_offsets_planned": true,
+      "script_source_authenticated_readonly": {
+        "sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+        "commands": 51705,
+        "nontext_commands": 46308,
+        "script_blocks": 1625,
+        "text_slots": 5397,
+        "source_unmodified": true
+      },
+      "combined_private_iso_7024_built_this_relay": false,
+      "real_PPSPP_C_tested_this_relay": false,
+      "new_official_integrations": 0,
+      "new_PPSSPP_PASS": 0,
+      "report": "reports/R25_ROMHACKING_OBJETIVO_85_PCT.json",
+      "source_tool": "tools/f4_r25_piloto_85pct.py",
+      "manifest": "traduccion/propuestas/R25_COLA_CONJUNTA_3300.csv",
+      "status": "B_STATIC_IMPLEMENTED_A_SOURCE_READONLY_NOT_A_CANDIDATE_RUNTIME"
+    },
+    "r26_auditoria_meta_100": {
+      "status": "A_AUTHENTIC_ISO_STRUCTURE_AND_B_TOTAL_PLANNER_ONLY_C_PENDING",
+      "source_script_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+      "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+      "all_planned_binary_changes": 8248,
+      "script_changed_bytes_rows": 4900,
+      "script_already_same_bytes_rows": 307,
+      "script_source_total_nonempty": 5207,
+      "script_changed_length_rows": 4524,
+      "script_equal_width_changed_rows": 376,
+      "other_text_resource_changes": 3348,
+      "all_changes_actually_applied_to_single_iso_now": false,
+      "original_script_blocks": 1625,
+      "original_command_count": 51705,
+      "original_nontext_command_count": 46308,
+      "original_padding_all_blocks_bytes": 14621,
+      "script_raw_english_to_spanish_growth_net_bytes": 9694,
+      "script_blocks_overflowing_raw": 253,
+      "script_raw_local_shortfall_bytes": 8077,
+      "script_44safe_optimized_net_bytes": -4382,
+      "script_44safe_optimized_block_overruns": 29,
+      "script_44safe_optimized_local_shortfall_bytes": 215,
+      "runtime_MIPS_references_verified": false,
+      "PPSSPP_runtime_C_verified": false,
+      "C_pass_new": 0,
+      "official_integrated_unchanged": 3724,
+      "official_deferred_unchanged": 4524,
+      "official_pct_unchanged": 45.1503,
+      "experimental_full_builder": "tools/r26_piloto_total_8248_privado.py",
+      "authentic_capacity_reproducer": "tools/r26_script_full_capacity_audit.py",
+      "report": "reports/R26_ROMHACKING_FULL_8248_DIAGNOSTICO.json",
+      "doc": "docs/R26_ROMHACKING_100_AUDITORIA_2026-11-24.md",
+      "release_authorized": false,
+      "full_ROMhacking_100pct_demonstrated": false
+    },
+    "r28_geometry_projection": {
+      "report": "reports/R28_ROMHACKING_GEOMETRIA.json",
+      "official_new_integrations": 0,
+      "moved_commands": 51555,
+      "moved_nontext_commands": 46164,
+      "moved_script_starts": 1615,
+      "source_authentic": true,
+      "synthetic_payload_only": true,
+      "mips_proven": false,
+      "ppsspp_run": false
+    },
+    "percent_integrated": 45.1503,
+    "r29_fixed_width": {
+      "report": "reports/R29_INTEGRACION_LONGITUD_FIJA.json",
+      "actual_private_script_edits": 56,
+      "actual_private_ascii_iso_edits": 16,
+      "additional_existing_font_required": 40,
+      "combined_target": 3780,
+      "combined_candidate_built": false,
+      "official_new_integrations": 0,
+      "ppsspp_run": false
+    },
+    "r30_exact_pairs": {
+      "report": "reports/R30_INTEGRACION_REPETICIONES.json",
+      "new_script_private": 90,
+      "cumulative_script_private": 146,
+      "cumulative_ascii_iso_private": 26,
+      "combined_target": 3870,
+      "combined_candidate_built": false,
+      "official_new_integrations": 0,
+      "ppsspp_run": false,
+      "isolated_146_font_iso_built": true,
+      "isolated_146_font_iso_sha256": "ffc971b474bdea2860c0d5daa47ca716c6567aa6ac514b206f6ca69e505d951c",
+      "cumulative_isolated_iso_private": 146
+    },
+    "r31_bulk_padding": {
+      "report": "reports/R31_BULK_PADDING.json",
+      "new_private_iso": 608,
+      "cumulative_isolated_iso": 754,
+      "pool_preimages_authentic": 1302,
+      "pool_unwritten": 694,
+      "combined_target_short": 4478,
+      "combined_target_all": 5172,
+      "combined_candidate_built": false,
+      "official_new_integrations": 0,
+      "ppsspp_run": false
+    }
+  },
+  "betatesting": {
+    "matriz_completa": false,
+    "matriz_inicial_casos": 42,
+    "aprobados": {
+      "hechos": null,
+      "total": null
+    },
+    "p0_p1_abiertos": null,
+    "cierre_100": false,
+    "matriz_casos_definidos": 75,
+    "casos_r23_nuevos": [
+      "Q065",
+      "Q066"
+    ],
+    "r23_pass_runtime_nuevos": 0,
+    "casos_r24_nuevos": [
+      "Q067",
+      "Q068"
+    ],
+    "r24_new_PASS_C": 0,
+    "casos_r25_nuevos": [
+      "Q069",
+      "Q070"
+    ],
+    "r25_new_PASS_C": 0,
+    "casos_r26_nuevos": [
+      "Q071",
+      "Q072",
+      "Q073",
+      "Q074",
+      "Q075"
+    ],
+    "r26_new_PASS_C": 0
+  },
+  "evidencias": {
+    "A_actual": [
+      {
+        "tipo": "ISO_USA_ORIGINAL_PRIVADA",
+        "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "bytes": 305496064,
+        "pspfs": 349,
+        "data_dat_offset": 113770496,
+        "data_dat_bytes": 191697408,
+        "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+        "script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37"
+      },
+      {
+        "tipo": "F4-R8: comparacion u32 original",
+        "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "comandos": 51705,
+        "no_textuales": 46308,
+        "ventanas_u32": 101659,
+        "coincidencias_id_externo": 1,
+        "coincidencias_relativas": 21,
+        "referencias_MIPS_demostradas": 0
+      },
+      {
+        "tipo": "F4 R9 perfil 0x0A/0x01/0x02 en ISO original",
+        "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "op0a_total": 862,
+        "op0a_u32_iguales_ids": 320,
+        "ids_distintos": 183,
+        "origen_especifico": {
+          "source_block": 20,
+          "source_script_id": 69,
+          "source_script_name": "scr01.dsf",
+          "source_order": 20,
+          "source_command_offset": 7420,
+          "instruction_id": 818,
+          "operand_u32": 100100,
+          "target_block": 758,
+          "target_script_name": "demo1001_00.dsf",
+          "target_block_offset": 218128
+        },
+        "coincidencias_relativas": 21,
+        "motivos_relativos": 6,
+        "ppsspp": false
+      },
+      {
+        "tipo": "F4-R10 cruce real de 0x0A/0x0B/0x0C SCRIPT/AISCRIPT",
+        "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "script_ids": 1625,
+        "ai_script_ids": 552,
+        "solapamiento_ids": 6,
+        "opcode_0a_ID_script_matches": 320,
+        "opcode_0b_ID_script_matches": 75,
+        "opcode_0c_ID_script_matches": 86,
+        "AI_matches_all_three": 0,
+        "semantic_MIPS_proven": false
+      },
+      {
+        "tipo": "F4 R11 scan de desplazamiento de argumentos contra SCRIPT.TBL",
+        "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "opcode_0a_literal": 320,
+        "opcode_0a_minus100": 860,
+        "opcode_0a_total": 862,
+        "opcode_0b_literal": 75,
+        "opcode_0b_minus100": 158,
+        "opcode_0b_total": 166,
+        "opcode_0c_literal": 86,
+        "opcode_0c_minus100": 66,
+        "delta_scan": "-256..256",
+        "candidate_bloque_directo": 758,
+        "candidate_bloque_menos100": 757,
+        "mips_proven": false
+      },
+      {
+        "tipo": "F4-R12: clasificacion u32−100, casos sin correspondencia",
+        "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "counts": {
+          "0x0A": {
+            "matches": 860,
+            "total": 862,
+            "nonmatches": {
+              "0": 1,
+              "1": 1
+            }
+          },
+          "0x0B": {
+            "matches": 158,
+            "total": 166,
+            "nonmatches": {
+              "3": 8
+            }
+          },
+          "0x0C": {
+            "matches": 66,
+            "total": 102,
+            "nonmatches": {
+              "100": 36
+            }
+          }
+        },
+        "script_id_0_exists": false,
+        "semantics_mips_confirmed": false
+      },
+      {
+        "tipo": "F4 R13 grafo numerico de intro original autentica",
+        "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "original_commands": 51705,
+        "links_principales": 5,
+        "opcode_mismo_nombre": {
+          "0x0A": 86,
+          "0x0B": 142,
+          "0x0C": 64
+        },
+        "opcode_coincidencias": {
+          "0x0A": 860,
+          "0x0B": 158,
+          "0x0C": 66
+        },
+        "script_intro_0c_pares": [
+          758,
+          760
+        ],
+        "mips_observed": false
+      },
+      {
+        "tipo": "F4 R14 manifest de 9 sondas validadas en ISO original autentica",
+        "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "numero_sondas": 9,
+        "offsets_script_dat": [
+          7420,
+          218095,
+          218133,
+          223351,
+          223360,
+          223602,
+          223637,
+          227968,
+          228194
+        ],
+        "commands_verified": 51705,
+        "nota": "son offsets de SCRIPT.DAT, NO RAM/PC MIPS",
+        "mips_proven": false
+      },
+      {
+        "tipo": "R15 nueve huellas de 32 bytes unicas en SCRIPT.DAT original autentico",
+        "source_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+        "huellas": 9,
+        "ocurrencias_por_huella": 1,
+        "reporte_privado_hash": "5f86438b2ff6b670a663f41630394359f7458bb37b9341f78d564fb12e8a8554",
+        "PPSSPP_RAM_observed": false
+      },
+      {
+        "tipo": "R16 cuerpos sin relleno, 8 bloques y 16 huellas disjuntas únicas",
+        "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "bloques": [
+          20,
+          757,
+          758,
+          759,
+          760,
+          761,
+          762,
+          763
+        ],
+        "private_report_sha256": "f6105a09bb2bec1e58518c594bc3a6db2f9a85c18d2013394f77196513201939",
+        "real_RAM": false
+      },
+      {
+        "tipo": "R17 ANIME000, TIPATTR, terminadores SCRIPT autenticos",
+        "schema": "cladun.r17.static_candidate.v1",
+        "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "anime000_sha256": "0e57353eb1d5f9688164b3453e57b0fd91ff77dee8e422844ba3fb0fef32eb37",
+        "anime": {
+          "record_count": 192,
+          "bytes_accounted": 3537936,
+          "headers_per_record": {
+            "1": 187,
+            "2": 2,
+            "4": 1,
+            "18": 2
+          },
+          "types_pass_bounded_candidate": {
+            "0": 136,
+            "2": 95
+          },
+          "zero_tail_bytes_histogram": {
+            "0": {
+              "0": 63,
+              "2": 69,
+              "4": 1,
+              "8": 2,
+              "10": 1
+            },
+            "2": {
+              "0": 74,
+              "4": 2,
+              "8": 13,
+              "12": 6
+            }
+          },
+          "type2_half_literal_rejected": 82,
+          "type2_half_stride_different_output": 82,
+          "type2_half_stride_invalid": 0,
+          "runtime_or_visual_proven": false,
+          "repacking_authorized": false
+        },
+        "tipattr": {
+          "sha256": "305fd0e55ec860873645fb64a14814344e906d8b0f819275c9cae279d06434b7",
+          "bytes": 11492,
+          "records": 302,
+          "stride": 38,
+          "fields": [
+            {
+              "group": "008723",
+              "index": 214,
+              "offset": 8148,
+              "capacity": 16,
+              "incomplete_bytes": 15,
+              "terminator": 0
+            },
+            {
+              "group": "008724",
+              "index": 215,
+              "offset": 8186,
+              "capacity": 16,
+              "incomplete_bytes": 15,
+              "terminator": 0
+            }
+          ],
+          "other_prefix_matches_in_database": 0,
+          "source_completion_proven": false
+        },
+        "script": {
+          "blocks": 1625,
+          "commands": 51705,
+          "nontext": 46308,
+          "terminal_opcode": "0x08",
+          "terminal_opcode_count": 1625,
+          "terminal_text_count": 0,
+          "padding_total": 14621,
+          "relocation_authorized": false
+        },
+        "B_local_tests": 16,
+        "C_new": false,
+        "assets_modified": false,
+        "variable_deferred": 4524
+      },
+      {
+        "tipo": "R17 42 propuestas aplicadas solo a copia RAM original",
+        "proposal_rows": 42,
+        "canonical_intro_equal_length": 11,
+        "canonical_intro_deferred": 85,
+        "projected_equal_length": 53,
+        "projected_deferred": 43,
+        "commands_reparsed": 51705,
+        "nontext_byte_exact": 46308,
+        "changed_payload_bytes": 1028,
+        "all_command_offsets_preserved": true,
+        "virtual_script_dat_sha256": "5e367618ebdbe617e5bf4efd01be21f17d2f14ecd5c6e47275fe2f3727f82037",
+        "canonical_modified": false,
+        "global_deferred_unchanged": 4524,
+        "local_synthetic_tests_original_helper": 12,
+        "local_synthetic_tests_r17_total": 28,
+        "new_iso": false,
+        "PPSSPP_executed": false,
+        "deployment_authorized": false
+      },
+      {
+        "tipo": "R18 estructuras LDT y overlay en memoria privada",
+        "schema": "cladun.r18.ldt_and_overlay.v1",
+        "head_initial": "82572ebd81c0d0ccd1992eb34c5d1cdafeb2ff00",
+        "previous_ci": {
+          "push": 45303805062,
+          "pr": 45303813383,
+          "conclusion": "success"
+        },
+        "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+        "ldt": {
+          "ldt001_records": 24,
+          "ldt001_imy_streams": 24,
+          "ldt001_decoded_bytes": 1188160,
+          "ldt001_unclassified_tail_lengths": {
+            "60": 14,
+            "62": 10
+          },
+          "ldt001_nonzero_tails": 7,
+          "ldt002_records": 39,
+          "ldt002_nested_gzip_payloads": 57,
+          "ldt002_bpp_field_counts": {
+            "4": 56,
+            "8": 1
+          },
+          "ldt002_decoded_bytes": 1714688,
+          "ldt002_zero_padding_histogram": {
+            "0": 12,
+            "1": 14,
+            "2": 4,
+            "3": 12,
+            "4": 1,
+            "7": 1,
+            "8": 1,
+            "10": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "19": 1,
+            "23": 2,
+            "25": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "31": 1
+          },
+          "ldt_member_bytes_accounted": [
+            287472,
+            2067856
+          ],
+          "runtime_or_visual_proven": false,
+          "repacking_authorized": false
+        },
+        "overlay": {
+          "r17_reviewed": 42,
+          "r17_static_eligible": 36,
+          "r17_context_pending": 6,
+          "new_intro": 15,
+          "new_scr01": 13,
+          "total_overlay": 64,
+          "payload_bytes": 2007,
+          "changed_bytes": 1773,
+          "script_sha256_virtual": "8b41c60d6e0def06672398dc4e195bcac5da98de7ba57a8ffe2995cde3f584cd",
+          "script_len": 633344,
+          "commands": 51705,
+          "nontext": 46308,
+          "offset_changes": 0,
+          "canonical_modified": false,
+          "ppsspp_executed": false
+        },
+        "gender_review": {
+          "group": "000859",
+          "proposal": "Tú eres la que siempre es imprudente.",
+          "bytes": 37,
+          "already_same_size": true,
+          "canonical_modified": false
+        },
+        "local_synthetic_tests_pass": 18,
+        "global_wrapper_local_execution": false,
+        "qa_defined": 60,
+        "qa_new_pass": 0,
+        "global_deferred": 4524,
+        "ppsspp_executed": false,
+        "assets_modified": false,
+        "release_authorized": false
+      }
+    ],
+    "B_actual": [
+      {
+        "tipo": "11 tests sintéticos locales",
+        "resultado": "PASS",
+        "scope": "validador de metadatos, sin repo completo ni ISO en tests"
+      },
+      {
+        "tipo": "F4-R8: nueva herramienta y pruebas sintéticas",
+        "hechos": 10,
+        "total": 10,
+        "resultado": "PASS_LOCAL_SINTETICO_NO_C"
+      },
+      {
+        "tipo": "F4 R9 13 pruebas sintéticas",
+        "hechos": 13,
+        "total": 13,
+        "resultado": "PASS_LOCAL",
+        "ci_nuevo": "PENDIENTE_AL_PUBLICAR"
+      },
+      {
+        "tipo": "R10: tools/f4_r10_cruce_script_ai.py y 15 tests",
+        "resultado": "PASS_LOCAL_SINTETICO",
+        "hechos": 15,
+        "total": 15,
+        "ci_final": "VERIFICAR_DESPUES_PUBLICACION"
+      },
+      {
+        "tipo": "R11: tools/f4_r11_desfase_ids.py",
+        "tests_local_sinteticos": 15,
+        "resultado": "PASS",
+        "ci_final": "POR_COMPROBAR"
+      },
+      {
+        "tipo": "F4-R12: nuevo clasificador, 17 tests sintéticos",
+        "hechos": 17,
+        "total": 17,
+        "resultado": "PASS_LOCAL_SINTETICO_NO_C",
+        "ci_final": "VERIFICAR_DESPUES_DEL_COMMIT"
+      },
+      {
+        "tipo": "F4 R13 18 tests unitarios B sintéticos del grafo",
+        "hechos": 18,
+        "total": 18,
+        "resultado": "PASS_LOCAL_SINTETICO",
+        "CI_final": "VERIFICAR_DESPUES_PUBLICACION"
+      },
+      {
+        "tipo": "F4 R14 autenticar procedencia PPSSPP 1.20.4 + manifest: 36 tests",
+        "hechos": 36,
+        "total": 36,
+        "resultado": "PASS_LOCAL_SINTETICO",
+        "original_ppsspp_tag_verified": true,
+        "C_executed": false
+      },
+      {
+        "tipo": "R15 localizador seguro RAM WebSocket 1.20.4",
+        "tests_nuevos": 33,
+        "resultado": "PASS_LOCAL_SINTETICO",
+        "subset_local_87_PASS": true,
+        "full_repo_local": false,
+        "CI_SHA_FINAL": "VERIFICAR_DESPUES"
+      },
+      {
+        "tipo": "R16 localizador segmentado",
+        "tests_nuevos": 14,
+        "tests_local_parcial": 101,
+        "artificial_blocks_found": 8,
+        "artificial_blocks_total": 8,
+        "resultado": "PASS_B_NO_C"
+      },
+      {
+        "tipo": "R17 candidato IMY acotado",
+        "tests_nuevos": 16,
+        "resultado": "PASS_LOCAL_SINTETICO_NO_C",
+        "ci_final": "POR_VERIFICAR"
+      },
+      {
+        "tipo": "R17 12 pruebas locales del helper inicial; integración y prueba del CSV en CI pendiente",
+        "tests_nuevos": 12,
+        "resultado": "PASS_LOCAL_SINTETICO_NO_C"
+      },
+      {
+        "tipo": "CI primer commit R17",
+        "sha": "5ac988384c9c3811f511d62141874eda48994bf3",
+        "push_run": 45303203679,
+        "pull_request_run": 45303209991,
+        "conclusion": "success"
+      },
+      {
+        "tipo": "R18 tests LDT",
+        "tests_nuevos": 18,
+        "resultado": "PASS_LOCAL_SINTETICO_NO_C",
+        "wrapper_global_ci": "POR_VERIFICAR"
+      }
+    ],
+    "B_historica": [
+      {
+        "tipo": "CI HEAD inicial",
+        "pull_request_run": 45256952901,
+        "push_run": 45256935071,
+        "conclusion": "success",
+        "scope": "sin ISO"
+      }
+    ],
+    "C_actual": [],
+    "C_historica": "F1 Opciones y primer mapa según informes anteriores; no revalidado aquí"
+  },
+  "bloqueos": [
+    "AppImage PPSSPP oficial v1.20.4 no encontrada en entorno actual; DNS GitHub terminal bloqueado",
+    "No modelo MIPS real para 4524 textos aplazados",
+    "Origen gráfico del texto de prólogo no demostrado",
+    "F2 TUIKA no vinculado a combate real; 19 glifos no certificados multicontesto",
+    "Sin candidata final, BPS final ni Windows x64 E2E",
+    "F4: 22 igualdades u32 no prueban referencias; falta MIPS real sobre opcode 0x0A y 0x01/0x02.",
+    "R9: coincidencia 0x0A desde scr01.dsf/20/20 offset SCRIPT.DAT 7420 -> valor100100, NO validada como llamada en MIPS real; 21 aparentes saltos son 6 patrones de enteros comunes.",
+    "F4-R10: tres opcodes 0x0A/0x0B/0x0C muestran coincidencias SCRIPT ID pero no semantica MIPS; PPSSPP 1.20.4 no disponible por DNS en terminal; 4524 textos variables siguen diferidos.",
+    "R11: opcode 0x0A u32=100100 puede apuntar al ID 100000/bloque757 bajo candidato +100; NO validar como salto hasta observar MIPS real; 0x0B u32=3 posible centinela, significado desconocido",
+    "R12: 0x0C tiene 36 valores 100 sin coincidencia tras −100, mientras los 66 restantes sí coinciden. Falta MIPS real para demostrar significados y control de flujo. 4524 diálogos variables siguen aplazados.",
+    "R13: grafo numérico de cinco enlaces entre scr01 y demo1001, sin lectura ejecutada MIPS. EBOOT ~PSP, PPSSPP oficial 1.20.4 no disponible y terminal sin DNS github.com; reubicacion de 4524 cambios variable bloqueada.",
+    "R14: AppImage PPSSPP 1.20.4 ausente y sin DNS github.com; preflight exit1 sin reporte C. Campos version WS v1.20.4 no incluyen PID/path; se exige /proc FD+socket antes de aceptar evidencia. 4524 textos diferidos.",
+    "R15: AppImage oficial 1.20.4 SHA publicado verificado pero no descargable (DNS github.com); localizador de 9 huellas no probado sobre memoria de juego, ninguna base RAM ni PC MIPS real. 4524 textos variables bloqueados. Falta P0/F4 y F3/F2.",
+    "R16: PPSSPP oficial ausente, curl DNS error 6. Localizador segmentado preparado; falta AppImage oficial adjunto o sesión Linux propia, C pendiente.",
+    "R17: geometría vertical IMY tipo 02 ambigua en 82/95; TIPATTR 2 campos truncados en origen; 1625 scripts terminan 0x08. PPSSPP ausente, no liberar variables.",
+    "R18: 7 colas LDT001 no cero sin clasificar; GZIP 57/57 no prueba textura en juego. Overlay 64 no canónico ni ejecutado; 4524 diferidas oficiales. PPSSPP ausente."
+  ],
+  "siguiente_relevo": "prompts/SIGUIENTE_TAREA.md",
+  "advertencia": "Los denominadores de cobertura contextual, gráficos y casos totales no están certificados. La matriz inicial no es universo completo. Ningún 100% de las cuatro áreas está verificado.",
+  "ultima_actualizacion_r23": {
+    "head_inicial": "f32d51181f6fca87c777525b6bd455149d89e721",
+    "rama": "integracion-eventos-segura-20261120",
+    "PR7_draft": true,
+    "area_T": false,
+    "area_G": false,
+    "area_R": false,
+    "area_Q": false
+  }
+}

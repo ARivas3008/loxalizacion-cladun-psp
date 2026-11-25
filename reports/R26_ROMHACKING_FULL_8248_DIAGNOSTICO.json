@@ -1,0 +1,72 @@
+{
+  "schema": "cladun.r26.romhacking_total_audit.v1",
+  "date": "2026-11-24",
+  "evidence_A_authentic_iso": {
+    "source_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "source_size_bytes": 305496064,
+    "PSPFS_resources": 349,
+    "script_blocks": 1625,
+    "script_commands": 51705,
+    "nontext_commands": 46308,
+    "text_commands": 5397,
+    "nonempty_source_texts": 5207,
+    "original_script_padding_bytes": 14621,
+    "original_script_hash": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+    "original_table_hash": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37",
+    "source_iso_modified": false
+  },
+  "full_plain_translation_capacity": {
+    "growing_texts": 2883,
+    "shorter_texts": 1641,
+    "equal_width_texts": 683,
+    "positive_text_delta_bytes": 17108,
+    "negative_text_delta_bytes": 7414,
+    "net_text_delta_bytes": 9694,
+    "authentic_script_ids_joined_to_corpus": 586,
+    "source_blocks_overflowing_original_padding": 253,
+    "aggregate_local_padding_shortfall_bytes": 8077,
+    "largest_one_block_shortfall_bytes": 1459
+  },
+  "optimized_44_ligature_lower_bound": {
+    "safe_ligature_savings_bytes": 14076,
+    "source_control_unsafe_growing_rows": 74,
+    "safe_growing_rows_still_too_long": 807,
+    "net_text_delta_bytes": -4382,
+    "source_blocks_overflowing_original_padding": 29,
+    "aggregate_local_padding_shortfall_bytes": 215,
+    "largest_one_block_shortfall_bytes": 34,
+    "MIPS_event_pointer_safety_proven": false,
+    "PPSSPP_visual_proven": false
+  },
+  "GitHub_B_planner_verified": {
+    "canonical_corpus_rows": 9237,
+    "target_actual_byte_edits": 8248,
+    "script_changed": 4900,
+    "script_variable_width_changed": 4524,
+    "script_equal_width_changed": 376,
+    "other_resources_changed": 3348,
+    "script_already_byte_identical": 307,
+    "script_original_equal_width_total": 683,
+    "new_tool": "tools/r26_piloto_total_8248_privado.py",
+    "new_full_audit": "tools/r26_script_full_capacity_audit.py",
+    "full_candidate_written_in_current_session": false,
+    "moves_event_offsets_if_run": true,
+    "explicit_risk_acknowledgement_required": true
+  },
+  "C_dynamic": {
+    "official_PPSSPP_1_20_4_executed_this_session": false,
+    "full_candidate_gameplay_A_B_A": false,
+    "all_8248_editorially_checked": false,
+    "all_8248_rendered_correctly": false,
+    "Win64_patcher_E2E": false,
+    "new_PASS_C": 0
+  },
+  "official_metrics_unchanged": {
+    "integrated": 3724,
+    "total": 8248,
+    "percent": 45.1503,
+    "deferred": 4524,
+    "complete": false
+  },
+  "caveat": "8248/8248 is the CANONICAL PLANNER capacity, not an accepted full game. Direct resizing moves command offsets, with unresolved PSP MIPS references and no authenticated PPSSPP gameplay. Original ISO is untouched; no full private ISO was built."
+}

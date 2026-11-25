@@ -1,0 +1,112 @@
+{
+  "schema": "cladun.menu_f1.original_iso_metrics.v1",
+  "fecha": "2026-11-20",
+  "alcance": "Auditoría estática directa de ISO USA; NO prueba PPSSPP ni valida candidata",
+  "iso_original": {
+    "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "bytes": 305496064
+  },
+  "pspfs": {
+    "numero_recursos": 349,
+    "archivo": "PSP_GAME/USRDIR/DATA.DAT",
+    "offset_iso": 113770496,
+    "bytes": 191697408
+  },
+  "database": {
+    "archivo": "DATABASE.DAT",
+    "index_pspfs": 193,
+    "offset_pspfs": 989696,
+    "bytes_comprimidos": 230876,
+    "bytes_descomprimidos": 620032,
+    "sha256_descomprimido": "90f787e6eb023f22a693c8e24d24d628cd63a3bb01e049b2d9707652de590059"
+  },
+  "strtbl": {
+    "nombre": "STRTBL.DAT",
+    "bytes": 17744,
+    "sha256": "16d9da36c05380cbb8af7eba53cb26c7b3e21f8ef5c80fdb90fdba20621044bf"
+  },
+  "fuente": {
+    "archivo": "FONT.ARC/FONT.BIN",
+    "indice_pspfs": 308,
+    "bytes": 10888,
+    "glifos_originales": 2721,
+    "sha256": "1f1f5692fecb3b4a66c50f4b20191c1f2658a32ca1220902a5888ae9a11afb46",
+    "avance_espacio_ascii_px": 7,
+    "avance_espacio_ideografico_px": 15
+  },
+  "metricas": [
+    {
+      "id": "005695",
+      "original_px": 85,
+      "es_actual_px": 33,
+      "es_variante_px": 85,
+      "es_variante_repr": "'\\u3000\\u3000\\u3000 Retro'",
+      "tipo": "restaurar_prefijo"
+    },
+    {
+      "id": "005696",
+      "original_px": 83,
+      "es_actual_px": 59,
+      "es_variante_px": 83,
+      "es_variante_repr": "'\\u3000\\u3000\\u3000  Real'",
+      "tipo": "restaurar_prefijo"
+    },
+    {
+      "id": "005697",
+      "original_px": 99,
+      "es_actual_px": 22,
+      "es_variante_px": 99,
+      "es_variante_repr": "'          %2d '",
+      "tipo": "restaurar_prefijo_y_sufijo"
+    },
+    {
+      "id": "005698",
+      "original_px": 170,
+      "es_actual_px": 106,
+      "es_variante_px": 170,
+      "es_variante_repr": "'Correr\\u3000\\u3000\\u3000\\u3000\\u3000\\u3000\\u3000\\u3000  '",
+      "tipo": "relleno_final_a_avance_original"
+    },
+    {
+      "id": "005709",
+      "original_px": 303,
+      "es_actual_px": 111,
+      "es_variante_px": 303,
+      "es_variante_repr": "'Decimales de daño\\u3000\\u3000\\u3000\\u3000\\u3000\\u3000\\u3000\\u3000\\u3000\\u3000      '",
+      "tipo": "relleno_final_a_avance_original"
+    },
+    {
+      "id": "005713",
+      "original_px": 84,
+      "es_actual_px": 115,
+      "es_variante_px": null,
+      "tipo": "no_modificado; contexto de alineación sin resolver"
+    }
+  ],
+  "textos_conservados": [
+    "005687",
+    "005688",
+    "005689",
+    "005690",
+    "005691",
+    "005692",
+    "005693",
+    "005694"
+  ],
+  "causa_ventana": "PENDIENTE_DE_AISLAMIENTO_REAL",
+  "verificado": [
+    "SHA ISO exacto",
+    "PSPFS 349 entradas",
+    "STRTBL original descomprimido de DATA.DAT",
+    "ancho estático por bytes FONT.BIN",
+    "cinco variantes con mismo ancho teórico original"
+  ],
+  "no_verificado": [
+    "No hay ISO v0.1.5 en esta sesión",
+    "No hay PPSSPP ejecutable",
+    "No se ha construido BPS nuevo",
+    "No hay capturas reales nuevas",
+    "No hay medición de rutina motor/ancho real ventana"
+  ],
+  "fuente_metodo": "/tmp/iso_check.py, /tmp/audit_menu_iso.py y /tmp/metrics_menu.py ejecutados localmente en sesión; herramientas versionadas tools/experimento_menu_f1.py (ensayo reproducible con --iso)"
+}

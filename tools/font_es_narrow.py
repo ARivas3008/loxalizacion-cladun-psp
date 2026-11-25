@@ -49,7 +49,15 @@ def encode_atlas(slots: list[bytes], original_imys: list[bytes]) -> list[bytes]:
     return result
 
 
-def patched_archive_narrow(font_arc: bytes, members:list[dict])->tuple[bytes,dict]:
+def whiten_new_glyph_pixels(generated):
+    """F2 experimental: palette index 15 is yellow in FONT_00.IMY, 1 white.
+
+    Apply ONLY to a newly generated Spanish glyph, never an original raster.
+    """
+    return [[1 if v == 15 else v for v in row] for row in generated]
+
+
+def patched_archive_narrow(font_arc: bytes, members:list[dict], *, white_new_ink:bool=False)->tuple[bytes,dict]:
     ensure(font_arc[:8]==b'DSARCIDX' and len(members)==7,
            'Unsupported FONT.ARC container')
     ensure([m['name'] for m in members]==['FONT.BIN']+[f'FONT_{i:02d}.IMY' for i in range(6)],
@@ -91,6 +99,8 @@ def patched_archive_narrow(font_arc: bytes, members:list[dict])->tuple[bytes,dic
         raster=old_slots[old_index[ord(base)]]
         matrix=[list(raster[y*16:y*16+16]) for y in range(16)]
         generated=make_glyph(matrix,character)
+        if white_new_ink:
+            generated=whiten_new_glyph_pixels(generated)
         new_slots.append(bytes(v for row in generated for v in row))
     new_slots.extend(old_slots[insert:count])
     new_slots.extend([bytes(256)]*(3072-len(new_slots)))
@@ -137,6 +147,7 @@ def patched_archive_narrow(font_arc: bytes, members:list[dict])->tuple[bytes,dic
         'mode':'single_byte_shiftjis_halfwidth',
         'original_glyphs_byte_exact_at_pixel_level':count,
         'new_glyphs':len(CHARACTERS),
+        'white_new_ink_opt_in':white_new_ink,
         'old_font_arc_size':len(font_arc),
         'new_font_arc_size':len(output),
         'code_range':[hex(newcodes[0]),hex(newcodes[-1])],

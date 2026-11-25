@@ -1,0 +1,119 @@
+{
+  "schema": "cladun.graphics.r49.contextual_reedition.v1",
+  "source_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "source_iso_bytes": 305496064,
+  "canonical_csv_blob": "400a9c9ec06f7456b5ec6e11f7502d711b0a976e",
+  "canonical_glossary": "traduccion/GLOSARIO_CANONICO.csv",
+  "previous_private_r48_recovered": false,
+  "editorial_method": "independent contextual retranslation from authentic source raster, checked against reviewed corpus and glossary; user authorized manual correction when needed",
+  "known_edit_targets": 53,
+  "edited": 53,
+  "r48_recreated": 47,
+  "historical_png_recreated": 6,
+  "groups": {
+    "intro": 1,
+    "credits": 34,
+    "interface": 5,
+    "animations": 4,
+    "title_xmb": 3,
+    "historical_png": 6
+  },
+  "individual_native_roundtrip": 53,
+  "independent_replay_exact_encoded_sha256": 53,
+  "zip_replay_exact": 53,
+  "outside_text_roi_pixel_exact": 53,
+  "duplicate_credit_pairs": 17,
+  "credit_names_only_preserved": [
+    208,
+    226
+  ],
+  "changed_pixels": 141498,
+  "growth_resources": 36,
+  "same_size": 1,
+  "shrinking_resources": 16,
+  "preserved_direct": [
+    "SYSGRA.ARC/LVSP.IMY"
+  ],
+  "remaining": {
+    "palette_scene_review": 309,
+    "conditional": 4,
+    "abbreviations": 2,
+    "font": 7
+  },
+  "all_426_surfaces_final_classified": false,
+  "runtime_verified": false,
+  "full_accumulated_iso_built": false,
+  "official_promoted": false,
+  "source_iso_unchanged": true,
+  "package": {
+    "filename": "Cladun_ES_G_R49_edicion_contextual_PRIVADO.zip",
+    "bytes": 787176,
+    "sha256": "5374ec787c1ab8c468b02a9cfedae74e69350d3244586bb82fdfaba16a964ce1",
+    "files": 99,
+    "manifests": {
+      "R49_prologo.json": "f80facdfaf8d4be9f6a7aa2185d09b03dc08ee8ed118fd7cf3d9b043f017c60c",
+      "R49_creditos.json": "51747415a99a94e1024ac7cec11b6bade1a03f6bda7fb244bd5e0097b14d9ca5",
+      "R49_interfaz.json": "88f50129d0835fbfd8160041aef6a4d997162a9196f96891d8ede058e547d537",
+      "R49_animaciones.json": "06cd21563be82e129f1ff0af1b8488c8de6e116cdab50bf3c9ccd2bd13acadff",
+      "R49_titulo.json": "f5d7bedf1bf95d8513a8d430d7bd36de8de52d19aeb16ae68dc8d42cb9143eb9",
+      "R49_replay.json": "a4519d7d7de798b343be46bfd3f3443c64916b20ab1789e786739e2373de3691",
+      "reproducir_r49.py": "fef00c6f5740d2794d126e40d5a01794051019003436d37c64f6403f4f461bbd"
+    },
+    "pillow": "12.3.0"
+  },
+  "prologue": {
+    "path": "ANIME000.IDT",
+    "record": 188,
+    "surface": 192,
+    "member_offset": 3417360,
+    "absolute_iso_offset": 120574224,
+    "dimensions": [
+      256,
+      128
+    ],
+    "bytes_before": 4308,
+    "bytes_after": 4308,
+    "original_tail_preserved": 2,
+    "changed_iso_bytes": 4212,
+    "unrelated_idt_surfaces_exact": 230,
+    "unrelated_pspfs_exact": 348,
+    "private_diagnostic_iso_built": true,
+    "diagnostic_iso_bytes": 305496064,
+    "diagnostic_iso_sha256": "77c61bd61fe633e9127e08ddf8b95ecd405d30ae8ca0f02b1fd9ad0d6b525301",
+    "original_idt_sha256": "0e57353eb1d5f9688164b3453e57b0fd91ff77dee8e422844ba3fb0fef32eb37",
+    "new_idt_sha256": "479f72b6924d983106e521c5c03f2d53c29dabdffb78cf8dec664e0196713729",
+    "original_stream_sha256": "c015b1f998a6bf3e05af562c9dc6d967e36c194f2fab513e8c0d0d76b1d45d6b",
+    "new_stream_sha256": "e6917d9bf58efd469ef988d341cfaabbab16366e95afa33a0800f4d3b557bac8",
+    "stream_delta_sha256": "98056fe3558f42beaa3688b2f07ef3b4c7944338cc40e4aa573bee9887a3b9d6",
+    "text_sha256": "03b18d607bff03526a855f2087c89223d59373febd02883adee33e2d895871bb",
+    "text": [
+      "Unos dicen que por los tesoros que allí había,",
+      "otros, porque allí hay que vencer al enemigo,",
+      "y otros, porque allí se forjan los sueños.",
+      "Ese «allí» puede estar al fondo de un pozo",
+      "o incluso tras la puerta de un baño público.",
+      "Cualquiera puede llegar a ese lugar,",
+      "pero está conectado con muchos otros lugares.",
+      "A ese mundo lo llaman «Arcanus Cella»."
+    ],
+    "ppsspp_verified": false
+  },
+  "editorial_exceptions": [
+    {
+      "ids": [
+        "005349",
+        "005354",
+        "005667"
+      ],
+      "issue": "Mana=Dónde and Run=Ejecutar in some rows; graphics use Maná / Correr; corpus not edited"
+    },
+    {
+      "ids": [
+        "005798",
+        "005814"
+      ],
+      "issue": "Keep HP from glossary and Guardia de ángel from script context; no PV/Guardia de ángeles drift"
+    }
+  ],
+  "release_authorized": false
+}

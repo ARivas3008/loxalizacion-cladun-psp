@@ -1,0 +1,167 @@
+{
+  "schema": "cladun.f1.real_ppsspp_closure.v1",
+  "fecha": "2026-11-21",
+  "fase": "F1",
+  "estado": "PASS_OPCIONES_VISUAL_Y_BINARIO_NO_JUEGO_COMPLETO",
+  "repo": "https://github.com/ARivas3008/loxalizacion-cladun-psp",
+  "rama": "integracion-eventos-segura-20261120",
+  "pr": 7,
+  "pr_draft": true,
+  "entorno": {
+    "app": "PPSSPP oficial 1.20.4 Linux AppImage",
+    "sha256_appimage": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21",
+    "xvfb": "1280x720x24",
+    "ventana": "960x544+160+88",
+    "render": "software",
+    "audio": "dummy local",
+    "captura": "scrot PNG crudo sin manipulación"
+  },
+  "medida": {
+    "fila": 106,
+    "min_canal_estrictamente_mayor": 125,
+    "x_analizados": [
+      160,
+      1104
+    ],
+    "exterior_aprox_suma": 8,
+    "resultados": [
+      {
+        "version": "original_USA_sesion_2026_11_21",
+        "x": [
+          342,
+          1097
+        ],
+        "interior": 756,
+        "exterior_aprox": 764,
+        "numero_png": 2
+      },
+      {
+        "version": "extra_ideografico_RECHAZADO",
+        "x": [
+          326,
+          1097
+        ],
+        "interior": 772,
+        "exterior_aprox": 780,
+        "numero_png": 2
+      },
+      {
+        "version": "extra_ASCII_aislada",
+        "x": [
+          342,
+          1097
+        ],
+        "interior": 756,
+        "exterior_aprox": 764,
+        "numero_png": 1
+      },
+      {
+        "version": "canonico_ASCII_7_ONOFF_SI_NO",
+        "x": [
+          342,
+          1097
+        ],
+        "interior": 756,
+        "exterior_aprox": 764,
+        "numero_png_en_opciones": 18
+      }
+    ]
+  },
+  "iso": {
+    "original_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "original_bytes": 305496064,
+    "extra_ideografico_sha256": "f97fa355fce8d7ab55a81fc711e944185ebdce4a320a5077695cb445acd303c8",
+    "extra_ascii_sha256": "2f781c94b3ea835bd317d741793d0e3ed8ec9626dc2ab43a7ee501231e0b1edd",
+    "canonico_sha256": "496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986",
+    "canonica_vs_combinada_byte_equal": true
+  },
+  "bps": {
+    "extra_ideografico_sha256": "279bd99d7a0cfb87fd1bb4a03ee67ecc250d51563e14f12e213283922a8634fc",
+    "extra_ascii_sha256": "96db2092c14c8c854db93d3f27b6c219e698cc22c2e6947dbddfc5c4dcbbc79b",
+    "canonico_sha256": "daaa64ab1994271debc6464f3c70ab0f30a2ab3f9a1743dbd6a65f3c88d20acd",
+    "roundtrip_exact": true,
+    "approved_for_final_public_release": false
+  },
+  "integridad_candidata": {
+    "PSPFS": 349,
+    "recursos_pspfs_ajenos": 345,
+    "recursos_ajenos_byte_exact": true,
+    "iso9660_ajenos_byte_exact": true,
+    "dsarc_ajenos_preservados": true,
+    "script_blocks": 1625,
+    "commands": 51705,
+    "nontext_commands_byte_exact": 46308,
+    "script_command_offsets_moved": 0,
+    "script_starts_moved": 0,
+    "script_texts_deferred": 4524,
+    "event_safe_only": true
+  },
+  "ids": {
+    "literal_csv_cambiados": {
+      "005710": {
+        "antes": "          EN",
+        "despues": "          Sí"
+      },
+      "005713": {
+        "antes": "         APAGADO",
+        "despues": "         No"
+      }
+    },
+    "presentacion_independiente": {
+      "005709": "Decimales de daño +10 U+3000 +7 ASCII",
+      "005713": "No +1 ASCII final"
+    },
+    "inmutables": [
+      "005711",
+      "005712"
+    ],
+    "commit_sincronizacion": "a94e695c2e2380673e915c8068164b8ce2eb6e58"
+  },
+  "qa": {
+    "real_ppsspp": true,
+    "original_control_real": true,
+    "options_cursor_traversed": true,
+    "effects_volume_changed": true,
+    "music_volume_changed": true,
+    "real_retro_changed": true,
+    "decimal_modes_4_checked": true,
+    "magic_circle_toggled": true,
+    "screenshots_toggled": true,
+    "controls_opened": true,
+    "controls_reset_to_default": true,
+    "return_to_options": true,
+    "return_to_title": true,
+    "atlas_index_refs_audited": false,
+    "complete_gameplay": false
+  },
+  "privacidad": {
+    "zip_evidencias_nombre": "Cladun_ES_F1_PPSSPP_real_2026-11-21_EVIDENCIAS_PRIVADAS.zip",
+    "zip_sha256": "66f23bd7aa08301f652292ca2fc81440cd004403eb613f3ef9b0a1e6f4d66c24",
+    "png_count": 27,
+    "subido_github": false,
+    "sha_original_options_png": "b491a3fba90ca347770c33a6256ce57e9a1e269aac779c5186fecb6c8cfcbefe",
+    "sha_final_options_png": "5ff7600a3f4423f03a3db7f75e1b6064bf5621ccfaccf61214eba7ccb630915c",
+    "sha_controls_png": "32f53206110b0bfcc331c67a46508c68b6c1a2c481c69810d2d2214d3a6f2750"
+  },
+  "pendientes": {
+    "F2": "19 glifos A1-B3 y +19 atlas; acceso por código vs índice; signos y controles en más escenas",
+    "F3": "intro todavía en inglés",
+    "F4": "4524 scripts de longitud diferente protegidos",
+    "F5": "aventura/niveles/combate/guardado/carga",
+    "F6": "BPS final Windows EXE QA completa"
+  },
+  "ci": {
+    "checked_head": "88edf04a4667289e45d725828e4c74efd19b1507",
+    "run_ids": [
+      44956876063,
+      44956870486
+    ],
+    "conclusion": "success",
+    "python_tests": 140,
+    "go": "PASS",
+    "corpus": "PASS",
+    "integrabilidad": "PASS",
+    "windows_build": "PASS_SIN_PAYLOAD",
+    "ppsspp_real": "EN_ENTORNO_PRIVADO_SEPARADO_NO_CI"
+  }
+}

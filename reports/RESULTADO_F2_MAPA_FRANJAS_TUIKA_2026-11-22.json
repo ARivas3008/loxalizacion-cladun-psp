@@ -1,0 +1,185 @@
+{
+  "schema": "cladun.f2.tuika_14_stripe_static_real_iso.v1",
+  "date": "2026-11-22",
+  "state": "F2_ABIERTA_SOLO_ISO_REAL_SIN_PPSSPP",
+  "source": {
+    "archive": "Cladun original USA aportado por usuario, 7z privado",
+    "iso_bytes": 305496064,
+    "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f"
+  },
+  "probe": {
+    "iso_sha256": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa",
+    "changed_absolute_iso_offsets": [
+      114744872,
+      114744873,
+      114744874
+    ],
+    "parent_tables_unchanged": true,
+    "pspfs_neighbors_unchanged": 348,
+    "sysgra_dsarc_neighbors_unchanged": 26
+  },
+  "mask": {
+    "texture_dimensions": [
+      256,
+      256
+    ],
+    "mask_sha256": "382ae8d2ffa8908979050b5e83f38ec9967b461bbf9b614dd92775da90e409ba",
+    "clut2_pixels": 9144,
+    "stripe_count": 14,
+    "stripes": [
+      {
+        "index": 0,
+        "y_start": 2,
+        "y_end_inclusive": 15,
+        "x_start_clut2": 4,
+        "x_end_clut2_inclusive": 239,
+        "clut2_pixels": 1110,
+        "blank_rows_after": 4
+      },
+      {
+        "index": 1,
+        "y_start": 20,
+        "y_end_inclusive": 33,
+        "x_start_clut2": 2,
+        "x_end_clut2_inclusive": 149,
+        "clut2_pixels": 730,
+        "blank_rows_after": 4
+      },
+      {
+        "index": 2,
+        "y_start": 38,
+        "y_end_inclusive": 51,
+        "x_start_clut2": 2,
+        "x_end_clut2_inclusive": 117,
+        "clut2_pixels": 534,
+        "blank_rows_after": 4
+      },
+      {
+        "index": 3,
+        "y_start": 56,
+        "y_end_inclusive": 69,
+        "x_start_clut2": 2,
+        "x_end_clut2_inclusive": 117,
+        "clut2_pixels": 578,
+        "blank_rows_after": 4
+      },
+      {
+        "index": 4,
+        "y_start": 74,
+        "y_end_inclusive": 87,
+        "x_start_clut2": 2,
+        "x_end_clut2_inclusive": 125,
+        "clut2_pixels": 564,
+        "blank_rows_after": 4
+      },
+      {
+        "index": 5,
+        "y_start": 92,
+        "y_end_inclusive": 105,
+        "x_start_clut2": 2,
+        "x_end_clut2_inclusive": 123,
+        "clut2_pixels": 532,
+        "blank_rows_after": 4
+      },
+      {
+        "index": 6,
+        "y_start": 110,
+        "y_end_inclusive": 123,
+        "x_start_clut2": 2,
+        "x_end_clut2_inclusive": 91,
+        "clut2_pixels": 432,
+        "blank_rows_after": 4
+      },
+      {
+        "index": 7,
+        "y_start": 128,
+        "y_end_inclusive": 141,
+        "x_start_clut2": 2,
+        "x_end_clut2_inclusive": 179,
+        "clut2_pixels": 784,
+        "blank_rows_after": 4
+      },
+      {
+        "index": 8,
+        "y_start": 146,
+        "y_end_inclusive": 159,
+        "x_start_clut2": 2,
+        "x_end_clut2_inclusive": 99,
+        "clut2_pixels": 504,
+        "blank_rows_after": 4
+      },
+      {
+        "index": 9,
+        "y_start": 164,
+        "y_end_inclusive": 177,
+        "x_start_clut2": 2,
+        "x_end_clut2_inclusive": 227,
+        "clut2_pixels": 980,
+        "blank_rows_after": 3
+      },
+      {
+        "index": 10,
+        "y_start": 181,
+        "y_end_inclusive": 196,
+        "x_start_clut2": 5,
+        "x_end_clut2_inclusive": 114,
+        "clut2_pixels": 422,
+        "blank_rows_after": 2
+      },
+      {
+        "index": 11,
+        "y_start": 199,
+        "y_end_inclusive": 214,
+        "x_start_clut2": 2,
+        "x_end_clut2_inclusive": 135,
+        "clut2_pixels": 270,
+        "blank_rows_after": 3
+      },
+      {
+        "index": 12,
+        "y_start": 218,
+        "y_end_inclusive": 231,
+        "x_start_clut2": 2,
+        "x_end_clut2_inclusive": 137,
+        "clut2_pixels": 600,
+        "blank_rows_after": 4
+      },
+      {
+        "index": 13,
+        "y_start": 236,
+        "y_end_inclusive": 249,
+        "x_start_clut2": 2,
+        "x_end_clut2_inclusive": 247,
+        "clut2_pixels": 1104,
+        "blank_rows_after": 6
+      }
+    ]
+  },
+  "private_report": {
+    "filename": "TUIKA_14_FRANJAS_EVIDENCIA_ESTATICA_PRIVADA_20261122.json",
+    "sha256": "23f02aa43e4d153c3d62ff065676788c34d6116890f158466ab5c0d9cf8f866e",
+    "contains_original_art": false,
+    "hosted_in_github": false
+  },
+  "code": {
+    "tool": "tools/f2_mapa_franjas_tuika.py",
+    "tests": "tests/test_f2_mapa_franjas_tuika.py",
+    "local_synthetic_unit_tests": 18,
+    "all_local_synthetic_tests_pass": true,
+    "full_ci_pending_until_commit": true
+  },
+  "release_safety": {
+    "mask_bands_not_approved_editing_rois": true,
+    "band_not_guaranteed_to_equal_one_english_string": true,
+    "ppsspp_executed_this_relay": false,
+    "real_gameplay_png_new": 0,
+    "mips_ge_vram_proven": false,
+    "span_editing_allowed": false,
+    "original_iso_untouched": true,
+    "corpus_rows_modified": 0,
+    "white_new_ink_default_still_false": true,
+    "event_safe_only_required": true,
+    "pr7_remains_draft": true
+  },
+  "next": "PPSSPP autenticado + A/B original/sonda + mapeo de 14 bandas a escenas concretas, traza RAM/GE/VRAM, 19 glifos, regresión F1 X11, F3-F6"
+}

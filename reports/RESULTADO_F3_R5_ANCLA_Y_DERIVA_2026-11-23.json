@@ -1,0 +1,114 @@
+{
+  "schema": "cladun.f3.r5_intro_source_anchor_and_hypothetical_shift.v1",
+  "date": "2026-11-23",
+  "evidence_A": {
+    "source": "AUTHENTIC_USER_ORIGINAL_ISO_STATIC_READ_WITH_PRIVATE_PARSERS",
+    "original_iso_bytes": 305496064,
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+    "script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37",
+    "original_script_blocks": 1625,
+    "original_commands": 51705,
+    "intro_blocks": 7,
+    "intro_commands": 878,
+    "intro_source_spans": 97,
+    "intro_source_bytes": 2728,
+    "source_and_order_anchor_sha256": "b0d42d8cd871246addf08a54e02c2a84cda52cab39f5810ef5ba2d9173e3e34e",
+    "private_iso_verified_against_compact_manifest": true,
+    "source_text_and_game_assets_published": false
+  },
+  "evidence_B": {
+    "tool": "tools/f3_anclar_intro.py",
+    "tests": "tests/test_f3_anclar_intro.py",
+    "geometry": "reports/F3_DEMO1001_GEOMETRIA_ORIGINAL_2026-11-23.json",
+    "local_synthetic_tests_passed": 14,
+    "local_real_iso_check_private": true,
+    "canonical_draft_git_blob_sha1": "400a9c9ec06f7456b5ec6e11f7502d711b0a976e",
+    "real_github_draft_rows": 9237,
+    "verified_real_iso_anchor_against_github_draft": true,
+    "real_intro_translations": 97,
+    "original_text_bytes": 2728,
+    "spanish_cp932_bytes": 2859,
+    "translation_classes": {
+      "different_length_blocked": 85,
+      "same_length_candidates": 11,
+      "unchanged": 1
+    },
+    "test_run_head": "e0e47fa0e145732c83769af22c3a57e3fcc8eb4c",
+    "ci_push": {
+      "run_id": 45253114057,
+      "conclusion": "success"
+    },
+    "ci_pull_request": {
+      "run_id": 45253129304,
+      "conclusion": "success"
+    },
+    "ci_python_tests_total": 676,
+    "observed_2026_11_23_from_ci_log": true
+  },
+  "hypothetical_simple_concat_projection": {
+    "assumption": "replace text byte spans; keep instruction order; no padding, no branch relocation, no references",
+    "original_commands": 878,
+    "blocks": [
+      {
+        "script_id": 100000,
+        "net_text_bytes": 0,
+        "command_starts_shifted": 0
+      },
+      {
+        "script_id": 100100,
+        "net_text_bytes": -1,
+        "command_starts_shifted": 268
+      },
+      {
+        "script_id": 100190,
+        "net_text_bytes": 0,
+        "command_starts_shifted": 0
+      },
+      {
+        "script_id": 100101,
+        "net_text_bytes": 115,
+        "command_starts_shifted": 298
+      },
+      {
+        "script_id": 100191,
+        "net_text_bytes": 0,
+        "command_starts_shifted": 0
+      },
+      {
+        "script_id": 100110,
+        "net_text_bytes": 15,
+        "command_starts_shifted": 10
+      },
+      {
+        "script_id": 100120,
+        "net_text_bytes": 2,
+        "command_starts_shifted": 12
+      }
+    ],
+    "total_net_changed_bytes": 131,
+    "commands_with_changed_start": 588,
+    "count_is_not_broken_branches_or_proven_memory_addresses": true,
+    "relocation_authorized": false
+  },
+  "evidence_C": {
+    "ppsspp_official_1204_executed_this_relay": false,
+    "new_gameplay_captures": 0,
+    "newly_proven_mips_control_flow": false,
+    "new_ge_vram_provenance": false,
+    "visual_prologue_source_proven": false,
+    "tuika_combat_ab_proven": false,
+    "all_19_glyphs_proven": false
+  },
+  "protection": {
+    "intro_variable_length_85_blocked": true,
+    "global_script_4524_blocked": true,
+    "event_safe_only": true,
+    "original_glyphs_2721_preserved": true,
+    "white_new_ink_default": false,
+    "pr7_draft_required": true,
+    "keep_f2_x11_aba_and_clut2": true,
+    "commercial_assets_in_git": false
+  },
+  "ci_for_final_docs_and_prompt_commit": "TO_VERIFY_AFTER_PUBLICATION"
+}

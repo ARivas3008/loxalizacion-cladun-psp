@@ -1,0 +1,182 @@
+{
+  "schema": "cladun.graphics.r48.private_editions.v1",
+  "source_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "source_iso_unchanged": true,
+  "source_reauthenticated_after": true,
+  "edited_surfaces": 47,
+  "direct_edited": 13,
+  "direct_preserved": [
+    "SYSGRA.ARC/LVSP.IMY"
+  ],
+  "credit_surfaces_edited": 34,
+  "credit_surfaces_preserved": [
+    208,
+    226
+  ],
+  "duplicate_credit_pairs_verified": 17,
+  "previous_six_implemented_not_replayed": 6,
+  "direct": [
+    {
+      "path": "SYSGRA.ARC/TUIKA_MES.IMY",
+      "compressed_old": 7912,
+      "compressed_new": 15424
+    },
+    {
+      "path": "SYSGRA.ARC/DAMAGE.IMY",
+      "compressed_old": 4752,
+      "compressed_new": 7532
+    },
+    {
+      "path": "SYSGRA.ARC/MAHO_ST.IMY",
+      "compressed_old": 1516,
+      "compressed_new": 2684
+    },
+    {
+      "path": "SYSGRA.ARC/SYS1.IMY",
+      "compressed_old": 5692,
+      "compressed_new": 7748
+    },
+    {
+      "path": "SYSGRA.ARC/WINDOW01.IMY",
+      "compressed_old": 4044,
+      "compressed_new": 6452
+    },
+    {
+      "path": "ANIME000.IDT_IMY192",
+      "compressed_old": 4306,
+      "compressed_new": 10318
+    },
+    {
+      "path": "ANIME000.IDT_IMY1",
+      "compressed_old": 330,
+      "compressed_new": 525
+    },
+    {
+      "path": "ANIME002.LDT_8911_0",
+      "compressed_old": 2648,
+      "compressed_new": 2688
+    },
+    {
+      "path": "ANIME002.LDT_8919_1",
+      "compressed_old": 296,
+      "compressed_new": 286
+    },
+    {
+      "path": "ANIME002.LDT_8922_0",
+      "compressed_old": 2321,
+      "compressed_new": 1004
+    },
+    {
+      "path": "TITLE_LOGO.MPB",
+      "compressed_old": 17064,
+      "compressed_new": 19188
+    },
+    {
+      "path": "ISO/PSP_GAME/ICON0.PNG",
+      "compressed_old": 30273,
+      "compressed_new": 26535
+    },
+    {
+      "path": "ISO/PSP_GAME/PIC0.PNG",
+      "compressed_old": 55009,
+      "compressed_new": 45999
+    }
+  ],
+  "credits": [
+    [
+      195,
+      213
+    ],
+    [
+      196,
+      214
+    ],
+    [
+      197,
+      215
+    ],
+    [
+      198,
+      216
+    ],
+    [
+      199,
+      217
+    ],
+    [
+      200,
+      218
+    ],
+    [
+      201,
+      219
+    ],
+    [
+      202,
+      220
+    ],
+    [
+      203,
+      221
+    ],
+    [
+      204,
+      222
+    ],
+    [
+      205,
+      223
+    ],
+    [
+      206,
+      224
+    ],
+    [
+      207,
+      225
+    ],
+    [
+      209,
+      227
+    ],
+    [
+      210,
+      228
+    ],
+    [
+      211,
+      229
+    ],
+    [
+      212,
+      230
+    ]
+  ],
+  "outside_roi_exact": 47,
+  "native_roundtrip": 47,
+  "reproduced_exact_deltas": 47,
+  "changed_pixels": 155629,
+  "compressed_growth_count": 43,
+  "private_manifest_sha256": "6328a687231abfaabfc5d98a1c510df577f9359a950cde3fc45f0b4f22c68029",
+  "private_zip_sha256": "bc44db957a7c433c27f51b845ab80e680973f3ae06e26660fd58de2bfbc0eabd",
+  "private_reproduction_script_sha256": "9400baf3bc8098b79ab9dad7b541d8b53f73c9c4a54614725ba1e603e4af176e",
+  "r47_ci": {
+    "push": 45679878259,
+    "pr": 45679894263,
+    "conclusion": "success"
+  },
+  "runtime_verified": false,
+  "integrated_into_iso": false,
+  "official_promoted": false,
+  "remaining": {
+    "palette_runtime_review": 309,
+    "conditional": 4,
+    "abbreviations": 2,
+    "font": 7
+  },
+  "notes": [
+    "Private code and XOR deltas delivered separately; no commercial textures uploaded.",
+    "IMY/GZIP/PNG roundtrip is not proof of outer container compatibility.",
+    "External CLUT mapping not verified; font rendering and translations are candidates, not final visual approval."
+  ]
+}

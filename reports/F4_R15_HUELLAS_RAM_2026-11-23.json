@@ -1,0 +1,112 @@
+{
+  "schema": "cladun.f4.r15_static_anchors_and_locator.v1",
+  "date": "2026-11-23",
+  "evidence_A": {
+    "kind": "ORIGINAL_ISO_READONLY",
+    "original_iso_size": 305496064,
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "script_dat_size": 633344,
+    "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+    "original_script_blocks": 1625,
+    "commands": 51705,
+    "nontext_commands": 46308,
+    "window_bytes": 32,
+    "anchor_count": 9,
+    "anchor_occurrences_in_original": [
+      {
+        "script_dat_offset": 7420,
+        "window_sha256": "5ce05d5272641c26df59315e6ea80201f4bc30560dc3dc4d0265030bd392f987",
+        "occurrences": 1
+      },
+      {
+        "script_dat_offset": 218095,
+        "window_sha256": "a7227bcf9b2a7892ee8960572c3f03c18e1db5cd9b9f43a1375d4609c5924be3",
+        "occurrences": 1
+      },
+      {
+        "script_dat_offset": 218133,
+        "window_sha256": "8f94dc492fe898867a31e5294ec3db21d0d3641c0531ebbad10d25485879689b",
+        "occurrences": 1
+      },
+      {
+        "script_dat_offset": 223351,
+        "window_sha256": "a52ab22562c4e3e64ddedf3ca21828c2a79c9da78271de76dd2de483b6ea7684",
+        "occurrences": 1
+      },
+      {
+        "script_dat_offset": 223360,
+        "window_sha256": "3cce1dada27014c14bd0b5f6a2c15fe246cead520d1bb82781f2d01db9789e2a",
+        "occurrences": 1
+      },
+      {
+        "script_dat_offset": 223602,
+        "window_sha256": "e18ed974e470f9e18a6e2bab4007c931b0d16ad9c7598725176a66679d79973c",
+        "occurrences": 1
+      },
+      {
+        "script_dat_offset": 223637,
+        "window_sha256": "c76fe924daecb86f933914f753aa2de1717d0313d08cad9767ed8fefabefb591",
+        "occurrences": 1
+      },
+      {
+        "script_dat_offset": 227968,
+        "window_sha256": "eeb09f7b723dbc8e06c5318bd5c10de5d974467bef5319fc75237c458a6e2a46",
+        "occurrences": 1
+      },
+      {
+        "script_dat_offset": 228194,
+        "window_sha256": "fee97835fd8de58655d12a5b550836dede1a2552c6bf38adc8d630e3ec6419bb",
+        "occurrences": 1
+      }
+    ],
+    "private_metadata_report_sha256": "5f86438b2ff6b670a663f41630394359f7458bb37b9341f78d564fb12e8a8554",
+    "source_bytes_published": false
+  },
+  "evidence_B": {
+    "tool": "tools/f4_r15_localizador_ram.py",
+    "test_file": "tests/test_f4_r15_localizador_ram.py",
+    "new_synthetic_tests_local_passed": 33,
+    "subset_tests_local_passed": 87,
+    "subset_is_not_entire_repo": true,
+    "algorithm": "scan windowed memory, 32-byte overlaps, >=3 anchored matches, full 633344-byte SHA if contiguous",
+    "safeguards": [
+      "no RAM writing",
+      "no MIPS breakpoint writing",
+      "exact ISO and AppImage SHA",
+      "PID-starttime / ISO-FD / WS socket authentic before and after",
+      "bounded RAM scan 32MiB",
+      "WS ticket validation",
+      "strict base64 size validation",
+      "fail on duplicate or invalid anchors",
+      "report metadata only"
+    ]
+  },
+  "official_release": {
+    "url": "https://github.com/hrydgard/ppsspp/releases/tag/v1.20.4",
+    "asset": "PPSSPP-v1.20.4-anylinux-x86_64.AppImage",
+    "asset_size_bytes": 50689748,
+    "asset_sha256": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21",
+    "release_metadata_digest_verified": true
+  },
+  "evidence_C": {
+    "ppsspp_installed": false,
+    "download_attempted": true,
+    "download_result": "FAILED_DNS_UNAVAILABLE",
+    "real_memory_scan_executed": false,
+    "real_gameplay_trace_executed": false,
+    "ram_base_found": null,
+    "mips_pc_recorded": null,
+    "q050_q051_q052_q053_pass": false
+  },
+  "limits": [
+    "No full-image result does not prove absent scripts: game may stream/transform blocks",
+    "Memory.read may temporarily pause PPSSPP CPU",
+    "No dynamic link semantics observed",
+    "No variable-length insertion authorized"
+  ],
+  "original_iso_unchanged": true,
+  "commercial_bytes_committed": false,
+  "romhacking_deferred": 4524,
+  "qa_cases_defined": 55,
+  "all_four_closed": false
+}

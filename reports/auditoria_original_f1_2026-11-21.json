@@ -1,0 +1,59 @@
+{
+  "schema": "cladun.f1.original_private_static_audit.v1",
+  "fecha_ejecucion": "2026-11-21",
+  "resultado": "PASS_AUDITORIA_SOLO_ISO_ORIGINAL_NO_CANDIDATA",
+  "original_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "original_bytes": 305496064,
+  "iso9660_records_total": 16,
+  "iso9660_files": 12,
+  "data_dat": {
+    "offset": 113770496,
+    "size": 191697408,
+    "sha256": "7f4db811e5d079ed58c15ee21cc14ab472d58d93f5c97378982a922c39af3404"
+  },
+  "pspfs_entries": 349,
+  "pspfs_unique_names": 349,
+  "dsarc_members": {
+    "DATABASE.DAT": 30,
+    "FONT.ARC": 7,
+    "SCRIPT.SDT": 4
+  },
+  "strtbl_sha256": "16d9da36c05380cbb8af7eba53cb26c7b3e21f8ef5c80fdb90fdba20621044bf",
+  "strtbl_slots": 654,
+  "strtbl_strings": 651,
+  "font_bin_sha256": "1f1f5692fecb3b4a66c50f4b20191c1f2658a32ca1220902a5888ae9a11afb46",
+  "font_glyphs": 2721,
+  "f1_strtbl_original_indices": {
+    "501": {
+      "utf8_caracteres": 37,
+      "bytes_cp932": 44
+    },
+    "502": {
+      "utf8_caracteres": 12,
+      "bytes_cp932": 12
+    },
+    "503": {
+      "utf8_caracteres": 11,
+      "bytes_cp932": 12
+    },
+    "504": {
+      "utf8_caracteres": 12,
+      "bytes_cp932": 12
+    },
+    "505": {
+      "utf8_caracteres": 12,
+      "bytes_cp932": 12
+    }
+  },
+  "events": {
+    "script_starts": 1625,
+    "commands": 51705,
+    "nontext": 46308,
+    "text_commands": 5397,
+    "script_first_offset": 0,
+    "script_last_offset": 633008
+  },
+  "f1_candidate_integrity_checked": false,
+  "ppsspp_executed": false,
+  "bps_reconstruction_executed": false
+}

@@ -35127,7 +35127,7 @@ Decimales de daño
 ORIGINAL:
           ON
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-          EN
+          Sí
 
 [005711] INTERFAZ | CLD-005901
 ORIGINAL:
@@ -35145,7 +35145,7 @@ Menos de 10: SÍ
 ORIGINAL:
          OFF
 ESPAÑOL (borrador_automatico_sin_revision_narrativa):
-         APAGADO
+         No
 
 [005714] INTERFAZ | CLD-005904
 ORIGINAL:

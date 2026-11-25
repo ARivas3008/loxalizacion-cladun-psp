@@ -1,0 +1,124 @@
+{
+  "schema": "cladun.graphics.audit.r47.v1",
+  "source_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "source_iso_bytes": 305496064,
+  "pspfs_decoded": 349,
+  "leaf_paths_scanned_including_iso_png": 1468,
+  "visual_surfaces": 426,
+  "by_family": {
+    "PNG": 9,
+    "MPB": 37,
+    "SYSGRA_visual_IMY": 23,
+    "FONT_atlas_IMY": 6,
+    "ANIME000_IMY": 231,
+    "ANIME001_IMY": 24,
+    "ANIME002_GZIP": 57,
+    "MAPTIP_GZIP": 39
+  },
+  "classification": {
+    "IMPLEMENTADO_PENDIENTE_QA": 6,
+    "INTERVENIR": 14,
+    "REVISAR_ABREVIATURAS": 2,
+    "FUENTE_REVISION": 7,
+    "CONDICIONAL": 4,
+    "CREDITOS": 36,
+    "PRESERVAR": 48,
+    "REVISAR_PALETA": 309
+  },
+  "palette_tables_excluded": 4,
+  "new_targets": [
+    [
+      "ISO/PSP_GAME/ICON0.PNG",
+      "subtítulo XMB"
+    ],
+    [
+      "ISO/PSP_GAME/PIC0.PNG",
+      "subtítulo y descripción XMB"
+    ],
+    [
+      "TITLE_LOGO.MPB",
+      "subtítulo de título"
+    ],
+    [
+      "SYSGRA.ARC/TUIKA_MES.IMY",
+      "mensajes de efectos"
+    ],
+    [
+      "SYSGRA.ARC/DAMAGE.IMY",
+      "avisos de combate"
+    ],
+    [
+      "SYSGRA.ARC/WINDOW01.IMY",
+      "SKIP/MENU"
+    ],
+    [
+      "SYSGRA.ARC/SYS1.IMY",
+      "NEW!/Any y etiquetas"
+    ],
+    [
+      "SYSGRA.ARC/MAHO_ST.IMY",
+      "Walk/Run/Mana"
+    ],
+    [
+      "SYSGRA.ARC/LVSP.IMY",
+      "estadísticas"
+    ],
+    [
+      "ANIME000.IDT",
+      "IMY[1] offset 1218960, registro 1: HELP!"
+    ],
+    [
+      "ANIME000.IDT",
+      "IMY[192] offset 3417360, registro 188: prólogo inglés 256x128"
+    ],
+    [
+      "ANIME002.LDT",
+      "record 8911 texture 0: HELP!"
+    ],
+    [
+      "ANIME002.LDT",
+      "record 8919 texture 1: WIDE"
+    ],
+    [
+      "ANIME002.LDT",
+      "record 8922 texture 0: BREAK!"
+    ]
+  ],
+  "credits": {
+    "path": "ANIME000.IDT",
+    "ranges_zero_based": [
+      [
+        195,
+        212
+      ],
+      [
+        213,
+        230
+      ]
+    ],
+    "records_zero_based": [
+      190,
+      191
+    ],
+    "preserve_names": true
+  },
+  "conditional": [
+    "TITLE.MPB",
+    "TRIAL_BG.MPB",
+    "NIS_LOGO.MPB",
+    "ANIME002.LDT record 6990 texture 0"
+  ],
+  "abbreviations_review": [
+    "SYSGRA.ARC/LVSP_NUM.IMY",
+    "SYSGRA.ARC/EXP_BAR.IMY"
+  ],
+  "ppsspp_run": false,
+  "iso_modified": false,
+  "all_graphics_runtime_verified": false,
+  "limitations": [
+    "External palettes for ANIME and MAPTIP not verified; grayscale index previews",
+    "Credits physical surfaces counted separately even when visually duplicated",
+    "Signature and known format inventory is not proof of every proprietary graphic or scene",
+    "No graphic patch was applied in this round"
+  ]
+}

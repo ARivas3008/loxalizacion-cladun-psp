@@ -1,0 +1,32 @@
+{
+  "schema": "cladun.r21.experimental_ligature_feasibility.v1",
+  "source_iso_original_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "evidence_A": {
+    "font_arc_sha256": "420613ae4a16595b00c75d17bfb86290e57a30419d81ddbc6f245035e63c9805",
+    "font_bin_sha256": "1f1f5692fecb3b4a66c50f4b20191c1f2658a32ca1220902a5888ae9a11afb46",
+    "original_glyphs": 2721,
+    "halfwidth_A1_DF_used_original_font": 0,
+    "original_corpus_independent_halfwidth_codes": 0,
+    "padding_available_bytes": 376,
+    "padding_after_63_records": 124,
+    "atlas_cells_after_63": 288
+  },
+  "evidence_B": {
+    "script_texts": 5207,
+    "growing": 2883,
+    "shrinking": 1641,
+    "same": 683,
+    "new_halfwidth_codes": 44,
+    "theoretical_fixed_width_candidates": 2120,
+    "remaining_growing_overflows": 763,
+    "total_byte_growth": 17108,
+    "residual_byte_overflow_after_model": 2356
+  },
+  "evidence_C": false,
+  "codebook_canonical": false,
+  "font_modified": false,
+  "iso_created": false,
+  "official_integrated": 3724,
+  "official_total": 8248,
+  "official_deferred": 4524
+}

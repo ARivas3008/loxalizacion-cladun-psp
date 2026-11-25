@@ -1,0 +1,76 @@
+{
+  "schema": "cladun.f2.ge_texture_clut_transfer_candidates.2026-11-21.v1",
+  "phase": "F2_OPEN_UNPROVEN_PPSSPP_RUNTIME",
+  "code_commit": "161dcec70731e0472c5418547074d5a5d08c110f",
+  "code": "tools/f2_ge_dump_1204.py",
+  "tests_file": "tests/test_f2_ge_dump_1204.py",
+  "new_synthetic_tests": 4,
+  "source_ppsspp_tag": "hrydgard/ppsspp v1.20.4",
+  "source_paths": [
+    "GPU/GPUState.h",
+    "GPU/ge_constants.h",
+    "GPU/Debugger/RecordFormat.h"
+  ],
+  "implemented": {
+    "texture_address": "(TEXADDR[level] & 0xFFFFF0) | ((TEXBUFWIDTH[level] << 8) & 0x0F000000)",
+    "clut_address": "(CLUTADDR & 0x00FFFFF0) | ((CLUTADDRUPPER << 8) & 0x0F000000)",
+    "transfer_source": "(TRANSFERSRC & 0xFFFFF0) | ((TRANSFERSRCW & 0xFF0000) << 8)",
+    "transfer_dest": "(TRANSFERDST & 0xFFFFF0) | ((TRANSFERDSTW & 0xFF0000) << 8)",
+    "output_limited_to": 150,
+    "fields": [
+      "ge_address_candidates_limited_to_150",
+      "ge_address_trigger_count_total",
+      "addresses_are_partial_unverified_candidates"
+    ],
+    "scope": "Only values of registers observed in dump; no initialization state assumed; primary VRAM-window flag is a numerical candidate ONLY"
+  },
+  "original_usa": {
+    "real_binary_read": true,
+    "bytes": 305496064,
+    "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f"
+  },
+  "kitajima": {
+    "real_binary_read": true,
+    "offset": 114723840,
+    "compressed_bytes": 2480,
+    "sha256": "0ce89df69ad71a9ef3165217d7cb98103a1fb0e08c53ca3a85c594dfaa7a2190"
+  },
+  "glyphs": {
+    "real_original_iso_qa_reexecuted": true,
+    "count": 19,
+    "old_records": 2721,
+    "optional_white_ink_changed_pixels": 100,
+    "private_report_sha256": "88edb8a2cf1a920f1ff7480cbe4b06f44d5441a1183720b71a07b393a49bfb80",
+    "game_runtime_proven": false
+  },
+  "evidence_manifest_sha256": "d105cec882bfbc2e6dd7e4ac2f41aad0717cbf2eac0abd6a1325892b7f3cb178",
+  "ci": {
+    "push_run": 44987146237,
+    "pr_run": 44987149980,
+    "push": "SUCCESS",
+    "pr": "SUCCESS",
+    "python_tests": 213,
+    "go": "SUCCESS",
+    "windows_build": "SUCCESS"
+  },
+  "blocked": {
+    "ppsspp_appimage": false,
+    "f1_iso": false,
+    "genuine_ppsspp_dump": false,
+    "new_pngs": 0,
+    "new_mips_pcs": 0,
+    "new_vram_addresses": 0,
+    "f1_window_regression": false,
+    "all_19_glphs_visual": false,
+    "git_fetch": "FAILED_DNS"
+  },
+  "preserved": {
+    "pr_draft": true,
+    "source_iso_intact": true,
+    "canonical_corpus_unchanged": true,
+    "integrator_unchanged": true,
+    "white_new_ink_default": false,
+    "event_safe_only_required": true
+  },
+  "claim_limits": "Numeric GE address candidates are not causal RAM→GE→VRAM trace and not texture identity proof."
+}

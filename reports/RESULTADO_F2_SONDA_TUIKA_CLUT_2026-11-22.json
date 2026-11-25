@@ -1,0 +1,102 @@
+{
+  "schema": "cladun.f2.tuika_private_palette2_isolation_2026_11_22.v1",
+  "status": "F2_OPEN_PRIVATE_ISO_PROBE_REAL_BINARY_NOT_PPSSPP",
+  "source": {
+    "original_iso_bytes": 305496064,
+    "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "extracted_from_user_7z_in_this_relay": true,
+    "original_iso_not_modified": true,
+    "archive": "SYSGRA.ARC",
+    "pspfs_index": 225,
+    "stored_size": 93696,
+    "original_archive_sha256": "63d9443084a2aeab8c2a3f79aebdb130eaf6c5d2e86f8be51346d7458ab81854",
+    "member": "TUIKA_MES.IMY",
+    "dsarc_index": 24,
+    "member_offset": 78848,
+    "member_bytes": 7912,
+    "original_member_sha256": "c47140753a462cc5b1cc454ee79e0c37b526f06ba5c663b957a91202ebd09127"
+  },
+  "private_probe": {
+    "generated_on_real_original_iso": true,
+    "output_is_private_not_in_github": true,
+    "private_iso_filename": "cladun_tuika_rgba2_magenta_probe_20261122.iso",
+    "output_iso_sha256": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa",
+    "output_iso_bytes": 305496064,
+    "palette_index": 2,
+    "palette_before_rgba": [
+      249,
+      251,
+      249,
+      255
+    ],
+    "palette_after_rgba": [
+      255,
+      0,
+      255,
+      255
+    ],
+    "original_alpha_unchanged": true,
+    "original_member_sha256": "c47140753a462cc5b1cc454ee79e0c37b526f06ba5c663b957a91202ebd09127",
+    "probe_member_sha256": "efcf4f41f57c300476e8ce54a32dea01f242dda3fbf3fb9c4e0b582bad8f5252",
+    "probe_archive_sha256": "403f391c4b1ab2c8618ac5d098f0a4316b7fd8262ecb80f7f39a2553ec06c758",
+    "exactly_changed_iso_bytes": 3,
+    "absolute_iso_offsets_decimal": [
+      114744872,
+      114744873,
+      114744874
+    ],
+    "before_to_after_hex": [
+      "F9→FF",
+      "FB→00",
+      "F9→FF"
+    ],
+    "pspfs_unchanged_neighbors": 348,
+    "dsarc_unchanged_neighbors": 26,
+    "pspfs_records_total": 349,
+    "dsarc_records_total": 27,
+    "pspfs_table_identical": true,
+    "dsarc_table_identical": true,
+    "all_other_iso9660_and_data_bytes_identical": true,
+    "private_json_filename": "CLADUN_F2_probe_TUIKA_rgba2_INTEGRIDAD_PRIVADA_2026-11-22.json",
+    "private_json_sha256": "05287b3af776794936e5a548f351585f2413e12877fea9ac62d58292a53b438d",
+    "source_test_local": "Independent local Python script used to create/private-audit source and candidate; Python unittest synthetic verification",
+    "probe_what_it_colors": "Every pixel using TUIKA_MES.IMY CLUT index 2, not only specific English letters",
+    "actual_visual_game_proven": false
+  },
+  "implementation": {
+    "github_code_commit": "ff91106a6997019bbd532c449160101df04f460a",
+    "source": "tools/f2_probe_tuika_palette_privado.py",
+    "synthetic_tests": "tests/test_f2_probe_tuika_palette_privado.py",
+    "new_synthetic_tests": 22,
+    "total_python_tests_passed": 313,
+    "github_actions_push_run_id": 45051308641,
+    "github_actions_pr_run_id": 45051315010,
+    "push_and_pr_ci_success": true,
+    "go_tests_success": true,
+    "corpus_integrity_success": true,
+    "windows_public_exe_build_success_no_bps": true,
+    "actual_GitHub_tool_run_on_game_ISO": "NOT_EXECUTED_INSIDE_GITHUB_CI_PROPRIETARY_INPUT_NOT_PRESENT",
+    "independent_local_probe_on_original_iso": "EXECUTED"
+  },
+  "runtime_blockers": {
+    "official_ppsspp_appimage_1204_present": false,
+    "ppsspp_download_from_shell_failed_dns": true,
+    "original_usa_iso_available_privately": true,
+    "original_F1_iso_available_privately": false,
+    "actual_new_ppsspp_gameplay_screenshots": 0,
+    "actual_new_gpu_ge_dumps": 0,
+    "mips_ram_ge_vram_icon_trace_proven": false,
+    "TUIKA_asset_functional_game_use_proven": false,
+    "all_19_es_glyphs_validated_in_game": false,
+    "F1_X11_960x544_new_regression_validated": false
+  },
+  "invariants": {
+    "canonical_9237_text_records_untouched": true,
+    "canonical_fonts_untouched": true,
+    "white_new_ink_default_false": true,
+    "event_safe_only_kept": true,
+    "PR_7_DRAFT": true,
+    "no_commercial_bytes_uploaded_to_github": true
+  },
+  "next_step": "Run original USA and isolated magenta probe in authenticated PPSSPP 1.20.4 in relevant scenes, photograph real X11/screenshots privately and correlate MIPS->RAM->GE->VRAM, then 19 glyphs, F1 regression; if impossible investigate safely without claiming F2 closed."
+}

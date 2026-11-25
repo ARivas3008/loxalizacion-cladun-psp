@@ -1,0 +1,89 @@
+{
+  "schema": "cladun.r37.residual_1155.v1",
+  "initial_head": "7304c972ccaa850d0be72d481125858ac9bc99c9",
+  "initial_ci": {
+    "id": 45545120651,
+    "conclusion": "success"
+  },
+  "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "verified_preimages": 1155,
+  "source_bytes": 29805,
+  "preimage_sha256": "838b7879d90439f6c21f2e876023332d4e12e20a23e23768b77bafaa617dbb08",
+  "batches": [
+    {
+      "count": 1000,
+      "bytes": 26564,
+      "preimage_sha256": "b49f34e1a879ac341c124b2d5706759975932256d95e5cc12cbf01bff2e4a672"
+    },
+    {
+      "count": 155,
+      "bytes": 3241,
+      "preimage_sha256": "7fa3892096c2c90ddbd9438ac4c5c7465607e6296e6068769a3ae191d8b767a5"
+    }
+  ],
+  "categories": {
+    "overflow": 787,
+    "long_padding": 275,
+    "controls": 93
+  },
+  "extended_padding": {
+    "count": 275,
+    "subgroups": [
+      200,
+      42,
+      33
+    ],
+    "plan_sha256": "86c7a635521a50aa493086c4c0f3b34e0a3b4790c1fd040d2aa24c54c47c59aa",
+    "script_sha256": "461a42198e46ea23463c1806d2919a84352f3f676d427231067bd898557f82f0"
+  },
+  "cp932": {
+    "count": 53,
+    "preserved_tokens": 65,
+    "source_bytes": 1891,
+    "plan_sha256": "10fe45321109a8a94f0083def28860b90a3f2d63acfce5e3cd5ad79afccc960d",
+    "script_sha256": "f5b4f3da1919f1402788fecb058815486421eded7a2a364a6767dffea29d9b14"
+  },
+  "combined": {
+    "count": 328,
+    "blocks": 131,
+    "source_bytes": 12106,
+    "changed_bytes": 10901,
+    "plan_fnv32": 803453054,
+    "plan_sha256": "334f5537902dcaefb01e0ad88c8ea19b9a30517f7053e0879446eb947523be1b",
+    "script_sha256": "e5457b99e12a926899840b972d2536c2b7389b4b02c67a900b9b240dbbe7a5d5",
+    "archive_sha256": "71f9f7eb14bbbf7668a8deb34e2f9da748860403ad18577ea6a38c0d9ecd97d2",
+    "compressed_sha256": "05b6198f7a7bae0a728c6c8480e7884ae1eb60837e5c2e420d067014e1760d84",
+    "stored_bytes": 699632,
+    "commands": 51705,
+    "nontext_exact": 46308,
+    "moved_offsets": 0,
+    "moved_script_starts": 0,
+    "script_table_exact": true,
+    "dsarc_siblings_exact": 3,
+    "imy_roundtrip": true,
+    "imy_repacked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "imy_unchanged": [
+      0,
+      7
+    ]
+  },
+  "profile_total": 7421,
+  "remaining": 827,
+  "remaining_categories": {
+    "overflow_ascii": 787,
+    "overflow_icons": 19,
+    "non_icon_multibyte": 11,
+    "format_control": 10
+  },
+  "official": 3724,
+  "accumulated_iso_written": false,
+  "ppsspp_run": false,
+  "release_authorized": false
+}

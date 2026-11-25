@@ -1,0 +1,106 @@
+{
+  "schema": "cladun.f2.real_gameplay_map_ge_and_f1_witness.v1",
+  "date": "2026-11-23",
+  "status": "F2_OPEN_TUIKA_RUNTIME_NOT_PROVEN",
+  "source": {
+    "usa_bytes": 305496064,
+    "usa_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "sonda_sha256": "b199222f740d8d3365d79959de2888caefc2c6c3ed308598ee356db476a465fa",
+    "f1_bytes": 306456576,
+    "f1_sha256": "496689f858322fa5dbef63c797365e32b2005ef812f230c34e367550eb53e986"
+  },
+  "emulator": {
+    "version": "PPSSPP official v1.20.4 AppImage Linux x86_64",
+    "sha256": "661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21",
+    "display": "Xvfb :98 1280x720; X11 window 960x544",
+    "graphics_backend": "OpenGL on llvmpipe",
+    "ppsspp_software_renderer_flag": false,
+    "original_binary_modified": false,
+    "websocket_port": 24192,
+    "game_id": "NPUH10072"
+  },
+  "actual_gameplay": {
+    "iso_role": "f1",
+    "real_boot": true,
+    "intro_english_visible": true,
+    "skip_marker": "START SKIP appeared in Cheery Girl cutscene",
+    "skip_start_success": true,
+    "playable_map_reached": true,
+    "character_movement_seen": true,
+    "hud_visible": true,
+    "combat_triggered": false,
+    "tuiKA_texture_seen": false,
+    "probe_vs_original_ab_performed": false
+  },
+  "ge": {
+    "real_dump": true,
+    "bytes": 65309,
+    "sha256": "d2195fbedd6f430d2a3823db28c12f9f9a9bc789964adefead0bab19298f06b4",
+    "magic": "PPSSPPGE",
+    "format_version": 6,
+    "record_count": 989,
+    "PRIM": 301,
+    "TEXADDR0": 43,
+    "CLUTADDR": 40,
+    "TEXTURE0": 270,
+    "REGISTERS": 342,
+    "VERTICES": 301,
+    "texture_identity_proven": false
+  },
+  "gpu_buffer_readback": {
+    "cpu_paused": true,
+    "cpu_resumed": true,
+    "screenshot": "Could not download output",
+    "renderColor": "Could not download output",
+    "renderDepth": "Could not download output",
+    "psp_framebuffer_proven": false
+  },
+  "iso_and_ws_pid_witness": {
+    "same_pid_socket_and_iso_fd": true,
+    "same_iso_inode_before_after": true,
+    "x11_window_pid_correlated": true,
+    "game_loaded_texture_proven": false
+  },
+  "new_code": [
+    "tools/f2_iso_proceso_ppsspp.py",
+    "tools/f2_x11_ppsspp_procfs_capture.py",
+    "tools/f2_ppsspp_ws_1204.py"
+  ],
+  "tests_added": [
+    "tests/test_f2_iso_proceso_ppsspp.py",
+    "tests/test_f2_x11_ppsspp_procfs_capture.py",
+    "tests/test_f2_x11_f1_capture_integration.py"
+  ],
+  "qa": {
+    "python_count": 499,
+    "python_skipped": 1,
+    "python_failures": 0,
+    "integridad": "PASS",
+    "borrador": "PASS",
+    "preflight": "PASS_STATIC_ONLY",
+    "integrabilidad": "PASS_STATIC_ONLY",
+    "go_tests": "PASS"
+  },
+  "protected": {
+    "corpus_rows": 9237,
+    "spanish_rows": 9235,
+    "source_untouched": true,
+    "script_changes_deferred": 4524,
+    "event_safe_only_kept": true,
+    "assets_modified": 0
+  },
+  "private_evidence_zip_sha256": "cf63f5d8da8b831e1882c7f7204ad16abaa0656e600b10d6a73534b0dfb26b47",
+  "remaining": [
+    "TUIKA original vs probe A/B same gameplay scene",
+    "MIPS RAM GE VRAM provenance",
+    "19 glyphs across HUD/dialog/combat",
+    "full F1 campaign",
+    "F3 F4 F5 F6"
+  ],
+  "source_type": [
+    "AUTHENTIC_ISO",
+    "SYNTHETIC_TESTS",
+    "REAL_PPSSPP_GAMEPLAY",
+    "REAL_GE_DUMP"
+  ]
+}

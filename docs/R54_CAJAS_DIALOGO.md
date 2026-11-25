@@ -1,0 +1,9 @@
+# R54 — diálogos paginados: reducir alcance de reubicación
+
+ISO original autenticada, análisis independiente local. Los opcodes 64/65 delimitan secuencias, 66 contiene texto, 67 (406 apariciones, 376 entre 66) es probable avance de página y 6E interlocutor. Semántica dinámica no confirmada. 33 pendientes: 30 diálogo (20 varias líneas, 10 una), 3 interlocutor.
+
+Prueba aislada: 18 residuales y 18 donantes R52 equilibrados dentro de 18 diálogos, 16 de ellos dentro de una misma página. Se escribió SCRIPT.DAT en memoria, SHA 0a595767efb16d27b9915706cf5b6aca9f81af7a828b7b2c40ac5ad249bac8d7; reparseo de 51705 comandos, 46308 no textuales byte-exactos, 1625 inicios y SCRIPT.TBL intactos. Solo 21 desplazamientos (19 texto, 2 opcode 67), cero fuera del diálogo. No es acumulada, no es incremento de cobertura oficial ni certificación C. R54 provee selector reproducible y guardia de límites.
+
+Seis diálogos ofrecen >=5 bytes para insertar separador 67, pero ninguno tiene ID libre entre las líneas candidatas; 406 separadores tienen payload vacío y el patrón ID monotónico domina. No insertar IDs duplicados o fuera de orden sin probar semántica. Añadir línea cuesta 8 bytes de cabecera; una página adicional con nueva línea cuesta 13 bytes más contenido, caja nueva 18 más contenido. Los 3 nombres no son paginables. Quedan 15 residuales fuera del subconjunto aislado: buscar donantes dentro de la misma caja, o probar expansión de texto en el intérprete (buffer separado, sin tocar offsets) una vez disponible PPSSPP. No sustituir signos, nombres o redacción sin aprobación. No publicar ROM ni activos.
+
+Reproducir en checkout: python -m tools.r54_dialogue_envelopes --iso-original /PRIVADO/USA.iso; python -m unittest discover -s tests -p 'test_r54_dialogue_envelopes.py' -v. La ejecución auténtica se hizo mediante implementación independiente; CI nuevo pendiente. R53 CI push 45707589887 y PR 45707601630 SUCCESS.

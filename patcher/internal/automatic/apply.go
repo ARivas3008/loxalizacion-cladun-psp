@@ -16,10 +16,10 @@ import (
 )
 
 // This is an EXPERIMENTAL patch generated from the exact USA ISO.
-// Startup, music selection and early story dialogue were smoke-tested in PPSSPP;
-// this does not certify the complete game.
-const PatchSHA256 = "300f0eabccf7bf64b2d1eb0e783d31a213f62fdc006ac193fad2918b23e92b80"
-const TargetSHA256 = "6d874a2e04fa9b27c14cbc42a49e91308d82c802b3f247ac1f0f1841953dd261"
+// Event offsets are preserved in this PARTIAL edition (4,524 scripts deferred).
+// v0.1.5 fixes the horizontal origin of ¿ and ¡. PPSSPP rendering of this edition remains unverified.
+const PatchSHA256 = "976fda78adf3e6c2c3c31d5b89bc2f04b18c0905789305b25e9d0a58bf8cea0c"
+const TargetSHA256 = "9be7b07a2c5c8c9026ffd0f829f613237f9a31e8fe2455856649ff6c1fe2b4ef"
 
 func PayloadValid(patch []byte) bool {
 	if len(patch) < 19 || string(patch[:4]) != "BPS1" {

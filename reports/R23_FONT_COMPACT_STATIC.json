@@ -1,0 +1,90 @@
+{
+  "schema": "cladun.r23.font_44_compact_static.v1",
+  "cut": "2026-11-23",
+  "evidence": {
+    "A_authentic_user_iso_private": {
+      "usa_original_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+      "usa_original_bytes": 305496064,
+      "font_arc_original_sha256": "420613ae4a16595b00c75d17bfb86290e57a30419d81ddbc6f245035e63c9805",
+      "font_original_bytes": 143888,
+      "font_slot_capacity_bytes": 144384,
+      "font_44_original_alignment_bytes": 145696,
+      "font_44_compact_alignment_bytes": 144000,
+      "font_44_compact_margin_bytes": 384,
+      "candidate_font_arc_sha256_private": "1bbdd6cba7490753d6af80ca469262fb2080ab7160fc9a8237bffe3805267af4",
+      "private_iso_candidate_sha256": "f2b27d575b1693a74589459d3ddbfe10349ce06c12474e4fe647ac3061e0b434",
+      "private_iso_candidate_bytes": 305496064,
+      "font_pspfs_index": 308,
+      "font_dsarc_offsets": [
+        528,
+        11696,
+        28352,
+        54016,
+        79776,
+        105632,
+        131440
+      ],
+      "font_dsarc_lengths": [
+        11140,
+        16637,
+        25633,
+        25738,
+        25835,
+        25780,
+        12552
+      ],
+      "font_dsarc_format": "DSARCIDX",
+      "imy_recompressed_roundtrip": 6,
+      "original_font_rasters_preserved": 2721,
+      "spanish_19_glyph_rasters_preserved": 19,
+      "ligature_glyph_rasters_added": 44,
+      "other_pspfs_members_byte_exact": 348,
+      "iso9660_extent_identical": true,
+      "iso_size_identical": true,
+      "candidate_iso_private_only": true,
+      "original_iso_unchanged": true
+    },
+    "B_repo_synthetic_ci": {
+      "audited_base_head": "f32d51181f6fca87c777525b6bd455149d89e721",
+      "code_commits": [
+        "460344110409aee3453f6c38ca636d4e9600b6db",
+        "a07d8949ea85815e851028077447532004cdca33",
+        "b8b5d71c977d9231b073e30d7394e334d64fc246"
+      ],
+      "latest_test_commit": "b8b5d71c977d9231b073e30d7394e334d64fc246",
+      "ci_push_run": 45321731079,
+      "ci_pr_run": 45321738170,
+      "ci_push_conclusion": "success",
+      "ci_pr_conclusion": "success",
+      "synthetic_negative_tests_added": 12,
+      "strict_44_ligature_script_candidates_review_only": 2002,
+      "strict_4_ligature_script_candidates_review_only": 542
+    },
+    "C_runtime": {
+      "official_ppsspp_1_20_4_executed_now": false,
+      "compact_16_plus_16_dsarc_alignment_accepted_by_game": null,
+      "new_ligatures_visible_in_game": false,
+      "mips_control_flow_verified": false,
+      "complete_spanish_gameplay_verified": false,
+      "win64_patcher_e2e_verified": false
+    }
+  },
+  "official_metrics_unchanged": {
+    "translation_draft": {
+      "hechos": 9235,
+      "total": 9237
+    },
+    "romhacking": {
+      "integrated": 3724,
+      "total": 8248,
+      "deferred": 4524,
+      "pct": 45.15
+    },
+    "graphics_complete": false,
+    "betatesting_complete": false,
+    "four_areas_closed": 0,
+    "PR_7_DRAFT": true
+  },
+  "caution": "Compact DSARC child alignment is a structurally parseable experimental variant; PSP game runtime may require original 512-byte boundaries. Private ISO is NOT a releasable patch. No canonical translations were integrated.",
+  "sha_of_original_or_candidate_is_not_gameplay_evidence": true
+}

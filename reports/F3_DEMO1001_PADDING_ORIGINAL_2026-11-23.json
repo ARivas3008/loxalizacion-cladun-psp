@@ -1,0 +1,76 @@
+{
+  "schema": "cladun.f3.intro_original_padding_compact.v1",
+  "source": "A_AUTHENTIC_ISO_USA_STATIC_NO_TEXT_OR_BINARY",
+  "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+  "script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37",
+  "row_format": [
+    "block_index",
+    "script_id",
+    "original_start",
+    "original_limit",
+    "original_last_command_end",
+    "trailing_zero_padding_bytes"
+  ],
+  "padding_rows": [
+    [
+      757,
+      100000,
+      218080,
+      218128,
+      218114,
+      14
+    ],
+    [
+      758,
+      100100,
+      218128,
+      223408,
+      223397,
+      11
+    ],
+    [
+      759,
+      100190,
+      223408,
+      223632,
+      223629,
+      3
+    ],
+    [
+      760,
+      100101,
+      223632,
+      228000,
+      227987,
+      13
+    ],
+    [
+      761,
+      100191,
+      228000,
+      228240,
+      228238,
+      2
+    ],
+    [
+      762,
+      100110,
+      228240,
+      228576,
+      228572,
+      4
+    ],
+    [
+      763,
+      100120,
+      228576,
+      228992,
+      228991,
+      1
+    ]
+  ],
+  "bytes_of_commercial_content_included": false,
+  "no_mips_semantics_proven": true,
+  "relocation_authorized": false
+}

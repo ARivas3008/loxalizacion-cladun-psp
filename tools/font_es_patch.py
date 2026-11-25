@@ -173,7 +173,21 @@ def make_glyph(existing: list[list[int]], letter: str) -> list[list[int]]:
     elif letter in 'üÜ':
         for x,y in [(1,0),(2,0),(1,1),(2,1),(5,0),(6,0),(5,1),(6,1)]:pixel(x,y)
     elif letter in '¿¡':
-        img = [list(reversed(row)) for row in reversed(img)]
+        # A 180-degree turn displaces the raster to the RIGHT of the 16x16
+        # cell. Restore the original left bearing after the rotation; otherwise
+        # the inverted punctuation bleeds into the following character.
+        original_x = min((x for row in existing for x, val in enumerate(row)
+                          if val), default=0)
+        turned = [list(reversed(row)) for row in reversed(img)]
+        rotated_x = min((x for row in turned for x, val in enumerate(row)
+                         if val), default=original_x)
+        delta = rotated_x - original_x
+        if delta > 0:
+            img = [row[delta:] + [0] * delta for row in turned]
+        elif delta < 0:
+            img = [[0] * (-delta) + row[:delta] for row in turned]
+        else:
+            img = turned
     elif letter in '«»':
         img=[[0]*16 for _ in range(16)]
         left=[(3,4),(2,5),(1,6),(0,7),(1,9),(2,10),(3,11),

@@ -1,0 +1,235 @@
+{
+  "schema": "cladun.f1.static_menu_font_original_measurements.v1",
+  "fecha": "2026-11-21",
+  "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "font_bin_sha256": "1f1f5692fecb3b4a66c50f4b20191c1f2658a32ca1220902a5888ae9a11afb46",
+  "method": "Avances de FONT.BIN original con mapa A1-B3 de glifos españoles; NO captura PPSSPP",
+  "rows": [
+    {
+      "id": "005687",
+      "strtbl_index": 479,
+      "orig_advance": 67,
+      "es_draft_advance": 75,
+      "difference": 8
+    },
+    {
+      "id": "005688",
+      "strtbl_index": 480,
+      "orig_advance": 67,
+      "es_draft_advance": 64,
+      "difference": -3
+    },
+    {
+      "id": "005689",
+      "strtbl_index": 481,
+      "orig_advance": 56,
+      "es_draft_advance": 68,
+      "difference": 12
+    },
+    {
+      "id": "005690",
+      "strtbl_index": 482,
+      "orig_advance": 66,
+      "es_draft_advance": 56,
+      "difference": -10
+    },
+    {
+      "id": "005691",
+      "strtbl_index": 483,
+      "orig_advance": 211,
+      "es_draft_advance": 209,
+      "difference": -2
+    },
+    {
+      "id": "005692",
+      "strtbl_index": 484,
+      "orig_advance": 144,
+      "es_draft_advance": 192,
+      "difference": 48
+    },
+    {
+      "id": "005693",
+      "strtbl_index": 485,
+      "orig_advance": 190,
+      "es_draft_advance": 154,
+      "difference": -36
+    },
+    {
+      "id": "005694",
+      "strtbl_index": 486,
+      "orig_advance": 298,
+      "es_draft_advance": 136,
+      "difference": -162
+    },
+    {
+      "id": "005695",
+      "strtbl_index": 487,
+      "orig_advance": 85,
+      "es_draft_advance": 33,
+      "difference": -52
+    },
+    {
+      "id": "005696",
+      "strtbl_index": 488,
+      "orig_advance": 83,
+      "es_draft_advance": 59,
+      "difference": -24
+    },
+    {
+      "id": "005697",
+      "strtbl_index": 489,
+      "orig_advance": 99,
+      "es_draft_advance": 22,
+      "difference": -77
+    },
+    {
+      "id": "005698",
+      "strtbl_index": 490,
+      "orig_advance": 170,
+      "es_draft_advance": 106,
+      "difference": -64
+    },
+    {
+      "id": "005699",
+      "strtbl_index": 491,
+      "orig_advance": 31,
+      "es_draft_advance": 49,
+      "difference": 18
+    },
+    {
+      "id": "005700",
+      "strtbl_index": 492,
+      "orig_advance": 28,
+      "es_draft_advance": 36,
+      "difference": 8
+    },
+    {
+      "id": "005701",
+      "strtbl_index": 493,
+      "orig_advance": 43,
+      "es_draft_advance": 42,
+      "difference": -1
+    },
+    {
+      "id": "005702",
+      "strtbl_index": 494,
+      "orig_advance": 31,
+      "es_draft_advance": 31,
+      "difference": 0
+    },
+    {
+      "id": "005703",
+      "strtbl_index": 495,
+      "orig_advance": 39,
+      "es_draft_advance": 44,
+      "difference": 5
+    },
+    {
+      "id": "005704",
+      "strtbl_index": 496,
+      "orig_advance": 44,
+      "es_draft_advance": 75,
+      "difference": 31
+    },
+    {
+      "id": "005705",
+      "strtbl_index": 497,
+      "orig_advance": 21,
+      "es_draft_advance": 17,
+      "difference": -4
+    },
+    {
+      "id": "005706",
+      "strtbl_index": 498,
+      "orig_advance": 193,
+      "es_draft_advance": 191,
+      "difference": -2
+    },
+    {
+      "id": "005707",
+      "strtbl_index": 499,
+      "orig_advance": 185,
+      "es_draft_advance": 218,
+      "difference": 33
+    },
+    {
+      "id": "005708",
+      "strtbl_index": 500,
+      "orig_advance": 96,
+      "es_draft_advance": 228,
+      "difference": 132
+    },
+    {
+      "id": "005709",
+      "strtbl_index": 501,
+      "orig_advance": 303,
+      "es_draft_advance": 111,
+      "difference": -192,
+      "canonical_005709_advance": 303,
+      "extra_ideographic_advance": 318
+    },
+    {
+      "id": "005710",
+      "strtbl_index": 502,
+      "orig_advance": 84,
+      "es_draft_advance": 84,
+      "difference": 0
+    },
+    {
+      "id": "005711",
+      "strtbl_index": 503,
+      "orig_advance": 80,
+      "es_draft_advance": 87,
+      "difference": 7
+    },
+    {
+      "id": "005712",
+      "strtbl_index": 504,
+      "orig_advance": 79,
+      "es_draft_advance": 94,
+      "difference": 15
+    },
+    {
+      "id": "005713",
+      "strtbl_index": 505,
+      "orig_advance": 84,
+      "es_draft_advance": 115,
+      "difference": 31
+    },
+    {
+      "id": "005714",
+      "strtbl_index": 506,
+      "orig_advance": 302,
+      "es_draft_advance": 182,
+      "difference": -120
+    },
+    {
+      "id": "005715",
+      "strtbl_index": 507,
+      "orig_advance": 125,
+      "es_draft_advance": 93,
+      "difference": -32
+    },
+    {
+      "id": "005716",
+      "strtbl_index": 508,
+      "orig_advance": 300,
+      "es_draft_advance": 240,
+      "difference": -60
+    },
+    {
+      "id": "005717",
+      "strtbl_index": 509,
+      "orig_advance": 67,
+      "es_draft_advance": 52,
+      "difference": -15
+    },
+    {
+      "id": "005718",
+      "strtbl_index": 510,
+      "orig_advance": 255,
+      "es_draft_advance": 232,
+      "difference": -23
+    }
+  ]
+}

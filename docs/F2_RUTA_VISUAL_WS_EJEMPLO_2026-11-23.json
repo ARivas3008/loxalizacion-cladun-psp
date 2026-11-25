@@ -1,0 +1,36 @@
+{
+  "schema": "cladun.f2.ws_input_route.v1",
+  "steps": [
+    {
+      "kind": "checkpoint",
+      "label": "Título de Cladun y Comenzar seleccionado visualmente"
+    },
+    {
+      "kind": "press",
+      "button": "cross",
+      "frames": 8
+    },
+    {
+      "kind": "checkpoint",
+      "label": "Selección musical Real marcada visualmente"
+    },
+    {
+      "kind": "press",
+      "button": "cross",
+      "frames": 8
+    },
+    {
+      "kind": "checkpoint",
+      "label": "Diálogo Cheery Girl y START SKIP visibles"
+    },
+    {
+      "kind": "press",
+      "button": "start",
+      "frames": 8
+    },
+    {
+      "kind": "checkpoint",
+      "label": "Primer mapa jugable con personaje y HUD visibles"
+    }
+  ]
+}

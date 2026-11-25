@@ -1,0 +1,79 @@
+{
+  "schema": "cladun.graphics.r51.visual_text_triage.v1",
+  "source_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "r50_package_sha256": "785dbceeda29b489e3373ee5427de1a01b422f68e45bedd1fe3aa9fc5e6925b5",
+  "r50_ci": {
+    "run": 45695689646,
+    "conclusion": "success"
+  },
+  "inventory_expected": 426,
+  "decoded": {
+    "idt": 231,
+    "anime001_ldt": 24,
+    "anime002_ldt": 57,
+    "maptip_ldt": 39,
+    "mpb": 37,
+    "sysgra": 27,
+    "png": 9
+  },
+  "palette_tables_excluded": 4,
+  "font_atlases_not_reaudited": 6,
+  "idt_single_index_primary_model": 13,
+  "ldt001_raster_interpretation_unresolved": 24,
+  "mpb_extended_flag_count": {
+    "files": [
+      "KYOTENBG.MPB",
+      "KYOTENBG_B.MPB"
+    ],
+    "format": "u16 zero then u32 flags length",
+    "decoded": true
+  },
+  "text_candidates": [
+    {
+      "asset": "TRIAL_BG.MPB",
+      "classification": "JAPANESE_MULTILINE_ADVERTISEMENT",
+      "runtime_visible": null
+    },
+    {
+      "asset": "TITLE.MPB",
+      "classification": "JAPANESE_BETA_TITLE",
+      "runtime_visible": null
+    },
+    {
+      "asset": "NIS_LOGO.MPB",
+      "classification": "ENGLISH_PUBLISHER_PRESENTS",
+      "runtime_visible": null
+    },
+    {
+      "asset": "SYSGRA.ARC/KENRI.IMY",
+      "classification": "ENGLISH_LEGAL_NOTICE",
+      "runtime_visible": null
+    },
+    {
+      "asset": "SYSGRA.ARC/SYS1.IMY",
+      "classification": "JAPANESE_GLYPHS_REMAIN_IN_R50",
+      "runtime_visible": null
+    },
+    {
+      "asset": "ANIME002.LDT/6990/0",
+      "classification": "JAPANESE_GLYPHS",
+      "runtime_visible": null
+    }
+  ],
+  "confirmed_narrative": [
+    "ANIME000.IDT/IMY192",
+    "ISO/PSP_GAME/PIC0.PNG"
+  ],
+  "no_other_narrative_identified_in_reviewed_previews": true,
+  "full_visual_closure": false,
+  "external_cluts_verified": false,
+  "runtime_verified": false,
+  "graphics_modified": false,
+  "notes": [
+    "IDT review used primary unit/stride interpretation; ambiguous alternate models not certified.",
+    "LDT001 24 decompressed streams produce non-interpretable strips rather than verified rasters. Do not classify as no text.",
+    "Nine PNGs include two different PIC1.PNG paths. Only PSP_GAME/PIC1.PNG is text-free.",
+    "R50 inspected five SYSGRA translations and PIC0; Japanese residual SYS1 requires context, not automatic replacement.",
+    "No edited graphics, ISO or original assets committed."
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": "cladun.f3.event_field_hypotheses.public_summary.v1",
+  "fecha": "2026-11-23",
+  "evidencia": "A ISO autentica; B 15 tests sinteticos locales con shims; C PPSSPP NO ejecutado",
+  "original_iso_bytes": 305496064,
+  "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+  "script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37",
+  "counts": {
+    "script_blocks": 1625,
+    "commands": 51705,
+    "nontext_commands": 46308,
+    "demo1001_blocks": 7,
+    "demo1001_commands": 878,
+    "opcode_0x02_count": 2039
+  },
+  "legacy_opcode_0x02": {
+    "argument_bytes": 18,
+    "layout_hypothesis": "u16 plus 4 little-endian u32 at +2,+6,+10,+14",
+    "window5_absolute_matches": 1439,
+    "window5_distinct_values": 1,
+    "window5_value": 8192,
+    "all_2039_u32_at5_equal_u32_at6_times_256": true,
+    "aligned_field2_absolute_matches": 0,
+    "aligned_field6_absolute_matches": 0,
+    "aligned_field14_absolute_matches": 459,
+    "aligned_field14_largest_single_value_repetition": 442,
+    "semantics_proven": false
+  },
+  "restricted_fields": {
+    "opcodes": [
+      "0x01",
+      "0x02",
+      "0x07",
+      "0x0a",
+      "0xfb",
+      "0xfc"
+    ],
+    "totals": {
+      "absolute_command_offset": 803,
+      "absolute_other_block": 729,
+      "relative_command_offset": 1254,
+      "script_id": 3253,
+      "script_start": 15
+    },
+    "intro": {
+      "absolute_command_offset": 16,
+      "absolute_other_block": 16,
+      "relative_command_offset": 21,
+      "script_id": 7,
+      "script_start": 1
+    },
+    "warning": "Los conteos no son comparables directamente al escaneo de todos los opcodes/ventanas F3-R3; no acreditan referencias reales."
+  },
+  "executables": {
+    "boot": {
+      "bytes": 2158521,
+      "sha256": "d2240653adc6119df174c4a3cb8451381934f6898ef2bff8d6ffe00763aebdf2",
+      "all_zero": true
+    },
+    "eboot": {
+      "bytes": 2158864,
+      "sha256": "06e39573dfc9ed18122d9b0c6c69546265b1e3f0e5806b8eb9603fcc09f2ab57",
+      "magic": "~PSP",
+      "elf_at_start": false
+    },
+    "mips_interpreter_disassembled": false
+  },
+  "private_metadata_only_report_sha256": "9706da0fed03ce943c22d0f99ebfd2cb8ae433d09c12e3418f28a3b0a5c339b0",
+  "new_tool": "tools/f3_campos_alineacion.py",
+  "new_tests": "tests/test_f3_campos_alineacion.py",
+  "local_synthetic_passed": 15,
+  "local_synthetic_total": 15,
+  "local_helpers": "shims privados locales, no checkout real",
+  "ppSSPP_runtime_this_relay": false,
+  "variable_length_intro_85_blocked": true,
+  "variable_length_global_4524_blocked": true,
+  "relocation_authorized": false,
+  "event_safe_only": true,
+  "white_new_ink_default": false,
+  "commercial_files_published": false,
+  "ci_final_head": "CHECK_AFTER_COMMIT"
+}

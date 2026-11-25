@@ -1,0 +1,112 @@
+{
+  "schema": "cladun.r32.bulk_authentic.v1",
+  "date": "2026-11-24",
+  "initial_head": "f9c243943808349737552018af39ac07f1649d6c",
+  "initial_pr_ci": {
+    "id": 45407602352,
+    "conclusion": "success"
+  },
+  "canonical_blob": "400a9c9ec06f7456b5ec6e11f7502d711b0a976e",
+  "original_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "source_inventory": {
+    "iso_entries": 16,
+    "pspfs": 349,
+    "raw": 96,
+    "imy": 66,
+    "gzip": 187,
+    "imy_blocks": 77,
+    "dsarc_children": 1186
+  },
+  "preimages": {
+    "total": 1302,
+    "bytes": 37829,
+    "fnv32": 1592949294,
+    "canonical_full_plan_fnv32": 1412021638,
+    "long": 694,
+    "families": [
+      {
+        "gap": 1,
+        "count": 330,
+        "blocks": 147,
+        "bytes": 8471,
+        "old_fnv": 737420481,
+        "new_fnv": 1627750828
+      },
+      {
+        "gap": 2,
+        "count": 278,
+        "blocks": 125,
+        "bytes": 7641,
+        "old_fnv": 1449893416,
+        "new_fnv": 3479435758
+      },
+      {
+        "gap": 3,
+        "count": 187,
+        "blocks": 98,
+        "bytes": 5405,
+        "old_fnv": 150812015,
+        "new_fnv": 3641101921
+      },
+      {
+        "gap": 4,
+        "count": 166,
+        "blocks": 97,
+        "bytes": 5117,
+        "old_fnv": 3513338450,
+        "new_fnv": 1822911979
+      },
+      {
+        "gap": 5,
+        "count": 137,
+        "blocks": 94,
+        "bytes": 4349,
+        "old_fnv": 1381431979,
+        "new_fnv": 3266062521
+      },
+      {
+        "gap": 6,
+        "count": 114,
+        "blocks": 70,
+        "bytes": 3744,
+        "old_fnv": 931119746,
+        "new_fnv": 202707510
+      },
+      {
+        "gap": 7,
+        "count": 90,
+        "blocks": 53,
+        "bytes": 3102,
+        "old_fnv": 4010312363,
+        "new_fnv": 1941161653
+      }
+    ]
+  },
+  "actual_gap7": {
+    "texts_written": 90,
+    "changed_bytes": 2817,
+    "script_sha256": "ff4b0e3a8d5b0dfc3204dc10cd4d30ff2cab9558c257118b231d8aa11dd2421a",
+    "archive_sha256": "8c072c20677924d560159070b7cc1d6fcdb506513607be6dd4712d937c486190",
+    "commands": 51705,
+    "nontext_exact": 46308,
+    "moved_offsets": 0,
+    "table_unchanged": true,
+    "dsarc_siblings_exact": 3,
+    "plan_fnv32": 1941161653,
+    "imy_roundtrip": true,
+    "imy_blocks": 8,
+    "imy_repacked": 5,
+    "compressed_original": 699624,
+    "compressed_candidate": 700340,
+    "compressed_sha256": "0f3b93fcf7e1ca50db92bfdb09e42868659eba0f58c1389e36d055c939dc5ad5"
+  },
+  "remaining_long_not_written": 604,
+  "official_integrated": 3724,
+  "official_total": 8248,
+  "official_new": 0,
+  "ppsspp_run": false,
+  "iso_candidate_written": false,
+  "combined_F1_built": false,
+  "release_authorized": false,
+  "limitations": "Independent local authentic source parser and selective IMY encoder executed, repository CLI not executed locally (Git checkout blocked by DNS). 90 replacements are written to private decoded archive and recompressed in memory, not a cumulative ISO. F1 baseline and canonical translations unchanged. 604 other long-pack replacements only preimage checked; no runtime/layout proof."
+}

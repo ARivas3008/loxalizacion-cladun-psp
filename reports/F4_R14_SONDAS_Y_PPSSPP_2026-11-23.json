@@ -1,0 +1,164 @@
+{
+  "schema": "cladun.f4.r14_provenance_ready_no_mips_trace.v1",
+  "date_local": "2026-11-23",
+  "evidence_A": {
+    "source": "original_USA_ISO_authenticated_private",
+    "iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "iso_size_bytes": 305496064,
+    "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+    "script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37",
+    "script_blocks": 1625,
+    "commands": 51705,
+    "nontext_commands": 46308,
+    "private_original_manifest_sha256": "4b979163721dea3ba539c601f85ba7d449eb31e3f4807cb99ef72b0e5b63ab62",
+    "manifest_9_probes": [
+      {
+        "block": 20,
+        "order": 20,
+        "script_dat_offset": 7420,
+        "opcode": "0x0A",
+        "instruction_id": 818,
+        "operand_u32": 100100,
+        "candidate_minus100_block": 757,
+        "literal_target_block": 758,
+        "ram_address": null,
+        "mips_pc": null
+      },
+      {
+        "block": 757,
+        "order": 2,
+        "script_dat_offset": 218095,
+        "opcode": "0x0A",
+        "instruction_id": 8,
+        "operand_u32": 100200,
+        "candidate_minus100_block": 758,
+        "literal_target_block": 764,
+        "ram_address": null,
+        "mips_pc": null
+      },
+      {
+        "block": 758,
+        "order": 1,
+        "script_dat_offset": 218133,
+        "opcode": "0x0C",
+        "instruction_id": 18,
+        "operand_u32": 100290,
+        "candidate_minus100_block": 759,
+        "literal_target_block": 765,
+        "ram_address": null,
+        "mips_pc": null
+      },
+      {
+        "block": 758,
+        "order": 415,
+        "script_dat_offset": 223351,
+        "opcode": "0x0C",
+        "instruction_id": 523,
+        "operand_u32": 100,
+        "candidate_minus100_block": null,
+        "literal_target_block": 89,
+        "ram_address": null,
+        "mips_pc": null
+      },
+      {
+        "block": 758,
+        "order": 416,
+        "script_dat_offset": 223360,
+        "opcode": "0x0A",
+        "instruction_id": 525,
+        "operand_u32": 100201,
+        "candidate_minus100_block": 760,
+        "literal_target_block": 766,
+        "ram_address": null,
+        "mips_pc": null
+      },
+      {
+        "block": 759,
+        "order": 23,
+        "script_dat_offset": 223602,
+        "opcode": "0x0C",
+        "instruction_id": 573,
+        "operand_u32": 100,
+        "candidate_minus100_block": null,
+        "literal_target_block": 89,
+        "ram_address": null,
+        "mips_pc": null
+      },
+      {
+        "block": 760,
+        "order": 1,
+        "script_dat_offset": 223637,
+        "opcode": "0x0C",
+        "instruction_id": 7,
+        "operand_u32": 100291,
+        "candidate_minus100_block": 761,
+        "literal_target_block": null,
+        "ram_address": null,
+        "mips_pc": null
+      },
+      {
+        "block": 760,
+        "order": 336,
+        "script_dat_offset": 227968,
+        "opcode": "0x0C",
+        "instruction_id": 413,
+        "operand_u32": 100,
+        "candidate_minus100_block": null,
+        "literal_target_block": 89,
+        "ram_address": null,
+        "mips_pc": null
+      },
+      {
+        "block": 761,
+        "order": 23,
+        "script_dat_offset": 228194,
+        "opcode": "0x0C",
+        "instruction_id": 457,
+        "operand_u32": 100,
+        "candidate_minus100_block": null,
+        "literal_target_block": 89,
+        "ram_address": null,
+        "mips_pc": null
+      }
+    ]
+  },
+  "evidence_B": {
+    "local_tests_new_passed": 36,
+    "manifest_tests": 16,
+    "proc_fixtures": 13,
+    "websocket_protocol_fixtures": 7,
+    "files": [
+      "tools/f4_r14_manifest_sondas.py",
+      "tools/f4_r14_ppsspp_preflight.py",
+      "tests/test_f4_r14_manifest_sondas.py",
+      "tests/test_f4_r14_ppsspp_preflight.py",
+      "tests/test_f4_r14_websocket_protocol.py"
+    ],
+    "official_ppsspp_tagged_source": "v1.20.4",
+    "tag_source_version_response_fields": [
+      "name",
+      "version"
+    ],
+    "tag_source_version_response_has_pid": false,
+    "tag_source_version_response_has_path": false,
+    "websocket_protocol_messages_read_only": [
+      "version",
+      "game.status"
+    ],
+    "websocket_subprotocol": "debugger.ppsspp.org"
+  },
+  "evidence_C": {
+    "ppsspp_official_present": false,
+    "ppsspp_executed_this_relay": false,
+    "actual_preflight_attempt_exit_code": 1,
+    "preflight_reason": "Official PPSSPP AppImage absent or hash differs",
+    "real_attestation_report_written": false,
+    "mips_dispatch_real": false,
+    "original_gameplay_evidence": false
+  },
+  "assets_modified": false,
+  "event_relocation_authorized": false,
+  "global_deferred_events": 4524,
+  "qa_cases_defined_after": 53,
+  "overall_areas_closed": false
+}

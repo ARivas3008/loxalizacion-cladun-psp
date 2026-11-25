@@ -4,7 +4,7 @@
 
 ## Hallazgos verificados en la ISO USA
 
-- SHA-256 fuente: b73b263fce863e51a0e27d0d11d6bde2886e439a18e2bb186d497619a1b79f.
+- SHA-256 fuente: b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f.
 - DATA.DAT: 349 entradas PSPFS. SCRIPT.SDT contiene cuatro miembros DSARC, con SCRIPT.DAT de 633.344 bytes y SCRIPT.TBL, separados por solo 512 bytes.
 - El archivo SCRIPT.SDT original ocupa 699.624 bytes IMY y dispone de apenas 280 bytes libres antes del siguiente recurso PSPFS. DATABASE.DAT dispone de 36 bytes.
 - El corpus tiene 5.207 textos de SCRIPT.DAT. Sus borradores españoles requieren unos 17.712 bytes adicionales netos, antes de contar nuevas alineaciones.

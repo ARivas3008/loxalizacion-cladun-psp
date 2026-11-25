@@ -1,0 +1,82 @@
+{
+  "schema": "cladun.f2.sysgra_inventory_2026_11_22.v1",
+  "status": "F2_OPEN_STATIC_SOURCE_VERIFIED",
+  "source_original_iso": {
+    "archive": "7z recibido del usuario",
+    "length": 305496064,
+    "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f"
+  },
+  "container": {
+    "iso_offset_of_data_dat": 113770496,
+    "pspfs_items": 349,
+    "pspfs_index_of_sysgra": 225,
+    "offset_in_data_dat": 895488,
+    "sysgra_bytes": 93696,
+    "sysgra_sha256": "63d9443084a2aeab8c2a3f79aebdb130eaf6c5d2e86f8be51346d7458ab81854"
+  },
+  "dsarc": {
+    "members": 27,
+    "unique_member_sha256": 27,
+    "member_descriptions_by_names_are_only_hypotheses": true
+  },
+  "probable_by_name_only": [
+    "HP_BAR.IMY",
+    "HP_KAO0.IMY",
+    "HP_KAO1.IMY",
+    "HP_KAO2.IMY",
+    "LVSP.IMY",
+    "LVSP_NUM.IMY",
+    "DAMAGE.IMY",
+    "EXP_BAR.IMY",
+    "MAHO_BAR.IMY",
+    "MAHO_ST.IMY",
+    "SYS1.IMY",
+    "ZOKUSEI.IMY"
+  ],
+  "icon_controls": {
+    "member_index": 17,
+    "name": "KITAJIMA_KARI.IMY",
+    "bytes": 2480,
+    "offset_within_arc": 57856,
+    "absolute_iso_offset": 114723840,
+    "sha256": "0ce89df69ad71a9ef3165217d7cb98103a1fb0e08c53ca3a85c594dfaa7a2190",
+    "runtime_historical_controls_only": true
+  },
+  "new_code": "tools/f2_inventario_sysgra_usa.py",
+  "new_tests": "tests/test_f2_inventario_sysgra_usa.py",
+  "new_synthetic_tests_count": 8,
+  "code_commit": "bf5fa79a27f889e2391ff7d40b6b56c8bb7e28ca",
+  "private_report": {
+    "name": "CLADUN_F2_inventario_SYSGRA_27_metadatos_PRIVADO_2026-11-22.json",
+    "sha256": "b468a11f679f284979d9257bc58e9bc553fdd249940537fd4f745a3fa6b920eb",
+    "contains_copyrighted_asset_bytes": false
+  },
+  "tests": {
+    "push_action": 45039311711,
+    "pull_request_action": 45039317909,
+    "both_success": true,
+    "python_tests_passed": 221,
+    "go": "SUCCESS",
+    "windows_public_build": "SUCCESS"
+  },
+  "limitations": {
+    "new_emulator_runtime": "NOT_EXECUTED_APPIMAGE_NOT_PRESENT",
+    "source_7z_read_and_verified": true,
+    "direct_git": "FAILED_DNS",
+    "f1_iso": "NOT_AVAILABLE",
+    "new_ppsspp_png": 0,
+    "new_ge_dump": 0,
+    "new_verified_mips_icon_pc": 0,
+    "new_verified_vram_icon_addresses": 0,
+    "functional_hud_icons": "NOT_PROVEN",
+    "all_19_glyphs_ppsspp": "NOT_PROVEN",
+    "f1_window_960x544": "NOT_RECHECKED"
+  },
+  "preserved": {
+    "pr7_draft": true,
+    "corpus_unchanged": true,
+    "source_iso_unchanged": true,
+    "white_new_ink_false": true,
+    "event_safe_only": true
+  }
+}

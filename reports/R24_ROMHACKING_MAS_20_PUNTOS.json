@@ -1,0 +1,83 @@
+{
+  "schema": "cladun.r24.plus20_readiness.v1",
+  "date": "2026-11-24",
+  "source_iso_authentic_private": {
+    "sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+    "bytes": 305496064,
+    "script_stored_sha256": "1811742d7d3e88da530c1fd2b98885e8426f7af761f7c89aecc80f34ffdbe2d4",
+    "script_decoded_sha256": "2c5ad0532e1f3106585dd9ba3a4dfcb7a8f61d8a09235b3b0d8e621f21f66051",
+    "script_dat_sha256": "c9b360942a6845e7eba893c6e833e5dbebd6d6fc46004ea3f35ffa0d3618f358",
+    "script_tbl_sha256": "f8b32b9da5aef1deaa2a345cea799b5795d7682ca02830cea554a43ac2f7ed37",
+    "script_pspfs_offset": 9652224,
+    "script_pspfs_original_stored": 699624,
+    "script_expanded": 930304,
+    "script_pspfs_next_resource_offset": 10352128,
+    "script_available_slot_bytes": 699904,
+    "script_noop_repacked_bytes": 700483,
+    "script_noop_repacked_overflow_bytes": 579,
+    "script_noop_roundtrip": true,
+    "script_block_count": 8,
+    "script_count": 1625,
+    "commands": 51705,
+    "nontext_commands": 46308,
+    "text_commands": 5397,
+    "source_modified": false,
+    "IMY_full_archive_rewrite_safe_inplace": false
+  },
+  "B_integration_implementation": {
+    "tool": "tools/f4_r24_piloto_1650_ligaduras.py",
+    "source_ligature_plan": "tools/f4_r21_ligature_overlay.py",
+    "source_font_compact": "tools/f4_r23_font_compact_candidate.py",
+    "source_base_safe_integrator": "tools/integrar_parche_seguro.py",
+    "script_slot_audit": "tools/f4_r24_script_slot_audit.py",
+    "target_replacement_additions": 1650,
+    "existing_canonical_partials": 3724,
+    "planned_overall_substitutions": 8248,
+    "pilot_target_combined": 5374,
+    "pilot_target_percentage": 65.1552,
+    "pilot_target_gain_points": 20.00485,
+    "total_strict_44_glyph_candidates_previous_R21": 2002,
+    "pipeline_software_implemented": true,
+    "combined_private_ISO_executed_this_relay": false,
+    "selected_1650_authentic_script_preimages_replayed_this_relay": false,
+    "updated_canonical_corpus": false,
+    "new_official_applied": 0,
+    "new_visual_PPSSPP_pass": 0,
+    "positive_and_negative_suite_paths": [
+      "tests/test_f4_r24_piloto_1650_ligaduras.py",
+      "tests/test_f4_r24_script_slot_audit.py"
+    ],
+    "security_constraints": [
+      "Original ISO SHA must match",
+      "base 3724 event-safe-only included and audited",
+      "1650 fixed byte widths, original source preimages exact",
+      "51,705 commands and 46,308 nontext preserved",
+      "all SCRIPT.TBL starts unmodified",
+      "FONT.ARC 44 experimental within original slot",
+      "SCRIPT.SDT append-only, never overwrites original PSPFS",
+      "347 other PSPFS resources byte identical",
+      "private output path no overwrite",
+      "not releasable without PPSSPP dynamic A/B/A",
+      "editorial approval of all 1650 texts required"
+    ]
+  },
+  "C_runtime": {
+    "PPSSPP_1_20_4_available_in_current_container": false,
+    "motor_16byte_DSARC_alignment_proven": false,
+    "new_1650_spoken_in_game": false,
+    "second_level_or_encyclopedia_pass": false,
+    "Windows_64bit_patcher_E2E": false
+  },
+  "official_four_areas": {
+    "translation_draft": "9235/9237, not full contextual/visual acceptance",
+    "graphics_complete": false,
+    "romhacking_integrated": 3724,
+    "romhacking_total": 8248,
+    "romhacking_deferred": 4524,
+    "romhacking_percentage": 45.1503,
+    "betatesting_cases_defined": 66,
+    "betatesting_C_new_pass": 0,
+    "all_four_100": false
+  },
+  "honest_conclusion": "The +20 percentage point target is a guarded experimental private pilot workflow, NOT a verified current ROMhacking integration increase. Runtime and editorial validation remain missing."
+}

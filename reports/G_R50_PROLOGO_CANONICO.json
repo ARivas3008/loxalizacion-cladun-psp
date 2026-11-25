@@ -1,0 +1,90 @@
+{
+  "schema": "cladun.graphics.r50.user_canonical_prologue.v1",
+  "source_iso_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "source_iso_bytes": 305496064,
+  "supersedes": "G-R49 package for future integration",
+  "canonical_text_path": "traduccion/PROLOGO_GRAFICO_ES.txt",
+  "editorial_status": "USER_TEXT_APPROVED_PUNCTUATION_ONLY",
+  "historical_r49_text_not_current": true,
+  "user_wording_preserved": true,
+  "case_preserved": true,
+  "edited": 53,
+  "exact_encoded_hashes_replayed": 53,
+  "unchanged_r49_encoded_hashes": 51,
+  "changed_assets": [
+    "ANIME000/IMY192.imy",
+    "PIC0.PNG"
+  ],
+  "package": {
+    "filename": "Cladun_ES_G_R50_edicion_contextual_PRIVADO.zip",
+    "bytes": 790691,
+    "sha256": "785dbceeda29b489e3373ee5427de1a01b422f68e45bedd1fe3aa9fc5e6925b5",
+    "files": 99,
+    "manifests": {
+      "R49_prologo.json": "8d905077957d04c452bca97bf77cdbd95f9891eeb1515b1145d77a040e62c802",
+      "R49_creditos.json": "51747415a99a94e1024ac7cec11b6bade1a03f6bda7fb244bd5e0097b14d9ca5",
+      "R49_interfaz.json": "88f50129d0835fbfd8160041aef6a4d997162a9196f96891d8ede058e547d537",
+      "R49_animaciones.json": "06cd21563be82e129f1ff0af1b8488c8de6e116cdab50bf3c9ccd2bd13acadff",
+      "R49_titulo.json": "d1699f4a8efbc75d5e841863cae7ff974cef3cfbfa9eae7bacf63cf44fd09858",
+      "R49_replay.json": "ad9f734ef87e5e9cb1ef91b8cc0fc337a81773661240dfeb1147c50f28d15d09",
+      "reproducir_r49.py": "fef00c6f5740d2794d126e40d5a01794051019003436d37c64f6403f4f461bbd",
+      "prologo_es.txt": "f3260f01223438170b630bc5fd0ccabb9c41552d873de975fa7859dd2673ce60"
+    }
+  },
+  "prologue": {
+    "path": "ANIME000.IDT",
+    "surface": 192,
+    "record": 188,
+    "dimensions": [
+      256,
+      128
+    ],
+    "member_offset": 3417360,
+    "absolute_iso_offset": 120574224,
+    "bytes_before": 4308,
+    "bytes_after": 4308,
+    "original_tail_preserved": 2,
+    "changed_iso_bytes": 4228,
+    "unrelated_idt_surfaces_exact": 230,
+    "unrelated_pspfs_exact": 348,
+    "private_diagnostic_iso_built": true,
+    "diagnostic_iso_sha256": "e3998fb70a8b65eb07fb83cb16f261c7ddf3cc03a37c1c09b72f1439457f2734",
+    "original_idt_sha256": "0e57353eb1d5f9688164b3453e57b0fd91ff77dee8e422844ba3fb0fef32eb37",
+    "new_idt_sha256": "964aec80c5c9694b1e4229b743bae13076cbee2bc610d12e6c2d08101c361b92",
+    "original_stream_sha256": "c015b1f998a6bf3e05af562c9dc6d967e36c194f2fab513e8c0d0d76b1d45d6b",
+    "new_stream_sha256": "c080f597e092ac5ec92bca766649993116de34aca064311a9c1921f38c41e5f2",
+    "stream_delta_sha256": "e8e6313bf582469dbdf909bc3b76dd526c4f1730321d4b8795d94e05268896f0",
+    "text_sha256": "f3260f01223438170b630bc5fd0ccabb9c41552d873de975fa7859dd2673ce60",
+    "text": [
+      "Algunos dicen: porque los tesoros yacían allí;",
+      "otros, porque el enemigo debe ser derrotado allí;",
+      "otros, porque los sueños se forjan allí.",
+      "Este «allí» puede hallarse en el fondo de un pozo",
+      "e incluso tras la puerta de un baño público.",
+      "Cualquiera puede llegar a este lugar; sin embargo,",
+      "está conectado a otros tantos lugares.",
+      "La gente llama a este mundo «Arcanus cella»."
+    ],
+    "ppsspp_verified": false
+  },
+  "pic0": {
+    "asset": "PIC0.PNG",
+    "text": [
+      "Cualquiera puede llegar a este lugar; sin embargo,",
+      "está conectado a otros tantos lugares.",
+      "La gente llama a este mundo «Arcanus cella»."
+    ],
+    "old_compressed_bytes": 55009,
+    "new_compressed_bytes": 62419,
+    "new_sha256": "4ae8385c082367370c181184471e7f37fd20060960eb08652fa7d583060a3cd1",
+    "outside_roi_exact": true,
+    "integrated_in_iso": false
+  },
+  "r49_ci": {
+    "run": 45693783160,
+    "conclusion": "success"
+  },
+  "runtime_verified": false,
+  "full_accumulated_iso_built": false,
+  "release_authorized": false
+}
