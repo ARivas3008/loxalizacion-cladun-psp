@@ -6,6 +6,8 @@ import csv
 import hashlib
 import json
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from tools import integrar_parche_seguro as integrator
 from tools.extract_cladun import iso9660_entries, read_iso_file, pspfs_entries, decompress, dsarc_entries
 from tools.script_event_guard import read_commands, require
