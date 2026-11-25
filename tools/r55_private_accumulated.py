@@ -57,15 +57,19 @@ def canonical_plan():
     require(len(full)==4866 and sum(map(len,changes.values()))==8214,"R55 baseline count")
     return slots(full),slots(sel),slots(donors.values())
 
-def build_private(iso,candidate,report):
+def build_private(iso,candidate,report,*,native_ellipsis=False):
     iso=Path(iso).resolve(strict=True);candidate=candidate_path(Path(candidate),iso)
     report=candidate_path(Path(report),iso)
     require(candidate!=report and sha256_file(iso)==SOURCE_SHA256,"R55 inputs")
     source,table=original_script_children(iso)
     baseline,residuals,donors=canonical_plan()
+    if native_ellipsis:
+        from tools.r56_native_ellipsis import extend_donors,verify_native_glyph
+        verify_native_glyph(iso)
+        donors=extend_donors(baseline,residuals,donors)
     new,event,envelopes=rebuild(source,table,residuals,donors,baseline,include_speakers=True)
     require((len(envelopes),event["text_commands_replaced"],event["moved_command_offsets"],
-        event["moved_nontext_command_offsets"],event["nontext_commands_byte_exact"])==(21,4887,27,5,46308),"R55 geometry")
+        event["moved_nontext_command_offsets"],event["nontext_commands_byte_exact"])==((22,4888,28,5,46308) if native_ellipsis else (21,4887,27,5,46308)),"R55/R56 geometry")
     with tempfile.TemporaryDirectory(prefix="cladun_r55_",dir=candidate.parent) as td:
         tmp=Path(td);fixed=tmp/"fixed.iso";fixed_report=tmp/"fixed.json";staged=tmp/"final.iso"
         build(iso,fixed,fixed_report,experimental_partial=True,event_safe_only=True,verified_packs=True,
@@ -82,9 +86,9 @@ def build_private(iso,candidate,report):
         require(sha256_file(iso)==SOURCE_SHA256,"R55 source drift")
         _,fp,fe=read_resources(staged);_,fr,_=parent_content(fp,next(x for x in fe if x["name"]=="SCRIPT.SDT"))
         require(fr==rewritten,"R55 staged script drift")
-        result={"schema":"cladun.r55.private_accumulated.v1","estado":"EXPERIMENTAL_NO_EXPORTAR",
-                "iso_resultante_sha256":sha256_file(staged),"texto_aplicado":8235,
-                "resolved_original_target":8236,"remaining":12,"auditoria_eventos":event,
+        result={"schema":("cladun.r56.private_accumulated.v1" if native_ellipsis else "cladun.r55.private_accumulated.v1"),"estado":"EXPERIMENTAL_NO_EXPORTAR",
+                "iso_resultante_sha256":sha256_file(staged),"texto_aplicado":8235+int(native_ellipsis),
+                "resolved_original_target":8236+int(native_ellipsis),"remaining":12-int(native_ellipsis),"native_ellipsis":native_ellipsis,"auditoria_eventos":event,
                 "offsets_de_comandos_preservados":False,"control_logico_no_textual_intacto":True,
                 "event_logic_runtime_certified":False,"runtime_verified":False,"release_authorized":False,
                 "script_repacked_chunks":ch,"metadata":meta,"envelopes":envelopes}
@@ -99,6 +103,7 @@ if __name__=="__main__":
     p=argparse.ArgumentParser(description=__doc__);p.add_argument("--iso",required=True,type=Path)
     p.add_argument("--candidate",required=True,type=Path);p.add_argument("--report",required=True,type=Path)
     p.add_argument("--acepto-reubicacion-local",action="store_true")
+    p.add_argument("--puntos-suspensivos-nativos",action="store_true",help="R56 opt-in: one additional dialogue, visual QA pending")
     a=p.parse_args()
     if not a.acepto_reubicacion_local:p.error("R55 remains experimental; explicit acceptance required")
-    print(json.dumps(build_private(a.iso,a.candidate,a.report),indent=2))
+    print(json.dumps(build_private(a.iso,a.candidate,a.report,native_ellipsis=a.puntos_suspensivos_nativos),indent=2))
