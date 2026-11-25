@@ -30,7 +30,9 @@
 000692	20c29	ascii	Probarás hasta dónde puedes llegar.
 000805	36209	ascii	¡La puerta está sin llave!
 000853	376e3	special	Mantén pulsado ㈱ para correr. Al correr,
+000943	39a95	ascii	¡en la biblio de papá!
 000976	3a4a5	ascii	Pero no puedo dejarla desmandarse.
+001039	3ba48	ascii	Sobre diversión,
 001069	3c199	ascii	¡Y coraza que dio Crosstine!
 001071	3c380	ascii	¡Y coraza que dio Crosstine!
 001072	3c46a	ascii	Me pregunto de dónde viene el agua del lago
@@ -106,6 +108,7 @@
 001787	479bc	ascii	Bienvenidos a mi barcito... digo, ¡mi GRAN bar!
 001821	4820f	ascii	¿Cómo de resbaladizo? ¡Como mi piel!
 001823	4826a	ascii	Jaja... Ja...
+001826	482fd	ascii	¡no quiere decir que debas!
 001827	4831d	ascii	¡Planea y úsalo con cabeza!
 001852	48ac4	ascii	¡Jejeje!
 001854	48b78	ascii	Tú otra vez, Battleblo.
@@ -116,6 +119,7 @@
 001893	49447	ascii	consigue la mejor espada.
 001910	49a55	ascii	pero si Pudding pasa a ser «de apoyo»,
 001916	49c3e	ascii	Tengo mucho en la cabeza ahora mismo.
+001917	49c67	special	Perdona, ⑨.
 001942	4a740	ascii	¡Yo estoy feliz con este trabajo!
 001952	4aad4	ascii	¿Quién anda?
 001971	4b47f	ascii	¡Que alguien me pare!
@@ -140,6 +144,7 @@
 002209	5074c	ascii	mis líos.
 002221	50aec	special	Ey, ⑨...
 002242	513d6	ascii	¿Cómo lo supiste?
+002256	51774	ascii	¿Puedo buscar más armaduras
 002261	518b3	ascii	¿Tenso? Mis músculos no son tan tensos ni duros.
 002275	51d98	ascii	Ya acabó mi trabajo.
 002277	51e4d	ascii	Soy el dueño.
@@ -148,6 +153,7 @@
 002303	52721	ascii	Pero, en todo caso,
 002315	52a56	ascii	se me pudrirán los oídos.
 002329	532a2	ascii	¡Eh! ¡Rock!
+002338	53530	ascii	¡Canción funky! ¡Rap funky!
 002340	53594	ascii	S-Supongo...
 002348	5375e	ascii	(Ay, Dios mío. Está empezando a ponerse
 002350	53818	ascii	¡Eh! ¡Rock!
@@ -237,6 +243,7 @@
 003100	63231	mask	Careta
 003150	63f8f	ascii	¿Nos ayudas a prepararlo todo?
 003176	647c9	ascii	¿Yo, tan mona?
+003215	655d3	ascii	pero ahora supongo que
 003225	65797	ascii	Eh, Battleblo...
 003247	65e2a	ascii	Me preocupa.
 003251	65fba	ascii	Fiestas...
@@ -251,6 +258,8 @@
 003304	6716f	mask	Careta
 003311	6737a	ascii	Qué tipo tan raro.
 003334	67bc9	special	¡Toda la atención, ⑨!
+003343	67e9c	ascii	Capta energía negativa cada vez
+003347	67f75	ascii	Capta energía negativa cada vez
 003365	6897b	ascii	Bob antes vivía encerrado en casa.
 003368	689f9	ascii	es genial lo que ahora es.
 003380	68de1	ascii	¿Bonito?
@@ -292,6 +301,7 @@
 003630	6e16d	ascii	¿A quién le importo? Al menos
 003634	6e2e4	mask	Careta
 003636	6e35f	mask	Careta
+003642	6e438	ascii	Cansado.
 003645	6e4ef	mask	Careta
 003655	6e722	ascii	Espera, ¿eso significa
 003656	6e73e	ascii	que eres un familiar?
@@ -324,6 +334,7 @@
 003927	7557c	ascii	¡Nuevo cliente!
 003928	75593	ascii	Pero al mirar atrás,
 003932	756ea	ascii	¡Vaya!
+003935	7579e	ascii	de cerca.
 003937	7585c	ascii	¡Ay, Dios mío!
 003961	762b7	ascii	¡Aún no estoy muerto!
 003972	7657b	ascii	¿Traer más gente otra vez?
@@ -333,6 +344,7 @@
 003987	76870	ascii	No te cruces en mi camino.
 003994	76bcd	ascii	¿Entiende lo que digo?
 003995	76c3a	ascii	¿De verdad debo ser el protagonista?
+004007	76fec	ascii	¿Eh, por qué?
 004029	775a5	ascii	La responsabilidad es toda suya.
 004030	77b74	ascii	¡Caray!
 004035	77d66	ascii	¿Un fallo? ¿Trampa?
@@ -360,7 +372,8 @@
 004220	7e4e6	ascii	«La meta correcta es la segunda por la izquierda».
 004223	7e578	ascii	Primero vence al fantasma que hay más adelante.
 004225	81e83	ascii	Fue divertido.
-004227	81eae	ascii	debo ir ahora.
+004226	81e98	ascii	¿Adónde
+004227	81eae	ascii	debo ir ahora?
 004228	81f04	special	Ey, ⑨.
 004240	822f3	ascii	Ejem. ¡Aaaah!
 004277	82d01	ascii	Me pregunto en serio
@@ -414,6 +427,7 @@
 004650	8bfca	ascii	Sin hogar. Sin escritorio.
 004651	8bff1	ascii	Sin faena
 004654	8c051	ascii	Yo... ¡yo!
+004655	8c068	ascii	¡Que alguien me dé órdenes, porfa!
 004658	8c483	ascii	¡antes de que Sunday tuviera espada!
 004660	8c657	ascii	Así que lo hallaste primero.
 004661	8c676	ascii	Nada mal, Battleblo.
@@ -430,6 +444,7 @@
 004769	8eb20	mask	Careta
 004775	8ecba	mask	Careta
 004776	8eccb	ascii	¡Jejeje!
+004795	8f61a	ascii	¡Toca compartir a Bob!
 004798	8f6da	ascii	¡Será increíble de un día a otro!
 004802	8f995	mask	Careta
 004808	8fac0	mask	Careta
@@ -443,14 +458,18 @@
 004871	913cb	ascii	¿Perder la luz puede causar tanta desesperación?
 004873	9146e	ascii	¡Auxilio...!
 004875	91c26	ascii	¡Dohoho!
+004877	91ca2	ascii	¿Apurarse?
 004899	9206f	ascii	Probemos a golpearlos.
 004903	92124	ascii	Al mirarlo de cerca,
 004911	9224d	ascii	Mi cuerpo está fatal.
 004913	922e4	ascii	Yo querer conocer más a humanos.
+004915	9232e	ascii	¿Ayudas?
 004916	92344	ascii	Claro. Mi afición es ayudar a otros.
 004921	92517	ascii	¡Qué frío!
+004925	92618	ascii	«¡No! ¡Mi carnicero!»
 004928	926ff	ascii	Es una olla muy honda.
 004930	92787	ascii	la olla.
+004934	92887	ascii	«Maestro de forraje y fritura de hilo de tarántula»
 004939	929ff	ascii	«Seduce a la chica de tus sueños»
 004955	92df0	ascii	Qué bien, tío.
 004957	92e79	ascii	como dice el de esta semana
@@ -468,5 +487,6 @@
 005099	94cfa	ascii	Ahora solo estás triste.
 005101	94d6e	ascii	Es una goma de borrar gigante.
 005109	94fb6	ascii	¡No robes aquí!
+005122	99007	ascii	Puedo adivinar tu suerte por tus atributos.
 005128	990f6	ascii	¡Sin ATK!
 005170	99776	ascii	¡Sin DEF!
