@@ -187,11 +187,14 @@ def plan_event_safe(changes, blocked, *, verified_packs=False):
     if verified_packs:
         # Lazy import avoids the r31 -> r29 -> this module import cycle.
         try:
-            from tools.r31_bulk_padding import make_plan
+            from tools.r31_bulk_padding import make_plan, serialized, fnv
         except ModuleNotFoundError:
-            from r31_bulk_padding import make_plan
+            from r31_bulk_padding import make_plan, serialized, fnv
         require(sum(map(len, changes.values())) == 8248, "Canonical admissible count drift")
         plan = make_plan(pack="all")
+        require(fnv(serialized(plan, False)) == 1345572782
+                and fnv(serialized(plan)) == 4017724493,
+                "R34 independently verified combined pack fingerprints differ")
         allowed, deferred, selected = combine_verified_script_packs(allowed, deferred, plan)
         info = {"baseline": 3724, "additional_exact": 146, "additional_padded": 1302,
                 "selected": len(selected), "total_planned": 5172, "remaining": 3076,
