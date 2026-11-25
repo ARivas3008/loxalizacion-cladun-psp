@@ -296,6 +296,43 @@ def combine_extended_padding(changes,blocked,deferred,accumulated,*,draft_csv=DR
     return result,filtered,remaining,info
 
 
+def combine_verified_symbols(changes,blocked,deferred,accumulated,*,draft_csv=DRAFT):
+    """R37: retain all original CP932 symbol bytes; do not promote runtime."""
+    try:
+        from tools.r37_simbolos_preservados import audit
+    except ModuleNotFoundError:
+        from r37_simbolos_preservados import audit
+    baseline=changes[TARGET_SCRIPT]
+    full=[{"gid":r["grupo_id"],"offset":int(r["offset_hex"],16),"old":a,"new":b}
+          for r,a,b in baseline]
+    selected,verification=audit(full)
+    extra={x["gid"]:x for x in selected}
+    require(len(extra)==53 and set(extra)<=set(deferred),"R37 symbol IDs not deferred")
+    by_id={r["grupo_id"]:r for r,_ in source_rows(SOURCE,draft_csv)}
+    merged=list(baseline)
+    for gid,x in extra.items():
+        r=by_id[gid]
+        require(r["origen"]==TARGET_SCRIPT and int(r["offset_hex"],16)==x["offset"]
+                and bytes.fromhex(r["bytes_hex"])==x["old"]
+                and len(x["old"])==len(x["new"]) and 0 not in x["new"],
+                "R37 symbol slot mismatch")
+        merged.append((r,x["old"],x["new"]))
+    merged.sort(key=lambda x:int(x[0]["offset_hex"],16))
+    require(len({r["grupo_id"] for r,_,_ in merged})==4073
+            and all(int(a[0]["offset_hex"],16)+len(a[1])<=int(b[0]["offset_hex"],16)
+                    for a,b in zip(merged,merged[1:])), "R37 symbol overlaps")
+    result=changes.copy()
+    result[TARGET_SCRIPT]=merged
+    remaining=[g for g in deferred if g not in extra]
+    filtered=[b for b in blocked if b["grupo_id"] not in extra]
+    require(len(remaining)==827 and len(blocked)-len(filtered)==53
+            and sum(map(len,result.values()))==7421,"R37 complete residual profile drift")
+    info={**accumulated,"selected":3697,"total_planned":7421,"remaining":827,
+          "script_changes":4073,"verified_symbols":verification,
+          "full_script_ids_sha256":hashlib.sha256(",".join(sorted(r["grupo_id"] for r,_,_ in merged)).encode("ascii")).hexdigest()}
+    return result,filtered,remaining,info
+
+
 def read_resources(iso):
     _, iso_files = iso9660_entries(iso)
     target = next((x for x in iso_files if x["path"] == "PSP_GAME/USRDIR/DATA.DAT"), None)
@@ -795,10 +832,11 @@ def append_text_containers(source_iso, source_pack, entries, replacements, resul
 
 def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
           experimental_partial=False, add_spanish_font=True, event_safe_only=False,
-          verified_packs=False, unified_profile=False, extended_padding=False):
+          verified_packs=False, unified_profile=False, extended_padding=False, verified_symbols=False):
     source_iso, candidate, report = map(Path, (source_iso, candidate, report))
     require(source_iso.resolve() != candidate.resolve(), "Cannot overwrite source ISO")
     require(sha256_file(source_iso) == SOURCE_SHA256, "Wrong Cladun USA source ISO")
+    require(not verified_symbols or extended_padding,"Verified symbols require extended profile")
     require(not extended_padding or unified_profile,"Extended padding requires unified profile")
     if unified_profile:
         require(verified_packs and event_safe_only and experimental_partial and add_spanish_font,
@@ -836,6 +874,9 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
             changes, blocked, event_deferred, accumulated, draft_csv=draft_csv)
     if extended_padding:
         changes,blocked,event_deferred,accumulated=combine_extended_padding(
+            changes,blocked,event_deferred,accumulated,draft_csv=draft_csv)
+    if verified_symbols:
+        changes,blocked,event_deferred,accumulated=combine_verified_symbols(
             changes,blocked,event_deferred,accumulated,draft_csv=draft_csv)
     all_changed = sum(len(x) for x in changes.values())
     counted = Counter(x["motivo"] for x in blocked)
@@ -928,7 +969,7 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
             if verified_packs:
                 require(event_audit["all_command_offsets_preserved"]
                         and event_audit["nontext_commands_byte_exact"] == 46308
-                        and event_audit["text_commands_replaced"] == (4020 if extended_padding else 3745 if unified_profile else 1824),
+                        and event_audit["text_commands_replaced"] == (4073 if verified_symbols else 4020 if extended_padding else 3745 if unified_profile else 1824),
                         "Accumulated SCRIPT failed physical event audit")
             replacements["SCRIPT.SDT"] = (packed, len(rewritten))
             applied.update(a["grupo_id"] for a, old, new in changes[TARGET_SCRIPT])
@@ -1019,6 +1060,8 @@ def main():
                    help="7093 textos, fuente compacta experimental 44 ligaduras; implica los modos parciales y offsets fijos. NO es release.")
     p.add_argument("--relleno-ampliado", action="store_true",
                    help="Con --perfil-unificado añade 275 textos con 8–31 espacios; riesgo visual sin PPSSPP.")
+    p.add_argument("--residuales-verificados", action="store_true",
+                   help="Con --perfil-unificado añade 275 rellenos y 53 textos CP932 verificados estáticamente; experimental.")
     args = p.parse_args()
     try:
         summary = build(args.iso, args.candidate, args.report,
@@ -1028,7 +1071,8 @@ def main():
                         event_safe_only=args.event_safe_only or args.perfil_unificado,
                         verified_packs=args.packs_verificados or args.perfil_unificado,
                         unified_profile=args.perfil_unificado,
-                        extended_padding=args.relleno_ampliado)
+                        extended_padding=args.relleno_ampliado or args.residuales_verificados,
+                        verified_symbols=args.residuales_verificados)
         print(json.dumps({k: v for k, v in summary.items() if k != "bloqueos_por_grupo"},
                          indent=2, ensure_ascii=False))
     except Exception as exc:
