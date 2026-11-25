@@ -1,0 +1,31 @@
+{
+  "schema": "cladun.beta.r52.geometry.v1",
+  "evidence": "A_ORIGINAL_GEOMETRY_ONLY",
+  "source_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "plan_commit": "3c52ed4e92a5f326b8b2e31fc1664428c312ab3d",
+  "residuals": 33,
+  "donors": 35,
+  "growth_bytes": 40,
+  "reclaimed_bytes": 40,
+  "script_starts_preserved_in_plan": 1625,
+  "moved_commands_planned": 146,
+  "moved_nontext_planned": 104,
+  "moved_text_planned": 42,
+  "blocks": 24,
+  "max_absolute_delta": 5,
+  "matrix_sha256": "2a06e2b09643c0f439c8b0e7fe95834e0b32908b8b634b38759ecbf0b963b714",
+  "original_resources": {
+    "decoded": 349,
+    "uncompressed": 96,
+    "gzip": 187,
+    "imy": 66,
+    "decoded_bytes": 195429446,
+    "dsarc_archives": 70,
+    "dsarc_members": 1186,
+    "failures": 0
+  },
+  "runtime_pass": 0,
+  "candidate_built": false,
+  "runtime_verified": false,
+  "release_authorized": false
+}
