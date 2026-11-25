@@ -477,7 +477,7 @@ def combine_r42_concise(changes,blocked,deferred,accumulated,*,draft_csv=DRAFT):
     require(len(remaining)==39 and len(blocked)-len(filtered)==21
             and sum(map(len,result.values()))==8209,"R42 accumulated profile drift")
     info={**accumulated,"selected":4485,"total_planned":8209,"remaining":39,
-          "script_changes":4861,"reviewed_concise_r40":verification,
+          "script_changes":4861,"reviewed_concise_r42":verification,
           "full_script_ids_sha256":hashlib.sha256(",".join(sorted(r["grupo_id"] for r,_,_ in merged)).encode("ascii")).hexdigest()}
     return result,filtered,remaining,info
 
