@@ -250,9 +250,12 @@ def combine_unified_profile(changes, blocked, deferred, accumulated, *, draft_cs
     require(len(blocked)-len(filtered)==1921 and len(remaining)==1155
             and sum(map(len,result.values()))==7093, "R36 totals differ")
     info = {**accumulated,"selected":3369,"additional_ligatures":1921,
+            "r34_selected_ids_sha256":accumulated["selected_ids_sha256"],
+            "full_script_ids_sha256":hashlib.sha256(",".join(sorted(set(base)|set(extra))).encode("ascii")).hexdigest(),
             "total_planned":7093,"remaining":1155,"script_changes":3745,
             "compact_font_experimental":True,"runtime_verified":False,
             "release_authorized":False,"r35_batch_verification":verification["batches"]}
+    info.pop("selected_ids_sha256",None)
     return result,filtered,remaining,info
 
 
@@ -767,6 +770,10 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
         except ModuleNotFoundError:
             from f4_r23_font_compact_candidate import candidate_path
         candidate = candidate_path(candidate, source_iso)
+        require(report.resolve() not in (source_iso.resolve(),candidate.resolve(),
+                                        Path(source_csv).resolve(),Path(draft_csv).resolve())
+                and not report.exists() and not report.is_symlink(),
+                "Unified report must be a new file, never overwrite inputs or candidate")
     rows = source_rows(source_csv, draft_csv)
     layout_f1 = None
     # El borrador completo es literario. Ajustar solo la presentación
