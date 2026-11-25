@@ -67,9 +67,15 @@ jobs:
           cd /tmp
           ./ppsspp.AppImage --appimage-extract >/tmp/ppsspp-extract.log
           test -x /tmp/squashfs-root/AppRun
-          mkdir -p /tmp/ppsspp-qa-home
+          mkdir -p /tmp/ppsspp-qa-home/.config/ppsspp/PSP/SAVEDATA
+          python - <<'PY'
+          import zipfile
+          with zipfile.ZipFile('/tmp/apollo-cladun.zip') as z:
+              z.extractall('/tmp/ppsspp-qa-home/.config/ppsspp/PSP/SAVEDATA')
+          PY
+          test -f /tmp/ppsspp-qa-home/.config/ppsspp/PSP/SAVEDATA/NPUH10072GMSV001/PARAM.SFO
           set +e
-          timeout 15s xvfb-run -a env HOME=/tmp/ppsspp-qa-home LIBGL_ALWAYS_SOFTWARE=1 /tmp/squashfs-root/AppRun >/tmp/ppsspp-qa.log 2>&1
+          timeout 15s xvfb-run -a env HOME=/tmp/ppsspp-qa-home XDG_CONFIG_HOME=/tmp/ppsspp-qa-home/.config SDL_AUDIODRIVER=dummy SDL_VIDEODRIVER=x11 LIBGL_ALWAYS_SOFTWARE=1 /tmp/squashfs-root/AppRun >/tmp/ppsspp-qa.log 2>&1
           status=$?
           set -e
           tail -n 50 /tmp/ppsspp-qa.log
