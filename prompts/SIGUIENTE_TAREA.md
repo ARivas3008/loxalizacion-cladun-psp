@@ -1,11 +1,7 @@
-# CLADUN ES — R35 autónomo: compilación real del nuevo perfil conservador acumulado
+# CLADUN ES — R37 autónomo: verificar bloques de 1000 + 155 y cerrar compilación unificada
 
-PR #7 DRAFT, rama integracion-eventos-segura-20261120. Verificar HEAD/CI, no force push ni merge. Leer docs/R34_CONSERVADORA_ACUMULADA.md y reports/R34_CONSERVADORA_ACUMULADA.json. El parcheador principal tiene el perfil --packs-verificados: 3724 F1 + 146 exactos + 1302 acolchados = 5172 (62,71% plan del código); 1448 IDs y offsets únicos, 360 bloques, huellas 1345572782/4017724493. Oficial histórico 3724; no ISO acumulada ni C en R34. CI inicial R33 45543211973 SUCCESS.
+Rama integracion-eventos-segura-20261120; PR #7 DRAFT. Verificar HEAD/CI, no merge ni force push. Leer docs/R36_PERFIL_UNIFICADO.md, reports/R35_LIGADURAS_2002.json, reports/R34_CONSERVADORA_ACUMULADA.json. R36 integra en parcheador principal 3724 +146+1302+1921=7093 cambios únicos; 3745 SCRIPT, 3348 otros, 1155 diferidos. R35 CI 45544501058 SUCCESS. R36 ISO acumulada y PPSSPP no ejecutados. Oficial histórico 3724.
 
-1. Checkout completo y original auténtica SHA b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f. Ejecutar tests R34 y construir perfil único:
-```bash
-python tools/integrar_parche_seguro.py --iso /PRIVADO/USA.iso --candidate /PRIVADO/R35_5172.iso --report /PRIVADO/R35_5172.json --experimental-parcial --event-safe-only --packs-verificados
-```
-Confirmar 5172 cambios reales, 3076 diferidos, 1824 comandos textuales, 46308 no textuales exactos, 51705 comandos, 1625 scripts, cero offsets desplazados, fuente 19/2721, menú F1, recursos vecinos e ISO/BPS roundtrip. Si falta checkout o ISO, no inventar. 
-2. PPSSPP oficial 1.20.4 A/B/A, todos gaps 1–7, menús, prólogo, tutoriales, combate, wrapping, signos, eventos, saves. Solo promover grupos sin regresión y evidencia C.
-3. Después deduplicar 2002 ligaduras R25 contra 1448 ya seleccionados; 29 déficits R26, MIPS y QA F2–F6. No sumar dos veces ni confundir evidencia A/B/C. CI real y cero P0/P1. Al finalizar sustituir COMPLETAMENTE prompts/SIGUIENTE_TAREA.md por R36 autónomo, con obligación recursiva hasta 100% real T/G/R/Q.
+1. Checkout y original USA auténtica SHA b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f. Ejecutar unittest y `python tools/integrar_parche_seguro.py --iso /PRIVADO/USA.iso --candidate /PRIVADO/R37_7093.iso --report /PRIVADO/R37_7093.json --perfil-unificado`. Asegurar 7093 insertados, 1155 pendientes, 51705 comandos, 46308 no textuales intactos, cero offsets movidos, 1625 bloques, 349 PSPFS, 2721 glifos originales+19+44, F1, BPS roundtrip. No publicar ISO ni recursos.
+2. `python tools/r35_ligaduras_acumuladas.py`: clasificar pendientes en lotes 1000 y 155; analizar margen de relleno, controles CP932, exceso de ligaduras, referencias MIPS. Verificar preimágenes, cada solución y combinaciones, incorporar al perfil único solo los que pasen guardas; no inventar resultados ni duplicar IDs.
+3. PPSSPP oficial 1.20.4 A/B/A, compactación DSARC, caracteres, iconos, menú/prólogo/tutorial/combate, saves, eventos. Registrar A/B/C por separado. No elevar oficial sin C. Cero P0/P1. Al terminar reemplazar COMPLETAMENTE prompts/SIGUIENTE_TAREA.md por R38 autónomo con obligación recursiva hasta 100% real de T/G/R/Q.
