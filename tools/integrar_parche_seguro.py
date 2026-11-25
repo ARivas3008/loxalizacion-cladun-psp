@@ -215,6 +215,47 @@ def plan_event_safe(changes, blocked, *, verified_packs=False):
     return result, blocked, event_deferred, info
 
 
+def combine_unified_profile(changes, blocked, deferred, accumulated, *, draft_csv=DRAFT):
+    """R36 single-pass 7093 profile; preserve R34 and add only vetted ligatures."""
+    try:
+        from tools.r35_ligaduras_acumuladas import make_plan, PAIRS
+        from tools.f4_r21_ligature_capacity import decode_encoded
+    except ModuleNotFoundError:
+        from r35_ligaduras_acumuladas import make_plan, PAIRS
+        from f4_r21_ligature_capacity import decode_encoded
+    selected, full, verification = make_plan()
+    base = {src["grupo_id"]: (src, old, new) for src, old, new in changes[TARGET_SCRIPT]}
+    by_id = {src["grupo_id"]: src for src, dst in source_rows(SOURCE, draft_csv)}
+    extra = {x["gid"]: x for x in selected}
+    require(len(base) == 1824 and len(extra) == 1921
+            and set(extra) <= set(deferred) and not set(base) & set(extra),
+            "R36 duplicate or non-deferred text")
+    merged = list(base.values())
+    for gid, x in extra.items():
+        src = by_id[gid]
+        require(src["origen"] == TARGET_SCRIPT
+                and int(src["offset_hex"],16) == x["offset"]
+                and bytes.fromhex(src["bytes_hex"]) == x["old"]
+                and len(x["old"]) == len(x["new"]) and 0 not in x["new"],
+                "R36 source slot mismatch")
+        merged.append((src,x["old"],x["new"]))
+    merged.sort(key=lambda x:int(x[0]["offset_hex"],16))
+    require([(src["grupo_id"],int(src["offset_hex"],16),old,new) for src,old,new in merged]
+            == [(x["gid"],x["offset"],x["old"],x["new"]) for x in full],
+            "R36 independent full plan differs")
+    result = changes.copy()
+    result[TARGET_SCRIPT] = merged
+    remaining = [gid for gid in deferred if gid not in extra]
+    filtered = [b for b in blocked if b["grupo_id"] not in extra]
+    require(len(blocked)-len(filtered)==1921 and len(remaining)==1155
+            and sum(map(len,result.values()))==7093, "R36 totals differ")
+    info = {**accumulated,"selected":3369,"additional_ligatures":1921,
+            "total_planned":7093,"remaining":1155,"script_changes":3745,
+            "compact_font_experimental":True,"runtime_verified":False,
+            "release_authorized":False,"r35_batch_verification":verification["batches"]}
+    return result,filtered,remaining,info
+
+
 def read_resources(iso):
     _, iso_files = iso9660_entries(iso)
     target = next((x for x in iso_files if x["path"] == "PSP_GAME/USRDIR/DATA.DAT"), None)
@@ -714,10 +755,18 @@ def append_text_containers(source_iso, source_pack, entries, replacements, resul
 
 def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
           experimental_partial=False, add_spanish_font=True, event_safe_only=False,
-          verified_packs=False):
+          verified_packs=False, unified_profile=False):
     source_iso, candidate, report = map(Path, (source_iso, candidate, report))
     require(source_iso.resolve() != candidate.resolve(), "Cannot overwrite source ISO")
     require(sha256_file(source_iso) == SOURCE_SHA256, "Wrong Cladun USA source ISO")
+    if unified_profile:
+        require(verified_packs and event_safe_only and experimental_partial and add_spanish_font,
+                "Unified profile requires verified packs, fixed offsets, font and explicit partial mode")
+        try:
+            from tools.f4_r23_font_compact_candidate import candidate_path
+        except ModuleNotFoundError:
+            from f4_r23_font_compact_candidate import candidate_path
+        candidate = candidate_path(candidate, source_iso)
     rows = source_rows(source_csv, draft_csv)
     layout_f1 = None
     # El borrador completo es literario. Ajustar solo la presentación
@@ -737,6 +786,9 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
     if event_safe_only:
         changes, blocked, event_deferred, accumulated = plan_event_safe(
             changes, blocked, verified_packs=verified_packs)
+    if unified_profile:
+        changes, blocked, event_deferred, accumulated = combine_unified_profile(
+            changes, blocked, event_deferred, accumulated, draft_csv=draft_csv)
     all_changed = sum(len(x) for x in changes.values())
     counted = Counter(x["motivo"] for x in blocked)
     result = {"estado": "BLOQUEADO_SIN_CANDIDATO", "original_sha256": SOURCE_SHA256,
@@ -762,6 +814,27 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
             build_font(source_iso, interim)
             verify_font(source_iso, interim)
             base = interim
+            if unified_profile:
+                try:
+                    from tools.f4_r21_ligature_collision_safe import verify_own_iso_raster
+                    from tools.f4_r21_ligature_font_prototype import build_in_memory
+                    from tools.f4_r24_piloto_1650_ligaduras import update_font_in_existing_candidate
+                except ModuleNotFoundError:
+                    from f4_r21_ligature_collision_safe import verify_own_iso_raster
+                    from f4_r21_ligature_font_prototype import build_in_memory
+                    from f4_r24_piloto_1650_ligaduras import update_font_in_existing_candidate
+                result["auditoria_raster_original"] = verify_own_iso_raster(source_iso)
+                compact, metric = build_in_memory(source_iso, Path(draft_csv),
+                    ligature_count=44, member_alignment=16, include_binary=True)
+                require(len(compact)==144000 and metric["preserved_original_base_glyphs"]==2721
+                        and metric["preserved_existing_spanish_glyphs"]==19
+                        and metric["ligature_count"]==44
+                        and metric["can_write_in_original_slot_without_relocation"],
+                        "R36 compact font geometry drift")
+                base = Path(tmp) / "fuente-unificada.iso"
+                result["auditoria_fuente_unificada"] = update_font_in_existing_candidate(
+                    source_iso, interim, base, compact)
+                result["fuente_unificada"] = metric
         else:
             base = source_iso
         _, package, entries = read_resources(base)
@@ -778,15 +851,38 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
                 require(at not in script_changes, "Duplicate SCRIPT.DAT text offset")
                 script_changes[at] = (old, new, src["grupo_id"])
             event_audit = {}
-            rewritten = rebuild_script_arc(
-                raw, script_changes, event_report=event_audit,
-                strict_event_offsets=event_safe_only)
+            if unified_profile:
+                # Single replay against the original archive; preserve DSARC geometry.
+                try:
+                    from tools.f4_r24_piloto_1650_ligaduras import replace_member_payload
+                    from tools.r32_auditar_packs import selective_repack
+                except ModuleNotFoundError:
+                    from f4_r24_piloto_1650_ligaduras import replace_member_payload
+                    from r32_auditar_packs import selective_repack
+                members = dsarc_entries(raw)
+                by_name = {m["name"]:m for m in members}
+                def child(name):
+                    m=by_name[name]
+                    return raw[m["offset"]:m["offset"]+m["size"]]
+                original_script, original_table = child("SCRIPT.DAT"), child("SCRIPT.TBL")
+                new_script,new_table = text_command_rebuild(original_script,original_table,script_changes)
+                event_audit = audit_script_rebuild(original_script,original_table,
+                    new_script,new_table,script_changes,require_fixed_offsets=True)
+                require(new_table==original_table,"R36 SCRIPT.TBL differs")
+                rewritten = replace_member_payload(raw,members,"SCRIPT.DAT",new_script)
+                packed, count = selective_repack(stored,rewritten)
+                result["script_imy_repacked_blocks"] = count
+            else:
+                rewritten = rebuild_script_arc(
+                    raw, script_changes, event_report=event_audit,
+                    strict_event_offsets=event_safe_only)
+                packed = recompress(stored, rewritten)
             if verified_packs:
                 require(event_audit["all_command_offsets_preserved"]
                         and event_audit["nontext_commands_byte_exact"] == 46308
-                        and event_audit["text_commands_replaced"] == 1824,
+                        and event_audit["text_commands_replaced"] == (3745 if unified_profile else 1824),
                         "Accumulated SCRIPT failed physical event audit")
-            replacements["SCRIPT.SDT"] = (recompress(stored, rewritten), len(rewritten))
+            replacements["SCRIPT.SDT"] = (packed, len(rewritten))
             applied.update(a["grupo_id"] for a, old, new in changes[TARGET_SCRIPT])
 
         db_changes = {k.split("/", 1)[1]: records for k, records in changes.items()
@@ -871,14 +967,17 @@ def main():
                    help="Conservar absolutamente todos los offsets de comandos; pospone textos de longitud diferente")
     p.add_argument("--packs-verificados", action="store_true",
                    help="Integrar 146 exactos + 1302 acolchados en la base conservadora; experimental, sin QA PPSSPP")
+    p.add_argument("--perfil-unificado", action="store_true",
+                   help="7093 textos, fuente compacta experimental 44 ligaduras; implica los modos parciales y offsets fijos. NO es release.")
     args = p.parse_args()
     try:
         summary = build(args.iso, args.candidate, args.report,
                         source_csv=args.original, draft_csv=args.borrador,
-                        experimental_partial=args.experimental_parcial,
+                        experimental_partial=args.experimental_parcial or args.perfil_unificado,
                         add_spanish_font=not args.sin_fuente,
-                        event_safe_only=args.event_safe_only,
-                        verified_packs=args.packs_verificados)
+                        event_safe_only=args.event_safe_only or args.perfil_unificado,
+                        verified_packs=args.packs_verificados or args.perfil_unificado,
+                        unified_profile=args.perfil_unificado)
         print(json.dumps({k: v for k, v in summary.items() if k != "bloqueos_por_grupo"},
                          indent=2, ensure_ascii=False))
     except Exception as exc:
