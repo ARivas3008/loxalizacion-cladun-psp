@@ -64,6 +64,13 @@ jobs:
       - name: Ejecutar emulador sin juego en pantalla virtual
         run: |
           command -v Xvfb
+          if ! command -v pulseaudio >/dev/null; then
+            sudo apt-get update -qq
+            sudo apt-get install -y --no-install-recommends pulseaudio
+          fi
+          mkdir -m 700 /tmp/cladun-pulse
+          pulseaudio --daemonize=yes --exit-idle-time=-1 --log-target=file:/tmp/cladun-pulse/server.log --load="module-native-protocol-unix socket=/tmp/cladun-pulse/native auth-anonymous=1" --load="module-null-sink sink_name=cladun_qa"
+          test -S /tmp/cladun-pulse/native
           cd /tmp
           ./ppsspp.AppImage --appimage-extract >/tmp/ppsspp-extract.log
           test -x /tmp/squashfs-root/AppRun
@@ -75,7 +82,7 @@ jobs:
           PY
           test -f /tmp/ppsspp-qa-home/.config/ppsspp/PSP/SAVEDATA/NPUH10072GMSV001/PARAM.SFO
           set +e
-          timeout 15s xvfb-run -a env HOME=/tmp/ppsspp-qa-home XDG_CONFIG_HOME=/tmp/ppsspp-qa-home/.config SDL_AUDIODRIVER=dummy SDL_VIDEODRIVER=x11 LIBGL_ALWAYS_SOFTWARE=1 /tmp/squashfs-root/AppRun >/tmp/ppsspp-qa.log 2>&1
+          timeout 15s xvfb-run -a env HOME=/tmp/ppsspp-qa-home XDG_CONFIG_HOME=/tmp/ppsspp-qa-home/.config PULSE_SERVER=unix:/tmp/cladun-pulse/native SDL_AUDIODRIVER=pulseaudio SHARUN_ALLOW_LD_PRELOAD=1 SDL_VIDEODRIVER=x11 LIBGL_ALWAYS_SOFTWARE=1 /tmp/squashfs-root/AppRun >/tmp/ppsspp-qa.log 2>&1
           status=$?
           set -e
           tail -n 50 /tmp/ppsspp-qa.log
