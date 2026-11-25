@@ -12,7 +12,7 @@ from tools.r31_bulk_padding import serialized, fnv
 from tools.r29_integrar_longitud_fija import DRAFT, require
 from tools.f4_r21_ligature_capacity import read_canonical, matching
 from tools.f4_r25_piloto_85pct import pad_shorter
-from tools.charset_es import encode_spanish
+from tools.charset_es import encode_spanish, ES_GLYPHS
 
 GROUPS=((8,12,200,1330499443,202296382),(13,16,42,2266923989,3831548989),
         (17,31,33,268700573,2699294979))
@@ -29,7 +29,8 @@ def audit(full=None):
         delta=len(encode_spanish(text))-len(old)
         if not delta:continue
         controls=(any(c<32 or c>126 or c in (37,92) for c in old)
-                  or "%" in text or "\\" in text or not text.isprintable())
+                  or "%" in text or "\\" in text or not text.isprintable()
+                  or any(not (32<=ord(c)<=126 or c in ES_GLYPHS) for c in text))
         kind=("controls_or_multibyte" if controls else
               "long_padding" if delta<0 else "overflow")
         pending.append({"gid":r["grupo_id"],"offset":int(r["offset_hex"],16),
