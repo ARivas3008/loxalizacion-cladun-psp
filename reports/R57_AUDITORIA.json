@@ -1,0 +1,123 @@
+{
+  "schema": "cladun.r57.native_auxiliary_storage.v1",
+  "r56_base_sha256": "8f5953ec4495f63f6c87d9b3a61bc793ed378b6e2494205add602e7a0e4fe2c8",
+  "iso_sha256": "9c04aed54138f1ecd2d17bf2099e3a633898f0736b4dd6ddf489b6b1d69398c5",
+  "low_ids_iso_sha256": "c517d7099be5f0fe971641f2559f510576a786ec253b46ce12475fa53e4f71a8",
+  "iso_bytes": 305496064,
+  "old_script_bytes": 633344,
+  "new_script_bytes": 633616,
+  "script_gap_before": 512,
+  "script_gap_after": 240,
+  "old_table_bytes": 52016,
+  "new_table_bytes": 52240,
+  "table_original_tail": 208,
+  "archive_expansion": 256,
+  "old_archive_bytes": 930304,
+  "new_archive_bytes": 930560,
+  "old_stored": 699652,
+  "first_failed_stored": 699953,
+  "slot_capacity": 699904,
+  "new_stored": 699731,
+  "remaining_slot": 173,
+  "low_ids_stored": 699735,
+  "low_ids_remaining_slot": 169,
+  "new_helpers": 7,
+  "new_commands": 29,
+  "existing_commands_preserved_vs_r56": 51705,
+  "existing_block_starts_preserved": 1625,
+  "new_block_count": 1632,
+  "unchanged_other_pspfs": 348,
+  "pspfs_offsets_preserved": 349,
+  "dsarc_member_offsets_preserved": 4,
+  "helper_storage_reopened": true,
+  "call_sites_linked": 0,
+  "source_0a_05_pairs": 862,
+  "source_arg_matches_script_id": 320,
+  "native_call_semantics_proven": false,
+  "source_native_minimal_box_block": 52,
+  "source_native_minimal_box_script_id": 511,
+  "remaining_call_site_filler_sizes": [
+    7,
+    13,
+    17,
+    19
+  ],
+  "helpers": [
+    {
+      "script_id": 962160,
+      "block": 1625,
+      "offset": 633344,
+      "bytes": 48,
+      "gids": [
+        "001278",
+        "001662",
+        "002372"
+      ]
+    },
+    {
+      "script_id": 962161,
+      "block": 1626,
+      "offset": 633392,
+      "bytes": 32,
+      "gids": [
+        "002733"
+      ]
+    },
+    {
+      "script_id": 962162,
+      "block": 1627,
+      "offset": 633424,
+      "bytes": 32,
+      "gids": [
+        "002919"
+      ]
+    },
+    {
+      "script_id": 962163,
+      "block": 1628,
+      "offset": 633456,
+      "bytes": 32,
+      "gids": [
+        "003097",
+        "004544"
+      ]
+    },
+    {
+      "script_id": 962164,
+      "block": 1629,
+      "offset": 633488,
+      "bytes": 32,
+      "gids": [
+        "003489",
+        "004623"
+      ]
+    },
+    {
+      "script_id": 962165,
+      "block": 1630,
+      "offset": 633520,
+      "bytes": 48,
+      "gids": [
+        "003566"
+      ]
+    },
+    {
+      "script_id": 962166,
+      "block": 1631,
+      "offset": 633568,
+      "bytes": 48,
+      "gids": [
+        "004546"
+      ]
+    }
+  ],
+  "repacked_chunks": [
+    0,
+    6,
+    7
+  ],
+  "runtime_verified": false,
+  "includes_font": false,
+  "includes_full_accumulated": false,
+  "release_authorized": false
+}
