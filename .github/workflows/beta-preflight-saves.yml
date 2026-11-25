@@ -1,0 +1,77 @@
+name: Preflight PPSSPP y guardados publicos (sin ISO)
+on:
+  push:
+    branches: [beta-provisional-r52-20261125]
+    paths: [.github/workflows/beta-preflight-saves.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Descargar y autenticar PPSSPP
+        run: |
+          curl -fLsS --retry 2 --max-time 120 -o /tmp/ppsspp.AppImage 'https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-v1.20.4-anylinux-x86_64.AppImage'
+          echo '661c098e6b7f7610171a57b7c533ce8bba6f2312b71e76d61e850461973eba21  /tmp/ppsspp.AppImage' | sha256sum -c -
+          test "$(wc -c </tmp/ppsspp.AppImage)" -eq 50689748
+          chmod +x /tmp/ppsspp.AppImage
+      - name: Obtener guardado avanzado Apollo y examinar metadatos
+        run: |
+          curl -fLsS --retry 2 --max-time 60 -o /tmp/apollo-cladun.zip 'https://raw.githubusercontent.com/bucanero/apollo-saves/master/PSP/NPUH10072/00000183.zip'
+          python - <<'PY'
+          import zipfile,hashlib,struct,pathlib,json
+          p=pathlib.Path('/tmp/apollo-cladun.zip')
+          def sfo(data):
+              magic,ver,keys,vals,n=struct.unpack_from('<4sIIII',data)
+              assert magic==b'\x00PSF' and n<=128
+              result={}
+              for i in range(n):
+                  k,fmt,sz,mx,v=struct.unpack_from('<HHIII',data,20+16*i)
+                  assert keys+k<len(data) and vals+v+sz<=len(data)
+                  key=data[keys+k:data.index(b'\0',keys+k)].decode('ascii')
+                  if key in ('TITLE','SAVEDATA_TITLE','SAVEDATA_DIRECTORY','DETAIL'):
+                      result[key]=data[vals+v:vals+v+sz].rstrip(b'\0').decode('utf-8','replace')
+              return result
+          with zipfile.ZipFile(p) as z:
+              assert z.testzip() is None
+              entries=[]
+              for f in z.infolist():
+                  q=pathlib.PurePosixPath(f.filename)
+                  assert not q.is_absolute() and '..' not in q.parts and '\\' not in f.filename
+                  if not f.is_dir() and q.name=='PARAM.SFO':
+                      entries.append({'path':f.filename,'sfo':sfo(z.read(f))})
+              assert entries and all('NPUH10072' in x['path'] or 'NPUH10072' in x['sfo'].get('SAVEDATA_DIRECTORY','') for x in entries)
+              print(json.dumps({'zip_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'entries':entries,'files':len(z.namelist()),'crc':'PASS','game_loaded':False},ensure_ascii=False))
+          PY
+      - name: Comprobar disponibilidad del segundo guardado (sin descargar juegos)
+        continue-on-error: true
+        run: |
+          curl -fLsS --retry 1 --max-time 30 -A 'Mozilla/5.0' -o /tmp/cladun-saves.html 'https://gamefaqs.gamespot.com/psp/980503-cladun-this-is-an-rpg/saves'
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from urllib.parse import urljoin,urlparse
+          from pathlib import Path
+          class Links(HTMLParser):
+              def handle_starttag(self, tag, attrs):
+                  if tag!='a':return
+                  a=dict(attrs);h=a.get('href','')
+                  u=urljoin('https://gamefaqs.gamespot.com/psp/980503-cladun-this-is-an-rpg/saves',h)
+                  if 'download' in u.lower() or '.zip' in u.lower():print(u)
+          Links().feed(Path('/tmp/cladun-saves.html').read_text(errors='replace'))
+          PY
+      - name: Ejecutar emulador sin juego en pantalla virtual
+        run: |
+          command -v Xvfb
+          cd /tmp
+          ./ppsspp.AppImage --appimage-extract >/tmp/ppsspp-extract.log
+          test -x /tmp/squashfs-root/AppRun
+          mkdir -p /tmp/ppsspp-qa-home
+          set +e
+          timeout 15s xvfb-run -a env HOME=/tmp/ppsspp-qa-home LIBGL_ALWAYS_SOFTWARE=1 /tmp/squashfs-root/AppRun >/tmp/ppsspp-qa.log 2>&1
+          status=$?
+          set -e
+          tail -n 50 /tmp/ppsspp-qa.log
+          echo "emulator_exit=$status (124 indicates process remained alive for the 15s probe, not a gameplay pass)"
+          test "$status" -eq 124
