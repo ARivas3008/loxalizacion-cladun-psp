@@ -2,6 +2,9 @@ import unittest
 from tools.qa_corrective_r52 import save_overlay,verify_ink_delta,font_metrics,advance,wrap_plain,RESOURCE
 from tools.qa_corrective_r52 import compact_menu_overlay,COMPACT,MENU
 import struct
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
 
 class CorrectiveTests(unittest.TestCase):
     def test_save_scoped(self):
