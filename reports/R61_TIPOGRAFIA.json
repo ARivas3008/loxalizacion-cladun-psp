@@ -1,0 +1,45 @@
+{
+  "candidate": "954ecc6f5514c884e7c0a25a25e7a0d075a5c6e5c8f38e02dd8ea75e13940f37",
+  "base": "df5082784e3ca8a610abffbaf768271aa171ba9614fac75ee28fd06de23ab362",
+  "private_replay_exact": true,
+  "changed_iso_member": "PSP_GAME/SYSDIR/EBOOT.BIN",
+  "defeated_persistent": true,
+  "ligature_fixed_mode_persistent": true,
+  "ppsspp": "1.20.4",
+  "save": "22352",
+  "ligatures_tested": 44,
+  "groups_pass": 11,
+  "group_delta_pixels_before": 63,
+  "group_delta_pixels_after": [
+    0,
+    1
+  ],
+  "script_unchanged_in_tested_candidate": true,
+  "dialogue_line_pitch_native_px_observed": 17,
+  "diagnostic_reflow": {
+    "not_promoted": true,
+    "commands": 31,
+    "groups": 13,
+    "risk_resolved_provisional": 13,
+    "risk_remaining": 96,
+    "protected_intro_blocks": [
+      757,
+      758,
+      759,
+      760,
+      761,
+      762,
+      763
+    ],
+    "offset_moves": 0
+  },
+  "pending": [
+    "Coco",
+    "full dialog geometry",
+    "proportional contexts",
+    "137 bestiary fields",
+    "native PSP",
+    "audio"
+  ],
+  "no_commercial_files": true
+}
