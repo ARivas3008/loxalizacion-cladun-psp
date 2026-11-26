@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "R58: diagnóstico gráfico 53/53 reinserción estática sobre USA. Acumulación textual, tipografía y PPSSPP pendientes.",
+  "fase_actual": "R59: 53/53 gráficos conservados, fuente 19+44 integrada con métricas y relectura estática. R52 textual y validación PPSSPP pendientes.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -228,7 +228,7 @@
     "23/11 F3 segundo relevo: NO se probó una sonda visual NO destructiva que permitiera atribuir exactamente la tipografía del prólogo a ANIME000 o a un IMY; fallo ANIME000 ocurrió antes de la pantalla, por lo que no es evidencia de la textura de texto.",
     "23/11 F3 segundo relevo: NO se insertaron los 85 textos demo1001 de distinta longitud, sin modelo completo de saltos/referencias ni QA de reubicación; sin cambiar --event-safe-only."
   ],
-  "siguiente_accion": "Recuperar R52 acumulada y paquete privado R58; reconciliar por recurso y validar en PPSSPP.",
+  "siguiente_accion": "Reconciliar R52 textual con los 53 gráficos y la fuente R59; validar espaciado, padding y dimensiones en PPSSPP.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
   "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
   "ultimo_commit_trabajo": "3241f5ca9463e202e3b9b1371bf0deefa52f4673",
@@ -2641,5 +2641,16 @@
     "source_code_delivery": "Private ZIP; not committed",
     "report_commit": "8d6638f5fa25eb3e9d033699a2e61df6604526d8",
     "next_prompt": "prompts/SIGUIENTE_TAREA.md"
+  },
+  "r59_tipografia_diagnostico": {
+    "report": "reports/R59_TIPOGRAFIA_DIAGNOSTICO.json",
+    "graphics_inserted": 53,
+    "ligatures_static_verified": 44,
+    "spanish_glyphs": 19,
+    "original_glyphs_preserved": 2721,
+    "cumulative_r52": false,
+    "runtime_verified": false,
+    "release_authorized": false,
+    "report_commit": "49230247980d2742d52c22be4180c8217b6ae434"
   }
 }
