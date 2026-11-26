@@ -1,0 +1,40 @@
+{
+  "scope": "R61 corrective beta, cumulative R60; visual defects reported by user",
+  "r60_sha256": "d9718bf8ef8917d61ada47c0baf2762c721a7abac21c43e107b7aa33ecd82167",
+  "local_candidate_sha256": "5955ed7017b07c74d9367c2b42eb3027f232223b0de170e3143e5a679213a66e",
+  "bps_sha256": "82be9b7ae94b028a80b0e4c1b12aab0c120df67cd9f56c36f1b3954cf4174d55",
+  "bps_bytes": 2031363,
+  "bps_roundtrip_exact": true,
+  "local_script_replacements": 4,
+  "local_additional_moved_commands": 0,
+  "local_nontext_preserved": 46308,
+  "pspfs_unchanged_vs_r60": 345,
+  "hud_indices": [
+    451,
+    478
+  ],
+  "graphical_changes": [
+    "ANIME000.IDT/IMY192",
+    "SYSGRA.ARC/WINDOW01.IMY"
+  ],
+  "known_graphics_still_inserted": 53,
+  "ligature_lines_in_r60": 2397,
+  "ligature_occurrences_in_r60": 10504,
+  "local_remaining_ligature_lines": 2393,
+  "global_candidate_sha256": "b2ff50cab64c00e336469de27b146e6c83e3c0494a87018caf3d6a517c440f9b",
+  "global_expanded_lines": 2397,
+  "global_moved_commands": 51529,
+  "global_moved_nontext": 46146,
+  "global_moved_block_starts": 1613,
+  "global_numeric_matches_moved_absolute_u32": 2562,
+  "global_numeric_matches_moved_relative_u32": 103,
+  "numeric_matches_are_not_proven_pointers": true,
+  "local_boot_ppsspp": true,
+  "global_title_and_music_selector_ppsspp": true,
+  "screenshot_scenes_local_not_certified": true,
+  "windows_native_gui_tested": false,
+  "go_tests_passed": true,
+  "root_render_fix_pending": true,
+  "release_authorized": false,
+  "private_artifact": "Cladun_ES_R61_Correctiva_Beta_Windows_x64.exe"
+}
