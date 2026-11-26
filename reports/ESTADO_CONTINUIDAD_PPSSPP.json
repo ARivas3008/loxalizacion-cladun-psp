@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "R59: 53/53 gráficos conservados, fuente 19+44 integrada con métricas y relectura estática. R52 textual y validación PPSSPP pendientes.",
+  "fase_actual": "R61: acumulada R60 corregida localmente, 4 líneas sin ligaduras, 2 formatos HUD, 2 gráficos. Experimento expansión global en diagnóstico; pendiente corrección central y QA dinámico.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -228,7 +228,7 @@
     "23/11 F3 segundo relevo: NO se probó una sonda visual NO destructiva que permitiera atribuir exactamente la tipografía del prólogo a ANIME000 o a un IMY; fallo ANIME000 ocurrió antes de la pantalla, por lo que no es evidencia de la textura de texto.",
     "23/11 F3 segundo relevo: NO se insertaron los 85 textos demo1001 de distinta longitud, sin modelo completo de saltos/referencias ni QA de reubicación; sin cambiar --event-safe-only."
   ],
-  "siguiente_accion": "Reconciliar R52 textual con los 53 gráficos y la fuente R59; validar espaciado, padding y dimensiones en PPSSPP.",
+  "siguiente_accion": "Ejecutar prompt R61/R62, depurar renderer y validar escenas del usuario.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
   "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
   "ultimo_commit_trabajo": "3241f5ca9463e202e3b9b1371bf0deefa52f4673",
@@ -2652,5 +2652,15 @@
     "runtime_verified": false,
     "release_authorized": false,
     "report_commit": "49230247980d2742d52c22be4180c8217b6ae434"
+  },
+  "r61_correctiva_visual": {
+    "report": "reports/R61_CORRECTIVA_VISUAL.json",
+    "local_new_offsets": 0,
+    "local_fixed_ligature_lines": 4,
+    "pending_ligature_lines": 2393,
+    "global_experimental_moved": 51529,
+    "root_cause_fix_verified": false,
+    "release_authorized": false,
+    "report_commit": "a95ec6b37e8c4598c8a61b16e9bf503bce1452b8"
   }
 }
