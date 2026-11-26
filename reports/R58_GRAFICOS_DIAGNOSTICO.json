@@ -1,0 +1,38 @@
+{
+  "scope": "R58 diagnóstico gráfico reconstruido desde ISO USA; no acumulado R52",
+  "source_sha256": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
+  "candidate_sha256": "e37f7c850a2ead5af550694cbe1d38673d778674082af15d86c71a1063e357ef",
+  "candidate_bytes": 311300096,
+  "graphics_known": 53,
+  "graphics_inserted_and_reopened": 53,
+  "graphics_ppsspp_pass": 0,
+  "pspfs_entries": 349,
+  "pspfs_unchanged": 344,
+  "source_prefix_outside_authorized_ranges_exact": true,
+  "groups": {
+    "intro": 1,
+    "credits": 34,
+    "interface": 5,
+    "animations": 4,
+    "title_xmb": 3,
+    "historical_png": 6
+  },
+  "idt_records": 192,
+  "idt_imy": 231,
+  "ldt_records": 39,
+  "ldt_textures": 57,
+  "bps_bytes": 315247,
+  "bps_sha256": "4526002fd3486b1ba22368441da271ed4cfd291a9a522ed09bfe0a2dbb1204ec",
+  "bps_independent_roundtrip": true,
+  "exact_r50_replay": false,
+  "cumulative_text_verified": false,
+  "runtime_verified": false,
+  "windows_verified": false,
+  "release_authorized": false,
+  "blockers": [
+    "Private R50 ZIP and R52 EXE unavailable in current runtime",
+    "Git clone DNS failed; complete source checkout unavailable",
+    "PPSSPP and Wine unavailable in PATH"
+  ],
+  "private_delivery": "R58 graphics reproduction code and coverage CSV packaged separately; no ISO, fonts or proprietary original asset files committed."
+}
