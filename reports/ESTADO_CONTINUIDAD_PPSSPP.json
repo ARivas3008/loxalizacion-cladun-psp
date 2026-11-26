@@ -2607,5 +2607,27 @@
     "PR_7_DRAFT_open": true,
     "current_relay_goal_complete": false,
     "next_recursive_relay": "prompts/SIGUIENTE_TAREA.md"
+  },
+  "r52_correctiva_20261125": {
+    "branch": "beta-correctiva-r52-20261125",
+    "base": "7900cb0a4b13906fe792fcbe9f64f7742618828b",
+    "first_commit": "7ee07d775dca545e6e9105f9a21fb4bb4690498d",
+    "first_ci": 45727611307,
+    "first_ci_result": "success",
+    "first_ci_tests": 17,
+    "source_iso_pspfs": 349,
+    "source_iso_dsarc_members": 1186,
+    "original_font_glyphs": 2721,
+    "ink_texels_reproduced": 100,
+    "corpus_rows_scanned": 9237,
+    "corrective_ids": [
+      "005234",
+      "005236",
+      "005237",
+      "005242"
+    ],
+    "full_candidate_built": false,
+    "runtime_pass": 0,
+    "release_authorized": false
   }
 }

@@ -1090,8 +1090,10 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
         layout_f1["onoff_presentacion"] = values_f1
     corrective_log = None
     if corrective_ui:
-        from tools.qa_corrective_r52 import save_overlay
-        rows, corrective_log = save_overlay(rows)
+        from tools.qa_corrective_r52 import save_overlay, compact_menu_overlay
+        rows, save_log = save_overlay(rows)
+        rows, compact_log = compact_menu_overlay(rows)
+        corrective_log = {'save':save_log,'compact_menu':compact_log,'runtime_verified':False}
     changes, blocked, unchanged = plan_rows(rows)
     event_deferred = []
     accumulated = None

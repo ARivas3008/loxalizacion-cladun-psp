@@ -31,6 +31,30 @@ def save_overlay(rows):
     if len(hits)!=1: raise ValueError("Expected exactly one Save menu slot")
     return result,hits[0]
 
+# Native advances measured from the authenticated FONT.BIN; not box widths.
+COMPACT = {26:("005234","Círculo mágico/Equipar","Círculo/Equipar",107,133,87),
+           28:("005236","Creación de personajes","Crear personajes",116,142,102),
+           29:("005237","Color del personaje","Color",95,118,29)}
+
+def compact_menu_overlay(rows):
+    """Experimental compact main-menu labels only, never submenu titles."""
+    result=[]; hits=[]; seen=set()
+    for src,dst in rows:
+        if src.get('origen')==RESOURCE and src.get('indice_registro') in ('26','28','29'):
+            idx=int(src['indice_registro']); gid,before,after,original_px,before_px,after_px=COMPACT[idx]
+            off,original=MENU[idx]
+            if (idx in seen or src['grupo_id']!=gid or dst['grupo_id']!=gid or
+                src['original']!=original or dst['original']!=original or
+                int(src['offset_hex'],16)!=off or bytes.fromhex(src['bytes_hex'])!=original.encode('ascii') or
+                dst['espanol']!=before or after_px>original_px):
+                raise ValueError('Compact menu preimage changed; inspect manually')
+            seen.add(idx);dst={**dst,'espanol':after}
+            hits.append({'id':gid,'before':before,'after':after,'original_px':original_px,
+                         'before_px':before_px,'after_px':after_px,'visual_verified':False})
+        result.append((src,dst))
+    if seen!=set(COMPACT): raise ValueError('Missing compact menu slots')
+    return result,hits
+
 def verify_ink_delta(old,new):
     """Narrow atlas: only A1–B3, only historical 15→1, no changed originals."""
     if len(old)!=3072 or len(new)!=3072 or any(len(x)!=256 for x in [*old,*new]):
@@ -76,12 +100,14 @@ def wrap_plain(text,widths,max_px,max_lines):
 
 def audit_context(rows):
     """Whole corpus triage: never certify language or visual coverage from flags."""
-    rows=list(rows); ids=set(); findings=[]; menu=[]
+    rows=list(rows); ids=set(); findings=[]; menu=[]; mazmorra=[]
     for r in rows:
         gid=r['grupo_id']
         if gid in ids: raise ValueError('Duplicate corpus ID')
         ids.add(gid)
         original=r['original'].strip().casefold(); es=r['espanol'].strip().casefold()
+        if es=='mazmorra':
+            mazmorra.append({'id':gid,'resource':r['origen'],'original':r['original']})
         if r['origen']==RESOURCE:
             if original in GLOSSARY and es!=GLOSSARY[original]:
                 findings.append({'id':gid,'rule':'CONTEXT_REVIEW','expected':GLOSSARY[original]})
@@ -92,7 +118,11 @@ def audit_context(rows):
                     raise ValueError('Menu source identity changed')
                 menu.append({'id':gid,'index':idx,'offset':hex(off),'original':source,'spanish':r['espanol']})
     if len(menu)!=len(MENU): raise ValueError('Missing authenticated menu slots')
+    # Exercise the overlays against the actual corpus too; no master edits.
+    pairs,save=save_overlay([(r,r) for r in rows])
+    _,compact=compact_menu_overlay(pairs)
     return {'rows_scanned':len(rows),'context_review':findings,'menu_slots':menu,
+            'exact_mazmorra_labels':mazmorra,'save_overlay':save,'compact_overlay':compact,
             'visual_verified':False,'linguistic_certified':False}
 
 def main():

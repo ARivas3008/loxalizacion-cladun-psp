@@ -1,5 +1,6 @@
 import unittest
 from tools.qa_corrective_r52 import save_overlay,verify_ink_delta,font_metrics,advance,wrap_plain,RESOURCE
+from tools.qa_corrective_r52 import compact_menu_overlay,COMPACT,MENU
 import struct
 
 class CorrectiveTests(unittest.TestCase):
@@ -12,6 +13,19 @@ class CorrectiveTests(unittest.TestCase):
         with self.assertRaises(ValueError):save_overlay([({**s,'offset_hex':'0xcc9'},d)])
         with self.assertRaises(ValueError):save_overlay([])
         with self.assertRaises(ValueError):save_overlay([(s,{**d,'espanol':'Otro'})])
+    def test_compact_scope(self):
+        pairs=[]
+        for idx,(gid,before,after,*_) in COMPACT.items():
+            off,orig=MENU[idx]
+            s={'origen':RESOURCE,'indice_registro':str(idx),'offset_hex':hex(off),'original':orig,'bytes_hex':orig.encode().hex(),'grupo_id':gid}
+            pairs.append((s,{**s,'espanol':before}))
+        extra={**pairs[1][0],'indice_registro':'421'}
+        pairs.append((extra,{**extra,'espanol':'Creación de personajes'}))
+        result,log=compact_menu_overlay(pairs)
+        self.assertEqual([d['espanol'] for _,d in result],['Círculo/Equipar','Crear personajes','Color','Creación de personajes'])
+        self.assertEqual(len(log),3)
+        self.assertTrue(all(r['after_px']<=r['original_px'] for r in log))
+        with self.assertRaises(ValueError):compact_menu_overlay(pairs[1:])
     def test_ink_guard(self):
         old=[bytes(256)]*3072;old[95]=bytes([15]*100+[0]*156);old[0]=bytes([15]*256)
         new=old.copy();new[95]=bytes([1]*100+[0]*156)
@@ -29,5 +43,20 @@ class CorrectiveTests(unittest.TestCase):
         b=struct.pack('<IHBBHBB',2,32,0,7,65,0,8)
         self.assertEqual(font_metrics(b),{32:7,65:8})
         with self.assertRaises(ValueError):font_metrics(b[:-1])
+
+    def test_real_corpus_plan_scope(self):
+        from tools.integrar_parche_seguro import source_rows,plan_rows
+        rows=source_rows()
+        before,bb,bu=plan_rows(rows)
+        rows,_=save_overlay(rows)
+        rows,_=compact_menu_overlay(rows)
+        after,ab,au=plan_rows(rows)
+        self.assertEqual((bb,bu),(ab,au))
+        def flatten(d):
+            return {s['grupo_id']:(resource,old,new) for resource,items in d.items() for s,old,new in items}
+        a,b=flatten(before),flatten(after)
+        self.assertEqual(set(a),set(b))
+        self.assertEqual({k for k in a if a[k]!=b[k]}, {'005234','005236','005237','005242'})
+        self.assertTrue(all(a[k][:2]==b[k][:2] for k in a))
 
 if __name__=='__main__':unittest.main()

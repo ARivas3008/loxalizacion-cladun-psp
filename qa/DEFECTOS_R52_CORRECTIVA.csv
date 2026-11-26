@@ -1,0 +1,8 @@
+ID,categoria,ubicacion,descripcion,causa,severidad,solucion,prueba,evidencia,estado
+RC01,traduccion,STRTBL 005242,Ahorrar en Save,polisemia incorrecta,alta,overlay Guardar,preimagen y plan,CI 45727611307 y USA offset 0xcc8,corregido en codigo sin runtime
+RC02,graficos,FONT_00.IMY,tinta amarilla,CLUT 15 en trazos nuevos,alta,15 a 1 opt-in,guarda 100 texels y A/B/C,100 texels reproducidos offline,corregido en codigo sin runtime
+RC03,traduccion,STRTBL 005234 005236 005237,desbordes,etiquetas mas anchas que originales,alta,variantes compactas opt-in,medir contenedores y A/B/C,avances FONT.BIN reales,corregido en codigo sin runtime
+RC04,traduccion,STRTBL,duplicacion Mazmorra,pendiente identificar,media,ninguna,comparar acciones y originales,escaneo exacto de corpus,pendiente
+RC05,romhacking,dialogo Pudding,lineas cortas,pendiente caja y controles,alta,reflow auxiliar no aplicado,identificar evento y caja,pruebas sinteticas,pendiente
+RC06,romhacking,SCRIPT.SDT,146 comandos desplazados,31 candidatos relativos,critica,ninguna nueva,ejecucion individual,0 pruebas dinamicas nuevas,pendiente
+RC07,graficos,SYSGRA.ARC,seis iconos PSP,riesgo de regresion,alta,no tocar recurso,ROI A/B/C,pruebas historicas F2,pendiente
