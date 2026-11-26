@@ -1,0 +1,33 @@
+import unittest
+from tools.qa_corrective_r52 import save_overlay,verify_ink_delta,font_metrics,advance,wrap_plain,RESOURCE
+import struct
+
+class CorrectiveTests(unittest.TestCase):
+    def test_save_scoped(self):
+        s={'origen':RESOURCE,'indice_registro':'34','offset_hex':'0xcc8','original':'Save','bytes_hex':'53617665','grupo_id':'x'}
+        d={**s,'espanol':'Ahorrar'}; other={**s,'indice_registro':'35'}
+        rows,log=save_overlay([(s,d),(other,d)])
+        self.assertEqual(rows[0][1]['espanol'],'Guardar');self.assertEqual(rows[1][1]['espanol'],'Ahorrar')
+        self.assertEqual(d['espanol'],'Ahorrar');self.assertEqual(log['id'],'x')
+        with self.assertRaises(ValueError):save_overlay([({**s,'offset_hex':'0xcc9'},d)])
+        with self.assertRaises(ValueError):save_overlay([])
+        with self.assertRaises(ValueError):save_overlay([(s,{**d,'espanol':'Otro'})])
+    def test_ink_guard(self):
+        old=[bytes(256)]*3072;old[95]=bytes([15]*100+[0]*156);old[0]=bytes([15]*256)
+        new=old.copy();new[95]=bytes([1]*100+[0]*156)
+        self.assertEqual(verify_ink_delta(old,new),100)
+        with self.assertRaises(ValueError):verify_ink_delta(old,old)
+        new[0]=bytes([1]*256)
+        with self.assertRaises(ValueError):verify_ink_delta(old,new)
+    def test_width_wrap(self):
+        w={'a':7,'i':3,' ':7,'b':7};self.assertEqual(advance('ai',w),10)
+        self.assertEqual(wrap_plain('ai bb',w,14,2),['ai','bb'])
+        for s in ('ai\nbb','ai %d','ai  bb','bbbb','ai bb ai'):
+            with self.assertRaises(ValueError):wrap_plain(s,w,14,2)
+        with self.assertRaises(ValueError):advance('ñ',w)
+    def test_font_table(self):
+        b=struct.pack('<IHBBHBB',2,32,0,7,65,0,8)
+        self.assertEqual(font_metrics(b),{32:7,65:8})
+        with self.assertRaises(ValueError):font_metrics(b[:-1])
+
+if __name__=='__main__':unittest.main()

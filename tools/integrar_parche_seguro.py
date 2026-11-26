@@ -1052,11 +1052,12 @@ def append_text_containers(source_iso, source_pack, entries, replacements, resul
 
 def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
           experimental_partial=False, add_spanish_font=True, event_safe_only=False,
-          verified_packs=False, unified_profile=False, extended_padding=False, verified_symbols=False, concise_verified=False, r39_verified=False, r40_verified=False, r42_verified=False, r43_verified=False, r44_local_experimental=False, r52_local_optimized=False):
+          verified_packs=False, unified_profile=False, extended_padding=False, verified_symbols=False, concise_verified=False, r39_verified=False, r40_verified=False, r42_verified=False, r43_verified=False, r44_local_experimental=False, r52_local_optimized=False, corrective_ui=False):
     source_iso, candidate, report = map(Path, (source_iso, candidate, report))
     require(source_iso.resolve() != candidate.resolve(), "Cannot overwrite source ISO")
     require(sha256_file(source_iso) == SOURCE_SHA256, "Wrong Cladun USA source ISO")
     require(not (r44_local_experimental and r52_local_optimized),"Choose exactly one local relocation profile")
+    require(not corrective_ui or (r52_local_optimized and unified_profile and Path(source_csv).resolve()==Path(SOURCE).resolve() and Path(draft_csv).resolve()==Path(DRAFT).resolve()), "Corrective UI requires canonical R52")
     r44_local_experimental = r44_local_experimental or r52_local_optimized
     require(not r44_local_experimental or (r43_verified and experimental_partial and event_safe_only),
             "R44 requires explicit local relocation experiment and R43 base")
@@ -1087,6 +1088,10 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
         rows, layout_f1 = patch_canonical_menu_layout(rows)
         rows, values_f1 = patch_canonical_menu_values(rows)
         layout_f1["onoff_presentacion"] = values_f1
+    corrective_log = None
+    if corrective_ui:
+        from tools.qa_corrective_r52 import save_overlay
+        rows, corrective_log = save_overlay(rows)
     changes, blocked, unchanged = plan_rows(rows)
     event_deferred = []
     accumulated = None
@@ -1140,6 +1145,7 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
               "dialogos_pospuestos_por_desplazamiento": len(event_deferred),
               "ppsspp_validado": False, "aprobado_para_distribucion": False,
               "f1_presentacion_menu": layout_f1,
+              "corrective_ui_experimental": corrective_log,
               "perfil_conservador_acumulado": accumulated}
     report.parent.mkdir(parents=True, exist_ok=True)
     report.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -1164,8 +1170,8 @@ def build(source_iso, candidate, report, *, source_csv=SOURCE, draft_csv=DRAFT,
                     from f4_r24_piloto_1650_ligaduras import update_font_in_existing_candidate
                 result["auditoria_raster_original"] = verify_own_iso_raster(source_iso)
                 compact, metric = build_in_memory(source_iso, Path(draft_csv),
-                    ligature_count=44, member_alignment=16, include_binary=True)
-                require(len(compact)==144000 and metric["preserved_original_base_glyphs"]==2721
+                    ligature_count=44, member_alignment=16, include_binary=True, white_new_ink=corrective_ui)
+                require((len(compact)==144000 or corrective_ui) and metric["preserved_original_base_glyphs"]==2721
                         and metric["preserved_existing_spanish_glyphs"]==19
                         and metric["ligature_count"]==44
                         and metric["can_write_in_original_slot_without_relocation"],

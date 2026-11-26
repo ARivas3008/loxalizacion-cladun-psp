@@ -59,7 +59,9 @@ def main():
     p.add_argument("--output", type=Path, required=True, help="New private directory outside repository")
     p.add_argument("--profile",choices=tuple(PROFILES),required=True)
     p.add_argument("--acepto-beta-experimental",action="store_true")
+    p.add_argument("--corrective-ui",action="store_true",help="Experimental Save + white accent ink; R52 only")
     a=p.parse_args()
+    require(not a.corrective_ui or a.profile=="r52","Corrective UI is restricted to R52")
     require(a.profile=="r43" or a.acepto_beta_experimental, "Experimental relocation requires opt-in")
     iso=a.iso.resolve(strict=True)
     require(sha(iso)==integrator.SOURCE_SHA256,"Wrong original ISO")
@@ -75,14 +77,14 @@ def main():
         result=integrator.build(iso,candidate,report,experimental_partial=True,event_safe_only=True,
              verified_packs=True,unified_profile=True,extended_padding=True,verified_symbols=True,
              concise_verified=True,r39_verified=True,r40_verified=True,r42_verified=True,r43_verified=True,
-             r52_local_optimized=a.profile=="r52")
+             r52_local_optimized=a.profile=="r52", corrective_ui=a.corrective_ui)
     require(result["texto_aplicado"]==PROFILES[a.profile][0],"Unexpected insertion count")
     require(sha(iso)==integrator.SOURCE_SHA256 and sha(candidate)==result["iso_resultante_sha256"],"Hash mismatch")
     rows=movement(children(iso),children(candidate),a.profile)
     with (output/"movement_qa.csv").open("x",encoding="utf-8",newline="") as f:
         w=csv.DictWriter(f,fieldnames=["case_id","block","order","opcode","instruction_id","original_offset","candidate_offset","nontext","status","runtime_evidence_sha256","notes"])
         w.writeheader();w.writerows(rows)
-    summary={"profile":a.profile,"original_sha256":sha(iso),"candidate_sha256":sha(candidate),
+    summary={"profile":a.profile,"corrective_ui":a.corrective_ui,"original_sha256":sha(iso),"candidate_sha256":sha(candidate),
              "text_substitutions":PROFILES[a.profile][0],"resolved_without_change":1,
              "moved_commands":len(rows),"runtime_cases_passed":0,"runtime_verified":False,"release_authorized":False,
              "state":"STATIC_PASS_RUNTIME_NOT_RUN"}

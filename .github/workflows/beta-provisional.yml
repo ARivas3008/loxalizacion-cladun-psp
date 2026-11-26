@@ -1,7 +1,7 @@
 name: Beta provisional (sin ISO)
 on:
   push:
-    branches: [beta-provisional-r52-20261125]
+    branches: [beta-provisional-r52-20261125, beta-correctiva-r52-20261125]
   workflow_dispatch:
 permissions:
   contents: read
@@ -18,3 +18,6 @@ jobs:
       - run: python -m unittest discover -s tests -p 'test_r52_local_optimized.py' -v
       - run: python -m unittest discover -s tests -p 'test_r55_private_accumulated.py' -v
       - run: python -m unittest discover -s tests -p 'test_r56_native_ellipsis.py' -v
+
+      - run: python -m unittest discover -s tests -p 'test_qa_corrective_r52.py' -v
+      - run: python -m tools.qa_corrective_r52 --draft traduccion/CLADUN_BORRADOR_ES.csv

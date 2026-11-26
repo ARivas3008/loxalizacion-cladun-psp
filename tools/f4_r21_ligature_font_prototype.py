@@ -103,7 +103,7 @@ def compact_member_offset(end:int,alignment:int=512)->int:
 
 
 def build_in_memory(iso:Path,draft:Path,*,ligature_count:int=44,
-                    member_alignment:int=512,include_binary:bool=False):
+                    member_alignment:int=512,include_binary:bool=False,white_new_ink:bool=False):
  try:
   from font_es_narrow import build_narrow_font_arc_from_iso,atlas_slots,encode_atlas
   from font_es_patch import archive,unswizzle,decode_imy_texture
@@ -120,6 +120,20 @@ def build_in_memory(iso:Path,draft:Path,*,ligature_count:int=44,
  original_meta=archive(iso)
  _,_,_,font_resource,old_arc,_=original_meta
  narrow,_=build_narrow_font_arc_from_iso(iso)
+ ink_changes=0
+ if white_new_ink:
+  try:
+   from font_es_narrow import patched_archive_narrow
+   from qa_corrective_r52 import verify_ink_delta
+  except ModuleNotFoundError:
+   from tools.font_es_narrow import patched_archive_narrow
+   from tools.qa_corrective_r52 import verify_ink_delta
+  corrected,_=patched_archive_narrow(old_arc,original_meta[-1],white_new_ink=True)
+  def split_atlas(arc):
+   members=dsarc_entries(arc)
+   return atlas_slots([unswizzle(decode_imy_texture(arc[m["offset"]:m["offset"]+m["size"]])) for m in members[1:]])
+  ink_changes=verify_ink_delta(split_atlas(narrow),split_atlas(corrected))
+  narrow=corrected
  kids=dsarc_entries(narrow)
  if [m["name"] for m in kids]!=["FONT.BIN"]+[f"FONT_{i:02d}.IMY" for i in range(6)]:
   raise ValueError("Wrong seven font members")
@@ -164,6 +178,7 @@ def build_in_memory(iso:Path,draft:Path,*,ligature_count:int=44,
    "append_only_relocation_needed":safety["append_only_relocation_needed"],
    "preserved_original_base_glyphs":N_BASE,
    "preserved_existing_spanish_glyphs":N_ACCENTS,
+   "white_new_ink_opt_in":white_new_ink,"changed_spanish_ink_texels":ink_changes,
    **metric,
    "iso_written":False,"font_arc_exported":False,
    "ppsspp_render_verified":False,"safe_deployment_authorized":False}
