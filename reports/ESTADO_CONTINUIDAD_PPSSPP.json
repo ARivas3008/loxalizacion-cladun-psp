@@ -5,7 +5,7 @@
   "rama_base": "integracion-eventos-segura-20261120",
   "pr": "https://github.com/ARivas3008/loxalizacion-cladun-psp/pull/7",
   "pr_es_borrador": true,
-  "fase_actual": "F2 ABIERTA: ISO USA 305496064 B y sonda TUIKA CLUT2 magenta reconstruidas y revalidadas por hash; 3 bytes, PSPFS/DSARC ajenos intactos. Capturador con nuevo modo --ge-only evita fallos de framebuffer al guardar dump GE real, con tests sintéticos; PPSSPP 1.20.4 NO ejecutado en este relevo. TUIKA A/B en combate y 19 glifos multicontexto SIN demostrar; F3–F6 pendientes. | F3-R2: metadatos de topología IMY en USA autenticada; 14 tests sintéticos; 85 eventos y letras del prólogo siguen pendientes; sin PPSSPP nuevo. | F3-R3: auditor original SCRIPT.DAT detecta coincidencias numéricas de posibles offsets e IDs; no hay semántica MIPS ni reubicación segura, F3 ABIERTA.",
+  "fase_actual": "R58: diagnóstico gráfico 53/53 reinserción estática sobre USA. Acumulación textual, tipografía y PPSSPP pendientes.",
   "version_iso_ensayada": "F1_2026_11_21_AJUSTE_CANONICO_ASCII_1_VALORES_SI_NO_EVENT_SAFE",
   "hashes_sha256": {
     "iso_original": "b73b263fce863e51a0e27d0d0d11d6bde2886e439a18e2bb186d497619a1b79f",
@@ -228,7 +228,7 @@
     "23/11 F3 segundo relevo: NO se probó una sonda visual NO destructiva que permitiera atribuir exactamente la tipografía del prólogo a ANIME000 o a un IMY; fallo ANIME000 ocurrió antes de la pantalla, por lo que no es evidencia de la textura de texto.",
     "23/11 F3 segundo relevo: NO se insertaron los 85 textos demo1001 de distinta longitud, sin modelo completo de saltos/referencias ni QA de reubicación; sin cambiar --event-safe-only."
   ],
-  "siguiente_accion": "Autenticar emulador oficial e ISOs, repetir USA/sonda hasta habilidad real con WebSocket release seguro, capturar X11 + gpu.record.dump --ge-only, comparar escenas y localizar TUIKA MIPS/RAM/GE/VRAM; QA 19 glifos, mantener F2 abierta hasta prueba genuina.",
+  "siguiente_accion": "Recuperar R52 acumulada y paquete privado R58; reconciliar por recurso y validar en PPSSPP.",
   "archivo_prompt_inicio": "prompts/PROMPT_INICIAL_CORRECCION_PPSSPP.md",
   "archivo_prompt_siguiente_generado": "prompts/SIGUIENTE_TAREA.md",
   "ultimo_commit_trabajo": "3241f5ca9463e202e3b9b1371bf0deefa52f4673",
@@ -2629,5 +2629,17 @@
     "full_candidate_built": false,
     "runtime_pass": 0,
     "release_authorized": false
+  },
+  "r58_graficos_diagnostico_20261125": {
+    "report": "reports/R58_GRAFICOS_DIAGNOSTICO.json",
+    "graphics_inserted": 53,
+    "known_targets": 53,
+    "runtime_pass": 0,
+    "base": "USA",
+    "cumulative": false,
+    "release_authorized": false,
+    "source_code_delivery": "Private ZIP; not committed",
+    "report_commit": "8d6638f5fa25eb3e9d033699a2e61df6604526d8",
+    "next_prompt": "prompts/SIGUIENTE_TAREA.md"
   }
 }
